@@ -1,0 +1,7 @@
+# AP Create Performance Task
+
+For this course, you will be working on a project that will be graded both by your teacher and the AP exam scorers.
+
+The project is mainly graded based off your understanding of the main ideas of the course ("Computer Science Principles"), through a write-up.
+
+The main components of this project
