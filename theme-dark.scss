@@ -1,0 +1,37 @@
+/*-- scss:defaults --*/
+// Base document colors
+$body-bg: #181818;
+$body-color: white;
+$link-color: #75AADB;
+
+// Code blocks
+$code-block-bg-alpha: -.8;
+
+code {
+  background-color: #ededed !important;
+}
+
+.learn {
+  background-color: #8B0000 !important;
+}
+
+.ifTime {
+    background-color: #003396 !important;
+}
+
+.takeItFurther {
+  background-color: #33007b !important;
+}
+
+.endnote, .sidenote, .sidenoteBig {
+  background-color: #DE970B !important;
+}
+
+.forYouToDo, .card, .takeNote, .question-choice {
+  background-color: inherit !important;
+  color: inherit !important;
+}
+
+.vocab, .vocabBig, .exam, .examBig, .vocabFullWidth, .examFullWidth, .vocabSummary, .examSummary {
+  color: black !important;
+}

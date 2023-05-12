@@ -1,0 +1,72 @@
+project:
+  output-dir: docs
+  preview:
+    port: 4200
+    browser: false
+  type: website
+  resources:
+   - "/llab/"
+   - "/prog/"
+   - "/img/"
+
+website:
+  title: "BHS AP CSP"
+  page-navigation: true
+  page-footer: |
+    The curriculum and text on this website is adapted from [The Beauty and Joy of Computing](https://bjc.edc.org/bjc-r/)
+    by University of California, Berkeley and Education Development Center, Inc. which is licensed
+    under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "Labs"
+        menu:
+          - text: "Unit 1: Introduction to Programming"
+            file: unit-1/index.qmd
+          - text: "Unit 2: Abstraction"
+            file: unit-2/index.qmd
+          - text: "Unit 3: Data Structures"
+            file: unit-3/index.qmd
+          - text: "Unit 4: How the Internet Works"
+            file: unit-4/index.qmd
+          - text: "Unit 5: Algorithms and Simulations"
+            file: unit-5/index.qmd
+          - text: "Unit 6: How Computers Work"
+            file: unit-6/index.qmd
+      - text: "Snap!"
+        href: https://snap.berkeley.edu/snap/snap.html
+
+  sidebar:
+    - title: "Unit 1: Introduction to Programming"
+      style: "docked"
+      contents: unit-1
+    - title: "Unit 2: Abstraction"
+      style: "docked"
+      contents: unit-2
+    - title: "Unit 3: Data Structures"
+      style: "docked"
+      contents: unit-3
+    - title: "Unit 4: How the Internet Works"
+      style: "docked"
+      contents: unit-4
+    - title: "Unit 5: Algorithms and Simulations"
+      style: "docked"
+      contents: unit-5
+    - title: "Unit 6: How Computers Work"
+      style: "docked"
+      contents: unit-6
+
+
+format:
+  html:
+    css: /css/bjc.css
+    toc: true
+    theme:
+      light: cosmo
+      dark: [cosmo, theme-dark.scss]
+    include-in-header:
+      - text: |
+          <script type="text/javascript" src="/llab/loader.js"></script>
