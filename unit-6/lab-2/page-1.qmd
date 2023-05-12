@@ -9,8 +9,9 @@ order: 1
 
 <p>When was the first computer built? That depends on where you draw the line between computers and non-computers.</p>
 <div class="forYouToDo" id="first">
+<p> Question 1: Answer this on the Google Form </p>
 <ol>
-<li>Explore the timeline below, which shows selected events in the history of computing starting 20,000 years ago. Decide what <em>you</em> think makes sense to call the first real computer.</li>
+<li>Explore the timeline below, which shows selected events in the history of computing starting 20,000 years ago. Decide what <em>you</em> think makes sense to call the first real computer. Why?</li>
 </ol>
 </div>
 
@@ -228,9 +229,10 @@ separate computers trying every possible combination of bit values in parallel. 
 </ul>
 </p>
 
-<div class="endnote" style="overflow: hidden;">Look at the timeline. The year markers at the bottom are equally spaced, but the number of years between them is not the same. The number of years does <em>change</em> in a regular way from marker to marker: right to left it goes up by a multiple of ten. We call such a scale <em>logarithmic</em>.</div>
+<div class="endnote" style="overflow: hidden;">* Keep in mind this timeline is outdated... <br> But look at the timeline. The year markers at the bottom are equally spaced, but the number of years between them is not the same. The number of years does <em>change</em> in a regular way from marker to marker: right to left it goes up by a multiple of ten. We call such a scale <em>logarithmic</em>.</div>
 
 <div class="forYouToDo">
+<p> Question 2: Answer this on the Google Form </p>
 <ol start="2">
 <li>
 Discussion:

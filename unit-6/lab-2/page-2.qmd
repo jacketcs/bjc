@@ -15,7 +15,8 @@ order: 1
 <p>It turns out that other important measurements have also shown roughly the same doubling behavior, such as processor speed and the amount of memory that fits in a computer. Doubling hardware speed improves the size of problems that you can efficiently handle.</p>
 <p>The importance of Moore's Law isn't just that computers get bigger and faster over time; it's that engineers can predict <em>how much</em> bigger and faster, which helps them plan the software and hardware development projects to start today, for use five years from now.</p>
 
-<div class="ifTime">
+<div class="forYouToDo">
+<p> Answer this on the Google Form </p>
 <ol>
 <li>
 That huge computer you saw in Lab 1 was built in 1975, and it had about 1MB of memory. One 2017 desktop-sized computer <em>server</em> (not a single-user computer) has up to 3TB of memory (3 billion MB). Does the prediction of doubling every two years hold for these two machines?		

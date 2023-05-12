@@ -4,5 +4,7 @@ Welcome to the Beauty and Joy of Computing — BJC.
 
 Through this curriculum, you will create programs using the Snap programming language, you will learn some of the most powerful ideas of computer science, and you will discuss the social implications of computing, thinking deeply about how you can be personally active in promoting the benefits and reducing the possible harms.
 
-Units 1-5 cover all of the AP CSP curriculum framework. You will be ready for the exam.
+Units 1-5 cover all of the AP CSP curriculum framework. You will be ready for the exam after completing these key units.
+
+Units 6-8 focus on the abstraction hierarchy of how computers work as well as recursion, a beautiful and powerful CS idea that goes beyond the AP CSP Framework and exam. These units are perfect to enjoy after the exam.
 
