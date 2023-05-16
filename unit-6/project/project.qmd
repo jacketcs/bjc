@@ -19,7 +19,7 @@ Recall that from Unit 6, we touched on the history of computers in [Lab 2](https
     - **Due on Friday, 5/19/2023.**
     - A template for this write-up is in your Google Classroom assignment.
 
-2. Create a game (the design is up to you!) where the user is either asked computer history trivia questions, or interesting facts about computer history are presented as the game is played. **The game cannot be just a [quiz game like we did in U2L2](https://bjc.echa.ng/unit-2/lab-2/page-2.html)**. There must be some sort of sprite movement and either dexterity, acuity or problem-solving challenge apart from answering questions. 
+2. Create a game (the design is up to you!) where the user is either asked computer history trivia questions, or interesting facts about computer history are presented as the game is played. **The game cannot be just a [quiz game like we did in U2L2](https://bjc.echa.ng/unit-2/lab-2/page-2.html)**. There must be some sort of sprite movement and either dexterity, accuracy, and/or problem-solving challenge apart from answering questions. 
     - The requirements for this game will be to:
         * Have creative and artistic value by having relevant sprite costumes involved in the project.
         * From the various events listed on [Unit 6, Lab 2, Page 1](https://bjc.echa.ng/unit-6/lab-2/page-1.html), use at least 5 of the events.
