@@ -1,0 +1,389 @@
+---
+title: "Checking Each Quiz Answer"
+subtitle: "Unit 2, Lab 2, Page 3"
+order: 3
+---
+
+```{=html}
+<script type="text/javascript" src="/utilities/gifffer.min.js"></script>
+```
+```{=html}
+<script type="text/javascript">window.onload = function() {Gifffer();}</script>
+```
+<link rel="stylesheet" type="text/css" href="/css/bjc-gifffer.css">
+
+::: learn
+<p><strong>On this page,</strong> you will complete your quiz app by using a new block that loops through a list:<br /> <img src="/img/2-complexity/for-each-(item)-of().png" title="for-each-(item)-of(){}" alt="for-each-(item)-of(){}" class="indent" height="68"/></p>
+:::
+
+::: todo
+This should be an FYTD. Is is everywhere else. --MF, 5/30/20
+:::
+
+<p>If it's not already open, open your project U2L2-Quiz.</p>
+
+::: dialogue
+<a name="seta" class="anchor"> </a>
+
+::: stagedir
+The students are considering how to use their abstract data type as they develop the code for their project.
+:::
+
+<div>
+
+Alphie: We can use our <img src="/img/2-complexity/question-selector.png" title="question from quiz item: ()" alt="question from quiz item: ()"/> and <img src="/img/2-complexity/answer-selector.png" title="answer from quiz item: ()" alt="answer from quiz item: ()"/> selectors to get the question and answer for quiz item in our list. But how do we get the quiz item <em>out</em> of the list in the first place?
+
+</div>
+
+<div>
+
+Gamal: Maybe we can use <code>item of</code> inside a <code>for</code> loop and use the index from the <code>for</code> loop as the first input to <code>item of</code>, like this:<br /> <img src="/img/2-complexity/for-with-item-of.png" title="for (i) = (1) to (4) {
+ask (question from (item (i) of (computer science quiz))) and wait
+}" alt="for (i) = (1) to (4) {
+ask (question from (item (i) of (computer science quiz))) and wait
+}" class="indent"/>
+
+</div>
+
+::: vocabFullWidth
+<p>Using the result from <code>item</code> as the input to <code>address from contact</code> is called <strong>composition</strong> of functions.</p>
+:::
+
+<div>
+
+Betsy: Yeah, we could, but that's a little hard to read with that index variable, <var>i</var>, to keep track of. And if we add more questions, we'll have to update that number 4 that tells us when to end the loop. I bet we can use <code>for each</code> to <em>traverse</em> the list.
+
+</div>
+
+::: stagedir
+Betsy drags <code>for each</code> into the scripting area.<br /> <img src="/img/2-complexity/for-each-(item)-of().png" title="for each (item) of &apos;list input slot&apos; {}" alt="for each (item) of &apos;list input slot&apos; {}" height="68"/>
+:::
+
+<div>
+
+Gamal: We could even rename <var>item</var> something logical like <var>quiz item</var>. Then the code inside will run once for each quiz item in our list.
+
+</div>
+:::
+
+::: vocabFullWidth
+: <strong>Traversing a List</strong>
+
+::: comment
+AAP-2.O.2
+:::
+
+<p><strong>Traversing</strong> a list means looking at each item of the list. <code>For each</code> is iterative. That is, it's repetitive, like <code>for</code>, which can also traverse a list. But unlike <code>for</code>, <code>for each</code> traverses the list <em>without using index numbers</em>.</p>
+:::
+
+::: forYouToDo
+<ol>
+
+::: comment
+AAP-2.K part a, AAP-2.O part a
+:::
+
+<li>Use <code>for each</code> to <em>traverse</em> your list, asking each quiz question, checking each answer, and letting the user know if they are right or wrong on each item.</li>
+
+<li>Take your quiz a few times as a user would, and work out any problems with the code. Then, give your quiz to a friend.</li>
+
+</ol>
+:::
+
+::: ifTime
+<ol start="3">
+
+<li>If the user is wrong, don't just let them know, but tell them the right answer too.</li>
+
+<li>Use a script variable to keep track of the player's score and report it at the end of the quiz.</li>
+
+</ol>
+:::
+
+::: {#first .forYouToDo}
+<ol start="5">
+
+::: comment
+AAP-2.K part b
+:::
+
+<li>
+
+<!-- Question 1-->
+
+::: {.assessment-data type="multiplechoice" identifier="abe" hasinlinefeedback="true" maxchoices="2" responseidentifier="ri1" shuffle="true"}
+::: prompt
+<p>Which of the scripts below will produce the following sprite behavior?<br /> <img src="/img/3-lists/abelincoln.gif" title="sprite saying Abraham then Lincoln" alt="sprite saying Abraham then Lincoln" class="indent noshadow"/><br /> (When you run the script, though, it actually says Abraham Lincoln <em>only once</em>.)</p>
+
+<p>Choose <strong>all</strong> that apply.</p>
+:::
+
+::: {.choice identifier="c1"}
+::: text
+<img src="/img/3-lists/check1abec1.png" title="for each (item) of {Abraham, Lincoln} [say (item) for (1) secs]" alt="for each (item) of {Abraham, Lincoln} [say (item) for (1) secs]" border="0"/>
+:::
+
+::: feedback
+Correct.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+<img src="/img/3-lists/check1abec2.png" title="say {Abraham, Lincoln} for (2) secs" alt="say {Abraham, Lincoln} for (2) secs" border="0"/>
+:::
+
+::: feedback
+No, when a sprite says a list, we see a visual representation of the list.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+<img src="/img/3-lists/check1abec3.png" title="say (item (1) of {Abraham Lincoln, George Washington, Barack Obama}) for (2) secs" alt="say (item (1) of {Abraham Lincoln, George Washington, Barack Obama}) for (2) secs" border="0"/>
+:::
+
+::: feedback
+No, this says "Abraham Lincoln" all at once, not in two separate speech balloons.
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+<img src="/img/3-lists/check1abec4.png" title="say (item (1) of {Abraham, George, Barack} for (1) secs, then say (item (1) of {Lincoln, Washington, Obama} for (1) secs" alt="say (item (1) of {Abraham, George, Barack} for (1) secs, then say (item (1) of {Lincoln, Washington, Obama} for (1) secs" border="0"/>
+:::
+
+::: feedback
+Correct.
+:::
+:::
+
+::: {.responseDeclaration identifier="ri1"}
+::: {.correctResponse identifier="c1"}
+:::
+
+::: {.correctResponse identifier="c4"}
+:::
+:::
+:::
+
+</li>
+
+</ol>
+:::
+
+::: {.examFullWidth .AP-only}
+::: comment
+AAP-2.O.3
+:::
+
+::: pseudop
+::: sidenote
+The procedure
+
+```{=html}
+<pre class="inline">goto()</pre>
+```
+isn't built in to the AP's language so it is written in lower case like other programmer-defined procedures.
+:::
+
+The script <img src="/img/2-complexity/example-for-each-point.png" title="for each (point) of (my drawing) (go to (point))" alt="for each (point) of (my drawing) (go to (point))" class="inline"/> would be written as
+
+::: pre-container
+```{=html}
+<pre class="inline">FOR EACH point IN myDrawing
+{
+goto(point)
+}</pre>
+```
+:::
+
+or <img src="/img/2-complexity/for-each-blocktran.png" title="FOR EACH point IN myDrawing
+{
+goto(point)
+}" alt="FOR EACH point IN myDrawing
+{
+goto(point)
+}" class="inline"/>.
+:::
+:::
+
+::: forYouToDo
+<p>These questions are similar to those you will see on the AP CSP exam.</p>
+
+<ol start="6">
+
+<li>
+
+<!-- Question 2 -->
+
+::: {.assessment-data type="multiplechoice" identifier="FOR EACH positive and square over 4" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="false"}
+::: prompt
+::: comment
+AAP-2.O part b
+:::
+
+```{=html}
+<pre>inputList ← [3, -1, 2, 10, -5]
+
+FOR EACH item IN inputList
+{   
+IF(item &gt; 0  AND  item * item &gt; 4)
+{
+DISPLAY(item)
+}
+}
+</pre>
+```
+<br /> What will be displayed as a result of running the code segment given?
+:::
+
+::: {.choice identifier="c1"}
+::: text
+9, 1, 4, 100, 25
+:::
+
+::: feedback
+What does the
+
+```{=html}
+<pre class="inline">IF</pre>
+```
+instruction test? What does the
+
+```{=html}
+<pre class="inline">DISPLAY</pre>
+```
+instruction in this code display?
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+9, 100
+:::
+
+::: feedback
+What does the
+
+```{=html}
+<pre class="inline">DISPLAY</pre>
+```
+instruction in this code display?
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+3, 2, 10
+:::
+
+::: feedback
+Is 2 \* 2 \> 4 ?
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+3, 10
+:::
+
+::: feedback
+Correct!
+:::
+:::
+
+::: {.responseDeclaration identifier="ri2"}
+::: {.correctResponse identifier="c4"}
+:::
+:::
+:::
+
+</li>
+
+<li>
+
+<!-- Question 3 -->
+
+::: {.assessment-data type="multiplechoice" identifier="Mystery Procedure" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri3" shuffle="true"}
+::: prompt
+```{=html}
+<pre>PROCEDURE Mystery(numberList, targetNumber)
+{
+counter ← 0
+FOR EACH number IN numberList
+{
+IF(number &gt; targetNumber)
+{
+counter ← counter + 1
+}
+}
+RETURN(counter)
+}
+myMathGrades ← [100, 80, 90, 80, 60, 100, 50, 100]
+Mystery(myMathGrades, 60)
+</pre>
+```
+<br /> What will be returned if the code above is run?
+:::
+
+::: {.choice identifier="c1"}
+::: text
+\[100, 80, 90, 80, 100, 100\]
+:::
+
+::: feedback
+What <em>type</em> of value does the procedure return?
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+7
+:::
+
+::: feedback
+Is 60 \> 60 ?
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+6
+:::
+
+::: feedback
+Correct!
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+60
+:::
+
+::: feedback
+What is the procedure doing?
+:::
+:::
+
+::: {.responseDeclaration identifier="ri3"}
+::: {.correctResponse identifier="c3"}
+:::
+:::
+:::
+
+</li>
+
+</ol>
+:::
+
+::: takeItFurther
+<ol type="A">
+
+<li>Before telling the user the right answer, give them three tries to get it right.</li>
+
+<li>Users might give answers that are close enough but not exactly the answer you expected. For example, someone might answer "What kind of variable is available only in the part of the program where it is defined?" with "a local variable," "local variable," or just "local," or the same possibilities for "script variable." So your <code>question answer</code> ADT could take a <em>list</em> of keywords in the second slot and accept any answer that includes any of the keywords (so in this case, the list would be {local, script} and would accept "a local one"). Use <img src="/img/blocks/contains-empty.png" title="&apos;list input slot&apos; contains ()" alt="&apos;list input slot&apos; contains ()" class="inline"/> to adapt your code.</li>
+
+</ol>
+:::

@@ -1,0 +1,67 @@
+---
+title: "Getting Started with Snap<em>!</em>"
+subtitle: "Unit 1, Lab 1, Page 1"
+order: 1
+---
+
+::: learn
+<p><strong>In this <em>lab</em>,</strong> you'll program an app that you can share with others and play on your phone.</p>
+
+<p><strong>On this <em>page</em>,</strong> you'll learn how to create your own account and how to log in and out.</p>
+:::
+
+<h2>Creating an Account</h2>
+
+::: {#first .forYouToDo}
+<img src="/img/sys/dialog-cloud-signup.png" title="signing up for the cloud" alt="signing up for the cloud" class="imageRight"/>
+
+<ol>
+
+<li>If you haven't already opened [snap]{.snap}, open it now: <a href="http://snap.berkeley.edu/run" title="Snap! Build Your Own Blocks" target="_blank"><strong>http://snap.berkeley.edu/run</strong></a></li>
+
+<li>In the Snap<em>!</em> window, click the Cloud menu, <img src="/img/1-introduction/cloud_button.png" title="Cloud menu button" alt="Cloud menu button"/>, select "Signup...", and follow the instructions. <br /> <img src="/img/sys/button-cloud-with-context.png" title="cloud icon" alt="cloud icon" class="indent"/></li>
+
+::: endnote
+<p>You'll be asked to click a link in your email to verify your account, but you don't have to do that right now.</p>
+
+<p>You may change your password at any time using the Cloud menu, <img src="/img/1-introduction/cloud_button.png" title="Cloud menu button" alt="Cloud menu button"/>.</p>
+:::
+
+</ol>
+:::
+
+<h2>Logging In to and Out of Your Snap<em>!</em><a name="login" class="anchor"> </a>Account</h2>
+
+::: forYouToDo
+<p>You should be logged in whenever you are in Snap<em>!</em>. Here's how to check if you are logged in:</p>
+
+<ol start="3">
+
+<li>
+
+Click the Cloud menu in the tool-bar.
+
+<ul>
+
+<li><strong>If</strong> it says "Logout" and your user name, then you are already logged in.</li>
+
+<li><strong>If</strong> it says someone else's user name, then log them out and log in with your own user name.</li>
+
+<li><strong>Otherwise</strong>, choose "Login..." and enter your user name and password.</li>
+
+</ul>
+
+</li>
+
+<li>
+
+Click NEXT (on the top right of this web page) to continue.
+
+::: endnote
+Remember to log out of Snap<em>!</em> (using the Cloud menu) when you are done.
+:::
+
+</li>
+
+</ol>
+:::

@@ -1,0 +1,124 @@
+---
+title: "Making Programs Talk"
+subtitle: "Unit 1, Lab 2, Page 2"
+order: 2
+---
+
+```{=html}
+<script type="text/javascript" src="/utilities/gifffer.min.js"></script>
+```
+```{=html}
+<script type="text/javascript">window.onload = function() {Gifffer();}</script>
+```
+<link rel="stylesheet" type="text/css" href="/css/bjc-gifffer.css">
+
+::: learn
+<p><strong>In this lab,</strong> you will program two sprites to gossip.<br /> <img src="/img/1-introduction/U1L2-Gossip.jpg" title="Image of stage with two characters talking. One says, &apos;my cat is in a band with Jake,&apos; and the other says &apos;Oh, but... Mr. C loves my cat.&apos;" alt="Image of stage with two characters talking. One says, &apos;my cat is in a band with Jake,&apos; and the other says &apos;Oh, but... Mr. C loves my cat.&apos;" class="indent"/></p>
+
+<p><strong>On this page,</strong> you will experiment with an existing program as an introduction to the project.</p>
+:::
+
+<h2>Exploring Custom Blocks</h2>
+
+::: {#first .forYouToDo}
+<ol>
+
+<li><a href="/prog/1-introduction/U1L2-Gossip.xml" class="run"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a></li>
+
+::: endnote
+You'll need to be logged in to save to your account. You may wish to review how to log in at <a href="/cur/programming/1-introduction/1-building-an-app/1-creating-a-snap-account.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment#login" title="Getting Started with Snap!">Unit 1 Lab 1 Page 1: Getting Started with Snap<em>!</em></a>
+:::
+
+<li>Perform each experiment (A-D) several times.</li>
+
+<li>
+
+<img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
+
+<ul>
+
+<li>What does each <em>reporter</em> block report?<br /> <img src="/img/1-introduction/who.png" title="who block" alt="who block" class="indent"/> <img src="/img/1-introduction/does-what.png" title="does what block" alt="does what block" class="inline"/> <img src="/img/1-introduction/gossip.png" title="gossip block" alt="gossip block" class="inline"/></li>
+
+<li>What happens when you click this script (labeled D)?<br /> <img src="/img/1-introduction/say-broadcast.png" title="say (gossip) broadcast (your turn)" alt="say (gossip) broadcast (your turn)" class="indent"/></li>
+
+</ul>
+
+</li>
+
+</ol>
+:::
+
+::: examFullWidth
+<!--<div class="index-term anchor" id="say</code>">&nbsp;</div>-->
+
+::: comment
+AAP-3.A.6
+:::
+
+::: pseudop
+There is nothing exactly like <img src="/img/1-introduction/say-gossip.png" title="say (gossip)" alt="say (gossip)" class="nopadtb"/> or <img src="/img/1-introduction/say-gossip-for-3-secs.png" title="say (gossip) for (3) secs" alt="say (gossip) for (3) secs" class="nopadtb"/> on the AP Exam because they don't have sprites and speech balloons, but their way of showing this text to the user is
+
+```{=html}
+<pre class="inline">DISPLAY(gossip())</pre>
+```
+if it's written as text or <img src="/img/1-introduction/display(gossip).png" title="a white rounded rectangle containing first the word &apos;DISPLAY&apos; in all caps and then a smaller white rectangle containing the word &apos;gossip&apos; in lower case" alt="a white rounded rectangle containing first the word &apos;DISPLAY&apos; in all caps and then a smaller white rectangle containing the word &apos;gossip&apos; in lower case" class="nopadtb"/> if it's shown as blocks.
+:::
+
+<p>You won't have to be able to <em>write</em> code in this notation on the AP exam. You just have to be able to <em>read</em> it so you can answer questions about it.</p>
+:::
+
+::: endnote
+<a href="#hint-zoom" data-bs-toggle="collapse" title="Would you like to make the blocks bigger?">Would you like to make the blocks bigger?</a>
+
+::: {#hint-zoom .collapse}
+<p>In the Settings menu (<img src="/img/sys/settings.png" title="Settings menu gear icon" alt="Settings menu gear icon" class="inline"/>), choose "Zoom blocks...", and adjust the slider.</p>
+:::
+:::
+
+::: takeNote
+::: comment
+AAP-3.B.6, DAT-1.A.5
+:::
+
+<p><strong>Abstraction</strong> is the most fundamental idea in computer science, but it's hard to define until you've seen some examples. The most basic kind of abstraction is to <em>give a name</em> to something in a program. For example, here we gave the name <code>who</code> to the idea "pick an item at random from this list of people (or cats)." This is called <strong><em>procedural</em> abstraction</strong> because we use a procedure (a block) to name the idea. This makes your code readable. You'll see other kinds of abstraction later.</p>
+:::
+
+::: comment
+AAP-3.B.7
+:::
+
+<p>If you find yourself wanting to copy and paste code from one place to another without changing it, then give it a name (open a Block Editor and paste the code there) and call your procedure in both places. If you discover later on that you need to fix a bug in this code, you only have to change it once instead of finding every copy throughout your program.</p>
+
+<h2>Exploring a Second Sprite<a name="second" class="anchor"> </a></h2>
+
+::: forYouToDo
+<ol start="4">
+
+<li><img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="imageRight"/> In the sprite corral, click on the green sprite named "Sprite(2)" to control its scripts and costumes.<br /> <img src="/img/1-introduction/stage-and-sprite-corral.png" title="stage-and-sprite-corral" alt="stage-and-sprite-corral" class="indent"/></li>
+
+<li>Perform each experiment (A-C) several times.</li>
+
+<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Write down what <code>broadcast</code> does.</li>
+
+<li><img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Discuss how <code>who2</code> compares to <code>who</code> and how <code>gossip2</code> compares to <code>gossip</code>.</li>
+
+<li><img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="imageRight"/> Make Sprite(2) tell Sprite to respond. What happens?</li>
+
+<!--<div class="index-term anchor" id="when I receive</code>">&nbsp;</div>-->
+
+::: {#broadcast}
+ 
+:::
+
+::: endnote
+<p>The <code>broadcast</code><!--class="index-term anchor"--><!--<img class="inline nopadtb" src="/img/blocks/broadcast.png" alt="broadcast ()" title="broadcast ()" />--> block sends a message to all the sprites. To set the message, click the down arrow and select "new..."<br /> <img src="/img/1-introduction/broadcast-dropdown.png" title="broadcast block with menu open showing two options: your turn, new..." alt="broadcast block with menu open showing two options: your turn, new..." class="indent"/></p>
+
+<p>For more information about the <code>when I receive</code> block, right-click (or control-click on a Mac) the block and select "help..."<br /> <img src="/img/1-introduction/when-i-receive-dropdown.png" title="when I receive block with right-click menu open showing four options: help..., duplicate, delete, script pic..." alt="when I receive block with right-click menu open showing four options: help..., duplicate, delete, script pic..." class="indent"/></p>
+:::
+
+</ol>
+:::
+
+</body>
+
+</html>

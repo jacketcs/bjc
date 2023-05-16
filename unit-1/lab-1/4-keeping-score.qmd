@@ -1,0 +1,111 @@
+---
+title: "Giving the Player Feedback"
+subtitle: "Unit 1, Lab 1, Page 4"
+order: 4
+---
+
+```{=html}
+<script type="text/javascript" src="/utilities/gifffer.min.js"></script>
+```
+```{=html}
+<script type="text/javascript">window.onload = function() {Gifffer();}</script>
+```
+<link rel="stylesheet" type="text/css" href="/css/bjc-gifffer.css">
+
+::: learn
+Now the game is challenging, but players can't tell how well they're doing because Alonzo jumps around whether the player clicks him or not. <strong>On this page</strong>, you will create a way for the player of your game to know how well they are doing.
+:::
+
+<h2>Confirming Whether Alonzo Was Clicked</h2>
+
+<p>First, the person playing your game wants to know right away whether they succeeded at clicking Alonzo before he moved out of the way.</p>
+
+::: vocabFullWidth
+<strong>: Sprites and Costumes</strong>
+
+<p>
+
+The Alonzo character is named after Alonzo Church, a major contributor to early computer science. In this project, there are three objects related to Alonzo:
+
+<ul>
+
+<li>One is a <em><strong>sprite</strong></em>, which is like an actor on the stage who knows how to do many different things, such as walk around the stage and speak the lines of the play.</li>
+
+<li>The other two are <em><strong>costumes</strong></em>, picture that can be "worn" by a sprite.</li>
+
+</ul>
+
+</p>
+:::
+
+::: forYouToDo
+Program Alonzo to face the other way when clicked. <img src="/img/1-introduction/alonzo.png" title="Alonzo character" alt="Alonzo character" height="60"/> <img src="/img/1-introduction/alonzo-flipped-other-way.png" title="Alonzo character flipped to face the other way" alt="Alonzo character flipped to face the other way" height="60"/> <!--<a class="index-term anchor" id="next costume</code>">&nbsp;</a>-->
+
+<ol>
+
+<li>The project you loaded has two Alonzo costumes---one facing right and the other facing left---so you can use the <img src="/img/blocks/next-costume.png" alt="next costume"/> block to make the sprite face the other way. Add the <code>next costume</code> block to the place in your program where the user has just clicked on Alonzo.</li>
+
+<li>Test your program. Make sure Alonzo faces the other way when he is clicked but not when he jumps without being clicked.</li>
+
+</ol>
+:::
+
+<h2>Keeping Score</h2>
+
+<!--<a class="index-term anchor" id="change effect</code>">&nbsp;</a>-->
+
+<p>The player will also want to know how much progress they have made in the game. The command <img src="/img/1-introduction/ghosteffect.png" title="change (ghost) effect by ()" alt="change (ghost) effect by ()"/> can control Alonzo's <em>transparency</em>.</p>
+
+::: vocabFullWidth
+<p>The <strong>transparency</strong> of an image is how much you can see what's behind it. For example, here is the Alonzo sprite shown with three different transparencies (which have been set using the <code>ghost effect</code> block).<br /> <img src="/img/1-introduction/transparency2.png" title="three pictures of Alonzo, with ghost effect 0%, 25%, and 50%, on a background of a brick wall" alt="three pictures of Alonzo, with ghost effect 0%, 25%, and 50%, on a background of a brick wall" class="indent"/></p>
+:::
+
+::: forYouToDo
+<p>Use transparency to tell the user how close they are to winning: every time they click, Alonzo gets more invisible, and when he disappears completely, they win the game.</p>
+
+<!--<a class="index-term anchor" id="clear graphics effects</code>">&nbsp;</a>-->
+
+<ol start="3">
+
+<li>Drag the <code>change (ghost) effect</code> block into the center scripting area, and experiment with different input numbers (clicking it repeatedly after each change) to see exactly what it does. At what ghost effect value does Alonzo become completely invisible? You can use the command <img src="/img/1-introduction/clear-graphic-effects.png" alt="clear graphic effects"/> to make Alonzo fully opaque again.</li>
+
+<li>Then, modify your script so that every time Alonzo is clicked, he gets a little more ghostly. Think about how the input you use affects the length of the game. Try out your game.</li>
+
+</ol>
+:::
+
+<h2>Making the Game More Challenging</h2>
+
+<p>So far, even a bad player will <em>eventually</em> make Alonzo disappear. The game will be much more interesting if the player is penalized for missing a click.</p>
+
+::: forYouToDo
+<ol start="5">
+
+<li>Figure out where to add a <code>change (ghost) effect by (-5)</code> block to your script to make Alonzo get less transparent any time he moves <em>without</em> being clicked.</li>
+
+<li>Play your game a few times, and adjust your code to get a level of difficulty that you like.</li>
+
+::: endnote
+You can change the <code>change effect</code> input number (for either instance of the block) and/or the <code>wait</code> time to make the game easier or harder.
+:::
+
+</ol>
+:::
+
+<h2>Ending the Game</h2>
+
+::: forYouToDo
+<p>When Alonzo is completely transparent, the game should <em>stop.</em></p>
+
+<ol start="7">
+
+<li>Add this code to the right place in your script to end the game.<br /> <img src="/img/1-introduction/if-done-stop.png" title="if ((ghost effect) = 100) {clear graphic effects, stop all}" alt="if ((ghost effect) = 100) {clear graphic effects, stop all}" class="indent"/></li>
+
+<li><img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline"/></li>
+
+</ol>
+:::
+
+</body>
+
+</html>

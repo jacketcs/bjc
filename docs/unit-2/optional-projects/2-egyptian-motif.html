@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.475">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>BHS AP CSP – egyptian-motif</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../unit-2/optional-projects/3-mastermind.html" rel="next">
+<link href="../../unit-2/optional-projects/1-magic8ball.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script type="text/javascript" src="../../llab/loader.js"></script>
+
+
+<link rel="stylesheet" href="../../css/bjc.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">BHS AP CSP</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-labs" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Labs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-labs">    
+        <li>
+    <a class="dropdown-item" href="../../unit-1/index.html">
+ <span class="dropdown-text">Unit 1: Introduction to Programming</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-2/index.html">
+ <span class="dropdown-text">Unit 2: Abstraction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-3/index.html">
+ <span class="dropdown-text">Unit 3: Data Structures</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-4/index.html">
+ <span class="dropdown-text">Unit 4: How the Internet Works</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-5/index.html">
+ <span class="dropdown-text">Unit 5: Algorithms and Simulations</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-6/index.html">
+ <span class="dropdown-text">Unit 6: How Computers Work</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html">
+ <span class="menu-text">Snap!</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../unit-2/index.html" class="sidebar-item-text sidebar-link">Introduction to Programming</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">Lab 1</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/1-number-guessing-game.html" class="sidebar-item-text sidebar-link">Starting a Number Guessing Game</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/2-checking-player-guess.html" class="sidebar-item-text sidebar-link">Checking the Player’s Guess</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/3-debugging-extending.html" class="sidebar-item-text sidebar-link">Debugging and Extending Your Number Guessing Game</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/4-keeping-score.html" class="sidebar-item-text sidebar-link">Keeping Score with Global Variables</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/5-choosing-avatar.html" class="sidebar-item-text sidebar-link">Choosing a Costume</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/6-keeping-a-journal.html" class="sidebar-item-text sidebar-link">Keeping a Programming Journal</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Lab 2</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-2/1-shopping-list-app.html" class="sidebar-item-text sidebar-link">Shopping List App</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-2/2-quizzes.html" class="sidebar-item-text sidebar-link">Planning a Quiz App</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-2/3-traversing-list.html" class="sidebar-item-text sidebar-link">Checking Each Quiz Answer</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">Lab 3</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/1-what-is-predicate.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/2-combining-predicates.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/3-combining-conditionals.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/4-boolean-experiments.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/5-keeping-list-items.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/6-solving-word-puzzle.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">Lab 4</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-4/1-mod-operator.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-4/2-math-predicates.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-4/3-other-math-reporters.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">Lab 5</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/1-copyright.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/2-fairuse.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/3-bargain.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/4-digital.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/5-drm.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">Optional Projects</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/1-magic8ball.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/2-egyptian-motif.html" class="sidebar-item-text sidebar-link active">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/3-mastermind.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/4-plurals1.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/5-plurals2.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/6-kaleidoscope.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+&lt;!DOCTYPE html&gt;
+
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="../../llab/loader.js"></script>
+<script type="text/javascript" src="../../utilities/gifffer.min.js"></script>
+<script type="text/javascript">window.onload = function() {Gifffer();}</script>
+<link rel="stylesheet" type="text/css" href="../../css/bjc-gifffer.css">
+<title>
+Unit 2 Optional Projects, Page 2
+</title>
+
+
+<h2 class="anchored">
+<p>Egyptian Motifsubtitle: “Unit , Lab , Page” order:</p>
+<hr>
+<pre><code>    &lt;div class="todo"&gt;
+        &lt;p&gt;Need to rebuild images with plain prototype labels. --MF, 9/26/18&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="todo"&gt;
+        &lt;p&gt;PG: Islamic art is a great candidate for computer drawing, and the samples in TiF B seem like good ones. I'd prefer to have some good /real/ illustrations. I don't see how the top stuff (everything before TiF B) is Egyptian. Feels like another bow to "some culture" without being genuine. But the project is pretty, so can we give it a learning purpose?&lt;/p&gt;
+        &lt;p&gt;BH: The obvious way to draw the picture in the pink box is as a decorated hexagon.&lt;/p&gt;
+        &lt;p&gt;MF: I want to revise this page. Some suggestions added to the page.&lt;/p&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="learn"&gt;
+        &lt;img class="indent" src="/img/2-complexity/EgyptianMotif_img/HexalDesign1.png" height="250" alt="Hexagonal Design" title="Hexagonal Design" /&gt;
+        &lt;img src="/img/2-complexity/EgyptianMotif_img/HexaDesign2.png"  height="250" alt="Hexagonal Design in color" title="Hexagonal Design in color" /&gt;
+        &lt;p&gt;Much Islamic art applies principles of geometry and repeats simple patterns to form complex forms. For example, the Egyptian Motif above has six overlapping rectangles.&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;In this project,&lt;/strong&gt; you will learn how to extend your &lt;code&gt;pinwheel&lt;/code&gt; code from Unit 1 to create such intricate patterns.&lt;/p&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="forYouToDo" id="first"&gt;
+        &lt;ol&gt;
+            &lt;div class="todo"&gt;
+                &lt;p&gt;Why are we giving them the code for these blocks instead of asking that they build and/or import them? I suggest cutting #1 and #2 and merging the first part of #3 into the pink box (I like the #3 images better than those in the pink box anyway). The work starts halfway through problem #3. &lt;strong&gt;I want to revise this page&lt;/strong&gt;, but for now I just moved #10 from a solo FYTD into the ITIT box. --MF, 9/26/18&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;li&gt; 
+                In this project, you will repeatedly use rectangles, so first recall how to create a &lt;code&gt;rectangle&lt;/code&gt; block. &lt;br /&gt;
+                &lt;img class="indent" src="/img/2-complexity/EgyptianMotif_img/rectangleCode.png" height="275" alt="rectangle, width:(width) length:(length){pen down; repeat(2){move(width) steps; turn clockwise (90) degrees; move(length) steps; turn clockwise (90) degrees};pen up}" title="rectangle, width:(width) length:(length){pen down; repeat(2){move(width) steps; turn clockwise (90) degrees; move(length) steps; turn clockwise (90) degrees};pen up}"/&gt;
+                &lt;div class="endnote"&gt; Note the use of &lt;code&gt;pen down&lt;/code&gt; and &lt;code&gt;pen up&lt;/code&gt; blocks inside the rectangle definition. We don't normally do this but here this is done to simplify the more complex code coming ahead. This will ensure that once a rectangle is drawn, the pen is up and you don’t need to worry about unintended scribbles as your drawing sprite continues moving to execute the rest of the code.&lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                Also recall the &lt;code&gt;pinwheel&lt;/code&gt; code you have written in Unit 1.&lt;br /&gt;
+                &lt;img class="indent" src="/img/2-complexity/EgyptianMotif_img/pinwheelCode.png"  height="225" alt="pinwheel, branches:(number of branches) size:(size) backup:(backup){repeat(number of branches){move(size) steps; move(-1Xbackup) steps; turn clockwise(360/number of branches) degrees}}" title="pinwheel, branches:(number of branches) size:(size) backup:(backup){repeat(number of branches){move(size) steps; move(-1Xbackup) steps; turn clockwise(360/number of branches) degrees}}" /&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                In this project, you will replace the &lt;em&gt;&lt;strong&gt;pinwheel branches&lt;/strong&gt;&lt;/em&gt; with &lt;em&gt;&lt;strong&gt;rectangles&lt;/strong&gt;&lt;/em&gt; as shown below. Note use of color is optional and is used here for clarity.&lt;br /&gt;
+                &lt;img class="indent" src="/img/2-complexity/EgyptianMotif_img/multiColorPinwheel.png"  height="250" alt="Multicolored pinwheel" title="Multicolored pinwheel"/&gt;
+                &lt;img src="/img/2-complexity/EgyptianMotif_img/multiColorPinwheelwithRectangles.png" height="250" alt="Multicolored pinwheel with rectangles" title="Multicolored pinwheel with rectangles"/&gt; &lt;br /&gt;
+                Now create a &lt;code&gt;pinwheel with rectangles&lt;/code&gt; block. It will have two more inputs &lt;var&gt;width&lt;/var&gt; and &lt;var&gt;length&lt;/var&gt; for the width and length of the rectangles.&lt;br /&gt;
+                &lt;img class="indent" src="/img/2-complexity/EgyptianMotif_img/pinwheelWithRectanglesCodeHeader.png"  height="100" alt="pinwheel with rectangles, branches:(number of branches) size:(size) backup:(backup) width:(width) length:(length)" title="pinwheel with rectangles, branches:(number of branches) size:(size) backup:(backup) width:(width) length:(length)"/&gt;&lt;br /&gt;
+ Its code will be identical to the &lt;code&gt;pinwheel&lt;/code&gt; code except that it has the &lt;code&gt;rectangle&lt;/code&gt; block inserted in between the two &lt;code&gt;move&lt;/code&gt; blocks that created the pinwheel branches. &lt;br /&gt;
+                &lt;img class="indent" src="/img/2-complexity/EgyptianMotif_img/rectangleInBetween.png"  height="175" alt="move(size) steps; rectangle, width:(width) length:(length); move(-1Xbackup) steps" title="move(size) steps; rectangle, width:(width) length:(length); move(-1Xbackup) steps"/&gt;&lt;br /&gt;
+                
+            &lt;/li&gt;
+            &lt;li&gt;
+                Now, use the “Variables” menu to make variables that will allow you to vary all aspects of the designs you create and do not forget to initialize these variables right after the &lt;code&gt;when green flag clicked&lt;/code&gt; block&lt;br /&gt;
+                &lt;img class="indent" src="/img/2-complexity/EgyptianMotif_img/makeVariables.png"  height="175" alt="Make variables: length, width, backup, size, number of branches" title="Make variables: length, width, backup, size, number of branches"/&gt;&lt;img src="/img/2-complexity/EgyptianMotif_img/initializeVariables.png" height="175" alt="Initialize variables" title="Initialize variables"/&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                You can turn these variables to alterable sliders by right-clicking on the variable icon that is shown on stage and choosing the “slider” option. And then you can set the minimum and maximum values of a slider as shown.&lt;br /&gt;
+                &lt;img src="/img/2-complexity/EgyptianMotif_img/turnToSlider.png" height="150" alt="Turn variables to sliders" title="Turn variables to sliders"/&gt;&lt;img src="/img/2-complexity/EgyptianMotif_img/sliderMax.png"  height="150" alt="Slider maximum" title="Slider maximum"/&gt;&lt;img src="/img/2-complexity/EgyptianMotif_img/setSliderMax.png"  height="150" alt="Setting slider maximum" title="Setting slider maximum"/&gt;&lt;br /&gt;
+                The following should be reasonable values for the minimum and maximum of each variable:&lt;br /&gt;
+                &lt;div class="sidenote"&gt;You can change these minimum and maximum values as you generate and explore new designs.&lt;/div&gt;
+                &lt;table class="indent bordered" summary="table of minimum and maximum values for each variable"&gt;
+                    &lt;tr&gt;&lt;th style="text-align:center" scope="col"&gt;Variable&lt;/th&gt;&lt;th scope="col"&gt;Minimum&lt;/th&gt;&lt;th scope="col"&gt;Maximum&lt;/th&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td&gt;&lt;var&gt;number of branches&lt;/var&gt; &lt;/td&gt; &lt;td&gt;3&lt;/td&gt; &lt;td&gt;36&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td&gt;&lt;var&gt;size &lt;/var&gt; &lt;/td&gt; &lt;td&gt;0&lt;/td&gt; &lt;td&gt;100&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td&gt;&lt;var&gt;backup &lt;/var&gt; &lt;/td&gt; &lt;td&gt;0&lt;/td&gt; &lt;td&gt;100&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td&gt;&lt;var&gt;width &lt;/var&gt; &lt;/td&gt; &lt;td&gt;0&lt;/td&gt; &lt;td&gt;150&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr&gt;&lt;td&gt;&lt;var&gt;length &lt;/var&gt; &lt;/td&gt; &lt;td&gt;0&lt;/td&gt; &lt;td&gt;150&lt;/td&gt;&lt;/tr&gt;
+                &lt;/table&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                Click on the animation below to see an example of how you can use the slider functionality in Snap&lt;em&gt;!&lt;/em&gt; to generate and explore a vast number of variations of your designs. &lt;br /&gt;
+                &lt;img class="indent" data-gifffer="/img/2-complexity/EgyptianMotif_img/sliderAnimationDemo.gif"  height="400" alt="Slider Animation Demo" title="Slider Animation Demo"/&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                Your code needs to make sure that the computer is always on the watch in case any of the variables are changed by the user via the sliders. You can do so with a &lt;code&gt;forever&lt;/code&gt; block.&lt;br /&gt;
+                &lt;img class="indent" src="/img/2-complexity/EgyptianMotif_img/foreverLoop2.png"  height="175" alt="forever{warp{clear; pinwheel with rectangles, branches:(number of branches) size:(size) backup:(backup) width:(width) length:(length) }}" title="forever{warp{clear; pinwheel with rectangles, branches:(number of branches) size:(size) backup:(backup) width:(width) length:(length) }}"/&gt;
+                &lt;div class="endnote"&gt;The &lt;code&gt;warp&lt;/code&gt; block makes sure that the &lt;code&gt;pinwheel with rectangles&lt;/code&gt; is drawn all at once rather than step by step.&lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li&gt;Once the code is written check to make sure everything works as intended. You may need to position your drawing spite appropriately to make best use of the stage you have. Now move each of your sliders to generate and explore a vast variety of designs inspired by Islamic art.&lt;/li&gt;
+            &lt;div class="endnote"&gt;
+                Use these buttons to maximize your stage to give enough room for your sliders.&lt;br /&gt;
+                &lt;img class="indent" src="/img/2-complexity/EgyptianMotif_img/stagemaximize.png" height="50" alt="Stage maximizing buttons" title="Stage maximizing buttons"/&gt;
+            &lt;/div&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="ifTime"&gt;
+        &lt;ol start="9"&gt;
+            &lt;li&gt;Add color to your rectangles by inserting &lt;img src="/img/2-complexity/EgyptianMotif_img/setColor.png"  height="40" alt="set pen color to (red)" title="set pen color to (red)"/&gt; into the start of the &lt;code&gt;warp&lt;/code&gt; block in the forever loop and inserting&lt;img src="/img/2-complexity/EgyptianMotif_img/changeColor.png"  height="40" alt="change pen color by (10)" title="change pen color by (10)"/&gt; into the &lt;code&gt;pinwheel with rectangles&lt;/code&gt; code.&lt;/li&gt;
+            &lt;li&gt;
+                Take screenshots of your creations and share with the class. Put them on a class web page if you have one. Below are some examples of the types of variations you can generate.&lt;br /&gt;
+                &lt;div class="sidenote"&gt;You may want to &lt;img src="/img/2-complexity/EgyptianMotif_img/hide.png" height="30" alt="hide" title="hide"/&gt; the drawing Sprite (Arrow) before taking the screenshots of your designs.&lt;/div&gt;
+                &lt;img src="/img/2-complexity/EgyptianMotif_img/multiColorDesignA.png" height="175" alt="Multi-Color Design A" title="Multi-Color Design A"/&gt;
+                &lt;img src="/img/2-complexity/EgyptianMotif_img/multiColorDesignB.png" height="175" alt="Multi-Color Design B" title="Multi-Color Design B"/&gt;&lt;img src="/img/2-complexity/EgyptianMotif_img/multiColorDesignC.png" height="175" alt="Multi-Color Design C" title="Multi-Color Design C"/&gt;&lt;br /&gt;
+                &lt;img src="/img/2-complexity/EgyptianMotif_img/multiColorDesignD.png" height="175" alt="Multi-Color Design D" title="Multi-Color Design D"/&gt;&lt;img src="/img/2-complexity/EgyptianMotif_img/multiColorDesignE.png" height="175" alt="Multi-Color Design E" title="Multi-Color Design E"/&gt;&lt;img src="/img/2-complexity/EgyptianMotif_img/multiColorDesignF.png" height="175" alt="Multi-Color Design F" title="Multi-Color Design F"/&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="takeItFurther"&gt;
+        &lt;ol type="A"&gt;
+        &lt;li&gt;Repeat all the steps of this project but, instead of using rectangles, use other polygons.&lt;br /&gt;
+        &lt;img src="/img/2-complexity/EgyptianMotif_img/TrianglePinwheel.png"  height="200" alt="Triangle Pinwheel" title="Triangle Pinwheel"/&gt;
+        &lt;img src="/img/2-complexity/EgyptianMotif_img/HexagonPinwheel.png"  height="200" alt="Hexagonal Pinwheel" title="Hexagonal Pinwheel"/&gt;&lt;img src="/img/2-complexity/EgyptianMotif_img/DodecaPinwheel.png"  height="200" alt="Dodecagonal Pinwheel" title="Dodecagonal Pinwheel"/&gt;&lt;/li&gt;
+            &lt;li&gt;
+                Read more about Islamic art and find other patterns that would lend themselves to explorations by programming.&lt;br /&gt;
+                &lt;img  src="/img/2-complexity/EgyptianMotif_img/islamicpattern1.jpg"  height="300" alt="Islamic pattern 1" title="Islamic pattern 1"/&gt; &lt;img src="/img/2-complexity/EgyptianMotif_img/islamicpattern2.png"  height="300" alt="Islamic pattern 2" title="Islamic pattern 2"/&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+
+&lt;/body&gt;</code></pre>
+
+
+
+
+</h2></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../unit-2/optional-projects/1-magic8ball.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">order:</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../unit-2/optional-projects/3-mastermind.html" class="pagination-link">
+        <span class="nav-page-text">order:</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+      <div class="nav-footer-center">The curriculum and text on this website is adapted from <a href="https://bjc.edc.org/bjc-r/">The Beauty and Joy of Computing</a> by University of California, Berkeley and Education Development Center, Inc.&nbsp;which is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</div>
+  </div>
+</footer>
+
+
+
+</body></html>

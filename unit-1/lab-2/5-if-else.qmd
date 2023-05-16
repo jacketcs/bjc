@@ -1,0 +1,469 @@
+---
+title: "Adding Variety to <code>Gossip</code>"
+subtitle: "Unit 1, Lab 2, Page 5"
+order: 5
+---
+
+::: learn
+<p><strong>On this page, </strong> you will improve your program so that sometimes the sentences are a bit longer and more complex.</p>
+:::
+
+The block <img src="/img/1-introduction/more-complicated-who.png" title="more complicated who" alt="more complicated who"/> has been built for you. It randomly chooses 1, 2, 3, or 4, and if that number is 3, then it reports something more complicated than <code>who</code>. Otherwise, it reports <code>who</code>, just as before.
+
+::: {#first .forYouToDo}
+<ol>
+
+<li>If it isn't open already, open your U1L2-Gossip project.</li>
+
+<li>Find <img src="/img/1-introduction/more-complicated-who.png" title="more complicated who" alt="more complicated who"/> in the red Lists palette, drag it into the scripting area, and click on it enough times to see how it's different from <code>who</code>.</li>
+
+<li>
+
+<!--<div class="index-term" id="pick random</code>"></div>-->
+
+Here is the code for <code>more complicated who</code>. There are two new things in it: <code>pick random</code> and <code>if else</code>.<br /> <img src="/img/1-introduction/more-complicated-who-script.png" title="more complicated who {
+if (pick random (1) to (4)) = (3) {
+report (join (who) (&apos;, who&apos;) (does what) ( ) (who) (,))                                                                                          
+} else {
+report (who)
+}
+}" alt="more complicated who {
+if (pick random (1) to (4)) = (3) {
+report (join (who) (&apos; who&apos;) (does what) ( ) (who))                                                                                          
+} else {
+report (who)
+}
+}" class="indent"/>
+
+<ol>
+
+<li>Find <img src="/img/blocks/pick-random-1-to-10-full-size.png" title="pick random (1) to (10)" alt="pick random (1) to (10)" class="inline"/> in the green Operators palette, and click it several times. What does the <code>random</code> block do?</li>
+
+<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> In the <code>more complicated who</code> block, what happens if the <code>pick random</code> block picks 3? What if it picks 4?</li>
+
+</ol>
+
+</li>
+
+<li>
+
+<!-- Question 1 -->
+
+::: {.assessment-data type="multiplechoice" identifier="About how often will more complicated who pick the more complicated choice?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="false"}
+::: prompt
+::: comment
+AAP-3.E
+:::
+
+<img src="/img/1-introduction/more-complicated-who-script.png" title="more complicated who {
+if (pick random (1) to (4)) = (3) {
+report (join (who) (&apos;, who&apos;) (does what) ( ) (who) (,))                                                                                          
+} else {
+report (who)
+}
+}" alt="more complicated who {
+if (pick random (1) to (4)) = (3) {
+report (join (who) (&apos;, who&apos;) (does what) ( ) (who) (,))                                                                                          
+} else {
+report (who)
+}
+}" class="imageRight"/> About how often will <code>more complicated who</code> pick the more complicated choice?
+:::
+
+::: {.choice identifier="c1"}
+::: text
+Half the time
+:::
+
+::: feedback
+If a number is chosen randomly from 1, 2, 3, and 4, about how often will that number be 3?
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+A third of the time
+:::
+
+::: feedback
+If a number is chosen randomly from 1, 2, 3, and 4, about how often will that number be 3?
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+A quarter of the time
+:::
+
+::: feedback
+Correct!
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+Three quarters of the time
+:::
+
+::: feedback
+If a number is chosen randomly from 1, 2, 3, and 4, about how often will that number be 3?
+:::
+:::
+
+::: {.responseDeclaration identifier="ri1"}
+::: {.correctResponse identifier="c3"}
+:::
+:::
+:::
+
+<!-- Question 2 -->
+
+::: {.assessment-data type="multiplechoice" identifier="About how often will more complicated who pick the more complicated choice?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="false"}
+::: prompt
+::: comment
+AAP-3.E
+:::
+
+<img src="/img/1-introduction/more-complicated-who-script.png" title="more complicated who {
+if (pick random (1) to (4)) = (3) {
+report (join (who) (&apos;, who&apos;) (does what) ( ) (who) (,))                                                                                          
+} else {
+report (who)
+}
+}" alt="more complicated who {
+if (pick random (1) to (4)) = (3) {
+report (join (who) (&apos;, who&apos;) (does what) ( ) (who) (,))                                                                                          
+} else {
+report (who)
+}
+}" class="imageRight"/> Here is the script inside <code>more complicated who</code>. What change to this script will make the more complicated phrase appear more often?
+:::
+
+::: {.choice identifier="c1"}
+::: text
+Change the 4 to 5.
+:::
+
+::: feedback
+Then three will be the randomly chosen number one out of five times instead of one out of four, and so we'll have a complicated subject less often.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+Change the 4 to 3.
+:::
+
+::: feedback
+Correct! Three will then be the chosen number one out of three times, and so we'll have a complicated subject more often.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+Change the 3 to 1.
+:::
+
+::: feedback
+1 is just as likely a random choice as 3, one out of four times, and we'll have a complicated subject just as often as before.
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+Change the 3 to 5.
+:::
+
+::: feedback
+The chosen number can never be 5, so we'll never get a complicated subject.
+:::
+:::
+
+::: {.responseDeclaration identifier="ri2"}
+::: {.correctResponse identifier="c2"}
+:::
+:::
+:::
+
+</li>
+
+</ol>
+:::
+
+::: vocabFullWidth
+: <strong>Expressions</strong> and <strong>Values</strong>
+
+::: comment
+AAP-2.B.3, AAP-2.B.4
+:::
+
+<ul>
+
+<li>An <strong>expression</strong> is a either a constant value (such as "4" or "winter") or a call to a reporter block including its inputs (such as <img src="/img/2-complexity/number.png" title="number" alt="number" class="inline"/>, <img src="/img/1-introduction/5+(4x3).png" title="5 + (4 * 3)" alt="5 + (4 * 3)" class="inline nopadtb"/>, or <img src="/img/2-complexity/join-who-doeswhat-who.png" title="join (who) ( ) (does what) ( ) (who)" alt="join (who) ( ) (does what) ( ) (who)" class="inline"/>).</li>
+
+<li>Expressions are evaluated to produce a <em>single</em> <strong>value</strong> (a value can be a number, a string, a sprite, a costume, a script, a list---anything). For example, <img src="/img/1-introduction/5+(4x3).png" title="5 + (4 * 3)" alt="5 + (4 * 3)" class="inline nopadtb"/> will be evaluated to 17.</li>
+
+</ul>
+:::
+
+::: examFullWidth
+<!--<div class="index-term" id="pick random</code>"></div>-->
+
+::: comment
+AAP-3.E.1, AAP-3.E.2
+:::
+
+::: pseudop
+The expression <img src="/img/blocks/pick-random-1-to-10-full-size.png" title="pick random (1) to (10)" alt="pick random (1) to (10)" class="inline"/> would be written as
+
+```{=html}
+<pre class="inline">RANDOM(1, 10)</pre>
+```
+or <img src="/img/1-introduction/random-blocktran.png" title="RANDOM(1, 10)" alt="RANDOM(1, 10)" class="inline"/>. Every time you run this code, you will get a different random number between 1 and 10.
+:::
+:::
+
+::: forYouToDo
+<ol start="5">
+
+<li>
+
+<!-- Question 3 -->
+
+::: {.assessment-data type="multiplechoice" identifier="What expression would return a random even number between 1 and 10?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri3" shuffle="true"}
+::: prompt
+::: comment
+AAP-3.E
+:::
+
+::: sidenoteBig
+<a href="#hint-parity" data-bs-toggle="collapse" title="Click for a review about odd and even numbers.">Click for a review of odd and even numbers.</a>
+
+::: {#hint-parity .collapse}
+<p>An <strong>even</strong> number is an integer that is divisible by 2 (such as 2, 14, 0, -4, -6, -28, and -176).</p>
+
+<p>In contrast, <strong>odd</strong> numbers are integers <em>not</em> divisible by 2 (such as 1, 3, 9, 17, -5, -33, and -221).</p>
+:::
+:::
+
+Which expression will return a random <em>even</em> number between 1 and 10?
+:::
+
+::: {.choice identifier="c1"}
+::: text
+```{=html}
+<pre class="inline">RANDOM(2, 10)</pre>
+```
+:::
+
+::: feedback
+```{=html}
+<pre class="inline">RANDOM(2, 10)</pre>
+```
+will return 2, 3, 4, 5, 6, 7, 8, 9, or 10.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+```{=html}
+<pre class="inline">2 * RANDOM(1, 5)</pre>
+```
+:::
+
+::: feedback
+Correct!
+
+```{=html}
+<pre class="inline">RANDOM(1, 5)</pre>
+```
+will return 1, 2, 3, 4, or 5, and so
+
+```{=html}
+<pre class="inline">2 * RANDOM(1, 5)</pre>
+```
+will return 2, 4, 6, 8, or 10.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+```{=html}
+<pre class="inline">RANDOM(1, 10) / 2</pre>
+```
+:::
+
+::: feedback
+```{=html}
+<pre class="inline">RANDOM(1, 10)</pre>
+```
+will return 1, 2, 3, 4, 5, 6, 7, 8, 9, or 10, and so
+
+```{=html}
+<pre class="inline">RANDOM(1, 10) / 2</pre>
+```
+will return ½, 1, 1 ½, 2, 2 ½, 3, 3 ½, 4, 4 ½, 5.
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+```{=html}
+<pre class="inline">RANDOM(1, 5)</pre>
+```
+:::
+
+::: feedback
+```{=html}
+<pre class="inline">RANDOM(1, 5)</pre>
+```
+will return 1, 2, 3, 4, or 5.
+:::
+:::
+
+::: {.responseDeclaration identifier="ri3"}
+::: {.correctResponse identifier="c2"}
+:::
+:::
+:::
+
+<!-- Question 4 -->
+
+::: {.assessment-data type="multiplechoice" identifier="Which expression will simulate the rolling of two dice?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri4" shuffle="true"}
+::: prompt
+::: comment
+AAP-3.E
+:::
+
+Which expression will simulate the rolling of two dice?
+:::
+
+::: {.choice identifier="c1"}
+::: text
+```{=html}
+<pre class="inline">RANDOM(1, 6) + RANDOM(1, 6)</pre>
+```
+:::
+
+::: feedback
+Correct!
+
+```{=html}
+<pre class="inline">RANDOM(1, 6)</pre>
+```
+will return 1, 2, 3, 4, 5, or 6 with equal probability, simulating one die, and so
+
+```{=html}
+<pre class="inline">RANDOM(1, 6) + RANDOM(1, 6)</pre>
+```
+will return 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, or 12 with the same probability as two dice.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+```{=html}
+<pre class="inline">2 * RANDOM(1, 6)</pre>
+```
+:::
+
+::: feedback
+You have the right idea, using
+
+```{=html}
+<pre class="inline">RANDOM(1, 6)</pre>
+```
+for the roll of a single die. But this expression doesn't roll two dice; it rolls one die and doubles the result. So
+
+```{=html}
+<pre class="inline">2 * RANDOM(1, 6)</pre>
+```
+will only return 2, 4, 6, 8, 10, or 12.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+```{=html}
+<pre class="inline">RANDOM(2, 12)</pre>
+```
+:::
+
+::: feedback
+```{=html}
+<pre class="inline">RANDOM(2, 12)</pre>
+```
+will return 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, or 12 equally often. Do you score 2 rolling two dice as often as you score 6?
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+```{=html}
+<pre class="inline">RANDOM(1, 12)</pre>
+```
+:::
+
+::: feedback
+Can you score a total of 1 by rolling two dice?
+:::
+:::
+
+::: {.responseDeclaration identifier="ri4"}
+::: {.correctResponse identifier="c1"}
+:::
+:::
+:::
+
+</li>
+
+<li>Create a new block <img src="/img/1-introduction/complicated-gossip.png" title="complicated gossip" alt="complicated gossip" class="inline nopadtb"/> that is similar to <code>gossip</code> but that uses <code>more complicated who</code> instead of <code>who</code>. (You can choose which <code>who</code> to replace, or you could replace both.)</li>
+
+<li>Change the script for Sprite to use <code>complicated gossip</code> instead of <code>gossip</code>. Run your code, and fix any problems.</li>
+
+<img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline"/>
+
+</ol>
+:::
+
+<h2>Making a Block Call Itself</h2>
+
+::: forYouToDo
+<ol start="8">
+
+<li>Edit <code>more complicated who</code>. Replace <em>one</em> of the <code>who</code> blocks with a fresh copy of <code>more complicated who</code> that you drag in from the palette. Click <code>more complicated who</code> enough times to see how it has changed.</li>
+
+::: comment
+CRD-2.B
+:::
+
+<li><img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/> Describe the change in behavior, and explain what you think is causing it.</li>
+
+</ol>
+:::
+
+::: ifTime
+<ol start="10">
+
+<li>Make Sprite(2) occasionally give a more complicated reply.</li>
+
+</ol>
+:::
+
+::: endnote
+Purple "Take It Further" boxes have more challenging activities that are <em>not required</em>. If you finish everything else on the page early, try these instead of jumping ahead to the next page.
+:::
+
+::: takeItFurther
+<ol type="A">
+
+<li>Make <code>more complicated who</code> give the more complicated response three out of four times instead of one out of four times.</li>
+
+<li>What happens when you try it out? Was it what you expected? Explain why it happened.</li>
+
+</ol>
+:::
+
+</body>
+
+</html>

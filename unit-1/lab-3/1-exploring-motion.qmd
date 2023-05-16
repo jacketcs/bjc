@@ -1,0 +1,245 @@
+---
+title: "Exploring Motion"
+subtitle: "Unit 1, Lab 3, Page 1"
+order: 1
+---
+
+::: learn
+<p>These are works by artists Josef Albers, Maya Hayuk, Vassily Kandinsky, Atta Kwami, Kazimir Malevich, Alma Thomas, and Theo van Doesburg. The styles are different, but all of them are based on polygons or circles.</p>
+
+<p><img src="/img/1-introduction/Josef_Albers&apos;s_painting_&apos;Homage_to_the_Square&apos;,_1965.jpg" title="art by Josef Albers" alt="art by Josef Albers" height="130"/> <img src="/img/1-introduction/GraphicArt_img/MayaHayuk1.jpg" title="art by Maya Hayuk" alt="art by Maya Hayuk" height="150"/> <img src="/img/1-introduction/kandinsky-several-circles.jpg" title="art by Kandinsky" alt="art by Kandinsky" height="180"/> <img src="/img/1-introduction/GraphicArt_img/AttaKwami_bobbo.jpg" title="art by Atta Kwami" alt="art by Atta Kwami" height="150"/> <img src="/img/1-introduction/1024px-Suprematist_Composition_-_Kazimir_Malevich.jpg" title="art by Malevich" alt="art by Malevich" height="180"/> <img src="/img/1-introduction/GraphicArt_img/alma-big.jpg" title="Alma Thomas painting" alt="Alma Thomas painting" height="150"/> <img src="/img/1-introduction/Theo_van_Doesburg_Composition_VII_(the_three_graces).jpg" title="art by van Doesburg" alt="art by van Doesburg" height="130"/></p>
+
+<p>
+
+<a href="#hint-credits" data-bs-toggle="collapse" title="Click for art credits.">Click for art credits.</a>
+
+::: {#hint-credits .collapse}
+<ul>
+
+<li>Josef Albers, "Homage to the Square," 1965. More: <a href="https://albersfoundation.org/art/josef-albers/paintings/homages-to-the-square/index/" target="_blank" title="Albers Foundation">Albers Foundation</a>, <a href="https://smarthistory.org/albers-homage-to-the-square/" target="_blank" title="smarthistory.org">smarthistory.org</a></li>
+
+<li>Maya Hayuk, "Chemtrails Miami," 2013. More: <a href="http://mayahayuk.com/" target="_blank" title="mayahayuk.com">mayahayuk.com</a>, <a href="https://en.wikipedia.org/wiki/Maya_Hayuk" target="_blank" title="Wikipedia">Wikipedia</a></li>
+
+<li>Vassily Kandinsky, "Several Circles," 1926. More: <a href="https://www.wassilykandinsky.net/" title="wassilykandinsky.net" target="_blank">wassilykandinsky.net</a></li>
+
+<li>Atta Kwami, "Bobbo," 2012. More: <a href="http://attakwami.com/" title="attakwami.com" target="_blank">attakwami.com</a></li>
+
+<li>Kazimir Malevich, "Suprematist Composition," 1915. More: <a href="https://www.kazimir-malevich.org/" title="kazimir-malevich.org" target="_blank">kazimir-malevich.org</a>, <a href="https://en.wikipedia.org/wiki/Kazimir_Malevich" title="Wikipedia" target="_blank">Wikipedia</a></li>
+
+<li>Alma Thomas, "Untitled (Music Series)," 1978. Copyright Smithsonian American Art Museum. More: <a href="https://www.wikiart.org/en/alma-woodsey-thomas" title="wikiart.org" target="_blank">wikiart.org</a>, <a href="https://www.georgiaencyclopedia.org/articles/arts-culture/alma-thomas-1891-1978" title="Wikipedia" target="_blank">Wikipedia</a></li>
+
+<li>Theo van Doesburg, "Composition VII (the three graces)," 1917. More: <a href="https://www.wikiart.org/en/theo-van-doesburg" title="wikiart.org" target="_blank">wikiart.org</a>, <a href="https://en.wikipedia.org/wiki/Theo_van_Doesburg" title="Wikipedia" target="_blank">Wikipedia</a></li>
+
+</ul>
+:::
+
+</p>
+
+<p><strong>In this lab,</strong> you'll draw polygons so you can create your own art: <img src="/img/1-introduction/polygon-row.png" title="regular polygons" alt="regular polygons" class="noshadow" width="20%"/></p>
+
+<p><strong>On this page,</strong> you will explore the basics of drawing a shape in Snap<em>!</em> by using the <code>repeat</code> block to loop through the same code multiple times.</p>
+:::
+
+```{=html}
+<!-- We've gone back and forth on this, and we're out of time. This version still reads like an informal soap box and not like a curriculum. We can discuss it more after the standards go in. --MF, 9/2/19
+-->
+```
+::: {.vocabFullWidth .AP-only}
+<strong>: Algorithm</strong> and <strong>Pseudocode</strong>
+
+::: comment
+AAP-2.A.1, AAP-2.A.2, AAP-2.A.3
+:::
+
+<p>An <strong>algorithm</strong> is a sequence of steps that are usually performed by a computer. The algorithm doesn't have to be written in any particular programming language or even in a programming language at all; you can write your algorithm in English or any other human language. Some people call an algorithm written in human language <strong>pseudocode</strong>. Once you know the steps that the computer will take, you can code your algorithm in the programming language of your choice.</p>
+
+::: endnote
+What's the purpose of "pseudocode"? Why write an algorithm vaguely in English when you could write it precisely in Snap<em>!</em>? If you were programming in a punctuation-heavy language, designing your program in pseudocode would help you focus on the important ideas instead of on details like quotation marks and semicolons. But pseudocode isn't as necessary with a language like Snap<em>!</em>, and pseudocode can make it easy for you to fall into wishful thinking about what the computer is capable of (such as writing "Pick tomorrow's winning lottery numbers" or "Here's the melody; write the harmony").
+:::
+:::
+
+::: {#first .forYouToDo}
+<ol>
+
+::: comment
+AAP-2.A, AAP-3.A part b
+:::
+
+```{=html}
+<!-- <div class="sidenote">
+<img class="imageCenter" src="/img/1-introduction/motion-palette-categories.jpg" alt="Motion palette categories: Motion, Looks, Sound, Pen, Control, Sensing, Operators, and Variables" title="Motion palette categories: Motion, Looks, Sound, Pen, Control, Sensing, Operators, and Variables" /><br />
+The blocks' colors match their palettes: blue for Motion, green for Pen, etc.
+</div> -->
+```
+<li><img src="/img/icons/work-with-a-partner.png" title="Work with a Partner" alt="Work with a Partner" class="inline"/> <img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/> Describe what this algorithm will make the sprite do:<br /> <img src="/img/1-introduction/repeat-4(move-100-turn-right-90).png" title="repeat (4) (move (100), turn clockwise (90))" alt="repeat (4) (move (100), turn clockwise (90))" class="indent"/></li>
+
+<li>
+
+Log in to <a href="http://snap.berkeley.edu/run" title="Snap! Build Your Own Blocks" target="_blank">Snap<em>!</em></a> and build that script to test your hypothesis.<br />
+
+<ol>
+
+<li>Click it, and watch what the sprite does.</li>
+
+<li>Click <img src="/img/blocks/pen-down-full-size.png" title="pen down" alt="pen down"/>, and then click your script to run it again.</li>
+
+</ol>
+
+</li>
+
+::: endnote
+You can click <code>pen down</code> (or any block) in the palette on the left or in the scripting area to run it. If you click a block inside a script, the whole script runs.
+:::
+
+<li><img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Analyze <em>why</em> that script does what it does.</li>
+
+<li><img src="/img/icons/talk-with-another-pair-mini.png" title="Talk with Another Pair" alt="Talk with Another Pair" class="inline"/>Compare your work with another pair. If your script behaves differently from theirs, check both.</li>
+
+::: takeNote
+<h3><strong>Using Visible Stepping</strong></h3>
+
+<p>Snap<em>!</em> has a tool called <strong>Visible Stepping</strong> that allows you to control how quickly Snap<em>!</em> steps through the blocks of your code.</p>
+
+<ul>
+
+<li>
+
+Click the Visible Stepping button (<img src="/img/2-complexity/visible-stepping.png" title="Visible Stepping button with two footprints" alt="Visible Stepping button with two footprints" class="inline nopadtb"/>), and adjust the slider to control the stepping speed. When you run your code, the sprite will slowly execute each step of the code and highlight it in [cyan]{style="color: black; background-color:cyan"}.
+
+::: endnote
+<a href="#hint-slider" data-bs-toggle="collapse" title="Click for a video of adjusting the Visible Stepping slider.">Click for a video of adjusting the Visible Stepping slider.</a>
+
+::: {#hint-slider .collapse}
+<img src="/img/1-introduction/visible-stepping.gif" title="Animation that shows how to use Visible stepping in Snap!" alt="Animation that shows how to use Visible stepping in Snap!" class="inline"/>
+:::
+:::
+
+</li>
+
+<li>
+
+You can slow the stepping to do only one step at a time and wait until you tell Snap<em>!</em> to go on to the next one. Move the slider all the way to the left, and then you can press the Run/Pause button (<img src="/img/sys/play-pause-button.png" title="pause button with play/pause icon" alt="pause button with play/pause icon" class="inline"/>) to see what happens at each step of your code.
+
+::: endnote
+<a href="#hint-slider-left" data-bs-toggle="collapse" title="Click for a video of single-stepping through code.">Click for a video of single-stepping through code.</a>
+
+::: {#hint-slider-left .collapse}
+<img src="/img/1-introduction/single-stepping.gif" title="Animation that shows how to use single-step Visible stepping in Snap!" alt="Animation that shows how to use single-step Visible stepping in Snap!" class="inline"/>
+:::
+:::
+
+</li>
+
+</ul>
+
+<p>Visible stepping can be useful as you read someone else's code because you can watch it at human speed instead of computer speed. It's also useful in debugging (fixing problems with) your own code when it's doing something wrong.</p>
+:::
+
+<li>
+
+<img src="/img/icons/pair-programming-swap-mini.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="inline"/> Switch who is sitting at the keyboard. Then experiment:<br />
+
+<ol>
+
+::: sidenote
+You can put your sprite back in the center of the screen with <img src="/img/blocks/go-to-x-y-0-0.png" title="go to x: (0) y: (0)" alt="go to x: (0) y: (0)" class="inline"/> and you can reset the direction it's pointing with <img src="/img/blocks/point-in-direction-90.png" title="point in direction (90)" alt="point in direction (90)" class="inline"/>.
+:::
+
+<li>Change 100 to 50 in the <code>move</code> block <em>of your script</em> by clicking on the 100 and typing 50. Then click the script again to run it with the new input value.</li>
+
+<li>Click the <img src="/img/blocks/clear-full-size.png" title="clear" alt="clear" class="inline"/> block in the green Pen palette.</li>
+
+<li>Change the number in the <code>turn</code> block and run the script again... and again... and again.</li>
+
+<li><code>Clear</code> the stage again, and change the number in the <img src="/img/1-introduction/repeat-4.png" title="repeat (4){}" alt="repeat (4){}" class="inline"/> block.</li>
+
+<li>Experiment with the input numbers in the <code>turn</code> and <code>repeat</code> blocks. Try to draw a triangle with equal sides.</li>
+
+<li>Use [<img src="/img/blocks/set-pen-size-to-blank.png" title="set pen size to ()" alt="set pen size to ()" class="inline"/>]{.center} to set the pen size to something like 4 or 10 or 50. Then click your <code>repeat</code>, <code>move</code>, <code>turn</code> script again.</li>
+
+::: endnote
+To change the pen size you must <em>click</em> the <code>set pen size</code> block to run it after you've entered the number you want.
+:::
+
+<li>Use <img src="/img/blocks/set-pen-color-full-size.png" title="set pen color to &apos;magenta colored square&apos;" alt="set pen color to &apos;magenta colored square&apos;" class="inline"/> to experiment with the pen color.</li>
+
+</ol>
+
+</li>
+
+</ol>
+:::
+
+::: ifTime
+<ol start="6">
+
+<li>
+
+Experiment: What leaves a trace?
+
+<ol>
+
+<li>Move the sprite by dragging it to a new location. Does it leave a trace as you move it?</li>
+
+<li>Move the sprite by clicking on <img src="/img/1-introduction/move-50.png" title="move (50) steps" alt="move (50) steps" class="inline" height="36"/>. Does it leave a trace as it moves?</li>
+
+<li>Does clicking <img src="/img/blocks/go-to-x-y-0-0.png" title="go to x:(0) y:(0)" alt="go to x:(0) y:(0)" class="inline" height="36"/> leave a trace?</li>
+
+</ol>
+
+</li>
+
+<img src="/img/1-introduction/sphere.png" alt="sphere" class="imageRight" height="100"/>
+
+<li>Make sure your other work has been saved, then <a href="/prog/1-introduction/U1L3-Sphere.xml" class="run"><img src="/img/icons/load-save.png" title=" Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a><br /> Experiment with the scripts and look inside them to figure out how they work. Could you change the sizes or colors to make it more interesting?</li>
+
+</ol>
+:::
+
+::: takeItTeaser
+<img src="/img/1-introduction/Malevich/malevich01.png" title="Snap! art inspired by Malevich art" alt="Snap! art inspired by Malevich art" class="padright"/> <img src="/img/1-introduction/Malevich/malevich02.png" title="Snap! art inspired by Malevich art" alt="Snap! art inspired by Malevich art" class="padright"/> <img src="/img/1-introduction/Malevich/malevich03.png" title="Snap! art inspired by Malevich art" alt="Snap! art inspired by Malevich art" class="padright"/> <img src="/img/1-introduction/Malevich/malevich04.png" title="Snap! art inspired by Malevich art" alt="Snap! art inspired by Malevich art" class="padright"/>
+:::
+
+::: takeItTeased
+<ol type="A">
+
+<li><strong>Solid rectangles.</strong> Make and run this script:<br /> <img src="/img/1-introduction/flat.png" title="point in direction (45); set (flat line ends) to (True); set pen size to (20); pen down; move (150) steps" alt="point in direction (45); set (flat line ends) to (True); set pen size to (20); pen down; move (150) steps" class="indent"/><br /> The light blue <code>set</code> block is in the Sensing palette, where it looks like <img src="/img/1-introduction/vid-cap.png" title="set (video capture) to ( )" alt="set (video capture) to ( )"/>. Just click once in the hexagonal slot to get True (the green check box). If you're not sure what difference the "flat line ends" makes, try clicking the hexagonal slot again to run the script with that option False. And of course you can change all the numbers, or have your program pick random numbers.</li>
+
+<li><strong>Color families.</strong> Click the file menu icon and select "Libraries..." Then, find the "Colors and Crayons" library and click "Import."<br /> <img src="/img/1-introduction/libs.png" title="Snap! file menu, highlighting &quot;Libraries...&quot;" alt="Snap! file menu, highlighting &quot;Libraries...&quot;" class="indent"/> <img src="/img/1-introduction/color-lib.png" title="Import library dialog box with &quot;Colors and Crayons&quot; library highlighted" alt="Import library dialog box with &quot;Colors and Crayons&quot; library highlighted" class="indent" height="350px"/><br /> In the Pen menu you'll find the <code>set pen to crayon</code> block. Computers can display billions of colors, but unless you have to match the paint on your wall very precisely, finding your way through all those colors may be more trouble than it's worth. The crayon library, just like a box of crayons, gives you a small set of vibrant colors, arranged in families. So if you want a lot of browns in your picture, you could pick a random number between 30 and 39.<br /> <img src="/img/1-introduction/brown.png" title="Set pen to crayon block with menu of color families, selecting &quot;browns&quot; and showing submenu of ten brownish named colors, highlighting &quot;34 chestnut #954535&quot;" alt="Set pen to crayon block with menu of color families, selecting &quot;browns&quot; and showing submenu of ten brownish named colors, highlighting &quot;34 chestnut #954535&quot;" class="indent"/></li>
+
+<img src="/img/1-introduction/1024px-Suprematist_Composition_-_Kazimir_Malevich.jpg" title="painting-by-Malevich" alt="painting-by-Malevich" class="imageRight" height="180"/>
+
+<li>
+
+At the right is a painting by Kazimir Malevich. Its elements are rectangles, either horizontal or at a 45-degree angle, plus or minus a few degrees. You can position rectangles randomly. Your picture doesn't have to look like his---you're the artist!
+
+::: dialogue
+<div>
+
+Alphie: If we just put rectangles in randomly, the tiny square dots will often be covered by larger ones. Maybe we should do big ones first and smaller ones later.
+
+</div>
+
+<div>
+
+Gamal: I know ours don't have to look like the original, but I really like that huge black horizontal rectangle. It gives the painting a structure, with a top part and a bottom part, even though it doesn't go all the way across. I want to make sure to have one like that.
+
+</div>
+
+<div>
+
+Betsy: I bet we can use the idea of drawing really thick lines <em>without</em> using <code>flat line ends</code> and get interesting results:
+
+</div>
+
+<img src="/img/1-introduction/curl.png" title="curved horn shape made of overlapping circles in different colors" alt="curved horn shape made of overlapping circles in different colors" class="indent"/>
+:::
+
+</li>
+
+<img src="/img/1-introduction/Theo_van_Doesburg_Composition_VII_(the_three_graces).jpg" title="art by van Doesburg" alt="art by van Doesburg" class="imageRight" height="130"/>
+
+<li>At the right is a painting by Theo van Doesburg. It has some things in common with the Malevich picture, mainly the use of rectangles as the design elements. But there are no 45-degree rectangles; instead, the constraint is that rectangles may not overlap, so if you want to place a random rectangle in the picture, each end may have to be shortened to avoid collisions. You can use <img src="/img/1-introduction/blackp.png" title="((brightness) at (myself)) = 0" alt="((brightness) at (myself)) = 0"/> to find out if the point behind the sprite's rotation center is black.</li>
+
+</ol>
+:::

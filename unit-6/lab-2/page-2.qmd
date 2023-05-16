@@ -19,7 +19,7 @@ order: 1
 <p> Answer this on the Google Form </p>
 <ol>
 <li>
-That huge computer you saw in Lab 1 was built in 1975, and it had about 1MB of memory. One 2017 desktop-sized computer <em>server</em> (not a single-user computer) has up to 3TB of memory (3 billion MB). Does the prediction of doubling every two years hold for these two machines?		
+That huge computer you saw in Lab 1 was built in 1975, and it had about 1MB of memory. One 2017 desktop-sized computer <em>server</em> (not a single-user computer) has up to 3TB of memory (3 million MB). Does the prediction of doubling every two years hold for these two machines?		
 <ol>
 <li>How many years apart were they made?</li>
 <li>If memory capacity doubled every two years during that time, by about what number should you multiply the huge computer's 1MB to predict the size of memory in 2017?</li>

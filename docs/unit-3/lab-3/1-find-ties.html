@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.475">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>BHS AP CSP – find-ties</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../unit-3/lab-3/2-checking-for-a-win.html" rel="next">
+<link href="../../unit-3/lab-2/5-mapping-over-list.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script type="text/javascript" src="../../llab/loader.js"></script>
+
+
+<link rel="stylesheet" href="../../css/bjc.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">BHS AP CSP</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-labs" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Labs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-labs">    
+        <li>
+    <a class="dropdown-item" href="../../unit-1/index.html">
+ <span class="dropdown-text">Unit 1: Introduction to Programming</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-2/index.html">
+ <span class="dropdown-text">Unit 2: Abstraction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-3/index.html">
+ <span class="dropdown-text">Unit 3: Data Structures</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-4/index.html">
+ <span class="dropdown-text">Unit 4: How the Internet Works</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-5/index.html">
+ <span class="dropdown-text">Unit 5: Algorithms and Simulations</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-6/index.html">
+ <span class="dropdown-text">Unit 6: How Computers Work</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html">
+ <span class="menu-text">Snap!</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../unit-3/index.html" class="sidebar-item-text sidebar-link">Introduction to Programming</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">Lab 1</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-1/1-robot-in-a-maze.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-1/2-fractal-art.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-1/3-fractal-art-recursive.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-1/4-brick-wall.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-1/5-building-tic-tac-toe.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-1/6-debugging-recap.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Lab 2</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-2/1-build-the-list.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-2/2-adding-contact.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-2/3-modifying-adt.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-2/4-looking-up-data.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-2/5-mapping-over-list.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Lab 3</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-3/1-find-ties.html" class="sidebar-item-text sidebar-link active">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-3/2-checking-for-a-win.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-3/3-checking-for-ties.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">Lab 4</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-4/1-what-is-ai.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-4/2-robots-and-humans.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-4/3-implications.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-4/4-breakthroughs-possibilities.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">Lab 5</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-5/1-past-and-future.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-5/2-working-conditions.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-5/3-working-remotely.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">Optional Projects</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/optional-projects/1-astrid.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/optional-projects/2-animation-studio.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/optional-projects/3-op-art.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/optional-projects/4-music-project.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+Unit 3 Lab 3: Tic-Tac-Toe, Page 1
+
+<pre><code>&lt;/head&gt; 
+
+&lt;body&gt;
+    &lt;h2&gt;Remembering the Moves and Possible Winssubtitle: "Unit , Lab , Page"</code></pre>
+<p>order:</p>
+<hr>
+<pre><code>    &lt;div class="learn"&gt;
+        &lt;p&gt;&lt;strong&gt;In this lab&lt;/strong&gt;, you will continue your &lt;a href="/cur/programming/3-lists/1-abstraction/5-building-tic-tac-toe.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="Building a Tic-Tac-Toe Board"&gt;Tic-Tac-Toe project&lt;/a&gt; to make the program &lt;em&gt;analyze&lt;/em&gt; the game board to detect wins and ties.&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;On this page&lt;/strong&gt;, you'll prepare by allowing the program to record the moves that are made, and teach it the winning groups of three squares.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;p&gt;
+        When you first wrote Tic Tac Toe, it was easy to detect illegal moves (moving to a square that's already wearing an X or O costume) because each sprite could test for that without knowing about the rest of the game board. But to detect wins and ties, the program needs a way to test the state of the &lt;em&gt;whole game board&lt;/em&gt;, not just one individual piece. So, you'll use a &lt;em&gt;global variable&lt;/em&gt;, &lt;img src="/img/5-algorithms/board.png" alt="board" title="board"&gt;, to keep track of whether the square in each position is empty or filled with an X or an O.&lt;br /&gt;
+        &lt;div class="sidenote"&gt;
+            &lt;p&gt;You learned about &lt;strong&gt;global variables&lt;/strong&gt; on &lt;a href="/cur/programming/2-complexity/1-variables-games/4-keeping-score.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="Unit 2 Lab 1 Page 4: Keeping Score with Global Variables"&gt;Unit 2 Lab 1 Page 4: Keeping Score with Global Variables&lt;/a&gt;.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;img class="indent noshadow" src="/img/3-lists/ttt-board-var.png" alt="picture of: watcher of board variable showing {O, O, X, 4, X, 6, X, 8, 9}; and Tic Tac Toe game with X, X, O in top row; empty, X, empty in middle row; and X, empty, empty in bottom row" title="picture of: watcher of board variable showing {O, O, X, 4, X, 6, X, 8, 9}; and Tic Tac Toe game with X, X, O in top row; empty, X, empty in middle row; and X, empty, empty in bottom row" /&gt;
+    &lt;/p&gt;
+
+    &lt;div class="forYouToDo" id="first"&gt;
+        &lt;ol&gt;
+            &lt;li&gt;Open your &lt;strong&gt;U3L1-TicTacToe&lt;/strong&gt; project, and save it as &lt;strong&gt;U3L3-TicTacToe&lt;/strong&gt; so you'll still have your old version when you edit the new one.&lt;/li&gt;
+            &lt;li&gt;
+                Make a global variable called &lt;var&gt;board&lt;/var&gt; that, at the beginning of the game, contains a list with the numbers from 1 to 9.&lt;br /&gt;
+           &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+    
+    &lt;p&gt;Each sprite needs to know its own position on the board so that you can use the &lt;code&gt;item of&lt;/code&gt; block to replace that position with an X or an O. So, you'll create a &lt;em&gt;sprite variable&lt;/em&gt;, &lt;img class="inline nopadtb" src="/img/3-lists/position-number.png" alt="position number" title="position number" /&gt;, and each clone will have its &lt;em&gt;own version&lt;/em&gt; of this variable.&lt;/p&gt;
+    
+    &lt;div class="vocabFullWidth"&gt;: &lt;strong&gt;Sprite Variable&lt;/strong&gt;
+        &lt;p&gt;A &lt;strong&gt;sprite variable&lt;/strong&gt; is like a global variable in that it &lt;em&gt;doesn't&lt;/em&gt; belong to a particular &lt;em&gt;script&lt;/em&gt;, but it does belong to a particular &lt;em&gt;sprite.&lt;/em&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="forYouToDo"&gt;
+        &lt;ol start="3"&gt;
+            &lt;li&gt;
+                &lt;div class="sidenote"&gt;
+                    &lt;p&gt;You learned about &lt;strong&gt;initializing variables&lt;/strong&gt; on &lt;a href="/cur/programming/2-complexity/1-variables-games/1-number-guessing-game.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="Unit 2 Lab 1 Page 1: Developing a Number Guessing Game with Script Variables"&gt;Unit 2 Lab 1 Page 1: Developing a Number Guessing Game with Script Variables&lt;/a&gt;.&lt;/p&gt;
+                &lt;/div&gt;
+                Create a sprite variable &lt;var&gt;position number&lt;/var&gt;.
+                &lt;div class="narrower"&gt;
+                    &lt;p&gt;
+                        You make a sprite variable similarly to how you make global variables: 
+                        &lt;ul&gt;
+                            &lt;li&gt;Click &lt;img class="inline nopadtb noshadow" src="/img/1-introduction/make-a-variable.png" alt="make a variable button" title="make a variable button" /&gt; in the Variables palette.&lt;/li&gt;
+                            &lt;li&gt;Then, as you are typing the variable's name, select "for this sprite only" to make it a sprite variable.&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/p&gt;
+                    
+                    &lt;img class="indent" src="/img/3-lists/square-number-var.png" alt="variable name dialog box with 'for this sprite only' selected" title="variable name dialog box with 'for this sprite only' selected" /&gt;&lt;br /&gt;
+                &lt;/div&gt;                    
+            &lt;/li&gt;
+            &lt;li&gt;
+                As you create the clones, set each one's &lt;var&gt;position number&lt;/var&gt; to the appropriate value (1-9).&lt;br /&gt;
+                &lt;div class="endnote"&gt;
+                    &lt;a href="#hint-1" data-bs-toggle="collapse" class="collapsed" title="Hint"&gt;Click for a hint on setting the &lt;var&gt;position number&lt;/var&gt;.&lt;/a&gt;
+                    &lt;div id="hint-1" class="collapse"&gt;
+                        In the loop that makes the clones, increase the parent sprite's variable by one for each new clone so that each clone will have a unique value.
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="takeNote"&gt;Make sure that the parent's &lt;var&gt;position number&lt;/var&gt; doesn't end up being a number 1-9 so that it doesn't conflict with a clone.&lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li&gt;When a square is clicked, replace that square's entry in the &lt;var&gt;board&lt;/var&gt; list with X or O as appropriate.&lt;/li&gt;
+            &lt;li&gt;Watch the values stored in the &lt;var&gt;board&lt;/var&gt; variable as you play a game of Tic Tac Toe. Make sure that it updates as you expect it to, and fix any bugs.&lt;/li&gt;   
+        &lt;/ol&gt;
+    &lt;/div&gt;
+
+    &lt;h2&gt;Storing All the Ways to Win&lt;/h2&gt;
+    &lt;p&gt;
+        To program a way to detect a win, you need to determine what counts as a win.  You'll store each possible winning triple as a list of three position numbers (a &lt;em&gt;triple&lt;/em&gt;).  For example, this winning triple could be represented as &lt;img src="/img/3-lists/{3,5,7}.png" alt="list{3, 5, 7}" title="list{3, 5, 7}"&gt; because the win is in the 3&lt;sup&gt;rd&lt;/sup&gt;, 5&lt;sup&gt;th&lt;/sup&gt;, and 7&lt;sup&gt;th&lt;/sup&gt; positions:&lt;br /&gt;
+        &lt;img class="indent noshadow" src="/img/3-lists/winning-combo-357.png" alt="diagonal win bottom left to top right" title="diagonal win bottom left to top right"&gt;&lt;br /&gt;
+    &lt;/p&gt;
+    
+    &lt;div class="forYouToDo"&gt;
+        &lt;ol start="7"&gt;
+            &lt;li&gt;&lt;img class="inline" src="/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /&gt;
+                &lt;ol&gt;
+                    &lt;li&gt;How many winning triples are possible? &lt;/li&gt;
+                    &lt;li&gt;Write down each of the possible winning triples.&lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+    &lt;p&gt;
+        You &lt;em&gt;could&lt;/em&gt; check for each possible win separately:&lt;br /&gt;        
+        &lt;img class="indent" src="/img/3-lists/silly-check-win.png" alt="is there a win? (Comment: Don't build this!! Just read it.) : if (is there a win at (1) (2) (3) ?) report (true); if (is there a win at (4) (5) (6) ?) report (true); ...; if (is there a win at (3) (5) (7) ?) report (true); report (false)" title="is there a win? (Comment: Don't build this!! Just read it.) : if (is there a win at (1) (2) (3) ?) report (true); if (is there a win at (4) (5) (6) ?) report (true); ...; if (is there a win at (3) (5) (7) ?) report (true); report (false)"&gt;  
+    &lt;/p&gt;
+                  
+    &lt;p&gt;But that's way too much code, especially because you'll have to do something very similar again, later on, when the computer actually plays against you. Instead, you'll create a list to store all of the possible winning triples so you can check it against the current state of the game stored by &lt;var&gt;board&lt;/var&gt;.&lt;/p&gt;
+    
+    &lt;div class="forYouToDo"&gt;
+        &lt;ol start="8"&gt;
+           &lt;img class="imageRight" src="/img/icons/save-mini.png" alt="Save Your Work" title="Save Your Work" /&gt;
+            &lt;li&gt;
+                Create a reporter that outputs a list of all possible winning triples. It will look something like this:&lt;br /&gt;
+                &lt;img class="indent" src="/img/3-lists/winning-triples.png" alt="winning triples partial block definition showing a list with at least two lists inside it: {1,2,3} and {2,5,8}" title="winning triples partial block definition showing a list with at least two lists inside it: {1,2,3} and {2,5,8}"/&gt;
+            &lt;/li&gt;
+    &lt;li&gt;
+                &lt;img class="inline" src="/img/icons/save-use-later.png" alt="Save. You will use this later." title="Save. You will use this later." /&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+
+
+
+
+&lt;/body&gt;</code></pre>
+
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../unit-3/lab-2/5-mapping-over-list.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">order:</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../unit-3/lab-3/2-checking-for-a-win.html" class="pagination-link">
+        <span class="nav-page-text">order:</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+      <div class="nav-footer-center">The curriculum and text on this website is adapted from <a href="https://bjc.edc.org/bjc-r/">The Beauty and Joy of Computing</a> by University of California, Berkeley and Education Development Center, Inc.&nbsp;which is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</div>
+  </div>
+</footer>
+
+
+
+</body></html>

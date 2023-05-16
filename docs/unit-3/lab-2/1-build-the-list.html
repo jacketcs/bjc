@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.475">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>BHS AP CSP – build-the-list</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../unit-3/lab-2/2-adding-contact.html" rel="next">
+<link href="../../unit-3/lab-1/6-debugging-recap.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script type="text/javascript" src="../../llab/loader.js"></script>
+
+
+<link rel="stylesheet" href="../../css/bjc.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">BHS AP CSP</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-labs" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Labs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-labs">    
+        <li>
+    <a class="dropdown-item" href="../../unit-1/index.html">
+ <span class="dropdown-text">Unit 1: Introduction to Programming</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-2/index.html">
+ <span class="dropdown-text">Unit 2: Abstraction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-3/index.html">
+ <span class="dropdown-text">Unit 3: Data Structures</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-4/index.html">
+ <span class="dropdown-text">Unit 4: How the Internet Works</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-5/index.html">
+ <span class="dropdown-text">Unit 5: Algorithms and Simulations</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-6/index.html">
+ <span class="dropdown-text">Unit 6: How Computers Work</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html">
+ <span class="menu-text">Snap!</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../unit-3/index.html" class="sidebar-item-text sidebar-link">Introduction to Programming</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">Lab 1</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-1/1-robot-in-a-maze.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-1/2-fractal-art.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-1/3-fractal-art-recursive.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-1/4-brick-wall.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-1/5-building-tic-tac-toe.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-1/6-debugging-recap.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Lab 2</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-2/1-build-the-list.html" class="sidebar-item-text sidebar-link active">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-2/2-adding-contact.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-2/3-modifying-adt.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-2/4-looking-up-data.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-2/5-mapping-over-list.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">Lab 3</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-3/1-find-ties.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-3/2-checking-for-a-win.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-3/3-checking-for-ties.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">Lab 4</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-4/1-what-is-ai.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-4/2-robots-and-humans.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-4/3-implications.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-4/4-breakthroughs-possibilities.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">Lab 5</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-5/1-past-and-future.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-5/2-working-conditions.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-5/3-working-remotely.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">Optional Projects</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/optional-projects/1-astrid.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/optional-projects/2-animation-studio.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/optional-projects/3-op-art.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/optional-projects/4-music-project.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+&lt;!DOCTYPE html&gt;
+
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="../../llab/loader.js"></script>
+<title>
+Unit 3 Lab 2: Contact List, Page 1
+</title>
+
+
+<h2 class="anchored">
+<p>Creating the Contact ADTsubtitle: “Unit , Lab , Page” order:</p>
+<hr>
+<pre><code>    &lt;div class="learn"&gt;
+        &lt;p&gt;&lt;strong&gt;In this lab,&lt;/strong&gt; you will develop a Contact List database application like the one on your phone.&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;On this page,&lt;/strong&gt; you will develop an &lt;strong&gt;Abstract Data Type&lt;/strong&gt; to store and access &lt;em&gt;contact data&lt;/em&gt; (name, address, phone number, etc.). &lt;/p&gt;
+    &lt;/div&gt;
+            
+    &lt;div class="takeNote"&gt;
+        &lt;h3&gt;&lt;strong&gt;Preserve Privacy&lt;/strong&gt;&lt;/h3&gt;
+        &lt;p&gt;Snap&lt;em&gt;!&lt;/em&gt; projects are not secure. Do not use your or your classmates' personal information.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h2&gt;Setting Up the Contact List&lt;/h2&gt;
+    &lt;div class="forYouToDo" id="first"&gt;
+        &lt;ol&gt;
+            &lt;li&gt;
+                &lt;a class="run" href="/prog/3-lists/U3L2-ContactList.xml"&gt;&lt;img class="inline" src="/img/icons/load-save.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;Create a global &lt;var&gt;contact list&lt;/var&gt; variable.&lt;/li&gt;
+            &lt;li&gt;Initialize &lt;var&gt;contact list&lt;/var&gt; as an empty list.&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+    &lt;div class="takeNote"&gt;
+        &lt;h3&gt;&lt;strong&gt;Why global?&lt;/strong&gt;&lt;/h3&gt;
+        &lt;strong&gt;Multiple scripts&lt;/strong&gt; across the project &lt;strong&gt;will use this variable&lt;/strong&gt;, so it shouldn't be attached to just one script like a local, script variable.
+    &lt;/div&gt;
+
+
+    &lt;h2&gt;Creating the ADT&lt;/h2&gt;
+    &lt;div class="dialogue"&gt;
+        &lt;div class="stagedir"&gt;Betsy and Gamal are planning to build a Contact List in Snap&lt;em&gt;!&lt;/em&gt;.&lt;/div&gt;
+        &lt;div&gt;&lt;span&gt;Betsy:&lt;/span&gt; We need a way to add a contact to our &lt;var&gt;contact list&lt;/var&gt;.&lt;/div&gt;
+        &lt;div&gt;&lt;span&gt;Gamal:&lt;/span&gt; Each contact will be a list that with the a person's name, phone number, address, email, or whatever we write.&lt;/div&gt;
+        &lt;div&gt;&lt;span&gt;Betsy:&lt;/span&gt; &lt;a href="/cur/programming/2-complexity/2-data-structures-art/2-quizzes.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="In Unit 2, we created a quiz item abstract data type"&gt;In Unit 2, we created a &lt;code&gt;quiz item&lt;/code&gt; abstract data type&lt;/a&gt; to store the questions and answers in a list of quiz items. Here, we can make a &lt;code&gt;contact&lt;/code&gt; abstract data type to store the data for each contact in our list of contacts.&lt;/div&gt;
+        &lt;div&gt;&lt;span&gt;Gamal:&lt;/span&gt; Yeah. In this project, we'll need a &lt;code&gt;contact&lt;/code&gt; constructor and then selectors to access the &lt;code&gt;name&lt;/code&gt;, &lt;code&gt;address&lt;/code&gt;, and &lt;code&gt;phone number&lt;/code&gt; for any given contact.&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="forYouToDo"&gt;
+        &lt;ol start="4"&gt;
+            &lt;li&gt;
+                &lt;div class="sidenoteBig"&gt;
+                    &lt;strong&gt;Shortcut:&lt;/strong&gt; You could paste the following text into the "Make a block" window to build the block more quickly.
+                    &lt;p style="margin-left:25px;"&gt;&lt;code&gt;contact with name: %name address: %address phone: %phone&lt;/code&gt;&lt;/p&gt;
+                    The percent (%) signs make those words become input variables.
+                &lt;/div&gt;
+                Create a &lt;code&gt;contact&lt;/code&gt; &lt;em&gt;constructor&lt;/em&gt; that accepts three pieces of data as input: the contact's &lt;var&gt;name&lt;/var&gt;, &lt;var&gt;phone number&lt;/var&gt;, and &lt;var&gt;address&lt;/var&gt;. &lt;br /&gt;
+                &lt;img class="indent" src="/img/3-lists/contact-constructor-untyped.png" alt="contact with name: () address: () phone: ()" title="contact with name: () address: () phone: ()" /&gt;&lt;br /&gt;
+                It should report one whole contact (a list of the three items):&lt;br /&gt;
+                &lt;img class="indent" src="/img/3-lists/contact-constructor-reporting.png" alt="contact with name: (Betsy) address: (123 Main St. #4, New York, NY 10001) phone: (212-555-1234) reporting {Betsy Anderson; 123 Main St. #4, New York, NY 10001; 212-555-1234}" title="contact with name: (Betsy Anderson) address: (123 Main St. #4, New York, NY 10001) phone: (212-555-1234) reporting {Betsy Anderson; 123 Main St. #4, New York, NY 10001; 212-555-1234}" /&gt;&lt;br /&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                Write the &lt;em&gt;selector&lt;/em&gt; blocks to retrieve the &lt;code&gt;name from contact&lt;/code&gt;, &lt;code&gt;address from contact&lt;/code&gt;, or &lt;code&gt;phone from contact&lt;/code&gt;.
+                &lt;img class="indent" src="/img/3-lists/contact-constructor-in-name-selector.png" alt="contact name (contact block with inputs) reporting " title="contact name (contact block with inputs) reporting "&gt;&lt;br /&gt;
+                &lt;img class="indent" src="/img/3-lists/contact-constructor-in-address-selector.png" alt="contact address (contact block with inputs) reporting " title="contact address (contact block with inputs) reporting "&gt;&lt;br /&gt;
+                &lt;img class="indent" src="/img/3-lists/contact-constructor-in-phone-selector.png" alt="contact phone (contact block with inputs) reporting " title="contact phone (contact block with inputs) reporting "&gt;
+                &lt;div class="takeNote"&gt;
+                    &lt;div class="sidenote"&gt;You learned about input types and output types (domain and range) on &lt;a href="/cur/programming/2-complexity/3-predicates/1-what-is-predicate.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="Unit 2 Lab 3 Page 1: What's a Predicate?"&gt;Unit 2 Lab 3 Page 1: What's a Predicate?&lt;/a&gt;.&lt;/div&gt;
+                    &lt;p&gt;It's important to make sure that your inputs to a function match the expected input type. For example, the input type of &lt;code&gt;address from contact&lt;/code&gt; matches the output type of &lt;code&gt;contact&lt;/code&gt;; they are both of type "contact."&lt;/p&gt;
+                    &lt;p&gt;If you call &lt;code&gt;address from contact&lt;/code&gt; with an input that doesn't match, such as a &lt;em&gt;list&lt;/em&gt; of contacts (for example, the &lt;var&gt;contact list&lt;/var&gt; variable or the result of running &lt;code&gt;keep&lt;/code&gt; and having a subset of that list), it's not going to work. That may sound obvious, but in fact, beginning programmers make mistakes like that all the time; you have to teach yourself to think about the input  and output types of your functions every time you write or use one. &lt;/p&gt;
+                    &lt;p&gt;That's also true about the inputs to the &lt;code&gt;contact&lt;/code&gt; constructor; you can't put something that isn't a name in the name input for &lt;code&gt;contact&lt;/code&gt;.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="endnote"&gt;
+                    &lt;p&gt;
+                        It's somewhat artificial to use the constructor as the input to a selector; these images are just examples to show what the selectors should be able to do when given a contact as input. In &lt;em&gt;your&lt;/em&gt; program, the selectors will take an item from the contact list as input and output the correct piece of that contact, like this:&lt;br /&gt;
+                        &lt;img class="indent" src="/img/3-lists/address-from-contact-item-1-of-contact-list-reporting.png" alt="address from contact (item (1) of (contact list)) reporting '123 Main St. #4, New York, NY 10001'" title="address from contact (item (1) of (contact list)) reporting '123 Main St. #4, New York, NY 10001'" /&gt;
+                    &lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                Declare input types for each selector to make it obvious that they expect a list (one whole contact) as input.&lt;br /&gt;
+                &lt;img class="indent" src="/img/3-lists/name-selector.png" alt="name from contact: ()" title="name from contact: ()" /&gt;
+                &lt;img class="indent" src="/img/3-lists/address-selector.png" alt="address from contact: ()" title="address from contact: ()" /&gt;
+                &lt;img class="indent" src="/img/3-lists/phone-selector.png" alt="phone from contact: ()" title="phone from contact: ()" /&gt;
+                &lt;div class="endnote"&gt; You learned about Specifying an Input Type on &lt;a href="/cur/programming/2-complexity/2-data-structures-art/2-quizzes.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment#input-type" title="Unit 2 Lab 2 Page 2: Planning a Quiz App"&gt;Unit 2 Lab 2 Page 2: Planning a Quiz App&lt;/a&gt;.&lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                Test your blocks together, and debug any problems.
+                &lt;ol&gt;
+                    &lt;li&gt;First, put the constructor (with input values) inside each selector (as shown above) to test that they each report the correct piece of data.&lt;/li&gt;
+                    &lt;li&gt;
+                        Then, use the &lt;code&gt;contact&lt;/code&gt; constructor to &lt;code&gt;add&lt;/code&gt; a few contacts to your contact list.
+                        &lt;div class="endnote"&gt;
+                            You can use these examples or make up your own:
+                            &lt;table class="bordered" summary="three example contacts"&gt;
+                                &lt;tr&gt;
+                                    &lt;th scope="col"&gt;name&lt;/th&gt;
+                                    &lt;th scope="col"&gt;address&lt;/th&gt;
+                                    &lt;th scope="col"&gt;phone&lt;/th&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style="white-space: nowrap;"&gt;Betsy Anderson&lt;/td&gt;
+                                    &lt;td style="white-space: nowrap;"&gt;123 Main St. #4, New York, NY 10001&lt;/td&gt;
+                                    &lt;td style="white-space: nowrap;"&gt;212-555-1234&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style="white-space: nowrap;"&gt;Alphie Preston&lt;/td&gt;
+                                    &lt;td style="white-space: nowrap;"&gt;149 E. 16th Ave., Sunnyvale, CA 94089&lt;/td&gt;
+                                    &lt;td style="white-space: nowrap;"&gt;408-555-6789&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td style="white-space: nowrap;"&gt;Gamal Abdel&lt;/td&gt;
+                                    &lt;td style="white-space: nowrap;"&gt;369 Center St., Boston, MA 02130&lt;/td&gt;
+                                    &lt;td style="white-space: nowrap;"&gt;617-555-1098&lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/table&gt;
+                        &lt;/div&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;Notice how your contacts appear in the list. &lt;/li&gt;
+                    &lt;div class="endnote"&gt;
+                    If you don't remember about table view and list view,
+                    revisit &lt;a href="/cur/programming/2-complexity/2-data-structures-art/2-quizzes.html#two-views?topic=nyc_bjc%2F2-conditionals-abstraction.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment"&gt;page 2.2.2&lt;/a&gt;.
+                    &lt;/div&gt;
+                    &lt;li&gt;
+                        Try selecting the &lt;code&gt;name&lt;/code&gt;, &lt;code&gt;address&lt;/code&gt;, or &lt;code&gt;phone&lt;/code&gt; from a contact in your list&lt;br /&gt;
+                        &lt;img class="indent" src="/img/3-lists/name-from-contact-random-reporting.png" alt="name from contact: (item (random) of (contact list)) reporting Alphie Preston" title="name from contact: (item (random) of (contact list)) reporting Alphie Preston" /&gt;
+                    &lt;/li&gt;
+                    &lt;img class="imageRight" src="/img/icons/save-mini.png" alt="Save Your Work" title="Save Your Work" /&gt;
+                    &lt;li&gt;&lt;strong&gt;Debug&lt;/strong&gt; any problems.&lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/li&gt;
+            &lt;div class="comment"&gt;AAP-1.D part b&lt;/div&gt;
+            &lt;li&gt;
+                &lt;img class="inline" src="/img/icons/write-out-thoughts.png" alt="Write Out Your Thoughts" title="Write Out Your Thoughts" /&gt;
+                Write down how the use of an abstract data type helps manage complexity in your program.
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+    </code></pre>
+
+
+
+</h2></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../unit-3/lab-1/6-debugging-recap.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">order:</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../unit-3/lab-2/2-adding-contact.html" class="pagination-link">
+        <span class="nav-page-text">order:</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+      <div class="nav-footer-center">The curriculum and text on this website is adapted from <a href="https://bjc.edc.org/bjc-r/">The Beauty and Joy of Computing</a> by University of California, Berkeley and Education Development Center, Inc.&nbsp;which is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</div>
+  </div>
+</footer>
+
+
+
+</body></html>

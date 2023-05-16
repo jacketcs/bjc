@@ -1,0 +1,388 @@
+---
+title: "Checking the Player's Guess"
+subtitle: "Unit 2, Lab 1, Page 2"
+order: 2
+---
+
+::: learn
+<p><strong>On this page,</strong> you'll continue to develop your number guessing game to accept player guesses until the player guesses correctly.</p>
+:::
+
+<!--<div class="index-term" id="<code>repeat until</code> block" />-->
+
+<p>You'll want the computer to ask players to guess again and again until they guess correctly. To do that, you will use the <img src="/img/blocks/repeat-until.png" title="repeat until" alt="repeat until" class="inline nopadtb"/> block. <code>Repeat until</code> is a <em>loop</em> (just like <code>repeat</code>, <code>forever</code>, and <code>for</code>) but also a <em>conditional</em> (like <code>if</code> and <code>if else</code>). It repeats until a certain condition is met. For this program, the code should repeat until the player's answer equals the secret number.</p>
+
+::: endnote
+<p>You learned about loops on <a href="/cur/programming/1-introduction/3-drawing/6-the-for-block.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 1 Lab 3 Page 6: Looping with a Counter">Unit 1 Lab 3 Page 6: Looping with a Counter</a>.</p>
+
+<p>You've seen conditionals on <a href="/cur/programming/1-introduction/2-gossip-and-greet/5-if-else.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 1 Lab 2 Page 5: Adding Variety to Gossip">Unit 1 Lab 2 Page 5: Adding Variety to <code>Gossip</code></a> and <a href="/cur/programming/1-introduction/5-follow-the-leader/2-sprite-interaction.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 1 Lab 5 Page 2: Sprite Following a Sprite">Unit 1 Lab 5 Page 2: Sprite Following a Sprite</a>.</p>
+:::
+
+::: forYouToDo
+<img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="imageRight"/>
+
+<ol start="1">
+
+<li>Use <code>repeat until</code> to ask the player (<img src="/img/blocks/ask-empty-full-size.png" title="ask () and wait" alt="ask () and wait" class="inline nopadtb"/>) to guess the secret number until their <img src="/img/blocks/answer-full-size.png" title="answer" alt="answer" class="inline"/> equals the <var>secret number</var>.</li>
+
+::: endnote
+<ul>
+
+<li>Drag the <var>secret number</var> variable out of the <code>script variables</code> block to use it.</li>
+
+<li>The <code>ask</code> and <code>answer</code> blocks go together. If you use <code>ask</code> to ask a question, the user's answer will be reported by <code>answer</code>.</li>
+
+</ul>
+:::
+
+</ol>
+:::
+
+::: examFullWidth
+::: pseudop
+The code <img src="/img/2-complexity/chicken-script.png" title="ask (Why did the chicken cross the road?) and wait; set (user response) to (answer)" alt="ask (Why did the chicken cross the road?) and wait; set (user response) to (answer)" class="inline"/> would be written as
+
+::: pre-container
+```{=html}
+<pre class="inline">DISPLAY("Why did the chicken cross the road?")
+userResponse &leftarrow; INPUT()</pre>
+```
+:::
+
+or <img src="/img/2-complexity/chicken-script-blocktran.png" title="a white rounded rectangle containing two smaller white rounded rectangles: The first one contains first the word &apos;DISPLAY&apos; in all caps and then a smaller white rectangle containing the quoted text &apos;Why did the chicken cross the road?&apos;. The second one contains the text &apos;userResponse ← INPUT()&apos;" alt="a white rounded rectangle containing two smaller white rounded rectangles: The first one contains first the word &apos;DISPLAY&apos; in all caps and then a smaller white rectangle containing the quoted text &apos;Why did the chicken cross the road?&apos;. The second one contains the text &apos;userResponse ← INPUT()&apos;" class="inline"/>.
+:::
+
+::: comment
+AAP-3.A.8, AAP-3.A.9
+:::
+
+::: pseudop
+Notice that the procedure
+
+```{=html}
+<pre class="inline">INPUT()</pre>
+```
+accepts the value from the user and returns that input value, which is then assigned to the variable
+
+```{=html}
+<pre class="inline">userResponse</pre>
+```
+with the
+
+```{=html}
+<pre class="inline">&leftarrow;</pre>
+```
+syntax. In Snap<em>!</em>, this is just like how <code>answer</code> accepts a value from the user and reports it, and that report is what the computer <code>set</code>s the variable <var>user response</var> to.
+:::
+:::
+
+::: forYouToDo
+<ol start="2">
+
+::: comment
+AAP-2.B
+:::
+
+<li>After the player guesses the secret number, make the computer congratulate the player.</li>
+
+<li><strong>Test and debug.</strong> Take turns playing the game, and fix any problems with the code before moving on.</li>
+
+</ol>
+:::
+
+<p><code>Repeat until</code> makes its decision based on the output of a hexagonal <em>predicate</em> block.</p>
+
+::: vocabFullWidth
+<strong>: Predicate</strong> and <strong>Boolean value</strong>
+
+::: sidenoteBig
+<a href="#hint-Boolean" data-bs-toggle="collapse" title="Why is Boolean capitalized?"> <img src="/img/icons/read-more-mini.png" title="Read More" alt="Read More" class="inline"/> Why is Boolean capitalized? </a>
+
+::: {#hint-Boolean .collapse}
+<p>The word Boolean is capitalized because it's named after a person, George Boole, who invented the branch of mathematics dealing with Boolean operations (such as <code>and</code>, <code>or</code>, and <code>not</code>).</p>
+:::
+:::
+
+<p>A <strong>predicate</strong> is a hexagon-shaped reporter that asks a true/false question such as these examples:<br /> 7 reporting true" title="8 \> 7 reporting true" /\> 7 reporting false" title="6 \> 7 reporting false" /\></p>
+
+::: comment
+AAP-2.E.1
+:::
+
+<p>Predicates report a <strong>Boolean value</strong> (either <img src="/img/blocks/true.png" title="true" alt="true" class="inline"/> or <img src="/img/blocks/false.png" title="false" alt="false" class="inline"/>).</p>
+:::
+
+<p>Predicates fit into a hexagonal input slots of conditionals, such as in <img src="/img/blocks/if-full-size.png" title="if block" alt="if block" class="inline"/> and <img src="/img/blocks/repeat-until.png" title="repeat until" alt="repeat until" class="inline"/>. Predicates help conditionals <em>decide when to do something</em>.</p>
+
+::: vocabFullWidth
+<p>The <code>if</code> and <code>if-else</code> blocks are called <strong>conditionals</strong> because they control the code based on a true-or-false <strong>condition</strong>.</p>
+
+::: endnote
+<a href="#hint-predicates-examples" data-bs-toggle="collapse" title="Click for examples of predicates being used inside conditionals.">Click for examples of predicates being used inside conditionals.</a>
+
+::: {#hint-predicates-examples .collapse}
+<a href="/cur/programming/1-introduction/2-gossip-and-greet/5-if-else.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment"><img src="/img/1-introduction/more-complicated-who-script.png" title="more complicated who {
+if (pick random (1) to (4)) = (3) {
+report (join (who) (&apos;, who&apos;) (does what) ( ) (who) (,))                                                                                          
+} else {
+report (who)
+}
+}" alt="more complicated who {
+if (pick random (1) to (4)) = (3) {
+report (join (who) (&apos;, who&apos;) (does what) ( ) (who) (,))                                                                                          
+} else {
+report (who)
+}
+}" class="indent"/></a> <a href="/cur/programming/1-introduction/5-follow-the-leader/2-sprite-interaction.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment"><img src="/img/1-introduction/move-tiny-no-comment.png" title="when green flag clicked:
+repeat until (touching (Leader)?)
+{
+point towards (Leader)
+move (1) steps
+}" alt="when green flag clicked:
+repeat until (touching (Leader)?)
+{
+point towards (Leader)
+move (1) steps
+}" class="indent"/></a>
+:::
+:::
+:::
+
+::: forYouToDo
+<ol start="4">
+
+<li>
+
+<!-- Question 1 -->
+
+::: {.assessment-data type="multiplechoice" identifier="Which inputs to mystery function will give the output finished?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="true"}
+::: prompt
+::: todo
+We really shouldn't be encouraging students to mutate a block's inputs. There are really two issues here; one is with the x=x+1 style of programming altogether, and the second is that formal parameters specifically shouldn't generally be mutated; it's better to make a script variable that's initialized to the input value. (If we change this, we need to update the Guided Notes.) --MF, 6/26/21 with BH
+:::
+
+<img src="/img/2-complexity/mystery-function.png" title="mystery function (input):
+if (input &lt; 5) (repeat until (input = 5) 
+(
+say (input) for (1) secs, 
+set (input) to (input + 1) 
+)
+report (finished)" alt="mystery function (input):
+if (input &lt; 5) (repeat until (input = 5) 
+(
+say (input) for (1) secs, 
+set (input) to (input + 1) 
+)
+report (finished)" class="imageRight"/> Which inputs to <code>mystery function</code> will report "finished"?
+:::
+
+::: {.choice identifier="c1"}
+::: text
+Any integer
+:::
+
+::: feedback
+Correct! No matter what the input number is (as long as it's an integer), the report block will eventually run. (This doesn't necessarily happen in every procedure, but here it will.)
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+Only integers greater than or equal to 5
+:::
+
+::: feedback
+Write out some examples of what happens when the input is less than 5. For example, if the input is 3, the sprite will say 3, the input will be changed to 4, the sprite will say 4, the input will be changed to 5, the <code>repeat until</code> loop will stop, and the function will report "finished."
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+Only integers less than 5
+:::
+
+::: feedback
+The <code>report</code> command isn't inside the <code>if</code>.
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+Only 5
+:::
+
+::: feedback
+The <code>repeat until</code> block checks the value of <var>input</var> every time through the loop, not just its initial value.
+:::
+:::
+
+::: {.responseDeclaration identifier="ri1"}
+::: {.correctResponse identifier="c1"}
+:::
+:::
+:::
+
+</li>
+
+<li>
+
+<!-- Question 2 -->
+
+::: {.assessment-data type="multiplechoice" identifier="Which inputs to mystery function will give the output finished?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="true"}
+::: prompt
+<img src="/img/2-complexity/mystery-function.png" title="mystery function (input):
+if (input &lt; 5) (repeat until (input = 5) 
+(
+say (input) for (1) secs, 
+set (input) to (input + 1) 
+)
+report (finished)" alt="mystery function (input):
+if (input &lt; 5) (repeat until (input = 5) 
+(
+say (input) for (1) secs, 
+set (input) to (input + 1) 
+)
+report (finished)" class="imageRight"/> <strong>What will the sprite say</strong> if you run the same function with the input 1?
+:::
+
+::: {.choice identifier="c1"}
+::: text
+<img src="/img/2-complexity/say4.png" title="speech bubble saying &apos;4&apos;" alt="speech bubble saying &apos;4&apos;" class="noshadow" height="75px"/>
+:::
+
+::: feedback
+It does say 4 at the end, but it says other things before that.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+<img src="/img/2-complexity/say5.png" title="speech bubble saying &apos;5&apos;" alt="speech bubble saying &apos;5&apos;" class="noshadow" height="75px"/>
+:::
+
+::: feedback
+How does <code>repeat until</code> work?
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+<img src="/img/2-complexity/say1234.png" title="four speech bubbles saying &apos;1&apos;, &apos;2&apos;, &apos;3&apos;, and then &apos;4&apos;" alt="four speech bubbles saying &apos;1&apos;, &apos;2&apos;, &apos;3&apos;, and then &apos;4&apos;" class="noshadow" height="75px"/>
+:::
+
+::: feedback
+Correct! The <code>repeat until</code> block runs the code in its script slot <strong>until</strong> <var>input</var> = 5, then the computer skips down to the next command, <code>report (</code><var>finished</var><code>)</code>, without the sprite ever saying 5.
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+<img src="/img/2-complexity/say12345.png" title="five speech bubbles saying &apos;1&apos;, &apos;2&apos;, &apos;3&apos;, &apos;4&apos;, and then &apos;5&apos;" alt="five speech bubbles saying &apos;1&apos;, &apos;2&apos;, &apos;3&apos;, &apos;4&apos;, and then &apos;5&apos;" class="noshadow" height="75px"/>
+:::
+
+::: feedback
+The <code>repeat until</code> block tests the value of <var>input</var> <strong>before</strong> running the code in its script slot.
+:::
+:::
+
+::: todo
+The feedback is not finished because I realized that BH might object to changing the value of an input variable... --MF, 3/1/19
+:::
+
+::: {.responseDeclaration identifier="ri3"}
+::: {.correctResponse identifier="c1"}
+:::
+:::
+:::
+
+</li>
+
+<li>
+
+<!-- Question 3 -->
+
+::: {.assessment-data type="multiplechoice" identifier="Which inputs to mystery function will give the output finished?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri3" shuffle="true"}
+::: prompt
+<img src="/img/2-complexity/mystery-function.png" title="mystery function (input):
+if (input &lt; 5) (repeat until (input = 5) 
+(
+say (input) for (1) secs, 
+set (input) to (input + 1) 
+)
+report (finished)" alt="mystery function (input):
+if (input &lt; 5) (repeat until (input = 5) 
+(
+say (input) for (1) secs, 
+set (input) to (input + 1) 
+)
+report (finished)" class="imageRight"/> <strong>What will happen</strong> if you run the same function with the input 9?
+:::
+
+::: {.choice identifier="c1"}
+::: text
+The sprite will say 9, and the block will report "finished."
+:::
+
+::: feedback
+What does the <code>if</code> block do when <var>input</var> is 9?
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+The sprite will say 9, 8, 7, 6, and the block will report "finished."
+:::
+
+::: feedback
+What does the <code>set</code> instruction do to the value of <var>input</var>?
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+The sprite will say 9, 10, 11, 12, 13, ... and keep counting, and the block will never report "finished."
+:::
+
+::: feedback
+When <var>input</var> is 9, will the code inside the <code>if</code> command run?
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+The sprite will say nothing, and the block will report "finished."
+:::
+
+::: feedback
+Correct! The code inside the <code>if</code> command will not run.
+:::
+:::
+
+::: todo
+The feedback is not finished because I realized that BH might object to changing the value of an input variable... --MF, 3/1/19
+:::
+
+::: {.responseDeclaration identifier="ri3"}
+::: {.correctResponse identifier="c4"}
+:::
+:::
+:::
+
+</li>
+
+</ol>
+:::
+
+::: ifTime
+<ol start="7">
+
+<li>When the computer congratulates the player for guessing correctly, have the computer say the number. For example, it might say, "You guessed it! My secret number was 7."</li>
+
+<!--<div class="index-term" id="<var>secret number</var> variable" />-->
+
+::: endnote
+Use <code>join</code> to merge the text "You guessed it! My secret number was" with the value of the <var>secret number</var> variable.
+:::
+
+</ol>
+:::

@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.475">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>BHS AP CSP – fairuse</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../unit-2/lab-5/3-bargain.html" rel="next">
+<link href="../../unit-2/lab-5/1-copyright.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script type="text/javascript" src="../../llab/loader.js"></script>
+
+
+<link rel="stylesheet" href="../../css/bjc.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">BHS AP CSP</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-labs" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Labs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-labs">    
+        <li>
+    <a class="dropdown-item" href="../../unit-1/index.html">
+ <span class="dropdown-text">Unit 1: Introduction to Programming</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-2/index.html">
+ <span class="dropdown-text">Unit 2: Abstraction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-3/index.html">
+ <span class="dropdown-text">Unit 3: Data Structures</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-4/index.html">
+ <span class="dropdown-text">Unit 4: How the Internet Works</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-5/index.html">
+ <span class="dropdown-text">Unit 5: Algorithms and Simulations</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-6/index.html">
+ <span class="dropdown-text">Unit 6: How Computers Work</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html">
+ <span class="menu-text">Snap!</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../unit-2/index.html" class="sidebar-item-text sidebar-link">Introduction to Programming</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">Lab 1</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/1-number-guessing-game.html" class="sidebar-item-text sidebar-link">Starting a Number Guessing Game</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/2-checking-player-guess.html" class="sidebar-item-text sidebar-link">Checking the Player’s Guess</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/3-debugging-extending.html" class="sidebar-item-text sidebar-link">Debugging and Extending Your Number Guessing Game</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/4-keeping-score.html" class="sidebar-item-text sidebar-link">Keeping Score with Global Variables</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/5-choosing-avatar.html" class="sidebar-item-text sidebar-link">Choosing a Costume</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/6-keeping-a-journal.html" class="sidebar-item-text sidebar-link">Keeping a Programming Journal</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Lab 2</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-2/1-shopping-list-app.html" class="sidebar-item-text sidebar-link">Shopping List App</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-2/2-quizzes.html" class="sidebar-item-text sidebar-link">Planning a Quiz App</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-2/3-traversing-list.html" class="sidebar-item-text sidebar-link">Checking Each Quiz Answer</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">Lab 3</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/1-what-is-predicate.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/2-combining-predicates.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/3-combining-conditionals.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/4-boolean-experiments.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/5-keeping-list-items.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/6-solving-word-puzzle.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">Lab 4</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-4/1-mod-operator.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-4/2-math-predicates.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-4/3-other-math-reporters.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">Lab 5</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/1-copyright.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/2-fairuse.html" class="sidebar-item-text sidebar-link active">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/3-bargain.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/4-digital.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/5-drm.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">Optional Projects</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/1-magic8ball.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/2-egyptian-motif.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/3-mastermind.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/4-plurals1.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/5-plurals2.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/6-kaleidoscope.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<p>Unit 2 Lab 5: Copyrights, Page 2— title: “Fair Usesubtitle:”Unit , Lab , Page” order:</p>
+<hr>
+<pre><code>    &lt;div class="todo"&gt;
+        &lt;p&gt;MF: Can we do something to make this not just reading?&lt;/p&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="learn"&gt;
+        &lt;p&gt;&lt;strong&gt;On this page,&lt;/strong&gt; you will learn about times when it is ok to copy part of someone else's work.&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;
+        Copyright protection is not absolute. Various kinds of "fair use" are allowed by US and some other countries' copyright laws. Here are some examples of fair use:
+        &lt;ul&gt;
+            &lt;li&gt;
+                &lt;strong&gt;You can quote a &lt;em&gt;short&lt;/em&gt; excerpt from someone else's work for purposes of reviewing the original.&lt;/strong&gt; 
+                &lt;div class="endnote"&gt;
+                    &lt;a href="#hint-short" data-bs-toggle="collapse" title="What counts as a 'short' excerpt'?"&gt;What counts as "short"?&lt;/a&gt;
+                    &lt;div id="hint-short" class="collapse"&gt;The definition of "short" is complicated and is different for different works. You might be able to use an entire page of a long novel, but in the picture books written for very young children, a page would be a significant fraction of the entire work, and would not be allowed. It took several lawsuits to settle whether the hip-hop technique of&lt;em&gt; sampling&lt;/em&gt; older music was legal.  (The answer: generally not, unless permission is given by both the recording artists and the song writers.)&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;You can copy newspaper articles for use in teaching a class &lt;em&gt;if&lt;/em&gt;&lt;/strong&gt; the event reported in the article was not anticipated when you planned your class &lt;em&gt;and&lt;/em&gt; you don't keep using the same article year after year. (This is why BJC's "Computing in the News" is legal, even if your teacher passes out copies of actual news articles.)&lt;/li&gt;
+            &lt;li&gt;
+                &lt;strong&gt;You can produce a &lt;em&gt;parody&lt;/em&gt; of a copyrighted work.&lt;/strong&gt;
+                &lt;div class="endnote"&gt;The most famous case of this kind is the 2001 novel &lt;em&gt;The Wind Done Gone,&lt;/em&gt; by Alice Randall.  It retells the story of Margaret Mitchell's 1936 novel &lt;em&gt;Gone with the Wind,&lt;/em&gt; which concerns a wealthy slave owner from the pre-Civil-War South named Scarlett O'Hara.  The Randall novel tells the story from the point of view of one of Scarlett's slaves, Cynara.  Mitchell's estate sued Randall and her publisher for copyright violation, but Randall claimed fair use under the parody rule.  After an appeals court overturned a ruling against Randall, the case was eventually settled after the publisher, Houghton Mifflin, donated part of the profits to the historically-Black Morehouse College.&lt;/div&gt;
+                &lt;img class="indent" src="/img/5-algorithms/parodius.gif"  alt="parody cartoon" /&gt;&lt;br /&gt;
+                &lt;small class="indent"&gt;Copyright 2016 by &lt;a href="http://www.gocomics.com/super-fun-pak-comix/2016/01/12" target="_blank" title="Super-Fun-Pak Comix"&gt;Ruben Bolling&lt;/a&gt;. Used by permission.&lt;/small&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        There are other ways you can use someone else's words that aren't technically "fair use" but are legal:
+        &lt;ul&gt;
+            &lt;li&gt;&lt;strong&gt;Titles are not copyrightable at all.&lt;/strong&gt; You can write a song and call it "She Loves You," as long as the song itself is different from the Beatles' version.&lt;/li&gt;
+            &lt;li&gt;You can, of course, copy anything &lt;strong&gt;if you get permission&lt;/strong&gt; from the copyright holder.&lt;/li&gt;
+            &lt;li&gt;
+                &lt;strong&gt;Authors who want their works to be generally available&lt;/strong&gt; and to be usable in ways they may not have thought of themselves, such as the authors of this curriculum, will often include with their works a general license allowing anyone to use them, such as a &lt;a href="https://creativecommons.org/licenses/" target="_blank" title="Creative Commons: About The Licenses"&gt;Creative Commons license&lt;/a&gt;.
+                &lt;div class="vocabFullWidth"&gt;
+                    &lt;div class="comment"&gt;IOC-1.F.5&lt;/div&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;strong&gt;Creative Commons&lt;/strong&gt; is a specific family of copyright licenses that allow others to use, share, maybe sell, and maybe revise your work.&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;div class="endnote"&gt;Look at the very bottom of this page. This curriculum is under a CC-BY-NC-SA license, which is a Creative Commons (&lt;em&gt;CC&lt;/em&gt;) license meaning that anyone can use and publish the curriculum or a modification of it, provided that they credit the authors (&lt;em&gt;BY&lt;/em&gt; The University of California, Berkeley, and Education Development Center, Inc.), they use it not for profit (&lt;em&gt;NC&lt;/em&gt;, non-commercially), and they license any modified version under the same terms (&lt;em&gt;SA&lt;/em&gt;, share-alike). Because of the NC part, this is not technically a "free license," which would allow use for &lt;em&gt;any&lt;/em&gt; purpose (including for profit). People argue over whether it's ethically necessary to allow that much freedom of use.&lt;/div&gt;
+                &lt;div class="vocabFullWidth"&gt;
+                    &lt;div class="comment"&gt;IOC-1.F.5&lt;/div&gt;
+                    &lt;p&gt;
+                        Ideas similar to Creative Commons are used for particular kinds of material: 
+                        &lt;ul&gt;
+                            &lt;li&gt;&lt;strong&gt;Free software&lt;/strong&gt; means software that anyone can copy, use, modify, and redistribute, including commercially, provided that any modifications must be under the same license.&lt;/li&gt;
+                            &lt;div class="endnote"&gt;
+                                &lt;img class="inline" src="/img/icons/read-more.png" alt="Read More" title="Read More" /&gt;
+                                &lt;a href="#why-free" data-bs-toggle="collapse" title="Doesn't the &amp;ldquo;provided that&amp;rdquo; make it unfree?"&gt;Doesn't the &amp;ldquo;provided that&amp;rdquo; make it unfree?&lt;/a&gt;
+                                &lt;div id="why-free" class="collapse"&gt;The reason for that restriction is to prevent other people from turning a modified version of the software into non-free software with restrictive licensing.  That's the only thing you're not allowed to do: make it unfree.&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;li&gt;&lt;strong&gt;Open source&lt;/strong&gt; software is a more general term that means that you make the program's source (human-readable) code available to anyone. You may still restrict how people can use the program.&lt;/li&gt;
+                            &lt;div class="endnote"&gt;
+                                &lt;img class="inline" src="/img/icons/read-more.png" alt="Read More" title="Read More" /&gt;
+                                &lt;a href="#why-open" data-bs-toggle="collapse" title="What's the point of making it available if people aren't allowed to use it?"&gt;What's the point of making it available if people aren't allowed to use it?&lt;/a&gt;
+                                &lt;div id="why-open" class="collapse"&gt;One reason is for security software, so that people can check that the software isn't leaking your password or other data, and will therefore trust you.  (One reason many people don't trust computerized voting machines is that their manufacturers keep their code secret.)  Another reason for open source is that you're hoping other people will contribute improvements to your proprietary software.&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;li&gt;&lt;strong&gt;Open access&lt;/strong&gt; scholarly research reports are available for free download, rather than requiring the permission of a journal publisher.&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="comment"&gt;IOC-1.F.7&lt;/div&gt;
+                &lt;p&gt;Why would an author give away the right to make copies of a work?  Generally it's because the author wants to contribute to the community, doesn't want to be greedy, and hopes that the work will be widely used and enjoyed. Open licensing has enabled broad access to digital information.&lt;/p&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt; 
+    &lt;/p&gt;
+    
+       
+&lt;/body&gt;</code></pre>
+
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../unit-2/lab-5/1-copyright.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">order:</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../unit-2/lab-5/3-bargain.html" class="pagination-link">
+        <span class="nav-page-text">order:</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+      <div class="nav-footer-center">The curriculum and text on this website is adapted from <a href="https://bjc.edc.org/bjc-r/">The Beauty and Joy of Computing</a> by University of California, Berkeley and Education Development Center, Inc.&nbsp;which is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</div>
+  </div>
+</footer>
+
+
+
+</body></html>

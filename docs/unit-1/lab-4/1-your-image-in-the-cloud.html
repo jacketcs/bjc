@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.475">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>BHS AP CSP - Your Image in the Cloud</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../unit-1/lab-4/2-examining-privacy.html" rel="next">
+<link href="../../unit-1/lab-3/7-programming-journal.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script type="text/javascript" src="../../llab/loader.js"></script>
+
+
+<link rel="stylesheet" href="../../css/bjc.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">BHS AP CSP</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-labs" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Labs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-labs">    
+        <li>
+    <a class="dropdown-item" href="../../unit-1/index.html">
+ <span class="dropdown-text">Unit 1: Introduction to Programming</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-2/index.html">
+ <span class="dropdown-text">Unit 2: Abstraction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-3/index.html">
+ <span class="dropdown-text">Unit 3: Data Structures</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-4/index.html">
+ <span class="dropdown-text">Unit 4: How the Internet Works</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-5/index.html">
+ <span class="dropdown-text">Unit 5: Algorithms and Simulations</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-6/index.html">
+ <span class="dropdown-text">Unit 6: How Computers Work</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html">
+ <span class="menu-text">Snap!</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Your Image in the Cloud</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../unit-1/index.html" class="sidebar-item-text sidebar-link">Introduction to Programming</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">Lab 1</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-1/1-creating-a-snap-account.html" class="sidebar-item-text sidebar-link">Getting Started with Snap<em>!</em></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-1/2-start-your-first-snap-app.html" class="sidebar-item-text sidebar-link">Programming a Game</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-1/3-loading-mobile-device.html" class="sidebar-item-text sidebar-link">Sharing Your Game</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-1/4-keeping-score.html" class="sidebar-item-text sidebar-link">Giving the Player Feedback</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-1/5-finish-your-first-snap-app.html" class="sidebar-item-text sidebar-link">Improving Your Game</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Lab 2</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-2/1-pair-programming.html" class="sidebar-item-text sidebar-link">Pair Programming</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-2/2-gossip.html" class="sidebar-item-text sidebar-link">Making Programs Talk</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-2/3-customizing.html" class="sidebar-item-text sidebar-link">Customizing and Debugging</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-2/4-making-a-new-block.html" class="sidebar-item-text sidebar-link">Making Your Own Block</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-2/5-if-else.html" class="sidebar-item-text sidebar-link">Adding Variety to <code>Gossip</code></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">Lab 3</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-3/1-exploring-motion.html" class="sidebar-item-text sidebar-link">Exploring Motion</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-3/2-exploring-snap-drawing-motion.html" class="sidebar-item-text sidebar-link">Angles and Turning</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-3/3-blocks-with-inputs.html" class="sidebar-item-text sidebar-link">Blocks with Inputs</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-3/4-modify-your-pinwheel.html" class="sidebar-item-text sidebar-link">Modify Your Pinwheel</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-3/5-remix-your-pinwheel.html" class="sidebar-item-text sidebar-link">Using <code>Pinwheel</code> to Make <code>Polygon</code></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-3/6-the-for-block.html" class="sidebar-item-text sidebar-link">Looping with a Counter</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-3/7-programming-journal.html" class="sidebar-item-text sidebar-link">Keeping a Programming Journal</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">Lab 4</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-4/1-your-image-in-the-cloud.html" class="sidebar-item-text sidebar-link active">Your Image in the Cloud</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-4/2-examining-privacy.html" class="sidebar-item-text sidebar-link">Examining Privacy</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-4/3-tanya-rider.html" class="sidebar-item-text sidebar-link">Tanya Rider’s Story</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-4/4-privacy-affected.html" class="sidebar-item-text sidebar-link">Innovations and Privacy</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">Lab 5</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-5/1-following-sprites.html" class="sidebar-item-text sidebar-link">Sprite Following the Mouse</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-5/2-sprite-interaction.html" class="sidebar-item-text sidebar-link">Sprite Following a Sprite</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">Optional Projects</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/optional-projects/1-sprite-line-art.html" class="sidebar-item-text sidebar-link">Line Art Toy</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/optional-projects/2-row-of-houses.html" class="sidebar-item-text sidebar-link">2 Row of Houses</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/optional-projects/3-pong.html" class="sidebar-item-text sidebar-link">The Game of Pong</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/optional-projects/4-daisy.html" class="sidebar-item-text sidebar-link">Daisy Design</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/optional-projects/5-sentence-builder.html" class="sidebar-item-text sidebar-link">Modeling Language</a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Your Image in the Cloud</h1>
+<p class="subtitle lead">Unit 1, Lab 4, Page 1</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="learn">
+<p>
+<strong>In this lab,</strong> you will learn about your digital privacy.
+</p>
+<p>
+<strong>On this page,</strong> you will consider what information is available online about you and reflect on your online data sharing habits.
+</p>
+</div>
+<div class="comment">
+<p>IOC-1.F.11 bullet 3, IOC-2.A.5</p>
+</div>
+<div class="vocabBig">
+<div class="comment">
+<p>IOC-2.A.1</p>
+</div>
+<p>
+<strong>Personally identifiable information</strong> (PII) is information that can let others figure out who you are and possibly get more information like your Social Security number, age, race, phone number(s), medical information, financial information, or biometric data (such as your thumbprint or face scan).
+</p>
+</div>
+<p>
+<em>Personally identifiable information</em> about you can easily get to people you don’t want to have it. Posting a picture of you and your friends to a website reveals information about where you were and what you were doing. This may violate both your own privacy and that of your friends. If your phone is lost or stolen, someone else might get access to pictures or messages you thought were private. That’s why data on cell phones is normally <em>encrypted</em> so it can’t be recovered without your password. Having to type your password is a trade-off between convenience and security. But some recent research has shown that cell phone apps are often written to collect information about you and your contacts and location without your knowledge, mostly to sell targeted advertising.
+</p>
+<div class="comment">
+<p>IOC-2.A.8, IOC-2.A.9, IOC-2.A.12</p>
+</div>
+<p>
+Having PII shared online can have benefits. For example, it can be used to show you personalized movie recommendations or simplify online purchasing by suggesting things you are likely to buy based on previous purchases. Shared PII also has risks: It can be used for identity theft, harassment, kidnapping, fraud, etc.
+</p>
+<div class="endnote">
+<p>Don’t be <em>too</em> afraid of the criminal possibilities. Sharing information online is like crossing the street: Don’t be afraid to do it, but do it <em>carefully</em>.</p>
+</div>
+<div id="first" class="forYouToDo">
+<ol>
+<li>
+<p><img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Discuss: <strong>What kind of digital information is out there about you?</strong></p>
+<ul>
+<li>
+With a partner, list the <em>kinds</em> of information someone might be able to find out about you by searching on the Internet.
+</li>
+<li>
+Which of these things are information that you voluntarily put online?
+</li>
+<li>
+Which of these things would you prefer to keep private?
+</li>
+</ul>
+</li>
+</ol>
+</div>
+<p>
+One reason you are asked to choose a <em>username</em> when you get a Snap<em>!</em> account is to give you the freedom to express political or personal issues without tying those conversations to your actual identity.
+</p>
+<div class="todo">
+<p>Brian, look up CA law. -bh</p>
+</div>
+<div class="todo">
+<p>
+Brian, I cut the following because that symbol appears very rarely in the curriculum, and it was a lot of reading for something we hardly use. Instead, I just used the word next to the icon in the displayed yellow box below. All students need to know is that yellow is optional. –MF, 8/19/21
+</p>
+<div class="endnote">
+<p>When you see this symbol in a yellow box:<br> <img src="../../img/icons/read-more-mini.png" title="Read More" alt="Read More" class="inline"><br> it means that what’s in the box isn’t something you have to read right now to be able to complete the lab, or to pass the AP exam, but it’s something we think might be interesting to you. Click the link to see the text. Don’t confuse that symbol with this other one:<br> <img src="../../img/icons/write-in-journal-mini.png" title="Write In Your Journal" alt="Write In Your Journal" class="inline"><br> which means we want you to <em>write</em> something in your journal.</p>
+</div>
+<p>The point of this yellow box is to distinguish a yellow box for <em>good</em> students (these ones) from a yellow box for <em>struggling</em> students (hints). The reason it’s not widely used in the curriculum is that I’ve barely begun the process of adding this symbol everywhere it belongs. -bh</p>
+<p>
+I think that’s a problematic distinction. Who decides who a “good” student is? Kids get labeled as “good student” or “bad student” and then are treated differently for it and take it on as an identity rather than everyone treating it for all it really can be: someone’s observation of how well they have been studying lately. And <em>any</em> student can benefit from a hint from time to time. We should discuss this in a meeting sometime. I might not mind what you are trying to do here, but I do mind that characterization. –MF, 8/20/21
+</p>
+</div>
+<div class="endnote">
+<p><img src="../../img/icons/read-more.png" title="Read More" alt="Read More" class="inline"> <a href="#hint-laws" data-bs-toggle="collapse" title="What laws exist to protect PII?">What laws exist to protect PII?</a></p>
+<div id="hint-laws" class="collapse">
+<p>
+United States law says that websites must have a <em>privacy policy</em> that spells out what the site will do with the information you give them. This is a pretty weak protection; the privacy policies are typically really long, and written in ways that make it hard to find out what information is collected and what is done with it. In Europe, there is now a <em>General Data Protection Regulation</em> (GDPR) that defines what counts as PII, and limits what websites can do without your <em>affirmative</em> permission—a definite “yes” from you, not just not saying “no”—regardless of what they put in their privacy policies. These regulations also state that the website cannot deny you otherwise free services because you refused to permit the use they want you to agree to.
+</p>
+<p>
+The GDPR is new enough that its implications are still being worked out. For example, to get a Snap<em>!</em> account, you must provide an email address, your own or your parent’s depending on your age. That’s the only thing Snap<em>!</em> knows about you: not your name, not your home address, just your email address. Is that PII? Some lawyers think it is. Other lawyers think that your email <em>alone</em> isn’t PII, but it is when combined with certain other information. If it’s PII, then Snap<em>!</em> must ask if you’re in Europe; if so, must collect <em>more</em> information, such as your name, age, and address, to satisfy some GDPR requirements. Your age matters because the rules are different for children and adults. (In Europe, the cutoff age is 16; in the US, we must ask for your parent’s email if you’re below 13.) We need that other PII because if you ask to have your account deleted, we must do so <em>at once,</em> so we have to be able to make sure that it’s really you, or your parent, asking, not somebody wanting to delete your account as a prank.
+</p>
+</div>
+</div>
+<div class="forYouToDo">
+<ol start="2">
+<li>
+<p>Think of some website on which you have an account. It can be one of the huge ones, such as Google, Facebook, or Amazon, or it can be a site associated with a store, a TV show, or a game.</p>
+<ol type="a">
+<li>
+How do you connect to that site when you’re using a computer?
+</li>
+<li>
+How do you connect to the site using your cell phone?
+</li>
+</ol>
+<p>Compare your answers with other students.</p>
+</li>
+</ol>
+</div>
+<p>
+From a privacy point of view, using a browser is <em>much</em> better. If you’re like most people, when you are on a computer you use a web browser (such as Chrome, Safari, Edge) to connect to all websites you visit. But on your phone, you may have a separate app installed for some sites (such as Instagram or Facebook).
+</p>
+<div class="endnote">
+<p><img src="../../img/icons/read-more-mini.png" title="Read More" alt="Read More" class="inline"> <a href="#hint-safer" data-bs-toggle="collapse" title="Why does it matter how you connect?">Why does it matter how you connect?</a></p>
+<div id="hint-safer" class="collapse">
+<ul>
+<li>
+In a browser, you can install privacy extensions (such as AdBlockPlus, Ghostery, or NoScript) that restrict the ability of websites to gather your information. Site-specific apps do not let you limit what they collect.
+</li>
+<li>
+When you exit from a computer’s browser, it stops running. (This doesn’t <em>have</em> to be true, but when a browser company tries to get around that rule, someone catches them and people stop using that browser for a while.) But almost all phone apps keep running even when you’re not using them, and many are constantly accessing your contacts, messages, and other data and sending that information over the Internet to the company that made the app. That company may even be in a country with very weak privacy protection.
+</li>
+<li>
+On a computer, your information is generally stored on the computer’s own hard drive. Phones generally store your information in “the cloud,” i.e., on computers belonging to your cell phone carrier (Verizon, ATT, etc.) or the phone manufacturer (Apple, Samsung, Google, etc.).
+</li>
+</ul>
+</div>
+</div>
+<div class="forYouToDo">
+<ol start="3">
+<li>
+<p><img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Discuss these questions, and write down answers with as much detail as possible.</p>
+<ol type="a">
+<li>
+What does Google know about you?
+</li>
+<li>
+What does your cell phone carrier know about you?
+</li>
+<li>
+What does Facebook know about you?
+</li>
+<li>
+What does the US government know about you?
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="comment">
+<p>IOC-2.A.7</p>
+</div>
+<p>
+“What does organization X know about you?” is kind of a trick question because many these companies and institutions <em>share the information they collect about you</em>. This kind of data sharing is important—and problematic—because different kinds of information, while possibly unimportant by themselves, can become a serious privacy problem when combined. For example, your cell phone carrier knows every place you go and Google knows what people or businesses live at every address; in combination, these two kinds of information can reveal whether you’ve visiting a divorce lawyer, an AIDS doctor, or other possibilities that could be embarrassing (or worse) if revealed.
+</p>
+<div class="endnote">
+<p>There are even companies whose sole business is to collect information about you from other companies, large or small, that you use online. (One of the authors looked himself up at Acxiom, one of those companies, and <a href="../../img/2-complexity/brian-acxiom.pdf" target="_blank" title="Brian according to Acxiom"> here’s what he found</a>. The information circled in red is incorrect.) But the biggest data gatherers are Google, cell phone carriers, Facebook, and governments, such as the US government or the Chinese government.</p>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../unit-1/lab-3/7-programming-journal.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Keeping a Programming Journal</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../unit-1/lab-4/2-examining-privacy.html" class="pagination-link">
+        <span class="nav-page-text">Examining Privacy</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+      <div class="nav-footer-center">The curriculum and text on this website is adapted from <a href="https://bjc.edc.org/bjc-r/">The Beauty and Joy of Computing</a> by University of California, Berkeley and Education Development Center, Inc.&nbsp;which is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</div>
+  </div>
+</footer>
+
+
+
+</body></html>

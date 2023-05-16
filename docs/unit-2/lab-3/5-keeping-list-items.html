@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.475">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>BHS AP CSP – keeping-list-items</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../unit-2/lab-3/6-solving-word-puzzle.html" rel="next">
+<link href="../../unit-2/lab-3/4-boolean-experiments.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script type="text/javascript" src="../../llab/loader.js"></script>
+
+
+<link rel="stylesheet" href="../../css/bjc.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">BHS AP CSP</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-labs" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Labs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-labs">    
+        <li>
+    <a class="dropdown-item" href="../../unit-1/index.html">
+ <span class="dropdown-text">Unit 1: Introduction to Programming</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-2/index.html">
+ <span class="dropdown-text">Unit 2: Abstraction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-3/index.html">
+ <span class="dropdown-text">Unit 3: Data Structures</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-4/index.html">
+ <span class="dropdown-text">Unit 4: How the Internet Works</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-5/index.html">
+ <span class="dropdown-text">Unit 5: Algorithms and Simulations</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-6/index.html">
+ <span class="dropdown-text">Unit 6: How Computers Work</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html">
+ <span class="menu-text">Snap!</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../unit-2/index.html" class="sidebar-item-text sidebar-link">Introduction to Programming</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">Lab 1</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/1-number-guessing-game.html" class="sidebar-item-text sidebar-link">Starting a Number Guessing Game</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/2-checking-player-guess.html" class="sidebar-item-text sidebar-link">Checking the Player's Guess</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/3-debugging-extending.html" class="sidebar-item-text sidebar-link">Debugging and Extending Your Number Guessing Game</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/4-keeping-score.html" class="sidebar-item-text sidebar-link">Keeping Score with Global Variables</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/5-choosing-avatar.html" class="sidebar-item-text sidebar-link">Choosing a Costume</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/6-keeping-a-journal.html" class="sidebar-item-text sidebar-link">Keeping a Programming Journal</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Lab 2</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-2/1-shopping-list-app.html" class="sidebar-item-text sidebar-link">Shopping List App</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-2/2-quizzes.html" class="sidebar-item-text sidebar-link">Planning a Quiz App</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-2/3-traversing-list.html" class="sidebar-item-text sidebar-link">Checking Each Quiz Answer</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Lab 3</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/1-what-is-predicate.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/2-combining-predicates.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/3-combining-conditionals.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/4-boolean-experiments.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/5-keeping-list-items.html" class="sidebar-item-text sidebar-link active">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/6-solving-word-puzzle.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">Lab 4</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-4/1-mod-operator.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-4/2-math-predicates.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-4/3-other-math-reporters.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">Lab 5</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/1-copyright.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/2-fairuse.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/3-bargain.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/4-digital.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/5-drm.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">Optional Projects</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/1-magic8ball.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/2-egyptian-motif.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/3-mastermind.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/4-plurals1.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/5-plurals2.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/6-kaleidoscope.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+&lt;!DOCTYPE html&gt;
+
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="../../llab/loader.js"></script>
+<script type="text/javascript" src="../../utilities/gifffer.min.js"></script>
+<script type="text/javascript">window.onload = function() {Gifffer();}</script>
+<link rel="stylesheet" type="text/css" href="../../css/bjc-gifffer.css">
+<title>
+&lt;p&gt;Unit 2 Lab 3: Making Decisions, Page 5— title: “&lt;code&gt;Keep&lt;/code&gt;ing Items from a Listsubtitle:”Unit , Lab , Page” order:&lt;/p&gt;
+&lt;hr /&gt;
+&lt;pre&gt;&lt;code&gt;    &lt;div class="learn"&gt;
+        &lt;p&gt;&lt;strong&gt;On this page&lt;/strong&gt;, you will use predicates with the &lt;code&gt;keep&lt;/code&gt; block to keep items in a list that have specific characteristics.&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;As you know, predicates can be used with conditionals to decide &lt;em&gt;when&lt;/em&gt; to &lt;em&gt;do&lt;/em&gt; something; they can also be used with &lt;code&gt;keep&lt;/code&gt; to decide &lt;em&gt;which&lt;/em&gt; things to keep. The &lt;img class="inline" src="/img/blocks/keep.png" alt="keep items 'predicate input slot' from 'list input slot'" title="keep items 'predicate input slot' from 'list input slot'" /&gt; block takes a list and a predicate as input, and it reports a new list keeping only the items from the input list that make the condition described by the predicate true.&lt;/p&gt;
+    
+    &lt;p&gt;
+        For example, the following expression will find words from the &lt;var&gt;words list&lt;/var&gt; whose first letter is v. The &lt;em&gt;blank input slot&lt;/em&gt; is where each item of the list goes to decide if it will be kept.&lt;br&gt;
+        &lt;img class="indent" src="/img/2-complexity/keep-example-6.png" alt="keep items  ((letter(1) of ( )) = (v)) from (words list)" title="keep items  ((letter(1) of ( )) = (v)) from (words list)"&gt;
+    &lt;/p&gt;
+    
+    &lt;div class="vocabFullWidth"&gt;: &lt;strong&gt;String&lt;/strong&gt; and &lt;strong&gt;Index&lt;/strong&gt;
+        &lt;ul&gt;
+            &lt;div class="comment"&gt;AAP-1.C.4&lt;/div&gt;
+            &lt;li&gt;A &lt;strong&gt;string&lt;/strong&gt; is an ordered sequence of characters.&lt;/li&gt;
+            &lt;div class="comment"&gt;AAP-1.C.3 (strings)&lt;/div&gt;
+            &lt;li&gt;&lt;a href="/cur/programming/2-complexity/2-data-structures-art/2-quizzes.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="You've already learned the word index"&gt;You've already learned&lt;/a&gt; the word &lt;strong&gt;index&lt;/strong&gt; for the position of an element in a list. The same word is used for the position of a character in a string (for example, a letter in a word). So the first input to &lt;code&gt;letter&lt;/code&gt; is the index.&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+
+    &lt;div class="takeNote"&gt;
+        &lt;p&gt;&lt;strong&gt;You write the predicate that does the checking, and &lt;code&gt;keep&lt;/code&gt; applies the predicate to each item in the input list and then reports the list of items that make your predicate &lt;code&gt;true&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
+        &lt;p&gt;Note that the blank input slot in the predicate is &lt;em&gt;required&lt;/em&gt;; this is where each item from the list goes as it is checked by the predicate.&lt;/p&gt;
+        &lt;div class="endnote"&gt;The &lt;code&gt;letter&lt;/code&gt; block in the palette looks like &lt;img src="/img/blocks/letter-1-of-world.png" alt="letter (1) of (world)" title="letter (1) of (world)" /&gt;.  You have to delete the "world" so that there is a blank slot where you need it to be.&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="forYouToDo" id="first"&gt;
+        &lt;ol&gt;
+            &lt;li&gt;
+                &lt;a class="run" href="/prog/2-complexity/U2L3-KeepingData.xml" target="_blank"&gt;&lt;img class="inline" src="/img/icons/load-save.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."&gt;&lt;/a&gt; 
+                &lt;div class="endnote"&gt;This project contains two example &lt;code&gt;keep&lt;/code&gt; expressions and an &lt;code&gt;initialize list&lt;/code&gt; procedure (you can look inside it to see what it does).&lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;img class="inline" src="/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /&gt; Experiment with these examples of &lt;code&gt;keep&lt;/code&gt;. Discuss and then explain &lt;em&gt;in writing&lt;/em&gt; what these expressions are doing.&lt;br /&gt;
+                &lt;img class="indent" src="/img/2-complexity/keep-example-4.png" alt="keep items  ((length of ( )) = (5)) from {apple, banana, orange, grape, kiwi, mango, watermelon} reporting {apple, grape, mango}" title="keep items  ((length of ( )) = (5)) from {apple, banana, orange, grape, kiwi, mango, watermelon} reporting {apple, grape, mango}"&gt;&lt;br /&gt;
+                &lt;img class="indent" src="/img/2-complexity/keep-example-7.png" alt="keep items  (not(is () a (number)?)) from {5, :), six, 7, elephant, 3} reporting {5,7,3}" title="keep items  (not(is () a (number)?)) from {5, :), six, 7, elephant, 3} reporting {5,7,3}"&gt;
+            &lt;/li&gt;
+            
+            &lt;!--&lt;p&gt;
+                Here, every word in the list is asked whether the first letter is &lt;var&gt;a&lt;/var&gt;:&lt;br /&gt;
+                &lt;img class="indent" src="/img/aprilpd/keep-example-4.png" alt="keep items  ((letter (1) of ()) = (a)) from {Ann, Olivia, Jamal, Karl, A.J., Tara} reporting {Ann, A.J.}" title="keep items  ((letter (1) of ()) = (a)) from {Ann, Olivia, Jamal, Karl, A.J., Tara} reporting {Ann, A.J.}" /&gt;
+            &lt;/p&gt;--&gt;
+            
+        &lt;/ol&gt;
+    &lt;/div&gt;
+    
+    &lt;p&gt;The first example keeps inputs of a certain &lt;em&gt;length&lt;/em&gt;; every word in the list is asked whether its length is 5, and only those with five letters are reported. The second example keeps inputs that are &lt;em&gt;not numbers&lt;/em&gt;; every item in this list is asked "Is this item &lt;em&gt;not&lt;/em&gt; a number?" and only the elements that are not numbers are reported.&lt;/p&gt;
+    &lt;p&gt;There are two &lt;code&gt;length&lt;/code&gt; blocks in Snap&lt;em&gt;!&lt;/em&gt;. One (&lt;img class="inline" src="/img/blocks/length-of-blank-operator.png" alt="length ()" title="length ()" /&gt;) is designed for strings, and the other (&lt;img class="inline" src="/img/blocks/length-list.png" alt="length ()" title="length ()" /&gt;) is designed for lists.&lt;/p&gt;
+    
+    &lt;div class="forYouToDo"&gt;
+        &lt;ol start="3"&gt;
+            &lt;li&gt;
+                If you don't see a list of words on the stage, run &lt;code&gt;initialize list&lt;/code&gt;. Then use  &lt;code&gt;keep&lt;/code&gt; to answer these questions:
+                &lt;ol&gt;
+                    &lt;li&gt;How many 12-letter words are in &lt;var&gt;words list&lt;/var&gt;?&lt;/li&gt;
+                    &lt;li&gt;How many 15-letter words are in &lt;var&gt;words list&lt;/var&gt;?&lt;/li&gt;
+                    &lt;li&gt;How many 17-letter words are in &lt;var&gt;words list&lt;/var&gt;?&lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+          &lt;/code&gt;&lt;/pre&gt;
+&lt;div id="quarto-navigation-envelope" class="hidden"&gt;
+&lt;p&gt;&lt;span class="hidden" data-render-id="quarto-int-sidebar-title"&gt;Unit 2: Abstraction&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-navbar-title"&gt;BHS AP CSP&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-next"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-prev"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:quarto-sidebar-section-1"&gt;Introduction to Programming&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:quarto-sidebar-section-2"&gt;Lab 1&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-1/1-number-guessing-game.html"&gt;Starting a Number Guessing Game&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-1/2-checking-player-guess.html"&gt;Checking the Player’s Guess&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-1/3-debugging-extending.html"&gt;Debugging and Extending Your Number Guessing Game&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-1/4-keeping-score.html"&gt;Keeping Score with Global Variables&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-1/5-choosing-avatar.html"&gt;Choosing a Costume&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-1/6-keeping-a-journal.html"&gt;Keeping a Programming Journal&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:quarto-sidebar-section-3"&gt;Lab 2&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-2/1-shopping-list-app.html"&gt;Shopping List App&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-2/2-quizzes.html"&gt;Planning a Quiz App&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-2/3-traversing-list.html"&gt;Checking Each Quiz Answer&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:quarto-sidebar-section-4"&gt;Lab 3&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-3/1-what-is-predicate.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-3/2-combining-predicates.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-3/3-combining-conditionals.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-3/4-boolean-experiments.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-3/5-keeping-list-items.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-3/6-solving-word-puzzle.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:quarto-sidebar-section-5"&gt;Lab 4&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-4/1-mod-operator.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-4/2-math-predicates.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-4/3-other-math-reporters.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:quarto-sidebar-section-6"&gt;Lab 5&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-5/1-copyright.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-5/2-fairuse.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-5/3-bargain.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-5/4-digital.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-5/5-drm.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:quarto-sidebar-section-7"&gt;Optional Projects&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/optional-projects/1-magic8ball.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/optional-projects/2-egyptian-motif.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/optional-projects/3-mastermind.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/optional-projects/4-plurals1.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/optional-projects/5-plurals2.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/optional-projects/6-kaleidoscope.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-navbar:Home"&gt;Home&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-navbar:Labs"&gt;Labs&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-navbar:Unit 1: Introduction to Programming"&gt;Unit 1: Introduction to Programming&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-navbar:Unit 2: Abstraction"&gt;Unit 2: Abstraction&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-navbar:Unit 3: Data Structures"&gt;Unit 3: Data Structures&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-navbar:Unit 4: How the Internet Works"&gt;Unit 4: How the Internet Works&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-navbar:Unit 5: Algorithms and Simulations"&gt;Unit 5: Algorithms and Simulations&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-navbar:Unit 6: How Computers Work"&gt;Unit 6: How Computers Work&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-navbar:Snap!"&gt;Snap!&lt;/span&gt; &lt;span class="hidden" data-render-id="footer-center"&gt;The curriculum and text on this website is adapted from &lt;a href="https://bjc.edc.org/bjc-r/"&gt;The Beauty and Joy of Computing&lt;/a&gt; by University of California, Berkeley and Education Development Center, Inc.&nbsp;which is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="quarto-meta-markdown" class="hidden"&gt;
+&lt;p&gt;&lt;span class="hidden" data-render-id="quarto-twittercardtitle"&gt;&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-ogcardtitle"&gt;&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-metasitename"&gt;BHS AP CSP&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/main&gt; &lt;!-- /main --&gt;
+&lt;script id = "quarto-html-after-body" type="application/javascript"&gt;
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) =&gt; {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () =&gt; {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) =&gt; {
+    for (let i=0; i &lt; stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) =&gt; {
+    for (let i=0; i &lt; stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) =&gt; {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i &lt; els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) =&gt; {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i &lt; toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') &gt; 0 &amp;&amp; navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() =&gt; {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () =&gt; { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () =&gt; {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) =&gt; {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () =&gt; {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () =&gt; {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i&lt;noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) =&gt; {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i&lt;bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+&lt;/script&gt;
+&lt;nav class="page-navigation"&gt;
+  &lt;div class="nav-page nav-page-previous"&gt;
+      &lt;a  href="/unit-2/lab-3/4-boolean-experiments.html" class="pagination-link"&gt;
+        &lt;i class="bi bi-arrow-left-short"&gt;&lt;/i&gt; &lt;span class="nav-page-text"&gt;order:&lt;/span&gt;
+      &lt;/a&gt;          
+  &lt;/div&gt;
+  &lt;div class="nav-page nav-page-next"&gt;
+      &lt;a  href="/unit-2/lab-3/6-solving-word-puzzle.html" class="pagination-link"&gt;
+        &lt;span class="nav-page-text"&gt;order:&lt;/span&gt; &lt;i class="bi bi-arrow-right-short"&gt;&lt;/i&gt;
+      &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+&lt;/div&gt; &lt;!-- /content --&gt;
+&lt;footer class="footer"&gt;
+  &lt;div class="nav-footer"&gt;
+      &lt;div class="nav-footer-center"&gt;
+        &lt;div class='footer-contents'&gt;The curriculum and text on this website is adapted from [The Beauty and Joy of Computing](https://bjc.edc.org/bjc-r/)
+by University of California, Berkeley and Education Development Center, Inc. which is licensed
+under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+&lt;/div&gt;  
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</title></main></div></body></html>

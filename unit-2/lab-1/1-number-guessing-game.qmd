@@ -1,0 +1,294 @@
+---
+title: "Starting a Number Guessing Game"
+subtitle: "Unit 2, Lab 1, Page 1"
+order: 1
+---
+
+::: learn
+<p><strong>In this lab,</strong> you will use local and global <em>variables</em> to store information. <!--<ul>
+<li><em>Script variables</em> (a kind of <em>local</em> variable) that can be used only within a single script, and</li>
+<li><em>Global variables</em> that can be set, used, or changed anywhere in the program.</li>
+</ul--></p>
+
+<p><strong>On this page,</strong> you will begin to develop a number guessing game that uses a <em>local variable</em> to keep track of a secret number.</p>
+:::
+
+<!--<h2>Using a Script Variable (a Local Variable)</h2>-->
+
+::: {#first .forYouToDo}
+<ol>
+
+<li>
+
+::: newProject
+["U2L1-NumberGuessing"]{.text}<img src="/img/icons/new-project-called.png" title="Create a new project called U2L1-NumberGuessing" alt="Create a new project called U2L1-NumberGuessing"/>
+:::
+
+</li>
+
+<li>Start building a new command block called <code>number guessing game</code> that will contain the code for the game. Leave the Block Editor open.</li>
+
+</ol>
+:::
+
+<p>In a number-guessing game, the player tries to guess the computer's secret number. The computer needs a way to store the secret number in a <em>variable</em> so that it can compare it to the player's guesses.<br /> <img src="/img/2-complexity/script-variables-secret-number.png" title="script variables (secret number)" alt="script variables (secret number)" class="indent"/></p>
+
+::: vocabFullWidth
+: <strong>Variable</strong>
+
+::: comment
+AAP-1.A.1
+:::
+
+<p>A <strong>variable</strong> is like a labeled box that can hold one value at a time, such as one word, one costume, or one list (which can contain many things). You can look at what's inside as many times as you want.</p>
+
+::: endnote
+On <a href="/cur/programming/1-introduction/2-gossip-and-greet/2-gossip.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unit 1 Lab 2 Page 2: Making Programs Talk</a>, you learned about <em>procedural abstraction:</em> giving scripts names by putting them in new blocks. Here, we are starting to look at <em>data abstraction</em>, giving names to numbers, text, lists, etc. When you give something a name, you can refer to it without knowing exactly what the value is.
+:::
+:::
+
+::: {.forYouToDo style="clear: right;"}
+<ol start="3">
+
+<li>
+
+Create a script variable called <var>secret number</var> to store the number that the player will try to guess (instructions below).
+
+::: narrower
+<h3><strong>Making a Script Variable</strong></h3>
+
+<ol type="a">
+
+<li><strong>Move a <code>script variables</code> block into the Scripting Area.</strong> You can find it in the Variables palette.<br /> <img src="/img/prog/scriptvar.png" title="script variables" alt="script variables" class="indent"/></li>
+
+<li><strong>Name the variable</strong> by clicking on the orange <var>a</var> at the end and typing the name you want. Here, it should be called <var>secret number</var>.</li>
+
+</ol>
+
+<strong>Later, you will use the script variable</strong> by dragging it out of the <code>script variables</code> block (the way you drag an input) and placing it where you need it in your code.
+:::
+
+</li>
+
+<li>
+
+::: comment
+AAP-1.A, AAP-3.E
+:::
+
+Use <img src="/img/blocks/set-empty.png" title="set () to ()" alt="set () to ()" class="inline nopadtb"/> to set the initial value of <var>secret number</var> to a random number from 1 to 10. The <code>set</code> menu lets you select which variable to set. <br />
+
+::: sidenoteBig
+The variable <var>secret number</var> is available in the <code>set</code> block only when you snap it somewhere after the <code>script variables</code> block.
+:::
+
+<img src="/img/2-complexity/set-secret-number-menu.jpg" title="set block menu selecting secret number" alt="set block menu selecting secret number" class="indent"/>
+
+</li>
+
+</ol>
+:::
+
+::: examFullWidth
+::: comment
+AAP-1.B.2
+:::
+
+::: pseudop
+<img src="/img/2-complexity/set-secret-number-to-7.png" title="set (secret number) to (7)" alt="set (secret number) to (7)" class="inline"/> would be written as
+
+```{=html}
+<pre class="inline">secretNumber &leftarrow; 7</pre>
+```
+or <img src="/img/2-complexity/secret-number-assignment-blocktran.png" title="a white rounded rectangle containing the text &apos;secretNumber ← 7&apos;" alt="a white rounded rectangle containing the text &apos;secretNumber ← 7&apos;" class="nopadtb"/>.
+:::
+:::
+
+<p>Script variables are a kind of <em>local variable</em>; they work only within the script where they're created. If you drag one into a different script, it won't work. You've seen two kinds of local variables before: inputs to blocks and <code>for</code> counters.</p>
+
+::: endnote
+<p><a href="#hint-inputs" data-bs-toggle="collapse" title="Examples you've seen before.">Examples you've seen before.</a></p>
+
+::: {#hint-inputs .collapse}
+<p>You have created variables as inputs to blocks that you made:<br /> <img src="/img/2-complexity/input-variable-for-pinwheelbranches-commented.png" title="block definition for pinwheel and setting &apos;number of branches&apos; input variable for pinwheel" alt="block definition for pinwheel and setting &apos;number of branches&apos; input variable for pinwheel" class="indent noshadow"/></p>
+
+<p>You have used the counter variable that the <code>for</code> block gave you:<br /> <img src="/img/2-complexity/local-variable-created-by-for-block-commented.png" title="local variable created by for block" alt="local variable created by for block" class="indent noshadow"/></p>
+:::
+:::
+
+::: vocabFullWidth
+: <strong>Local Variable</strong>
+
+<p>A <strong>local variable</strong> can be set or used only in the environment in which it is defined. This term includes inputs to procedures and variables created by the <code>for</code> or <code>script variables</code> block.</p>
+:::
+
+::: endnote
+<p>In algebra, a variable is sometimes used for something whose value you don't know yet, and the goal is to find out its value. In programming <em>you decide</em> the values of variables.</p>
+:::
+
+::: comment
+AAP-1.A.1
+:::
+
+::: sidenote
+You learned about input variables on <a href="/cur/programming/1-introduction/3-drawing/3-blocks-with-inputs.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 1 Lab 3 Page 3: Blocks with Inputs">Unit 1 Lab 3 Page 3: Blocks with Inputs</a>.
+:::
+
+::: pseudop
+When you assign a value to a variable, the variable holds that value, not where it came from. For example, if <var>apples</var> = 2 and you <img src="/img/2-complexity/set-bananas-to-apples.png" title="set (bananas) to (apples)" alt="set (bananas) to (apples)"/>, then <var>bananas</var> will hold the value 2 and have no memory of it having come from <var>apples</var>. This is why
+
+```{=html}
+<pre class="inline">a &larr; a * 2</pre>
+```
+means something. (Suppose <var>a</var> = 8. First compute the value of
+
+```{=html}
+<pre class="inline">a * 2</pre>
+```
+, namely 16, and then replace the old value of <var>a</var> with 16). Up to now, the only variables you've used are input variables, and you never assign a value to an input because the value is given by the code that calls it. But a script variable won't have a value until you give it one with <code>set</code>.
+:::
+
+::: forYouToDo
+<ol start="5">
+
+::: comment
+AAP-1.B, AAP-1.B.3
+:::
+
+<li>
+
+<!-- Question 1 -->
+
+::: {.assessment-data type="multiplechoice" identifier="What value will this code return?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="true"}
+::: prompt
+::: sidenote
+Examples like this one are useful to test your understanding of assignment to variables, but you wouldn't use a sequence of assignments like this in an actual program.
+:::
+
+What value will this code display?<br />
+
+```{=html}
+<pre>a &leftarrow; 3
+b &leftarrow; a
+a &leftarrow; 4
+DISPLAY(b)</pre>
+```
+:::
+
+::: {.choice identifier="c1"}
+::: text
+3
+:::
+
+::: feedback
+Correct! The variable <var>b</var> is assigned the <strong>value</strong> of the variable <var>a</var> (which is 3 when
+
+```{=html}
+<pre class="inline">b &leftarrow; a</pre>
+```
+is done).
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+4
+:::
+
+::: feedback
+The variable <var>b</var> is given the <strong>value</strong> of the variable <var>a</var> (which is 3 when
+
+```{=html}
+<pre class="inline">b &leftarrow; a</pre>
+```
+is done); <var>b</var> doesn't remember that the 3 came from <var>a</var> so it doesn't change when <var>a</var> is changed.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+a
+:::
+
+::: feedback
+The variable <var>b</var> has been set to the <strong>value</strong> of the variable <var>a</var>, not the letter "a" itself.
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+b
+:::
+
+::: feedback
+The script will display the <strong>value of the variable <var>b</var></strong>, not the letter "b" itself.
+:::
+:::
+
+::: {.responseDeclaration identifier="ri1"}
+::: {.correctResponse identifier="c1"}
+:::
+:::
+:::
+
+</li>
+
+<li>
+
+<!-- Question 2 -->
+
+::: {.assessment-data type="multiplechoice" identifier="What value will this script report?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="true"}
+::: prompt
+What value will this script report?<br /> <img src="/img/2-complexity/variable-assignment-quizlet.png" title="set m to 9, set k to 5, set m to (m + 1), set k to (k - m), report k" alt="set m to 9, set k to 5, set m to (m + 1), set k to (k - m), report k" class="indent"/>
+:::
+
+::: {.choice identifier="c1"}
+::: text
+-5
+:::
+
+::: feedback
+Correct!
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+3
+:::
+
+::: feedback
+The value of the variable <var>m</var> is always greater than the value of the variable <var>k</var> in this script, so subtracting <var>m</var> from <var>k</var> will give a negative number.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+-4
+:::
+
+::: feedback
+The value of the variable <var>m</var> is 9 at the beginning, but it has been changed by the time it is subtracted from <var>k</var>.
+:::
+:::
+
+::: {.choice identifier="c5"}
+::: text
+5
+:::
+
+::: feedback
+The last <code>set</code> command sets the value of the variable <var>k</var> to the value <var>k</var> -- <var>m</var>, not <var>m</var> -- <var>k</var>.
+:::
+:::
+
+::: {.responseDeclaration identifier="ri2"}
+::: {.correctResponse identifier="c1"}
+:::
+:::
+:::
+
+</li>
+
+</ol>
+:::

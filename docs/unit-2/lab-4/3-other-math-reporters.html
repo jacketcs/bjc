@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.475">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>BHS AP CSP – other-math-reporters</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../unit-2/lab-5/1-copyright.html" rel="next">
+<link href="../../unit-2/lab-4/2-math-predicates.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script type="text/javascript" src="../../llab/loader.js"></script>
+
+
+<link rel="stylesheet" href="../../css/bjc.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">BHS AP CSP</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-labs" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Labs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-labs">    
+        <li>
+    <a class="dropdown-item" href="../../unit-1/index.html">
+ <span class="dropdown-text">Unit 1: Introduction to Programming</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-2/index.html">
+ <span class="dropdown-text">Unit 2: Abstraction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-3/index.html">
+ <span class="dropdown-text">Unit 3: Data Structures</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-4/index.html">
+ <span class="dropdown-text">Unit 4: How the Internet Works</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-5/index.html">
+ <span class="dropdown-text">Unit 5: Algorithms and Simulations</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-6/index.html">
+ <span class="dropdown-text">Unit 6: How Computers Work</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html">
+ <span class="menu-text">Snap!</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../unit-2/index.html" class="sidebar-item-text sidebar-link">Introduction to Programming</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">Lab 1</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/1-number-guessing-game.html" class="sidebar-item-text sidebar-link">Starting a Number Guessing Game</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/2-checking-player-guess.html" class="sidebar-item-text sidebar-link">Checking the Player’s Guess</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/3-debugging-extending.html" class="sidebar-item-text sidebar-link">Debugging and Extending Your Number Guessing Game</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/4-keeping-score.html" class="sidebar-item-text sidebar-link">Keeping Score with Global Variables</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/5-choosing-avatar.html" class="sidebar-item-text sidebar-link">Choosing a Costume</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/6-keeping-a-journal.html" class="sidebar-item-text sidebar-link">Keeping a Programming Journal</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Lab 2</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-2/1-shopping-list-app.html" class="sidebar-item-text sidebar-link">Shopping List App</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-2/2-quizzes.html" class="sidebar-item-text sidebar-link">Planning a Quiz App</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-2/3-traversing-list.html" class="sidebar-item-text sidebar-link">Checking Each Quiz Answer</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">Lab 3</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/1-what-is-predicate.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/2-combining-predicates.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/3-combining-conditionals.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/4-boolean-experiments.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/5-keeping-list-items.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/6-solving-word-puzzle.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">Lab 4</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-4/1-mod-operator.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-4/2-math-predicates.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-4/3-other-math-reporters.html" class="sidebar-item-text sidebar-link active">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">Lab 5</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/1-copyright.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/2-fairuse.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/3-bargain.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/4-digital.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/5-drm.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">Optional Projects</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/1-magic8ball.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/2-egyptian-motif.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/3-mastermind.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/4-plurals1.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/5-plurals2.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/6-kaleidoscope.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+&lt;!DOCTYPE html&gt;
+
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<script src="../../llab/loader.js"></script>
+<title>
+Unit 2 Lab 4: Making Computers Do Math, Page 3
+</title>
+
+
+<h2 class="anchored">
+<p>More Mathematical Reporterssubtitle: “Unit , Lab , Page” order:</p>
+<hr>
+<pre><code>    &lt;div class="learn"&gt;
+        &lt;strong&gt;In this project&lt;/strong&gt;, you will create mathematical blocks that combine several numbers, such as a &lt;code&gt;sum&lt;/code&gt; block, which combines two numbers using addition: &lt;br /&gt;
+        &lt;img class="indent" src="/img/3-lists/sum-from-4-to-6-reporting.png" alt="sum from (4) to (6) reporting 15" title="sum from (4) to (6) reporting 15" /&gt;
+    &lt;/div&gt;
+
+    &lt;div class="forYouToDo" id="first"&gt;
+        &lt;ol&gt;
+            &lt;li&gt;Open your U2L4-MathLibrary project if it isn't open already.&lt;/li&gt;
+            &lt;li&gt;
+                Build blocks for &lt;code&gt;maximum&lt;/code&gt; (reporting the larger of two input numbers) and &lt;code&gt;minimum&lt;/code&gt; (reporting the smaller of two input numbers):&lt;br /&gt;
+                &lt;img class="indent" src="/img/2-complexity/max-of-6-and-4-reporting.png" alt="max of (6) and (4) reporting 6" title="max of (6) and (4) reporting 6" /&gt;
+                &lt;img class="indent" src="/img/2-complexity/min-of-3-and--4-reporting.png" alt="max of (3) and (-4) reporting -4" title="max of (3) and (-4) reporting -4" /&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+            
+    &lt;p&gt; The &lt;img class="inline" src="/img/blocks/combine.png" alt="combine 'list input slot' using 'reporter input slot'" title="combine 'list input slot' using 'reporter input slot'" /&gt; block takes two inputs: a list and an operation &lt;em&gt;with two inputs&lt;/em&gt;, and it reports the result of combining all the elements in the input list using the input operation. For example, the expression below reports: 0 + 1 + 2.&lt;br /&gt;
+        &lt;img class="indent" src="/img/3-lists/combine-simple-example.png" alt="combine (list {0, 1, 2}) with (()+()) reporting 3" title="combine (list {0, 1, 2}) with (()+()) reporting 3" /&gt;
+    &lt;/p&gt;
+    
+    &lt;div class="takeNote"&gt;
+        &lt;p&gt;&lt;strong&gt;You choose the operation, and &lt;code&gt;combine&lt;/code&gt; performs that operation by &lt;em&gt;combining&lt;/em&gt; all the items in the input list and then reports the result.&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;Notice that the function used to &lt;em&gt;combine&lt;/em&gt; the list items always has two blank input slots. The &lt;code&gt;keep&lt;/code&gt; block only needs one blank in its input function, but with &lt;code&gt;combine&lt;/code&gt;, two are required.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="endnote"&gt;
+        &lt;p&gt;&lt;code&gt;Combine&lt;/code&gt; is a &lt;em&gt;higher-order function&lt;/em&gt;; it is a function that takes a function as input. You've seen another higher-order function already: &lt;code&gt;keep&lt;/code&gt; (in &lt;a href="/cur/programming/2-complexity/3-predicates/5-keeping-list-items.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="Keeping Items from a List"&gt;Unit 2 Lab 3&lt;/a&gt;).&lt;/p&gt;
+        &lt;p&gt;
+            Unlike &lt;code&gt;keep&lt;/code&gt;, the &lt;code&gt;combine&lt;/code&gt; function is only used with a few input functions.
+            &lt;a href="#hint-which-functions" data-bs-toggle="collapse" title="Which functions?"&gt;Which functions?&lt;/a&gt;
+            &lt;div id="hint-which-functions" class="collapse"&gt;
+                &lt;p&gt;
+                    &lt;code&gt;Combine&lt;/code&gt; is mostly used with &lt;em&gt;only these functions&lt;/em&gt;:&lt;br /&gt;
+                    &lt;img class="indent" src="/img/3-lists/plus.png" alt="+" title="+" /&gt; &lt;img src="/img/3-lists/times.png" alt="&amp;times;" title="&amp;times;" /&gt;&lt;br /&gt;
+                    &lt;img class="indent" src="/img/3-lists/and-block.png" alt="and" title="and" /&gt; &lt;img src="/img/3-lists/or-block.png" alt="or" title="or" /&gt;&lt;br /&gt;
+                    &lt;img class="indent" src="/img/3-lists/join.png" alt="join" title="join" /&gt; &lt;img src="/img/3-lists/join-words.png" alt="join words" title="join words" /&gt;&lt;br /&gt;
+                    and the &lt;img class="inline" src="/img/3-lists/maximum.png" alt="maximum of () ()" title="maximum of () ()" /&gt; and &lt;img class="inline" src="/img/3-lists/minimum.png" alt="minimum of () ()" title="minimum of () ()" /&gt; blocks you've just written yourself.
+                &lt;/p&gt;
+                &lt;p&gt;
+                    &lt;a data-bs-toggle="collapse" href="#hint-3"&gt;Why so few?&lt;/a&gt;
+                    &lt;div id="hint-3" class="collapse"&gt;
+                        The function has to be &lt;em&gt;associative&lt;/em&gt;, meaning that it can't matter what order you group the items in. For example, addition is associative: (7&amp;thinsp;+&amp;thinsp;8)&amp;thinsp;+&amp;thinsp;1 is the same as 7&amp;thinsp;+&amp;thinsp;(8&amp;thinsp;+&amp;thinsp;1) (work it out yourself), but subtraction is not: (7&amp;thinsp;−&amp;thinsp;8)&amp;thinsp;−&amp;thinsp;1 is different from 7&amp;thinsp;−&amp;thinsp;(8&amp;thinsp;−&amp;thinsp;1).
+                        So expressions like &lt;img src="/img/3-lists/combine-minus.png" alt="combine with (-) items of (list 7 8 1)"&gt; would be ambiguous.
+                    &lt;/div&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+             
+
+    &lt;div class="forYouToDo"&gt;
+        &lt;ol start="3"&gt;
+            &lt;li&gt;
+                Use &lt;code&gt;combine&lt;/code&gt; to build &lt;code&gt;maximum of list&lt;/code&gt; and &lt;code&gt;minimum of list&lt;/code&gt;.&lt;br /&gt;
+                &lt;img class="indent" src="/img/3-lists/max-of-list-reporting.png" alt="maximum of list {1, 22, 3, -4} reporting 22" title="maximum of list {1, 22, 3, -4} reporting 22" /&gt;
+                &lt;img class="indent" src="/img/3-lists/min-of-list-reporting.png" alt="minimum of list {1, 22, 3, -4} reporting -4" title="minimum of list {1, 22, 3, -4} reporting -4" /&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                Create a &lt;code&gt;sum of list&lt;/code&gt; block that reports the sum of the items of a list.&lt;br /&gt;
+                &lt;img class="indent" src="/img/3-lists/sum-of-list-reporting.png" alt="sum of list {1, 2, 3, 10} reporting 16" title="sum of list {1, 2, 3, 10} reporting 16" /&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                Create an &lt;code&gt;average of list&lt;/code&gt; block that calculates the average of the items in a list:&lt;br /&gt;
+                &lt;img class="indent" src="/img/3-lists/average-of-list-reporting.png" alt="average of list {1, 2, 3, 4} reporting 2.5" title="average of list {1, 2, 3, 4} reporting 2.5" /&gt;
+                &lt;div class="endnote"&gt;
+                    &lt;a href="#hint-average" data-bs-toggle="collapse" title="Hint about average of list"&gt;Hint about &lt;code&gt;average of list&lt;/code&gt;&lt;/a&gt;
+                    &lt;div id="hint-average" class="collapse"&gt;&lt;p&gt;First think: how do you calculate an average? Then think: what blocks could help you do that in Snap&lt;em&gt;!&lt;/em&gt;?&lt;/p&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="comment"&gt;AAP-2.M.2, AAP-2.O.4&lt;/div&gt;
+    &lt;p&gt;&lt;code&gt;Average of list&lt;/code&gt; and &lt;code&gt;sum of list&lt;/code&gt; are procedures that you'll need repeatedly, so after a while, you just know how to write them, or you'll put them in a library, and you won't have to reinvent them each time. Finding the maximum or minimum value in a list and checking for divisibility are also commonly needed algorithms.&lt;/p&gt;
+
+    &lt;div class="examFullWidth"&gt;
+        &lt;div class="comment"&gt;AAP-3.C.2&lt;/div&gt;
+        &lt;div class="sidenote"&gt;You saw the procedure definition for a command in &lt;a href="/cur/programming/1-introduction/3-drawing/4-modify-your-pinwheel.html?topic=nyc_bjc%2F1-intro-loops.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="Unit 1 Lab 3 Page 4: Modify Your Pinwheel" target="_blank"&gt;Unit 1 Lab 3 Page 4: Modify Your Pinwheel&lt;/a&gt;.&lt;/div&gt;
+        &lt;div class="pseudop"&gt;
+            The definition for a reporter looks much like the definition for a command except that it includes a &lt;pre class="inline"&gt;RETURN&lt;/pre&gt; (like &lt;code&gt;report&lt;/code&gt;). For example, this definition&lt;br /&gt;
+            &lt;div class="sidenote"&gt;
+                &lt;p&gt;In many languages (including Snap&lt;em&gt;!&lt;/em&gt;) variables must be &lt;em&gt;declared&lt;/em&gt; in some way (in Snap&lt;em&gt;!&lt;/em&gt;, you can click the "Make a variable" button or use the &lt;code&gt;script variables&lt;/code&gt; block). But the AP's language doesn't include variable declarations, so you won't see them on the exam. &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;img class="indent" src="/img/3-lists/square-roots-definition.png" alt="square roots of (number) {script variables (positive root), set (positive root) to ((sqrt) of (number))), report (list (positive root) ((-1) × positive root))" title="square roots of (number) {script variables (positive root), set (positive root) to ((sqrt) of (number))), report (list (positive root) ((-1) × positive root))" /&gt;&lt;br /&gt;
+            would be written as  
+            &lt;div class="pre-container"&gt;&lt;pre class="inline"&gt;</code></pre>
+PROCEDURE squareRoots(number) { positiveRoot ← sqrt(number) RETURN([positiveRoot, -1 * positiveRoot]) }
+
+</h2></main></div>
+<pre><code>                or &lt;img src="/img/3-lists/square-roots-definition-blocktran.png" alt="square roots of (number) {script variables (positive root), set (positive root) to ((sqrt) of (number))), report (list (positive root) (() - positive root))" title="square roots of (number) {script variables (positive root), set (positive root) to ((sqrt) of (number))), report (list (positive root) (() - positive root))" /&gt;
+            &lt;div class="comment"&gt;AAP-3.A.7&lt;/div&gt;
+            &lt;div class="pseudop"&gt;As with &lt;code&gt;report&lt;/code&gt; in Snap&lt;em&gt;!&lt;/em&gt;, when a &lt;pre class="inline"&gt;RETURN&lt;/pre&gt; statement is executed, the flow of control returns to the place in your code where the procedure was called, and the procedure returns the value of the expression inside the &lt;pre class="inline"&gt;RETURN&lt;/pre&gt; command or &lt;code&gt;report&lt;/code&gt; block.&lt;/div&gt;
+            &lt;div class="endnote"&gt;
+                &lt;div class="pseudop"&gt;Also, the procedure &lt;pre class="inline"&gt;sqrt&lt;/pre&gt; isn't built in to the AP's language so it is written in lower case like other programmer-defined procedures.&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;      
+    
+    &lt;div class="examFullWidth"&gt;
+        &lt;div class="comment"&gt;AAP-2.H.3&lt;/div&gt;
+        &lt;div class="pseudop"&gt;The conditional expression &lt;img class="inline" src="/img/2-complexity/ge-ifelse-no-hat.png" alt="if (a &amp;gt; b) {
+report true</code></pre>
+} else { report (a = b) }” title=“if (a &gt; b) { report true } else { report (a = b) }” /&gt; would be written as
+<div class="pre-container">
+<pre class="inline">IF(a &gt; b)
+{
+    RETURN(true)
+}
+ELSE
+{
+    RETURN(a = b)
+}</pre>
+</div>
+or <img class="inline" src="../../img/2-complexity/if-else-blocktran.png" alt="IF(a > b)
+{
+    RETURN(true)
+}
+ELSE
+{
+    RETURN(a = b)
+}" title="IF(a > b)
+{
+    RETURN(true)
+}
+ELSE
+{
+    RETURN(a = b)
+}">
+
+<pre><code>        &lt;div class="pseudop"&gt;As in Snap&lt;em&gt;!&lt;/em&gt;, if the condition &lt;pre class="inline"&gt;a &amp;gt; b&lt;/pre&gt; is true, the code in first block of statements runs; if it is false, the code in second block of statements runs.&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="forYouToDo"&gt;
+        &lt;ol start="6"&gt;
+            &lt;li&gt;
+                &lt;!-- Question 5 --&gt;
+                &lt;div class="assessment-data" type="multiplechoice" identifier="What is the value of x?"
+                    hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri5" shuffle="true"&gt;
+                    &lt;div class="prompt"&gt;
+                        &lt;p&gt;When will "Error. Invalid entry." be displayed?&lt;/p&gt;
+                        &lt;div class="pre-container indent"&gt;&lt;pre class="inline"&gt;PROCEDURE greaterThanOrEqualTo(a, b)
+IF(a &amp;gt; b)
+{
+    RETURN(true)
+}
+ELSE
+{
+    RETURN(a = b)
+}
+DISPLAY("Error. Invalid entry.")</code></pre>
+}
+
+
+<pre><code>                    &lt;/div&gt;
+                    &lt;div class="choice" identifier="c1"&gt;
+                        &lt;div class="text"&gt;When &lt;pre class="inline"&gt;a &amp;gt; b&lt;/pre&gt; is true.&lt;/div&gt;
+                        &lt;div class="feedback"&gt;
+                            Think about what &lt;pre class="inline"&gt;RETURN&lt;/pre&gt; does. Like &lt;code&gt;report&lt;/code&gt; in Snap&lt;em&gt;!&lt;/em&gt;, &lt;pre class="inline"&gt;RETURN&lt;/pre&gt; ends the procedure. Once it is run, no other code in that procedure is run, and the flow of control returns to the place where the procedure was called.
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="choice" identifier="c2"&gt;
+                        &lt;div class="text"&gt;When &lt;pre class="inline"&gt;a &amp;gt; b&lt;/pre&gt; is false.&lt;/div&gt;
+                        &lt;div class="feedback"&gt;
+                            Think about what &lt;pre class="inline"&gt;RETURN&lt;/pre&gt; does. Like &lt;code&gt;report&lt;/code&gt; in Snap&lt;em&gt;!&lt;/em&gt;, &lt;pre class="inline"&gt;RETURN&lt;/pre&gt; ends the procedure. Once it is run, no other code in that procedure is run, and the flow of control returns to the place where the procedure was called.
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="choice" identifier="c3"&gt;
+                        &lt;div class="text"&gt;Always&lt;/div&gt;
+                        &lt;div class="feedback"&gt;
+                            It looks like that because that's the last line of procedure code, but think about what &lt;pre class="inline"&gt;RETURN&lt;/pre&gt; does. Like &lt;code&gt;report&lt;/code&gt; in Snap&lt;em&gt;!&lt;/em&gt;, &lt;pre class="inline"&gt;RETURN&lt;/pre&gt; ends the procedure. Once it is run, no other code in that procedure is run, and the flow of control returns to the place where the procedure was called.
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="choice" identifier="c4"&gt;
+                        &lt;div class="text"&gt;Never&lt;/div&gt;
+                        &lt;div class="feedback"&gt;
+                            Correct!
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="responseDeclaration" identifier="ri5"&gt;
+                        &lt;div class="correctResponse" identifier="c4"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+                        
+
+    &lt;div class="todo"&gt;I have a lot of edits to make in this TIF based on the paper I'm writing and the NCTM presentation I'm giving. --MF, 8/12/19&lt;/div&gt;
+    &lt;div class="takeItFurther"&gt;
+        &lt;ol type="A"&gt;
+            &lt;li&gt;
+                &lt;div class="sidenote"&gt;The &lt;strong&gt;greatest common divisor&lt;/strong&gt; of two integers is the largest positive integer that is a divisor (a factor) of both integers.&lt;/div&gt;
+                Develop a &lt;code&gt;greatest common divisor&lt;/code&gt; block. (Use your &lt;img class="inline" src="/img/2-complexity/divisors.png" alt="divisors of ()" title="divisors of ()" /&gt; block.)&lt;br /&gt;
+                &lt;img class="indent" src="/img/3-lists/gcd-20-50-reporting.png" alt="greatest common divisor of (20) and (50) reporting 10" title="greatest common divisor of (20) and (50) reporting 10" /&gt;
+                &lt;img class="indent" src="/img/3-lists/gcd-36-40-reporting.png" alt="greatest common divisor of (36) and (40) reporting 4" title="greatest common divisor of (36) and (40) reporting 4" /&gt;
+                &lt;div class="endnote"&gt;
+                    &lt;a href="#hint-GCD-hint" data-bs-toggle="collapse" title="Hints about building greatest common divisor"&gt;Hint about building &lt;code&gt;greatest common divisor&lt;/code&gt;&lt;/a&gt;
+                    &lt;div id="hint-GCD-hint" class="collapse"&gt;
+                        You may find it useful to use &lt;code&gt;maximum of list&lt;/code&gt; as well as &lt;code&gt;divisors&lt;/code&gt; and also to build an &lt;code&gt;intersection&lt;/code&gt; block that takes two lists as input and reports all of the items that are on both lists.&lt;br /&gt;
+                        &lt;img class="indent" src="/img/3-lists/intersection-reporting.png" alt="intersection of {apples, potatoes, carrots, pears} and {acorns, apples, pears, pine cones} reporting {apples, pears}" title="intersection of {apples, potatoes, carrots, pears} and {acorns, apples, pears, pine cones} reporting {apples, pears}" /&gt;&lt;br /&gt;
+                        &lt;a href="#hint-GCD-hints" data-bs-toggle="collapse" title="More detailed hints about greatest common divisor"&gt;More detailed hints about &lt;code&gt;greatest common divisor&lt;/code&gt;&lt;/a&gt;
+                        &lt;div id="hint-GCD-hints" class="collapse"&gt;
+                            In order to find the greatest common divisor of two numbers you will need to find:
+                            &lt;ol&gt;
+                                &lt;li&gt;The &lt;em&gt;divisors of each&lt;/em&gt; input number&lt;/li&gt;
+                                &lt;li&gt;The numbers that are &lt;em&gt;divisors of both&lt;/em&gt; input numbers &lt;/li&gt;
+                                &lt;li&gt;The &lt;em&gt;greatest&lt;/em&gt; number that is a divisor of both input numbers&lt;/li&gt;
+                            &lt;/ol&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+    
+   </code></pre>
+
+
+
+ <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../unit-2/lab-4/2-math-predicates.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">order:</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../unit-2/lab-5/1-copyright.html" class="pagination-link">
+        <span class="nav-page-text">order:</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+ <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+      <div class="nav-footer-center">The curriculum and text on this website is adapted from <a href="https://bjc.edc.org/bjc-r/">The Beauty and Joy of Computing</a> by University of California, Berkeley and Education Development Center, Inc.&nbsp;which is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</div>
+  </div>
+</footer>
+
+
+
+</body></html>

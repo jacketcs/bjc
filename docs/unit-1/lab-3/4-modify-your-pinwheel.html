@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.475">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>BHS AP CSP - Modify Your Pinwheel</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../unit-1/lab-3/5-remix-your-pinwheel.html" rel="next">
+<link href="../../unit-1/lab-3/3-blocks-with-inputs.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script type="text/javascript" src="../../llab/loader.js"></script>
+
+
+<link rel="stylesheet" href="../../css/bjc.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">BHS AP CSP</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-labs" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Labs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-labs">    
+        <li>
+    <a class="dropdown-item" href="../../unit-1/index.html">
+ <span class="dropdown-text">Unit 1: Introduction to Programming</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-2/index.html">
+ <span class="dropdown-text">Unit 2: Abstraction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-3/index.html">
+ <span class="dropdown-text">Unit 3: Data Structures</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-4/index.html">
+ <span class="dropdown-text">Unit 4: How the Internet Works</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-5/index.html">
+ <span class="dropdown-text">Unit 5: Algorithms and Simulations</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-6/index.html">
+ <span class="dropdown-text">Unit 6: How Computers Work</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html">
+ <span class="menu-text">Snap!</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Modify Your Pinwheel</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../unit-1/index.html" class="sidebar-item-text sidebar-link">Introduction to Programming</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">Lab 1</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-1/1-creating-a-snap-account.html" class="sidebar-item-text sidebar-link">Getting Started with Snap<em>!</em></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-1/2-start-your-first-snap-app.html" class="sidebar-item-text sidebar-link">Programming a Game</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-1/3-loading-mobile-device.html" class="sidebar-item-text sidebar-link">Sharing Your Game</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-1/4-keeping-score.html" class="sidebar-item-text sidebar-link">Giving the Player Feedback</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-1/5-finish-your-first-snap-app.html" class="sidebar-item-text sidebar-link">Improving Your Game</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Lab 2</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-2/1-pair-programming.html" class="sidebar-item-text sidebar-link">Pair Programming</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-2/2-gossip.html" class="sidebar-item-text sidebar-link">Making Programs Talk</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-2/3-customizing.html" class="sidebar-item-text sidebar-link">Customizing and Debugging</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-2/4-making-a-new-block.html" class="sidebar-item-text sidebar-link">Making Your Own Block</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-2/5-if-else.html" class="sidebar-item-text sidebar-link">Adding Variety to <code>Gossip</code></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Lab 3</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-3/1-exploring-motion.html" class="sidebar-item-text sidebar-link">Exploring Motion</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-3/2-exploring-snap-drawing-motion.html" class="sidebar-item-text sidebar-link">Angles and Turning</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-3/3-blocks-with-inputs.html" class="sidebar-item-text sidebar-link">Blocks with Inputs</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-3/4-modify-your-pinwheel.html" class="sidebar-item-text sidebar-link active">Modify Your Pinwheel</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-3/5-remix-your-pinwheel.html" class="sidebar-item-text sidebar-link">Using <code>Pinwheel</code> to Make <code>Polygon</code></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-3/6-the-for-block.html" class="sidebar-item-text sidebar-link">Looping with a Counter</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-3/7-programming-journal.html" class="sidebar-item-text sidebar-link">Keeping a Programming Journal</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">Lab 4</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-4/1-your-image-in-the-cloud.html" class="sidebar-item-text sidebar-link">Your Image in the Cloud</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-4/2-examining-privacy.html" class="sidebar-item-text sidebar-link">Examining Privacy</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-4/3-tanya-rider.html" class="sidebar-item-text sidebar-link">Tanya Rider’s Story</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-4/4-privacy-affected.html" class="sidebar-item-text sidebar-link">Innovations and Privacy</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">Lab 5</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-5/1-following-sprites.html" class="sidebar-item-text sidebar-link">Sprite Following the Mouse</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-5/2-sprite-interaction.html" class="sidebar-item-text sidebar-link">Sprite Following a Sprite</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">Optional Projects</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/optional-projects/1-sprite-line-art.html" class="sidebar-item-text sidebar-link">Line Art Toy</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/optional-projects/2-row-of-houses.html" class="sidebar-item-text sidebar-link">2 Row of Houses</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/optional-projects/3-pong.html" class="sidebar-item-text sidebar-link">The Game of Pong</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/optional-projects/4-daisy.html" class="sidebar-item-text sidebar-link">Daisy Design</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/optional-projects/5-sentence-builder.html" class="sidebar-item-text sidebar-link">Modeling Language</a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Modify Your Pinwheel</h1>
+<p class="subtitle lead">Unit 1, Lab 3, Page 4</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<script type="text/javascript" src="../../utilities/gifffer.min.js"></script>
+<script type="text/javascript">window.onload = function() {Gifffer();}</script>
+<p><link rel="stylesheet" type="text/css" href="../../css/bjc-gifffer.css"></p>
+<div class="learn">
+<p><strong>On this page,</strong> you will modify your existing <code>pinwheel</code> block so that you can use it to draw a variety of shapes.<br> <img src="../../img/1-introduction/assorted-pinwheels.png" title="assortment of pinwheels" alt="assortment of pinwheels" class="indent"></p>
+</div>
+<h2 class="anchored">
+Adding Multiple Inputs
+</h2>
+<p>
+Recall how you first <em>generalized</em> your original pinwheel script: you added an input called <var>number of branches</var> that controlled the turning angle of the sprite. By adding <em>more</em> inputs, you can generalize other aspects of your program.
+</p>
+<div id="first" class="forYouToDo">
+<ol>
+<li>
+If it isn’t already open, open your U1L3-Pinwheel project.
+</li>
+<li>
+<div class="comment">
+<p>AAP-3.A part b</p>
+</div>
+<p>Experiment with the input for the <em>second</em> <code>move</code> block inside your <code>pinwheel</code> block as shown below.<br></p>
+<ol>
+<li>
+<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> First predict. What do you think will happen?
+</li>
+<p><img src="../../img/1-introduction/pinwheel-change-second-move-input.png" title="pinwheel block definition with comment asking students to experiment with the input for the second move block" alt="pinwheel block definition with comment asking students to experiment with the input for the second move block" class="indent"></p>
+<li>
+Then try several inputs between -100 and 0.
+</li>
+<li>
+<img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> What happened? How does it compare to what you predicted? How does this input value impact the sprite’s behavior? How does it impact the resulting image on the stage? What number input number gives an asterisk? What input number gives a polygon?<br> <img title="Animation cycle from Asterisk to Polygon" alt="Animation cycle from Asterisk to Polygon" class="indent" data-gifffer="/img/1-introduction/Blockswith-Inputs_img/asteriskpolygonCycleBW.gif" height="200">
+</li>
+</ol>
+</li>
+<li>
+<div class="sidenoteBig">
+<p>Review how to add an input at <a href="../../cur/programming/1-introduction/3-drawing/3-blocks-with-inputs.html?topic=nyc_bjc%2F1-intro-loops.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="Blocks with Inputs">Unit 1 Lab 3 Page 3: Blocks with Input</a>, if needed.</p>
+</div>
+<p>Add a <em>second input</em> to control the amount of “backing up” that the sprite does before each turn through the full 360°.</p>
+<ol>
+<li>
+Edit your <code>pinwheel</code> block, then click the “+” sign at the end to add an input <strong>label</strong> (<strong>choose “Title text”</strong>). Type <code>backup:</code> as shown below, and click “OK”.
+</li>
+<div class="endnote">
+<p><a href="#hint-target" data-bs-toggle="collapse" title="Watch a video of steps a and b for adding the second input to the pinwheel block.">Watch a video of steps a and b.</a></p>
+<div id="hint-target" class="collapse">
+<p><img src="../../img/1-introduction/create-input-name.gif" title="a video of editting the 'pinwheel, branches: ()' block, clicking the plus sign on the right end of the hat block, typing 'backup:' as the Title text, clicking 'OK,' clicking the plus sign on the right end of the hat block again, typing 'backup' as the Input name, clicking 'OK,' clicking 'OK' again, and showing the block now appearing as 'pinwheel, branches: () backup: ()' " alt="a video of editing the 'pinwheel, branches: ()' block, clicking the plus sign on the right end of the hat block, typing 'backup:' as the Title text, clicking 'OK,' clicking the plus sign on the right end of the hat block again, typing 'backup' as the Input name, clicking 'OK,' clicking 'OK' again, and showing the block now appearing as 'pinwheel, branches: () backup: ()' " class="inline"></p>
+</div>
+</div>
+<li>
+Then click the “+” sign at the end <em>again</em> to add an input (choose “Input name”), and call it <var>backup</var>.
+</li>
+<li>
+Drag off the new <var>backup</var> input, place it where it belongs in the <code>pinwheel</code> code, and press “OK” or “Apply.”
+</li>
+<li>
+Check that changing the <var>backup</var> input value when running the <code>pinwheel</code> block gives the correct result. Debug any problems.
+</li>
+</ol>
+</li>
+<div class="sidenote">
+<p>Use an Operator block.</p>
+</div>
+<li>
+<p>Change the <code>pinwheel</code> script so that it will accept a <em>positive</em> value (between 0 and 100) for <var>backup</var>, and test it with a variety of inputs.</p>
+<div class="endnote">
+<p><a href="#hint-positivebackup" data-bs-toggle="collapse" title="Click for example inputs to test accepting a positive value for backup.">Click for example inputs to test.</a></p>
+<div id="hint-positivebackup" class="collapse">
+<p><img src="../../img/1-introduction/pinwheel-branches-6-backup-20.png" title="pinwheel, branches: (6) backup: (20)" alt="pinwheel, branches: (6) backup: (20)" class="indent"> <img src="../../img/1-introduction/pinwheel-branches-6-backup-20-result.png" title="A large hexagon with the clockwise end of each side extended 20 steps beyond the hexagon. The full length of each side is 100 steps." alt="A large hexagon with the clockwise end of each side extended 20 steps beyond the hexagon. The full length of each side is 100 steps." class="indent"><br> <img src="../../img/1-introduction/pinwheel-branches-6-backup-50.png" title="pinwheel, branches: (6) backup: (50)" alt="pinwheel, branches: (6) backup: (50)" class="indent"> <img src="../../img/1-introduction/pinwheel-branches-6-backup-50-result.png" title="A medium hexagon with the clockwise end of each side extended 50 steps beyond the hexagon. The full length of each side is 100 steps." alt="A medium hexagon with the clockwise end of each side extended 50 steps beyond the hexagon. The full length of each side is 100 steps." class="indent"><br> <img src="../../img/1-introduction/pinwheel-branches-6-backup-80.png" title="pinwheel, branches: (6) backup: (80)" alt="pinwheel, branches: (6) backup: (80)" class="indent"> <img src="../../img/1-introduction/pinwheel-branches-6-backup-80-result.png" title="A small hexagon with the clockwise end of each side extended 80 steps beyond the hexagon. The full length of each side is 100 steps." alt="A small hexagon with the clockwise end of each side extended 80 steps beyond the hexagon. The full length of each side is 100 steps." class="indent"></p>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="examFullWidth">
+<div class="comment">
+<p>AAP-3.C.1, AAP-2.K.2</p>
+</div>
+<div class="pseudop">
+<p>The procedure definition for the custom <code>pinwheel</code> command<br> <img src="../../img/1-introduction/pinwheel-definition.png" title="pinwheel, branches: (number of branches)
+{
+repeat(number of branches)
+{
+move (100) steps
+move (-37) steps
+turn clockwise (360 / number of branches) degrees
+}
+}" alt="pinwheel, branches: (number of branches)
+{
+repeat(number of branches)
+{
+move (100) steps
+move (-37) steps
+turn clockwise (360 / number of branches) degrees
+}
+}" class="indent"><br> would be written as<br></p>
+<div class="pre-container indent">
+<pre>PROCEDURE pinwheel(numberOfBranches)
+{
+REPEAT numberOfBranches TIMES
+{
+move(100)
+move(-37)
+turn_clockwise(360 / numberOfBranches)
+}
+}</pre>
+</div>
+<p>or <img src="../../img/1-introduction/pinwheel-blocktran.png" title="PROCEDURE pinwheel(numberOfBranches)
+{
+REPEAT numberOfBranches TIMES
+{
+move (100)
+move (-37)
+turn_clockwise (360 / numberOfBranches)
+}
+}" alt="PROCEDURE pinwheel(numberOfBranches)
+{
+REPEAT numberOfBranches TIMES
+{
+move (100)
+move (-37)
+turn_clockwise (360 / numberOfBranches)
+}
+}" class="inline"></p>
+</div>
+<div class="endnote">
+<div class="pseudop">
+<p>The procedures</p>
+<pre class="inline">move()</pre>
+<p>and</p>
+<pre class="inline">turn_clockwise()</pre>
+<p>aren’t built in to the AP’s language so they are written in lower case like other programmer-defined procedures.</p>
+</div>
+<div class="pseudop">
+<p>Notice that the hat block, <img src="../../img/1-introduction/pinwheel-hat-block.png" title="pinwheel, branches: (number of branches)" alt="pinwheel, branches: (number of branches)" class="inline nopadtb">, would be written as</p>
+<pre class="inline">PROCEDURE pinwheel(numberOfBranches)</pre>
+<p>. The word</p>
+<pre class="inline">PROCEDURE</pre>
+<p>tells you that that line of the code is like a hat block; the variable name in the parentheses on that line is the input that the procedure takes.</p>
+</div>
+</div>
+</div>
+<div class="forYouToDo">
+<p><img src="../../img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="imageRight"></p>
+<ol start="5">
+<li>
+Add another input called <var>size</var> to control the input to the <em>first</em> <code>move</code> block.<br> <img src="../../img/1-introduction/U1ImageVideoAddendum_img/U1L3-PinwheelwithInputs.png" title="pinwheel,  branches: (number of branches) size: (size) backup: (backup) hat block" alt="pinwheel, branches: (number of branches) size: (size) backup: (backup) hat block" class="indent" width="700">
+</li>
+<li>
+<p>Try out a variety of inputs to your <code>pinwheel</code> program.</p>
+<div class="endnote">
+<p><a href="#hint-size" data-bs-toggle="collapse" title="Click for example inputs to test accepting size value.">Click for example inputs to test.</a></p>
+<div id="hint-size" class="collapse">
+<p><img src="../../img/1-introduction/pinwheel-branches-3-size-100-backup-20.png" title="pinwheel, branches: (3) size: (100) backup: (20)" alt="pinwheel, branches: (3) size: (100) backup: (20)" class="indent"> <img src="../../img/1-introduction/pinwheel-branches-3-size-100-backup-20-result.png" title="A large triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 100 steps." alt="A large triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 100 steps." class="indent"><br> <img src="../../img/1-introduction/pinwheel-branches-3-size-65-backup-20.png" title="pinwheel, branches: (3) size: (100) backup: (20)" alt="pinwheel, branches: (3) size: (65) backup: (20)" class="indent"> <img src="../../img/1-introduction/pinwheel-branches-3-size-65-backup-20-result.png" title="A medium triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 65 steps." alt="A medium triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 65 steps." class="indent"><br> <img src="../../img/1-introduction/pinwheel-branches-3-size-30-backup-20.png" title="pinwheel, branches: (3) size: (30) backup: (20)" alt="pinwheel, branches: (3) size: (30) backup: (20)" class="indent"> <img src="../../img/1-introduction/pinwheel-branches-3-size-30-backup-20-result.png" title="A small triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 30 steps." alt="A small triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 30 steps." class="indent"><br></p>
+</div>
+</div>
+</li>
+<li>
+<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Discuss what input values will give you a polygon or an asterisk. <img src="../../img/icons/save-mini.png" title="Save your work" alt="Save your work" class="inline"><br> <img src="../../img/1-introduction/polygon-result.png" title="polygon" alt="polygon" class="indent"> <img src="../../img/1-introduction/asterisk-result.png" title="asterisk" alt="asterisk" class="indent">
+</li>
+</ol>
+</div>
+<div class="takeNote">
+<h3 class="anchored">
+<strong>Debugging Tip: Organizing Your Code</strong>
+</h3>
+<p>
+</p><p>One way to avoid having bugs in your program in the first place is to keep your code organized by deleting any unused scripts. You can use the <strong>clean up</strong> option by right-clicking (or control-clicking on a Mac) in the scripting area to organize your blocks. You can <strong>remove a block or script</strong> either by dragging it out of the scripting area and back to the palettes on the left or by choosing the “delete” option from the drop-down menu. <a href="#hint-organizing" data-bs-toggle="collapse" title="Click here for a video of cleaning up the scripting area and removing blocks.">Click here for a video</a>. (Note that this is different from the “delete block definition” option which will permanently delete a custom block and all its instances from your entire project.)<br></p>
+<div id="hint-organizing" class="collapse">
+<p><img src="../../img/2-complexity/Debugging/cleanup-deleting.gif" title="Animation about deleting blocks by dragging them off to the palette or by choosing the delete option by right-clicking." alt="Animation about deleting blocks by dragging them off to the palette or by choosing the delete option by right-clicking." class="indent" height="500"></p>
+</div>
+<p></p>
+</div>
+<div class="forYouToDo">
+<ol start="8">
+<li>
+Tidy up the code in your project, if necessary.
+</li>
+</ol>
+</div>
+<div class="examFullWidth">
+<div class="comment">
+<p>AAP-3.A.5</p>
+</div>
+<div class="pseudop">
+<p>This instruction <img src="../../img/1-introduction/U1ImageVideoAddendum_img/U1L3-PinwheelwithInputs1.png" title=" pinwheel, branches: (6) size: (80) backup: (20)" alt="setup; pinwheel, branches: (6) size: (80) backup: (20)" class="inline" height="50"> would be written as</p>
+<pre class="inline">Pinwheel(6, 80, 20)</pre>
+<p>or <img src="../../img/2-complexity/pinwheel-blocktran.png" title="a white rounded rectangle containing first the word 'PINWHEEL' in all caps and then a smaller white rectangle containing the inputs '6, 80, 20'" alt="a white rounded rectangle containing first the word 'PINWHEEL' in all caps and then a smaller white rectangle containing the inputs '6, 80, 20'" class="nopadtb">.</p>
+</div>
+<p>
+You may hear people use the term “pseudocode” to refer to this pseudo-language used on the AP CS Principles exam, but it’s <em>not</em> pseudocode. Pseudocode isn’t a programming language at all, it’s the use of normal human language to describe an algorithm.
+</p>
+</div>
+<div class="ifTime">
+<ol start="9">
+<li>
+Find inputs to <code>pinwheel</code> that make the result look like a circle.
+</li>
+</ol>
+</div>
+<div class="takeItTeaser">
+<p><img src="../../img/1-introduction/Kandinsky/Stage (1).png" title="Snap! drawing in the style of Kandinsky: overlapping circles of various colors on a black background; some circles are filled in with a solid color, some are filled in with a translucent color, others are just the outline of a circle with various outline thickness" alt="Snap! drawing in the style of Kandinsky: overlapping circles of various colors on a black background; some circles are filled in with a solid color, some are filled in with a translucent color, others are just the outline of a circle with various outline thickness">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../../img/1-introduction/Kandinsky/Stage (2).png" title="another Snap! drawing in the style of Kandinsky" alt="another Snap! drawing in the style of Kandinsky">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../../img/1-introduction/Kandinsky/Stage (3).png" title="another Snap! drawing in the style of Kandinsky" alt="another Snap! drawing in the style of Kandinsky">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../../img/1-introduction/Kandinsky/Stage (7).png" title="another Snap! drawing in the style of Kandinsky" alt="another Snap! drawing in the style of Kandinsky"></p>
+</div>
+<div class="takeItTeased">
+<p><img src="../../img/1-introduction/kandinsky-several-circles.jpg" title="Painting by Kandinsky: overlapping circles of various colors on a black background; some circles are filled in with a solid color, some are filled in with a translucent color, others are just the outline of a circle with various outline thickness, some filled circles have a border of a different color; the black background has some variations in darkness" alt="Painting by Kandinsky: overlapping circles of various colors on a black background; some circles are filled in with a solid color, some are filled in with a translucent color, others are just the outline of a circle with various outline thickness, some filled circles have a border of a different color; the black background has some variations in darkness" class="imageRight" width="300"></p>
+<ol type="A">
+<li>
+<p>On the right is a painting by Vassily Kandinsky. The four pictures above were inspired by it, but the sizes and placement of the circles in the original were carefully chosen, whereas the ones above are random. Also, Kandinsky’s solid circles aren’t quite uniform in color. For example, the green circle near the top right of the picture has a light green outer border, a somewhat darker green inside, a blue-green inner border, and black inside that.</p>
+<div class="narrowpurple">
+<p>When two solid circles overlap, you can see both colors, or rather, a color in between the two. To achieve that effect in Snap<em>!</em>, before drawing the second circle, use the <img src="../../img/1-introduction/set-transparency.png" title="set pen (transparency) to ()" alt="set pen (transparency) to ()" class="inline"> block. A transparency of 0 means you see only the new color; a transparency of 100 means you see only the old color. In-between values determine which color is stronger in the overlapping area.</p>
+</div>
+<p>Most of Kandinsky’s circles are solid, but a few aren’t. most notably the large white “halo” near the middle of the painting. His hollow circles don’t have a constant width; if you want yours to look like his, change the pen size a little as you’re drawing. But of course you don’t have to make your art look exactly like his, nor exactly like the examples above. Use them for inspiration, but you’re the artist.</p>
+</li>
+<li>
+<p>Make a picture that looks more like a real pinwheel:<br><br>
+<img src="../../img/1-introduction/pinwheel.png" title="Photograph of a real pinwheel with four spokes. The pinwheel is red with a green stem and has a silver tack in the middle attaching the pinwheel to the stem." alt="Photograph of a real pinwheel with four spokes. The pinwheel is red with a green stem and has a silver tack in the middle attaching the pinwheel to the stem." class="indent" height="210"><br> <small>Copyright 2010 <a href="http://asubtlerevelry.com/a-pinwheel-tutorial-the-easiest-ever/" title="A Pinwheel Tutorial- The Easiest Ever" target="_blank">Victoria Hudgins</a>. Used by permission.</small></p>
+<p>
+(Save your project first; you’ll need the <code>pinwheel</code> block you already have later.)
+</p>
+<p>
+It doesn’t have to look exactly like the photo. But each arm of a pinwheel is essentially two triangles. You may find the <img src="../../img/1-introduction/fill.png" title="fill block" alt="fill block"> block helpful.
+</p>
+</li>
+</ol>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../unit-1/lab-3/3-blocks-with-inputs.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Blocks with Inputs</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../unit-1/lab-3/5-remix-your-pinwheel.html" class="pagination-link">
+        <span class="nav-page-text">Using <code>Pinwheel</code> to Make <code>Polygon</code></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+      <div class="nav-footer-center">The curriculum and text on this website is adapted from <a href="https://bjc.edc.org/bjc-r/">The Beauty and Joy of Computing</a> by University of California, Berkeley and Education Development Center, Inc.&nbsp;which is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</div>
+  </div>
+</footer>
+
+
+
+</body></html>

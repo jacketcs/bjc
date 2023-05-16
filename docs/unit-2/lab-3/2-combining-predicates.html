@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.475">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>BHS AP CSP – combining-predicates</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../unit-2/lab-3/3-combining-conditionals.html" rel="next">
+<link href="../../unit-2/lab-3/1-what-is-predicate.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script type="text/javascript" src="../../llab/loader.js"></script>
+
+
+<link rel="stylesheet" href="../../css/bjc.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">BHS AP CSP</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-labs" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Labs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-labs">    
+        <li>
+    <a class="dropdown-item" href="../../unit-1/index.html">
+ <span class="dropdown-text">Unit 1: Introduction to Programming</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-2/index.html">
+ <span class="dropdown-text">Unit 2: Abstraction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-3/index.html">
+ <span class="dropdown-text">Unit 3: Data Structures</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-4/index.html">
+ <span class="dropdown-text">Unit 4: How the Internet Works</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-5/index.html">
+ <span class="dropdown-text">Unit 5: Algorithms and Simulations</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-6/index.html">
+ <span class="dropdown-text">Unit 6: How Computers Work</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html">
+ <span class="menu-text">Snap!</span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../unit-2/index.html" class="sidebar-item-text sidebar-link">Introduction to Programming</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">Lab 1</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/1-number-guessing-game.html" class="sidebar-item-text sidebar-link">Starting a Number Guessing Game</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/2-checking-player-guess.html" class="sidebar-item-text sidebar-link">Checking the Player's Guess</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/3-debugging-extending.html" class="sidebar-item-text sidebar-link">Debugging and Extending Your Number Guessing Game</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/4-keeping-score.html" class="sidebar-item-text sidebar-link">Keeping Score with Global Variables</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/5-choosing-avatar.html" class="sidebar-item-text sidebar-link">Choosing a Costume</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-1/6-keeping-a-journal.html" class="sidebar-item-text sidebar-link">Keeping a Programming Journal</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Lab 2</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-2/1-shopping-list-app.html" class="sidebar-item-text sidebar-link">Shopping List App</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-2/2-quizzes.html" class="sidebar-item-text sidebar-link">Planning a Quiz App</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-2/3-traversing-list.html" class="sidebar-item-text sidebar-link">Checking Each Quiz Answer</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Lab 3</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/1-what-is-predicate.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/2-combining-predicates.html" class="sidebar-item-text sidebar-link active">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/3-combining-conditionals.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/4-boolean-experiments.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/5-keeping-list-items.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-3/6-solving-word-puzzle.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">Lab 4</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-4/1-mod-operator.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-4/2-math-predicates.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-4/3-other-math-reporters.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">Lab 5</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/1-copyright.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/2-fairuse.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/3-bargain.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/4-digital.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/lab-5/5-drm.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">Optional Projects</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/1-magic8ball.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/2-egyptian-motif.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/3-mastermind.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/4-plurals1.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/5-plurals2.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-2/optional-projects/6-kaleidoscope.html" class="sidebar-item-text sidebar-link">order:</a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+&lt;!DOCTYPE html&gt;
+
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="../../llab/loader.js"></script>
+<script type="text/javascript" src="../../utilities/gifffer.min.js"></script>
+<script type="text/javascript">window.onload = function() {Gifffer();}</script>
+<link rel="stylesheet" type="text/css" href="../../css/bjc-gifffer.css">
+<title>
+&lt;p&gt;Unit 2 Lab 3: Making Decisions, Page 2— title: “Combining Predicatessubtitle:”Unit , Lab , Page” order:&lt;/p&gt;
+&lt;hr /&gt;
+&lt;pre&gt;&lt;code&gt;    &lt;div class="learn"&gt;On this page, you will combine predicates using Boolean functions to write on the stage in three colors.&lt;/div&gt;
+            
+    &lt;h2&gt;Boolean Functions&lt;/h2&gt;
+    &lt;p&gt;
+        At the very lowest level, computer circuitry is made of wires, and each wire is either on or off. So the only operations that can be performed at that lowest level are those that &lt;em&gt;operate on single-bit values&lt;/em&gt; (just ones and zeros, that is, just ons and offs). These are called &lt;em&gt;logical (or Boolean) functions&lt;/em&gt;. (They're predicates, because their range is Booleans, but these are special in that their &lt;em&gt;domain&lt;/em&gt; is also Booleans.) There are three Boolean functions in the Operators palette:&lt;br /&gt;
+        &lt;img class="indent" src="/img/prog/Booleans.png" alt="and, or, not blocks" title="and, or, not blocks" /&gt;&lt;br /&gt;
+        &lt;div class="comment"&gt;AAP-2.F.5, AAP-2.F.1&lt;/div&gt;
+        Notice that both the blocks themselves and the input slots in the blocks are hexagonal. Boolean functions take Boolean values (&lt;code&gt;True&lt;/code&gt; or &lt;code&gt;False&lt;/code&gt;) as inputs and report a new Boolean value as output. When you use Boolean functions in a program, though, the inputs will usually be expressions such as &lt;img src="/img/2-complexity/var=3.png" alt="variable = 3" title="variable = 3" /&gt;.
+    &lt;/p&gt;
+    &lt;div class="forYouToDo"&gt;
+        &lt;ol&gt;
+            &lt;li&gt;
+                Experiment with different input values in all three blocks, and take notes about the results you get. 
+                &lt;div class="endnote"&gt;
+                    &lt;p&gt;Instead of dragging a &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt; block into the input slot of an &lt;code&gt;and&lt;/code&gt;, &lt;code&gt;or&lt;/code&gt;, or &lt;code&gt;not&lt;/code&gt; block, you can click the empty input slot to control a &lt;code&gt;true&lt;/code&gt;/&lt;code&gt;false&lt;/code&gt; toggle: &lt;img class="inline" src="/img/2-complexity/true-and-false.png" alt="(true) and (false)" title="(true) and (false)" /&gt;&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;
+        The &lt;code&gt;and&lt;/code&gt; and &lt;code&gt;not&lt;/code&gt; blocks work exactly the way you'd expect from the meanings of those words in English:
+        &lt;ul&gt;
+            &lt;div class="comment"&gt;AAP-2.F.3&lt;/div&gt;
+            &lt;li&gt;&lt;img src="/img/2-complexity/true-and-true.png" alt="(true) and (true)" title="(true) and (true)" /&gt; reports &lt;code&gt;true&lt;/code&gt;, and any other combination of inputs reports &lt;code&gt;false&lt;/code&gt;.&lt;/li&gt;
+            &lt;div class="comment"&gt;AAP-2.F.2&lt;/div&gt;
+            &lt;li&gt;&lt;img src="/img/blocks/not.png" alt="not ()" title="not ()" /&gt; reports the opposite of whichever input value you use.&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div class="comment"&gt;AAP-2.F.4&lt;/div&gt;
+        But &lt;code&gt;or&lt;/code&gt; is a little different in computer science. In English, the word "or" has two different meanings:
+        &lt;ul&gt;
+            &lt;li&gt;&lt;strong&gt;Either but not both:&lt;/strong&gt; such as "Let's check whether it will be rainy or sunny tomorrow." In computer science, this is called &lt;em&gt;exclusive or&lt;/em&gt; because one option excludes the other.&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;Either or both:&lt;/strong&gt; such as "Ask your teacher if you have any questions or if you need help." This is called &lt;em&gt;inclusive or&lt;/em&gt; because it's possible for both options to be included.&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/p&gt;
+
+    &lt;div class="forYouToDo"&gt;
+        &lt;ol start="2"&gt;
+            &lt;li&gt;Experiment. Does the &lt;img src="/img/blocks/or.png" alt="() or ()" title="() or ()" /&gt; block implement &lt;em&gt;exclusive&lt;/em&gt; or &lt;em&gt;inclusive&lt;/em&gt; &lt;code&gt;or&lt;/code&gt;?&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="examFullWidth"&gt;
+        &lt;div class="comment"&gt;AAP-2.F.1&lt;/div&gt;
+        &lt;div class="pseudop"&gt;The &lt;img src="/img/blocks/and-full-size.png" alt="() and ()" title="() and ()" /&gt;, &lt;img src="/img/blocks/or.png" alt="() or ()" title="() or ()" /&gt;, and &lt;img src="/img/blocks/not.png" alt="not ()" title="not ()" /&gt; blocks will appear as &lt;pre class="inline"&gt;AND&lt;/pre&gt;, &lt;pre class="inline"&gt;OR&lt;/pre&gt;, and &lt;pre class="inline"&gt;NOT&lt;/pre&gt; and will work exactly the same way as they do in Snap&lt;em&gt;!&lt;/em&gt;.&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="forYouToDo"&gt;
+        &lt;ol start="3"&gt;
+            &lt;li&gt;Make the blocks &lt;img class="inline" src="/img/blocks/less-than-or-equal.png" alt="less than or equal" title="less than or equal" /&gt;, &lt;img class="inline" src="/img/blocks/greater-than-or-equal.png" alt="greater than or equal" title="greater than or equal" /&gt;, and &lt;img class="inline" src="/img/2-complexity/not-equal.png" alt="() not equal ()" title="() not equal ()" /&gt;.
+                (You can copy the characters &amp;le;, &amp;ge;, and &amp;ne; from this page and paste them into the Snap&lt;i&gt;!&lt;/i&gt; Make-a-block window.)
+            &lt;/li&gt;
+            &lt;li&gt;
+                Build a predicate that tells whether an input is between two other inputs, and test it with several different cases.&lt;br /&gt;
+                &lt;div class="sidenote"&gt;You can decide whether &lt;code&gt;between?&lt;/code&gt; will include the two boundary inputs or not.&lt;/div&gt;
+                &lt;img class="indent" src="/img/2-complexity/number-between-two-others(with-result-false).png" alt="is (3.8) between (3.9) and (4.7) ? reporting false" title="is (3.8) between (3.9) and (4.7) ? reporting false"&gt;
+                &lt;img class="indent" src="/img/2-complexity/word-between-two-others(with-result-true).png" alt="is (apples) between (alphabet) and (azure) ? reporting true" title="is (apples) between (alphabet) and (azure) ? reporting true"&gt; 
+                &lt;div class="narrower"&gt;
+                    &lt;h3&gt;&lt;strong&gt;Making a Predicate &lt;/strong&gt;&lt;/h3&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;
+                            Choose the hexagonal &lt;em&gt;predicate&lt;/em&gt; shape.&lt;br /&gt;
+                            
+                            &lt;img class="indent" src="/img/2-complexity/make-predicate.png" alt="Make a block dialog highlighting the predicate button" title="Make a block dialog highlighting the predicate button" /&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;You must use the &lt;img class="nopadtb" src="/img/blocks/report.png" alt="report()" title="report()" /&gt; block to report the result of reporters (including predicates).&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;!--&lt;p&gt;&lt;img class="indent" data-gifffer="/img/2-complexity/defining-even-predicate.gif" alt="defining a predicate block" title="defining a predicate block" /&gt;&lt;/p&gt;--&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                Use &lt;code&gt;between?&lt;/code&gt; to create a script that lets you write on the stage in three colors (depending on the height on the stage), using your mouse.&lt;br /&gt;
+                &lt;div class="endnote"&gt;
+                    &lt;a href="#hint-three-colors" data-bs-toggle="collapse" title="Click for an example of writing on the stage in three colors."&gt;Click for an example of writing on the stage in three colors.&lt;/a&gt;
+                    &lt;div id="hint-three-colors" class="collapse"&gt;
+                        &lt;img class="indent" data-gifffer="/img/2-complexity/U2ImageVideoAddendum_img/tri-color-bjc.gif" alt="using the mouse to write in three colors on the stage" title="using the mouse to write in three colors on the stage" /&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;div class="comment"&gt;AAP-2.E part b&lt;/div&gt;
+                &lt;!-- Question 6 --&gt;
+                &lt;div class="assessment-data" type="multiplechoice" identifier="What's equivalent to num less than or equal to 23?"
+                    hasinlinefeedback="true" maxchoices="2" responseIdentifier="ri1" shuffle="false"&gt;
+                    &lt;div class="prompt"&gt;
+                        There's no built in ≤ block in Snap&lt;em&gt;!&lt;/em&gt;.  Suppose we wanted to build one. Which &lt;em&gt;&lt;strong&gt;two&lt;/strong&gt;&lt;/em&gt; of the following Boolean expressions are equivalent to the expression &lt;img class="inline" src="/img/2-complexity/num-le-23.png" alt="num less than or equal to 23 predicate" title="num less than or equal to 23 predicate" /&gt;?
+                    &lt;/div&gt;
+                    &lt;div class="choice" identifier="c1"&gt;
+                        &lt;div class="text"&gt;&lt;img class="inline" src="/img/2-complexity/num-le-23-opt-1.png" alt="(num &lt; 23) and (num = 23)" title="(num &lt; 23) and (num = 23)" /&gt;&lt;/div&gt;
+                        &lt;div class="feedback"&gt;
+                            Can &lt;var&gt;num&lt;/var&gt; be both less than 23 and equal to 23 at the same time?
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="choice" identifier="c2"&gt;
+                        &lt;div class="text"&gt;&lt;img class="inline" src="/img/2-complexity/num-le-23-opt-2.png" alt="(num &lt; 23) or (num = 23)" title="(num &lt; 23) or (num = 23)" /&gt;&lt;/div&gt;
+                        &lt;div class="feedback"&gt;
+                            Correct! This picture shows an expression that will report &lt;code&gt;true&lt;/code&gt; if &lt;var&gt;num&lt;/var&gt; is less than or equal to 23.
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="choice" identifier="c3"&gt;
+                        &lt;div class="text"&gt;&lt;img class="inline" src="/img/2-complexity/num-le-23-opt-3.png" alt="not (num &gt; 23)" title="not (num &gt; 23)" /&gt;&lt;/div&gt;
+                        &lt;div class="feedback"&gt;
+                            Correct! If &lt;var&gt;num&lt;/var&gt; is &lt;strong&gt;not&lt;/strong&gt; greater than 23, then it is either less than 23 or equal to 23.
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="choice" identifier="c4"&gt;
+                        &lt;div class="text"&gt;&lt;img class="inline" src="/img/2-complexity/num-le-23-opt-4.png" alt="not (num &gt; 22)" title="not (num &gt; 22)" /&gt;&lt;/div&gt;
+                        &lt;div class="feedback"&gt;
+                            Imagine that the value of &lt;var&gt;num&lt;/var&gt; is 22.5. Will this expression and the expression given in the question report the same response?
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="responseDeclaration" identifier="ri1"&gt;
+                        &lt;div class="correctResponse" identifier="c2"&gt;&lt;/div&gt;
+                        &lt;div class="correctResponse" identifier="c3"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;div class="comment"&gt;AAP-2.F part b&lt;/div&gt;
+                &lt;!-- Question 2 --&gt;
+                &lt;div class="assessment-data" type="multiplechoice" identifier="Which expression will report TRUE?"
+                    hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri2" shuffle="false"&gt;
+                    &lt;div class="prompt"&gt;
+                        Which of the following expressions will report &lt;code&gt;true&lt;/code&gt;?
+                        &lt;ol style="list-style:upper-roman;"&gt;
+                            &lt;li&gt;&lt;img class="inline" src="/img/6-computers/boolean-quiz-a.png" alt="(T and F) and (not (T and F))" title="(T and F) and (not (T and F))" /&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;img class="inline" src="/img/6-computers/boolean-quiz-b.png" alt="(not (T or F)) or (T or F)" title="(not (T or F)) or (T or F)" /&gt;&lt;/li&gt;
+                        &lt;/ol&gt;
+                    &lt;/div&gt;
+                    &lt;div class="choice" identifier="c1"&gt;
+                        &lt;div class="text"&gt;I only&lt;/div&gt;
+                        &lt;div class="feedback"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="choice" identifier="c2"&gt;
+                        &lt;div class="text"&gt;II only&lt;/div&gt;
+                        &lt;div class="feedback"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="choice" identifier="c3"&gt;
+                        &lt;div class="text"&gt;I and II&lt;/div&gt;
+                        &lt;div class="feedback"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="choice" identifier="c4"&gt;
+                        &lt;div class="text"&gt;Neither I nor II&lt;/div&gt;
+                        &lt;div class="feedback"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="responseDeclaration" identifier="ri2"&gt;
+                        &lt;div class="correctResponse" identifier="c2"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="takeItFurther"&gt;
+        &lt;div class="todo"&gt;
+            &lt;div class="comment"&gt;Brian, OK, I went a little over the top here, but some teachers might like to dig in too. Please review this table carefully; it would be easy to get something wrong. --MF, 1/14/20&lt;/div&gt;
+            TG (for answer key): i) The &lt;code&gt;and&lt;/code&gt; function can be represented as TFFF; ii-v) Answers will vary for parts ii and iii. The following table lists the 16 (part iv) possible two-input Boolean operators and their usefulness. The goal is for students to &lt;em&gt;think about usefulness&lt;/em&gt;&amp;mdash;not for them to accurately categorize each of the functions or even to learn the logic of each one. Unless you have a background in logic or computer science, even you (as teacher with the answer key) are likely to find some of these take a bit of thinking to wrap your mind around.
+            &lt;table class="bordered standard" summary="table showing the 16 two-input Boolean operators and remarking on their usefulness"&gt;
+                &lt;tr&gt;
+                    &lt;th scope="col"&gt;&amp;nbsp;&lt;/th&gt;
+                    &lt;th scope="col"&gt;Useful?&lt;/th&gt;
+                    &lt;th scope="col"&gt;Why?&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th scope="col"&gt;TTTT&lt;/th&gt;
+                    &lt;td&gt;no&lt;/td&gt;
+                    &lt;td&gt;always reports &lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th scope="col"&gt;TTTF&lt;/th&gt;
+                    &lt;td&gt;yes&lt;/td&gt;
+                    &lt;td&gt;equivalent to &lt;code&gt;or&lt;/code&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th scope="col"&gt;TTFT&lt;/th&gt;
+                    &lt;td&gt;yes&lt;/td&gt;
+                    &lt;td&gt;equivalent to &lt;a href="https://en.wikipedia.org/wiki/Converse_implication" title="converse implication" target="_blank"&gt;converse implication&lt;/a&gt; (false only when the first input is false but the second input is true; the second input being true implies the first input must be true)&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th scope="col"&gt;TTFF&lt;/th&gt;
+                    &lt;td&gt;no&lt;/td&gt;
+                    &lt;td&gt;reports the value of the first input regardless of the second input, so you could just use the first input as the predicate instead of building this predicate function&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th scope="col"&gt;TFTT&lt;/th&gt;
+                    &lt;td&gt;yes&lt;/td&gt;
+                    &lt;td&gt;equivalent to &lt;a href="https://en.wikipedia.org/wiki/Material_conditional" title="implication" target="_blank"&gt;implication&lt;/a&gt; (false only when the first input is true but the second input is false; the first input being true implies the second input must be true)&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th scope="col"&gt;TFTF&lt;/th&gt;
+                    &lt;td&gt;no&lt;/td&gt;
+                    &lt;td&gt;reports the value of the second input regardless of the first input, so you could just use the second input as the predicate instead of building this predicate function&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th scope="col"&gt;TFFT&lt;/th&gt;
+                    &lt;td&gt;yes&lt;/td&gt;
+                    &lt;td&gt;checks whether two inputs are the same (equivalent to &lt;code&gt;=&lt;/code&gt; and to &lt;a href="https://en.wikipedia.org/wiki/XNOR_gate" title="XNOR" target="_blank"&gt;XNOR&lt;/a&gt;, exclusive NOT OR)&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th scope="col"&gt;TFFF&lt;/th&gt;
+                    &lt;td&gt;yes&lt;/td&gt;
+                    &lt;td&gt;equivalent to &lt;code&gt;and&lt;/code&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th scope="col"&gt;FTTT&lt;/th&gt;
+                    &lt;td&gt;yes&lt;/td&gt;
+                    &lt;td&gt;equivalent to &lt;a href="https://en.wikipedia.org/wiki/NAND_gate" title="NAND" target="_blank"&gt;NAND&lt;/a&gt; (that is, &lt;code&gt;not (and)&lt;/code&gt;)&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th scope="col"&gt;FTTF&lt;/th&gt;
+                    &lt;td&gt;yes&lt;/td&gt;
+                    &lt;td&gt;checks whether two inputs are the different (equivalent to &lt;code&gt;not(=)&lt;/code&gt; and to &lt;a href="https://en.wikipedia.org/wiki/XOR_gate" title="XOR" target="_blank"&gt;XOR&lt;/a&gt;, exclusive OR)&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th scope="col"&gt;FTFT&lt;/th&gt;
+                    &lt;td&gt;no&lt;/td&gt;
+                    &lt;td&gt;reports the value of the opposite of the second input regardless of the first input, so you could just use the opposite of the second input as the predicate instead of building this predicate function&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th scope="col"&gt;FTFF&lt;/th&gt;
+                    &lt;td&gt;yes&lt;/td&gt;
+                    &lt;td&gt;equivalent to &lt;a href="https://en.wikipedia.org/wiki/Material_nonimplication" title="nonimplication" target="_blank"&gt;nonimplication&lt;/a&gt; (true only when the first input is true but the second input is false; the first input being true implies the second input must be false)&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th scope="col"&gt;FFTT&lt;/th&gt;
+                    &lt;td&gt;no&lt;/td&gt;
+                    &lt;td&gt;reports the value of the opposite of the first input regardless of the second input, so you could just use the opposite of the first input as the predicate instead of building this predicate function&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th scope="col"&gt;FFTF&lt;/th&gt;
+                    &lt;td&gt;yes&lt;/td&gt;
+                    &lt;td&gt;equivalent to &lt;a href="https://en.wikipedia.org/wiki/Converse_nonimplication" title="converse nonimplication" target="_blank"&gt;converse nonimplication&lt;/a&gt; (true only when the first input is false but the second input is true; the second input being true implies the first input must be false)&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th scope="col"&gt;FFFT&lt;/th&gt;
+                    &lt;td&gt;yes&lt;/td&gt;
+                    &lt;td&gt;equivalent to &lt;a href="https://en.wikipedia.org/wiki/NOR_gate" title="NOR" target="_blank"&gt;NOR&lt;/a&gt; (that is, &lt;code&gt;not(or)&lt;/code&gt;)&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th scope="col"&gt;FFFF&lt;/th&gt;
+                    &lt;td&gt;no&lt;/td&gt;
+                    &lt;td&gt;always reports &lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+            vi) There are 256 three-input Boolean operators because there are eight combinations of inputs for a three-input Boolean operator and each of those combinations could report one of two values (T or F): &lt;span class="katex"&gt;2^8=256&lt;/span&gt;. (For comparison, there are 16 two-input Boolean operators because there are four combinations of inputs for a two-input operator and each can report one of two values (T or F): &lt;span class="katex"&gt;2^4=16&lt;/span&gt;.)
+        &lt;/div&gt;
+        &lt;ol type="A"&gt;
+            &lt;li&gt;
+                Because there are only two Boolean values (&lt;code&gt;true&lt;/code&gt; and &lt;code&gt;false&lt;/code&gt;), there are only four combinations of inputs for a two-input Boolean operator. Here are the four combinations shown with the &lt;code&gt;or&lt;/code&gt; operator:&lt;br /&gt;
+                &lt;img class="indent" src="/img/2-complexity/or-t-t.png" alt="or (true) (true)"&gt;&lt;br /&gt;
+                &lt;img class="indent" src="/img/2-complexity/or-t-f.png" alt="or (true) (false)"&gt;&lt;br /&gt;
+                &lt;img class="indent" src="/img/2-complexity/or-f-t.png" alt="or (false) (true)"&gt;&lt;br /&gt;
+                &lt;img class="indent" src="/img/2-complexity/or-f-f.png" alt="or (false) (false)"&gt;
+                &lt;ol style="list-style-type: lower-roman"&gt;
+                    &lt;li&gt;With &lt;code&gt;or&lt;/code&gt;, the four combinations report &lt;code&gt;true&lt;/code&gt;, &lt;code&gt;true&lt;/code&gt;, &lt;code&gt;true&lt;/code&gt;, and &lt;code&gt;false&lt;/code&gt; in that order. (Check for yourself that this is true.) So, you can represent the &lt;code&gt;or&lt;/code&gt; function as TTTF  (using T and F as abbreviations for &lt;code&gt;true&lt;/code&gt; and &lt;code&gt;false&lt;/code&gt;). What are the four letters for the &lt;code&gt;and&lt;/code&gt; function? (Assume the same ordering of the inputs: TT, TF, FT, and FF as shown above with &lt;code&gt;or&lt;/code&gt;.) &lt;/li&gt;
+                    &lt;li&gt;
+                        Make up another set of four letters (such as TFTF), and build a predicate function with that behavior. Describe how the function behaves. 
+                        &lt;div class="endnote"&gt;
+                            &lt;a href="#hint-TFTF" data-bs-toggle="collapse" title="Click to see an example showing and describing the behavior of TFTF."&gt;Click to see an example showing and describing the behavior of TFTF.&lt;/a&gt;
+                            &lt;div id="hint-TFTF" class="collapse"&gt;
+                                &lt;img class="indent" src="/img/2-complexity/TFTF-TT-reporting.png" alt="(true) TFTF (true) reporting true" title="(true) TFTF (true) reporting true" /&gt;&lt;br /&gt;
+                                &lt;img class="indent" src="/img/2-complexity/TFTF-TF-reporting.png" alt="(true) TFTF (false) reporting true" title="(true) TFTF (false) reporting true" /&gt;&lt;br /&gt;
+                                &lt;img class="indent" src="/img/2-complexity/TFTF-FT-reporting.png" alt="(false) TFTF (true) reporting true" title="(false) TFTF (true) reporting true" /&gt;&lt;br /&gt;
+                                &lt;img class="indent" src="/img/2-complexity/TFTF-FF-reporting.png" alt="(false) TFTF (false) reporting false" title="(false) TFTF (false) reporting false" /&gt;
+                                The TFTF function reports true whenever the second input is true no matter what the first input is. It's not a useful function because you could just use the second input as the predicate instead of building this predicate function.
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;Do the same thing with another set of four letters.&lt;/li&gt;
+                    &lt;li&gt;How many possible two-input Boolean operators are there?&lt;/li&gt;
+                    &lt;li&gt;&lt;img class="inline" src="/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /&gt;Obviously, TTTF (the &lt;code&gt;or&lt;/code&gt; function) is useful, but TTTT is not useful (why not?). Which of the possible two-input Boolean operators do you think would be useful? Discuss why.&lt;/li&gt;
+                    &lt;li&gt;How many &lt;em&gt;three-&lt;/em&gt;input Boolean operators are there?&lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;div id="quarto-navigation-envelope" class="hidden"&gt;
+&lt;p&gt;&lt;span class="hidden" data-render-id="quarto-int-sidebar-title"&gt;Unit 2: Abstraction&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-navbar-title"&gt;BHS AP CSP&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-next"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-prev"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:quarto-sidebar-section-1"&gt;Introduction to Programming&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:quarto-sidebar-section-2"&gt;Lab 1&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-1/1-number-guessing-game.html"&gt;Starting a Number Guessing Game&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-1/2-checking-player-guess.html"&gt;Checking the Player’s Guess&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-1/3-debugging-extending.html"&gt;Debugging and Extending Your Number Guessing Game&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-1/4-keeping-score.html"&gt;Keeping Score with Global Variables&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-1/5-choosing-avatar.html"&gt;Choosing a Costume&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-1/6-keeping-a-journal.html"&gt;Keeping a Programming Journal&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:quarto-sidebar-section-3"&gt;Lab 2&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-2/1-shopping-list-app.html"&gt;Shopping List App&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-2/2-quizzes.html"&gt;Planning a Quiz App&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-2/3-traversing-list.html"&gt;Checking Each Quiz Answer&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:quarto-sidebar-section-4"&gt;Lab 3&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-3/1-what-is-predicate.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-3/2-combining-predicates.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-3/3-combining-conditionals.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-3/4-boolean-experiments.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-3/5-keeping-list-items.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-3/6-solving-word-puzzle.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:quarto-sidebar-section-5"&gt;Lab 4&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-4/1-mod-operator.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-4/2-math-predicates.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-4/3-other-math-reporters.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:quarto-sidebar-section-6"&gt;Lab 5&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-5/1-copyright.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-5/2-fairuse.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-5/3-bargain.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-5/4-digital.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/lab-5/5-drm.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:quarto-sidebar-section-7"&gt;Optional Projects&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/optional-projects/1-magic8ball.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/optional-projects/2-egyptian-motif.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/optional-projects/3-mastermind.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/optional-projects/4-plurals1.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/optional-projects/5-plurals2.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-sidebar:/unit-2/optional-projects/6-kaleidoscope.html"&gt;order:&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-navbar:Home"&gt;Home&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-navbar:Labs"&gt;Labs&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-navbar:Unit 1: Introduction to Programming"&gt;Unit 1: Introduction to Programming&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-navbar:Unit 2: Abstraction"&gt;Unit 2: Abstraction&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-navbar:Unit 3: Data Structures"&gt;Unit 3: Data Structures&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-navbar:Unit 4: How the Internet Works"&gt;Unit 4: How the Internet Works&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-navbar:Unit 5: Algorithms and Simulations"&gt;Unit 5: Algorithms and Simulations&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-navbar:Unit 6: How Computers Work"&gt;Unit 6: How Computers Work&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-int-navbar:Snap!"&gt;Snap!&lt;/span&gt; &lt;span class="hidden" data-render-id="footer-center"&gt;The curriculum and text on this website is adapted from &lt;a href="https://bjc.edc.org/bjc-r/"&gt;The Beauty and Joy of Computing&lt;/a&gt; by University of California, Berkeley and Education Development Center, Inc.&nbsp;which is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="quarto-meta-markdown" class="hidden"&gt;
+&lt;p&gt;&lt;span class="hidden" data-render-id="quarto-twittercardtitle"&gt;&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-ogcardtitle"&gt;&lt;/span&gt; &lt;span class="hidden" data-render-id="quarto-metasitename"&gt;BHS AP CSP&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/main&gt; &lt;!-- /main --&gt;
+&lt;script id = "quarto-html-after-body" type="application/javascript"&gt;
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) =&gt; {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () =&gt; {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) =&gt; {
+    for (let i=0; i &lt; stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) =&gt; {
+    for (let i=0; i &lt; stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) =&gt; {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i &lt; els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) =&gt; {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i &lt; toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') &gt; 0 &amp;&amp; navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() =&gt; {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () =&gt; { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () =&gt; {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) =&gt; {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () =&gt; {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () =&gt; {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i&lt;noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) =&gt; {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i&lt;bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+&lt;/script&gt;
+&lt;nav class="page-navigation"&gt;
+  &lt;div class="nav-page nav-page-previous"&gt;
+      &lt;a  href="/unit-2/lab-3/1-what-is-predicate.html" class="pagination-link"&gt;
+        &lt;i class="bi bi-arrow-left-short"&gt;&lt;/i&gt; &lt;span class="nav-page-text"&gt;order:&lt;/span&gt;
+      &lt;/a&gt;          
+  &lt;/div&gt;
+  &lt;div class="nav-page nav-page-next"&gt;
+      &lt;a  href="/unit-2/lab-3/3-combining-conditionals.html" class="pagination-link"&gt;
+        &lt;span class="nav-page-text"&gt;order:&lt;/span&gt; &lt;i class="bi bi-arrow-right-short"&gt;&lt;/i&gt;
+      &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+&lt;/div&gt; &lt;!-- /content --&gt;
+&lt;footer class="footer"&gt;
+  &lt;div class="nav-footer"&gt;
+      &lt;div class="nav-footer-center"&gt;
+        &lt;div class='footer-contents'&gt;The curriculum and text on this website is adapted from [The Beauty and Joy of Computing](https://bjc.edc.org/bjc-r/)
+by University of California, Berkeley and Education Development Center, Inc. which is licensed
+under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+&lt;/div&gt;  
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</title></main></div></body></html>

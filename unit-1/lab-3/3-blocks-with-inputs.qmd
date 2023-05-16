@@ -1,0 +1,279 @@
+---
+title: "Blocks with Inputs"
+subtitle: "Unit 1, Lab 3, Page 3"
+order: 3
+---
+
+```{=html}
+<script type="text/javascript" src="/utilities/gifffer.min.js"></script>
+```
+```{=html}
+<script type="text/javascript">window.onload = function() {Gifffer();}</script>
+```
+<link rel="stylesheet" type="text/css" href="/css/bjc-gifffer.css">
+
+::: learn
+<p><strong>On this page,</strong> you will use inputs to allow one block to do many things.</p>
+:::
+
+<p>On the previous page you used blocks <code>asterisk</code> and <code>pinwheel</code> that we wrote for you, each with an input for the number of spokes. Now you're going to learn how to create your own blocks with inputs.</p>
+
+::: {#first .forYouToDo}
+<ol>
+
+<li><a href="/prog/1-introduction/U1L3-Pinwheel.xml" class="run"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a><br /> Make 5 copies of the script and modify those copies so that they make pinwheel designs like these with 3, 4, 5, 6, and 12 branches.<br /> <img src="/img/1-introduction/Blockswith-Inputs_img/3.png" title="pinwheel with 3 branches" alt="pinwheel with 3 branches" class="noshadow" height="120"/> <img src="/img/1-introduction/Blockswith-Inputs_img/4.png" title="pinwheel with 4 branches" alt="pinwheel with 4 branches" class="noshadow" height="120"/> <img src="/img/1-introduction/Blockswith-Inputs_img/5.png" title="pinwheel with 5 branches" alt="pinwheel with 5 branches" class="noshadow" height="120"/> <img src="/img/1-introduction/Blockswith-Inputs_img/6.png" title="pinwheel with 6 branches" alt="pinwheel with 6 branches" class="noshadow" height="120"/> <img src="/img/1-introduction/Blockswith-Inputs_img/12.png" title="pinwheel with 12 branches" alt="pinwheel with 12 branches" class="noshadow" height="120"/></li>
+
+<li>Look at two of your scripts, and write down all of the differences between them.</li>
+
+</ol>
+:::
+
+::: comment
+CRD-2.B.3 (white text)
+:::
+
+<p>The scripts are essentially all the same; only some of the <em>input values</em> change. Instead of having many separate scripts, you can make one general block <img src="/img/1-introduction/pinwheel-block.png" title="pinwheel, branches:()" alt="pinwheel, branches:()" height="40"/> that will draw <em>all</em> such designs. The block has to work for a variety of inputs.</p>
+
+::: forYouToDo
+<img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="imageRight"/>
+
+<ol start="3">
+
+<li>
+
+Create a <code>pinwheel</code> block with an input for the <var>number of branches</var>. Instructions are below and you can also watch the process in the video that follows the instructions.
+
+::: narrower
+<h3><strong>Making a Block with an Input</strong></h3>
+
+<ol type="a">
+
+<li>
+
+<strong>Create a new block, type the block name and the label for your input, and click OK.</strong> For this project, type <code>pinwheel, branches:</code>.
+
+::: endnote
+<a href="#hint-new-block" data-bs-toggle="collapse" title="Click for an image of naming the new block.">Click for an image of naming the new block.</a>
+
+::: {#hint-new-block .collapse}
+<img src="/img/1-introduction/Blockswith-Inputs_img/category.png" title="Make a block" alt="Make a block" class="indent" height="300"/>
+
+<p>This block is about <em>moving</em> your sprite, so you might choose the blue Motion palette.</p>
+
+<p>Using a comma and a colon are not requirements; they are here to help with clarity.</p>
+:::
+:::
+
+</li>
+
+<li>
+
+<strong>Click the + (plus sign) after "<code>branches:</code>", type the name of the input, and click OK</strong> to add the input slot. For this project, click the + after "<code>branches:</code>" and type <var>number of branches</var> as the name of your input.
+
+::: endnote
+<a href="#hint-input" data-bs-toggle="collapse" title="Click for images of naming the input.">Click for images of naming the input.</a>
+
+::: {#hint-input .collapse}
+<img src="/img/1-introduction/Blockswith-Inputs_img/plusSign.png" title="Plus sign" alt="Plus sign" class="indent" height="75"/> <img src="/img/1-introduction/Blockswith-Inputs_img/inputName.png" title="Create input name" alt="Create input name" class="indent" height="175"/>
+:::
+:::
+
+::: endnote
+<img src="/img/1-introduction/prototype.png" title="Snap! hat block: pinwheel, branches: (number of branches)" alt="Snap! hat block: pinwheel, branches: (number of branches)" class="indent"/><br /> The picture of a blue <code>pinwheel</code> block inside the hat block is called the <em>prototype</em> of the block. As you add inputs and maybe title text to the prototype, it looks exactly like what the finished block will look like to the user, except that where the input slots go, there are orange ovals containing the <em>names</em> of the inputs.
+:::
+
+</li>
+
+<li>
+
+<strong>Drag in the blocks you need, and use the new input.</strong>
+
+<ul>
+
+<li>In this project, drag one of your pinwheel scripts into the Block Editor and snap it to the <code>pinwheel</code> hat block.</li>
+
+<li>Then, drag the new input <var>number of branches</var> in to replace the values that change to allow for more general use of the script.</li>
+
+</ul>
+
+::: endnote
+<a href="#hint-setup-code" data-bs-toggle="collapse" title="Click for an image of setting up the code inside the Block Editor.">Click for an image of setting up the code inside the Block Editor.</a>
+
+::: {#hint-setup-code .collapse}
+<img src="/img/1-introduction/Blockswith-Inputs_img/blockwith21.png" title="pinwheel, branches:(number of branches) {repeat(21){move(100) steps; move(-70) steps; turn clockwise(360/21) degrees}}" alt="pinwheel, branches:(number of branches) {repeat(21){move(100) steps; move(-70) steps; turn clockwise(360/21) degrees}}" class="indent"/> <img src="/img/1-introduction/Blockswith-Inputs_img/numberofbranches.png" title="pinwheel, branches:(number of branches){repeat(number of branches){move(100) steps; wait(0.1) secs; move(-70) steps; wait(0.1) secs; turn clockwise(360/number of branches) degrees}}" alt="pinwheel, branches:(number of branches){repeat(number of branches){move(100) steps; wait(0.1) secs; move(-70) steps; wait(0.1) secs; turn clockwise(360/number of branches) degrees}}" class="indent"/>
+:::
+:::
+
+</li>
+
+</ol>
+:::
+
+::: endnote
+<a href="#hint-target" data-bs-toggle="collapse" title="Click for a video of of the whole process of building the pinwheel block.">Click for a video of of the whole process of building the <code>pinwheel</code> block.</a>
+
+::: {#hint-target .collapse}
+<img title="Animation summarizing how to create a block with input." alt="Animation summarizing how to create a block with input." class="indent" data-gifffer="/img/1-introduction/Blockswith-Inputs_img/blocks-with-inputs.gif"/>
+:::
+:::
+
+</li>
+
+</ol>
+:::
+
+::: takeNote
+::: comment
+DAT-1.A.1
+:::
+
+<p><strong>What kind of data can be an input?</strong> All kinds of data. In this example, the input is supposed to be a number, but <em>any</em> kind of value can be used as an input. For instance, you've seen the <code>list</code> block called with text as inputs. In Snap<em>!</em>, any kind of data can be used as an input, can be reported by a block, or can be put in a list.</p>
+:::
+
+::: vocabFullWidth
+: What's an input? <strong>Parameter</strong> vs. <strong>Argument</strong>
+
+::: comment
+AAP-3.A.3
+:::
+
+<p>
+
+<ul>
+
+<li>A <strong>parameter</strong> (or <em>formal parameter</em>) is the input <em>name,</em> such as <var>number of branches</var>. The input name is set in the block definition. It never changes.<br /> <img src="/img/1-introduction/example-parameter.png" title="image of complete pinwheel, branches:(number of branches) block definition with parameter label pointing to number of branches" alt="image of complete pinwheel, branches:(number of branches) block definition with parameter label pointing to number of branches" class="indent"/></li>
+
+<li>An <strong>argument</strong> (or <em>actual argument</em>) is the input <em>value,</em> such as 6 for a hexagonal pinwheel. The input value is given each time the block is run; it can be a different value each time.<br /> <img src="/img/1-introduction/example-argument.png" title="pinwheel, branches: (6) with argument label pointing to the input 6" alt="pinwheel, branches: (6) with argument label pointing to the input 6" class="indent"/></li>
+
+</ul>
+
+We use the word "input" both for parameters (input names) and for arguments (input values).
+
+</p>
+:::
+
+::: comment
+AAP-3.B.4
+:::
+
+<p>Originally, you made five copies of the pinwheel script to create five slightly different pinwheels. Now, you've made a single procedure that includes the shared features of these five scripts and uses a parameter to handle the differences.</p>
+
+::: forYouToDo
+::: comment
+CRD-2.G
+:::
+
+<ol start="4">
+
+<img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="imageRight"/>
+
+<li>Comment your code.</li>
+
+::: takeNote
+<h3><strong>Debugging Tip: Commenting Your Code</strong></h3>
+
+::: comment
+CRD-2.G.2
+:::
+
+<p>
+
+Adding comments to your code may help you remember what your code does, helps other people reading your code to understand it, and can help you avoid bugs by increasing the clarity of your program. But it won't do any of those things if you comment every line of code, so each comment just says how a block inside your script works. You can add comments to your Snap<em>!</em> code by right-clicking (or control-clicking) in the Scripts area and choosing "add comment." <a href="#hint-comments" data-bs-toggle="collapse" title="Click for an animation that shows how to add comments.">Click for an animation that shows how.</a>
+
+::: {#hint-comments .collapse}
+<img title="Animation on how to add a comment to a block and how a comment added to a hat block becomes that custom block&apos;s help message." alt="Animation on how to  add a comment to a block and how a comment added to a hat block becomes that custom block&apos;s help message." class="indent" data-gifffer="/img/2-complexity/Debugging/commenting.gif"/>
+:::
+
+</p>
+
+<p>You can attach a comment <em>to the hat block</em> in the Block Editor to create a help message for your block. This is the <em>best</em> way to comment, because people can find out what your block does without having to look inside, just like the help messages for primitive blocks.</p>
+
+::: borderless-table
+<div>
+
+<strong>Bad commenting:</strong>
+
+</div>
+
+<div>
+
+<img src="/img/1-introduction/bad-comments.png" title="an example of bad commenting: block definition for a square-drawing block called &apos;square&apos; with a comment attached to the repeat (4) block that says, &apos;a square has four sides&apos; a comment attached to the move (size) steps block that says, &apos;the move says how big to make it&apos;, and a comment attached to the turn right (90) degrees block that says, &apos;You have to turn (90) degrees&apos;" alt="an example of bad commenting: block definition for a square-drawing block called &apos;square&apos; with a comment attached to the repeat (4) block that says, &apos;a square has four sides&apos; a comment attached to the move (size) steps block that says, &apos;the move says how big to make it&apos;, and a comment attached to the turn right (90) degrees block that says, &apos;You have to turn (90) degrees&apos;" class="indent"/>
+
+</div>
+:::
+
+::: borderless-table
+<div>
+
+<strong>Good commenting:</strong>
+
+</div>
+
+<div>
+
+<img src="/img/1-introduction/good-comments.png" title="an example of good commenting: block definition for a square-drawing block called &apos;square&apos; with a comment attached to the hat block that says, &apos;This block draws a square. The input says how big to make the sides of the square.&apos;" alt="an example of good commenting: block definition for a square-drawing block called &apos;square&apos; with a comment attached to the hat block that says, &apos;This block draws a square. The input says how big to make the sides of the square.&apos;" class="indent"/>
+
+<div>
+
+<img src="/img/1-introduction/askhelp.png" title="the &apos;square&apos; block with the right-click menu open and the &apos;help...&apos; option selected" alt="the &apos;square&apos; block with the right-click menu open and the &apos;help...&apos; option selected" class="indent"/> <img src="/img/1-introduction/squarehelp.png" title="a Help window with a picture of the &apos;square&apos; block followed by the text &apos;This block draws a square. The input says how big to make the sides of the square.&apos; and then an &apos;OK&apos; button" alt="a Help window with a picture of the &apos;square&apos; block followed by the text &apos;This block draws a square. The input says how big to make the sides of the square.&apos; and then an &apos;OK&apos; button" class="indent"/>
+
+</div>
+
+</div>
+:::
+
+<p>Part of the reason some people emphasize the importance of detailed comments is that they are programming in text languages, which discourage long variable and procedure names. (Typically, you can't include spaces in the names, and you have to type the entire name every time you use that variable or procedure.) So you see names like <code>substLcUc</code> instead of <code>substitute lower case letters for capital letters in string</code>. If a program is full of drastically abbreviated names for procedures and variables, it's no surprise if the code needs documentation. In Snap<em>!,</em> the names in the program can be self-documenting.</p>
+:::
+
+</ol>
+:::
+
+<h2>More About Program Documentation</h2>
+
+::: comment
+CRD-2.G.1, CRD-2.G.5
+:::
+
+<p>Commenting is only one form of documentation. It's not the <em>best</em> form, because attaching a comment to a particular place in the program documents only that one procedure or code segment, and doesn't explain how different sections of the program interact. But commenting is an easy way to document small details.</p>
+
+<p>Documentation can be <em>external</em> (written for users of the program) or <em>internal</em> (written for yourself or other developers of the program). Both kinds are important, if it's a program people other than the author are going to use. Usually they should be separate documents---another reason why comments aren't the best form of documentation.</p>
+
+::: comment
+CRD-2.G.4
+:::
+
+<p>If you're writing a program by yourself, internal documentation may seem silly. "I know how my own program works." But if the program will still be in use a year later, it will probably need maintenance, and you may well have forgotten the details of its implementation. In a programming class like this one, most of the programs you write are very small, and you can understand them at a glance. But real programs are generally much bigger than lab exercises designed to take less than an hour of work.</p>
+
+::: comment
+CRD-2.G.3
+:::
+
+<p>It's best if the first attempt at documentation is made even before starting to code. The documentation will specify the desired program behavior (external) and the intended program structure (internal). These documents can be used in testing the code to ensure that it behaves as planned.</p>
+
+::: forYouToDo
+<ol start="5">
+
+::: comment
+AAP-3.A part a
+:::
+
+<li>Create a script that draws two pinwheels on the stage, with different numbers of spokes.</li>
+
+</ol>
+:::
+
+::: comment
+AAP-3.A.4
+:::
+
+<p>When you embed a command procedure (such as <code>pinwheel</code>) within a script, the procedure is completed before continuing the script that called it.</p>
+
+::: takeItFurther
+<ol type="A">
+
+<li>These images were created with the <code>pinwheel</code> block and <code>set pen color</code>. Create your own art.<br /> <!--<img src="/img/1-introduction/Blockswith-Inputs_img/Wreath2.png" height="200" alt="wreath of rainbow colored pinwheels" title="wreath of rainbow colored pinwheels"/>--> <img src="/img/1-introduction/Blockswith-Inputs_img/Wreath1.png" title="wreath of rainbow colored pinwheels" alt="wreath of rainbow colored pinwheels" class="indent" height="200"/> <img src="/img/1-introduction/Blockswith-Inputs_img/Wreath2.png" title="wreath of rainbow colored pinwheels" alt="wreath of rainbow colored pinwheels" class="indent" height="200"/></li>
+
+<li>Make an animation.<br /> <img src="/img/1-introduction/Blockswith-Inputs_img/branchesCycle.gif" title="Branch Cycle Animation" alt="Branch Cycle Animation" class="indent" height="200"/></li>
+
+</ol>
+:::
