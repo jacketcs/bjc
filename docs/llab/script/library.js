@@ -28,14 +28,12 @@ llab.getSnapRunURL = function(targeturl, options) {
         return targeturl;
     }
 
-    if (targeturl.indexOf(llab.hostDomain) == -1) {
-        targeturl = targeturl.replace(window.location.protocol, '')
-        targeturl = targeturl.replace("//", '')
-        targeturl = targeturl.replace(window.location.host, '')
-    }
-
     // internal resource!
     var finalurl = llab.snapRunURLBase;
+
+    targeturl = targeturl.replace(window.location.protocol, '')
+    targeturl = targeturl.replace("//", '')
+    targeturl = targeturl.replace(window.location.host, '')
     if (options && options.version) {
         finalurl = llab.snapRunURLBaseVersion.replace('VERSION', options.version);
     }
