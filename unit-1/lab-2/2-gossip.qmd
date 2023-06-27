@@ -12,7 +12,7 @@ order: 2
 <p><strong>On this page,</strong> you will experiment with an existing program as an introduction to the project.</p>
 :::
 
-##Exploring Custom Blocks
+## Exploring Custom Blocks
 
 ::: {#first .forYouToDo}
 <ol>
@@ -83,7 +83,7 @@ AAP-3.B.7
 
 <p>If you find yourself wanting to copy and paste code from one place to another without changing it, then give it a name (open a Block Editor and paste the code there) and call your procedure in both places. If you discover later on that you need to fix a bug in this code, you only have to change it once instead of finding every copy throughout your program.</p>
 
-##Exploring a Second Sprite<a name="second" class="anchor"> </a>
+## Exploring a Second Sprite<a name="second" class="anchor"> </a>
 
 ::: forYouToDo
 <ol start="4">

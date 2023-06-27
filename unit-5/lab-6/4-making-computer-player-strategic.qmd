@@ -10,7 +10,7 @@
     </head>
     
     <body>
-        ##Making the Computer Play Strategicallysubtitle: "Unit , Lab , Page"
+        ## Making the Computer Play Strategicallysubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="todo">KEEP SUCH THAT needs to be fixed. --MF, 6/22/20</div>

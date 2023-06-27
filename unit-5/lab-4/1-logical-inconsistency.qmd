@@ -2,7 +2,7 @@ Unit 5 Lab 4: Unsolvable and Undecidable Problems, Page 1</title>
 	</head>
 
 	<body>
-		##Proof by Contradictionsubtitle: "Unit , Lab , Page"
+		## Proof by Contradictionsubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="todo">

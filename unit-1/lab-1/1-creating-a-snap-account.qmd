@@ -10,7 +10,7 @@ order: 1
 <p><strong>On this <em>page</em>,</strong> you'll learn how to create your own account and how to log in and out.</p>
 :::
 
-##Creating an Account
+## Creating an Account
 
 ::: {#first .forYouToDo}
 <img src="/img/sys/dialog-cloud-signup.png" title="signing up for the cloud" alt="signing up for the cloud" class="imageRight"/>
@@ -30,7 +30,7 @@ order: 1
 </ol>
 :::
 
-##Logging In to and Out of Your Snap<em>!</em><a name="login" class="anchor"> </a>Account
+## Logging In to and Out of Your Snap<em>!</em><a name="login" class="anchor"> </a>Account
 
 ::: forYouToDo
 <p>You should be logged in whenever you are in Snap<em>!</em>. Here's how to check if you are logged in:</p>

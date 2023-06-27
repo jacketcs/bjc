@@ -143,7 +143,7 @@ Make another copy of the three-branch script you built, and then:
 :::
 
 ::: takeNote
-###<strong>Debugging with <img src="/img/2-complexity/Debugging/say-for-secs-block.png" title="say for" alt="say for" height="48"/> </strong>
+## #<strong>Debugging with <img src="/img/2-complexity/Debugging/say-for-secs-block.png" title="say for" alt="say for" height="48"/> </strong>
 
 <p>You can use <code>say for</code> to get information about the state of your program while it's running.</p>
 

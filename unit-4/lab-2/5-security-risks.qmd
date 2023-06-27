@@ -1,7 +1,7 @@
 Unit 4 Lab 2: Cybersecurity, Page 5</title>
     </head>
     <body>
-        ##Security Riskssubtitle: "Unit , Lab , Page"
+        ## Security Riskssubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="todo">SO MUCH TEXT. Paul, can you suggest any cuts? --MF, 8/5/19</div>
@@ -10,7 +10,7 @@ order:
         </div>
         <p>Originally, network security was a relatively minor consideration because the Arpanet was a small computer network of military personnel and university users. The real need for security arose once businesses were allowed on the Internet in 1995. These days, people give their credit card numbers to online shopping sites, do much of their banking online, and send their social security numbers to tax firms and credit bureaus. And computers controlling critical social infrastructure (such as power plants, telephone switching systems, traffic lights, and hospital equipment) can be attacked by criminals and other countries' militaries. </p>
         
-        ##Common Security Issues for Users
+        ## Common Security Issues for Users
         <div class="comment">design flaws: IOC-2.B.10, anti-virus and anti-malware: IOC-2.C.7, phishing: IOC-2.C.1</div>
         <div class="vocabBig">
             <div class="commentBig">malware: IOC-2.B.9, keylogging: IOC-2.C.2, virus: IOC-2.B.8, antivirus or anti-malware software: IOC-2.B.7, phishing: IOC-2.C.1</div>
@@ -37,7 +37,7 @@ order:
 			</ol>
 		</div>
         
-        ##Common Security Issues with Public Systems
+        ## Common Security Issues with Public Systems
         <p>A Denial of Service (DoS) attack consists of sending a lot of requests to a server at the same time (for instance, requests for a web page or some data). This can overload the server's network bandwidth. A DoS attack doesn't destroy data or collect passwords; it just causes a temporary inability to reach the targeted server so other users of that server are denied service.</p>
         <div class="vocabBig">
         	<p>A <strong>DDoS (Distributed Denial of Service) attack</strong> uses a virus to flood a server with many requests from many computers at once so that users of that server are denied service.</p>
@@ -49,7 +49,7 @@ order:
         <div class="vocabFullWidth">: <p>A <strong>rogue access&nbsp;point</strong> is a wireless access point that gives access to a secure network without the authorization of the network administrator.</p></div>
         <p>A rogue access point may be installed by someone trying to improve access to the network or by an attacker. But either way, the lack of proper security can allow data being sent over that WiFi network to be intercepted. For example, if your computer has password access to a WiFi network, and you enable Bluetooth network sharing, you are allowing anyone in Bluetooth range of your computer access to the secure network.</p>
         
-        ##Is Too Much Security Possible?
+        ## Is Too Much Security Possible?
         <p>Too much security has its own set of problems. A perfectly secure Internet would prevent anonymous publishing, restricting freedom of speech.  To prevent fraud, it's important to be able to verify the source of a message, but if the source of a message can be verified, the message can't be anonymous. That's problematic both for privacy and for freedom of speech.</p>
 
         <div class="forYouToDo">

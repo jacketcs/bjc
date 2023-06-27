@@ -2,7 +2,7 @@ Unit 3 Lab 3: Tic-Tac-Toe, Page 3</title>
     </head> 
     
     <body>
-        ##Checking for Tiessubtitle: "Unit , Lab , Page"
+        ## Checking for Tiessubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="learn">

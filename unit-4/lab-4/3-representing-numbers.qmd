@@ -2,7 +2,7 @@ Unit 4 Lab 4: Data Representation and Compression, Page 3</title>
 	</head>
 
 	<body>
-		##Representing Whole Numberssubtitle: "Unit , Lab , Page"
+		## Representing Whole Numberssubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="todo">
@@ -40,7 +40,7 @@ order:
         </div>
         
         
-		##Fixed Width Computer Hardware
+		## Fixed Width Computer Hardware
         <div class="vocabBig">
         	<p><strong>width</strong>: the number of bits that a CPU processes at a time</p>
             <p><strong>word</strong>: a binary sequence of that many bits</p>
@@ -61,7 +61,7 @@ order:
             </ol>
         </div>
 
-		##Bignums<div class ="sidenote"> A multiple-word integer is called a <strong>bignum</strong>. </div>
+		## Bignums<div class ="sidenote"> A multiple-word integer is called a <strong>bignum</strong>. </div>
         <div class="comment">DAT-1.B.2</div>
         <p>Why can't programming languages just use more than one word to represent an integer? They can. It's just that a single machine language instruction can only add one-word numbers. A programming language must work a little harder to make addition work with multiple-word values. Not all languages do this, but the highest-level languages do. </p>
         <div class="takeItFurther">

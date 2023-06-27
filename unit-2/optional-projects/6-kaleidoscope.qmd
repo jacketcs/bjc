@@ -7,7 +7,7 @@
     </head>
 
     <body>
-        ##Making a Kaleidoscopesubtitle: "Unit , Lab , Page"
+        ## Making a Kaleidoscopesubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="learn">

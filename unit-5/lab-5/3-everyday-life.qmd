@@ -2,7 +2,7 @@ Unit 5 Lab 5: Computing in War, Page 3</title>
 	</head>
 
 	<body>
-    	##Military Technology in Everyday Lifesubtitle: "Unit , Lab , Page"
+    	## Military Technology in Everyday Lifesubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="todo">new pink box. added some comments for later (including suggesting splitting this page). cut a FYTD that didn't make sense. --MF, 12/24/17</div>
@@ -81,11 +81,11 @@ order:
             </ol>
         </div>
         
-        ##Should You Work on Military Technology? 
+        ## Should You Work on Military Technology? 
         <div class="todo">This feels like it should be a separate page. --MF, 12/24/17</div>
 		       
         <div class="takeNote">
-            ###The <a href="http://www.acm.org/about-acm/acm-code-of-ethics-and-professional-conduct" target="_blank" title="Association for Computing Machinery Code of Ethics and Professional Conduct">Code of Ethics and Professional Conduct</a> from the Association for Computing Machinery
+            ## #The <a href="http://www.acm.org/about-acm/acm-code-of-ethics-and-professional-conduct" target="_blank" title="Association for Computing Machinery Code of Ethics and Professional Conduct">Code of Ethics and Professional Conduct</a> from the Association for Computing Machinery
             <strong>1. General Moral Imperatives</strong>
             <p>As an ACM member I will...</p>
             <p><strong>1.1 Contribute to society and human well-being.</strong></p>

@@ -10,7 +10,7 @@ order: 4
 <strong>On this page,</strong> you will modify your existing <code>pinwheel</code> block so that you can use it to draw a variety of shapes.<br /> <img src="/img/1-introduction/assorted-pinwheels.png" title="assortment of pinwheels" alt="assortment of pinwheels" class="indent"/>
 :::
 
-##Adding Multiple Inputs
+## Adding Multiple Inputs
 
 <p>Recall how you first <em>generalized</em> your original pinwheel script: you added an input called <var>number of branches</var> that controlled the turning angle of the sprite. By adding <em>more</em> inputs, you can generalize other aspects of your program.</p>
 
@@ -208,7 +208,7 @@ Try out a variety of inputs to your <code>pinwheel</code> program.
 :::
 
 ::: takeNote
-###<strong>Debugging Tip: Organizing Your Code</strong>
+## #<strong>Debugging Tip: Organizing Your Code</strong>
 
 <p>
 

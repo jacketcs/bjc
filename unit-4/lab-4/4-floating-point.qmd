@@ -2,7 +2,7 @@ Unit 4 Lab 4: Data Representation and Compression, Page 4</title>
 	</head>
 
 	<body>
-		##Floating Pointsubtitle: "Unit , Lab , Page"
+		## Floating Pointsubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="todo">

@@ -2,7 +2,7 @@ Unit 4 Lab 3: Community and Online Interactions, Page 8</title>
 	</head>
 
 	<body>
-    	##Planning Your Pathwaysubtitle: "Unit , Lab , Page"
+    	## Planning Your Pathwaysubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="learn">
@@ -16,7 +16,7 @@ order:
 		
 		</p>
 		
-		##Finding Your Communities in Tech
+		## Finding Your Communities in Tech
 		<div class="forYouToDo">
 			<ol>
 				<li>
@@ -106,7 +106,7 @@ order:
 			</ol>
 		</div>
 		
-		##Jobs and Income
+		## Jobs and Income
 		<p>Many of the above communities share job listings with the public.</p>
 		<div class="forYouToDo">
 			<ol>
@@ -122,7 +122,7 @@ order:
 			</ol>
 		</div>
 		
-		##Beyond Being a Programmer
+		## Beyond Being a Programmer
 		<p>Computers and programming is important to careers far beyond software engineers.</p>
 		<div class="forYouToDo">
 			<ol>

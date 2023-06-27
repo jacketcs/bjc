@@ -2,7 +2,7 @@ Unit 4 Lab 4: Data Representation and Compression, Page 1</title>
     </head>
 
 	<body>
-		##Bitssubtitle: "Unit , Lab , Page"
+		## Bitssubtitle: "Unit , Lab , Page"
 order:
 ---
         
@@ -128,7 +128,7 @@ order:
             </ol>
         </div>
         
-		##Bytes and Characters
+		## Bytes and Characters
         
         <p>The main use of eight-bit bytes is to represent characters of text.</p>
 		

@@ -10,7 +10,7 @@ order: 4
 Now the game is challenging, but players can't tell how well they're doing because Alonzo jumps around whether the player clicks him or not. <strong>On this page</strong>, you will create a way for the player of your game to know how well they are doing.
 :::
 
-##Confirming Whether Alonzo Was Clicked
+## Confirming Whether Alonzo Was Clicked
 
 <p>First, the person playing your game wants to know right away whether they succeeded at clicking Alonzo before he moved out of the way.</p>
 
@@ -44,7 +44,7 @@ Program Alonzo to face the other way when clicked. <img src="/img/1-introduction
 </ol>
 :::
 
-##Keeping Score
+## Keeping Score
 
 <!--<a class="index-term anchor" id="change effect</code>">&nbsp;</a>-->
 
@@ -68,7 +68,7 @@ Program Alonzo to face the other way when clicked. <img src="/img/1-introduction
 </ol>
 :::
 
-##Making the Game More Challenging
+## Making the Game More Challenging
 
 <p>So far, even a bad player will <em>eventually</em> make Alonzo disappear. The game will be much more interesting if the player is penalized for missing a click.</p>
 
@@ -86,7 +86,7 @@ You can change the <code>change effect</code> input number (for either instance 
 </ol>
 :::
 
-##Ending the Game
+## Ending the Game
 
 ::: forYouToDo
 <p>When Alonzo is completely transparent, the game should <em>stop.</em></p>

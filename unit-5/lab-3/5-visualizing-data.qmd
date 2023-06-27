@@ -10,7 +10,7 @@
     </head>
 
     <body>
-        ##Visualizing Datasubtitle: "Unit , Lab , Page"
+        ## Visualizing Datasubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="learn">
@@ -18,7 +18,7 @@ order:
             <p>Tables, diagrams, text, charts, graphs, and other visual tools help extract, modify, and communicate information from data.</p>
             <p><strong>On this page</strong>, you will create a visualizations to help you analyze and communicate information from your dataset. </p>
         </div>
-        ##Grouping Data
+        ## Grouping Data
         <p>
             <div class="vocab">
                 <div class="todo">DAT-2.E.3 classifying only</div>
@@ -58,7 +58,7 @@ order:
 		</div>
     
 
-        ##Plotting Data
+        ## Plotting Data
         <p>
 			The <code>bar chart</code> function works like the <code>group</code> function, but with special features for numeric data: it allows you to select upper and lower limits of the data; you can have a range of values in one bucket, such as values 6&ndash;10, values 11&ndash;15, and so on; and it sorts the groups. For example, here is the <var>cars</var> data grouped by city MPG (column 9):<br />
             <img class="indent" src="/img/5-algorithms/histogram-by-mpg.png" alt="bar chart of table (data of table (cars)) groups by field: (9) from: (5) to: (50) interval: (5) reporting a table with three columns and 10 rows; the values in the first column are multiples of 5 from 5 to 50; the values in the second column are 0, 311, 1554, 2057, 879, 267, 6, 2, 0, 0; the values in the third column are each a list icon indicating that a sublist is stored in that field" title="bar chart of table (data of table (cars)) groups by field: (9) from: (5) to: (50) interval: (5) reporting a table with three columns and 10 rows; the values in the first column are multiples of 5 from 5 to 50; the values in the second column are 0, 311, 1554, 2057, 879, 267, 6, 2, 0, 0; the values in the third column are each a list icon indicating that a sublist is stored in that field" />

@@ -10,7 +10,7 @@
     </head>
     
     <body>
-        ##Curve Stitchingsubtitle: "Unit , Lab , Page"
+        ## Curve Stitchingsubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="todo">

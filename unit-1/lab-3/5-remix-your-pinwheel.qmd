@@ -42,7 +42,7 @@ Use your <code>pinwheel</code> block to create a more specialized <code>asterisk
 </ol>
 
 ::: takeNote
-###<strong>Debugging with <img src="/img/2-complexity/Debugging/pause-all-block.png" title="pause all" alt="pause all" height="42"/></strong>
+## #<strong>Debugging with <img src="/img/2-complexity/Debugging/pause-all-block.png" title="pause all" alt="pause all" height="42"/></strong>
 
 <p>You can use <code>pause all</code> to place breaks in your code so you can see what's happening along the way. When you run code with <code>pause all</code> in it, you can click the yellow Run/Pause button next to the Green Flag (<img src="/img/sys/play-button.png" title="play button" alt="play button"/>/<img src="/img/1-introduction/pause_button.png" title="pause button" alt="pause button"/>) to move through the code up until a <code>pause all</code> block is reached again. The <code>pause all</code> block will pause <em>every</em> script that is running until the yellow Run/Pause button is clicked.</p>
 :::

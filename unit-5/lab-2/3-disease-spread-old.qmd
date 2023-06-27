@@ -11,7 +11,7 @@
 	</head>
     
 	<body>
-        ##Disease Spread Projectsubtitle: "Unit , Lab , Page"
+        ## Disease Spread Projectsubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="todo">

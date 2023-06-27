@@ -47,7 +47,7 @@ arithmetic operators (<code>+</code>, <code>-</code>, <code>×</code>,
 <code>or</code>, <code>not</code>). The differences among languages are
 mostly about <em>levels of abstraction.</em></p>
 
-##High-Level and Low-Level Languages
+## High-Level and Low-Level Languages
 
 <img src="/img/6-computers/language-continuum.png" title="diagram of common programming languages listed in order of abstraction level; there is a vertical double-headed arrow on the right indicating that the first row of languages (Snap!, Scheme, Prolog, Ruby, Lisp) are &apos;high level languages,&apos; the second row (JavaScript, Python, Java, Alice, Scratch) falls between, and the third row (C, C++) are &apos;low level languages&apos;" alt="diagram of common programming languages listed in order of abstraction level; there is a vertical double-headed arrow on the right indicating that the first row of languages (Snap!, Scheme, Prolog, Ruby, Lisp) are &apos;high level languages,&apos; the second row (JavaScript, Python, Java, Alice, Scratch) falls between, and the third row (C, C++) are &apos;low level languages&apos;" class="imageRight noshadow" width="400"/>
 
@@ -58,7 +58,7 @@ problem you want to solve rather than on how computer hardware works. A
 you to know a lot about your computer's architecture to write a
 program.</p>
 
-####<strong>Why do programmers use high-level languages?</strong>
+## ## <strong>Why do programmers use high-level languages?</strong>
 
 <p>High-level languages can produce <em>safer</em> programs---ones that
 are less likely to have bugs---because the abstractions manage messy
@@ -192,7 +192,7 @@ or
 and stick it into a higher-order function like <code>map</code>:<br />
 <img src="/img/6-computers/map-s.png" title="report (map (join () (s)) over (words))" alt="report (map (join () (s)) over (words))" class="indent"/></p>
 
-####<strong>Why do programmers use low-level languages?</strong>
+## ## <strong>Why do programmers use low-level languages?</strong>
 
 <p>The best reason to use low-level languages is to write operating
 systems (like Windows, Mac OS X, Android, or iOS). You'll learn more
@@ -272,7 +272,7 @@ the existing programming language.</p>
 :::
 :::
 
-####<strong>What is machine language?</strong>
+## ## <strong>What is machine language?</strong>
 
 <p>Both high- and low-level languages are used by <em>people</em> to
 write computer programs. Computer hardware understands a sort of
@@ -469,7 +469,7 @@ the only code a machine can understand.
 </ol>
 :::
 
-##Code Readability
+## Code Readability
 
 <p>
 
@@ -533,7 +533,7 @@ Operator Precedence</a>.</p>
 :::
 :::
 
-##Parallelism
+## Parallelism
 
 ::: commentBig
 5.2.1H A process may execute on one or several CPUs.

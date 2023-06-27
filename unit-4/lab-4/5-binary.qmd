@@ -10,7 +10,7 @@
     </head>
     
     <body>
-    	##Binary Representationsubtitle: "Unit , Lab , Page"
+    	## Binary Representationsubtitle: "Unit , Lab , Page"
 order:
 ---        
         
@@ -35,7 +35,7 @@ order:
         </p>
         <div class="endnote">The subscript 2 on 1101<sub>2</sub> means the 1101 is in base 2. Numbers are normally written in base 10, so a subscript 10 is only used when needed for clarity.</div>
         
-        ##Reading Binary
+        ## Reading Binary
         <div class="comment">DAT-1.C.5</div>
         <p>In <strong>base 10</strong> notation, each place value represents a <strong>power of ten</strong>: the units place (10<sup>0</sup> = 1), the tens place (10<sup>1</sup> = 10), the hundreds place (10<sup>2</sup> = 100), the thousands place (10<sup>3</sup> = 1000), etc. So, for example:</p>
         <p class="center"> 9827  &nbsp; = &nbsp; 9 &times;  10<sup>3</sup> &nbsp;+&nbsp; 8 &times;  10<sup>2</sup> &nbsp;+&nbsp; 2 &times;  10<sup>1</sup> &nbsp;+&nbsp; 7 &times;  10<sup>0</sup></p>
@@ -92,7 +92,7 @@ order:
 			</ol>
 		</div>
 
-		##Writing Binary
+		## Writing Binary
         <div class="takeNote">
 			<p>To translate from base 10 (like 89<sub>10</sub>) to base 2, <strong>first write out the binary place values</strong> by <em>doubling left from the units place</em> until you get to a value larger than your number (128 for this example). <strong>Then think</strong>, "I can take out a 64, so I write a 1 there, and there's 25 left (89&nbsp;−&nbsp;64). I have 0 thirty-twos, because I only have 25. But I can take out 16, and there's 9 left. So, 8 and 1 are the last nonzero bits.</p>
       <!--      <div class="sidenoteBig">Either way you are converting (and between any bases), always write the place values right-to-left (just as with units, tens, hundreds, etc.), and always write the number itself left-to-right.</div>  -->

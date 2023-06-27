@@ -2,7 +2,7 @@ Unit 3 Lab 3: Tic-Tac-Toe, Page 1</title>
     </head> 
     
     <body>
-	    ##Remembering the Moves and Possible Winssubtitle: "Unit , Lab , Page"
+	    ## Remembering the Moves and Possible Winssubtitle: "Unit , Lab , Page"
 order:
 ---
 		
@@ -67,7 +67,7 @@ order:
 			</ol>
 		</div>
 
-        ##Storing All the Ways to Win
+        ## Storing All the Ways to Win
 		<p>
             To program a way to detect a win, you need to determine what counts as a win.  You'll store each possible winning triple as a list of three position numbers (a <em>triple</em>).  For example, this winning triple could be represented as <img src="/img/3-lists/{3,5,7}.png" alt="list{3, 5, 7}" title="list{3, 5, 7}"> because the win is in the 3<sup>rd</sup>, 5<sup>th</sup>, and 7<sup>th</sup> positions:<br />
             <img class="indent noshadow" src="/img/3-lists/winning-combo-357.png" alt="diagonal win bottom left to top right" title="diagonal win bottom left to top right"><br />

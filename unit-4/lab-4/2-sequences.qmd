@@ -2,7 +2,7 @@ Unit 4 Lab 4: Data Representation and Compression, Page 2</title>
 	</head>
 
 	<body>
-		##Binary Sequencessubtitle: "Unit , Lab , Page"
+		## Binary Sequencessubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="todo">

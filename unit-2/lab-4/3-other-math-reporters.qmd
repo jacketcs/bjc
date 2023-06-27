@@ -7,7 +7,7 @@
     </head>
 
     <body>
-		##More Mathematical Reporterssubtitle: "Unit , Lab , Page"
+		## More Mathematical Reporterssubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="learn">

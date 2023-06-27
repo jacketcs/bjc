@@ -10,7 +10,7 @@
 	</head>
     
     <body>
-        ##Debugging Recapsubtitle: "Unit , Lab , Page"
+        ## Debugging Recapsubtitle: "Unit , Lab , Page"
 order:
 ---
 		<div class="learn">
@@ -21,7 +21,7 @@ order:
         	<p><strong>Debugging</strong> is the art of identifying errors in computer programs and fixing them.</p>
         </div>
 		
-        ##Tips
+        ## Tips
 		<div class="atwork">
 			<img class="noshadow imageRight" height="200px" src="/img/atwork/Grace_Hopper.jpg" alt="photo of Grace Hopper" title="photo of Grace Hopper" />
 			<p>Grace Hopper (1906-1992) was an United States Navy rear admiral and pioneer of computer programming. She is best known for her trailblazing contributions to computer programming, software development, and the design and implementation of programming languages.</p>
@@ -63,7 +63,7 @@ order:
 			</ol>
 		</div>
         
-        ##Snap<em>!</em> Debugging and Organizing Tools
+        ## Snap<em>!</em> Debugging and Organizing Tools
         <div>
             <ul>
                 <div class="sidenoteBig">

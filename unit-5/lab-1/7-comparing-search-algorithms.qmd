@@ -2,7 +2,7 @@ Unit 5 Lab 1: Search Algorithms and Efficiency, Page 7</title>
 	</head>
 
 	<body>
-    	##Removing Duplicatessubtitle: "Unit , Lab , Page"
+    	## Removing Duplicatessubtitle: "Unit , Lab , Page"
 order:
 ---        
 		<div class="learn">

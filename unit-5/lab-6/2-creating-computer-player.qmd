@@ -10,7 +10,7 @@
     </head>
     
     <body>
-        ##Creating a Computer Playersubtitle: "Unit , Lab , Page"
+        ## Creating a Computer Playersubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="todo">
@@ -25,7 +25,7 @@ order:
         
         <p>The game currently allows two human players to take turns playing. But you don't really need a computer to keep track of moves for two human players. We want the human player to take turns with a computer player that will move automatically. To simplify the project, we'll assume that the human player will always move first (playing X) and that the computer is playing O.</p>
         
-        ##Have the Computer Move Randomly
+        ## Have the Computer Move Randomly
         <p>For now, you'll create a computer player that moves to <em>random</em> positions on the board. (It won't be a very good player, but you'll fix that once the structure of the code for the computer's move is in place.) Once the program decides where it wants to move, you'll use <code>broadcast</code> to send a message to tell the clone with the matching <var>position number</var> to record a move. (For the human player, <code>when I am clicked</code> serves this purpose, but the computer's moves aren't prompted by the user clicking a square.)</p>
         <div class="endnote">Recall that clones are temporary copies of a sprite. You learned about them in <a href="/cur/programming/3-lists/1-abstraction/5-building-tic-tac-toe.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment#clones" title="Unit 3 Lab 1 Page 5: Building a Tic-Tac-Toe Board">Unit 3 Lab 1 Page 5: Building a Tic-Tac-Toe Board</a>.</div>
 
@@ -77,7 +77,7 @@ order:
 			</ol>
 		</div>
 
-		##Give the Computer a Simple Strategy
+		## Give the Computer a Simple Strategy
 		
 		<p>Instead of having the computer move at random, you will start to give the computer some strategy. Unlike people, all squares on the tic-tac-toe board are <em>not</em> created equal. Playing in the center (position 5) or on a corner (positions 1, 3, 7, or 9) is better than playing on an edge (positions 2, 4, 6, or 8).<br />
             <img class="indent noshadow" src="/img/5-algorithms/position-ranking.png" alt="Tic-tac-toe grid showing happy faces in the corners and center and sad faces on the four edges" title="Tic-tac-toe grid showing happy faces in the corners and center and sad faces on the four edges" />

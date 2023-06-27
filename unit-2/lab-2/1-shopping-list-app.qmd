@@ -109,7 +109,7 @@ or <img src="/img/2-complexity/shoppinglist-full-list-assignment-blocktran.png" 
 :::
 :::
 
-##Adding Items to a List
+## Adding Items to a List
 
 <p>
 
@@ -187,7 +187,7 @@ AAP-2.N part a
 </ol>
 :::
 
-##Removing Items from a List
+## Removing Items from a List
 
 ::: forYouToDo
 <ol start="5">

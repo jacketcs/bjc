@@ -2,7 +2,7 @@ Unit 5 Lab 5: Computing in War, Page 1</title>
 	</head>
 
 	<body>
-    	##War and Technologysubtitle: "Unit , Lab , Page"
+    	## War and Technologysubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="todo">
