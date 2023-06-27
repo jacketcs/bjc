@@ -2,7 +2,7 @@ Unit 4 Lab 1: Computer Networks, Page 3</title>
 	</head>
     
     <body>
-        <h2>Internet Abstractions and Open Protocolssubtitle: "Unit , Lab , Page"
+        ##Internet Abstractions and Open Protocolssubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="learn">
@@ -44,11 +44,11 @@ order:
 			</ol>
 		</div>
     
-        <h2>Internet Abstraction Hierarchy</h2>
+        ##Internet Abstraction Hierarchy
         <div class="comment">CSN-1.D.2 (under "Application Layer Protocols")</div>
 		<div class="sidenoteBig">
             <div class="todo">CSN-1.C-4</div>
-            <h3>Example protocols for each layer:</h3>
+            ###Example protocols for each layer:
             <p><strong>Application layer:</strong> Browsers use HTTP (HyperText Transfer Protocol) to interpret HTML instructions for web page formatting. DNS (Domain Name System) converts user-friendly host names (like edc.org or berkeley.edu) into IP addresses. Your email application may use SMTP (Simple Mail Transfer Protocol) to send and IMAP (Internet Message Access Protocol) to read email.</p>
             <p><strong>Transport layer:</strong> TCP (Transmission Control Protocol) <em>simulates</em> a reliable, long-term connection between two computers by only displaying data once all packets have arrived. When speed is more important than accuracy, such as for real-time video streaming, people use UDP (User Datagram Protocol).</p>
             <p><strong>Internet layer:</strong> Every device on the Internet needs an IP address so other devices can find it. Routers use Internet layer protocols to detect and work around network congestion.</p>

@@ -4,13 +4,7 @@ subtitle: "Unit 1, Lab 3, Page 5"
 order: 5
 ---
 
-```{=html}
-<script type="text/javascript" src="/utilities/gifffer.min.js"></script>
-```
-```{=html}
-<script type="text/javascript">window.onload = function() {Gifffer();}</script>
-```
-<link rel="stylesheet" type="text/css" href="/css/bjc-gifffer.css">
+{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <strong>On this page,</strong> you will use your existing <code>pinwheel</code> block to make <code>asterisk</code> and <code>polygon</code> blocks.<br /> <img src="/img/1-introduction/Blockswith-Inputs_img/asteriskpolygonCycle.gif" title="Animation cycle from Asterisk to Polygon" alt="Animation cycle from Asterisk to Polygon" class="indent" height="250"/>
@@ -48,7 +42,7 @@ Use your <code>pinwheel</code> block to create a more specialized <code>asterisk
 </ol>
 
 ::: takeNote
-<h3><strong>Debugging with <img src="/img/2-complexity/Debugging/pause-all-block.png" title="pause all" alt="pause all" height="42"/></strong></h3>
+###<strong>Debugging with <img src="/img/2-complexity/Debugging/pause-all-block.png" title="pause all" alt="pause all" height="42"/></strong>
 
 <p>You can use <code>pause all</code> to place breaks in your code so you can see what's happening along the way. When you run code with <code>pause all</code> in it, you can click the yellow Run/Pause button next to the Green Flag (<img src="/img/sys/play-button.png" title="play button" alt="play button"/>/<img src="/img/1-introduction/pause_button.png" title="pause button" alt="pause button"/>) to move through the code up until a <code>pause all</code> block is reached again. The <code>pause all</code> block will pause <em>every</em> script that is running until the yellow Run/Pause button is clicked.</p>
 :::

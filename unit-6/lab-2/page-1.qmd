@@ -36,7 +36,7 @@ order: 1
 
 ::: {#timeline-tally .timeline .collapse}
 ::: endnote
-<h4><strong>Tally Sticks</strong> (c. 18,000 BCE)</h4>
+####<strong>Tally Sticks</strong> (c. 18,000 BCE)
 
 <p>20,000 years ago people cut patterns of notches into animal bones. Some experts believe that <em>tally sticks</em> were used to perform arithmetic computations.</p>
 :::
@@ -50,7 +50,7 @@ order: 1
 
 ::: {#timeline-abacus .timeline .collapse}
 ::: endnote
-<h4><strong>The Abacus</strong> (c. 2,000 BCE)</h4>
+####<strong>The Abacus</strong> (c. 2,000 BCE)
 
 <p>The <em>abacus</em> is a computing device invented about 4,000 years ago. People who are well-trained to use it can perform calculations remarkably quickly, including square roots and cube roots on multi-digit numbers. In some countries, the abacus is still widely used today.</p>
 
@@ -70,7 +70,7 @@ order: 1
 
 ::: {#timeline-orrery .timeline .collapse}
 ::: endnote
-<h4><strong>The Orrery</strong> (c. 100 BCE)</h4>
+####<strong>The Orrery</strong> (c. 100 BCE)
 
 <p>
 
@@ -106,7 +106,7 @@ Here is a modern example of an orrery.
 
 ::: {#timeline-difference-engine .timeline .collapse}
 ::: endnote
-<h4><strong>The Difference Engine</strong> (c. 1822)</h4>
+####<strong>The Difference Engine</strong> (c. 1822)
 
 <p>In 1822, Charles Babbage designed a device he called a "Difference Engine." Made of precisely milled metal gears, it would compute and print tables of numbers, like log or trig functions. See more on <a href="/cur/programming/6-computers/1-abstraction/06-digital-architecture.html?topic=nyc_bjc%2F6-how-computers-work.topic&course=bjc4nyc.html&novideo&noassignment" title="The Digital Domain: Architecture">the digital architecture page</a>.</p>
 :::
@@ -120,7 +120,7 @@ Here is a modern example of an orrery.
 
 ::: {#timeline-analytical-engine .timeline .collapse}
 ::: endnote
-<h4><strong>The Analytical Engine</strong> (c. 1833)</h4>
+####<strong>The Analytical Engine</strong> (c. 1833)
 
 <p>The Difference Engine could compute various functions by manually setting the starting position of its gears, but it had only one algorithm, built into the hardware design. In 1833, Babbage began a more ambitious project, the Analytical Engine. It was based on the general idea of the Difference Engine, but with a crucial difference: It could carry out instructions in a primitive programming language, prepared on punched cards. See more on <a href="/cur/programming/6-computers/1-abstraction/06-digital-architecture.html?topic=nyc_bjc%2F6-how-computers-work.topic&course=bjc4nyc.html&novideo&noassignment" title="The Digital Domain: Architecture">the digital architecture page</a>.</p>
 :::
@@ -134,7 +134,7 @@ Here is a modern example of an orrery.
 
 ::: {#timeline-first-programmer .timeline .collapse}
 ::: endnote
-<h4><strong>The First Programmer</strong> (c. 1842)</h4>
+####<strong>The First Programmer</strong> (c. 1842)
 
 <p>Babbage's design was very versatile, but his interest was still mainly in printing tables of numbers. It was his collaborator Ada, Countess Lovelace, who first recognized that the numbers in Babbage's computer could be used not only as quantities but also as representing musical notes, text characters, and so on. See more on <a href="/cur/programming/6-computers/1-abstraction/06-digital-architecture.html?topic=nyc_bjc%2F6-how-computers-work.topic&course=bjc4nyc.html&novideo&noassignment" title="The Digital Domain: Architecture">the digital architecture page</a>.</p>
 
@@ -154,7 +154,7 @@ Here is a modern example of an orrery.
 
 ::: {#timeline-turing-wwii .timeline .collapse}
 ::: endnote
-<h4><strong>Alan Turing Wins World War II</strong> (1940s)</h4>
+####<strong>Alan Turing Wins World War II</strong> (1940s)
 
 <p>Well, we're exaggerating. Many people contributed to the Nazi defeat. But they weren't all soldiers; some were mathematicians. Turing, who went on to develop the beginning ideas of computer science and to prove the Halting Theorem, which you saw in <a href="/cur/programming/5-algorithms/4-unsolvable-undecidable/2-halting-problem.html?topic=nyc_bjc%2F5-algorithms.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 5, Lab 4: An Undecidable Problem" title="Unit 5, Lab 4: An Undecidable Problem">Unit 5, Lab 4: An Undecidable Problem</a>, was the leader of a British team of mathematicians who made a breakthrough in decrypting messages encrypted with the German <em>Enigma</em> machine.</p>
 
@@ -180,7 +180,7 @@ Alan Turing, a Cambridge University mathematician and logician, provided much of
 
 ::: {#timeline-nls .timeline .collapse}
 ::: endnote
-<h4><strong>"The mother of all demos" </strong>(1960s)</h4>
+####<strong>"The mother of all demos" </strong>(1960s)
 
 <p>The first public demonstration in 1968 of a mouse, colleagues separated by miles working on the same screen, and many other technologies we now take for granted was so astonishing to the audience that it became known as "the mother of all demos." (Just search that name on Wikipedia or YouTube.)</p>
 
@@ -196,7 +196,7 @@ Alan Turing, a Cambridge University mathematician and logician, provided much of
 
 ::: {#timeline-sketchpad .timeline .collapse}
 ::: endnote
-<h4><strong>Sketchpad</strong> (1963)</h4>
+####<strong>Sketchpad</strong> (1963)
 
 <p>Ivan Sutherland's 1963 Ph.D. thesis project, a program to help in drawing blueprints from points, line segments and arcs of circles, pioneered both object oriented programming and the ability to draw on a screen (using a light pen; the mouse hadn't been invented yet). It was one of the first programs with an interactive graphical user interface, so people who weren't computer programmers could use it easily.</p>
 
@@ -212,7 +212,7 @@ Alan Turing, a Cambridge University mathematician and logician, provided much of
 
 ::: {#timeline-arpanet .timeline .collapse}
 ::: endnote
-<h4><strong>ARPANET</strong> (1969)</h4>
+####<strong>ARPANET</strong> (1969)
 
 <p>The Advanced Research Projects Agency\
 (ARPA) of the US Defense Department was and is still the main funder of computer science research in the United States. In the late 1960s through the early 1980s they supported the development of a network connecting mainly universities with ARPA-funded projects, along with a few military bases. The initial network in 1969 consisted of four computers, three in California and one in Utah. At its peak, around 1981, there were about 200 computers on the net. With such a small number of computers, each of them knew the name and "host number" of all the others. Special gateway computers called IMPs (Interface Message Processors) were used to connect the host computers to the network, like a router today.</p>
@@ -231,7 +231,7 @@ Alan Turing, a Cambridge University mathematician and logician, provided much of
 
 ::: {#timeline-internet .timeline .collapse}
 ::: endnote
-<h4><strong>Internet</strong> (1986)</h4>
+####<strong>Internet</strong> (1986)
 
 <p>Gradually the ARPANET was divided into pieces. The first big pieces were MILNET for military bases and NSFnet, established in 1986 by the National Science Foundation, for research sites. This split was the beginning of the Internet. Smaller regional networks were created. Communication companies such as AT&T created commercial networks that anyone could join. Network access spread worldwide through satellite radio and through undersea cables. In 1995 the NSFnet was abolished, and everyone connected to the net through commercial Internet Service Providers.</p>
 :::
@@ -245,7 +245,7 @@ Alan Turing, a Cambridge University mathematician and logician, provided much of
 
 ::: {#timeline-www .timeline .collapse}
 ::: endnote
-<h4><strong>World Wide Web</strong> (1989-90)</h4>
+####<strong>World Wide Web</strong> (1989-90)
 
 <p>In the early days of the net, the main application-level protocols were Telnet, which allowed a user to log in remotely to another computer, and FTP (File Transfer Protocol), for copying files from one computer to another. FTP is great if you already know what you're looking for, and exactly where it is in the other computer's file system.</p>
 
@@ -265,7 +265,7 @@ Alan Turing, a Cambridge University mathematician and logician, provided much of
 
 ::: {#timeline-smartphone .timeline .collapse}
 ::: endnote
-<h4><strong>Smartphones</strong> (1990s)</h4>
+####<strong>Smartphones</strong> (1990s)
 
 <p>The first device that could be thought of as a smartphone was demonstrated in 1992 and available for sale in 1994. But through the 1990s, people who wanted portable digital devices could get a cell phone without apps, and a "personal digital assistant" (PDA) that did run apps but couldn't make phone calls. Around 1999, a few companies developed devices with the phone and the PDA in one housing, sharing the screen but essentially two separate computers in one box. The Kyocera 6035, in the photo, was a telephone with the flap closed, but was a Palm Pilot PDA with the flap open.</p>
 
@@ -291,7 +291,7 @@ There is something weird about this image file, and I can't figure it out. Movin
 
 ::: {#timeline-chess .timeline .collapse}
 ::: endnote
-<h4><strong>Chess program beats world champion</strong> (2006)</h4>
+####<strong>Chess program beats world champion</strong> (2006)
 
 <p>Programmers have been trying to design and build chess programs since at least 1941 (Konrad Zuse). Over the following decade, several of the leading computer science researchers (including Alan Turing, in 1951) published ideas for chess algorithms, but the first actual running programs came in 1957. In 1978, a chess program won a game against a human chess master, David Levy, but Levy won the six-game match 4½--1½. (The half points mean that one game was a tie.)</p>
 
@@ -315,7 +315,7 @@ There is something weird about this image file, and I can't figure it out. Movin
 
 ::: {#timeline-siri .timeline .collapse}
 ::: endnote
-<h4><strong>Siri</strong> (2011)</h4>
+####<strong>Siri</strong> (2011)
 
 <p>Siri is Apple's <em>personal assistant</em> software. It was first released as a third-party app in the App Store in 2010; Apple then bought the company that made it, and included Siri as part of iOS in 2011.</p>
 
@@ -339,7 +339,7 @@ There is something weird about this image file, and I can't figure it out. Movin
 
 ::: {#timeline-pokemon-go .timeline .collapse}
 ::: endnote
-<h4><strong>Pokémon Go</strong> (2016)</h4>
+####<strong>Pokémon Go</strong> (2016)
 
 <p><em>Augmented reality</em> is a technique in which the user sees the real world, but with additional pictures or text superimposed on it. Although it had been used earlier, the first major public exposure to augmented reality was in the game Pokémon Go. Players walk around while looking at their phone screens, which show what the camera is seeing, but with the occasional addition of a cartoon character for the player to catch. Every player looking at the same place sees the same character, because the game uses the phone's GPS to locate the player.</p>
 
@@ -357,7 +357,7 @@ There is something weird about this image file, and I can't figure it out. Movin
 
 ::: {#timeline-qx .timeline .collapse}
 ::: endnote
-<h4><strong>IBM Quantum Experience (QX)</strong> (2017)</h4>
+####<strong>IBM Quantum Experience (QX)</strong> (2017)
 
 <p>IBM first put a five-qubit (quantum bit) quantum computer on the Internet in 2016 (see <a href="https://www.research.ibm.com/ibm-q/" target="_blank" title="Quantum Computing - IBM Q - US">Quantum Computing - IBM Q - US</a>), but the following year they added a much more powerful 16-qubit computer. (The qubit is the equivalent for quantum computers of a bit in ordinary computers.) Anyone can use it, free of charge, although there is always a waiting list for appointments.</p>
 

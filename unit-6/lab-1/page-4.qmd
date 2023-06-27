@@ -33,7 +33,7 @@ AAP-3.D.1, AAP-3.D.2, AAP-3.D.3
 
 ```{=html}
 <!--<div class="endnote">
-<h4><strong>Web API</strong></h4>
+####<strong>Web API</strong>
 <p>A common kind of API is a <em>web API</em> in which the library exists on someone else's computer. For example, the <a href="https://developers.google.com/maps/documentation/embed/start" title="Google Maps API" target="_blank">Google Maps API</a> describes how to embed a Google Map on your own website.</p>
 <p>A web API is just a call to a procedure on another machine. For example, these are three different notations for the same procedure call:
 <ul>
@@ -44,11 +44,11 @@ AAP-3.D.1, AAP-3.D.2, AAP-3.D.3
 The only difference is that the URL shows where on the Internet to find the procedure.</p>
 </div>-->
 ```
-<h2>Languages vs. Libraries</h2>
+##Languages vs. Libraries
 
 <p>Often when people compare what different programming languages can do, they are <em>really</em> comparing libraries. For example, people may think they like JavaScript because they can use it to program web pages, but that's not a property of JavaScript. It's actually a web page <em>library</em> built into the browser that lets you program web pages.</p>
 
-<h2>Libraries in Snap<em>!</em></h2>
+##Libraries in Snap<em>!</em>
 
 <!--<div class="todo">Both of these references have now been changed. See <a href="/cur/programming/5-algorithms/3-turning-data-information/4-filtering-data.html?topic=nyc_bjc%2F5-algorithms.topic&course=bjc4nyc.html&novideo&noassignment">5.3.4</a> for <code>pipe</code> and the RGB/HSV library has been cut from 4.5.8. --MF, 8/15/19</div>-->
 

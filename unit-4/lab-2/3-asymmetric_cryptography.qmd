@@ -7,7 +7,7 @@
 	</head>
 
 	<body>
-    	<h2>Public Key Encryptionsubtitle: "Unit , Lab , Page"
+    	##Public Key Encryptionsubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="learn">
@@ -70,7 +70,7 @@ order:
         </div>
         
         
-        <h2>Secure HTTP</h2>
+        ##Secure HTTP
         <div class="vocabBig">
         	<p><strong>SSL/TLS</strong> (secure sockets layer/transport layer security) is the standard used for cryptographically secured information transfer on the Internet.</p>
         </div>
@@ -90,7 +90,7 @@ order:
         </div>
         
         
-        <h2>Certificate Authorities</h2>
+        ##Certificate Authorities
         <div class="vocabBig">
         	<div class="comment">IOC-2.B.6</div>
             <p><strong>Certificate authorities</strong> are organizations that issue digital certificates to verify who owns the encryption keys used for secured communications.</p>

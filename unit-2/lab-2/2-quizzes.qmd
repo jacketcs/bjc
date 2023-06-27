@@ -4,13 +4,7 @@ subtitle: "Unit 2, Lab 2, Page 2"
 order: 2
 ---
 
-```{=html}
-<script type="text/javascript" src="/utilities/gifffer.min.js"></script>
-```
-```{=html}
-<script type="text/javascript">window.onload = function() {Gifffer();}</script>
-```
-<link rel="stylesheet" type="text/css" href="/css/bjc-gifffer.css">
+{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <p><strong>On this page,</strong> you will begin to develop a quiz app by creating an <em>abstract data type</em> to pair the questions with their answers.</p>
@@ -135,7 +129,7 @@ AAP-1.D
 <li>Build the custom <code>quiz item</code> abstract data type (both the constructor and the two selectors).</li>
 
 ::: narrower
-<h3><strong>Specifying an Input Type</strong></h3>
+###<strong>Specifying an Input Type</strong>
 
 <p>Your selectors expect a quiz item, i.e., a list, as input. You can make your blocks <em>show</em> what type of data they expect. It's not necessary in Snap<em>!</em> but, like assigning a color to a block, it can be a helpful reminder of what the block does and what type of input it expects. You've already seen input slots of several shapes, indicating different expected data types.</p>
 

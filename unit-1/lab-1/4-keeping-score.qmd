@@ -4,19 +4,13 @@ subtitle: "Unit 1, Lab 1, Page 4"
 order: 4
 ---
 
-```{=html}
-<script type="text/javascript" src="/utilities/gifffer.min.js"></script>
-```
-```{=html}
-<script type="text/javascript">window.onload = function() {Gifffer();}</script>
-```
-<link rel="stylesheet" type="text/css" href="/css/bjc-gifffer.css">
+{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 Now the game is challenging, but players can't tell how well they're doing because Alonzo jumps around whether the player clicks him or not. <strong>On this page</strong>, you will create a way for the player of your game to know how well they are doing.
 :::
 
-<h2>Confirming Whether Alonzo Was Clicked</h2>
+##Confirming Whether Alonzo Was Clicked
 
 <p>First, the person playing your game wants to know right away whether they succeeded at clicking Alonzo before he moved out of the way.</p>
 
@@ -50,7 +44,7 @@ Program Alonzo to face the other way when clicked. <img src="/img/1-introduction
 </ol>
 :::
 
-<h2>Keeping Score</h2>
+##Keeping Score
 
 <!--<a class="index-term anchor" id="change effect</code>">&nbsp;</a>-->
 
@@ -74,7 +68,7 @@ Program Alonzo to face the other way when clicked. <img src="/img/1-introduction
 </ol>
 :::
 
-<h2>Making the Game More Challenging</h2>
+##Making the Game More Challenging
 
 <p>So far, even a bad player will <em>eventually</em> make Alonzo disappear. The game will be much more interesting if the player is penalized for missing a click.</p>
 
@@ -92,7 +86,7 @@ You can change the <code>change effect</code> input number (for either instance 
 </ol>
 :::
 
-<h2>Ending the Game</h2>
+##Ending the Game
 
 ::: forYouToDo
 <p>When Alonzo is completely transparent, the game should <em>stop.</em></p>

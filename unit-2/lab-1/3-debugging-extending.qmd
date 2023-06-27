@@ -46,7 +46,7 @@ order: 3
 <p><a href="https://www.cnbc.com/2021/10/30/jerry-lawson-black-silicon-valley-pioneer-changed-video-games-forever.html" title="Article: One of the most important Silicon Valley pioneers you've never heard of" target="_blank">Article: One of the most important Silicon Valley pioneers you've never heard of</a></p>
 :::
 
-<h2>Extending the Program with More Specific Responses</h2>
+##Extending the Program with More Specific Responses
 
 ::: forYouToDo
 <ol start="3">

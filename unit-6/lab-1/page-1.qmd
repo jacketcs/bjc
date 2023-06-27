@@ -54,7 +54,7 @@ Do we need this commented out content? --MF, 6/12/20
 </table>
 -->
 ```
-<h2>Software Domain</h2>
+##Software Domain
 
 <p>
 
@@ -90,7 +90,7 @@ Similarly, an automobile driver is operating at a high level of abstraction when
 </div>
 :::
 
-<h2>Digital Domain</h2>
+##Digital Domain
 
 <p>
 
@@ -127,7 +127,7 @@ Do we need this commented out content? --MF, 6/12/20
 
 <p>In the different levels of abstraction in software, each level of abstraction is a different piece of software, but the level of abstraction in the digital domain are four ways of thinking about the same physical object.</p>-->
 ```
-<h2>Analog Domain</h2>
+##Analog Domain
 
 <p>Logic gates, which are the lowest abstraction level of the digital domain, operate on ones and zeros. In physical reality, those logic gates are built out of <strong>transistors</strong>, a type of circuit component. Transistors aren't like light switches that are either on or off. There can be in-between values (like "only 23% on"). So, electrical engineers have to think about the laws of electronics to design digital circuits so that in-between values don't happen.</p>
 

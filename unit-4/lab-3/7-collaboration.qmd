@@ -2,7 +2,7 @@ Unit 4 Lab 3: Community and Online Interactions, Page 7</title>
 	</head>
 
 	<body>
-    	<h2>Digital Collaborationsubtitle: "Unit , Lab , Page"
+    	##Digital Collaborationsubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="learn">

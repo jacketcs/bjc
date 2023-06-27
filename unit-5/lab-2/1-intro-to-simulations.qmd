@@ -2,7 +2,7 @@ Unit 5 Lab 2: Simulations, Page 1</title>
     </head>
     
     <body>
-        <h2>Why Use Simulations?subtitle: "Unit , Lab , Page"
+        ##Why Use Simulations?subtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="learn">

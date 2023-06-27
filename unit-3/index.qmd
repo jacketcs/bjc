@@ -1,3 +1,5 @@
-# Introduction to Programming
+# Data Structures
 
-Unit 1 is essentially an introduction to the programming that you will be working with throughout the year. In this unit, you'll learn how to interact with sprites, how to create blocks, and iteration. In addition to these computational ideas, you'll learn about privacy in the physical and digital realm
+In Unit 3, we learn about creating data structures in Snap, or practices for creating well structured code in Snap.
+
+We'll learn about algorithms, debugging tipcs, how to make readable code among the various things that you do, and the state of AI and computers.

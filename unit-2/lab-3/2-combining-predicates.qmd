@@ -12,7 +12,7 @@ order:
 ---
         <div class="learn">On this page, you will combine predicates using Boolean functions to write on the stage in three colors.</div>
                 
-        <h2>Boolean Functions</h2>
+        ##Boolean Functions
         <p>
             At the very lowest level, computer circuitry is made of wires, and each wire is either on or off. So the only operations that can be performed at that lowest level are those that <em>operate on single-bit values</em> (just ones and zeros, that is, just ons and offs). These are called <em>logical (or Boolean) functions</em>. (They're predicates, because their range is Booleans, but these are special in that their <em>domain</em> is also Booleans.) There are three Boolean functions in the Operators palette:<br />
             <img class="indent" src="/img/prog/Booleans.png" alt="and, or, not blocks" title="and, or, not blocks" /><br />
@@ -68,7 +68,7 @@ order:
                     <img class="indent" src="/img/2-complexity/number-between-two-others(with-result-false).png" alt="is (3.8) between (3.9) and (4.7) ? reporting false" title="is (3.8) between (3.9) and (4.7) ? reporting false">
                     <img class="indent" src="/img/2-complexity/word-between-two-others(with-result-true).png" alt="is (apples) between (alphabet) and (azure) ? reporting true" title="is (apples) between (alphabet) and (azure) ? reporting true"> 
                     <div class="narrower">
-                        <h3><strong>Making a Predicate </strong></h3>
+                        ###<strong>Making a Predicate </strong>
                         <ul>
                             <li>
                             	Choose the hexagonal <em>predicate</em> shape.<br />

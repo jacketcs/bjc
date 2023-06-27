@@ -2,7 +2,7 @@
 	</head>
 
 	<body>
-		<h2>Adding Birthdayssubtitle: "Unit , Lab , Page"
+		##Adding Birthdayssubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="todo">
@@ -56,7 +56,7 @@ order:
                         <li>
                             Adapt your "Add Contact" button to input this new type of contact into your list.
                             <div class="narrower">
-                                <h3><strong>Adding Contacts with Birthdays</strong></h3>
+                                ###<strong>Adding Contacts with Birthdays</strong>
                                     <p>You could use several ask and answer blocks together with script variables.</p>
                                     <p>
                                         Another way is to use <em>abstraction</em> and create another helper, <img class="inlinde" src="/img/3-lists/ask-birthdate.png" alt="ask birthdate" title="ask birthdate" /> that reports a list of the user's answers to these prompts:

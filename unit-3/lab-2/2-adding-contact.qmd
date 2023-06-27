@@ -10,7 +10,7 @@
     </head> 
     
     <body>
-    	<h2>Adding Contact Datasubtitle: "Unit , Lab , Page"
+    	##Adding Contact Datasubtitle: "Unit , Lab , Page"
 order:
 ---
 		<div class="learn">
@@ -39,7 +39,7 @@ order:
                         </div>
                         <li>Make the script ask the user for contact data and then add that data to the <var>contact list</var> using the <code>contact</code> constructor.</li>
                         <div class="narrower">
-                            <h3><strong>Collecting Data from the User</strong></h3>
+                            ###<strong>Collecting Data from the User</strong>
                             <p>
                                 You'll want to ask the user for each piece of data (contact name, address, and phone number) separately.
 								<ul>

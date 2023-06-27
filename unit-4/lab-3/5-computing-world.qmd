@@ -2,7 +2,7 @@ Unit 4 Lab 3: Community and Online Interactions, Page 5</title>
 	</head>
 
 	<body>
-    	<h2>Computing Around the Worldsubtitle: "Unit , Lab , Page"
+    	##Computing Around the Worldsubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="learn"><strong>On this page,</strong> you will investigate how much of the world has access to the Internet.</div>

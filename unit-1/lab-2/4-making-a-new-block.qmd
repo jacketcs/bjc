@@ -4,13 +4,7 @@ subtitle: "Unit 1, Lab 2, Page 4"
 order: 4
 ---
 
-```{=html}
-<script type="text/javascript" src="/utilities/gifffer.min.js"></script>
-```
-```{=html}
-<script type="text/javascript">window.onload = function() {Gifffer();}</script>
-```
-<link rel="stylesheet" type="text/css" href="/css/bjc-gifffer.css">
+{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <p><strong>On this page,</strong> you will create a new<img src="/img/1-introduction/gossip-response.png" title="gossip response" alt="gossip response" class="inline"/> block to make the program feel more like a conversation. <br /> <img src="/img/1-introduction/gossip2-reporting.png" title="gossip2 reporting &apos;Guess what. Gabrielle helped Señora&apos;" alt="gossip2 reporting &apos;Guess what. Gabrielle helped Señora&apos;" class="indent"/></p>
@@ -26,7 +20,7 @@ order: 4
 </ol>
 
 ::: narrower
-<h3><strong>Making a New Block</strong></h3>
+###<strong>Making a New Block</strong>
 
 <ol type="a">
 
@@ -46,7 +40,7 @@ order: 4
 <p>Because you chose the reporter shape, the block editor opens with a <img src="/img/blocks/report.png" title="report" alt="report" class="inline nopadtb"/> block already attached to the hat block. Whatever input you give to <code>report</code> will become the value reported by your new block.</p>
 :::
 
-<h3><strong>Coding the Block's Script</strong></h3>
+###<strong>Coding the Block's Script</strong>
 
 <ol type="a" start="5">
 
@@ -152,7 +146,7 @@ The exam uses "value of a procedure" to mean the value the procedure returns whe
 </ul>
 :::
 
-<h2>Debugging</h2>
+##Debugging
 
 ::: forYouToDo
 <ol start="3">

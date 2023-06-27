@@ -3,7 +3,7 @@ title: "How Many Five-Letter Words Are There?subtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="todo">
-            <h2>TG and solutions need to be checked. --MF, 12/19/18</h2>
+            ##TG and solutions need to be checked. --MF, 12/19/18
         </div>
         <div class="learn">
             <p><strong>On this page</strong>, you will see how long it takes to run a <em>linear search</em> algorithm. </p>

@@ -4,13 +4,7 @@ subtitle: "Unit 2, Lab 2, Page 1"
 order: 1
 ---
 
-```{=html}
-<script type="text/javascript" src="/utilities/gifffer.min.js"></script>
-```
-```{=html}
-<script type="text/javascript">window.onload = function() {Gifffer();}</script>
-```
-<link rel="stylesheet" type="text/css" href="/css/bjc-gifffer.css">
+{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <p><strong>In this lab,</strong> you will create tools for storing and accessing data.</p>
@@ -115,7 +109,7 @@ or <img src="/img/2-complexity/shoppinglist-full-list-assignment-blocktran.png" 
 :::
 :::
 
-<h2>Adding Items to a List</h2>
+##Adding Items to a List
 
 <p>
 
@@ -193,7 +187,7 @@ AAP-2.N part a
 </ol>
 :::
 
-<h2>Removing Items from a List</h2>
+##Removing Items from a List
 
 ::: forYouToDo
 <ol start="5">

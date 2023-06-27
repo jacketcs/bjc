@@ -2,7 +2,7 @@ Unit 3 Lab 3: Tic-Tac-Toe, Page 2</title>
     </head> 
     
     <body>
-       <h2>Detecting A Winsubtitle: "Unit , Lab , Page"
+       ##Detecting A Winsubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="todo">
@@ -16,7 +16,7 @@ order:
         </div>
         
        
-        <h2>Checking One Way to Win</h2>
+        ##Checking One Way to Win
         <p>We need a way to find out if a possible winning triple has actually happened. We can use <code>map</code> to check each position in one triple to see if either player has won with that triple. </p>
         
         <div class="endnote">
@@ -63,7 +63,7 @@ order:
             </ol>
         </div>
         
-        <h2>Checking All the Ways to Win</h2>
+        ##Checking All the Ways to Win
 
 	<p>Now you're going to use <code>status of triple</code> systematically to check <em>all</em> the triples.</p>
 

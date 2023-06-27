@@ -41,7 +41,7 @@ it's off.</p>
 :::
 :::
 
-<h2>Boolean Operators</h2>
+##Boolean Operators
 
 <p>The circuits to do computation are more interesting. They compute
 <em>functions,</em> just like reporters in Snap<em>!</em>. Since
@@ -184,7 +184,7 @@ ones/zeros.
 </ul>
 :::
 
-<h2>Logic Gates</h2>
+##Logic Gates
 
 <p>Inside a computer, Boolean operations are implemented in physical
 circuitry using logic gates. (A single gate implements one of the basic

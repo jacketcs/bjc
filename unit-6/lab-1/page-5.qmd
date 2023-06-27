@@ -33,7 +33,7 @@ In a computer, there are many applications and operating system tasks all wantin
 :::
 
 ::: endnote
-<h2>The Kernel</h2>
+##The Kernel
 
 <p>
 

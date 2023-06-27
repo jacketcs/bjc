@@ -2,11 +2,11 @@ Unit 5 Lab 1: Search Algorithms and Efficiency, Page 3</title>
 	</head>
 
 	<body>
-		<h2>Is "Seperate" Spelled Correctly?subtitle: "Unit , Lab , Page"
+		##Is "Seperate" Spelled Correctly?subtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="todo">
-            <h2>TG and solutions need to be checked. --MF, 12/19/18</h2>
+            ##TG and solutions need to be checked. --MF, 12/19/18
         </div>
         <div class="learn">
             <p><strong>On this page</strong>, you will use a <em>binary search</em> algorithm to search efficiently in a <em>sorted</em> list.</p>

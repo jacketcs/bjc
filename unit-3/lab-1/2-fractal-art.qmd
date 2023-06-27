@@ -10,7 +10,7 @@
     </head>
     
     <body>
-        <h2>Fractal Artsubtitle: "Unit , Lab , Page"
+        ##Fractal Artsubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="learn">

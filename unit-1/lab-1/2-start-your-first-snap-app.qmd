@@ -4,13 +4,7 @@ subtitle: "Unit 1, Lab 1, Page 2"
 order: 2
 ---
 
-```{=html}
-<script type="text/javascript" src="/utilities/gifffer.min.js"></script>
-```
-```{=html}
-<script type="text/javascript">window.onload = function() {Gifffer();}</script>
-```
-<link rel="stylesheet" type="text/css" href="/css/bjc-gifffer.css">
+{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <p><strong>On this page,</strong> you'll build a simple game in which the player tries to click a character that's jumping around.</p>
@@ -22,7 +16,7 @@ order: 2
 <p>If each of you is in front of a computer, one of you should keep Snap<em>!</em> open, and the other should keep this lab page open. If you are sharing a computer, use two browser tabs.</p>
 :::
 
-<h2>Making a Character Move</h2>
+##Making a Character Move
 
 ::: forYouToDo
 <ol>
@@ -34,7 +28,7 @@ order: 2
 <a href="/prog/1-introduction/U1L1-ClickAlonzo.xml" class="run"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a>
 
 ::: narrower
-<h3><strong>Saving a Snap<em>!</em> Project</strong></h3>
+###<strong>Saving a Snap<em>!</em> Project</strong>
 
 <p>Choose "Save" from the Snap<em>!</em> File menu, <img src="/img/1-introduction/file_button.png" title="File menu button" alt="File menu button"/>.</p>
 :::
@@ -136,7 +130,7 @@ CRD-2.C.2, CRD-2.C.3, CRD-2.C.5
 </ol>
 :::
 
-<h2>Making the Game Challenging</h2>
+##Making the Game Challenging
 
 <!--<div class="index-term" id="forever</code> loop" />-->
 

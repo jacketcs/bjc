@@ -7,7 +7,7 @@
     </head>
 
     <body> 
-		<h2>Building a Tic-Tac-Toe Boardsubtitle: "Unit , Lab , Page"
+		##Building a Tic-Tac-Toe Boardsubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="learn">

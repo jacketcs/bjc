@@ -4,13 +4,7 @@ subtitle: "Unit 1, Lab 3, Page 3"
 order: 3
 ---
 
-```{=html}
-<script type="text/javascript" src="/utilities/gifffer.min.js"></script>
-```
-```{=html}
-<script type="text/javascript">window.onload = function() {Gifffer();}</script>
-```
-<link rel="stylesheet" type="text/css" href="/css/bjc-gifffer.css">
+{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <p><strong>On this page,</strong> you will use inputs to allow one block to do many things.</p>
@@ -44,7 +38,7 @@ CRD-2.B.3 (white text)
 Create a <code>pinwheel</code> block with an input for the <var>number of branches</var>. Instructions are below and you can also watch the process in the video that follows the instructions.
 
 ::: narrower
-<h3><strong>Making a Block with an Input</strong></h3>
+###<strong>Making a Block with an Input</strong>
 
 <ol type="a">
 
@@ -170,7 +164,7 @@ CRD-2.G
 <li>Comment your code.</li>
 
 ::: takeNote
-<h3><strong>Debugging Tip: Commenting Your Code</strong></h3>
+###<strong>Debugging Tip: Commenting Your Code</strong>
 
 ::: comment
 CRD-2.G.2
@@ -228,7 +222,7 @@ Adding comments to your code may help you remember what your code does, helps ot
 </ol>
 :::
 
-<h2>More About Program Documentation</h2>
+##More About Program Documentation
 
 ::: comment
 CRD-2.G.1, CRD-2.G.5

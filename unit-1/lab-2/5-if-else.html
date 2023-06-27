@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>BHS AP CSP - Adding Variety to Gossip</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../unit-1/lab-3/1-exploring-motion.html" rel="next">
+<link href="../../unit-1/lab-2/4-making-a-new-block.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script type="text/javascript" src="../../llab/loader.js"></script>
+
+
+<link rel="stylesheet" href="../../css/bjc.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">BHS AP CSP</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-labs" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Labs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-labs">    
+        <li>
+    <a class="dropdown-item" href="../../unit-1/index.html" rel="" target="">
+ <span class="dropdown-text">Unit 1: Introduction to Programming</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-2/index.html" rel="" target="">
+ <span class="dropdown-text">Unit 2: Abstraction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-3/index.html" rel="" target="">
+ <span class="dropdown-text">Unit 3: Data Structures</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-4/index.html" rel="" target="">
+ <span class="dropdown-text">Unit 4: How the Internet Works</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-5/index.html" rel="" target="">
+ <span class="dropdown-text">Unit 5: Algorithms and Simulations</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-6/index.html" rel="" target="">
+ <span class="dropdown-text">Unit 6: How Computers Work</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
+ <span class="menu-text">Snap<em>!</em></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-1/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-1/lab-2/1-pair-programming.html">Lab 2</a></li><li class="breadcrumb-item"><a href="../../unit-1/lab-2/5-if-else.html">Adding Variety to <code>Gossip</code></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../unit-1/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to Programming</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text">Lab 1</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-1/1-creating-a-snap-account.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Getting Started with Snap<em>!</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-1/2-start-your-first-snap-app.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Programming a Game</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-1/3-loading-mobile-device.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sharing Your Game</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-1/4-keeping-score.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Giving the Player Feedback</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-1/5-finish-your-first-snap-app.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Improving Your Game</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Lab 2</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-2/1-pair-programming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pair Programming</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-2/2-gossip.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Making Programs Talk</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-2/3-customizing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Customizing and Debugging</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-2/4-making-a-new-block.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Making Your Own Block</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-2/5-if-else.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Adding Variety to <code>Gossip</code></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+ <span class="menu-text">Lab 3</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-3/1-exploring-motion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Exploring Motion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-3/2-exploring-snap-drawing-motion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Angles and Turning</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-3/3-blocks-with-inputs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Blocks with Inputs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-3/4-modify-your-pinwheel.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modify Your Pinwheel</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-3/5-remix-your-pinwheel.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using <code>Pinwheel</code> to Make <code>Polygon</code></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-3/6-the-for-block.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Looping with a Counter</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-3/7-programming-journal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Keeping a Programming Journal</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+ <span class="menu-text">Lab 4</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-4/1-your-image-in-the-cloud.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Your Image in the Cloud</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-4/2-examining-privacy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Examining Privacy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-4/3-tanya-rider.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tanya Rider’s Story</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-4/4-privacy-affected.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Innovations and Privacy</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+ <span class="menu-text">Lab 5</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-5/1-following-sprites.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sprite Following the Mouse</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/lab-5/2-sprite-interaction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sprite Following a Sprite</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+ <span class="menu-text">Optional Projects</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/optional-projects/1-sprite-line-art.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Line Art Toy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/optional-projects/2-row-of-houses.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2 Row of Houses</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/optional-projects/3-pong.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Game of Pong</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/optional-projects/4-daisy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Daisy Design</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-1/optional-projects/5-sentence-builder.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modeling Language</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Adding Variety to <code>Gossip</code></h1>
+<p class="subtitle lead">Unit 1, Lab 2, Page 5</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="learn">
+<p>
+<strong>On this page, </strong> you will improve your program so that sometimes the sentences are a bit longer and more complex.
+</p>
+</div>
+<p>The block <img src="../../img/1-introduction/more-complicated-who.png" title="more complicated who" alt="more complicated who"> has been built for you. It randomly chooses 1, 2, 3, or 4, and if that number is 3, then it reports something more complicated than <code>who</code>. Otherwise, it reports <code>who</code>, just as before.</p>
+<div id="first" class="forYouToDo">
+<ol>
+<li>
+If it isn’t open already, open your U1L2-Gossip project.
+</li>
+<li>
+Find <img src="../../img/1-introduction/more-complicated-who.png" title="more complicated who" alt="more complicated who"> in the red Lists palette, drag it into the scripting area, and click on it enough times to see how it’s different from <code>who</code>.
+</li>
+<li>
+<!--<div class="index-term" id="pick random</code>"></div>-->
+<p>Here is the code for <code>more complicated who</code>. There are two new things in it: <code>pick random</code> and <code>if else</code>.<br> <img src="../../img/1-introduction/more-complicated-who-script.png" title="more complicated who {
+if (pick random (1) to (4)) = (3) {
+report (join (who) (', who') (does what) ( ) (who) (,))                                                                                          
+} else {
+report (who)
+}
+}" alt="more complicated who {
+if (pick random (1) to (4)) = (3) {
+report (join (who) (' who') (does what) ( ) (who))                                                                                          
+} else {
+report (who)
+}
+}" class="indent"></p>
+<ol>
+<li>
+Find <img src="../../img/blocks/pick-random-1-to-10-full-size.png" title="pick random (1) to (10)" alt="pick random (1) to (10)" class="inline"> in the green Operators palette, and click it several times. What does the <code>random</code> block do?
+</li>
+<li>
+<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> In the <code>more complicated who</code> block, what happens if the <code>pick random</code> block picks 3? What if it picks 4?
+</li>
+</ol>
+</li>
+<li>
+<!-- Question 1 -->
+<div class="assessment-data" type="multiplechoice" data-identifier="About how often will more complicated who pick the more complicated choice?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri1" data-shuffle="false">
+<div class="prompt">
+<div class="comment">
+<p>AAP-3.E</p>
+</div>
+<p><img src="../../img/1-introduction/more-complicated-who-script.png" title="more complicated who {
+if (pick random (1) to (4)) = (3) {
+report (join (who) (', who') (does what) ( ) (who) (,))                                                                                          
+} else {
+report (who)
+}
+}" alt="more complicated who {
+if (pick random (1) to (4)) = (3) {
+report (join (who) (', who') (does what) ( ) (who) (,))                                                                                          
+} else {
+report (who)
+}
+}" class="imageRight"> About how often will <code>more complicated who</code> pick the more complicated choice?</p>
+</div>
+<div class="choice" data-identifier="c1">
+<div class="text">
+<p>Half the time</p>
+</div>
+<div class="feedback">
+<p>If a number is chosen randomly from 1, 2, 3, and 4, about how often will that number be 3?</p>
+</div>
+</div>
+<div class="choice" data-identifier="c2">
+<div class="text">
+<p>A third of the time</p>
+</div>
+<div class="feedback">
+<p>If a number is chosen randomly from 1, 2, 3, and 4, about how often will that number be 3?</p>
+</div>
+</div>
+<div class="choice" data-identifier="c3">
+<div class="text">
+<p>A quarter of the time</p>
+</div>
+<div class="feedback">
+<p>Correct!</p>
+</div>
+</div>
+<div class="choice" data-identifier="c4">
+<div class="text">
+<p>Three quarters of the time</p>
+</div>
+<div class="feedback">
+<p>If a number is chosen randomly from 1, 2, 3, and 4, about how often will that number be 3?</p>
+</div>
+</div>
+<div class="responseDeclaration" data-identifier="ri1">
+<div class="correctResponse" data-identifier="c3">
+
+</div>
+</div>
+</div>
+<!-- Question 2 -->
+<div class="assessment-data" type="multiplechoice" data-identifier="About how often will more complicated who pick the more complicated choice?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri2" data-shuffle="false">
+<div class="prompt">
+<div class="comment">
+<p>AAP-3.E</p>
+</div>
+<p><img src="../../img/1-introduction/more-complicated-who-script.png" title="more complicated who {
+if (pick random (1) to (4)) = (3) {
+report (join (who) (', who') (does what) ( ) (who) (,))                                                                                          
+} else {
+report (who)
+}
+}" alt="more complicated who {
+if (pick random (1) to (4)) = (3) {
+report (join (who) (', who') (does what) ( ) (who) (,))                                                                                          
+} else {
+report (who)
+}
+}" class="imageRight"> Here is the script inside <code>more complicated who</code>. What change to this script will make the more complicated phrase appear more often?</p>
+</div>
+<div class="choice" data-identifier="c1">
+<div class="text">
+<p>Change the 4 to 5.</p>
+</div>
+<div class="feedback">
+<p>Then three will be the randomly chosen number one out of five times instead of one out of four, and so we’ll have a complicated subject less often.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c2">
+<div class="text">
+<p>Change the 4 to 3.</p>
+</div>
+<div class="feedback">
+<p>Correct! Three will then be the chosen number one out of three times, and so we’ll have a complicated subject more often.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c3">
+<div class="text">
+<p>Change the 3 to 1.</p>
+</div>
+<div class="feedback">
+<p>1 is just as likely a random choice as 3, one out of four times, and we’ll have a complicated subject just as often as before.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c4">
+<div class="text">
+<p>Change the 3 to 5.</p>
+</div>
+<div class="feedback">
+<p>The chosen number can never be 5, so we’ll never get a complicated subject.</p>
+</div>
+</div>
+<div class="responseDeclaration" data-identifier="ri2">
+<div class="correctResponse" data-identifier="c2">
+
+</div>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="vocabFullWidth">
+<p>: <strong>Expressions</strong> and <strong>Values</strong></p>
+<div class="comment">
+<p>AAP-2.B.3, AAP-2.B.4</p>
+</div>
+<ul>
+<li>
+An <strong>expression</strong> is a either a constant value (such as “4” or “winter”) or a call to a reporter block including its inputs (such as <img src="../../img/2-complexity/number.png" title="number" alt="number" class="inline">, <img src="../../img/1-introduction/5+(4x3).png" title="5 + (4 * 3)" alt="5 + (4 * 3)" class="inline nopadtb">, or <img src="../../img/2-complexity/join-who-doeswhat-who.png" title="join (who) ( ) (does what) ( ) (who)" alt="join (who) ( ) (does what) ( ) (who)" class="inline">).
+</li>
+<li>
+Expressions are evaluated to produce a <em>single</em> <strong>value</strong> (a value can be a number, a string, a sprite, a costume, a script, a list—anything). For example, <img src="../../img/1-introduction/5+(4x3).png" title="5 + (4 * 3)" alt="5 + (4 * 3)" class="inline nopadtb"> will be evaluated to 17.
+</li>
+</ul>
+</div>
+<div class="examFullWidth">
+<!--<div class="index-term" id="pick random</code>"></div>-->
+<div class="comment">
+<p>AAP-3.E.1, AAP-3.E.2</p>
+</div>
+<div class="pseudop">
+<p>The expression <img src="../../img/blocks/pick-random-1-to-10-full-size.png" title="pick random (1) to (10)" alt="pick random (1) to (10)" class="inline"> would be written as</p>
+<pre class="inline">RANDOM(1, 10)</pre>
+<p>or <img src="../../img/1-introduction/random-blocktran.png" title="RANDOM(1, 10)" alt="RANDOM(1, 10)" class="inline">. Every time you run this code, you will get a different random number between 1 and 10.</p>
+</div>
+</div>
+<div class="forYouToDo">
+<ol start="5">
+<li>
+<!-- Question 3 -->
+<div class="assessment-data" type="multiplechoice" data-identifier="What expression would return a random even number between 1 and 10?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri3" data-shuffle="true">
+<div class="prompt">
+<div class="comment">
+<p>AAP-3.E</p>
+</div>
+<div class="sidenoteBig">
+<p><a href="#hint-parity" data-bs-toggle="collapse" title="Click for a review about odd and even numbers.">Click for a review of odd and even numbers.</a></p>
+<div id="hint-parity" class="collapse">
+<p>
+An <strong>even</strong> number is an integer that is divisible by 2 (such as 2, 14, 0, -4, -6, -28, and -176).
+</p>
+<p>
+In contrast, <strong>odd</strong> numbers are integers <em>not</em> divisible by 2 (such as 1, 3, 9, 17, -5, -33, and -221).
+</p>
+</div>
+</div>
+<p>Which expression will return a random <em>even</em> number between 1 and 10?</p>
+</div>
+<div class="choice" data-identifier="c1">
+<div class="text">
+<pre class="inline">RANDOM(2, 10)</pre>
+</div>
+<div class="feedback">
+<pre class="inline">RANDOM(2, 10)</pre>
+<p>will return 2, 3, 4, 5, 6, 7, 8, 9, or 10.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c2">
+<div class="text">
+<pre class="inline">2 * RANDOM(1, 5)</pre>
+</div>
+<div class="feedback">
+<p>Correct!</p>
+<pre class="inline">RANDOM(1, 5)</pre>
+<p>will return 1, 2, 3, 4, or 5, and so</p>
+<pre class="inline">2 * RANDOM(1, 5)</pre>
+<p>will return 2, 4, 6, 8, or 10.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c3">
+<div class="text">
+<pre class="inline">RANDOM(1, 10) / 2</pre>
+</div>
+<div class="feedback">
+<pre class="inline">RANDOM(1, 10)</pre>
+<p>will return 1, 2, 3, 4, 5, 6, 7, 8, 9, or 10, and so</p>
+<pre class="inline">RANDOM(1, 10) / 2</pre>
+<p>will return ½, 1, 1&nbsp;½, 2, 2&nbsp;½, 3, 3&nbsp;½, 4, 4&nbsp;½, 5.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c4">
+<div class="text">
+<pre class="inline">RANDOM(1, 5)</pre>
+</div>
+<div class="feedback">
+<pre class="inline">RANDOM(1, 5)</pre>
+<p>will return 1, 2, 3, 4, or 5.</p>
+</div>
+</div>
+<div class="responseDeclaration" data-identifier="ri3">
+<div class="correctResponse" data-identifier="c2">
+
+</div>
+</div>
+</div>
+<!-- Question 4 -->
+<div class="assessment-data" type="multiplechoice" data-identifier="Which expression will simulate the rolling of two dice?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri4" data-shuffle="true">
+<div class="prompt">
+<div class="comment">
+<p>AAP-3.E</p>
+</div>
+<p>Which expression will simulate the rolling of two dice?</p>
+</div>
+<div class="choice" data-identifier="c1">
+<div class="text">
+<pre class="inline">RANDOM(1, 6) + RANDOM(1, 6)</pre>
+</div>
+<div class="feedback">
+<p>Correct!</p>
+<pre class="inline">RANDOM(1, 6)</pre>
+<p>will return 1, 2, 3, 4, 5, or 6 with equal probability, simulating one die, and so</p>
+<pre class="inline">RANDOM(1, 6) + RANDOM(1, 6)</pre>
+<p>will return 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, or 12 with the same probability as two dice.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c2">
+<div class="text">
+<pre class="inline">2 * RANDOM(1, 6)</pre>
+</div>
+<div class="feedback">
+<p>You have the right idea, using</p>
+<pre class="inline">RANDOM(1, 6)</pre>
+<p>for the roll of a single die. But this expression doesn’t roll two dice; it rolls one die and doubles the result. So</p>
+<pre class="inline">2 * RANDOM(1, 6)</pre>
+<p>will only return 2, 4, 6, 8, 10, or 12.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c3">
+<div class="text">
+<pre class="inline">RANDOM(2, 12)</pre>
+</div>
+<div class="feedback">
+<pre class="inline">RANDOM(2, 12)</pre>
+<p>will return 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, or 12 equally often. Do you score 2 rolling two dice as often as you score 6?</p>
+</div>
+</div>
+<div class="choice" data-identifier="c4">
+<div class="text">
+<pre class="inline">RANDOM(1, 12)</pre>
+</div>
+<div class="feedback">
+<p>Can you score a total of 1 by rolling two dice?</p>
+</div>
+</div>
+<div class="responseDeclaration" data-identifier="ri4">
+<div class="correctResponse" data-identifier="c1">
+
+</div>
+</div>
+</div>
+</li>
+<li>
+Create a new block <img src="../../img/1-introduction/complicated-gossip.png" title="complicated gossip" alt="complicated gossip" class="inline nopadtb"> that is similar to <code>gossip</code> but that uses <code>more complicated who</code> instead of <code>who</code>. (You can choose which <code>who</code> to replace, or you could replace both.)
+</li>
+<li>
+Change the script for Sprite to use <code>complicated gossip</code> instead of <code>gossip</code>. Run your code, and fix any problems.
+</li>
+<p><img src="../../img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline"></p>
+</ol>
+</div>
+<p>##Making a Block Call Itself</p>
+<div class="forYouToDo">
+<ol start="8">
+<li>
+Edit <code>more complicated who</code>. Replace <em>one</em> of the <code>who</code> blocks with a fresh copy of <code>more complicated who</code> that you drag in from the palette. Click <code>more complicated who</code> enough times to see how it has changed.
+</li>
+<div class="comment">
+<p>CRD-2.B</p>
+</div>
+<li>
+<img src="../../img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"> Describe the change in behavior, and explain what you think is causing it.
+</li>
+</ol>
+</div>
+<div class="ifTime">
+<ol start="10">
+<li>
+Make Sprite(2) occasionally give a more complicated reply.
+</li>
+</ol>
+</div>
+<div class="endnote">
+<p>Purple “Take It Further” boxes have more challenging activities that are <em>not required</em>. If you finish everything else on the page early, try these instead of jumping ahead to the next page.</p>
+</div>
+<div class="takeItFurther">
+<ol type="A">
+<li>
+Make <code>more complicated who</code> give the more complicated response three out of four times instead of one out of four times.
+</li>
+<li>
+What happens when you try it out? Was it what you expected? Explain why it happened.
+</li>
+</ol>
+</div>
+
+
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../unit-1/lab-2/4-making-a-new-block.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Making Your Own Block</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../unit-1/lab-3/1-exploring-motion.html" class="pagination-link">
+        <span class="nav-page-text">Exploring Motion</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">The curriculum and text on this website is adapted from <a href="https://bjc.edc.org/bjc-r/">The Beauty and Joy of Computing</a> by University of California, Berkeley and Education Development Center, Inc.&nbsp;which is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>

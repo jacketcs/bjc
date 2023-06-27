@@ -7,7 +7,7 @@
     </head>
     
 	<body>
-        <h2>Network Redundancysubtitle: "Unit , Lab , Page"
+        ##Network Redundancysubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="learn">

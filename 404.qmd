@@ -1,0 +1,7 @@
+---
+title: "Page Not Found"
+---
+
+The page you requested cannot be found. This website is still in development and updating according to the session's timeline, so we might have just decided to not have the page for you to see.
+
+If you know for sure that something should be here, ask your teacher!

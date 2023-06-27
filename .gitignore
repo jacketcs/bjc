@@ -46,3 +46,5 @@ po/*~
 rsconnect/
 
 /.quarto/
+
+/.luarc.json

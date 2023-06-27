@@ -2,7 +2,7 @@ Unit 4 Lab 4: Data Representation and Compression, Page 5 Alternate Method</titl
 	</head>
 
 	<body>
-		<h2>Another Algorithm for Converting to Binarysubtitle: "Unit , Lab , Page"
+		##Another Algorithm for Converting to Binarysubtitle: "Unit , Lab , Page"
 order:
 ---
         <p>

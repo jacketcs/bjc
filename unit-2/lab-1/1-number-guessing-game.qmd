@@ -13,7 +13,7 @@ order: 1
 <p><strong>On this page,</strong> you will begin to develop a number guessing game that uses a <em>local variable</em> to keep track of a secret number.</p>
 :::
 
-<!--<h2>Using a Script Variable (a Local Variable)</h2>-->
+<!--##Using a Script Variable (a Local Variable)-->
 
 ::: {#first .forYouToDo}
 <ol>
@@ -55,7 +55,7 @@ On <a href="/cur/programming/1-introduction/2-gossip-and-greet/2-gossip.html?top
 Create a script variable called <var>secret number</var> to store the number that the player will try to guess (instructions below).
 
 ::: narrower
-<h3><strong>Making a Script Variable</strong></h3>
+###<strong>Making a Script Variable</strong>
 
 <ol type="a">
 

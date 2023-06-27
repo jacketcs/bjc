@@ -5,7 +5,7 @@ Unit 5 Lab 1: Search Algorithms and Efficiency, Page 1</title>
 	</head>
 
 	<body>
-    	<h2>Guess My Numbersubtitle: "Unit , Lab , Page"
+    	##Guess My Numbersubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="learn">

@@ -3,7 +3,7 @@ title: "Heuristic Solutionssubtitle: "Unit , Lab , Page"
 order:
 ---
 		<div class="todo">
-            <h2>TG and solutions need to be checked. --MF, 12/19/18</h2>
+            ##TG and solutions need to be checked. --MF, 12/19/18
         </div>
         <div class="learn">
             <p><strong>On this page,</strong> you'll learn that even for unreasonable time problems, there can still be reasonable time "close enough" solutions.</p>
@@ -77,7 +77,7 @@ order:
 			</ol>
 		</div>
         
-        <h2>Can All Decision Problems Be Solved?</h2>
+        ##Can All Decision Problems Be Solved?
         <p>As it turns out, not all decision problems (true/false questions) can be solved with an algorithm.</p>
     
         <div class="vocabFullWidth">

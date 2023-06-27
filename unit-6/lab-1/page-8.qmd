@@ -56,7 +56,7 @@ The fundamental enabling technology for the computer age was the <em>transistor.
 <p>Something as complicated as an IC relies on many levels of abstraction. If an IC has billions of transistors in it, the designer of the IC can't position each one individually. Instead, they use a special purpose programming language that lets them create small circuit elements, then combine several of those to make a medium-size circuit element, and so on.</p>
 :::
 
-<h2>What's inside an IC or a circuit board?</h2>
+##What's inside an IC or a circuit board?
 
 ::: takeNote
 <p>Tantalum, tin, tungsten, and gold are referred to as <em>conflict minerals</em>. They are integral to the technology and other things we rely on every day: from laptops, phones, and tablets to cars, airplanes, lighting, and jewelry. Militias and rebel groups in eastern Congo, funded by the sale of these minerals, have killed over 5 million people since 1998.</p>

@@ -8,7 +8,7 @@
 
     <body>
     <!--<div class="todo">ST-Fix the student access issue due to hideControls</div>-->
-		<h2>Mastermindsubtitle: "Unit , Lab , Page"
+		##Mastermindsubtitle: "Unit , Lab , Page"
 order:
 ---
 		<div class="todo">If I'm not misunderstanding these instructions, I think it's confusing to have the students play with two sequences at once (which I've never seen before) and then build the project with only one sequence at a time (except for the TIF?). I think it should be one at a time in the "on paper" example too. --MF</div>
@@ -38,7 +38,7 @@ order:
                 </div>
                 <li>Play a game of Mastermind with your partner <em>on paper</em>.</li>
                 <div class="narrower">
-                	<h3><strong>Mastermind Rules</strong></h3>
+                	###<strong>Mastermind Rules</strong>
                     <ul>
                         <li>
                             <strong>Each player should write down a sequence of four colors</strong> without letting your partner see it.

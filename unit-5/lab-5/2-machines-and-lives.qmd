@@ -2,7 +2,7 @@ Unit 5 Lab 5: Computing in War, Page 2</title>
 	</head>
 
 	<body>
-    	<h2>Computers and Warsubtitle: "Unit , Lab , Page"
+    	##Computers and Warsubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="todo">
@@ -22,7 +22,7 @@ order:
         </div>
         <p>On this page we're going to focus on three really important computer-based military technologies.</p>
         
-        <h2>Malware</h2>
+        ##Malware
         <p>You learned about malware in <a href="/cur/programming/4-internet/3-cybersecurity/5-cybersecurity.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment" title="Cybersecurity">Unit 4 Lab 3, Cybersecurity</a>. This is a general name for all kinds of programs intended to do harm, including viruses (which copy themselves like real viruses), DNS spoofing, phishing, and denial of service software.</p>
         <p>Malware is generally used either just to make trouble or to steal money. But various countries' military groups are actively developing malware to disrupt an enemy country's communications or technology centers.</p>
         <div class="forYouToDo">
@@ -31,7 +31,7 @@ order:
             </ol>
         </div>
    
-        <h2>Autonomous weapons</h2>
+        ##Autonomous weapons
         <p>An <strong>autonomous</strong> weapon is one that can decide to fire itself without human decision-making. You can see why the military might want autonomous weapons.</p>
         <div class="forYouToDo">
             <ol start="3">
@@ -54,7 +54,7 @@ order:
             </ol>
         </div>
 
-        <h2>Drones</h2>
+        ##Drones
         <p><strong>Drones</strong> are remotely piloted aircraft. They vary in size from toys for hobbyists to bombers used in warfare. The remote control depends on computers both in the airplane and on the ground.</p>
         <div class="endnote">
             <p>"Many contend that President Bush's re-election and increased vote share prove that the Iraq War was either irrelevant or even an asset to him. We present evidence to the contrary. Focusing on the change in Bush’s 2004 showing compared to 2000, we discover that Iraq War casualties from a state significantly depressed the President’s vote share there. We infer that were it not for the approximately 10,000 U.S. dead and wounded in Iraq by Election Day, Bush would have won nearly 2% more of the popular vote, carrying several additional states and winning decisively... In contrast, National Guard/Reservist call-ups had no significant additional effect beyond the main casualty effect."</p>

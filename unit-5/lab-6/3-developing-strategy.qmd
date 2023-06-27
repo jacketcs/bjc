@@ -10,7 +10,7 @@
     </head>
     
     <body>
-        <h2>Developing a Gameplay Strategysubtitle: "Unit , Lab , Page"
+        ##Developing a Gameplay Strategysubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="todo">

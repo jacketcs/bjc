@@ -2,7 +2,7 @@
 
 <div class="learn">Now the game is challenging, but players can't tell how well they're doing because Alonzo jumps around whether the player clicks him or not. <strong>On this page</strong>, you will create a way for the player of your game to know how well they are doing.</div>
 
-<h3>Confirming Whether Alonzo Was Clicked</h3>
+###Confirming Whether Alonzo Was Clicked
 <p>First, the person playing your game wants to know right away whether they succeeded at clicking Alonzo before he moved out of the way.</p>
 <div class="vocabFullWidth"><strong>: Sprites and Costumes</strong>
 <p>The Alonzo character is named after Alonzo Church, a major contributor to early computer science. In this project, there are three objects related to Alonzo:
@@ -23,7 +23,7 @@ Program Alonzo to face the other way when clicked.
 </ol>
 </div>
 
-<h3>Keeping Score</h3>
+###Keeping Score
 <!--<a class="index-term anchor" id="change effect</code>">&nbsp;</a>-->
 <p>The player will also want to know how much progress they have made in the game. The command <img src="/img/1-introduction/ghosteffect.png" alt="change (ghost) effect by ()" title="change (ghost) effect by ()" /> can control Alonzo's <em>transparency</em>.</p>
 <div class="vocabFullWidth">
@@ -41,7 +41,7 @@ The <strong>transparency</strong> of an image is how much you can see what's beh
 </ol>
 </div>
 
-<h3>Making the Game More Challenging</h3>
+###Making the Game More Challenging
 <p>So far, even a bad player will <em>eventually</em> make Alonzo disappear. The game will be much more interesting if the player is penalized for missing a click.</p>
 <div class="forYouToDo">
 <ol start="5">
@@ -51,7 +51,7 @@ The <strong>transparency</strong> of an image is how much you can see what's beh
 </ol>
 </div>
 
-<h3>Ending the Game</h3>
+###Ending the Game
 <div class="forYouToDo">
 <p>When Alonzo is completely transparent, the game should <em>stop.</em></p>
 <ol start="7">

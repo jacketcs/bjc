@@ -4,13 +4,7 @@ subtitle: "Unit 1, Lab 5, Page 1"
 order: 1
 ---
 
-```{=html}
-<script type="text/javascript" src="/utilities/gifffer.min.js"></script>
-```
-```{=html}
-<script type="text/javascript">window.onload = function() {Gifffer();}</script>
-```
-<link rel="stylesheet" type="text/css" href="/css/bjc-gifffer.css">
+{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <p>In many programs, the visual elements on the screen need to interact---follow each other, avoid each other, react a certain way when they meet each other, etc. <strong>In this lab,</strong> you will program <em>two</em> sprites. One sprite will follow your mouse. The other sprite will chase the first. When they meet, they will have a short conversation.</p>
@@ -28,7 +22,7 @@ order: 1
 <p><a href="https://www.lanacion.com.ar/tecnologia/los-20-latinos-mas-influyentes-en-tecnologia-de-2017-segun-cnet-nid2066888/" title="Article: Los 20 Latinos Más Influyentes en Tecnología" target="_blank">Article: Los 20 Latinos Más Influyentes en Tecnología</a> (<a href="https://www-lanacion-com-ar.translate.goog/tecnologia/los-20-latinos-mas-influyentes-en-tecnologia-de-2017-segun-cnet-nid2066888/?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp" title="Article: The 20 most influential Latinos in technology" target="_blank">English</a>)</p>
 :::
 
-<h2>Following the Mouse</h2>
+##Following the Mouse
 
 ::: {#first .forYouToDo}
 <ol>
@@ -40,7 +34,7 @@ order: 1
 :::
 
 ::: narrower
-<h3><strong>Creating a New Snap<em>!</em> Project</strong></h3>
+###<strong>Creating a New Snap<em>!</em> Project</strong>
 
 <ol style="list-style-type:lower-alpha">
 
@@ -92,7 +86,7 @@ To <em>stop</em> your script, click the red stop sign: <img src="/img/1-introduc
 </ol>
 :::
 
-<h2>Programming a Second Sprite</h2>
+##Programming a Second Sprite
 
 ::: forYouToDo
 <ol start="5">
@@ -112,7 +106,7 @@ The new sprite, automatically named <strong>Sprite(2)</strong>, appears on the s
 To make your sprite names meaningful, change the name of <strong>Sprite</strong> to <strong>Leader</strong>, and change <strong>Sprite(2)</strong> to <strong>Follower</strong>.
 
 ::: narrower
-<h3><strong>Changing the Name of a Sprite</strong></h3>
+###<strong>Changing the Name of a Sprite</strong>
 
 <p>Look for the name in a gray box above the scripting area. Click inside the name and you'll be able to edit it.<br /> <img src="/img/1-introduction/change-sprite-name.jpg" title="image of sprite name input field above the scripting area and below the project name" alt="image of sprite name input field above the scripting area and below the project name" class="indent"/></p>
 :::

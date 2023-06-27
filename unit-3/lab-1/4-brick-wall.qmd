@@ -10,7 +10,7 @@
     </head>
 
     <body>
-        <h2>Brick Wallsubtitle: "Unit , Lab , Page"
+        ##Brick Wallsubtitle: "Unit , Lab , Page"
 order:
 ---
         <div class="learn">
@@ -19,7 +19,7 @@ order:
 			<img border="0" class="indent" title="Sample image of brick wall" alt="Sample image of brick wall" src="/img/abstraction/new-brickwall/wall.png" />
         </div>
             	
-        <h2>Drawing One Brick</h2>
+        ##Drawing One Brick
         <p>
             A picture of a brick is just a rectangle with a brick red color. However, there's no <code>draw rectangle</code> block in <span class="snap">snap</span>. One way to draw one is by thinking of a rectangle as a very thick line. Here's the idea:<br />
             <div class="sidenoteBig">Any good programming language might have many tools for drawing and moving, but it wouldn't make sense to have special tools for drawing bricks because most programs don't involve bricks. That's the sort of tool you make yourself when you need it.</div>
@@ -48,7 +48,7 @@ order:
             <p>Creating a <code>draw brick</code> block lets you think in terms of a procedure with a name related to the problem you are solving. This makes your code easier to read, and once you've coded and debugged the block, you don't need to think about how it works each time you use it. That's the beauty of procedural abstraction.</p>
 		</div>
 
-        <h2>Using Modularity</h2>
+        ##Using Modularity
 		<p>
         	You'd like the "top level" block to be something like this:<br />
 			<img class="indent" src="/img/2-complexity/U2ImageVideoAddendum_img/draw-brick-wall-7.png" alt="draw brick wall, rows: (7)" title="draw brick wall, rows: (7)"/><br />
