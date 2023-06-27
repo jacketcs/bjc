@@ -1,5 +1,4 @@
 project:
-  output-dir: docs
   preview:
     port: 4200
     browser: false
@@ -36,7 +35,7 @@ website:
             file: unit-5/index.qmd
           - text: "Unit 6: How Computers Work"
             file: unit-6/index.qmd
-      - text: "Snap!"
+      - text: "Snap<em>!</em>"
         href: https://snap.berkeley.edu/snap/snap.html
 
   sidebar:
