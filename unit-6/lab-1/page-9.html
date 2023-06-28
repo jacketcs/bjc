@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>BHS AP CSP - The Digital Domain: Logic Gates</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../unit-6/lab-1/page-10.html" rel="next">
+<link href="../../unit-6/lab-1/page-8.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script type="text/javascript" src="../../llab/loader.js"></script>
+
+
+<link rel="stylesheet" href="../../css/bjc.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">BHS AP CSP</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-labs" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Labs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-labs">    
+        <li>
+    <a class="dropdown-item" href="../../unit-1/index.html" rel="" target="">
+ <span class="dropdown-text">Unit 1: Introduction to Programming</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-2/index.html" rel="" target="">
+ <span class="dropdown-text">Unit 2: Abstraction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-3/index.html" rel="" target="">
+ <span class="dropdown-text">Unit 3: Data Structures</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-4/index.html" rel="" target="">
+ <span class="dropdown-text">Unit 4: How the Internet Works</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-5/index.html" rel="" target="">
+ <span class="dropdown-text">Unit 5: Algorithms and Simulations</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-6/index.html" rel="" target="">
+ <span class="dropdown-text">Unit 6: How Computers Work</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
+ <span class="menu-text">Snap<em>!</em></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-6/index.html">How Computers Work</a></li><li class="breadcrumb-item"><a href="../../unit-6/lab-1/page-1.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../unit-6/lab-1/page-9.html">The Digital Domain: Logic Gates</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../unit-6/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How Computers Work</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Lab 1</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-6/lab-1/page-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Abstraction Inside the Computer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-6/lab-1/page-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Software Domain: Applications</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-6/lab-1/page-3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Software Domain: Programming Languages</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-6/lab-1/page-4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Software Domain: Libraries</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-6/lab-1/page-5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Software Domain: Operating Systems</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-6/lab-1/page-6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Digital Domain: Architecture</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-6/lab-1/page-7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Digital Domain: Components</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-6/lab-1/page-8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Digital Domain: Integrated Circuits</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-6/lab-1/page-9.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">The Digital Domain: Logic Gates</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-6/lab-1/page-10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Analog Domain: Transistors</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text">Lab 2</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-6/lab-2/page-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A Brief History of Computers</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-6/lab-2/page-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Moore’s Law</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+ <span class="menu-text">Project</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-6/project/project.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 6 Project: History of Computers Game</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#boolean-operators" id="toc-boolean-operators" class="nav-link active" data-scroll-target="#boolean-operators">Boolean Operators</a></li>
+  <li><a href="#logic-gates" id="toc-logic-gates" class="nav-link" data-scroll-target="#logic-gates">Logic Gates</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">The Digital Domain: Logic Gates</h1>
+<p class="subtitle lead">Unit 6, Lab 1, Page 9</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="todo">
+<p>
+MF: lightly clean up to make the text more concise
+</p>
+<p>
+Do we have any interest in salvaging the logic gates/XOR project that Selim and I worked on? –MF, 3/25/19
+</p>
+</div>
+<div class="learn">
+<p><strong>On this page,</strong> you review three Boolean operators (<code>and</code>, <code>or</code>, and <code>not</code>) and learn how they relate to electronic circuitry.</p>
+</div>
+<p>
+In a circuit with billions of transistors, or even thousands of transistors, hardware designers can’t think about each individual transistor. Just as programmers use abstraction, hardware architects use abstractions, in which a group of transistors and other circuit elements are considered as a single thing. What kinds of things? There are basically two kinds, one for memory and one for computation.
+</p>
+<div class="endnote">
+<p><a href="#hint-memory" data-bs-toggle="collapse" title="Learn more about memory">Learn more about memory.</a></p>
+<div id="hint-memory" class="collapse">
+<p>
+Memory is made out of <em>flip-flops.</em> A flip-flop is a circuit that has two stable states, on and off. An input signal can tell it to turn on, turn off, or change whatever it’s state is. Once that happens, the flip-flop stays in the new state until it gets another signal. It has an output that reflects its state: on if the flip-flop is on, off if it’s off.
+</p>
+</div>
+</div>
+<section id="boolean-operators" class="level2">
+<h2 class="anchored" data-anchor-id="boolean-operators">Boolean Operators</h2>
+<p>
+The circuits to do computation are more interesting. They compute <em>functions,</em> just like reporters in Snap<em>!</em>. Since computers do a lot of arithmetic, you might think that the basic circuit functions would be addition, subtraction, multiplication, and division, but that’s not the case. Of course there <em>are</em> circuits to do those things, but they’re made out of <em>logic gates:</em> circuits that compute <strong>Boolean functions</strong>: <code>and</code>, <code>or</code>, and <code>not</code>.
+</p>
+<p>
+The reason that Boolean functions are considered more fundamental is that their inputs and outputs can be represented with a single wire going into or out from the circuit. That’s not true about arithmetic functions. If you consider a voltage on a wire as meaning 1, and no voltage as meaning 0, then you have to see that an adder will have <em>three</em> possible output values, because 1+1=2, which is neither 0 nor 1. By contrast, if you consider a voltage on a wire as meaning True, and no voltage as meaning False, then the output from a Boolean function of two inputs can still only be True or False, so only one output wire is needed.
+</p>
+<p>
+You saw some examples in <a href="../../cur/programming/2-complexity/3-predicates/1-what-is-predicate.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="What's a Predicate?">Unit 2 Lab 3: Making Decisions by Using Predicates</a>: <code>AND</code>, <code>OR</code>, and <code>NOT</code>:<br> <img src="../../img/6-computers/logical-operators/and-TT-reporting.png" title="(true) AND (true) reporting true" alt="(true) AND (true) reporting true" class="indent"> <img src="../../img/6-computers/logical-operators/and-TF-reporting.png" title="(true) AND (false) reporting false" alt="(true) AND (false) reporting false" class="indent"> <img src="../../img/6-computers/logical-operators/and-FF-reporting.png" title="(false) AND (false) reporting false" alt="(false) AND (false) reporting false" class="indent"> <img src="../../img/6-computers/logical-operators/or-TT-reporting.png" title="(true) OR (true) reporting true" alt="(true) OR (true) reporting true" class="indent"> <img src="../../img/6-computers/logical-operators/or-TF-reporting.png" title="(true) OR (false) reporting true" alt="(true) OR (false) reporting true" class="indent"> <img src="../../img/6-computers/logical-operators/or-FF-reporting.png" title="(false) OR (false) reporting false" alt="(false) OR (false) reporting false" class="indent"> <img src="../../img/6-computers/logical-operators/not-T-reporting.png" title="NOT (true) reporting false" alt="NOT (true) reporting false" class="indent"> <img src="../../img/6-computers/logical-operators/not-F-reporting.png" title="NOT (false) reporting true" alt="NOT (false) reporting true" class="indent">
+</p>
+<div class="endnote">
+<p><strong>Some other ways to think about Boolean operators:</strong> It is possible to emulate Boolean operations electronically and these operations are sometimes represented as truth tables (either with true/false or ones/zeros).</p>
+<ul>
+<li>
+<p><a href="#hint-truth-tables-and" data-bs-toggle="collapse" title="A circuit emulation and  truth tables for and">A circuit emulation and truth tables for <code>and</code>.</a></p>
+<div id="hint-truth-tables-and" class="collapse">
+<p>
+This electric circuit shows a simplified way to emulate the Boolean operator <code>and</code> electronically. The two switches are in <em>series</em>; if both of the switches are on, the current flows and the light bulb turns on.
+</p>
+<div class="todo">
+<p>
+I wonder about making this simpler by including a pic of a battery in the animation. Students have a lot to manage in this endnote <em>without</em> this extra piece of information that isn’t critical for the learning they are supposed to be doing. –MF, 12/4/17<br> <img title="Electric circuit for AND: The animation shows a single loop of wire connecting a light bulb, a battery, and two switches in series (one after the other). When either or both switch is open, the light is off, and when both switches are closed, the light turns on." alt="Electric circuit for AND: The animation shows a single loop of wire connecting a light bulb, a battery, and two switches in series (one after the other). When either or both switch is open, the light is off, and when both switches are closed, the light turns on." class="indent" data-gifffer="/img/6-computers/LogicGates_img/Animations/gif/AND_Animation_MF.gif">
+</p>
+</div>
+<div class="sidenote">
+<p>This symbol in the circuit diagrams represents a battery.<br> <img src="../../img/6-computers/LogicGates_img/Circuits/BatterySymbol.png" title="Battery symbol in a circuit" alt="Battery symbol in a circuit" height="75"> <img src="../../img/6-computers/LogicGates_img/Circuits/Battery.png" title="Battery" alt="Battery" height="75"></p>
+</div>
+<p><img title="Electric circuit for AND: The animation shows a single loop of wire connecting a light bulb, a battery, and two switches in series (one after the other). When either or both switch is open, the light is off, and when both switches are closed, the light turns on." alt="Electric circuit for AND: The animation shows a single loop of wire connecting a light bulb, a battery, and two switches in series (one after the other). When either or both switch is open, the light is off, and when both switches are closed, the light turns on." class="indent" data-gifffer="/img/6-computers/LogicGates_img/Animations/gif/AND_Animation.gif" width="333" height="250"></p>
+<div class="sidenote">
+<p>These two tables are identical. One just shows the same pattern with true/false and the other with ones/zeros.</p>
+</div>
+<p>31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATgB3AEEAeQBBAEQAYwBBAE0AdwBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBQAEEAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAEkAQQBCAGoAQQBHAHcAQQBZAFEAQgB6AEEASABNAEEAUABRAEEAaQBBAEgAUQBBAGMAZwBCADEAQQBIAFEAQQBhAEEAQQBpAEEAQwBBAEEAYwB3AEIAMQBBAEcAMABBAGIAUQBCAGgAQQBIAEkAQQBlAFEAQQA5AEEAQwBJAEEAZABBAEIAeQBBAEgAVQBBAGQAQQBCAG8AQQBDAEEAQQBkAEEAQgBoAEEARwBJAEEAYgBBAEIAbABBAEMAQQBBAFoAZwBCAHYAQQBIAEkAQQBJAEEAQgBCAEEARQA0AEEAUgBBAEEAZwBBAEgAYwBBAGEAUQBCADAAQQBHAGcAQQBJAEEAQgBtAEEARwBFAEEAYgBBAEIAegBBAEcAVQBBAEwAdwBCADAAQQBIAEkAQQBkAFEAQgBsAEEAQwBJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYQBBAEEAZwBBAEgATQBBAFkAdwBCAHYAQQBIAEEAQQBaAFEAQQA5AEEAQwBJAEEAWQB3AEIAdgBBAEcAdwBBAFoAdwBCAHkAQQBHADgAQQBkAFEAQgB3AEEAQwBJAEEASQBBAEIAagBBAEcAOABBAGIAQQBCAHoAQQBIAEEAQQBZAFEAQgB1AEEARAAwAEEASQBnAEEAeQBBAEMASQBBAFAAZwBCAHAAQQBHADQAQQBjAEEAQgAxAEEASABRAEEAYwB3AEEAOABBAEMAOABBAGQAQQBCAG8AQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYQBBAEEAZwBBAEgATQBBAFkAdwBCAHYAQQBIAEEAQQBaAFEAQQA5AEEAQwBJAEEAWQB3AEIAdgBBAEcAdwBBAEkAZwBBACsAQQBHADgAQQBkAFEAQgAwAEEASABBAEEAZABRAEIAMABBAEQAdwBBAEwAdwBCADAAQQBHAGcAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAGEAQQBBAGcAQQBIAE0AQQBZAHcAQgB2AEEASABBAEEAWgBRAEEAOQBBAEMASQBBAFkAdwBCAHYAQQBHAHcAQQBJAGcAQQBnAEEASABNAEEAZABBAEIANQBBAEcAdwBBAFoAUQBBADkAQQBDAEkAQQBkAHcAQgBwAEEARwBRAEEAZABBAEIAbwBBAEQAbwBBAE0AUQBBAHcAQQBEAEEAQQBjAEEAQgA0AEEARABzAEEASQBnAEEAKwBBAEUARQBBAFAAQQBBAHYAQQBIAFEAQQBhAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAZwBBAEkAQQBCAHoAQQBHAE0AQQBiAHcAQgB3AEEARwBVAEEAUABRAEEAaQBBAEcATQBBAGIAdwBCAHMAQQBDAEkAQQBJAEEAQgB6AEEASABRAEEAZQBRAEIAcwBBAEcAVQBBAFAAUQBBAGkAQQBIAGMAQQBhAFEAQgBrAEEASABRAEEAYQBBAEEANgBBAEQARQBBAE0AQQBBAHcAQQBIAEEAQQBlAEEAQQA3AEEAQwBJAEEAUABnAEIAQwBBAEQAdwBBAEwAdwBCADAAQQBHAGcAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAbwBBAEMAQQBBAGMAdwBCAGoAQQBHADgAQQBjAEEAQgBsAEEARAAwAEEASQBnAEIAagBBAEcAOABBAGIAQQBBAGkAQQBDAEEAQQBjAHcAQgAwAEEASABrAEEAYgBBAEIAbABBAEQAMABBAEkAZwBCADMAQQBHAGsAQQBaAEEAQgAwAEEARwBnAEEATwBnAEEAeABBAEQAQQBBAE0AQQBCAHcAQQBIAGcAQQBPAHcAQQBpAEEARAA0AEEAUQBRAEEAZwBBAEQAdwBBAFkAdwBCAHYAQQBHAFEAQQBaAFEAQQArAEEARwBFAEEAYgBnAEIAawBBAEQAdwBBAEwAdwBCAGoAQQBHADgAQQBaAEEAQgBsAEEARAA0AEEASQBBAEIAQwBBAEQAdwBBAEwAdwBCADAAQQBHAGcAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBFAFkAQQBZAFEAQgBzAEEASABNAEEAWgBRAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEUAWQBBAFkAUQBCAHMAQQBIAE0AQQBaAFEAQQA4AEEAQwA4AEEAZABBAEIAawBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBaAEEAQQArAEEARQBZAEEAWQBRAEIAcwBBAEgATQBBAFoAUQBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEMAOABBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQgBHAEEARwBFAEEAYgBBAEIAegBBAEcAVQBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBCAFUAQQBIAEkAQQBkAFEAQgBsAEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEAUgBnAEIAaABBAEcAdwBBAGMAdwBCAGwAQQBEAHcAQQBMAHcAQgAwAEEARwBRAEEAUABnAEEASwBBAEQAdwBBAEwAdwBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBaAEEAQQArAEEARgBRAEEAYwBnAEIAMQBBAEcAVQBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBCAEcAQQBHAEUAQQBiAEEAQgB6AEEARwBVAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEIARwBBAEcARQBBAGIAQQBCAHoAQQBHAFUAQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBBAHYAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEAVgBBAEIAeQBBAEgAVQBBAFoAUQBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBGAFEAQQBjAGcAQgAxAEEARwBVAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEIAVQBBAEgASQBBAGQAUQBCAGwAQQBEAHcAQQBMAHcAQgAwAEEARwBRAEEAUABnAEEASwBBAEQAdwBBAEwAdwBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEcARQBBAFkAZwBCAHMAQQBHAFUAQQBQAGcAQQA9AAoAcwB1AGYAZgBpAHgAOgA=:31b8e172-b470-440e-83d8-e6b185028602 31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATgB3AEEANABBAEQARQBBAE4AUQBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBQAEEAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAEkAQQBCAGoAQQBHAHcAQQBZAFEAQgB6AEEASABNAEEAUABRAEEAaQBBAEgAUQBBAGMAZwBCADEAQQBIAFEAQQBhAEEAQQBnAEEARwBJAEEAYgB3AEIAeQBBAEcAUQBBAFoAUQBCAHkAQQBHAFUAQQBaAEEAQQBpAEEAQwBBAEEAYwB3AEIAMQBBAEcAMABBAGIAUQBCAGgAQQBIAEkAQQBlAFEAQQA5AEEAQwBJAEEAZABBAEIAeQBBAEgAVQBBAGQAQQBCAG8AQQBDAEEAQQBkAEEAQgBoAEEARwBJAEEAYgBBAEIAbABBAEMAQQBBAFoAZwBCAHYAQQBIAEkAQQBJAEEAQgBCAEEARQA0AEEAUgBBAEEAZwBBAEgAYwBBAGEAUQBCADAAQQBHAGcAQQBJAEEAQgA2AEEARwBVAEEAYwBnAEIAdgBBAEMAOABBAGIAdwBCAHUAQQBHAFUAQQBJAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBvAEEAQwBBAEEAYwB3AEIAagBBAEcAOABBAGMAQQBCAGwAQQBEADAAQQBJAGcAQgBqAEEARwA4AEEAYgBBAEIAbgBBAEgASQBBAGIAdwBCADEAQQBIAEEAQQBJAGcAQQBnAEEARwBNAEEAYgB3AEIAcwBBAEgATQBBAGMAQQBCAGgAQQBHADQAQQBQAFEAQQBpAEEARABJAEEASQBnAEEAKwBBAEcAawBBAGIAZwBCAHcAQQBIAFUAQQBkAEEAQgB6AEEARAB3AEEATAB3AEIAMABBAEcAZwBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBvAEEAQwBBAEEAYwB3AEIAagBBAEcAOABBAGMAQQBCAGwAQQBEADAAQQBJAGcAQgBqAEEARwA4AEEAYgBBAEEAaQBBAEQANABBAGIAdwBCADEAQQBIAFEAQQBjAEEAQgAxAEEASABRAEEAUABBAEEAdgBBAEgAUQBBAGEAQQBBACsAQQBBAG8AQQBQAEEAQQB2AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAbwBBAEMAQQBBAGMAdwBCAGoAQQBHADgAQQBjAEEAQgBsAEEARAAwAEEASQBnAEIAagBBAEcAOABBAGIAQQBBAGkAQQBDAEEAQQBjAHcAQgAwAEEASABrAEEAYgBBAEIAbABBAEQAMABBAEkAZwBCADMAQQBHAGsAQQBaAEEAQgAwAEEARwBnAEEATwBnAEEAeABBAEQAQQBBAE0AQQBCAHcAQQBIAGcAQQBPAHcAQQBpAEEARAA0AEEAUQBRAEEAOABBAEMAOABBAGQAQQBCAG8AQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYQBBAEEAZwBBAEgATQBBAFkAdwBCAHYAQQBIAEEAQQBaAFEAQQA5AEEAQwBJAEEAWQB3AEIAdgBBAEcAdwBBAEkAZwBBAGcAQQBIAE0AQQBkAEEAQgA1AEEARwB3AEEAWgBRAEEAOQBBAEMASQBBAGQAdwBCAHAAQQBHAFEAQQBkAEEAQgBvAEEARABvAEEATQBRAEEAdwBBAEQAQQBBAGMAQQBCADQAQQBEAHMAQQBJAGcAQQArAEEARQBJAEEAUABBAEEAdgBBAEgAUQBBAGEAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBnAEEASQBBAEIAegBBAEcATQBBAGIAdwBCAHcAQQBHAFUAQQBQAFEAQQBpAEEARwBNAEEAYgB3AEIAcwBBAEMASQBBAEkAQQBCAHoAQQBIAFEAQQBlAFEAQgBzAEEARwBVAEEAUABRAEEAaQBBAEgAYwBBAGEAUQBCAGsAQQBIAFEAQQBhAEEAQQA2AEEARABFAEEATQBBAEEAdwBBAEgAQQBBAGUAQQBBADcAQQBDAEkAQQBQAGcAQgBCAEEAQwBBAEEAUABBAEIAagBBAEcAOABBAFoAQQBCAGwAQQBEADQAQQBZAFEAQgB1AEEARwBRAEEAUABBAEEAdgBBAEcATQBBAGIAdwBCAGsAQQBHAFUAQQBQAGcAQQBnAEEARQBJAEEAUABBAEEAdgBBAEgAUQBBAGEAQQBBACsAQQBBAG8AQQBQAEEAQQB2AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAE0AQQBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBEAEEAQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQQB3AEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBMAHcAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQAQQBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBAHgAQQBEAHcAQQBMAHcAQgAwAEEARwBRAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBEADQAQQBNAEEAQQA4AEEAQwA4AEEAZABBAEIAawBBAEQANABBAEMAZwBBADgAQQBDADgAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAeABBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAE0AQQBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBEAEEAQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBBAHYAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEATQBRAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQARQBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBAHgAQQBEAHcAQQBMAHcAQgAwAEEARwBRAEEAUABnAEEASwBBAEQAdwBBAEwAdwBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEcARQBBAFkAZwBCAHMAQQBHAFUAQQBQAGcAQQA9AAoAcwB1AGYAZgBpAHgAOgA=:31b8e172-b470-440e-83d8-e6b185028602</p>
+</div>
+</li>
+<li>
+<p><a href="#hint-truth-tables-or" data-bs-toggle="collapse" title="A circuit emulation and  truth tables for or">A circuit emulation and truth tables for <code>or</code>.</a></p>
+<div id="hint-truth-tables-or" class="collapse">
+<p>
+This electric circuit shows a simplified way to emulate the Boolean operator <code>or</code> electronically. The two switches are in <em>parallel</em>; if either (or both) of the switches are on, the current flows and the light bulb turns on.<br> <img title="Electric circuit for OR: The animation shows a battery connecting to two switches in parallel (one above the other) via the forking of an electrical wire and then the wire un-forking and connecting to a light bulb before returning to the battery. When either or both switches are closed, the light is on, and when both switches are open, the light turns off." alt="Electric circuit for OR: The animation shows a battery connecting to two switches in parallel (one above the other) via the forking of an electrical wire and then the wire un-forking and connecting to a light bulb before returning to the battery. When either or both switches are closed, the light is on, and when both switches are open, the light turns off." class="indent" data-gifffer="/img/6-computers/LogicGates_img/Animations/gif/OR_Animation.gif" width="335" height="250">
+</p>
+<div class="sidenoteBig">
+<p>
+As with the <code>and</code> tables, these two tables are identical except for whether they use true/false or ones/zeros.
+</p>
+<p>
+In ordinary language, the word “or” can have two slightly different meanings. <em>Inclusive or</em> means “at least one of these”: If it’s raining <em>or</em> it’s really cold out, you need your overcoat. (If it’s both raining and cold, you’d still wear the coat.) <em>Exclusive or</em> means “this or that, but not both”: Eat your vegetables <em>or</em> you won’t get any dessert. (You’d feel cheated if you ate the vegetables and still didn’t get dessert.) In computer science (as in mathematics) the word “or” by itself always means inclusive or, as you can see in this truth table. If you mean “exclusive or,” you have to say that.
+</p>
+</div>
+<p>31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATQBRAEEAdwBBAEQAVQBBAE0AUQBBADUAQQBBAD0APQAKAHAAcgBlAGYAaQB4ADoACgBzAG8AdQByAGMAZQA6AFAAQQBCADAAQQBHAEUAQQBZAGcAQgBzAEEARwBVAEEASQBBAEIAagBBAEcAdwBBAFkAUQBCAHoAQQBIAE0AQQBQAFEAQQBpAEEASABRAEEAYwBnAEIAMQBBAEgAUQBBAGEAQQBBAGcAQQBHAEkAQQBiAHcAQgB5AEEARwBRAEEAWgBRAEIAeQBBAEcAVQBBAFoAQQBBAGkAQQBDAEEAQQBjAHcAQgAxAEEARwAwAEEAYgBRAEIAaABBAEgASQBBAGUAUQBBADkAQQBDAEkAQQBkAEEAQgB5AEEASABVAEEAZABBAEIAbwBBAEMAQQBBAGQAQQBCAGgAQQBHAEkAQQBiAEEAQgBsAEEAQwBBAEEAWgBnAEIAdgBBAEgASQBBAEkAQQBCAFAAQQBGAEkAQQBJAEEAQgAzAEEARwBrAEEAZABBAEIAbwBBAEMAQQBBAFoAZwBCAGgAQQBHAHcAQQBjAHcAQgBsAEEAQwA4AEEAZABBAEIAeQBBAEgAVQBBAFoAUQBBAGkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAGcAQQBJAEEAQgB6AEEARwBNAEEAYgB3AEIAdwBBAEcAVQBBAFAAUQBBAGkAQQBHAE0AQQBiAHcAQgBzAEEARwBjAEEAYwBnAEIAdgBBAEgAVQBBAGMAQQBBAGkAQQBDAEEAQQBZAHcAQgB2AEEARwB3AEEAYwB3AEIAdwBBAEcARQBBAGIAZwBBADkAQQBDAEkAQQBNAGcAQQBpAEEARAA0AEEAYQBRAEIAdQBBAEgAQQBBAGQAUQBCADAAQQBIAE0AQQBQAEEAQQB2AEEASABRAEEAYQBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAGcAQQBJAEEAQgB6AEEARwBNAEEAYgB3AEIAdwBBAEcAVQBBAFAAUQBBAGkAQQBHAE0AQQBiAHcAQgBzAEEAQwBJAEEAUABnAEIAdgBBAEgAVQBBAGQAQQBCAHcAQQBIAFUAQQBkAEEAQQA4AEEAQwA4AEEAZABBAEIAbwBBAEQANABBAEMAZwBBADgAQQBDADgAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBnAEEASQBBAEIAegBBAEcATQBBAGIAdwBCAHcAQQBHAFUAQQBQAFEAQQBpAEEARwBNAEEAYgB3AEIAcwBBAEMASQBBAEkAQQBCAHoAQQBIAFEAQQBlAFEAQgBzAEEARwBVAEEAUABRAEEAaQBBAEgAYwBBAGEAUQBCAGsAQQBIAFEAQQBhAEEAQQA2AEEARABFAEEATQBBAEEAdwBBAEgAQQBBAGUAQQBBADcAQQBDAEkAQQBQAGcAQgBCAEEARAB3AEEATAB3AEIAMABBAEcAZwBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBvAEEAQwBBAEEAYwB3AEIAagBBAEcAOABBAGMAQQBCAGwAQQBEADAAQQBJAGcAQgBqAEEARwA4AEEAYgBBAEEAaQBBAEMAQQBBAGMAdwBCADAAQQBIAGsAQQBiAEEAQgBsAEEARAAwAEEASQBnAEIAMwBBAEcAawBBAFoAQQBCADAAQQBHAGcAQQBPAGcAQQB4AEEARABBAEEATQBBAEIAdwBBAEgAZwBBAE8AdwBBAGkAQQBEADQAQQBRAGcAQQA4AEEAQwA4AEEAZABBAEIAbwBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBhAEEAQQBnAEEASABNAEEAWQB3AEIAdgBBAEgAQQBBAFoAUQBBADkAQQBDAEkAQQBZAHcAQgB2AEEARwB3AEEASQBnAEEAZwBBAEgATQBBAGQAQQBCADUAQQBHAHcAQQBaAFEAQQA5AEEAQwBJAEEAZAB3AEIAcABBAEcAUQBBAGQAQQBCAG8AQQBEAG8AQQBNAFEAQQB3AEEARABBAEEAYwBBAEIANABBAEQAcwBBAEkAZwBBACsAQQBFAEUAQQBJAEEAQQA4AEEARwBNAEEAYgB3AEIAawBBAEcAVQBBAFAAZwBCAHYAQQBIAEkAQQBQAEEAQQB2AEEARwBNAEEAYgB3AEIAawBBAEcAVQBBAFAAZwBBAGcAQQBFAEkAQQBQAEEAQQB2AEEASABRAEEAYQBBAEEAKwBBAEEAbwBBAFAAQQBBAHYAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEAUgBnAEIAaABBAEcAdwBBAGMAdwBCAGwAQQBEAHcAQQBMAHcAQgAwAEEARwBRAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBEADQAQQBSAGcAQgBoAEEARwB3AEEAYwB3AEIAbABBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAFIAZwBCAGgAQQBHAHcAQQBjAHcAQgBsAEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBMAHcAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEUAWQBBAFkAUQBCAHMAQQBIAE0AQQBaAFEAQQA4AEEAQwA4AEEAZABBAEIAawBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBaAEEAQQArAEEARgBRAEEAYwBnAEIAMQBBAEcAVQBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBCAFUAQQBIAEkAQQBkAFEAQgBsAEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBMAHcAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEYAUQBBAGMAZwBCADEAQQBHAFUAQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQgBHAEEARwBFAEEAYgBBAEIAegBBAEcAVQBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBCAFUAQQBIAEkAQQBkAFEAQgBsAEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBMAHcAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEYAUQBBAGMAZwBCADEAQQBHAFUAQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQgBVAEEASABJAEEAZABRAEIAbABBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAFYAQQBCAHkAQQBIAFUAQQBaAFEAQQA4AEEAQwA4AEEAZABBAEIAawBBAEQANABBAEMAZwBBADgAQQBDADgAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEMAOABBAGQAQQBCAGgAQQBHAEkAQQBiAEEAQgBsAEEARAA0AEEACgBzAHUAZgBmAGkAeAA6AA==:31b8e172-b470-440e-83d8-e6b185028602 31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATQBRAEEAeABBAEQAQQBBAE4AZwBBADIAQQBBAD0APQAKAHAAcgBlAGYAaQB4ADoACgBzAG8AdQByAGMAZQA6AFAAQQBCADAAQQBHAEUAQQBZAGcAQgBzAEEARwBVAEEASQBBAEIAagBBAEcAdwBBAFkAUQBCAHoAQQBIAE0AQQBQAFEAQQBpAEEASABRAEEAYwBnAEIAMQBBAEgAUQBBAGEAQQBBAGcAQQBHAEkAQQBiAHcAQgB5AEEARwBRAEEAWgBRAEIAeQBBAEcAVQBBAFoAQQBBAGkAQQBDAEEAQQBjAHcAQgAxAEEARwAwAEEAYgBRAEIAaABBAEgASQBBAGUAUQBBADkAQQBDAEkAQQBkAEEAQgB5AEEASABVAEEAZABBAEIAbwBBAEMAQQBBAGQAQQBCAGgAQQBHAEkAQQBiAEEAQgBsAEEAQwBBAEEAWgBnAEIAdgBBAEgASQBBAEkAQQBCAFAAQQBGAEkAQQBJAEEAQgAzAEEARwBrAEEAZABBAEIAbwBBAEMAQQBBAGUAZwBCAGwAQQBIAEkAQQBiAHcAQQB2AEEARwA4AEEAYgBnAEIAbABBAEMASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAGEAQQBBAGcAQQBIAE0AQQBZAHcAQgB2AEEASABBAEEAWgBRAEEAOQBBAEMASQBBAFkAdwBCAHYAQQBHAHcAQQBaAHcAQgB5AEEARwA4AEEAZABRAEIAdwBBAEMASQBBAEkAQQBCAGoAQQBHADgAQQBiAEEAQgB6AEEASABBAEEAWQBRAEIAdQBBAEQAMABBAEkAZwBBAHkAQQBDAEkAQQBQAGcAQgBwAEEARwA0AEEAYwBBAEIAMQBBAEgAUQBBAGMAdwBBADgAQQBDADgAQQBkAEEAQgBvAEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAGEAQQBBAGcAQQBIAE0AQQBZAHcAQgB2AEEASABBAEEAWgBRAEEAOQBBAEMASQBBAFkAdwBCAHYAQQBHAHcAQQBJAGcAQQArAEEARwA4AEEAZABRAEIAMABBAEgAQQBBAGQAUQBCADAAQQBEAHcAQQBMAHcAQgAwAEEARwBnAEEAUABnAEEASwBBAEQAdwBBAEwAdwBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBhAEEAQQBnAEEASABNAEEAWQB3AEIAdgBBAEgAQQBBAFoAUQBBADkAQQBDAEkAQQBZAHcAQgB2AEEARwB3AEEASQBnAEEAZwBBAEgATQBBAGQAQQBCADUAQQBHAHcAQQBaAFEAQQA5AEEAQwBJAEEAZAB3AEIAcABBAEcAUQBBAGQAQQBCAG8AQQBEAG8AQQBNAFEAQQB3AEEARABBAEEAYwBBAEIANABBAEQAcwBBAEkAZwBBACsAQQBFAEUAQQBQAEEAQQB2AEEASABRAEEAYQBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAGcAQQBJAEEAQgB6AEEARwBNAEEAYgB3AEIAdwBBAEcAVQBBAFAAUQBBAGkAQQBHAE0AQQBiAHcAQgBzAEEAQwBJAEEASQBBAEIAegBBAEgAUQBBAGUAUQBCAHMAQQBHAFUAQQBQAFEAQQBpAEEASABjAEEAYQBRAEIAawBBAEgAUQBBAGEAQQBBADYAQQBEAEUAQQBNAEEAQQB3AEEASABBAEEAZQBBAEEANwBBAEMASQBBAFAAZwBCAEMAQQBEAHcAQQBMAHcAQgAwAEEARwBnAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAG8AQQBDAEEAQQBjAHcAQgBqAEEARwA4AEEAYwBBAEIAbABBAEQAMABBAEkAZwBCAGoAQQBHADgAQQBiAEEAQQBpAEEAQwBBAEEAYwB3AEIAMABBAEgAawBBAGIAQQBCAGwAQQBEADAAQQBJAGcAQgAzAEEARwBrAEEAWgBBAEIAMABBAEcAZwBBAE8AZwBBAHgAQQBEAEEAQQBNAEEAQgB3AEEASABnAEEATwB3AEEAaQBBAEQANABBAFEAUQBBAGcAQQBEAHcAQQBZAHcAQgB2AEEARwBRAEEAWgBRAEEAKwBBAEcAOABBAGMAZwBBADgAQQBDADgAQQBZAHcAQgB2AEEARwBRAEEAWgBRAEEAKwBBAEMAQQBBAFEAZwBBADgAQQBDADgAQQBkAEEAQgBvAEEARAA0AEEAQwBnAEEAOABBAEMAOABBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQQB3AEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEATQBBAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQAQQBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEEAdgBBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBEADQAQQBNAEEAQQA4AEEAQwA4AEEAZABBAEIAawBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBaAEEAQQArAEEARABFAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAeABBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBEAEUAQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQQB3AEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEATQBRAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBAHgAQQBEAHcAQQBMAHcAQgAwAEEARwBRAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBEADQAQQBNAFEAQQA4AEEAQwA4AEEAZABBAEIAawBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBaAEEAQQArAEEARABFAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQQB2AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBBAHYAQQBIAFEAQQBZAFEAQgBpAEEARwB3AEEAWgBRAEEAKwBBAEEAPQA9AAoAcwB1AGYAZgBpAHgAOgA=:31b8e172-b470-440e-83d8-e6b185028602</p>
+</div>
+</li>
+<li>
+<p><a href="#hint-truth-tables-not" data-bs-toggle="collapse" title="A circuit emulation and  truth tables for not">A circuit emulation and truth tables for <code>not</code>.</a></p>
+<div id="hint-truth-tables-not" class="collapse">
+<p>
+This electric circuit shows a simplified way to emulate the Boolean operator <code>not</code> electronically. This switch is basically a <em>circuit breaker</em>: if the switch is <em>on</em>, the current flow is broken and the light bulb turns off; if the switch is off, the current flows directly to the light bulb and the light bulb turns on.<br> <img title="Electric circuit for NOT: The animation shows a a single loop of wire connecting a battery to a circuit breaker and a light bulb. When the circut breaker is open, the light is on, and when the circuit breaker is closed, the light turns off." alt="Electric circuit for NOT: The animation shows a a single loop of wire connecting a battery to a circuit breaker and a light bulb. When the circuit breaker is open, the light is on, and when the circuit breaker is closed, the light turns off." class="indent" data-gifffer="/img/6-computers/LogicGates_img/Animations/gif/NOT_Animation2.gif" width="335" height="250">
+</p>
+<div class="sidenote">
+<p>As with the other tables, these are identical for true/false vs. ones/zeros.</p>
+</div>
+<p>31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATQBRAEEAeQBBAEQAawBBAE0AQQBBADUAQQBBAD0APQAKAHAAcgBlAGYAaQB4ADoACgBzAG8AdQByAGMAZQA6AFAAQQBCADAAQQBHAEUAQQBZAGcAQgBzAEEARwBVAEEASQBBAEIAagBBAEcAdwBBAFkAUQBCAHoAQQBIAE0AQQBQAFEAQQBpAEEASABRAEEAYwBnAEIAMQBBAEgAUQBBAGEAQQBBAGcAQQBHAEkAQQBiAHcAQgB5AEEARwBRAEEAWgBRAEIAeQBBAEcAVQBBAFoAQQBBAGkAQQBDAEEAQQBjAHcAQgAxAEEARwAwAEEAYgBRAEIAaABBAEgASQBBAGUAUQBBADkAQQBDAEkAQQBkAEEAQgB5AEEASABVAEEAZABBAEIAbwBBAEMAQQBBAGQAQQBCAGgAQQBHAEkAQQBiAEEAQgBsAEEAQwBBAEEAWgBnAEIAdgBBAEgASQBBAEkAQQBCAE8AQQBFADgAQQBWAEEAQQBnAEEASABjAEEAYQBRAEIAMABBAEcAZwBBAEkAQQBCAG0AQQBHAEUAQQBiAEEAQgB6AEEARwBVAEEATAB3AEIAMABBAEgASQBBAGQAUQBCAGwAQQBDAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBhAEEAQQBnAEEASABNAEEAWQB3AEIAdgBBAEgAQQBBAFoAUQBBADkAQQBDAEkAQQBZAHcAQgB2AEEARwB3AEEASQBnAEEAKwBBAEcAawBBAGIAZwBCAHcAQQBIAFUAQQBkAEEAQQA4AEEAQwA4AEEAZABBAEIAbwBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBhAEEAQQBnAEEASABNAEEAWQB3AEIAdgBBAEgAQQBBAFoAUQBBADkAQQBDAEkAQQBZAHcAQgB2AEEARwB3AEEASQBnAEEAKwBBAEcAOABBAGQAUQBCADAAQQBIAEEAQQBkAFEAQgAwAEEARAB3AEEATAB3AEIAMABBAEcAZwBBAFAAZwBBAEsAQQBEAHcAQQBMAHcAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYQBBAEEAZwBBAEgATQBBAFkAdwBCAHYAQQBIAEEAQQBaAFEAQQA5AEEAQwBJAEEAWQB3AEIAdgBBAEcAdwBBAEkAZwBBAGcAQQBIAE0AQQBkAEEAQgA1AEEARwB3AEEAWgBRAEEAOQBBAEMASQBBAGQAdwBCAHAAQQBHAFEAQQBkAEEAQgBvAEEARABvAEEATQBRAEEAdwBBAEQAQQBBAGMAQQBCADQAQQBEAHMAQQBJAGcAQQArAEEARQBFAEEAUABBAEEAdgBBAEgAUQBBAGEAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBnAEEASQBBAEIAegBBAEcATQBBAGIAdwBCAHcAQQBHAFUAQQBQAFEAQQBpAEEARwBNAEEAYgB3AEIAcwBBAEMASQBBAEkAQQBCAHoAQQBIAFEAQQBlAFEAQgBzAEEARwBVAEEAUABRAEEAaQBBAEgAYwBBAGEAUQBCAGsAQQBIAFEAQQBhAEEAQQA2AEEARABFAEEATQBBAEEAdwBBAEgAQQBBAGUAQQBBADcAQQBDAEkAQQBQAGcAQQA4AEEARwBNAEEAYgB3AEIAawBBAEcAVQBBAFAAZwBCAHUAQQBHADgAQQBkAEEAQQA4AEEAQwA4AEEAWQB3AEIAdgBBAEcAUQBBAFoAUQBBACsAQQBDAEEAQQBRAFEAQQA4AEEAQwA4AEEAZABBAEIAbwBBAEQANABBAEMAZwBBADgAQQBDADgAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEIARwBBAEcARQBBAGIAQQBCAHoAQQBHAFUAQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQgBVAEEASABJAEEAZABRAEIAbABBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBGAFEAQQBjAGcAQgAxAEEARwBVAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEIARwBBAEcARQBBAGIAQQBCAHoAQQBHAFUAQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBBAHYAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEEAdgBBAEgAUQBBAFkAUQBCAGkAQQBHAHcAQQBaAFEAQQArAEEAQQA9AD0ACgBzAHUAZgBmAGkAeAA6AA==:31b8e172-b470-440e-83d8-e6b185028602 31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATQBRAEEAegBBAEQASQBBAE4AUQBBADMAQQBBAD0APQAKAHAAcgBlAGYAaQB4ADoACgBzAG8AdQByAGMAZQA6AFAAQQBCADAAQQBHAEUAQQBZAGcAQgBzAEEARwBVAEEASQBBAEIAagBBAEcAdwBBAFkAUQBCAHoAQQBIAE0AQQBQAFEAQQBpAEEASABRAEEAYwBnAEIAMQBBAEgAUQBBAGEAQQBBAGcAQQBHAEkAQQBiAHcAQgB5AEEARwBRAEEAWgBRAEIAeQBBAEcAVQBBAFoAQQBBAGkAQQBDAEEAQQBjAHcAQgAxAEEARwAwAEEAYgBRAEIAaABBAEgASQBBAGUAUQBBADkAQQBDAEkAQQBkAEEAQgB5AEEASABVAEEAZABBAEIAbwBBAEMAQQBBAGQAQQBCAGgAQQBHAEkAQQBiAEEAQgBsAEEAQwBBAEEAWgBnAEIAdgBBAEgASQBBAEkAQQBCAE8AQQBFADgAQQBWAEEAQQBnAEEASABjAEEAYQBRAEIAMABBAEcAZwBBAEkAQQBCADYAQQBHAFUAQQBjAGcAQgB2AEEAQwA4AEEAYgB3AEIAdQBBAEcAVQBBAEkAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAG8AQQBDAEEAQQBjAHcAQgBqAEEARwA4AEEAYwBBAEIAbABBAEQAMABBAEkAZwBCAGoAQQBHADgAQQBiAEEAQQBpAEEARAA0AEEAYQBRAEIAdQBBAEgAQQBBAGQAUQBCADAAQQBEAHcAQQBMAHcAQgAwAEEARwBnAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAG8AQQBDAEEAQQBjAHcAQgBqAEEARwA4AEEAYwBBAEIAbABBAEQAMABBAEkAZwBCAGoAQQBHADgAQQBiAEEAQQBpAEEARAA0AEEAYgB3AEIAMQBBAEgAUQBBAGMAQQBCADEAQQBIAFEAQQBQAEEAQQB2AEEASABRAEEAYQBBAEEAKwBBAEEAbwBBAFAAQQBBAHYAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBvAEEAQwBBAEEAYwB3AEIAagBBAEcAOABBAGMAQQBCAGwAQQBEADAAQQBJAGcAQgBqAEEARwA4AEEAYgBBAEEAaQBBAEMAQQBBAGMAdwBCADAAQQBIAGsAQQBiAEEAQgBsAEEARAAwAEEASQBnAEIAMwBBAEcAawBBAFoAQQBCADAAQQBHAGcAQQBPAGcAQQB4AEEARABBAEEATQBBAEIAdwBBAEgAZwBBAE8AdwBBAGkAQQBEADQAQQBRAFEAQQA4AEEAQwA4AEEAZABBAEIAbwBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBhAEEAQQBnAEEASABNAEEAWQB3AEIAdgBBAEgAQQBBAFoAUQBBADkAQQBDAEkAQQBZAHcAQgB2AEEARwB3AEEASQBnAEEAZwBBAEgATQBBAGQAQQBCADUAQQBHAHcAQQBaAFEAQQA5AEEAQwBJAEEAZAB3AEIAcABBAEcAUQBBAGQAQQBCAG8AQQBEAG8AQQBNAFEAQQB3AEEARABBAEEAYwBBAEIANABBAEQAcwBBAEkAZwBBACsAQQBEAHcAQQBZAHcAQgB2AEEARwBRAEEAWgBRAEEAKwBBAEcANABBAGIAdwBCADAAQQBEAHcAQQBMAHcAQgBqAEEARwA4AEEAWgBBAEIAbABBAEQANABBAEkAQQBCAEIAQQBEAHcAQQBMAHcAQgAwAEEARwBnAEEAUABnAEEASwBBAEQAdwBBAEwAdwBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBaAEEAQQArAEEARABBAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAeABBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBEAEUAQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQQB3AEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBMAHcAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAEwAdwBCADAAQQBHAEUAQQBZAGcAQgBzAEEARwBVAEEAUABnAEEAPQAKAHMAdQBmAGYAaQB4ADoA:31b8e172-b470-440e-83d8-e6b185028602</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section id="logic-gates" class="level2">
+<h2 class="anchored" data-anchor-id="logic-gates">Logic Gates</h2>
+<p>
+Inside a computer, Boolean operations are implemented in physical circuitry using logic gates. (A single gate implements one of the basic functions <code>and</code>, <code>or</code>, or <code>not</code>.) Logic circuits are often represented with drawings that help engineers see how the information will flow through a circuit. For example, the following diagram of a logic circuit with two gates represents the Boolean expression <img src="../../img/6-computers/(a)or((a)and(b))-booleans.png" title="A or (A and B)" alt="A or (A and B)" class="inline">. Can you see how?
+</p>
+<p><img src="../../img/6-computers/(a)or((a)and(b))-gate.png" title="logic gate diagram of (A or (A and B))" alt="logic gate diagram of (A or (A and B))" class="indent noshadow"></p>
+<div id="first" class="forYouToDo">
+<ol>
+<li>
+<img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Look at the logic circuit drawn above. For what values of A and B will the output be <code>true</code>?
+</li>
+</ol>
+</div>
+<div class="takeNote">
+<p>On the previous page, you learned about tungsten and tin, and here we’re talking about Boolean functions. In what sense is this less abstract? <strong>From the point of view of the chip designer, logic gates are the fundamental building blocks of a digital circuit.</strong> (The actual physical chip fabrication is at an even lower level of abstraction, in the analog domain.) <img src="../../img/6-computers/hardware-abstraction.png" title="diagram of computer abstraction hierarchy showing three levels of decreasing abstraction: software domain (including applications, programming languages, libraries, and operating systems), digital domain (including architecture, components, integrated circuits, and logic gates), and analog domain (including transistors); there is a dividing line between the software and digital domains labeled 'program abstraction barrier' and a dividing line between the digital and analog domains labeled 'digital abstraction barrier;' there is a vertical double-headed arrow on the right indicating that the items listed first on the list (and their sub-lists) have a 'high level of abstraction' and those lower on the list have a 'low level of abstraction'" alt="diagram of computer abstraction hierarchy showing three levels of decreasing abstraction: software domain (including applications, programming languages, libraries, and operating systems), digital domain (including architecture, components, integrated circuits, and logic gates), and analog domain (including transistors); there is a dividing line between the software and digital domains labeled 'program abstraction barrier' and a dividing line between the digital and analog domains labeled 'digital abstraction barrier;' there is a vertical double-headed arrow on the right indicating that the items listed first on the list (and their sub-lists) have a 'high level of abstraction' and those lower on the list have a 'low level of abstraction'" class="indent noshadow"></p>
+</div>
+<div class="forYouToDo">
+<ol start="2">
+<li>
+<!-- Question 1 -->
+<div class="assessment-data" type="multiplechoice" data-identifier="Which expression will report TRUE?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri1" data-shuffle="false">
+<div class="prompt">
+<p>Which of the following expressions will report <code>true</code>?</p>
+<ol style="list-style:upper-roman;">
+<li>
+<img src="../../img/6-computers/boolean-quiz-a.png" title="(T and F) and (not (T and F))" alt="(T and F) and (not (T and F))" class="inline">
+</li>
+<li>
+<img src="../../img/6-computers/boolean-quiz-b.png" title="(not (T or F)) or (T or F)" alt="(not (T or F)) or (T or F)" class="inline">
+</li>
+</ol>
+</div>
+<div class="choice" data-identifier="c1">
+<div class="text">
+<p>I only</p>
+</div>
+<div class="feedback">
+<p>Evaluate each part separately first, and then determine what the outermost block in each expression will report. In expression I: What does <code>(true) and (false)</code> report? What does <code>not((true) and (false))</code> report? In expression II: What does <code>(true) or (false)</code> report? What does <code>not((true) or (false))</code> report?</p>
+</div>
+</div>
+<div class="choice" data-identifier="c2">
+<div class="text">
+<p>II only</p>
+</div>
+<div class="feedback">
+<p>Correct!</p>
+</div>
+</div>
+<div class="choice" data-identifier="c3">
+<div class="text">
+<p>I and II</p>
+</div>
+<div class="feedback">
+<p>Take another look at expression I. What does <code>not((true) and (false))</code> (on the right) report to the outermost <code>and</code> block?</p>
+</div>
+</div>
+<div class="choice" data-identifier="c4">
+<div class="text">
+<p>Neither I nor II</p>
+</div>
+<div class="feedback">
+<p>Take another look at expression II. What does <code>(true) and (false)</code> (on the right) report to the outermost <code>or</code> block?</p>
+</div>
+</div>
+<div class="responseDeclaration" data-identifier="ri1">
+<div class="correctResponse" data-identifier="c2">
+
+</div>
+</div>
+</div>
+</li>
+<li>
+<!-- Question 2 -->
+<div class="assessment-data" type="multiplechoice" data-identifier="Which logic gate will report TRUE?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri2" data-shuffle="false">
+<div class="prompt">
+<p>Which of the following logic circuits will report <code>true</code>? (T stands for <code>true</code>, and F stands for <code>false</code>.)</p>
+<ol style="list-style:upper-roman;">
+<div class="sidenote">
+<p>This problem is probably <em>harder</em> than something you’ll see on the exam, so if you can get this one, you are doing great!</p>
+</div>
+<p>31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATQBRAEEANQBBAEQARQBBAE4AUQBBADUAQQBBAD0APQAKAHAAcgBlAGYAaQB4ADoACgBzAG8AdQByAGMAZQA6AFAAQQBCADAAQQBHAEUAQQBZAGcAQgBzAEEARwBVAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAZwBBAEgAYwBBAGEAUQBCAGsAQQBIAFEAQQBhAEEAQQA5AEEAQwBJAEEATQBnAEEAdwBBAEQAQQBBAEkAZwBBACsAQQBEAHcAQQBiAEEAQgBwAEEARAA0AEEAUABBAEIAcABBAEcAMABBAFoAdwBBAGcAQQBHAE0AQQBiAEEAQgBoAEEASABNAEEAYwB3AEEAOQBBAEMASQBBAGEAUQBCAHUAQQBHAHcAQQBhAFEAQgB1AEEARwBVAEEASQBBAEIAdQBBAEcAOABBAGMAdwBCAG8AQQBHAEUAQQBaAEEAQgB2AEEASABjAEEASQBnAEEAZwBBAEgATQBBAGMAZwBCAGoAQQBEADAAQQBJAGcAQQB2AEEARwBJAEEAYQBnAEIAagBBAEMAMABBAGMAZwBBAHYAQQBHAGsAQQBiAFEAQgBuAEEAQwA4AEEATgBnAEEAdABBAEcATQBBAGIAdwBCAHQAQQBIAEEAQQBkAFEAQgAwAEEARwBVAEEAYwBnAEIAegBBAEMAOABBAGIAQQBCAHYAQQBHAGMAQQBhAFEAQgBqAEEAQwAwAEEAWgB3AEIAaABBAEgAUQBBAFoAUQBCAHoAQQBDADAAQQBjAFEAQgAxAEEARwBrAEEAZQBnAEEAdABBAEcASQBBAEwAZwBCAHcAQQBHADQAQQBaAHcAQQBpAEEAQwBBAEEAWQBRAEIAcwBBAEgAUQBBAFAAUQBBAGkAQQBHAHcAQQBiAHcAQgBuAEEARwBrAEEAWQB3AEEAZwBBAEcAYwBBAFkAUQBCADAAQQBHAFUAQQBJAEEAQgBrAEEARwBrAEEAWQBRAEIAbgBBAEgASQBBAFkAUQBCAHQAQQBDAEEAQQBiAHcAQgBtAEEAQwBBAEEASwBBAEIAdQBBAEcAOABBAGQAQQBBAGcAQQBDAGcAQQBLAEEAQgBVAEEAQwBBAEEAWQBRAEIAdQBBAEcAUQBBAEkAQQBCAEcAQQBDAGsAQQBLAFEAQQBnAEEARwA4AEEAYwBnAEEAZwBBAEMAZwBBAFYAQQBBAGcAQQBHAEUAQQBiAGcAQgBrAEEAQwBBAEEAUgBnAEEAcABBAEMAawBBAEkAZwBBAGcAQQBIAFEAQQBhAFEAQgAwAEEARwB3AEEAWgBRAEEAOQBBAEMASQBBAGIAQQBCAHYAQQBHAGMAQQBhAFEAQgBqAEEAQwBBAEEAWgB3AEIAaABBAEgAUQBBAFoAUQBBAGcAQQBHAFEAQQBhAFEAQgBoAEEARwBjAEEAYwBnAEIAaABBAEcAMABBAEkAQQBCAHYAQQBHAFkAQQBJAEEAQQBvAEEARwA0AEEAYgB3AEIAMABBAEMAQQBBAEsAQQBBAG8AQQBGAFEAQQBJAEEAQgBoAEEARwA0AEEAWgBBAEEAZwBBAEUAWQBBAEsAUQBBAHAAQQBDAEEAQQBiAHcAQgB5AEEAQwBBAEEASwBBAEIAVQBBAEMAQQBBAFkAUQBCAHUAQQBHAFEAQQBJAEEAQgBHAEEAQwBrAEEASwBRAEEAaQBBAEMAQQBBAEwAdwBBACsAQQBEAHcAQQBMAHcAQgBzAEEARwBrAEEAUABnAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQAdwBBAGIAQQBCAHAAQQBEADQAQQBQAEEAQgBwAEEARwAwAEEAWgB3AEEAZwBBAEcATQBBAGIAQQBCAGgAQQBIAE0AQQBjAHcAQQA5AEEAQwBJAEEAYQBRAEIAdQBBAEcAdwBBAGEAUQBCAHUAQQBHAFUAQQBJAEEAQgB1AEEARwA4AEEAYwB3AEIAbwBBAEcARQBBAFoAQQBCAHYAQQBIAGMAQQBJAGcAQQBnAEEARwBFAEEAYgBBAEIAcABBAEcAYwBBAGIAZwBBADkAQQBDAEkAQQBZAGcAQgB2AEEASABRAEEAZABBAEIAdgBBAEcAMABBAEkAZwBBAGcAQQBIAE0AQQBjAGcAQgBqAEEARAAwAEEASQBnAEEAdgBBAEcASQBBAGEAZwBCAGoAQQBDADAAQQBjAGcAQQB2AEEARwBrAEEAYgBRAEIAbgBBAEMAOABBAE4AZwBBAHQAQQBHAE0AQQBiAHcAQgB0AEEASABBAEEAZABRAEIAMABBAEcAVQBBAGMAZwBCAHoAQQBDADgAQQBiAEEAQgB2AEEARwBjAEEAYQBRAEIAagBBAEMAMABBAFoAdwBCAGgAQQBIAFEAQQBaAFEAQgB6AEEAQwAwAEEAYwBRAEIAMQBBAEcAawBBAGUAZwBBAHQAQQBHAEUAQQBMAGcAQgB3AEEARwA0AEEAWgB3AEEAaQBBAEMAQQBBAFkAUQBCAHMAQQBIAFEAQQBQAFEAQQBpAEEARwB3AEEAYgB3AEIAbgBBAEcAawBBAFkAdwBBAGcAQQBHAGMAQQBZAFEAQgAwAEEARwBVAEEASQBBAEIAawBBAEcAawBBAFkAUQBCAG4AQQBIAEkAQQBZAFEAQgB0AEEAQwBBAEEAYgB3AEIAbQBBAEMAQQBBAEsAQQBBAG8AQQBGAFEAQQBJAEEAQgB2AEEASABJAEEASQBBAEIARwBBAEMAawBBAEkAQQBCAGgAQQBHADQAQQBaAEEAQQBnAEEAQwBnAEEAYgBnAEIAdgBBAEgAUQBBAEkAQQBBAG8AQQBGAFEAQQBJAEEAQgB2AEEASABJAEEASQBBAEIARwBBAEMAawBBAEsAUQBBAHAAQQBDAEkAQQBJAEEAQgAwAEEARwBrAEEAZABBAEIAcwBBAEcAVQBBAFAAUQBBAGkAQQBHAHcAQQBiAHcAQgBuAEEARwBrAEEAWQB3AEEAZwBBAEcAYwBBAFkAUQBCADAAQQBHAFUAQQBJAEEAQgBrAEEARwBrAEEAWQBRAEIAbgBBAEgASQBBAFkAUQBCAHQAQQBDAEEAQQBiAHcAQgBtAEEAQwBBAEEASwBBAEEAbwBBAEYAUQBBAEkAQQBCAHYAQQBIAEkAQQBJAEEAQgBHAEEAQwBrAEEASQBBAEIAaABBAEcANABBAFoAQQBBAGcAQQBDAGcAQQBiAGcAQgB2AEEASABRAEEASQBBAEEAbwBBAEYAUQBBAEkAQQBCAHYAQQBIAEkAQQBJAEEAQgBHAEEAQwBrAEEASwBRAEEAcABBAEMASQBBAEkAQQBBAHYAQQBEADQAQQBQAEEAQQB2AEEARwB3AEEAYQBRAEEAKwBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBMAHcAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAFAAZwBBAD0ACgBzAHUAZgBmAGkAeAA6AA==:31b8e172-b470-440e-83d8-e6b185028602</p>
+</ol>
+</div>
+<div class="choice" data-identifier="c1">
+<div class="text">
+<p>I only</p>
+</div>
+<div class="feedback">
+<p>Correct!</p>
+</div>
+</div>
+<div class="choice" data-identifier="c2">
+<div class="text">
+<p>II only</p>
+</div>
+<div class="feedback">
+<p>Try building both diagrams in Snap<em>!</em> similarly to the images in Question 1 above.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c3">
+<div class="text">
+<p>I and II</p>
+</div>
+<div class="feedback">
+<p>Take another look at diagram II. What signal does the right side send to the AND gate?</p>
+</div>
+</div>
+<div class="choice" data-identifier="c4">
+<div class="text">
+<p>Neither I nor II</p>
+</div>
+<div class="feedback">
+<p>Take another look at diagram I. What signal does the left side send to the OR gate?</p>
+</div>
+</div>
+<div class="responseDeclaration" data-identifier="ri2">
+<div class="correctResponse" data-identifier="c1">
+
+</div>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="endnote">
+<p>
+<a href="#hint-target" data-bs-toggle="collapse" title="How do engineers draw logic gates?">How do engineers draw logic gates?</a>
+</p>
+<div id="hint-target" class="collapse">
+<p><img src="../../img/6-computers/logic-gates-example-circuit.png" title="logic gate diagram of (not and) and (or)" alt="logic gate diagram of (not and) and (or)" class="imageRight"> Engineers typically draw logic gates horizontally and use special shapes that represent each gate: <br> <img src="../../img/6-computers/LogicGates_img/Gates/AND.png" title="AND-gate" alt="AND-gate" class="indent" width="151" height="80"> <img src="../../img/6-computers/LogicGates_img/Gates/OR.png" title="OR-gate" alt="OR-gate" class="indent" width="156" height="81"> <img src="../../img/6-computers/LogicGates_img/Gates/NOT.png" title="NOT-gate" alt="NOT-gate" class="indent" width="126" height="69"><br> For example, engineers would draw the logic circuit shown at right like this: <br> <img src="../../img/6-computers/LogicGates_img/Circuits/notandandor.png" title="Engineer's version a logic gate with (not and) and (or)" alt="Engineer's version a logic gate with (not and) and (or)" class="indent" height="250"><br> Do an <a href="https://www.duckduckgo.com/?q=logic+gate+diagrams&amp;ia=images&amp;iax=imageslogic+gate+diagrams&amp;ia=images&amp;iax=images" target="_blank" title="Image Search for: logic gate diagrams">image search for “logic gate diagrams”</a> to see more examples.</p>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../unit-6/lab-1/page-8.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">The Digital Domain: Integrated Circuits</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../unit-6/lab-1/page-10.html" class="pagination-link">
+        <span class="nav-page-text">The Analog Domain: Transistors</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">The curriculum and text on this website is adapted from <a href="https://bjc.edc.org/bjc-r/">The Beauty and Joy of Computing</a> by University of California, Berkeley and Education Development Center, Inc.&nbsp;which is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>

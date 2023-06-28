@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>BHS AP CSP – compression</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../unit-4/lab-5/page-1.html" rel="next">
+<link href="../../unit-4/lab-4/5b-binary-alternate.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script type="text/javascript" src="../../llab/loader.js"></script>
+
+
+<link rel="stylesheet" href="../../css/bjc.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">BHS AP CSP</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-labs" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Labs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-labs">    
+        <li>
+    <a class="dropdown-item" href="../../unit-1/index.html" rel="" target="">
+ <span class="dropdown-text">Unit 1: Introduction to Programming</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-2/index.html" rel="" target="">
+ <span class="dropdown-text">Unit 2: Abstraction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-3/index.html" rel="" target="">
+ <span class="dropdown-text">Unit 3: Data Structures</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-4/index.html" rel="" target="">
+ <span class="dropdown-text">Unit 4: How the Internet Works</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-5/index.html" rel="" target="">
+ <span class="dropdown-text">Unit 5: Algorithms and Simulations</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../unit-6/index.html" rel="" target="">
+ <span class="dropdown-text">Unit 6: How Computers Work</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
+ <span class="menu-text">Snap<em>!</em></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-4/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-4/lab-4/1-bits.html">Lab 4</a></li><li class="breadcrumb-item"><a href="../../unit-4/lab-4/6-compression.html">order:</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../unit-4/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to Programming</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text">Lab 1</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-1/1-what-is-internet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-1/2-network-redundancy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-1/3-open-protocols.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-1/4-who-is-in-charge.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text">Lab 2</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-2/1-cryptography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-2/2-caesar-cipher.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-2/3-asymmetric_cryptography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-2/4-who-cares-about-encryption.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-2/5-security-risks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-2/6-cybersecurity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+ <span class="menu-text">Lab 3</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-3/1-ways-we-communicate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-3/2-cyberbullying.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-3/3-censorship.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-3/4-search-engines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-3/5-computing-world.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-3/6-benefits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-3/7-collaboration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-3/8-planning-your-pathway.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text">Lab 4</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-4/1-bits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-4/2-sequences.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-4/3-representing-numbers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-4/4-floating-point.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-4/5-binary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-4/5b-binary-alternate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-4/6-compression.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">order:</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+ <span class="menu-text">Lab 5</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-5/page-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 1: Getting Started with Snap<em>!</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-5/page-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Programming a Game</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-5/page-3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sharing Your Game</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-5/page-4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Giving the Player Feedback</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-5/page-5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Improving Your Game</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+ <span class="menu-text">Optional Projects</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/optional-projects/page-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 1: Getting Started with Snap<em>!</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/optional-projects/page-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Programming a Game</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/optional-projects/page-3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sharing Your Game</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/optional-projects/page-4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Giving the Player Feedback</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/optional-projects/page-5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Improving Your Game</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+Unit 4 Lab 4: Data Representation and Compression, Page 6
+
+<pre><code>&lt;/head&gt;
+
+&lt;body&gt;
+    ## Data Compressionsubtitle: "Unit , Lab , Page"</code></pre>
+<p>order:</p>
+<hr>
+<pre><code>    &lt;div class="learn"&gt;&lt;strong&gt;On this page,&lt;/strong&gt; you learn about different &lt;em&gt;data compression algorithms&lt;/em&gt;.&lt;/div&gt;
+    &lt;div class="comment"&gt;DAT-1.D.1&lt;/div&gt;
+    &lt;p&gt;The size of data (the number of bits required to store it) affects the time it takes to send that data across the Internet. So, people use &lt;em&gt;data compression&lt;/em&gt; algorithms to reduce the size of images, sounds, movies and some other kinds of data.&lt;/p&gt;
+
+    &lt;div class="comment"&gt;DAT-1.D.3&lt;/div&gt;
+    &lt;p&gt;
+        The amount of size reduction depends on two things:
+        &lt;ol&gt;
+            &lt;li&gt;the amount of redundancy in the original data&lt;/li&gt;
+            &lt;li&gt;the compression algorithm applied&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;There are two broad categories of data compression algorithms: &lt;em&gt;lossless&lt;/em&gt; and &lt;em&gt;lossy,&lt;/em&gt; depending on whether information is lost.&lt;/p&gt;
+    &lt;div class="vocabFullWidth"&gt;: &lt;strong&gt;Lossless Compression&lt;/strong&gt;
+        &lt;p&gt;&lt;strong&gt;Lossless data&amp;nbsp;compression&lt;/strong&gt; algorithms (such as PNG) are reversible (there is no loss in quality); you can reconstruct the original data. &lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class="comment"&gt;DAT-1.D.4&lt;/div&gt;
+    &lt;p&gt;Lossless compression works by &lt;em&gt;removing redundant data&lt;/em&gt;. These algorithms can &lt;em&gt;usually&lt;/em&gt; reduce the number of bits required to store or transmit the data while guaranteeing that the original data can be perfectly reconstructed.&lt;/p&gt;
+
+    &lt;img class="imageRight" src="/img/6-computers/bjc-logo-original.png" alt="BJC logo uncompressed" title="BJC logo uncompressed" /&gt;
+    &lt;p&gt;Run-length encoding is an example of lossless compression. Consider the 158 pixels in the top row of the BJC logo (at right). The first 60 pixels are white. Then come five pixels of yellowish orange (the top slice of the "b"). And the rest of that row is white.&lt;/p&gt;
+    &lt;p class="indent"&gt;...&lt;img src="/img/6-computers/top-row-of-pixels-in-bjc-logo.png" alt="top-row-of-pixels-in-bjc-logo: 4 white, 6 yellow-orange, 3 white" title="top-row-of-pixels-in-bjc-logo: 4 white, 6 yellow-orange, 3 white"&gt;...&lt;/p&gt;
+    &lt;p&gt;Instead of storing all 158 pixels individually, we could compress them with &lt;em&gt;run-length encoding&lt;/em&gt; and just store six values (three numbers and three colors):&lt;/p&gt;
+
+    &lt;table class="byte indent" width="30%" summary="run length encoding for top row of BJC logo"&gt;
+        &lt;tr&gt;
+            &lt;th width="47%" scope="col"&gt;pixel count&lt;/th&gt;
+            &lt;th width="53%" scope="col"&gt;color code&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;60&lt;/td&gt;
+            &lt;td&gt;FFFFFF&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;5&lt;/td&gt;
+            &lt;td bgcolor="E5A84A"&gt;E5A84A&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;93&lt;/td&gt;
+            &lt;td&gt;FFFFFF&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+
+    &lt;div class="comment"&gt;DAT-1.D.2&lt;/div&gt;
+    &lt;p&gt;Those six values (60, FFFFFF, 5, E5A84A, 93, FFFFFF) can be reconstructed into that whole first row of the image (158 pixels). So, fewer bits does not necessarily mean less information.&lt;/p&gt;
+    &lt;div class="vocabFullWidth"&gt;: &lt;strong&gt;Lossy Compression&lt;/strong&gt;
+        &lt;p&gt;&lt;strong&gt;Lossy data&amp;nbsp;compression&lt;/strong&gt; algorithms are &lt;em&gt;not&lt;/em&gt; fully reversible; you can reconstruct only an &lt;em&gt;approximation&lt;/em&gt; of the original data.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="comment"&gt;DAT-1.D.5&lt;/div&gt;
+    &lt;p&gt;Lossy Compression works by removing details that people aren't likely to notice. The most commonly used lossy compression algorithm for pictures is called JPEG (or JPG, both pronounced "jay peg" for "Joint Photographic Experts Group," the committee that invented it). JPEG works by preserving most of the brightness information for each pixel (since human eyes are sensitive to that) and performing a kind of averaging process to the color information (because human eyes aren't as good at distinguishing color, especially colors close to white).&lt;/p&gt;
+    &lt;p&gt;
+        Below are an original, uncompressed picture of pebbles in a pond and a highly compressed JPEG of the same image. Can you tell which is which?&lt;br /&gt;
+        &lt;img class="indent" src="/img/6-computers/pond.bmp" alt="pond pebbles" title="pond pebbles" /&gt;
+        &lt;img src="/img/6-computers/pond.jpg" alt="pond pebbles" title="pond pebbles" /&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;You probably &lt;em&gt;can&lt;/em&gt; tell which is which, especially if you looked for sharp edges or very shiny spots. But the compressed file uses 1/30th of the space used by the original, and you could still tell that it's a picture of rocks. So, for many purposes the compressed version would be good enough. Lossy algorithms usually let you &lt;em&gt;control the degree of precision&lt;/em&gt;, and generally, people select less extreme compression settings, so the compressed file looks much more like the original than this example.&lt;/p&gt;
+
+    &lt;div class="endnote"&gt;
+        &lt;p&gt;&lt;a href="#hint-sizes" data-bs-toggle="collapse" title="What size is this file when encoded in different formats?"&gt;What size is this file when encoded in different formats?&lt;/a&gt;&lt;/p&gt;
+        &lt;div id="hint-sizes" class="collapse"&gt;
+            Here are the sizes of the pond pebbles picture in four different formats:
+            &lt;table class="byte indent" width="56%" summary="compression factors example"&gt;
+                &lt;tr&gt;
+                    &lt;th scope="col"&gt;format&lt;/th&gt;
+                    &lt;th scope="col"&gt;size&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td style="text-align: left;"&gt;BMP encoding every pixel individually (shown above)&lt;/td&gt;
+                    &lt;td&gt;148 kB&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td style="text-align: left;"&gt;PNG&lt;/td&gt;
+                    &lt;td&gt;106 kB&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td style="text-align: left;"&gt;JPEG with least compression&lt;/td&gt;
+                    &lt;td&gt;94 kB&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td style="text-align: left;"&gt;JPEG with most compression (shown above)&lt;/td&gt;
+                    &lt;td&gt;5 kB&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;p&gt;The MP3 format, which you almost certainly use for portable music files, is a lossy compression format.  It tends to emphasize high frequencies, so people accustomed to MP3 music find uncompressed versions of the same music boomy (bassy).&lt;/p&gt;
+    ## Which is best?
+    &lt;p&gt;
+        Both types of data compression exist because each is useful in certain circumstances:
+        &lt;ul&gt;
+            &lt;div class="comment"&gt;DAT-1.D.7&lt;/div&gt;
+            &lt;li&gt;Lossless compression is a good choice when there are very sharp transitions between colors (such as in logos) &lt;em&gt;or&lt;/em&gt; when it's essential to be able to recreate original data precisely (such as the code for a program or the text of a book).&lt;/li&gt;
+            &lt;div class="comment"&gt;DAT-1.D.6, DAT-1.D.8&lt;/div&gt;
+            &lt;li&gt;Lossy compression is a good choice when the data does not require precision (such as images, sound, or movies, which people may not even notice have been compressed) &lt;em&gt;and&lt;/em&gt; when reducing number of bits stored or transmitted is most important.&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/p&gt;
+
+    &lt;div class="forYouToDo"&gt;
+        &lt;ol&gt;
+            &lt;li&gt;
+                These questions are similar to those you will see on the AP CSP exam.
+                &lt;!-- Question 1 --&gt;
+                &lt;div class="assessment-data" type="multiplechoice" identifier="Which is NOT an explanation of low image quality?" hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri1" shuffle="false"&gt;
+                    &lt;div class="prompt"&gt;A film student records a movie on his smartphone and then saves a copy on his computer. He notices that the saved copy is of much lower image quality than the original. Which of the following could &lt;strong&gt;NOT&lt;/strong&gt; be a possible explanation for the lower image quality?&lt;/div&gt;
+                    &lt;div class="choice" identifier="c1"&gt;
+                        &lt;div class="text"&gt;The movie was saved using fewer bits per second (a lower bit rate) than the original movie.&lt;/div&gt;
+                        &lt;div class="feedback"&gt;This is likely what happened. Which one could NOT be a possible explanation?&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="choice" identifier="c2"&gt;
+                        &lt;div class="text"&gt;The copy of the movie file was somehow corrupted in the process of saving.&lt;/div&gt;
+                        &lt;div class="feedback"&gt;This is possible; however if the file is corrupted, it is unlikely to have a consistent negative impact on image quality. &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="choice" identifier="c3"&gt;
+                        &lt;div class="text"&gt;The movie was saved using a lossy compression technique.&lt;/div&gt;
+                        &lt;div class="feedback"&gt;This is very likely. Which one could NOT be a possible explanation?&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="choice" identifier="c4"&gt;
+                        &lt;div class="text"&gt;Whenever a file is saved from one computer to another, some information is always lost.&lt;/div&gt;
+                        &lt;div class="feedback"&gt;Correct. It is possible to make exact duplicates of digital information without any loss.&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="responseDeclaration" identifier="ri1"&gt;
+                        &lt;div class="correctResponse" identifier="c4"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                
+                &lt;!-- Question 2 --&gt;
+                &lt;div class="assessment-data" type="multiplechoice" identifier="Which are examples of lossless transformation?"
+                    hasinlinefeedback="true" maxchoices="2" responseIdentifier="ri2" shuffle="true"&gt;
+                    &lt;div class="prompt"&gt;A visual artist is processing a digital image.  Which of the following describe a &lt;strong&gt;lossless&lt;/strong&gt; transformation from which the original image can be recovered? &lt;em&gt;Choose two answers.&lt;/em&gt;&lt;/div&gt;
+                    &lt;div class="choice" identifier="c1"&gt;
+                        &lt;div class="text"&gt;Creating the negative of an image, where colors are reversed (dark areas appear light).&lt;/div&gt;
+                        &lt;div class="feedback"&gt;Correct. This transformation is reversible and is an example of a lossless transformation.&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="choice" identifier="c2"&gt;
+                        &lt;div class="text"&gt;Blurring the edges of an image.&lt;/div&gt;
+                        &lt;div class="feedback"&gt;The blurring blends colors at the edges of the image and once colors have blended it is impossible to retrieve the original RGB values of the pixels involved.&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="choice" identifier="c3"&gt;
+                        &lt;div class="text"&gt;Creating a grayscale copy of an image.&lt;/div&gt;
+                        &lt;div class="feedback"&gt;The grayscale of an image replaces each RGB value with their average and once the amounts of red, green, and blue have been averaged together, it is impossible to retrieve the original RGB values of the pixels.&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="choice" identifier="c4"&gt;
+                        &lt;div class="text"&gt;Creating a vertically flipped copy of the image.&lt;/div&gt;
+                        &lt;div class="feedback"&gt;Correct. This transformation is reversible and is an example of a lossless transformation.&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="responseDeclaration" identifier="ri2"&gt;
+                        &lt;div class="correctResponse" identifier="c1"&gt;&lt;/div&gt;
+                        &lt;div class="correctResponse" identifier="c4"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                
+                &lt;!-- Question 3 --&gt;
+                &lt;div class="comment"&gt;DAT-1.D&lt;/div&gt;
+                &lt;div class="assessment-data" type="multiplechoice" identifier="Which are examples of lossless transformation?"
+                    hasinlinefeedback="true" maxchoices="2" responseIdentifier="ri3" shuffle="true"&gt;
+                    &lt;div class="prompt"&gt;
+                        For which of the following kinds of data would &lt;em&gt;lossy&lt;/em&gt; compression be okay?  Check as many as apply.
+                    &lt;/div&gt;
+                    &lt;div class="choice" identifier="c1"&gt;
+                        &lt;div class="text"&gt;The HTML code for this web page.&lt;/div&gt;
+                        &lt;div class="feedback"&gt;
+                            Would you be happy if some of the words on the page disappeared?
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="choice" identifier="c2"&gt;
+                        &lt;div class="text"&gt;Your computer's desktop picture.&lt;/div&gt;
+                        &lt;div class="feedback"&gt;
+                            Correct.  The picture could have a few wrong pixels and would still look okay.
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="choice" identifier="c3"&gt;
+                        &lt;div class="text"&gt;A live-action movie on Netflix.&lt;/div&gt;
+                        &lt;div class="feedback"&gt;
+                            Correct.  The movie could have a few corrupted frames and would still look okay.
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="choice" identifier="c4"&gt;
+                        &lt;div class="text"&gt;A cartoon on Netflix.&lt;/div&gt;
+                        &lt;div class="feedback"&gt;
+                            Actually, corrupted frames are more noticeable in a cartoon, which has solid areas separated by sharp edges.  (Fortunately, using techniques such as run length encoding, it's relatively easy to get a lossless, highly compressed version of a cartoon.)
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="choice" identifier="c5"&gt;
+                        &lt;div class="text"&gt;A digital book, to be read on a computer.&lt;/div&gt;
+                        &lt;div class="feedback"&gt;
+                            Digital books aren't stored as pictures, but as text.  Any error will be noticeable, as gibberish characters on the page.
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;!-- Response ID
+                         Make sure each ID is unique, again!
+                         Keep these classes the same for multiple choice problems
+                     --&gt;
+                    &lt;div class="responseDeclaration" identifier="ri3"&gt;
+                        &lt;div class="correctResponse" identifier="c2"&gt;&lt;/div&gt;
+                        &lt;div class="correctResponse" identifier="c3"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+    </code></pre>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../unit-4/lab-4/5b-binary-alternate.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">order:</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../unit-4/lab-5/page-1.html" class="pagination-link">
+        <span class="nav-page-text">Page 1: Getting Started with Snap<em>!</em></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">The curriculum and text on this website is adapted from <a href="https://bjc.edc.org/bjc-r/">The Beauty and Joy of Computing</a> by University of California, Berkeley and Education Development Center, Inc.&nbsp;which is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>
