@@ -34,7 +34,7 @@ order: 1
 :::
 
 ::: narrower
-## #<strong>Creating a New Snap<em>!</em> Project</strong>
+### <strong>Creating a New Snap<em>!</em> Project</strong>
 
 <ol style="list-style-type:lower-alpha">
 
@@ -106,7 +106,7 @@ The new sprite, automatically named <strong>Sprite(2)</strong>, appears on the s
 To make your sprite names meaningful, change the name of <strong>Sprite</strong> to <strong>Leader</strong>, and change <strong>Sprite(2)</strong> to <strong>Follower</strong>.
 
 ::: narrower
-## #<strong>Changing the Name of a Sprite</strong>
+### <strong>Changing the Name of a Sprite</strong>
 
 <p>Look for the name in a gray box above the scripting area. Click inside the name and you'll be able to edit it.<br /> <img src="/img/1-introduction/change-sprite-name.jpg" title="image of sprite name input field above the scripting area and below the project name" alt="image of sprite name input field above the scripting area and below the project name" class="indent"/></p>
 :::

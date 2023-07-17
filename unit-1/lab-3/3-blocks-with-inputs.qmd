@@ -38,7 +38,7 @@ CRD-2.B.3 (white text)
 Create a <code>pinwheel</code> block with an input for the <var>number of branches</var>. Instructions are below and you can also watch the process in the video that follows the instructions.
 
 ::: narrower
-## #<strong>Making a Block with an Input</strong>
+### <strong>Making a Block with an Input</strong>
 
 <ol type="a">
 
@@ -164,7 +164,7 @@ CRD-2.G
 <li>Comment your code.</li>
 
 ::: takeNote
-## #<strong>Debugging Tip: Commenting Your Code</strong>
+### <strong>Debugging Tip: Commenting Your Code</strong>
 
 ::: comment
 CRD-2.G.2

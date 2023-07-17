@@ -50,3 +50,9 @@ rsconnect/
 /.luarc.json
 
 /_site/
+
+unit-*/lab-*/*.html
+
+unit-*/*.html
+
+/*.html

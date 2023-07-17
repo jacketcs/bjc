@@ -47,11 +47,6 @@ order:
                     <img class="indent" src="/img/2-complexity/keep-example-4.png" alt="keep items  ((length of ( )) = (5)) from {apple, banana, orange, grape, kiwi, mango, watermelon} reporting {apple, grape, mango}" title="keep items  ((length of ( )) = (5)) from {apple, banana, orange, grape, kiwi, mango, watermelon} reporting {apple, grape, mango}"><br />
                     <img class="indent" src="/img/2-complexity/keep-example-7.png" alt="keep items  (not(is () a (number)?)) from {5, :), six, 7, elephant, 3} reporting {5,7,3}" title="keep items  (not(is () a (number)?)) from {5, :), six, 7, elephant, 3} reporting {5,7,3}">
                 </li>
-                
-				<!--<p>
-					Here, every word in the list is asked whether the first letter is <var>a</var>:<br />
-					<img class="indent" src="/img/aprilpd/keep-example-4.png" alt="keep items  ((letter (1) of ()) = (a)) from {Ann, Olivia, Jamal, Karl, A.J., Tara} reporting {Ann, A.J.}" title="keep items  ((letter (1) of ()) = (a)) from {Ann, Olivia, Jamal, Karl, A.J., Tara} reporting {Ann, A.J.}" />
-				</p>-->
 				
             </ol>
 		</div>

@@ -85,7 +85,7 @@ order:
         <div class="todo">This feels like it should be a separate page. --MF, 12/24/17</div>
 		       
         <div class="takeNote">
-            ## #The <a href="http://www.acm.org/about-acm/acm-code-of-ethics-and-professional-conduct" target="_blank" title="Association for Computing Machinery Code of Ethics and Professional Conduct">Code of Ethics and Professional Conduct</a> from the Association for Computing Machinery
+            ### The <a href="http://www.acm.org/about-acm/acm-code-of-ethics-and-professional-conduct" target="_blank" title="Association for Computing Machinery Code of Ethics and Professional Conduct">Code of Ethics and Professional Conduct</a> from the Association for Computing Machinery
             <strong>1. General Moral Imperatives</strong>
             <p>As an ACM member I will...</p>
             <p><strong>1.1 Contribute to society and human well-being.</strong></p>

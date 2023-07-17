@@ -58,7 +58,7 @@ problem you want to solve rather than on how computer hardware works. A
 you to know a lot about your computer's architecture to write a
 program.</p>
 
-## ## <strong>Why do programmers use high-level languages?</strong>
+#### <strong>Why do programmers use high-level languages?</strong>
 
 <p>High-level languages can produce <em>safer</em> programs---ones that
 are less likely to have bugs---because the abstractions manage messy
@@ -192,7 +192,7 @@ or
 and stick it into a higher-order function like <code>map</code>:<br />
 <img src="/img/6-computers/map-s.png" title="report (map (join () (s)) over (words))" alt="report (map (join () (s)) over (words))" class="indent"/></p>
 
-## ## <strong>Why do programmers use low-level languages?</strong>
+#### <strong>Why do programmers use low-level languages?</strong>
 
 <p>The best reason to use low-level languages is to write operating
 systems (like Windows, Mac OS X, Android, or iOS). You'll learn more
@@ -272,7 +272,7 @@ the existing programming language.</p>
 :::
 :::
 
-## ## <strong>What is machine language?</strong>
+#### <strong>What is machine language?</strong>
 
 <p>Both high- and low-level languages are used by <em>people</em> to
 write computer programs. Computer hardware understands a sort of

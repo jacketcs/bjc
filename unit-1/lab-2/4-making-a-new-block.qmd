@@ -20,7 +20,7 @@ order: 4
 </ol>
 
 ::: narrower
-## #<strong>Making a New Block</strong>
+### <strong>Making a New Block</strong>
 
 <ol type="a">
 
@@ -40,7 +40,7 @@ order: 4
 <p>Because you chose the reporter shape, the block editor opens with a <img src="/img/blocks/report.png" title="report" alt="report" class="inline nopadtb"/> block already attached to the hat block. Whatever input you give to <code>report</code> will become the value reported by your new block.</p>
 :::
 
-## #<strong>Coding the Block's Script</strong>
+### <strong>Coding the Block's Script</strong>
 
 <ol type="a" start="5">
 

@@ -18,7 +18,7 @@ order: 3
 Open your U1L2-Gossip project. Edit these three reporter blocks to change the phrases that the program uses. (See the instructions in the box below.) Be creative and funny but thoughtful.<br /> <img src="/img/1-introduction/who.png" title="who block" alt="who block" class="indent"/> <img src="/img/1-introduction/does-what.png" title="does what block" alt="does what block" class="inline"/> <img src="/img/1-introduction/who2.png" title="who2 block" alt="who2 block" class="inline"/>
 
 ::: narrower
-## #<strong>How to Edit a Block</strong>
+### <strong>How to Edit a Block</strong>
 
 <ol type="a">
 
@@ -184,7 +184,7 @@ This sentence is missing the second "who."
 Change the costumes to anything you like.
 
 ::: narrower
-## #<strong>Adding a Costume</strong>
+### <strong>Adding a Costume</strong>
 
 <ol type="a">
 
@@ -212,7 +212,7 @@ You can use a photograph or picture from the Internet by dragging the image onto
 Fix any issues with your costumes.
 
 ::: narrower
-## #<strong>Adjusting a Costume</strong>
+### <strong>Adjusting a Costume</strong>
 
 ```{=html}
 <!--<div class="index-term" id="set size</code>"></div>
@@ -253,7 +253,7 @@ Fix any issues with your costumes.
 Change the background on the Stage.<br />
 
 ::: narrowblue
-## #<strong>Adding a Stage Background</strong>
+### <strong>Adding a Stage Background</strong>
 
 ::: endnote
 Changing a stage background is almost like changing a costume.

@@ -33,7 +33,7 @@ AAP-3.D.1, AAP-3.D.2, AAP-3.D.3
 
 ```{=html}
 <!--<div class="endnote">
-## ## <strong>Web API</strong>
+#### <strong>Web API</strong>
 <p>A common kind of API is a <em>web API</em> in which the library exists on someone else's computer. For example, the <a href="https://developers.google.com/maps/documentation/embed/start" title="Google Maps API" target="_blank">Google Maps API</a> describes how to embed a Google Map on your own website.</p>
 <p>A web API is just a call to a procedure on another machine. For example, these are three different notations for the same procedure call:
 <ul>

@@ -55,7 +55,7 @@ On <a href="/cur/programming/1-introduction/2-gossip-and-greet/2-gossip.html?top
 Create a script variable called <var>secret number</var> to store the number that the player will try to guess (instructions below).
 
 ::: narrower
-## #<strong>Making a Script Variable</strong>
+### <strong>Making a Script Variable</strong>
 
 <ol type="a">
 

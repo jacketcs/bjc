@@ -208,7 +208,7 @@ Try out a variety of inputs to your <code>pinwheel</code> program.
 :::
 
 ::: takeNote
-## #<strong>Debugging Tip: Organizing Your Code</strong>
+### <strong>Debugging Tip: Organizing Your Code</strong>
 
 <p>
 

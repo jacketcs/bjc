@@ -10,14 +10,14 @@ If you're doing this in class, you should be working with a partner. It's not ju
 <p>If each of you is in front of a computer, one of you should keep Snap<em>!</em> open, and the other should keep this lab page open.  If you are sharing a computer, use two browser tabs.</p>
 </div>			  
 
-## #Making a Character Move  
+### Making a Character Move  
 <div class="forYouToDo"> 
 <ol>
 <li>Make sure either you or your partner is logged in to Snap<em>!</em> so you can save your work.</li>
 <li>
 <a href="/prog/1-introduction/U1L1-ClickAlonzo.xml" class="run"><img class="inline" src="/img/icons/load-save.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a>
 <div class="narrower">
-## ## <strong>Saving a Snap<em>!</em> Project</strong>
+#### <strong>Saving a Snap<em>!</em> Project</strong>
 <p>Choose "Save" from the Snap<em>!</em> File menu, <img src="/img/1-introduction/file_button.png" alt="File menu button" title="File menu button"/>.</p>
 </div>
 </li>
@@ -83,7 +83,7 @@ Choose "Save" from the Snap<em>!</em> File menu, <img src="/img/1-introduction/f
 </ol>
 </div>
 
-## #Making the Game Challenging  
+### Making the Game Challenging  
 <!--<div class="index-term" id="forever</code> loop" />-->
 <p>
 The game isn't much fun if Alonzo just sits there waiting to be clicked.  Once you've clicked him, he should keep jumping around on his own. To make Alonzo keep moving around, you need a block that says "do this <code>forever</code>." And there is a block that does it:<br />

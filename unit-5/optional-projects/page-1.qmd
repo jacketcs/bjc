@@ -7,7 +7,7 @@ title: "Page 1: Getting Started with Snap<em>!</em>"
 <p><strong>On this <em>page</em>,</strong> you'll learn how to create your own account and how to log in and out.</p> 
 </div>
 
-## #Creating an Account
+### Creating an Account
 <div class="forYouToDo" id="first"> 
 <img class="imageRight" src="/img/sys/dialog-cloud-signup.png" alt="signing up for the cloud" title="signing up for the cloud"/> 
 <ol>
@@ -23,7 +23,7 @@ In the Snap<em>!</em> window, click the Cloud menu, <img src="/img/1-introductio
 </ol>
 </div>
 
-## #Logging In to and Out of Your Snap<em>!&nbsp;</a>Account
+### Logging In to and Out of Your Snap<em>!&nbsp;</a>Account
 <div class="forYouToDo">
 <p>You should be logged in whenever you are in Snap<em>!</em>. Here's how to check if you are logged in:</p>
 <ol start="3">

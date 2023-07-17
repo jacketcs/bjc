@@ -25,7 +25,7 @@ order: 4
 :::
 
 ::: endnote
-## #<strong>When are global variables needed?</strong>
+### <strong>When are global variables needed?</strong>
 
 <p>Most of the time, script variables are a better choice because they can't be changed by some other part of the program, and so they reduce the chance of bugs. But <strong>if multiple scripts need access</strong> to a variable or <strong>if the information in that variable needs to be saved</strong> with your project, then use a global variable.</p>
 :::
@@ -50,7 +50,7 @@ If you save new work under an old filename, Snap<em>!</em> will overwrite your o
 <li>Create a global variable named <var>score</var>. Here's how.</li>
 
 ::: narrower
-## #<strong>Making a Global Variable</strong>
+### <strong>Making a Global Variable</strong>
 
 <ol type="a">
 
@@ -125,7 +125,7 @@ Use a conditional to determine when the player reaches that score. When they do:
 <strong>Test and debug.</strong> Take turns playing, and fix any bugs. <img src="/img/icons/save-mini.png" title="Save your work" alt="Save your work" class="inline"/><br />
 
 ::: takeNote
-## #<strong>Debugging Tip: Display of Variables</strong>
+### <strong>Debugging Tip: Display of Variables</strong>
 
 <p>
 

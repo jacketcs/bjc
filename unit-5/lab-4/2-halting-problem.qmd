@@ -22,7 +22,7 @@ order:
         
         
         ## Assuming That a <code>Halts?</code> Function Exists
-        ## #<strong>Making the Assumption</strong>
+        ### <strong>Making the Assumption</strong>
         <p>
 			<div class="sidenote">We can't show the code inside <code>halts?</code>; we are proving that it can't be written at all, no matter what code implements it.</div>
             First, we <em>assume</em> there exists a function called <code>halts?</code> that determines whether a given reporter will report a value in a finite time. (If so, we say that the reporter <em>halts.</em>) It takes two inputs: a function and an input value for that function. It reports <code>true</code> if the function would report a value when given that input;  it reports <code>false</code> if the function would run forever (in an infinite loop).<br />
@@ -37,7 +37,7 @@ order:
         <p class="indent"><img class="inline" src="/img/5-algorithms/halts-reporting-false.png" alt="halts?(program with an infinite loop ())(foo) reporting false" title="halts?(program with an infinite loop ())(foo) reporting false" /> because <img class="inline" src="/img/5-algorithms/program-with-loop(foo).png" alt="program with an infinite loop (foo)" title="program with an infinite loop (foo)" /> loops infinitely.</p>
         
         
-        ## #<strong>Reviewing the Plan for the Proof</strong>
+        ### <strong>Reviewing the Plan for the Proof</strong>
         <p>We'll use proof by contradiction to show that the following question <em>can't</em> be answered <em>in general</em>:</p>
         <p class="center"><strong>Will a certain computer program, given a certain input, report a result in a finite amount of time?</strong></p>
         <div class="endnote">
@@ -81,7 +81,7 @@ order:
 
         ## Showing How This Creates a Contradiction
         
-		## #<strong>Constructing a Program For Which <code>Halts?</code> Won't Work</strong>
+		### <strong>Constructing a Program For Which <code>Halts?</code> Won't Work</strong>
 		<p>
             To prove there can be no such function, we need to create a contradiction. We need to show that there has to be at least one function and one input to that function for which <code>halts?</code> fails to work the way we assumed it does. So, we can make up a block, <code>tester</code>, specifically for the purpose of breaking <code>halts?</code>:<br />
             <div class="sidenoteBig">
@@ -99,7 +99,7 @@ order:
             This <em>is</em> challenging. Stick with it! We are <em>creating a contradiction</em> to prove that the <code>halts?</code> function called inside <code>tester</code> can't exist. 
         </div>
         
-        ## #<strong>Using Self-Reference to Lead to Contradiction</strong>
+        ### <strong>Using Self-Reference to Lead to Contradiction</strong>
         <p>
             To make the situation <em>exactly</em> like what Betsy said ("The statement I'm making <em>right now </em>is false."), we'll call <code>tester</code> on <em>itself</em>:<br />
             <img class="indent" src="/img/5-algorithms/testertester.png" alt="tester(tester())" title="tester(tester())" /><br />
@@ -111,7 +111,7 @@ order:
         <p class="indent"><img class="inline" src="/img/5-algorithms/halts-tester-tester-reporting-true.png" alt="halts (tester) (tester) reporting true" title="halts (tester) (tester) reporting true" /> would mean that <img class="inline" src="/img/5-algorithms/testertester.png" alt="tester(tester())" title="tester(tester())" /> returns a value.</p>
         <p class="indent"><img class="inline" src="/img/5-algorithms/halts-tester-tester-reporting-false.png" alt="halts (tester) (tester) reporting false" title="halts (tester) (tester) reporting false" /> would mean that <img class="inline" src="/img/5-algorithms/testertester.png" alt="tester(tester())" title="tester(tester())" /> loops infinitely.</p>
                 
-        ## #<strong>Understanding the Contradiction</strong>
+        ### <strong>Understanding the Contradiction</strong>
         <p>
         	When we call <img class="inline" src="/img/5-algorithms/testertester.png" alt="tester(tester())" title="tester(tester())" />, we run into the contradiction. To see how, look back at the <code>tester</code> definition:<br />
             <img class="indent" src="/img/5-algorithms/tester-halting.png" alt="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(true)}}" title="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(true)}}">
@@ -147,7 +147,7 @@ order:
         </div>
         
         <div class="endnote">
-            ## #<strong>Who first proved the Halting Theorem?</strong>
+            ### <strong>Who first proved the Halting Theorem?</strong>
             <p>Alan Turing (1912-1954) was one of the founders of computer science. He is known for two achievements. First, he made a massive contribution to winning World War II by inventing a mathematical theory and corresponding computer hardware to break the encoded messages generated by the German Enigma machine. Second, together with his colleague Alonzo Church, Turing was a founder of <em>theoretical computer science</em>: proving how computers <em>must</em> work regardless of future technology. Though his work on the Halting Problem, he proved that <em>there are computations that can never be done</em>, no matter how big and fast computers get.</p>
             <p>When Turing did this work, there were no programmable computers; people had to rewire physical machines to solve each new problem. With powerful programming languages (such as Snap<em>!</em>), we can see and understand the essence of Turing's proof much more easily because we can use functions as inputs to other functions, as you've seen with <code>map</code>, <code>keep</code>, and <code>combine</code>. This proof was even harder for Turing because he had to invent the idea of a computer program that can itself be represented as data inside the computer.</p>
         </div>

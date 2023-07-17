@@ -27,7 +27,7 @@ order: 6
 
 <p>Babbage was mainly a mathematician, but he contributed to fields as varied as astronomy and economics. Babbage lived about 150 years ago from 1791-1871. Electricity as a source of energy was unknown. The steam engine came into widespread use around the time he was born. The most precise machinery of his time was clockwork---gears.</p>
 
-## ## <strong>Difference Engine</strong>
+#### <strong>Difference Engine</strong>
 
 <p>Babbage's first computer was the Difference Engine. He used gears to design a complex machine that would compute and print tables of numbers (like the tables of log or trig functions you may have in the back of a math textbook). But these gears needed to be so precise that each one had to be handmade. The project became so expensive that the government stopped funding it, and Babbage never finished a full-scale version.</p>
 
@@ -55,7 +55,7 @@ Bad Mary. ;) We need a CSS solution for this instead of using tables. --MF, 12/4
 
 </p>
 
-## ## <strong>The Analytical Engine</strong>
+#### <strong>The Analytical Engine</strong>
 
 <p>
 
@@ -353,7 +353,7 @@ There are actually two different design issues at work in this architecture. One
 This needs some heavy edits. For example, perhaps the whole third paragraph, "One recent 64-bit x86..." could be cut. --MF, 11/8/17
 :::
 
-## ## The memory hierarchy
+#### The memory hierarchy
 
 <p>For a given cost of circuit hardware, <strong>the bigger the memory, the slower it works.</strong> For this reason, computers don't just have one big chunk of memory. There will be a small number of <em>registers</em> inside the processor itself, usually between 8 and 16 of them. The "size" (number of bits) of a data register is equal to the width of the architecture.</p>
 
@@ -361,7 +361,7 @@ This needs some heavy edits. For example, perhaps the whole third paragraph, "On
 
 <p>One recent 64-bit x86 processor has a first level (L1) cache of 64KB (thousands of bytes) inside the processor chip, a larger but slower L2 cache of 256 KB, also inside the processor, and an L3 cache of up to 2 MB (megabytes, millions of bytes) outside the processor. Each level of cache has a copy of the most recently used parts of the next level outward: the L1 cache copies part of the L2 cache, which copies part of the L3 cache, which copies part of the main memory. Data in the L1 cache can be accessed by the processor about as fast as its internal registers, and each level outward is a little slower. Hardware in the processor handles all this complexity, so that programmers can write programs as if the processor were directly connected to the main memory.</p>
 
-## ## Second sourcing
+#### Second sourcing
 
 <p>Intel licenses other chip manufacturers to build processors that use the same architecture as Intel's processors. Why do they do that? Wouldn't they make more money if people had to buy from Intel? The reason is that computer manufacturers, such as Dell, Apple, and Lenovo, won't build their systems around an architecture that is only available from one company. They're not worried that Intel will go out of business; the worry is that there may be a larger-than-expected demand for a particular processor, and Intel may not be able to fill orders on time. But if that processor is also available from other companies such as AMD and Cyrix, then a delay at Intel won't turn into a delay at Dell. Those other chip manufacturers may not use the same circuitry as the Intel version, as long as they behave the same at the architecture level.</p>
 :::
