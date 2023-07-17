@@ -457,7 +457,7 @@ ul.task-list li input[type="checkbox"] {
     
     
     ## Assuming That a &lt;code&gt;Halts?&lt;/code&gt; Function Exists
-    ## #&lt;strong&gt;Making the Assumption&lt;/strong&gt;
+    ### &lt;strong&gt;Making the Assumption&lt;/strong&gt;
     &lt;p&gt;
         &lt;div class="sidenote"&gt;We can't show the code inside &lt;code&gt;halts?&lt;/code&gt;; we are proving that it can't be written at all, no matter what code implements it.&lt;/div&gt;
         First, we &lt;em&gt;assume&lt;/em&gt; there exists a function called &lt;code&gt;halts?&lt;/code&gt; that determines whether a given reporter will report a value in a finite time. (If so, we say that the reporter &lt;em&gt;halts.&lt;/em&gt;) It takes two inputs: a function and an input value for that function. It reports &lt;code&gt;true&lt;/code&gt; if the function would report a value when given that input;  it reports &lt;code&gt;false&lt;/code&gt; if the function would run forever (in an infinite loop).&lt;br /&gt;
@@ -472,7 +472,7 @@ ul.task-list li input[type="checkbox"] {
     &lt;p class="indent"&gt;&lt;img class="inline" src="/img/5-algorithms/halts-reporting-false.png" alt="halts?(program with an infinite loop ())(foo) reporting false" title="halts?(program with an infinite loop ())(foo) reporting false" /&gt; because &lt;img class="inline" src="/img/5-algorithms/program-with-loop(foo).png" alt="program with an infinite loop (foo)" title="program with an infinite loop (foo)" /&gt; loops infinitely.&lt;/p&gt;
     
     
-    ## #&lt;strong&gt;Reviewing the Plan for the Proof&lt;/strong&gt;
+    ### &lt;strong&gt;Reviewing the Plan for the Proof&lt;/strong&gt;
     &lt;p&gt;We'll use proof by contradiction to show that the following question &lt;em&gt;can't&lt;/em&gt; be answered &lt;em&gt;in general&lt;/em&gt;:&lt;/p&gt;
     &lt;p class="center"&gt;&lt;strong&gt;Will a certain computer program, given a certain input, report a result in a finite amount of time?&lt;/strong&gt;&lt;/p&gt;
     &lt;div class="endnote"&gt;
@@ -516,7 +516,7 @@ ul.task-list li input[type="checkbox"] {
 
     ## Showing How This Creates a Contradiction
     
-    ## #&lt;strong&gt;Constructing a Program For Which &lt;code&gt;Halts?&lt;/code&gt; Won't Work&lt;/strong&gt;
+    ### &lt;strong&gt;Constructing a Program For Which &lt;code&gt;Halts?&lt;/code&gt; Won't Work&lt;/strong&gt;
     &lt;p&gt;
         To prove there can be no such function, we need to create a contradiction. We need to show that there has to be at least one function and one input to that function for which &lt;code&gt;halts?&lt;/code&gt; fails to work the way we assumed it does. So, we can make up a block, &lt;code&gt;tester&lt;/code&gt;, specifically for the purpose of breaking &lt;code&gt;halts?&lt;/code&gt;:&lt;br /&gt;
         &lt;div class="sidenoteBig"&gt;
@@ -534,7 +534,7 @@ ul.task-list li input[type="checkbox"] {
         This &lt;em&gt;is&lt;/em&gt; challenging. Stick with it! We are &lt;em&gt;creating a contradiction&lt;/em&gt; to prove that the &lt;code&gt;halts?&lt;/code&gt; function called inside &lt;code&gt;tester&lt;/code&gt; can't exist. 
     &lt;/div&gt;
     
-    ## #&lt;strong&gt;Using Self-Reference to Lead to Contradiction&lt;/strong&gt;
+    ### &lt;strong&gt;Using Self-Reference to Lead to Contradiction&lt;/strong&gt;
     &lt;p&gt;
         To make the situation &lt;em&gt;exactly&lt;/em&gt; like what Betsy said ("The statement I'm making &lt;em&gt;right now &lt;/em&gt;is false."), we'll call &lt;code&gt;tester&lt;/code&gt; on &lt;em&gt;itself&lt;/em&gt;:&lt;br /&gt;
         &lt;img class="indent" src="/img/5-algorithms/testertester.png" alt="tester(tester())" title="tester(tester())" /&gt;&lt;br /&gt;
@@ -548,7 +548,7 @@ I took out class=“indent” on this picture so that it’d fit in the window. 
     &lt;p class="indent"&gt;&lt;img class="inline" src="/img/5-algorithms/halts-tester-tester-reporting-true.png" alt="halts (tester) (tester) reporting true" title="halts (tester) (tester) reporting true" /&gt; would mean that &lt;img class="inline" src="/img/5-algorithms/testertester.png" alt="tester(tester())" title="tester(tester())" /&gt; returns a value.&lt;/p&gt;
     &lt;p class="indent"&gt;&lt;img class="inline" src="/img/5-algorithms/halts-tester-tester-reporting-false.png" alt="halts (tester) (tester) reporting false" title="halts (tester) (tester) reporting false" /&gt; would mean that &lt;img class="inline" src="/img/5-algorithms/testertester.png" alt="tester(tester())" title="tester(tester())" /&gt; loops infinitely.&lt;/p&gt;
             
-    ## #&lt;strong&gt;Understanding the Contradiction&lt;/strong&gt;
+    ### &lt;strong&gt;Understanding the Contradiction&lt;/strong&gt;
     &lt;p&gt;
         When we call &lt;img class="inline" src="/img/5-algorithms/testertester.png" alt="tester(tester())" title="tester(tester())" /&gt;, we run into the contradiction. To see how, look back at the &lt;code&gt;tester&lt;/code&gt; definition:&lt;br /&gt;
         &lt;img class="indent" src="/img/5-algorithms/tester-halting.png" alt="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(true)}}" title="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(true)}}"&gt;
@@ -584,7 +584,7 @@ I took out class=“indent” on this picture so that it’d fit in the window. 
     &lt;/div&gt;
     
     &lt;div class="endnote"&gt;
-        ## #&lt;strong&gt;Who first proved the Halting Theorem?&lt;/strong&gt;
+        ### &lt;strong&gt;Who first proved the Halting Theorem?&lt;/strong&gt;
         &lt;p&gt;Alan Turing (1912-1954) was one of the founders of computer science. He is known for two achievements. First, he made a massive contribution to winning World War II by inventing a mathematical theory and corresponding computer hardware to break the encoded messages generated by the German Enigma machine. Second, together with his colleague Alonzo Church, Turing was a founder of &lt;em&gt;theoretical computer science&lt;/em&gt;: proving how computers &lt;em&gt;must&lt;/em&gt; work regardless of future technology. Though his work on the Halting Problem, he proved that &lt;em&gt;there are computations that can never be done&lt;/em&gt;, no matter how big and fast computers get.&lt;/p&gt;
         &lt;p&gt;When Turing did this work, there were no programmable computers; people had to rewire physical machines to solve each new problem. With powerful programming languages (such as Snap&lt;em&gt;!&lt;/em&gt;), we can see and understand the essence of Turing's proof much more easily because we can use functions as inputs to other functions, as you've seen with &lt;code&gt;map&lt;/code&gt;, &lt;code&gt;keep&lt;/code&gt;, and &lt;code&gt;combine&lt;/code&gt;. This proof was even harder for Turing because he had to invent the idea of a computer program that can itself be represented as data inside the computer.&lt;/p&gt;
     &lt;/div&gt;

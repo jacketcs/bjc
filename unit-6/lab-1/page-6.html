@@ -280,7 +280,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#whats-an-architecture" id="toc-whats-an-architecture" class="nav-link active" data-scroll-target="#whats-an-architecture">What’s an Architecture?</a></li>
+  <li><a href="#the-stored-program-computer" id="toc-the-stored-program-computer" class="nav-link active" data-scroll-target="#the-stored-program-computer">The Stored Program Computer</a></li>
+  <li><a href="#whats-an-architecture" id="toc-whats-an-architecture" class="nav-link" data-scroll-target="#whats-an-architecture">What’s an Architecture?</a></li>
   </ul>
 </nav>
     </div>
@@ -323,8 +324,7 @@ Everyone talks about computers representing all data using only two values, 0 an
 <p>
 On the next four pages, we’ll explore four levels of the digital domain.
 </p>
-<div class="endnote">
-<section id="the-stored-program-computer" class="level2">
+<section id="the-stored-program-computer" class="level2 endnote">
 <h2 class="anchored" data-anchor-id="the-stored-program-computer">The Stored Program Computer</h2>
 <p>
 As you’ll see in Lab 2, there have been machines to carry out computations for thousands of years. But the modern, <em>programmable</em> computer had its roots in the work of Charles Babbage in the early 1800s.
@@ -332,9 +332,8 @@ As you’ll see in Lab 2, there have been machines to carry out computations for
 <p>
 Babbage was mainly a mathematician, but he contributed to fields as varied as astronomy and economics. Babbage lived about 150 years ago from 1791-1871. Electricity as a source of energy was unknown. The steam engine came into widespread use around the time he was born. The most precise machinery of his time was clockwork—gears.
 </p>
-</section>
-<section id="difference-engine" class="level2">
-<h2 class="anchored" data-anchor-id="difference-engine">## <strong>Difference Engine</strong></h2>
+<section id="difference-engine" class="level4">
+<h4 class="anchored" data-anchor-id="difference-engine"><strong>Difference Engine</strong></h4>
 <p>
 Babbage’s first computer was the Difference Engine. He used gears to design a complex machine that would compute and print tables of numbers (like the tables of log or trig functions you may have in the back of a math textbook). But these gears needed to be so precise that each one had to be handmade. The project became so expensive that the government stopped funding it, and Babbage never finished a full-scale version.
 </p>
@@ -368,8 +367,8 @@ In 1991, the London Science Museum completed a Difference Engine following Babba
 </div>
 <p></p>
 </section>
-<section id="the-analytical-engine" class="level2">
-<h2 class="anchored" data-anchor-id="the-analytical-engine">## <strong>The Analytical Engine</strong></h2>
+<section id="the-analytical-engine" class="level4">
+<h4 class="anchored" data-anchor-id="the-analytical-engine"><strong>The Analytical Engine</strong></h4>
 <p>
 </p><p>The Difference Engine could be used to compute many different functions by manually setting the starting position of various gears. But it had <strong>only one algorithm</strong>: the one built into the hardware design. In 1833, Babbage began working on the Analytical Engine, which was based on the general idea of the Difference Engine but <strong>could carry out instructions</strong> in a primitive programming language prepared on punched cards.<br></p>
 <div class="sidenote">
@@ -416,7 +415,7 @@ Whether or not she was truly the first programmer, historians agree that she did
 </div>
 <p></p>
 </section>
-</div>
+</section>
 <div class="takeNote">
 <p>The abstraction of <em>software</em> (a program stored in the computer’s memory) is what makes a computer usable for more than one purpose.</p>
 </div>
@@ -640,8 +639,8 @@ Like the Arduino, the Pi supports add-on circuit boards with things like sensors
 <div class="todo" style="color:grey">
 <p>This needs some heavy edits. For example, perhaps the whole third paragraph, “One recent 64-bit x86…” could be cut. –MF, 11/8/17</p>
 </div>
-<section id="the-memory-hierarchy" class="level2">
-<h2 class="anchored" data-anchor-id="the-memory-hierarchy">## The memory hierarchy</h2>
+<section id="the-memory-hierarchy" class="level4">
+<h4 class="anchored" data-anchor-id="the-memory-hierarchy">The memory hierarchy</h4>
 <p>
 For a given cost of circuit hardware, <strong>the bigger the memory, the slower it works.</strong> For this reason, computers don’t just have one big chunk of memory. There will be a small number of <em>registers</em> inside the processor itself, usually between 8 and 16 of them. The “size” (number of bits) of a data register is equal to the width of the architecture.
 </p>
@@ -652,8 +651,8 @@ The computer’s main memory, these days, is measured in GB (gigabytes, or billi
 One recent 64-bit x86 processor has a first level (L1) cache of 64KB (thousands of bytes) inside the processor chip, a larger but slower L2 cache of 256 KB, also inside the processor, and an L3 cache of up to 2 MB (megabytes, millions of bytes) outside the processor. Each level of cache has a copy of the most recently used parts of the next level outward: the L1 cache copies part of the L2 cache, which copies part of the L3 cache, which copies part of the main memory. Data in the L1 cache can be accessed by the processor about as fast as its internal registers, and each level outward is a little slower. Hardware in the processor handles all this complexity, so that programmers can write programs as if the processor were directly connected to the main memory.
 </p>
 </section>
-<section id="second-sourcing" class="level2">
-<h2 class="anchored" data-anchor-id="second-sourcing">## Second sourcing</h2>
+<section id="second-sourcing" class="level4">
+<h4 class="anchored" data-anchor-id="second-sourcing">Second sourcing</h4>
 <p>
 Intel licenses other chip manufacturers to build processors that use the same architecture as Intel’s processors. Why do they do that? Wouldn’t they make more money if people had to buy from Intel? The reason is that computer manufacturers, such as Dell, Apple, and Lenovo, won’t build their systems around an architecture that is only available from one company. They’re not worried that Intel will go out of business; the worry is that there may be a larger-than-expected demand for a particular processor, and Intel may not be able to fill orders on time. But if that processor is also available from other companies such as AMD and Cyrix, then a delay at Intel won’t turn into a delay at Dell. Those other chip manufacturers may not use the same circuitry as the Intel version, as long as they behave the same at the architecture level.
 </p>

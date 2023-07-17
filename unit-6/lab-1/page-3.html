@@ -281,9 +281,6 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#high-level-and-low-level-languages" id="toc-high-level-and-low-level-languages" class="nav-link active" data-scroll-target="#high-level-and-low-level-languages">High-Level and Low-Level Languages</a></li>
-  <li><a href="#why-do-programmers-use-high-level-languages" id="toc-why-do-programmers-use-high-level-languages" class="nav-link" data-scroll-target="#why-do-programmers-use-high-level-languages">## <strong>Why do programmers use high-level languages?</strong></a></li>
-  <li><a href="#why-do-programmers-use-low-level-languages" id="toc-why-do-programmers-use-low-level-languages" class="nav-link" data-scroll-target="#why-do-programmers-use-low-level-languages">## <strong>Why do programmers use low-level languages?</strong></a></li>
-  <li><a href="#what-is-machine-language" id="toc-what-is-machine-language" class="nav-link" data-scroll-target="#what-is-machine-language">## <strong>What is machine language?</strong></a></li>
   <li><a href="#code-readability" id="toc-code-readability" class="nav-link" data-scroll-target="#code-readability">Code Readability</a></li>
   <li><a href="#parallelism" id="toc-parallelism" class="nav-link" data-scroll-target="#parallelism">Parallelism</a></li>
   </ul>
@@ -342,9 +339,8 @@ Some languages have very narrow purposes; these are called <em>special-purpose</
 <p>
 A <em>high-level language</em> (like Snap<em>!</em> or Scheme) includes many built-in abstractions that make it easier to focus on the problem you want to solve rather than on how computer hardware works. A <em>low-level language</em> (like C) has fewer abstractions, requiring you to know a lot about your computer’s architecture to write a program.
 </p>
-</section>
-<section id="why-do-programmers-use-high-level-languages" class="level2">
-<h2 class="anchored" data-anchor-id="why-do-programmers-use-high-level-languages">## <strong>Why do programmers use high-level languages?</strong></h2>
+<section id="why-do-programmers-use-high-level-languages" class="level4">
+<h4 class="anchored" data-anchor-id="why-do-programmers-use-high-level-languages"><strong>Why do programmers use high-level languages?</strong></h4>
 <p>
 High-level languages can produce <em>safer</em> programs—ones that are less likely to have bugs—because the abstractions manage messy details that can trip up programmers.
 </p>
@@ -428,8 +424,8 @@ You learned about <code>combine</code> in <a href="../../cur/programming/2-compl
 In C, you can do this the long way:<br> <img src="../../img/6-computers/hard-way.png" title="script variables (result) (index); set result to (list); set index to (0); repeat (length of (words)){ change index by (1); add (join (item (index) of (words)) s) to (result)}; report (result)" alt="script variables (result) (index); set result to (list); set index to (0); repeat (length of (words)){ change index by (1); add (join (item (index) of (words)) s) to (result)}; report (result)" class="indent"><br> but C doesn’t let you take an expression (like <img src="../../img/6-computers/join-with-s.png" title="join () (s)" alt="join () (s)" class="inline"> or <img src="../../img/6-computers/5-times-blank-plus-7.png" title="((5) × ( )) + (7)" alt="((5) × ( )) + (7)" class="inline">) and stick it into a higher-order function like <code>map</code>:<br> <img src="../../img/6-computers/map-s.png" title="report (map (join () (s)) over (words))" alt="report (map (join () (s)) over (words))" class="indent">
 </p>
 </section>
-<section id="why-do-programmers-use-low-level-languages" class="level2">
-<h2 class="anchored" data-anchor-id="why-do-programmers-use-low-level-languages">## <strong>Why do programmers use low-level languages?</strong></h2>
+<section id="why-do-programmers-use-low-level-languages" class="level4">
+<h4 class="anchored" data-anchor-id="why-do-programmers-use-low-level-languages"><strong>Why do programmers use low-level languages?</strong></h4>
 <p>
 The best reason to use low-level languages is to write operating systems (like Windows, Mac OS X, Android, or iOS). You’ll learn more about Operating systems on the <a href="../../cur/programming/6-computers/1-abstraction/05-software-OS.html?topic=nyc_bjc%2F6-how-computers-work.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="The Software Domain: Operating Systems">The Software Domain: Operating Systems</a> page.
 </p>
@@ -462,8 +458,8 @@ Brian thinks that Michael would not have this concern if the link was still, “
 </div>
 </div>
 </section>
-<section id="what-is-machine-language" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-machine-language">## <strong>What is machine language?</strong></h2>
+<section id="what-is-machine-language" class="level4">
+<h4 class="anchored" data-anchor-id="what-is-machine-language"><strong>What is machine language?</strong></h4>
 <p>
 Both high- and low-level languages are used by <em>people</em> to write computer programs. Computer hardware understands a sort of ultra-low-level language, called <em>machine language.</em> Special programs called <em>compilers</em> and <em>interpreters</em> are used to translate human programming languages into machine language to be run by the computer.
 </p>
@@ -592,6 +588,7 @@ Low-level language programs are generally harder to debug than programs written 
 </li>
 </ol>
 </div>
+</section>
 </section>
 <section id="code-readability" class="level2">
 <h2 class="anchored" data-anchor-id="code-readability">Code Readability</h2>
