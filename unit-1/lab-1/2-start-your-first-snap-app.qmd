@@ -179,10 +179,38 @@ Where the <code>wait</code> block goes in your script matters. Do you want the s
 
 <li><img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline"/></li>
 
+<li>
+
+```{=html}
+<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkpoint">
+    Checkpoint: Fill out this Google Form
+</button>
+
+<div class="modal fade" id="checkpoint" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclBVnTClsKqL3h5aVil7EjVhRw5OkNGfMjaFlEgMdo-mIv7Q/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" height="613">Loading…</iframe>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+    </div>
+  </div>
+</div>
+```
+
+</li>
+
 </ol>
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclBVnTClsKqL3h5aVil7EjVhRw5OkNGfMjaFlEgMdo-mIv7Q/viewform?embedded=true" width="640" height="613" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
 :::
+
+
+
+
 
 </body>
 
