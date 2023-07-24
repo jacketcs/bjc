@@ -427,6 +427,27 @@
     "text": "On this page, you will use for loops not only to repeat, but also to count the repetitions and then use that counter to draw shapes with repeated patterns:  \n\n\n\nYou’ve seen these ways to repeat a set of commands:\n\n\nThe forever block generates an infinite loop that goes on forever. An infinite loop can sometimes be the result of a bug, but in some interactive programs, you want the program to keep running until stopped by the user.\n\n\n repeats the same commands forever. (You used it to make Alonzo keep moving in Unit 1 Lab 1 Page 3: Make It a Game.)\n\n\n repeats them a specific number of times. (You used it to draw shapes in Unit 1 Lab 3 Page 1: Exploring Motion.)\n\n\n\n\n\n: Iteration\n\nAAP-2.J.1\n\n\nComputer scientists describe a repeating program structure as looping, repetition, or iteration.\n\n\nAAP-2.K.1\n\n\nThe code can be repeated forever, a specific number of times (such as when using repeat), or until something specific happens (such as when using repeat until as you’ll see in Lab 5).   \n\n\n\nSometimes the script inside a loop needs to know which time through the loop it’s in (first, second, etc.). You can use  to keep track, and you can use its counter (the default name is ) in the repeated script. For example, the for block lets you simplify long scripts like:  \n      to\n\n\n\nEach time the for block runs the script inside, it changes the value of the counter by 1, beginning with the first input number and ending after the second.\n\n\nThe for block’s default counter name,  stands for “index.” You can change this name by clicking it. To use the counter, drag it into the script.\n\n\n\n\nBuild this script that makes the sprite say the numbers 1 through 10.  \n\n\nThen modify it so that the sprite says 0, 2, 4, 6, 8, … up through 30.\n\n\nDiscuss your solutions with another pair.\n\n\n\n\nExperiment with spirals.\n\n\nBuild this script and try it out:\n\nThis design got the nickname “squiral” because it’s a square spiral.\n\n\n\n\n Make sure you can explain why the squiral spirals outward.\n\n\nTry switching the order of the 100 and the 1 in the for block in the squiral script. What is the result?\n\n\nTry changing the turning angle in the squiral script to other numbers such as 92, 126, etc.\n\n\nChange the inputs to turn and move to get as close as you can get to a smooth spiral: \n\n\n\n\n\n“U1L3-Squiral”\n\n\n\nOpen your U1L3-Pinwheel project, and build a nest squares block that uses for and your polygon block to draw nested squares. Give it an input so that it will draw whatever number of squares you specify, with each square larger than the previous:  \n\n\n\n\n\n\nBuild nest polygons that accepts the number of polygons and the number of sides for the polygons.\n\n\nBuild a script that draws 12 regular polygons, each with one more side than the previous one, as shown below. \n\n\nPredict what this script will do before you try it:\n\n\nBuild a script that counts down by 10 from 100 to 0 (that is, 100, 90, 80, etc.).\n\n\n\n\nBelow are two animations that use the pinwheel code with inputs. Find out how to create your own artistic animations.  \n\n\nThe following code may give you ideas about how to create animations. The warp block allows the drawing of the pinwheel all at once.\n\n\n\n\n\n\nMake sure your other work has been saved, then Experiment with the script. Could you change the sizes or colors to make it more interesting?\n\n\n\n\n\n\n                     \n\n\n\n\nFind a way to use for to nest squares this way. Build your block with two inputs that let you specify how many squares the design will contain and how much bigger each square will be than the previous one.  \n\n\n\n\nOn the right is a painting by Josef Albers. He was interested in experimenting with variations of color within a “family” of similar colors. Snap! will let you make similar experiments.\n\n\n\nWhat is the favorite color of the author of this activity?\n\n\nIf you didn’t do the Take It Further activity based on this Kazimir Malevich picture  then read it now to learn about Snap! features for solid rectangles and color families.\n\n\nIf you haven’t already, do If There Is Time #10, which shows a simple version of this project idea.\n\n\nOkay, now dig in.\n\nRandomness: The four examples above are different from the actual Albers picture in that they include occasional colors that aren’t from the same family. This can make the pictures more interesting to someone who doesn’t share Albers’s interest in subtle differences in color. (Albers himself, in fact, had more color variation in other pictures of this type.) Too much randomness, though, can make the picture less interesting. Compare the last two examples above; the left one of those two is clearly based on the orange family, with rainbow-neighbors red and yellow, but the right one has violets, greens, oranges, a yellow—too much chaos, maybe. Look back at the Gossip project if you don’t remember how to choose something special once out of six times, or once out of 14 times. Other random choices you can make are the number of squares, how much to shrink the size from one square to the next, and how much to move the corner of the next square horizontally and vertically (the picture is more interesting if those two numbers are different, so the smallest square isn’t exactly in the center).\n\n\n\n   This block is like the squiral, but instead of changing the input to move, it changes the input to turn: \n\n\nTry sketching what it will draw with an angle of 2.\n\n\nThen build it, and try each of these tests:\n\nYou can stop each test with the stop button  when you’re sure nothing new will happen, but don’t decide that too quickly!\n\n\n\n\n\nWhat’s going on? Can you work out a theory to predict anything about the shape it draws for a particular angle input? (Don’t click unless you need a big hint.)\n\nHint: Think about divisibility."
   },
   {
+    "objectID": "unit-1/lab-1/steps/2a.html",
+    "href": "unit-1/lab-1/steps/2a.html",
+    "title": "BHS AP CSP",
+    "section": "",
+    "text": "Make sure either you or your partner is logged in to Snap! so you can save your work"
+  },
+  {
+    "objectID": "unit-1/lab-1/steps/2a.html#dfgdfg",
+    "href": "unit-1/lab-1/steps/2a.html#dfgdfg",
+    "title": "BHS AP CSP",
+    "section": "",
+    "text": "Make sure either you or your partner is logged in to Snap! so you can save your work"
+  },
+  {
+    "objectID": "unit-1/lab-1/steps/2a.html#ffgdfg",
+    "href": "unit-1/lab-1/steps/2a.html#ffgdfg",
+    "title": "BHS AP CSP",
+    "section": "ffgdfg",
+    "text": "ffgdfg\ntestt\nImages as links don’t work:"
+  },
+  {
     "objectID": "unit-1/lab-1/4-keeping-score.html#confirming-whether-alonzo-was-clicked",
     "href": "unit-1/lab-1/4-keeping-score.html#confirming-whether-alonzo-was-clicked",
     "title": "Giving the Player Feedback",
@@ -459,28 +480,28 @@
     "href": "unit-1/lab-1/1-creating-a-snap-account.html",
     "title": "Getting Started with Snap!",
     "section": "",
-    "text": "In this lab, you’ll program an app that you can share with others and play on your phone.\n\n\nOn this page, you’ll learn how to create your own account and how to log in and out."
+    "text": "In this lab, you’ll program an app that you can share with others and play on your phone.\nOn this page, you’ll learn how to create your own account and how to log in and out."
   },
   {
     "objectID": "unit-1/lab-1/1-creating-a-snap-account.html#creating-an-account",
     "href": "unit-1/lab-1/1-creating-a-snap-account.html#creating-an-account",
     "title": "Getting Started with Snap!",
     "section": "Creating an Account",
-    "text": "Creating an Account\n\n\n\n\nIf you haven’t already opened snap, open it now: http://snap.berkeley.edu/run\n\n\nIn the Snap! window, click the Cloud menu, , select “Signup…”, and follow the instructions.  \n\n\n\nYou’ll be asked to click a link in your email to verify your account, but you don’t have to do that right now.\n\n\nYou may change your password at any time using the Cloud menu, ."
+    "text": "Creating an Account\n\n\nIf you haven’t already opened snap, open it now: http://snap.berkeley.edu/run\n\n\n\nIn the Snap! window, click the Cloud menu, , select “Signup…”, and follow the instructions.  \n\n\nYou’ll be asked to click a link in your email to verify your account, but you don’t have to do that right now.\nYou may change your password at any time using the Cloud menu, ."
   },
   {
     "objectID": "unit-1/lab-1/1-creating-a-snap-account.html#logging-in-to-and-out-of-your-snap-account",
     "href": "unit-1/lab-1/1-creating-a-snap-account.html#logging-in-to-and-out-of-your-snap-account",
     "title": "Getting Started with Snap!",
-    "section": "Logging In to and Out of Your Snap! Account",
-    "text": "Logging In to and Out of Your Snap! Account\n\n\nYou should be logged in whenever you are in Snap!. Here’s how to check if you are logged in:\n\n\n\nClick the Cloud menu in the tool-bar.\n\n\nIf it says “Logout” and your user name, then you are already logged in.\n\n\nIf it says someone else’s user name, then log them out and log in with your own user name.\n\n\nOtherwise, choose “Login…” and enter your user name and password.\n\n\n\n\nClick NEXT (on the top right of this web page) to continue.\n\nRemember to log out of Snap! (using the Cloud menu) when you are done."
+    "section": "Logging In to and Out of Your Snap! Account",
+    "text": "Logging In to and Out of Your Snap! Account\n\nYou should be logged in whenever you are in Snap!. Here’s how to check if you are logged in:\n\nClick the Cloud menu in the tool-bar.\n\nIf it says “Logout” and your user name, then you are already logged in.\nIf it says someone else’s user name, then log them out and log in with your own user name.\nOtherwise, choose “Login…” and enter your user name and password.\n\nClick to the next page to continue (navigation at the bottom of the page, or the left side bar)\n\n\nRemember to log out of Snap! (using the Cloud menu) when you are done."
   },
   {
     "objectID": "unit-1/lab-1/2-start-your-first-snap-app.html#making-a-character-move",
     "href": "unit-1/lab-1/2-start-your-first-snap-app.html#making-a-character-move",
     "title": "Programming a Game",
     "section": "Making a Character Move",
-    "text": "Making a Character Move\n\n\n\nMake sure either you or your partner is logged in to Snap! so you can save your work.\n\n\n\n\nSaving a Snap! Project\n\nChoose “Save” from the Snap! File menu, .\n\n\n\n\n\n\n This is Alonzo, the mascot of our programming language, Snap!. You should see him on the stage, the white area in the top right corner of the Snap! window.\n\n\n\n\n\nYou’re going to program a game in which the goal is to click on Alonzo as he’s moving around.\n\n\n\n\n\nAs a first step, make Alonzo jump someplace else on the stage when he’s clicked. Drag these two blocks into the scripting area (the center area of the window):\n\n\n\nYou can find blocks in palettes with their matching color. Drag one block underneath another to snap them together.\n\n\n \n\nCRD-2.B.1\n\n\nThis is a computer program, also known as software. It’s a very short one, but it’ll get more interesting soon.\n\n\n\nTest your program: Click on the Alonzo sprite on the stage several times. If your program works, Alonzo should move to a random position on the stage each time you click him.\n\n\nIf your program doesn’t work, look back at the picture of the code and make sure yours matches exactly.\n\n\nMake sure the two blocks are attached to each other by moving the when I am clicked block and checking that the go to block moves with it.\n\n\nMake sure that the first block says when I am (clicked) and not something else, and make sure that the second block says go to (random position) and not something else.\n\n\n\n\n\n\n\n\nOrange boxes contain the ideas you should still remember three years from now.\n\n  \n\nCRD-2.C.2, CRD-2.C.3, CRD-2.C.5\n\n\nBlocks that look like this can be used to detect an event such as clicking on the sprite, pressing a key, or clicking the green flag button (). They tell the script to start when that event occurs. Because these blocks can sit only on top of a script (as a way to start the script), Snap! programmers call them “hat blocks.” Using events to control a program is called event-driven programming.\n\n\nNot every script needs a hat block; you can also run a script by clicking on it.\n\n\n\n\n\nFind when I am (clicked) and when (space) key pressed in the yellow Control palette, and see what other choices are in their drop-down menus.\n\n\n\n\nIt’s a good idea to save your project every so often.\n\n\n\n\nChoose “Save” from the Snap! File menu, ."
+    "text": "Making a Character Move\n\nNative slides:\n\nGoogle slides:\n\n\n\n\n\nOrange boxes contain the ideas you should still remember three years from now.\n\n  \n\nCRD-2.C.2, CRD-2.C.3, CRD-2.C.5\n\n\nBlocks that look like this can be used to detect an event such as clicking on the sprite, pressing a key, or clicking the green flag button (). They tell the script to start when that event occurs. Because these blocks can sit only on top of a script (as a way to start the script), Snap! programmers call them “hat blocks.” Using events to control a program is called event-driven programming.\n\n\nNot every script needs a hat block; you can also run a script by clicking on it.\n\n\n\n\n\nFind when I am (clicked) and when (space) key pressed in the yellow Control palette, and see what other choices are in their drop-down menus.\n\n\n\n\nIt’s a good idea to save your project every so often.\n\n\n\n\nChoose “Save” from the Snap! File menu, ."
   },
   {
     "objectID": "unit-1/lab-1/2-start-your-first-snap-app.html#making-the-game-challenging",
@@ -1377,5 +1398,47 @@
     "title": "The Software Domain: Operating Systems",
     "section": "The Kernel",
     "text": "The Kernel\n\nThe kernel deals directly with hardware (keyboard, mouse, microphone, camera, hard drives, memory, printer, speakers, screen, etc.). So the kernel is generally written in a low level language so it can control that hardware. It handles several important tasks:\n\n\nScheduling. The kernel has access to the time clock that’s built into the hardware and lets each program run for a small amount of time (typically about 1/10 second) and then switches to the next program in line.\n\n\nSecurity. Those many application programs may have bugs or malicious code. The kernel, which has access to the memory where programs and data are stored, ensures that each program is assigned a separate location in memory and doesn’t interfere with other programs. The kernel also controls which data files a program can use based on file protection settings that users or applications specify for each file.\n\n\nInput and output. Many devices can be attached to your computer. The kernel knows how the computer’s hardware reads or writes to each device. Only the kernel is allowed direct access to these devices, and it carries out authorized transfers of information for the applications.\n\n\n\n\nThese days, OS kernels are remarkably similar. Of the five systems listed earlier (Linux, macOS, Windows, Android, and iOS), four of them (all but Windows) are based on variants of a single kernel, called Unix.\n\n\nRead more about Unix.\n\n\n\nThis still needs editing. If we find a way to cut this back, more students will actually read it. –MF, 11/8/17\n\n\n(“Unix” is a trademark, currently owned by The Open Group, and not all of the variants discussed here are authorized to use that name, but they all provide essentially the same program interface.) Unix was created around 1970 by Ken Thompson and Dennis Ritchie at AT&T Bell Laboratories.\n\n\nPrior to Unix, almost everyone thought that an operating system had to be developed for a particular computer architecture, and had to be written in the machine language of that computer, the very low-level instructions that the hardware understands directly. The first version of Unix was also written in the machine language of a particular computer, the Digital Equipment Corporation PDP-7. But the Unix developers knew that the PDP-7 wasn’t the only computer in the world, and better ones would come along, so they wanted to make Unix portable, meaning that it could be brought to a new computer architecture without a complete rewrite. So in 1972 Dennis Ritchie invented the C programming language for that purpose. C is similar to other languages available at the time, but with one added feature: a C programmer can read or write any individual byte of the program’s memory by knowing its address, a number that distinguishes it from other bytes. (You can see that this feature is quite the opposite from high level abstraction. It is useful only to a programmer who’s thinking in detail about what’s where in the computer’s memory.) Unix was then rewritten in C.\n\n\nBecause of its portability, Unix spread quickly to many computer architectures. Researchers at Berkeley developed a version, based on the AT&T version, with virtual memory, the ability to run a program that’s only partly in the computer’s main memory, with the rest kept on a disk. This Berkeley version is an ancestor of Apple’s operating systems, macOS (since macOS 10.0) and iOS. (An Apple computer doesn’t behave anything like a Unix computer, but the differences are almost all in application-level programs, not in the kernel.) Android, Google’s operating system for cell phones and tablets, is based on Linux, a complete rewrite of Unix originally written by Linus Torvalds, who was, at the time, a computer science student in Finland.\n\n\nThe application-level programs that were part of the original Unix package have, in most systems, been replaced with rewritten programs from the Free Software Foundation’s GNU (an acronym for Gnu’s Not Unix) package."
+  },
+  {
+    "objectID": "templates/steps/slide_temp.html",
+    "href": "templates/steps/slide_temp.html",
+    "title": "You can delete this field if you don’t want a time",
+    "section": "",
+    "text": "And this is part of the body of the slide\nEverything that you need to know is here https://quarto.org/docs/presentations/revealjs/."
+  },
+  {
+    "objectID": "templates/steps/slide_temp.html#this-creates-a-new-slide",
+    "href": "templates/steps/slide_temp.html#this-creates-a-new-slide",
+    "title": "You can delete this field if you don’t want a time",
+    "section": "",
+    "text": "And this is part of the body of the slide\nEverything that you need to know is here https://quarto.org/docs/presentations/revealjs/."
+  },
+  {
+    "objectID": "templates/steps/slide_temp.html#create-another-slide",
+    "href": "templates/steps/slide_temp.html#create-another-slide",
+    "title": "You can delete this field if you don’t want a time",
+    "section": "Create another slide",
+    "text": "Create another slide\n\nAnd you can create an ordered list by just adding a number like this\nand this\nand this…\n\n\nUnordered lists just use this -\nAnd again…"
+  },
+  {
+    "objectID": "templates/lab_temp.html",
+    "href": "templates/lab_temp.html",
+    "title": "Getting Started with Snap!",
+    "section": "",
+    "text": "Create a red box by using the learn tag after enclosing the section with :::. ::: is just Quarto markdown specific syntax to create a &lt;div&gt;\nforYouToDo, ifTime, dialogue, takeItFurther, takeNote, endnote, narrower, narrowblue, narrowpurple, time, learn are all possible classes for you to use for the divs\nBesides things copied directly from BJC such as the original HTML code, we should try to use Markdown syntax for things like creating lists, links, images, etc. Unless the Markdown syntax prevents us from adding a feature, this is what I recommend.\nWe can add a slide by creating a separate qmd file in the same directory as lab that we want it on (create a steps folder and place all slides in that folder; files should be named simply so that we can know which page they belong to, see unit-1, lab-1 for an example)\nThis is how we can embed the slide in.\nNotice how we can use the relative address of the file and that we have to explicitly use .html instead of the source file that is actually .qmd. (So, always create a .qmd file and if you’re adding it as a slide, say it’s .html when you’re embedding it)"
+  },
+  {
+    "objectID": "templates/lab_temp.html#creating-an-account",
+    "href": "templates/lab_temp.html#creating-an-account",
+    "title": "Getting Started with Snap!",
+    "section": "Creating an Account",
+    "text": "Creating an Account\n\n\n\n\nIf you haven’t already opened snap, open it now: http://snap.berkeley.edu/run\n\n\nIn the Snap! window, click the Cloud menu, , select “Signup…”, and follow the instructions.  \n\n\n\nYou’ll be asked to click a link in your email to verify your account, but you don’t have to do that right now.\n\n\nYou may change your password at any time using the Cloud menu, ."
+  },
+  {
+    "objectID": "templates/lab_temp.html#logging-in-to-and-out-of-your-snap-account",
+    "href": "templates/lab_temp.html#logging-in-to-and-out-of-your-snap-account",
+    "title": "Getting Started with Snap!",
+    "section": "Logging In to and Out of Your Snap! Account",
+    "text": "Logging In to and Out of Your Snap! Account\n\n\nYou should be logged in whenever you are in Snap!. Here’s how to check if you are logged in:\n\n\n\nClick the Cloud menu in the tool-bar.\n\n\nIf it says “Logout” and your user name, then you are already logged in.\n\n\nIf it says someone else’s user name, then log them out and log in with your own user name.\n\n\nOtherwise, choose “Login…” and enter your user name and password.\n\n\n\n\nClick NEXT (on the top right of this web page) to continue.\n\nRemember to log out of Snap! (using the Cloud menu) when you are done."
   }
 ]

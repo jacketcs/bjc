@@ -11,7 +11,7 @@ llab.loaded = llab.loaded || {};
 
 
 /////////////////
-llab.hostDomain = "https://camp.echa.ng"
+llab.hostDomain = "https://bjc.jacketcs.net"
 llab.snapRunURLBase = "https://snap.berkeley.edu/snap/snap.html#open:";
 llab.snapRunURLBaseVersion = "https://snap.berkeley.edu/versions/VERSION/snap.html#open:";
 
@@ -23,7 +23,7 @@ llab.snapRunURLBaseVersion = "https://snap.berkeley.edu/versions/VERSION/snap.ht
 llab.getSnapRunURL = function(targeturl, options) {
     if (!targeturl) { return ''; }
 
-    if (targeturl.indexOf(window.location.host) == -1 || targeturl.indexOf('//') == 0) {
+    if (targeturl.indexOf(window.location.hostname) == -1) {
         // pointing to some non-local resource... do nothing!!
         return targeturl;
     }
