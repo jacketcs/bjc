@@ -1,0 +1,84 @@
+---
+title: "Getting Started with Snap<em>!</em>"
+subtitle: "Unit 1, Lab 1, Page 1"
+order: 1
+slide-format: revealjs
+---
+
+::: learn
+Create a red box by using the `learn` tag after enclosing the section with `:::`. `:::` is just Quarto markdown specific syntax to create a `<div>`
+:::
+
+::: forYouToDo
+`forYouToDo` places the section in the green outline "for students to do".
+:::
+
+`forYouToDo`, `ifTime`, `dialogue`, `takeItFurther`, `takeNote`, `endnote`, `narrower`, `narrowblue`, `narrowpurple`, `time`, `learn` are all possible classes for you to use for the `div`s
+
+Besides things copied directly from BJC such as the original HTML code, we should try to use [Markdown syntax](https://www.markdownguide.org/cheat-sheet/) for things like creating lists, links, images, etc. Unless the Markdown syntax prevents us from adding a feature, this is what I recommend.
+
+We can add a slide by creating a separate `qmd` file in the same directory as lab that we want it on (create a `steps` folder and place all slides in that folder; files should be named simply so that we can know which page they belong to, see unit-1, lab-1 for an example)
+
+This is how we can embed the slide in.
+
+```{=html}
+<iframe class="slide-deck" src="steps/slide_temp.html"></iframe>
+```
+
+Notice how we can use the relative address of the file and that we have to explicitly use `.html` instead of the source file that is actually `.qmd`. (So, always create a `.qmd` file and if you're adding it as a slide, say it's `.html` when you're embedding it)
+
+## Creating an Account
+
+::: {#first .forYouToDo}
+<img src="/img/sys/dialog-cloud-signup.png" title="signing up for the cloud" alt="signing up for the cloud" class="imageRight"/>
+
+<ol>
+
+<li>If you haven't already opened [snap]{.snap}, open it now: <a href="http://snap.berkeley.edu/run" title="Snap! Build Your Own Blocks" target="_blank"><strong>http://snap.berkeley.edu/run</strong></a></li>
+
+<li>In the Snap<em>!</em> window, click the Cloud menu, <img src="/img/1-introduction/cloud_button.png" title="Cloud menu button" alt="Cloud menu button"/>, select "Signup...", and follow the instructions. <br /> <img src="/img/sys/button-cloud-with-context.png" title="cloud icon" alt="cloud icon" class="indent"/></li>
+
+::: endnote
+<p>You'll be asked to click a link in your email to verify your account, but you don't have to do that right now.</p>
+
+<p>You may change your password at any time using the Cloud menu, <img src="/img/1-introduction/cloud_button.png" title="Cloud menu button" alt="Cloud menu button"/>.</p>
+:::
+
+</ol>
+:::
+
+## Logging In to and Out of Your Snap<em>!</em><a name="login" class="anchor"> </a>Account
+
+::: forYouToDo
+<p>You should be logged in whenever you are in Snap<em>!</em>. Here's how to check if you are logged in:</p>
+
+<ol start="3">
+
+<li>
+
+Click the Cloud menu in the tool-bar.
+
+<ul>
+
+<li><strong>If</strong> it says "Logout" and your user name, then you are already logged in.</li>
+
+<li><strong>If</strong> it says someone else's user name, then log them out and log in with your own user name.</li>
+
+<li><strong>Otherwise</strong>, choose "Login..." and enter your user name and password.</li>
+
+</ul>
+
+</li>
+
+<li>
+
+Click NEXT (on the top right of this web page) to continue.
+
+::: endnote
+Remember to log out of Snap<em>!</em> (using the Cloud menu) when you are done.
+:::
+
+</li>
+
+</ol>
+:::

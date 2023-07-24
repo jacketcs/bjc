@@ -2,6 +2,7 @@
 title: "Programming a Game"
 subtitle: "Unit 1, Lab 1, Page 2"
 order: 2
+slide-format: revealjs
 ---
 
 {{< include /utilities/includes/gif.qmd >}}
@@ -18,7 +19,23 @@ order: 2
 
 ## Making a Character Move
 
-::: forYouToDo
+<div>
+
+Native slides:
+
+```{=html}
+<iframe class="slide-deck" src="steps/2a.html"></iframe>
+```
+
+Google slides:
+
+```{=html}
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTIchisWaWHlNE9tn2VakeLhkkCEd_qe1fWaUckd_bdf23v4ZtKE9bfysz8lUkoKODYr1G5epRRDwjM/embed" frameborder="0" class="slide-deck" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+```
+
+</div>
+
+<!-- ::: forYouToDo
 <ol>
 
 <li>Make sure either you or your partner is logged in to Snap<em>!</em> so you can save your work.</li>
@@ -55,10 +72,6 @@ order: 2
 
 <li>
 
-```{=html}
-<!--<div class="index-term" id="when I am</code>"></div>
-<div class="index-term" id="go to</code>"></div>-->
-```
 As a first step, make Alonzo jump someplace else on the stage when he's clicked. Drag these two blocks into the scripting area (the center area of the window):<br />
 
 ::: sidenoteBig
@@ -92,12 +105,8 @@ If your program doesn't work, look back at the picture of the code and make sure
 :::
 
 </ol>
-:::
+::: -->
 
-```{=html}
-<!--<div class="index-term" id="when green flag clicked</code>"></div>
-<div class="index-term" id="when key pressed</code>"></div>-->
-```
 ::: takeNote
 <p>Orange boxes contain the ideas you should still remember three years from now.</p>
 
