@@ -1,0 +1,17 @@
+---
+title: "Resources"
+author: "Ms. O'Keefe and Mr. Chang"
+order: 100
+---
+
+[Link to the Collegeboard website about the AP Exam](https://apcentral.collegeboard.org/courses/ap-computer-science-principles/exam)
+
+## Requirements
+
+- [Collegeboard Create Task Directions](https://drive.google.com/file/d/1GLuJu800yzDJiIChqauqX8Cl8E0zx9aH/view)
+- [Official Rubric](https://apcentral.collegeboard.org/media/pdf/ap22-sg-computer-science-principles.pdf)
+
+## Clarifications
+
+- Any "Chief Reader Report" from [past exam administrations](https://apcentral.collegeboard.org/courses/ap-computer-science-principles/exam/past-exam-questions)
+- [Slides on the Guidelines Breakdown](https://docs.google.com/presentation/d/1xb7R5LLkVkwQ_Dy3s3sQUIzDznFt5zeh1xJIkcBRmEU/edit#slide=id.p) that we covered in class

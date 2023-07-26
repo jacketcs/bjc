@@ -1,0 +1,10 @@
+---
+title: "Week ____ Announcements"
+author: "____"
+description: "" # should add a helpful description
+date: "8/14/2023"
+date-modified: "8/14/2023"
+draft: true # change to `false` when you want to actually render it
+---
+
+Otherwise, add any text, and remember to just follow [markdown syntax](https://www.markdownguide.org/cheat-sheet/); more specifically [quarto markdown](https://quarto.org/docs/authoring/markdown-basics.html).

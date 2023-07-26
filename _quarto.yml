@@ -9,7 +9,7 @@ project:
    - "/img/"
 
 website:
-  title: "BHS AP CSP"
+  title: "JacketCS CSP"
   page-navigation: true
   page-footer: |
     The curriculum, text, and styling on this website is adapted from [The Beauty and Joy of Computing](https://bjc.edc.org/bjc-r/)
@@ -19,8 +19,8 @@ website:
     background: primary
     search: true
     left:
-      - text: "Home"
-        file: index.qmd
+      - text: "Posts"
+        href: posts
       - text: "Labs"
         menu:
           - text: "Unit 1: Introduction to Programming"
@@ -37,6 +37,7 @@ website:
             file: unit-6/index.qmd
       - text: "Snap<em>!</em>"
         href: https://snap.berkeley.edu/snap/snap.html
+
 
   sidebar:
     - title: "Unit 1: Introduction to Programming"
@@ -57,6 +58,9 @@ website:
     - title: "Unit 6: How Computers Work"
       style: "docked"
       contents: unit-6
+    - title: "Create Task"
+      style: "docked"
+      contents: create-task
 
 
 format:

@@ -1,12 +1,60 @@
-# Introduction {.unnumbered}
+# Introduction
 
-Welcome AP Computer Science Principles at Berkeley High School, taught by Ms. O'Keefe and Mr. Chang. In this course, we'll be using a curriculum adapated from the Beauty and Joy of Computing (BJC) which was created from an existing course of the same name at Cal, CS 10.
+Welcome AP Computer Science Principles at Berkeley High School, taught by Ms. O'Keefe and Mr. Chang. 
 
-This is the website that you will be mainly be using for classwork all semester long.
+In this course, we'll be studying the big ideas of computing using the [Snap<em>!</em> programming language](https://snap.berkeley.edu/). No matter what career you choose to pursue, an understanding of computer science is becoming increasingly essential in today’s world.
 
-Through this curriculum, you will create programs using the Snap programming language, you will learn some of the most powerful ideas of computer science, and you will discuss the social implications of computing, thinking deeply about how you can be personally active in promoting the benefits and reducing the possible harms.
+We want you to have fun and learn. This course will be run as a **"lab centric" class** built on project-based learning. You will learn by writing lots of code, not by listening to me talk. There will sometimes be brief lectures near the beginning of class, but mostly your teacher will be helping you and you’ll be helping each other do the work. Working with other people is a key part of your educational experience.  *You will do most of your work paired with another person for support, and you should expect much of your learning will come from figuring out your mistakes/bugs, both on your own and together with your classmates.*
+
+# Outline of Course Objectives and Topics
+
+The AP Computer Science Principles class is a two-semester course which will prepare you for the AP Computer Science Principles Exam. This is the website that you will be mainly be using for classwork all semester long. We'll be using a curriculum adapted from the [Beauty and Joy of Computing (BJC)](http://bjc.edc.org/) which was created from an existing course of the same name at Cal, CS 10.
 
 Units 1-5 cover all of the AP CSP curriculum framework. You will be ready for the exam after completing these key units.
 
 Units 6-8 focus on the abstraction hierarchy of how computers work as well as recursion, a beautiful and powerful CS idea that goes beyond the AP CSP Framework and exam. These units are perfect to enjoy after the exam.
 
+Here are some course objectives that we will cover over the first five units:
+
+- Experience the beauty and the joy of programming
+- Understand the nature of programming as problem solving and persevering 
+- Understand the basic principles of programming 
+- Learn to code fluently in Snap! in a well-structured fashion with effective documentation and code clarity 
+- Implement algorithms using conditional and iterative control structures as well as recursion
+- Read and discuss the Blown to Bits book and current topics in computer science/technology
+- Prepare for the AP CSP exam in the Spring (exam optional)
+
+# Course Resources
+
+This website will be the main source of assignments and instructional material. [Google Classroom](https://classroom.google.com/) will be used for any other communication, notes, and materials. Students will complete most of their work on a computer in the classroom and submit it electronically via Google Classroom.
+
+# Internet Usage
+
+The use of the Internet in class is a ***PRIVILEGE***, this privilege can be revoked or suspended at any time deemed necessary as described in the BUSD Internet usage policy. All students have access to the Internet, unless otherwise specified by a parent/guardian. In addition, the Internet is to be used for educational purposes only as described in the [BUSD Acceptable Use Policy for Electronic Resources & the Internet](https://www.berkeleyschools.net/wp-content/uploads/2011/12/AUP_Student_form.pdf) which all students and parents/guardians have signed.
+
+# Computer Lab Expectations
+
+## Entering the Lab
+
+- Students may have no food or drink of any kind in the lab during class (including candy and gum, but excluding bottled water).  Students working or studying DURING LUNCH may bring their lunch to eat at the tables in the middle.
+- Be seated and working when the bell rings.
+
+## Working in the Lab
+
+- There will be no horseplay or offensive language in the lab.
+- If you and your partner have a question, ask your neighbors. If they don’t know, then put your name on the help doc and continue to try to figure it out while you wait. This class is primarily about problem solving and students are expected to be putting in effort to solve their own problems at all times. 
+- All students have a responsibility to help each other
+- All students should treat each other with respect.
+- Conversations in the lab should be primarily related to the study of computers.
+- Installation and downloading of programs is forbidden without express teacher approval.
+- When using the Internet, be sure that you are on appropriate sites. See INTERNET USAGE WARNING above.
+- Cell phones, music players, and video games are never to be used in the computer lab and should be turned off or put away and silenced. If I see your phone, I will take it for the rest of the period. If this happens repeatedly I will turn it into the OCI at the end of the period and you will have to retrieve it from there. 
+- Handle computer equipment with care.
+
+## Exiting the Lab
+
+- Leave the room as clean or cleaner than when you entered it.
+- Save all work and log off of the computer.
+- Push chairs under the tables.
+
+**Remember:** the use of the computer lab is for *educational purposes only*. If a student is using the computers during class time for something not related to the assigned work, disciplinary measures will be taken and your parents or guardians will be contacted.

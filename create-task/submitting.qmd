@@ -1,0 +1,51 @@
+---
+title: "Submitting Your Create Task"
+author: "Ms. O'Keefe and Mr. Chang"
+order: 70
+---
+
+Here are a few things to help you get started on submitting your create task. If you have any problems with these steps, ask your teacher, and we can help you through the entire technical process.
+
+## Record your Video
+
+* Follow these steps based on what you are using to record:
+    - [Chromebook](https://support.google.com/chromebook/answer/10474268)
+    - [MacOS](https://support.apple.com/en-us/HT208721)
+    - [Windows 11](https://www.microsoft.com/en-us/windows/learning-center/how-to-record-screen-windows-11)
+
+* Make sure that you can meet these requirements for the video:
+    1. Your video must demonstrate your program running, including: 
+        - [ ] Input to your program 
+        - [ ] At least one aspect of the functionality of your program 
+        - [ ] Output produced by your program 
+    1. Your video may NOT contain: 
+        - [ ] Any distinguishing information about yourself 
+        - [ ] Voice narration (though text captions are encouraged) 
+    1. Your video must be: 
+        - [ ] Either `.mp4`, `.wmv`, `.avi`, `.mov`, or `.webm` format 
+        - [ ] **No more than 1 minute** in length 
+        - [ ] **No more than 30MB** in file size
+
+## Export your Program Code
+
+1. Open your Snap! project
+1. Go to the file icon and click on export summary
+1. It will download a `.html` file
+1. Open it in your browser and print it to `.pdf`.
+    - Make sure you can see all the code by scaling the contents of the file (`More settings > Scale`)
+1. See the attached video on how to do this on Chrome. (Including removing your name)
+1. If your name is at the top and/or bottom of the page, just unclick the headers/footer setting (More settings)
+
+## Submit
+
+### AP Exam
+
+1. Go to [myap.collegeboard.org](https://myap.collegeboard.org/)
+1. Under AP Computer Science Principles, go to the "Digital Portfolio"
+1. You can submit all your materials there. Only click on the "submit final" buttons if you are sure that you are done. Any other "submit" buttons are not final submissions
+    - For the program code, upload the pdf that you made before.
+    - For the write up, copy and paste all your responses to the web page
+    - For the video, upload the video
+
+### Google Classroom
+For everyone in Google Classroom, you need to upload the video to the Google Classroom submission, make sure you submit the right write-up as a Google Doc, and submit the link to your Snap Project.
