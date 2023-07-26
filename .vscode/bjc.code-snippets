@@ -1,0 +1,59 @@
+{
+	// Place your bjc workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Checkpoint modal": {
+		"prefix": "bjc",
+		"body": [
+			"<button type='button' class='btn btn-danger' data-bs-toggle='modal' data-bs-target='#checkpoint'>",
+			"\tCheckpoint: Fill out this Google Form",
+			"</button>",
+			"",
+			"<div class='modal fade' id='checkpoint' tabindex='-1' role='dialog'>",
+			"<div class='modal-dialog modal-fullscreen'>",
+			"\t<div class='modal-content'>",
+			"\t\t<div class='modal-header'>",
+			"\t\t\t<button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>",
+			"\t\t</div>",
+			"\t\t<iframe src='${0:form_embed_link}' frameborder='0' marginheight='0' marginwidth='0' height='613'>Loading…</iframe>",
+			"\t\t<div class='modal-footer'>",
+			"\t\t\t<button type='button' class='btn btn-danger' data-bs-dismiss='modal'>Close</button>",
+			"\t\t</div>",
+			"\t</div>",
+			"</div>",
+			"</div>"
+		],
+		"description": "Modal checkpoint"
+	},
+	"Save work": {
+		"prefix": "bjc",
+		"body": "<img src='/img/icons/save-now.png' title='Save your work' alt='Save your work' class='inline'/>",
+		"description": "Add a save now graphic"
+	},
+	"Giffer include": {
+		"prefix": "bjc",
+		"body": "{{< include /utilities/includes/gif.qmd >}}",
+		"description": "Add qmd code to include the giffer code"
+	},
+	"To Do": {
+		"prefix": "div",
+		"body": [
+			"::: {.forYouToDo}",
+			"${0:text}",
+			":::"
+		]
+	}
+}

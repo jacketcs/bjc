@@ -2,9 +2,6 @@
 title: "The Digital Domain: Components"
 subtitle: "Unit 6, Lab 1, Page 7"
 order: 7
-editor: 
-  markdown: 
-    wrap: 72
 ---
 
 ::: todo
@@ -46,7 +43,7 @@ used for both.</p>
 
 <li>Hover the mouse over the numbers to learn about each of the computer
 components. (Or download this
-<a href="/cur/programming/6-computers/1-abstraction/ComputerComponents.pdf" target="_blank" title="PDF of Computer Components">Computer
+<a href="/unit-6/lab-1/ComputerComponents.pdf" target="_blank" title="PDF of Computer Components">Computer
 Components PDF</a>.)</li>
 
 <map name="Map">

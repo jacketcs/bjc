@@ -1,0 +1,758 @@
+---
+title: ""
+subtitle: "Unit 3, Lab 2, Page "
+order: 6
+---
+
+<h3>Lab 2: Contact List</h3>
+
+::: {.assessment-data type="multiplechoice" identifier="mapLetterVsItem" hasinlinefeedback="true" maxchoices="1" responseidentifier="resp1" shuffle="false"}
+<a href="https://bjc.berkeley.edu/3-lists/2-contact-list/5-mapping-over-list.html">3.2.5</a>
+
+::: prompt
+Which of the following statements are true about this list?<br>
+
+<img src="/img/3-lists/words_numbers.png" title="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" alt="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" class="indent"/><br>
+:::
+
+::: {.choice identifier="c1"}
+::: text
+<img src="/img/3-lists/check2mapc1.png" title="map (letter (1) of ()) over (words and numbers)" alt="map (letter (1) of ()) over (words and numbers)" border="0"/>
+reports the list {r, 5, b, i, 3, k, 2, 3, t, 6}.
+:::
+
+::: feedback
+Correct.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+<img src="/img/3-lists/check2mapc2.png" title="map (item (1) of ()) over (words and numbers)" alt="map (item (1) of ()) over (words and numbers)" border="0"/>
+reports the list {rabbit}.
+:::
+
+::: feedback
+The blank space in <code>item of</code> expects a list as its input, but
+<code>map</code> puts a single item from <var>words and numbers</var>
+into that slot.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+Both of the above.
+:::
+
+::: feedback
+The input list (<var>words and numbers</var>) contains text strings (not
+lists) so the blank space in the input function should expect a text
+string (not a list).
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+None of the above.
+:::
+
+::: feedback
+<code>Map</code> performs the input function over each item in the input
+list.
+:::
+:::
+
+::: {.responseDeclaration identifier="resp1"}
+::: {.correctResponse identifier="c1"}
+:::
+:::
+:::
+
+::: {.assessment-data type="multiplechoice" identifier="mapLetterVsItem" hasinlinefeedback="true" maxchoices="5" responseidentifier="resp2" shuffle="false"}
+<a href="https://bjc.berkeley.edu/3-lists/2-contact-list/5-mapping-over-list.html">3.2.5</a>
+
+::: prompt
+Which of the following statements are true about this list?<br>
+
+<img src="/img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="indent"/><br>
+
+Choose <strong>all</strong> that apply.
+
+::: endnote
+<a href="#hint-capital-adt" data-toggle="collapse" title="Why not use an ADT?">Why
+not use an ADT?</a>
+
+::: {#hint-capital-adt .collapse}
+<p>
+
+The list inside a list shown above makes it clearest to you now as you
+answer this self-check item what the structure is, but you're right, in
+an actual program it would be better to use an abstract data type:<br>
+
+<img src="/img/3-lists/capitals-adt-reporting.png" title="state: (Augusta) capital: (Maine)" alt="state: (Augusta) capital: (Maine)" class="indent"/>
+
+</p>
+:::
+:::
+:::
+
+::: {.choice identifier="c1"}
+::: text
+<img src="/img/3-lists/check2mapc3.png" title="map (item (1) of ()) over (capitals)" alt="map (item (1) of ()) over (capitals)" border="0"/>
+reports the list {Augusta, Boise, Columbia, Des Moines}.
+:::
+
+::: feedback
+Correct.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+<img src="/img/3-lists/check2mapc3.png" title="map (item (1) of ()) over (capitals)" alt="map (item (1) of ()) over (capitals)" border="0"/>
+reports the list {Augusta, Maine}.
+:::
+
+::: feedback
+No. <code>Map</code> performs the input function on <em>each item of the
+list</em>---not on the whole list. The expression <code>item (1) of
+(capitals)</code> (without using <code>map</code> at all) would report
+the list {Augusta, Maine}.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+<img src="/img/3-lists/check2mapc4.png" title="map (letter (1) of ()) over (capitals)" alt="map (letter (1) of ()) over (capitals)" border="0"/>
+reports the list {A, B, C, D}.
+:::
+
+::: feedback
+No. You can find the first letter of a word, but not the first letter of
+a list. The expression <code>map (letter (1) of (item (1) of ( ))) over
+(capitals)</code> would report the list {A, B, C, D}.
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+<img src="/img/3-lists/check2mapc5.png" title="map (all but first of ()) over (capitals)" alt="map (all but first of ()) over (capitals)" border="0"/>
+reports the list {Maine, Idaho, South Carolina, Iowa}.
+:::
+
+::: feedback
+No. This is a tricky one. What gets reported is actually a list of
+one-item lists: {{Maine}, {Idaho}, {South Carolina}, {Iowa}}. You might
+want to try it in Snap<em>!</em>. The expression <code>map (item (2) of
+()) over (capitals)</code> would report the list {Maine, Idaho, South
+Carolina, Iowa}.
+:::
+:::
+
+::: {.choice identifier="c5"}
+::: text
+<img src="/img/3-lists/check2mapc5.png" title="map (all but first of ()) over (capitals)" alt="map (all but first of ()) over (capitals)" border="0"/>
+reports the list {{Boise, Idaho}, {Columbia, South Carolina}, {Des
+Moines, Iowa}}.
+:::
+
+::: feedback
+No. <code>Map</code> performs the input function on <em>each item of the
+list</em>---not on the whole list. The expression <code>all but first of
+(capitals)</code> (without using <code>map</code> at all) would report
+the list of lists {{Boise, Idaho}, {Columbia, South Carolina}, {Des
+Moines, Iowa}}.
+:::
+:::
+
+::: {.responseDeclaration identifier="resp2"}
+::: {.correctResponse identifier="c1"}
+:::
+:::
+:::
+
+::: {.assessment-data type="multiplechoice" identifier="squares_mapkeepcombine" hasinlinefeedback="true" maxchoices="8" responseidentifier="resp1" shuffle="true"}
+<a href="https://bjc.berkeley.edu/3-lists/2-contact-list/5-mapping-over-list.html">3.2.5</a>
+
+::: prompt
+<p>
+
+Consider this list of squares: <br>
+
+<img src="/img/3-lists/squares.png" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" class="indent"/><br>
+
+Which of the following expressions will report a list?
+
+Choose all that apply.
+
+</p>
+:::
+
+::: {.choice identifier="c1"}
+::: text
+<img src="/img/3-lists/check2squares1c1.png" title="map (sqrt of()) over (squares)" alt="map (sqrt of()) over (squares)" border="0"/>
+:::
+
+::: feedback
+Correct.
+:::
+:::
+
+::: {.choice identifier="c1"}
+::: text
+<img src="/img/3-lists/check2squares1c2.png" title="keep items (()mod(2)=0) from (squares)" alt="keep items (()mod(2)=0) from (squares)" border="0"/>
+:::
+
+::: feedback
+Correct.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+<img src="/img/3-lists/check2squares1c3.png" title="combine (squares) using (()+())" alt="combine (squares) using (()+())" border="0"/>
+:::
+
+::: feedback
+No, + reports a number, so in this case <code>combine</code> will report
+a number.
+:::
+:::
+
+::: {.choice identifier="c1"}
+::: text
+<img src="/img/3-lists/check2squares1c4.png" title="keep items (letter (length of ()) of () = 1) from (squares)" alt="keep items (letter (length of ()) of () = 1) from (squares)" border="0"/>
+:::
+
+::: feedback
+Correct.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+<img src="/img/3-lists/check2squares1c6.png" title="combine using (join ()()) items of (squares)" alt="combine (squares) using (join ()()) items of" border="0"/>
+:::
+
+::: feedback
+No. <code>join</code>(1,4) will report 14.
+:::
+:::
+
+::: {.choice identifier="c1"}
+::: text
+<img src="/img/3-lists/check2squares1c7.png" title="map ((0)-()) over (squares)" alt="map ((0)-()) over (squares)" border="0"/>
+:::
+
+::: feedback
+Correct.
+:::
+:::
+
+::: {.responseDeclaration identifier="resp1"}
+::: {.correctResponse identifier="c1"}
+:::
+:::
+:::
+
+<h3>Lab 2: Contact List</h3>
+
+::: {.assessment-data type="multiplechoice" identifier="mapLetterVsItem" hasinlinefeedback="true" maxchoices="1" responseidentifier="resp1" shuffle="false"}
+<a href="https://bjc.berkeley.edu/3-lists/2-contact-list/5-mapping-over-list.html">3.2.5</a>
+
+::: prompt
+Which of the following statements are true about this list?<br>
+
+<img src="/img/3-lists/words_numbers.png" title="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" alt="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" class="indent"/><br>
+:::
+
+::: {.choice identifier="c1"}
+::: text
+<img src="/img/3-lists/check2mapc1.png" title="map (letter (1) of ()) over (words and numbers)" alt="map (letter (1) of ()) over (words and numbers)" border="0"/>
+reports the list {r, 5, b, i, 3, k, 2, 3, t, 6}.
+:::
+
+::: feedback
+Correct.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+<img src="/img/3-lists/check2mapc2.png" title="map (item (1) of ()) over (words and numbers)" alt="map (item (1) of ()) over (words and numbers)" border="0"/>
+reports the list {rabbit}.
+:::
+
+::: feedback
+The blank space in <code>item of</code> expects a list as its input, but
+<code>map</code> puts a single item from <var>words and numbers</var>
+into that slot.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+Both of the above.
+:::
+
+::: feedback
+The input list (<var>words and numbers</var>) contains text strings (not
+lists) so the blank space in the input function should expect a text
+string (not a list).
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+None of the above.
+:::
+
+::: feedback
+<code>Map</code> performs the input function over each item in the input
+list.
+:::
+:::
+
+::: {.responseDeclaration identifier="resp1"}
+::: {.correctResponse identifier="c1"}
+:::
+:::
+:::
+
+::: {.assessment-data type="multiplechoice" identifier="mapLetterVsItem" hasinlinefeedback="true" maxchoices="5" responseidentifier="resp2" shuffle="false"}
+<a href="https://bjc.berkeley.edu/3-lists/2-contact-list/5-mapping-over-list.html">3.2.5</a>
+
+::: prompt
+Which of the following statements are true about this list?<br>
+
+<img src="/img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="indent"/><br>
+
+Choose <strong>all</strong> that apply.
+
+::: endnote
+<a href="#hint-capital-adt" data-toggle="collapse" title="Why not use an ADT?">Why
+not use an ADT?</a>
+
+::: collapse
+<p>
+
+The list inside a list shown above makes it clearest to you now as you
+answer this self-check item what the structure is, but you're right, in
+an actual program it would be better to use an abstract data type:<br>
+
+<img src="/img/3-lists/capitals-adt-reporting.png" title="state: (Augusta) capital: (Maine)" alt="state: (Augusta) capital: (Maine)" class="indent"/>
+
+</p>
+:::
+:::
+:::
+
+::: {.choice identifier="c1"}
+::: text
+<img src="/img/3-lists/check2mapc3.png" title="map (item (1) of ()) over (capitals)" alt="map (item (1) of ()) over (capitals)" border="0"/>
+reports the list {Augusta, Boise, Columbia, Des Moines}.
+:::
+
+::: feedback
+Correct.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+<img src="/img/3-lists/check2mapc3.png" title="map (item (1) of ()) over (capitals)" alt="map (item (1) of ()) over (capitals)" border="0"/>
+reports the list {Augusta, Maine}.
+:::
+
+::: feedback
+No. <code>Map</code> performs the input function on <em>each item of the
+list</em>---not on the whole list. The expression <code>item (1) of
+(capitals)</code> (without using <code>map</code> at all) would report
+the list {Augusta, Maine}.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+<img src="/img/3-lists/check2mapc4.png" title="map (letter (1) of ()) over (capitals)" alt="map (letter (1) of ()) over (capitals)" border="0"/>
+reports the list {A, B, C, D}.
+:::
+
+::: feedback
+No. You can find the first letter of a word, but not the first letter of
+a list. The expression <code>map (letter (1) of (item (1) of ( ))) over
+(capitals)</code> would report the list {A, B, C, D}.
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+<img src="/img/3-lists/check2mapc5.png" title="map (all but first of ()) over (capitals)" alt="map (all but first of ()) over (capitals)" border="0"/>
+reports the list {Maine, Idaho, South Carolina, Iowa}.
+:::
+
+::: feedback
+No. This is a tricky one. What gets reported is actually a list of
+one-item lists: {{Maine}, {Idaho}, {South Carolina}, {Iowa}}. You might
+want to try it in Snap<em>!</em>. The expression <code>map (item (2) of
+()) over (capitals)</code> would report the list {Maine, Idaho, South
+Carolina, Iowa}.
+:::
+:::
+
+::: {.choice identifier="c5"}
+::: text
+<img src="/img/3-lists/check2mapc5.png" title="map (all but first of ()) over (capitals)" alt="map (all but first of ()) over (capitals)" border="0"/>
+reports the list {{Boise, Idaho}, {Columbia, South Carolina}, {Des
+Moines, Iowa}}.
+:::
+
+::: feedback
+No. <code>Map</code> performs the input function on <em>each item of the
+list</em>---not on the whole list. The expression <code>all but first of
+(capitals)</code> (without using <code>map</code> at all) would report
+the list of lists {{Boise, Idaho}, {Columbia, South Carolina}, {Des
+Moines, Iowa}}.
+:::
+:::
+
+::: {.responseDeclaration identifier="resp2"}
+::: {.correctResponse identifier="c1"}
+:::
+:::
+:::
+
+::: {.assessment-data type="multiplechoice" identifier="squares_mapkeepcombine" hasinlinefeedback="true" maxchoices="8" responseidentifier="resp1" shuffle="true"}
+<a href="https://bjc.berkeley.edu/3-lists/2-contact-list/5-mapping-over-list.html">3.2.5</a>
+
+::: prompt
+<p>
+
+Consider this list of squares: <br>
+
+<img src="/img/3-lists/squares.png" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" class="indent"/><br>
+
+Which of the following expressions will report a list?
+
+Choose all that apply.
+
+</p>
+:::
+
+::: {.choice identifier="c1"}
+::: text
+<img src="/img/3-lists/check2squares1c1.png" title="map (sqrt of()) over (squares)" alt="map (sqrt of()) over (squares)" border="0"/>
+:::
+
+::: feedback
+Correct.
+:::
+:::
+
+::: {.choice identifier="c1"}
+::: text
+<img src="/img/3-lists/check2squares1c2.png" title="keep items (()mod(2)=0) from (squares)" alt="keep items (()mod(2)=0) from (squares)" border="0"/>
+:::
+
+::: feedback
+Correct.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+<img src="/img/3-lists/check2squares1c3.png" title="combine (squares) using (()+())" alt="combine (squares) using (()+())" border="0"/>
+:::
+
+::: feedback
+No, + reports a number, so in this case <code>combine</code> will report
+a number.
+:::
+:::
+
+::: {.choice identifier="c1"}
+::: text
+<img src="/img/3-lists/check2squares1c4.png" title="keep items (letter (length of ()) of () = 1) from (squares)" alt="keep items (letter (length of ()) of () = 1) from (squares)" border="0"/>
+:::
+
+::: feedback
+Correct.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+<img src="/img/3-lists/check2squares1c6.png" title="combine using (join ()()) items of (squares)" alt="combine (squares) using (join ()()) items of" border="0"/>
+:::
+
+::: feedback
+No. <code>join</code>(1,4) will report 14.
+:::
+:::
+
+::: {.choice identifier="c1"}
+::: text
+<img src="/img/3-lists/check2squares1c7.png" title="map ((0)-()) over (squares)" alt="map ((0)-()) over (squares)" border="0"/>
+:::
+
+::: feedback
+Correct.
+:::
+:::
+
+::: {.responseDeclaration identifier="resp1"}
+::: {.correctResponse identifier="c1"}
+:::
+:::
+:::
+
+<h3>Lab 2: Contact List</h3>
+
+::: {.assessment-data type="multiplechoice" identifier="mapLetterVsItem" hasinlinefeedback="true" maxchoices="1" responseidentifier="resp1" shuffle="false"}
+<a href="https://bjc.berkeley.edu/3-lists/2-contact-list/5-mapping-over-list.html">3.2.5</a>
+
+::: prompt
+Which of the following statements are true about this list?<br>
+
+<img src="/img/3-lists/words_numbers.png" title="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" alt="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" class="indent"/><br>
+:::
+
+::: {.choice identifier="c1"}
+::: text
+<img src="/img/3-lists/check2mapc1.png" title="map (letter (1) of ()) over (words and numbers)" alt="map (letter (1) of ()) over (words and numbers)" border="0"/>
+reports the list {r, 5, b, i, 3, k, 2, 3, t, 6}.
+:::
+
+::: feedback
+Correct.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+<img src="/img/3-lists/check2mapc2.png" title="map (item (1) of ()) over (words and numbers)" alt="map (item (1) of ()) over (words and numbers)" border="0"/>
+reports the list {rabbit}.
+:::
+
+::: feedback
+The blank space in <code>item of</code> expects a list as its input, but
+<code>map</code> puts a single item from <var>words and numbers</var>
+into that slot.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+Both of the above.
+:::
+
+::: feedback
+The input list (<var>words and numbers</var>) contains text strings (not
+lists) so the blank space in the input function should expect a text
+string (not a list).
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+None of the above.
+:::
+
+::: feedback
+<code>Map</code> performs the input function over each item in the input
+list.
+:::
+:::
+
+::: {.responseDeclaration identifier="resp1"}
+::: {.correctResponse identifier="c1"}
+:::
+:::
+:::
+
+::: {.assessment-data type="multiplechoice" identifier="mapLetterVsItem" hasinlinefeedback="true" maxchoices="5" responseidentifier="resp2" shuffle="false"}
+<a href="https://bjc.berkeley.edu/3-lists/2-contact-list/5-mapping-over-list.html">3.2.5</a>
+
+::: prompt
+Which of the following statements are true about this list?<br>
+
+<img src="/img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="indent"/><br>
+
+Choose <strong>all</strong> that apply.
+
+::: endnote
+<a href="#hint-capital-adt" data-toggle="collapse" title="Why not use an ADT?">Why
+not use an ADT?</a>
+
+::: collapse
+<p>
+
+The list inside a list shown above makes it clearest to you now as you
+answer this self-check item what the structure is, but you're right, in
+an actual program it would be better to use an abstract data type:<br>
+
+<img src="/img/3-lists/capitals-adt-reporting.png" title="state: (Augusta) capital: (Maine)" alt="state: (Augusta) capital: (Maine)" class="indent"/>
+
+</p>
+:::
+:::
+:::
+
+::: {.choice identifier="c1"}
+::: text
+<img src="/img/3-lists/check2mapc3.png" title="map (item (1) of ()) over (capitals)" alt="map (item (1) of ()) over (capitals)" border="0"/>
+reports the list {Augusta, Boise, Columbia, Des Moines}.
+:::
+
+::: feedback
+Correct.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+<img src="/img/3-lists/check2mapc3.png" title="map (item (1) of ()) over (capitals)" alt="map (item (1) of ()) over (capitals)" border="0"/>
+reports the list {Augusta, Maine}.
+:::
+
+::: feedback
+No. <code>Map</code> performs the input function on <em>each item of the
+list</em>---not on the whole list. The expression <code>item (1) of
+(capitals)</code> (without using <code>map</code> at all) would report
+the list {Augusta, Maine}.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+<img src="/img/3-lists/check2mapc4.png" title="map (letter (1) of ()) over (capitals)" alt="map (letter (1) of ()) over (capitals)" border="0"/>
+reports the list {A, B, C, D}.
+:::
+
+::: feedback
+No. You can find the first letter of a word, but not the first letter of
+a list. The expression <code>map (letter (1) of (item (1) of ( ))) over
+(capitals)</code> would report the list {A, B, C, D}.
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+<img src="/img/3-lists/check2mapc5.png" title="map (all but first of ()) over (capitals)" alt="map (all but first of ()) over (capitals)" border="0"/>
+reports the list {Maine, Idaho, South Carolina, Iowa}.
+:::
+
+::: feedback
+No. This is a tricky one. What gets reported is actually a list of
+one-item lists: {{Maine}, {Idaho}, {South Carolina}, {Iowa}}. You might
+want to try it in Snap<em>!</em>. The expression <code>map (item (2) of
+()) over (capitals)</code> would report the list {Maine, Idaho, South
+Carolina, Iowa}.
+:::
+:::
+
+::: {.choice identifier="c5"}
+::: text
+<img src="/img/3-lists/check2mapc5.png" title="map (all but first of ()) over (capitals)" alt="map (all but first of ()) over (capitals)" border="0"/>
+reports the list {{Boise, Idaho}, {Columbia, South Carolina}, {Des
+Moines, Iowa}}.
+:::
+
+::: feedback
+No. <code>Map</code> performs the input function on <em>each item of the
+list</em>---not on the whole list. The expression <code>all but first of
+(capitals)</code> (without using <code>map</code> at all) would report
+the list of lists {{Boise, Idaho}, {Columbia, South Carolina}, {Des
+Moines, Iowa}}.
+:::
+:::
+
+::: {.responseDeclaration identifier="resp2"}
+::: {.correctResponse identifier="c1"}
+:::
+:::
+:::
+
+::: {.assessment-data type="multiplechoice" identifier="squares_mapkeepcombine" hasinlinefeedback="true" maxchoices="8" responseidentifier="resp1" shuffle="true"}
+<a href="https://bjc.berkeley.edu/3-lists/2-contact-list/5-mapping-over-list.html">3.2.5</a>
+
+::: prompt
+<p>
+
+Consider this list of squares: <br>
+
+<img src="/img/3-lists/squares.png" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" class="indent"/><br>
+
+Which of the following expressions will report a list?
+
+Choose all that apply.
+
+</p>
+:::
+
+::: {.choice identifier="c1"}
+::: text
+<img src="/img/3-lists/check2squares1c1.png" title="map (sqrt of()) over (squares)" alt="map (sqrt of()) over (squares)" border="0"/>
+:::
+
+::: feedback
+Correct.
+:::
+:::
+
+::: {.choice identifier="c1"}
+::: text
+<img src="/img/3-lists/check2squares1c2.png" title="keep items (()mod(2)=0) from (squares)" alt="keep items (()mod(2)=0) from (squares)" border="0"/>
+:::
+
+::: feedback
+Correct.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+<img src="/img/3-lists/check2squares1c3.png" title="combine (squares) using (()+())" alt="combine (squares) using (()+())" border="0"/>
+:::
+
+::: feedback
+No, + reports a number, so in this case <code>combine</code> will report
+a number.
+:::
+:::
+
+::: {.choice identifier="c1"}
+::: text
+<img src="/img/3-lists/check2squares1c4.png" title="keep items (letter (length of ()) of () = 1) from (squares)" alt="keep items (letter (length of ()) of () = 1) from (squares)" border="0"/>
+:::
+
+::: feedback
+Correct.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+<img src="/img/3-lists/check2squares1c6.png" title="combine using (join ()()) items of (squares)" alt="combine (squares) using (join ()()) items of" border="0"/>
+:::
+
+::: feedback
+No. <code>join</code>(1,4) will report 14.
+:::
+:::
+
+::: {.choice identifier="c1"}
+::: text
+<img src="/img/3-lists/check2squares1c7.png" title="map ((0)-()) over (squares)" alt="map ((0)-()) over (squares)" border="0"/>
+:::
+
+::: feedback
+Correct.
+:::
+:::
+
+::: {.responseDeclaration identifier="resp1"}
+::: {.correctResponse identifier="c1"}
+:::
+:::
+:::

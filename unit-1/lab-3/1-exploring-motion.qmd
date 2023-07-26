@@ -1,5 +1,5 @@
 ---
-title: "Exploring Motion"
+title: "Page 1: Exploring Motion"
 subtitle: "Unit 1, Lab 3, Page 1"
 order: 1
 ---

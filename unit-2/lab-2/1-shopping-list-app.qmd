@@ -1,5 +1,5 @@
 ---
-title: "Shopping List App"
+title: "Page 1: Shopping List App"
 subtitle: "Unit 2, Lab 2, Page 1"
 order: 1
 ---
@@ -49,7 +49,7 @@ The list expression <img src="/img/1-introduction/list-from-who.png" title="list
 :::
 
 ::: sidenoteBig
-You learned how to initialize (create and set) a global variable on <a href="/cur/programming/2-complexity/1-variables-games/4-keeping-score.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 2 Lab 1 Page 4: Keeping Score with Global Variables">Unit 2 Lab 1 Page 4: Keeping Score with Global Variables</a>.
+You learned how to initialize (create and set) a global variable on <a href="/unit-2/lab-1/4-keeping-score.html" title="Unit 2 Lab 1 Page 4: Keeping Score with Global Variables">Unit 2 Lab 1 Page 4: Keeping Score with Global Variables</a>.
 :::
 
 <li>
@@ -175,9 +175,9 @@ AAP-2.N part a
 :::
 
 ::: sidenoteBig
-<p>You've seen the <code>ask</code> and <code>answer</code> blocks on <a href="/cur/programming/2-complexity/1-variables-games/2-checking-player-guess.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 2 Lab 1 Page 2: Checking the Player's Guess">Unit 2 Lab 1 Page 2: Checking the Player's Guess</a>.</p>
+<p>You've seen the <code>ask</code> and <code>answer</code> blocks on <a href="/unit-2/lab-1/2-checking-player-guess.html" title="Unit 2 Lab 1 Page 2: Checking the Player's Guess">Unit 2 Lab 1 Page 2: Checking the Player's Guess</a>.</p>
 
-<p>You've worked with multiple sprites on <a href="/cur/programming/1-introduction/2-gossip-and-greet/2-gossip.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unit 1 Lab 2 Page 2: Making Programs Talk</a>.</p>
+<p>You've worked with multiple sprites on <a href="/unit-1/lab-2/2-gossip.html" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unit 1 Lab 2 Page 2: Making Programs Talk</a>.</p>
 :::
 
 <li>Write a script for the "Add Item" button sprite so that when that sprite is clicked, it will <code>ask</code> the user for a new item, and then put the user's <code>answer</code> in the grocery list.</li>

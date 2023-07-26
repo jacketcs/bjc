@@ -1,8 +1,7 @@
 ---
-title: "Programming a Game"
+title: "Page 2: Programming a Game"
 subtitle: "Unit 1, Lab 1, Page 2"
 order: 2
-slide-format: revealjs
 ---
 
 {{< include /utilities/includes/gif.qmd >}}
@@ -19,23 +18,7 @@ slide-format: revealjs
 
 ## Making a Character Move
 
-<div>
-
-Native slides:
-
-```{=html}
-<iframe class="slide-deck" src="steps/2a.html"></iframe>
-```
-
-Google slides:
-
-```{=html}
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTIchisWaWHlNE9tn2VakeLhkkCEd_qe1fWaUckd_bdf23v4ZtKE9bfysz8lUkoKODYr1G5epRRDwjM/embed" frameborder="0" class="slide-deck" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-```
-
-</div>
-
-<!-- ::: forYouToDo
+::: forYouToDo
 <ol>
 
 <li>Make sure either you or your partner is logged in to Snap<em>!</em> so you can save your work.</li>
@@ -105,7 +88,7 @@ If your program doesn't work, look back at the picture of the code and make sure
 :::
 
 </ol>
-::: -->
+:::
 
 ::: takeNote
 <p>Orange boxes contain the ideas you should still remember three years from now.</p>
@@ -154,11 +137,7 @@ CRD-2.C.2, CRD-2.C.3, CRD-2.C.5
 A bunch of blocks clicked together is called a <em>script</em>.
 :::
 
-Attach this to the bottom of your Alonzo script:<br /> <img src="/img/1-introduction/forever-jump.png" title="forever {
-go to (random position)
-}" alt="forever {
-go to (random position)
-}" class="indent"/>
+Attach this to the bottom of your Alonzo script:<br /> <img src="/img/1-introduction/forever-jump.png" title="forever {go to (random position)}" alt="forever {go to (random position)}" class="indent"/>
 
 ::: narrower
 The sequence of blocks <em>inside</em> the <code>forever</code> block will repeat until you <strong>click the red stop sign</strong>, <img src="/img/1-introduction/stop_button.png" title="red stop button" alt="red stop button"/>, or stop the script in some other way.

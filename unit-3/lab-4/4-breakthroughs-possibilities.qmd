@@ -1,25 +1,44 @@
-Unit 3 Lab 4: Robots and Artificial Intelligence, Page 4---
-title: "Recent Breakthroughssubtitle: "Unit , Lab , Page"
-order:
 ---
-        <div class="learn">
-        	<p><strong>On this page,</strong> you will do some deeper research on AI.</p>
-        </div>
-        <div class="todo">
-            <p>MF: I question if this needs a whole page of its own. Maybe it's fine.</p>
-        </div>
-        
-        <div class="forYouToDo" id="first">
-            <ol>
-            	<li>
-                    Artificial Intelligence is a very active field with many interesting developments announced daily. Choose a topic you're interested in (like medicine, finance, politics, education, communication, law, gaming, astronomy, psychology, transportation, literature, international policy, etc.) and find 2-3 recent news articles that relate to developments in AI in that field. Be prepared to share what you find with the class.
-                    <ul>
-                        <li>In addition to reporting new developments, mention challenges for AI that still remain.</li>
-                    </ul>
-                </li>
-        		<div class="endnote">Try to find stories about current developments and that focus on AI more generally&mdash;not just robots.</div>
-            </ol>
-        </div>
+title: "Page 4: Recent Breakthroughs"
+subtitle: "Unit 3, Lab 4, Page 4"
+order: 4
+---
 
+::: learn
+<p><strong>On this page,</strong> you will do some deeper research on
+AI.</p>
+:::
 
+::: todo
+<p>MF: I question if this needs a whole page of its own. Maybe it's
+fine.</p>
+:::
 
+::: {#first .forYouToDo}
+<ol>
+
+<li>
+
+Artificial Intelligence is a very active field with many interesting
+developments announced daily. Choose a topic you're interested in (like
+medicine, finance, politics, education, communication, law, gaming,
+astronomy, psychology, transportation, literature, international policy,
+etc.) and find 2-3 recent news articles that relate to developments in
+AI in that field. Be prepared to share what you find with the class.
+
+<ul>
+
+<li>In addition to reporting new developments, mention challenges for AI
+that still remain.</li>
+
+</ul>
+
+</li>
+
+::: endnote
+Try to find stories about current developments and that focus on AI more
+generally---not just robots.
+:::
+
+</ol>
+:::

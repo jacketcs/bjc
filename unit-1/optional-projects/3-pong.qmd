@@ -18,7 +18,7 @@ order: 3
 <li>Create the paddle and the ball sprites and give them their costumes (filled rectangle and circle).</li>
 
 ::: sidenote
-Do this on your own but if you get stuck, look at these <a href="/cur/programming/1-introduction/optional-projects/3b-pong-hints.html" target="_blank" title="Hints for the Game of Pong">hints for the Game of Pong</a> on how to proceed.
+Do this on your own but if you get stuck, look at these <a href="/1-introduction/optional-projects/3b-pong-hints.html" target="_blank" title="Hints for the Game of Pong">hints for the Game of Pong</a> on how to proceed.
 :::
 
 <li>Write the code to have the paddle move up and down when the user presses the up arrow and down arrow keys. Don't let the paddle move beyond the edges of the stage.</li>

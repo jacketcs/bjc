@@ -16,7 +16,7 @@ order: 1
 <p>MF: lightly clean up to make the text more concise</p>
 :::
 
-<p>In Unit 4 <a href="/cur/programming/4-internet/old/2-communication-protocols/3-open-protocols.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment" title="A Hierarchy of Open Protocols">A Hierarchy of Open Protocols</a>, you saw that the Internet software is arranged in several levels of abstraction, with application programs (like your email program) at the highest level and network hardware protocols such as WiFi and Ethernet at the lowest level. Recall that <em>higher</em> levels are closer to what users want to be thinking about; lower levels are closer to the way machines work.</p>
+<p>In Unit 4 <a href="/4-internet/old/2-communication-protocols/3-open-protocols.html" title="A Hierarchy of Open Protocols">A Hierarchy of Open Protocols</a>, you saw that the Internet software is arranged in several levels of abstraction, with application programs (like your email program) at the highest level and network hardware protocols such as WiFi and Ethernet at the lowest level. Recall that <em>higher</em> levels are closer to what users want to be thinking about; lower levels are closer to the way machines work.</p>
 
 <p>Like the Internet, the way a computer works on the inside also has levels of abstraction.</p>
 
@@ -107,7 +107,7 @@ In the software domain, each level of abstraction is a different piece of softwa
 <li>Those integrated circuits are designed around <strong>logic gates</strong>, the fundamental building blocks that implement Boolean functions.</li>
 
 ::: endnote
-You learned about Boolean functions in <a href="/cur/programming/2-complexity/3-predicates/1-what-is-predicate.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">Unit 2 Lab 3: Making Decisions by Using Predicates</a>.<br /> <img src="/img/blocks/and.png" title="() and ()" alt="() and ()" class="indent"/> <img src="/img/blocks/or-small.png" title="() or ()" alt="() or ()" class="indent"/> <img src="/img/blocks/not_small.png" title="not ()" alt="not ()" class="indent"/>
+You learned about Boolean functions in <a href="/unit-2/lab-1/a>.<br /> <img src="/img/blocks/and.png" title="() and ()" alt="() and ()" class="indent"/> <img src="/img/blocks/or-small.png" title="() or ()" alt="() or ()" class="indent"/> <img src="/img/blocks/not_small.png" title="not ()" alt="not ()" class="indent"/>
 :::
 
 </ul>

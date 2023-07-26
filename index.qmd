@@ -1,6 +1,8 @@
 # Introduction {.unnumbered}
 
-Welcome to the Beauty and Joy of Computing — BJC.
+Welcome AP Computer Science Principles at Berkeley High School, taught by Ms. O'Keefe and Mr. Chang. In this course, we'll be using a curriculum adapated from the Beauty and Joy of Computing (BJC) which was created from an existing course of the same name at Cal, CS 10.
+
+This is the website that you will be mainly be using for classwork all semester long.
 
 Through this curriculum, you will create programs using the Snap programming language, you will learn some of the most powerful ideas of computer science, and you will discuss the social implications of computing, thinking deeply about how you can be personally active in promoting the benefits and reducing the possible harms.
 

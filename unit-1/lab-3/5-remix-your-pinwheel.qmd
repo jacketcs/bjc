@@ -1,5 +1,5 @@
 ---
-title: "Using <code>Pinwheel</code> to Make <code>Polygon</code>"
+title: "Page 5: Using <code>Pinwheel</code> to Make <code>Polygon</code>"
 subtitle: "Unit 1, Lab 3, Page 5"
 order: 5
 ---
@@ -25,7 +25,7 @@ Use your <code>pinwheel</code> block to create a more specialized <code>asterisk
 
 <ol>
 
-<li>First, make a new block called <code>asterisk</code> with two inputs: one for the <var>number of branches</var> and one for the <var>length</var> of each branch. You may wish to review how to make a new block at <a href="/cur/programming/1-introduction/2-gossip-and-greet/4-making-a-new-block.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 1 Lab 2 Page 4: Making Your Own Block">Unit 1 Lab 2 Page 4: Making Your Own Block</a>.</li>
+<li>First, make a new block called <code>asterisk</code> with two inputs: one for the <var>number of branches</var> and one for the <var>length</var> of each branch. You may wish to review how to make a new block at <a href="/unit-1/lab-2/4-making-a-new-block.html" title="Unit 1 Lab 2 Page 4: Making Your Own Block">Unit 1 Lab 2 Page 4: Making Your Own Block</a>.</li>
 
 <img src="/img/1-introduction/asterisk-using-pinwheel.png" title="asterisk, branches:(branches) branch length:(length){pinwheel, branches: ( ) size:( ) backup:( )}" alt="asterisk, branches:(branches) branch length:(length){pinwheel, branches: ( ) size:( ) backup:( )}" width="507" height="106"/>
 
@@ -50,7 +50,7 @@ Use your <code>pinwheel</code> block to create a more specialized <code>asterisk
 
 ::: takeNote
 ::: sidenoteBig
-<p>On page <a href="/cur/programming/1-introduction/2-gossip-and-greet/2-gossip.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unit 1 Lab 2 Page 2: Making Programs Talk</a>, you learned about <em>procedural abstraction:</em> giving a code segment a name (making it a block). That way you can call it more than once instead of copying and pasting.</p>
+<p>On page <a href="/unit-1/lab-2/2-gossip.html" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unit 1 Lab 2 Page 2: Making Programs Talk</a>, you learned about <em>procedural abstraction:</em> giving a code segment a name (making it a block). That way you can call it more than once instead of copying and pasting.</p>
 :::
 
 ::: comment

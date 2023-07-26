@@ -37,8 +37,8 @@ Bad Mary. ;) We need a CSS solution for this instead of using tables. --MF, 12/4
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ![The Difference Engine at the London Science Museum: the image shows a large mechanical device with many gears and a large crank on the side.](/img/6-computers/babbage-difference-engine.jpg "The Difference Engine at the London Science Museum: the image shows a large mechanical device with many gears and a large crank on the side."){alt="The Difference Engine at the London Science Museum: the image shows a large mechanical device with many gears and a large crank on the side."}\ | ![A closeup showing the gears of the Difference Engine more clearly](/img/6-computers/closeup-difference-eng.jpg "A closeup showing the gears of the Difference Engine more clearly"){alt="A closeup showing the gears of the Difference Engine more clearly"}\ |
-| The Difference Engine at the London Science Museum\                                                                                                                                                                                                                                                                                                                                                                                                                                                       | A closeup showing the gears more clearly\                                                                                                                                                                                                                             |
-| Image by Wikimedia user geni. Copyright 2008. License: GFDL, CC BY-SA.                                                                                                                                                                                                                                                                                                                                                                                                                                    | Image by Carsten Ullrich. Copyright 2005. License: CC-BY-SA-2.5.                                                                                                                                                                                                      |
+| The Difference Engine at the London Science Museum\   | A closeup showing the gears more clearly\ |
+| Image by Wikimedia user geni. Copyright 2008. License: GFDL, CC BY-SA.| Image by Carsten Ullrich. Copyright 2005. License: CC-BY-SA-2.5.  |
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 <p>
@@ -140,12 +140,12 @@ Consider the Snap<em>!</em> instruction <img src="/img/6-computers/set-c-to-a+b.
 That simple command might be translated into <em>six</em> machine language instructions (slightly simplified here):<br />
 
 ```{=html}
-<pre>movq    _c, %rcx
-movq    _b, %rdx
-movq    _a, %rsi
-movl    (%rsi), %edi
-addl    (%rdx), %edi
-movl    %edi, (%rcx)</pre>
+<pre>movq_c, %rcx
+movq_b, %rdx
+movq_a, %rsi
+movl(%rsi), %edi
+addl(%rdx), %edi
+movl%edi, (%rcx)</pre>
 ```
 This notation, called <em>assembly language</em>, is a line-by-line equivalent to the actual numeric instruction codes but is slightly more readable.
 

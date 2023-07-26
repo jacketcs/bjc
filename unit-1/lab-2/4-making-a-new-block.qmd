@@ -1,5 +1,5 @@
 ---
-title: "Making Your Own Block"
+title: "Page 4: Making Your Own Block"
 subtitle: "Unit 1, Lab 2, Page 4"
 order: 4
 ---
@@ -156,7 +156,7 @@ The exam uses "value of a procedure" to mean the value the procedure returns whe
 <li>Test your custom <code>gossip response</code> block by clicking it several times. It should behave like the <code>who</code>, <code>does what</code>, and <code>who 2</code> blocks. Debug any problems before moving on.</li>
 
 ::: sidenote
-Review how to edit a block in <a href="/cur/programming/1-introduction/2-gossip-and-greet/3-customizing.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Customizing and Debugging">Unit 1 Lab 2 Page 2: Customizing and Debugging</a>, if needed.
+Review how to edit a block in <a href="/unit-1/lab-2/3-customizing.html" title="Customizing and Debugging">Unit 1 Lab 2 Page 2: Customizing and Debugging</a>, if needed.
 :::
 
 <li>Use your new block: Edit <code>gossip 2</code>, and insert <code>gossip response</code> in place of the text "Oh, but...."<br /> <img src="/img/1-introduction/gossip2-definition.png" title="gossip 2 {

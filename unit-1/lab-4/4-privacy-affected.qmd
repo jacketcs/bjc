@@ -1,5 +1,5 @@
 ---
-title: "Innovations and Privacy"
+title: "Page 4: Innovations and Privacy"
 subtitle: "Unit 1, Lab 4, Page 4"
 order: 4
 ---

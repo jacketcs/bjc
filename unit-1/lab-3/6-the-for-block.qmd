@@ -1,5 +1,5 @@
 ---
-title: "Looping with a Counter"
+title: "Page 6: Looping with a Counter"
 subtitle: "Unit 1, Lab 3, Page 6"
 order: 6
 ---
@@ -18,9 +18,9 @@ You've seen these ways to repeat a set of commands:
 The <code>forever</code> block generates an <em>infinite loop</em> that goes on forever. An infinite loop can sometimes be the result of a bug, but in some interactive programs, you <em>want</em> the program to keep running until stopped by the user.
 :::
 
-<li><img src="/img/blocks/forever.png" title="the forever block" alt="the forever block" class="inline"/> repeats the same commands <em>forever</em>. (You used it to make Alonzo keep moving in <a href="/cur/programming/1-introduction/1-building-an-app/4-keeping-score.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 1 Lab 1 Page 3: Make It a Game">Unit 1 Lab 1 Page 3: Make It a Game</a>.)</li>
+<li><img src="/img/blocks/forever.png" title="the forever block" alt="the forever block" class="inline"/> repeats the same commands <em>forever</em>. (You used it to make Alonzo keep moving in <a href="/unit-1/lab-1/2-start-your-first-snap-app.qmd" title="Unit 1 Lab 1 Page 2: Programming a Game">Unit 1 Lab 1 Page 2: Programming a Game</a>.)</li>
 
-<li><img src="/img/1-introduction/repeat.png" title="the repeat block" alt="the repeat block" class="inline"/> repeats them <em>a specific number of times</em>. (You used it to draw shapes in <a href="/cur/programming/1-introduction/3-drawing/1-exploring-motion.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 1 Lab 3 Page 1: Exploring Motion">Unit 1 Lab 3 Page 1: Exploring Motion</a>.)</li>
+<li><img src="/img/1-introduction/repeat.png" title="the repeat block" alt="the repeat block" class="inline"/> repeats them <em>a specific number of times</em>. (You used it to draw shapes in <a href="/unit-1/lab-3/1-exploring-motion.html" title="Unit 1 Lab 3 Page 1: Exploring Motion">Unit 1 Lab 3 Page 1: Exploring Motion</a>.)</li>
 
 <!--<li><img src="/img/blocks/repeat-until.png" alt="repeat until" title="repeat until" /> repeats until <em>some special condition</em> occurs.</li>-->
 
@@ -179,7 +179,7 @@ Below are two animations that use the <code>pinwheel</code> code with inputs. Fi
 
 <li>What is the favorite color of the author of this activity?</li>
 
-<li>If you didn't do the Take It Further activity based on this Kazimir Malevich picture <img src="/img/1-introduction/Malevich-tiny.jpg"/> then <a href="/cur/programming/1-introduction/3-drawing/1-exploring-motion.html">read it now</a> to learn about Snap<em>!</em> features for <em>solid rectangles</em> and <em>color families</em>.</li>
+<li>If you didn't do the Take It Further activity based on this Kazimir Malevich picture <img src="/img/1-introduction/Malevich-tiny.jpg"/> then <a href="/unit-1/lab-3/1-exploring-motion.html">read it now</a> to learn about Snap<em>!</em> features for <em>solid rectangles</em> and <em>color families</em>.</li>
 
 <li>If you haven't already, do If There Is Time #10, which shows a simple version of this project idea.</li>
 

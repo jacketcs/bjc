@@ -1,5 +1,5 @@
 ---
-title: "Sprite Following the Mouse"
+title: "Page 1: Sprite Following the Mouse"
 subtitle: "Unit 1, Lab 5, Page 1"
 order: 1
 ---

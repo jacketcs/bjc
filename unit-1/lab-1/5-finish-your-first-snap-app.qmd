@@ -1,8 +1,7 @@
 ---
-title: "Improving Your Game"
+title: "Page 5: Improving Your Game"
 subtitle: "Unit 1, Lab 1, Page 5"
 order: 5
-slide-format: revealjs
 ---
 
 ::: learn

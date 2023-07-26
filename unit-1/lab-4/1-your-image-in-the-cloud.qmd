@@ -1,5 +1,5 @@
 ---
-title: "Your Image in the Cloud"
+title: "Page 1: Your Image in the Cloud"
 subtitle: "Unit 1, Lab 4, Page 1"
 order: 1
 ---

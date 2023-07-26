@@ -2,9 +2,6 @@
 title: "The Digital Domain: Logic Gates"
 subtitle: "Unit 6, Lab 1, Page 9"
 order: 9
-editor: 
-  markdown: 
-    wrap: 72
 ---
 
 ::: todo
@@ -64,7 +61,7 @@ of two inputs can still only be True or False, so only one output wire
 is needed.</p>
 
 <p>You saw some examples in
-<a href="/cur/programming/2-complexity/3-predicates/1-what-is-predicate.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="What's a Predicate?">Unit
+<a href="/unit-2/lab-3/1-what-is-predicate.html" title="What's a Predicate?">Unit
 2 Lab 3: Making Decisions by Using Predicates</a>: <code>AND</code>,
 <code>OR</code>, and <code>NOT</code>:<br />
 <img src="/img/6-computers/logical-operators/and-TT-reporting.png" title="(true) AND (true) reporting true" alt="(true) AND (true) reporting true" class="indent"/>

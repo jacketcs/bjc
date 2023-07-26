@@ -1,0 +1,865 @@
+---
+title: ""
+subtitle: "Unit 5, Lab 3, Page "
+order: 10
+---
+
+<h3>Lab 3: Turning Data into Information</h3>
+
+::: {.assessment-data type="multiplechoice" identifier="migrating birds" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="true"}
+<a href="https://bjc.berkeley.edu/5-algorithms/3-turning-data-information/2-self-check.html">5.3.2</a>
+
+::: prompt
+Scientists studying birds often attach tracking tags to migrating birds.
+For each bird, the following data is collected regularly at frequent
+intervals:
+
+<ul>
+
+<li>Date and time</li>
+
+<li>Latitude and Longitude</li>
+
+<li>Altitude</li>
+
+<li>Temperature</li>
+
+</ul>
+
+Which of the following questions about a particular bird could
+<em><strong>not</strong></em> be answered using
+<em><strong>only</strong></em> the data gathered from the tracking tags.
+:::
+
+::: {.choice identifier="c1"}
+::: text
+Approximately how much time does the bird spend in the air and on the
+ground?
+:::
+
+::: feedback
+This could be determined from the "Altitude" data.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+Does the bird travel in groups with other tracked birds?
+:::
+
+::: feedback
+This could be determined from the "Latitude and Longitude" data.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+Is the migration path of the bird affected by temperature patterns?
+:::
+
+::: feedback
+This could be determined from the "Temperature" data.
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+What are the effects of industrial pollution on the migration path of
+the bird?
+:::
+
+::: feedback
+Correct, there is no data collected on pollution in the bird's
+environment.
+:::
+:::
+
+::: {.responseDeclaration identifier="ri1"}
+::: {.correctResponse identifier="c4"}
+:::
+:::
+:::
+
+::: {.assessment-data type="multiplechoice" identifier="searching for patterns" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="true"}
+<a href="https://bjc.berkeley.edu/5-algorithms/3-turning-data-information/2-self-check.html">5.3.2</a>
+
+::: prompt
+Using computers, researchers often search large data sets to find
+interesting patterns in the data. Which is of the following is
+<em><strong>not</strong></em> an example where searching for patterns is
+needed to gather desired information?
+:::
+
+::: {.choice identifier="c1"}
+::: text
+An online shopping company analyzing customers purchase history to
+recommend new products.
+:::
+
+::: feedback
+This is an example of searching for patterns to gather desired
+information.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+A high school analyzing student attendance records to determine which
+students should receive a disciplinary warning.
+:::
+
+::: feedback
+Correct, there is no need here for pattern analysis, just sorting the
+data to get a list of students with poor attendance records.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+A credit scoring company analyzing purchase history of clients to
+identify cases of identity theft.
+:::
+
+::: feedback
+This is an example of searching for patterns to gather desired
+information.
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+A college analyzing high school students' GPA and SAT scores to assess
+their potential college success.
+:::
+
+::: feedback
+This is an example of searching for patterns to gather desired
+information.
+:::
+:::
+
+::: {.responseDeclaration identifier="ri2"}
+::: {.correctResponse identifier="c2"}
+:::
+:::
+:::
+
+::: {.assessment-data type="multiplechoice" identifier="car hailing company trends" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri3" shuffle="true"}
+<a href="https://bjc.berkeley.edu/5-algorithms/3-turning-data-information/2-self-check.html">5.3.2</a>
+
+::: prompt
+A car hailing company uses an app to track the travel trends of its
+customers. The data collected can be filtered and sorted by
+<em>geographic location</em>, <em>time and date</em>, <em>miles
+traveled</em>, and <em>fare charged for the trip</em>. Which of the
+following is <em><strong>least</strong></em> likely to be answerable
+using <em><strong>only</strong></em> the trends feature?
+:::
+
+::: {.choice identifier="c1"}
+::: text
+What time of the day is the busiest for the company at a given city.
+:::
+
+::: feedback
+Filtering by geographic location and sorting through time information
+would yield this information.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+From which geographical location do the longest rides originate.
+:::
+
+::: feedback
+Sorting through miles traveled and noting geographic location would
+yield this information.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+How is competition with the local cab companies affecting business in a
+given district.
+:::
+
+::: feedback
+Correct, there is no information on the competition available in the
+data collected.
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+How much money was earned by the company in a given month.
+:::
+
+::: feedback
+Filtering by date and summing up fares charged would yield this
+information.
+:::
+:::
+
+::: {.responseDeclaration identifier="ri3"}
+::: {.correctResponse identifier="c3"}
+:::
+:::
+:::
+
+::: {.assessment-data type="multiplechoice" identifier="information about song purchases" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri4" shuffle="true"}
+<a href="https://bjc.berkeley.edu/5-algorithms/3-turning-data-information/2-self-check.html">5.3.2</a>
+
+::: prompt
+An online music download company stores information about song purchases
+made by its customers. Every day, the following information is made
+publicly available on a company website database.
+
+<ul>
+
+<li>The day and date of each song purchased.</li>
+
+<li>The title of the song.</li>
+
+<li>The cities where customers purchased each song.</li>
+
+<li>The number of times each song was purchased in a given city.</li>
+
+</ul>
+
+An example portion of the database is shown below. The database is
+sorted by date and song title.
+
++--------------+------------+---------------+---------------------------+
+| Day and Date | Song Title | City          | Number of Times Purchased |
++==============+============+===============+===========================+
+| Mon 07/10/17 | Despacito  | Boston, MA    | 117                       |
++--------------+------------+---------------+---------------------------+
+| Mon 07/10/17 | Malibu     | Chicago, IL   | 53                        |
++--------------+------------+---------------+---------------------------+
+| Mon 07/10/17 | Malibu     | New York, NY  | 197                       |
++--------------+------------+---------------+---------------------------+
+| Mon 07/10/17 | Bad Liar   | Anchorage, AK | 11                        |
++--------------+------------+---------------+---------------------------+
+| Tue 07/11/17 | Despacito  | San Diego, CA | 241                       |
++--------------+------------+---------------+---------------------------+
+
+Which of the following <em><strong>cannot</strong></em> be determined
+using only the information in the database?
+:::
+
+::: {.choice identifier="c1"}
+::: text
+The song that is purchased the most in a given week.
+:::
+
+::: feedback
+This information can be found by summing all the purchases of every song
+in a given week.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+The city with the fewest purchases on a particular day.
+:::
+
+::: feedback
+This information can be found by summing all the purchases of every city
+on a given day.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+The total number of cities in which a certain song was purchased in a
+given month.
+:::
+
+::: feedback
+This information can be found by listing the cities for all the
+purchases of a given song in a given month.
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+The total number of songs purchased by a particular customer during the
+course of a given year.
+:::
+
+::: feedback
+Correct, there is no data publicly displayed on individual customers.
+:::
+:::
+
+::: {.responseDeclaration identifier="ri4"}
+::: {.correctResponse identifier="c4"}
+:::
+:::
+:::
+
+::: {.assessment-data type="multiplechoice" identifier="mobile phone recording metadata" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="true"}
+<a href="https://bjc.berkeley.edu/5-algorithms/3-turning-data-information/6-metadata.html">5.3.6</a>
+
+::: prompt
+A new mobile phone company---unbeknownst to its customers---periodically
+records random snippets of their conversations and considers the
+recordings as data. In addition, it collects the following metadata on
+the conversations:
+
+<ul>
+
+<li>The start and end time of the conversation</li>
+
+<li>The phone numbers of the users in the conversation</li>
+
+<li>The GPS locations of the users in the conversation</li>
+
+</ul>
+
+<p>For which of the following goals would it be more useful to analyze
+the <em><strong>data</strong></em> instead of the
+<em><strong>metadata</strong></em>?</p>
+:::
+
+::: {.choice identifier="c1"}
+::: text
+To determine if any of its users was present at the time and place of a
+crime.
+:::
+
+::: feedback
+For this purpose, GPS and time information (in the metadata) would be
+more useful.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+To determine the time of day the app is used most frequently in a
+certain geographic location.
+:::
+
+::: feedback
+For this purpose, GPS and time information (in the metadata) would be
+more useful.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+To determine the language most commonly used in user conversations.
+:::
+
+::: feedback
+Correct. For this purpose, the conversation data itself would be
+analyzed.
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+To determine the most active users of the app for a given year.
+:::
+
+::: feedback
+For this purpose, user phone numbers and time information (in the
+metadata) would be more useful.
+:::
+:::
+
+::: {.responseDeclaration identifier="ri1"}
+::: {.correctResponse identifier="c3"}
+:::
+:::
+:::
+
+::: {.assessment-data type="multiplechoice" identifier="example of metadata" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="true"}
+<a href="https://bjc.berkeley.edu/5-algorithms/3-turning-data-information/6-metadata.html">5.3.6</a>
+
+::: prompt
+Which of the following is <em><strong>not</strong></em> an example of
+<em>metadata</em>?
+:::
+
+::: {.choice identifier="c1"}
+::: text
+Data about a digital image describing the size of the image, image
+resolution, color depth, and when the image was created.
+:::
+
+::: feedback
+This is an example of data about data.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+Data about a text document containing information about the length of
+the document, its author, the date the document was written, and a short
+summary of the content.
+:::
+
+::: feedback
+This is an example of data about data.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+Data about a pack of wolves describing their habitat, hunting habits,
+diet, and sleep cycles.
+:::
+
+::: feedback
+Correct. Data about wolves is not data about data.
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+Data about a web page containing a description of page content and a
+list of key words linked to the content.
+:::
+
+::: feedback
+This is an example of data about data.
+:::
+:::
+
+::: {.responseDeclaration identifier="ri2"}
+::: {.correctResponse identifier="c3"}
+:::
+:::
+:::
+
+<h3>Lab 3: Turning Data into Information</h3>
+
+::: {.assessment-data type="multiplechoice" identifier="migrating birds" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="true"}
+<a href="https://bjc.berkeley.edu/5-algorithms/3-turning-data-information/2-self-check.html">5.3.2</a>
+
+::: prompt
+Scientists studying birds often attach tracking tags to migrating birds.
+For each bird, the following data is collected regularly at frequent
+intervals:
+
+<ul>
+
+<li>Date and time</li>
+
+<li>Latitude and Longitude</li>
+
+<li>Altitude</li>
+
+<li>Temperature</li>
+
+</ul>
+
+Which of the following questions about a particular bird could
+<em><strong>not</strong></em> be answered using
+<em><strong>only</strong></em> the data gathered from the tracking tags.
+:::
+
+::: {.choice identifier="c1"}
+::: text
+Approximately how much time does the bird spend in the air and on the
+ground?
+:::
+
+::: feedback
+This could be determined from the "Altitude" data.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+Does the bird travel in groups with other tracked birds?
+:::
+
+::: feedback
+This could be determined from the "Latitude and Longitude" data.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+Is the migration path of the bird affected by temperature patterns?
+:::
+
+::: feedback
+This could be determined from the "Temperature" data.
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+What are the effects of industrial pollution on the migration path of
+the bird?
+:::
+
+::: feedback
+Correct, there is no data collected on pollution in the bird's
+environment.
+:::
+:::
+
+::: {.responseDeclaration identifier="ri1"}
+::: {.correctResponse identifier="c4"}
+:::
+:::
+:::
+
+::: {.assessment-data type="multiplechoice" identifier="searching for patterns" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="true"}
+<a href="https://bjc.berkeley.edu/5-algorithms/3-turning-data-information/2-self-check.html">5.3.2</a>
+
+::: prompt
+Using computers, researchers often search large data sets to find
+interesting patterns in the data. Which is of the following is
+<em><strong>not</strong></em> an example where searching for patterns is
+needed to gather desired information?
+:::
+
+::: {.choice identifier="c1"}
+::: text
+An online shopping company analyzing customers purchase history to
+recommend new products.
+:::
+
+::: feedback
+This is an example of searching for patterns to gather desired
+information.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+A high school analyzing student attendance records to determine which
+students should receive a disciplinary warning.
+:::
+
+::: feedback
+Correct, there is no need here for pattern analysis, just sorting the
+data to get a list of students with poor attendance records.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+A credit scoring company analyzing purchase history of clients to
+identify cases of identity theft.
+:::
+
+::: feedback
+This is an example of searching for patterns to gather desired
+information.
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+A college analyzing high school students' GPA and SAT scores to assess
+their potential college success.
+:::
+
+::: feedback
+This is an example of searching for patterns to gather desired
+information.
+:::
+:::
+
+::: {.responseDeclaration identifier="ri2"}
+::: {.correctResponse identifier="c2"}
+:::
+:::
+:::
+
+::: {.assessment-data type="multiplechoice" identifier="car hailing company trends" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri3" shuffle="true"}
+<a href="https://bjc.berkeley.edu/5-algorithms/3-turning-data-information/2-self-check.html">5.3.2</a>
+
+::: prompt
+A car hailing company uses an app to track the travel trends of its
+customers. The data collected can be filtered and sorted by
+<em>geographic location</em>, <em>time and date</em>, <em>miles
+traveled</em>, and <em>fare charged for the trip</em>. Which of the
+following is <em><strong>least</strong></em> likely to be answerable
+using <em><strong>only</strong></em> the trends feature?
+:::
+
+::: {.choice identifier="c1"}
+::: text
+What time of the day is the busiest for the company at a given city.
+:::
+
+::: feedback
+Filtering by geographic location and sorting through time information
+would yield this information.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+From which geographical location do the longest rides originate.
+:::
+
+::: feedback
+Sorting through miles traveled and noting geographic location would
+yield this information.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+How is competition with the local cab companies affecting business in a
+given district.
+:::
+
+::: feedback
+Correct, there is no information on the competition available in the
+data collected.
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+How much money was earned by the company in a given month.
+:::
+
+::: feedback
+Filtering by date and summing up fares charged would yield this
+information.
+:::
+:::
+
+::: {.responseDeclaration identifier="ri3"}
+::: {.correctResponse identifier="c3"}
+:::
+:::
+:::
+
+::: {.assessment-data type="multiplechoice" identifier="information about song purchases" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri4" shuffle="true"}
+<a href="https://bjc.berkeley.edu/5-algorithms/3-turning-data-information/2-self-check.html">5.3.2</a>
+
+::: prompt
+An online music download company stores information about song purchases
+made by its customers. Every day, the following information is made
+publicly available on a company website database.
+
+<ul>
+
+<li>The day and date of each song purchased.</li>
+
+<li>The title of the song.</li>
+
+<li>The cities where customers purchased each song.</li>
+
+<li>The number of times each song was purchased in a given city.</li>
+
+</ul>
+
+An example portion of the database is shown below. The database is
+sorted by date and song title.
+
++--------------+------------+---------------+---------------------------+
+| Day and Date | Song Title | City          | Number of Times Purchased |
++==============+============+===============+===========================+
+| Mon 07/10/17 | Despacito  | Boston, MA    | 117                       |
++--------------+------------+---------------+---------------------------+
+| Mon 07/10/17 | Malibu     | Chicago, IL   | 53                        |
++--------------+------------+---------------+---------------------------+
+| Mon 07/10/17 | Malibu     | New York, NY  | 197                       |
++--------------+------------+---------------+---------------------------+
+| Mon 07/10/17 | Bad Liar   | Anchorage, AK | 11                        |
++--------------+------------+---------------+---------------------------+
+| Tue 07/11/17 | Despacito  | San Diego, CA | 241                       |
++--------------+------------+---------------+---------------------------+
+
+Which of the following <em><strong>cannot</strong></em> be determined
+using only the information in the database?
+:::
+
+::: {.choice identifier="c1"}
+::: text
+The song that is purchased the most in a given week.
+:::
+
+::: feedback
+This information can be found by summing all the purchases of every song
+in a given week.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+The city with the fewest purchases on a particular day.
+:::
+
+::: feedback
+This information can be found by summing all the purchases of every city
+on a given day.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+The total number of cities in which a certain song was purchased in a
+given month.
+:::
+
+::: feedback
+This information can be found by listing the cities for all the
+purchases of a given song in a given month.
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+The total number of songs purchased by a particular customer during the
+course of a given year.
+:::
+
+::: feedback
+Correct, there is no data publicly displayed on individual customers.
+:::
+:::
+
+::: {.responseDeclaration identifier="ri4"}
+::: {.correctResponse identifier="c4"}
+:::
+:::
+:::
+
+::: {.assessment-data type="multiplechoice" identifier="mobile phone recording metadata" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="true"}
+<a href="https://bjc.berkeley.edu/5-algorithms/3-turning-data-information/6-metadata.html">5.3.6</a>
+
+::: prompt
+A new mobile phone company---unbeknownst to its customers---periodically
+records random snippets of their conversations and considers the
+recordings as data. In addition, it collects the following metadata on
+the conversations:
+
+<ul>
+
+<li>The start and end time of the conversation</li>
+
+<li>The phone numbers of the users in the conversation</li>
+
+<li>The GPS locations of the users in the conversation</li>
+
+</ul>
+
+<p>For which of the following goals would it be more useful to analyze
+the <em><strong>data</strong></em> instead of the
+<em><strong>metadata</strong></em>?</p>
+:::
+
+::: {.choice identifier="c1"}
+::: text
+To determine if any of its users was present at the time and place of a
+crime.
+:::
+
+::: feedback
+For this purpose, GPS and time information (in the metadata) would be
+more useful.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+To determine the time of day the app is used most frequently in a
+certain geographic location.
+:::
+
+::: feedback
+For this purpose, GPS and time information (in the metadata) would be
+more useful.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+To determine the language most commonly used in user conversations.
+:::
+
+::: feedback
+Correct. For this purpose, the conversation data itself would be
+analyzed.
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+To determine the most active users of the app for a given year.
+:::
+
+::: feedback
+For this purpose, user phone numbers and time information (in the
+metadata) would be more useful.
+:::
+:::
+
+::: {.responseDeclaration identifier="ri1"}
+::: {.correctResponse identifier="c3"}
+:::
+:::
+:::
+
+::: {.assessment-data type="multiplechoice" identifier="example of metadata" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="true"}
+<a href="https://bjc.berkeley.edu/5-algorithms/3-turning-data-information/6-metadata.html">5.3.6</a>
+
+::: prompt
+Which of the following is <em><strong>not</strong></em> an example of
+<em>metadata</em>?
+:::
+
+::: {.choice identifier="c1"}
+::: text
+Data about a digital image describing the size of the image, image
+resolution, color depth, and when the image was created.
+:::
+
+::: feedback
+This is an example of data about data.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+Data about a text document containing information about the length of
+the document, its author, the date the document was written, and a short
+summary of the content.
+:::
+
+::: feedback
+This is an example of data about data.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+Data about a pack of wolves describing their habitat, hunting habits,
+diet, and sleep cycles.
+:::
+
+::: feedback
+Correct. Data about wolves is not data about data.
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+Data about a web page containing a description of page content and a
+list of key words linked to the content.
+:::
+
+::: feedback
+This is an example of data about data.
+:::
+:::
+
+::: {.responseDeclaration identifier="ri2"}
+::: {.correctResponse identifier="c3"}
+:::
+:::
+:::

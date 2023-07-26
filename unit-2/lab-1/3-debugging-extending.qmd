@@ -1,5 +1,5 @@
 ---
-title: "Debugging and Extending Your Number Guessing Game"
+title: "Page 3: Debugging and Extending Your Number Guessing Game"
 subtitle: "Unit 2, Lab 1, Page 3"
 order: 3
 ---

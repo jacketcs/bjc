@@ -8,25 +8,25 @@ author: "Mr. Chang and Ms. O'Keefe"
 In this project, you'll create a game that teaches the history of computers, based off what you learned in this unit and self-research.
 :::
 
-Recall that from Unit 6, we touched on the history of computers in [Lab 2](https://bjc.echa.ng/unit-6/lab-2/page-1.html). Now it's time for you to create a game that can teach someone about the history of computers.
+Recall that from Unit 6, we touched on the history of computers in [Lab 2](/unit-6/lab-2/1-timeline.qmd). Now it's time for you to create a game that can teach someone about the history of computers.
 
 ::: {.forYouToDo}
 1. ***BEFORE YOU DO YOUR ACTUAL CODING***, Create a write-up detailing your ideas for how to code the project for each event/interaction and outline for the game.
-    - Requirements:
-        * Reference specific blocks and solutions for your code (e.g. Will you use a list? What blocks will you create and what will they do? Which built-in blocks will you think can help you create a specific portion of the project?)
-        * Written in a logical order.
-        * At least 1000 words.
-    - **Due on Friday, 5/19/2023.**
-    - A template for this write-up is in your Google Classroom assignment.
+- Requirements:
+* Reference specific blocks and solutions for your code (e.g. Will you use a list? What blocks will you create and what will they do? Which built-in blocks will you think can help you create a specific portion of the project?)
+* Written in a logical order.
+* At least 1000 words.
+- **Due on Friday, 5/19/2023.**
+- A template for this write-up is in your Google Classroom assignment.
 
-2. Create a game (the design is up to you!) where the user is either asked computer history trivia questions, or interesting facts about computer history are presented as the game is played. **The game cannot be just a [quiz game like we did in U2L2](https://bjc.echa.ng/unit-2/lab-2/2-quizzes.html)**. There must be some sort of sprite movement and either dexterity, accuracy, and/or problem-solving challenge apart from answering questions. 
-    - The requirements for this game will be to:
-        * Have creative and artistic value by having relevant sprite costumes involved in the project.
-        * From the various events listed on [Unit 6, Lab 2, Page 1](https://bjc.echa.ng/unit-6/lab-2/page-1.html), use at least 5 of the events.
-        * In addition, find and research two other events that are **not listed** on [Unit 6, Lab 2, Page 1](https://bjc.echa.ng/unit-6/lab-2/page-1.html) to add to your project. Do your own research on what you think was a "ground-breaking" or important development.
-            - **At least one of these must be a development from the last 3 years.**
-    - **Due halfway through the finals period (Wednesday 5/31 for Period 4 and Thursday 6/1 for Periods 5 and 6.** The second half of the finals period will be to showcase your projects and/or party time.
-    
+2. Create a game (the design is up to you!) where the user is either asked computer history trivia questions, or interesting facts about computer history are presented as the game is played. **The game cannot be just a [quiz game like we did in U2L2](/unit-2/lab-2/2-quizzes.qmd)**. There must be some sort of sprite movement and either dexterity, accuracy, and/or problem-solving challenge apart from answering questions. 
+- The requirements for this game will be to:
+* Have creative and artistic value by having relevant sprite costumes involved in the project.
+* From the various events listed on [Unit 6, Lab 2, Page 1](/unit-6/lab-2/1-timeline.qmd), use at least 5 of the events.
+* In addition, find and research two other events that are **not listed** on [Unit 6, Lab 2, Page 1](/unit-6/lab-2/1-timeline.qmd) to add to your project. Do your own research on what you think was a "ground-breaking" or important development.
+- **At least one of these must be a development from the last 3 years.**
+- **Due halfway through the finals period (Wednesday 5/31 for Period 4 and Thursday 6/1 for Periods 5 and 6.** The second half of the finals period will be to showcase your projects and/or party time.
+
 :::
 
 **This final project is worth *50 points* on your project/assessment grade.**

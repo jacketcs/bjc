@@ -1,5 +1,5 @@
 ---
-title: "Customizing and Debugging"
+title: "Page 3: Customizing and Debugging"
 subtitle: "Unit 1, Lab 2, Page 3"
 order: 3
 ---

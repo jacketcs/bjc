@@ -1,6 +1,6 @@
 project:
   preview:
-    port: 4200
+    port: 1000
     browser: false
   type: website
   resources:
@@ -12,9 +12,9 @@ website:
   title: "BHS AP CSP"
   page-navigation: true
   page-footer: |
-    The curriculum and text on this website is adapted from [The Beauty and Joy of Computing](https://bjc.edc.org/bjc-r/)
+    The curriculum, text, and styling on this website is adapted from [The Beauty and Joy of Computing](https://bjc.edc.org/bjc-r/)
     by University of California, Berkeley and Education Development Center, Inc. which is licensed
-    under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+    under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
   navbar:
     background: primary
     search: true

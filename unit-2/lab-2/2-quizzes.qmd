@@ -1,5 +1,5 @@
 ---
-title: "Planning a Quiz App"
+title: "Page 2: Planning a Quiz App"
 subtitle: "Unit 2, Lab 2, Page 2"
 order: 2
 ---

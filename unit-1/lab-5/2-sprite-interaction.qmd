@@ -1,5 +1,5 @@
 ---
-title: "Sprite Following a Sprite"
+title: "Page 2: Sprite Following a Sprite"
 subtitle: "Unit 1, Lab 5, Page 2"
 order: 2
 ---
@@ -266,7 +266,7 @@ You can use a picture from the Internet by dragging the picture into the Snap<em
 Change the background on the stage.
 
 ::: endnote
-There are instructions in the If There Is Time section on <a href="/cur/programming/1-introduction/2-gossip-and-greet/3-customizing.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 1 Lab 2 Page 3: Customizing and Debugging">Unit 1 Lab 2 Page 3: Customizing and Debugging</a>.
+There are instructions in the If There Is Time section on <a href="/unit-1/lab-2/3-customizing.html" title="Unit 1 Lab 2 Page 3: Customizing and Debugging">Unit 1 Lab 2 Page 3: Customizing and Debugging</a>.
 :::
 
 </li>

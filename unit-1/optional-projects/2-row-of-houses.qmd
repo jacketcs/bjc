@@ -24,7 +24,7 @@ order: 2
 Create a <code>draw square</code> block that takes a <var>size</var> as input. Be sure to test it with different inputs.<br />
 
 ::: sidenote
-You learned how to create a block with an input on <a href="/cur/programming/1-introduction/3-drawing/3-blocks-with-inputs.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Lab 3 Page 3: Blocks with Inputs">Lab 3 Page 3: Blocks with Inputs</a>.
+You learned how to create a block with an input on <a href="/unit-1/lab-3/3-blocks-with-inputs.html" title="Lab 3 Page 3: Blocks with Inputs">Lab 3 Page 3: Blocks with Inputs</a>.
 :::
 
 <img src="/img/1-introduction/draw-square-size.png" title="draw square, size: ()" alt="draw square, size: ()" class="indent"/> <img src="/img/1-introduction/square-size-100.png" title="a drawing of a square" alt="a drawing of a square" class="indent noshadow"/>
@@ -44,7 +44,7 @@ You learned how to create a block with an input on <a href="/cur/programming/1-i
 Using <code>draw</code> square as an example of where to start, create and test a <code>draw triangle</code> block that takes a <var>size</var> as input and draws an equilateral triangle.<br />
 
 ::: sidenote
-You learned about turning angles on <a href="/cur/programming/1-introduction/3-drawing/2-exploring-snap-drawing-motion.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Lab 3 Page 2: Angles and Turning">Lab 3 Page 2: Angles and Turning</a>.
+You learned about turning angles on <a href="/unit-1/lab-3/2-exploring-snap-drawing-motion.qmd" title="Unit 1, Lab 3, Page 2, Angles and Turning">Unit 1, Lab 3, Page 2, Angles and Turning</a>.
 :::
 
 <img src="/img/1-introduction/draw-triangle-size.png" title="draw triangle, size: ()" alt="draw triangle, size: ()" class="indent"/> <img src="/img/1-introduction/triangle-size-100.png" title="a drawing of a triangle" alt="a drawing of a triangle" class="indent noshadow"/>

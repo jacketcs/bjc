@@ -1,5 +1,5 @@
 ---
-title: "Keeping a Programming Journal"
+title: "Page 7: Keeping a Programming Journal"
 subtitle: "Unit 1, Lab 3, Page 7"
 order: 7
 ---
@@ -73,7 +73,7 @@ Did you define new procedures?
 <p>
 
 ::: sidenoteBig
-You don't need to copy things out of the curriculum into your journal; you can always look those up in the <a href="/cur/programming/summaries/vocab-index.html?course=bjc4nyc.html&novideo&noassignment" title="curriculum index">index</a>.
+You don't need to copy things out of the curriculum into your journal; you can always look those up in the <a href="/summaries/vocab-index.html?course=bjc4nyc.html&novideo&noassignment" title="curriculum index">index</a>.
 :::
 
 <strong>The journal is for you, not for your teacher.</strong> You won't be graded on what you do or don't put in it. The journal isn't graded because it's a record of the things only you experience in the class, not a record of the ideas in the curriculum. Everyone's journal will be different.

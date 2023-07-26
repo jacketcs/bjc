@@ -1,5 +1,5 @@
 ---
-title: "Choosing a Costume"
+title: "Page 5: Choosing a Costume"
 subtitle: "Unit 2, Lab 1, Page 5"
 order: 5
 ---
@@ -12,7 +12,7 @@ order: 5
 <ol>
 
 ::: sidenote
-You learned how to add costumes on <a href="/cur/programming/1-introduction/2-gossip-and-greet/3-customizing.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 1 Lab 2 Page 3: Customizing and Debugging">Unit 1 Lab 2 Page 3: Customizing and Debugging</a>.
+You learned how to add costumes on <a href="/unit-1/lab-2/3-customizing.html" title="Unit 1 Lab 2 Page 3: Customizing and Debugging">Unit 1 Lab 2 Page 3: Customizing and Debugging</a>.
 :::
 
 <li>If it isn't open already, open your U2L1-ClickAlonzo project.</li>
@@ -98,7 +98,7 @@ AAP-2.N part a
 :::
 
 ::: sidenote
-You used <code>ask</code> and <code>answer</code> on <a href="/cur/programming/2-complexity/1-variables-games/2-checking-player-guess.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="">Unit 2 Lab 1 Page 2: Checking the Player's Guess</a>.
+You used <code>ask</code> and <code>answer</code> on <a href="/unit-2/lab-1/2-checking-player-guess.html" title="">Unit 2 Lab 1 Page 2: Checking the Player's Guess</a>.
 :::
 
 <li>

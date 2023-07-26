@@ -108,7 +108,7 @@ Here is a modern example of an orrery.
 ::: endnote
 #### <strong>The Difference Engine</strong> (c. 1822)
 
-<p>In 1822, Charles Babbage designed a device he called a "Difference Engine." Made of precisely milled metal gears, it would compute and print tables of numbers, like log or trig functions. See more on <a href="/cur/programming/6-computers/1-abstraction/06-digital-architecture.html?topic=nyc_bjc%2F6-how-computers-work.topic&course=bjc4nyc.html&novideo&noassignment" title="The Digital Domain: Architecture">the digital architecture page</a>.</p>
+<p>In 1822, Charles Babbage designed a device he called a "Difference Engine." Made of precisely milled metal gears, it would compute and print tables of numbers, like log or trig functions. See more on <a href="/unit-6/lab-1/06-digital-architecture.html" title="The Digital Domain: Architecture">the digital architecture page</a>.</p>
 :::
 :::
 
@@ -122,7 +122,7 @@ Here is a modern example of an orrery.
 ::: endnote
 #### <strong>The Analytical Engine</strong> (c. 1833)
 
-<p>The Difference Engine could compute various functions by manually setting the starting position of its gears, but it had only one algorithm, built into the hardware design. In 1833, Babbage began a more ambitious project, the Analytical Engine. It was based on the general idea of the Difference Engine, but with a crucial difference: It could carry out instructions in a primitive programming language, prepared on punched cards. See more on <a href="/cur/programming/6-computers/1-abstraction/06-digital-architecture.html?topic=nyc_bjc%2F6-how-computers-work.topic&course=bjc4nyc.html&novideo&noassignment" title="The Digital Domain: Architecture">the digital architecture page</a>.</p>
+<p>The Difference Engine could compute various functions by manually setting the starting position of its gears, but it had only one algorithm, built into the hardware design. In 1833, Babbage began a more ambitious project, the Analytical Engine. It was based on the general idea of the Difference Engine, but with a crucial difference: It could carry out instructions in a primitive programming language, prepared on punched cards. See more on <a href="/unit-6/lab-1/06-digital-architecture.html" title="The Digital Domain: Architecture">the digital architecture page</a>.</p>
 :::
 :::
 
@@ -136,7 +136,7 @@ Here is a modern example of an orrery.
 ::: endnote
 #### <strong>The First Programmer</strong> (c. 1842)
 
-<p>Babbage's design was very versatile, but his interest was still mainly in printing tables of numbers. It was his collaborator Ada, Countess Lovelace, who first recognized that the numbers in Babbage's computer could be used not only as quantities but also as representing musical notes, text characters, and so on. See more on <a href="/cur/programming/6-computers/1-abstraction/06-digital-architecture.html?topic=nyc_bjc%2F6-how-computers-work.topic&course=bjc4nyc.html&novideo&noassignment" title="The Digital Domain: Architecture">the digital architecture page</a>.</p>
+<p>Babbage's design was very versatile, but his interest was still mainly in printing tables of numbers. It was his collaborator Ada, Countess Lovelace, who first recognized that the numbers in Babbage's computer could be used not only as quantities but also as representing musical notes, text characters, and so on. See more on <a href="/unit-6/lab-1/06-digital-architecture.html" title="The Digital Domain: Architecture">the digital architecture page</a>.</p>
 
 <img src="/img/6-computers/ada-lovelace.jpg" title="Ada, Countess Lovelace" alt="Ada, Countess Lovelace" class="indent"/>
 
@@ -156,7 +156,7 @@ Here is a modern example of an orrery.
 ::: endnote
 #### <strong>Alan Turing Wins World War II</strong> (1940s)
 
-<p>Well, we're exaggerating. Many people contributed to the Nazi defeat. But they weren't all soldiers; some were mathematicians. Turing, who went on to develop the beginning ideas of computer science and to prove the Halting Theorem, which you saw in <a href="/cur/programming/5-algorithms/4-unsolvable-undecidable/2-halting-problem.html?topic=nyc_bjc%2F5-algorithms.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 5, Lab 4: An Undecidable Problem" title="Unit 5, Lab 4: An Undecidable Problem">Unit 5, Lab 4: An Undecidable Problem</a>, was the leader of a British team of mathematicians who made a breakthrough in decrypting messages encrypted with the German <em>Enigma</em> machine.</p>
+<p>Well, we're exaggerating. Many people contributed to the Nazi defeat. But they weren't all soldiers; some were mathematicians. Turing, who went on to develop the beginning ideas of computer science and to prove the Halting Theorem, which you saw in <a href="/unit-5/lab-4/2-halting-problem.html" title="Unit 5, Lab 4: An Undecidable Problem" title="Unit 5, Lab 4: An Undecidable Problem">Unit 5, Lab 4: An Undecidable Problem</a>, was the leader of a British team of mathematicians who made a breakthrough in decrypting messages encrypted with the German <em>Enigma</em> machine.</p>
 
 <p class="blockquote">
 
@@ -251,7 +251,7 @@ Alan Turing, a Cambridge University mathematician and logician, provided much of
 
 <p>Several people had the idea of a system that would allow users to embed links to files into a conversation, so you could say "I think <u>this document</u> might help you." In 1945, Vannevar Bush described a hypothetical device with the ability to embed links in files. In 1963, Ted Nelson made up the word "hypertext" as the name for this feature, but the first actual implementation was Douglas Engelbart's system NLS, developed starting in 1963 and demonstrated in 1968.</p>
 
-<p>In 1989, physicist Tim Berners-Lee implemented a hypertext system and named it the World Wide Web. At first it was used only by physicists, to share data and ideas. But by then the Internet was running, so his timing was right, and the name was much more appealing than the technical-sounding "hypertext" (although, as you saw in <a href="/cur/programming/4-internet/old/2-communication-protocols/3-open-protocols.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 4, Lab 3: A Hierarchy of Open Protocols">Unit 4, Lab 3: A Hierarchy of Open Protocols</a>, behind the scenes, the protocol that makes the Web work is called the "HyperText Transfer Protocol" or HTTP). The growth of the Web was very rapid, from about 500 servers in 1993 to over 10,000 in 1994. Today, many people talk as if "the Internet" and "the Web" were the same thing, but you've learned that they are not in <a href="/cur/programming/4-internet/1-reliable-communication/1-what-is-internet.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 4, Lab 1: What Is the Internet?">Unit 4, Lab 1: What Is the Internet?</a>.</p>
+<p>In 1989, physicist Tim Berners-Lee implemented a hypertext system and named it the World Wide Web. At first it was used only by physicists, to share data and ideas. But by then the Internet was running, so his timing was right, and the name was much more appealing than the technical-sounding "hypertext" (although, as you saw in <a href="/unit-4/lab-1/1-what-is-internet.html" title="Unit 4, Lab 1: What Is the Internet?">Unit 4, Lab 1: What Is the Internet?</a>.</p>
 
 <p>Berners-Lee's vision was of a Web in which everyone would be both a creator and a consumer of information. But the Web quickly became a largely one-way communication, with a few commercial websites getting most of the traffic. Today, most Web traffic goes to Google, Facebook, CNN, Amazon, and a few others. But some degree of democracy came back to the Web with the invention of the <em>blog </em>(short for "web log") in which ordinary people can post their opinions and hope that other people will notice them.</p>
 :::
@@ -378,7 +378,7 @@ separate computers trying every possible combination of bit values in parallel. 
 
 -   Keep in mind this timeline is outdated... <br> But look at the timeline. The year markers at the bottom are equally spaced, but the number of years between them is not the same. The number of years does <em>change</em> in a regular way from marker to marker: right to left it goes up by a multiple of ten. We call such a scale <em>logarithmic</em>.
 
-    </div>
+</div>
 
 ::: forYouToDo
 <p>Question 2: Answer this on the Google Form</p>

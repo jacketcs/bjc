@@ -1,5 +1,5 @@
 ---
-title: "Adding Variety to <code>Gossip</code>"
+title: "Page 5: Adding Variety to <code>Gossip</code>"
 subtitle: "Unit 1, Lab 2, Page 5"
 order: 5
 ---

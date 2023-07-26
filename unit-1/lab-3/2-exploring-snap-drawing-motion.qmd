@@ -1,5 +1,5 @@
 ---
-title: "Angles and Turning"
+title: "Page 2: Angles and Turning"
 subtitle: "Unit 1, Lab 3, Page 2"
 order: 2
 ---
@@ -143,9 +143,9 @@ Make another copy of the three-branch script you built, and then:
 :::
 
 ::: takeNote
-### <strong>Debugging with <img src="/img/2-complexity/Debugging/say-for-secs-block.png" title="say for" alt="say for" height="48"/> </strong>
+### Debugging with `say for`
 
-<p>You can use <code>say for</code> to get information about the state of your program while it's running.</p>
+<p>You can use <img src="/img/2-complexity/Debugging/say-for-secs-block.png" title="say for" alt="say for" height="24px" class="inline"/> to get information about the state of your program while it's running.</p>
 
 <p>
 

@@ -1,7 +1,7 @@
 ---
 title: "Modeling Language"
 subtitle: "Unit 1 Optional Project"
-order: 6
+order: 5
 ---
 
 ::: learn
@@ -72,7 +72,7 @@ These phrases will be grammatically correct, but they won't necessarily make sen
 
 ```{=html}
 <!--      <div class="todo">
-See also: <a href="/cur/programming/3-lists/investigations/longest-word.html">Longest Word</a> and <a href="/cur/programming/3-lists/investigations/exaggerate.html">Exaggerate </a>
+See also: <a href="/3-lists/investigations/longest-word.html">Longest Word</a> and <a href="/3-lists/investigations/exaggerate.html">Exaggerate </a>
 <ul>
 <li>Any reason not to tack these on to the TIF for this page? --MF</li>
 <li>Yeah, they don't really fit the topic, and TIF is pretty substantial already. --bh</li>

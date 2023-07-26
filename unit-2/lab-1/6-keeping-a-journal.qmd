@@ -1,5 +1,5 @@
 ---
-title: "Keeping a Programming Journal"
+title: "Page 6: Keeping a Programming Journal"
 subtitle: "Unit 1, Lab 2, Page 6"
 order: 6
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Checking Each Quiz Answer"
+title: "Page 3: Checking Each Quiz Answer"
 subtitle: "Unit 2, Lab 2, Page 3"
 order: 3
 ---

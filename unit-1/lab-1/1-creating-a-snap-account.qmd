@@ -1,8 +1,7 @@
 ---
-title: "Getting Started with Snap<em>!</em>"
+title: "Page 1: Getting Started with Snap<em>!</em>"
 subtitle: "Unit 1, Lab 1, Page 1"
 order: 1
-slide-format: revealjs
 ---
 
 ::: learn
@@ -35,9 +34,9 @@ You should be logged in whenever you are in Snap<em>!</em>. Here's how to check 
 
 3. Click the Cloud menu in the tool-bar.
 
-    - <strong>If</strong> it says "Logout" and your user name, then you are already logged in.
-    - <strong>If</strong> it says someone else's user name, then log them out and log in with your own user name.
-    - <strong>Otherwise</strong>, choose "Login..." and enter your user name and password.
+- <strong>If</strong> it says "Logout" and your user name, then you are already logged in.
+- <strong>If</strong> it says someone else's user name, then log them out and log in with your own user name.
+- <strong>Otherwise</strong>, choose "Login..." and enter your user name and password.
 
 3. Click to the next page to continue (navigation at the bottom of the page, or the left side bar)
 

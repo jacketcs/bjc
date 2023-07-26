@@ -1,5 +1,5 @@
 ---
-title: "Examining Privacy"
+title: "Page 2: Examining Privacy"
 subtitle: "Unit 1, Lab 4, Page 2"
 order: 2
 ---
@@ -116,10 +116,8 @@ Here are a few reasons people give up privacy:
 </p>
 :::
 :::
-
-```         
-                    <li><strong>What are the risks?</strong> Why have <em>you</em> decided that the benefits outweigh the risks?</li>
-```
+    
+<li><strong>What are the risks?</strong> Why have <em>you</em> decided that the benefits outweigh the risks?</li>
 
 </ol>
 
