@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>BHS AP CSP – comparing-search-algorithms</title>
+<title>BHS AP CSP - Page 7: Removing Duplicates</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -136,7 +136,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-5/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-1/1-sorted-lists.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-1/7-comparing-search-algorithms.html">order:</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-5/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-1/1-sorted-lists.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-1/7-comparing-search-algorithms.html">Page 7: Removing Duplicates</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -157,6 +157,24 @@ ul.task-list li input[type="checkbox"] {
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-5/unit-5-exam-reference.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 5 Exam Questions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-5/unit-5-self-check.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 5 Self-Check Questions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-5/unit-5-vocab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Unit 5 Vocabulary</span></a>
+  </div>
+</li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
@@ -169,49 +187,49 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-1/1-sorted-lists.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
+ <span class="menu-text">Page 1: Guess My Number</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-1/2-how-many-five-letter-words.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
+ <span class="menu-text">Page 2: How Many Five-Letter Words Are There?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-1/3-spell-checker.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
+ <span class="menu-text">Page 3: Is ‘Seperate’ Spelled Correctly?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-1/4-efficiency.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
+ <span class="menu-text">Page 4: Exactly How Much Faster Is Binary Search?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-1/5-categorizing-algorithms.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
+ <span class="menu-text">Page 5: Categorizing Algorithms</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-1/6-heuristics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
+ <span class="menu-text">Page 6: Heuristic Solutions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-1/7-comparing-search-algorithms.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">order:</span></a>
+ <span class="menu-text">Page 7: Removing Duplicates</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-1/8-sequential.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
+ <span class="menu-text">Page 8: Parallelism</span></a>
   </div>
 </li>
       </ul>
@@ -228,19 +246,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-2/1-intro-to-simulations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
+ <span class="menu-text">Page 1: Why Use Simulations?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-2/2-disease-spread.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-5/lab-2/3-disease-spread-old.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
+ <span class="menu-text">Page 2: Disease Spread Project</span></a>
   </div>
 </li>
       </ul>
@@ -257,37 +269,43 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-3/1-health-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
+ <span class="menu-text">Page 1: Analyzing Global Health Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-3/2-self-check.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
+ <span class="menu-text">Page 2: Self-Check: Big Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-3/3-importing-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
+ <span class="menu-text">Page 3: Importing and Accessing Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-3/4-filtering-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
+ <span class="menu-text">Page 4: Analyzing Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-3/5-visualizing-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
+ <span class="menu-text">Page 5: Visualizing Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-3/6-metadata.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
+ <span class="menu-text">Page 6: Metadata</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-5/lab-3/assessment-data5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assessment Data5</span></a>
   </div>
 </li>
       </ul>
@@ -304,13 +322,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-4/1-logical-inconsistency.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
+ <span class="menu-text">Page 1: Proof by Contradiction</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-4/2-halting-problem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
+ <span class="menu-text">Page 2: An Undecidable Problem</span></a>
   </div>
 </li>
       </ul>
@@ -327,19 +345,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-5/1-war-and-technology.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
+ <span class="menu-text">Page 1: War and Technology</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-5/2-machines-and-lives.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
+ <span class="menu-text">Page 2: Computers and War</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-5/3-everyday-life.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
+ <span class="menu-text">Page 3: Military Technology in Everyday Life</span></a>
   </div>
 </li>
       </ul>
@@ -356,66 +374,25 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-6/1-review.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
+ <span class="menu-text">Page 1: Review Your Tic-Tac-Toe Project</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-6/2-creating-computer-player.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
+ <span class="menu-text">Page 2: Creating a Computer Player</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-6/3-developing-strategy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
+ <span class="menu-text">Page 3: Developing a Gameplay Strategy</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-5/lab-6/4-making-computer-player-strategic.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">order:</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false">
- <span class="menu-text">Optional Projects</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-5/optional-projects/page-1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 1: Getting Started with Snap<em>!</em></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-5/optional-projects/page-2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Programming a Game</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-5/optional-projects/page-3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Sharing Your Game</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-5/optional-projects/page-4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Giving the Player Feedback</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-5/optional-projects/page-5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Improving Your Game</span></a>
+ <span class="menu-text">Page 4: Making the Computer Play Strategically</span></a>
   </div>
 </li>
       </ul>
@@ -433,90 +410,157 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Page 7: Removing Duplicates</h1>
+<p class="subtitle lead">Unit 5, Lab 1, Page 7</p>
+</div>
 
 
-Unit 5 Lab 1: Search Algorithms and Efficiency, Page 7
 
-<pre><code>&lt;/head&gt;
+<div class="quarto-title-meta">
 
-&lt;body&gt;
-    ## Removing Duplicatessubtitle: "Unit , Lab , Page"</code></pre>
-<p>order:</p>
-<hr>
-<pre><code>    &lt;div class="learn"&gt;
-        &lt;p&gt;
-            &lt;strong&gt;On this page,&lt;/strong&gt; you will learn a recursive technique to remove duplicates from a list.&lt;br /&gt;
-            &lt;img class="indent" src="/img/5-algorithms/distinct-reporter-reporting.png" alt="distinct items from (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) reporting { apples, oranges, bananas, bread, carrots}" title="distinct items from (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) repoting { apples, oranges, bananas, bread, carrots}" /&gt;
-        &lt;/p&gt;
-    &lt;/div&gt;
-
-    &lt;p&gt;Suppose you have a list of items and want to know if the elements of the list are &lt;em&gt;distinct&lt;/em&gt;. For example, you might want to make sure that you don't have anything on your shopping list twice.&lt;/p&gt;
-    &lt;p&gt;As a first step, we'll just answer the yes/no question: are there any duplicates on your list?&lt;br /&gt;
-        &lt;img class="indent" src="/img/5-algorithms/distinct-predicate-reporting.png" alt="are the items of (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) distinct? reporting false" title="are the items of (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) distinct? reporting false" /&gt;
-    &lt;/p&gt;
-     
-    &lt;div class="forYouToDo" id="first"&gt;
-        &lt;ol&gt;
-            &lt;li&gt;Experiment with the &lt;img class="inline nopadtb" src="/img/blocks/all-but-first.png" alt="all but first of 'list input slot'" title="all but first of 'list input slot'" /&gt; block using a few different input lists. &lt;img class="inline" src="/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /&gt; What does this block report?&lt;/li&gt;
-            &lt;li&gt;
-                Finish building the &lt;code&gt;are the items distinct?&lt;/code&gt; predicate, which is started below. Since you're writing a predicate, your procedure should always report &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt;.&lt;br /&gt;
-                &lt;div class="sidenote"&gt;
-                    &lt;a href="#hint-predicate" data-bs-toggle="collapse" title="Try doing it without this hint about the 'are the items distinct?' predicate"&gt;Try doing it without this hint.&lt;/a&gt;
-                    &lt;div id="hint-predicate" class="collapse"&gt;If the program gets to the third &lt;code&gt;report&lt;/code&gt; block at the bottom, what does that tell you about the items in the list?&lt;/div&gt;
-                &lt;/div&gt;
-                &lt;img class="indent" src="/img/5-algorithms/distinct-predicate-starter.png" alt="are the items of (data) distinct?</code></pre>
-{ if (is (data) empty?) { report () } if ((all but first of (data)) contains ()) { report () } report (are the items of () distinct?) }” title=“are the items of (data) distinct? { if (is (data) empty?) { report () } if ((all but first of (data)) contains ()) { report () } report (are the items of () distinct?) }” /&gt;<br>
-
-<div class="endnote">
-<pre><code>                    Notice that this procedure calls itself at the end. (It is &lt;em&gt;recursive.&lt;/em&gt;) This won't work if the input to that call is the same as the original input. So you can't say &lt;img class="inline" src="/img/5-algorithms/report-are-items-of-data-distinct.png" alt="report (are the items of (data) distinct?)" title="report (are the items of (data) distinct?)" /&gt;. Instead, you have to use a smaller input value. 
-                &lt;/div&gt;
-            &lt;/li&gt;
-            &lt;li&gt;&lt;img class="inline" src="/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /&gt; If you doubled the length of the list, would this algorithm take the same amount of time? Twice as long? More than twice as long? &lt;/li&gt;
-        &lt;/ol&gt;
-    &lt;/div&gt;
-
-    &lt;p&gt;For your grocery list, you wouldn't just want to know whether or not there are duplicates. You'd want a new list with the duplicates removed.&lt;/p&gt;
     
-    &lt;div class="forYouToDo"&gt;
-        &lt;ol start="4"&gt;
-            &lt;li&gt;Experiment with the &lt;img class="inline nopadtb" src="/img/blocks/in-front-of-full-size.png" alt="() in front of 'list input slot'" title="() in front of 'list input slot'" /&gt; block using a few different inputs. &lt;img class="inline" src="/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /&gt; What does this block report?&lt;/li&gt;
-            &lt;li&gt;
-                Build a &lt;code&gt;distinct items from&lt;/code&gt; reporter using a structure similar to that of the &lt;code&gt;are the items distinct?&lt;/code&gt; predicate.
-                &lt;div class="endnote"&gt;
-                    &lt;img class="imageRight" src="/img/5-algorithms/distinct-reporter-starter.png" alt="distinct items form (data)</code></pre>
-{ if (is (data) empty?) { report () } if ((all but first of (data)) contains ()) { report () } report () }” title=“distinct items form (data) { if (is (data) empty?) { report () } if ((all but first of (data)) contains ()) { report () } report () }” /&gt;
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="learn">
+<p>
+<strong>On this page,</strong> you will learn a recursive technique to remove duplicates from a list.<br> <img src="../../img/5-algorithms/distinct-reporter-reporting.png" title="distinct items from (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) repoting { apples, oranges, bananas, bread, carrots}" alt="distinct items from (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) reporting { apples, oranges, bananas, bread, carrots}" class="indent">
+</p>
+</div>
+<p>
+Suppose you have a list of items and want to know if the elements of the list are <em>distinct</em>. For example, you might want to make sure that you don’t have anything on your shopping list twice.
+</p>
+<p>
+As a first step, we’ll just answer the yes/no question: are there any duplicates on your list?<br> <img src="../../img/5-algorithms/distinct-predicate-reporting.png" title="are the items of (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) distinct? reporting false" alt="are the items of (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) distinct? reporting false" class="indent">
+</p>
+<div id="first" class="forYouToDo">
+<ol>
+<li>
+Experiment with the <img src="../../img/blocks/all-but-first.png" title="all but first of 'list input slot'" alt="all but first of 'list input slot'" class="inline nopadtb"> block using a few different input lists. <img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> What does this block report?
+</li>
+<li>
+<p>Finish building the <code>are the items distinct?</code> predicate, which is started below. Since you’re writing a predicate, your procedure should always report <code>true</code> or <code>false</code>.<br></p>
+<div class="sidenote">
+<p><a href="#hint-predicate" data-toggle="collapse" title="Try doing it without this hint about the 'are the items distinct?' predicate">Try doing it without this hint.</a></p>
+<div id="hint-predicate" class="collapse">
+<p>If the program gets to the third <code>report</code> block at the bottom, what does that tell you about the items in the list?</p>
+</div>
+</div>
+<p><img src="../../img/5-algorithms/distinct-predicate-starter.png" title="are the items of (data) distinct?
+{
+if (is (data) empty?)
+{
+report ()
+}
+if ((all but first of (data)) contains ())
+{
+report ()
+}
+report (are the items of () distinct?)
+}" alt="are the items of (data) distinct?
+{
+if (is (data) empty?)
+{
+report ()
+}
+if ((all but first of (data)) contains ())
+{
+report ()
+}
+report (are the items of () distinct?)
+}" class="indent"><br>
+</p>
+<div class="endnote">
+<p>Notice that this procedure calls itself at the end. (It is <em>recursive.</em>) This won’t work if the input to that call is the same as the original input. So you can’t say <img src="../../img/5-algorithms/report-are-items-of-data-distinct.png" title="report (are the items of (data) distinct?)" alt="report (are the items of (data) distinct?)" class="inline">. Instead, you have to use a smaller input value.</p>
+</div>
+</li>
+<li>
+<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> If you doubled the length of the list, would this algorithm take the same amount of time? Twice as long? More than twice as long?
+</li>
+</ol>
+</div>
+<p>
+For your grocery list, you wouldn’t just want to know whether or not there are duplicates. You’d want a new list with the duplicates removed.
+</p>
+<div class="forYouToDo">
+<ol start="4">
+<li>
+Experiment with the <img src="../../img/blocks/in-front-of-full-size.png" title="() in front of 'list input slot'" alt="() in front of 'list input slot'" class="inline nopadtb"> block using a few different inputs. <img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> What does this block report?
+</li>
+<li>
+<p>Build a <code>distinct items from</code> reporter using a structure similar to that of the <code>are the items distinct?</code> predicate.</p>
+<div class="endnote">
+<p><img src="../../img/5-algorithms/distinct-reporter-starter.png" title="distinct items form (data)
+{
+if (is (data) empty?)
+{
+report ()
+}
+if ((all but first of (data)) contains ())
+{
+report ()
+}
+report ()
+}" alt="distinct items form (data)
+{
+if (is (data) empty?)
+{
+report ()
+}
+if ((all but first of (data)) contains ())
+{
+report ()
+}
+report ()
+}" class="imageRight"></p>
 <p>
 The algorithm for this block will make the same decisions as in <code>are the items distinct?</code>. But that was a predicate. This one has to report a list. So look at the three <code>report</code> blocks in your code for the <code>are the items distinct?</code> predicate, and decide what they should report for the <code>distinct items from</code> reporter.
 </p>
-<pre><code>                    &lt;p&gt;
-                        &lt;a href="#hint-reporter" data-bs-toggle="collapse" title="Need another hint about the &lt;code&gt;distinct items from&lt;/code&gt; reporter?"&gt;Need another hint?&lt;/a&gt;
-                        &lt;div id="hint-reporter" class="collapse"&gt;
-                            &lt;ul&gt;
-                                &lt;li&gt;If the list is empty, what should &lt;code&gt;distinct items from&lt;/code&gt; report?&lt;/li&gt;
-                                &lt;li&gt;
-                                    If the first item in the list appears in the rest of the list, it doesn't matter which copy you leave out. Is there an easy way to get a version of the list without one of those copies? 
-                                    &lt;ul&gt;
-                                        &lt;li&gt;What if there are other duplicates in that list?&lt;/li&gt;
-                                    &lt;/ul&gt;
-                                &lt;/li&gt;    
-                                &lt;li&gt;If computer makes it to the third &lt;code&gt;report&lt;/code&gt; block, what does that tell you about the first item in the list? Do you want the first item as part of the list you report?&lt;/li&gt;
-                            &lt;/ul&gt;
-                        &lt;/div&gt;
-                    &lt;/p&gt;
-                    &lt;p style="clear: both; height: 0px;"&gt;&lt;/p&gt;
-                &lt;/div&gt;
-            &lt;/li&gt; 
-            &lt;li&gt;Test it. Be sure to pick good test cases: More than one pair of duplicates, more than two items of the same value, duplicates right next to each other in the list, etc.&lt;/li&gt;
-            &lt;li&gt;&lt;div class="saveAs"&gt;&lt;span class="text"&gt;"U5L1-Removing-Duplicates"&lt;/span&gt;&lt;img src="/img/icons/save-this-as.png" alt="Save your work as U5L1-Removing-Duplicates" title="Save your work as U5L1-Removing-Duplicates" /&gt;&lt;/div&gt;&lt;/li&gt;
-        &lt;/ol&gt;
-    &lt;/div&gt;        
-    
-&lt;/body&gt;</code></pre>
+<p>
+</p><p><a href="#hint-reporter" data-toggle="collapse" title="Need another hint about the <code>distinct items from</code> reporter?">Need another hint?</a></p>
+<div id="hint-reporter" class="collapse">
+<ul>
+<li>
+If the list is empty, what should <code>distinct items from</code> report?
+</li>
+<li>
+<p>If the first item in the list appears in the rest of the list, it doesn’t matter which copy you leave out. Is there an easy way to get a version of the list without one of those copies?</p>
+<ul>
+<li>
+What if there are other duplicates in that list?
+</li>
+</ul>
+</li>
+<li>
+If computer makes it to the third <code>report</code> block, what does that tell you about the first item in the list? Do you want the first item as part of the list you report?
+</li>
+</ul>
+</div>
+<p></p>
+<p style="clear: both; height: 0px;">
+</p>
+</div>
+</li>
+<li>
+Test it. Be sure to pick good test cases: More than one pair of duplicates, more than two items of the same value, duplicates right next to each other in the list, etc.
+</li>
+<li>
+<div class="saveAs">
+<p><span class="text">“U5L1-Removing-Duplicates”</span><img src="../../img/icons/save-this-as.png" title="Save your work as U5L1-Removing-Duplicates" alt="Save your work as U5L1-Removing-Duplicates"></p>
+</div>
+</li>
+</ol>
+</div>
 
 
 
-
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -868,12 +912,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../../unit-5/lab-1/6-heuristics.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">order:</span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Page 6: Heuristic Solutions</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../../unit-5/lab-1/8-sequential.html" class="pagination-link">
-        <span class="nav-page-text">order:</span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text">Page 8: Parallelism</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -883,7 +927,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">The curriculum and text on this website is adapted from <a href="https://bjc.edc.org/bjc-r/">The Beauty and Joy of Computing</a> by University of California, Berkeley and Education Development Center, Inc.&nbsp;which is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</div>
+    <div class="nav-footer-center">The curriculum, text, and styling on this website is adapted from <a href="https://bjc.edc.org/bjc-r/">The Beauty and Joy of Computing</a> by University of California, Berkeley and Education Development Center, Inc.&nbsp;which is licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

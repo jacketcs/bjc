@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>BHS AP CSP - Page 1: Analyzing Global Health Data</title>
+<title>BHS AP CSP -</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../unit-5/lab-3/2-self-check.html" rel="next">
-<link href="../../unit-5/lab-2/2-disease-spread.html" rel="prev">
+<link href="../../unit-5/lab-4/1-logical-inconsistency.html" rel="next">
+<link href="../../unit-5/lab-3/6-metadata.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -136,7 +136,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-5/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-3/1-health-data.html">Lab 3</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-3/1-health-data.html">Page 1: Analyzing Global Health Data</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-5/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-3/1-health-data.html">Lab 3</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-3/assessment-data5.html">Assessment Data5</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -268,7 +268,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../unit-5/lab-3/1-health-data.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../unit-5/lab-3/1-health-data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Page 1: Analyzing Global Health Data</span></a>
   </div>
 </li>
@@ -304,7 +304,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../unit-5/lab-3/assessment-data5.html" class="sidebar-item-text sidebar-link">
+  <a href="../../unit-5/lab-3/assessment-data5.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Assessment Data5</span></a>
   </div>
 </li>
@@ -412,8 +412,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Page 1: Analyzing Global Health Data</h1>
-<p class="subtitle lead">Unit 5, Lab 3, Page 1</p>
+<h1 class="title"></h1>
+<p class="subtitle lead">Unit 5, Lab 3, Page</p>
 </div>
 
 
@@ -428,202 +428,712 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="todo">
-<p>Tim points out that we are missing an “In this lab” on this first page of the lab. –MF, 5/23/20</p>
-</div>
-<div class="learn">
-<p>
-<strong>On this page</strong>, you will learn how data visualization can help people understand data.
-</p>
-</div>
-<p>
-Large data sets can be overwhelming to analyze, but software tools can help people extract information, identify trends, make connections, and solve problems with data. Software programs, such as the graph below from Google can allow you to process data interactively to gain insight and knowledge.
-</p>
-<div id="first" class="forYouToDo">
-<ol>
-<p><img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="imageRight"></p>
-<li>
-<div class="sidenoteBig">
-<p>If the interactive graph doesn’t work on this page, you can <a href="https://www.google.com/publicdata/explore?ds=d5bncppjof8f9_&amp;ctype=b&amp;strail=false&amp;bcs=d&amp;nselm=s&amp;met_x=sp_dyn_le00_in&amp;scale_x=lin&amp;ind_x=false&amp;met_y=sp_dyn_tfrt_in&amp;scale_y=lin&amp;ind_y=false&amp;met_s=sp_pop_totl&amp;scale_s=lin&amp;ind_s=false&amp;dimp_c=country:region&amp;ifdim=country&amp;tunit=Y&amp;pit=1437710400000&amp;ind=false&amp;icfg&amp;iconSize=0.5" target="_blank" title="Fertility rate vs Life expectancy graph on Google">view it on google.com</a>.</p>
-</div>
-<p><strong>Explore</strong> the following interactive data set.</p>
-<ol>
-<li>
-What does each point represent?
-</li>
-<li>
-<p>What does each axis represent? <a href="#hint-axes" data-toggle="collapse" title="Reveal a hint about the axes.">Reveal a hint about the axes.</a></p>
-<div id="hint-axes" class="collapse">
-<p><small>If you are viewing the data on this page, the label for the vertical axis is at the top of that axis. (If you are viewing it directly on google.com, it’s along the left where it usually is.)</small></p>
-</div>
-</li>
-<li>
-What do the colors represent?
-</li>
-<li>
-What does the size of each point indicate?
-</li>
-<li>
-What does the slider at the bottom do?
-</li>
-</ol>
-<iframe width="800" height="650" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" src="https://www.google.com/publicdata/embed?ds=d5bncppjof8f9_&amp;ctype=b&amp;strail=false&amp;bcs=d&amp;nselm=s&amp;met_x=sp_dyn_le00_in&amp;scale_x=lin&amp;ind_x=false&amp;met_y=sp_dyn_tfrt_in&amp;scale_y=lin&amp;ind_y=false&amp;met_s=sp_pop_totl&amp;scale_s=lin&amp;ind_s=false&amp;dimp_c=country:region&amp;ifdim=country&amp;tunit=Y&amp;pit=1437710400000&amp;hl=en_US&amp;dl=en_US&amp;ind=false&amp;icfg&amp;iconSize=0.5">
-</iframe>
-</li>
-<li>
-<p><img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="imageRight"> <strong>Analyze</strong> the data. In the interactive graph above, click the play button in the lower-left or move the slider at the bottom. Discuss the following:</p>
-<ol>
-<li>
-What does this interactive data set tell you about global trends in life expectancy over time (on average)?
-</li>
-<li>
-What about global trends in fertility over time (on average)?
-</li>
-</ol>
-</li>
-<li>
-<div class="ap-standard">
-<p>DAT-2.E, DAT-2.E.3 clustering only</p>
-</div>
-<p>Looking at clusters in the data can help you gain insight and knowledge. <strong>Do some research</strong> online or in the library to help you answer the following:</p>
-<div class="todo">
-<p>It’s not clear to me that “doing some research” is needed to answer these questions. Did we say that because of the standards? If so, maybe the questions below could ask more pointed questions that can’t be answered just from exploring the interactive data. If not, maybe the phrasing above should be adjusted. –MF, 5/31/20</p>
-</div>
-<ol>
-<li>
-Move the slider to 1960 (all the way to the left), and describe the meaning of the cluster of orange data points in the lower right. What does this tell you about trends in about this region of the world at that time?
-</li>
-<li>
-Move the slider to 2016 (all the way to the right), and describe the meaning of the cluster of pink data points in the upper left. What does this tell you about trends in about this region of the world at that time?
-</li>
-<li>
-Move the slider back and forth across time, and select one country that follows a path that is interesting to you. Describe what this tells you about the life expectancy and fertility of this country over this time period.
-</li>
-</ol>
-</li>
-</ol>
-</div>
-<p>
-In ordinary speech, the words “data” and “information” are used interchangeably. But in computing, these words have specific technical meanings.
-</p>
-<div class="vocabFullWidth">
-<p>: <strong>Data</strong> vs.&nbsp;<strong>Information</strong></p>
-<div class="ap-standard">
-<p>DAT-2.A.1</p>
-</div>
+<h3 class="anchored">
+Lab 3: Turning Data into Information
+</h3>
+<div class="assessment-data" type="multiplechoice" data-identifier="migrating birds" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri1" data-shuffle="true">
+<p><a href="https://bjc.berkeley.edu/5-algorithms/3-turning-data-information/2-self-check.html">5.3.2</a></p>
+<div class="prompt">
+<p>Scientists studying birds often attach tracking tags to migrating birds. For each bird, the following data is collected regularly at frequent intervals:</p>
 <ul>
 <li>
-<strong>Data</strong> are the values that computers receive from various sources, including human activity, sensors, etc.
+Date and time
 </li>
 <li>
-<strong>Information</strong> is the humanly-useful patterns extracted from data.
+Latitude and Longitude
+</li>
+<li>
+Altitude
+</li>
+<li>
+Temperature
+</li>
+</ul>
+<p>Which of the following questions about a particular bird could <em><strong>not</strong></em> be answered using <em><strong>only</strong></em> the data gathered from the tracking tags.</p>
+</div>
+<div class="choice" data-identifier="c1">
+<div class="text">
+<p>Approximately how much time does the bird spend in the air and on the ground?</p>
+</div>
+<div class="feedback">
+<p>This could be determined from the “Altitude” data.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c2">
+<div class="text">
+<p>Does the bird travel in groups with other tracked birds?</p>
+</div>
+<div class="feedback">
+<p>This could be determined from the “Latitude and Longitude” data.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c3">
+<div class="text">
+<p>Is the migration path of the bird affected by temperature patterns?</p>
+</div>
+<div class="feedback">
+<p>This could be determined from the “Temperature” data.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c4">
+<div class="text">
+<p>What are the effects of industrial pollution on the migration path of the bird?</p>
+</div>
+<div class="feedback">
+<p>Correct, there is no data collected on pollution in the bird’s environment.</p>
+</div>
+</div>
+<div class="responseDeclaration" data-identifier="ri1">
+<div class="correctResponse" data-identifier="c4">
+
+</div>
+</div>
+</div>
+<div class="assessment-data" type="multiplechoice" data-identifier="searching for patterns" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri2" data-shuffle="true">
+<p><a href="https://bjc.berkeley.edu/5-algorithms/3-turning-data-information/2-self-check.html">5.3.2</a></p>
+<div class="prompt">
+<p>Using computers, researchers often search large data sets to find interesting patterns in the data. Which is of the following is <em><strong>not</strong></em> an example where searching for patterns is needed to gather desired information?</p>
+</div>
+<div class="choice" data-identifier="c1">
+<div class="text">
+<p>An online shopping company analyzing customers purchase history to recommend new products.</p>
+</div>
+<div class="feedback">
+<p>This is an example of searching for patterns to gather desired information.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c2">
+<div class="text">
+<p>A high school analyzing student attendance records to determine which students should receive a disciplinary warning.</p>
+</div>
+<div class="feedback">
+<p>Correct, there is no need here for pattern analysis, just sorting the data to get a list of students with poor attendance records.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c3">
+<div class="text">
+<p>A credit scoring company analyzing purchase history of clients to identify cases of identity theft.</p>
+</div>
+<div class="feedback">
+<p>This is an example of searching for patterns to gather desired information.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c4">
+<div class="text">
+<p>A college analyzing high school students’ GPA and SAT scores to assess their potential college success.</p>
+</div>
+<div class="feedback">
+<p>This is an example of searching for patterns to gather desired information.</p>
+</div>
+</div>
+<div class="responseDeclaration" data-identifier="ri2">
+<div class="correctResponse" data-identifier="c2">
+
+</div>
+</div>
+</div>
+<div class="assessment-data" type="multiplechoice" data-identifier="car hailing company trends" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri3" data-shuffle="true">
+<p><a href="https://bjc.berkeley.edu/5-algorithms/3-turning-data-information/2-self-check.html">5.3.2</a></p>
+<div class="prompt">
+<p>A car hailing company uses an app to track the travel trends of its customers. The data collected can be filtered and sorted by <em>geographic location</em>, <em>time and date</em>, <em>miles traveled</em>, and <em>fare charged for the trip</em>. Which of the following is <em><strong>least</strong></em> likely to be answerable using <em><strong>only</strong></em> the trends feature?</p>
+</div>
+<div class="choice" data-identifier="c1">
+<div class="text">
+<p>What time of the day is the busiest for the company at a given city.</p>
+</div>
+<div class="feedback">
+<p>Filtering by geographic location and sorting through time information would yield this information.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c2">
+<div class="text">
+<p>From which geographical location do the longest rides originate.</p>
+</div>
+<div class="feedback">
+<p>Sorting through miles traveled and noting geographic location would yield this information.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c3">
+<div class="text">
+<p>How is competition with the local cab companies affecting business in a given district.</p>
+</div>
+<div class="feedback">
+<p>Correct, there is no information on the competition available in the data collected.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c4">
+<div class="text">
+<p>How much money was earned by the company in a given month.</p>
+</div>
+<div class="feedback">
+<p>Filtering by date and summing up fares charged would yield this information.</p>
+</div>
+</div>
+<div class="responseDeclaration" data-identifier="ri3">
+<div class="correctResponse" data-identifier="c3">
+
+</div>
+</div>
+</div>
+<div class="assessment-data" type="multiplechoice" data-identifier="information about song purchases" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri4" data-shuffle="true">
+<p><a href="https://bjc.berkeley.edu/5-algorithms/3-turning-data-information/2-self-check.html">5.3.2</a></p>
+<div class="prompt">
+<p>An online music download company stores information about song purchases made by its customers. Every day, the following information is made publicly available on a company website database.</p>
+<ul>
+<li>
+The day and date of each song purchased.
+</li>
+<li>
+The title of the song.
+</li>
+<li>
+The cities where customers purchased each song.
+</li>
+<li>
+The number of times each song was purchased in a given city.
+</li>
+</ul>
+<p>An example portion of the database is shown below. The database is sorted by date and song title.</p>
+<table class="table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 17%">
+<col style="width: 21%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Day and Date</th>
+<th>Song Title</th>
+<th>City</th>
+<th>Number of Times Purchased</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mon 07/10/17</td>
+<td>Despacito</td>
+<td>Boston, MA</td>
+<td>117</td>
+</tr>
+<tr class="even">
+<td>Mon 07/10/17</td>
+<td>Malibu</td>
+<td>Chicago, IL</td>
+<td>53</td>
+</tr>
+<tr class="odd">
+<td>Mon 07/10/17</td>
+<td>Malibu</td>
+<td>New York, NY</td>
+<td>197</td>
+</tr>
+<tr class="even">
+<td>Mon 07/10/17</td>
+<td>Bad Liar</td>
+<td>Anchorage, AK</td>
+<td>11</td>
+</tr>
+<tr class="odd">
+<td>Tue 07/11/17</td>
+<td>Despacito</td>
+<td>San Diego, CA</td>
+<td>241</td>
+</tr>
+</tbody>
+</table>
+<p>Which of the following <em><strong>cannot</strong></em> be determined using only the information in the database?</p>
+</div>
+<div class="choice" data-identifier="c1">
+<div class="text">
+<p>The song that is purchased the most in a given week.</p>
+</div>
+<div class="feedback">
+<p>This information can be found by summing all the purchases of every song in a given week.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c2">
+<div class="text">
+<p>The city with the fewest purchases on a particular day.</p>
+</div>
+<div class="feedback">
+<p>This information can be found by summing all the purchases of every city on a given day.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c3">
+<div class="text">
+<p>The total number of cities in which a certain song was purchased in a given month.</p>
+</div>
+<div class="feedback">
+<p>This information can be found by listing the cities for all the purchases of a given song in a given month.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c4">
+<div class="text">
+<p>The total number of songs purchased by a particular customer during the course of a given year.</p>
+</div>
+<div class="feedback">
+<p>Correct, there is no data publicly displayed on individual customers.</p>
+</div>
+</div>
+<div class="responseDeclaration" data-identifier="ri4">
+<div class="correctResponse" data-identifier="c4">
+
+</div>
+</div>
+</div>
+<div class="assessment-data" type="multiplechoice" data-identifier="mobile phone recording metadata" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri1" data-shuffle="true">
+<p><a href="https://bjc.berkeley.edu/5-algorithms/3-turning-data-information/6-metadata.html">5.3.6</a></p>
+<div class="prompt">
+<p>A new mobile phone company—unbeknownst to its customers—periodically records random snippets of their conversations and considers the recordings as data. In addition, it collects the following metadata on the conversations:</p>
+<ul>
+<li>
+The start and end time of the conversation
+</li>
+<li>
+The phone numbers of the users in the conversation
+</li>
+<li>
+The GPS locations of the users in the conversation
 </li>
 </ul>
 <p>
-</p><div class="ap-standard">
-<p>DAT-2.A.2</p>
-</div>
-<p>Data provide opportunities for identifying trends, making connections, and addressing problems. Information is the result of analyzing that data.</p>
-<p></p>
-</div>
-<p>
-The data given in the graph above let us answer some questions but not others. We can, for example, answer questions about how patterns of fertility and life expectancy differ from one continent to another, but not questions about how life expectancy is affected by the jobs people do, because the data displayed doesn’t show jobs.
+For which of the following goals would it be more useful to analyze the <em><strong>data</strong></em> instead of the <em><strong>metadata</strong></em>?
 </p>
-<div class="forYouToDo">
-<ol start="4">
+</div>
+<div class="choice" data-identifier="c1">
+<div class="text">
+<p>To determine if any of its users was present at the time and place of a crime.</p>
+</div>
+<div class="feedback">
+<p>For this purpose, GPS and time information (in the metadata) would be more useful.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c2">
+<div class="text">
+<p>To determine the time of day the app is used most frequently in a certain geographic location.</p>
+</div>
+<div class="feedback">
+<p>For this purpose, GPS and time information (in the metadata) would be more useful.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c3">
+<div class="text">
+<p>To determine the language most commonly used in user conversations.</p>
+</div>
+<div class="feedback">
+<p>Correct. For this purpose, the conversation data itself would be analyzed.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c4">
+<div class="text">
+<p>To determine the most active users of the app for a given year.</p>
+</div>
+<div class="feedback">
+<p>For this purpose, user phone numbers and time information (in the metadata) would be more useful.</p>
+</div>
+</div>
+<div class="responseDeclaration" data-identifier="ri1">
+<div class="correctResponse" data-identifier="c3">
+
+</div>
+</div>
+</div>
+<div class="assessment-data" type="multiplechoice" data-identifier="example of metadata" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri2" data-shuffle="true">
+<p><a href="https://bjc.berkeley.edu/5-algorithms/3-turning-data-information/6-metadata.html">5.3.6</a></p>
+<div class="prompt">
+<p>Which of the following is <em><strong>not</strong></em> an example of <em>metadata</em>?</p>
+</div>
+<div class="choice" data-identifier="c1">
+<div class="text">
+<p>Data about a digital image describing the size of the image, image resolution, color depth, and when the image was created.</p>
+</div>
+<div class="feedback">
+<p>This is an example of data about data.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c2">
+<div class="text">
+<p>Data about a text document containing information about the length of the document, its author, the date the document was written, and a short summary of the content.</p>
+</div>
+<div class="feedback">
+<p>This is an example of data about data.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c3">
+<div class="text">
+<p>Data about a pack of wolves describing their habitat, hunting habits, diet, and sleep cycles.</p>
+</div>
+<div class="feedback">
+<p>Correct. Data about wolves is not data about data.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c4">
+<div class="text">
+<p>Data about a web page containing a description of page content and a list of key words linked to the content.</p>
+</div>
+<div class="feedback">
+<p>This is an example of data about data.</p>
+</div>
+</div>
+<div class="responseDeclaration" data-identifier="ri2">
+<div class="correctResponse" data-identifier="c3">
+
+</div>
+</div>
+</div>
+<h3 class="anchored">
+Lab 3: Turning Data into Information
+</h3>
+<div class="assessment-data" type="multiplechoice" data-identifier="migrating birds" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri1" data-shuffle="true">
+<p><a href="https://bjc.berkeley.edu/5-algorithms/3-turning-data-information/2-self-check.html">5.3.2</a></p>
+<div class="prompt">
+<p>Scientists studying birds often attach tracking tags to migrating birds. For each bird, the following data is collected regularly at frequent intervals:</p>
+<ul>
 <li>
-<div class="ap-standard">
-<p>DAT-2.E.5</p>
-</div>
-<p>In any given year, the graph has a downward slope. That is, countries with a higher fertility rate have a lower life expectancy. This kind of relationship is called a <em>correlation</em>. What (if anything) does that tell you about the relationship between fertility rates and life expectancy? This pattern in the data becomes obvious looking at the picture, but it would not have been obvious just looking at the data.</p>
+Date and time
 </li>
-<div class="vocabFullWidth">
-<p>
-A <strong>correlation</strong> is a particular kind of information, namely a dependence between two variables. For example in the first picture here, as one variable goes up the other goes down. It’s also a correlation when as one variable goes up or down the other changes in the same manner.
-</p>
-<div class="center">
-<div style="display: inline-grid; grid-template-columns: auto auto auto; text-align: center;">
-<div>
-<p><img src="../../img/5-algorithms/correlation-negative.png" title="a graph with a bunch of data points, in which they generally follow a straight line from top left to bottom right" alt="a graph with a bunch of data points, in which they generally follow a straight line from top left to bottom right" class="inline"></p>
-</div>
-<div>
-<p><img src="../../img/5-algorithms/correlation-positive.png" title="a graph with a bunch of data points, in which they generally follow a straight line from bottom left to top right" alt="a graph with a bunch of data points, in which they generally follow a straight line from bottom left to top right" class="inline"></p>
-</div>
-<div>
-<p><img src="../../img/5-algorithms/correlation-none.png" title="a graph with a bunch of data points scattered all over the place, not following a line" alt="a graph with a bunch of data points scattered all over the place, not following a line" class="inline"></p>
-</div>
-<div>
-<p>negative correlation</p>
-</div>
-<div>
-<p>positive correlation</p>
-</div>
-<div>
-<p>no correlation</p>
-</div>
-</div>
-</div>
-</div>
 <li>
-Make up a scenario in which high fertility rates cause low life expectancy. Then make up a scenario in which low life expectancy causes high fertility rates.
+Latitude and Longitude
 </li>
-</ol>
-</div>
-<div class="vocab">
-<div class="ap-standard">
-<p>DAT-2.E.4</p>
-</div>
-<p>
-<strong>Insight</strong> is a meaningful conclusion drawn from analyzing information.
-</p>
-</div>
-<div class="ap-standard">
-<p>DAT-2.A.3, DAT-2.A.4</p>
-</div>
-<p>
-The data by themselves don’t tell you what causes what. There may be a correlation between two things, but this does not mean one thing causes the other. People often say, “Correlation does not imply causation.” Additional research is needed to gain <em>insight</em> into the exact nature of the relationship, such as causation.
-</p>
-<div class="endnote">
-<p>
-<a href="http://tylervigen.com/view_correlation?id=79804" title="An example of two things that are obviously correlated, but obviously neither caused the other." target="_blank">An example of two things that are obviously correlated, but obviously neither caused the other.</a> You can click “Discover a new correlation” on that site to find other strange correlations.
-</p>
-</div>
-<div class="ap-standard">
-<p>DAT-2.E.3, DAT-2.E.1</p>
-</div>
-<p>
-Often, a single source does not contain the data needed to draw a conclusion; it may be necessary to combine data from a variety of sources. As you found using visualization software with the fertility and life expectancy data, sometimes a pattern you discover in one data set can just raise another question for research such as, “Are either of these things correlated with median income in the country?” To answer this question, you could find an economic database, download some data, and use look for additional correlations. There can be several cycles of seeing something in the data and collecting more data to examine before you have what seems like a reliable insight about causation.
-</p>
-<div class="forYouToDo">
-<ol start="6">
-<div class="ap-standard">
-<p>DAT-2.A</p>
-</div>
 <li>
-<img src="../../img/icons/write-out-thoughts-mini.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"><strong>Summarize your findings.</strong> Write a paragraph or two with your partner describing your findings about life expectancy and fertility for the country you chose over this time period.
+Altitude
 </li>
-</ol>
-</div>
-<div class="ifTime">
-<ol start="7">
 <li>
-Use the Internet to research the country you chose. Determine what likely impacted life expectancy and fertility across this time period. Be specific. Was there a war at a time that life expectancy dropped? Were there advances in maternal care at a time that fertility increased?
+Temperature
 </li>
-</ol>
+</ul>
+<p>Which of the following questions about a particular bird could <em><strong>not</strong></em> be answered using <em><strong>only</strong></em> the data gathered from the tracking tags.</p>
 </div>
-<div class="endnote">
+<div class="choice" data-identifier="c1">
+<div class="text">
+<p>Approximately how much time does the bird spend in the air and on the ground?</p>
+</div>
+<div class="feedback">
+<p>This could be determined from the “Altitude” data.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c2">
+<div class="text">
+<p>Does the bird travel in groups with other tracked birds?</p>
+</div>
+<div class="feedback">
+<p>This could be determined from the “Latitude and Longitude” data.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c3">
+<div class="text">
+<p>Is the migration path of the bird affected by temperature patterns?</p>
+</div>
+<div class="feedback">
+<p>This could be determined from the “Temperature” data.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c4">
+<div class="text">
+<p>What are the effects of industrial pollution on the migration path of the bird?</p>
+</div>
+<div class="feedback">
+<p>Correct, there is no data collected on pollution in the bird’s environment.</p>
+</div>
+</div>
+<div class="responseDeclaration" data-identifier="ri1">
+<div class="correctResponse" data-identifier="c4">
+
+</div>
+</div>
+</div>
+<div class="assessment-data" type="multiplechoice" data-identifier="searching for patterns" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri2" data-shuffle="true">
+<p><a href="https://bjc.berkeley.edu/5-algorithms/3-turning-data-information/2-self-check.html">5.3.2</a></p>
+<div class="prompt">
+<p>Using computers, researchers often search large data sets to find interesting patterns in the data. Which is of the following is <em><strong>not</strong></em> an example where searching for patterns is needed to gather desired information?</p>
+</div>
+<div class="choice" data-identifier="c1">
+<div class="text">
+<p>An online shopping company analyzing customers purchase history to recommend new products.</p>
+</div>
+<div class="feedback">
+<p>This is an example of searching for patterns to gather desired information.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c2">
+<div class="text">
+<p>A high school analyzing student attendance records to determine which students should receive a disciplinary warning.</p>
+</div>
+<div class="feedback">
+<p>Correct, there is no need here for pattern analysis, just sorting the data to get a list of students with poor attendance records.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c3">
+<div class="text">
+<p>A credit scoring company analyzing purchase history of clients to identify cases of identity theft.</p>
+</div>
+<div class="feedback">
+<p>This is an example of searching for patterns to gather desired information.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c4">
+<div class="text">
+<p>A college analyzing high school students’ GPA and SAT scores to assess their potential college success.</p>
+</div>
+<div class="feedback">
+<p>This is an example of searching for patterns to gather desired information.</p>
+</div>
+</div>
+<div class="responseDeclaration" data-identifier="ri2">
+<div class="correctResponse" data-identifier="c2">
+
+</div>
+</div>
+</div>
+<div class="assessment-data" type="multiplechoice" data-identifier="car hailing company trends" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri3" data-shuffle="true">
+<p><a href="https://bjc.berkeley.edu/5-algorithms/3-turning-data-information/2-self-check.html">5.3.2</a></p>
+<div class="prompt">
+<p>A car hailing company uses an app to track the travel trends of its customers. The data collected can be filtered and sorted by <em>geographic location</em>, <em>time and date</em>, <em>miles traveled</em>, and <em>fare charged for the trip</em>. Which of the following is <em><strong>least</strong></em> likely to be answerable using <em><strong>only</strong></em> the trends feature?</p>
+</div>
+<div class="choice" data-identifier="c1">
+<div class="text">
+<p>What time of the day is the busiest for the company at a given city.</p>
+</div>
+<div class="feedback">
+<p>Filtering by geographic location and sorting through time information would yield this information.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c2">
+<div class="text">
+<p>From which geographical location do the longest rides originate.</p>
+</div>
+<div class="feedback">
+<p>Sorting through miles traveled and noting geographic location would yield this information.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c3">
+<div class="text">
+<p>How is competition with the local cab companies affecting business in a given district.</p>
+</div>
+<div class="feedback">
+<p>Correct, there is no information on the competition available in the data collected.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c4">
+<div class="text">
+<p>How much money was earned by the company in a given month.</p>
+</div>
+<div class="feedback">
+<p>Filtering by date and summing up fares charged would yield this information.</p>
+</div>
+</div>
+<div class="responseDeclaration" data-identifier="ri3">
+<div class="correctResponse" data-identifier="c3">
+
+</div>
+</div>
+</div>
+<div class="assessment-data" type="multiplechoice" data-identifier="information about song purchases" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri4" data-shuffle="true">
+<p><a href="https://bjc.berkeley.edu/5-algorithms/3-turning-data-information/2-self-check.html">5.3.2</a></p>
+<div class="prompt">
+<p>An online music download company stores information about song purchases made by its customers. Every day, the following information is made publicly available on a company website database.</p>
+<ul>
+<li>
+The day and date of each song purchased.
+</li>
+<li>
+The title of the song.
+</li>
+<li>
+The cities where customers purchased each song.
+</li>
+<li>
+The number of times each song was purchased in a given city.
+</li>
+</ul>
+<p>An example portion of the database is shown below. The database is sorted by date and song title.</p>
+<table class="table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 17%">
+<col style="width: 21%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Day and Date</th>
+<th>Song Title</th>
+<th>City</th>
+<th>Number of Times Purchased</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mon 07/10/17</td>
+<td>Despacito</td>
+<td>Boston, MA</td>
+<td>117</td>
+</tr>
+<tr class="even">
+<td>Mon 07/10/17</td>
+<td>Malibu</td>
+<td>Chicago, IL</td>
+<td>53</td>
+</tr>
+<tr class="odd">
+<td>Mon 07/10/17</td>
+<td>Malibu</td>
+<td>New York, NY</td>
+<td>197</td>
+</tr>
+<tr class="even">
+<td>Mon 07/10/17</td>
+<td>Bad Liar</td>
+<td>Anchorage, AK</td>
+<td>11</td>
+</tr>
+<tr class="odd">
+<td>Tue 07/11/17</td>
+<td>Despacito</td>
+<td>San Diego, CA</td>
+<td>241</td>
+</tr>
+</tbody>
+</table>
+<p>Which of the following <em><strong>cannot</strong></em> be determined using only the information in the database?</p>
+</div>
+<div class="choice" data-identifier="c1">
+<div class="text">
+<p>The song that is purchased the most in a given week.</p>
+</div>
+<div class="feedback">
+<p>This information can be found by summing all the purchases of every song in a given week.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c2">
+<div class="text">
+<p>The city with the fewest purchases on a particular day.</p>
+</div>
+<div class="feedback">
+<p>This information can be found by summing all the purchases of every city on a given day.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c3">
+<div class="text">
+<p>The total number of cities in which a certain song was purchased in a given month.</p>
+</div>
+<div class="feedback">
+<p>This information can be found by listing the cities for all the purchases of a given song in a given month.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c4">
+<div class="text">
+<p>The total number of songs purchased by a particular customer during the course of a given year.</p>
+</div>
+<div class="feedback">
+<p>Correct, there is no data publicly displayed on individual customers.</p>
+</div>
+</div>
+<div class="responseDeclaration" data-identifier="ri4">
+<div class="correctResponse" data-identifier="c4">
+
+</div>
+</div>
+</div>
+<div class="assessment-data" type="multiplechoice" data-identifier="mobile phone recording metadata" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri1" data-shuffle="true">
+<p><a href="https://bjc.berkeley.edu/5-algorithms/3-turning-data-information/6-metadata.html">5.3.6</a></p>
+<div class="prompt">
+<p>A new mobile phone company—unbeknownst to its customers—periodically records random snippets of their conversations and considers the recordings as data. In addition, it collects the following metadata on the conversations:</p>
+<ul>
+<li>
+The start and end time of the conversation
+</li>
+<li>
+The phone numbers of the users in the conversation
+</li>
+<li>
+The GPS locations of the users in the conversation
+</li>
+</ul>
 <p>
-<a href="#hint-jokes" data-toggle="collapse" title="Two jokes about correlation and causation from XKCD...">Two jokes about correlation and causation from XKCD…</a>
+For which of the following goals would it be more useful to analyze the <em><strong>data</strong></em> instead of the <em><strong>metadata</strong></em>?
 </p>
-<div id="hint-jokes" class="collapse">
-<p><img src="https://imgs.xkcd.com/comics/correlation.png" title="Comic with two people talking across three panels. In panel one, one person says 'I used to think correlation implied causation.' In panel two, the same person says, 'Then I took a statistics class. Now I don't.' In panel three, the other person says, 'Sounds like the class helped,' and the first person says, 'Well, maybe.'" alt="Comic with two people talking across three panels. In panel one, one person says 'I used to think correlation implied causation.' In panel two, the same person says, 'Then I took a statistics class. Now I don't.' In panel three, the other person says, 'Sounds like the class helped,' and the first person says, 'Well, maybe.'" class="indent"></p>
-<p>
-<a href="https://www.explainxkcd.com/wiki/index.php/552:_Correlation" title="Don't get the correlation joke about statistics class?" target="_blank">Don’t get the correlation joke about statistics class?</a>
-</p>
-<p><img src="https://imgs.xkcd.com/comics/cell_phones.png" alt="Comic with two people talking across four panels. In panel one, the first person says 'Another huge study found no evidence that cell phones cause cancer. What was the W.H.O. thinking?' and the second person says, 'I think they just got it backward.' In panel two, the first person says, 'Huh?' and the second says, 'Well, take a look,' while holding out a laptop. Panel three shows a graph in which the 'Total cancer incidence' in the U.S. rises between 1970 and 1990 and the number of 'cell phone users' rises between 1990 and 2010. In panel four, the first person says, 'Your not... There are *so* many problems with that,' and the second person says, 'Well, just to be safe, until I see more data I'm going to assume cancer causes cell phones.'" class="indent"></p>
-<p>
-<a href="https://www.explainxkcd.com/wiki/index.php/925:_Cell_Phones" title="Don't get the correlation joke about cell phones and cancer?" target="_blank">Don’t get the correlation joke about cell phones and cancer?</a>
-</p>
+</div>
+<div class="choice" data-identifier="c1">
+<div class="text">
+<p>To determine if any of its users was present at the time and place of a crime.</p>
+</div>
+<div class="feedback">
+<p>For this purpose, GPS and time information (in the metadata) would be more useful.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c2">
+<div class="text">
+<p>To determine the time of day the app is used most frequently in a certain geographic location.</p>
+</div>
+<div class="feedback">
+<p>For this purpose, GPS and time information (in the metadata) would be more useful.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c3">
+<div class="text">
+<p>To determine the language most commonly used in user conversations.</p>
+</div>
+<div class="feedback">
+<p>Correct. For this purpose, the conversation data itself would be analyzed.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c4">
+<div class="text">
+<p>To determine the most active users of the app for a given year.</p>
+</div>
+<div class="feedback">
+<p>For this purpose, user phone numbers and time information (in the metadata) would be more useful.</p>
+</div>
+</div>
+<div class="responseDeclaration" data-identifier="ri1">
+<div class="correctResponse" data-identifier="c3">
+
+</div>
+</div>
+</div>
+<div class="assessment-data" type="multiplechoice" data-identifier="example of metadata" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri2" data-shuffle="true">
+<p><a href="https://bjc.berkeley.edu/5-algorithms/3-turning-data-information/6-metadata.html">5.3.6</a></p>
+<div class="prompt">
+<p>Which of the following is <em><strong>not</strong></em> an example of <em>metadata</em>?</p>
+</div>
+<div class="choice" data-identifier="c1">
+<div class="text">
+<p>Data about a digital image describing the size of the image, image resolution, color depth, and when the image was created.</p>
+</div>
+<div class="feedback">
+<p>This is an example of data about data.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c2">
+<div class="text">
+<p>Data about a text document containing information about the length of the document, its author, the date the document was written, and a short summary of the content.</p>
+</div>
+<div class="feedback">
+<p>This is an example of data about data.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c3">
+<div class="text">
+<p>Data about a pack of wolves describing their habitat, hunting habits, diet, and sleep cycles.</p>
+</div>
+<div class="feedback">
+<p>Correct. Data about wolves is not data about data.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c4">
+<div class="text">
+<p>Data about a web page containing a description of page content and a list of key words linked to the content.</p>
+</div>
+<div class="feedback">
+<p>This is an example of data about data.</p>
+</div>
+</div>
+<div class="responseDeclaration" data-identifier="ri2">
+<div class="correctResponse" data-identifier="c3">
+
+</div>
 </div>
 </div>
 
@@ -980,13 +1490,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../unit-5/lab-2/2-disease-spread.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Page 2: Disease Spread Project</span>
+      <a href="../../unit-5/lab-3/6-metadata.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Page 6: Metadata</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../unit-5/lab-3/2-self-check.html" class="pagination-link">
-        <span class="nav-page-text">Page 2: Self-Check: Big Data</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../unit-5/lab-4/1-logical-inconsistency.html" class="pagination-link">
+        <span class="nav-page-text">Page 1: Proof by Contradiction</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

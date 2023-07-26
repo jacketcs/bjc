@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>BHS AP CSP – a</title>
+<title>BHS AP CSP - Reliable Transmission on Unreliable Networks: TCP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +23,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
-<link href="../../../unit-1/lab-2/1-pair-programming.html" rel="next">
-<link href="../../../unit-1/lab-1/5-finish-your-first-snap-app.html" rel="prev">
-<script src="../../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../unit-4/optional-projects/1c-binarycounter-appendix.html" rel="next">
+<link href="../../unit-4/optional-projects/1-binary-counter.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -62,10 +62,10 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script type="text/javascript" src="../../../llab/loader.js"></script>
+<script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../../css/bjc.css">
+<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -75,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../../../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">BHS AP CSP</span>
     </a>
   </div>
@@ -86,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../index.html" rel="" target="">
+    <a class="nav-link" href="../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -95,27 +95,27 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-labs">    
         <li>
-    <a class="dropdown-item" href="../../../unit-1/index.html" rel="" target="">
+    <a class="dropdown-item" href="../../unit-1/index.html" rel="" target="">
  <span class="dropdown-text">Unit 1: Introduction to Programming</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../unit-2/index.html" rel="" target="">
+    <a class="dropdown-item" href="../../unit-2/index.html" rel="" target="">
  <span class="dropdown-text">Unit 2: Abstraction</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../unit-3/index.html" rel="" target="">
+    <a class="dropdown-item" href="../../unit-3/index.html" rel="" target="">
  <span class="dropdown-text">Unit 3: Data Structures</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../unit-4/index.html" rel="" target="">
+    <a class="dropdown-item" href="../../unit-4/index.html" rel="" target="">
  <span class="dropdown-text">Unit 4: How the Internet Works</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../unit-5/index.html" rel="" target="">
+    <a class="dropdown-item" href="../../unit-5/index.html" rel="" target="">
  <span class="dropdown-text">Unit 5: Algorithms and Simulations</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../unit-6/index.html" rel="" target="">
+    <a class="dropdown-item" href="../../unit-6/index.html" rel="" target="">
  <span class="dropdown-text">Unit 6: How Computers Work</span></a>
   </li>  
     </ul>
@@ -136,7 +136,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../unit-1/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../../unit-1/lab-1/1-creating-a-snap-account.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../../unit-1/lab-1/steps/2a.html">Steps</a></li><li class="breadcrumb-item"><a href="../../../unit-1/lab-1/steps/2a.html">dfgdfg</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-4/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-4/optional-projects/1-binary-counter.html">Optional Projects</a></li><li class="breadcrumb-item"><a href="../../unit-4/optional-projects/2-tcp.html">Reliable Transmission on Unreliable Networks: TCP</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -150,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../unit-1/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../unit-4/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction to Programming</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -159,66 +159,90 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
  <span class="menu-text">Lab 1</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/lab-1/1-creating-a-snap-account.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Getting Started with Snap<em>!</em></span></a>
+  <a href="../../unit-4/lab-1/1-what-is-internet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 1: What Is the Internet?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/lab-1/2-start-your-first-snap-app.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Programming a Game</span></a>
+  <a href="../../unit-4/lab-1/2-network-redundancy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 2: Network Redundancy</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/lab-1/3-loading-mobile-device.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Sharing Your Game</span></a>
+  <a href="../../unit-4/lab-1/3-open-protocols.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 3: Internet Abstractions and Open Protocols</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/lab-1/4-keeping-score.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Giving the Player Feedback</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/lab-1/5-finish-your-first-snap-app.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Improving Your Game</span></a>
-  </div>
-</li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
- <span class="menu-text">Steps</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/lab-1/steps/2a.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">dfgdfg</span></a>
+  <a href="../../unit-4/lab-1/4-who-is-in-charge.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 4: Who’s In Charge of the Internet?</span></a>
   </div>
 </li>
       </ul>
   </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text">Lab 2</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-2/1-cryptography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 1: Cryptography</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-2/2-caesar-cipher.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 2: Caesar Cipher Project</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-2/3-asymmetric_cryptography.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 3: Public Key Encryption</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-2/4-who-cares-about-encryption.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 4: Who Cares About Encryption?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-2/5-security-risks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 5: Security Risks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-2/6-cybersecurity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 6: What Can You Do?</span></a>
+  </div>
+</li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
- <span class="menu-text">Lab 2</span></a>
+ <span class="menu-text">Lab 3</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -226,32 +250,50 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/lab-2/1-pair-programming.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Pair Programming</span></a>
+  <a href="../../unit-4/lab-3/1-ways-we-communicate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 1: Communication and Community</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/lab-2/2-gossip.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Making Programs Talk</span></a>
+  <a href="../../unit-4/lab-3/2-cyberbullying.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 2: Cyberbullying</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/lab-2/3-customizing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Customizing and Debugging</span></a>
+  <a href="../../unit-4/lab-3/3-censorship.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 3: Censorship</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/lab-2/4-making-a-new-block.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Making Your Own Block</span></a>
+  <a href="../../unit-4/lab-3/4-search-engines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 4: Search Engines</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/lab-2/5-if-else.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Adding Variety to <code>Gossip</code></span></a>
+  <a href="../../unit-4/lab-3/5-computing-world.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 5: Computing Around the World</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-3/6-benefits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 6: Benefits of Computing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-3/7-collaboration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 7: Digital Collaboration</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-4/lab-3/8-planning-your-pathway.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 8: Planning Your Pathway</span></a>
   </div>
 </li>
       </ul>
@@ -259,7 +301,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
- <span class="menu-text">Lab 3</span></a>
+ <span class="menu-text">Lab 4</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -267,143 +309,79 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/lab-3/1-exploring-motion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exploring Motion</span></a>
+  <a href="../../unit-4/lab-4/1-bits.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 1: Bits</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/lab-3/2-exploring-snap-drawing-motion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Angles and Turning</span></a>
+  <a href="../../unit-4/lab-4/2-sequences.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 2: Binary Sequences</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/lab-3/3-blocks-with-inputs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Blocks with Inputs</span></a>
+  <a href="../../unit-4/lab-4/3-representing-numbers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 3: Representing Whole Numbers</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/lab-3/4-modify-your-pinwheel.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Modify Your Pinwheel</span></a>
+  <a href="../../unit-4/lab-4/4-floating-point.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 4: Floating Point</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/lab-3/5-remix-your-pinwheel.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Using <code>Pinwheel</code> to Make <code>Polygon</code></span></a>
+  <a href="../../unit-4/lab-4/5-binary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 5: Binary Representation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/lab-3/6-the-for-block.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Looping with a Counter</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/lab-3/7-programming-journal.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Keeping a Programming Journal</span></a>
+  <a href="../../unit-4/lab-4/6-compression.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 6: Data Compression</span></a>
   </div>
 </li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
- <span class="menu-text">Lab 4</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/lab-4/1-your-image-in-the-cloud.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Your Image in the Cloud</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/lab-4/2-examining-privacy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Examining Privacy</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/lab-4/3-tanya-rider.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tanya Rider’s Story</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/lab-4/4-privacy-affected.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Innovations and Privacy</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
- <span class="menu-text">Lab 5</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/lab-5/1-following-sprites.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Sprite Following the Mouse</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/lab-5/2-sprite-interaction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Sprite Following a Sprite</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
  <span class="menu-text">Optional Projects</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/optional-projects/1-sprite-line-art.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Line Art Toy</span></a>
+  <a href="../../unit-4/optional-projects/1-binary-counter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Binary Timer Project</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/optional-projects/2-row-of-houses.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2 Row of Houses</span></a>
+  <a href="../../unit-4/optional-projects/2-tcp.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Reliable Transmission on Unreliable Networks: TCP</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/optional-projects/3-pong.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The Game of Pong</span></a>
+  <a href="../../unit-4/optional-projects/1c-binarycounter-appendix.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Binary Timer Appendix</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/optional-projects/4-daisy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Daisy Design</span></a>
+  <a href="../../unit-4/optional-projects/writing-html.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Writing HTML (Teacher’s Choice)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../unit-1/optional-projects/5-sentence-builder.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Modeling Language</span></a>
+  <a href="../../unit-4/optional-projects/1b-binary-counter-hints.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1b Binary Counter Hints</span></a>
   </div>
 </li>
       </ul>
@@ -416,32 +394,147 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#dfgdfg" id="toc-dfgdfg" class="nav-link active" data-scroll-target="#dfgdfg">dfgdfg</a></li>
-  <li><a href="#ffgdfg" id="toc-ffgdfg" class="nav-link" data-scroll-target="#ffgdfg">ffgdfg</a></li>
-  </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="2a.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Reliable Transmission on Unreliable Networks: TCP</h1>
+<p class="subtitle lead">Unit , Lab , Page 2</p>
+</div>
 
 
-<section id="dfgdfg" class="level2">
-<h2 class="anchored" data-anchor-id="dfgdfg">dfgdfg</h2>
-<p>Make sure either you or your partner is logged in to Snap<em>!</em> so you can save your work</p>
-</section>
-<section id="ffgdfg" class="level2">
-<h2 class="anchored" data-anchor-id="ffgdfg">ffgdfg</h2>
-<p><a href="https://bjc.jacketcs.net">testt</a></p>
-<p>Images as links don’t work:</p>
-<p><a href="../../../prog/1-introduction/U1L1-ClickAlonzo.xml" class="run"> <img src="../../../img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account."> </a></p>
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="todo">
+<p>
+BH: Yucky video. Otherwise okay. We should get TCP out of the TIF – it’s the only real activity!
+</p>
+<p>
+MF: Brian wants to make improvements to this project–can that become an optional project? We don’t have any for U4.
+</p>
+</div>
+<div class="learn">
+<p>
+<strong>On this page,</strong> you will learn the system for ensuring that communication is <em>reliable</em> on the Internet.
+</p>
+</div>
+<div class="todo">
+<p>
+<strong>What you will do:</strong> You will watch a video, read, and explore a simulation of unreliable IP transmissions.
+</p>
+<p>
+<strong>What you will learn:</strong> You will learn about how the Internet sends data <em>reliably</em> by using protocols.
+</p>
+<p>
+<strong>On your own:</strong> You can code your own Transmission Control Protocol.
+</p>
+</div>
+<p>
+Computers, servers, and routers are fairly reliable, but every once in a while a packet will be lost, and devices on the Internet need to tolerate these faults. One way to tolerate faults is not to care. (If you lose one frame of video, it doesn’t matter.) Another way (called TCP) is to keep sending packets until they are acknowledged as having been received correctly. <strong>TCP (Transmission Control Protocol)</strong> guarantees <em>reliable</em> data transmission by keeping track of which packets have been received successfully, resending any that have been lost or damaged, and specifying the order for reassembling the data on the other end.
+</p>
+<div class="vocabFullWidth">
+<p>
+<strong>TCP/IP</strong> is a pair of protocols that provide an abstraction. <strong>IP</strong> lets your computer pretend it has a <em>direct</em> connection to another computer. <strong>TCP</strong> lets your computer pretend it has a <em>reliable</em> connection to the other computer.
+</p>
+</div>
+<p><br></p>
+<p><img src="../../img/icons/headphones.png" title="Set Up Your Headphones or Speakers" alt="Set Up Your Headphones or Speakers" class="imageRight"></p>
+<div class="sidenote">
+<p>If your connection blocks YouTube, <a href="http://scratch.mit.edu/discuss/youtube/AYdF7b3nMto" target="_blank" title="The Internet: Packets, Routing &amp; Reliability">watch the video here</a>.</p>
+</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AYdF7b3nMto?rel=0" frameborder="0" allowfullscreen="" class="indent">
+</iframe>
+<div class="takeNote">
+<p>
+</p><p>The TCP/IP end-to-end design of the Internet is an abstraction:</p>
+<ul>
+<li>
+The computers (including servers) at the two endpoints of a communication run the <strong>Transmission Control Protocol</strong> (TCP), which guarantees reliable transmission.
+</li>
+<li>
+The routers at every connection point on the Internet run the <strong>Internet Protocol</strong> (IP), which transmits packets from one IP address to another.
+</li>
+</ul>
+<p></p>
+<p>
+The routers don’t know anything about the messages they carry; all they care about is transmitting them. The computers that send and receive the messages are the only ones concerned with what the messages mean.
+</p>
+<!--<p>The routers don't have to know anything about the messages they carry over the net; all they care about is transmitting between the IP addresses at the beginning of each packet. The computers that send and receive the message are the only ones that have to think about what the messages mean. As a result, when someone invents a new application for the Internet, all the routers in the world don't have to be replaced or reprogrammed&mdash;to them it's all just bits.</p>-->
+</div>
+<div class="forYouToDo">
+<ol>
+<li>
+<p><a class="run" href="../../prog/4-internet/U4L1-TCP.xml#present"><img src="../../img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"></a><br> This project provides a simulation of unreliable data transmission by Internet Protocol.</p>
+<ul>
+<li>
+<strong>Click the green flag</strong> to initialize the <var>incoming transmission</var> variables before each experiment.
+</li>
+<li>
+<strong>Click either character</strong> to enter a message for it to send to the other one.
+</li>
+</ul>
+</li>
+<div class="sidenote">
+<p>In this simulation, the complete message is a string of text that is divided into packets of one letter each. In reality, the packet length is not so strictly limited and messages are usually much longer.</p>
+</div>
+<p><a class="run" href="../../prog/4-internet/U4L1-TCP.xml"><img src="../../img/4-internet/TCP.png" alt="picture of TCP project stage" class="indent"></a></p>
+<li>
+<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Compare the result with what you sent. What problems do you see?
+</li>
+</ol>
+</div>
+<p>
+TCP works by including additional information along with each packet so that the receiving computer can keep track of how many packets it has received, re-request any missing packets, and reorder the packets to reconstruct the original message. In this simulation, a packet either arrives correctly (even if it’s out of order) or it doesn’t arrive at all. But on the Internet, it’s possible for a packet to arrive with <em>erroneous</em> data, so the real TCP has to check for errors and request re-transmission of packets with errors too.
+</p>
+<div class="ifTime">
+<ol start="3">
+<li>
+Read <a href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=324" target="_blank" title="Blown to Bits: IP Addresses and Crimes"><em>Blown to Bits</em> pages 306-309</a>.
+</li>
+</ol>
+</div>
+<div class="takeItFurther">
+<p><img src="../../img/icons/tough-stuff.png" title="Tough Stuff" alt="Tough Stuff" class="imageRight"></p>
+<ol type="A">
+<li>
+<p>Build a simple TCP. Resolve the unreliability so that messages are received reliably despite the limitations of IP packets. <strong>You’ll need to change</strong> the definitions of:</p>
+<ul>
+<li>
+<img src="../../img/4-internet/internet-transmit.png" title="internet transmit () to ()" alt="internet transmit () to ()">
+</li>
+<li>
+<img src="../../img/4-internet/read-internet-data.png" title="read internet data with ()" alt="read internet data with ()">
+</li>
+</ul>
+<div class="endnote">
+<p><strong>Do <em>not</em> change</strong> the definition of <img src="../../img/4-internet/send-IP.png" title="send IP packet () to (sprite)" alt="send IP packet () to (sprite)">. That block simulates the unreliable network. You could “solve” the problem by rewriting this block to simulate a perfect network instead of an imperfect one, but that misses the point.</p>
+</div>
+<p>To solve this problem, you’ll need a way to keep track of the order of the data <em>and</em> a way to re-request missing packets:</p>
+<ul>
+<li>
+First, solve the problem of packets arriving out of order. You can include extra <strong>header</strong> information in addition to the packet data in order to help the receiver reconstruct the message. This will require cooperation by both sender and receiver (that is, changes to both gray blocks).
+</li>
+<li>
+Then, solve the problem of packets not arriving at all. That is, make the transmission reliable even though IP is unreliable. This, too, will require changing both sender and receiver.
+</li>
+</ul>
+</li>
+</ol>
+</div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -794,13 +887,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../unit-1/lab-1/5-finish-your-first-snap-app.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Improving Your Game</span>
+      <a href="../../unit-4/optional-projects/1-binary-counter.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Binary Timer Project</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../unit-1/lab-2/1-pair-programming.html" class="pagination-link">
-        <span class="nav-page-text">Pair Programming</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../unit-4/optional-projects/1c-binarycounter-appendix.html" class="pagination-link">
+        <span class="nav-page-text">Binary Timer Appendix</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -810,7 +903,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">The curriculum and text on this website is adapted from <a href="https://bjc.edc.org/bjc-r/">The Beauty and Joy of Computing</a> by University of California, Berkeley and Education Development Center, Inc.&nbsp;which is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</div>
+    <div class="nav-footer-center">The curriculum, text, and styling on this website is adapted from <a href="https://bjc.edc.org/bjc-r/">The Beauty and Joy of Computing</a> by University of California, Berkeley and Education Development Center, Inc.&nbsp;which is licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
