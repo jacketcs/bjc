@@ -2,9 +2,8 @@
 title: "Page 4: Boolean Expression Experiments"
 subtitle: "Unit 2, Lab 3, Page 4"
 order: 4
+gifffer: true
 ---
-
-{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <p><strong>On this page,</strong> you will match Boolean expressions

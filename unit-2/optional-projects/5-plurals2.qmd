@@ -60,7 +60,7 @@ with a variety of words to make sure it works the way you want. Then use
 <code>map</code> to test it on the entire list you made earlier.
 
 ::: endnote
-<a href="#hint-just-hwords" data-toggle="collapse" title="Click for a hint about creating a test list of words that begin with 'h'.">Click
+<a href="#hint-just-hwords" data-bs-toggle="collapse" title="Click for a hint about creating a test list of words that begin with 'h'.">Click
 for a hint about creating a test list of words that begin with "h".</a>
 
 ::: {#hint-just-hwords .collapse}

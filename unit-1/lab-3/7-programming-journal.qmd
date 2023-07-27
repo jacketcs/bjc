@@ -2,9 +2,8 @@
 title: "Page 7: Keeping a Programming Journal"
 subtitle: "Unit 1, Lab 3, Page 7"
 order: 7
+gifffer: true
 ---
-
-{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <strong>On this page,</strong> you will learn how keeping a programming journal can help your programming.

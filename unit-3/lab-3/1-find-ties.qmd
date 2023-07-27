@@ -108,7 +108,7 @@ As you create the clones, set each one's <var>position number</var> to
 the appropriate value (1-9).<br />
 
 ::: endnote
-<a href="#hint-1" data-toggle="collapse" class="collapsed" title="Hint">Click
+<a href="#hint-1" data-bs-toggle="collapse" class="collapsed" title="Hint">Click
 for a hint on setting the <var>position number</var>.</a>
 
 ::: {#hint-1 .collapse}

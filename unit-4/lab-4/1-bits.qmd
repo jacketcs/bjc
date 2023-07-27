@@ -58,7 +58,7 @@ possible values per wire.</p>
 
 ::: endnote
 <img src="/img/icons/read-more-mini.png" title="Read More" alt="Read More" class="inline"/>
-<a href="#hint-bistable" data-toggle="collapse" title="What good reasons?">What
+<a href="#hint-bistable" data-bs-toggle="collapse" title="What good reasons?">What
 good reasons?</a>
 
 ::: {#hint-bistable .collapse}
@@ -169,7 +169,7 @@ should consider moving it to U6, but not tonight... -bh
 ```{=html}
 <!--
 <div class="endnote">
-<p><a href="#hint-ldb" data-toggle="collapse">Some old computers did allow that.</a>
+<p><a href="#hint-ldb" data-bs-toggle="collapse">Some old computers did allow that.</a>
   <div id="hint-ldb" class="collapse">The PDP-10, that big blue computer you saw in Lab 1, had
   <code>ldb</code>
 (Load Byte) and
@@ -270,7 +270,7 @@ character?</li>
 
 ::: endnote
 <img src="/img/icons/read-more-mini.png" title="Read More" alt="Read More" class="inline"/>
-<a href="#hint-unicode" data-toggle="collapse" title="The actual computer representation of Unicode is complicated">The
+<a href="#hint-unicode" data-bs-toggle="collapse" title="The actual computer representation of Unicode is complicated">The
 <em>actual</em> computer representation of Unicode is complicated.</a>
 
 ::: {#hint-unicode .collapse}

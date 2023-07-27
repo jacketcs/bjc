@@ -75,7 +75,7 @@ sequence of bits that are either On or Off (one or zero), a <em>binary
 sequence</em>.</p>
 
 ::: endnote
-<p><a href="#hint-size-table" data-toggle="collapse" title="How much information fits in a gigbyte?">How
+<p><a href="#hint-size-table" data-bs-toggle="collapse" title="How much information fits in a gigbyte?">How
 much information fits in a gigabyte?</a></p>
 
 ::: {#hint-size-table .collapse}
@@ -87,7 +87,7 @@ much memory:</p>
 <p>As we write this in 2017, it's common to have a terabyte disk drive
 on your desk. Web services deal with petabytes or exabytes of data.</p>
 
-<p><a href="#hint-target" data-toggle="collapse" title="Where do these prefixes like 'tera-' and 'peta-' come from?">Where
+<p><a href="#hint-target" data-bs-toggle="collapse" title="Where do these prefixes like 'tera-' and 'peta-' come from?">Where
 do these prefixes like "tera-" and "peta-" come from?</a></p>
 
 ::: {#hint-target .collapse}
@@ -308,7 +308,7 @@ continuously changing air pressure of a sound, for example, is
 are stored as bits.</p>
 
 ::: endnote
-<a href="#hint-analog" data-toggle="collapse" title="More examples, please.">More
+<a href="#hint-analog" data-bs-toggle="collapse" title="More examples, please.">More
 examples, please.</a>
 
 ::: {#hint-analog .collapse}

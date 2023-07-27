@@ -2,9 +2,8 @@
 title: "Page 3: Developing a Gameplay Strategy"
 subtitle: "Unit 5, Lab 6, Page 3"
 order: 3
+gifffer: true
 ---
-
-{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <!--<p><strong>In this lab</strong>, you'll make the computer play against the human player <em>strategically</em>.</p>-->
@@ -76,7 +75,7 @@ that has three in a row of the desired X or O.</li>
 <li>
 
 ::: sidenoteBig
-<a href="#hint-what-wins" data-toggle="collapse" title="Click if you need a hint.">Click
+<a href="#hint-what-wins" data-bs-toggle="collapse" title="Click if you need a hint.">Click
 if you need a hint.</a>
 
 ::: {#hint-what-wins .collapse}
@@ -105,7 +104,7 @@ triple?</li>
 block. Make sure it works even if there is no winning square.</li>
 
 ::: endnote
-<a href="#hint-winning-square" data-toggle="collapse" title="Click for a hint about building winning square for player.">Click
+<a href="#hint-winning-square" data-bs-toggle="collapse" title="Click for a hint about building winning square for player.">Click
 for a hint about <code>winning square</code>.</a>
 
 ::: {#hint-winning-square .collapse}

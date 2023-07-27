@@ -2,9 +2,8 @@
 title: "Page 2: Programming a Game"
 subtitle: "Unit 1, Lab 1, Page 2"
 order: 2
+gifffer: true
 ---
-
-{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <p><strong>On this page,</strong> you'll build a simple game in which the player tries to click a character that's jumping around.</p>

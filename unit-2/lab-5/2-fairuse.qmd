@@ -27,7 +27,7 @@ examples of fair use:
 for purposes of reviewing the original.</strong>
 
 ::: endnote
-<a href="#hint-short" data-toggle="collapse" title="What counts as a 'short' excerpt'?">What
+<a href="#hint-short" data-bs-toggle="collapse" title="What counts as a 'short' excerpt'?">What
 counts as "short"?</a>
 
 ::: {#hint-short .collapse}
@@ -148,7 +148,7 @@ modifications must be under the same license.</li>
 
 ::: endnote
 <img src="/img/icons/read-more.png" title="Read More" alt="Read More" class="inline"/>
-<a href="#why-free" data-toggle="collapse" title="Doesn't the &ldquo;provided that&rdquo; make it unfree?">Doesn't
+<a href="#why-free" data-bs-toggle="collapse" title="Doesn't the &ldquo;provided that&rdquo; make it unfree?">Doesn't
 the "provided that" make it unfree?</a>
 
 ::: {#why-free .collapse}
@@ -165,7 +165,7 @@ to anyone. You may still restrict how people can use the program.</li>
 
 ::: endnote
 <img src="/img/icons/read-more.png" title="Read More" alt="Read More" class="inline"/>
-<a href="#why-open" data-toggle="collapse" title="What's the point of making it available if people aren't allowed to use it?">What's
+<a href="#why-open" data-bs-toggle="collapse" title="What's the point of making it available if people aren't allowed to use it?">What's
 the point of making it available if people aren't allowed to use it?</a>
 
 ::: {#why-open .collapse}

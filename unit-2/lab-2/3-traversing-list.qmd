@@ -2,9 +2,8 @@
 title: "Page 3: Checking Each Quiz Answer"
 subtitle: "Unit 2, Lab 2, Page 3"
 order: 3
+gifffer: true
 ---
-
-{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <p><strong>On this page,</strong> you will complete your quiz app by using a new block that loops through a list:<br /> <img src="/img/2-complexity/for-each-(item)-of().png" title="for-each-(item)-of(){}" alt="for-each-(item)-of(){}" class="indent" height="68"/></p>

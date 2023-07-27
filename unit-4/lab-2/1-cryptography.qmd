@@ -104,7 +104,7 @@ encryption and decryption.</p>
 ::: endnote
 <p>There are more complicated methods of symmetric encryption, but they
 always use the same key at both ends.
-<a href="#hint-symmetric" data-toggle="collapse" title="How has symmetric encryption been used?">How
+<a href="#hint-symmetric" data-bs-toggle="collapse" title="How has symmetric encryption been used?">How
 has symmetric encryption been used?</a></p>
 
 ::: {#hint-symmetric .collapse}

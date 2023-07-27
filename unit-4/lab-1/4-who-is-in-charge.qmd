@@ -91,7 +91,7 @@ developing and approving these protocols. ICANN controls the DNS
 hierarchy and the allocation of IP addresses.</p>
 
 ::: endnote
-<a href="#hint-groups" data-toggle="collapse" title="Learn more about the groups developing these protocols.">Learn
+<a href="#hint-groups" data-bs-toggle="collapse" title="Learn more about the groups developing these protocols.">Learn
 more about these organizations.</a>
 
 ::: {#hint-groups .collapse}
@@ -134,7 +134,7 @@ traffic worldwide. It's too soon to know how these concerns will
 eventually be resolved.</p>
 
 ::: endnote
-<a href="#hint-US" data-toggle="collapse" title="How Did the US End Up In Charge?">How
+<a href="#hint-US" data-bs-toggle="collapse" title="How Did the US End Up In Charge?">How
 Did the US End Up In Charge?</a>
 
 ::: {#hint-US .collapse}
@@ -157,7 +157,7 @@ new cross-country network. At that time, businesses still weren't
 allowed on the network, but there was a clear demand. So, commercial
 IP-based networks were created.</p>
 
-<a href="#hint-commerce" data-toggle="collapse" title="How did we move from research to commerce?">How
+<a href="#hint-commerce" data-bs-toggle="collapse" title="How did we move from research to commerce?">How
 did we move from research to commerce?</a>
 
 ::: {#hint-commerce .collapse}

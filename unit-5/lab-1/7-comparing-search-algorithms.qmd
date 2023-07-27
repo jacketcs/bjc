@@ -34,7 +34,7 @@ which is started below. Since you're writing a predicate, your procedure
 should always report <code>true</code> or <code>false</code>.<br />
 
 ::: sidenote
-<a href="#hint-predicate" data-toggle="collapse" title="Try doing it without this hint about the 'are the items distinct?' predicate">Try
+<a href="#hint-predicate" data-bs-toggle="collapse" title="Try doing it without this hint about the 'are the items distinct?' predicate">Try
 doing it without this hint.</a>
 
 ::: {#hint-predicate .collapse}
@@ -136,7 +136,7 @@ reporter.</p>
 
 <p>
 
-<a href="#hint-reporter" data-toggle="collapse" title="Need another hint about the <code>distinct items from</code> reporter?">Need
+<a href="#hint-reporter" data-bs-toggle="collapse" title="Need another hint about the <code>distinct items from</code> reporter?">Need
 another hint?</a>
 
 ::: {#hint-reporter .collapse}

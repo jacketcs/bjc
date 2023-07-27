@@ -41,22 +41,6 @@ llab.topic_launch_page = llab.llab_path + "html/topic.html";
 llab.alt_topic_page = llab.rootURL + "topic/topic.html";
 llab.empty_curriculum_page_path = llab.llab_path + "html/empty-curriculum-page.html";
 
-
-// google analytics tokens
-// llab.GACode = 'UA-47210910-3' -- CS10 Code;
-llab.GACode = 'UA-57857730-3'
-llab.GAurl  = document.hostname;
-
-
-// USER
-llab.user = {};
-//// Ug, this configuration needs to be done at end of load, after USER objects
-//// are defined.  Need a syntax for this.  For now just doing it in user.js
-// llab.user.user = new USER_NO_AUTH();  // simple user
-
-
-
-
 /*
  ******************************
  ********* END CONFIG *********

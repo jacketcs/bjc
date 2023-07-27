@@ -2,9 +2,8 @@
 title: "Page 5: Using <code>Pinwheel</code> to Make <code>Polygon</code>"
 subtitle: "Unit 1, Lab 3, Page 5"
 order: 5
+gifffer: true
 ---
-
-{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <strong>On this page,</strong> you will use your existing <code>pinwheel</code> block to make <code>asterisk</code> and <code>polygon</code> blocks.<br /> <img src="/img/1-introduction/Blockswith-Inputs_img/asteriskpolygonCycle.gif" title="Animation cycle from Asterisk to Polygon" alt="Animation cycle from Asterisk to Polygon" class="indent" height="250"/>

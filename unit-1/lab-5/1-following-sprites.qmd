@@ -2,9 +2,8 @@
 title: "Page 1: Sprite Following the Mouse"
 subtitle: "Unit 1, Lab 5, Page 1"
 order: 1
+gifffer: true
 ---
-
-{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <p>In many programs, the visual elements on the screen need to interact---follow each other, avoid each other, react a certain way when they meet each other, etc. <strong>In this lab,</strong> you will program <em>two</em> sprites. One sprite will follow your mouse. The other sprite will chase the first. When they meet, they will have a short conversation.</p>

@@ -2,9 +2,8 @@
 title: "Page 1: What's a Predicate?"
 subtitle: "Unit 2, Lab 3, Page 1"
 order: 1
+gifffer: true
 ---
-
-{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <p><strong>In this lab,</strong> you will develop tools to help solve word puzzles by searching for words that match specific characteristics.</p>

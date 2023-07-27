@@ -215,7 +215,7 @@ one of strong cooperative spirit.
 :::
 
 ::: endnote
-<a href="#hint-open" data-toggle="collapse" title="Why care about open standards?">Why
+<a href="#hint-open" data-bs-toggle="collapse" title="Why care about open standards?">Why
 care about open standards?</a>
 
 ::: {#hint-open .collapse}

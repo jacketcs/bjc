@@ -2,9 +2,8 @@
 title: "Page 2: Sprite Following a Sprite"
 subtitle: "Unit 1, Lab 5, Page 2"
 order: 2
+gifffer: true
 ---
-
-{{< include /utilities/includes/gif.qmd >}}
 
 ::: todo
 Brian, the solution file needs to be updated for the new version of TELL (see <a href="https://piazza.com/class/h8yx482idav52y?cid=1733" target="_blank">relevant piazza post</a>), and the problem that includes TELL (the solutions appear to use broadcast instead). --MF, 11/6/17

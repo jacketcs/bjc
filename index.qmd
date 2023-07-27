@@ -1,4 +1,12 @@
-# Introduction
+---
+title: Home
+include-in-header: 
+    - text: |
+        <style>.quarto-title > h1.title {display: none !important;}</style>
+---
+
+## Introduction
+
 
 Welcome AP Computer Science Principles at Berkeley High School, taught by Ms. O'Keefe and Mr. Chang. 
 
@@ -6,7 +14,7 @@ In this course, we'll be studying the big ideas of computing using the [Snap<em>
 
 We want you to have fun and learn. This course will be run as a **"lab centric" class** built on project-based learning. You will learn by writing lots of code, not by listening to me talk. There will sometimes be brief lectures near the beginning of class, but mostly your teacher will be helping you and you’ll be helping each other do the work. Working with other people is a key part of your educational experience.  *You will do most of your work paired with another person for support, and you should expect much of your learning will come from figuring out your mistakes/bugs, both on your own and together with your classmates.*
 
-# Outline of Course Objectives and Topics
+## Outline of Course Objectives and Topics
 
 The AP Computer Science Principles class is a two-semester course which will prepare you for the AP Computer Science Principles Exam. This is the website that you will be mainly be using for classwork all semester long. We'll be using a curriculum adapted from the [Beauty and Joy of Computing (BJC)](http://bjc.edc.org/) which was created from an existing course of the same name at Cal, CS 10.
 
@@ -24,22 +32,22 @@ Here are some course objectives that we will cover over the first five units:
 - Read and discuss the Blown to Bits book and current topics in computer science/technology
 - Prepare for the AP CSP exam in the Spring (exam optional)
 
-# Course Resources
+## Course Resources
 
 This website will be the main source of assignments and instructional material. [Google Classroom](https://classroom.google.com/) will be used for any other communication, notes, and materials. Students will complete most of their work on a computer in the classroom and submit it electronically via Google Classroom.
 
-# Internet Usage
+## Internet Usage
 
 The use of the Internet in class is a ***PRIVILEGE***, this privilege can be revoked or suspended at any time deemed necessary as described in the BUSD Internet usage policy. All students have access to the Internet, unless otherwise specified by a parent/guardian. In addition, the Internet is to be used for educational purposes only as described in the [BUSD Acceptable Use Policy for Electronic Resources & the Internet](https://www.berkeleyschools.net/wp-content/uploads/2011/12/AUP_Student_form.pdf) which all students and parents/guardians have signed.
 
-# Computer Lab Expectations
+## Computer Lab Expectations
 
-## Entering the Lab
+### Entering the Lab
 
 - Students may have no food or drink of any kind in the lab during class (including candy and gum, but excluding bottled water).  Students working or studying DURING LUNCH may bring their lunch to eat at the tables in the middle.
 - Be seated and working when the bell rings.
 
-## Working in the Lab
+### Working in the Lab
 
 - There will be no horseplay or offensive language in the lab.
 - If you and your partner have a question, ask your neighbors. If they don’t know, then put your name on the help doc and continue to try to figure it out while you wait. This class is primarily about problem solving and students are expected to be putting in effort to solve their own problems at all times. 
@@ -51,7 +59,7 @@ The use of the Internet in class is a ***PRIVILEGE***, this privilege can be rev
 - Cell phones, music players, and video games are never to be used in the computer lab and should be turned off or put away and silenced. If I see your phone, I will take it for the rest of the period. If this happens repeatedly I will turn it into the OCI at the end of the period and you will have to retrieve it from there. 
 - Handle computer equipment with care.
 
-## Exiting the Lab
+### Exiting the Lab
 
 - Leave the room as clean or cleaner than when you entered it.
 - Save all work and log off of the computer.

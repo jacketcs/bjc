@@ -96,10 +96,10 @@ This section covers two computational models:
 <div class="vocabSummary" ><strong> <a href="/unit-5/lab-1/8-sequential.html" title="/unit-5/lab-1/8-sequential.html">5.1.8</a></strong>
 <a name="box12" class="anchor">&nbsp;</a>
 <div class="ap-standard">CSN-2.A.7</div>
-<p>
-Programmers refer to the <strong>speedup</strong> of parallel solution to describe how many times as fast the parallel solution is compared to the sequential solution:<br />
-<span class="katex indent">\text{speedup} = \frac{\text{sequential time}}{\text{parallel time}}</span>
-</p>
+
+Programmers refer to the <strong>speedup</strong> of parallel solution to describe how many times as fast the parallel solution is compared to the sequential solution:
+$$\text{speedup} = \frac{\text{sequential time}}{\text{parallel time}}$$
+
 </div>
 <h3>Lab 2: Simulations</h3>
 <div class="vocabSummary" ><strong> <a href="/unit-5/lab-2/1-intro-to-simulations.html" title="/unit-5/lab-2/1-intro-to-simulations.html">5.2.1</a></strong>

@@ -129,7 +129,7 @@ compression settings, so the compressed file looks much more like the
 original than this example.</p>
 
 ::: endnote
-<p><a href="#hint-sizes" data-toggle="collapse" title="What size is this file when encoded in different formats?">What
+<p><a href="#hint-sizes" data-bs-toggle="collapse" title="What size is this file when encoded in different formats?">What
 size is this file when encoded in different formats?</a></p>
 
 ::: {#hint-sizes .collapse}

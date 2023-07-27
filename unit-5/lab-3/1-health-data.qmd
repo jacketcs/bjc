@@ -42,7 +42,7 @@ it on google.com</a>.
 <li>
 
 What does each axis represent?
-<a href="#hint-axes" data-toggle="collapse" title="Reveal a hint about the axes.">Reveal
+<a href="#hint-axes" data-bs-toggle="collapse" title="Reveal a hint about the axes.">Reveal
 a hint about the axes.</a>
 
 ::: {#hint-axes .collapse}
@@ -310,7 +310,7 @@ increased?</li>
 :::
 
 ::: endnote
-<p><a href="#hint-jokes" data-toggle="collapse" title="Two jokes about correlation and causation from XKCD...">Two
+<p><a href="#hint-jokes" data-bs-toggle="collapse" title="Two jokes about correlation and causation from XKCD...">Two
 jokes about correlation and causation from XKCD...</a></p>
 
 ::: {#hint-jokes .collapse}

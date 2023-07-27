@@ -43,7 +43,7 @@ trying to drag the sprite when you click.)</li>
 </ol>
 
 ::: endnote
-<p><a href="#hint-mousedown" data-toggle="collapse" title="Need a reminder about making the first sprite follow the mouse, detecting an event, or drawing only when the mouse is down?">Need
+<p><a href="#hint-mousedown" data-bs-toggle="collapse" title="Need a reminder about making the first sprite follow the mouse, detecting an event, or drawing only when the mouse is down?">Need
 a reminder?</a></p>
 
 ::: {#hint-mousedown .collapse}
@@ -74,7 +74,7 @@ the context menu that appears. The new sprite will have the same scripts
 as the original, which is why duplication is easier than creating new
 sprites from scratch.</p>
 
-<p><a href="#hint-second-sprite" data-toggle="collapse" title="Need a hint about making the second sprite mirror the first one?">Need
+<p><a href="#hint-second-sprite" data-bs-toggle="collapse" title="Need a hint about making the second sprite mirror the first one?">Need
 a hint about making the second sprite mirror the first one?</a></p>
 
 ::: {#hint-second-sprite .collapse}
@@ -83,7 +83,7 @@ a hint about making the second sprite mirror the first one?</a></p>
 go to the inverse <em>x</em>-position and the same
 <em>y</em>-position.</p>
 
-<a href="#hint-second-sprite-second-hint" data-toggle="collapse" title="Need another hint aboout the second sprite that mirrors the first?">Need
+<a href="#hint-second-sprite-second-hint" data-bs-toggle="collapse" title="Need another hint aboout the second sprite that mirrors the first?">Need
 another hint?</a>
 
 ::: {#hint-second-sprite-second-hint .collapse}

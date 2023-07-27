@@ -119,7 +119,7 @@ science is a type of crowdsourcing.)</li>
 :::
 
 ::: endnote
-<a href="#hint-folding" data-toggle="collapse" title="Learn how Folding@home has been turned into a game.">Learn
+<a href="#hint-folding" data-bs-toggle="collapse" title="Learn how Folding@home has been turned into a game.">Learn
 how Folding\@home has been turned into a game.</a>
 
 ::: {#hint-folding .collapse}

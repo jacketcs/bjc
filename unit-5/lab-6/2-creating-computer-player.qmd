@@ -91,7 +91,7 @@ move in this square
 <li>
 
 ::: sidenoteBig
-<a href="#hint-how-vacant" data-toggle="collapse" title="How do I know which squares are vacant?">How
+<a href="#hint-how-vacant" data-bs-toggle="collapse" title="How do I know which squares are vacant?">How
 do I know which squares are vacant?</a>
 
 ::: {#hint-how-vacant .collapse}
@@ -139,7 +139,7 @@ filled. Use it as input to your <code>broadcast</code> instruction in
 place of <code>random</code>.
 
 ::: endnote
-<a href="#hint-empty" data-toggle="collapse" title="Click for a hint about best empty square.">Click
+<a href="#hint-empty" data-bs-toggle="collapse" title="Click for a hint about best empty square.">Click
 for a hint about <code>best empty square</code>.</a>
 
 ::: {#hint-empty .collapse}

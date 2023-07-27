@@ -41,22 +41,10 @@ does it work? You first saw recursion on
 3 Lab 1 Page 2: Fractal Art</a>.
 :::
 
-<strong></strong> The <em>factorial</em> of a positive integer <em>n
-</em>(written "<em>n</em>!") is the product of all the integers from 1
-to <em>n</em>. For example:
+<strong></strong> The <em>factorial</em> of a positive integer $n$ (written "$n!$") is the product of all the integers from 1
+to $n$. For example:
 
-::: comment
-Mary, you reduced this katex with a style tag (not proper CSS) because
-you couldn't figure out how to make it work with CSS. Fix this later.
---MF, 12/6/17
-:::
-
-<p>[5! = 1 \times 2 \times 3 \times 4 \times 5 = 120]{.katex .indent
-style="font-size: 1em;"}</p>
-
-::: todo
-Project file needs updated Unit and Lab numbers. -MF
-:::
+$$5! = 1 \times 2 \times 3 \times 4 \times 5 = 120$$
 
 <a class="run" href="/prog/4-internet/U4L4-BigNumbers.xml" target="_blank"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a>
 Try out these inputs:<br />
@@ -81,9 +69,9 @@ and before the next heading. I think this is better. --MF, 5/31/20
 :::
 
 ::: endnote
-The "e+" means "times ten to the power of" so this notation means
-2.6525285981219103 × 10<sup>32</sup> =
-265,252,859,812,191,030,000,000,000,000,000.
+The `e+` means "times ten to the power of" so this notation means
+$2.6525285981219103 \times 10^{32}$ 
+$= 265,252,859,812,191,030,000,000,000,000,000$.
 :::
 
 </ol>
@@ -128,7 +116,7 @@ computer hardware reports an <em>overflow</em> error, and Snap<em>!</em>
 computes an approximation.</p>
 
 ::: endnote
-<a href="#hint-power-2" data-toggle="collapse" title="Are processor widths always powers of two?">Are
+<a href="#hint-power-2" data-bs-toggle="collapse" title="Are processor widths always powers of two?">Are
 processor widths always powers of two?</a>
 
 ::: {#hint-power-2 .collapse}

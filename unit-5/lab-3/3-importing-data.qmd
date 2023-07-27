@@ -2,9 +2,8 @@
 title: "Page 3: Importing and Accessing Data"
 subtitle: "Unit 5, Lab 3, Page 3"
 order: 3
+gifffer: true
 ---
-
-{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 ::: ap-standard
@@ -65,7 +64,7 @@ organize information, and they can find trends in data automatically
 that works in any of these applications and in Snap<em>!</em>.</p>
 
 ::: endnote
-<a href="#hint-CSV" data-toggle="collapse" title="What does CSV stand for">What
+<a href="#hint-CSV" data-bs-toggle="collapse" title="What does CSV stand for">What
 does CSV stand for?</a>
 
 ::: {#hint-CSV .collapse}
@@ -124,7 +123,7 @@ that reports just the data (not the headings)</li>
 <p>A table is represented in Snap<em>!</em> as a list of lists. If you
 right-click (or control-click on a Mac) a table, you can switch to "list
 view" and see how the data (and column headings) are stored.
-<a href="#hint-views" data-toggle="collapse" title="See examples of table view and list view.">See
+<a href="#hint-views" data-bs-toggle="collapse" title="See examples of table view and list view.">See
 examples of table view and list view.</a></p>
 
 ::: {#hint-views .collapse style="text-align:center;"}
@@ -212,7 +211,7 @@ itself, an abstract data type.)</p>
 in the block name can help you avoid bugs caused by using a selector
 that doesn't match the input you want to use.</p>
 
-<p><a href="#hint-map" data-toggle="collapse" title="Try to figure out how to report just one column, but click if you really need a hint.">Try
+<p><a href="#hint-map" data-bs-toggle="collapse" title="Try to figure out how to report just one column, but click if you really need a hint.">Try
 to figure out how to report just one column, but click if you really
 need a hint.</a></p>
 
@@ -221,7 +220,7 @@ need a hint.</a></p>
 
 <img src="/img/blocks/map.png" title="map () over ()" alt="map () over ()" class="inline"/>
 performs the same function on every item in a list.
-<a href="#hint-more-map" data-toggle="collapse" title="Have I seen map before?">Have
+<a href="#hint-more-map" data-bs-toggle="collapse" title="Have I seen map before?">Have
 I seen <code>map</code> before?</a>
 
 ::: {#hint-more-map .collapse}
@@ -254,7 +253,7 @@ letter at the top of the column in table view.<br />
 
 <p>You may need to use <code>map</code>, <code>keep</code>, or
 <code>combine</code> to answer your question.
-<a href="#hint-HOFs" data-toggle="collapse" title="Click to see where you learned about these higher order functions.">Click
+<a href="#hint-HOFs" data-bs-toggle="collapse" title="Click to see where you learned about these higher order functions.">Click
 to see where you learned about these higher order functions.</a></p>
 
 ::: {#hint-HOFs .collapse}
@@ -275,7 +274,7 @@ to see where you learned about these higher order functions.</a></p>
 </ul>
 :::
 
-<p><a href="#hint-questions" data-toggle="collapse" title="Click for example questions to ask about a single column.">Click
+<p><a href="#hint-questions" data-bs-toggle="collapse" title="Click for example questions to ask about a single column.">Click
 for example questions to ask about a single column.</a></p>
 
 ::: {#hint-questions .collapse}
@@ -387,10 +386,10 @@ block.
 
 ::: endnote
 ```{=html}
-<!--This gives away the answer. <p><a href="#hint-rowwithmax" data-toggle="collapse" title="See the row with maximum in column () of table () block in action.">See <code>row with maximum in column () of table ()</code> in action.</a></p>
+<!--This gives away the answer. <p><a href="#hint-rowwithmax" data-bs-toggle="collapse" title="See the row with maximum in column () of table () block in action.">See <code>row with maximum in column () of table ()</code> in action.</a></p>
 <div id="hint-rowwithmax" class="collapse"><img class="indent" src="/img/5-algorithms/row-with-max-of-table-reporting.png" alt="" title="" /></div>-->
 ```
-<p><a href="#hint-build" data-toggle="collapse" title="Click for a hint about how to build row with maximum in column () of table ().">Click
+<p><a href="#hint-build" data-bs-toggle="collapse" title="Click for a hint about how to build row with maximum in column () of table ().">Click
 for a hint about how to build <code>row with maximum in column () of
 table ()</code>.</a></p>
 

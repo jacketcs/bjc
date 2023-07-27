@@ -2,9 +2,8 @@
 title: "Page 1: Pair Programming"
 subtitle: "Unit 1, Lab 2, Page 1"
 order: 1
+gifffer: true
 ---
-
-{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <p><strong>On this page,</strong> you will learn about collaborating by using pair programming.</p>

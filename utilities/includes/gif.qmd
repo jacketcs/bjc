@@ -1,7 +1,0 @@
-```{=html}
-<script type="text/javascript" src="/utilities/gifffer.min.js"></script>
-```
-```{=html}
-<script type="text/javascript">window.onload = function() {Gifffer();};</script>
-```
-<link rel="stylesheet" type="text/css" href="/css/bjc-gifffer.css">

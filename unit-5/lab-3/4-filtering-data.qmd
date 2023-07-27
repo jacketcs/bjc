@@ -39,7 +39,7 @@ warranted by the given data, so this answer should be rounded to 19.</p>
 
 You might find expressions with many nested function calls easier to
 build by using the <code>pipe</code> function.
-<a href="#hint-pipe" data-toggle="collapse" title="What would this look like using pipe?">What
+<a href="#hint-pipe" data-bs-toggle="collapse" title="What would this look like using pipe?">What
 would this look like using <code>pipe</code>?</a>
 
 ::: {#hint-pipe .collapse}
@@ -109,7 +109,7 @@ code to answer that question. You can nest your function or use
 <code>pipe</code>. (Or try both!)</li>
 
 ::: endnote
-<a href="#hint-portion" data-toggle="collapse" title="Click for example questions to ask about a portion of a single column.">Click
+<a href="#hint-portion" data-bs-toggle="collapse" title="Click for example questions to ask about a portion of a single column.">Click
 for example questions to ask about a portion of a single column.</a>
 
 ::: {#hint-portion .collapse}
@@ -162,7 +162,7 @@ Images need alt/title text. --MF, 6/27/19 and new column numbers -bh
 
 <p>
 
-<a href="#hint-findfirst" data-toggle="collapse" title="Click for an example of keep vs. find first.">Click
+<a href="#hint-findfirst" data-bs-toggle="collapse" title="Click for an example of keep vs. find first.">Click
 for an example of <code>keep</code> vs. <code>find first</code>.</a>
 
 ::: {#hint-findfirst .collapse}

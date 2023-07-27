@@ -38,7 +38,7 @@ report (join (letter (1) of (item (1) of (list of names))) (letter (1) of (item 
 </div>
 
 ::: endnote
-<a href="#hint-splitting" data-toggle="collapse" title="What's the difference between splitting by spaces and spltting by words?">What's
+<a href="#hint-splitting" data-bs-toggle="collapse" title="What's the difference between splitting by spaces and spltting by words?">What's
 the difference between splitting by spaces and splitting by words?</a>
 
 ::: {#hint-splitting .collapse}
@@ -137,7 +137,7 @@ each time the function is performed.</p>
 This picture shows how the three higher-order functions could be
 used:<br />
 <img src="/img/3-lists/hof-chart.png" title="picture of map transforming each item, keep blocking some input items so they don&apos;t appear in the result, and combine superimposing them into one icon" alt="picture of map transforming each item, keep blocking some input items so they don&apos;t appear in the result, and combine superimposing them into one icon" class="indent" height="157px"/><br />
-<a href="#hint-shapes" data-toggle="collapse" title="See the higher-order function expressions with these (imaginary) shape procedures.">See
+<a href="#hint-shapes" data-bs-toggle="collapse" title="See the higher-order function expressions with these (imaginary) shape procedures.">See
 the higher-order function expressions with these (imaginary) shape
 procedures.</a>
 
@@ -151,7 +151,7 @@ procedures.</a>
 
 <p>
 
-<a href="#hint-hofs-review" data-toggle="collapse" title="Here is a quick review of higher-order functions.">Here
+<a href="#hint-hofs-review" data-bs-toggle="collapse" title="Here is a quick review of higher-order functions.">Here
 is a quick review of the higher-order functions <code>map</code>,
 <code>keep</code>, <code>combine</code>.</a>
 
@@ -202,7 +202,7 @@ Create an expression to report a list of the initials of all your
 contacts.<br />
 
 ::: endnote
-<a href="#hint-list-names" data-toggle="collapse" title="Need a hint about reporting the initials of everyone in your contact list?">Need
+<a href="#hint-list-names" data-bs-toggle="collapse" title="Need a hint about reporting the initials of everyone in your contact list?">Need
 a hint?</a>
 
 ::: {#hint-list-names .collapse}
@@ -296,7 +296,7 @@ Which of the following statements are true about this list?<br />
 Choose <strong>all</strong> that apply.
 
 ::: endnote
-<a href="#hint-capital-adt" data-toggle="collapse" title="Why not use an ADT?">Why
+<a href="#hint-capital-adt" data-bs-toggle="collapse" title="Why not use an ADT?">Why
 not use an ADT?</a>
 
 ::: {#hint-capital-adt .collapse}

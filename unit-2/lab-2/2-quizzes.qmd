@@ -2,9 +2,8 @@
 title: "Page 2: Planning a Quiz App"
 subtitle: "Unit 2, Lab 2, Page 2"
 order: 2
+gifffer: true
 ---
-
-{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <p><strong>On this page,</strong> you will begin to develop a quiz app by creating an <em>abstract data type</em> to pair the questions with their answers.</p>

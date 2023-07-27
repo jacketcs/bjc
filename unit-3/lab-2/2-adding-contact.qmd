@@ -91,7 +91,7 @@ user's <code>answer</code>.</li>
 helper block (yet another abstraction) to use in the other helper blocks
 instead of rewriting the <code>ask</code> and <code>answer</code> script
 every time. <!--<br />
-<a href="#hint-1" data-toggle="collapse" class="collapsed">Click here for a hint.</a>--></p>
+<a href="#hint-1" data-bs-toggle="collapse" class="collapsed">Click here for a hint.</a>--></p>
 
 ```{=html}
 <!--<div id="hint-1" class="collapse">

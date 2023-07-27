@@ -15,7 +15,8 @@ order: 2
 ::: endnote
 <p>You learned about loops on <a href="/unit-1/lab-3/6-the-for-block.html" title="Unit 1 Lab 3 Page 6: Looping with a Counter">Unit 1 Lab 3 Page 6: Looping with a Counter</a>.</p>
 
-<p>You've seen conditionals on <a href="/unit-1/lab-2/5-if-else.html" title="Unit 1 Lab 2 Page 5: Adding Variety to Gossip">Unit 1 Lab 2 Page 5: Adding Variety to <code>Gossip</code></a> and <a href="/unit-1/lab-2/5-combining-predicates.qmd" title="Unit 1 Lab 2 Page 5: Adding Variety to <code>Gossip</code>">Unit 1 Lab 2 Page 5: Adding Variety to <code>Gossip</code></a>.</p>
+FIIIIXXX
+<p>You've seen conditionals on <a href="/unit-1/lab-2/5-if-else.html" title="Unit 1 Lab 2 Page 5: Adding Variety to Gossip">Unit 1 Lab 2 Page 5: Adding Variety to <code>Gossip</code></a> and <a href="/unit-1/lab-3/2-combining-predicates.qmd" title="Unit 1 Lab 2 Page 5: Adding Variety to <code>Gossip</code>">Unit 1 Lab 2 Page 5: Adding Variety to <code>Gossip</code></a>.</p>
 :::
 
 ::: forYouToDo
@@ -43,10 +44,8 @@ order: 2
 The code <img src="/img/2-complexity/chicken-script.png" title="ask (Why did the chicken cross the road?) and wait; set (user response) to (answer)" alt="ask (Why did the chicken cross the road?) and wait; set (user response) to (answer)" class="inline"/> would be written as
 
 ::: pre-container
-```{=html}
 <pre class="inline">DISPLAY("Why did the chicken cross the road?")
 userResponse &leftarrow; INPUT()</pre>
-```
 :::
 
 or <img src="/img/2-complexity/chicken-script-blocktran.png" title="a white rounded rectangle containing two smaller white rounded rectangles: The first one contains first the word &apos;DISPLAY&apos; in all caps and then a smaller white rectangle containing the quoted text &apos;Why did the chicken cross the road?&apos;. The second one contains the text &apos;userResponse ← INPUT()&apos;" alt="a white rounded rectangle containing two smaller white rounded rectangles: The first one contains first the word &apos;DISPLAY&apos; in all caps and then a smaller white rectangle containing the quoted text &apos;Why did the chicken cross the road?&apos;. The second one contains the text &apos;userResponse ← INPUT()&apos;" class="inline"/>.
@@ -57,22 +56,8 @@ AAP-3.A.8, AAP-3.A.9
 :::
 
 ::: pseudop
-Notice that the procedure
-
-```{=html}
-<pre class="inline">INPUT()</pre>
-```
-accepts the value from the user and returns that input value, which is then assigned to the variable
-
-```{=html}
-<pre class="inline">userResponse</pre>
-```
-with the
-
-```{=html}
-<pre class="inline">&leftarrow;</pre>
-```
-syntax. In Snap<em>!</em>, this is just like how <code>answer</code> accepts a value from the user and reports it, and that report is what the computer <code>set</code>s the variable <var>user response</var> to.
+Notice that the procedure `INPUT()` accepts the value from the user and returns that input value, which is then assigned to the variable `userResponse` with the <code>&leftarrow;</code>
+syntax. In Snap<em>!</em>, this is just like how `answer` accepts a value from the user and reports it, and that report is what the computer `set`s the variable `user response` to.
 :::
 :::
 

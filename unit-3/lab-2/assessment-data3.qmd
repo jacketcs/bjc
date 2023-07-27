@@ -79,7 +79,7 @@ Which of the following statements are true about this list?<br>
 Choose <strong>all</strong> that apply.
 
 ::: endnote
-<a href="#hint-capital-adt" data-toggle="collapse" title="Why not use an ADT?">Why
+<a href="#hint-capital-adt" data-bs-toggle="collapse" title="Why not use an ADT?">Why
 not use an ADT?</a>
 
 ::: {#hint-capital-adt .collapse}
@@ -330,7 +330,7 @@ Which of the following statements are true about this list?<br>
 Choose <strong>all</strong> that apply.
 
 ::: endnote
-<a href="#hint-capital-adt" data-toggle="collapse" title="Why not use an ADT?">Why
+<a href="#hint-capital-adt" data-bs-toggle="collapse" title="Why not use an ADT?">Why
 not use an ADT?</a>
 
 ::: collapse
@@ -581,7 +581,7 @@ Which of the following statements are true about this list?<br>
 Choose <strong>all</strong> that apply.
 
 ::: endnote
-<a href="#hint-capital-adt" data-toggle="collapse" title="Why not use an ADT?">Why
+<a href="#hint-capital-adt" data-bs-toggle="collapse" title="Why not use an ADT?">Why
 not use an ADT?</a>
 
 ::: collapse

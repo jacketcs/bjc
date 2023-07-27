@@ -71,7 +71,7 @@ Determine one question you can answer by <strong>grouping</strong> your
 data, and build code to answer it.
 
 ::: endnote
-<a href="#hint-grouping" data-toggle="collapse" title="Click for example questions for which grouping is helpful.">Click
+<a href="#hint-grouping" data-bs-toggle="collapse" title="Click for example questions for which grouping is helpful.">Click
 for example questions for which grouping is helpful.</a>
 
 ::: {#hint-grouping .collapse}

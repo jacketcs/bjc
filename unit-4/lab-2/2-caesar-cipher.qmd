@@ -44,7 +44,7 @@ to get a feel for how this cipher works.</li>
 text</em> and <em>any shift value</em>.</li>
 
 ::: endnote
-<p><a href="#hint-characters" data-toggle="collapse" title="Why do we see characters like = ? @ # ^ * { or ~ ?">Why
+<p><a href="#hint-characters" data-bs-toggle="collapse" title="Why do we see characters like = ? @ # ^ * { or ~ ?">Why
 do we see characters like <strong>= ? \@ \# \^ \* { </strong> or
 <strong>\~</strong> ?</a></p>
 
@@ -84,7 +84,7 @@ of 4. What does 9 become?</li>
 </p>
 :::
 
-<p><a href="#hint-missing" data-toggle="collapse" title="What if your decrypted text is missing some letters?">What
+<p><a href="#hint-missing" data-bs-toggle="collapse" title="What if your decrypted text is missing some letters?">What
 if your decrypted text is missing some letters?</a></p>
 
 ::: {#hint-missing .collapse}
@@ -126,7 +126,7 @@ name like Alexandria Ocasio-Cortez.<br />
 <img src="/img/4-internet/initials-reporting-aoc.png" title="initials of (Alexandria Ocasio-Cortez) reporting AOC" alt="initials of (Alexandria Ocasio-Cortez) reporting AOC" class="indent"/>
 
 ::: endnote
-<a href="#hint-initials" data-toggle="collapse" title="Click for some hints about improving your initials block.">Click
+<a href="#hint-initials" data-bs-toggle="collapse" title="Click for some hints about improving your initials block.">Click
 for some hints.</a>
 
 ::: {#hint-initials .collapse}

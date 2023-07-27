@@ -40,14 +40,14 @@ to decrypt it.</p>
 <a href="https://commons.wikimedia.org/wiki/File:Public_key_encryption.svg" target="_blank">https://commons.wikimedia.org/wiki/File:Public_key_encryption.svg</a>
 :::
 
-<p><a href="#hint-model" data-toggle="collapse" title="Here is a visual model of public key encryption (from wikimedia.org).">Here
+<p><a href="#hint-model" data-bs-toggle="collapse" title="Here is a visual model of public key encryption (from wikimedia.org).">Here
 is a visual model of public key encryption</a> (from wikimedia.org).</p>
 
 ::: {#hint-model .collapse}
 <img src="/img/3-lists/525px-Public_key_encryption.png" title="Diagram of public key encryption showing a message being encrypted with a public key and decrypted with a private key" alt="Diagram of public key encryption showing a message being encrypted with a public key and decrypted with a private key" class="indent noshadow" border="0"/>
 :::
 
-<p><a href="#hint-paint" data-toggle="collapse" title="Here is a video that uses paint mixing as a metaphor for public key encryption.">Here
+<p><a href="#hint-paint" data-bs-toggle="collapse" title="Here is a video that uses paint mixing as a metaphor for public key encryption.">Here
 is a video that uses paint mixing as a metaphor for public key
 encryption.</a></p>
 
@@ -68,7 +68,7 @@ thousands of years. Its weakness is that the key becomes
 <em>another</em> message that needs to be transmitted securely.</p>
 
 ::: sidenote
-<p><a href="#hint-invented" data-toggle="collapse" title="Who invented public key encryption?">Who
+<p><a href="#hint-invented" data-bs-toggle="collapse" title="Who invented public key encryption?">Who
 created public key encryption?</a></p>
 
 ::: {#hint-invented .collapse}
@@ -112,7 +112,7 @@ first time in the curriculum that this idea has appeared. --MF, 6/15/20
 :::
 
 ::: endnote
-<a href="#hint-digital-signatures" data-toggle="collapse" title="It's also possible to use the private key for encryption and the public key for decryption...">It's
+<a href="#hint-digital-signatures" data-bs-toggle="collapse" title="It's also possible to use the private key for encryption and the public key for decryption...">It's
 also possible to use the <em>private</em> key for encryption and the
 <em>public</em> key for decryption...</a>
 
@@ -159,7 +159,7 @@ browser uses it to encrypt the information you send.</p>
 </div>-->
 ```
 ::: endnote
-<a href="#hint-open-standards" data-toggle="collapse" title="Open Standards Help Security">Open
+<a href="#hint-open-standards" data-bs-toggle="collapse" title="Open Standards Help Security">Open
 standards help security...</a>
 
 ::: {#hint-open-standards .collapse}

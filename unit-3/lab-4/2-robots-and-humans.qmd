@@ -25,7 +25,7 @@ Research different ways that robots are modeled after animals
 your own innovative ideas for designs or uses for robotic animals.
 
 ::: endnote
-<p><a href="#hint-animals" data-toggle="collapse" title="Click here for some examples of ways that robots are modeled after animals.">Click
+<p><a href="#hint-animals" data-bs-toggle="collapse" title="Click here for some examples of ways that robots are modeled after animals.">Click
 here for some examples.</a> You can probably find more current
 resources.</p>
 
@@ -62,7 +62,7 @@ Research recent developments and continuing challenges in this area of
 robotics.
 
 ::: endnote
-<p><a href="#hint-disasters" data-toggle="collapse" title="Click here for some examples of robots being developed to be used to respond to disasters.">Click
+<p><a href="#hint-disasters" data-bs-toggle="collapse" title="Click here for some examples of robots being developed to be used to respond to disasters.">Click
 here for some examples.</a> You can probably find more current
 resources.</p>
 
@@ -95,7 +95,7 @@ Robots have also changed the field of medicine. Research some of these
 innovations and consider how the technology is changing lives.
 
 ::: endnote
-<p><a href="#hint-medicine" data-toggle="collapse" title="Click here for some examples of robots in the field of medicine.">Click
+<p><a href="#hint-medicine" data-bs-toggle="collapse" title="Click here for some examples of robots in the field of medicine.">Click
 here for some examples.</a> You can probably find more current
 resources.</p>
 

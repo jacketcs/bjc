@@ -172,7 +172,7 @@ the specified number <var>length</var> of time. <br />
 <img src="/img/3-lists/play-song-data-type.png" title="Play Song data type definition" alt="Play Song data type definition" class="indent"/></li>
 
 ::: endnote
-<a href="#hint-target" data-toggle="collapse" title="Chart for note pitch numbers">Chart
+<a href="#hint-target" data-bs-toggle="collapse" title="Chart for note pitch numbers">Chart
 for note pitch numbers. </a>
 
 ::: {#hint-target .collapse}
@@ -234,7 +234,7 @@ and it should report the adjusted song. For example:<br />
 <img src="/img/3-lists/play-song-transpose-row-row-row-by-19.png" title="play song (transpose (row row row your boat) by (19))" alt="play song (transpose (row row row your boat) by (19))" class="indent"/>
 
 ::: endnote
-<a href="#hint-target-2" data-toggle="collapse" title="Hint">Reveal a
+<a href="#hint-target-2" data-bs-toggle="collapse" title="Hint">Reveal a
 hint.</a>
 
 ::: {#hint-target-2 .collapse}

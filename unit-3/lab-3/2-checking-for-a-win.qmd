@@ -58,7 +58,7 @@ Then build this expression, and see what it reports:<br />
 <img src="/img/3-lists/map-item-board.png" title="map (item ( ) of (board)) over (list{1, 2, 3})" alt="map (item ( ) of (board)) over (list{1, 2, 3})" class="indent"/><br />
 
 ::: endnote
-<a href="#hint-map-item" data-toggle="collapse" title="How does map work here?">How
+<a href="#hint-map-item" data-bs-toggle="collapse" title="How does map work here?">How
 does <code>map</code> work here?</a>
 
 ::: {#hint-map-item .collapse}
@@ -152,7 +152,7 @@ should report the status of all of the possible winning triples as a
 list of lists, as shown above.</li>
 
 ::: endnote
-<a href="#hint-status-all" data-toggle="collapse" title="Click for a hint on how to use map.">Click
+<a href="#hint-status-all" data-bs-toggle="collapse" title="Click for a hint on how to use map.">Click
 for a hint on how to use <code>map</code>.</a>
 
 ::: {#hint-status-all .collapse}
@@ -177,7 +177,7 @@ Here, you want to know the status of each possible winning triple.
 :::
 
 ::: sidenoteBig
-<a href="#hint-won" data-toggle="collapse" title="Click for a hint on building won?.">Click
+<a href="#hint-won" data-bs-toggle="collapse" title="Click for a hint on building won?.">Click
 for a hint on building <code>won?</code>.</a>
 
 ::: {#hint-won .collapse}
@@ -187,7 +187,7 @@ for a hint on building <code>won?</code>.</a>
 
 <p>
 
-<a href="#hint-won-contains" data-toggle="collapse" title="Click for another hint.">Click
+<a href="#hint-won-contains" data-bs-toggle="collapse" title="Click for another hint.">Click
 for another hint.</a>
 
 ::: {#hint-won-contains .collapse}

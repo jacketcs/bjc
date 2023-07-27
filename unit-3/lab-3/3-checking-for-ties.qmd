@@ -28,7 +28,7 @@ equivalent to <code>item (1) of (keep)</code>.</p>
 <code>keep</code>, <code>map</code>, and <code>combine</code> because it
 takes a function (a predicate) as input.</p>
 
-<p><a href="#hint-tie-contains" data-toggle="collapse" title="Click for a hint about using find first to check for ties.">Click
+<p><a href="#hint-tie-contains" data-bs-toggle="collapse" title="Click for a hint about using find first to check for ties.">Click
 for a hint about using <code>find first</code> to check for
 ties.</a></p>
 

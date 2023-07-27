@@ -2,9 +2,8 @@
 title: "Page 4: Making Your Own Block"
 subtitle: "Unit 1, Lab 2, Page 4"
 order: 4
+gifffer: true
 ---
-
-{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <p><strong>On this page,</strong> you will create a new<img src="/img/1-introduction/gossip-response.png" title="gossip response" alt="gossip response" class="inline"/> block to make the program feel more like a conversation. <br /> <img src="/img/1-introduction/gossip2-reporting.png" title="gossip2 reporting &apos;Guess what. Gabrielle helped Señora&apos;" alt="gossip2 reporting &apos;Guess what. Gabrielle helped Señora&apos;" class="indent"/></p>

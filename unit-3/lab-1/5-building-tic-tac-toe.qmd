@@ -203,7 +203,7 @@ interfere with the game as a tenth square.</li>
 
 <li>
 
-<a href="#hint-for" data-toggle="collapse" title="Click if you need an additional hint.">Click
+<a href="#hint-for" data-bs-toggle="collapse" title="Click if you need an additional hint.">Click
 if you need an additional hint about <code>makeBoard</code>.</a>
 
 ::: {#hint-for .collapse}

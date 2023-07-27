@@ -2,9 +2,8 @@
 title: "Page 4: Modify Your Pinwheel"
 subtitle: "Unit 1, Lab 3, Page 4"
 order: 4
+gifffer: true
 ---
-
-{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <strong>On this page,</strong> you will modify your existing <code>pinwheel</code> block so that you can use it to draw a variety of shapes.<br /> <img src="/img/1-introduction/assorted-pinwheels.png" title="assortment of pinwheels" alt="assortment of pinwheels" class="indent"/>

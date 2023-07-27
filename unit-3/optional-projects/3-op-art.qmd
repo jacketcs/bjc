@@ -180,7 +180,7 @@ phase 2 (painting) and then fills the clicked areas</li>
 </ul>
 
 ::: endnote
-<a href="#hint-main" data-toggle="collapse" title="Click for hints on creating this program.">Click
+<a href="#hint-main" data-bs-toggle="collapse" title="Click for hints on creating this program.">Click
 for hints on creating this program.</a>
 
 ::: {#hint-main .collapse}

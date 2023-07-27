@@ -204,7 +204,7 @@ divisors?</strong></li>
 </ul>
 
 <br /> You can do this on your own or follow
-<a href="#hint-steps" data-toggle="collapse" title="the steps for building the 'number of divisors' block">these
+<a href="#hint-steps" data-bs-toggle="collapse" title="the steps for building the 'number of divisors' block">these
 steps.</a>
 
 ::: {#hint-steps .collapse}
@@ -217,7 +217,7 @@ Build a <code>divisors</code> block using <code>keep</code>.<br />
 <img src="/img/2-complexity/divisors-12-reporting.png" title="divisors of (12) reporting {1, 2, 3, 4, 6, 12}" alt="divisors of (12) reporting {1, 2, 3, 4, 6, 12}" class="indent"/>
 
 ::: endnote
-<a href="#hint-divisors" data-toggle="collapse" title="Hints about building the divisors block">Hints
+<a href="#hint-divisors" data-bs-toggle="collapse" title="Hints about building the divisors block">Hints
 about building the <code>divisors</code> block</a>
 
 ::: {#hint-divisors .collapse}
@@ -307,7 +307,7 @@ description of each procedure's purpose, inputs, and outputs (but not
 its algorithms).</p>
 
 ::: endnote
-<a href="#hint-webAPI" data-toggle="collapse" title="What is a Web API?">What
+<a href="#hint-webAPI" data-bs-toggle="collapse" title="What is a Web API?">What
 is a Web API?</a>
 
 ::: {#hint-webAPI .collapse}

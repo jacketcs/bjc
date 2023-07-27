@@ -2,9 +2,8 @@
 title: "Page 3: Combining Conditionals"
 subtitle: "Unit 2 , Lab 3, Page 3"
 order: 3
+gifffer: true
 ---
-
-{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 On this page, you will learn about nested conditional statements.

@@ -858,20 +858,6 @@ img.indent, div.indent {
   }
 }
 
-
-/* * * * * FONTS * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-@font-face { /* Default Sans Font */
-  font-family: 'Open Sans';
-  src: url('../fonts/opensans/OpenSans-Regular-webfont.eot');
-  src: url('../fonts/opensans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-	   url('../fonts/opensans/OpenSans-Regular-webfont.woff') format('woff'),
-	   url('../fonts/opensans/OpenSans-Regular-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-/* * * * END FONTS * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-
 /**************** *************************** ************/
 /**************** TO BE REMOVED OR REFACTORED ************/
 /* THESE ARE USED IN TWO FILES

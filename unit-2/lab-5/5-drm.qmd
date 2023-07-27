@@ -44,7 +44,7 @@ the violation. If the original poster thinks the material does not
 violate a copyright, the burden is on them to prove it.</p>
 
 ::: endnote
-<a href="#hint-exemptions" data-toggle="collapse" title="Are there any exemptions to DMCA?">Are
+<a href="#hint-exemptions" data-bs-toggle="collapse" title="Are there any exemptions to DMCA?">Are
 there any exemptions?</a>
 
 ::: {#hint-exemptions .collapse}
@@ -92,7 +92,7 @@ used to allow different versions of a film to account for different
 censorship rules.) This system is protected by the DMCA.</li>
 
 ::: endnote
-<a href="#hint-free-trade" data-toggle="collapse" title="Doesn't DVD region coding violate free-trade?">Doesn't
+<a href="#hint-free-trade" data-bs-toggle="collapse" title="Doesn't DVD region coding violate free-trade?">Doesn't
 this violate free-trade?</a>
 
 ::: {#hint-free-trade .collapse}

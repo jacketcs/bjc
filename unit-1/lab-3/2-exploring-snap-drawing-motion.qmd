@@ -2,9 +2,8 @@
 title: "Page 2: Angles and Turning"
 subtitle: "Unit 1, Lab 3, Page 2"
 order: 2
+gifffer: true
 ---
-
-{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <p><strong>On this page,</strong> you will learn about sprite turning angles, which are needed for drawing polygons. For starters, you'll draw various asterisks, like these: <br /> <img src="/img/1-introduction/Three-spokes.png" title="three spokes" alt="asterisk with three spokes" class="indent"/> <img src="/img/1-introduction/Five-spokes.png" title="asterisk with five spokes" alt="asterisk with five spokes"/> <img src="/img/1-introduction/Eight-spokes.png" title="asterisk with eight spokes" alt="asterisk with eight spokes"/></p>

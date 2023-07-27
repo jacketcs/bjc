@@ -2,9 +2,8 @@
 title: "Page 1: Shopping List App"
 subtitle: "Unit 2, Lab 2, Page 1"
 order: 1
+gifffer: true
 ---
-
-{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <p><strong>In this lab,</strong> you will create tools for storing and accessing data.</p>

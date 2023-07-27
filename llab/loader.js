@@ -37,15 +37,6 @@ llab.alt_topic_page = llab.rootURL + "topic/topic.html";
 llab.empty_curriculum_page_path = llab.llab_path + "html/empty-curriculum-page.html";
 // google analytics tokens
 
-// ADDITIONAL LIBRARIES
-
-// Syntax Highlighting support
-llab.paths.syntax_highlights = "//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js";
-llab.paths.syntax_highlighting_css = "css/tomorrow-night-blue.css";
-// Math / LaTeX rendering
-llab.paths.math_katex_js = "lib/katex.min.js";
-llab.paths.katex_css = "css/katex.min.css";
-
 //CSS
 // reference your custom CSS files, from within llab install directory.
 // Multiple CSS files is fine, include a separate push for each
@@ -88,8 +79,6 @@ llab.paths.stage_complete_functions[1] = function() {
 // all quiz item types should get loaded here
 llab.paths.scripts[2] = [];
 llab.paths.scripts[2].push("script/quiz.js");
-// llab.paths.scripts[2].push("script/brainstorm.js");
-// llab.paths.scripts[2].push("script/user.js");
 
 llab.paths.stage_complete_functions[2] = function() {
     return true; // && llab.loaded['user'];

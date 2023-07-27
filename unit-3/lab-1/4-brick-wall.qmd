@@ -136,7 +136,7 @@ and
 
 ::: endnote
 <img src="/img/icons/read-more-mini.png" title="Read More" alt="Read More" class="inline"/>
-<a href="#hint-too-much" data-toggle="collapse" title="Too much abstraction?">Too
+<a href="#hint-too-much" data-bs-toggle="collapse" title="Too much abstraction?">Too
 much abstraction?</a>
 
 ::: {#hint-too-much .collapse}
@@ -168,7 +168,7 @@ it.</strong>
 ::: endnote
 <p>Debug by thinking about what you are trying to accomplish, not about
 your code.
-<a href="#hint-debug" data-toggle="collapse" title="Debug by thinking about what you are trying to accomplish, not about your code. For example...">For
+<a href="#hint-debug" data-bs-toggle="collapse" title="Debug by thinking about what you are trying to accomplish, not about your code. For example...">For
 example...</a></p>
 
 ::: {#hint-debug .collapse}

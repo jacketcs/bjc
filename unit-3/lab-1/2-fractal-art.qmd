@@ -40,7 +40,7 @@ choose "duplicate".</li>
 </ul>
 
 ::: endnote
-<a href="#hint-inputs" data-toggle="collapse" title="Click for a video of changing the inputs.">Click
+<a href="#hint-inputs" data-bs-toggle="collapse" title="Click for a video of changing the inputs.">Click
 for a video.</a>
 
 ::: {#hint-inputs .collapse}
@@ -72,7 +72,7 @@ Visible Stepping to help you work out any bugs.<br />
 <img src="/img/2-complexity/U2ImageVideoAddendum_img/three-color-sierpinski.png" title="Red triangle with blue children and green grandchildren" alt="Red triangle with blue children and green grandchildren" class="indent noshadow" height="300"/></li>
 
 ::: endnote
-<a href="#hint-reminder" data-toggle="collapse" title="Click for a reminder video about Visible Stepping.">Click
+<a href="#hint-reminder" data-bs-toggle="collapse" title="Click for a reminder video about Visible Stepping.">Click
 for a reminder video about Visible Stepping.</a>
 
 ::: {#hint-reminder .collapse}

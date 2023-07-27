@@ -141,7 +141,7 @@ functions, but we are trying to determine whether we can devise a
 function will report a value for <em>any</em> specific input.</p>
 
 ::: endnote
-<a href="#hint-general" data-toggle="collapse" title="What does it mean to answer the question for specific functions?">What
+<a href="#hint-general" data-bs-toggle="collapse" title="What does it mean to answer the question for specific functions?">What
 does it mean to answer the question for <em>specific</em> functions?</a>
 
 ::: {#hint-general .collapse}

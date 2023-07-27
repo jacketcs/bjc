@@ -55,7 +55,7 @@ higher-order function already: <code>keep</code> (in
 
 Unlike <code>keep</code>, the <code>combine</code> function is only used
 with a few input functions.
-<a href="#hint-which-functions" data-toggle="collapse" title="Which functions?">Which
+<a href="#hint-which-functions" data-bs-toggle="collapse" title="Which functions?">Which
 functions?</a>
 
 ::: {#hint-which-functions .collapse}
@@ -75,7 +75,7 @@ blocks you've just written yourself.</p>
 
 <p>
 
-<a data-toggle="collapse" href="#hint-3">Why so few?</a>
+<a data-bs-toggle="collapse" href="#hint-3">Why so few?</a>
 
 ::: {#hint-3 .collapse}
 The function has to be <em>associative</em>, meaning that it can't
@@ -112,7 +112,7 @@ of the items in a list:<br />
 <img src="/img/3-lists/average-of-list-reporting.png" title="average of list {1, 2, 3, 4} reporting 2.5" alt="average of list {1, 2, 3, 4} reporting 2.5" class="indent"/>
 
 ::: endnote
-<a href="#hint-average" data-toggle="collapse" title="Hint about average of list">Hint
+<a href="#hint-average" data-bs-toggle="collapse" title="Hint about average of list">Hint
 about <code>average of list</code></a>
 
 ::: {#hint-average .collapse}
@@ -169,14 +169,13 @@ you won't see them on the exam.</p>
 would be written as
 
 ::: pre-container
-```{=html}
 <pre class="inline">
 PROCEDURE squareRoots(number)
 {
 positiveRoot &leftarrow; sqrt(number)
 RETURN([positiveRoot, -1 * positiveRoot])
-}</pre>
-```
+}
+</pre>
 :::
 
 or
@@ -424,7 +423,7 @@ block.)<br />
 <img src="/img/3-lists/gcd-36-40-reporting.png" title="greatest common divisor of (36) and (40) reporting 4" alt="greatest common divisor of (36) and (40) reporting 4" class="indent"/>
 
 ::: endnote
-<a href="#hint-GCD-hint" data-toggle="collapse" title="Hints about building greatest common divisor">Hint
+<a href="#hint-GCD-hint" data-bs-toggle="collapse" title="Hints about building greatest common divisor">Hint
 about building <code>greatest common divisor</code></a>
 
 ::: {#hint-GCD-hint .collapse}
@@ -433,7 +432,7 @@ You may find it useful to use <code>maximum of list</code> as well as
 block that takes two lists as input and reports all of the items that
 are on both lists.<br />
 <img src="/img/3-lists/intersection-reporting.png" title="intersection of {apples, potatoes, carrots, pears} and {acorns, apples, pears, pine cones} reporting {apples, pears}" alt="intersection of {apples, potatoes, carrots, pears} and {acorns, apples, pears, pine cones} reporting {apples, pears}" class="indent"/><br />
-<a href="#hint-GCD-hints" data-toggle="collapse" title="More detailed hints about greatest common divisor">More
+<a href="#hint-GCD-hints" data-bs-toggle="collapse" title="More detailed hints about greatest common divisor">More
 detailed hints about <code>greatest common divisor</code></a>
 
 ::: {#hint-GCD-hints .collapse}

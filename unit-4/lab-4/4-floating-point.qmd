@@ -32,7 +32,7 @@ two.</p>
 :::
 
 ::: endnote
-<a href="#hint-float" data-toggle="collapse" title="Where did that funny name come from?">Where
+<a href="#hint-float" data-bs-toggle="collapse" title="Where did that funny name come from?">Where
 did that funny name come from?</a>
 
 ::: {#hint-float .collapse}
@@ -121,7 +121,7 @@ and then try
 result computed by the floating point hardware.</p>
 
 ::: endnote
-<a href="#hint-roundoff" data-toggle="collapse" title="How can such simple computations get wrong results?">How
+<a href="#hint-roundoff" data-bs-toggle="collapse" title="How can such simple computations get wrong results?">How
 can such simple computations get wrong results?</a>
 
 ::: {#hint-roundoff .collapse}
@@ -143,7 +143,7 @@ answer will be near zero, and if it's near enough, it will
 <em>underflow</em> and an exact zero might be reported.</p>
 
 ::: endnote
-<a href="#hint-killer" data-toggle="collapse" title="Floating point errors can be very expensive and can even kill people">Floating
+<a href="#hint-killer" data-bs-toggle="collapse" title="Floating point errors can be very expensive and can even kill people">Floating
 point errors can be very expensive and can even kill people.</a>
 
 ::: {#hint-killer .collapse}
@@ -165,20 +165,14 @@ intervals of 0.1 s. However, the integers were converted to decimal
 numbers by multiplying by the binary approximation of 0.1,
 0.00011001100110011001100<sub>2</sub> = 209715/2097152.</p>
 
-<p>As a result, after 100 hours (3.6 × 10<sup>6</sup> ticks), an error
-of</p>
-
-<p class="indent">
-
-[(\frac{1}{10}-\frac{209715}{2097152})(3600\times100\times10)=\frac{5625}{16384}
-\approx 0.3433 \text{ seconds}]{.katex}
-
-</p>
-
-<p>had accumulated. This discrepancy caused the Patriot system to
+As a result, after 100 hours (3.6 × 10<sup>6</sup> ticks), an error
+of 
+$$(\frac{1}{10}-\frac{209715}{2097152})(3600\times100\times10)=\frac{5625}{16384}
+\approx 0.3433 \text{ seconds}$$ 
+had accumulated. This discrepancy caused the Patriot system to
 continuously recycle itself instead of targeting properly. As a result,
 an Iraqi Scud missile could not be targeted and was allowed to detonate
-on a barracks, killing 28 people.</p>
+on a barracks, killing 28 people.
 
 <p><small>From <em>Analog and Digital Conversion</em>, by Wikibooks
 contributors,
@@ -202,7 +196,7 @@ manufacturer and has been improved several times since it was created in
 1985.</p>
 
 ::: endnote
-<a href="#hint-alternatives" data-toggle="collapse" title="There are alternatives to floating point">There
+<a href="#hint-alternatives" data-bs-toggle="collapse" title="There are alternatives to floating point">There
 are alternatives to floating point.</a>
 
 ::: {#hint-alternatives .collapse}
@@ -316,7 +310,7 @@ which is stored as a separate integer.</li>
 :::
 
 ::: endnote
-<a href="#hint-data-types" data-toggle="collapse" title="But different languages use data types differently">But
+<a href="#hint-data-types" data-bs-toggle="collapse" title="But different languages use data types differently">But
 different languages use data types differently.</a>
 
 ::: {#hint-data-types .collapse}
