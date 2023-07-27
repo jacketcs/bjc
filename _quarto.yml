@@ -8,8 +8,13 @@ project:
    - "/prog/"
    - "/img/"
 
+filters:
+  - titling
+  - gifffer
+
 website:
   title: "JacketCS CSP"
+  favicon: "/img/jac.png"
   page-navigation: true
   page-footer: |
     The curriculum, text, and styling on this website is adapted from [The Beauty and Joy of Computing](https://bjc.edc.org/bjc-r/)
@@ -66,10 +71,11 @@ website:
 format:
   html:
     css: /css/bjc.css
+    pagetitle: "{{< meta subtitle >}}{{< meta title >}} | {{< var title-fix >}}"
     toc: true
     theme:
       light: cosmo
-      dark: [cosmo, theme-dark.scss]
+      dark: [cosmo, /css/theme-dark.scss]
     include-in-header:
       - text: |
           <script type="text/javascript" src="/llab/loader.js"></script>
