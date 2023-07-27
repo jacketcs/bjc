@@ -29,7 +29,7 @@ llab.llab_path = llab.rootURL + llab.install_directory;
 
 // reference your custom CSS files, from within llab install directory.
 //  Multiple CSS files is fine, include a separate push for each
-llab.paths.css_files.push('css/default.css');
+// llab.paths.css_files.push('css/default.css');
 
 // courses -- path to folder containing courses.
 //  a course 'name', when prepended with this, will be an absolute link

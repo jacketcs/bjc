@@ -12,7 +12,7 @@ i.e. find all files that have
 <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
 ```
 
-and add a `{{< include /utilities/includes/gif.qmd >}}` after the `</h2>` tag
+and add a `gifffer: true` after the `</h2>` tag
 
 ## 2. Delete all tabs
 
