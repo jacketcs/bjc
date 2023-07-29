@@ -55,7 +55,7 @@ the Snap<em>!</em> stage.</li>
 DAT-2.D.5
 :::
 
-<p><img src="/img/5-algorithms/correlation-positive-trend.png" title="a graph with a bunch of data points, in which they generally follow a straight line from top left to bottom right" alt="a graph with a bunch of data points, in which they generally follow a straight line from top left to bottom right" class="imageRight"/>
+<p><img src="/img/5-algorithms/correlation-positive-trend.png" title="a graph with a bunch of data points, in which they generally follow a straight line from top left to bottom right" alt="a graph with a bunch of data points, in which they generally follow a straight line from top left to bottom right" class="float-end"/>
 You may be familiar with tables from spreadsheet applications (such as
 Google Sheets, Apple Numbers, or Microsoft Excel) which store tabular
 data in different file formats. Spreadsheet programs help efficiently

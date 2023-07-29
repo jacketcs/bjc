@@ -67,7 +67,7 @@ ideas with the class.
 :::
 
 ::: atworkFullWidth
-::: imageRight
+::: float-end
 <img src="/img/atwork/Angelica_Ross.jpg" title="photo of Angelica Ross" alt="photo of Angelica Ross" class="noshadow" height="200px"/><br />
 
 ::: {.endnote style="width:146px;margin:6px;"}

@@ -110,7 +110,7 @@ with specific inputs.</li>
 
 Suppose instead, we count the <em>seven</em>-letter words. Will this
 take...
-<img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="imageRight"/>
+<img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="float-end"/>
 
 <ol>
 

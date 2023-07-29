@@ -39,7 +39,7 @@ turn, then play in the winning square."</p>
 
 <li>What's the second most important rule?</li>
 
-<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="imageRight"/>
+<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/>
 Think through how the computer can determine if a player can win on
 their next turn. The <code>won?</code> block works by looking for a
 triple in which all three slots are X or all three slots are O. Describe

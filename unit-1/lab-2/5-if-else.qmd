@@ -67,7 +67,7 @@ report (join (who) (&apos;, who&apos;) (does what) ( ) (who) (,))
 } else {
 report (who)
 }
-}" class="imageRight"/> About how often will <code>more complicated who</code> pick the more complicated choice?
+}" class="float-end"/> About how often will <code>more complicated who</code> pick the more complicated choice?
 :::
 
 ::: {.choice identifier="c1"}
@@ -136,7 +136,7 @@ report (join (who) (&apos;, who&apos;) (does what) ( ) (who) (,))
 } else {
 report (who)
 }
-}" class="imageRight"/> Here is the script inside <code>more complicated who</code>. What change to this script will make the more complicated phrase appear more often?
+}" class="float-end"/> Here is the script inside <code>more complicated who</code>. What change to this script will make the more complicated phrase appear more often?
 :::
 
 ::: {.choice identifier="c1"}

@@ -28,7 +28,7 @@ CRD-2.A.1 "creative expression" only, IOC-1.A.2, IOC-1.A.5 "arts" only;
 ("One purpose of the computing innovations")
 :::
 
-<img src="/img/4-internet/minimoog_2.jpg" title="picture of an early Minimoog synthesizer" alt="picture of an early Minimoog synthesizer" class="imageRight" height="200px"/>
+<img src="/img/4-internet/minimoog_2.jpg" title="picture of an early Minimoog synthesizer" alt="picture of an early Minimoog synthesizer" class="float-end" height="200px"/>
 
 <p>One purpose of the computing innovations is creative expression.
 Music synthesizers, for example, are electronic musical instruments that
@@ -60,7 +60,7 @@ computations to analyze these sequences.</p>
 IOC-1.E.2 ("Another important topic in biochemistry")
 :::
 
-<img src="/img/4-internet/protein-folding.png" title="protein before and after folding" alt="protein before and after folding" class="imageRight" style="clear: both;"/>
+<img src="/img/4-internet/protein-folding.png" title="protein before and after folding" alt="protein before and after folding" class="float-end" style="clear: both;"/>
 
 ::: sidenote
 <p class="small">
@@ -194,7 +194,7 @@ ways surprise or inspire you?</li>
 IOC-1.E
 :::
 
-<img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="imageRight"/>
+<img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="float-end"/>
 
 <li>How can computers help people around the world cooperate to solve a
 problem? Research an example that has required large-scale engagement,

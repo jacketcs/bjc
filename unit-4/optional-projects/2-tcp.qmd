@@ -47,9 +47,7 @@ lets your computer pretend it has a <em>reliable</em> connection to the
 other computer.</p>
 :::
 
-<br />
-
-<img src="/img/icons/headphones.png" title="Set Up Your Headphones or Speakers" alt="Set Up Your Headphones or Speakers" class="imageRight"/>
+<img src="/img/icons/headphones.png" title="Set Up Your Headphones or Speakers" alt="Set Up Your Headphones or Speakers" class="float-end"/>
 
 ::: sidenote
 If your connection blocks YouTube,
@@ -57,7 +55,7 @@ If your connection blocks YouTube,
 the video here</a>.
 :::
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AYdF7b3nMto?rel=0" frameborder="0" allowfullscreen class="indent">
+{{< video https://www.youtube.com/embed/AYdF7b3nMto width="560" height="315" >}}
 
 </iframe>
 
@@ -143,7 +141,7 @@ to Bits</em> pages 306-309</a>.</li>
 :::
 
 ::: takeItFurther
-<img src="/img/icons/tough-stuff.png" title="Tough Stuff" alt="Tough Stuff" class="imageRight"/>
+<img src="/img/icons/tough-stuff.png" title="Tough Stuff" alt="Tough Stuff" class="float-end"/>
 
 <ol type="A">
 

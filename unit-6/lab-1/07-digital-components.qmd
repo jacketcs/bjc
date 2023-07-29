@@ -237,7 +237,7 @@ motherboard, but we still use the same name.
 
 <li>
 
-<img src="/img/icons/talk-with-another-pair-mini.png" title="Talk with Another Pair" alt="Talk with Another Pair" class="imageRight"/>
+<img src="/img/icons/talk-with-another-pair-mini.png" title="Talk with Another Pair" alt="Talk with Another Pair" class="float-end"/>
 Imagine you are buying a new computer. In a group of four, have each
 person choose <em>one</em> of these reasons:<br />
 

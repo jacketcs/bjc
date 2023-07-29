@@ -158,7 +158,7 @@ note in a song.
 </ol>
 :::
 
-<img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="imageRight"/>
+<img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="float-end"/>
 
 <h3>Creating Blocks to Play Music</h3>
 
@@ -187,13 +187,13 @@ for note pitch numbers. </a>
 <li>Create a reporter to reports the notes for a song of your choosing.
 Here's an example:<br />
 <img src="/img/3-lists/row-row-row-reporter.png" title="row row row your boat reporter block definition" alt="row row row your boat reporter block definition" class="indent"/>
-<img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="imageRight"/></li>
+<img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"/></li>
 
 <li>Test your song with your <code>play song</code> block, and debug any
 problems.<br />
 <img src="/img/3-lists/play-song-row-row-row.png" title="play song (row row row your boat)" alt="play song (row row row your boat)" class="indent"/></li>
 
-<img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="imageRight"/>
+<img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="float-end"/>
 
 </ol>
 :::
@@ -219,7 +219,7 @@ slower.</li>
 ::: forYouToDo
 <ol start="9">
 
-<li><img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="imageRight"/>
+<li><img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/>
 Compare the output of these two scripts that you created above. Discuss
 what <code>map + 5</code> does to the sounds you hear:<br />
 <img src="/img/3-lists/compare-play-note-2.png" title="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" alt="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" class="indent"/><br />
@@ -276,7 +276,7 @@ Boring? Maybe not for A/V kids...
 ::: forYouToDo
 <ol start="12">
 
-<li><img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="imageRight"/>
+<li><img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/>
 Compare the output of these two scripts that you created above. Discuss
 what <code>keep \< 65</code> does to the sounds you hear:<br />
 <img src="/img/3-lists/compare-play-note-2.png" title="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" alt="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" class="indent"/><br />

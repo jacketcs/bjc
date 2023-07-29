@@ -181,7 +181,7 @@ tells you that that line of the code is like a hat block; the variable name in t
 :::
 
 ::: forYouToDo
-<img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="imageRight"/>
+<img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="float-end"/>
 
 <ol start="5">
 
@@ -258,7 +258,7 @@ or <img src="/img/2-complexity/pinwheel-blocktran.png" title="a white rounded re
 :::
 
 ::: takeItTeased
-<img src="/img/1-introduction/kandinsky-several-circles.jpg" title="Painting by Kandinsky: overlapping circles of various colors on a black background; some circles are filled in with a solid color, some are filled in with a translucent color, others are just the outline of a circle with various outline thickness, some filled circles have a border of a different color; the black background has some variations in darkness" alt="Painting by Kandinsky: overlapping circles of various colors on a black background; some circles are filled in with a solid color, some are filled in with a translucent color, others are just the outline of a circle with various outline thickness, some filled circles have a border of a different color; the black background has some variations in darkness" class="imageRight" width="300"/>
+<img src="/img/1-introduction/kandinsky-several-circles.jpg" title="Painting by Kandinsky: overlapping circles of various colors on a black background; some circles are filled in with a solid color, some are filled in with a translucent color, others are just the outline of a circle with various outline thickness, some filled circles have a border of a different color; the black background has some variations in darkness" alt="Painting by Kandinsky: overlapping circles of various colors on a black background; some circles are filled in with a solid color, some are filled in with a translucent color, others are just the outline of a circle with various outline thickness, some filled circles have a border of a different color; the black background has some variations in darkness" class="float-end" width="300"/>
 
 <ol type="A">
 

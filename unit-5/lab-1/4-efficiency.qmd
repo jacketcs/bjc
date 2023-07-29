@@ -76,7 +76,7 @@ word</em> in each word list, how many comparisons are made by the
 
 </li>
 
-<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="imageRight"/>
+<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/>
 How would you describe what happens to the number of <em>steps</em> as
 the input list gets bigger? Write your hypothesis about the
 pattern.</li>

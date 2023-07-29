@@ -174,7 +174,7 @@ That works too! But why?</p>
 
 <li>
 
-<img src="/img/icons/tough-stuff.png" title="Tough Stuff" alt="Tough Stuff" class="imageRight"/>
+<img src="/img/icons/tough-stuff.png" title="Tough Stuff" alt="Tough Stuff" class="float-end"/>
 Does your <code>plurals</code> block still feel cluttered, even though
 the details about how to handle each possible last letter are abstracted
 into specialist blocks? One way to improve on this situation is to use

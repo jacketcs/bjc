@@ -37,8 +37,8 @@ gifffer: true
 </ol>
 :::
 
-::: {.pseudop style="display: flex; align-items:center;"}
-<img src="/img/1-introduction/alonzo.png" title="Alonzo character" alt="Alonzo character" class="imageLeft"/> This is <em>Alonzo</em>, the mascot of our programming language, <em>Snap!</em>. You should see him on the <em>stage,</em> the white area in the top right corner of the Snap<em>!</em> window.
+::: clearfix
+<img src="/img/1-introduction/alonzo.png" title="Alonzo character" alt="Alonzo character" class="float-start"/> This is <em>Alonzo</em>, the mascot of our programming language, <em>Snap!</em>. You should see him on the <em>stage,</em> the white area in the top right corner of the Snap<em>!</em> window.
 :::
 
 <p style="clear:both;">
@@ -57,7 +57,7 @@ gifffer: true
 As a first step, make Alonzo jump someplace else on the stage when he's clicked. Drag these two blocks into the scripting area (the center area of the window):<br />
 
 ::: sidenoteBig
-<img src="/img/1-introduction/motion-palette-categories.jpg" title="Palette categories: Motion, Looks, Sound, Pen, Control, Sensing, Operators, and Variables" alt="Palette categories: Motion, Looks, Sound, Pen, Control, Sensing, Operators, and Variables" class="imageRight"/>
+<img src="/img/1-introduction/motion-palette-categories.jpg" title="Palette categories: Motion, Looks, Sound, Pen, Control, Sensing, Operators, and Variables" alt="Palette categories: Motion, Looks, Sound, Pen, Control, Sensing, Operators, and Variables" class="float-end"/>
 
 <p>You can find blocks in <em>palettes</em> with their matching color. Drag one block underneath another to snap them together.</p>
 :::

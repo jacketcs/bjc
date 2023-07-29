@@ -372,7 +372,7 @@ the OR gate?
 do engineers draw logic gates?</a></p>
 
 ::: {#hint-target .collapse}
-<img src="/img/6-computers/logic-gates-example-circuit.png" title="logic gate diagram of (not and) and (or)" alt="logic gate diagram of (not and) and (or)" class="imageRight"/>
+<img src="/img/6-computers/logic-gates-example-circuit.png" title="logic gate diagram of (not and) and (or)" alt="logic gate diagram of (not and) and (or)" class="float-end"/>
 Engineers typically draw logic gates horizontally and use special shapes
 that represent each gate: <br />
 <img src="/img/6-computers/LogicGates_img/Gates/AND.png" title="AND-gate" alt="AND-gate" class="indent" width="151" height="80"/>

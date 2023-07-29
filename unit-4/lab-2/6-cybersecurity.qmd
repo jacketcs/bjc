@@ -29,7 +29,7 @@ IOC-2.B.2
 :::
 
 ::: atwork
-::: imageRight
+::: float-end
 <img src="/img/atwork/Nicola_Whiting.jpg" title="photo of Nicola Whiting" alt="photo of Nicola Whiting" class="noshadow" height="200px"/>
 
 ::: {.endnote style="width:244px;margin:6px;"}

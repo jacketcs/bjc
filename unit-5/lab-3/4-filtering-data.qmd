@@ -215,7 +215,7 @@ Ask and answer a question that you can answer by looking at a single
 column of a portion of your data set and <strong>examining just the
 first matching item</strong>. Build code to answer your question.</li>
 
-<img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="imageRight"/>
+<img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="float-end"/>
 
 <li><img src="/img/icons/write-out-thoughts-mini.png" alt="Write out your thoughts."/>Pick
 a computing innovation that uses a lot of data. Write about what kinds

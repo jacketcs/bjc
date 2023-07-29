@@ -96,7 +96,7 @@ or <img src="/img/2-complexity/score-increment-blocktran.png" title="score ← s
 
 </li>
 
-<img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="imageRight"/>
+<img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="float-end"/>
 
 <li><strong>Test and debug.</strong> Play the game enough to make sure that the score variable works. <img src="/img/icons/save-mini.png" title="Save your work" alt="Save your work" class="inline"/></li>
 

@@ -108,7 +108,7 @@ timer works in the binary notation.</li>
 ::: ifTime
 <ol start="6">
 
-<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="imageRight"/>
+<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/>
 In this project, you generated the binary number representation of
 decimal numbers 0 through 255. While it takes only 3 digits to represent
 the number 255 in base 10, it requires 8 digits to represent the same
@@ -164,7 +164,7 @@ Try to do this without introducing 60 different costumes.
 ```
 <li>
 
-<img src="/img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff" class="imageRight"/>
+<img src="/img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff" class="float-end"/>
 Create a reporter in Snap<em>!</em> that converts a given number in a
 given base to its equivalent in another given base.<br />
 

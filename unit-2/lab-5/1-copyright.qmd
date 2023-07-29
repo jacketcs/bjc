@@ -52,7 +52,7 @@ Now a different kind of question:
 
 </li>
 
-<img src="/img/icons/talk-with-another-pair.png" title="Talk with Another Pair" alt="Talk with Another Pair" class="imageRight"/>
+<img src="/img/icons/talk-with-another-pair.png" title="Talk with Another Pair" alt="Talk with Another Pair" class="float-end"/>
 
 <li>If your class is like most classes, the first set of questions got
 very different responses from the second set. Discuss in small groups:

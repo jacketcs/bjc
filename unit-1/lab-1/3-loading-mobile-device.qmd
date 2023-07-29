@@ -18,7 +18,7 @@ Create a link to share your app.
 ::: narrower
 ### <strong>Creating a Link</strong>
 
-<img src="/img/1-introduction/U1ImageVideoAddendum_img/U1L1P7_OpenFile.png" title="Open Project dialog box" alt="Open Project dialog box" class="imageRight" height="350"/>
+<img src="/img/1-introduction/U1ImageVideoAddendum_img/U1L1P7_OpenFile.png" title="Open Project dialog box" alt="Open Project dialog box" class="float-end" height="350"/>
 
 <ol type="a">
 

@@ -184,7 +184,7 @@ phase 2 (painting) and then fills the clicked areas</li>
 for hints on creating this program.</a>
 
 ::: {#hint-main .collapse}
-<img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="imageRight"/>
+<img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/>
 
 <ul style="list-style-type: square">
 

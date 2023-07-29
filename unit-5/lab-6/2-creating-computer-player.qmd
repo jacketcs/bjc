@@ -126,7 +126,7 @@ playing on an edge (positions 2, 4, 6, or 8).<br />
 ::: forYouToDo
 <ol start="6">
 
-<li><img src="/img/icons/talk-with-another-pair.png" title="Talk with Another Pair" alt="Talk with Another Pair" class="imageRight"/>
+<li><img src="/img/icons/talk-with-another-pair.png" title="Talk with Another Pair" alt="Talk with Another Pair" class="float-end"/>
 Why is playing in the center or a corner better than an edge? Compare
 your explanation with that of other students.<br></li>
 

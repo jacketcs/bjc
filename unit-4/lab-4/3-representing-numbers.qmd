@@ -154,7 +154,7 @@ work a little harder to make addition work with multiple-word values.
 Not all languages do this, but the highest-level languages do.</p>
 
 ::: takeItFurther
-<img src="/img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff" class="imageRight"/>
+<img src="/img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff" class="float-end"/>
 
 <ol type="A">
 

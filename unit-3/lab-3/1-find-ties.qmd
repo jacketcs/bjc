@@ -177,7 +177,7 @@ game stored by <var>board</var>.</p>
 ::: forYouToDo
 <ol start="8">
 
-<img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="imageRight"/>
+<img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"/>
 
 <li>Create a reporter that outputs a list of all possible winning
 triples. It will look something like this:<br />

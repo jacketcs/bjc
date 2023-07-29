@@ -378,7 +378,7 @@ that takes unreasonable time.</li>
 :::
 
 ::: atworkFullWidth
-::: imageRight
+::: float-end
 <img src="/img/atwork/Alan_Turing.jpeg" title="photo of Alan Turing" alt="photo of Alan Turing" class="noshadow" height="200px"/>
 :::
 

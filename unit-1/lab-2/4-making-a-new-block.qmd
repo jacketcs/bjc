@@ -150,7 +150,7 @@ The exam uses "value of a procedure" to mean the value the procedure returns whe
 ::: forYouToDo
 <ol start="3">
 
-<img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="imageRight"/>
+<img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="float-end"/>
 
 <li>Test your custom <code>gossip response</code> block by clicking it several times. It should behave like the <code>who</code>, <code>does what</code>, and <code>who 2</code> blocks. Debug any problems before moving on.</li>
 

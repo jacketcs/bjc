@@ -16,7 +16,7 @@ order: 1
 
 1. If you haven't already opened [snap]{.snap}, open it now: <a href="http://snap.berkeley.edu/run" title="Snap! Build Your Own Blocks" target="_blank"><strong>http://snap.berkeley.edu/run</strong></a>
 
-<img src="/img/sys/dialog-cloud-signup.png" title="signing up for the cloud" alt="signing up for the cloud" class="imageRight"/>
+<img src="/img/sys/dialog-cloud-signup.png" title="signing up for the cloud" alt="signing up for the cloud" class="float-end"/>
 
 2. In the Snap<em>!</em> window, click the Cloud menu, <img src="/img/1-introduction/cloud_button.png" title="Cloud menu button" alt="Cloud menu button"/>, select "Signup...", and follow the instructions. <br /> <img src="/img/sys/button-cloud-with-context.png" title="cloud icon" alt="cloud icon" class="indent"/>
 

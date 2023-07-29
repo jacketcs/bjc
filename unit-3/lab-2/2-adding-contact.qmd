@@ -142,7 +142,7 @@ for either user choice.</li>
 
 </li>
 
-<img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="imageRight"/>
+<img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="float-end"/>
 
 </ol>
 :::

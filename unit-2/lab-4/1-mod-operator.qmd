@@ -191,7 +191,7 @@ that tests whether its input is even (divisible by 2).<br />
 :::
 
 ::: atworkFullWidth
-<img src="/img/atwork/Katherine_Johnson.jpg" title="photo of Katherine Johnson" alt="photo of Katherine Johnson" class="noshadow imageRight" height="200px"/>
+<img src="/img/atwork/Katherine_Johnson.jpg" title="photo of Katherine Johnson" alt="photo of Katherine Johnson" class="noshadow float-end" height="200px"/>
 
 <p>Katherine Johnson (1918--2020) was an aerospace technologist with a
 Ph.D. in mathematics who worked for NASA calculating the motion of

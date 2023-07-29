@@ -206,7 +206,7 @@ If you don't remember about table view and list view, revisit
 <code>phone</code> from a contact in your list<br />
 <img src="/img/3-lists/name-from-contact-random-reporting.png" title="name from contact: (item (random) of (contact list)) reporting Alphie Preston" alt="name from contact: (item (random) of (contact list)) reporting Alphie Preston" class="indent"/></li>
 
-<img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="imageRight"/>
+<img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"/>
 
 <li><strong>Debug</strong> any problems.</li>
 

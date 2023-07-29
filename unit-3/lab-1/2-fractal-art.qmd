@@ -59,7 +59,7 @@ triangle between the <code>move</code> and <code>turn</code> blocks of
 the code for the red triangle: <br />
 <img src="/img/1-introduction/two-color-sierpinski-code.png" title="repeat (3) {set pen color to (red); move (100) steps; repeat (3) {set pen color to (blue); move (100) steps; turn clockwise (120) degrees}; turn right (120) degrees}" alt="repeat (3) {set pen color to (red); move (100) steps; repeat (3) {set pen color to (blue); move (100) steps; turn clockwise (120) degrees}; turn right (120) degrees}" class="indent"/></li>
 
-<img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="imageRight"/>
+<img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="float-end"/>
 
 <li>Then build it to see what it does.</li>
 
@@ -80,7 +80,7 @@ for a reminder video about Visible Stepping.</a>
 :::
 :::
 
-<img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="imageRight"/>
+<img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"/>
 
 </ol>
 :::

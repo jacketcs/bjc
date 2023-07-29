@@ -124,7 +124,7 @@ as well as a sixth:
 
 <li>
 
-<img src="/img/2-complexity/draggable-check-box.png" title="draggable box checked" alt="draggable box checked" class="imageRight"/> Make the sprite draw only if the mouse button is down, so that you can draw disconnected shapes. You'll need to uncheck the "draggable" box above the scripting area (shown right) before you try this (so that Snap<em>!</em> doesn't think you are trying to drag the sprite when you click).<br />
+<img src="/img/2-complexity/draggable-check-box.png" title="draggable box checked" alt="draggable box checked" class="float-end"/> Make the sprite draw only if the mouse button is down, so that you can draw disconnected shapes. You'll need to uncheck the "draggable" box above the scripting area (shown right) before you try this (so that Snap<em>!</em> doesn't think you are trying to drag the sprite when you click).<br />
 
 ::: sidenote
 You'll probably want to use the <img src="/img/blocks/mouse-down.png" title="mouse down? predicate block" alt="mouse down? predicate block" class="inline"/> block, which you can find in the Sensing palette.

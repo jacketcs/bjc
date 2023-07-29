@@ -124,7 +124,7 @@ that reports a list of the user's answers to these prompts:
 
 </li>
 
-<img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="imageRight"/>
+<img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"/>
 
 <li><strong>Debug.</strong> Clear your <code>contact list</code>, and
 add a new few contacts with birthdays. Fix any problems.</li>

@@ -26,7 +26,7 @@ the movement of that sprite in slightly different ways.</p>
 
 <li>
 
-<img src="/img/2-complexity/draggable-check-box.png" title="draggable box checked" alt="draggable box checked" class="imageRight"/>
+<img src="/img/2-complexity/draggable-check-box.png" title="draggable box checked" alt="draggable box checked" class="float-end"/>
 First, create and test code to make the first sprite follow the mouse
 and draw a line tracing its path.
 

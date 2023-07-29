@@ -41,7 +41,7 @@ around problems.</li>
 :::
 
 ::: atwork
-<img src="/img/atwork/Thomas_David_Petite.jpeg" title="photo of Thomas Petite" alt="photo of Thomas Petite" class="noshadow imageRight" height="200px"/>
+<img src="/img/atwork/Thomas_David_Petite.jpeg" title="photo of Thomas Petite" alt="photo of Thomas Petite" class="noshadow float-end" height="200px"/>
 
 <p>Thomas (David) Petite (born 1956) is a member of the Fond du Lac Band
 of the Lake Superior Chippewa tribe. David is best known for his work on
@@ -106,7 +106,7 @@ accidentally or on purpose).</p>
 
 ::: {.assessment-data type="multiplechoice" identifier="What is the fewest number of nodes?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="false"}
 ::: prompt
-<img src="/img/4-internet/redundant-2.jpg" title="graph of a network with a sender and a receiver at each end and multiple connections among multiple notes between them" alt="graph of a network with a sender and a receiver at each end and multiple connections among multiple notes between them" class="imageRight" height="250px"/>
+<img src="/img/4-internet/redundant-2.jpg" title="graph of a network with a sender and a receiver at each end and multiple connections among multiple notes between them" alt="graph of a network with a sender and a receiver at each end and multiple connections among multiple notes between them" class="float-end" height="250px"/>
 In this model of a network, what is the <em>minimum</em> number of nodes
 (connection points) that can stop working before the sender and the
 receiver can't communicate? (Other than the sender or the receiver
@@ -178,7 +178,7 @@ break communication.
 
 ::: {.assessment-data type="multiplechoice" identifier="What is the maximum that can fail?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="false"}
 ::: prompt
-<img src="/img/4-internet/redundant-2.jpg" title="graph of a network with a sender and a receiver at each end and multiple connections among multiple notes between them" alt="graph of a network with a sender and a receiver at each end and multiple connections among multiple notes between them" class="imageRight" height="250px"/>
+<img src="/img/4-internet/redundant-2.jpg" title="graph of a network with a sender and a receiver at each end and multiple connections among multiple notes between them" alt="graph of a network with a sender and a receiver at each end and multiple connections among multiple notes between them" class="float-end" height="250px"/>
 In the same model network, what is the <em>maximum</em> number of nodes
 that can fail and still let Sender and Receiver communicate?
 :::

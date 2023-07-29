@@ -57,7 +57,7 @@ algorithms can <em>usually</em> reduce the number of bits required to
 store or transmit the data while guaranteeing that the original data can
 be perfectly reconstructed.</p>
 
-<img src="/img/6-computers/bjc-logo-original.png" title="BJC logo uncompressed" alt="BJC logo uncompressed" class="imageRight"/>
+<img src="/img/6-computers/bjc-logo-original.png" title="BJC logo uncompressed" alt="BJC logo uncompressed" class="float-end"/>
 
 <p>Run-length encoding is an example of lossless compression. Consider
 the 158 pixels in the top row of the BJC logo (at right). The first 60

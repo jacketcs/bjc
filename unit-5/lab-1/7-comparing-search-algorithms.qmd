@@ -125,7 +125,7 @@ if ((all but first of (data)) contains ())
 report ()
 }
 report ()
-}" class="imageRight"/>
+}" class="float-end"/>
 
 <p>The algorithm for this block will make the same decisions as in
 <code>are the items distinct?</code>. But that was a predicate. This one

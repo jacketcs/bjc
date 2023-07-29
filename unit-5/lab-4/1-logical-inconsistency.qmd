@@ -74,7 +74,7 @@ reliable but in the opposite way: they can't make true statements ever.
 <p>You are visiting the island and meet two of its people, Diego and
 Zoey. Diego says, "Zoey and I are from the same family."</p>
 
-<img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="imageRight"/>
+<img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/>
 
 <ol>
 
@@ -246,7 +246,7 @@ false."</li>
 
 What questions <em>can</em> you ask in order to determine whether a
 person is a Truth-teller or a False-Teller?
-<img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="imageRight"/>
+<img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/>
 Talking with others, find at least four questions that will work
 reliably.
 

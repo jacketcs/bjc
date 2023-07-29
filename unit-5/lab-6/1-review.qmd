@@ -50,7 +50,7 @@ forgotten.
 
 </li>
 
-<li><img src="/img/icons/talk-with-another-pair.png" title="Talk with Another Pair" alt="Talk with Another Pair" class="imageRight"/>
+<li><img src="/img/icons/talk-with-another-pair.png" title="Talk with Another Pair" alt="Talk with Another Pair" class="float-end"/>
 Two of these blocks report what's on the board but in different ways:
 <code>status of all winning triples</code> and <code>board</code>. Why
 do you need both of those? When do you use each of them?</li>

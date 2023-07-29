@@ -16,7 +16,7 @@ of encryption on society.</p>
 
 ::: {#first .forYouToDo}
 ::: atwork
-::: imageRight
+::: float-end
 <img src="/img/atwork/Luis_von_Ahn.jpg" title="photo of Luis von Ahn" alt="photo of Luis von Ahn" class="noshadow" height="200px"/>
 
 ::: {.endnote style="width:141px;margin:6px;"}

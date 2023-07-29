@@ -20,7 +20,7 @@ FIIIIXXX
 :::
 
 ::: forYouToDo
-<img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="imageRight"/>
+<img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="float-end"/>
 
 <ol start="1">
 
@@ -158,7 +158,7 @@ if (input &lt; 5) (repeat until (input = 5)
 say (input) for (1) secs, 
 set (input) to (input + 1) 
 )
-report (finished)" class="imageRight"/> Which inputs to <code>mystery function</code> will report "finished"?
+report (finished)" class="float-end"/> Which inputs to <code>mystery function</code> will report "finished"?
 :::
 
 ::: {.choice identifier="c1"}
@@ -227,7 +227,7 @@ if (input &lt; 5) (repeat until (input = 5)
 say (input) for (1) secs, 
 set (input) to (input + 1) 
 )
-report (finished)" class="imageRight"/> <strong>What will the sprite say</strong> if you run the same function with the input 1?
+report (finished)" class="float-end"/> <strong>What will the sprite say</strong> if you run the same function with the input 1?
 :::
 
 ::: {.choice identifier="c1"}
@@ -300,7 +300,7 @@ if (input &lt; 5) (repeat until (input = 5)
 say (input) for (1) secs, 
 set (input) to (input + 1) 
 )
-report (finished)" class="imageRight"/> <strong>What will happen</strong> if you run the same function with the input 9?
+report (finished)" class="float-end"/> <strong>What will happen</strong> if you run the same function with the input 9?
 :::
 
 ::: {.choice identifier="c1"}

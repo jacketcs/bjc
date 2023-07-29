@@ -20,7 +20,7 @@ gifffer: true
 
 <li>
 
-Then, experiment with the last script (shown right):<br /> <img src="/img/1-introduction/angles-and-turning.png" title="repeat (2): {move (100) steps, move (-100) steps, turn (180) degrees}" alt="repeat (2): {move (100) steps, move (-100) steps, turn (180) degrees}" class="imageRight"/>
+Then, experiment with the last script (shown right):<br /> <img src="/img/1-introduction/angles-and-turning.png" title="repeat (2): {move (100) steps, move (-100) steps, turn (180) degrees}" alt="repeat (2): {move (100) steps, move (-100) steps, turn (180) degrees}" class="float-end"/>
 
 <ol>
 
@@ -190,7 +190,7 @@ Script B in the same file shows how you can make a 60-branch script behave like 
 :::
 
 ::: takeItTeased
-<img src="/img/1-introduction/GraphicArt_img/alma-big.jpg" title="Alma Thomas painting" alt="Alma Thomas painting" class="imageRight" height="200"/>
+<img src="/img/1-introduction/GraphicArt_img/alma-big.jpg" title="Alma Thomas painting" alt="Alma Thomas painting" class="float-end" height="200"/>
 
 <ol type="A">
 

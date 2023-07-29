@@ -128,7 +128,7 @@ automation.</li>
 </ol>
 
 ::: atworkFullWidth
-::: imageRight
+::: float-end
 <img src="/img/atwork/Marina_Bers.JPG" title="photo of Marina Bers" alt="photo of Marina Bers" class="noshadow" height="200px"/>
 :::
 

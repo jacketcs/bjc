@@ -149,7 +149,7 @@ Below are two animations that use the <code>pinwheel</code> code with inputs. Fi
 
 </li>
 
-<img src="/img/1-introduction/mini-Albers-picture.png" alt="mini-Albers-style picture" class="imageRight" height="180"/>
+<img src="/img/1-introduction/mini-Albers-picture.png" alt="mini-Albers-style picture" class="float-end" height="180"/>
 
 <li>Make sure your other work has been saved, then <a href="/prog/1-introduction/U1L3-mini-Albers.xml" class="run"><img src="/img/icons/load-save.png" title=" Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a><br />Experiment with the script. Could you change the sizes or colors to make it more interesting?</li>
 
@@ -167,11 +167,11 @@ Below are two animations that use the <code>pinwheel</code> code with inputs. Fi
 ::: takeItTeased
 <ol type="A">
 
-<li>Find a way to use <code>for</code> to nest squares this way. Build your <em>block</em> with two inputs that let you specify how many squares the design will contain and how much bigger each square will be than the previous one.<br /> <img src="/img/icons/tough-stuff.png" title="Tough Stuff" alt="Tough Stuff" class="imageRight"/> <img src="/img/1-introduction/concentric-squares.png" title="concentric squares" alt="concentric squares" class="indent" width="219" height="170"/></li>
+<li>Find a way to use <code>for</code> to nest squares this way. Build your <em>block</em> with two inputs that let you specify how many squares the design will contain and how much bigger each square will be than the previous one.<br /> <img src="/img/icons/tough-stuff.png" title="Tough Stuff" alt="Tough Stuff" class="float-end"/> <img src="/img/1-introduction/concentric-squares.png" title="concentric squares" alt="concentric squares" class="indent" width="219" height="170"/></li>
 
 </ol>
 
-<img src="/img/1-introduction/Josef_Albers&apos;s_painting_&apos;Homage_to_the_Square&apos;,_1965.jpg" title="painting-by-Josef-Albers" alt="painting-by-Josef-Albers" class="imageRight" height="150"/>
+<img src="/img/1-introduction/Josef_Albers&apos;s_painting_&apos;Homage_to_the_Square&apos;,_1965.jpg" title="painting-by-Josef-Albers" alt="painting-by-Josef-Albers" class="float-end" height="150"/>
 
 <p>On the right is a painting by Josef Albers. He was interested in experimenting with variations of color within a "family" of similar colors. Snap<i>!</i> will let you make similar experiments.</p>
 

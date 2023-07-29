@@ -83,7 +83,7 @@ searching on the Internet?</li>
 :::
 
 ::: atworkFullWidth
-::: imageRight
+::: float-end
 <img src="/img/atwork/Jerry_Yang.jpeg" title="photo of Jerry Yang" alt="photo of Jerry Yang" class="noshadow" height="200px"/>
 :::
 

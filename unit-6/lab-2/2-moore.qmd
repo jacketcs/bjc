@@ -5,7 +5,7 @@ order: 1
 ---
 
 <div class="learn"><strong>On this page</strong>, you'll learn that computer processor speed and memory size have approximately doubled every year or two, for over 50 years.</div>
-<img class="imageRight noshadow" src="/img/6-computers/mooreslaw_graph.png" alt="Graph of transistor count in a processor increasing exponentially from 0 to 20 billion over the years from 1971 to 2017" title="Graph of transistor count in a processor increasing exponentially from 0 to 20 billion over the years from 1971 to 2017"/>
+<img class="float-end noshadow" src="/img/6-computers/mooreslaw_graph.png" alt="Graph of transistor count in a processor increasing exponentially from 0 to 20 billion over the years from 1971 to 2017" title="Graph of transistor count in a processor increasing exponentially from 0 to 20 billion over the years from 1971 to 2017"/>
 <p>In 1965, Gordon Moore, one of the pioneers of integrated circuits, predicted that the <em>number of transistors</em> that could be fit on one chip would double every year. In 1975, he revised his estimate to doubling every two years. This prediction is known as <em>Moore's Law.</em></p>
 <div class="vocabFullWidth">
 <p><strong>Moore's Law</strong> is the prediction that the number of transistors that fit on one chip doubles every year.</p>
@@ -30,7 +30,7 @@ That huge computer you saw in Lab 1 was built in 1975, and it had about 1MB of m
 </div>
 
 ##  Limitations to Moore's Law
-<img class="imageRight" src="/img/6-computers/heatsink.png" height="200px" alt="heat sink" title="heat sink" />
+<img class="float-end" src="/img/6-computers/heatsink.png" height="200px" alt="heat sink" title="heat sink" />
 <p>For transistor counts to keep growing, the size of a transistor must keep getting smaller. But chip density and processor speed have run up against an important limit: denser chips and faster signal processing both generate increased <em>heat</em>. Current technology is right at the edge of generating enough heat to melt the chips, destroying the computer. This is why processor chips are surrounded by metal <em>heat sinks</em> (one shown right), which conduct heat away from the chip and into the air.</p>
 <div class="takeItFurther">
 <ol type="A">

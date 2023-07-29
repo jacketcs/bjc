@@ -87,7 +87,7 @@ AAP-3.B.7
 ::: forYouToDo
 <ol start="4">
 
-<li><img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="imageRight"/> In the sprite corral, click on the green sprite named "Sprite(2)" to control its scripts and costumes.<br /> <img src="/img/1-introduction/stage-and-sprite-corral.png" title="stage-and-sprite-corral" alt="stage-and-sprite-corral" class="indent"/></li>
+<li><img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="float-end"/> In the sprite corral, click on the green sprite named "Sprite(2)" to control its scripts and costumes.<br /> <img src="/img/1-introduction/stage-and-sprite-corral.png" title="stage-and-sprite-corral" alt="stage-and-sprite-corral" class="indent"/></li>
 
 <li>Perform each experiment (A-C) several times.</li>
 
@@ -95,7 +95,7 @@ AAP-3.B.7
 
 <li><img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Discuss how <code>who2</code> compares to <code>who</code> and how <code>gossip2</code> compares to <code>gossip</code>.</li>
 
-<li><img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="imageRight"/> Make Sprite(2) tell Sprite to respond. What happens?</li>
+<li><img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="float-end"/> Make Sprite(2) tell Sprite to respond. What happens?</li>
 
 <!--<div class="index-term anchor" id="when I receive</code>">&nbsp;</div>-->
 

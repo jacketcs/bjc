@@ -10,7 +10,7 @@ gifffer: true
 :::
 
 ::: forYouToDo
-<img src="/img/icons/write-in-journal.png" title="Write In Your Journal" alt="Write In Your Journal" class="imageRight"/> Every day in your journal, keep notes like the following:
+<img src="/img/icons/write-in-journal.png" title="Write In Your Journal" alt="Write In Your Journal" class="float-end"/> Every day in your journal, keep notes like the following:
 
 <ul>
 

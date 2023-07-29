@@ -28,7 +28,7 @@ CRD-2.B.3 (white text)
 <p>The scripts are essentially all the same; only some of the <em>input values</em> change. Instead of having many separate scripts, you can make one general block <img src="/img/1-introduction/pinwheel-block.png" title="pinwheel, branches:()" alt="pinwheel, branches:()" height="40"/> that will draw <em>all</em> such designs. The block has to work for a variety of inputs.</p>
 
 ::: forYouToDo
-<img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="imageRight"/>
+<img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="float-end"/>
 
 <ol start="3">
 
@@ -158,7 +158,7 @@ CRD-2.G
 
 <ol start="4">
 
-<img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="imageRight"/>
+<img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"/>
 
 <li>Comment your code.</li>
 

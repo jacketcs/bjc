@@ -193,7 +193,7 @@ At first the watcher will look like this:<br /> <img src="/img/2-complexity/csqu
 <p>In Snap<em>!</em>, a table is implemented as a list of lists, in which each sublist is one row of the table.</p>
 :::
 
-<img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="imageRight"/>
+<img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="float-end"/>
 
 <li>Test both the selectors for different items in your list of quiz items, and debug any problems.</li>
 

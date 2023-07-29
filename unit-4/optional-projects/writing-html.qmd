@@ -31,7 +31,7 @@ The page content goes here.
 <span class="blue">&lt;/html&gt;</span></pre>
 ```
 ::: {#first .forYouToDo}
-<a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_default" target="_blank"><img src="/img/4-internet/w3-html-example.jpg" title="w3schools HTML example" alt="w3schools HTML example" class="imageRight"/></a>
+<a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_default" target="_blank"><img src="/img/4-internet/w3-html-example.jpg" title="w3schools HTML example" alt="w3schools HTML example" class="float-end"/></a>
 
 <ol>
 
@@ -70,7 +70,7 @@ tags:<br /> <code class="indent">\<!-- This is a comment.
 right-clicking or control-clicking a page, or look around in menus like
 "View" or "Developer").</li>
 
-<li><img src="/img/icons/write-out-thoughts-mini.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="imageRight"/>Look
+<li><img src="/img/icons/write-out-thoughts-mini.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="float-end"/>Look
 at the source code for a few different web pages and compare them to the
 pages. Make a list of the HTML formatting commands you can figure out.
 For example, what code makes text appear in <strong>bold</strong> or

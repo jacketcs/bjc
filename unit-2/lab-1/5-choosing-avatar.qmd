@@ -58,7 +58,7 @@ AAP-1.D.8
 
 <p>
 
-<!--<img class="imageRight" src="/img/2-complexity/my-menu.png" alt="my (neighbors) with drop-down menu open showing: neighbors, self, other sprites, clones, parts, anchor, stage, children, parent, name, costumes, sounds, dangling?, draggable?, rotation x, rotation y, center x, center y" title="my (neighbors) with drop-down menu open showing: neighbors, self, other sprites, clones, parts, anchor, stage, children, parent, name, costumes, sounds, dangling?, draggable?, rotation x, rotation y, center x, center y" />-->
+<!--<img class="float-end" src="/img/2-complexity/my-menu.png" alt="my (neighbors) with drop-down menu open showing: neighbors, self, other sprites, clones, parts, anchor, stage, children, parent, name, costumes, sounds, dangling?, draggable?, rotation x, rotation y, center x, center y" title="my (neighbors) with drop-down menu open showing: neighbors, self, other sprites, clones, parts, anchor, stage, children, parent, name, costumes, sounds, dangling?, draggable?, rotation x, rotation y, center x, center y" />-->
 
 Lists can contain anything: letters or words, costumes, other lists, or even blocks. You can use <code>my</code> to report a list of the costumes for your sprite.<br />
 

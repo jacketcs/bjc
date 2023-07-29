@@ -34,7 +34,7 @@ infected, a person stays infected.</p>
 ::: {#first .forYouToDo}
 <ol>
 
-<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="imageRight"/>
+<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/>
 What would be a sensible hypothesis on how population size affects the
 elapsed time?</li>
 
@@ -126,7 +126,7 @@ complete</strong> that moves the clones until they are all infected</li>
 <code>touching infected person?</code> predicate, and the <code>when I
 start as clone</code> script.</li>
 
-<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="imageRight"/>
+<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/>
 Discuss how your simulation is similar to and different from a real-life
 disease outbreak. Identify the <em>simplifying assumptions</em> you made
 in this simulation.</li>

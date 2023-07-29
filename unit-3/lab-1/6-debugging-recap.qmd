@@ -17,7 +17,7 @@ computer programs and fixing them.</p>
 <h3>Tips</h3>
 
 ::: atwork
-<img src="/img/atwork/Grace_Hopper.jpg" title="photo of Grace Hopper" alt="photo of Grace Hopper" class="noshadow imageRight" height="200px"/>
+<img src="/img/atwork/Grace_Hopper.jpg" title="photo of Grace Hopper" alt="photo of Grace Hopper" class="noshadow float-end" height="200px"/>
 
 <p>Grace Hopper (1906-1992) was an United States Navy rear admiral and
 pioneer of computer programming. She is best known for her trailblazing
@@ -118,7 +118,7 @@ Sometimes their incorrect behavior suggests another project:<br />
 </p>
 
 ::: {#first .forYouToDo}
-<img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="imageRight"/>
+<img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/>
 
 <ol>
 

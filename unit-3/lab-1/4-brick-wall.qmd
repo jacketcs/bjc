@@ -5,7 +5,7 @@ order: 4
 ---
 
 ::: learn
-<img src="/img/2-complexity/humpty-dumpty-tenniel.png" title="Humpty Dumpty on brick wall" alt="Humpty Dumpty on brick wall" class="imageRight"/>
+<img src="/img/2-complexity/humpty-dumpty-tenniel.png" title="Humpty Dumpty on brick wall" alt="Humpty Dumpty on brick wall" class="float-end"/>
 
 <p><strong>In this project,</strong> you will use abstraction to draw a
 brick wall.</p>
@@ -53,18 +53,17 @@ and so we'll use
 <img src="/img/blocks/set-flat-line-ends.png" title="set (flat line ends) to &apos;predicate input slot&apos;" alt="set (flat line ends) to &apos;predicate input slot&apos;"/>
 to turn on flat line ends.</p>
 
-::: {.center style="display: grid; grid-template-columns: auto auto;"}
-::: {.pseudop .center}
+:::: {.grid}
+::: g-col-6
 <img src="/img/2-complexity/flat-line-ends-why.jpg" title="Square with flat line ends versus square with round line ends" alt="Square with flat line ends versus square with round line ends"/><br /><strong>flat</strong>
 vs. <strong>rounded</strong> line ends
 :::
 
-<div>
-
+::: g-col-6
 <img src="/img/blocks/set-video-with-menu.png" title="set [video capture] to &apos;predicate input slot&apos; with menu open showing: turbo mode, flat line ends, video capture, mirror video" alt="set [video capture] to &apos;predicate input slot&apos; with menu open showing: turbo mode, flat line ends, video capture, mirror video" class="inline"/>
-
-</div>
 :::
+::::
+
 :::
 
 </ol>
@@ -204,7 +203,7 @@ U2L4-MathLibrary. You learned about exporting and importing blocks on
 
 </li>
 
-<img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="imageRight"/>
+<img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="float-end"/>
 
 ::: ap-standard
 AAP-3.B

@@ -139,7 +139,7 @@ This feels like it should be a separate page. --MF, 12/24/17
 
 ::: takeNote
 ::: atwork
-::: imageRight
+::: float-end
 <img src="/img/atwork/Mary_Golda_Ross.jpeg" title="photo of Mary Golda Ross" alt="photo of Mary Golda Ross" class="noshadow" height="200px"/>
 
 ::: {.endnote style="width:141px;margin:6px;"}

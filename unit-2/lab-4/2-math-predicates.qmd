@@ -139,7 +139,7 @@ sentences...<br />
 ::: takeNote
 <h4><strong>Debugging<a name="dependencies" class="anchor"> </a>Dependencies</strong></h4>
 
-<img src="/img/2-complexity/even-obsolete.png" title="even? (number#){report(Obsolete!)}" alt="even? (number#){report(Obsolete!)}" class="imageRight"/>
+<img src="/img/2-complexity/even-obsolete.png" title="even? (number#){report(Obsolete!)}" alt="even? (number#){report(Obsolete!)}" class="float-end"/>
 
 <p>You created your <code>even?</code> block using another custom block,
 <code>divisible by?</code>. If you want to use <code>even?</code> in

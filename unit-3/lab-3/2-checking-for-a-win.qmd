@@ -119,7 +119,7 @@ on
 
 </li>
 
-<li><img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="imageRight"/>
+<li><img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"/>
 Play another game where player O wins, and test your <code>status of
 triple</code> block with the winning triple. Fix any bugs.</li>
 
@@ -204,7 +204,7 @@ that takes the letter <strong>X</strong> or <strong>O</strong> as input,
 and reports <code>true</code> if and only if that player has won the
 game.</li>
 
-<img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="imageRight"/>
+<img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"/>
 
 <li>Modify your program so that when a player wins the game, the program
 <em>notifies</em> the players.</li>

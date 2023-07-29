@@ -35,7 +35,7 @@ The list expression <img src="/img/1-introduction/list-from-who.png" title="list
 ::: {#first .forYouToDo}
 <ol>
 
-<img src="/img/icons/pair-programming-swap-reminder.png" title="Remember to Do Pair Programming Swaps" alt="Remember to Do Pair Programming Swaps" class="imageRight"/>
+<img src="/img/icons/pair-programming-swap-reminder.png" title="Remember to Do Pair Programming Swaps" alt="Remember to Do Pair Programming Swaps" class="float-end"/>
 
 <li><a class="run" href="/prog/2-complexity/U2L2-ShoppingList.xml" target="_blank"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a> This project contains button costumes for the sprites that the user will click to control the items on their shopping list.</li>
 

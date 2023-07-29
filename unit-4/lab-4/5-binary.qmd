@@ -73,7 +73,7 @@ example:</p>
 DAT-1.C.4
 :::
 
-<p><img src="/img/4-internet/binary-places(18).jpg" title="place values in binary 10010: 1 16&apos;s 0 8&apos;s 0 4&apos;s 1 2&apos;s 0 1&apos;s" alt="place values in binary 10010: 1 16&apos;s 0 8&apos;s 0 4&apos;s 1 2&apos;s 0 1&apos;s" class="imageRight"/>
+<p><img src="/img/4-internet/binary-places(18).jpg" title="place values in binary 10010: 1 16&apos;s 0 8&apos;s 0 4&apos;s 1 2&apos;s 0 1&apos;s" alt="place values in binary 10010: 1 16&apos;s 0 8&apos;s 0 4&apos;s 1 2&apos;s 0 1&apos;s" class="float-end"/>
 <strong>Base 2</strong> uses the same idea but with <strong>powers of
 two</strong> instead of powers of ten. Binary place values represent the
 units place (2<sup>0</sup> = 1), the twos place (2<sup>1</sup> = 2), the
@@ -152,101 +152,31 @@ thirty-twos, because I only have 25. But I can take out 16, and there's
 
 <!--  <div class="sidenoteBig">Either way you are converting (and between any bases), always write the place values right-to-left (just as with units, tens, hundreds, etc.), and always write the number itself left-to-right.</div>  -->
 
-::: todo
-Mary, this is a sloppy use of tables when I probably should be using
-some kind of CSS. Fix later. --MF, 12/8/17 There is a commented out,
-incorrect sidenote here. -bh
-:::
-
-31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATgBRAEEAMgBBAEQAWQBBAE4AZwBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBQAEEAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAEkAQQBCAGoAQQBHAHcAQQBZAFEAQgB6AEEASABNAEEAUABRAEEAaQBBAEgASQBBAFoAUQBCAHQAQQBHAEUAQQBhAFEAQgB1AEEARwBRAEEAWgBRAEIAeQBBAEgATQBBAEkAQQBCAHAAQQBHADQAQQBaAEEAQgBsAEEARwA0AEEAZABBAEEAaQBBAEMAQQBBAGMAdwBCADEAQQBHADAAQQBiAFEAQgBoAEEASABJAEEAZQBRAEEAOQBBAEMASQBBAGIAQQBCAHAAQQBIAE0AQQBkAEEAQQBnAEEARwA4AEEAWgBnAEEAZwBBAEgASQBBAFoAUQBCAHQAQQBHAEUAQQBhAFEAQgB1AEEARwBRAEEAWgBRAEIAeQBBAEgATQBBAEkAQQBCAGgAQQBHAFkAQQBkAEEAQgBsAEEASABJAEEASQBBAEIAbABBAEcARQBBAFkAdwBCAG8AQQBDAEEAQQBjAHcAQgAwAEEARwBVAEEAYwBBAEEAZwBBAEcAOABBAFoAZwBBAGcAQQBIAEEAQQBjAGcAQgB2AEEARwBNAEEAWgBRAEIAegBBAEgATQBBAEkAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABNAEEAUABnAEEANABBAEQAawBBAFAAQQBBAHYAQQBIAE0AQQBQAGcAQQA4AEEARwBJAEEAYwBnAEEAZwBBAEMAOABBAFAAZwBBAEsAQQBEAHcAQQBjAHcAQQArAEEARABJAEEATgBRAEEAOABBAEMAOABBAGMAdwBBACsAQQBEAHcAQQBZAGcAQgB5AEEAQwBBAEEATAB3AEEAKwBBAEEAbwBBAFAAQQBCAHoAQQBEADQAQQBPAFEAQQA4AEEAQwA4AEEAYwB3AEEAKwBBAEQAdwBBAFkAZwBCAHkAQQBDAEEAQQBMAHcAQQArAEEAQQBvAEEAUABBAEIAegBBAEQANABBAE0AUQBBADgAQQBDADgAQQBjAHcAQQArAEEARAB3AEEAWQBnAEIAeQBBAEMAQQBBAEwAdwBBACsAQQBBAG8AQQBNAEEAQQBLAEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBMAHcAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAEwAdwBCADAAQQBHAEUAQQBZAGcAQgBzAEEARwBVAEEAUABnAEEAPQAKAHMAdQBmAGYAaQB4ADoA:31b8e172-b470-440e-83d8-e6b185028602
-
-<table class="byte indent" summary="translation process from base 10 to base 2">
-
+```{=html}
+<table class="indent" summary="translation process from binary to base 10">
+<tbody><tr>
+<th scope="col">1</th>
+<th scope="col" style="font-weight:normal;">0</th>
+<th scope="col">1</th>
+<th scope="col">1</th>
+<th scope="col" style="font-weight:normal;">0</th>
+<th scope="col">1</th>
+</tr>
 <tr>
-
-<td class="noborder" colspan="8">
-
-<img src="/img/8-recursive-reporters/r-to-l.png" title="right-to-left arrow" alt="right-to-left arrow" class="indent noshadow"/>
-
+<td><strong>32</strong></td>
+<td>16</td>
+<td><strong>8</strong></td>
+<td><strong>4</strong></td>
+<td>2</td>
+<td><strong>1</strong></td>
+</tr>
+<tr>
+<td class="noborder" colspan="6">
+<img class="indent noshadow" src="/img/8-recursive-reporters/r-to-l.png" alt="right-to-left arrow" title="right-to-left arrow">
 </td>
-
 </tr>
-
-<tr>
-
-<th scope="col" style="font-weight:normal;">
-
-128
-
-</th>
-
-<th scope="col">
-
-64
-
-</th>
-
-<th scope="col" style="font-weight:normal;">
-
-32
-
-</th>
-
-<th scope="col">
-
-16
-
-</th>
-
-<th scope="col">
-
-8
-
-</th>
-
-<th scope="col" style="font-weight:normal;">
-
-4
-
-</th>
-
-<th scope="col" style="font-weight:normal;">
-
-2
-
-</th>
-
-<th scope="col">
-
-1
-
-</th>
-
-</tr>
-
-<tr>
-
-<td> </td>
-
-<td><strong>1</strong></td>
-
-<td>0</td>
-
-<td><strong>1</strong></td>
-
-<td><strong>1</strong></td>
-
-<td>0</td>
-
-<td>0</td>
-
-<td><strong>1</strong></td>
-
-</tr>
-
-</table>
-
-<br clear="all" />
+</tbody></table>
+```
 
 ::: todo
 I'm confused about why the arrow is going from right to left. Will that
