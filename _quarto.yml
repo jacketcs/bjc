@@ -11,6 +11,7 @@ project:
 filters:
   - titling
   - gifffer
+  - useful
 
 website:
   title: "JacketCS CSP"
