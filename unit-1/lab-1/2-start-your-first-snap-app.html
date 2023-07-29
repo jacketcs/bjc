@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>JacketCS CSP - Page 2: Programming a Game</title>
+<title>Unit 1, Lab 1, Page 2 | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,6 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../">
 <link href="../../unit-1/lab-1/3-loading-mobile-device.html" rel="next">
 <link href="../../unit-1/lab-1/1-creating-a-snap-account.html" rel="prev">
+<link href="../..//img/jac.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -42,7 +43,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/gifffer/gifffer.min.js"></script>
+<link href="../../site_libs/quarto-contrib/gifffer/bjc-gifffer.css" rel="stylesheet">
+<script type="text/javascript">window.onload = function() {Gifffer();};</script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -136,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-1/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-1/lab-1/1-creating-a-snap-account.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../unit-1/lab-1/2-start-your-first-snap-app.html">Page 2: Programming a Game</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-1/index.html">Unit 1: Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-1/lab-1/1-creating-a-snap-account.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../unit-1/lab-1/2-start-your-first-snap-app.html">Page 2: Programming a Game</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -151,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-1/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 1: Introduction to Programming</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -429,9 +433,6 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<script type="text/javascript" src="../../utilities/gifffer.min.js"></script>
-<script type="text/javascript">window.onload = function() {Gifffer();};</script>
-<p><link rel="stylesheet" type="text/css" href="../../css/bjc-gifffer.css"></p>
 <div class="learn">
 <p>
 <strong>On this page,</strong> you’ll build a simple game in which the player tries to click a character that’s jumping around.
@@ -461,8 +462,8 @@ Choose “Save” from the Snap<em>!</em> File menu, <img src="../../img/1-intro
 </li>
 </ol>
 </div>
-<div class="pseudop" style="display: flex; align-items:center;">
-<p><img src="../../img/1-introduction/alonzo.png" title="Alonzo character" alt="Alonzo character" class="imageLeft"> This is <em>Alonzo</em>, the mascot of our programming language, <em>Snap!</em>. You should see him on the <em>stage,</em> the white area in the top right corner of the Snap<em>!</em> window.</p>
+<div class="clearfix">
+<p><img src="../../img/1-introduction/alonzo.png" title="Alonzo character" alt="Alonzo character" class="float-start"> This is <em>Alonzo</em>, the mascot of our programming language, <em>Snap!</em>. You should see him on the <em>stage,</em> the white area in the top right corner of the Snap<em>!</em> window.</p>
 </div>
 <p style="clear:both;">
 </p><p><img src="../../img/1-introduction/alonzo-on-stage.png" title="picture of Snap! window with white rectangle at right labeled 'Stage' and yellow character on that stage labeled 'Sprite named Alonzo'" alt="picture of Snap! window with white rectangle at right labeled 'Stage' and yellow character on that stage labeled 'Sprite named Alonzo'" class="indent"></p>
@@ -475,7 +476,7 @@ You’re going to program a game in which the goal is to click on Alonzo as he�
 <li>
 <p>As a first step, make Alonzo jump someplace else on the stage when he’s clicked. Drag these two blocks into the scripting area (the center area of the window):<br></p>
 <div class="sidenoteBig">
-<p><img src="../../img/1-introduction/motion-palette-categories.jpg" title="Palette categories: Motion, Looks, Sound, Pen, Control, Sensing, Operators, and Variables" alt="Palette categories: Motion, Looks, Sound, Pen, Control, Sensing, Operators, and Variables" class="imageRight"></p>
+<p><img src="../../img/1-introduction/motion-palette-categories.jpg" title="Palette categories: Motion, Looks, Sound, Pen, Control, Sensing, Operators, and Variables" alt="Palette categories: Motion, Looks, Sound, Pen, Control, Sensing, Operators, and Variables" class="float-end"></p>
 <p>
 You can find blocks in <em>palettes</em> with their matching color. Drag one block underneath another to snap them together.
 </p>
@@ -571,23 +572,23 @@ The game isn’t much fun if Alonzo just sits there waiting to be clicked. Once 
 <img src="../../img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline">
 </li>
 <li>
-<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkpoint">
-    Checkpoint: Fill out this Google Form
-</button>
-
-<div class="modal fade" id="checkpoint" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-fullscreen">
-    <div class="modal-content">
-        <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<p><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkpoint-1FAIpQLSclBVnTClsKqL3h5aVil7EjVhRw5OkNGfMjaFlEgMdo-mIv7Q"> Checkpoint: Fill out this Google Form </button>
+      </p><div class="modal fade" id="checkpoint-1FAIpQLSclBVnTClsKqL3h5aVil7EjVhRw5OkNGfMjaFlEgMdo-mIv7Q" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclBVnTClsKqL3h5aVil7EjVhRw5OkNGfMjaFlEgMdo-mIv7Q/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" height="613">Loading…</iframe>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
         </div>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclBVnTClsKqL3h5aVil7EjVhRw5OkNGfMjaFlEgMdo-mIv7Q/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" height="613">Loading…</iframe>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-    </div>
-  </div>
-</div>
+      </div><p></p>
+<!-- id is from the url of the shared google form i.e.
+https://docs.google.com/forms/d/e/1FAIpQLSclBVnTClsKqL3h5aVil7EjVhRw5OkNGfMjaFlEgMdo-mIv7Q/viewform?embedded=true
+ -->
 </li>
 </ol>
 </div>

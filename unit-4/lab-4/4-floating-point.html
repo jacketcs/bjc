@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>JacketCS CSP - Page 4: Floating Point</title>
+<title>Unit 4, Lab 4, Page 4 | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,6 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../">
 <link href="../../unit-4/lab-4/5-binary.html" rel="next">
 <link href="../../unit-4/lab-4/3-representing-numbers.html" rel="prev">
+<link href="../..//img/jac.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -42,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -64,6 +65,8 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../css/bjc.css">
 </head>
@@ -442,7 +445,7 @@ Scientific notation (such as 2,350,000 = 2.35 × 10<sup>6</sup>) uses powers of 
 </p>
 </div>
 <div class="endnote">
-<p><a href="#hint-float" data-toggle="collapse" title="Where did that funny name come from?">Where did that funny name come from?</a></p>
+<p><a href="#hint-float" data-bs-toggle="collapse" title="Where did that funny name come from?">Where did that funny name come from?</a></p>
 <div id="hint-float" class="collapse">
 <p>This non-obvious name is used because there used to be a <em>fixed point</em> non-integer notation with a <em>fixed</em> number of digits after the decimal <em>point.</em> For example, a fixed point notation with two digits after the decimal point was used to represent an amount of money in dollars and cents: $82.47. But today’s computers always use floating point for non-integer values.</p>
 </div>
@@ -488,7 +491,7 @@ Try <img src="../../img/4-internet/0.2+0.4.png" title="(0.2) + (0.4)" alt="(0.2)
 This isn’t a bug in Snap<em>!</em>, which is correctly reporting the result computed by the floating point hardware.
 </p>
 <div class="endnote">
-<p><a href="#hint-roundoff" data-toggle="collapse" title="How can such simple computations get wrong results?">How can such simple computations get wrong results?</a></p>
+<p><a href="#hint-roundoff" data-bs-toggle="collapse" title="How can such simple computations get wrong results?">How can such simple computations get wrong results?</a></p>
 <div id="hint-roundoff" class="collapse">
 <p>These results seem surprising because a fractional value such as 0.2 can be represented exactly <em>in decimal</em> (unlike the example of ⅓). But <em>in binary,</em> only fractions whose denominator is a power of 2 can be represented exactly. So 2/16 can be represented exactly, but 2/10 can’t. The binary floating point representation of 0.2 is just slightly too big, and so is the binary representation of 0.4. Adding two slightly-too-big values produces an error big enough to get to the next higher representable value.</p>
 </div>
@@ -497,7 +500,7 @@ This isn’t a bug in Snap<em>!</em>, which is correctly reporting the result co
 No matter how good the hardware is, certain kinds of computations are likely to give severe errors in floating point. One simple example is subtracting two numbers that are almost equal in value. The correct answer will be near zero, and if it’s near enough, it will <em>underflow</em> and an exact zero might be reported.
 </p>
 <div class="endnote">
-<p><a href="#hint-killer" data-toggle="collapse" title="Floating point errors can be very expensive and can even kill people">Floating point errors can be very expensive and can even kill people.</a></p>
+<p><a href="#hint-killer" data-bs-toggle="collapse" title="Floating point errors can be very expensive and can even kill people">Floating point errors can be very expensive and can even kill people.</a></p>
 <div id="hint-killer" class="collapse">
 <div class="todo">
 <p>Brian wants to add links to these references. –MF, 10/16/19</p>
@@ -508,15 +511,8 @@ A notorious example is the fate of the Ariane rocket launched on June 4, 1996 (E
 <p>
 The Patriot missile defense system used during the Gulf War was also rendered ineffective due to roundoff error (Skeel 1992, U.S. GAO 1992). The system used an integer timing register which was incremented at intervals of 0.1 s. However, the integers were converted to decimal numbers by multiplying by the binary approximation of 0.1, 0.00011001100110011001100<sub>2</sub> = 209715/2097152.
 </p>
-<p>
-As a result, after 100 hours (3.6 × 10<sup>6</sup> ticks), an error of
-</p>
-<p class="indent">
-</p><p><span class="katex">(-)(3600)= </span></p>
-<p></p>
-<p>
-had accumulated. This discrepancy caused the Patriot system to continuously recycle itself instead of targeting properly. As a result, an Iraqi Scud missile could not be targeted and was allowed to detonate on a barracks, killing 28 people.
-</p>
+<p>As a result, after 100 hours (3.6 × 10<sup>6</sup> ticks), an error of <span class="math display">\[(\frac{1}{10}-\frac{209715}{2097152})(3600\times100\times10)=\frac{5625}{16384}
+\approx 0.3433 \text{ seconds}\]</span> had accumulated. This discrepancy caused the Patriot system to continuously recycle itself instead of targeting properly. As a result, an Iraqi Scud missile could not be targeted and was allowed to detonate on a barracks, killing 28 people.</p>
 <p>
 <small>From <em>Analog and Digital Conversion</em>, by Wikibooks contributors, <a href="https://en.wikibooks.org/wiki/Analog_and_Digital_Conversion/Fixed_Wordlength_Effects" title="Analog and Digital Conversion/Fixed Wordlength Effects" target="_blank">https://en.wikibooks.org/wiki/Analog_and_Digital_Conversion/Fixed_Wordlength_Effects</a></small>
 </p>
@@ -529,7 +525,7 @@ Computer arithmetic on <em>integers</em> is straightforward. Either you get an e
 By contrast, computer arithmetic on <em>floating point numbers</em> is hard to get exactly right. Prior to 1985, every model of computer had a slightly different floating point format, and all of them got wrong answers to certain problems. This situation was resolved by the <a href="https://en.wikipedia.org/wiki/IEEE_floating_point" target="_blank" title="IEEE 754">IEEE 754 floating point standard</a>, which is now used by every computer manufacturer and has been improved several times since it was created in 1985.
 </p>
 <div class="endnote">
-<p><a href="#hint-alternatives" data-toggle="collapse" title="There are alternatives to floating point">There are alternatives to floating point.</a></p>
+<p><a href="#hint-alternatives" data-bs-toggle="collapse" title="There are alternatives to floating point">There are alternatives to floating point.</a></p>
 <div id="hint-alternatives" class="collapse">
 <p>If the subtle errors in floating point computation turn out to be unacceptable in a particular application, software can use alternative representations:</p>
 <ul>
@@ -590,7 +586,7 @@ Lists and blocks are binary sequences too.
 </ul>
 </div>
 <div class="endnote">
-<p><a href="#hint-data-types" data-toggle="collapse" title="But different languages use data types differently">But different languages use data types differently.</a></p>
+<p><a href="#hint-data-types" data-bs-toggle="collapse" title="But different languages use data types differently">But different languages use data types differently.</a></p>
 <div id="hint-data-types" class="collapse">
 <p>
 In well-designed languages (those based on Scheme, for example), that data type code is attached to the value itself. In other languages, when you make a variable, you have to say what type of value it will contain, and the data type is attached to the <em>variable</em>, so you can’t both get exact answers when the values are integers and also be able to handle non-integer values of the same variable. So instead of seeing:<br> <img src="../../img/4-internet/varfoo.png" title="script variables (foo)" alt="script variables (foo)" class="indent"><br> you see things like:<br> <img src="../../img/4-internet/intfoo.png" title="integer (foo)" alt="integer (foo)" class="indent"><br> In a language with <em>dynamic typing</em> (where you don’t have to declare the types of variables) it’s just as easy to make a list whose items are of different data types as it is to make one whose items are all the same type (all integers or all character strings, etc.)

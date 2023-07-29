@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>JacketCS CSP - Page 5: Binary Representation</title>
+<title>Unit 4, Lab 4, Page 5 | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,6 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../">
 <link href="../../unit-4/lab-4/6-compression.html" rel="next">
 <link href="../../unit-4/lab-4/4-floating-point.html" rel="prev">
+<link href="../..//img/jac.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -42,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -466,7 +467,7 @@ In <strong>base 10</strong> notation, each place value represents a <strong>powe
 <p>DAT-1.C.4</p>
 </div>
 <p>
-<img src="../../img/4-internet/binary-places(18).jpg" title="place values in binary 10010: 1 16's 0 8's 0 4's 1 2's 0 1's" alt="place values in binary 10010: 1 16's 0 8's 0 4's 1 2's 0 1's" class="imageRight"> <strong>Base 2</strong> uses the same idea but with <strong>powers of two</strong> instead of powers of ten. Binary place values represent the units place (2<sup>0</sup> = 1), the twos place (2<sup>1</sup> = 2), the fours place (2<sup>2</sup> = 4), the eights place (2<sup>3</sup> = 8), the sixteens place (2<sup>4</sup> = 16), etc. So, for example:
+<img src="../../img/4-internet/binary-places(18).jpg" title="place values in binary 10010: 1 16's 0 8's 0 4's 1 2's 0 1's" alt="place values in binary 10010: 1 16's 0 8's 0 4's 1 2's 0 1's" class="float-end"> <strong>Base 2</strong> uses the same idea but with <strong>powers of two</strong> instead of powers of ten. Binary place values represent the units place (2<sup>0</sup> = 1), the twos place (2<sup>1</sup> = 2), the fours place (2<sup>2</sup> = 4), the eights place (2<sup>3</sup> = 8), the sixteens place (2<sup>4</sup> = 16), etc. So, for example:
 </p>
 <p align="center">
 </p><p>10010<sub>2</sub> &nbsp; = &nbsp; <strong>1 × 2<sup>4</sup></strong> &nbsp;+&nbsp; 0 × 2<sup>3</sup> &nbsp;+&nbsp; 0 × 2<sup>2</sup> &nbsp;+&nbsp; <strong>1 × 2<sup>1</sup></strong> &nbsp;+&nbsp; 0 × 2<sup>0</sup> &nbsp; = &nbsp; 16 &nbsp;+&nbsp; 2 &nbsp; = &nbsp; 18<sub>10</sub></p>
@@ -518,72 +519,29 @@ Writing Binary
 To translate from base 10 (like 89<sub>10</sub>) to base 2, <strong>first write out the binary place values</strong> by <em>doubling left from the units place</em> until you get to a value larger than your number (128 for this example). <strong>Then think</strong>, “I can take out a 64, so I write a 1 there, and there’s 25 left (89&nbsp;−&nbsp;64). I have 0 thirty-twos, because I only have 25. But I can take out 16, and there’s 9 left. So, 8 and 1 are the last nonzero bits.
 </p>
 <!--  <div class="sidenoteBig">Either way you are converting (and between any bases), always write the place values right-to-left (just as with units, tens, hundreds, etc.), and always write the number itself left-to-right.</div>  -->
-<div class="todo">
-<p>Mary, this is a sloppy use of tables when I probably should be using some kind of CSS. Fix later. –MF, 12/8/17 There is a commented out, incorrect sidenote here. -bh</p>
-</div>
-<p>31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATgBRAEEAMgBBAEQAWQBBAE4AZwBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBQAEEAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAEkAQQBCAGoAQQBHAHcAQQBZAFEAQgB6AEEASABNAEEAUABRAEEAaQBBAEgASQBBAFoAUQBCAHQAQQBHAEUAQQBhAFEAQgB1AEEARwBRAEEAWgBRAEIAeQBBAEgATQBBAEkAQQBCAHAAQQBHADQAQQBaAEEAQgBsAEEARwA0AEEAZABBAEEAaQBBAEMAQQBBAGMAdwBCADEAQQBHADAAQQBiAFEAQgBoAEEASABJAEEAZQBRAEEAOQBBAEMASQBBAGIAQQBCAHAAQQBIAE0AQQBkAEEAQQBnAEEARwA4AEEAWgBnAEEAZwBBAEgASQBBAFoAUQBCAHQAQQBHAEUAQQBhAFEAQgB1AEEARwBRAEEAWgBRAEIAeQBBAEgATQBBAEkAQQBCAGgAQQBHAFkAQQBkAEEAQgBsAEEASABJAEEASQBBAEIAbABBAEcARQBBAFkAdwBCAG8AQQBDAEEAQQBjAHcAQgAwAEEARwBVAEEAYwBBAEEAZwBBAEcAOABBAFoAZwBBAGcAQQBIAEEAQQBjAGcAQgB2AEEARwBNAEEAWgBRAEIAegBBAEgATQBBAEkAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABNAEEAUABnAEEANABBAEQAawBBAFAAQQBBAHYAQQBIAE0AQQBQAGcAQQA4AEEARwBJAEEAYwBnAEEAZwBBAEMAOABBAFAAZwBBAEsAQQBEAHcAQQBjAHcAQQArAEEARABJAEEATgBRAEEAOABBAEMAOABBAGMAdwBBACsAQQBEAHcAQQBZAGcAQgB5AEEAQwBBAEEATAB3AEEAKwBBAEEAbwBBAFAAQQBCAHoAQQBEADQAQQBPAFEAQQA4AEEAQwA4AEEAYwB3AEEAKwBBAEQAdwBBAFkAZwBCAHkAQQBDAEEAQQBMAHcAQQArAEEAQQBvAEEAUABBAEIAegBBAEQANABBAE0AUQBBADgAQQBDADgAQQBjAHcAQQArAEEARAB3AEEAWQBnAEIAeQBBAEMAQQBBAEwAdwBBACsAQQBBAG8AQQBNAEEAQQBLAEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBMAHcAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAEwAdwBCADAAQQBHAEUAQQBZAGcAQgBzAEEARwBVAEEAUABnAEEAPQAKAHMAdQBmAGYAaQB4ADoA:31b8e172-b470-440e-83d8-e6b185028602</p>
-
-<table class="byte indent" summary="translation process from base 10 to base 2">
-<tbody><tr>
-<td class="noborder" colspan="8">
-<p><img src="../../img/8-recursive-reporters/r-to-l.png" title="right-to-left arrow" alt="right-to-left arrow" class="indent noshadow"></p>
-</td>
+<table class="indent table" data-quarto-postprocess="true" data-summary="translation process from binary to base 10">
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" scope="col">1</td>
+<td data-quarto-table-cell-role="th" scope="col" style="font-weight: normal">0</td>
+<td data-quarto-table-cell-role="th" scope="col">1</td>
+<td data-quarto-table-cell-role="th" scope="col">1</td>
+<td data-quarto-table-cell-role="th" scope="col" style="font-weight: normal">0</td>
+<td data-quarto-table-cell-role="th" scope="col">1</td>
 </tr>
-<tr>
-<th scope="col" style="font-weight:normal;">
-<p>128</p>
-</th>
-<th scope="col">
-<p>64</p>
-</th>
-<th scope="col" style="font-weight:normal;">
-<p>32</p>
-</th>
-<th scope="col">
-<p>16</p>
-</th>
-<th scope="col">
-<p>8</p>
-</th>
-<th scope="col" style="font-weight:normal;">
-<p>4</p>
-</th>
-<th scope="col" style="font-weight:normal;">
-<p>2</p>
-</th>
-<th scope="col">
-<p>1</p>
-</th>
+<tr class="even">
+<td><strong>32</strong></td>
+<td>16</td>
+<td><strong>8</strong></td>
+<td><strong>4</strong></td>
+<td>2</td>
+<td><strong>1</strong></td>
 </tr>
-<tr>
-<td>
-&nbsp;
-</td>
-<td>
-<strong>1</strong>
-</td>
-<td>
-0
-</td>
-<td>
-<strong>1</strong>
-</td>
-<td>
-<strong>1</strong>
-</td>
-<td>
-0
-</td>
-<td>
-0
-</td>
-<td>
-<strong>1</strong>
-</td>
+<tr class="odd">
+<td colspan="6" class="noborder"><img src="../../img/8-recursive-reporters/r-to-l.png" title="right-to-left arrow" class="indent noshadow img-fluid" alt="right-to-left arrow"></td>
 </tr>
-
-</tbody></table>
-<p><br clear="all"></p>
+</tbody>
+</table>
 <div class="todo">
 <p>I’m confused about why the arrow is going from right to left. Will that confuse students? Most of the work happens going left to right. Maybe there should be another arrow below the table that goes the other way… –MF, 2/12/18 It may be left over from when we were using the correct algorithm, which does go right to left. -bh</p>
 </div>

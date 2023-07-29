@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>JacketCS CSP - Page 2: Detecting A Win</title>
+<title>Unit 3, Lab 3, Page 2 | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,6 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../">
 <link href="../../unit-3/lab-3/3-checking-for-ties.html" rel="next">
 <link href="../../unit-3/lab-3/1-find-ties.html" rel="prev">
+<link href="../..//img/jac.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -42,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -451,7 +452,7 @@ Click <img src="../../img/1-introduction/green-flag_button.png" title="green fla
 <li>
 <p>Then build this expression, and see what it reports:<br> <img src="../../img/3-lists/map-item-board.png" title="map (item ( ) of (board)) over (list{1, 2, 3})" alt="map (item ( ) of (board)) over (list{1, 2, 3})" class="indent"><br></p>
 <div class="endnote">
-<p><a href="#hint-map-item" data-toggle="collapse" title="How does map work here?">How does <code>map</code> work here?</a></p>
+<p><a href="#hint-map-item" data-bs-toggle="collapse" title="How does map work here?">How does <code>map</code> work here?</a></p>
 <div id="hint-map-item" class="collapse">
 <p>
 This <code>map</code> expression works the same way as the <code>join</code> example above, but people sometimes find it a little more complex to think about, because it’s natural to expect <img src="../../img/3-lists/map-over-board.png" title="map (something) over (board)" alt="map (something) over (board)">, but that’s <em>not</em> what the expression says. Instead, it maps over a <em>constant</em> list, not a variable. As before, <code>map</code> inserts each list item into the blank space in the function inside the gray ring, and it reports a list of the results.
@@ -478,7 +479,7 @@ If <code>{1, 2, 3}</code> isn’t the triple in which <strong>x</strong> won the
 </div>
 </li>
 <li>
-<img src="../../img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="imageRight"> Play another game where player O wins, and test your <code>status of triple</code> block with the winning triple. Fix any bugs.
+<img src="../../img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"> Play another game where player O wins, and test your <code>status of triple</code> block with the winning triple. Fix any bugs.
 </li>
 </ol>
 </div>
@@ -500,7 +501,7 @@ For example, Player O has won the game below, and the <code>status of all winnin
 Use <code>map</code> together with some of the other blocks you have made to build the <code>status of all winning triples</code> block. It should report the status of all of the possible winning triples as a list of lists, as shown above.
 </li>
 <div class="endnote">
-<p><a href="#hint-status-all" data-toggle="collapse" title="Click for a hint on how to use map.">Click for a hint on how to use <code>map</code>.</a></p>
+<p><a href="#hint-status-all" data-bs-toggle="collapse" title="Click for a hint on how to use map.">Click for a hint on how to use <code>map</code>.</a></p>
 <div id="hint-status-all" class="collapse">
 <p>
 </p><p>When you use <code>map</code> think:</p>
@@ -517,7 +518,7 @@ What data are you performing that function on? That is the list you are mapping 
 </div>
 </div>
 <div class="sidenoteBig">
-<p><a href="#hint-won" data-toggle="collapse" title="Click for a hint on building won?.">Click for a hint on building <code>won?</code>.</a></p>
+<p><a href="#hint-won" data-bs-toggle="collapse" title="Click for a hint on building won?.">Click for a hint on building <code>won?</code>.</a></p>
 <div id="hint-won" class="collapse">
 <p>
 Put it in words: What is it that you want to check?
@@ -526,7 +527,7 @@ Put it in words: What is it that you want to check?
 Are there any blocks that might be helpful for that?
 </p>
 <p>
-</p><p><a href="#hint-won-contains" data-toggle="collapse" title="Click for another hint.">Click for another hint.</a></p>
+</p><p><a href="#hint-won-contains" data-bs-toggle="collapse" title="Click for another hint.">Click for another hint.</a></p>
 <div id="hint-won-contains" class="collapse">
 <p><img src="../../img/3-lists/contains.png" title="( ) contains ( )" alt="( ) contains ( )"></p>
 </div>
@@ -536,7 +537,7 @@ Are there any blocks that might be helpful for that?
 <li>
 Now make a block <img src="../../img/3-lists/wonQ.png" title="won? ( )" alt="won? ( )"> that takes the letter <strong>X</strong> or <strong>O</strong> as input, and reports <code>true</code> if and only if that player has won the game.
 </li>
-<p><img src="../../img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="imageRight"></p>
+<p><img src="../../img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"></p>
 <li>
 Modify your program so that when a player wins the game, the program <em>notifies</em> the players.
 </li>

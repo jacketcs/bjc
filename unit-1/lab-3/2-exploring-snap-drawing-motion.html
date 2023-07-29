@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>JacketCS CSP - Page 2: Angles and Turning</title>
+<title>Unit 1, Lab 3, Page 2 | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,6 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../">
 <link href="../../unit-1/lab-3/3-blocks-with-inputs.html" rel="next">
 <link href="../../unit-1/lab-3/1-exploring-motion.html" rel="prev">
+<link href="../..//img/jac.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -42,7 +43,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/gifffer/gifffer.min.js"></script>
+<link href="../../site_libs/quarto-contrib/gifffer/bjc-gifffer.css" rel="stylesheet">
+<script type="text/javascript">window.onload = function() {Gifffer();};</script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -136,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-1/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-1/lab-3/1-exploring-motion.html">Lab 3</a></li><li class="breadcrumb-item"><a href="../../unit-1/lab-3/2-exploring-snap-drawing-motion.html">Page 2: Angles and Turning</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-1/index.html">Unit 1: Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-1/lab-3/1-exploring-motion.html">Lab 3</a></li><li class="breadcrumb-item"><a href="../../unit-1/lab-3/2-exploring-snap-drawing-motion.html">Page 2: Angles and Turning</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -151,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-1/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 1: Introduction to Programming</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -428,9 +432,6 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<script type="text/javascript" src="../../utilities/gifffer.min.js"></script>
-<script type="text/javascript">window.onload = function() {Gifffer();};</script>
-<p><link rel="stylesheet" type="text/css" href="../../css/bjc-gifffer.css"></p>
 <div class="learn">
 <p>
 <strong>On this page,</strong> you will learn about sprite turning angles, which are needed for drawing polygons. For starters, you’ll draw various asterisks, like these: <br> <img src="../../img/1-introduction/Three-spokes.png" title="three spokes" alt="asterisk with three spokes" class="indent"> <img src="../../img/1-introduction/Five-spokes.png" title="asterisk with five spokes" alt="asterisk with five spokes"> <img src="../../img/1-introduction/Eight-spokes.png" title="asterisk with eight spokes" alt="asterisk with eight spokes">
@@ -448,7 +449,7 @@ When you were trying to draw an equilateral triangle on the previous page, you m
 Perform the four experiments (A-D), and read the comments attached to each one. As you do, talk with your partner about what you see and why it happens.
 </li>
 <li>
-<p>Then, experiment with the last script (shown right):<br> <img src="../../img/1-introduction/angles-and-turning.png" title="repeat (2): {move (100) steps, move (-100) steps, turn (180) degrees}" alt="repeat (2): {move (100) steps, move (-100) steps, turn (180) degrees}" class="imageRight"></p>
+<p>Then, experiment with the last script (shown right):<br> <img src="../../img/1-introduction/angles-and-turning.png" title="repeat (2): {move (100) steps, move (-100) steps, turn (180) degrees}" alt="repeat (2): {move (100) steps, move (-100) steps, turn (180) degrees}" class="float-end"></p>
 <ol>
 <li>
 Experiment with a <em>quarter</em> turn (<code>turn</code> 90 degrees instead of 180). Adjust the number of repetitions (the number you give to <code>repeat</code>) until you get the sprite to finish facing the same way it started.<br> <img title="animation of drawing an asterisk with four spokes" alt="animation of drawing an asterisk with four spokes" class="indent" data-gifffer="/img/1-introduction/U1ImageVideoAddendum_img/U1L3P2-AngleExperiment-4.gif" height="150">
@@ -584,7 +585,7 @@ Why is the change in pen color and size useful here?<br> <img src="../../img/1-i
 <p><img src="../../img/1-introduction/alphie-small.png" title="art loosely inspired by Alma Thomas" alt="art loosely inspired by Alma Thomas">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../../img/1-introduction/Thomas/Stage (19).png" title="art loosely inspired by Alma Thomas" alt="art loosely inspired by Alma Thomas">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../../img/1-introduction/Thomas/Stage (16).png" title="art loosely inspired by Alma Thomas" alt="art loosely inspired by Alma Thomas">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../../img/1-introduction/painted-small.png" title="art loosely inspired by Alma Thomas" alt="art loosely inspired by Alma Thomas"></p>
 </div>
 <div class="takeItTeased">
-<p><img src="../../img/1-introduction/GraphicArt_img/alma-big.jpg" title="Alma Thomas painting" alt="Alma Thomas painting" class="imageRight" height="200"></p>
+<p><img src="../../img/1-introduction/GraphicArt_img/alma-big.jpg" title="Alma Thomas painting" alt="Alma Thomas painting" class="float-end" height="200"></p>
 <ol type="A">
 <li>
 <p>At the right is a painting by Alma Thomas. See what it inspires you to do.<br> <strong>It’s your art. Take liberties.</strong></p>

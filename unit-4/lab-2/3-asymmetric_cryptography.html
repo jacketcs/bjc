@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>JacketCS CSP - Page 3: Public Key Encryption</title>
+<title>Unit 4, Lab 2, Page 3 | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,6 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../">
 <link href="../../unit-4/lab-2/4-who-cares-about-encryption.html" rel="next">
 <link href="../../unit-4/lab-2/2-caesar-cipher.html" rel="prev">
+<link href="../..//img/jac.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -42,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -441,16 +442,16 @@ The fundamental problem that cryptography is trying to solve is how to get a mes
 <p><a href="https://commons.wikimedia.org/wiki/File:Public_key_encryption.svg" target="_blank">https://commons.wikimedia.org/wiki/File:Public_key_encryption.svg</a></p>
 </div>
 <p>
-<a href="#hint-model" data-toggle="collapse" title="Here is a visual model of public key encryption (from wikimedia.org).">Here is a visual model of public key encryption</a> (from wikimedia.org).
+<a href="#hint-model" data-bs-toggle="collapse" title="Here is a visual model of public key encryption (from wikimedia.org).">Here is a visual model of public key encryption</a> (from wikimedia.org).
 </p>
 <div id="hint-model" class="collapse">
 <p><img src="../../img/3-lists/525px-Public_key_encryption.png" title="Diagram of public key encryption showing a message being encrypted with a public key and decrypted with a private key" alt="Diagram of public key encryption showing a message being encrypted with a public key and decrypted with a private key" class="indent noshadow" border="0"></p>
 </div>
 <p>
-<a href="#hint-paint" data-toggle="collapse" title="Here is a video that uses paint mixing as a metaphor for public key encryption.">Here is a video that uses paint mixing as a metaphor for public key encryption.</a>
+<a href="#hint-paint" data-bs-toggle="collapse" title="Here is a video that uses paint mixing as a metaphor for public key encryption.">Here is a video that uses paint mixing as a metaphor for public key encryption.</a>
 </p>
 <div id="hint-paint" class="collapse">
-<p><img src="../../img/icons/headphones-mini.png" title="Set Up Your Headphones or Speakers" alt="Set Up Your Headphones or Speakers" class="imageRight"> <iframe width="560" height="315" src="https://www.youtube.com/embed/YEBfamv-_do?start=145&amp;rel=0" frameborder="0" allowfullscreen="" class="indent"></iframe></p>
+<p><img src="../../img/icons/headphones-mini.png" title="Set Up Your Headphones or Speakers" alt="Set Up Your Headphones or Speakers" class="float-end"> <iframe width="560" height="315" src="https://www.youtube.com/embed/YEBfamv-_do?start=145&amp;rel=0" frameborder="0" allowfullscreen="" class="indent"></iframe></p>
 <p>
 If your connection blocks YouTube, <a href="http://scratch.mit.edu/discuss/youtube/YEBfamv-_do" target="_blank" title="Public key cryptography - Diffie-Hellman Key Exchange">watch the video here</a>, but start it at 2:25.
 </p>
@@ -462,7 +463,7 @@ If your connection blocks YouTube, <a href="http://scratch.mit.edu/discuss/youtu
 </p>
 <div class="sidenote">
 <p>
-<a href="#hint-invented" data-toggle="collapse" title="Who invented public key encryption?">Who created public key encryption?</a>
+<a href="#hint-invented" data-bs-toggle="collapse" title="Who invented public key encryption?">Who created public key encryption?</a>
 </p>
 <div id="hint-invented" class="collapse">
 <p>The public key idea was first published by Whitfield Diffie and Martin Hellman in 1976. But it turns out that it had been invented earlier but kept secret by governments.</p>
@@ -486,7 +487,7 @@ If your connection blocks YouTube, <a href="http://scratch.mit.edu/discuss/youtu
 <p>This endnote references composition of functions, but I think it’s the first time in the curriculum that this idea has appeared. –MF, 6/15/20</p>
 </div>
 <div class="endnote">
-<p><a href="#hint-digital-signatures" data-toggle="collapse" title="It's also possible to use the private key for encryption and the public key for decryption...">It’s also possible to use the <em>private</em> key for encryption and the <em>public</em> key for decryption…</a></p>
+<p><a href="#hint-digital-signatures" data-bs-toggle="collapse" title="It's also possible to use the private key for encryption and the public key for decryption...">It’s also possible to use the <em>private</em> key for encryption and the <em>public</em> key for decryption…</a></p>
 <div id="hint-digital-signatures" class="collapse">
 <p>
 That’s no good for secret messages (why not?), but it’s useful for <strong>digital signatures</strong>. I use my private key to encrypt a message; you use my public key to decrypt it. If you get a meaningful message as the result, that proves that the message was encrypted with my private key. (If I want both secrecy and digital signing, I encrypt the message with my private key to sign it, then encrypt the encrypted result <em>again</em> with your public key to keep it secret. You decrypt it twice, first with your private key and then with my public key.) This is a nice example of <em>composition of functions:</em> the output from the first encryption is the input to the second encryption.
@@ -509,11 +510,11 @@ Secure HTTP connections (those that use <strong>https://</strong> instead of <st
 </p>
 <!--<div class="todo">
 <div class="sidenote">If your connection blocks YouTube, <a href="http://scratch.mit.edu/discuss/youtube/kBXQZMmiA4s" target="_blank" title="The Internet: HTTP & HTML">watch the video here</a>, but start it at 4:40. </div>
-<img class="imageRight" src="/img/icons/headphones-mini.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" />
+<img class="float-end" src="/img/icons/headphones-mini.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" />
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kBXQZMmiA4s?start=280&rel=0" frameborder="0" allowfullscreen class="indent"></iframe>
 </div>-->
 <div class="endnote">
-<p><a href="#hint-open-standards" data-toggle="collapse" title="Open Standards Help Security">Open standards help security…</a></p>
+<p><a href="#hint-open-standards" data-bs-toggle="collapse" title="Open Standards Help Security">Open standards help security…</a></p>
 <div id="hint-open-standards" class="collapse">
 <p>
 In order to work properly, a cryptographic function has to be easy for the private key holder to invert, but hard for anyone else to invert. How do we know what “hard” means? For example, current cryptographic methods rely on the difficulty of finding prime factors of very large numbers. There’s no <em>proof</em> that someone won’t come up with a fast way to do that, but people are pretty confident about it because the problem has been well studied by many mathematicians. (On the other hand, when <em>quantum computers</em> become practical, factorization <em>will</em> be easy, and new cryptographic methods will be needed. New research developments in 2019 make practical quantum cryptanalysis seem not so far away.)

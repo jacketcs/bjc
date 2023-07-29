@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>JacketCS CSP - Page 4: Brick Wall</title>
+<title>Unit 3, Lab 1, Page 4 | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,6 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../">
 <link href="../../unit-3/lab-1/5-building-tic-tac-toe.html" rel="next">
 <link href="../../unit-3/lab-1/3-fractal-art-recursive.html" rel="prev">
+<link href="../..//img/jac.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -42,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -411,7 +412,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="learn">
-<p><img src="../../img/2-complexity/humpty-dumpty-tenniel.png" title="Humpty Dumpty on brick wall" alt="Humpty Dumpty on brick wall" class="imageRight"></p>
+<p><img src="../../img/2-complexity/humpty-dumpty-tenniel.png" title="Humpty Dumpty on brick wall" alt="Humpty Dumpty on brick wall" class="float-end"></p>
 <p>
 <strong>In this project,</strong> you will use abstraction to draw a brick wall.
 </p>
@@ -436,11 +437,11 @@ Drawing One Brick
 <p>
 Ordinarily, Snap<em>!</em> draws rounded ends on thick lines: <img src="../../img/2-complexity/U2ImageVideoAddendum_img/round-ends.png" title="line with round ends" alt="line with round ends" class="nopadtb">. That’s often the best choice, and you can see why below. But for bricks, we want <em>flat</em> line ends: <img src="../../img/2-complexity/U2ImageVideoAddendum_img/flat-ends.png" title="flat line ends" alt="flat line ends" class="nopadtb">, and so we’ll use <img src="../../img/blocks/set-flat-line-ends.png" title="set (flat line ends) to 'predicate input slot'" alt="set (flat line ends) to 'predicate input slot'"> to turn on flat line ends.
 </p>
-<div class="center" style="display: grid; grid-template-columns: auto auto;">
-<div class="pseudop center">
+<div class="grid">
+<div class="g-col-6">
 <p><img src="../../img/2-complexity/flat-line-ends-why.jpg" title="Square with flat line ends versus square with round line ends" alt="Square with flat line ends versus square with round line ends"><br><strong>flat</strong> vs.&nbsp;<strong>rounded</strong> line ends</p>
 </div>
-<div>
+<div class="g-col-6">
 <p><img src="../../img/blocks/set-video-with-menu.png" title="set [video capture] to 'predicate input slot' with menu open showing: turbo mode, flat line ends, video capture, mirror video" alt="set [video capture] to 'predicate input slot' with menu open showing: turbo mode, flat line ends, video capture, mirror video" class="inline"></p>
 </div>
 </div>
@@ -493,7 +494,7 @@ You’d like the “top level” block to be something like this:<br> <img src="
 Use <code>draw brick</code> to make blocks <img src="../../img/2-complexity/U2ImageVideoAddendum_img/draw-row-A.png" title="draw row A" alt="draw row A"> and <img src="../../img/2-complexity/U2ImageVideoAddendum_img/draw-row-B.png" title="draw row B" alt="draw row B">.
 </li>
 <div class="endnote">
-<p><img src="../../img/icons/read-more-mini.png" title="Read More" alt="Read More" class="inline"> <a href="#hint-too-much" data-toggle="collapse" title="Too much abstraction?">Too much abstraction?</a></p>
+<p><img src="../../img/icons/read-more-mini.png" title="Read More" alt="Read More" class="inline"> <a href="#hint-too-much" data-bs-toggle="collapse" title="Too much abstraction?">Too much abstraction?</a></p>
 <div id="hint-too-much" class="collapse">
 <p>
 It’s possible to go overboard on abstraction and build so many blocks that your program is just as cluttered as it would be without the custom blocks. But it <em>can</em> be useful to make a custom block even when its definition is just one built-in block. For example, to draw the mortar between blocks (the white gaps), you can just use <code>move (4) steps</code>, but it might make sense to define a <code>draw mortar</code> block that uses <code>move</code> inside it.
@@ -507,7 +508,7 @@ Why? You might later decide that four steps is the wrong thickness for mortar an
 <p>The two kinds of rows should be exactly the same length. Your first try at drawing Row B is probably a little too long. <strong>If so, debug it.</strong></p>
 <div class="endnote">
 <p>
-Debug by thinking about what you are trying to accomplish, not about your code. <a href="#hint-debug" data-toggle="collapse" title="Debug by thinking about what you are trying to accomplish, not about your code. For example...">For example…</a>
+Debug by thinking about what you are trying to accomplish, not about your code. <a href="#hint-debug" data-bs-toggle="collapse" title="Debug by thinking about what you are trying to accomplish, not about your code. For example...">For example…</a>
 </p>
 <div id="hint-debug" class="collapse">
 <ul>
@@ -530,7 +531,7 @@ Or think “What would <em>make the most sense</em> in a <em>real</em> brick wal
 <p>You might want to use the <code>odd?</code> predicate from your U2L4-MathLibrary. You learned about exporting and importing blocks on <a href="../../unit-2/lab-3/1-what-is-predicate.html" title="What's a Predicate?">Unit 2 Lab 3 Page 1: What’s a Predicate?</a></p>
 </div>
 </li>
-<p><img src="../../img/icons/save-now.png" title="Save your work" alt="Save your work" class="imageRight"></p>
+<p><img src="../../img/icons/save-now.png" title="Save your work" alt="Save your work" class="float-end"></p>
 <div class="ap-standard">
 <p>AAP-3.B</p>
 </div>

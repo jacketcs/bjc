@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>JacketCS CSP - Page 2: Making a Mathematical Library</title>
+<title>Unit 2, Lab 4, Page 2 | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,6 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../">
 <link href="../../unit-2/lab-4/3-other-math-reporters.html" rel="next">
 <link href="../../unit-2/lab-4/1-mod-operator.html" rel="prev">
+<link href="../..//img/jac.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -42,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -514,7 +515,7 @@ Using <em>libraries</em> simplifies the development of new programs. When you us
 <h4 class="anchored">
 <strong>Debugging<a name="dependencies" class="anchor">&nbsp;</a>Dependencies</strong>
 </h4>
-<p><img src="../../img/2-complexity/even-obsolete.png" title="even? (number#){report(Obsolete!)}" alt="even? (number#){report(Obsolete!)}" class="imageRight"></p>
+<p><img src="../../img/2-complexity/even-obsolete.png" title="even? (number#){report(Obsolete!)}" alt="even? (number#){report(Obsolete!)}" class="float-end"></p>
 <p>
 You created your <code>even?</code> block using another custom block, <code>divisible by?</code>. If you want to use <code>even?</code> in another project one day, you must export <em>both</em> blocks in order for <code>even?</code> to work properly.
 </p>
@@ -553,13 +554,13 @@ You can create algorithms from scratch or by combining or modifying existing alg
 <strong>What kinds of numbers have exactly two divisors?</strong>
 </li>
 </ul>
-<p><br> You can do this on your own or follow <a href="#hint-steps" data-toggle="collapse" title="the steps for building the 'number of divisors' block">these steps.</a></p>
+<p><br> You can do this on your own or follow <a href="#hint-steps" data-bs-toggle="collapse" title="the steps for building the 'number of divisors' block">these steps.</a></p>
 <div id="hint-steps" class="collapse">
 <ol type="a">
 <li>
 <p>Build a <code>divisors</code> block using <code>keep</code>.<br> <img src="../../img/2-complexity/divisors-9-reporting.png" title="divisors of (9) reporting {1, 3, 9}" alt="divisors of (9) reporting {1, 3, 9}" class="indent"> <img src="../../img/2-complexity/divisors-12-reporting.png" title="divisors of (12) reporting {1, 2, 3, 4, 6, 12}" alt="divisors of (12) reporting {1, 2, 3, 4, 6, 12}" class="indent"></p>
 <div class="endnote">
-<p><a href="#hint-divisors" data-toggle="collapse" title="Hints about building the divisors block">Hints about building the <code>divisors</code> block</a></p>
+<p><a href="#hint-divisors" data-bs-toggle="collapse" title="Hints about building the divisors block">Hints about building the <code>divisors</code> block</a></p>
 <div id="hint-divisors" class="collapse">
 <ul>
 <li>
@@ -614,7 +615,7 @@ You’ve now made a small library, and you might want to write a list of instruc
 An <strong>application program interface (API)</strong> documents what a programmer needs to know about using a library: it’s a description of each procedure’s purpose, inputs, and outputs (but not its algorithms).
 </p>
 <div class="endnote">
-<p><a href="#hint-webAPI" data-toggle="collapse" title="What is a Web API?">What is a Web API?</a></p>
+<p><a href="#hint-webAPI" data-bs-toggle="collapse" title="What is a Web API?">What is a Web API?</a></p>
 <div id="hint-webAPI" class="collapse">
 <p>
 A common kind of API is a <em>web API</em> in which the library exists on someone else’s computer. For example, the <a href="https://developers.google.com/maps/documentation/embed/start" title="Google Maps API" target="_blank">Google Maps API</a> describes how to embed a Google Map on your own website.

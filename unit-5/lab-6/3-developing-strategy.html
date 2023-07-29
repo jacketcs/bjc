@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>JacketCS CSP - Page 3: Developing a Gameplay Strategy</title>
+<title>Unit 5, Lab 6, Page 3 | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,6 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../">
 <link href="../../unit-5/lab-6/4-making-computer-player-strategic.html" rel="next">
 <link href="../../unit-5/lab-6/2-creating-computer-player.html" rel="prev">
+<link href="../..//img/jac.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -42,7 +43,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/gifffer/gifffer.min.js"></script>
+<link href="../../site_libs/quarto-contrib/gifffer/bjc-gifffer.css" rel="stylesheet">
+<script type="text/javascript">window.onload = function() {Gifffer();};</script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -428,9 +432,6 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<script type="text/javascript" src="../../utilities/gifffer.min.js"></script>
-<script type="text/javascript">window.onload = function() {Gifffer();};</script>
-<p><link rel="stylesheet" type="text/css" href="../../css/bjc-gifffer.css"></p>
 <div class="learn">
 <!--<p><strong>In this lab</strong>, you'll make the computer play against the human player <em>strategically</em>.</p>-->
 <p>
@@ -459,7 +460,7 @@ The strategy rules for Tic-Tac-Toe have different degrees of priority. For examp
 What’s the second most important rule?
 </li>
 <li>
-<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="imageRight"> Think through how the computer can determine if a player can win on their next turn. The <code>won?</code> block works by looking for a triple in which all three slots are X or all three slots are O. Describe what the slots of a triple will contain if player O can win on their next move by filling that triple’s last square.
+<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"> Think through how the computer can determine if a player can win on their next turn. The <code>won?</code> block works by looking for a triple in which all three slots are X or all three slots are O. Describe what the slots of a triple will contain if player O can win on their next move by filling that triple’s last square.
 </li>
 </ol>
 </div>
@@ -477,7 +478,7 @@ Look inside the <img src="../../img/5-algorithms/wonp-x.png" title="won? (X)" al
 </li>
 <li>
 <div class="sidenoteBig">
-<p><a href="#hint-what-wins" data-toggle="collapse" title="Click if you need a hint.">Click if you need a hint.</a></p>
+<p><a href="#hint-what-wins" data-bs-toggle="collapse" title="Click if you need a hint.">Click if you need a hint.</a></p>
 <div id="hint-what-wins" class="collapse">
 <p>A possible winning triple for O on the next move has ____ Os and ____ Xs.</p>
 </div>
@@ -494,7 +495,7 @@ What does <code>winning triple</code> report if there is no winning triple?
 Now write the <img src="../../img/5-algorithms/winning-square-for-player.png" title="winning square for player ()" alt="winning square for player ()"> block. Make sure it works even if there is no winning square.
 </li>
 <div class="endnote">
-<p><a href="#hint-winning-square" data-toggle="collapse" title="Click for a hint about building winning square for player.">Click for a hint about <code>winning square</code>.</a></p>
+<p><a href="#hint-winning-square" data-bs-toggle="collapse" title="Click for a hint about building winning square for player.">Click for a hint about <code>winning square</code>.</a></p>
 <div id="hint-winning-square" class="collapse">
 <p><img src="../../img/blocks/is-a-number.png" title="is () a number?" alt="is () a number?" class="indent"> <img src="../../img/blocks/is-a-list.png" title="is () a list?" alt="is () a list?" class="indent"></p>
 </div>

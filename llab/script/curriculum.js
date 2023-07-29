@@ -67,17 +67,6 @@ llab.secondarySetUp = function() {
     }
   });
 
-  llab.additionalSetup([
-    {  // TODO: PUT THESE CLASSES SOMEWHERE
-      trigger: 'pre code',
-      function: llab.codeHighlightSetup()
-    },
-    {   // TODO: PUT THESE CLASSES SOMEWHERE
-      trigger: '.katex, .katex-inline, .katex-block',
-      function: llab.mathDisplaySetup()
-    }
-  ]);
-
 }; // close secondarysetup();
 
 
@@ -100,70 +89,6 @@ llab.additionalSetup = function(triggers) {
     }
   });
 }
-
-/** Import the required JS and CSS for Code highlighting.
-*  TODO: Abstract this away into its own function
-*/
-llab.codeHighlightSetup = function () {
-  var cssFile, jsFile, css, js;
-  cssFile = llab.paths.syntax_highlighting_css;
-  jsFile  = llab.paths.syntax_highlights;
-  css = getTag('link', cssFile, 'text/css');
-  css.rel = "stylesheet";
-  js = getTag('script', jsFile, 'text/javascript');
-  // onload function
-  $(js).attr({'onload': 'llab.highlightSyntax()'});
-  // Using $ to append to head causes onload not to be fired...
-  document.head.appendChild(css);
-  document.head.appendChild(js);
-}
-
-// Call The Functions to HighlightJS to render
-llab.highlightSyntax = function() {
-  // TODO: PUT THESE CLASSES SOMEWHERE
-  $('pre > code').each(function(i, block) {
-    // Trim the extra whitespace in HTML files.
-    block.innerHTML = block.innerHTML.trim();
-    if (typeof hljs !== 'undefined') {
-      hljs.highlightBlock(block);
-    }
-  });
-}
-
-/** Import the required JS and CSS for LaTeX Code.
-*  TODO: Abstract this away into its own function
-*/
-llab.mathDisplaySetup = function () {
-  var cssFile, jsFile, css, js;
-  cssFile = llab.paths.katex_css;
-  jsFile  = llab.paths.math_katex_js;
-  css = getTag('link', cssFile, 'text/css');
-  css.rel = "stylesheet";
-  js = getTag('script', jsFile, 'text/javascript');
-  // onload function
-  $(js).attr({'onload': 'llab.displayMathDivs()'});
-  // Using $ to append to head causes onload not to be fired...
-  document.head.appendChild(css);
-  document.head.appendChild(js);
-}
-
-// Call the KaTeX APIS to render the LaTeX code.
-llab.displayMathDivs = function () {
-  $('.katex, .katex-inline').each(function (idx, elm) {
-    katex.render(elm.textContent, elm, {throwOnError: false});
-  });
-  $('.katex-block').each(function (idx, elm) {
-    katex.render(elm.textContent, elm, {
-      displayMode: true, throwOnError: false
-    });
-  });
-}
-
-/**
-*  Processes just the hyperlinked elements in the topic file,
-*  and creates navigation buttons.
-*  FIXME: This should share code with llab.topic!
-*/
 
 
 // Create an iframe when loading from an empty curriculum page

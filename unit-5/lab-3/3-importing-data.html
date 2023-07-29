@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>JacketCS CSP - Page 3: Importing and Accessing Data</title>
+<title>Unit 5, Lab 3, Page 3 | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,6 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../">
 <link href="../../unit-5/lab-3/4-filtering-data.html" rel="next">
 <link href="../../unit-5/lab-3/2-self-check.html" rel="prev">
+<link href="../..//img/jac.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -42,7 +43,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/gifffer/gifffer.min.js"></script>
+<link href="../../site_libs/quarto-contrib/gifffer/bjc-gifffer.css" rel="stylesheet">
+<script type="text/javascript">window.onload = function() {Gifffer();};</script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -428,9 +432,6 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<script type="text/javascript" src="../../utilities/gifffer.min.js"></script>
-<script type="text/javascript">window.onload = function() {Gifffer();};</script>
-<p><link rel="stylesheet" type="text/css" href="../../css/bjc-gifffer.css"></p>
 <div class="learn">
 <div class="ap-standard">
 <p>DAT-2.D.1, DAT-2.C.1</p>
@@ -464,10 +465,10 @@ Open Snap<em>!</em> and drag the downloaded file into the Snap<em>!</em> window.
 <p>DAT-2.D.5</p>
 </div>
 <p>
-<img src="../../img/5-algorithms/correlation-positive-trend.png" title="a graph with a bunch of data points, in which they generally follow a straight line from top left to bottom right" alt="a graph with a bunch of data points, in which they generally follow a straight line from top left to bottom right" class="imageRight"> You may be familiar with tables from spreadsheet applications (such as Google Sheets, Apple Numbers, or Microsoft Excel) which store tabular data in different file formats. Spreadsheet programs help efficiently organize information, and they can find trends in data automatically (such as the line shown at right). CSV is an open spreadsheet format that works in any of these applications and in Snap<em>!</em>.
+<img src="../../img/5-algorithms/correlation-positive-trend.png" title="a graph with a bunch of data points, in which they generally follow a straight line from top left to bottom right" alt="a graph with a bunch of data points, in which they generally follow a straight line from top left to bottom right" class="float-end"> You may be familiar with tables from spreadsheet applications (such as Google Sheets, Apple Numbers, or Microsoft Excel) which store tabular data in different file formats. Spreadsheet programs help efficiently organize information, and they can find trends in data automatically (such as the line shown at right). CSV is an open spreadsheet format that works in any of these applications and in Snap<em>!</em>.
 </p>
 <div class="endnote">
-<p><a href="#hint-CSV" data-toggle="collapse" title="What does CSV stand for">What does CSV stand for?</a></p>
+<p><a href="#hint-CSV" data-bs-toggle="collapse" title="What does CSV stand for">What does CSV stand for?</a></p>
 <div id="hint-CSV" class="collapse">
 <p>CSV stands for “comma separated values.” CSV files are tables of data stored with commas between each item in a row and line breaks between each row in the table. (You can see the commas and line breaks of a CSV by opening it in a text editor.)</p>
 </div>
@@ -501,7 +502,7 @@ Locate the <img src="../../img/blocks/all-but-first.png" title="all but first of
 </div>
 <div class="endnote">
 <p>
-A table is represented in Snap<em>!</em> as a list of lists. If you right-click (or control-click on a Mac) a table, you can switch to “list view” and see how the data (and column headings) are stored. <a href="#hint-views" data-toggle="collapse" title="See examples of table view and list view.">See examples of table view and list view.</a>
+A table is represented in Snap<em>!</em> as a list of lists. If you right-click (or control-click on a Mac) a table, you can switch to “list view” and see how the data (and column headings) are stored. <a href="#hint-views" data-bs-toggle="collapse" title="See examples of table view and list view.">See examples of table view and list view.</a>
 </p>
 <div id="hint-views" class="collapse" style="text-align:center;">
 <div style="display: inline-grid; grid-template-columns: auto auto; text-align:center;">
@@ -550,11 +551,11 @@ Build <img src="../../img/5-algorithms/record-of-table.png" title="record () of 
 Notice that these suggested block names include the word “table” or “record” before the second input. Including the expected input data type in the block name can help you avoid bugs caused by using a selector that doesn’t match the input you want to use.
 </p>
 <p>
-<a href="#hint-map" data-toggle="collapse" title="Try to figure out how to report just one column, but click if you really need a hint.">Try to figure out how to report just one column, but click if you really need a hint.</a>
+<a href="#hint-map" data-bs-toggle="collapse" title="Try to figure out how to report just one column, but click if you really need a hint.">Try to figure out how to report just one column, but click if you really need a hint.</a>
 </p>
 <div id="hint-map" class="collapse">
 <p>
-</p><p><img src="../../img/blocks/map.png" title="map () over ()" alt="map () over ()" class="inline"> performs the same function on every item in a list. <a href="#hint-more-map" data-toggle="collapse" title="Have I seen map before?">Have I seen <code>map</code> before?</a></p>
+</p><p><img src="../../img/blocks/map.png" title="map () over ()" alt="map () over ()" class="inline"> performs the same function on every item in a list. <a href="#hint-more-map" data-bs-toggle="collapse" title="Have I seen map before?">Have I seen <code>map</code> before?</a></p>
 <div id="hint-more-map" class="collapse">
 <p>Since a table is a list of lists (where each inner list is one record), <code>map</code> will perform the same function on every record in your dataset. You will need to determine what function to map over the dataset. You learned about <code>map</code> on <a href="../../unit-3/lab-2/5-mapping-over-list.html" title="Unit 3 Lab 2 Page 5: Transforming Every List Item">Unit 3 Lab 2 Page 5: Transforming Every List Item</a>.</p>
 </div>
@@ -569,7 +570,7 @@ Notice that these suggested block names include the word “table” or “recor
 You can see the column number by holding your mouse pointer over the letter at the top of the column in table view.<br> <img src="../../img/5-algorithms/column-number.png" title="image of the top of the table view for the cars dataset with the mouse pointer over the top of the second column; the columns are now labeled A, 2 (where the pointer is), C, D, etc." alt="image of the top of the table view for the cars dataset with the mouse pointer over the top of the second column; the columns are now labeled A, 2 (where the pointer is), C, D, etc." class="indent" height="120">
 </p>
 <p>
-You may need to use <code>map</code>, <code>keep</code>, or <code>combine</code> to answer your question. <a href="#hint-HOFs" data-toggle="collapse" title="Click to see where you learned about these higher order functions.">Click to see where you learned about these higher order functions.</a>
+You may need to use <code>map</code>, <code>keep</code>, or <code>combine</code> to answer your question. <a href="#hint-HOFs" data-bs-toggle="collapse" title="Click to see where you learned about these higher order functions.">Click to see where you learned about these higher order functions.</a>
 </p>
 <div id="hint-HOFs" class="collapse">
 <ul>
@@ -585,7 +586,7 @@ You learned about <code>combine</code> on <a href="../../unit-2/lab-4/3-other-ma
 </ul>
 </div>
 <p>
-<a href="#hint-questions" data-toggle="collapse" title="Click for example questions to ask about a single column.">Click for example questions to ask about a single column.</a>
+<a href="#hint-questions" data-bs-toggle="collapse" title="Click for example questions to ask about a single column.">Click for example questions to ask about a single column.</a>
 </p>
 <div id="hint-questions" class="collapse">
 <ul>
@@ -657,10 +658,10 @@ I need to redo these images and <code>code</code> statements with “record” i
 <p>Answer a question like “What’s the model of the car with the highest MPG?” by building a <img src="../../img/5-algorithms/row-with-max-of-table.png" title="row with maximum in column () of table ()" alt="row with maximum in column () of table ()" class="inline nopadtb"> block.</p>
 <div class="endnote">
 
-<!--This gives away the answer. <p><a href="#hint-rowwithmax" data-toggle="collapse" title="See the row with maximum in column () of table () block in action.">See <code>row with maximum in column () of table ()</code> in action.</a></p>
+<!--This gives away the answer. <p><a href="#hint-rowwithmax" data-bs-toggle="collapse" title="See the row with maximum in column () of table () block in action.">See <code>row with maximum in column () of table ()</code> in action.</a></p>
 <div id="hint-rowwithmax" class="collapse"><img class="indent" src="/img/5-algorithms/row-with-max-of-table-reporting.png" alt="" title="" /></div>-->
 <p>
-<a href="#hint-build" data-toggle="collapse" title="Click for a hint about how to build row with maximum in column () of table ().">Click for a hint about how to build <code>row with maximum in column () of table ()</code>.</a>
+<a href="#hint-build" data-bs-toggle="collapse" title="Click for a hint about how to build row with maximum in column () of table ().">Click for a hint about how to build <code>row with maximum in column () of table ()</code>.</a>
 </p>
 <div id="hint-build" class="collapse">
 <div class="comment">

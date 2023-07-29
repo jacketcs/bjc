@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
 
+.ap-standard {
+  display: none;
+}
+
 .anchor {
    padding-top: 80px;
    margin-top: -80px;
@@ -12,13 +16,6 @@ a, .dialogue a {  color: #2a6496; /* was 428bca; */}
 
 /* development comments are hidden by default. */
 .todo, .comment, .commentBig { display: none; }
-
-
-.blockquote {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
- }
 
 .byte td, th {
   width:50px;
@@ -166,10 +163,6 @@ var {
   font-weight: bold;
 }
 
-.sidenote, .sidenoteBig, .endnote {
-  font-size: 1em;
-}
-
 .sidenote, .sidenoteBig { /* added by Mary Fries based on http://hartshorne.ca/2005/07/27/footnotes_v_sidenotes/ */
   float: right;
   margin-right: 20px;
@@ -221,13 +214,6 @@ var {
 .sideHOM {width: 20%;}
 
 .sideHOMbig {width: 40%;}
-
-img.noshadow {
-  /* Better resizing of images for mobile devices */
-  -webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.5));
-  -ms-filter: none;
-  filter: none;
-}
 
 /* Is this in use? --MF, 10/11/19 */
 .apStandards, .Standards {
@@ -298,12 +284,6 @@ img.noshadow {
   padding: 1em;
 }
 
-.forYouToDo:before, .forYouToDoHeader, .ifTime:before, .dialogue:before, .takeItFurther:before, .takeItTeased:before, .takeNote:before, .narrower:before, .narrowblue:before, .narrowpurple:before, .endnote > div:not(.sidenote):not(.sidenoteBig):not(.sideHOM):not(.sideHOMbig):not(.todo):not(.comment):not(.commentBig):not(.takeNote):not(.collapse):not(.collapsing):not(.takeItFurther):not(.endnote):not(.vocabFullWidth):not(.vocabSummary):not(.pseudop):not(.bordered-table), .time:before   { /* Shared Heading Formatting */
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 2.5em;
-}
-
 .dialogue:before {content: "Thinking Out Loud";}
 
 .dialogue > div:not(.sidenote):not(.sidenoteBig):not(.comment):not(.commentBig):not(.todo):not(.endnote):not(.narrower):not(.narrowblue):not(.narrowpurple):not(.vocab) {
@@ -326,16 +306,6 @@ img.noshadow {
   text-indent: 0em;
   font-style: italic;
   text-align: center;
-}
-
-.dialogue > div > span:not(.katex) {
-  font-weight: bold;
-  /*float: left;*/
-  width: 4em;
-}
-
-.dialogue > div > span.long:not(.katex) {
-  width: 9em;
 }
 
 .forYouToDoHeader {text-indent:-40px;}
@@ -662,29 +632,9 @@ ul {
   margin-bottom: 0px !important;
 }
 
-/* Page element modifiers */
-.center {
-  text-align: center;
-  margin: 0 auto;
-}
-
-.strike {
-  text-decoration: line-through;
-}
-
 /* TODO: Document THis.... */
 table .pre {
   line-height: 1em;
-}
-
-.imageRight {
-  float: right;
-  margin: 0 20px 15px 15px;
-}
-
-.imageLeft {
-  float: left;
-  margin: 0 15px 15px 20px;
 }
 
 img.center {

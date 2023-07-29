@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>JacketCS CSP - Music Project</title>
+<title>Unit , Lab , Page 4 | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,6 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../unit-3/optional-projects/3-op-art.html" rel="prev">
+<link href="../..//img/jac.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -41,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -530,7 +531,7 @@ Create two selectors:<br> <img src="../../img/3-lists/note-selector-pitch.png" t
 </li>
 </ol>
 </div>
-<p><img src="../../img/icons/save-now.png" title="Save your work" alt="Save your work" class="imageRight"></p>
+<p><img src="../../img/icons/save-now.png" title="Save your work" alt="Save your work" class="float-end"></p>
 <h3 class="anchored">
 Creating Blocks to Play Music
 </h3>
@@ -540,7 +541,7 @@ Creating Blocks to Play Music
 Use <code>for each</code> together with your selectors to build a <img src="../../img/3-lists/play-song-block.png" title="play song {}" alt="play song {}" class="inline nopadtb"><a name="playsong" class="anchor">&nbsp;</a>block that takes a list of notes as input and plays each <var>pitch</var> for the specified number <var>length</var> of time. <br> <img src="../../img/3-lists/play-song-data-type.png" title="Play Song data type definition" alt="Play Song data type definition" class="indent">
 </li>
 <div class="endnote">
-<p><a href="#hint-target" data-toggle="collapse" title="Chart for note pitch numbers">Chart for note pitch numbers. </a></p>
+<p><a href="#hint-target" data-bs-toggle="collapse" title="Chart for note pitch numbers">Chart for note pitch numbers. </a></p>
 <div id="hint-target" class="collapse">
 <p class="center">
 </p><p><img src="../../img/3-lists/keyboard.jpg" title="picture of keyboard with keys labeled with letters and numbers; 60 is middle C and the numbers change by 1 with each half step" alt="picture of keyboard with keys labeled with letters and numbers; 60 is middle C and the numbers change by 1 with each half step"></p>
@@ -548,12 +549,12 @@ Use <code>for each</code> together with your selectors to build a <img src="../.
 </div>
 </div>
 <li>
-Create a reporter to reports the notes for a song of your choosing. Here’s an example:<br> <img src="../../img/3-lists/row-row-row-reporter.png" title="row row row your boat reporter block definition" alt="row row row your boat reporter block definition" class="indent"> <img src="../../img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="imageRight">
+Create a reporter to reports the notes for a song of your choosing. Here’s an example:<br> <img src="../../img/3-lists/row-row-row-reporter.png" title="row row row your boat reporter block definition" alt="row row row your boat reporter block definition" class="indent"> <img src="../../img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end">
 </li>
 <li>
 Test your song with your <code>play song</code> block, and debug any problems.<br> <img src="../../img/3-lists/play-song-row-row-row.png" title="play song (row row row your boat)" alt="play song (row row row your boat)" class="indent">
 </li>
-<p><img src="../../img/icons/save-now.png" title="Save your work" alt="Save your work" class="imageRight"></p>
+<p><img src="../../img/icons/save-now.png" title="Save your work" alt="Save your work" class="float-end"></p>
 </ol>
 </div>
 <div class="ifTime">
@@ -572,12 +573,12 @@ Transposing Music
 <div class="forYouToDo">
 <ol start="9">
 <li>
-<img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="imageRight"> Compare the output of these two scripts that you created above. Discuss what <code>map + 5</code> does to the sounds you hear:<br> <img src="../../img/3-lists/compare-play-note-2.png" title="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" alt="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" class="indent"><br> <img src="../../img/3-lists/compare-play-note-3.png" title="for each (note) of (map (_ + 5) over (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" alt="for each (note) of (map (_ + 5) over (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" class="indent">
+<img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"> Compare the output of these two scripts that you created above. Discuss what <code>map + 5</code> does to the sounds you hear:<br> <img src="../../img/3-lists/compare-play-note-2.png" title="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" alt="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" class="indent"><br> <img src="../../img/3-lists/compare-play-note-3.png" title="for each (note) of (map (_ + 5) over (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" alt="for each (note) of (map (_ + 5) over (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" class="indent">
 </li>
 <li>
 <p>Use <code>map</code> together with your ADT blocks to create a reporter that transposes (shifts) a list of notes. It should take a list of notes and a number indicating how much to transpose (shift) the song as input, and it should report the adjusted song. For example:<br> <img src="../../img/3-lists/play-song-transpose-row-row-row-by-19.png" title="play song (transpose (row row row your boat) by (19))" alt="play song (transpose (row row row your boat) by (19))" class="indent"></p>
 <div class="endnote">
-<p><a href="#hint-target-2" data-toggle="collapse" title="Hint">Reveal a hint.</a></p>
+<p><a href="#hint-target-2" data-bs-toggle="collapse" title="Hint">Reveal a hint.</a></p>
 <div id="hint-target-2" class="collapse">
 <p><img src="../../img/3-lists/transpose-definition.png" title="transpose block definition hint showing 'transpose (notes) by (shift): report (map (note, pitch: ((pitch from note ([empty list input slot])) + ([something unreadable])) length: ([something unreadable])) over ([something unreadable]))'" alt="transpose block definition hint showing 'transpose (notes) by (shift): report (map (note, pitch: ((pitch from note ([empty list input slot])) + ([something unreadable])) length: ([something unreadable])) over ([something unreadable]))'"></p>
 </div>
@@ -606,7 +607,7 @@ Using a Frequency Cutoff
 <div class="forYouToDo">
 <ol start="12">
 <li>
-<img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="imageRight"> Compare the output of these two scripts that you created above. Discuss what <code>keep &lt; 65</code> does to the sounds you hear:<br> <img src="../../img/3-lists/compare-play-note-2.png" title="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" alt="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" class="indent"><br> <img src="../../img/3-lists/compare-play-note-4.png" title="for each (note) of (keep items such that (() < 65) from (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" alt="for each (note) of (keep items such that (() < 65) from (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" class="indent">
+<img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"> Compare the output of these two scripts that you created above. Discuss what <code>keep &lt; 65</code> does to the sounds you hear:<br> <img src="../../img/3-lists/compare-play-note-2.png" title="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" alt="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" class="indent"><br> <img src="../../img/3-lists/compare-play-note-4.png" title="for each (note) of (keep items such that (() < 65) from (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" alt="for each (note) of (keep items such that (() < 65) from (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" class="indent">
 </li>
 <li>
 …

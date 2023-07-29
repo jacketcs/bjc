@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>JacketCS CSP - Page 2: Binary Sequences</title>
+<title>Unit 4, Lab 4, Page 2 | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,6 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../">
 <link href="../../unit-4/lab-4/3-representing-numbers.html" rel="next">
 <link href="../../unit-4/lab-4/1-bits.html" rel="prev">
+<link href="../..//img/jac.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -42,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -447,9 +448,9 @@ So far we’ve been working with small chunks of data, from Boolean values (one 
 <p>
 If we could see inside the memory’s bits, a section of the memory might look something like this:
 </p>
-<div class="blockquote">
-<p><code class="break">01000001001000000111001101101101011000010111001001110100001000000111000001101000011011110110111001100101001011000010000001101100011010010110101101100101001000000111100101101111011101010111001000100000011011000110000101110000011101000110111101110000001000000110111101110010001000000110010001100101011100110110101101110100011011110111000000100000011000110110111101101101011100000111010101110100011001010111001000101100001000000110001101100001011011100<!--010000001110011011101000110111101110010011001010010000001101110011101010110110101100010011001010111001001110011001011000010000001110000011010010110001101110100011101010111001001100101011100110010110000100000011101000110010101111000011101000010110000100000011011010111010101110011011010010110001100101100001000000110000101101100011011000010000001101011011010010110111001100100011100110010000001101111011001100010000001110100011010000110100101101110011001110111001100101110001000000100001001110101011101000010000001110100011010000110010100100000011110100110100101101100011011000110100101101111011011100010000001101100011011110110001101100001011101000110100101101111011011100111001100100000011010010110111001110011011010010110010001100101001000000110100101110100011100110010000001101101011001010110110101101111011100100111100100100000011001000110111101101110001001110111010000100000011000110110111101101110011101000110000101101001011011100010000001110000011010010110001101110100011101010111001001100101011100110010000001101111011100100010000001100101011101100110010101101110001000000110111001110101011011010110001001100101011100100111001100101110001000000100010101100001011000110110100000100000011011000110111101100011011000010111010001101001011011110110111000100000011010000110111101101100011001000111001100100000011000010010000001100010011010010111010000100000011011110110011000100000011101000110100001100001011101000010000001101001011011100110011001101111011100100110110101100001011101000110100101101111011011100010110000100000011000010111000001110000011100100110111101110000011100100110100101100001011101000110010101101100011110010010000001100011011000010110110001101100011001010110010000100000011000010010000000100010011000100110100101110100001011000010001000100000011101110110100001101001011000110110100000100000011010010111001100100000011010100111010101110011011101000010000000100010010011110110111000100010001000000--></code></p>
-</div>
+<blockquote class="blockquote">
+<p><code>01000001001000000111001101101101011000010111001001110100001000000111000001101000011011110110111001100101001011000010000001101100011010010110101101100101001000000111100101101111011101010111001000100000011011000110000101110000011101000110111101110000001000000110111101110010001000000110010001100101011100110110101101110100011011110111000000100000011000110110111101101101011100000111010101110100011001010111001000101100001000000110001101100001011011100 </code></p>
+</blockquote>
 <div class="vocab">
 <p>
 A <strong>binary sequence</strong> (also called a <em>bitstream</em>) is a string of ones and zeros.
@@ -460,7 +461,7 @@ That shows just 449 bits. A 16GB cell phone has 16 gigabytes (about 16 billion b
 </p>
 <div class="endnote">
 <p>
-<a href="#hint-size-table" data-toggle="collapse" title="How much information fits in a gigbyte?">How much information fits in a gigabyte?</a>
+<a href="#hint-size-table" data-bs-toggle="collapse" title="How much information fits in a gigbyte?">How much information fits in a gigabyte?</a>
 </p>
 <div id="hint-size-table" class="collapse">
 <p>
@@ -471,7 +472,7 @@ Here are a few rough examples of what kind of data would fit in how much memory:
 As we write this in 2017, it’s common to have a terabyte disk drive on your desk. Web services deal with petabytes or exabytes of data.
 </p>
 <p>
-<a href="#hint-target" data-toggle="collapse" title="Where do these prefixes like 'tera-' and 'peta-' come from?">Where do these prefixes like “tera-” and “peta-” come from?</a>
+<a href="#hint-target" data-bs-toggle="collapse" title="Where do these prefixes like 'tera-' and 'peta-' come from?">Where do these prefixes like “tera-” and “peta-” come from?</a>
 </p>
 <div id="hint-target" class="collapse">
 <p>
@@ -599,7 +600,7 @@ The <strong>sampling rate</strong> is the number of samples measured per second.
 Not all data are naturally digital. (That is, they may not be individual values that can be represented in the form of binary sequences.) Some real-world values (such as the pitch and volume of music, the colors of a painting, or the position of a sprinter during a race) change smoothly over time or position; they are <em>analog</em>. When analog data are encoded digitally (as bits on a computer), their values are approximated. This is an example of abstraction. The continuously changing air pressure of a sound, for example, is <em>sampled</em> (measured) thousands of times a second, and the samples are stored as bits.
 </p>
 <div class="endnote">
-<p><a href="#hint-analog" data-toggle="collapse" title="More examples, please.">More examples, please.</a></p>
+<p><a href="#hint-analog" data-bs-toggle="collapse" title="More examples, please.">More examples, please.</a></p>
 <div id="hint-analog" class="collapse">
 <p>A text is a finite number of characters, each of which comes from a finite alphabet. So a book without pictures is naturally digital. When a piece of music is written down, there are a finite number of possible notes, so there’s a finite “alphabet” of symbols such as ♫ or 𝄢, and the piece of music uses only finitely many of them. So the <em>score,</em> the written notation for the music, is naturally digital. But the actual sound of words being read or music being played includes much more information (such as they way someone says the words, their accent, or the way each instrument sounds). So speech and musical performance are <em>not</em> naturally digital.</p>
 </div>

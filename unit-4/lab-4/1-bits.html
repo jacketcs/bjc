@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>JacketCS CSP - Page 1: Bits</title>
+<title>Unit 4, Lab 4, Page 1 | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,6 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../">
 <link href="../../unit-4/lab-4/2-sequences.html" rel="next">
 <link href="../../unit-4/lab-3/8-planning-your-pathway.html" rel="prev">
+<link href="../..//img/jac.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -42,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -458,9 +459,9 @@ Red and Green, simulating a traffic light
 But what if the traffic light also needs a yellow value? It’s tempting to say that, for example, 0 volts on the wire means red, 1 volt means yellow, and 2 volts means green. Long ago, there were computers that worked that way, but there are good reasons to stick with two possible values per wire.
 </p>
 <div class="endnote">
-<p><img src="../../img/icons/read-more-mini.png" title="Read More" alt="Read More" class="inline"> <a href="#hint-bistable" data-toggle="collapse" title="What good reasons?">What good reasons?</a></p>
+<p><img src="../../img/icons/read-more-mini.png" title="Read More" alt="Read More" class="inline"> <a href="#hint-bistable" data-bs-toggle="collapse" title="What good reasons?">What good reasons?</a></p>
 <div id="hint-bistable" class="collapse">
-<p><img src="../../img/6-computers/transistor-curve.png" title="graph showing 'Input voltage' on the horizontal axis and 'Output voltage' on the vertical axis; the graph begins near the origin and remains nearly flat for a while, then it curves upward and becomes nearly straight again at this new angle, then it curves back down to nearly flat until the end; the lower flat region is labeled 'cutoff' and colored blue; the central, inclined region is labeled 'linear' and colored pink; the upper flat region is labeled 'saturation' and colored blue" alt="graph showing 'Input voltage' on the horizontal axis and 'Output voltage' on the vertical axis; the graph begins near the origin and remains nearly flat for a while, then it curves upward and becomes nearly straight again at this new angle, then it curves back down to nearly flat until the end; the lower flat region is labeled 'cutoff' and colored blue; the central, inclined region is labeled 'linear' and colored pink; the upper flat region is labeled 'saturation' and colored blue" class="imageLeft"></p>
+<p><img src="../../img/6-computers/transistor-curve.png" title="graph showing 'Input voltage' on the horizontal axis and 'Output voltage' on the vertical axis; the graph begins near the origin and remains nearly flat for a while, then it curves upward and becomes nearly straight again at this new angle, then it curves back down to nearly flat until the end; the lower flat region is labeled 'cutoff' and colored blue; the central, inclined region is labeled 'linear' and colored pink; the upper flat region is labeled 'saturation' and colored blue" alt="graph showing 'Input voltage' on the horizontal axis and 'Output voltage' on the vertical axis; the graph begins near the origin and remains nearly flat for a while, then it curves upward and becomes nearly straight again at this new angle, then it curves back down to nearly flat until the end; the lower flat region is labeled 'cutoff' and colored blue; the central, inclined region is labeled 'linear' and colored pink; the upper flat region is labeled 'saturation' and colored blue" class="float-start"></p>
 <p>
 The fundamental building block of computer circuitry is the <em>transistor.</em> In a digital computer, the input to a transistor is either zero or whatever voltage represents one. But electrical circuits aren’t perfect; the input may be a little larger or smaller than it should be.
 </p>
@@ -531,7 +532,7 @@ A <strong>word</strong> is a sequence of however many bits the CPU processes at 
 </div>
 <!--
 <div class="endnote">
-<p><a href="#hint-ldb" data-toggle="collapse">Some old computers did allow that.</a>
+<p><a href="#hint-ldb" data-bs-toggle="collapse">Some old computers did allow that.</a>
   <div id="hint-ldb" class="collapse">The PDP-10, that big blue computer you saw in Lab 1, had
   <code>ldb</code>
 (Load Byte) and
@@ -595,7 +596,7 @@ What’s the minimum number of bits needed to represent any Unicode character?
 </ol>
 </div>
 <div class="endnote">
-<p><img src="../../img/icons/read-more-mini.png" title="Read More" alt="Read More" class="inline"> <a href="#hint-unicode" data-toggle="collapse" title="The actual computer representation of Unicode is complicated">The <em>actual</em> computer representation of Unicode is complicated.</a></p>
+<p><img src="../../img/icons/read-more-mini.png" title="Read More" alt="Read More" class="inline"> <a href="#hint-unicode" data-bs-toggle="collapse" title="The actual computer representation of Unicode is complicated">The <em>actual</em> computer representation of Unicode is complicated.</a></p>
 <div id="hint-unicode" class="collapse">
 <p>
 The most straightforward representation of Unicode uses one 32-bit word per character, which is more than enough. But program developers consider that an inefficient use of computer memory, and also, a lot of old software still in use was written when eight bits per character was standard. So Unicode characters are generally represented in a <em>multi-byte</em> representation in which the original 128 ASCII characters occupy one byte, while other characters may require up to four bytes. (It’s also possible to use a multi-byte sequence to tell your word processing software that you want to use one-byte or two-byte codes to represent a particular non-Latin alphabet.)

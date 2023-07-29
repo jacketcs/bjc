@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>JacketCS CSP - Modeling Language: Plurals, Part 2</title>
+<title>Unit , Lab , Page 5 | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,6 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../">
 <link href="../../unit-2/optional-projects/6-kaleidoscope.html" rel="next">
 <link href="../../unit-2/optional-projects/4-plurals1.html" rel="prev">
+<link href="../..//img/jac.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -42,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -458,7 +459,7 @@ This specialist block should work correctly for words that fit its specialty <im
 <li>
 <p>Test <img src="../../img/2-complexity/plural_h.png" title="plural-h ()" alt="plural-h ()"> with a variety of words to make sure it works the way you want. Then use <code>map</code> to test it on the entire list you made earlier.</p>
 <div class="endnote">
-<p><a href="#hint-just-hwords" data-toggle="collapse" title="Click for a hint about creating a test list of words that begin with 'h'.">Click for a hint about creating a test list of words that begin with “h”.</a></p>
+<p><a href="#hint-just-hwords" data-bs-toggle="collapse" title="Click for a hint about creating a test list of words that begin with 'h'.">Click for a hint about creating a test list of words that begin with “h”.</a></p>
 <div id="hint-just-hwords" class="collapse">
 <p>Because you know what <img src="../../img/2-complexity/keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list.png" title="keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list" alt="keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list"> does, you can use its output as input to a test of <code>plural</code> or <code>plural-h</code>:<br> <img src="../../img/2-complexity/map-plural(with-input)-over-(keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list).png" title="map-plural(with-input)-over-(keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list)" alt="map-plural(with-input)-over-(keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list)" class="indent"></p>
 </div>
@@ -514,7 +515,7 @@ Surprise! Once <code>plural</code> works for a single space at the end of a word
 </p>
 </li>
 <li>
-<p><img src="../../img/icons/tough-stuff.png" title="Tough Stuff" alt="Tough Stuff" class="imageRight"> Does your <code>plurals</code> block still feel cluttered, even though the details about how to handle each possible last letter are abstracted into specialist blocks? One way to improve on this situation is to use another kind of abstraction called <em>data-directed programming.</em></p>
+<p><img src="../../img/icons/tough-stuff.png" title="Tough Stuff" alt="Tough Stuff" class="float-end"> Does your <code>plurals</code> block still feel cluttered, even though the details about how to handle each possible last letter are abstracted into specialist blocks? One way to improve on this situation is to use another kind of abstraction called <em>data-directed programming.</em></p>
 <ol style="list-style-type: lower-roman">
 <li>
 <p>Start by making a list of <em>key-value pairs</em>, with last letters as the keys and specialist procedures as the values:<br> <img src="../../img/2-complexity/plural-specialists-list.png" title="set (plural specialists) to (list (list (h) (ringed plural-h ( ) block)) (list (y) (ringed plural-y ( ) block)) (list (f) (ringed plural-f ( ) block)) (list (x) (ringed (join ( ) (es)) block)) (list (...) (...)))" alt="set (plural specialists) to (list (list (h) (ringed plural-h ( ) block)) (list (y) (ringed plural-y ( ) block)) (list (f) (ringed plural-f ( ) block)) (list (x) (ringed (join ( ) (es)) block)) (list (...) (...)))" class="indent"><br></p>
