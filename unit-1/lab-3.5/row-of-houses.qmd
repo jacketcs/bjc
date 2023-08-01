@@ -1,0 +1,119 @@
+---
+title: "Row of Houses"
+subtitle: "Unit 1, Lab 3.5"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
+order: 4
+---
+
+::: learn
+<p><strong>In this project,</strong> you'll use abstractions inside of abstractions to build a row of houses.<br /> <img src="/img/1-introduction/row-of-houses-size-100.png" title="a drawing of a row of houses" alt="a drawing of a row of houses" class="ms-4 noshadow" style="height: 119px;"/></p>
+:::
+
+::: {#first .forYouToDo}
+
+(@) <div class="newProject">
+["U1L35-Row-of-Houses"]{.text}<img src="/img/icons/new-project-called.png" title="Create a new project called U1L35-Row-of-Houses" alt="Create a new project called U1L35-Row-of-Houses"/>
+</div>
+
+(@) Create a `draw square` block that takes a <var>size</var> as input. Be sure to test it with different inputs.<br />
+
+    ::: sidenote
+
+    You learned how to create a block with an input on <a href="/unit-1/lab-3/3-blocks-with-inputs.html" title="Lab 3 Page 3: Blocks with Inputs">Lab 3 Page 3: Blocks with Inputs</a>.
+
+    :::
+
+    <img src="/img/1-introduction/draw-square-size.png" title="draw square, size: ()" alt="draw square, size: ()" class="ms-4"/> <img src="/img/1-introduction/square-size-100.png" title="a drawing of a square" alt="a drawing of a square" class="ms-4 noshadow"/>
+
+    ::: endnote
+    <a href="#hint-square" data-bs-toggle="collapse" title="Click to see one way to build draw square without an input.">Click to see one way to build `draw square` <em>without</em> an input.</a>
+
+    ::: {#hint-square .collapse}
+
+    <img src="/img/1-introduction/draw-square-def-repeat-4(move-50-turn-right-90).png" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" alt="repeat-4(move-50-turn-clockwise-90)" class="ms-4"/>
+
+    :::
+    :::
+
+(@) Using `draw` square as an example of where to start, create and test a `draw triangle` block that takes a <var>size</var> as input and draws an equilateral triangle.<br />
+
+    ::: sidenote
+    You learned about turning angles on <a href="/unit-1/lab-3/2-exploring-snap-drawing-motion.qmd" title="Unit 1, Lab 3, Page 2, Angles and Turning">Unit 1, Lab 3, Page 2, Angles and Turning</a>.
+    :::
+
+    <img src="/img/1-introduction/draw-triangle-size.png" title="draw triangle, size: ()" alt="draw triangle, size: ()" class="ms-4"/> <img src="/img/1-introduction/triangle-size-100.png" title="a drawing of a triangle" alt="a drawing of a triangle" class="ms-4 noshadow"/>
+
+(@) Now, use `draw square` and `draw triangle` together to create a `draw house` blocks that takes a <var>size</var> as input and draws a house shape: a square with a triangular shaped roof sitting on top.
+
+    ::: sidenote
+    You might have to do some debugging to get the two shapes to connect properly.
+    :::
+
+    <img src="/img/1-introduction/draw-house-size.png" title="draw house, size: ()" alt="draw house, size: ()" class="ms-4"/> <img src="/img/1-introduction/house-size-100.png" title="a drawing of a house, that is a square with a triangle above it" alt="a drawing of a house, that is a square with a triangle above it" class="ms-4 noshadow"/>
+
+:::
+
+::: takeNote
+Using a block inside another block is a form of <em>abstraction</em>.
+:::
+
+::: forYouToDo
+
+(@) Use your `draw house` block together with `repeat` to create a `draw row of houses` block that draws a row of <var>number</var> attached houses (each of the same <var>size</var>) with each new one to the right of the previous.
+    <img src="/img/1-introduction/draw-row-of-houses-size.png" title="draw row of houses, size: () number: ()" alt="draw row of houses, size: () number: ()" class="ms-4 p-3"  height="65" /> 
+    <img src="/img/1-introduction/row-of-houses-size-100.png" title="a drawing of a row of houses" alt="a drawing of a row of houses" class="ms-4 p-3 noshadow"/>
+
+(@) Use your `draw row of houses` block together with `repeat` to create a `draw group of houses` block that draws a <var>rows</var> by <var>cols</var> amount of houses (each of the same <var>size</var>) in one place with each row below the previous row.
+    <img src="/img/1-introduction/draw-group-of-houses.png" title="draw group of houses, size: () rows: () cols: ()" alt="draw group of houses, size: () rows: () cols: ()" class="ms-4 p-3"  height="65" /> 
+    <img src="/img/1-introduction/group-of-houses.png" title="a drawing of a 4 by 6 group of houses" alt="a drawing of a 4 by 6 group of houses" class="ms-4 p-3 noshadow" width="450" />
+
+::: sidenoteBig
+We learned about the `pick random` block on [Unit 1, Lab 2, Page 5: Adding Variety to `Gossip`](/unit-1/lab-2/5-if-else.qmd).
+
+It is a reporter block that reports a random number within the range of numbers that you specify.
+:::
+
+(@) Use your `draw group of houses` block together with `repeat` and `pick random`  to create a `draw town of houses` block that draws a <var>groups</var> number of groups of houses all of a random amount of houses (each of the same <var>size</var>) in random places (try to make sure they don't overlap!)
+    <img src="/img/1-introduction/draw-town-of-houses.png" title="draw town of houses, size: () groups: ()" alt="draw town of houses, size: () groups: ()" class="ms-4 p-3"  height="65" /> 
+
+<!-- (@) <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>The <em>x</em> positions on the Snap<em>!</em> stage go from -240 to 240. How does the `repeat until` code keep the sprite from drawing too close to the edge of the screen? <img src="/img/icons/save-mini.png" title="Now Is a Good Time to Save" alt="Now Is a Good Time to Save" class="inline"/> -->
+
+:::
+
+::: ifTime
+
+(@) Houses aren't really stuck next to each other like in the examples that we gave! Edit the `draw row of houses` and `draw group of houses` block so that there are gaps between the houses.
+
+(@) Customize the look of your houses by editing the code of your `draw house` block. Things that you can add to the houses include:
+    - Windows, doors, garages, greenery, etc.
+    - Consider breaking it down first. e.g., create a block `draw window` that only draws a window then add the block into the `draw house` block.
+
+(@) Create a better way of generating groups of houses. Edit `draw group of houses` so that it uses `pick random` to create a group of houses that can have houses missing (i.e. make it look more "natural")
+    <img src="/img/1-introduction/natural-group-of-houses.png" title="a drawing of a natural group of houses" alt="a drawing of a natural group of houses" class="ms-4 p-3 noshadow" width="450" /> 
+
+:::
+
+::: takeItFurther
+<ol type="A">
+
+<li>Use your `draw square` block to create a `draw flower with square petals` block that will draw a flower with square petals with any specified number of petals of the specified size.<br />\
+<img src="/img/1-introduction/draw-flower-with-6-petals-of-size-50.png" title="draw flower with (6) square petals of size (50)" alt="draw flower with (6) square petals of size (50)" class="ms-4"/> <img src="/img/1-introduction/flower-with-6-square-petals.png" title="a drawing of a flower with 6 square petals" alt="a drawing of a flower with 6 square petals" class="ms-4"/><br /></li>
+
+::: endnote
+<img src="/img/icons/talk-with-another-pair-mini.png" title="Talk with Another Pair" alt="Talk with Another Pair" class="inline"/>After you've worked on this for a bit, take a moment to look at what others have done. If you see something you like, think how you could use that idea in your program.
+:::
+
+<li>
+
+Now, draw a field of flowers and give each flower a different size, number of petals, and position.<br />
+
+::: sidenote
+You will need to use <img src="/img/blocks/pen-up-full-size.png" title="pen up" alt="pen up" class="inline"/>.
+:::
+
+<img src="/img/1-introduction/field-of-flowers.png" title="a drawing of a field of flowers each with a random number of square petals" alt="a drawing of a field of flowers each with a random number of square petals" class="ms-4 noshadow"/><br />
+
+</li>
+
+</ol>
+:::
