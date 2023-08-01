@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Mr.&nbsp;Chang">
+<meta name="dcterms.date" content="2023-08-22">
+<meta name="description" content="These are the instructions to the bomb game that we’ll be playing today.">
 
-<title>Unit 1, Lab 3, Page 7 | JacketCS CSP</title>
+<title>Bomb Game Instructions | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +33,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../unit-1/lab-4/1-your-image-in-the-cloud.html" rel="next">
-<link href="../../unit-1/lab-3/6-the-for-block.html" rel="prev">
 <link href="../..//img/jac.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -44,9 +45,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="../../site_libs/quarto-contrib/gifffer/gifffer.min.js"></script>
-<link href="../../site_libs/quarto-contrib/gifffer/bjc-gifffer.css" rel="stylesheet">
-<script type="text/javascript">window.onload = function() {Gifffer();};</script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar docked nav-fixed">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -146,363 +144,98 @@ ul.task-list li input[type="checkbox"] {
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-1/index.html">Unit 1: Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-1/lab-3/1-exploring-motion.html">Lab 3</a></li><li class="breadcrumb-item"><a href="../../unit-1/lab-3/7-programming-journal.html">Page 7: Keeping a Programming Journal</a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../unit-1/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Unit 1: Introduction to Programming</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
- <span class="menu-text">Lab 1</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-1/1-creating-a-snap-account.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 1: Getting Started with Snap<em>!</em></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-1/2-start-your-first-snap-app.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 2: Programming a Game</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-1/3-loading-mobile-device.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 3: Sharing Your Game</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-1/4-keeping-score.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 4: Giving the Player Feedback</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-1/5-finish-your-first-snap-app.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 5: Improving Your Game</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
- <span class="menu-text">Lab 2</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-2/1-pair-programming.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 1: Pair Programming</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-2/2-gossip.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 2: Making Programs Talk</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-2/3-customizing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 3: Customizing and Debugging</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-2/4-making-a-new-block.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 4: Making Your Own Block</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-2/5-if-else.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 5: Adding Variety to <code>Gossip</code></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
- <span class="menu-text">Lab 3</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-3/1-exploring-motion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 1: Exploring Motion</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-3/2-exploring-snap-drawing-motion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 2: Angles and Turning</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-3/3-blocks-with-inputs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 3: Blocks with Inputs</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-3/4-modify-your-pinwheel.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 4: Modify Your Pinwheel</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-3/5-remix-your-pinwheel.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 5: Using <code>Pinwheel</code> to Make <code>Polygon</code></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-3/6-the-for-block.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 6: Looping with a Counter</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-3/7-programming-journal.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Page 7: Keeping a Programming Journal</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
- <span class="menu-text">Lab 4</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-4/1-your-image-in-the-cloud.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 1: Your Image in the Cloud</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-4/2-examining-privacy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 2: Examining Privacy</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-4/3-tanya-rider.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 3: Tanya Rider’s Story</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-4/4-privacy-affected.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 4: Innovations and Privacy</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
- <span class="menu-text">Lab 5</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-5/1-following-sprites.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 1: Sprite Following the Mouse</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-5/2-sprite-interaction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 2: Sprite Following a Sprite</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
- <span class="menu-text">Optional Projects</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/optional-projects/1-sprite-line-art.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Line Art Toy</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/optional-projects/2-row-of-houses.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2 Row of Houses</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/optional-projects/3-pong.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The Game of Pong</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/optional-projects/4-daisy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Daisy Design</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/optional-projects/5-sentence-builder.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Modeling Language</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#about-the-game" id="toc-about-the-game" class="nav-link active" data-scroll-target="#about-the-game">About the Game</a>
+  <ul class="collapse">
+  <li><a href="#so-what-do-you-do" id="toc-so-what-do-you-do" class="nav-link" data-scroll-target="#so-what-do-you-do">So what do you do?</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Page 7: Keeping a Programming Journal</h1>
-<p class="subtitle lead">Unit 1, Lab 3, Page 7</p>
-</div>
+<h1 class="title">Bomb Game Instructions</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Bomb Game</div>
+    <div class="quarto-category">Announcement</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    These are the instructions to the bomb game that we’ll be playing today.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Mr.&nbsp;Chang </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 22, 2023</p>
+    </div>
+  </div>
   
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">August 22, 2023</p>
+    </div>
+  </div>
     
   </div>
   
 
 </header>
 
+<section id="about-the-game" class="level2">
+<h2 class="anchored" data-anchor-id="about-the-game">About the Game</h2>
 <div class="learn">
-<p><strong>On this page,</strong> you will learn how keeping a programming journal can help your programming.</p>
+<p>You’re alone in a room with a bomb. Your friends, the “Experts”, have the manual needed to defuse it. But there’s a catch: the Experts can’t see the bomb, so everyone will need to talk it out – fast!</p>
+<p>Put your puzzle-solving and communication skills to the test as you and your friends race to defuse bombs quickly before time runs out!</p>
+<p>(Taken from <a href="https://keeptalkinggame.com/">their website</a>)</p>
 </div>
+<section id="so-what-do-you-do" class="level3 takeNote">
+<h3 class="anchored" data-anchor-id="so-what-do-you-do">So what do you do?</h3>
+<ul>
+<li>In the game, you’ll have a bomb on the “table”, and you have to defuse it with a partner
+<ul>
+<li>Here’s the catch: the person who can see the bomb doesn’t have the instructions to defuse it and the person who has the instructions cannot see the bomb</li>
+<li>Your goal is to communicate effectively so that the defuser (<strong>driver</strong>) knows what to do with the bomb and the manual reader (<strong>navigator</strong>) knows what instructions to provide to the defuser.</li>
+</ul></li>
+</ul>
+</section>
 <div class="forYouToDo">
-<p><img src="../../img/icons/write-in-journal.png" title="Write In Your Journal" alt="Write In Your Journal" class="float-end"> Every day in your journal, keep notes like the following:</p>
-<ul>
-<li>
-Any concept about programming that you had trouble understanding.
-</li>
-<li>
-Questions that you want to remember to ask.
-</li>
-<li>
-Ideas for projects that you want to work on or improvements to an existing project that you want to make.
-</li>
-<li>
-<p>Problems with your code:</p>
-<ul>
-<li>
-What was the symptom?
-</li>
-<li>
-What did the cause turn out to be?
-</li>
-<li>
-What change did you make to fix the problem?
-</li>
-<li>
-What techniques did you use to investigate the problem?
-</li>
-</ul>
-</li>
-<li>
-<p>How did you organize your code?</p>
-<ul>
-<li>
-<p>Did you define new procedures?</p>
-<ul>
-<li>
-Do they take inputs? If so, what type of inputs do they require? (That is, what is their <em>domain</em>?)
-</li>
-<li>
-Do they take report a value? If so, what type of value do they report? (That is, what is their <em>range</em>?)
-</li>
-</ul>
-</li>
-<li>
-Could you have defined a procedure somewhere instead of copying and pasting code?
-</li>
-</ul>
-</li>
-<li>
-When appropriate, you might want to include pictures of the stage or of important scripts in your code.
-</li>
-</ul>
+<ol class="example" type="1">
+<li><p>At every pair of computers, at least one of the computers has the game that we’ll be playing: “Keep Talking and Nobody Explodes.” Figure out which computer has the game. Only one computer per pair should have the game open.</p></li>
+<li><p>On the other computer, have the bomb manual open. <a href="http://www.bombmanual.com/">LINK TO THE BOMB MANUAL</a></p></li>
+<li><p>Play the tutorial together so that everyone knows how to work with the bomb.</p></li>
+<li><p>After the tutorial is done, jump right into the game. At this point, the defuser (person on the game) should not be looking at the manual in any form; likewise the manual reader should not be looking at the game at all. The only way for you to know what’s going on in the other person’s side is to keep talking to each other.</p></li>
+</ol>
 </div>
-<p>
-</p><div class="sidenoteBig">
-<p>You don’t need to copy things out of the curriculum into your journal; you can always look those up in the <a href="../../summaries/vocab-index.html?course=bjc4nyc.html&amp;novideo&amp;noassignment" title="curriculum index">index</a>.</p>
-</div>
-<p><strong>The journal is for you, not for your teacher.</strong> You won’t be graded on what you do or don’t put in it. The journal isn’t graded because it’s a record of the things only you experience in the class, not a record of the ideas in the curriculum. Everyone’s journal will be different.</p>
-<p></p>
 
 
-
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -853,18 +586,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../../unit-1/lab-3/6-the-for-block.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Page 6: Looping with a Counter</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../../unit-1/lab-4/1-your-image-in-the-cloud.html" class="pagination-link">
-        <span class="nav-page-text">Page 1: Your Image in the Cloud</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

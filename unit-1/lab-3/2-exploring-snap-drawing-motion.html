@@ -299,12 +299,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Page 6: Looping with a Counter</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-3/7-programming-journal.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 7: Keeping a Programming Journal</span></a>
-  </div>
-</li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
@@ -444,77 +438,43 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="learn">
-<p>
-<strong>On this page,</strong> you will learn about sprite turning angles, which are needed for drawing polygons. For starters, you’ll draw various asterisks, like these: <br> <img src="../../img/1-introduction/Three-spokes.png" title="three spokes" alt="asterisk with three spokes" class="ms-4"> <img src="../../img/1-introduction/Five-spokes.png" title="asterisk with five spokes" alt="asterisk with five spokes"> <img src="../../img/1-introduction/Eight-spokes.png" title="asterisk with eight spokes" alt="asterisk with eight spokes">
-</p>
+<p><strong>On this page,</strong> you will learn about sprite turning angles, which are needed for drawing polygons. For starters, you’ll draw various asterisks, like these: <br> <img src="../../img/1-introduction/Three-spokes.png" title="three spokes" alt="asterisk with three spokes" class="ms-4"> <img src="../../img/1-introduction/Five-spokes.png" title="asterisk with five spokes" alt="asterisk with five spokes"> <img src="../../img/1-introduction/Eight-spokes.png" title="asterisk with eight spokes" alt="asterisk with eight spokes"></p>
 </div>
-<p>
-When you were trying to draw an equilateral triangle on the previous page, you might have tried code like this:<br> <img src="../../img/1-introduction/half-hex-code.png" title="repeat (3) {move (100) steps; turn right (60) degrees}" alt="repeat (3) {move (100) steps; turn right (60) degrees}" class="ms-4"> and seen a result like this: <img src="../../img/1-introduction/half-hex-pic.png" title="three sides of a regular hexagon" alt="three sides of a regular hexagon"><br> It’s common to try this if you’ve learned that the angles in an equilateral triangle are all 60 degrees. However, the angle that the <em>sprite</em> needs to turn to make a triangle is actually 120 degrees, and it’s important to understand why that is and how to find the correct angle for other polygons (five-sided, eleven-sided, etc.).
-</p>
+<p>When you were trying to draw an equilateral triangle on the previous page, you might have tried code like this:<br> <img src="../../img/1-introduction/half-hex-code.png" title="repeat (3) {move (100) steps; turn right (60) degrees}" alt="repeat (3) {move (100) steps; turn right (60) degrees}" class="ms-4"> and seen a result like this: <img src="../../img/1-introduction/half-hex-pic.png" title="three sides of a regular hexagon" alt="three sides of a regular hexagon"><br> It’s common to try this if you’ve learned that the angles in an equilateral triangle are all 60 degrees. However, the angle that the <em>sprite</em> needs to turn to make a triangle is actually 120 degrees, and it’s important to understand why that is and how to find the correct angle for other polygons (five-sided, eleven-sided, etc.).</p>
 <div id="first" class="forYouToDo">
-<ol>
-<li>
-<a href="../../prog/1-introduction/U1L3-AngleExperiments1.xml" class="run"><img src="../../img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file for the first set of experiments. Then save it to your Snap! account." class="inline"></a>
-</li>
-<li>
-Perform the four experiments (A-D), and read the comments attached to each one. As you do, talk with your partner about what you see and why it happens.
-</li>
-<li>
-<p>Then, experiment with the last script (shown right):<br> <img src="../../img/1-introduction/angles-and-turning.png" title="repeat (2): {move (100) steps, move (-100) steps, turn (180) degrees}" alt="repeat (2): {move (100) steps, move (-100) steps, turn (180) degrees}" class="float-end"></p>
-<ol>
-<li>
-Experiment with a <em>quarter</em> turn (<code>turn</code> 90 degrees instead of 180). Adjust the number of repetitions (the number you give to <code>repeat</code>) until you get the sprite to finish facing the same way it started.<br> <img title="animation of drawing an asterisk with four spokes" alt="animation of drawing an asterisk with four spokes" class="ms-4" data-gifffer="/img/1-introduction/U1ImageVideoAddendum_img/U1L3P2-AngleExperiment-4.gif" height="150">
-</li>
-<li>
-Experiment with a <em>tenth</em> of a turn (<code>turn</code> 36 degrees). What input must you give to <code>repeat</code> to get the sprite to finish facing the same way it started?
-</li>
-<li>
-<em>Without trying it on the computer,</em> figure out what turning angle to use for a five-spoke asterisk. Make sure your partner agrees.
-</li>
-<li>
-Then, try the experiment.
-</li>
+<ol class="example" type="1">
+<li><p><a href="../../prog/1-introduction/U1L3-AngleExperiments1.xml" class="run"><img src="../../img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file for the first set of experiments. Then save it to your Snap! account." class="inline"></a></p></li>
+<li><p>Perform the four experiments (A-D), and read the comments attached to each one. As you do, talk with your partner about what you see and why it happens.</p></li>
+<li><p>Then, experiment with the last script (shown right):<br> <img src="../../img/1-introduction/angles-and-turning.png" title="repeat (2): {move (100) steps, move (-100) steps, turn (180) degrees}" alt="repeat (2): {move (100) steps, move (-100) steps, turn (180) degrees}" class="float-end"></p>
+<ol type="a">
+<li>Experiment with a <em>quarter</em> turn (<code>turn</code> 90 degrees instead of 180). Adjust the number of repetitions (the number you give to <code>repeat</code>) until you get the sprite to finish facing the same way it started.<br> <img title="animation of drawing an asterisk with four spokes" alt="animation of drawing an asterisk with four spokes" class="ms-4" data-gifffer="/img/1-introduction/U1ImageVideoAddendum_img/U1L3P2-AngleExperiment-4.gif" height="150"></li>
+<li>Experiment with a <em>tenth</em> of a turn (<code>turn</code> 36 degrees). What input must you give to <code>repeat</code> to get the sprite to finish facing the same way it started?</li>
+<li><em>Without trying it on the computer,</em> figure out what turning angle to use for a five-spoke asterisk. Make sure your partner agrees.</li>
+<li>Then, try the experiment.</li>
+</ol></li>
+<li><p><img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Describe what you’ve learned about turning angles.</p></li>
+<li><p>At the top of the page you were thinking about triangles. As a step in that direction, make a three-spoke asterisk.</p></li>
 </ol>
-</li>
-<li>
-<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Describe what you’ve learned about turning angles.
-</li>
-<li>
-<p>At the top of the page you were thinking about triangles. As a step in that direction, make a three-spoke asterisk.</p>
 <div class="endnote">
 <p><a href="#hint-three-spoke" data-bs-toggle="collapse" title="Click for a hint about drawing a three-spoke asterisk.">Click for a hint.</a></p>
 <div id="hint-three-spoke" class="collapse">
 <p><img title="image of three spoke asterisk being drawn slowly with the sprite tracing out a different color in each third" alt="image of three spoke asterisk being drawn slowly with the sprite tracing out a different color in each third" class="ms-4" data-gifffer="/img/1-introduction/3-point-asterisk.gif"></p>
 </div>
 </div>
-</li>
-</ol>
+
+
 </div>
 <div class="takeNote">
 <p>A 360° turn is a full turn. Half of that (180°) is a half turn. A fourth of 360° <img src="../../img/1-introduction/360-divided-by-4-with-result-90.png" title="360-divided-by-4-with-result-90" alt="360-divided-by-4-with-result-90"> is a quarter turn. You don’t have to do the division yourself. Snap<em>!</em> can compute it for you. You can use <img src="../../img/1-introduction/turn-360-divided-by-7-degrees.png" title="turn-360-divided-by-7-degrees" alt="turn-360-divided-by-7-degrees"> or <img src="../../img/1-introduction/turn-360-divided-by-3-degrees.png" title="turn-360-divided-by-3-degrees" alt="turn-360-divided-by-3-degrees"> to get a seventh of a turn or a third of a turn.</p>
 </div>
-<!--                        <li>Try completely removing the second `move` block (right-click or control-click and then choose "delete"). Try some of the turning experiments again.</li>
--->
 <p><img src="../../img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="inline"></p>
-<p>
-At the beginning of this page, you knew that to make a triangle you need 120° turns, but maybe you weren’t sure why. Now you know why a <em>three-spoke asterisk</em> takes 120° turns, but what does that have to do with triangles?
-</p>
+<p>At the beginning of this page, you knew that to make a triangle you need 120° turns, but maybe you weren’t sure why. Now you know why a <em>three-spoke asterisk</em> takes 120° turns, but what does that have to do with triangles?</p>
 <div class="forYouToDo">
-<ol start="6">
-<li>
-Try different negative input values for the <code>move</code> <var>-100</var> <code>steps</code> block (first -90, then -50, then -10), and do some of the turning experiments (above) with each value. Does this change the values needed for the <code>repeat</code> or <code>turn</code> blocks? These pictures are called “pinwheels.”
-</li>
-<!--Commenting out for now. --MF, 9/2/19
-<li><img class="inline" src="/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Fill in the blanks:  A pinwheel with `move -90 steps` looks almost like a(n) ________, but a pinwheel with `move -10 steps` looks almost like a(n) _________.</li>
-<li>Find the `pinwheel, ( ) spokes` block, and try a three-spoke pinwheel with it.  Are the colored angles the same as for the three-spoke asterisk?</li>
-<li>How many degrees has the sprite turned altogether when drawing a pinwheel?  (Just watch the turning, not the moving.)</li>
-<li>
-<img class="inline" src="/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> 
-Find the blocks `all3` and `slide` at the bottom of the scripting area.  Try them with an input of `3`.  Which animation do you find more helpful in explaining turning angles in triangles?
-</li>-->
-<li>
-<p><a href="../../prog/1-introduction/U1L3-AngleExperiments2.xml" class="run"><img src="../../img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file for the second set of experiments. Then save it to your Snap! account." class="inline"></a><br>Now, run script (A) in the file and experiment:</p>
-<ol>
+<ol start="6" class="example" type="1">
+<li><p>Try different negative input values for the <code>move -100 steps</code> block (first -90, then -50, then -10), and do some of the turning experiments (above) with each value. Does this change the values needed for the <code>repeat</code> or <code>turn</code> blocks? These pictures are called “pinwheels.”</p></li>
+<li><p><a href="../../prog/1-introduction/U1L3-AngleExperiments2.xml" class="run"><img src="../../img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file for the second set of experiments. Then save it to your Snap! account." class="inline"></a><br>Now, run script (A) in the file and experiment:</p></li>
+</ol>
+<ol class="ms-4">
 <li>
 <p>Change the inputs in script A to draw an asterisk with:</p>
 <ol style="list-style-type:lower-roman;">
@@ -533,7 +493,7 @@ Find the blocks `all3` and `slide` at the bottom of the scripting area.  Try the
 <p>Make a copy of the three-branch script you built (right-click or control-click the script, and choose “duplicate”).</p>
 <ol style="list-style-type:lower-roman;">
 <li>
-In the copy, remove the <code>move</code> <var>-100</var> <code>steps</code> block.
+In the copy, remove the <code>move -100 steps</code> block.
 </li>
 <li>
 What does this new script do?
@@ -547,7 +507,7 @@ What does this new script do?
 Change it to a four-branch script.
 </li>
 <li>
-Remove the <code>move</code> <var>-100</var> <code>steps</code> block again.
+Remove the <code>move -100 steps</code> block again.
 </li>
 <li>
 What does this new script do?
@@ -555,7 +515,23 @@ What does this new script do?
 </ol>
 </li>
 </ol>
-</li>
+
+
+<ol start="8" class="example" type="1">
+<li><p><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkpoint-1FAIpQLSelXO0igT5BgO3N9ao9aWKXOIxD11tTKERWLtAJxVRSVedO2w"> Checkpoint: Fill out this Google Form </button>
+      </p><div class="modal fade" id="checkpoint-1FAIpQLSelXO0igT5BgO3N9ao9aWKXOIxD11tTKERWLtAJxVRSVedO2w" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSelXO0igT5BgO3N9ao9aWKXOIxD11tTKERWLtAJxVRSVedO2w/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" height="613">Loading…</iframe>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+        </div>
+      </div><p></p></li>
 </ol>
 </div>
 <section id="debugging-with-say-for" class="level3 takeNote">

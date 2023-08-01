@@ -299,12 +299,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Page 6: Looping with a Counter</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-3/7-programming-journal.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 7: Keeping a Programming Journal</span></a>
-  </div>
-</li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
@@ -444,31 +438,21 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="learn">
-<p>
-<strong>On this page,</strong> you will use inputs to allow one block to do many things.
-</p>
+<p><strong>On this page,</strong> you will use inputs to allow one block to do many things.</p>
 </div>
-<p>
-On the previous page you used blocks <code>asterisk</code> and <code>pinwheel</code> that we wrote for you, each with an input for the number of spokes. Now you’re going to learn how to create your own blocks with inputs.
-</p>
+<p>On the previous page you used blocks <code>asterisk</code> and <code>pinwheel</code> that we wrote for you, each with an input for the number of spokes. Now you’re going to learn how to create your own blocks with inputs.</p>
 <div id="first" class="forYouToDo">
-<ol>
-<li>
-<a href="../../prog/1-introduction/U1L3-Pinwheel.xml" class="run"><img src="../../img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"></a><br> Make 5 copies of the script and modify those copies so that they make pinwheel designs like these with 3, 4, 5, 6, and 12 branches.<br> <img src="../../img/1-introduction/Blockswith-Inputs_img/3.png" title="pinwheel with 3 branches" alt="pinwheel with 3 branches" class="noshadow" height="120"> <img src="../../img/1-introduction/Blockswith-Inputs_img/4.png" title="pinwheel with 4 branches" alt="pinwheel with 4 branches" class="noshadow" height="120"> <img src="../../img/1-introduction/Blockswith-Inputs_img/5.png" title="pinwheel with 5 branches" alt="pinwheel with 5 branches" class="noshadow" height="120"> <img src="../../img/1-introduction/Blockswith-Inputs_img/6.png" title="pinwheel with 6 branches" alt="pinwheel with 6 branches" class="noshadow" height="120"> <img src="../../img/1-introduction/Blockswith-Inputs_img/12.png" title="pinwheel with 12 branches" alt="pinwheel with 12 branches" class="noshadow" height="120">
-</li>
-<li>
-Look at two of your scripts, and write down all of the differences between them.
-</li>
+<ol class="example" type="1">
+<li><p><a href="../../prog/1-introduction/U1L3-Pinwheel.xml" class="run"><img src="../../img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"></a><br> Make 5 copies of the script and modify those copies so that they make pinwheel designs like these with 3, 4, 5, 6, and 12 branches.<br> <img src="../../img/1-introduction/Blockswith-Inputs_img/3.png" title="pinwheel with 3 branches" alt="pinwheel with 3 branches" class="noshadow" height="120"> <img src="../../img/1-introduction/Blockswith-Inputs_img/4.png" title="pinwheel with 4 branches" alt="pinwheel with 4 branches" class="noshadow" height="120"> <img src="../../img/1-introduction/Blockswith-Inputs_img/5.png" title="pinwheel with 5 branches" alt="pinwheel with 5 branches" class="noshadow" height="120"> <img src="../../img/1-introduction/Blockswith-Inputs_img/6.png" title="pinwheel with 6 branches" alt="pinwheel with 6 branches" class="noshadow" height="120"> <img src="../../img/1-introduction/Blockswith-Inputs_img/12.png" title="pinwheel with 12 branches" alt="pinwheel with 12 branches" class="noshadow" height="120"></p></li>
+<li><p>Look at two of your scripts, and write down all of the differences between them.</p></li>
 </ol>
 </div>
-<p>
-The scripts are essentially all the same; only some of the <em>input values</em> change. Instead of having many separate scripts, you can make one general block <img src="../../img/1-introduction/pinwheel-block.png" title="pinwheel, branches:()" alt="pinwheel, branches:()" height="40"> that will draw <em>all</em> such designs. The block has to work for a variety of inputs.
-</p>
+<p>The scripts are essentially all the same; only some of the <em>input values</em> change. Instead of having many separate scripts, you can make one general block <img src="../../img/1-introduction/pinwheel-block.png" title="pinwheel, branches:()" alt="pinwheel, branches:()" height="40"> that will draw <em>all</em> such designs. The block has to work for a variety of inputs.</p>
 <div class="forYouToDo">
 <p><img src="../../img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="float-end"></p>
-<ol start="3">
-<li>
-<p>Create a <code>pinwheel</code> block with an input for the <var>number of branches</var>. Instructions are below and you can also watch the process in the video that follows the instructions.</p>
+<ol start="3" class="example" type="1">
+<li>Create a <code>pinwheel</code> block with an input for the <var>number of branches</var>. Instructions are below and you can also watch the process in the video that follows the instructions.</li>
+</ol>
 <section id="making-a-block-with-an-input" class="level3 narrower">
 <h3 class="anchored" data-anchor-id="making-a-block-with-an-input"><strong>Making a Block with an Input</strong></h3>
 <ol type="a">
@@ -524,37 +508,24 @@ Then, drag the new input <var>number of branches</var> in to replace the values 
 <p><img title="Animation summarizing how to create a block with input." alt="Animation summarizing how to create a block with input." class="ms-4" data-gifffer="/img/1-introduction/Blockswith-Inputs_img/blocks-with-inputs.gif"></p>
 </div>
 </div>
-</li>
-</ol>
 </div>
 <div class="takeNote">
-<p>
-<strong>What kind of data can be an input?</strong> All kinds of data. In this example, the input is supposed to be a number, but <em>any</em> kind of value can be used as an input. For instance, you’ve seen the <code>list</code> block called with text as inputs. In Snap<em>!</em>, any kind of data can be used as an input, can be reported by a block, or can be put in a list.
-</p>
+<p><strong>What kind of data can be an input?</strong> All kinds of data. In this example, the input is supposed to be a number, but <em>any</em> kind of value can be used as an input. For instance, you’ve seen the <code>list</code> block called with text as inputs. In Snap<em>!</em>, any kind of data can be used as an input, can be reported by a block, or can be put in a list.</p>
 </div>
 <div class="vocabFullWidth">
 <p>: What’s an input? <strong>Parameter</strong> vs.&nbsp;<strong>Argument</strong></p>
-<p>
-</p><ul>
-<li>
-A <strong>parameter</strong> (or <em>formal parameter</em>) is the input <em>name,</em> such as <var>number of branches</var>. The input name is set in the block definition. It never changes.<br> <img src="../../img/1-introduction/example-parameter.png" title="image of complete pinwheel, branches:(number of branches) block definition with parameter label pointing to number of branches" alt="image of complete pinwheel, branches:(number of branches) block definition with parameter label pointing to number of branches" class="ms-4">
-</li>
-<li>
-An <strong>argument</strong> (or <em>actual argument</em>) is the input <em>value,</em> such as 6 for a hexagonal pinwheel. The input value is given each time the block is run; it can be a different value each time.<br> <img src="../../img/1-introduction/example-argument.png" title="pinwheel, branches: (6) with argument label pointing to the input 6" alt="pinwheel, branches: (6) with argument label pointing to the input 6" class="ms-4">
-</li>
+<ul>
+<li><p>A <strong>parameter</strong> (or <em>formal parameter</em>) is the input <em>name,</em> such as <var>number of branches</var>. The input name is set in the block definition. It never changes.<br> <img src="../../img/1-introduction/example-parameter.png" title="image of complete pinwheel, branches:(number of branches) block definition with parameter label pointing to number of branches" alt="image of complete pinwheel, branches:(number of branches) block definition with parameter label pointing to number of branches" class="ms-4"></p></li>
+<li><p>An <strong>argument</strong> (or <em>actual argument</em>) is the input <em>value,</em> such as 6 for a hexagonal pinwheel. The input value is given each time the block is run; it can be a different value each time.<br> <img src="../../img/1-introduction/example-argument.png" title="pinwheel, branches: (6) with argument label pointing to the input 6" alt="pinwheel, branches: (6) with argument label pointing to the input 6" class="ms-4"></p></li>
 </ul>
 <p>We use the word “input” both for parameters (input names) and for arguments (input values).</p>
-<p></p>
 </div>
-<p>
-Originally, you made five copies of the pinwheel script to create five slightly different pinwheels. Now, you’ve made a single procedure that includes the shared features of these five scripts and uses a parameter to handle the differences.
-</p>
+<p>Originally, you made five copies of the pinwheel script to create five slightly different pinwheels. Now, you’ve made a single procedure that includes the shared features of these five scripts and uses a parameter to handle the differences.</p>
 <div class="forYouToDo">
-<ol start="4">
 <p><img src="../../img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"></p>
-<li>
-Comment your code.
-</li>
+<ol start="4" class="example" type="1">
+<li>Comment your code.</li>
+</ol>
 <section id="debugging-tip-commenting-your-code" class="level3 takeNote">
 <h3 class="anchored" data-anchor-id="debugging-tip-commenting-your-code"><strong>Debugging Tip: Commenting Your Code</strong></h3>
 <p>Adding comments to your code may help you remember what your code does, helps other people reading your code to understand it, and can help you avoid bugs by increasing the clarity of your program. But it won’t do any of those things if you comment every line of code, so each comment just says how a block inside your script works. You can add comments to your Snap<em>!</em> code by right-clicking (or control-clicking) in the Scripts area and choosing “add comment.” <a href="#hint-comments" data-bs-toggle="collapse" title="Click for an animation that shows how to add comments.">Click for an animation that shows how.</a></p>
@@ -562,30 +533,19 @@ Comment your code.
 <p><img title="Animation on how to add a comment to a block and how a comment added to a hat block becomes that custom block's help message." alt="Animation on how to  add a comment to a block and how a comment added to a hat block becomes that custom block's help message." class="ms-4" data-gifffer="/img/2-complexity/Debugging/commenting.gif"></p>
 </div>
 <p>You can attach a comment <em>to the hat block</em> in the Block Editor to create a help message for your block. This is the <em>best</em> way to comment, because people can find out what your block does without having to look inside, just like the help messages for primitive blocks.</p>
-<div class="borderless-table">
-<div>
+<div class="grid">
+<div class="g-col-12">
 <p><strong>Bad commenting:</strong></p>
-</div>
-<div>
 <p><img src="../../img/1-introduction/bad-comments.png" title="an example of bad commenting: block definition for a square-drawing block called 'square' with a comment attached to the repeat (4) block that says, 'a square has four sides' a comment attached to the move (size) steps block that says, 'the move says how big to make it', and a comment attached to the turn right (90) degrees block that says, 'You have to turn (90) degrees'" alt="an example of bad commenting: block definition for a square-drawing block called 'square' with a comment attached to the repeat (4) block that says, 'a square has four sides' a comment attached to the move (size) steps block that says, 'the move says how big to make it', and a comment attached to the turn right (90) degrees block that says, 'You have to turn (90) degrees'" class="ms-4"></p>
 </div>
-</div>
-<div class="borderless-table">
-<div>
+<div class="g-col-12">
 <p><strong>Good commenting:</strong></p>
-</div>
-<div>
 <p><img src="../../img/1-introduction/good-comments.png" title="an example of good commenting: block definition for a square-drawing block called 'square' with a comment attached to the hat block that says, 'This block draws a square. The input says how big to make the sides of the square.'" alt="an example of good commenting: block definition for a square-drawing block called 'square' with a comment attached to the hat block that says, 'This block draws a square. The input says how big to make the sides of the square.'" class="ms-4"></p>
-<div>
 <p><img src="../../img/1-introduction/askhelp.png" title="the 'square' block with the right-click menu open and the 'help...' option selected" alt="the 'square' block with the right-click menu open and the 'help...' option selected" class="ms-4"> <img src="../../img/1-introduction/squarehelp.png" title="a Help window with a picture of the 'square' block followed by the text 'This block draws a square. The input says how big to make the sides of the square.' and then an 'OK' button" alt="a Help window with a picture of the 'square' block followed by the text 'This block draws a square. The input says how big to make the sides of the square.' and then an 'OK' button" class="ms-4"></p>
 </div>
 </div>
-</div>
-<p>
-Part of the reason some people emphasize the importance of detailed comments is that they are programming in text languages, which discourage long variable and procedure names. (Typically, you can’t include spaces in the names, and you have to type the entire name every time you use that variable or procedure.) So you see names like <code>substLcUc</code> instead of <code>substitute lower case letters for capital letters in string</code>. If a program is full of drastically abbreviated names for procedures and variables, it’s no surprise if the code needs documentation. In Snap<em>!,</em> the names in the program can be self-documenting.
-</p>
+<p>Part of the reason some people emphasize the importance of detailed comments is that they are programming in text languages, which discourage long variable and procedure names. (Typically, you can’t include spaces in the names, and you have to type the entire name every time you use that variable or procedure.) So you see names like <code>substLcUc</code> instead of <code>substitute lower case letters for capital letters in string</code>. If a program is full of drastically abbreviated names for procedures and variables, it’s no surprise if the code needs documentation. In Snap<em>!,</em> the names in the program can be self-documenting.</p>
 </section>
-</ol>
 </div>
 <section id="more-about-program-documentation" class="level2">
 <h2 class="anchored" data-anchor-id="more-about-program-documentation">More About Program Documentation</h2>
@@ -594,7 +554,7 @@ Part of the reason some people emphasize the importance of detailed comments is 
 <p>If you’re writing a program by yourself, internal documentation may seem silly. “I know how my own program works.” But if the program will still be in use a year later, it will probably need maintenance, and you may well have forgotten the details of its implementation. In a programming class like this one, most of the programs you write are very small, and you can understand them at a glance. But real programs are generally much bigger than lab exercises designed to take less than an hour of work.</p>
 <p>It’s best if the first attempt at documentation is made even before starting to code. The documentation will specify the desired program behavior (external) and the intended program structure (internal). These documents can be used in testing the code to ensure that it behaves as planned.</p>
 <div class="forYouToDo">
-<ol start="5" type="1">
+<ol start="5" class="example" type="1">
 <li>Create a script that draws two pinwheels on the stage, with different numbers of spokes.</li>
 </ol>
 </div>

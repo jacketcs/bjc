@@ -296,12 +296,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Page 6: Looping with a Counter</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-1/lab-3/7-programming-journal.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 7: Keeping a Programming Journal</span></a>
-  </div>
-</li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
@@ -441,22 +435,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="learn">
-<p>
-<strong>On this page, </strong> you will improve your program so that sometimes the sentences are a bit longer and more complex.
-</p>
+<p><strong>On this page, </strong> you will improve your program so that sometimes the sentences are a bit longer and more complex.</p>
 </div>
 <p>The block <img src="../../img/1-introduction/more-complicated-who.png" title="more complicated who" alt="more complicated who"> has been built for you. It randomly chooses 1, 2, 3, or 4, and if that number is 3, then it reports something more complicated than <code>who</code>. Otherwise, it reports <code>who</code>, just as before.</p>
 <div id="first" class="forYouToDo">
-<ol>
-<li>
-If it isn’t open already, open your U1L2-Gossip project.
+<ol class="example" type="1">
+<li><p>If it isn’t open already, open your U1L2-Gossip project.</p></li>
+<li><p>Find <img src="../../img/1-introduction/more-complicated-who.png" title="more complicated who" alt="more complicated who"> in the red Lists palette, drag it into the scripting area, and click on it enough times to see how it’s different from <code>who</code>.</p>
 </li>
-<li>
-Find <img src="../../img/1-introduction/more-complicated-who.png" title="more complicated who" alt="more complicated who"> in the red Lists palette, drag it into the scripting area, and click on it enough times to see how it’s different from <code>who</code>.
-</li>
-<li>
-<!--<div class="index-term" id="pick random`"></div>-->
-<p>Here is the code for <code>more complicated who</code>. There are two new things in it: <code>pick random</code> and <code>if else</code>.<br> <img src="../../img/1-introduction/more-complicated-who-script.png" title="more complicated who {
+<li><p>Here is the code for <code>more complicated who</code>. There are two new things in it: <code>pick random</code> and <code>if else</code>.<br> <img src="../../img/1-introduction/more-complicated-who-script.png" title="more complicated who {
 if (pick random (1) to (4)) = (3) {
 report (join (who) (', who') (does what) ( ) (who) (,))                                                                                          
 } else {
@@ -469,17 +456,12 @@ report (join (who) (' who') (does what) ( ) (who))
 report (who)
 }
 }" class="ms-4"></p>
-<ol>
-<li>
-Find <img src="../../img/blocks/pick-random-1-to-10-full-size.png" title="pick random (1) to (10)" alt="pick random (1) to (10)" class="inline"> in the green Operators palette, and click it several times. What does the <code>random</code> block do?
-</li>
-<li>
-<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> In the <code>more complicated who</code> block, what happens if the <code>pick random</code> block picks 3? What if it picks 4?
-</li>
+<ol type="a">
+<li>Find <img src="../../img/blocks/pick-random-1-to-10-full-size.png" title="pick random (1) to (10)" alt="pick random (1) to (10)" class="inline"> in the green Operators palette, and click it several times. What does the <code>random</code> block do?</li>
+<li><img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> In the <code>more complicated who</code> block, what happens if the <code>pick random</code> block picks 3? What if it picks 4?</li>
+</ol></li>
+<li><!-- Question 1 --></li>
 </ol>
-</li>
-<li>
-<!-- Question 1 -->
 <div class="assessment-data" type="multiplechoice" data-identifier="About how often will more complicated who pick the more complicated choice?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri1" data-shuffle="false">
 <div class="prompt">
 <p><img src="../../img/1-introduction/more-complicated-who-script.png" title="more complicated who {
@@ -589,32 +571,27 @@ report (who)
 </div>
 </div>
 </div>
-</li>
-</ol>
+
+
 </div>
 <div class="vocabFullWidth">
 <p>: <strong>Expressions</strong> and <strong>Values</strong></p>
 <ul>
-<li>
-An <strong>expression</strong> is a either a constant value (such as “4” or “winter”) or a call to a reporter block including its inputs (such as <img src="../../img/2-complexity/number.png" title="number" alt="number" class="inline">, <img src="../../img/1-introduction/5+(4x3).png" title="5 + (4 * 3)" alt="5 + (4 * 3)" class="inline py-0">, or <img src="../../img/2-complexity/join-who-doeswhat-who.png" title="join (who) ( ) (does what) ( ) (who)" alt="join (who) ( ) (does what) ( ) (who)" class="inline">).
+<li>An <strong>expression</strong> is a either a constant value (such as “4” or “winter”) or a call to a reporter block including its inputs (such as <img src="../../img/2-complexity/number.png" title="number" alt="number" class="inline">, <img src="../../img/1-introduction/5+(4x3).png" title="5 + (4 * 3)" alt="5 + (4 * 3)" class="inline py-0">, or <img src="../../img/2-complexity/join-who-doeswhat-who.png" title="join (who) ( ) (does what) ( ) (who)" alt="join (who) ( ) (does what) ( ) (who)" class="inline">).
 </li>
-<li>
-Expressions are evaluated to produce a <em>single</em> <strong>value</strong> (a value can be a number, a string, a sprite, a costume, a script, a list—anything). For example, <img src="../../img/1-introduction/5+(4x3).png" title="5 + (4 * 3)" alt="5 + (4 * 3)" class="inline py-0"> will be evaluated to 17.
+<li>Expressions are evaluated to produce a <em>single</em> <strong>value</strong> (a value can be a number, a string, a sprite, a costume, a script, a list—anything). For example, <img src="../../img/1-introduction/5+(4x3).png" title="5 + (4 * 3)" alt="5 + (4 * 3)" class="inline py-0"> will be evaluated to 17.
 </li>
 </ul>
 </div>
 <div class="examFullWidth">
-<!--<div class="index-term" id="pick random`"></div>-->
-<div class="pseudop">
 <p>The expression <img src="../../img/blocks/pick-random-1-to-10-full-size.png" title="pick random (1) to (10)" alt="pick random (1) to (10)" class="inline"> would be written as</p>
-<pre class="inline">RANDOM(1, 10)</pre>
+<pre><code>RANDOM(1, 10)</code></pre>
 <p>or <img src="../../img/1-introduction/random-blocktran.png" title="RANDOM(1, 10)" alt="RANDOM(1, 10)" class="inline">. Every time you run this code, you will get a different random number between 1 and 10.</p>
 </div>
-</div>
 <div class="forYouToDo">
-<ol start="5">
-<li>
-<!-- Question 3 -->
+<ol start="5" class="example" type="1">
+<li><!-- Question 3 --></li>
+</ol>
 <div class="assessment-data" type="multiplechoice" data-identifier="What expression would return a random even number between 1 and 10?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri3" data-shuffle="true">
 <div class="prompt">
 <div class="sidenoteBig">
@@ -729,33 +706,37 @@ In contrast, <strong>odd</strong> numbers are integers <em>not</em> divisible by
 </div>
 </div>
 </div>
-</li>
-<li>
-Create a new block <img src="../../img/1-introduction/complicated-gossip.png" title="complicated gossip" alt="complicated gossip" class="inline py-0"> that is similar to <code>gossip</code> but that uses <code>more complicated who</code> instead of <code>who</code>. (You can choose which <code>who</code> to replace, or you could replace both.)
-</li>
-<li>
-Change the script for Sprite to use <code>complicated gossip</code> instead of <code>gossip</code>. Run your code, and fix any problems.
-</li>
-<p><img src="../../img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline"></p>
+<ol start="6" class="example" type="1">
+<li><p>Create a new block <img src="../../img/1-introduction/complicated-gossip.png" title="complicated gossip" alt="complicated gossip" class="inline py-0"> that is similar to <code>gossip</code> but that uses <code>more complicated who</code> instead of <code>who</code>. (You can choose which <code>who</code> to replace, or you could replace both.)</p></li>
+<li><p>Change the script for Sprite to use <code>complicated gossip</code> instead of <code>gossip</code>. Run your code, and fix any problems.</p></li>
 </ol>
+<p><img src="../../img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline"></p>
 </div>
 <section id="making-a-block-call-itself" class="level2">
 <h2 class="anchored" data-anchor-id="making-a-block-call-itself">Making a Block Call Itself</h2>
 <div class="forYouToDo">
-<ol start="8">
-<li>
-Edit <code>more complicated who</code>. Replace <em>one</em> of the <code>who</code> blocks with a fresh copy of <code>more complicated who</code> that you drag in from the palette. Click <code>more complicated who</code> enough times to see how it has changed.
-</li>
-<li>
-<img src="../../img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"> Describe the change in behavior, and explain what you think is causing it.
-</li>
+<ol start="8" class="example" type="1">
+<li><p>Edit <code>more complicated who</code>. Replace <em>one</em> of the <code>who</code> blocks with a fresh copy of <code>more complicated who</code> that you drag in from the palette. Click <code>more complicated who</code> enough times to see how it has changed.</p></li>
+<li><p><img src="../../img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"> Describe the change in behavior, and explain what you think is causing it.</p></li>
+<li><p><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkpoint-1FAIpQLSf8n7ShuN7ZHNJFlDHXOlnU9PklKImbT6DA_SRFUb2dOyDNoA"> Checkpoint: Fill out this Google Form </button>
+      </p><div class="modal fade" id="checkpoint-1FAIpQLSf8n7ShuN7ZHNJFlDHXOlnU9PklKImbT6DA_SRFUb2dOyDNoA" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf8n7ShuN7ZHNJFlDHXOlnU9PklKImbT6DA_SRFUb2dOyDNoA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" height="613">Loading…</iframe>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+        </div>
+      </div><p></p></li>
 </ol>
 </div>
 <div class="ifTime">
-<ol start="10">
-<li>
-Make Sprite(2) occasionally give a more complicated reply.
-</li>
+<ol start="11" class="example" type="1">
+<li>Make Sprite(2) occasionally give a more complicated reply.</li>
 </ol>
 </div>
 <div class="endnote">
@@ -771,8 +752,6 @@ What happens when you try it out? Was it what you expected? Explain why it happe
 </li>
 </ol>
 </div>
-
-
 
 
 </section>
