@@ -33,7 +33,7 @@ Set up what you need for this new version:
 
 </li>
 
-<li>Experiment with the <img src="/img/blocks/switch-to-costume.png" title="switch to costume []" alt="switch to costume []" class="inline nopadtb"/> block using different inputs to switch the sprite's costume manually a few times.</li>
+<li>Experiment with the <img src="/img/blocks/switch-to-costume.png" title="switch to costume []" alt="switch to costume []" class="inline py-0"/> block using different inputs to switch the sprite's costume manually a few times.</li>
 
 </ol>
 :::
@@ -47,18 +47,14 @@ If <em>you're</em> playing your game and you want to change the costume, you can
 ::: vocabFullWidth
 : <strong>Index</strong>
 
-<p>The position number is called the <strong>index</strong> of the item in the list. <br /> <img src="/img/3-lists/item-2-of-list-reporting.png" title="item (2) of (list (apple) (cantaloupe) (banana)) reporting &apos;cantaloupe&apos;" alt="item (2) of (list (apple) (cantaloupe) (banana)) reporting &apos;cantaloupe&apos;" class="indent"/><br /> In this list, 1 is the index of the item "apple," 2 is the index of the item "cantaloupe," and so on.</p>
+<p>The position number is called the <strong>index</strong> of the item in the list. <br /> <img src="/img/3-lists/item-2-of-list-reporting.png" title="item (2) of (list (apple) (cantaloupe) (banana)) reporting &apos;cantaloupe&apos;" alt="item (2) of (list (apple) (cantaloupe) (banana)) reporting &apos;cantaloupe&apos;" class="ms-4"/><br /> In this list, 1 is the index of the item "apple," 2 is the index of the item "cantaloupe," and so on.</p>
 
-::: comment
-AAP-1.D.8
-:::
+
 
 <p>In Snap<em>!</em> and on the AP exam, the index is always a whole number (1, 2, 3, 4, etc.). It is an error to use an index less than 1 or greater than the length of the list.</p>
 :::
 
 <p>
-
-<!--<img class="float-end" src="/img/2-complexity/my-menu.png" alt="my (neighbors) with drop-down menu open showing: neighbors, self, other sprites, clones, parts, anchor, stage, children, parent, name, costumes, sounds, dangling?, draggable?, rotation x, rotation y, center x, center y" title="my (neighbors) with drop-down menu open showing: neighbors, self, other sprites, clones, parts, anchor, stage, children, parent, name, costumes, sounds, dangling?, draggable?, rotation x, rotation y, center x, center y" />-->
 
 Lists can contain anything: letters or words, costumes, other lists, or even blocks. You can use <code>my</code> to report a list of the costumes for your sprite.<br />
 
@@ -66,36 +62,32 @@ Lists can contain anything: letters or words, costumes, other lists, or even blo
 The <code>my</code> block looks like <img src="/img/blocks/my-neighbors.png" title="my (neighbors)" alt="my (neighbors)" class="inline"/> until you select "costumes" from its drop-down menu.
 :::
 
-<img src="/img/2-complexity/my-costumes-reporting.png" title="my (costumes) reporting a list of three costumes: a girl with an afro, a penguin, and a unicorn" alt="my (costumes) reporting a list of three costumes: a girl with an afro, a penguin, and a unicorn" class="indent"/>
+<img src="/img/2-complexity/my-costumes-reporting.png" title="my (costumes) reporting a list of three costumes: a girl with an afro, a penguin, and a unicorn" alt="my (costumes) reporting a list of three costumes: a girl with an afro, a penguin, and a unicorn" class="ms-4"/>
 
 </p>
 
 <p>And you can use <code>item of</code> together with <code>my</code> to select a costume in a specific position in the list.</p>
 
 ::: endnote
-Some blocks (such as <code>item of</code>) have input slots that expect a list. You can tell because the input slot looks kind of like a list:<br /> <img src="/img/blocks/item.png" title="item (1) of &apos;list input slot&apos;" alt="item (1) of &apos;list input slot&apos;" class="indent"/> <img src="/img/2-complexity/listpic.png" alt="picture of 2-item list" class="indent"/>
+Some blocks (such as <code>item of</code>) have input slots that expect a list. You can tell because the input slot looks kind of like a list:<br /> <img src="/img/blocks/item.png" title="item (1) of &apos;list input slot&apos;" alt="item (1) of &apos;list input slot&apos;" class="ms-4"/> <img src="/img/2-complexity/listpic.png" alt="picture of 2-item list" class="ms-4"/>
 :::
 
 ::: forYouToDo
 <ol start="4">
 
-::: comment
-AAP-2.N part a
-:::
+
 
 <li>
 
 Practice using the <em>index</em> of the costumes in your list to switch the sprite's costume a few times.
 
 ::: narrower
-<p>You can drag blocks into the input slot of <code>switch to costume</code> even though it's a drop-down menu.<br /> <img src="/img/blocks/switch-to-costume.png" title="switch to costume []" alt="switch to costume []" class="indent"/> <img src="/img/2-complexity/switch-to-costume(item-of).png" title="switch to costume (item (1) of &apos;list input slot&apos;)" alt="switch to costume (item (1) of &apos;list input slot&apos;)" class="indent"/></p>
+<p>You can drag blocks into the input slot of <code>switch to costume</code> even though it's a drop-down menu.<br /> <img src="/img/blocks/switch-to-costume.png" title="switch to costume []" alt="switch to costume []" class="ms-4"/> <img src="/img/2-complexity/switch-to-costume(item-of).png" title="switch to costume (item (1) of &apos;list input slot&apos;)" alt="switch to costume (item (1) of &apos;list input slot&apos;)" class="ms-4"/></p>
 :::
 
 </li>
 
-::: comment
-AAP-2.N part a
-:::
+
 
 ::: sidenote
 You used <code>ask</code> and <code>answer</code> on <a href="/unit-2/lab-1/2-checking-player-guess.html" title="">Unit 2 Lab 1 Page 2: Checking the Player's Guess</a>.
@@ -109,7 +101,7 @@ Modify your code so the player can select the sprite costume:
 
 <li>Use a <var>costumes</var> script variable to store the list of sprite costumes.</li>
 
-<li>Use <img src="/img/blocks/show-variable-full-size.png" title="show variable []" alt="show variable []" class="inline nopadtb"/> to show the contents of that variable.</li>
+<li>Use <img src="/img/blocks/show-variable-full-size.png" title="show variable []" alt="show variable []" class="inline py-0"/> to show the contents of that variable.</li>
 
 <li><code>Ask</code> the player "Which costume number do you want?"</li>
 
@@ -125,9 +117,7 @@ Modify your code so the player can select the sprite costume:
 :::
 
 ::: examFullWidth
-::: comment
-AAP-2.N.1 bullet 1
-:::
+
 
 ::: pseudop
 The list expression <img src="/img/2-complexity/item-2-of-costumes.png" title="item (2) of (costumes)" alt="item (2) of (costumes)" class="inline"/> would be written as
@@ -135,7 +125,7 @@ The list expression <img src="/img/2-complexity/item-2-of-costumes.png" title="i
 ```{=html}
 <pre class="inline">costumes[2]</pre>
 ```
-or <img src="/img/2-complexity/accessing-blocktran.png" title="costumes[2]" alt="costumes[2]" class="inline"/>. All three versions of this code would report/return the penguin costume (if only the AP language had costumes as a data type):<br /> <img src="/img/2-complexity/item-2-of-costumes-reporting-penguin.png" title="item (2) of (costumes) reporting a picture of the penguin costume" alt="item (2) of (costumes) reporting a picture of the penguin costume" class="indent"/>
+or <img src="/img/2-complexity/accessing-blocktran.png" title="costumes[2]" alt="costumes[2]" class="inline"/>. All three versions of this code would report/return the penguin costume (if only the AP language had costumes as a data type):<br /> <img src="/img/2-complexity/item-2-of-costumes-reporting-penguin.png" title="item (2) of (costumes) reporting a picture of the penguin costume" alt="item (2) of (costumes) reporting a picture of the penguin costume" class="ms-4"/>
 :::
 :::
 
@@ -154,9 +144,7 @@ or <img src="/img/2-complexity/accessing-blocktran.png" title="costumes[2]" alt=
 
 <li><img src="/img/2-complexity/list-length-quiz-nested.png" title="length of ( list (list (pineapple) (strawberry) (kiwi)) (mango))" alt="length of ( list (list (pineapple) (strawberry) (kiwi)) (mango))" class="inline"/></li>
 
-::: comment
-AAP-2.N part b
-:::
+
 
 <li><img src="/img/2-complexity/list-length-quiz-item-of-nested.png" title="length of (item (1) of (list (list (pineapple) (strawberry) (kiwi)) (mango)))" alt="length of (item (1) of (list (list (pineapple) (strawberry) (kiwi)) (mango)))" class="inline"/></li>
 
@@ -174,9 +162,7 @@ AAP-2.N part b
 ::: prompt
 <p>
 
-::: comment
-AAP-2.N part b
-:::
+
 
 Which of the following blocks will report <strong>a list of length 3</strong>?<br /><br /> Choose <strong>all</strong> that apply.
 
@@ -238,9 +224,7 @@ This is one of the two correct answers.
 :::
 
 ::: examFullWidth
-::: comment
-AAP-2.N.1 bullet 7
-:::
+
 
 ::: pseudop
 The expression <img src="/img/2-complexity/example-length.png" title="length of (words list)" alt="length of (words list)" class="inline"/> would be written as

@@ -11,11 +11,9 @@ gifffer: true
 <p><strong>On this page</strong>, you will review predicates and build a few that you can use in other projects.</p>
 :::
 
-::: comment
-AAP-2.H.1
-:::
 
-<p>As you know, predicates are reporter blocks (functions) that always report a <em>Boolean value</em> (they report only the values <img src="/img/blocks/true.png" title="true" alt="true" class="inline nopadtb"/> or <img src="/img/blocks/false.png" title="false" alt="false" class="inline nopadtb"/>). In Snap<em>!</em>, predicates are represented by hexagonal blocks. They compute the <em>condition</em> used by <em>conditionals</em> (such as <code>if</code>, <code>if else</code>, or <code>repeat until</code>) to decide when to do something.</p>
+
+<p>As you know, predicates are reporter blocks (functions) that always report a <em>Boolean value</em> (they report only the values <img src="/img/blocks/true.png" title="true" alt="true" class="inline py-0"/> or <img src="/img/blocks/false.png" title="false" alt="false" class="inline py-0"/>). In Snap<em>!</em>, predicates are represented by hexagonal blocks. They compute the <em>condition</em> used by <em>conditionals</em> (such as <code>if</code>, <code>if else</code>, or <code>repeat until</code>) to decide when to do something.</p>
 
 ::: takeNote
 <p>
@@ -49,7 +47,7 @@ report (who)
 report (join (who) (&apos;, who&apos;) (does what) ( ) (who) (,))
 } else {
 report (who)
-}" class="indent"/></a> <a href="/unit-1/lab-5/2-sprite-interaction.qmd"><img class="indent" src="/img/1-introduction/move-tiny-no-comment.png" alt="when green flag clicked:
+}" class="ms-4"/></a> <a href="/unit-1/lab-5/2-sprite-interaction.qmd"><img class="ms-4" src="/img/1-introduction/move-tiny-no-comment.png" alt="when green flag clicked:
 repeat until (touching (Leader)?)
 {
     point towards (Leader)
@@ -76,19 +74,17 @@ repeat until (touching (Leader)?)
 
 In <a href="/unit-1/lab-5/1-following-sprites.qmd">Unit 1 Lab 5</a>, you made a script to get the sprite to follow the mouse. 
 <br />
-<img class="indent" src="/img/2-complexity/U2-follow-that-mouse.png" alt="go to (mouse-pointer)" title="go to (mouse-pointer)"><br />
+<img class="ms-4" src="/img/2-complexity/U2-follow-that-mouse.png" alt="go to (mouse-pointer)" title="go to (mouse-pointer)"><br />
 
-::: comment
-AAP-2.E part a
-:::
 
-Now use one or more of the following <em>relational operators</em> to create a script that lets you use your mouse to write on the stage in two colors depending on the mouse's position on the stage.<br /> <img src="/img/2-complexity/relations.jpg" title="less than, equal to, and greater than predicate blocks" alt="less than, equal to, and greater than predicate blocks" class="indent"/>
+
+Now use one or more of the following <em>relational operators</em> to create a script that lets you use your mouse to write on the stage in two colors depending on the mouse's position on the stage.<br /> <img src="/img/2-complexity/relations.jpg" title="less than, equal to, and greater than predicate blocks" alt="less than, equal to, and greater than predicate blocks" class="ms-4"/>
 
 ::: endnote
 <a href="#hint-two-colors" data-bs-toggle="collapse" title="Click for an example of writing on the stage in two colors.">Click for an example of writing on the stage in two colors.</a>
 
 ::: {#hint-two-colors .collapse}
-<img title="using the mouse to write &apos;mouse&apos; on the stage" alt="using the mouse to write &apos;mouse&apos; on the stage" class="indent" data-gifffer="/img/2-complexity/writing-mouse-on-stage.gif"/>
+<img title="using the mouse to write &apos;mouse&apos; on the stage" alt="using the mouse to write &apos;mouse&apos; on the stage" class="ms-4" data-gifffer="/img/2-complexity/writing-mouse-on-stage.gif"/>
 :::
 :::
 
@@ -98,9 +94,7 @@ Now use one or more of the following <em>relational operators</em> to create a s
 :::
 
 ::: examFullWidth
-::: comment
-AAP-2.E.2
-:::
+
 
 ::: pseudop
 You may see these five relational operators:
@@ -113,7 +107,7 @@ as well as a sixth:
 ```{=html}
 <pre class="inline">&ne;</pre>
 ```
-, which means "not-equal" and reports <code>false</code> if the two inputs are equal and otherwise reports <code>true</code> (if they are not equal). When you write the <img src="/img/2-complexity/not-equal.png" title="() not equal ()" alt="() not equal ()" class="inline"/> block, it will work like this:<br /> <img src="/img/2-complexity/not-equal-reporting-true.png" title="(3) not equal (4) reporting true" alt="(3) not equal (4) reporting true" class="indent"/> <img src="/img/2-complexity/not-equal-reporting-false.png" title="(3) not equal (3) reporting false" alt="(3) not equal (3) reporting false" class="indent"/>
+, which means "not-equal" and reports <code>false</code> if the two inputs are equal and otherwise reports <code>true</code> (if they are not equal). When you write the <img src="/img/2-complexity/not-equal.png" title="() not equal ()" alt="() not equal ()" class="inline"/> block, it will work like this:<br /> <img src="/img/2-complexity/not-equal-reporting-true.png" title="(3) not equal (4) reporting true" alt="(3) not equal (4) reporting true" class="ms-4"/> <img src="/img/2-complexity/not-equal-reporting-false.png" title="(3) not equal (3) reporting false" alt="(3) not equal (3) reporting false" class="ms-4"/>
 :::
 
 <p>These six relational operators all report a Boolean value (<code>true</code> or <code>false</code>).</p>
@@ -130,7 +124,7 @@ as well as a sixth:
 You'll probably want to use the <img src="/img/blocks/mouse-down.png" title="mouse down? predicate block" alt="mouse down? predicate block" class="inline"/> block, which you can find in the Sensing palette.
 :::
 
-<img src="/img/2-complexity/bicolor-hello.png" title="bicolor printed hello" alt="bicolor printed hello" class="indent" style="height:200px;"/>
+<img src="/img/2-complexity/bicolor-hello.png" title="bicolor printed hello" alt="bicolor printed hello" class="ms-4" style="height:200px;"/>
 
 </li>
 
@@ -140,9 +134,7 @@ You'll probably want to use the <img src="/img/blocks/mouse-down.png" title="mou
 ::: vocabFullWidth
 : <strong>Sequencing, Selection, Iteration</strong>
 
-::: comment
-Selection: AAP-2.G.1; sequencing, selection, iteration: AAP-2.A.4
-:::
+
 
 <p><strong>Selection</strong> means deciding (selecting) which part of an algorithm to run based on whether a condition is true or false.</p>
 

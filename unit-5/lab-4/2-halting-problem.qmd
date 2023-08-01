@@ -75,7 +75,7 @@ a value in a finite time. (If so, we say that the reporter
 that function. It reports <code>true</code> if the function would report
 a value when given that input; it reports <code>false</code> if the
 function would run forever (in an infinite loop).<br />
-<img src="/img/5-algorithms/halts.png" title="halts? (function) (input)" alt="halts? (function) (input)" class="indent"/>
+<img src="/img/5-algorithms/halts.png" title="halts? (function) (input)" alt="halts? (function) (input)" class="ms-4"/>
 
 </p>
 
@@ -88,7 +88,7 @@ The gray ring around the input function means that the
 of running it.
 :::
 
-<p class="indent">
+<p class="ms-4">
 
 <img src="/img/5-algorithms/halts-reporting.png" title="halts?(round())(7.5) reporting true" alt="halts?(round())(7.5) reporting true" class="inline"/>
 because
@@ -101,7 +101,7 @@ reports a value.
 an infinite loop when given the input <var>foo</var>; it would never
 report (never halt).</p>
 
-<p class="indent">
+<p class="ms-4">
 
 <img src="/img/5-algorithms/halts-reporting-false.png" title="halts?(program with an infinite loop ())(foo) reporting false" alt="halts?(program with an infinite loop ())(foo) reporting false" class="inline"/>
 because
@@ -115,7 +115,7 @@ loops infinitely.
 <p>We'll use proof by contradiction to show that the following question
 <em>can't</em> be answered <em>in general</em>:</p>
 
-<p class="center">
+<p>
 
 <strong>Will a certain computer program, given a certain input, report a
 result in a finite amount of time?</strong>
@@ -148,14 +148,14 @@ does it mean to answer the question for <em>specific</em> functions?</a>
 <p>The "in general" part is important. Of course we can answer the
 question for certain particular programs. This one halts (reports a
 value) for <em>any</em> input:<br />
-<img src="/img/5-algorithms/three-fn.png" title="three(x): report (3)" alt="three(x): report (3)" class="indent"/></p>
+<img src="/img/5-algorithms/three-fn.png" title="three(x): report (3)" alt="three(x): report (3)" class="ms-4"/></p>
 
 <p>This one <em>never</em> halts for any input:<br />
-<img src="/img/5-algorithms/loop-fn.png" title="loop(x): forever (wait 1 secs)" alt="loop(x): forever (wait 1 secs)" class="indent" width="158"/></p>
+<img src="/img/5-algorithms/loop-fn.png" title="loop(x): forever (wait 1 secs)" alt="loop(x): forever (wait 1 secs)" class="ms-4" width="158"/></p>
 
 <p>And this one halts <em>sometimes</em>---for any input except
 87:<br />
-<img src="/img/5-algorithms/weird-fn.png" title="weird(x): if (x = 87) (forever (wait 1 secs)) else (report (3))" alt="weird(x): if (x = 87) (forever (wait 1 secs)) else (report (3))" class="indent" width="158"/></p>
+<img src="/img/5-algorithms/weird-fn.png" title="weird(x): if (x = 87) (forever (wait 1 secs)) else (report (3))" alt="weird(x): if (x = 87) (forever (wait 1 secs)) else (report (3))" class="ms-4" width="158"/></p>
 
 <p>Recall: the question is whether we can devise a test that will tell
 us whether <em>any</em> particular function will report a value for
@@ -205,15 +205,15 @@ Just like the <code>\#</code> and <code>⋮</code> symbols for inputs
 declared to be <em>numbers</em> or <em>lists</em>, the <code>λ</code> is
 not part of the input's name but is a <strong>type hint</strong> that
 was created when selecting the <em>reporter</em> input type:<br />\
-<img src="/img/5-algorithms/input-type-reporter.png" title="selecting the Reporter input type" alt="selecting the Reporter input type" class="indent"/><br />
+<img src="/img/5-algorithms/input-type-reporter.png" title="selecting the Reporter input type" alt="selecting the Reporter input type" class="ms-4"/><br />
 Recall that selecting an input type changes the appearance of the input
 slot so that it indicates what kind of input is expected. The input slot
 for <code>tester</code> will have a rounded gray ring to indicate that
 the input should be a reporter:
-<img src="/img/5-algorithms/tester().png" title="tester ()" alt="tester ()" class="inline nopadtb"/>
+<img src="/img/5-algorithms/tester().png" title="tester ()" alt="tester ()" class="inline py-0"/>
 :::
 
-<img src="/img/5-algorithms/tester-halting.png" title="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(It doesn&apos;t matter what value is reported.)}}" alt="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(It doesn&apos;t matter what value is reported.)}}" class="indent"/>
+<img src="/img/5-algorithms/tester-halting.png" title="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(It doesn&apos;t matter what value is reported.)}}" alt="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(It doesn&apos;t matter what value is reported.)}}" class="ms-4"/>
 
 </p>
 
@@ -246,7 +246,7 @@ inside <code>tester</code> can't exist.
 To make the situation <em>exactly</em> like what Betsy said ("The
 statement I'm making <em>right now </em>is false."), we'll call
 <code>tester</code> on <em>itself</em>:<br />
-<img src="/img/5-algorithms/testertester.png" title="tester(tester())" alt="tester(tester())" class="indent"/><br />
+<img src="/img/5-algorithms/testertester.png" title="tester(tester())" alt="tester(tester())" class="ms-4"/><br />
 Now, the <code>if</code> statement inside the <code>tester</code> block
 will ask if <code>tester</code> will halt (not run forever) if it's
 called with <code>tester</code> as its input. The predicate in the
@@ -254,7 +254,7 @@ called with <code>tester</code> as its input. The predicate in the
 (tester)</code>.<br />
 
 ::: todo
-I took out class="indent" on this picture so that it'd fit in the
+I took out class="ms-4" on this picture so that it'd fit in the
 window. If you don't like that, figure out how to shrink the picture
 without fuzzing it up. -bh<br />OK, leaving this comment here to remind
 me for another day. --MF, 2/1/18
@@ -266,7 +266,7 @@ me for another day. --MF, 2/1/18
 
 <p>So, just as in the examples above,</p>
 
-<p class="indent">
+<p class="ms-4">
 
 <img src="/img/5-algorithms/halts-tester-tester-reporting-true.png" title="halts (tester) (tester) reporting true" alt="halts (tester) (tester) reporting true" class="inline"/>
 would mean that
@@ -275,7 +275,7 @@ returns a value.
 
 </p>
 
-<p class="indent">
+<p class="ms-4">
 
 <img src="/img/5-algorithms/halts-tester-tester-reporting-false.png" title="halts (tester) (tester) reporting false" alt="halts (tester) (tester) reporting false" class="inline"/>
 would mean that
@@ -290,7 +290,7 @@ loops infinitely.
 <img src="/img/5-algorithms/testertester.png" title="tester(tester())" alt="tester(tester())" class="inline"/>,
 we run into the contradiction. To see how, look back at the
 <code>tester</code> definition:<br />
-<img src="/img/5-algorithms/tester-halting.png" title="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(true)}}" alt="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(true)}}" class="indent"/></p>
+<img src="/img/5-algorithms/tester-halting.png" title="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(true)}}" alt="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(true)}}" class="ms-4"/></p>
 
 <p>
 

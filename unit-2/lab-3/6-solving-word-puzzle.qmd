@@ -21,7 +21,7 @@ combining predicates using the <code>and</code> block. You will then use
 the resulting predicates with <code>keep</code> to find words with
 specific characteristics.</p>
 
-<img src="/img/2-complexity/radiux.png" title="keeping words with 6 letters with 1st letter r and 3rd letter d" alt="keeping words with 6 letters with 1st letter r and 3rd letter d" class="indent"/>
+<img src="/img/2-complexity/radiux.png" title="keeping words with 6 letters with 1st letter r and 3rd letter d" alt="keeping words with 6 letters with 1st letter r and 3rd letter d" class="ms-4"/>
 :::
 
 ::: {#first .forYouToDo}
@@ -48,8 +48,8 @@ list</var>.
 word for any number of letters. This is a useful tool to have. Create
 and test a predicate <em>block</em> that takes a word and number as
 input and works like this:<br />
-<img src="/img/2-complexity/does-orange-6-letters-true.png" title="does (orange) have (6) letters? reporting true" alt="does (orange) have (6) letters? reporting true" class="indent"/>
-<img src="/img/2-complexity/does-apple-7-letters-false.png" title="does (apple) have (7) letters? reporting false" alt="does (apple) have (7) letters? reporting false" class="indent"/></li>
+<img src="/img/2-complexity/does-orange-6-letters-true.png" title="does (orange) have (6) letters? reporting true" alt="does (orange) have (6) letters? reporting true" class="ms-4"/>
+<img src="/img/2-complexity/does-apple-7-letters-false.png" title="does (apple) have (7) letters? reporting false" alt="does (apple) have (7) letters? reporting false" class="ms-4"/></li>
 
 </ol>
 
@@ -75,8 +75,8 @@ it does the same job.
 
 <li>If you have not yet turned your expression into a predicate
 <em>block</em>, do that now. Your block should work like this: <br />
-<img src="/img/2-complexity/is-letter-4-of-carrot-o-reporting-false.png" title="is letter (4) of (carrot) the letter (o)? reporting false" alt="is letter (4) of (carrot) the letter (o)? reporting false" class="indent"/>
-<img src="/img/2-complexity/is-letter-2-of-giraffe-i-reporting-true.png" title="is letter (2) of (giraffe) the letter (i)? reporting true" alt="is letter (2) of (giraffe) the letter (i)? reporting true" class="indent"/></li>
+<img src="/img/2-complexity/is-letter-4-of-carrot-o-reporting-false.png" title="is letter (4) of (carrot) the letter (o)? reporting false" alt="is letter (4) of (carrot) the letter (o)? reporting false" class="ms-4"/>
+<img src="/img/2-complexity/is-letter-2-of-giraffe-i-reporting-true.png" title="is letter (2) of (giraffe) the letter (i)? reporting true" alt="is letter (2) of (giraffe) the letter (i)? reporting true" class="ms-4"/></li>
 
 </ol>
 
@@ -90,13 +90,11 @@ it does the same job.
 Unit 2 Lab 3 Word Puzzle</a>.<br />
 
 ::: endnote
-::: comment
-Can we hint this?
-:::
+
 
 For example, this expression searches for 6 letter words that start with
 <var>r</var> and have <var>d</var> as the third letter:
-<img src="/img/2-complexity/radiux.png" title="keeping words with 6 letters with 1st letter r and 3rd letter d" alt="keeping words with 6 letters with 1st letter r and 3rd letter d" class="indent"/>
+<img src="/img/2-complexity/radiux.png" title="keeping words with 6 letters with 1st letter r and 3rd letter d" alt="keeping words with 6 letters with 1st letter r and 3rd letter d" class="ms-4"/>
 :::
 
 ::: AP-only
@@ -106,7 +104,7 @@ course.</p>
 :::
 :::
 
-<a class="run" href="https://drive.google.com/open?id=1x8ShDe58qUQJDK8n97xoQGY4J4rw9aDsJCmkY-6SQc0" target="_blank"><img src="/img/2-complexity/crossword.jpg" title="Solving a Word Puzzle" alt="Solving a Word Puzzle" class="indent"/></a>
+<a class="run" href="https://drive.google.com/open?id=1x8ShDe58qUQJDK8n97xoQGY4J4rw9aDsJCmkY-6SQc0" target="_blank"><img src="/img/2-complexity/crossword.jpg" title="Solving a Word Puzzle" alt="Solving a Word Puzzle" class="ms-4"/></a>
 
 </li>
 
@@ -133,14 +131,14 @@ is in a word. Examples below. Your block should:
 
 </ul>
 
-<img src="/img/2-complexity/is-w-in-boston-reporting-false.png" title="is there a (w) in (Boston)? reporting false" alt="is there a (w) in (Boston)? reporting false" class="indent"/>
-<img src="/img/2-complexity/is-w-in-new-york-reporting-true.png" title="is there a (w) in (New York)? reporting true" alt="is there a (w) in (New York)? reporting true" class="indent"/>
+<img src="/img/2-complexity/is-w-in-boston-reporting-false.png" title="is there a (w) in (Boston)? reporting false" alt="is there a (w) in (Boston)? reporting false" class="ms-4"/>
+<img src="/img/2-complexity/is-w-in-new-york-reporting-true.png" title="is there a (w) in (New York)? reporting true" alt="is there a (w) in (New York)? reporting true" class="ms-4"/>
 
 </li>
 
 <li><img src="/img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff" class="inline"/>
 Create this block:<br />
-<img src="/img/2-complexity/pattern-matcher.png" title="words matching (-e-u--c--g) from (word list)" alt="words matching (-e-u--c--g) from (word list)" class="indent"/><br />
+<img src="/img/2-complexity/pattern-matcher.png" title="words matching (-e-u--c--g) from (word list)" alt="words matching (-e-u--c--g) from (word list)" class="ms-4"/><br />
 The first input is a <em>pattern,</em> which is a word in which some of
 the letters have been replaced by hyphens (minus
 signs).<!--  The hard part will be to write a helper<br />

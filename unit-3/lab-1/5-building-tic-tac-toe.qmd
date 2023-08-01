@@ -11,7 +11,7 @@ plays Tic-Tac-Toe as well as you do.</p>
 <p><strong>On this first page,</strong> you use <em>clones</em> to
 display a Tic-Tac-Toe board and let two human players enter moves.</p>
 
-<img src="/img/3-lists/TTT1_img/Three States of TTT.png" title="Three states of Tic-Tac-Toe: in progress, win, tie" alt="Three states of Tic-Tac-Toe: in progress, win, tie" class="indent" width="550"/>
+<img src="/img/3-lists/TTT1_img/Three States of TTT.png" title="Three states of Tic-Tac-Toe: in progress, win, tie" alt="Three states of Tic-Tac-Toe: in progress, win, tie" class="ms-4" width="550"/>
 :::
 
 <p>The project is spread out over different units because there's a lot
@@ -36,22 +36,22 @@ its costume to display the move.</p>
 costumes: Empty, X, and O. Click
 <img src="/img/blocks/next-costume.png" title="next costume" alt="next costume" class="inline"/>
 a few times to see all of them.<br />
-<img src="/img/3-lists/TTT1_img/Costumes.png" title="Costumes of a square: Empty, X and O" alt="Costumes of a square: Empty, X and O" class="indent noshadow" height="100"/></li>
+<img src="/img/3-lists/TTT1_img/Costumes.png" title="Costumes of a square: Empty, X and O" alt="Costumes of a square: Empty, X and O" class="ms-4 noshadow" height="100"/></li>
 
 </ol>
 :::
 
-<p>You will use <em>clones</em> to create the 3×3 Tic-Tac-Toe
-board.<a name="clones" class="anchor"> </a></p>
+You will use <em>clones</em> to create the 3×3 Tic-Tac-Toe
+board.
 
 ::: vocabFullWidth
-<p>A <strong>clone</strong> is a copy of a sprite that <em>shares
+A <strong>clone</strong> is a copy of a sprite that <em>shares
 information</em> with its parent sprite (the original sprite). For
 example, clones have copies of any scripts from the parent, and if the
 parent's script is changed, then the clones' scripts change too.
 However, changes you make to a clone are <em>not</em> shared with the
 parent, so you can do things like move each clone to a different
-position.</p>
+position.
 :::
 
 <p>
@@ -76,12 +76,12 @@ but they're not used in this project.)</p>
 ::: endnote
 In this project, you'll need <em>nine</em> clones, one for each square
 of the Tic-Tac-Toe board. So, you'd need something like:<br />
-<img src="/img/2-complexity/9-copies.png" title="repeat (9){create a clone of (myself)}" alt="repeat (9){create a clone of (myself)}" class="indent"/><br />
+<img src="/img/2-complexity/9-copies.png" title="repeat (9){create a clone of (myself)}" alt="repeat (9){create a clone of (myself)}" class="ms-4"/><br />
 The actual code you write will be slightly more than this, but this is
 the central idea. You'll need nine clones, and you will hide the parent.
 This will allow you to control the squares of the grid with blocks
 like:<br />
-<img src="/img/blocks/when-i-start-as-clone.png" title="When I start as a clone" alt="When I start as a clone" class="indent"/>
+<img src="/img/blocks/when-i-start-as-clone.png" title="When I start as a clone" alt="When I start as a clone" class="ms-4"/>
 :::
 
 ::: forYouToDo
@@ -97,7 +97,7 @@ This script will help you learn about clones, but it won't be part of
 your finished project.
 :::
 
-<img src="/img/3-lists/TTT1_img/WhenIamClicked.png" title="when I am (clicked){ create a clone of (myself); say(I&apos;m the parent.); glide (1) secs to x: (pick random(-200) to (200)) y: (pick random(-150) to (150)); say()}" alt="when I am (clicked){ create a clone of (myself); say(I&apos;m the parent.); glide (1) secs to x: (pick random(-200) to (200)) y: (pick random(-150) to (150)); say()}" class="indent" height="200"/><br />
+<img src="/img/3-lists/TTT1_img/WhenIamClicked.png" title="when I am (clicked){ create a clone of (myself); say(I&apos;m the parent.); glide (1) secs to x: (pick random(-200) to (200)) y: (pick random(-150) to (150)); say()}" alt="when I am (clicked){ create a clone of (myself); say(I&apos;m the parent.); glide (1) secs to x: (pick random(-200) to (200)) y: (pick random(-150) to (150)); say()}" class="ms-4" height="200"/><br />
 
 </li>
 
@@ -141,7 +141,7 @@ exercise 3.</li>
 <li>Connect the <code>when</code> [⚑]{style="color:green"}
 <code>clicked</code> block toward the bottom of the scripting area to
 the script just below it.<br />
-<img src="/img/3-lists/TTT1_img/make-board-script.png" title="makeBoard, set (X&apos;s turn?) to (true) [Comment: X plays first.]" alt="makeBoard, set (X&apos;s turn?) to (true) [Comment: X plays first.]" class="indent"/></li>
+<img src="/img/3-lists/TTT1_img/make-board-script.png" title="makeBoard, set (X&apos;s turn?) to (true) [Comment: X plays first.]" alt="makeBoard, set (X&apos;s turn?) to (true) [Comment: X plays first.]" class="ms-4"/></li>
 
 <li>
 
@@ -164,8 +164,8 @@ because you can use <code>not</code> to switch between them and you can
 use <code>if</code> to <em>test</em> the variable. (Recall that
 <code>if</code> requires a <code>true</code>/<code>false</code>
 input.)<br />
-<img src="/img/3-lists/TTT1_img/setXsturn.png" title="set (X&apos;s turn?) to (not (X&apos;s turn?))" alt="set (X&apos;s turn?) to (not (X&apos;s turn?))" class="indent" height="50"/>
-<img src="/img/2-complexity/if-x-turn.png" title="if (X&apos;s turn?){}" alt="if (X&apos;s turn?){}" class="indent"/>
+<img src="/img/3-lists/TTT1_img/setXsturn.png" title="set (X&apos;s turn?) to (not (X&apos;s turn?))" alt="set (X&apos;s turn?) to (not (X&apos;s turn?))" class="ms-4" height="50"/>
+<img src="/img/2-complexity/if-x-turn.png" title="if (X&apos;s turn?){}" alt="if (X&apos;s turn?){}" class="ms-4"/>
 :::
 
 </li>
@@ -183,7 +183,7 @@ input.)<br />
 
 Edit the block <code>makeBoard</code> to set up nine clones in three
 rows of three.<br />
-<img src="/img/3-lists/TTT1_img/Row1.png" title="One row of squares" alt="One row of squares" class="indent" height="100"/>
+<img src="/img/3-lists/TTT1_img/Row1.png" title="One row of squares" alt="One row of squares" class="ms-4" height="100"/>
 <img src="/img/3-lists/TTT1_img/Row2.png" title="Two rows of squares" alt="Two rows of squares" height="100"/>
 <img src="/img/3-lists/TTT1_img/Row3.png" title="Three rows of squares" alt="Three rows of squares" height="100"/><br />
 
@@ -207,7 +207,7 @@ interfere with the game as a tenth square.</li>
 if you need an additional hint about <code>makeBoard</code>.</a>
 
 ::: {#hint-for .collapse}
-<img src="/img/3-lists/TTT1_img/for-row-column.png" title="for (row) = 1 to 3 {for (column) = 1 to 3 {} }" alt="for (row) = 1 to 3 {for (column) = 1 to 3 {} }" class="indent"/>
+<img src="/img/3-lists/TTT1_img/for-row-column.png" title="for (row) = 1 to 3 {for (column) = 1 to 3 {} }" alt="for (row) = 1 to 3 {for (column) = 1 to 3 {} }" class="ms-4"/>
 :::
 
 </li>
@@ -232,7 +232,7 @@ wearing an X or O costume.</li>
 
 <li>Make the parent sprite <em>not</em>-draggable so that the clone
 squares aren't accidentally moved around when the player clicks.<br />
-<img src="/img/2-complexity/not-draggable.png" title="Draggable box un-checked" alt="Draggable box un-checked" class="indent"/></li>
+<img src="/img/2-complexity/not-draggable.png" title="Draggable box un-checked" alt="Draggable box un-checked" class="ms-4"/></li>
 
 </ol>
 

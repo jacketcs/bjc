@@ -1,5 +1,6 @@
 ---
 title: "Page Not Found"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 ---
 
 The page you requested cannot be found. This website is still in development and updating according to the class's timeline, so we might have just decided to not have the page for you to see.

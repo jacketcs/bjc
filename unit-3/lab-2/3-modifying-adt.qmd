@@ -23,7 +23,7 @@ date" TIF. --MF, 5/23/20</p>
 <p><strong>On this page,</strong> you will develop an abstract data type
 (ADT) to store and access <em>dates</em>, and you will adapt your
 contact ADT to use it to store each contact's birthday.<br />
-<img src="/img/3-lists/contact-constructor-with-birthdate.png" title="contact with name: ... birthday: (date (July) (9) (2005))" alt="contact with name: ... birthday: (date (July) (9) (2005))" class="indent"/></p>
+<img src="/img/3-lists/contact-constructor-with-birthdate.png" title="contact with name: ... birthday: (date (July) (9) (2005))" alt="contact with name: ... birthday: (date (July) (9) (2005))" class="ms-4"/></p>
 :::
 
 ::: takeNote
@@ -57,13 +57,13 @@ Create an ADT to manage three data points for each date:
 
 <li>Create a <code>date</code> <em>constructor</em> that accepts this
 data as input and then reports a date as a list of three items. <br />
-<img src="/img/3-lists/date-constructor-reporting.png" title="date (July) (9) (2005) reporting {July, 9, 2005}" alt="date (July) (9) (2005) reporting {July, 9, 2005}" class="indent"/></li>
+<img src="/img/3-lists/date-constructor-reporting.png" title="date (July) (9) (2005) reporting {July, 9, 2005}" alt="date (July) (9) (2005) reporting {July, 9, 2005}" class="ms-4"/></li>
 
 <li>Write three <em>selector</em> blocks to retrieve the specific data
 (month, day, or year) from the inputted date. <br />
-<img src="/img/3-lists/date-constructor-in-month-selector-reporting.png" title="month from date: () reporting July" alt="month from date: () reporting July" class="indent"/>
-<img src="/img/3-lists/date-constructor-in-day-selector-reporting.png" title="day from date: () reporting 9" alt="day from date: () reporting 9" class="indent"/>
-<img src="/img/3-lists/date-constructor-in-year-selector-reporting.png" title="year from date: () reporting 2005" alt="year from date: () reporting 2005" class="indent"/></li>
+<img src="/img/3-lists/date-constructor-in-month-selector-reporting.png" title="month from date: () reporting July" alt="month from date: () reporting July" class="ms-4"/>
+<img src="/img/3-lists/date-constructor-in-day-selector-reporting.png" title="day from date: () reporting 9" alt="day from date: () reporting 9" class="ms-4"/>
+<img src="/img/3-lists/date-constructor-in-year-selector-reporting.png" title="year from date: () reporting 2005" alt="year from date: () reporting 2005" class="ms-4"/></li>
 
 <li><strong>Debug</strong> any problems with the constructor or
 selectors.</li>
@@ -80,11 +80,11 @@ Integrate your <code>date</code> ADT into the <code>contact</code> ADT.
 
 <li>Edit the <code>contact</code> constructor block definition to accept
 a birthdate as a list by using the <code>date</code> constructor. <br />
-<img src="/img/3-lists/contact-constructor-with-date-reporting.png" title="contact with name: (Betsy) address: (123 Main St., New York NY 10001) phone: (212-555-1234) birthdate: (date (July) (9) (2005)) reporting {Betsy, 123 Main St., New York NY 10001, 212-555-1234, {July, 9, 2005}}" alt="contact with name: (Betsy) address: (123 Main St., New York NY 10001) phone: (212-555-1234) birthdate: (date (July) (9) (2005)) reporting {Betsy, 123 Main St., New York NY 10001, 212-555-1234, {July, 9, 2005}}" class="indent"/></li>
+<img src="/img/3-lists/contact-constructor-with-date-reporting.png" title="contact with name: (Betsy) address: (123 Main St., New York NY 10001) phone: (212-555-1234) birthdate: (date (July) (9) (2005)) reporting {Betsy, 123 Main St., New York NY 10001, 212-555-1234, {July, 9, 2005}}" alt="contact with name: (Betsy) address: (123 Main St., New York NY 10001) phone: (212-555-1234) birthdate: (date (July) (9) (2005)) reporting {Betsy, 123 Main St., New York NY 10001, 212-555-1234, {July, 9, 2005}}" class="ms-4"/></li>
 
 <li>Create a <code>birthdate from contact</code> <em>selector</em> to
 retrieve the contact birthdate from the inputted contact.<br />
-<img src="/img/3-lists/birthdate-from-contact-reporting.png" title="birthdate from contact: (contact with name: (Betsy) address: (123 Main St., New York NY 10001) phone: (212-555-1234) birthdate: (date (July) (9) (2005))) reporting {July, 9, 2005}" alt="birthdate from contact: (contact with name: (Betsy) address: (123 Main St., New York NY 10001) phone: (212-555-1234) birthdate: (date (July) (9) (2005))) reporting {July, 9, 2005}" class="indent"/></li>
+<img src="/img/3-lists/birthdate-from-contact-reporting.png" title="birthdate from contact: (contact with name: (Betsy) address: (123 Main St., New York NY 10001) phone: (212-555-1234) birthdate: (date (July) (9) (2005))) reporting {July, 9, 2005}" alt="birthdate from contact: (contact with name: (Betsy) address: (123 Main St., New York NY 10001) phone: (212-555-1234) birthdate: (date (July) (9) (2005))) reporting {July, 9, 2005}" class="ms-4"/></li>
 
 <li>
 
@@ -113,7 +113,7 @@ that reports a list of the user's answers to these prompts:
 
 </ul>
 
-<img src="/img/3-lists/contact-constructor-with-date-with-helpers.png" title="contact with name: (ask name) address: (ask address) phone: (ask phone) birthdate: (ask birthdate)" alt="contact with name: (ask name) address: (ask address) phone: (ask phone) birthdate: (ask birthdate)" class="indent"/>
+<img src="/img/3-lists/contact-constructor-with-date-with-helpers.png" title="contact with name: (ask name) address: (ask address) phone: (ask phone) birthdate: (ask birthdate)" alt="contact with name: (ask name) address: (ask address) phone: (ask phone) birthdate: (ask birthdate)" class="ms-4"/>
 
 </p>
 :::

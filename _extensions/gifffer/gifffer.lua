@@ -1,7 +1,6 @@
 return {
   Meta = function(meta)
     if meta.gifffer then
-      print(meta.gifffer)
       quarto.doc.add_html_dependency({
         name = 'gifffer',
         scripts = {'resources/gifffer.min.js'},

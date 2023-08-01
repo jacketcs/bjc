@@ -89,7 +89,7 @@ spreadsheets with multiple tabs.</p>
 <ol start="4">
 
 <li>Experiment with different inputs to the
-<img src="/img/blocks/item.png" title="item () of &apos;list input slot&apos;" alt="item () of &apos;list input slot&apos;" class="inline nopadtb"/>
+<img src="/img/blocks/item.png" title="item () of &apos;list input slot&apos;" alt="item () of &apos;list input slot&apos;" class="inline py-0"/>
 block to access different rows in the dataset.</li>
 
 <li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
@@ -141,11 +141,11 @@ examples of table view and list view.</a></p>
 </div>
 
 ::: {style="padding-right: 50px;"}
-<img src="/img/5-algorithms/cars-table-view.png" title="report of cars dataset displayed as a table with columns and rows; the first row is the label of each column; the remaining rows each contain the data for a single record" alt="report of cars dataset displayed as a table with columns and rows; the first row is the label of each column; the remaining rows each contain the data for a single record" class="indent"/>
+<img src="/img/5-algorithms/cars-table-view.png" title="report of cars dataset displayed as a table with columns and rows; the first row is the label of each column; the remaining rows each contain the data for a single record" alt="report of cars dataset displayed as a table with columns and rows; the first row is the label of each column; the remaining rows each contain the data for a single record" class="ms-4"/>
 :::
 
 ::: {style="padding-left: 50px;"}
-<img src="/img/5-algorithms/cars-list-view.png" title="report of cars dataset displayed as a list of lists; the first list contains the labels for each of the columns shown in the table view; the remaining lists each contain the data for a single record" alt="report of cars dataset displayed as a list of lists; the first list contains the labels for each of the columns shown in the table view; the remaining lists each contain the data for a single record" class="indent"/>
+<img src="/img/5-algorithms/cars-list-view.png" title="report of cars dataset displayed as a list of lists; the first list contains the labels for each of the columns shown in the table view; the remaining lists each contain the data for a single record" alt="report of cars dataset displayed as a list of lists; the first list contains the labels for each of the columns shown in the table view; the remaining lists each contain the data for a single record" class="ms-4"/>
 :::
 :::
 :::
@@ -179,23 +179,23 @@ dataset.</li>
 
 </ul>
 
-<img title="three frame animation of the report of cars dataset displayed as a table with columns and rows; in the first frame, the fourth row of the table is highlighted and labeled &apos;record (row)&apos;; in the second frame, the third column of the table is highlighted and labeled &apos;column&apos;; in the third frame, the cell in the fourth row and third column is hightlighted and labeled &apos;field&apos;" alt="three frame animation of the report of cars dataset displayed as a table with columns and rows; in the first frame, the fourth row of the table is highlighted and labeled &apos;record (row)&apos;; in the second frame, the third column of the table is highlighted and labeled &apos;column&apos;; in the third frame, the cell in the fourth row and third column is highlighted and labeled &apos;field&apos;" class="indent" height="231" data-gifffer="/img/5-algorithms/cars-table-view-parts.gif"/>
+<img title="three frame animation of the report of cars dataset displayed as a table with columns and rows; in the first frame, the fourth row of the table is highlighted and labeled &apos;record (row)&apos;; in the second frame, the third column of the table is highlighted and labeled &apos;column&apos;; in the third frame, the cell in the fourth row and third column is hightlighted and labeled &apos;field&apos;" alt="three frame animation of the report of cars dataset displayed as a table with columns and rows; in the first frame, the fourth row of the table is highlighted and labeled &apos;record (row)&apos;; in the second frame, the third column of the table is highlighted and labeled &apos;column&apos;; in the third frame, the cell in the fourth row and third column is highlighted and labeled &apos;field&apos;" class="ms-4" height="231" data-gifffer="/img/5-algorithms/cars-table-view-parts.gif"/>
 :::
 
 ::: forYouToDo
 <ol start="8">
 
 <li>Build
-<img src="/img/5-algorithms/record-of-table.png" title="record () of table ()" alt="record () of table ()" class="inline nopadtb"/>
+<img src="/img/5-algorithms/record-of-table.png" title="record () of table ()" alt="record () of table ()" class="inline py-0"/>
 and
-<img src="/img/5-algorithms/field-of-record.png" title="field () of record ()" alt="field () of record ()" class="inline nopadtb"/>
+<img src="/img/5-algorithms/field-of-record.png" title="field () of record ()" alt="field () of record ()" class="inline py-0"/>
 blocks to make it easier to think about the structure of the table.</li>
 
 <li>
 
 <img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
 Build
-<img src="/img/5-algorithms/column-of-table.png" title="column () of table ()" alt="column () of table ()" class="inline nopadtb"/>
+<img src="/img/5-algorithms/column-of-table.png" title="column () of table ()" alt="column () of table ()" class="inline py-0"/>
 to report just one column of your dataset.
 
 ::: endnote
@@ -249,7 +249,7 @@ other projects.
 ::: endnote
 <p>You can see the column number by holding your mouse pointer over the
 letter at the top of the column in table view.<br />
-<img src="/img/5-algorithms/column-number.png" title="image of the top of the table view for the cars dataset with the mouse pointer over the top of the second column; the columns are now labeled A, 2 (where the pointer is), C, D, etc." alt="image of the top of the table view for the cars dataset with the mouse pointer over the top of the second column; the columns are now labeled A, 2 (where the pointer is), C, D, etc." class="indent" height="120"/></p>
+<img src="/img/5-algorithms/column-number.png" title="image of the top of the table view for the cars dataset with the mouse pointer over the top of the second column; the columns are now labeled A, 2 (where the pointer is), C, D, etc." alt="image of the top of the table view for the cars dataset with the mouse pointer over the top of the second column; the columns are now labeled A, 2 (where the pointer is), C, D, etc." class="ms-4" height="120"/></p>
 
 <p>You may need to use <code>map</code>, <code>keep</code>, or
 <code>combine</code> to answer your question.
@@ -381,28 +381,26 @@ in the previous problem.</li>
 
 Answer a question like "What's the model of the car with the highest
 MPG?" by building a
-<img src="/img/5-algorithms/row-with-max-of-table.png" title="row with maximum in column () of table ()" alt="row with maximum in column () of table ()" class="inline nopadtb"/>
+<img src="/img/5-algorithms/row-with-max-of-table.png" title="row with maximum in column () of table ()" alt="row with maximum in column () of table ()" class="inline py-0"/>
 block.
 
 ::: endnote
 ```{=html}
 <!--This gives away the answer. <p><a href="#hint-rowwithmax" data-bs-toggle="collapse" title="See the row with maximum in column () of table () block in action.">See <code>row with maximum in column () of table ()</code> in action.</a></p>
-<div id="hint-rowwithmax" class="collapse"><img class="indent" src="/img/5-algorithms/row-with-max-of-table-reporting.png" alt="" title="" /></div>-->
+<div id="hint-rowwithmax" class="collapse"><img class="ms-4" src="/img/5-algorithms/row-with-max-of-table-reporting.png" alt="" title="" /></div>-->
 ```
 <p><a href="#hint-build" data-bs-toggle="collapse" title="Click for a hint about how to build row with maximum in column () of table ().">Click
 for a hint about how to build <code>row with maximum in column () of
 table ()</code>.</a></p>
 
 ::: {#hint-build .collapse}
-::: comment
-BH please review the alt text on all five images. --MF, 6/26/19
-:::
+
 
 <p>One way to build a
-<img src="/img/5-algorithms/maximum-of-list.png" title="maximum of &apos;list input slot&apos;" alt="maximum of &apos;list input slot&apos;" class="inline nopadtb"/>
+<img src="/img/5-algorithms/maximum-of-list.png" title="maximum of &apos;list input slot&apos;" alt="maximum of &apos;list input slot&apos;" class="inline py-0"/>
 function for a simple list (that isn't a table) is shown below. You can
 build a
-<img src="/img/5-algorithms/maximum.png" title="maximum of () and ()" alt="maximum of () and ()" class="inline nopadtb"/>
+<img src="/img/5-algorithms/maximum.png" title="maximum of () and ()" alt="maximum of () and ()" class="inline py-0"/>
 block that compares two inputs and use it with <code>combine</code> to
 find the maximum of a whole list.<br />
 <img src="/img/5-algorithms/max-operator-definition.png" title="maximum of (a) and (b) {
@@ -415,12 +413,12 @@ if (a &gt; b) {
 report (a)
 }
 report (b)
-}" class="indent"/>
+}" class="ms-4"/>
 <img src="/img/5-algorithms/max-of-list-definition.png" title="maximum of (data) {
 report (combine (data) using (maximum of ( ) and ( )))
 }" alt="maximum of (data) {
 report (combine (data) using (maximum of ( ) and ( )))
-}" class="indent"/><br /> You can use a similar approach here by first
+}" class="ms-4"/><br /> You can use a similar approach here by first
 building a
 <img src="/img/5-algorithms/row-with-max-between.png" title="row with maximum in column () between row () and row ()" alt="row with maximum in column () between row () and row ()"/>
 that compares a specific field (column) for two rows and reports the row

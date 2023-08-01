@@ -7,6 +7,7 @@ project:
    - "/llab/"
    - "/prog/"
    - "/img/"
+  
 
 filters:
   - titling
@@ -41,6 +42,8 @@ website:
             file: unit-5/index.qmd
           - text: "Unit 6: How Computers Work"
             file: unit-6/index.qmd
+      - text: "Help Queue"
+        href: https://help.gigamonkeys.com/
       - text: "Snap<em>!</em>"
         href: https://snap.berkeley.edu/snap/snap.html
 
@@ -68,15 +71,14 @@ website:
       style: "docked"
       contents: create-task
 
-
 format:
   html:
-    css: /css/bjc.css
-    pagetitle: "{{< meta subtitle >}}{{< meta title >}} | {{< var title-fix >}}"
+    pagetitle: "{{< meta subtitle >}} | {{< var title-fix >}}"
+    callout-appearance: minimal
     toc: true
-    theme:
-      light: cosmo
-      dark: [cosmo, /css/theme-dark.scss]
+    theme:   
+      light: bjc.scss
+      dark: [theme-dark.scss, bjc.scss]
     include-in-header:
       - text: |
           <script type="text/javascript" src="/llab/loader.js"></script>

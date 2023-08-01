@@ -108,7 +108,7 @@ move to block you. So what you have to find is a <em>fork: </em>two
 triples in which you have one appearance and your opponent has none, and
 which have a free square in common. This is much easier to see with a
 picture:<br />
-<img src="/img/hof/fork.png" title="board with fork" alt="board with fork" class="indent"/><br />
+<img src="/img/hof/fork.png" title="board with fork" alt="board with fork" class="ms-4"/><br />
 
 ::: endnote
 Player X opened the game with the standard opening move, in the center.
@@ -131,7 +131,7 @@ them in a variable called <var>singles</var>.</li>
 
 <li>Make one big list of all the letters and numbers from the
 triples:<br />
-<img src="/img/hof/ttt-flatten.png" title="script variable(atoms); set (atoms) to (combine with(append()()) items of (singles))" alt="script variable(atoms); set (atoms) to (combine with(append()()) items of (singles))" class="indent"/><br /></li>
+<img src="/img/hof/ttt-flatten.png" title="script variable(atoms); set (atoms) to (combine with(append()()) items of (singles))" alt="script variable(atoms); set (atoms) to (combine with(append()()) items of (singles))" class="ms-4"/><br /></li>
 
 ::: endnote
 "Atom" is a technical term for a value that isn't a list. A list

@@ -1,6 +1,7 @@
 ---
 title: "Modeling Language"
 subtitle: "Unit 1 Optional Project"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 order: 5
 ---
 
@@ -39,7 +40,7 @@ order: 5
 
 <li>Try out each block to see what it does. Then change these lists however you like to include your own nouns, verbs, etc.</li>
 
-<li>Create a reporter called <code>simple sentence</code> that reports a simple sentence using the <code>random determiner</code>, <code>random noun</code>, and <code>random verb</code> blocks. <img src="/img/1-introduction/simple-sentence-reporting.png" title="simple sentence reporting &apos;a boy jumps&apos;" alt="simple sentence reporting &apos;a boy jumps&apos;" class="indent"/></li>
+<li>Create a reporter called <code>simple sentence</code> that reports a simple sentence using the <code>random determiner</code>, <code>random noun</code>, and <code>random verb</code> blocks. <img src="/img/1-introduction/simple-sentence-reporting.png" title="simple sentence reporting &apos;a boy jumps&apos;" alt="simple sentence reporting &apos;a boy jumps&apos;" class="ms-4"/></li>
 
 <li>
 
@@ -65,7 +66,7 @@ Using <code>noun phrase</code> to define <code>prepositional phrase</code> is a 
 These phrases will be grammatically correct, but they won't necessarily make sense. For example, <code>noun phrase</code> might generate "a tired pizza."
 :::
 
-<li>Then, make a reporter <code>complicated sentence</code> that combines a noun phrase, a verb phrase, and a prepositional phrase. <img src="/img/1-introduction/complicated-sentence-reporting.png" title="complicated sentence reporting &apos;my silly elephant in front of your tired elephant sits down quickly&apos;" alt="complicated sentence reporting &apos;my silly elephant in front of your tired elephant sits down quickly&apos;" class="indent"/></li>
+<li>Then, make a reporter <code>complicated sentence</code> that combines a noun phrase, a verb phrase, and a prepositional phrase. <img src="/img/1-introduction/complicated-sentence-reporting.png" title="complicated sentence reporting &apos;my silly elephant in front of your tired elephant sits down quickly&apos;" alt="complicated sentence reporting &apos;my silly elephant in front of your tired elephant sits down quickly&apos;" class="ms-4"/></li>
 
 </ol>
 :::

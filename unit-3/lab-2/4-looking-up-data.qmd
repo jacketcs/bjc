@@ -29,7 +29,7 @@ this page in a TIF, and Mary will review/edit. --MF, 4/9/19</li>
 <p><strong>On this page,</strong> you will develop code for a "Find
 Contact" button to locate contacts in the
 list<!--develop An "Find Contact" button for accessing specific contacts in your <var>contact list</var>-->.<br />
-<img src="/img/3-lists/find-contacts-with-name-Alphie-reporting.png" title="find contacts with name: (Alphie) reporting" alt="find contacts with name: (Alphie) reporting" class="indent"/></p>
+<img src="/img/3-lists/find-contacts-with-name-Alphie-reporting.png" title="find contacts with name: (Alphie) reporting" alt="find contacts with name: (Alphie) reporting" class="ms-4"/></p>
 :::
 
 ::: sidenote

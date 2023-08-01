@@ -88,7 +88,7 @@ Now write
 <img src="/img/5-algorithms/winning-triple-for-player.png" title="winning triple for player ()" alt="winning triple for player ()"/>.
 It should report the first triple it finds that contains a place where
 the player could win on the next move.<br />
-<img src="/img/5-algorithms/winning-triple-for-player-reporting.png" title="winning triple for player reporting {3, O, O}" alt="winning triple for player reporting {3, O, O}" class="indent"/>
+<img src="/img/5-algorithms/winning-triple-for-player-reporting.png" title="winning triple for player reporting {3, O, O}" alt="winning triple for player reporting {3, O, O}" class="ms-4"/>
 
 </li>
 
@@ -108,8 +108,8 @@ block. Make sure it works even if there is no winning square.</li>
 for a hint about <code>winning square</code>.</a>
 
 ::: {#hint-winning-square .collapse}
-<img src="/img/blocks/is-a-number.png" title="is () a number?" alt="is () a number?" class="indent"/>
-<img src="/img/blocks/is-a-list.png" title="is () a list?" alt="is () a list?" class="indent"/>
+<img src="/img/blocks/is-a-number.png" title="is () a number?" alt="is () a number?" class="ms-4"/>
+<img src="/img/blocks/is-a-list.png" title="is () a list?" alt="is () a list?" class="ms-4"/>
 :::
 :::
 

@@ -30,7 +30,7 @@ order: 3
 ::: endnote
 <p>Have it pick its random number just from 1 to 3 to make the bug occur more often.</p>
 
-<p>If you want to add more script variables, use the right-pointing triangle. (The left triangle will remove them.)<br /> <img title="clicking triangles to add and remove script variables" alt="clicking triangles to add and remove script variables" class="indent" data-gifffer="/img/2-complexity/script-variables-adding.gif" height="70"/></p>
+<p>If you want to add more script variables, use the right-pointing triangle. (The left triangle will remove them.)<br /> <img title="clicking triangles to add and remove script variables" alt="clicking triangles to add and remove script variables" class="ms-4" data-gifffer="/img/2-complexity/script-variables-adding.gif" height="70"/></p>
 :::
 
 <li>Now reopen your U2L1-NumberGuessing project. Make sure your version doesn't have the same bug.</li>

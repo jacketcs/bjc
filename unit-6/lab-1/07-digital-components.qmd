@@ -1,5 +1,5 @@
 ---
-title: "The Digital Domain: Components"
+title: "Page 7: The Digital Domain: Components"
 subtitle: "Unit 6, Lab 1, Page 7"
 order: 7
 ---
@@ -20,7 +20,7 @@ memory, and input/output (I/O) devices."</p>
 
 <p>In the early days of computers, it was easy to point out the huge
 racks of equipment that contained each of those three components:<br />
-<img src="/img/6-computers/pdp-10.jpg" title="Digital Equipment Corporation PDP-10 Processor and Memory" alt="Digital Equipment Corporation PDP-10 Processor and Memory" class="indent" width="400px"/>
+<img src="/img/6-computers/pdp-10.jpg" title="Digital Equipment Corporation PDP-10 Processor and Memory" alt="Digital Equipment Corporation PDP-10 Processor and Memory" class="ms-4" width="400px"/>
 <img src="/img/6-computers/pdp-10-disks.jpg" title="Digital Equipment Corporation PDP-10 Magnetic tape drives, disk drives, and other I/O devices" alt="Digital Equipment Corporation PDP-10 Magnetic tape drives, disk drives, and other I/O devices" class="inline" width="360px"/></p>
 
 <p>These are pictures of a powerful computer from the 1970s. Each of the
@@ -67,7 +67,7 @@ processor:</strong> The "brain" of the computer where programs are run.
 It is one of the most expensive parts of the hardware.
 <!--Its speed is measured in gigahertz (GHz).--> Modern CPUs can perform
 multiple tasks simultaneously. <br />
-<img src="/img/6-computers/Hardware_img/CPU.jpg" title="CPU" alt="CPU" class="indent" height="150"/><br />
+<img src="/img/6-computers/Hardware_img/CPU.jpg" title="CPU" alt="CPU" class="ms-4" height="150"/><br />
 <!--<a href="https://en.wikipedia.org/wiki/Central_processing_unit#/media/File:Intel_80486DX2_bottom.jpg" target="_blank">-->
 <small>Image credit: Wikipedia user Solipsist</small><!--</a>--></p>
 
@@ -81,7 +81,7 @@ multiple tasks simultaneously. <br />
 high-speed, short-term memory. It temporarily stores data and
 instructions for programs that run on the computer.
 <!--Its capacity is measured in gigabytes (GB) and its speed is measured in megahertz (MHz).--><br />
-<img src="/img/6-computers/Hardware_img/RAM.jpg" alt="RAM" class="indent" height="200"/><br />
+<img src="/img/6-computers/Hardware_img/RAM.jpg" alt="RAM" class="ms-4" height="200"/><br />
 <!--<a href="https://en.wikipedia.org/wiki/Random-access_memory#/media/File:Memory_module_DDRAM_20-03-2006.jpg" target="_blank">-->
 <small>Image credit: Wikipedia user Cyberdex</small><!--</a>--></p>
 
@@ -94,7 +94,7 @@ instructions for programs that run on the computer.
 <p><strong>Expansion cards:</strong> Circuit boards that can be inserted
 to add functionality to a computer system (for example: network, sound,
 or video cards). <br />
-<img src="/img/6-computers/Hardware_img/ExpansionCard.jpg" title="Expansion Card" alt="Expansion Card" class="indent" height="200"/><br />
+<img src="/img/6-computers/Hardware_img/ExpansionCard.jpg" title="Expansion Card" alt="Expansion Card" class="ms-4" height="200"/><br />
 <!--<a href="https://en.wikipedia.org/wiki/Expansion_card#/media/File:Chassis-plans-Digital-IO-Card.jpg" target="_blank">-->
 <small>Image credit: Wikipedia user Rackmount-guy</small><!--</a>--></p>
 
@@ -128,7 +128,7 @@ kinds: mechanical drives that use a mechanical arm to read and write
 data on a rotating disk (shown below), and "solid state" drives that
 have no moving parts.
 <!--Storage capacity is measured in gigabytes (GB)-->.<br />
-<img src="/img/6-computers/Hardware_img/HardDiskDrive.gif" title="Hard drive" alt="Hard drive" class="indent" height="200"/><br />
+<img src="/img/6-computers/Hardware_img/HardDiskDrive.gif" title="Hard drive" alt="Hard drive" class="ms-4" height="200"/><br />
 <!--<a href="https://en.wikipedia.org/wiki/File:HardDisk1.ogv" target="_blank">-->
 <small>Video credit: Wikipedia user Peter17</small><!--</a>--></p>
 
@@ -140,7 +140,7 @@ have no moving parts.
 
 <p><strong>Motherboard:</strong> A circuit board that holds and connects
 various components of the computer and allows their communication.<br />
-<img src="/img/6-computers/Hardware_img/Motherboard.JPG" title="Motherboard" alt="Motherboard" class="indent" height="200"/><br />
+<img src="/img/6-computers/Hardware_img/Motherboard.JPG" title="Motherboard" alt="Motherboard" class="ms-4" height="200"/><br />
 <!--<a href="https://en.wikipedia.org/wiki/Motherboard#/media/File:Intel_D945GCPE_Board.JPG" target="_blank">-->
 <small>Image credit: Wikipedia user
 Julianprescott2604juuly</small><!--</a>-->.</p>
@@ -212,7 +212,7 @@ credit:<!--<a href="https://en.wikipedia.org/wiki/Computer_hardware#/media/File:
 Wikipedia user HereToHelp</small><!--</a>-->
 :::
 
-<img src="/img/6-computers/Hardware_img/ComputerComponents.png" title="Computer Components" alt="Computer Components" class="indent" height="400" usemap="#Map" style="min-width:665px;position:relative;"/>
+<img src="/img/6-computers/Hardware_img/ComputerComponents.png" title="Computer Components" alt="Computer Components" class="ms-4" height="400" usemap="#Map" style="min-width:665px;position:relative;"/>
 
 </ol>
 
@@ -303,7 +303,7 @@ don't repeat and, if so, how to do it.</li>
 </ol>
 :::
 
-<img src="/img/6-computers/hardware-quiz.jpg" title="image of computer hardware component quiz with Alonzo saying, &apos;Click the number for the CPU.&apos;" alt="image of computer hardware component quiz with Alonzo saying, &apos;Click the number for the CPU.&apos;" class="indent"/>
+<img src="/img/6-computers/hardware-quiz.jpg" title="image of computer hardware component quiz with Alonzo saying, &apos;Click the number for the CPU.&apos;" alt="image of computer hardware component quiz with Alonzo saying, &apos;Click the number for the CPU.&apos;" class="ms-4"/>
 
 </li>
 

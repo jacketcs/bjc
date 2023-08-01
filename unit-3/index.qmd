@@ -1,5 +1,8 @@
-# Data Structures
+---
+title: "Unit 3: Data Structures"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
+---
 
 In Unit 3, we learn about creating data structures in Snap, or practices for creating well structured code in Snap.
 
-We'll learn about algorithms, debugging tipcs, how to make readable code among the various things that you do, and the state of AI and computers.
+We'll learn about algorithms, debugging tips, how to make readable code among the various things that you do, and the state of AI and computers.

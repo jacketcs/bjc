@@ -69,7 +69,7 @@ address, and phone number) separately.
 <code>answer</code> blocks together with script variables</strong> to
 request and then store each piece of user input until you are ready to
 report them all together using <code>contact</code>.<br />
-<img src="/img/3-lists/contact-constructor-with-variables.png" title="contact with name: (name) address: (address) phone: (phone)" alt="contact with name: (name) address: (address) phone: (phone)" class="indent"/></li>
+<img src="/img/3-lists/contact-constructor-with-variables.png" title="contact with name: (name) address: (address) phone: (phone)" alt="contact with name: (name) address: (address) phone: (phone)" class="ms-4"/></li>
 
 <li><strong><em>Another way</em> that makes for cleaner code is to use
 <em>abstraction</em>: create helper blocks</strong> (such as
@@ -78,7 +78,7 @@ and
 <img src="/img/3-lists/ask-phone.png" title="ask phone" alt="ask phone"/>)
 that each ask the user for one piece of data and report their answer to
 the <code>contact</code> constructor.<br />
-<img src="/img/3-lists/contact-constructor-with-helpers.png" title="contact with name: (ask name) address: (ask address) phone: (ask phone)" alt="contact with name: (ask name) address: (ask address) phone: (ask phone)" class="indent"/><br />
+<img src="/img/3-lists/contact-constructor-with-helpers.png" title="contact with name: (ask name) address: (ask address) phone: (ask phone)" alt="contact with name: (ask name) address: (ask address) phone: (ask phone)" class="ms-4"/><br />
 Each of these helper blocks will <code>ask</code> the user a specific
 question (like, "What is the contact's address?") and then report the
 user's <code>answer</code>.</li>
@@ -95,7 +95,7 @@ every time. <!--<br />
 
 ```{=html}
 <!--<div id="hint-1" class="collapse">
-<img class="indent" src="/img/3-lists/ask-name-definition.png" alt="ask name block definition" title="ask name block definition" />
+<img class="ms-4" src="/img/3-lists/ask-name-definition.png" alt="ask name block definition" title="ask name block definition" />
 </div>-->
 ```
 :::

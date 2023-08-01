@@ -1,3 +1,6 @@
-# Introduction to Programming
+---
+title: "Unit 4: How the Internet Works"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
+---
 
-Unit 1 is essentially an introduction to the programming that you will be working with throughout the year. In this unit, you'll learn how to interact with sprites, how to create blocks, and iteration. In addition to these computational ideas, you'll learn about privacy in the physical and digital realm
+In Unit 4, we learn how the internet works... we'll have less coding in this unit, but the content that you learn will be important for multiple choice questions in this course.

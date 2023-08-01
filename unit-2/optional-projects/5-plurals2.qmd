@@ -1,6 +1,7 @@
 ---
 title: "Modeling Language: Plurals, Part 2"
-subtitle: "Unit , Lab , Page 5"
+subtitle: "Unit 2 Optional Project"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 order: 5
 ---
 
@@ -68,7 +69,7 @@ Because you know what
 <img src="/img/2-complexity/keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list.png" title="keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list" alt="keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list"/>
 does, you can use its output as input to a test of <code>plural</code>
 or <code>plural-h</code>:<br />
-<img src="/img/2-complexity/map-plural(with-input)-over-(keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list).png" title="map-plural(with-input)-over-(keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list)" alt="map-plural(with-input)-over-(keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list)" class="indent"/>
+<img src="/img/2-complexity/map-plural(with-input)-over-(keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list).png" title="map-plural(with-input)-over-(keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list)" alt="map-plural(with-input)-over-(keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list)" class="ms-4"/>
 :::
 :::
 
@@ -89,14 +90,13 @@ separately with its own procedure (its own block), and then have the
 those specialists. That is, instead of coding every little detail
 directly in <code>plural</code>, it is cleaner and clearer to make
 <code>plural</code> look something like this.<br />
-<img src="/img/2-complexity/plural-abstract-definition.png" title="abstract definition of plural: if h = last letter of word, report h-case plural; if y = last letter of word, report y-case plural; if some other case, use a block that specializes in that case; etc.; else report join word s" alt="abstract definition of plural: if h = last letter of word, report h-case plural; if y = last letter of word, report y-case plural; if some other case, use a block that specializes in that case; etc.; else report join word s" class="indent noshadow"/></p>
+<img src="/img/2-complexity/plural-abstract-definition.png" title="abstract definition of plural: if h = last letter of word, report h-case plural; if y = last letter of word, report y-case plural; if some other case, use a block that specializes in that case; etc.; else report join word s" alt="abstract definition of plural: if h = last letter of word, report h-case plural; if y = last letter of word, report y-case plural; if some other case, use a block that specializes in that case; etc.; else report join word s" class="ms-4 noshadow"/></p>
 
-<p>Showing<a name="abstraction" class="anchor"> </a>the
-<em>structure</em> of the method---just the overall strategy---in the
+Showing the <em>structure</em> of the method---just the overall strategy---in the
 "top-level" block and leaving the details to separate blocks is one part
 of an important computer science idea called <em>abstraction</em>.
 Abstraction keeps your code clear, readable, and more easily debugged.
-It will also help your code be more flexible.</p>
+It will also help your code be more flexible.
 :::
 
 <li>When you trust your new specialist block, edit <code> plural</code>
@@ -112,7 +112,7 @@ and
 ::: endnote
 Remember, any specialist can make mistakes if it's asked to do a job
 that isn't its specialty. For example:<br />
-<img src="/img/2-complexity/plural_y-mouse-with-(wrong)result.png" title="plural-y (mouse) reporting &apos;mousies&apos;" alt="plural-y (mouse) reporting &apos;mousies&apos;" class="indent"/><br />
+<img src="/img/2-complexity/plural_y-mouse-with-(wrong)result.png" title="plural-y (mouse) reporting &apos;mousies&apos;" alt="plural-y (mouse) reporting &apos;mousies&apos;" class="ms-4"/><br />
 Make sure <code>plural</code> gives <code>plural-y</code> only words it
 knows how to handle correctly.
 :::
@@ -157,10 +157,10 @@ space at the end.
 ::: endnote
 <p>Right now, if <code>plural</code> is given a word with a space at the
 end, it leaves that space in the plural:<br />
-<img src="/img/2-complexity/plural-bulldog[space]-with-result(bulldog[space]s).png" title="plural (bulldog ) reporting &apos;bulldog s&apos;. There is a space after &apos;bulldog&apos; in the input and a space between &apos;bulldog&apos; and &apos;s&apos; in the reported value." alt="plural (bulldog ) reporting &apos;bulldog s&apos;. There is a space after &apos;bulldog&apos; in the input and a space between &apos;bulldog&apos; and &apos;s&apos; in the reported value." class="indent"/><br />
+<img src="/img/2-complexity/plural-bulldog[space]-with-result(bulldog[space]s).png" title="plural (bulldog ) reporting &apos;bulldog s&apos;. There is a space after &apos;bulldog&apos; in the input and a space between &apos;bulldog&apos; and &apos;s&apos; in the reported value." alt="plural (bulldog ) reporting &apos;bulldog s&apos;. There is a space after &apos;bulldog&apos; in the input and a space between &apos;bulldog&apos; and &apos;s&apos; in the reported value." class="ms-4"/><br />
 Figure out how to handle this special case and edit <code>plural</code>
 so that the result is<br />
-<img src="/img/2-complexity/plural-bulldog[space]-with-result(bulldogs).png" title="plural (bulldog ) reporting &apos;bulldogs&apos;. There is a space after &apos;bulldog&apos; in the input but no space in the reported value." alt="plural (bulldog ) reporting &apos;bulldogs&apos;. There is a space after &apos;bulldog&apos; in the input but no space in the reported value." class="indent"/><br />
+<img src="/img/2-complexity/plural-bulldog[space]-with-result(bulldogs).png" title="plural (bulldog ) reporting &apos;bulldogs&apos;. There is a space after &apos;bulldog&apos; in the input but no space in the reported value." alt="plural (bulldog ) reporting &apos;bulldogs&apos;. There is a space after &apos;bulldog&apos; in the input but no space in the reported value." class="ms-4"/><br />
 You already have a block that <em>specializes</em> in making plurals of
 words that <em>don't</em> have a space at the end. <em>Use</em> it.</p>
 :::
@@ -186,7 +186,7 @@ another kind of abstraction called <em>data-directed programming.</em>
 
 Start by making a list of <em>key-value pairs</em>, with last letters as
 the keys and specialist procedures as the values:<br />
-<img src="/img/2-complexity/plural-specialists-list.png" title="set (plural specialists) to (list (list (h) (ringed plural-h ( ) block)) (list (y) (ringed plural-y ( ) block)) (list (f) (ringed plural-f ( ) block)) (list (x) (ringed (join ( ) (es)) block)) (list (...) (...)))" alt="set (plural specialists) to (list (list (h) (ringed plural-h ( ) block)) (list (y) (ringed plural-y ( ) block)) (list (f) (ringed plural-f ( ) block)) (list (x) (ringed (join ( ) (es)) block)) (list (...) (...)))" class="indent"/><br />
+<img src="/img/2-complexity/plural-specialists-list.png" title="set (plural specialists) to (list (list (h) (ringed plural-h ( ) block)) (list (y) (ringed plural-y ( ) block)) (list (f) (ringed plural-f ( ) block)) (list (x) (ringed (join ( ) (es)) block)) (list (...) (...)))" alt="set (plural specialists) to (list (list (h) (ringed plural-h ( ) block)) (list (y) (ringed plural-y ( ) block)) (list (f) (ringed plural-f ( ) block)) (list (x) (ringed (join ( ) (es)) block)) (list (...) (...)))" class="ms-4"/><br />
 
 ::: narrowpurple
 To make the second item of each small list, find the block you want, put
@@ -200,11 +200,7 @@ empty input slot where you want the word to go.
 
 <li>
 
-::: comment
-FYI, this breaks the rule of not teaching more than one thing at a time,
-we are teaching key-value pairing, FIND FIRST, and CALL. As a result,
-you've defaulted to hand-holding here. --MF, 1/11/21
-:::
+
 
 Then in your <code>plural</code> procedure, you can replace most of the
 <code>if</code> blocks with<br />
@@ -216,7 +212,7 @@ report (call (item (2) of (pair)) with inputs (word))
 set (pair) to (find first item (ringed ((item (1) of ( )) = (last letter of (word)))) in (plural specialists))
 if (is (pair) a (list)?) {
 report (call (item (2) of (pair)) with inputs (word))
-}" class="indent"/><br />
+}" class="ms-4"/><br />
 
 ::: narrowpurple
 ::: todo
@@ -233,11 +229,7 @@ So I dragged some of that content back into U3 and also here. --MF,
 <code>keep</code>, but it reports only the first item that's found. It
 is equivalent to <code>item (1) of (keep)</code>.</p>
 
-::: commentBig
-Ringifying is unclear here. What does it mean to have the ring? What
-does it mean not to have it? If they don't know, they are "just doing
-what the book says to." --MF, 1/11/21
-:::
+
 
 <p>The <code>call</code> block in the palette doesn't include the
 "<code>with inputs</code>" in the picture; when you click on its right
@@ -261,20 +253,17 @@ the second input?
 
 <li>
 
-::: comment
-I think a hint here about testing all trailing substrings would be
-helpful. Also, a definition of the term would be nice. --MF, 1/11/21
-:::
+
 
 There's no reason the keys have to be single letters. Modify the code in
 <code>plural</code> so that it tests all <em>trailing substrings</em> of
 the word against the specialist list. That is, if the word is "ditch,"
 you'd look in the specialist list for "ditch," then for "itch," then
 "tch," "ch," and finally, if nothing else is found, "h." You'd put<br />
-<img src="/img/2-complexity/ch-dispatch.png" title="list (ch) (ringed block (join ( ) (es)))" alt="list (ch) (ringed block (join ( ) (es)))" class="indent"/><br />
+<img src="/img/2-complexity/ch-dispatch.png" title="list (ch) (ringed block (join ( ) (es)))" alt="list (ch) (ringed block (join ( ) (es)))" class="ms-4"/><br />
 in the list, and then words ending "ch" would have "es" added. This
 mechanism is very general; it works even for special cases such as<br />
-<img src="/img/2-complexity/child-dispatch.png" title="list (child) (ringified (word (children)))" alt="list (child) (ringified (word (children)))" class="indent"/><br />
+<img src="/img/2-complexity/child-dispatch.png" title="list (child) (ringified (word (children)))" alt="list (child) (ringified (word (children)))" class="ms-4"/><br />
 (You'll have to define the <code>word</code> function that just reports
 its input; it's needed because you can't type letters directly into a
 ring.) <em>Now</em> you have a <em>really</em> uncluttered
@@ -285,17 +274,13 @@ English, if you make a different specialist list.
 
 <li>
 
-::: comment
-Here is where you really start to lose me. I'm not actually building
-this in Snap<em>!</em>now, as I've spent far too long on this already,
-but the text doesn't explain this adequately for me. --MF, 1/11/21
-:::
+
 
 If you modify the trailing-substring test so that instead of giving up
 if it can't find the last letter of the word as a key, it goes one step
 further and looks for an <em>empty</em> key in the specialist list, and
 you add<br />
-<img src="/img/2-complexity/default-dispatch.png" title="(item ( ) (ringed (join ( ) (s))))" alt="(item ( ) (ringed (join ( ) (s))))" class="indent"/><br />
+<img src="/img/2-complexity/default-dispatch.png" title="(item ( ) (ringed (join ( ) (s))))" alt="(item ( ) (ringed (join ( ) (s))))" class="ms-4"/><br />
 to the list, then you can be sure that every possible word will match
 that, if nothing else, so you don't need the <code>if</code> any more.
 Your <code>plural</code> block can now be just one-line: <code>report
@@ -306,7 +291,7 @@ Your <code>plural</code> block can now be just one-line: <code>report
 <li>For an extra challenge, modify your trailing-substring test so that
 a plus sign in the key matches any vowel (it will serve as a wild-card
 character), so you can do this:<br />
-<img src="/img/2-complexity/match-vowels.png" title="list (...) (list (+y) (ringed (join ( ) (s)))) (list (y) (ringed (join (all but last letter of ( )) (ies)))) (...)" alt="list (...) (list (+y) (ringed (join ( ) (s)))) (list (y) (ringed (join (all but last letter of ( )) (ies)))) (...)" class="indent"/></li>
+<img src="/img/2-complexity/match-vowels.png" title="list (...) (list (+y) (ringed (join ( ) (s)))) (list (y) (ringed (join (all but last letter of ( )) (ies)))) (...)" alt="list (...) (list (+y) (ringed (join ( ) (s)))) (list (y) (ringed (join (all but last letter of ( )) (ies)))) (...)" class="ms-4"/></li>
 
 </ol>
 

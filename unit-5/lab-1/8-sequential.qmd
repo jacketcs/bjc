@@ -68,7 +68,7 @@ CSN-2.A part b, CSN-2.A.5
 :::
 
 How long will this <em>sequential</em> program take to run?<br />
-<img src="/img/5-algorithms/quizlet-sequential.png" title="wait (6), wait (4), wait (8)" alt="wait (6), wait (4), wait (8)" class="indent"/>
+<img src="/img/5-algorithms/quizlet-sequential.png" title="wait (6), wait (4), wait (8)" alt="wait (6), wait (4), wait (8)" class="ms-4"/>
 :::
 
 ::: {.choice identifier="c1"}
@@ -146,9 +146,9 @@ CSN-2.A part b, CSN-2.A.6
 :::
 
 How long will this <em>parallel</em> program take to run?<br />
-<img src="/img/5-algorithms/quizlet-parallel-1.png" title="broadcast (go) and wait, wait (6) secs" alt="broadcast (go) and wait, wait (6) secs" class="indent"/>
-<img src="/img/5-algorithms/quizlet-parallel-2.png" title="when I receive (go): wait (4) secs" alt="when I receive (go): wait (4) secs" class="indent"/>
-<img src="/img/5-algorithms/quizlet-parallel-3.png" title="when I receive (go): wait (8) secs" alt="when I receive (go): wait (8) secs" class="indent"/>
+<img src="/img/5-algorithms/quizlet-parallel-1.png" title="broadcast (go) and wait, wait (6) secs" alt="broadcast (go) and wait, wait (6) secs" class="ms-4"/>
+<img src="/img/5-algorithms/quizlet-parallel-2.png" title="when I receive (go): wait (4) secs" alt="when I receive (go): wait (4) secs" class="ms-4"/>
+<img src="/img/5-algorithms/quizlet-parallel-3.png" title="when I receive (go): wait (8) secs" alt="when I receive (go): wait (8) secs" class="ms-4"/>
 :::
 
 ::: {.choice identifier="c1"}
@@ -256,7 +256,7 @@ limit to how much you can speed up a task by adding
 <p>A <strong>processor</strong> is a piece of circuitry inside a
 computer that processes the instructions from computer programs.</p>
 
-<p class="center">
+<p>
 
 <img src="/img/6-computers/Hardware_img/CPU_small.jpg" title="CPU" alt="CPU"/>
 

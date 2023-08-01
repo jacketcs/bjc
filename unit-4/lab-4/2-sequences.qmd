@@ -147,11 +147,11 @@ sequences:
 
 <li>A reporter that accepts a string of text as input and translates
 that text into a binary sequence:<br />
-<img src="/img/6-computers/translate-text-to-binary.png" title="translate text () to binary sequence" alt="translate text () to binary sequence" class="indent"/></li>
+<img src="/img/6-computers/translate-text-to-binary.png" title="translate text () to binary sequence" alt="translate text () to binary sequence" class="ms-4"/></li>
 
 <li>A reporter that accepts a binary sequence as input and translates it
 into text:<br />
-<img src="/img/6-computers/translate-binary-to-text.png" title="translate binary sequence () to text" alt="translate binary sequence () to text" class="indent"/></li>
+<img src="/img/6-computers/translate-binary-to-text.png" title="translate binary sequence () to text" alt="translate binary sequence () to text" class="ms-4"/></li>
 
 <li>
 
@@ -164,7 +164,7 @@ drawn.
 A command block that accepts a binary sequence as input and draws a
 black and white image on the stage where each 0 in the sequence becomes
 a white "pixel" and each 1 becomes a black "pixel." <br />
-<img src="/img/6-computers/translate-binary-to-image.png" title="translate binary sequence () to B&amp;W image that is () pixels wide and scaled by factor of ()" alt="translate binary sequence () to B&amp;W image that is () pixels wide and scaled by factor of ()" class="indent"/>
+<img src="/img/6-computers/translate-binary-to-image.png" title="translate binary sequence () to B&amp;W image that is () pixels wide and scaled by factor of ()" alt="translate binary sequence () to B&amp;W image that is () pixels wide and scaled by factor of ()" class="ms-4"/>
 
 </li>
 
@@ -192,13 +192,13 @@ and ends.
 instruction and <strong>change the input text</strong> to a short text
 string of your choosing. The reported binary sequence will be stored in
 the <var>output</var> variable with quotes around it.<br />
-<img src="/img/6-computers/set-output-to-translate-text.png" title="set (output) to (translate text (Beauty and Joy of Computing) to binary sequence)" alt="set (output) to (translate text (Beauty and Joy of Computing) to binary sequence)" class="indent"/></li>
+<img src="/img/6-computers/set-output-to-translate-text.png" title="set (output) to (translate text (Beauty and Joy of Computing) to binary sequence)" alt="set (output) to (translate text (Beauty and Joy of Computing) to binary sequence)" class="ms-4"/></li>
 
 <li>Access the output by right-clicking (or control-clicking) on the
 OUTPUT watcher on the stage and choosing "export..." The binary sequence
 will download as a text file. Copy the binary sequence out of the file,
 but not the quotes.<br />
-<img src="/img/6-computers/exporting-output-watcher.png" title="image of output watcher on stage storing a binary sequence with the drop-down menu open and  &apos;export...&apos; option selected" alt="image of output watcher on stage storing a binary sequence with the drop-down menu open and  &apos;export...&apos; option selected" class="indent"/></li>
+<img src="/img/6-computers/exporting-output-watcher.png" title="image of output watcher on stage storing a binary sequence with the drop-down menu open and  &apos;export...&apos; option selected" alt="image of output watcher on stage storing a binary sequence with the drop-down menu open and  &apos;export...&apos; option selected" class="ms-4"/></li>
 
 </ul>
 
@@ -208,7 +208,7 @@ but not the quotes.<br />
 Even Snap<em>!</em> has bugs. When you paste this data into
 Snap<em>!</em>, it may extend beyond the edges of the box. Developers
 are working to fix this.<br />
-<img src="/img/6-computers/binary-sequences-bug.png" title="image of output pasted into block and extending past the edges of the block" alt="image of output pasted into block and extending past the edges of the block" class="indent"/>
+<img src="/img/6-computers/binary-sequences-bug.png" title="image of output pasted into block and extending past the edges of the block" alt="image of output pasted into block and extending past the edges of the block" class="ms-4"/>
 :::
 
 <li>
@@ -259,14 +259,14 @@ Try this binary sequence in <code>translate binary sequence to B&W
 image</code> with the second input set to <var>14</var> pixels
 wide:<br />
 
-<p class="indent">
+<p class="ms-4">
 
 <code class="break">00000110000000000001000110000000010000000000001100100110000011111111000001100111100000010010110011000111001111100000100110110000000001000000000000110000000000111000000011000100011000010000000100000110000110000000111111000000</code><br />
 
 </p>
 
 You see should something like the BJC logo:<br />
-<img src="/img/web/bjc-logo.png" title="Beauty and Joy of Computing logo: a &apos;b,&apos; a &apos;j,&apos; and a &apos;c&apos; looking like two eyes and a nose with a smile below" alt="Beauty and Joy of Computing logo: a &apos;b,&apos; a &apos;j,&apos; and a &apos;c&apos; looking like two eyes and a nose with a smile below" class="indent"/>
+<img src="/img/web/bjc-logo.png" title="Beauty and Joy of Computing logo: a &apos;b,&apos; a &apos;j,&apos; and a &apos;c&apos; looking like two eyes and a nose with a smile below" alt="Beauty and Joy of Computing logo: a &apos;b,&apos; a &apos;j,&apos; and a &apos;c&apos; looking like two eyes and a nose with a smile below" class="ms-4"/>
 
 </li>
 
@@ -354,9 +354,9 @@ type of value it will contain, and the data type is attached to the
 <em>variable</em>, so you can't get exact answers when the values are
 integers and <em>also</em> be able to handle non-integer values of the
 same variable. So instead of seeing <br />
-<img src="/img/4-internet/varfoo.png" title="script variables (foo)" alt="script variables (foo)" class="indent"/><br />
+<img src="/img/4-internet/varfoo.png" title="script variables (foo)" alt="script variables (foo)" class="ms-4"/><br />
 you see things like<br />
-<img src="/img/4-internet/intfoo.png" title="integer (foo)" alt="integer (foo)" class="indent"/></p>
+<img src="/img/4-internet/intfoo.png" title="integer (foo)" alt="integer (foo)" class="ms-4"/></p>
 
 ::: ap-standard
 AAP-1.A.4

@@ -1,13 +1,14 @@
 ---
 title: "Line Art Toy"
 subtitle: "Unit 1 Optional Project"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 order: 1
 ---
 
 ::: learn
 <p><strong>In this project,</strong> you are going to simulate the famous children's toy <em>Etch A Sketch</em><sup>®</sup>.</p>
 
-<img src="/img/1-introduction/SpriteLineArt_img/SpriteArt.png" title="Sprite Art" alt="Sprite Art" class="indent" width="320"/>
+<img src="/img/1-introduction/SpriteLineArt_img/SpriteArt.png" title="Sprite Art" alt="Sprite Art" class="ms-4" width="320"/>
 :::
 
 ::: forYouToDo
@@ -35,7 +36,7 @@ Here are some things to do at the start of your program <code>when green flag cl
 
 <li>Write code that will clear the drawings <code>when space key pressed</code> by the user.</li>
 
-<li>The user will use the arrow keys to draw. You'll need a script for each key, starting with a <code>when key pressed</code> block:<br /> <img src="/img/blocks/when-space-key-pressed.png" alt="when space key pressed" class="indent"/><br /> For each of the four arrow keys, make the sprite point in the direction of the arrow and then move forward 10 steps.</li>
+<li>The user will use the arrow keys to draw. You'll need a script for each key, starting with a <code>when key pressed</code> block:<br /> <img src="/img/blocks/when-space-key-pressed.png" alt="when space key pressed" class="ms-4"/><br /> For each of the four arrow keys, make the sprite point in the direction of the arrow and then move forward 10 steps.</li>
 
 </ol>
 :::

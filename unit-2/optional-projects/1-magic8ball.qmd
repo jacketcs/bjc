@@ -1,6 +1,7 @@
 ---
 title: "Automated Fortune Teller"
-subtitle: "Unit , Lab , Page 1"
+subtitle: "Unit 2 Optional Project"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 order: 1
 ---
 
@@ -25,7 +26,7 @@ telling program inspired by the <em>Magic 8 Ball</em><sup>®</sup> that
 randomly offers answers to YES/NO questions. Click the video below to
 watch the app in action.</p>
 
-<img title="Animation for Magic 8 Ball" alt="Animation for Magic 8 Ball" class="indent" data-gifffer="/img/2-complexity/Magic8Ball_img/AutoFortuneTeller.gif" height="300"/>
+<img title="Animation for Magic 8 Ball" alt="Animation for Magic 8 Ball" class="ms-4" data-gifffer="/img/2-complexity/Magic8Ball_img/AutoFortuneTeller.gif" height="300"/>
 :::
 
 ::: forYouToDo
@@ -57,12 +58,7 @@ Personalize your project; use other images for the costumes, and maybe
 even add sounds.
 
 ::: endnote
-::: comment
-BH: Unlike what \[the video shows\], you don't have to switch to
-costumes/sounds tab before dragging in pictures/sounds, and you don't
-have to drop them on the middle area. You can drop them anywhere in the
-Snap! window.
-:::
+
 
 You can import images and sound files from your desktop into your
 project by dragging and dropping them into the Snap<em>!</em>

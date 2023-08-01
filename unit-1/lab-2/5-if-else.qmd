@@ -33,7 +33,7 @@ report (join (who) (&apos; who&apos;) (does what) ( ) (who))
 } else {
 report (who)
 }
-}" class="indent"/>
+}" class="ms-4"/>
 
 <ol>
 
@@ -51,9 +51,6 @@ report (who)
 
 ::: {.assessment-data type="multiplechoice" identifier="About how often will more complicated who pick the more complicated choice?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="false"}
 ::: prompt
-::: comment
-AAP-3.E
-:::
 
 <img src="/img/1-introduction/more-complicated-who-script.png" title="more complicated who {
 if (pick random (1) to (4)) = (3) {
@@ -120,9 +117,6 @@ If a number is chosen randomly from 1, 2, 3, and 4, about how often will that nu
 
 ::: {.assessment-data type="multiplechoice" identifier="About how often will more complicated who pick the more complicated choice?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="false"}
 ::: prompt
-::: comment
-AAP-3.E
-:::
 
 <img src="/img/1-introduction/more-complicated-who-script.png" title="more complicated who {
 if (pick random (1) to (4)) = (3) {
@@ -193,26 +187,17 @@ The chosen number can never be 5, so we'll never get a complicated subject.
 ::: vocabFullWidth
 : <strong>Expressions</strong> and <strong>Values</strong>
 
-::: comment
-AAP-2.B.3, AAP-2.B.4
-:::
-
 <ul>
 
-<li>An <strong>expression</strong> is a either a constant value (such as "4" or "winter") or a call to a reporter block including its inputs (such as <img src="/img/2-complexity/number.png" title="number" alt="number" class="inline"/>, <img src="/img/1-introduction/5+(4x3).png" title="5 + (4 * 3)" alt="5 + (4 * 3)" class="inline nopadtb"/>, or <img src="/img/2-complexity/join-who-doeswhat-who.png" title="join (who) ( ) (does what) ( ) (who)" alt="join (who) ( ) (does what) ( ) (who)" class="inline"/>).</li>
+<li>An <strong>expression</strong> is a either a constant value (such as "4" or "winter") or a call to a reporter block including its inputs (such as <img src="/img/2-complexity/number.png" title="number" alt="number" class="inline"/>, <img src="/img/1-introduction/5+(4x3).png" title="5 + (4 * 3)" alt="5 + (4 * 3)" class="inline py-0"/>, or <img src="/img/2-complexity/join-who-doeswhat-who.png" title="join (who) ( ) (does what) ( ) (who)" alt="join (who) ( ) (does what) ( ) (who)" class="inline"/>).</li>
 
-<li>Expressions are evaluated to produce a <em>single</em> <strong>value</strong> (a value can be a number, a string, a sprite, a costume, a script, a list---anything). For example, <img src="/img/1-introduction/5+(4x3).png" title="5 + (4 * 3)" alt="5 + (4 * 3)" class="inline nopadtb"/> will be evaluated to 17.</li>
+<li>Expressions are evaluated to produce a <em>single</em> <strong>value</strong> (a value can be a number, a string, a sprite, a costume, a script, a list---anything). For example, <img src="/img/1-introduction/5+(4x3).png" title="5 + (4 * 3)" alt="5 + (4 * 3)" class="inline py-0"/> will be evaluated to 17.</li>
 
 </ul>
 :::
 
 ::: examFullWidth
 <!--<div class="index-term" id="pick random</code>"></div>-->
-
-::: comment
-AAP-3.E.1, AAP-3.E.2
-:::
-
 ::: pseudop
 The expression <img src="/img/blocks/pick-random-1-to-10-full-size.png" title="pick random (1) to (10)" alt="pick random (1) to (10)" class="inline"/> would be written as
 
@@ -232,9 +217,6 @@ or <img src="/img/1-introduction/random-blocktran.png" title="RANDOM(1, 10)" alt
 
 ::: {.assessment-data type="multiplechoice" identifier="What expression would return a random even number between 1 and 10?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri3" shuffle="true"}
 ::: prompt
-::: comment
-AAP-3.E
-:::
 
 ::: sidenoteBig
 <a href="#hint-parity" data-bs-toggle="collapse" title="Click for a review about odd and even numbers.">Click for a review of odd and even numbers.</a>
@@ -331,9 +313,6 @@ will return 1, 2, 3, 4, or 5.
 
 ::: {.assessment-data type="multiplechoice" identifier="Which expression will simulate the rolling of two dice?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri4" shuffle="true"}
 ::: prompt
-::: comment
-AAP-3.E
-:::
 
 Which expression will simulate the rolling of two dice?
 :::
@@ -417,7 +396,7 @@ Can you score a total of 1 by rolling two dice?
 
 </li>
 
-<li>Create a new block <img src="/img/1-introduction/complicated-gossip.png" title="complicated gossip" alt="complicated gossip" class="inline nopadtb"/> that is similar to <code>gossip</code> but that uses <code>more complicated who</code> instead of <code>who</code>. (You can choose which <code>who</code> to replace, or you could replace both.)</li>
+<li>Create a new block <img src="/img/1-introduction/complicated-gossip.png" title="complicated gossip" alt="complicated gossip" class="inline py-0"/> that is similar to <code>gossip</code> but that uses <code>more complicated who</code> instead of <code>who</code>. (You can choose which <code>who</code> to replace, or you could replace both.)</li>
 
 <li>Change the script for Sprite to use <code>complicated gossip</code> instead of <code>gossip</code>. Run your code, and fix any problems.</li>
 
@@ -432,10 +411,6 @@ Can you score a total of 1 by rolling two dice?
 <ol start="8">
 
 <li>Edit <code>more complicated who</code>. Replace <em>one</em> of the <code>who</code> blocks with a fresh copy of <code>more complicated who</code> that you drag in from the palette. Click <code>more complicated who</code> enough times to see how it has changed.</li>
-
-::: comment
-CRD-2.B
-:::
 
 <li><img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/> Describe the change in behavior, and explain what you think is causing it.</li>
 

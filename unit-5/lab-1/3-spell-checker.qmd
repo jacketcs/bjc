@@ -15,7 +15,7 @@ algorithm to search efficiently in a <em>sorted</em> list.</p>
 
 <p>Answering this question is simple in Snap<em>!</em> because you can
 just ask a dictionary:
-<img src="/img/5-algorithms/100000-words-contains-seperate.png" title="(100,000 words) contains (seperate)" alt="100000-words-contains-seperate.png" class="inline nopadtb"/>.
+<img src="/img/5-algorithms/100000-words-contains-seperate.png" title="(100,000 words) contains (seperate)" alt="100000-words-contains-seperate.png" class="inline py-0"/>.
 But <em>"simple" doesn't mean fast</em>. The <code>contains</code> block
 still has to look at each item in the list until it finds the one you
 are looking for (and says <code>true</code>) or reaches the end of the
@@ -104,8 +104,8 @@ list { set (high) to ((current index) -- (1)) } else { set (low) to
 ::: endnote
 ```         
 The <code>&gt;</code> block (as well as the <code>&lt;</code> and <code>=</code> blocks) compares words alphabetically: <br />
-<img class="indent" src="/img/5-algorithms/carrot-gt-banana-reporting.png" alt="(carrot) > (banana) reporting true" title="(carrot) > (banana) reporting true" />
-<img class="indent" src="/img/5-algorithms/apple-gt-banana-reporting.png" alt="(apple) > (banana) reporting false" title="(apple) > (banana) reporting false" />
+<img class="ms-4" src="/img/5-algorithms/carrot-gt-banana-reporting.png" alt="(carrot) > (banana) reporting true" title="(carrot) > (banana) reporting true" />
+<img class="ms-4" src="/img/5-algorithms/apple-gt-banana-reporting.png" alt="(apple) > (banana) reporting false" title="(apple) > (banana) reporting false" />
 </div>
 </li>
 <li>Check whether "seperate" is spelled correctly by using <code>binary search</code> to look for the word in the sorted list <img class="inline" src="/img/5-algorithms/100000-words-(sorted).png" alt="100,000 words (sorted)" title="100,000 words (sorted)" />.</li>

@@ -57,7 +57,7 @@ of the number of <em>steps</em>. For example, what we really want to
 know about the efficiency of the <code>linear search</code> algorithm is
 how many times <var>current item</var> is compared to <var>value</var>
 (that is, how many times
-<img src="/img/5-algorithms/current-item=value.png" title="(current item) = (value)" alt="(current item) = (value)" class="inline nopadtb"/>
+<img src="/img/5-algorithms/current-item=value.png" title="(current item) = (value)" alt="(current item) = (value)" class="inline py-0"/>
 is called).</p>
 
 ::: forYouToDo

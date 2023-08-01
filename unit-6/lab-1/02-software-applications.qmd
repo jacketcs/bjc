@@ -1,5 +1,5 @@
 ---
-title: "The Software Domain: Applications"
+title: "Page 2: The Software Domain: Applications"
 subtitle: "Unit 6, Lab 1, Page 2"
 order: 2
 ---
@@ -27,7 +27,7 @@ Application programs (or "apps" for short) are the programs that users interact 
 <li><strong>Pictures.</strong> You likely have a photo viewing application on your own computer or phone. You can also use software to manipulate pictures to create artwork, sharpen the focus, or create "fake news" by combining unrelated images. For example, when you get x-rays, the results are emailed to the doctor right away instead of having to wait for the images to be developed.</li>
 
 ::: todo
-It would be great to have a funny picture here---maybe Obama shaking hands with an alien or something obviously fake like this (but not as creepy)... --MF, 11/13/17<br /> Brian wants it to not be political (maybe a rock star or something). I agree. --MF, 12/8/17 <img src="http://images.huffingtonpost.com/2016-12-19-1482152530-8466162-clintonalien630x354-thumb.jpg" class="indent"/>
+It would be great to have a funny picture here---maybe Obama shaking hands with an alien or something obviously fake like this (but not as creepy)... --MF, 11/13/17<br /> Brian wants it to not be political (maybe a rock star or something). I agree. --MF, 12/8/17 <img src="http://images.huffingtonpost.com/2016-12-19-1482152530-8466162-clintonalien630x354-thumb.jpg" class="ms-4"/>
 :::
 
 <li><strong>Video.</strong> You can use streaming video services to watch movies online, or you can create your own. You can shoot movies on your phone, edit them by combining video from different sources, <!--You can animate cartoons with software just for that purpose.--> and upload them to the Internet or burn them onto a DVD to share them with your friends. Professional movie-making uses computer animation to create special effects like space aliens, armies of soldiers, and super heroes jumping over buildings.</li>

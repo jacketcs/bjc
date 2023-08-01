@@ -196,12 +196,12 @@ They did not. --MF, 6/13/19
 :::
 
 <li>Click on this block in the scripting area:<br />
-<img src="/img/4-internet/bignums-true.png" title="USE BIGNUMS (true)" alt="USE BIGNUMS (true)" class="indent"/></li>
+<img src="/img/4-internet/bignums-true.png" title="USE BIGNUMS (true)" alt="USE BIGNUMS (true)" class="ms-4"/></li>
 
 <li>
 
 Now try <code>30!</code> again.<br />
-<img src="/img/4-internet/bang30-bignum.png" title="30! reporting 265252859812191058636308480000000" alt="30! reporting 265252859812191058636308480000000" class="indent"/>
+<img src="/img/4-internet/bang30-bignum.png" title="30! reporting 265252859812191058636308480000000" alt="30! reporting 265252859812191058636308480000000" class="ms-4"/>
 
 ::: endnote
 This (exactly correct) value is different from the (rounded off)

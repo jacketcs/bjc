@@ -36,15 +36,13 @@ to decrypt it.</p>
 :::
 
 ::: endnote
-::: commentBig
-<a href="https://commons.wikimedia.org/wiki/File:Public_key_encryption.svg" target="_blank">https://commons.wikimedia.org/wiki/File:Public_key_encryption.svg</a>
-:::
+
 
 <p><a href="#hint-model" data-bs-toggle="collapse" title="Here is a visual model of public key encryption (from wikimedia.org).">Here
 is a visual model of public key encryption</a> (from wikimedia.org).</p>
 
 ::: {#hint-model .collapse}
-<img src="/img/3-lists/525px-Public_key_encryption.png" title="Diagram of public key encryption showing a message being encrypted with a public key and decrypted with a private key" alt="Diagram of public key encryption showing a message being encrypted with a public key and decrypted with a private key" class="indent noshadow" border="0"/>
+<img src="/img/3-lists/525px-Public_key_encryption.png" title="Diagram of public key encryption showing a message being encrypted with a public key and decrypted with a private key" alt="Diagram of public key encryption showing a message being encrypted with a public key and decrypted with a private key" class="ms-4 noshadow" border="0"/>
 :::
 
 <p><a href="#hint-paint" data-bs-toggle="collapse" title="Here is a video that uses paint mixing as a metaphor for public key encryption.">Here
@@ -53,7 +51,7 @@ encryption.</a></p>
 
 ::: {#hint-paint .collapse}
 <img src="/img/icons/headphones-mini.png" title="Set Up Your Headphones or Speakers" alt="Set Up Your Headphones or Speakers" class="float-end"/>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YEBfamv-_do?start=145&rel=0" frameborder="0" allowfullscreen class="indent"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YEBfamv-_do?start=145&rel=0" frameborder="0" allowfullscreen class="ms-4"></iframe>
 
 <p>If your connection blocks YouTube,
 <a href="http://scratch.mit.edu/discuss/youtube/YEBfamv-_do" target="_blank" title="Public key cryptography - Diffie-Hellman Key Exchange">watch
@@ -133,7 +131,7 @@ encryption.</p>
 
 ::: endnote
 This comic was written by Randall Munroe (source: xkcd).<br />
-<img src="http://imgs.xkcd.com/comics/public_key.png" title="I guess I should be signing stuff, but I&apos;ve never been sure what to sign. Maybe if I post my private key, I can crowdsource my decisions about what to sign." alt="A comic with 4 panels. In each panel, a person is sitting at a computer. In panel 1, they say &apos;I&apos;ve been posting my public key for 15 years now, but no one has ever asked me for it or used it for anything as far as I can tell.&apos; In panels 2 and 3, the person sits quietly. In panel 4, they say &apos;Maybe I should try posting my private key instead.&apos;" class="indent"/>
+<img src="http://imgs.xkcd.com/comics/public_key.png" title="I guess I should be signing stuff, but I&apos;ve never been sure what to sign. Maybe if I post my private key, I can crowdsource my decisions about what to sign." alt="A comic with 4 panels. In each panel, a person is sitting at a computer. In panel 1, they say &apos;I&apos;ve been posting my public key for 15 years now, but no one has ever asked me for it or used it for anything as far as I can tell.&apos; In panels 2 and 3, the person sits quietly. In panel 4, they say &apos;Maybe I should try posting my private key instead.&apos;" class="ms-4"/>
 :::
 
 <h3>Secure HTTP</h3>
@@ -155,7 +153,7 @@ browser uses it to encrypt the information you send.</p>
 <!--<div class="todo">
 <div class="sidenote">If your connection blocks YouTube, <a href="http://scratch.mit.edu/discuss/youtube/kBXQZMmiA4s" target="_blank" title="The Internet: HTTP & HTML">watch the video here</a>, but start it at 4:40. </div>
 <img class="float-end" src="/img/icons/headphones-mini.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" />
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kBXQZMmiA4s?start=280&rel=0" frameborder="0" allowfullscreen class="indent"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kBXQZMmiA4s?start=280&rel=0" frameborder="0" allowfullscreen class="ms-4"></iframe>
 </div>-->
 ```
 ::: endnote

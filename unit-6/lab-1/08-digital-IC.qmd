@@ -1,5 +1,5 @@
 ---
-title: "The Digital Domain: Integrated Circuits"
+title: "Page 8: The Digital Domain: Integrated Circuits"
 subtitle: "Unit 6, Lab 1, Page 8"
 order: 8
 ---
@@ -20,7 +20,7 @@ In order to have the modern computer age, in which people can carry extremely po
 This is the 64-bit Intel Core i7-8700K, © 2017 Intel.
 :::
 
-<img src="/img/6-computers/intel.jpg" title="Intel 64-bit processor chip and socket" alt="Intel 64-bit processor chip and socket" class="indent noshadow" width="400px"/>
+<img src="/img/6-computers/intel.jpg" title="Intel 64-bit processor chip and socket" alt="Intel 64-bit processor chip and socket" class="ms-4 noshadow" width="400px"/>
 
 </p>
 
@@ -36,7 +36,7 @@ The fundamental enabling technology for the computer age was the <em>transistor.
 <small>Photo and circuit construction by Simon Inns. License: CC-BY-SA. Downloaded from http://www.waitingforfriday.com.</small>
 :::
 
-<img src="/img/6-computers/discrete-transistor-adder.jpg" title="discrete transistor circuit" alt="discrete transistor circuit" class="indent" width="400px"/>
+<img src="/img/6-computers/discrete-transistor-adder.jpg" title="discrete transistor circuit" alt="discrete transistor circuit" class="ms-4" width="400px"/>
 
 </p>
 

@@ -10,7 +10,7 @@ order: 2
 
 <!--<div class="index-term" id="<code>repeat until</code> block" />-->
 
-<p>You'll want the computer to ask players to guess again and again until they guess correctly. To do that, you will use the <img src="/img/blocks/repeat-until.png" title="repeat until" alt="repeat until" class="inline nopadtb"/> block. <code>Repeat until</code> is a <em>loop</em> (just like <code>repeat</code>, <code>forever</code>, and <code>for</code>) but also a <em>conditional</em> (like <code>if</code> and <code>if else</code>). It repeats until a certain condition is met. For this program, the code should repeat until the player's answer equals the secret number.</p>
+<p>You'll want the computer to ask players to guess again and again until they guess correctly. To do that, you will use the <img src="/img/blocks/repeat-until.png" title="repeat until" alt="repeat until" class="inline py-0"/> block. <code>Repeat until</code> is a <em>loop</em> (just like <code>repeat</code>, <code>forever</code>, and <code>for</code>) but also a <em>conditional</em> (like <code>if</code> and <code>if else</code>). It repeats until a certain condition is met. For this program, the code should repeat until the player's answer equals the secret number.</p>
 
 ::: endnote
 <p>You learned about loops on <a href="/unit-1/lab-3/6-the-for-block.html" title="Unit 1 Lab 3 Page 6: Looping with a Counter">Unit 1 Lab 3 Page 6: Looping with a Counter</a>.</p>
@@ -24,7 +24,7 @@ FIIIIXXX
 
 <ol start="1">
 
-<li>Use <code>repeat until</code> to ask the player (<img src="/img/blocks/ask-empty-full-size.png" title="ask () and wait" alt="ask () and wait" class="inline nopadtb"/>) to guess the secret number until their <img src="/img/blocks/answer-full-size.png" title="answer" alt="answer" class="inline"/> equals the <var>secret number</var>.</li>
+<li>Use <code>repeat until</code> to ask the player (<img src="/img/blocks/ask-empty-full-size.png" title="ask () and wait" alt="ask () and wait" class="inline py-0"/>) to guess the secret number until their <img src="/img/blocks/answer-full-size.png" title="answer" alt="answer" class="inline"/> equals the <var>secret number</var>.</li>
 
 ::: endnote
 <ul>
@@ -51,9 +51,7 @@ userResponse &leftarrow; INPUT()</pre>
 or <img src="/img/2-complexity/chicken-script-blocktran.png" title="a white rounded rectangle containing two smaller white rounded rectangles: The first one contains first the word &apos;DISPLAY&apos; in all caps and then a smaller white rectangle containing the quoted text &apos;Why did the chicken cross the road?&apos;. The second one contains the text &apos;userResponse ← INPUT()&apos;" alt="a white rounded rectangle containing two smaller white rounded rectangles: The first one contains first the word &apos;DISPLAY&apos; in all caps and then a smaller white rectangle containing the quoted text &apos;Why did the chicken cross the road?&apos;. The second one contains the text &apos;userResponse ← INPUT()&apos;" class="inline"/>.
 :::
 
-::: comment
-AAP-3.A.8, AAP-3.A.9
-:::
+
 
 ::: pseudop
 Notice that the procedure `INPUT()` accepts the value from the user and returns that input value, which is then assigned to the variable `userResponse` with the <code>&leftarrow;</code>
@@ -64,9 +62,7 @@ syntax. In Snap<em>!</em>, this is just like how `answer` accepts a value from t
 ::: forYouToDo
 <ol start="2">
 
-::: comment
-AAP-2.B
-:::
+
 
 <li>After the player guesses the secret number, make the computer congratulate the player.</li>
 
@@ -90,9 +86,7 @@ AAP-2.B
 
 <p>A <strong>predicate</strong> is a hexagon-shaped reporter that asks a true/false question such as these examples:<br /> 7 reporting true" title="8 \> 7 reporting true" /\> 7 reporting false" title="6 \> 7 reporting false" /\></p>
 
-::: comment
-AAP-2.E.1
-:::
+
 
 <p>Predicates report a <strong>Boolean value</strong> (either <img src="/img/blocks/true.png" title="true" alt="true" class="inline"/> or <img src="/img/blocks/false.png" title="false" alt="false" class="inline"/>).</p>
 :::
@@ -118,7 +112,7 @@ report (join (who) (&apos;, who&apos;) (does what) ( ) (who) (,))
 } else {
 report (who)
 }
-}" class="indent"/></a> <a href="/unit-1/lab-2/img/1-introduction/move-tiny-no-comment.png" title="when green flag clicked:
+}" class="ms-4"/></a> <a href="/unit-1/lab-2/img/1-introduction/move-tiny-no-comment.png" title="when green flag clicked:
 repeat until (touching (Leader)?)
 {
 point towards (Leader)
@@ -128,7 +122,7 @@ repeat until (touching (Leader)?)
 {
 point towards (Leader)
 move (1) steps
-}" class="indent"/></a>
+}" class="ms-4"/></a>
 :::
 :::
 :::

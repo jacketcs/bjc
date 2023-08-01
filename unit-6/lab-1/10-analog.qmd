@@ -1,5 +1,5 @@
 ---
-title: "The Analog Domain: Transistors"
+title: "Page 10: The Analog Domain: Transistors"
 subtitle: "Unit 6, Lab 1, Page 10"
 order: 10
 ---
@@ -14,7 +14,7 @@ order: 10
 ::: sidenote
 <p>The <strong>transistor</strong> is the fundamental building block of electronic circuits, where they are used as on/off switches.</p>
 
-<img src="/img/6-computers/transistors.jpg" title="image of several transistor types" alt="image of several transistor types" class="indent"/><br /> <small>Image by sv.Wikipedia user DaRy</small> <!-- https://commons.wikimedia.org/wiki/File:Transistorer_(cropped).jpg -->
+<img src="/img/6-computers/transistors.jpg" title="image of several transistor types" alt="image of several transistor types" class="ms-4"/><br /> <small>Image by sv.Wikipedia user DaRy</small> <!-- https://commons.wikimedia.org/wiki/File:Transistorer_(cropped).jpg -->
 :::
 
 <p>You've learned that a wire can either have a voltage or not have a voltage on it. The reality is more complicated. The on-or-off picture of a wire, a transistor, or a logic gate output is a simplification---an abstraction.</p>

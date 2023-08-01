@@ -68,8 +68,8 @@ eventually settled after the publisher, Houghton Mifflin, donated part
 of the profits to the historically-Black Morehouse College.
 :::
 
-<img src="/img/5-algorithms/parodius.gif" alt="parody cartoon" class="indent"/><br />
-<small class="indent">Copyright 2016 by
+<img src="/img/5-algorithms/parodius.gif" alt="parody cartoon" class="ms-4"/><br />
+<small class="ms-4">Copyright 2016 by
 <a href="http://www.gocomics.com/super-fun-pak-comix/2016/01/12" target="_blank" title="Super-Fun-Pak Comix">Ruben
 Bolling</a>. Used by permission.</small>
 

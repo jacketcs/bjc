@@ -1,5 +1,5 @@
 ---
-title: "A Brief History of Computers"
+title: "Page 1: A Brief History of Computers"
 subtitle: "Unit 6, Lab 2, Page 1"
 order: 1
 ---
@@ -11,7 +11,8 @@ order: 1
 <p>When was the first computer built? That depends on where you draw the line between computers and non-computers.</p>
 
 ::: {#first .forYouToDo}
-<p>Question 1: Answer this on the Google Form</p>
+
+Question 1: Answer this on the Google Form
 
 <ol>
 
@@ -20,13 +21,7 @@ order: 1
 </ol>
 :::
 
-<p class="center">
-
 <img src="/img/6-computers/timeline-horizontal.png" title="timeline of computer history" alt="timeline of computer history" class="noshadow"/>
-
-</p>
-
-<p>
 
 <ul>
 
@@ -38,7 +33,8 @@ order: 1
 ::: endnote
 #### <strong>Tally Sticks</strong> (c. 18,000 BCE)
 
-<p>20,000 years ago people cut patterns of notches into animal bones. Some experts believe that <em>tally sticks</em> were used to perform arithmetic computations.</p>
+20,000 years ago people cut patterns of notches into animal bones. Some experts believe that <em>tally sticks</em> were used to perform arithmetic computations.
+
 :::
 :::
 
@@ -138,7 +134,7 @@ Here is a modern example of an orrery.
 
 <p>Babbage's design was very versatile, but his interest was still mainly in printing tables of numbers. It was his collaborator Ada, Countess Lovelace, who first recognized that the numbers in Babbage's computer could be used not only as quantities but also as representing musical notes, text characters, and so on. See more on <a href="/unit-6/lab-1/06-digital-architecture.html" title="The Digital Domain: Architecture">the digital architecture page</a>.</p>
 
-<img src="/img/6-computers/ada-lovelace.jpg" title="Ada, Countess Lovelace" alt="Ada, Countess Lovelace" class="indent"/>
+<img src="/img/6-computers/ada-lovelace.jpg" title="Ada, Countess Lovelace" alt="Ada, Countess Lovelace" class="ms-4"/>
 
 ::: sidenote
 <small>Image by Alfred Edward Chalon, Science & Society Picture Library, Public Domain, via Wikimedia.</small>
@@ -266,11 +262,9 @@ Here is a modern example of an orrery.
 <small><small>Kyocera 6035 <!--(2001)--> image by KeithTyler, Public Domain</small></small>
 :::
 
-::: comment
-There is something weird about this image file, and I can't figure it out. Moving on. --MF, 12/7/17
-:::
 
-<img src="/img/6-computers/Kyocera6035.jpg" title="Kyocera 6035 smartphone with flap closed and open" alt="Kyocera 6035 smartphone with flap closed and open" class="indent"/><br />
+
+<img src="/img/6-computers/Kyocera6035.jpg" title="Kyocera 6035 smartphone with flap closed and open" alt="Kyocera 6035 smartphone with flap closed and open" class="ms-4"/><br />
 
 <p>It was in the late 2000s that the two functions of a smartphone were combined in a single processor, with the telephone dialer as just one application-level program.</p>
 :::

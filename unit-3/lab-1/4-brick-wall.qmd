@@ -10,7 +10,7 @@ order: 4
 <p><strong>In this project,</strong> you will use abstraction to draw a
 brick wall.</p>
 
-<img src="/img/abstraction/new-brickwall/wall.png" title="Sample image of brick wall" alt="Sample image of brick wall" class="indent" border="0"/>
+<img src="/img/abstraction/new-brickwall/wall.png" title="Sample image of brick wall" alt="Sample image of brick wall" class="ms-4" border="0"/>
 :::
 
 <h3>Drawing One Brick</h3>
@@ -29,7 +29,7 @@ bricks because most programs don't involve bricks. That's the sort of
 tool you make yourself when you need it.
 :::
 
-<img src="/img/2-complexity/U2ImageVideoAddendum_img/simpleBrickCode.png" title="draw brick, length:(length) width:(width){set pen size to(width); move(length) steps}" alt="draw brick, length:(length) width:(width){set pen size to(width); move(length) steps}" class="indent"/>
+<img src="/img/2-complexity/U2ImageVideoAddendum_img/simpleBrickCode.png" title="draw brick, length:(length) width:(width){set pen size to(width); move(length) steps}" alt="draw brick, length:(length) width:(width){set pen size to(width); move(length) steps}" class="ms-4"/>
 
 </p>
 
@@ -39,16 +39,16 @@ tool you make yourself when you need it.
 <li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
 The code below has more details than the picture above. Review it, and
 determine what it will do.<br />
-<img src="/img/3-lists/drawBrickCode.png" title="draw brick, length:(length#) width:(width#){set pen color to (red); set flat line ends to (true); set pen size to (width); pen down; move(length) steps; pen up}" alt="draw brick, length:(length#) width:(width#){set pen color to (red); set flat line ends to (true); set pen size to (width); pen down; move(length) steps; pen up}" class="indent"/><br />
+<img src="/img/3-lists/drawBrickCode.png" title="draw brick, length:(length#) width:(width#){set pen color to (red); set flat line ends to (true); set pen size to (width); pen down; move(length) steps; pen up}" alt="draw brick, length:(length#) width:(width#){set pen color to (red); set flat line ends to (true); set pen size to (width); pen down; move(length) steps; pen up}" class="ms-4"/><br />
 <a class="run" href="/prog/3-lists/U3L1-brickwall.xml"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline" width="550"/></a>
 Run the code. Does it do what you expected?</li>
 
 ::: endnote
 <p>Ordinarily, Snap<em>!</em> draws rounded ends on thick lines:
-<img src="/img/2-complexity/U2ImageVideoAddendum_img/round-ends.png" title="line with round ends" alt="line with round ends" class="nopadtb"/>.
+<img src="/img/2-complexity/U2ImageVideoAddendum_img/round-ends.png" title="line with round ends" alt="line with round ends" class="py-0"/>.
 That's often the best choice, and you can see why below. But for bricks,
 we want <em>flat</em> line ends:
-<img src="/img/2-complexity/U2ImageVideoAddendum_img/flat-ends.png" title="flat line ends" alt="flat line ends" class="nopadtb"/>,
+<img src="/img/2-complexity/U2ImageVideoAddendum_img/flat-ends.png" title="flat line ends" alt="flat line ends" class="py-0"/>,
 and so we'll use
 <img src="/img/blocks/set-flat-line-ends.png" title="set (flat line ends) to &apos;predicate input slot&apos;" alt="set (flat line ends) to &apos;predicate input slot&apos;"/>
 to turn on flat line ends.</p>
@@ -92,7 +92,7 @@ the beauty of procedural abstraction.</p>
 <h3>Using Modularity</h3>
 
 <p>You'd like the "top level" block to be something like this:<br />
-<img src="/img/2-complexity/U2ImageVideoAddendum_img/draw-brick-wall-7.png" title="draw brick wall, rows: (7)" alt="draw brick wall, rows: (7)" class="indent"/><br />
+<img src="/img/2-complexity/U2ImageVideoAddendum_img/draw-brick-wall-7.png" title="draw brick wall, rows: (7)" alt="draw brick wall, rows: (7)" class="ms-4"/><br />
 Getting there involves <em>modularity</em>.</p>
 
 ::: vocabFullWidth
@@ -191,7 +191,7 @@ brick wall?"</li>
 <li>
 
 Write and test the
-<img src="/img/2-complexity/U2ImageVideoAddendum_img/draw-brick-wall-7.png" title="draw brick wall, rows: (7)" alt="draw brick wall, rows: (7)" class="nopadtb"/>
+<img src="/img/2-complexity/U2ImageVideoAddendum_img/draw-brick-wall-7.png" title="draw brick wall, rows: (7)" alt="draw brick wall, rows: (7)" class="py-0"/>
 block.
 
 ::: endnote
@@ -234,7 +234,7 @@ Add more inputs to <code>draw brick wall</code> (and as needed to
 
 </ol>
 
-<img src="/img/2-complexity/U2ImageVideoAddendum_img/draw-brick-wall-TIF.png" title="draw brick wall, rows: (21) bricks per row: (11) brick length: (30) width: (10) gap thickness: (5)" alt="draw brick wall, rows: (21) bricks per row: (11) brick length: (30) width: (10) gap thickness: (5)" class="indent"/><br />
+<img src="/img/2-complexity/U2ImageVideoAddendum_img/draw-brick-wall-TIF.png" title="draw brick wall, rows: (21) bricks per row: (11) brick length: (30) width: (10) gap thickness: (5)" alt="draw brick wall, rows: (21) bricks per row: (11) brick length: (30) width: (10) gap thickness: (5)" class="ms-4"/><br />
 
 ::: endnote
 Add these extra inputs one at a time, not all at once! When you modify

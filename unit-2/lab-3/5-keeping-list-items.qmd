@@ -11,22 +11,18 @@ gifffer: true
 
 <p>As you know, predicates can be used with conditionals to decide <em>when</em> to <em>do</em> something; they can also be used with <code>keep</code> to decide <em>which</em> things to keep. The <img src="/img/blocks/keep.png" title="keep items &apos;predicate input slot&apos; from &apos;list input slot&apos;" alt="keep items &apos;predicate input slot&apos; from &apos;list input slot&apos;" class="inline"/> block takes a list and a predicate as input, and it reports a new list keeping only the items from the input list that make the condition described by the predicate true.</p>
 
-<p>For example, the following expression will find words from the <var>words list</var> whose first letter is v. The <em>blank input slot</em> is where each item of the list goes to decide if it will be kept.<br> <img src="/img/2-complexity/keep-example-6.png" title="keep items  ((letter(1) of ( )) = (v)) from (words list)" alt="keep items  ((letter(1) of ( )) = (v)) from (words list)" class="indent"/></p>
+<p>For example, the following expression will find words from the <var>words list</var> whose first letter is v. The <em>blank input slot</em> is where each item of the list goes to decide if it will be kept.<br> <img src="/img/2-complexity/keep-example-6.png" title="keep items  ((letter(1) of ( )) = (v)) from (words list)" alt="keep items  ((letter(1) of ( )) = (v)) from (words list)" class="ms-4"/></p>
 
 ::: vocabFullWidth
 : <strong>String</strong> and <strong>Index</strong>
 
 <ul>
 
-::: comment
-AAP-1.C.4
-:::
+
 
 <li>A <strong>string</strong> is an ordered sequence of characters.</li>
 
-::: comment
-AAP-1.C.3 (strings)
-:::
+
 
 <li><a href="/unit-2/lab-2/2-quizzes.html" title="You've already learned the word index">You've already learned</a> the word <strong>index</strong> for the position of an element in a list. The same word is used for the position of a character in a string (for example, a letter in a word). So the first input to <code>letter</code> is the index.</li>
 
@@ -56,7 +52,7 @@ This project contains two example <code>keep</code> expressions and an <code>ini
 
 </li>
 
-<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Experiment with these examples of <code>keep</code>. Discuss and then explain <em>in writing</em> what these expressions are doing.<br /> <img src="/img/2-complexity/keep-example-4.png" title="keep items  ((length of ( )) = (5)) from {apple, banana, orange, grape, kiwi, mango, watermelon} reporting {apple, grape, mango}" alt="keep items  ((length of ( )) = (5)) from {apple, banana, orange, grape, kiwi, mango, watermelon} reporting {apple, grape, mango}" class="indent"/><br /> <img src="/img/2-complexity/keep-example-7.png" title="keep items  (not(is () a (number)?)) from {5, :), six, 7, elephant, 3} reporting {5,7,3}" alt="keep items  (not(is () a (number)?)) from {5, :), six, 7, elephant, 3} reporting {5,7,3}" class="indent"/></li>
+<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Experiment with these examples of <code>keep</code>. Discuss and then explain <em>in writing</em> what these expressions are doing.<br /> <img src="/img/2-complexity/keep-example-4.png" title="keep items  ((length of ( )) = (5)) from {apple, banana, orange, grape, kiwi, mango, watermelon} reporting {apple, grape, mango}" alt="keep items  ((length of ( )) = (5)) from {apple, banana, orange, grape, kiwi, mango, watermelon} reporting {apple, grape, mango}" class="ms-4"/><br /> <img src="/img/2-complexity/keep-example-7.png" title="keep items  (not(is () a (number)?)) from {5, :), six, 7, elephant, 3} reporting {5,7,3}" alt="keep items  (not(is () a (number)?)) from {5, :), six, 7, elephant, 3} reporting {5,7,3}" class="ms-4"/></li>
 
 </ol>
 :::

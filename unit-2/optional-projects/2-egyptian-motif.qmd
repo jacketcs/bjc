@@ -1,6 +1,7 @@
 ---
 title: "Egyptian Motif"
-subtitle: "Unit , Lab , Page 2"
+subtitle: "Unit 2 Optional Project"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 order: 2
 ---
 
@@ -24,7 +25,7 @@ page.</p>
 :::
 
 ::: learn
-<img src="/img/2-complexity/EgyptianMotif_img/HexalDesign1.png" title="Hexagonal Design" alt="Hexagonal Design" class="indent" height="250"/>
+<img src="/img/2-complexity/EgyptianMotif_img/HexalDesign1.png" title="Hexagonal Design" alt="Hexagonal Design" class="ms-4" height="250"/>
 <img src="/img/2-complexity/EgyptianMotif_img/HexaDesign2.png" title="Hexagonal Design in color" alt="Hexagonal Design in color" height="250"/>
 
 <p>Much Islamic art applies principles of geometry and repeats simple
@@ -53,7 +54,7 @@ now I just moved #10 from a solo FYTD into the ITIT box. --MF,
 
 In this project, you will repeatedly use rectangles, so first recall how
 to create a <code>rectangle</code> block. <br />
-<img src="/img/2-complexity/EgyptianMotif_img/rectangleCode.png" title="rectangle, width:(width) length:(length){pen down; repeat(2){move(width) steps; turn clockwise (90) degrees; move(length) steps; turn clockwise (90) degrees};pen up}" alt="rectangle, width:(width) length:(length){pen down; repeat(2){move(width) steps; turn clockwise (90) degrees; move(length) steps; turn clockwise (90) degrees};pen up}" class="indent" height="275"/>
+<img src="/img/2-complexity/EgyptianMotif_img/rectangleCode.png" title="rectangle, width:(width) length:(length){pen down; repeat(2){move(width) steps; turn clockwise (90) degrees; move(length) steps; turn clockwise (90) degrees};pen up}" alt="rectangle, width:(width) length:(length){pen down; repeat(2){move(width) steps; turn clockwise (90) degrees; move(length) steps; turn clockwise (90) degrees};pen up}" class="ms-4" height="275"/>
 
 ::: endnote
 Note the use of <code>pen down</code> and <code>pen up</code> blocks
@@ -68,28 +69,28 @@ to execute the rest of the code.
 
 <li>Also recall the <code>pinwheel</code> code you have written in Unit
 1.<br />
-<img src="/img/2-complexity/EgyptianMotif_img/pinwheelCode.png" title="pinwheel, branches:(number of branches) size:(size) backup:(backup){repeat(number of branches){move(size) steps; move(-1Xbackup) steps; turn clockwise(360/number of branches) degrees}}" alt="pinwheel, branches:(number of branches) size:(size) backup:(backup){repeat(number of branches){move(size) steps; move(-1Xbackup) steps; turn clockwise(360/number of branches) degrees}}" class="indent" height="225"/></li>
+<img src="/img/2-complexity/EgyptianMotif_img/pinwheelCode.png" title="pinwheel, branches:(number of branches) size:(size) backup:(backup){repeat(number of branches){move(size) steps; move(-1Xbackup) steps; turn clockwise(360/number of branches) degrees}}" alt="pinwheel, branches:(number of branches) size:(size) backup:(backup){repeat(number of branches){move(size) steps; move(-1Xbackup) steps; turn clockwise(360/number of branches) degrees}}" class="ms-4" height="225"/></li>
 
 <li>In this project, you will replace the <em><strong>pinwheel
 branches</strong></em> with <em><strong>rectangles</strong></em> as
 shown below. Note use of color is optional and is used here for
 clarity.<br />
-<img src="/img/2-complexity/EgyptianMotif_img/multiColorPinwheel.png" title="Multicolored pinwheel" alt="Multicolored pinwheel" class="indent" height="250"/>
+<img src="/img/2-complexity/EgyptianMotif_img/multiColorPinwheel.png" title="Multicolored pinwheel" alt="Multicolored pinwheel" class="ms-4" height="250"/>
 <img src="/img/2-complexity/EgyptianMotif_img/multiColorPinwheelwithRectangles.png" title="Multicolored pinwheel with rectangles" alt="Multicolored pinwheel with rectangles" height="250"/>
 <br /> Now create a <code>pinwheel with rectangles</code> block. It will
 have two more inputs <var>width</var> and <var>length</var> for the
 width and length of the rectangles.<br />
-<img src="/img/2-complexity/EgyptianMotif_img/pinwheelWithRectanglesCodeHeader.png" title="pinwheel with rectangles, branches:(number of branches) size:(size) backup:(backup) width:(width) length:(length)" alt="pinwheel with rectangles, branches:(number of branches) size:(size) backup:(backup) width:(width) length:(length)" class="indent" height="100"/><br />
+<img src="/img/2-complexity/EgyptianMotif_img/pinwheelWithRectanglesCodeHeader.png" title="pinwheel with rectangles, branches:(number of branches) size:(size) backup:(backup) width:(width) length:(length)" alt="pinwheel with rectangles, branches:(number of branches) size:(size) backup:(backup) width:(width) length:(length)" class="ms-4" height="100"/><br />
 Its code will be identical to the <code>pinwheel</code> code except that
 it has the <code>rectangle</code> block inserted in between the two
 <code>move</code> blocks that created the pinwheel branches. <br />
-<img src="/img/2-complexity/EgyptianMotif_img/rectangleInBetween.png" title="move(size) steps; rectangle, width:(width) length:(length); move(-1Xbackup) steps" alt="move(size) steps; rectangle, width:(width) length:(length); move(-1Xbackup) steps" class="indent" height="175"/><br /></li>
+<img src="/img/2-complexity/EgyptianMotif_img/rectangleInBetween.png" title="move(size) steps; rectangle, width:(width) length:(length); move(-1Xbackup) steps" alt="move(size) steps; rectangle, width:(width) length:(length); move(-1Xbackup) steps" class="ms-4" height="175"/><br /></li>
 
 <li>Now, use the "Variables" menu to make variables that will allow you
 to vary all aspects of the designs you create and do not forget to
 initialize these variables right after the <code>when green flag
 clicked</code> block<br />
-<img src="/img/2-complexity/EgyptianMotif_img/makeVariables.png" title="Make variables: length, width, backup, size, number of branches" alt="Make variables: length, width, backup, size, number of branches" class="indent" height="175"/><img src="/img/2-complexity/EgyptianMotif_img/initializeVariables.png" title="Initialize variables" alt="Initialize variables" height="175"/></li>
+<img src="/img/2-complexity/EgyptianMotif_img/makeVariables.png" title="Make variables: length, width, backup, size, number of branches" alt="Make variables: length, width, backup, size, number of branches" class="ms-4" height="175"/><img src="/img/2-complexity/EgyptianMotif_img/initializeVariables.png" title="Initialize variables" alt="Initialize variables" height="175"/></li>
 
 <li>
 
@@ -125,14 +126,14 @@ explore new designs.
 <li>Click on the animation below to see an example of how you can use
 the slider functionality in Snap<em>!</em> to generate and explore a
 vast number of variations of your designs. <br />
-<img title="Slider Animation Demo" alt="Slider Animation Demo" class="indent" data-gifffer="/img/2-complexity/EgyptianMotif_img/sliderAnimationDemo.gif" height="400"/></li>
+<img title="Slider Animation Demo" alt="Slider Animation Demo" class="ms-4" data-gifffer="/img/2-complexity/EgyptianMotif_img/sliderAnimationDemo.gif" height="400"/></li>
 
 <li>
 
 Your code needs to make sure that the computer is always on the watch in
 case any of the variables are changed by the user via the sliders. You
 can do so with a <code>forever</code> block.<br />
-<img src="/img/2-complexity/EgyptianMotif_img/foreverLoop2.png" title="forever{warp{clear; pinwheel with rectangles, branches:(number of branches) size:(size) backup:(backup) width:(width) length:(length) }}" alt="forever{warp{clear; pinwheel with rectangles, branches:(number of branches) size:(size) backup:(backup) width:(width) length:(length) }}" class="indent" height="175"/>
+<img src="/img/2-complexity/EgyptianMotif_img/foreverLoop2.png" title="forever{warp{clear; pinwheel with rectangles, branches:(number of branches) size:(size) backup:(backup) width:(width) length:(length) }}" alt="forever{warp{clear; pinwheel with rectangles, branches:(number of branches) size:(size) backup:(backup) width:(width) length:(length) }}" class="ms-4" height="175"/>
 
 ::: endnote
 The <code>warp</code> block makes sure that the <code>pinwheel with
@@ -150,7 +151,7 @@ art.</li>
 ::: endnote
 Use these buttons to maximize your stage to give enough room for your
 sliders.<br />
-<img src="/img/2-complexity/EgyptianMotif_img/stagemaximize.png" title="Stage maximizing buttons" alt="Stage maximizing buttons" class="indent" height="50"/>
+<img src="/img/2-complexity/EgyptianMotif_img/stagemaximize.png" title="Stage maximizing buttons" alt="Stage maximizing buttons" class="ms-4" height="50"/>
 :::
 
 </ol>

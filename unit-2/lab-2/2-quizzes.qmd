@@ -29,27 +29,25 @@ gifffer: true
 <p>(The word sublist is also used to refer to some subset of a list.)</p>
 :::
 
-You'll use a list to store your quiz items in a global variable and use a <em>sublist</em> for each question/answer pair. Then you can choose just one pair at a time to work with. <img src="/img/2-complexity/quiz-questions-list-of-lists.png" title="set (computer science quiz) to (list (list (What is the computer science term for looping or repetition?) (iteration)) (list (What is the name for the abstraction in a program that can hold a value?) (variable)) (list (What kind of variable is available only in the part of the program where it is defined?) (local variable)))" alt="set (computer science quiz) to (list (list (What is the computer science term for looping or repetition?) (iteration)) (list (What is the name for the abstraction in a program that can hold a value?) (variable)) (list (What kind of variable is available only in the part of the program where it is defined?) (local variable)))" class="indent"/> <img src="/img/2-complexity/item-of-item-of-script.png" title="ask (item(1) of (item (3) of (computer science quiz))) and wait
+You'll use a list to store your quiz items in a global variable and use a <em>sublist</em> for each question/answer pair. Then you can choose just one pair at a time to work with. <img src="/img/2-complexity/quiz-questions-list-of-lists.png" title="set (computer science quiz) to (list (list (What is the computer science term for looping or repetition?) (iteration)) (list (What is the name for the abstraction in a program that can hold a value?) (variable)) (list (What kind of variable is available only in the part of the program where it is defined?) (local variable)))" alt="set (computer science quiz) to (list (list (What is the computer science term for looping or repetition?) (iteration)) (list (What is the name for the abstraction in a program that can hold a value?) (variable)) (list (What kind of variable is available only in the part of the program where it is defined?) (local variable)))" class="ms-4"/> <img src="/img/2-complexity/item-of-item-of-script.png" title="ask (item(1) of (item (3) of (computer science quiz))) and wait
 if (item (2) of (item (3) of (computer science quiz)) = answer) {
 say (That&apos;s correct!) for (2) secs
 }" alt="ask (item(1) of (item (3) of (computer science quiz))) and wait
 if (item (2) of (item (3) of (computer science quiz)) = answer) {
 say (That&apos;s correct!) for (2) secs
-}" class="indent"/>
+}" class="ms-4"/>
 
 </p>
 
-::: comment
-AAP.1.D.2, AAP.1.D.3, AAP.1.D.4
-:::
 
-<p>But code like <img src="/img/2-complexity/item-1-of-item-3-of.png" title="item (1) of (item (3) of (computer science quiz))" alt="item (1) of (item (3) of (computer science quiz))" class="inline"/> is hard to read and understand. A better way is to <em>use abstraction</em> to organize the quiz items. The abstraction just hides the <code>list</code> and <code>item of</code> blocks, so it isn't complicated to build, but it can make your code much easier to write, read, and debug.<br /> <img src="/img/2-complexity/quiz-questions-list-of-adts.png" title="set (computer science quiz) to (list (question: (What is the computer science term for looping or repetition?) answer: (iteration)) (question: (What is the name for the abstraction in a program that can hold a value?) answer: (variable)) (question: (What kind of variable is available only in the part of the program where it is defined?) answer: (local variable)))" alt="set (computer science quiz) to (list (question: (What is the computer science term for looping or repetition?) answer: (iteration)) (question: (What is the name for the abstraction in a program that can hold a value?) answer: (variable)) (question: (What kind of variable is available only in the part of the program where it is defined?) answer: (local variable)))" class="indent"/> <img src="/img/2-complexity/abstracted-quiz-script.png" title="ask (question of quiz item (item (3) of (computer science quiz))) and wait
+
+<p>But code like <img src="/img/2-complexity/item-1-of-item-3-of.png" title="item (1) of (item (3) of (computer science quiz))" alt="item (1) of (item (3) of (computer science quiz))" class="inline"/> is hard to read and understand. A better way is to <em>use abstraction</em> to organize the quiz items. The abstraction just hides the <code>list</code> and <code>item of</code> blocks, so it isn't complicated to build, but it can make your code much easier to write, read, and debug.<br /> <img src="/img/2-complexity/quiz-questions-list-of-adts.png" title="set (computer science quiz) to (list (question: (What is the computer science term for looping or repetition?) answer: (iteration)) (question: (What is the name for the abstraction in a program that can hold a value?) answer: (variable)) (question: (What kind of variable is available only in the part of the program where it is defined?) answer: (local variable)))" alt="set (computer science quiz) to (list (question: (What is the computer science term for looping or repetition?) answer: (iteration)) (question: (What is the name for the abstraction in a program that can hold a value?) answer: (variable)) (question: (What kind of variable is available only in the part of the program where it is defined?) answer: (local variable)))" class="ms-4"/> <img src="/img/2-complexity/abstracted-quiz-script.png" title="ask (question of quiz item (item (3) of (computer science quiz))) and wait
 if (answer = answer from quiz item (item (3) of (computer science quiz))) {
 say (That&apos;s correct!) for (2) secs
 }" alt="ask (question of quiz item (item (3) of (computer science quiz))) and wait
 if (answer = answer from quiz item (item (3) of (computer science quiz))) {
 say (That&apos;s correct!) for (2) secs
-}" class="indent"/></p>
+}" class="ms-4"/></p>
 
 ::: vocabFullWidth
 <strong>: Data Types</strong>
@@ -58,16 +56,14 @@ say (That&apos;s correct!) for (2) secs
 
 <li>A <strong>data type</strong> is what kind of data something is (number, text string, list, etc.). For example, <em>number</em> is the data type for the first input to <img src="/img/blocks/item.png" title="item (1) of ()" alt="item (1) of ()" height="35"/> and <em>list</em> is the the data type for its second input.</li>
 
-::: comment
-AAP-1.A.3 second sentence
-:::
+
 
 <li>
 
 Each programming language provides some <strong>primitive data types</strong> (data types that are built-in). For example, Snap<em>!</em> provides numbers, text (words and sentences), Booleans (true or false), lists, and some you haven't yet used as data (such as sprites and costumes). <a href="#hint-primitive" data-bs-toggle="collapse" title="This menu shows all of Snap!'s primitive types.">This menu shows all of Snap<em>!</em>'s primitive types.</a>
 
 ::: {#hint-primitive .collapse}
-<img src="/img/2-complexity/isa-menu.png" title="primitive types: number, text, Boolean, list, sprite, command, reporter, predicate" alt="primitive types: number, text, Boolean, list, sprite, command, reporter, predicate" class="indent"/>
+<img src="/img/2-complexity/isa-menu.png" title="primitive types: number, text, Boolean, list, sprite, command, reporter, predicate" alt="primitive types: number, text, Boolean, list, sprite, command, reporter, predicate" class="ms-4"/>
 :::
 
 </li>
@@ -80,9 +76,7 @@ Each programming language provides some <strong>primitive data types</strong> (d
 
 <ul>
 
-::: comment
-AAP.1.D.1
-:::
+
 
 ::: sidenoteBig
 <p>The word "abstract" is often used casually to mean something <em>harder</em> to understand or more complex, but in computer science, its meaning is almost the opposite. ADTs are things that you, the programmer, create to make your program <em>easier</em> for you and others to read, debug, and improve.</p>
@@ -90,10 +84,10 @@ AAP.1.D.1
 
 <li>An <strong>abstract data type (ADT)</strong> is a custom data type that's meaningful to your program. It's not built into the language; you develop it as you code. This is an abstraction because it hides the details inside the constructor and selectors so that the programmer who uses a <code>quiz item</code> has to think only about questions and answers, not about list indices.</li>
 
-<li>The <img src="/img/2-complexity/quiz-item-constructor.png" title="quiz item, question: () answer: ()" alt="quiz item, question: () answer: ()" class="inline"/> block is the <strong>constructor</strong>; it <em>constructs</em> one example of the data structure. By naming the pieces of the structure, the constructor makes it certain that every time you use it, you build the structure in the right order.<br /> <!--<img class="indent" src="/img/2-complexity/quiz-questions-constructor-definition.png" alt="quiz item, question: (question) answer: (answer) {report (list (question) (answer))}" title="quiz item, question: (question) answer: (answer) {report (list (question) (answer))}">--></li>
+<li>The <img src="/img/2-complexity/quiz-item-constructor.png" title="quiz item, question: () answer: ()" alt="quiz item, question: () answer: ()" class="inline"/> block is the <strong>constructor</strong>; it <em>constructs</em> one example of the data structure. By naming the pieces of the structure, the constructor makes it certain that every time you use it, you build the structure in the right order.<br /> <!--<img class="ms-4" src="/img/2-complexity/quiz-questions-constructor-definition.png" alt="quiz item, question: (question) answer: (answer) {report (list (question) (answer))}" title="quiz item, question: (question) answer: (answer) {report (list (question) (answer))}">--></li>
 
-<li>The <img src="/img/2-complexity/question-selector.png" title="question from quiz item: ()" alt="question from quiz item: ()" class="inline"/> and <img src="/img/2-complexity/answer-selector.png" title="answer from quiz item: ()" alt="answer from quiz item: ()" class="inline"/> blocks are the <strong>selectors</strong>; they each <em>select</em> one piece of the data structure.<br /> <!--<img class="indent" src="/img/2-complexity/question-definition.png" alt="question from quiz item: (quiz item) {report (item (1) of (quiz item)}" title="question from quiz item: (quiz item) {report (item (1) of (quiz item)}" />
-<img class="indent" src="/img/2-complexity/answer-definition.png" alt="answer from quiz item: (quiz item) {report (item (2) of (quiz item)}" title="answer from quiz item: (quiz item) {report (item (2) of (quiz item)}" />--></li>
+<li>The <img src="/img/2-complexity/question-selector.png" title="question from quiz item: ()" alt="question from quiz item: ()" class="inline"/> and <img src="/img/2-complexity/answer-selector.png" title="answer from quiz item: ()" alt="answer from quiz item: ()" class="inline"/> blocks are the <strong>selectors</strong>; they each <em>select</em> one piece of the data structure.<br /> <!--<img class="ms-4" src="/img/2-complexity/question-definition.png" alt="question from quiz item: (quiz item) {report (item (1) of (quiz item)}" title="question from quiz item: (quiz item) {report (item (1) of (quiz item)}" />
+<img class="ms-4" src="/img/2-complexity/answer-definition.png" alt="answer from quiz item: (quiz item) {report (item (2) of (quiz item)}" title="answer from quiz item: (quiz item) {report (item (2) of (quiz item)}" />--></li>
 
 </ul>
 
@@ -101,9 +95,7 @@ The constructor and selector together implement the <code>quiz item</code> <em>a
 
 <ul>
 
-::: comment
-DAT-1.A.5
-:::
+
 
 <li><strong>Data abstraction</strong> is the creation and use of abstract data types in a program.</li>
 
@@ -121,9 +113,7 @@ DAT-1.A.5
 
 </li>
 
-::: comment
-AAP-1.D
-:::
+
 
 <li>Build the custom <code>quiz item</code> abstract data type (both the constructor and the two selectors).</li>
 
@@ -138,7 +128,7 @@ In the Block Editor while creating a selector, click on a plus sign to enter an 
 
 <ol style="list-style-type:lower-alpha">
 
-<li>Click on the arrow to the right of the input name:<br /> <img src="/img/2-complexity/create-input-name-right_arrow.png" title="create input name right arrow" alt="create input name right arrow" class="indent" height="125"/></li>
+<li>Click on the arrow to the right of the input name:<br /> <img src="/img/2-complexity/create-input-name-right_arrow.png" title="create input name right arrow" alt="create input name right arrow" class="ms-4" height="125"/></li>
 
 <li>Choose the data type you want for that input. (For this project, you'll use the "text" and "list" input types.)</li>
 
@@ -168,19 +158,19 @@ If you don't see the watcher on the stage, make sure the checkbox beside the <va
 
 <li>
 
-<strong>Table View</strong> for <var>computer science quiz</var> Watcher (your quiz will be different):<br /> <img src="/img/2-complexity/csquiz-big.png" title="cs quiz watcher with first column expanded" alt="cs quiz watcher with first column expanded" class="indent"/>
+<strong>Table View</strong> for <var>computer science quiz</var> Watcher (your quiz will be different):<br /> <img src="/img/2-complexity/csquiz-big.png" title="cs quiz watcher with first column expanded" alt="cs quiz watcher with first column expanded" class="ms-4"/>
 
 ::: endnote
 <a href="#table-hint" data-bs-toggle="collapse" title="">My watcher is too narrow.</a>
 
 ::: {#table-hint .collapse}
-At first the watcher will look like this:<br /> <img src="/img/2-complexity/csquiz-small.png" title="cs quiz watcher at initial size" alt="cs quiz watcher at initial size" class="indent"/><br /> Drag out the resize handle at the lower right to get this:<br /> <img src="/img/2-complexity/csquiz-med.png" title="cs quiz watcher resized" alt="cs quiz watcher resized" class="indent"/><br /> Then hover your mouse over the letter A near the top. It will turn into a digit 1. Grab it and drag it to the right:<br /> <img src="/img/2-complexity/csquiz-big.png" title="cs quiz watcher with first column expanded" alt="cs quiz watcher with first column expanded" class="indent"/>
+At first the watcher will look like this:<br /> <img src="/img/2-complexity/csquiz-small.png" title="cs quiz watcher at initial size" alt="cs quiz watcher at initial size" class="ms-4"/><br /> Drag out the resize handle at the lower right to get this:<br /> <img src="/img/2-complexity/csquiz-med.png" title="cs quiz watcher resized" alt="cs quiz watcher resized" class="ms-4"/><br /> Then hover your mouse over the letter A near the top. It will turn into a digit 1. Grab it and drag it to the right:<br /> <img src="/img/2-complexity/csquiz-big.png" title="cs quiz watcher with first column expanded" alt="cs quiz watcher with first column expanded" class="ms-4"/>
 :::
 :::
 
 </li>
 
-<li><strong>List View</strong> for <var>computer science quiz</var> Watcher:<br /> <img src="/img/2-complexity/csquiz-list.png" title="cs quiz watcher, list view" alt="cs quiz watcher, list view" class="indent"/></li>
+<li><strong>List View</strong> for <var>computer science quiz</var> Watcher:<br /> <img src="/img/2-complexity/csquiz-list.png" title="cs quiz watcher, list view" alt="cs quiz watcher, list view" class="ms-4"/></li>
 
 </ul>
 :::
@@ -203,7 +193,7 @@ At first the watcher will look like this:<br /> <img src="/img/2-complexity/csqu
 
 ::: {.assessment-data type="multiplechoice" identifier="capitals" hasinlinefeedback="true" maxchoices="8" responseidentifier="ri1" shuffle="true"}
 ::: prompt
-<p>Imagine you make a variable <var>capitals</var> and use <code>set</code> to give this list of lists a name: <br /> <img src="/img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="indent"/><br /> Which of the following statements are <strong>true</strong>?<br /> <br /> Choose <strong>all</strong> that apply.</p>
+<p>Imagine you make a variable <var>capitals</var> and use <code>set</code> to give this list of lists a name: <br /> <img src="/img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="ms-4"/><br /> Which of the following statements are <strong>true</strong>?<br /> <br /> Choose <strong>all</strong> that apply.</p>
 :::
 
 ::: {.choice identifier="c1"}

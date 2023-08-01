@@ -1,3 +1,6 @@
+-- Not used because quarto doesn't have appropriate behavior
+-- with this for the navigation bar
+
 tt = require("titling")
 
 return {

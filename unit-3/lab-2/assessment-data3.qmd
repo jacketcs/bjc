@@ -12,7 +12,7 @@ order: 6
 ::: prompt
 Which of the following statements are true about this list?<br>
 
-<img src="/img/3-lists/words_numbers.png" title="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" alt="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" class="indent"/><br>
+<img src="/img/3-lists/words_numbers.png" title="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" alt="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" class="ms-4"/><br>
 :::
 
 ::: {.choice identifier="c1"}
@@ -74,7 +74,7 @@ list.
 ::: prompt
 Which of the following statements are true about this list?<br>
 
-<img src="/img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="indent"/><br>
+<img src="/img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="ms-4"/><br>
 
 Choose <strong>all</strong> that apply.
 
@@ -89,7 +89,7 @@ The list inside a list shown above makes it clearest to you now as you
 answer this self-check item what the structure is, but you're right, in
 an actual program it would be better to use an abstract data type:<br>
 
-<img src="/img/3-lists/capitals-adt-reporting.png" title="state: (Augusta) capital: (Maine)" alt="state: (Augusta) capital: (Maine)" class="indent"/>
+<img src="/img/3-lists/capitals-adt-reporting.png" title="state: (Augusta) capital: (Maine)" alt="state: (Augusta) capital: (Maine)" class="ms-4"/>
 
 </p>
 :::
@@ -179,7 +179,7 @@ Moines, Iowa}}.
 
 Consider this list of squares: <br>
 
-<img src="/img/3-lists/squares.png" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" class="indent"/><br>
+<img src="/img/3-lists/squares.png" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" class="ms-4"/><br>
 
 Which of the following expressions will report a list?
 
@@ -263,7 +263,7 @@ Correct.
 ::: prompt
 Which of the following statements are true about this list?<br>
 
-<img src="/img/3-lists/words_numbers.png" title="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" alt="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" class="indent"/><br>
+<img src="/img/3-lists/words_numbers.png" title="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" alt="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" class="ms-4"/><br>
 :::
 
 ::: {.choice identifier="c1"}
@@ -325,7 +325,7 @@ list.
 ::: prompt
 Which of the following statements are true about this list?<br>
 
-<img src="/img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="indent"/><br>
+<img src="/img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="ms-4"/><br>
 
 Choose <strong>all</strong> that apply.
 
@@ -340,7 +340,7 @@ The list inside a list shown above makes it clearest to you now as you
 answer this self-check item what the structure is, but you're right, in
 an actual program it would be better to use an abstract data type:<br>
 
-<img src="/img/3-lists/capitals-adt-reporting.png" title="state: (Augusta) capital: (Maine)" alt="state: (Augusta) capital: (Maine)" class="indent"/>
+<img src="/img/3-lists/capitals-adt-reporting.png" title="state: (Augusta) capital: (Maine)" alt="state: (Augusta) capital: (Maine)" class="ms-4"/>
 
 </p>
 :::
@@ -430,7 +430,7 @@ Moines, Iowa}}.
 
 Consider this list of squares: <br>
 
-<img src="/img/3-lists/squares.png" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" class="indent"/><br>
+<img src="/img/3-lists/squares.png" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" class="ms-4"/><br>
 
 Which of the following expressions will report a list?
 
@@ -514,7 +514,7 @@ Correct.
 ::: prompt
 Which of the following statements are true about this list?<br>
 
-<img src="/img/3-lists/words_numbers.png" title="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" alt="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" class="indent"/><br>
+<img src="/img/3-lists/words_numbers.png" title="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" alt="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" class="ms-4"/><br>
 :::
 
 ::: {.choice identifier="c1"}
@@ -576,7 +576,7 @@ list.
 ::: prompt
 Which of the following statements are true about this list?<br>
 
-<img src="/img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="indent"/><br>
+<img src="/img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="ms-4"/><br>
 
 Choose <strong>all</strong> that apply.
 
@@ -591,7 +591,7 @@ The list inside a list shown above makes it clearest to you now as you
 answer this self-check item what the structure is, but you're right, in
 an actual program it would be better to use an abstract data type:<br>
 
-<img src="/img/3-lists/capitals-adt-reporting.png" title="state: (Augusta) capital: (Maine)" alt="state: (Augusta) capital: (Maine)" class="indent"/>
+<img src="/img/3-lists/capitals-adt-reporting.png" title="state: (Augusta) capital: (Maine)" alt="state: (Augusta) capital: (Maine)" class="ms-4"/>
 
 </p>
 :::
@@ -681,7 +681,7 @@ Moines, Iowa}}.
 
 Consider this list of squares: <br>
 
-<img src="/img/3-lists/squares.png" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" class="indent"/><br>
+<img src="/img/3-lists/squares.png" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" class="ms-4"/><br>
 
 Which of the following expressions will report a list?
 

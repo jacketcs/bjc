@@ -12,19 +12,11 @@ history of copyrights.</p>
 <p>Here's the US Constitution (Article 1, Section 8) on copyrights and
 patents:</p>
 
-::: takeNote
-<big>The Congress shall have Power \[...\] To promote the Progress of
-Science and useful Arts, by securing for limited Times to Authors and
-Inventors the exclusive Right to their respective Writings and
-Discoveries; \[...\]</big>
-:::
-
-::: comment
-You don't necessarily own the land under your house. Someone else may
-have mineral rights. --MF, 5/23/19<br /> Sure, there are exceptions. A
-more important one is that you might be a renter! But do we really have
-to get lawyerish about this side issue? -bh
-:::
+> 
+   The Congress shall have Power \[...\] To promote the Progress of
+   Science and useful Arts, by securing for limited Times to Authors and
+   Inventors the exclusive Right to their respective Writings and
+   Discoveries; \[...\]
 
 <p>Pay special attention to the part about "for limited Times." Despite
 the "right" in the name "copyright," copyrights aren't <em>rights</em>

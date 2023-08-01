@@ -59,12 +59,12 @@ You might have used a <em>substitution cipher</em> to encode your
 message, substituting each letter of the alphabet with some other
 letter. You could substitute letters in any order, like this:
 
-::: {.indent .fixedwidth}
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
-:::
+::: ms-4
 
-::: {.indent .fixedwidth}
-PQVFUBZOTHWYELIXRNAMGDSCKJ<img src="/img/4-internet/this-is-the-key.jpg" title="This is the key." alt="This is the key." class="noshadow nopad"/>
+`ABCDEFGHIJKLMNOPQRSTUVWXYZ`
+
+`PQVFUBZOTHWYELIXRNAMGDSCKJ`<img src="/img/4-internet/this-is-the-key.jpg" title="This is the key." alt="This is the key." class="noshadow p-0"/>
+
 :::
 
 That's called a <em>simple substitution cipher</em>.
@@ -76,12 +76,12 @@ That's called a <em>simple substitution cipher</em>.
 An easier way is to just shift the letters in order. For example, this
 is a shift of 3:
 
-::: {.indent .fixedwidth}
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
-:::
+::: ms-4
 
-::: {.indent .fixedwidth}
-DEFGHIJKLMNOPQRSTUVWXYZABC<img src="/img/4-internet/this-is-the-key.jpg" title="This is the key." alt="This is the key." class="noshadow nopad"/>
+`ABCDEFGHIJKLMNOPQRSTUVWXYZ`
+
+`DEFGHIJKLMNOPQRSTUVWXYZABC`<img src="/img/4-internet/this-is-the-key.jpg" title="This is the key." alt="This is the key." class="noshadow p-0"/>
+
 :::
 
 That's a special kind of simple substitution cipher called a <em>Caesar

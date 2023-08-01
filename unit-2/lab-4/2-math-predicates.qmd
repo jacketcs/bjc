@@ -16,9 +16,7 @@ AAP-2.M.3, AAP-3.D.3
 :::
 
 ::: vocabBig
-::: commentBig
-AAP-3.D.1
-:::
+
 
 <p>A <strong>software library</strong> is a collection of procedures
 that can be used in programs.</p>
@@ -52,11 +50,11 @@ file menu
 
 <strong>Select only the block(s) you wish to export</strong>. (In this
 case, you want
-<img src="/img/2-complexity/between.png" title="is () between () and ()?" alt="is () between () and ()?" class="inline nopadtb"/>,
-<img src="/img/blocks/less-than-or-equal.png" title="less than or equal" alt="less than or equal" class="inline nopadtb"/>,
-<img src="/img/blocks/greater-than-or-equal.png" title="greater than or equal" alt="greater than or equal" class="inline nopadtb"/>,
+<img src="/img/2-complexity/between.png" title="is () between () and ()?" alt="is () between () and ()?" class="inline py-0"/>,
+<img src="/img/blocks/less-than-or-equal.png" title="less than or equal" alt="less than or equal" class="inline py-0"/>,
+<img src="/img/blocks/greater-than-or-equal.png" title="greater than or equal" alt="greater than or equal" class="inline py-0"/>,
 and
-<img src="/img/2-complexity/not-equal.png" title="() not equal ()" alt="() not equal ()" class="inline nopadtb"/>.)
+<img src="/img/2-complexity/not-equal.png" title="() not equal ()" alt="() not equal ()" class="inline py-0"/>.)
 
 ::: endnote
 You can either <em>deselect</em> the blocks you don't need exported, or
@@ -132,12 +130,12 @@ properly.</strong></li>
 You are creating a math library. Snap<em>!</em> has libraries for many
 things, such as one for accessing different parts of words and
 sentences...<br />
-<img src="/img/6-computers/libraries-1.png" title="Snap! File menu opened with cursor over &apos;Libraries&apos;" alt="Snap! File menu opened with cursor over &apos;Libraries&apos;" class="indent"/>
-<img src="/img/6-computers/libraries-words.png" title="Snap! &apos;Import library&apos; dialog box highlighting &apos;Words, sentences&apos; library" alt="Snap! &apos;Import library&apos; dialog box highlighting &apos;Words, sentences&apos; library" class="indent"/>
+<img src="/img/6-computers/libraries-1.png" title="Snap! File menu opened with cursor over &apos;Libraries&apos;" alt="Snap! File menu opened with cursor over &apos;Libraries&apos;" class="ms-4"/>
+<img src="/img/6-computers/libraries-words.png" title="Snap! &apos;Import library&apos; dialog box highlighting &apos;Words, sentences&apos; library" alt="Snap! &apos;Import library&apos; dialog box highlighting &apos;Words, sentences&apos; library" class="ms-4"/>
 :::
 
 ::: takeNote
-<h4><strong>Debugging<a name="dependencies" class="anchor"> </a>Dependencies</strong></h4>
+<h4><strong>Debugging Dependencies</strong></h4>
 
 <img src="/img/2-complexity/even-obsolete.png" title="even? (number#){report(Obsolete!)}" alt="even? (number#){report(Obsolete!)}" class="float-end"/>
 
@@ -163,8 +161,8 @@ AAP-2.M parts a and b, AAP-3.D
 
 Copy and modify the code from your <code>even?</code> predicate to
 develop an <code>odd?</code> predicate for your library.<br />
-<img src="/img/2-complexity/odd-6-reporting.png" title="odd? (6) reporting false" alt="odd? (6) reporting false" class="indent"/>
-<img src="/img/2-complexity/odd--7-reporting.png" title="odd? (-7) reporting true" alt="odd? (-7) reporting true" class="indent"/>
+<img src="/img/2-complexity/odd-6-reporting.png" title="odd? (6) reporting false" alt="odd? (6) reporting false" class="ms-4"/>
+<img src="/img/2-complexity/odd--7-reporting.png" title="odd? (-7) reporting true" alt="odd? (-7) reporting true" class="ms-4"/>
 
 </li>
 
@@ -213,8 +211,8 @@ steps.</a>
 <li>
 
 Build a <code>divisors</code> block using <code>keep</code>.<br />
-<img src="/img/2-complexity/divisors-9-reporting.png" title="divisors of (9) reporting {1, 3, 9}" alt="divisors of (9) reporting {1, 3, 9}" class="indent"/>
-<img src="/img/2-complexity/divisors-12-reporting.png" title="divisors of (12) reporting {1, 2, 3, 4, 6, 12}" alt="divisors of (12) reporting {1, 2, 3, 4, 6, 12}" class="indent"/>
+<img src="/img/2-complexity/divisors-9-reporting.png" title="divisors of (9) reporting {1, 3, 9}" alt="divisors of (9) reporting {1, 3, 9}" class="ms-4"/>
+<img src="/img/2-complexity/divisors-12-reporting.png" title="divisors of (12) reporting {1, 2, 3, 4, 6, 12}" alt="divisors of (12) reporting {1, 2, 3, 4, 6, 12}" class="ms-4"/>
 
 ::: endnote
 <a href="#hint-divisors" data-bs-toggle="collapse" title="Hints about building the divisors block">Hints
@@ -225,14 +223,14 @@ about building the <code>divisors</code> block</a>
 
 <li>You <em>could</em> build this with <code>for</code> or <code>for
 each</code>, but it will require less code to build it with
-<img src="/img/blocks/keep.png" title="keep items &apos;predicate input slot&apos; from &apos;list input slot&apos;" alt="keep items &apos;predicate input slot&apos; from &apos;list input slot&apos;" class="nopadtb"/>.
+<img src="/img/blocks/keep.png" title="keep items &apos;predicate input slot&apos; from &apos;list input slot&apos;" alt="keep items &apos;predicate input slot&apos; from &apos;list input slot&apos;" class="py-0"/>.
 (You learned about <code>keep</code> on
 <a href="/unit-2/lab-3/5-keeping-list-items.html" title="Unit 2 Lab 3 Page 5: Keeping Items from a List">Unit
 2 Lab 3 Page 5: <code>Keep</code>ing Items from a List</a>.)</li>
 
 <li>You <em>could</em> build this with <code>mod</code>, but you already
 built
-<img src="/img/2-complexity/divisible-by.png" title="() divisible by () ?" alt="() divisible by () ?" class="nopadtb"/>
+<img src="/img/2-complexity/divisible-by.png" title="() divisible by () ?" alt="() divisible by () ?" class="py-0"/>
 (using <code>mod</code>), so <code>divisible by?</code> will be simpler
 to use.</li>
 
@@ -247,8 +245,8 @@ block may be helpful.</li>
 </li>
 
 <li>Build a <code>number of divisors</code> block.<br />
-<img src="/img/2-complexity/number-of-divisors-9-reporting.png" title="number of divisors (9) reporting 3" alt="number of divisors (9) reporting 3" class="indent"/>
-<img src="/img/2-complexity/number-of-divisors-12-reporting.png" title="number of divisors (12) reporting 6" alt="number of divisors (12) reporting 6" class="indent"/></li>
+<img src="/img/2-complexity/number-of-divisors-9-reporting.png" title="number of divisors (9) reporting 3" alt="number of divisors (9) reporting 3" class="ms-4"/>
+<img src="/img/2-complexity/number-of-divisors-12-reporting.png" title="number of divisors (12) reporting 6" alt="number of divisors (12) reporting 6" class="ms-4"/></li>
 
 <li>
 

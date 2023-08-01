@@ -8,7 +8,7 @@ gifffer: true
 ::: learn
 <p>In many programs, the visual elements on the screen need to interact---follow each other, avoid each other, react a certain way when they meet each other, etc. <strong>In this lab,</strong> you will program <em>two</em> sprites. One sprite will follow your mouse. The other sprite will chase the first. When they meet, they will have a short conversation.</p>
 
-<img title="animation of a cartoon tiger chasing a cartoon bat that is following the mouse pointer" alt="animation of a cartoon tiger chasing a cartoon bat that is following the mouse pointer" class="indent" data-gifffer="/img/1-introduction/leader-follower-animation.gif"/>
+<img title="animation of a cartoon tiger chasing a cartoon bat that is following the mouse pointer" alt="animation of a cartoon tiger chasing a cartoon bat that is following the mouse pointer" class="ms-4" data-gifffer="/img/1-introduction/leader-follower-animation.gif"/>
 
 <p><strong>On this page,</strong> you will program the first sprite to follow your mouse and program the second sprite to point in the direction of the first sprite in preparation for following it.</p>
 :::
@@ -68,7 +68,7 @@ If you already have Snap<em>!</em> open and there is a project open, follow thes
 
 </li>
 
-<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Read and think about this script before you build it. What do you expect it to do?<br /> <img src="/img/1-introduction/follow-that-mouse.png" title="when green flag clicked{forever{go to x:(mouse x) y:(mouse y)}}" alt="when green flag clicked{forever{go to x:(mouse x) y:(mouse y)}}" class="indent"/></li>
+<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Read and think about this script before you build it. What do you expect it to do?<br /> <img src="/img/1-introduction/follow-that-mouse.png" title="when green flag clicked{forever{go to x:(mouse x) y:(mouse y)}}" alt="when green flag clicked{forever{go to x:(mouse x) y:(mouse y)}}" class="ms-4"/></li>
 
 <li>
 
@@ -92,7 +92,7 @@ To <em>stop</em> your script, click the red stop sign: <img src="/img/1-introduc
 
 <li>
 
-Create a second sprite by clicking on the <img src="/img/1-introduction/add-a-new-turtle-sprite.png" title="add a new turtle sprite" alt="add a new turtle sprite"/> button just below the stage. <a name="newTurtle" class="anchor"> </a>
+Create a second sprite by clicking on the <img src="/img/1-introduction/add-a-new-turtle-sprite.png" title="add a new turtle sprite" alt="add a new turtle sprite"/> button just below the stage.
 
 ::: endnote
 The new sprite, automatically named <strong>Sprite(2)</strong>, appears on the stage. It's brand new, so it has no scripts. The pictures of the sprites beneath the stage let you select the sprite you want to program.
@@ -107,7 +107,7 @@ To make your sprite names meaningful, change the name of <strong>Sprite</strong>
 ::: narrower
 ### <strong>Changing the Name of a Sprite</strong>
 
-<p>Look for the name in a gray box above the scripting area. Click inside the name and you'll be able to edit it.<br /> <img src="/img/1-introduction/change-sprite-name.jpg" title="image of sprite name input field above the scripting area and below the project name" alt="image of sprite name input field above the scripting area and below the project name" class="indent"/></p>
+<p>Look for the name in a gray box above the scripting area. Click inside the name and you'll be able to edit it.<br /> <img src="/img/1-introduction/change-sprite-name.jpg" title="image of sprite name input field above the scripting area and below the project name" alt="image of sprite name input field above the scripting area and below the project name" class="ms-4"/></p>
 :::
 
 </li>
@@ -118,7 +118,7 @@ To make your sprite names meaningful, change the name of <strong>Sprite</strong>
 While a script is running, its border lights up. If the running time is short, you may not notice the brief flash.
 :::
 
-Make sure you have the <strong>Follower</strong> sprite selected. Write a script for <strong>Follower</strong> so that once the green flag is clicked, it will point toward <strong>Leader</strong> <code>forever</code>.<br /> <img src="/img/blocks/point-towards.png" title="point towards []" alt="point towards []" class="indent"/>
+Make sure you have the <strong>Follower</strong> sprite selected. Write a script for <strong>Follower</strong> so that once the green flag is clicked, it will point toward <strong>Leader</strong> <code>forever</code>.<br /> <img src="/img/blocks/point-towards.png" title="point towards []" alt="point towards []" class="ms-4"/>
 
 </li>
 

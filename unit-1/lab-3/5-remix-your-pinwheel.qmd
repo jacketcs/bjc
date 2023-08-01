@@ -6,7 +6,7 @@ gifffer: true
 ---
 
 ::: learn
-<strong>On this page,</strong> you will use your existing <code>pinwheel</code> block to make <code>asterisk</code> and <code>polygon</code> blocks.<br /> <img src="/img/1-introduction/Blockswith-Inputs_img/asteriskpolygonCycle.gif" title="Animation cycle from Asterisk to Polygon" alt="Animation cycle from Asterisk to Polygon" class="indent" height="250"/>
+<strong>On this page,</strong> you will use your existing <code>pinwheel</code> block to make <code>asterisk</code> and <code>polygon</code> blocks.<br /> <img src="/img/1-introduction/Blockswith-Inputs_img/asteriskpolygonCycle.gif" title="Animation cycle from Asterisk to Polygon" alt="Animation cycle from Asterisk to Polygon" class="ms-4" height="250"/>
 :::
 
 <p>You can use your <em>general</em>-purpose pinwheel procedure to create other, simpler <em>special</em>-purpose procedures that each do a particular job.</p>
@@ -52,15 +52,8 @@ Use your <code>pinwheel</code> block to create a more specialized <code>asterisk
 <p>On page <a href="/unit-1/lab-2/2-gossip.html" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unit 1 Lab 2 Page 2: Making Programs Talk</a>, you learned about <em>procedural abstraction:</em> giving a code segment a name (making it a block). That way you can call it more than once instead of copying and pasting.</p>
 :::
 
-::: comment
-AAP-3.B.4
-:::
 
 <p>Here is another kind of <em>abstraction</em>: noticing that <code>asterisk</code> and <code>polygon</code> are both kinds of pinwheels, and writing one, more general, <code>pinwheel</code> block that uses an input so that the block can be used to make asterisks, polygons, or other interesting designs.</p>
-
-::: comment
-AAP-3.B.5
-:::
 
 <p>This is an example of <strong>abstraction by generalization</strong>: looking at chunks of code that are <em>almost the same</em> and writing a single block by <em>using an input</em> to distinguish among the different cases.</p>
 :::
@@ -71,9 +64,6 @@ AAP-3.B.5
 <li>If you look inside of <code>pinwheel</code> and see how you're using it in <code>polygon</code>, you'll see that there are steps that you don't really need for the case of a polygon. Write another version of <code>polygon</code> built directly out of primitive blocks (<code>move</code>, <code>turn</code> and so on). How simple can you make it?</li>
 
 ::: takeNote
-::: comment
-AAP-3.B.7
-:::
 
 As long as your <code>polygon</code> block draws the right picture, it doesn't matter to the rest of the project what's inside it.
 :::
@@ -88,7 +78,7 @@ As long as your <code>polygon</code> block draws the right picture, it doesn't m
 
 <li>Use your <code>pinwheel</code> block code one last time to create a <code>circle</code> block that accepts one input for the size.</li>
 
-<li>Use the <code>random</code> block together with <code>set pen color</code> and <code>set pen size</code> to draw a variety of shapes.<br /> <img src="/img/1-introduction/assorted-pinwheels.png" title="assortment of pinwheels" alt="assortment of pinwheels" class="indent"/></li>
+<li>Use the <code>random</code> block together with <code>set pen color</code> and <code>set pen size</code> to draw a variety of shapes.<br /> <img src="/img/1-introduction/assorted-pinwheels.png" title="assortment of pinwheels" alt="assortment of pinwheels" class="ms-4"/></li>
 
 </ol>
 :::
@@ -96,7 +86,7 @@ As long as your <code>polygon</code> block draws the right picture, it doesn't m
 ::: takeItFurther
 <ol type="A">
 
-<li><strong>Challenge:</strong> Create a script that draws a blue square of size 100 and then draws a red circle that fits perfectly inside it.<br /> <img src="/img/1-introduction/red-circle-in-blue-square.png" title="red circle in blue square" alt="red circle in blue square" class="indent"/><br /></li>
+<li><strong>Challenge:</strong> Create a script that draws a blue square of size 100 and then draws a red circle that fits perfectly inside it.<br /> <img src="/img/1-introduction/red-circle-in-blue-square.png" title="red circle in blue square" alt="red circle in blue square" class="ms-4"/><br /></li>
 
 </ol>
 :::

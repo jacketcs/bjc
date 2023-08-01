@@ -1,8 +1,19 @@
 ---
 title: "Writing HTML (Teacher's Choice)"
-subtitle: "Unit , Lab , Page "
+subtitle: "Unit 4 Optional Project"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 order: 10
 ---
+
+```{=css}
+.blue { color: #00C;}
+.green { color: #0D0;}
+.darkgreen { color: #060;}
+.red { color: #C00;}
+.orange { color: #F60;}
+.purple { color: #606;}
+
+```
 
 <p>Unlike Snap<em>!</em>, which is a <strong>general purpose</strong>
 programming language that can be used to develop a variety of
@@ -17,10 +28,10 @@ below. Browsers use HTTP to turn the HTML into the site you see. Notice
 that most of the <strong>HTML tags</strong> (like <code>\<head\></code>)
 have a closing tag (like <code>\</head\></code>) designating the end,
 and the relevant content goes between the two tags. (The color and
-indentation improve readability but are not necessary.)</p>
+ms-4ation improve readability but are not necessary.)</p>
 
 ```{=html}
-<pre class="indent" style="width:800px"><span class="purple">&lt;!DOCTYPE html&gt;</span>
+<pre class="ms-4" style="width:800px"><span class="purple">&lt;!DOCTYPE html&gt;</span>
 <span class="blue">&lt;html&gt;</span>
 <span class="red">&lt;head&gt;</span>
 <span class="orange">&lt;title&gt;</span>The Page Title Goes Here<span class="orange">&lt;/title&gt;</span>
@@ -51,15 +62,15 @@ using <code>\<h3\>\</h3\></code> tags. (Try numbers 1-6.)</li>
 <li>You can add <em>paragraphs</em> with <code>\<p\>\</p\></code>.</li>
 
 <li>You can <em>link</em> to another webpage:<br />
-<code class="indent">\<a href="http://bjc.edc.org"\>BJC
+<code class="ms-4">\<a href="http://bjc.edc.org"\>BJC
 Website\</a\></code></li>
 
 <li>You can create <em>lists</em>:<br />
-<img src="/img/4-internet/html-lists.jpg" title="HTML ul and ol lists" alt="HTML ul and ol lists" class="indent"/></li>
+<img src="/img/4-internet/html-lists.jpg" title="HTML ul and ol lists" alt="HTML ul and ol lists" class="ms-4"/></li>
 
 <li>You can put <em>comments</em> in the HTML that will not show in the
 browser window using <code>\<!--</code> and <code>--\></code>
-tags:<br /> <code class="indent">\<!-- This is a comment.
+tags:<br /> <code class="ms-4">\<!-- This is a comment.
 --\></code></li>
 
 </ul>
@@ -110,7 +121,7 @@ Snap<em>!</em>.</li>
 is like the code below<code></code>; <code>var</code> creates the new
 variable, and <code>=</code> is like <code>set</code> in
 Snap<em>!</em>.<br />
-<img src="/img/4-internet/script-var-x-set-x-to.png" title="script variables (x); set (x) to ()" alt="script variables (x); set (x) to ()" class="indent"/></li>
+<img src="/img/4-internet/script-var-x-set-x-to.png" title="script variables (x); set (x) to ()" alt="script variables (x); set (x) to ()" class="ms-4"/></li>
 
 </ul>
 :::
@@ -169,7 +180,7 @@ JavaScript. Some of the Snap<em>!</em> libraries are written that way.
 You can experiment with this block by choosing "Libraries..." from the
 File menu, choosing "Set RGB or HSV pen color", and looking in the "Pen"
 palette.<br />
-<img src="/img/4-internet/setRGB.png" title="set pen color to r: g: b:" alt="set pen color to r: g: b:" class="indent"/></li>
+<img src="/img/4-internet/setRGB.png" title="set pen color to r: g: b:" alt="set pen color to r: g: b:" class="ms-4"/></li>
 
 ::: sidenoteBig
 You may also enjoy these

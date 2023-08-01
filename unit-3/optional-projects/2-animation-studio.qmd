@@ -1,6 +1,7 @@
 ---
 title: "Animation Studio"
-subtitle: "Unit , Lab , Page 2"
+subtitle: "Unit 3 Optional Project"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 order: 2
 ---
 
@@ -17,8 +18,8 @@ look (e.g., here, there is only one video to watch).</p>
 ::: learn
 <strong>In this project</strong>, you will create a studio for designing
 and animating a character.<br /><br />
-<img title="Animating a UFO" alt="Animation of user drawing a UFO with the mouse and then -using arrow keys- moving the UFO up, down, right, left" class="indent" data-gifffer="/img/3-lists/AnimationStudio_img/UFO.gif" height="350"/>
-<!--<img class="indent" src="/img/3-lists/AnimationStudio_img/woof.png" height="300" alt="cartoon doggy" title="cartoon doggy"/>-->
+<img title="Animating a UFO" alt="Animation of user drawing a UFO with the mouse and then -using arrow keys- moving the UFO up, down, right, left" class="ms-4" data-gifffer="/img/3-lists/AnimationStudio_img/UFO.gif" height="350"/>
+<!--<img class="ms-4" src="/img/3-lists/AnimationStudio_img/woof.png" height="300" alt="cartoon doggy" title="cartoon doggy"/>-->
 :::
 
 <p>
@@ -77,12 +78,12 @@ work.</li>
 ::: endnote
 <p>You may wish to use the <code>warp</code> block to make your
 animations render more quickly.<br />
-<img src="/img/blocks/warp.png" title="warp block" alt="warp block" class="indent"/></p>
+<img src="/img/blocks/warp.png" title="warp block" alt="warp block" class="ms-4"/></p>
 
 <p>If you <em>uncheck</em> the <var>point list</var> variable at the
 Variables palette, your animation will run faster because your computer
 won't have to display hundreds of coordinates on the stage.<br />
-<img src="/img/3-lists/AnimationStudio_img/uncheckpointlist.png" title="uncheck point list" alt="uncheck point list" class="indent" height="80"/></p>
+<img src="/img/3-lists/AnimationStudio_img/uncheckpointlist.png" title="uncheck point list" alt="uncheck point list" class="ms-4" height="80"/></p>
 :::
 
 ::: takeItFurther

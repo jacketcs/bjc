@@ -1,3 +1,8 @@
-# Introduction to Programming
+---
+title: "Unit 5: Algorithms and Simulations"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
+---
 
-Unit 1 is essentially an introduction to the programming that you will be working with throughout the year. In this unit, you'll learn how to interact with sprites, how to create blocks, and iteration. In addition to these computational ideas, you'll learn about privacy in the physical and digital realm
+In Unit 5, we learn about ... algorithms and simulations.
+
+This is also the last unit that will be included on the AP Exam in May.

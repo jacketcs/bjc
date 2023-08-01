@@ -1,5 +1,6 @@
 ---
-title: "Resources"
+title: "Create Task Resources"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 author: "Ms. O'Keefe and Mr. Chang"
 order: 100
 ---

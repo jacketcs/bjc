@@ -104,9 +104,9 @@ The percent (%) signs make those words become input variables.
 Create a <code>contact</code> <em>constructor</em> that accepts three
 pieces of data as input: the contact's <var>name</var>, <var>phone
 number</var>, and <var>address</var>. <br />
-<img src="/img/3-lists/contact-constructor-untyped.png" title="contact with name: () address: () phone: ()" alt="contact with name: () address: () phone: ()" class="indent"/><br />
+<img src="/img/3-lists/contact-constructor-untyped.png" title="contact with name: () address: () phone: ()" alt="contact with name: () address: () phone: ()" class="ms-4"/><br />
 It should report one whole contact (a list of the three items):<br />
-<img src="/img/3-lists/contact-constructor-reporting.png" title="contact with name: (Betsy Anderson) address: (123 Main St. #4, New York, NY 10001) phone: (212-555-1234) reporting {Betsy Anderson; 123 Main St. #4, New York, NY 10001; 212-555-1234}" alt="contact with name: (Betsy) address: (123 Main St. #4, New York, NY 10001) phone: (212-555-1234) reporting {Betsy Anderson; 123 Main St. #4, New York, NY 10001; 212-555-1234}" class="indent"/><br />
+<img src="/img/3-lists/contact-constructor-reporting.png" title="contact with name: (Betsy Anderson) address: (123 Main St. #4, New York, NY 10001) phone: (212-555-1234) reporting {Betsy Anderson; 123 Main St. #4, New York, NY 10001; 212-555-1234}" alt="contact with name: (Betsy) address: (123 Main St. #4, New York, NY 10001) phone: (212-555-1234) reporting {Betsy Anderson; 123 Main St. #4, New York, NY 10001; 212-555-1234}" class="ms-4"/><br />
 
 </li>
 
@@ -115,9 +115,9 @@ It should report one whole contact (a list of the three items):<br />
 Write the <em>selector</em> blocks to retrieve the <code>name from
 contact</code>, <code>address from contact</code>, or <code>phone from
 contact</code>.
-<img src="/img/3-lists/contact-constructor-in-name-selector.png" title="contact name (contact block with inputs) reporting " alt="contact name (contact block with inputs) reporting " class="indent"/><br />
-<img src="/img/3-lists/contact-constructor-in-address-selector.png" title="contact address (contact block with inputs) reporting " alt="contact address (contact block with inputs) reporting " class="indent"/><br />
-<img src="/img/3-lists/contact-constructor-in-phone-selector.png" title="contact phone (contact block with inputs) reporting " alt="contact phone (contact block with inputs) reporting " class="indent"/>
+<img src="/img/3-lists/contact-constructor-in-name-selector.png" title="contact name (contact block with inputs) reporting " alt="contact name (contact block with inputs) reporting " class="ms-4"/><br />
+<img src="/img/3-lists/contact-constructor-in-address-selector.png" title="contact address (contact block with inputs) reporting " alt="contact address (contact block with inputs) reporting " class="ms-4"/><br />
+<img src="/img/3-lists/contact-constructor-in-phone-selector.png" title="contact phone (contact block with inputs) reporting " alt="contact phone (contact block with inputs) reporting " class="ms-4"/>
 
 ::: takeNote
 ::: sidenote
@@ -151,7 +151,7 @@ selector; these images are just examples to show what the selectors
 should be able to do when given a contact as input. In <em>your</em>
 program, the selectors will take an item from the contact list as input
 and output the correct piece of that contact, like this:<br />
-<img src="/img/3-lists/address-from-contact-item-1-of-contact-list-reporting.png" title="address from contact (item (1) of (contact list)) reporting &apos;123 Main St. #4, New York, NY 10001&apos;" alt="address from contact (item (1) of (contact list)) reporting &apos;123 Main St. #4, New York, NY 10001&apos;" class="indent"/></p>
+<img src="/img/3-lists/address-from-contact-item-1-of-contact-list-reporting.png" title="address from contact (item (1) of (contact list)) reporting &apos;123 Main St. #4, New York, NY 10001&apos;" alt="address from contact (item (1) of (contact list)) reporting &apos;123 Main St. #4, New York, NY 10001&apos;" class="ms-4"/></p>
 :::
 
 </li>
@@ -160,9 +160,9 @@ and output the correct piece of that contact, like this:<br />
 
 Declare input types for each selector to make it obvious that they
 expect a list (one whole contact) as input.<br />
-<img src="/img/3-lists/name-selector.png" title="name from contact: ()" alt="name from contact: ()" class="indent"/>
-<img src="/img/3-lists/address-selector.png" title="address from contact: ()" alt="address from contact: ()" class="indent"/>
-<img src="/img/3-lists/phone-selector.png" title="phone from contact: ()" alt="phone from contact: ()" class="indent"/>
+<img src="/img/3-lists/name-selector.png" title="name from contact: ()" alt="name from contact: ()" class="ms-4"/>
+<img src="/img/3-lists/address-selector.png" title="address from contact: ()" alt="address from contact: ()" class="ms-4"/>
+<img src="/img/3-lists/phone-selector.png" title="phone from contact: ()" alt="phone from contact: ()" class="ms-4"/>
 
 ::: endnote
 You learned about Specifying an Input Type on
@@ -204,7 +204,7 @@ If you don't remember about table view and list view, revisit
 
 <li>Try selecting the <code>name</code>, <code>address</code>, or
 <code>phone</code> from a contact in your list<br />
-<img src="/img/3-lists/name-from-contact-random-reporting.png" title="name from contact: (item (random) of (contact list)) reporting Alphie Preston" alt="name from contact: (item (random) of (contact list)) reporting Alphie Preston" class="indent"/></li>
+<img src="/img/3-lists/name-from-contact-random-reporting.png" title="name from contact: (item (random) of (contact list)) reporting Alphie Preston" alt="name from contact: (item (random) of (contact list)) reporting Alphie Preston" class="ms-4"/></li>
 
 <img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"/>
 

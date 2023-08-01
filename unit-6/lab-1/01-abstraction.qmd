@@ -1,5 +1,5 @@
 ---
-title: "Abstraction Inside the Computer"
+title: "Page 1: Abstraction Inside the Computer"
 subtitle: "Unit 6, Lab 1, Page 1"
 order: 1
 ---
@@ -28,7 +28,7 @@ order: 1
 
 <p>There are a lot of levels of abstraction in how computers work. Here they are organized into three overarching domains:</p>
 
-<img src="/img/6-computers/hardware-abstraction.png" title="diagram of computer abstraction hierarchy showing three levels of decreasing abstraction: software domain (including applications, programming languages, libraries, and operating systems), digital domain (including architecture, components, integrated circuits, and logic gates), and analog domain (including transistors); there is a dividing line between the software and digital domains labeled &apos;program abstraction barrier&apos; and a dividing line between the digital and analog domains labeled &apos;digital abstraction barrier;&apos; there is a vertical double-headed arrow on the right indicating that the items listed first on the list (and their sub-lists) have a &apos;high level of abstraction&apos; and those lower on the list have a &apos;low level of abstraction&apos;" alt="diagram of computer abstraction hierarchy showing three levels of decreasing abstraction: software domain (including applications, programming languages, libraries, and operating systems), digital domain (including architecture, components, integrated circuits, and logic gates), and analog domain (including transistors); there is a dividing line between the software and digital domains labeled &apos;program abstraction barrier&apos; and a dividing line between the digital and analog domains labeled &apos;digital abstraction barrier;&apos; there is a vertical double-headed arrow on the right indicating that the items listed first on the list (and their sub-lists) have a &apos;high level of abstraction&apos; and those lower on the list have a &apos;low level of abstraction&apos;" class="indent noshadow"/>
+<img src="/img/6-computers/hardware-abstraction.png" title="diagram of computer abstraction hierarchy showing three levels of decreasing abstraction: software domain (including applications, programming languages, libraries, and operating systems), digital domain (including architecture, components, integrated circuits, and logic gates), and analog domain (including transistors); there is a dividing line between the software and digital domains labeled &apos;program abstraction barrier&apos; and a dividing line between the digital and analog domains labeled &apos;digital abstraction barrier;&apos; there is a vertical double-headed arrow on the right indicating that the items listed first on the list (and their sub-lists) have a &apos;high level of abstraction&apos; and those lower on the list have a &apos;low level of abstraction&apos;" alt="diagram of computer abstraction hierarchy showing three levels of decreasing abstraction: software domain (including applications, programming languages, libraries, and operating systems), digital domain (including architecture, components, integrated circuits, and logic gates), and analog domain (including transistors); there is a dividing line between the software and digital domains labeled &apos;program abstraction barrier&apos; and a dividing line between the digital and analog domains labeled &apos;digital abstraction barrier;&apos; there is a vertical double-headed arrow on the right indicating that the items listed first on the list (and their sub-lists) have a &apos;high level of abstraction&apos; and those lower on the list have a &apos;low level of abstraction&apos;" class="ms-4 noshadow"/>
 
 ::: endnote
 Different people might draw this diagram slightly differently, so don't try to memorize all the levels. The key abstraction levels to remember are software, digital computer hardware, and underlying analog circuit components.
@@ -107,7 +107,7 @@ In the software domain, each level of abstraction is a different piece of softwa
 <li>Those integrated circuits are designed around <strong>logic gates</strong>, the fundamental building blocks that implement Boolean functions.</li>
 
 ::: endnote
-You learned about Boolean functions in <a href="/unit-2/lab-1/a>.<br /> <img src="/img/blocks/and.png" title="() and ()" alt="() and ()" class="indent"/> <img src="/img/blocks/or-small.png" title="() or ()" alt="() or ()" class="indent"/> <img src="/img/blocks/not_small.png" title="not ()" alt="not ()" class="indent"/>
+You learned about Boolean functions in <a href="/unit-2/lab-1/a>.<br /> <img src="/img/blocks/and.png" title="() and ()" alt="() and ()" class="ms-4"/> <img src="/img/blocks/or-small.png" title="() or ()" alt="() or ()" class="ms-4"/> <img src="/img/blocks/not_small.png" title="not ()" alt="not ()" class="ms-4"/>
 :::
 
 </ul>

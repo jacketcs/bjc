@@ -1,5 +1,5 @@
 ---
-title: "The Software Domain: Programming Languages"
+title: "Page 3: The Software Domain: Programming Languages"
 subtitle: "Unit 6, Lab 1, Page 3"
 order: 3
 ---
@@ -96,7 +96,7 @@ programmer to write shorter, cleaner code.</p>
 This code is similar to a higher-order procedure that you have learned.
 <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
 Identify the procedure that this code imitates:<br />
-<img src="/img/6-computers/hard-way.png" title="script variables (result) (index); set result to (list); set index to (0); repeat (length of (words)){ change index by (1); add (join (item (index) of (words)) s) to (result)}; report (result)" alt="script variables (result) (index); set result to (list); set index to (0); repeat (length of (words)){ change index by (1); add (join (item (index) of (words)) s) to (result)}; report (result)" class="indent"/>
+<img src="/img/6-computers/hard-way.png" title="script variables (result) (index); set result to (list); set index to (0); repeat (length of (words)){ change index by (1); add (join (item (index) of (words)) s) to (result)}; report (result)" alt="script variables (result) (index); set result to (list); set index to (0); repeat (length of (words)){ change index by (1); add (join (item (index) of (words)) s) to (result)}; report (result)" class="ms-4"/>
 
 ::: endnote
 <ul>
@@ -181,13 +181,13 @@ into one text string).
 :::
 
 <p>In C, you can do this the long way:<br />
-<img src="/img/6-computers/hard-way.png" title="script variables (result) (index); set result to (list); set index to (0); repeat (length of (words)){ change index by (1); add (join (item (index) of (words)) s) to (result)}; report (result)" alt="script variables (result) (index); set result to (list); set index to (0); repeat (length of (words)){ change index by (1); add (join (item (index) of (words)) s) to (result)}; report (result)" class="indent"/><br />
+<img src="/img/6-computers/hard-way.png" title="script variables (result) (index); set result to (list); set index to (0); repeat (length of (words)){ change index by (1); add (join (item (index) of (words)) s) to (result)}; report (result)" alt="script variables (result) (index); set result to (list); set index to (0); repeat (length of (words)){ change index by (1); add (join (item (index) of (words)) s) to (result)}; report (result)" class="ms-4"/><br />
 but C doesn't let you take an expression (like
 <img src="/img/6-computers/join-with-s.png" title="join () (s)" alt="join () (s)" class="inline"/>
 or
 <img src="/img/6-computers/5-times-blank-plus-7.png" title="((5) × ( )) + (7)" alt="((5) × ( )) + (7)" class="inline"/>)
 and stick it into a higher-order function like <code>map</code>:<br />
-<img src="/img/6-computers/map-s.png" title="report (map (join () (s)) over (words))" alt="report (map (join () (s)) over (words))" class="indent"/></p>
+<img src="/img/6-computers/map-s.png" title="report (map (join () (s)) over (words))" alt="report (map (join () (s)) over (words))" class="ms-4"/></p>
 
 #### <strong>Why do programmers use low-level languages?</strong>
 
@@ -479,12 +479,12 @@ You built <code>polygon</code> in
 1: Graphics and Art</a>.
 :::
 
-<img src="/img/6-computers/polygon-30-15.png" title="polygon, sides: (30) side length: (15)" alt="polygon, sides: (30) side length: (15)" class="indent"/><br />
+<img src="/img/6-computers/polygon-30-15.png" title="polygon, sides: (30) side length: (15)" alt="polygon, sides: (30) side length: (15)" class="ms-4"/><br />
 Compared to some other languages where the function has one name at the
 beginning and then all the inputs, this increases clarity and
 readability of your function.<br />
 
-<p class="indent">
+<p class="ms-4">
 
 <code>polygon(30, 15)</code>
 
@@ -498,7 +498,7 @@ you need to have memorized that multiplication comes before addition (so
 the answer is 19). If you want it the other way, you have to use
 parentheses: 3 × (5 + 4) to get 27. In a blocks-based language, the
 blocks show you what was intended:
-<img src="/img/6-computers/3-times(5+4).png" title="3 × (5 + 4)" alt="3 × (5 + 4)" class="inline nopadtb"/>.
+<img src="/img/6-computers/3-times(5+4).png" title="3 × (5 + 4)" alt="3 × (5 + 4)" class="inline py-0"/>.
 You've learned order of operations for +, --, ×, and ÷ in math class,
 but you probably haven't learned order of operations for an expression
 like this:
@@ -532,9 +532,7 @@ Operator Precedence</a>.</p>
 
 ## Parallelism
 
-::: commentBig
-5.2.1H A process may execute on one or several CPUs.
-:::
+
 
 <p>One reason to create new programming languages is to make it easier
 to write <em>parallel</em> programs---programs that can use more than
@@ -545,12 +543,7 @@ will increase even further over time.) Big companies such as Google use
 parallelism even more; they have clusters of thousands of computers, all
 working on the same program.</p>
 
-::: commentBig
-4.1.2D Different languages are better suited for expressing different
-algorithms.<br />4.1.2E Some programming languages are designed for
-specific domains and are better for expressing algorithms in those
-domains.
-:::
+
 
 <p><em>Functional</em> programming languages (languages in which
 programmers never change the value of a variable) are particularly well

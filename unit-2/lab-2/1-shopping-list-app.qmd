@@ -18,9 +18,7 @@ Some programming languages use the word <em>array</em> instead of <em>list</em>.
 <p>Many computer applications---contact lists, playlists, calendars, reminders---involve manipulating <em>lists</em> of information using tools that search, sort, or change the items on the list. You've worked with lists before as you customized the gossip project.<br /></p>
 
 ::: examFullWidth
-::: comment
-AAP-1.C.1 second sentence, AAP-1.D.7
-:::
+
 
 ::: pseudop
 The list expression <img src="/img/1-introduction/list-from-who.png" title="list{Señora, Ms. C, my cat, Hannah, Jake}" alt="list{Señora, Ms. C, my cat, Hannah, Jake}" class="inline"/> would be written as
@@ -43,7 +41,7 @@ The list expression <img src="/img/1-introduction/list-from-who.png" title="list
 <a href="#hint-shopping-list-example" data-bs-toggle="collapse" title="Click for a video showing how the shopping list app might look.">Click for a video showing how this might look.</a>
 
 ::: {#hint-shopping-list-example .collapse}
-<img alt="animation of shopping list app" class="indent" data-gifffer="/img/3-lists/shopping-list-project-v3.gif"/>
+<img alt="animation of shopping list app" class="ms-4" data-gifffer="/img/3-lists/shopping-list-project-v3.gif"/>
 :::
 :::
 
@@ -53,9 +51,7 @@ You learned how to initialize (create and set) a global variable on <a href="/un
 
 <li>
 
-::: comment
-AAP-1.C
-:::
+
 
 Initialize a <var>shopping list</var> variable to store the information.
 
@@ -81,9 +77,7 @@ Use its left arrow to get rid of the input slot so that it looks like this: <img
 :::
 
 ::: examFullWidth
-::: comment
-AAP-1.D.7 bullet 2
-:::
+
 
 ::: pseudop
 The assignment instruction <img src="/img/2-complexity/example-blank-list-assignment.png" title="set (shopping list) to (list)" alt="set (shopping list) to (list)" class="inline"/> would be written as
@@ -94,9 +88,7 @@ The assignment instruction <img src="/img/2-complexity/example-blank-list-assign
 or <img src="/img/2-complexity/shoppinglist-empty-list-assignment-blocktran.png" title="shoppingList ← []" alt="shoppingList ← []"/>.
 :::
 
-::: comment
-AAP-1.D.7 bullet 1
-:::
+
 
 ::: pseudop
 The assignment instruction <img src="/img/2-complexity/example-list-assignment.png" title="set (shopping list) to {apples, bread, carrots, rice, pasta}" alt="set (shopping list) to {apples, bread, carrots, rice, pasta}" class="inline"/> would be written as
@@ -113,9 +105,7 @@ or <img src="/img/2-complexity/shoppinglist-full-list-assignment-blocktran.png" 
 <p>
 
 ::: vocabBig
-::: commentBig
-AAP-1.C.2
-:::
+
 
 <p>An <strong>element</strong> is another name for an item in a list. (If the same value is in the list twice, that counts as two different elements.) Each element has a unique <em>index</em> (position) in the list.</p>
 :::
@@ -132,16 +122,12 @@ You can use the <img src="/img/blocks/insert.png" title="insert (thing) at (1) o
 
 </p>
 
-::: comment
-AAP-1.D.6
-:::
+
 
 <p>Assigning a list to a variable lets you use one name to represent all the elements of a list as a unit.</p>
 
 ::: examFullWidth
-::: comment
-AAP-2.N.1 bullet 4
-:::
+
 
 ::: pseudop
 <img src="/img/2-complexity/insert-tomatoes-at-2-of-shopping-list.png" title="insert (tomatoes) at (2) of (shopping list)" alt="insert (tomatoes) at (2) of (shopping list)" class="inline"/> would be written as
@@ -152,9 +138,7 @@ AAP-2.N.1 bullet 4
 or <img src="/img/2-complexity/insert-blocktran.png" title="INSERT(shoppingList, 2, &apos;tomatoes&apos;)" alt="INSERT(shoppingList, 2, &apos;tomatoes&apos;)" class="inline"/>.
 :::
 
-::: comment
-AAP-2.N.1 bullet 5
-:::
+
 
 ::: pseudop
 <img src="/img/2-complexity/add-tomatoes-to-shopping-list.png" title="add (tomatoes) to (shopping list)" alt="add (tomatoes) to (shopping list)" class="inline"/> would be written as
@@ -169,9 +153,7 @@ or <img src="/img/2-complexity/add-blocktran.png" title="APPEND(shoppingList, &a
 ::: forYouToDo
 <ol start="3">
 
-::: comment
-AAP-2.N part a
-:::
+
 
 ::: sidenoteBig
 <p>You've seen the <code>ask</code> and <code>answer</code> blocks on <a href="/unit-2/lab-1/2-checking-player-guess.html" title="Unit 2 Lab 1 Page 2: Checking the Player's Guess">Unit 2 Lab 1 Page 2: Checking the Player's Guess</a>.</p>
@@ -202,9 +184,7 @@ AAP-2.N part a
 
 ::: examFullWidth
 ::: pseudop
-::: comment
-AAP-2.N.1 bullet 6
-:::
+
 
 <img src="/img/2-complexity/delete-item-2-of-shopping-list.png" title="delete item (2) of (shopping list)" alt="delete item (2) of (shopping list)" class="inline"/> would be written as
 
@@ -231,9 +211,7 @@ The items in a list are <em>values</em>, so <strong>you can use <code>item of</c
 
 <ul>
 
-::: comment
-AAP-2.N.1 bullets 2 and 3
-:::
+
 
 <li>
 
@@ -301,11 +279,9 @@ or <img src="/img/2-complexity/assigning-element-to-element-blocktran.png" title
 set(shopping list 2) to (shopping list)
 add (carrot) to (shopping list)" alt="set(shopping list) to (list(apple)(banana))
 set(shopping list 2) to (shopping list)
-add (carrot) to (shopping list)" class="indent"/> <img src="/img/2-complexity/example-list-by-reference-stage.png" title="shopping list watcher showing the contents of the variable to be apple, banana, carrot; and the shopping list 2 watcher showing the contents of the variable to be apple, banana, carrot" alt="shopping list watcher showing the contents of the variable to be apple, banana, carrot; and the shopping list 2 watcher showing the contents of the variable to be apple, banana, carrot" class="indent"/><br /></p>
+add (carrot) to (shopping list)" class="ms-4"/> <img src="/img/2-complexity/example-list-by-reference-stage.png" title="shopping list watcher showing the contents of the variable to be apple, banana, carrot; and the shopping list 2 watcher showing the contents of the variable to be apple, banana, carrot" alt="shopping list watcher showing the contents of the variable to be apple, banana, carrot; and the shopping list 2 watcher showing the contents of the variable to be apple, banana, carrot" class="ms-4"/><br /></p>
 
-::: comment
-AAP-1.D.7 bullet 3, AAP-2.N.2
-:::
+
 
 ::: pseudop
 However on the exam, the statement

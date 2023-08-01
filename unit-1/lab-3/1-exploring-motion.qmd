@@ -47,10 +47,6 @@ order: 1
 ::: {.vocabFullWidth .AP-only}
 <strong>: Algorithm</strong> and <strong>Pseudocode</strong>
 
-::: comment
-AAP-2.A.1, AAP-2.A.2, AAP-2.A.3
-:::
-
 <p>An <strong>algorithm</strong> is a sequence of steps that are usually performed by a computer. The algorithm doesn't have to be written in any particular programming language or even in a programming language at all; you can write your algorithm in English or any other human language. Some people call an algorithm written in human language <strong>pseudocode</strong>. Once you know the steps that the computer will take, you can code your algorithm in the programming language of your choice.</p>
 
 ::: endnote
@@ -61,17 +57,7 @@ What's the purpose of "pseudocode"? Why write an algorithm vaguely in English wh
 ::: {#first .forYouToDo}
 <ol>
 
-::: comment
-AAP-2.A, AAP-3.A part b
-:::
-
-```{=html}
-<!-- <div class="sidenote">
-<img class="imageCenter" src="/img/1-introduction/motion-palette-categories.jpg" alt="Motion palette categories: Motion, Looks, Sound, Pen, Control, Sensing, Operators, and Variables" title="Motion palette categories: Motion, Looks, Sound, Pen, Control, Sensing, Operators, and Variables" /><br />
-The blocks' colors match their palettes: blue for Motion, green for Pen, etc.
-</div> -->
-```
-<li><img src="/img/icons/work-with-a-partner.png" title="Work with a Partner" alt="Work with a Partner" class="inline"/> <img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/> Describe what this algorithm will make the sprite do:<br /> <img src="/img/1-introduction/repeat-4(move-100-turn-right-90).png" title="repeat (4) (move (100), turn clockwise (90))" alt="repeat (4) (move (100), turn clockwise (90))" class="indent"/></li>
+<li><img src="/img/icons/work-with-a-partner.png" title="Work with a Partner" alt="Work with a Partner" class="inline"/> <img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/> Describe what this algorithm will make the sprite do:<br /> <img src="/img/1-introduction/repeat-4(move-100-turn-right-90).png" title="repeat (4) (move (100), turn clockwise (90))" alt="repeat (4) (move (100), turn clockwise (90))" class="ms-4"/></li>
 
 <li>
 
@@ -104,7 +90,7 @@ You can click <code>pen down</code> (or any block) in the palette on the left or
 
 <li>
 
-Click the Visible Stepping button (<img src="/img/2-complexity/visible-stepping.png" title="Visible Stepping button with two footprints" alt="Visible Stepping button with two footprints" class="inline nopadtb"/>), and adjust the slider to control the stepping speed. When you run your code, the sprite will slowly execute each step of the code and highlight it in [cyan]{style="color: black; background-color:cyan"}.
+Click the Visible Stepping button (<img src="/img/2-complexity/visible-stepping.png" title="Visible Stepping button with two footprints" alt="Visible Stepping button with two footprints" class="inline py-0"/>), and adjust the slider to control the stepping speed. When you run your code, the sprite will slowly execute each step of the code and highlight it in [cyan]{style="color: black; background-color:cyan"}.
 
 ::: endnote
 <a href="#hint-slider" data-bs-toggle="collapse" title="Click for a video of adjusting the Visible Stepping slider.">Click for a video of adjusting the Visible Stepping slider.</a>
@@ -197,15 +183,15 @@ Experiment: What leaves a trace?
 :::
 
 ::: takeItTeaser
-<img src="/img/1-introduction/Malevich/malevich01.png" title="Snap! art inspired by Malevich art" alt="Snap! art inspired by Malevich art" class="padright"/> <img src="/img/1-introduction/Malevich/malevich02.png" title="Snap! art inspired by Malevich art" alt="Snap! art inspired by Malevich art" class="padright"/> <img src="/img/1-introduction/Malevich/malevich03.png" title="Snap! art inspired by Malevich art" alt="Snap! art inspired by Malevich art" class="padright"/> <img src="/img/1-introduction/Malevich/malevich04.png" title="Snap! art inspired by Malevich art" alt="Snap! art inspired by Malevich art" class="padright"/>
+<img src="/img/1-introduction/Malevich/malevich01.png" title="Snap! art inspired by Malevich art" alt="Snap! art inspired by Malevich art" class="pe-3"/> <img src="/img/1-introduction/Malevich/malevich02.png" title="Snap! art inspired by Malevich art" alt="Snap! art inspired by Malevich art" class="pe-3"/> <img src="/img/1-introduction/Malevich/malevich03.png" title="Snap! art inspired by Malevich art" alt="Snap! art inspired by Malevich art" class="pe-3"/> <img src="/img/1-introduction/Malevich/malevich04.png" title="Snap! art inspired by Malevich art" alt="Snap! art inspired by Malevich art" class="pe-3"/>
 :::
 
 ::: takeItTeased
 <ol type="A">
 
-<li><strong>Solid rectangles.</strong> Make and run this script:<br /> <img src="/img/1-introduction/flat.png" title="point in direction (45); set (flat line ends) to (True); set pen size to (20); pen down; move (150) steps" alt="point in direction (45); set (flat line ends) to (True); set pen size to (20); pen down; move (150) steps" class="indent"/><br /> The light blue <code>set</code> block is in the Sensing palette, where it looks like <img src="/img/1-introduction/vid-cap.png" title="set (video capture) to ( )" alt="set (video capture) to ( )"/>. Just click once in the hexagonal slot to get True (the green check box). If you're not sure what difference the "flat line ends" makes, try clicking the hexagonal slot again to run the script with that option False. And of course you can change all the numbers, or have your program pick random numbers.</li>
+<li><strong>Solid rectangles.</strong> Make and run this script:<br /> <img src="/img/1-introduction/flat.png" title="point in direction (45); set (flat line ends) to (True); set pen size to (20); pen down; move (150) steps" alt="point in direction (45); set (flat line ends) to (True); set pen size to (20); pen down; move (150) steps" class="ms-4"/><br /> The light blue <code>set</code> block is in the Sensing palette, where it looks like <img src="/img/1-introduction/vid-cap.png" title="set (video capture) to ( )" alt="set (video capture) to ( )"/>. Just click once in the hexagonal slot to get True (the green check box). If you're not sure what difference the "flat line ends" makes, try clicking the hexagonal slot again to run the script with that option False. And of course you can change all the numbers, or have your program pick random numbers.</li>
 
-<li><strong>Color families.</strong> Click the file menu icon and select "Libraries..." Then, find the "Colors and Crayons" library and click "Import."<br /> <img src="/img/1-introduction/libs.png" title="Snap! file menu, highlighting &quot;Libraries...&quot;" alt="Snap! file menu, highlighting &quot;Libraries...&quot;" class="indent"/> <img src="/img/1-introduction/color-lib.png" title="Import library dialog box with &quot;Colors and Crayons&quot; library highlighted" alt="Import library dialog box with &quot;Colors and Crayons&quot; library highlighted" class="indent" height="350px"/><br /> In the Pen menu you'll find the <code>set pen to crayon</code> block. Computers can display billions of colors, but unless you have to match the paint on your wall very precisely, finding your way through all those colors may be more trouble than it's worth. The crayon library, just like a box of crayons, gives you a small set of vibrant colors, arranged in families. So if you want a lot of browns in your picture, you could pick a random number between 30 and 39.<br /> <img src="/img/1-introduction/brown.png" title="Set pen to crayon block with menu of color families, selecting &quot;browns&quot; and showing submenu of ten brownish named colors, highlighting &quot;34 chestnut #954535&quot;" alt="Set pen to crayon block with menu of color families, selecting &quot;browns&quot; and showing submenu of ten brownish named colors, highlighting &quot;34 chestnut #954535&quot;" class="indent"/></li>
+<li><strong>Color families.</strong> Click the file menu icon and select "Libraries..." Then, find the "Colors and Crayons" library and click "Import."<br /> <img src="/img/1-introduction/libs.png" title="Snap! file menu, highlighting &quot;Libraries...&quot;" alt="Snap! file menu, highlighting &quot;Libraries...&quot;" class="ms-4"/> <img src="/img/1-introduction/color-lib.png" title="Import library dialog box with &quot;Colors and Crayons&quot; library highlighted" alt="Import library dialog box with &quot;Colors and Crayons&quot; library highlighted" class="ms-4" height="350px"/><br /> In the Pen menu you'll find the <code>set pen to crayon</code> block. Computers can display billions of colors, but unless you have to match the paint on your wall very precisely, finding your way through all those colors may be more trouble than it's worth. The crayon library, just like a box of crayons, gives you a small set of vibrant colors, arranged in families. So if you want a lot of browns in your picture, you could pick a random number between 30 and 39.<br /> <img src="/img/1-introduction/brown.png" title="Set pen to crayon block with menu of color families, selecting &quot;browns&quot; and showing submenu of ten brownish named colors, highlighting &quot;34 chestnut #954535&quot;" alt="Set pen to crayon block with menu of color families, selecting &quot;browns&quot; and showing submenu of ten brownish named colors, highlighting &quot;34 chestnut #954535&quot;" class="ms-4"/></li>
 
 <img src="/img/1-introduction/1024px-Suprematist_Composition_-_Kazimir_Malevich.jpg" title="painting-by-Malevich" alt="painting-by-Malevich" class="float-end" height="180"/>
 
@@ -232,7 +218,7 @@ Betsy: I bet we can use the idea of drawing really thick lines <em>without</em> 
 
 </div>
 
-<img src="/img/1-introduction/curl.png" title="curved horn shape made of overlapping circles in different colors" alt="curved horn shape made of overlapping circles in different colors" class="indent"/>
+<img src="/img/1-introduction/curl.png" title="curved horn shape made of overlapping circles in different colors" alt="curved horn shape made of overlapping circles in different colors" class="ms-4"/>
 :::
 
 </li>

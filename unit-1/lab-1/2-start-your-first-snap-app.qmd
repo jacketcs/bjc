@@ -43,7 +43,7 @@ gifffer: true
 
 <p style="clear:both;">
 
-<img src="/img/1-introduction/alonzo-on-stage.png" title="picture of Snap! window with white rectangle at right labeled &apos;Stage&apos; and yellow character on that stage labeled &apos;Sprite named Alonzo&apos;" alt="picture of Snap! window with white rectangle at right labeled &apos;Stage&apos; and yellow character on that stage labeled &apos;Sprite named Alonzo&apos;" class="indent"/>
+<img src="/img/1-introduction/alonzo-on-stage.png" title="picture of Snap! window with white rectangle at right labeled &apos;Stage&apos; and yellow character on that stage labeled &apos;Sprite named Alonzo&apos;" alt="picture of Snap! window with white rectangle at right labeled &apos;Stage&apos; and yellow character on that stage labeled &apos;Sprite named Alonzo&apos;" class="ms-4"/>
 
 </p>
 
@@ -62,11 +62,7 @@ As a first step, make Alonzo jump someplace else on the stage when he's clicked.
 <p>You can find blocks in <em>palettes</em> with their matching color. Drag one block underneath another to snap them together.</p>
 :::
 
-<img src="/img/1-introduction/when-clicked-jump.png" alt="when I am clicked, go to [random position]" class="indent" width="199" height="87"/> <img src="/img/1-introduction/go-to-menu-open.png" title="go to () block with menu open showing &apos;random position&apos;, &apos;mouse pointer&apos;, and &apos;center&apos;. The mouse pointer is hovering over &apos;random position&apos;." alt="go to () block with menu open showing &apos;random position&apos;, &apos;mouse pointer&apos;, and &apos;center&apos;. The mouse pointer is hovering over &apos;random position&apos;."/>
-
-::: comment
-CRD-2.B.1
-:::
+<img src="/img/1-introduction/when-clicked-jump.png" alt="when I am clicked, go to [random position]" class="ms-4" width="199" height="87"/> <img src="/img/1-introduction/go-to-menu-open.png" title="go to () block with menu open showing &apos;random position&apos;, &apos;mouse pointer&apos;, and &apos;center&apos;. The mouse pointer is hovering over &apos;random position&apos;." alt="go to () block with menu open showing &apos;random position&apos;, &apos;mouse pointer&apos;, and &apos;center&apos;. The mouse pointer is hovering over &apos;random position&apos;."/>
 
 <p>This is a computer program, also known as <em>software</em>. It's a very short one, but it'll get more interesting soon.</p>
 
@@ -92,11 +88,8 @@ If your program doesn't work, look back at the picture of the code and make sure
 ::: takeNote
 <p>Orange boxes contain the ideas you should still remember three years from now.</p>
 
-<img src="/img/blocks/when-i-am-clicked.png" title="when i am (clicked)" alt="when i am (clicked)" class="indent"/> <img src="/img/blocks/when-green-flag-clicked-full-size.png" title="when &apos;green flag&apos; clicked" alt="when &apos;green flag&apos; clicked" class="indent"/> <img src="/img/blocks/when-space-key-pressed.png" title="when (space) key pressed" alt="when (space) key pressed" class="indent"/>
+<img src="/img/blocks/when-i-am-clicked.png" title="when i am (clicked)" alt="when i am (clicked)" class="ms-4"/> <img src="/img/blocks/when-green-flag-clicked-full-size.png" title="when &apos;green flag&apos; clicked" alt="when &apos;green flag&apos; clicked" class="ms-4"/> <img src="/img/blocks/when-space-key-pressed.png" title="when (space) key pressed" alt="when (space) key pressed" class="ms-4"/>
 
-::: comment
-CRD-2.C.2, CRD-2.C.3, CRD-2.C.5
-:::
 
 <p>Blocks that look like this can be used to detect an <strong>event</strong> such as clicking on the sprite, pressing a key, or clicking the green flag button (<img src="/img/1-introduction/green-flag_button.png" title="green-flag button" alt="green-flag button" class="button"/>). They tell the script to start when that event occurs. Because these blocks can sit only on top of a script (as a way to start the script), Snap<em>!</em> programmers call them "hat blocks." Using events to control a program is called <em><strong>event-driven programming</strong></em>.</p>
 
@@ -125,7 +118,7 @@ CRD-2.C.2, CRD-2.C.3, CRD-2.C.5
 
 <!--<div class="index-term" id="forever</code> loop" />-->
 
-<p>The game isn't much fun if Alonzo just sits there waiting to be clicked. Once you've clicked him, he should keep jumping around on his own. To make Alonzo keep moving around, you need a block that says "do this <code>forever</code>." And there is a block that does it:<br /> <img src="/img/1-introduction/forever.png" title="forever" alt="forever" class="indent"/></p>
+<p>The game isn't much fun if Alonzo just sits there waiting to be clicked. Once you've clicked him, he should keep jumping around on his own. To make Alonzo keep moving around, you need a block that says "do this <code>forever</code>." And there is a block that does it:<br /> <img src="/img/1-introduction/forever.png" title="forever" alt="forever" class="ms-4"/></p>
 
 ::: forYouToDo
 <ol start="7">
@@ -136,7 +129,7 @@ CRD-2.C.2, CRD-2.C.3, CRD-2.C.5
 A bunch of blocks clicked together is called a <em>script</em>.
 :::
 
-Attach this to the bottom of your Alonzo script:<br /> <img src="/img/1-introduction/forever-jump.png" title="forever {go to (random position)}" alt="forever {go to (random position)}" class="indent"/>
+Attach this to the bottom of your Alonzo script:<br /> <img src="/img/1-introduction/forever-jump.png" title="forever {go to (random position)}" alt="forever {go to (random position)}" class="ms-4"/>
 
 ::: narrower
 The sequence of blocks <em>inside</em> the <code>forever</code> block will repeat until you <strong>click the red stop sign</strong>, <img src="/img/1-introduction/stop_button.png" title="red stop button" alt="red stop button"/>, or stop the script in some other way.
@@ -146,7 +139,7 @@ The sequence of blocks <em>inside</em> the <code>forever</code> block will repea
 <a href="#hint-snapping" data-bs-toggle="collapse" title="Click for an animation of snapping these two blocks together.">Click for an animation of snapping these two blocks together.</a>
 
 ::: {#hint-snapping .collapse}
-<img title="animation showing the block go to (position) being snapped inside a forever block" alt="animation showing the block go to (position) being snapped inside a forever block" class="indent" data-gifffer="/img/1-introduction/snap-blocks.gif"/>
+<img title="animation showing the block go to (position) being snapped inside a forever block" alt="animation showing the block go to (position) being snapped inside a forever block" class="ms-4" data-gifffer="/img/1-introduction/snap-blocks.gif"/>
 :::
 :::
 

@@ -20,7 +20,7 @@ you can do that will help:
 
 <ol>
 
-::: sideHOM
+::: sidenote
 ::: todo
 IOC-2.B.2
 :::
@@ -56,11 +56,7 @@ by Nicola Whiting: All the Voices at the Table: the Benefits of
 Diversity</a></p>
 :::
 
-::: comment
-design flaws: IOC-2.B.10, authentication measures: IOC-2.B.1, strong
-passwords: IOC-2.B.2, multifactor authentication: IOC-2.B.3, IOC-2.B.4,
-malicious link: IOC-2.C.5, IOC-2.C.6, security settings: IOC-2.B.11
-:::
+
 
 <li><strong>Run up-to-date software.</strong> The Windows 98 operating
 system was not sold after 2000, and not supported after 2006. But there

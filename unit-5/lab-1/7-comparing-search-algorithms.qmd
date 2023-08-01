@@ -7,7 +7,7 @@ order: 7
 ::: learn
 <p><strong>On this page,</strong> you will learn a recursive technique
 to remove duplicates from a list.<br />
-<img src="/img/5-algorithms/distinct-reporter-reporting.png" title="distinct items from (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) repoting { apples, oranges, bananas, bread, carrots}" alt="distinct items from (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) reporting { apples, oranges, bananas, bread, carrots}" class="indent"/></p>
+<img src="/img/5-algorithms/distinct-reporter-reporting.png" title="distinct items from (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) repoting { apples, oranges, bananas, bread, carrots}" alt="distinct items from (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) reporting { apples, oranges, bananas, bread, carrots}" class="ms-4"/></p>
 :::
 
 <p>Suppose you have a list of items and want to know if the elements of
@@ -16,13 +16,13 @@ that you don't have anything on your shopping list twice.</p>
 
 <p>As a first step, we'll just answer the yes/no question: are there any
 duplicates on your list?<br />
-<img src="/img/5-algorithms/distinct-predicate-reporting.png" title="are the items of (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) distinct? reporting false" alt="are the items of (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) distinct? reporting false" class="indent"/></p>
+<img src="/img/5-algorithms/distinct-predicate-reporting.png" title="are the items of (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) distinct? reporting false" alt="are the items of (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) distinct? reporting false" class="ms-4"/></p>
 
 ::: {#first .forYouToDo}
 <ol>
 
 <li>Experiment with the
-<img src="/img/blocks/all-but-first.png" title="all but first of &apos;list input slot&apos;" alt="all but first of &apos;list input slot&apos;" class="inline nopadtb"/>
+<img src="/img/blocks/all-but-first.png" title="all but first of &apos;list input slot&apos;" alt="all but first of &apos;list input slot&apos;" class="inline py-0"/>
 block using a few different input lists.
 <img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
 What does this block report?</li>
@@ -65,7 +65,7 @@ if ((all but first of (data)) contains ())
 report ()
 }
 report (are the items of () distinct?)
-}" class="indent"/>\
+}" class="ms-4"/>\
 
 ::: endnote
 Notice that this procedure calls itself at the end. (It is
@@ -92,7 +92,7 @@ removed.</p>
 <ol start="4">
 
 <li>Experiment with the
-<img src="/img/blocks/in-front-of-full-size.png" title="() in front of &apos;list input slot&apos;" alt="() in front of &apos;list input slot&apos;" class="inline nopadtb"/>
+<img src="/img/blocks/in-front-of-full-size.png" title="() in front of &apos;list input slot&apos;" alt="() in front of &apos;list input slot&apos;" class="inline py-0"/>
 block using a few different inputs.
 <img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
 What does this block report?</li>

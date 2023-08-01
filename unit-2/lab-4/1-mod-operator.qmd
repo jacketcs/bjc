@@ -64,7 +64,7 @@ with mod on the exam.
 :::
 
 <strong>The <code>mod</code> operator:</strong> The expression
-<img src="/img/1-introduction/17-mod-5.png" title="(17) mod (5)" alt="(17) mod (5)" class="inline nopadtb"/>
+<img src="/img/1-introduction/17-mod-5.png" title="(17) mod (5)" alt="(17) mod (5)" class="inline py-0"/>
 would be written as
 
 ```{=html}
@@ -137,10 +137,10 @@ AAP-2.L.2
 ::: pseudop
 <strong>Order of operations:</strong> In a block language, the nesting
 of blocks determines the order of operations. For example, in
-<img src="/img/6-computers/3-times(5+4).png" title="3 × (5 + 4)" alt="3 × (5 + 4)" class="inline nopadtb"/>
+<img src="/img/6-computers/3-times(5+4).png" title="3 × (5 + 4)" alt="3 × (5 + 4)" class="inline py-0"/>
 you can <em>see</em> that the <code>+</code> block is an input to the
 <code>×</code> block, so the expression means 3×(5+4). Similarly,
-<img src="/img/6-computers/(3-times-5)+4.png" title="(3 × 5) + 4" alt="(3 × 5) + 4" class="inline nopadtb"/>
+<img src="/img/6-computers/(3-times-5)+4.png" title="(3 × 5) + 4" alt="(3 × 5) + 4" class="inline py-0"/>
 means (3×5)+4. In Snap<em>!</em>, it's as if there are parentheses
 around <em>every</em> operation. But in text languages, you can write
 
@@ -175,15 +175,15 @@ wall</a> because the even and odd numbered rows are different. <br />
 :::
 
 <li>Use <code>mod</code> to build a
-<img src="/img/2-complexity/divisible-by.png" title="is () divisible by () ?" alt="is () divisible by () ?" class="nopadtb"/>
+<img src="/img/2-complexity/divisible-by.png" title="is () divisible by () ?" alt="is () divisible by () ?" class="py-0"/>
 predicate that tests for divisibility.<br />
-<img src="/img/2-complexity/15-divisible-by-3-reporting-true.png" title="is (15) divisible by (3) ? reporting true" alt="is (15) divisible by (3) ? reporting true" class="indent"/>
-<img src="/img/2-complexity/15-divisible-by-6-reporting-false.png" title="is (15) divisible by (6) ? reporting false" alt="is (15) divisible by (6) ? reporting false" class="indent"/></li>
+<img src="/img/2-complexity/15-divisible-by-3-reporting-true.png" title="is (15) divisible by (3) ? reporting true" alt="is (15) divisible by (3) ? reporting true" class="ms-4"/>
+<img src="/img/2-complexity/15-divisible-by-6-reporting-false.png" title="is (15) divisible by (6) ? reporting false" alt="is (15) divisible by (6) ? reporting false" class="ms-4"/></li>
 
 <li>Use this <code>divisible by?</code> predicate to build a predicate
 that tests whether its input is even (divisible by 2).<br />
-<img src="/img/2-complexity/even--22-reporting-true.png" title="even? (-22) reporting true" alt="even? (-22) reporting true" class="indent"/>
-<img src="/img/2-complexity/even-7-reporting-false.png" title="even? (7) reporting false" alt="even? (7) reporting false" class="indent"/></li>
+<img src="/img/2-complexity/even--22-reporting-true.png" title="even? (-22) reporting true" alt="even? (-22) reporting true" class="ms-4"/>
+<img src="/img/2-complexity/even-7-reporting-false.png" title="even? (7) reporting false" alt="even? (7) reporting false" class="ms-4"/></li>
 
 <li><img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline"/></li>
 
@@ -448,8 +448,8 @@ Is it true that (12 MOD 2) \> (11 MOD 2)? Explain your reasoning.</li>
 may find
 <img src="/img/blocks/round-a-number.png" title="round ()" alt="round ()"/>
 useful.<br />
-<img src="/img/2-complexity/integer-4(with-result-true).png" title="integer? (4) reporting true" alt="integer? (4) reporting true" class="indent"/>
-<img src="/img/2-complexity/integer-4-point-1(with-result-false).png" title="integer? (4.1) reporting false" alt="integer? (4.1) reporting false" class="indent"/></li>
+<img src="/img/2-complexity/integer-4(with-result-true).png" title="integer? (4) reporting true" alt="integer? (4) reporting true" class="ms-4"/>
+<img src="/img/2-complexity/integer-4-point-1(with-result-false).png" title="integer? (4.1) reporting false" alt="integer? (4.1) reporting false" class="ms-4"/></li>
 
 </ol>
 :::

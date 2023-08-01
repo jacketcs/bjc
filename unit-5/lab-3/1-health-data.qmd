@@ -193,7 +193,6 @@ picture here, as one variable goes up the other goes down. It's also a
 correlation when as one variable goes up or down the other changes in
 the same manner.</p>
 
-::: center
 ::: {style="display: inline-grid; grid-template-columns: auto auto auto; text-align: center;"}
 <div>
 
@@ -230,7 +229,7 @@ positive correlation
 no correlation
 
 </div>
-:::
+
 :::
 :::
 
@@ -314,12 +313,12 @@ increased?</li>
 jokes about correlation and causation from XKCD...</a></p>
 
 ::: {#hint-jokes .collapse}
-<img src="https://imgs.xkcd.com/comics/correlation.png" title="Comic with two people talking across three panels. In panel one, one person says &apos;I used to think correlation implied causation.&apos; In panel two, the same person says, &apos;Then I took a statistics class. Now I don&apos;t.&apos; In panel three, the other person says, &apos;Sounds like the class helped,&apos; and the first person says, &apos;Well, maybe.&apos;" alt="Comic with two people talking across three panels. In panel one, one person says &apos;I used to think correlation implied causation.&apos; In panel two, the same person says, &apos;Then I took a statistics class. Now I don&apos;t.&apos; In panel three, the other person says, &apos;Sounds like the class helped,&apos; and the first person says, &apos;Well, maybe.&apos;" class="indent"/>
+<img src="https://imgs.xkcd.com/comics/correlation.png" title="Comic with two people talking across three panels. In panel one, one person says &apos;I used to think correlation implied causation.&apos; In panel two, the same person says, &apos;Then I took a statistics class. Now I don&apos;t.&apos; In panel three, the other person says, &apos;Sounds like the class helped,&apos; and the first person says, &apos;Well, maybe.&apos;" alt="Comic with two people talking across three panels. In panel one, one person says &apos;I used to think correlation implied causation.&apos; In panel two, the same person says, &apos;Then I took a statistics class. Now I don&apos;t.&apos; In panel three, the other person says, &apos;Sounds like the class helped,&apos; and the first person says, &apos;Well, maybe.&apos;" class="ms-4"/>
 
 <p><a href="https://www.explainxkcd.com/wiki/index.php/552:_Correlation" title="Don't get the correlation joke about statistics class?" target="_blank">Don't
 get the correlation joke about statistics class?</a></p>
 
-<img src="https://imgs.xkcd.com/comics/cell_phones.png" alt="Comic with two people talking across four panels. In panel one, the first person says &apos;Another huge study found no evidence that cell phones cause cancer. What was the W.H.O. thinking?&apos; and the second person says, &apos;I think they just got it backward.&apos; In panel two, the first person says, &apos;Huh?&apos; and the second says, &apos;Well, take a look,&apos; while holding out a laptop. Panel three shows a graph in which the &apos;Total cancer incidence&apos; in the U.S. rises between 1970 and 1990 and the number of &apos;cell phone users&apos; rises between 1990 and 2010. In panel four, the first person says, &apos;Your not... There are *so* many problems with that,&apos; and the second person says, &apos;Well, just to be safe, until I see more data I&apos;m going to assume cancer causes cell phones.&apos;" class="indent"/>
+<img src="https://imgs.xkcd.com/comics/cell_phones.png" alt="Comic with two people talking across four panels. In panel one, the first person says &apos;Another huge study found no evidence that cell phones cause cancer. What was the W.H.O. thinking?&apos; and the second person says, &apos;I think they just got it backward.&apos; In panel two, the first person says, &apos;Huh?&apos; and the second says, &apos;Well, take a look,&apos; while holding out a laptop. Panel three shows a graph in which the &apos;Total cancer incidence&apos; in the U.S. rises between 1970 and 1990 and the number of &apos;cell phone users&apos; rises between 1990 and 2010. In panel four, the first person says, &apos;Your not... There are *so* many problems with that,&apos; and the second person says, &apos;Well, just to be safe, until I see more data I&apos;m going to assume cancer causes cell phones.&apos;" class="ms-4"/>
 
 <p><a href="https://www.explainxkcd.com/wiki/index.php/925:_Cell_Phones" title="Don't get the correlation joke about cell phones and cancer?" target="_blank">Don't
 get the correlation joke about cell phones and cancer?</a></p>

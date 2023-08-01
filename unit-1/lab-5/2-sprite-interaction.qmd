@@ -108,19 +108,15 @@ repeat until (touching (Leader)?)
 {
 point towards (Leader)
 move () steps ← Comment: Type a small value in this empty input slot.
-}" class="indent"/>
+}" class="ms-4"/>
 
 </li>
 
-::: comment
-AAP-2.K.5
-:::
+
 
 <li>What happens if the sprites are already touching? That is, what happens if you drag one sprite on top of the other and then click the green flag? Why?</li>
 
-::: comment
-AAP-2.K.4
-:::
+
 
 <li>Experiment. What happens if the input to <code>move</code> is 0?</li>
 
@@ -136,9 +132,7 @@ AAP-2.K.4
 :::
 
 ::: examFullWidth
-::: comment
-AAP-2.K.3
-:::
+
 
 ::: sidenoteBig
 ::: pseudop
@@ -177,9 +171,9 @@ is a procedure call even though it doesn't take any inputs.
 
 <p>
 
-The script<br /> <img src="/img/1-introduction/example-repeat-until.png" title="repeat until (mouse y &lt; 0) {say (number of fish)}" alt="repeat until (mouse y &lt; 0) {say (number of fish)}" class="indent"/><br /> would be written as<br />
+The script<br /> <img src="/img/1-introduction/example-repeat-until.png" title="repeat until (mouse y &lt; 0) {say (number of fish)}" alt="repeat until (mouse y &lt; 0) {say (number of fish)}" class="ms-4"/><br /> would be written as<br />
 
-::: {.pre-container .indent}
+::: {.pre-container .ms-4}
 ```{=html}
 <pre>REPEAT UNTIL(mouseY() &lt; 0)
 {
@@ -241,7 +235,7 @@ tell (Follower) to (glide (1) secs to x: (200) y: (30))" class="inline"/>
 </ol>
 
 ::: endnote
-To prevent the two sprites from being stuck to each other unable to move, the sprites will need some space between them and some time apart before the chase starts. Blocks such as these may help.<br /> <img src="/img/1-introduction/U1ImageVideoAddendum_img/U1L5p2-PuppySeparation.png" title="go to x:(-200) y:(-50); wait (1) secs &amp; go to x:(200) y:(-50); wait (1) secs" alt="go to x:(-200) y:(-50); wait (1) secs &amp; go to x:(200) y:(-50); wait (1) secs" class="indent" height="90"/>
+To prevent the two sprites from being stuck to each other unable to move, the sprites will need some space between them and some time apart before the chase starts. Blocks such as these may help.<br /> <img src="/img/1-introduction/U1ImageVideoAddendum_img/U1L5p2-PuppySeparation.png" title="go to x:(-200) y:(-50); wait (1) secs &amp; go to x:(200) y:(-50); wait (1) secs" alt="go to x:(-200) y:(-50); wait (1) secs &amp; go to x:(200) y:(-50); wait (1) secs" class="ms-4" height="90"/>
 :::
 
 <img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline"/>

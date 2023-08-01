@@ -1,11 +1,12 @@
 ---
 title: "Daisy Design"
 subtitle: "Unit 1 Optional Project"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 order: 4
 ---
 
 ::: learn
-<strong>In this project,</strong> you are going to write code to draw the geometric design shown below, explore its variations and use it draw more complex designs.<br /> <img src="/img/1-introduction/Daisy_img/Daisy.png" title="Daisy" alt="Daisy" class="indent noshadow" width="242"/>
+<strong>In this project,</strong> you are going to write code to draw the geometric design shown below, explore its variations and use it draw more complex designs.<br /> <img src="/img/1-introduction/Daisy_img/Daisy.png" title="Daisy" alt="Daisy" class="ms-4 noshadow" width="242"/>
 :::
 
 ::: {#first .forYouToDo}
@@ -17,7 +18,7 @@ order: 4
 <p>You can watch <a href="#hint-animation" data-bs-toggle="collapse" title="You can watch this animation to get some ideas.">this animation</a> to get some ideas.</p>
 
 ::: {#hint-animation .collapse}
-<img src="/img/1-introduction/Daisy_img/DaisyAnimation.gif" title="Animation showing the creation of the Daisy design by rotation of a circle" alt="Animation showing the creation of the Daisy design by rotation of a circle" class="center indent" height="400"/>
+<img src="/img/1-introduction/Daisy_img/DaisyAnimation.gif" title="Animation showing the creation of the Daisy design by rotation of a circle" alt="Animation showing the creation of the Daisy design by rotation of a circle" class="center ms-4" height="400"/>
 :::
 :::
 
@@ -33,9 +34,9 @@ order: 4
 ::: takeItFurther
 <ol type="A">
 
-<li>Extend your code so that you can create the following patterns.<br/> <img src="/img/1-introduction/Daisy_img/DoubleDaisy.png" title="Two Daisies" alt="Two Daisies" class="indent" width="240"/> <img src="/img/1-introduction/Daisy_img/TrioDaisy.png" title="Triangle of Daisies" alt="Triangle of  Daisies" class="indent" width="240"/> <img src="/img/1-introduction/Daisy_img/TripleDaisy.png" title="Three Daisies" alt="Three Daisies" class="indent" width="240"/> <img src="/img/1-introduction/Daisy_img/SixDaisy.png" title="Hexagon of Daisies" alt="Hexagon of Daisies" class="indent" width="240"/></li>
+<li>Extend your code so that you can create the following patterns.<br/> <img src="/img/1-introduction/Daisy_img/DoubleDaisy.png" title="Two Daisies" alt="Two Daisies" class="ms-4" width="240"/> <img src="/img/1-introduction/Daisy_img/TrioDaisy.png" title="Triangle of Daisies" alt="Triangle of  Daisies" class="ms-4" width="240"/> <img src="/img/1-introduction/Daisy_img/TripleDaisy.png" title="Three Daisies" alt="Three Daisies" class="ms-4" width="240"/> <img src="/img/1-introduction/Daisy_img/SixDaisy.png" title="Hexagon of Daisies" alt="Hexagon of Daisies" class="ms-4" width="240"/></li>
 
-<li>Consider the following variations on the pen color and thickness for the Daisy Design. Note that in the first design, color changes within each circle, while in the second design, pen thickness changes within each circle. Study the code and explore your own such variations.<br /> <img src="/img/1-introduction/Daisy_img/penColor.png" title="set pen hue to ((abs of(direction))/3.6)" alt="set pen hue to ((abs of(direction))/3.6)" class="indent" width="400"/> <img src="/img/1-introduction/Daisy_img/ColoredDaisy.png" title="Color variation in Daisy" alt="Color variation in Daisy" class="indent" height="250"/><br /> <img src="/img/1-introduction/Daisy_img/penSize.png" title="set pen size to(abs of((direction-180)/30)" alt="set pen size to(abs of((direction-180)/30)" class="indent" width="400"/> <img src="/img/1-introduction/Daisy_img/VariedThicknessDaisy.png" title="Pen thickness variation in Daisy" alt="Pen thickness variation in Daisy" class="indent" height="250"/></li>
+<li>Consider the following variations on the pen color and thickness for the Daisy Design. Note that in the first design, color changes within each circle, while in the second design, pen thickness changes within each circle. Study the code and explore your own such variations.<br /> <img src="/img/1-introduction/Daisy_img/penColor.png" title="set pen hue to ((abs of(direction))/3.6)" alt="set pen hue to ((abs of(direction))/3.6)" class="ms-4" width="400"/> <img src="/img/1-introduction/Daisy_img/ColoredDaisy.png" title="Color variation in Daisy" alt="Color variation in Daisy" class="ms-4" height="250"/><br /> <img src="/img/1-introduction/Daisy_img/penSize.png" title="set pen size to(abs of((direction-180)/30)" alt="set pen size to(abs of((direction-180)/30)" class="ms-4" width="400"/> <img src="/img/1-introduction/Daisy_img/VariedThicknessDaisy.png" title="Pen thickness variation in Daisy" alt="Pen thickness variation in Daisy" class="ms-4" height="250"/></li>
 
 <li>Create your own variations of the Daisy Design and share with your classmates.</li>
 

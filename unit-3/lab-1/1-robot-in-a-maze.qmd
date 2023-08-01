@@ -27,8 +27,8 @@ user Legolover8888</a> and
 user Oxyman</a></small>
 :::
 
-<img src="img/2-complexity/maze-above.png" title="drawing of maze seen from above" alt="drawing of maze seen from above" class="indent"/>
-<img src="img/2-complexity/maze-inside.jpg" title="photograph of maze of hedges with tall walls seen from the inside" alt="photograph of maze of hedges with tall walls seen from the inside" class="indent" width="240"/>
+<img src="img/2-complexity/maze-above.png" title="drawing of maze seen from above" alt="drawing of maze seen from above" class="ms-4"/>
+<img src="img/2-complexity/maze-inside.jpg" title="photograph of maze of hedges with tall walls seen from the inside" alt="photograph of maze of hedges with tall walls seen from the inside" class="ms-4" width="240"/>
 
 </p>
 
@@ -173,8 +173,8 @@ rotate right
 set (steps) to (pick random (1) to (2))
 repeat (steps) {
 move forward
-}" class="indent"/>
-<img src="img/3-lists/robot-question-1-grid.png" title="5×5 grid of squares with an upward-facing sprite in the center square" alt="5×5 grid of squares with an upward-facing sprite in the center square" class="indent noshadow"/></li>
+}" class="ms-4"/>
+<img src="img/3-lists/robot-question-1-grid.png" title="5×5 grid of squares with an upward-facing sprite in the center square" alt="5×5 grid of squares with an upward-facing sprite in the center square" class="ms-4 noshadow"/></li>
 
 </ol>
 :::

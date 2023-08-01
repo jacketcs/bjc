@@ -15,10 +15,6 @@ gifffer: true
 
 <p>This means that <em>collaboration skills</em> are as important as coding skills today. Even if you don't end up working as a programmer, collaboration is part of most jobs.</p>
 
-::: comment
-CRD-1.B.2
-:::
-
 <p>There are several ways to organize a collaboration. In this course, you'll use a collaboration technique called <a href="http://en.wikipedia.org/wiki/Pair_programming" title="Wikipedia: Pair programming" target="_blank"><em>pair programming</em></a>---writing computer programs in teams of two. One partner, the <em>driver,</em> controls the computer. The other, the <em>navigator</em>, helps catch errors and keeps track of how the code being written fits into the overall plan. The navigator is also in charge of reading the lab pages out loud. Aim for equal time in each role, switching about every five minutes.</p>
 
 ::: takeNote
@@ -28,23 +24,6 @@ CRD-1.B.2
 :::
 
 ### How to collaborate in pair programming
-
-::: comment
-CRD-1.C.1:
-
-<ul>
-
-<li>communication - Keep talking, Listen</li>
-
-<li>consensus building - Don't bargain</li>
-
-<li>conflict resolution - Don't get defensive, Don't be afraid of conflict</li>
-
-<li>negotiation - Don't bargain</li>
-
-</ul>
-:::
-
 <p>
 
 <ul>
@@ -65,12 +44,9 @@ CRD-1.C.1:
 
 </p>
 
-<p>In the first unit, we'll use these symbols to remind you to switch roles at specific points in the lab. After this unit, you're on your own to be sure to switch about every five minutes.<br /> <img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="indent"/> <img src="/img/icons/pair-programming-swap-mini.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="indent"/></p>
+<p>In the first unit, we'll use these symbols to remind you to switch roles at specific points in the lab. After this unit, you're on your own to be sure to switch about every five minutes.<br /> <img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="ms-4"/> <img src="/img/icons/pair-programming-swap-mini.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="ms-4"/></p>
 
 ::: forYouToDo
-::: comment
-CRD-1.C
-:::
 
 <ol>
 

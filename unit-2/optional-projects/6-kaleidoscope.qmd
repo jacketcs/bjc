@@ -1,13 +1,14 @@
 ---
 title: "Making a Kaleidoscope"
-subtitle: "Unit , Lab , Page 6"
+subtitle: "Unit 2 Optional Project"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 order: 6
 ---
 
 ::: learn
 <p><strong>In this project,</strong> you will build an app that lets you
 draw like a kaleidoscope.<br />
-<img src="/img/1-introduction/topic1-kaleidoscope.gif" alt="Kaleidoscope Activity" class="indent"/></p>
+<img src="/img/1-introduction/topic1-kaleidoscope.gif" alt="Kaleidoscope Activity" class="ms-4"/></p>
 :::
 
 <p>One sprite is following the mouse. Three other sprites are reflecting

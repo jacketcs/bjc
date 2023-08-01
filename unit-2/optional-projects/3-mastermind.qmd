@@ -1,6 +1,7 @@
 ---
 title: "Mastermind"
-subtitle: "Unit , Lab , Page 3"
+subtitle: "Unit 2 Optional Project"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 order: 3
 ---
 
@@ -28,7 +29,7 @@ the rest of the page look more like the rest of our content.</p>
 <strong>In this project,</strong> you will begin to build the game
 Mastermind™. In this game, one player selects a sequence of four secret
 colors, and the other player tries to guess it.<br />
-<img src="/img/1-introduction/mm-snapshot.png" title="Snapshot of game" alt="Snapshot of game" class="indent" width="250"/>
+<img src="/img/1-introduction/mm-snapshot.png" title="Snapshot of game" alt="Snapshot of game" class="ms-4" width="250"/>
 :::
 
 ::: {#first .forYouToDo}
@@ -141,14 +142,14 @@ whose turn it is.</li>
 
 <li>Ask one player to make a guess (using four letters like
 <strong>goby</strong> above).<br />
-<img src="/img/2-complexity/mm1.png" title="first guess interaction" alt="first guess interaction" class="indent noshadow"/></li>
+<img src="/img/2-complexity/mm1.png" title="first guess interaction" alt="first guess interaction" class="ms-4 noshadow"/></li>
 
 <li>Display that guess on the screen.<br />
-<img src="/img/2-complexity/mm2.png" title="four colors displayed" alt="four colors displayed" class="indent noshadow"/></li>
+<img src="/img/2-complexity/mm2.png" title="four colors displayed" alt="four colors displayed" class="ms-4 noshadow"/></li>
 
 <li>Ask the other player for feedback, as two numbers.<br />
-<img src="/img/2-complexity/mm3.png" title="asking interaction" alt="asking interaction" class="indent noshadow"/>
-<img src="/img/2-complexity/mm4.png" title="four colors 2 points" alt="four colors 2 points" class="indent noshadow"/></li>
+<img src="/img/2-complexity/mm3.png" title="asking interaction" alt="asking interaction" class="ms-4 noshadow"/>
+<img src="/img/2-complexity/mm4.png" title="four colors 2 points" alt="four colors 2 points" class="ms-4 noshadow"/></li>
 
 <li>Keep doing that until the guesser gets the correct answer.</li>
 
@@ -159,8 +160,8 @@ You'll find it useful for a script to be able to tell a particular
 sprite what to do. There's a tool to do that: the
 <img src="/img/1-introduction/tell.png" title="tell (sprite) to (action)" alt="tell (sprite) to (action)"/>
 block. For example:<br />
-<img src="/img/1-introduction/tell-alonzo.png" title="tell (Alonzo) to (say ...)" alt="tell (Alonzo) to (say ...)" class="indent"/>
-<img src="/img/1-introduction/tell-correct.png" title="tell (correct position) to (show value (# correct))" alt="tell (correct position) to (show value (# correct))" class="indent"/>
+<img src="/img/1-introduction/tell-alonzo.png" title="tell (Alonzo) to (say ...)" alt="tell (Alonzo) to (say ...)" class="ms-4"/>
+<img src="/img/1-introduction/tell-correct.png" title="tell (correct position) to (show value (# correct))" alt="tell (correct position) to (show value (# correct))" class="ms-4"/>
 :::
 
 </li>

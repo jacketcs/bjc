@@ -16,7 +16,7 @@ There's always something more you can do to make a program better. <strong>On th
 </ol>
 :::
 
-<p>Clicking the green flag button in the top right corner of the window (<img src="/img/1-introduction/green-flag_button.png" title="green-flag button" alt="green-flag button" class="button"/>) starts all scripts that begin with the <code>when green flag clicked</code> hat block.<br /> <img src="/img/blocks/when-green-flag-clicked-full-size.png" title="a yellow round-topped hat block that says When &apos;picture of a green flag&apos; is clicked" alt="a yellow round-topped hat block that says When &apos;picture of a green flag&apos; is clicked" class="indent"/></p>
+<p>Clicking the green flag button in the top right corner of the window (<img src="/img/1-introduction/green-flag_button.png" title="green-flag button" alt="green-flag button" class="button"/>) starts all scripts that begin with the <code>when green flag clicked</code> hat block.<br /> <img src="/img/blocks/when-green-flag-clicked-full-size.png" title="a yellow round-topped hat block that says When &apos;picture of a green flag&apos; is clicked" alt="a yellow round-topped hat block that says When &apos;picture of a green flag&apos; is clicked" class="ms-4"/></p>
 
 ::: forYouToDo
 <ol start="2">

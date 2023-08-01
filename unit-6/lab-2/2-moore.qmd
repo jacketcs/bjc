@@ -1,7 +1,7 @@
 ---
-title: "Moore's Law"
-subtitle: "Unit 6, Lab 2, Page 1"
-order: 1
+title: "Page 2: Moore's Law"
+subtitle: "Unit 6, Lab 2, Page 2"
+order: 2
 ---
 
 <div class="learn"><strong>On this page</strong>, you'll learn that computer processor speed and memory size have approximately doubled every year or two, for over 50 years.</div>

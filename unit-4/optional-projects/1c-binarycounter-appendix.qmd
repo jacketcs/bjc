@@ -1,6 +1,7 @@
 ---
 title: "Binary Timer Appendix"
-subtitle: "Unit , Lab , Page "
+subtitle: "Unit 4 Optional Project"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 order: 10
 ---
 
@@ -13,7 +14,7 @@ Remainder</em>)</h3>
 
 <strong>Example:</strong> If you were trying to extract the digits of a
 number, say, 527 in base 10, you would take the following steps.<br />
-<img src="/img/6-computers/BinaryClock_img/527.png" title="Decimal Digit Extraction" alt="Decimal Digit Extraction" class="indent" width="459"/><br />
+<img src="/img/6-computers/BinaryClock_img/527.png" title="Decimal Digit Extraction" alt="Decimal Digit Extraction" class="ms-4" width="459"/><br />
 (Recall that the floor() function rounds a number down to the closest
 integer.)<br />
 
@@ -46,7 +47,7 @@ first, 2 next, 5 last)</p>
 <strong>Example:</strong> If you apply a similar procedure to get the
 binary representation of a number, say, 25, you would take the following
 steps.<br />
-<img src="/img/6-computers/BinaryClock_img/25.png" title="Binary Digit Extraction" alt="Binary Digit Extraction" class="indent" width="747"/><br />
+<img src="/img/6-computers/BinaryClock_img/25.png" title="Binary Digit Extraction" alt="Binary Digit Extraction" class="ms-4" width="747"/><br />
 
 <ol>
 
@@ -89,7 +90,7 @@ Subtraction</em>)</h3>
 
 <b>Example:</b> If you are trying to get the binary representation of a
 number, say, 25, you would take the following steps.<br>
-<img src="/img/6-computers/BinaryClock_img/powersOfTwo.png" title="powers of 2" alt="powers of 2" class="indent" width="192"/><br>
+<img src="/img/6-computers/BinaryClock_img/powersOfTwo.png" title="powers of 2" alt="powers of 2" class="ms-4" width="192"/><br>
 
 ```{=html}
 <pre  style="width:400px">
@@ -103,4 +104,4 @@ Is 2<sup>0</sup> = 1 contained in  1? Yes, write <b>1</b>.
 1-1=0  Done.
 </pre>
 ```
-<img src="/img/6-computers/BinaryClock_img/BinaryConversion.png" title="Binary conversion" alt="Binary conversion" class="indent" width="195"/>
+<img src="/img/6-computers/BinaryClock_img/BinaryConversion.png" title="Binary conversion" alt="Binary conversion" class="ms-4" width="195"/>

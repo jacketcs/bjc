@@ -33,7 +33,7 @@ with an X or an O.<br />
 2 Lab 1 Page 4: Keeping Score with Global Variables</a>.</p>
 :::
 
-<img src="/img/3-lists/ttt-board-var.png" title="picture of: watcher of board variable showing {O, O, X, 4, X, 6, X, 8, 9}; and Tic Tac Toe game with X, X, O in top row; empty, X, empty in middle row; and X, empty, empty in bottom row" alt="picture of: watcher of board variable showing {O, O, X, 4, X, 6, X, 8, 9}; and Tic Tac Toe game with X, X, O in top row; empty, X, empty in middle row; and X, empty, empty in bottom row" class="indent noshadow"/>
+<img src="/img/3-lists/ttt-board-var.png" title="picture of: watcher of board variable showing {O, O, X, 4, X, 6, X, 8, 9}; and Tic Tac Toe game with X, X, O in top row; empty, X, empty in middle row; and X, empty, empty in bottom row" alt="picture of: watcher of board variable showing {O, O, X, 4, X, 6, X, 8, 9}; and Tic Tac Toe game with X, X, O in top row; empty, X, empty in middle row; and X, empty, empty in bottom row" class="ms-4 noshadow"/>
 
 </p>
 
@@ -54,7 +54,7 @@ beginning of the game, contains a list with the numbers from 1 to
 <p>Each sprite needs to know its own position on the board so that you
 can use the <code>item of</code> block to replace that position with an
 X or an O. So, you'll create a <em>sprite variable</em>,
-<img src="/img/3-lists/position-number.png" title="position number" alt="position number" class="inline nopadtb"/>,
+<img src="/img/3-lists/position-number.png" title="position number" alt="position number" class="inline py-0"/>,
 and each clone will have its <em>own version</em> of this variable.</p>
 
 ::: vocabFullWidth
@@ -87,7 +87,7 @@ You make a sprite variable similarly to how you make global variables:
 <ul>
 
 <li>Click
-<img src="/img/1-introduction/make-a-variable.png" title="make a variable button" alt="make a variable button" class="inline nopadtb noshadow"/>
+<img src="/img/1-introduction/make-a-variable.png" title="make a variable button" alt="make a variable button" class="inline py-0 noshadow"/>
 in the Variables palette.</li>
 
 <li>Then, as you are typing the variable's name, select "for this sprite
@@ -97,7 +97,7 @@ only" to make it a sprite variable.</li>
 
 </p>
 
-<img src="/img/3-lists/square-number-var.png" title="variable name dialog box with &apos;for this sprite only&apos; selected" alt="variable name dialog box with &apos;for this sprite only&apos; selected" class="indent"/><br />
+<img src="/img/3-lists/square-number-var.png" title="variable name dialog box with &apos;for this sprite only&apos; selected" alt="variable name dialog box with &apos;for this sprite only&apos; selected" class="ms-4"/><br />
 :::
 
 </li>
@@ -143,7 +143,7 @@ could be represented as
 <img src="/img/3-lists/{3,5,7}.png" title="list{3, 5, 7}" alt="list{3, 5, 7}"/>
 because the win is in the 3<sup>rd</sup>, 5<sup>th</sup>, and
 7<sup>th</sup> positions:<br />
-<img src="/img/3-lists/winning-combo-357.png" title="diagonal win bottom left to top right" alt="diagonal win bottom left to top right" class="indent noshadow"/><br /></p>
+<img src="/img/3-lists/winning-combo-357.png" title="diagonal win bottom left to top right" alt="diagonal win bottom left to top right" class="ms-4 noshadow"/><br /></p>
 
 ::: forYouToDo
 <ol start="7">
@@ -166,7 +166,7 @@ because the win is in the 3<sup>rd</sup>, 5<sup>th</sup>, and
 :::
 
 <p>You <em>could</em> check for each possible win separately:<br />
-<img src="/img/3-lists/silly-check-win.png" title="is there a win? (Comment: Don&apos;t build this!! Just read it.) : if (is there a win at (1) (2) (3) ?) report (true); if (is there a win at (4) (5) (6) ?) report (true); ...; if (is there a win at (3) (5) (7) ?) report (true); report (false)" alt="is there a win? (Comment: Don&apos;t build this!! Just read it.) : if (is there a win at (1) (2) (3) ?) report (true); if (is there a win at (4) (5) (6) ?) report (true); ...; if (is there a win at (3) (5) (7) ?) report (true); report (false)" class="indent"/></p>
+<img src="/img/3-lists/silly-check-win.png" title="is there a win? (Comment: Don&apos;t build this!! Just read it.) : if (is there a win at (1) (2) (3) ?) report (true); if (is there a win at (4) (5) (6) ?) report (true); ...; if (is there a win at (3) (5) (7) ?) report (true); report (false)" alt="is there a win? (Comment: Don&apos;t build this!! Just read it.) : if (is there a win at (1) (2) (3) ?) report (true); if (is there a win at (4) (5) (6) ?) report (true); ...; if (is there a win at (3) (5) (7) ?) report (true); report (false)" class="ms-4"/></p>
 
 <p>But that's way too much code, especially because you'll have to do
 something very similar again, later on, when the computer actually plays
@@ -181,7 +181,7 @@ game stored by <var>board</var>.</p>
 
 <li>Create a reporter that outputs a list of all possible winning
 triples. It will look something like this:<br />
-<img src="/img/3-lists/winning-triples.png" title="winning triples partial block definition showing a list with at least two lists inside it: {1,2,3} and {2,5,8}" alt="winning triples partial block definition showing a list with at least two lists inside it: {1,2,3} and {2,5,8}" class="indent"/></li>
+<img src="/img/3-lists/winning-triples.png" title="winning triples partial block definition showing a list with at least two lists inside it: {1,2,3} and {2,5,8}" alt="winning triples partial block definition showing a list with at least two lists inside it: {1,2,3} and {2,5,8}" class="ms-4"/></li>
 
 <li><img src="/img/icons/save-use-later.png" title="Save. You will use this later." alt="Save. You will use this later." class="inline"/></li>
 

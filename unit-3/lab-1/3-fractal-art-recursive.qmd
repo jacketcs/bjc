@@ -30,7 +30,7 @@ Create a<code> </code>block called <code>nested triangle</code> that
 takes one input, <var>size</var>, and, for now, only draws one triangle,
 but only if <var>size</var> \> 9. (Leave out the code about changing
 colors.)
-<br /><img src="/img/2-complexity/nested-tri-no-color-proto.png" title="nested triangle, size: (size)" alt="nested triangle, size: (size)" class="indent"/>
+<br /><img src="/img/2-complexity/nested-tri-no-color-proto.png" title="nested triangle, size: (size)" alt="nested triangle, size: (size)" class="ms-4"/>
 
 ::: endnote
 <p><a href="#hint-purple" data-bs-toggle="collapse" title="Shouldn't it be blue?">Shouldn't
@@ -50,7 +50,7 @@ for hints about building a <code>nested triangle</code> block.</a></p>
 
 <li>Use your first triangle script from the previous page as a model.
 But add one condition: draw the triangle only if it's big enough:<br />
-<img src="/img/2-complexity/triangle.png" title="if(size&gt;9){repeat(3){move 100 steps; turn clockwise 120 degrees}}" alt="if(size&gt;9){repeat(3){move 100 steps; turn clockwise 120 degrees}}" class="indent"/></li>
+<img src="/img/2-complexity/triangle.png" title="if(size&gt;9){repeat(3){move 100 steps; turn clockwise 120 degrees}}" alt="if(size&gt;9){repeat(3){move 100 steps; turn clockwise 120 degrees}}" class="ms-4"/></li>
 
 <li>Click the "Apply" button in the Block Editor so that the block
 appears in the palette on the left.</li>
@@ -86,7 +86,7 @@ similar thing with your <code>nested triangle</code> block.</p>
 definition of <code>nested triangle</code> between the <code>move</code>
 and <code>turn</code> blocks. Make its <var>size</var> input half the
 current value of <var>size</var>.<br />
-<img src="/img/2-complexity/nested-tri-recur-no-color.png" title="nested triangle, size: (size/2)" alt="nested triangle, size: (size/2)" class="indent"/></li>
+<img src="/img/2-complexity/nested-tri-recur-no-color.png" title="nested triangle, size: (size/2)" alt="nested triangle, size: (size/2)" class="ms-4"/></li>
 
 <li>
 
@@ -118,9 +118,9 @@ between sides. For the fractal you just created, that turning happens
 <em>after</em> drawing the child, but you could turn <em>before</em> the
 recursive call, or split the turn, with part before and part after the
 recursive call. Try some modifications like these:<br />
-<img src="/img/2-complexity/triangle-fractal-variation01.png" title="repeat(3){move(size) steps; turn clockwise (120) degrees; nested triangle, size:(size/2)}" alt="repeat(3){move(size) steps; turn clockwise (120) degrees; triangle fractal level:(level-1) size:(size*0.5)}" class="indent"/><br />
-<img src="/img/2-complexity/triangle-fractal-variation02.png" title="repeat(3){move(size) steps; turn clockwise (60) degrees; nested triangle, size:(size/2); turn clockwise(60) degrees}" alt="repeat(3){move(size) steps; turn clockwise (60) degrees; triangle fractal level:(level-1) size:(size*0.5); turn clockwise(60) degrees}" class="indent"/><br />
-<img src="/img/2-complexity/triangle-fractal-variation03.png" title="repeat(3){move(size) steps; turn counter-clockwise (30) degrees; triangle fractal level:(level-1) size:(size*0.5); turn clockwise(150) degrees}" alt="repeat(3){move(size) steps; turn counter-clockwise (30) degrees; nested triangle, size:(size/2); turn clockwise(150) degrees}" class="indent"/></li>
+<img src="/img/2-complexity/triangle-fractal-variation01.png" title="repeat(3){move(size) steps; turn clockwise (120) degrees; nested triangle, size:(size/2)}" alt="repeat(3){move(size) steps; turn clockwise (120) degrees; triangle fractal level:(level-1) size:(size*0.5)}" class="ms-4"/><br />
+<img src="/img/2-complexity/triangle-fractal-variation02.png" title="repeat(3){move(size) steps; turn clockwise (60) degrees; nested triangle, size:(size/2); turn clockwise(60) degrees}" alt="repeat(3){move(size) steps; turn clockwise (60) degrees; triangle fractal level:(level-1) size:(size*0.5); turn clockwise(60) degrees}" class="ms-4"/><br />
+<img src="/img/2-complexity/triangle-fractal-variation03.png" title="repeat(3){move(size) steps; turn counter-clockwise (30) degrees; triangle fractal level:(level-1) size:(size*0.5); turn clockwise(150) degrees}" alt="repeat(3){move(size) steps; turn counter-clockwise (30) degrees; nested triangle, size:(size/2); turn clockwise(150) degrees}" class="ms-4"/></li>
 
 </ol>
 :::

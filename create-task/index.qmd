@@ -1,5 +1,6 @@
 ---
-title: "Create Task"
+title: "Create Task Introduction"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 ---
 
 For this course, you will be working on a project that will be graded both by your teacher and the AP exam scorers.

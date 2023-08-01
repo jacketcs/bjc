@@ -1,5 +1,5 @@
 ---
-title: "The Software Domain: Operating Systems"
+title: "Page 5: The Software Domain: Operating Systems"
 subtitle: "Unit 6, Lab 1, Page 5"
 order: 5
 ---
@@ -56,9 +56,7 @@ The <em>kernel</em> deals directly with hardware (keyboard, mouse, microphone, c
 <p><a href="#hint-unix" data-bs-toggle="collapse" title="Read more about Unix">Read more about Unix.</a></p>
 
 ::: {#hint-unix .collapse}
-::: comment
-This still needs editing. If we find a way to cut this back, more students will actually read it. --MF, 11/8/17
-:::
+
 
 <p>("Unix" is a trademark, currently owned by The Open Group, and not all of the variants discussed here are authorized to use that name, but they all provide essentially the same program interface.) Unix was created around 1970 by Ken Thompson and Dennis Ritchie at AT&T Bell Laboratories.</p>
 

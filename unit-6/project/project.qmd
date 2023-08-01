@@ -1,5 +1,6 @@
 ---
 title: "Unit 6 Project: History of Computers Game"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 author: "Mr. Chang and Ms. O'Keefe"
 ---
 

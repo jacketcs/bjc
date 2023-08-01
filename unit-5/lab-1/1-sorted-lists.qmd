@@ -25,7 +25,7 @@ You built a number guessing game in
 <li>Click the picture to load a version of the number guessing game in
 which you guess a number from 1 to 60. <br />
 <a class="run" href="/prog/5-algorithms/U5L1-GuessNumber.xml">
-<img src="/img/5-algorithms/number-guessing-game.png" title="number guessing game" alt="number guessing game" class="indent"/>
+<img src="/img/5-algorithms/number-guessing-game.png" title="number guessing game" alt="number guessing game" class="ms-4"/>
 </a></li>
 
 <li>Play a few times. Keep track of how many guesses it takes you to

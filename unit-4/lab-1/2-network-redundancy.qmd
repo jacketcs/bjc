@@ -83,7 +83,7 @@ Someone should follow-up with Dan about where these images came from.
 --MF, 8/29/19
 :::
 
-<img src="/img/4-internet/redundancy.gif" title="A network of nodes joined with edges, with a sender node and a receiver node. The sender is able to send a message to the receiver even when an intermediate node is damaged in the network, as the message is able to traverse an alternate path highlighting network&apos;s redundancy." alt="A network of nodes joined with edges, with a sender node and a receiver node. The sender is able to send a message to the receiver even when an intermediate node is damaged in the network, as the message is able to traverse an alternate path highlighting network&apos;s redundancy." class="indent"/>
+<img src="/img/4-internet/redundancy.gif" title="A network of nodes joined with edges, with a sender node and a receiver node. The sender is able to send a message to the receiver even when an intermediate node is damaged in the network, as the message is able to traverse an alternate path highlighting network&apos;s redundancy." alt="A network of nodes joined with edges, with a sender node and a receiver node. The sender is able to send a message to the receiver even when an intermediate node is damaged in the network, as the message is able to traverse an alternate path highlighting network&apos;s redundancy." class="ms-4"/>
 
 </li>
 

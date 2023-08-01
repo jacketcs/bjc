@@ -19,7 +19,7 @@ program notify the players.
 
 ::: endnote
 <p>Snap<em>!</em> has a higher-order function
-<img src="/img/blocks/find-first.png" title="find first item () in &apos;list input slot&apos;" alt="find first item () in &apos;list input slot&apos;" class="inline nopadtb"/>
+<img src="/img/blocks/find-first.png" title="find first item () in &apos;list input slot&apos;" alt="find first item () in &apos;list input slot&apos;" class="inline py-0"/>
 that works similarly to <code>keep</code>, but it reports only the first
 item that's found, so it can be faster. <code>Find first</code> is
 equivalent to <code>item (1) of (keep)</code>.</p>
@@ -33,7 +33,7 @@ for a hint about using <code>find first</code> to check for
 ties.</a></p>
 
 ::: {#hint-tie-contains .collapse}
-<img src="/img/3-lists/any-numbers.png" title="find first item (is () a number?) in ()" alt="find first item (is () a number?) in ()" class="indent"/>
+<img src="/img/3-lists/any-numbers.png" title="find first item (is () a number?) in ()" alt="find first item (is () a number?) in ()" class="ms-4"/>
 :::
 :::
 

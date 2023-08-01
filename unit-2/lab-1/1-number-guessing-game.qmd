@@ -31,14 +31,12 @@ order: 1
 </ol>
 :::
 
-<p>In a number-guessing game, the player tries to guess the computer's secret number. The computer needs a way to store the secret number in a <em>variable</em> so that it can compare it to the player's guesses.<br /> <img src="/img/2-complexity/script-variables-secret-number.png" title="script variables (secret number)" alt="script variables (secret number)" class="indent"/></p>
+<p>In a number-guessing game, the player tries to guess the computer's secret number. The computer needs a way to store the secret number in a <em>variable</em> so that it can compare it to the player's guesses.<br /> <img src="/img/2-complexity/script-variables-secret-number.png" title="script variables (secret number)" alt="script variables (secret number)" class="ms-4"/></p>
 
 ::: vocabFullWidth
 : <strong>Variable</strong>
 
-::: comment
-AAP-1.A.1
-:::
+
 
 <p>A <strong>variable</strong> is like a labeled box that can hold one value at a time, such as one word, one costume, or one list (which can contain many things). You can look at what's inside as many times as you want.</p>
 
@@ -59,7 +57,7 @@ Create a script variable called <var>secret number</var> to store the number tha
 
 <ol type="a">
 
-<li><strong>Move a <code>script variables</code> block into the Scripting Area.</strong> You can find it in the Variables palette.<br /> <img src="/img/prog/scriptvar.png" title="script variables" alt="script variables" class="indent"/></li>
+<li><strong>Move a <code>script variables</code> block into the Scripting Area.</strong> You can find it in the Variables palette.<br /> <img src="/img/prog/scriptvar.png" title="script variables" alt="script variables" class="ms-4"/></li>
 
 <li><strong>Name the variable</strong> by clicking on the orange <var>a</var> at the end and typing the name you want. Here, it should be called <var>secret number</var>.</li>
 
@@ -72,17 +70,15 @@ Create a script variable called <var>secret number</var> to store the number tha
 
 <li>
 
-::: comment
-AAP-1.A, AAP-3.E
-:::
 
-Use <img src="/img/blocks/set-empty.png" title="set () to ()" alt="set () to ()" class="inline nopadtb"/> to set the initial value of <var>secret number</var> to a random number from 1 to 10. The <code>set</code> menu lets you select which variable to set. <br />
+
+Use <img src="/img/blocks/set-empty.png" title="set () to ()" alt="set () to ()" class="inline py-0"/> to set the initial value of <var>secret number</var> to a random number from 1 to 10. The <code>set</code> menu lets you select which variable to set. <br />
 
 ::: sidenoteBig
 The variable <var>secret number</var> is available in the <code>set</code> block only when you snap it somewhere after the <code>script variables</code> block.
 :::
 
-<img src="/img/2-complexity/set-secret-number-menu.jpg" title="set block menu selecting secret number" alt="set block menu selecting secret number" class="indent"/>
+<img src="/img/2-complexity/set-secret-number-menu.jpg" title="set block menu selecting secret number" alt="set block menu selecting secret number" class="ms-4"/>
 
 </li>
 
@@ -90,9 +86,7 @@ The variable <var>secret number</var> is available in the <code>set</code> block
 :::
 
 ::: examFullWidth
-::: comment
-AAP-1.B.2
-:::
+
 
 ::: pseudop
 <img src="/img/2-complexity/set-secret-number-to-7.png" title="set (secret number) to (7)" alt="set (secret number) to (7)" class="inline"/> would be written as
@@ -100,7 +94,7 @@ AAP-1.B.2
 ```{=html}
 <pre class="inline">secretNumber &leftarrow; 7</pre>
 ```
-or <img src="/img/2-complexity/secret-number-assignment-blocktran.png" title="a white rounded rectangle containing the text &apos;secretNumber ← 7&apos;" alt="a white rounded rectangle containing the text &apos;secretNumber ← 7&apos;" class="nopadtb"/>.
+or <img src="/img/2-complexity/secret-number-assignment-blocktran.png" title="a white rounded rectangle containing the text &apos;secretNumber ← 7&apos;" alt="a white rounded rectangle containing the text &apos;secretNumber ← 7&apos;" class="py-0"/>.
 :::
 :::
 
@@ -110,9 +104,9 @@ or <img src="/img/2-complexity/secret-number-assignment-blocktran.png" title="a 
 <p><a href="#hint-inputs" data-bs-toggle="collapse" title="Examples you've seen before.">Examples you've seen before.</a></p>
 
 ::: {#hint-inputs .collapse}
-<p>You have created variables as inputs to blocks that you made:<br /> <img src="/img/2-complexity/input-variable-for-pinwheelbranches-commented.png" title="block definition for pinwheel and setting &apos;number of branches&apos; input variable for pinwheel" alt="block definition for pinwheel and setting &apos;number of branches&apos; input variable for pinwheel" class="indent noshadow"/></p>
+<p>You have created variables as inputs to blocks that you made:<br /> <img src="/img/2-complexity/input-variable-for-pinwheelbranches-commented.png" title="block definition for pinwheel and setting &apos;number of branches&apos; input variable for pinwheel" alt="block definition for pinwheel and setting &apos;number of branches&apos; input variable for pinwheel" class="ms-4 noshadow"/></p>
 
-<p>You have used the counter variable that the <code>for</code> block gave you:<br /> <img src="/img/2-complexity/local-variable-created-by-for-block-commented.png" title="local variable created by for block" alt="local variable created by for block" class="indent noshadow"/></p>
+<p>You have used the counter variable that the <code>for</code> block gave you:<br /> <img src="/img/2-complexity/local-variable-created-by-for-block-commented.png" title="local variable created by for block" alt="local variable created by for block" class="ms-4 noshadow"/></p>
 :::
 :::
 
@@ -126,9 +120,7 @@ or <img src="/img/2-complexity/secret-number-assignment-blocktran.png" title="a 
 <p>In algebra, a variable is sometimes used for something whose value you don't know yet, and the goal is to find out its value. In programming <em>you decide</em> the values of variables.</p>
 :::
 
-::: comment
-AAP-1.A.1
-:::
+
 
 ::: sidenote
 You learned about input variables on <a href="/unit-1/lab-3/3-blocks-with-inputs.html" title="Unit 1 Lab 3 Page 3: Blocks with Inputs">Unit 1 Lab 3 Page 3: Blocks with Inputs</a>.
@@ -151,9 +143,7 @@ means something. (Suppose <var>a</var> = 8. First compute the value of
 ::: forYouToDo
 <ol start="5">
 
-::: comment
-AAP-1.B, AAP-1.B.3
-:::
+
 
 <li>
 
@@ -239,7 +229,7 @@ The script will display the <strong>value of the variable <var>b</var></strong>,
 
 ::: {.assessment-data type="multiplechoice" identifier="What value will this script report?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="true"}
 ::: prompt
-What value will this script report?<br /> <img src="/img/2-complexity/variable-assignment-quizlet.png" title="set m to 9, set k to 5, set m to (m + 1), set k to (k - m), report k" alt="set m to 9, set k to 5, set m to (m + 1), set k to (k - m), report k" class="indent"/>
+What value will this script report?<br /> <img src="/img/2-complexity/variable-assignment-quizlet.png" title="set m to 9, set k to 5, set m to (m + 1), set k to (k - m), report k" alt="set m to 9, set k to 5, set m to (m + 1), set k to (k - m), report k" class="ms-4"/>
 :::
 
 ::: {.choice identifier="c1"}

@@ -64,7 +64,7 @@ the 158 pixels in the top row of the BJC logo (at right). The first 60
 pixels are white. Then come five pixels of yellowish orange (the top
 slice of the "b"). And the rest of that row is white.</p>
 
-<p class="indent">
+<p class="ms-4">
 
 ...<img src="/img/6-computers/top-row-of-pixels-in-bjc-logo.png" title="top-row-of-pixels-in-bjc-logo: 4 white, 6 yellow-orange, 3 white" alt="top-row-of-pixels-in-bjc-logo: 4 white, 6 yellow-orange, 3 white"/>...
 
@@ -116,7 +116,7 @@ distinguishing color, especially colors close to white).</p>
 <p>Below are an original, uncompressed picture of pebbles in a pond and
 a highly compressed JPEG of the same image. Can you tell which is
 which?<br />
-<img src="/img/6-computers/pond.bmp" title="pond pebbles" alt="pond pebbles" class="indent"/>
+<img src="/img/6-computers/pond.bmp" title="pond pebbles" alt="pond pebbles" class="ms-4"/>
 <img src="/img/6-computers/pond.jpg" title="pond pebbles" alt="pond pebbles"/></p>
 
 <p>You probably <em>can</em> tell which is which, especially if you

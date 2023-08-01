@@ -1,5 +1,6 @@
 ---
 title: "Week ____ Announcements"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 author: "____"
 description: "" # should add a helpful description
 date: "8/14/2023"

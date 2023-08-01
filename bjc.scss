@@ -1,0 +1,451 @@
+// BJC Theme
+// Based off Cosmo 5.3.1 Bootswatch
+
+/*-- scss:defaults --*/
+
+$theme: "bjc" !default;
+
+//
+// Color system
+//
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #373a3c !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$blue:    #2780e3 !default;
+$indigo:  #6610f2 !default;
+$purple:  #613d7c !default;
+$pink:    #e83e8c !default;
+$red:     #ff0039 !default;
+$orange:  #f0ad4e !default;
+$yellow:  #ff7518 !default;
+$green:   #3fb618 !default;
+$teal:    #20c997 !default;
+$cyan:    #9954bb !default;
+
+$primary:       $blue !default;
+$secondary:     $gray-800 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+$min-contrast-ratio:   2.6 !default;
+
+// Options
+
+$enable-rounded: true !default;
+
+// Body
+
+$body-color:    $gray-800 !default;
+
+// Fonts
+
+// stylelint-disable-next-line value-keyword-case
+$font-family-sans-serif:    "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$headings-font-weight:      400 !default;
+
+// Navbar
+
+$navbar-dark-hover-color:       rgba($white, 1) !default;
+$navbar-light-hover-color:      rgba($black, .9) !default;
+
+// Alerts
+
+$alert-border-width:            0 !default;
+
+// Progress bars
+
+$progress-height:               .5rem !default;
+
+// BJC Element Colors
+
+$forYouToDo:    #62C213;
+$dialogue:      #0494DC;
+$ifTime:        #4A6CD4;
+$ifTime-bg:     #cce4f6;
+$takeIt:        #8F56E3;
+$takeIt-bg:     #e4cde3;
+$learn-bg:      #fcc7c2;
+$sidenote:      #E6A822;
+$sidenote-bg:   #FFF8AD;
+$atwork-bg:     #fcc589;
+$define-bg:     #eaeaea;
+$note:          #f3761d;
+
+/*-- scss:rules --*/
+
+/* development comments are hidden by default. */
+.todo, .comment, .commentBig, .ap-standard { display: none; }
+
+// Division styling
+
+.forYouToDo, .ifTime, .dialogue, .takeItFurther, .takeNote, .endnote, .narrower, .narrowblue, .narrowpurple, .time , .learn {
+    padding: 1em;
+    margin-bottom: 1em;
+    margin-top: .5em;
+}
+
+.forYouToDo, .ifTime, .takeItFurther, .takeItTeaser, .takeItTeased {
+    border-style: solid;
+    border-width: 2px;
+    border-left-width: 20px;
+    border-radius: 0.5rem;
+}
+
+.takeItFurther, .takeItTeaser, .takeItTeased {
+    border-color: $takeIt;
+    background-color: $takeIt-bg;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+} 
+.takeItTeaser {
+    border-bottom-width: 0px;
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.takeItTeased {
+    border-top-width: 0px;
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding: 1em;
+}
+.takeItTeaser p {margin-bottom: 0px;}
+.takeItFurther, .takeItTeased ol ol li {
+    list-style:lower-roman;
+}
+
+.forYouToDo {
+    border-color: $forYouToDo;
+    margin-bottom: .5em;
+} 
+
+
+.dialogue {border: 2px solid $dialogue;}
+.dialogue:before {content: "Thinking Out Loud";}
+.dialogue > div:not(.sidenote):not(.sidenoteBig):not(.comment):not(.commentBig):not(.todo):not(.endnote):not(.narrower):not(.narrowblue):not(.narrowpurple):not(.vocab) {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 6em;
+  text-indent: -4em;
+}
+.dialogue > div:not(.takeNote) > img.inline {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 28px;
+}
+
+.ifTime {
+    border-color: $ifTime;
+    background-color: $ifTime-bg;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .5em;
+}
+.ifTimeHide:before {content: "";}
+
+.endnote, .sidenote, .sidenoteBig, .narrower, .narrowblue, .narrowpurple {border-style: solid; border-width: 0px;}
+.endnote, .sidenote, .sidenoteBig {background-color: $sidenote-bg; border-color: $sidenote;}
+
+.endnote, .narrower, .narrowblue, .narrowpurple{
+    width: 90%;
+    margin-left: auto;
+}
+.narrower, .narrowblue, .narrowpurple{
+    margin-right: auto;
+}
+
+.sidenote, .sidenoteBig { 
+    float: right;
+    margin-right: 20px;
+    margin-left: 1em;
+    margin-bottom: 20px;
+    padding: 10px;
+    clear:both;
+    text-indent: 0em;
+  }
+.sidenote {width: 20%;}
+.sidenoteBig {width: 40%;}
+
+.learn {background-color: $learn-bg;}
+
+.atwork {background-color: $atwork-bg;}
+.vocab, .vocabBig, .exam, .examBig, .vocabFullWidth, .examFullWidth, .vocabSummary, .examSummary {background-color: $define-bg} 
+.vocab, .vocabBig, .exam, .examBig, .atwork {
+    font-size: .9em;
+    float: right;
+    margin-right: 20px;
+    margin-left: 1em;
+    margin-bottom: 20px;
+    padding: 10px;
+    clear:both;
+    text-indent: 0em;
+}
+.vocab, .exam {width: 20%;}
+.vocabBig, .examBig, .atwork {width: 40%;}
+.vocabFullWidth, .examFullWidth, .vocabSummary, .examSummary {
+    width: 90%;
+    margin-left: auto;
+    margin-top: .5em;
+    padding: 20px;
+    text-indent: 0em;
+}
+.vocabSummary, .examSummary {margin-right: auto;}
+  
+.vocabSummary .todo, .vocabSummary .comment, .vocabSummary .commentBig, .examSummary .todo, .examSummary .comment, .examSummary > .commentBig {display: none;}
+  
+.vocab:before, .vocabBig:before, .vocabFullWidth:before, .vocabSummary:before {
+    content: "Vocabulary";
+    font-weight: bold;
+    line-height: 1.5em;
+}
+  
+.exam:before, .examBig:before, .examFullWidth:before, .examSummary:before {
+    content: "On the AP Exam...";
+    font-weight: bold;
+    line-height: 1.5em;
+}
+  
+.atwork:before {
+    content: "Computer Scientists @ Work";
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.narrower {border: 3px solid $forYouToDo} 
+.narrowblue {border: 3px solid $ifTime} 
+.narrowpurple {border: 3px solid $takeIt} 
+
+.takeNote{
+    border: 10px solid $note;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.stagedir {
+    padding-left: 0em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-indent: 0em;
+    font-style: italic;
+    text-align: center;
+}
+
+// Quiz styling
+
+.card-header {
+    border-radius: 0.5rem 0.5rem 0px 0px; 
+}
+
+.Question {
+    border-radius: 0.5rem; 
+}
+
+.question-feedback {
+    border-left: 3px solid grey;
+    padding-left: 0.5rem;
+}
+
+.question-choice, .currentQuestionBox {
+    border: none;
+}
+
+.currentQuestionBox ~ .card-body {
+    border-bottom: none !important;
+}
+
+.Question p {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+
+/* CSS for the image hover show/hide effects created by Selim for 6.1.1 */
+
+.hoverinfo {
+    position: absolute;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+}
+  
+.hoverinfo p {
+    display: none;
+    color: #000000;
+    border:1px solid;
+    position:relative;
+    top:30px;
+    left:400px;
+    padding:20px;
+}
+
+.hoverinfo:hover p {
+    background-color: rgba(255, 255, 255, 0.95);
+    display:block;
+    max-width:400px;
+    z-index:1;
+}
+
+// Table styling
+
+table.standard th {
+    white-space: nowrap;
+}
+
+table.nowrap td {
+    white-space: nowrap;
+}
+
+table.center td {
+    text-align: center;
+}
+
+table.truth {
+    background-color: #FFFFFF;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+}
+
+table.truth tr th {
+    text-align: center;
+    font-weight: bold;
+}
+
+table.truth tr td {
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+table .pre {
+    line-height: 1em;
+}
+
+table.remainders {float:left; margin-right:100px;}
+
+.borderless-table, .bordered-table {display: grid;}
+.borderless-table > .header, .bordered-table > .header {font-weight: bold;}
+.borderless-table {border: 0px;}
+.bordered-table {border: solid 1px black;}
+.bordered-table > div {padding: 10px; border: solid 1px black;}
+.two-col {grid-template-columns: auto auto;}
+.three-col {grid-template-columns: auto auto auto;}
+.four-col {grid-template-columns: auto auto auto auto;}
+
+// code styling
+
+pre {
+    display: block;
+    padding: 2px;
+    width: min-content;
+}
+
+pre.inline {
+    display: inline;
+    margin: 0 .25em 0 .25em;
+}
+
+div.pre-container {
+    display: inline-grid;
+    vertical-align: middle;
+}
+
+p, div.pseudop {margin-top: 8px;}
+
+code {
+    padding: 0px;
+    color: #8B008B;
+  }
+  
+code.break {word-wrap: break-word;}
+  
+var {
+    padding: 0px;
+    color: #F3761D;
+}
+
+
+// list styling
+
+ul, ol {
+    margin-bottom: 0px !important;
+}
+
+li {	padding: 3px;}
+
+li > ul, li > ol {
+    margin: 5px auto;
+    line-height: none;
+}
+
+li > ol {  list-style-type: lower-alpha;}
+
+ol.horizontal {
+    display: flex !important;
+    flex-wrap: wrap;
+}
+ol.horizontal li {
+    margin-right: 30px;
+    list-style-type: lower-alpha;
+}
+
+// Other elements
+
+img.inline {
+    vertical-align: middle;
+    display: inline;
+}
+
+// .float-end {
+//     clear:both;
+// }
+
+.button {height: 1.6rem;}
+
+div.saveAs img {
+    position: relative;
+    z-index:1;
+  }
+  
+div.saveAs span.text {
+    position: absolute;
+    margin-left: 182px;
+    padding-top: 1.05em;
+    z-index:2;
+    color: #333;
+}
+  
+div.newProject span.text {
+    position: absolute;
+    margin-left: 323px;
+    padding-top: .65em;
+    z-index:2;
+    color: #333;
+}
+
+.snap {font-variant: normal;}
+
+.captioned {
+    float: right;
+    margin: 0 20px 15px 15px;
+    width: 20%;
+}

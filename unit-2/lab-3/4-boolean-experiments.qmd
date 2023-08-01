@@ -36,18 +36,16 @@ set pen color to purple
 set pen color to orange
 }
 make a point
-}" class="indent"/>
-<img src="/img/2-complexity/y-gtr-x.png" title=" Imagine a 45-degree line sloping upward toward the right, through the center of the stage. The area up and to the left of this line is purple; the area below and to the right is orange." alt=" Imagine a 45-degree line sloping upward toward the right, through the center of the stage. The area up and to the left of this line is purple; the area below and to the right is orange." class="indent"/></li>
+}" class="ms-4"/>
+<img src="/img/2-complexity/y-gtr-x.png" title=" Imagine a 45-degree line sloping upward toward the right, through the center of the stage. The area up and to the left of this line is purple; the area below and to the right is orange." alt=" Imagine a 45-degree line sloping upward toward the right, through the center of the stage. The area up and to the left of this line is purple; the area below and to the right is orange." class="ms-4"/></li>
 
 <li>Changing the Boolean expression in the <code>if</code> block changes
 the picture. Discuss why the expression 0) and (distance to apple \>
 100)" title="(x position \> 0) and (distance to apple \> 100)" /\>
 generates this picture:<br />
-<img src="/img/2-complexity/apple.png" title="There&apos;s an apple in the center. The entire left half of the stage is orange; so is a circle around the apple. What&apos;s left is purple." alt="There&apos;s an apple in the center. The entire left half of the stage is orange; so is a circle around the apple. What&apos;s left is purple." class="indent"/></li>
+<img src="/img/2-complexity/apple.png" title="There&apos;s an apple in the center. The entire left half of the stage is orange; so is a circle around the apple. What&apos;s left is purple." alt="There&apos;s an apple in the center. The entire left half of the stage is orange; so is a circle around the apple. What&apos;s left is purple." class="ms-4"/></li>
 
-::: comment
-AAP-2.E part b, AAP.-2.C
-:::
+
 
 <li>
 
@@ -139,9 +137,7 @@ Snap<em>!</em>).</li>
 
 <li><a href="/prog/2-complexity/U2L3-Dots.xml" class="run"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a></li>
 
-::: comment
-AAP-2.F part a
-:::
+
 
 <li>
 

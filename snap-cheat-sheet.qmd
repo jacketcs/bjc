@@ -1,5 +1,6 @@
 ---
 title: "Snap<em>!</em> Cheat Sheet"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 order: 10
 ---
 
@@ -31,14 +32,14 @@ Another way to display:<br /><img class="inline" src="/img/ref-guide/write-welco
 <div>
 <p>
 There are several ways to display data to the user in Snap<em>!</em>. One way is in the form of speech balloons that are "spoken" by the sprites on the stage. Here is the behavior that results from running the instruction <code>say (expression)</code>:<br />
-<img class="indent noshadow" src="/img/ref-guide/sprite-saying-expression.jpg" alt="arrowhead sprite saying the word 'expression' in a speech balloon" title="arrowhead sprite saying the word 'expression' in a speech balloon" />
+<img class="ms-4 noshadow" src="/img/ref-guide/sprite-saying-expression.jpg" alt="arrowhead sprite saying the word 'expression' in a speech balloon" title="arrowhead sprite saying the word 'expression' in a speech balloon" />
 </p>
 <p>
 In Snap<em>!</em>, there are also variations on this block such as:
 <ul>
 <li><code>say for ( ) secs</code>, which will only display the message for a specified number of seconds, and </li>
 <li><code>think ( )</code> and <code>think ( ) for ( ) secs</code>, which both display the message as a thought balloon rather than as a speech balloon, like this:<br />
-<img class="indent noshadow" src="/img/ref-guide/sprite-thinking-expression.jpg" alt="arrowhead sprite thinking the word 'expression' in a thought balloon" title="arrowhead sprite thinking the word 'expression' in a thought balloon" /></li>
+<img class="ms-4 noshadow" src="/img/ref-guide/sprite-thinking-expression.jpg" alt="arrowhead sprite thinking the word 'expression' in a thought balloon" title="arrowhead sprite thinking the word 'expression' in a thought balloon" /></li>
 </ul>
 </p>
 <p>The <code>write</code> block is very different, but it's still a form of output to the user. It writes the contents of the first input slot on the stage in the font size written in the second input slot.</p>
@@ -147,7 +148,7 @@ There are no <code>&ne;</code> (not equal), <code>&ge;</code> (greater than or e
 <div>
 <p>
 Here is an example of how the <code>if</code> statement could look in Snap<em>!</em> when it has a condition and a sequence of statements:<br />
-<img class="indent" src="/img/ref-guide/if-example.png" alt="if (player score > 100)
+<img class="ms-4" src="/img/ref-guide/if-example.png" alt="if (player score > 100)
 {
 go to x: (0) y: (0)
 say (You win!)
@@ -171,7 +172,7 @@ ELSE
 <div>
 <p>
 Here is an example of how the <code>if else</code> statement could look in Snap<em>!</em> when it has a condition and two sequences of statements:<br />
-<img class="indent" src="/img/ref-guide/if-else-example.png" alt="if (player 1 score > player 2 score)
+<img class="ms-4" src="/img/ref-guide/if-else-example.png" alt="if (player 1 score > player 2 score)
 {
 go to x: (100) y: (0)
 say (Player 1 wins!)
@@ -213,7 +214,7 @@ say (Player 2 wins!)
 <div>
 <p>
 Here is an example of how the <code>repeat</code> statement could look in Snap<em>!</em> when it has an input number and a sequence of statements:<br />
-<img class="indent" src="/img/ref-guide/repeat-example.png" alt="repeat (4) times
+<img class="ms-4" src="/img/ref-guide/repeat-example.png" alt="repeat (4) times
 {
 move (100) steps
 turn ↻ (90) degrees
@@ -222,7 +223,7 @@ turn ↻ (90) degrees
 move (100) steps
 turn ↻ (90) degrees
 }" />
-<img class="indent noshadow" src="/img/ref-guide/repeat-example-stage.jpg" alt="arrowhead sprite has just drawn a square" title="arrowhead sprite has just drawn a square" />
+<img class="ms-4 noshadow" src="/img/ref-guide/repeat-example-stage.jpg" alt="arrowhead sprite has just drawn a square" title="arrowhead sprite has just drawn a square" />
 </p>
 </div>
 
@@ -234,7 +235,7 @@ turn ↻ (90) degrees
 <div>
 <p>
 Here is an example of how the <code>repeat until</code> statement could look in Snap<em>!</em> when it has an input number and a sequence of statements:<br />
-<img class="indent" src="/img/ref-guide/repeat-until-example.png" alt="set (squiral length) to (100)
+<img class="ms-4" src="/img/ref-guide/repeat-until-example.png" alt="set (squiral length) to (100)
 repeat until (squiral length) < 30
 {
 move (squiral length) steps
@@ -247,7 +248,7 @@ move (squiral length) steps
 turn ↻ (90) degrees
 change (squiral length) by (-5)
 }" />
-<img class="indent noshadow" src="/img/ref-guide/repeat-until-example-stage.jpg" alt="arrowhead sprite has just drawn a square spiral but stopped before reaching the center" title="arrowhead sprite has just drawn a square sprial but stopped before reaching the center" />
+<img class="ms-4 noshadow" src="/img/ref-guide/repeat-until-example-stage.jpg" alt="arrowhead sprite has just drawn a square spiral but stopped before reaching the center" title="arrowhead sprite has just drawn a square sprial but stopped before reaching the center" />
 </p>
 </div>
 </div>
@@ -264,13 +265,13 @@ change (squiral length) by (-5)
 <div>
 <img class="inline" src="/img/ref-guide/item-i-of-list.png" alt="item (i) of (list)" title="item (i) of (list)" /><br /><br />
 For example,
-<img class="indent" src="/img/ref-guide/hello-goodbye.png" alt="list (hello) (goodbye) reporting the list [hello, goodbye]" title="list (hello) (goodbye) reporting the list [hello, goodbye]" /><br />
-<img class="indent" src="/img/ref-guide/goodbye.png" alt="item (2) of (list (hello) (goodbye)) reporting 'goodbye'" title="item (2) of (list (hello) (goodbye)) reporting 'goodbye'" />
+<img class="ms-4" src="/img/ref-guide/hello-goodbye.png" alt="list (hello) (goodbye) reporting the list [hello, goodbye]" title="list (hello) (goodbye) reporting the list [hello, goodbye]" /><br />
+<img class="ms-4" src="/img/ref-guide/goodbye.png" alt="item (2) of (list (hello) (goodbye)) reporting 'goodbye'" title="item (2) of (list (hello) (goodbye)) reporting 'goodbye'" />
 </div>
 <div>
 <p>
 You can tell what kind of input is expected in each input slot of a block in Snap<em>!</em> by its shape. For example, <img class="inline" src="/img/blocks/item.png" alt="item () of 'list input slot'" title="item () of 'list input slot'" /> takes a number as its first input (indicated by the round input slot) and a list as its second input (indicated by the small picture of a list): <br />
-<img class="indent" src="/img/2-complexity/listpic.png" alt="picture of 2-item list"><br />
+<img class="ms-4" src="/img/2-complexity/listpic.png" alt="picture of 2-item list"><br />
 In addition, there is a drop-down menu for the first input slot allowing you to select the first, the last, or a random item from the list instead of typing a number or dragging and dropping a variable in.
 </p>
 </div>
@@ -281,7 +282,7 @@ In addition, there is a drop-down menu for the first input slot allowing you to 
 <p>At first glance, this looks a little different on the exam than in Snap<em>!</em>, but if you read the Snap<em>!</em> out loud, it is clear what it does: It replaces the item at position number <var>i</var> in the list with the item at position number <var>j</var> in the list.</p>
 <p>
 Here's an example:<br />
-<img class="indent" src="/img/ref-guide/replace-example.png" alt="replace item (2) of (shopping list) with (rye bread)" title="replace item (2) of (shopping list) with (rye bread)" />
+<img class="ms-4" src="/img/ref-guide/replace-example.png" alt="replace item (2) of (shopping list) with (rye bread)" title="replace item (2) of (shopping list) with (rye bread)" />
 </p>
 </div>
 
@@ -351,7 +352,7 @@ You can tell them apart by the palette they are in (Variables or Operators), the
 <p>In Snap<em>!</em>, procedures that <em>do</em> something are called <em>commands</em>. Command blocks have a rectangular, puzzle-piece shape because they are instructions to the computer designed to be snapped together one after another.</p>
 <p>
 When you make a block, you choose the name of the block, the input parameters, and the palette it should appear in (the color). Then you design the instructions that will run when the block is clicked. Here is an example of what a real command block definition might look like in Snap<em>!</em>:
-<img class="indent" src="/img/ref-guide/draw-square-def.png" alt="draw square, size: (size) {
+<img class="ms-4" src="/img/ref-guide/draw-square-def.png" alt="draw square, size: (size) {
 pen down
 repeat (4) {
 move (size) steps
@@ -379,7 +380,7 @@ RETURN expression
 <p>When you make a reporter block, the block definition automatically includes a <code>report</code> block. The value of the expression in the input slot of this <code>report</code> block is the value that is returned when the reporter is run.</p>
 <p>
 Here is an example of what a real reporter block definition might look like in Snap<em>!</em>:<br />
-<img class="indent" src="/img/1-introduction/double-block-definition.png" alt="PROCEDURE double (x)
+<img class="ms-4" src="/img/1-introduction/double-block-definition.png" alt="PROCEDURE double (x)
 {
 RETURN (2 * x)
 }" title="PROCEDURE double (x)

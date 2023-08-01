@@ -16,7 +16,7 @@ the initials of all of your contacts.</p>
 Alphie, Betsy, and Gamal are building an <code>initials from name</code>
 block that accepts one contact as input and reports that person's
 initials.<br />
-<img src="/img/3-lists/initials-reporting.png" title="initials from name (name from contact( (item (1) of (contact list)) reporting &apos;BA&apos;" alt="initials from name (name from contact( (item (1) of (contact list)) reporting &apos;BA&apos;" class="indent"/>
+<img src="/img/3-lists/initials-reporting.png" title="initials from name (name from contact( (item (1) of (contact list)) reporting &apos;BA&apos;" alt="initials from name (name from contact( (item (1) of (contact list)) reporting &apos;BA&apos;" class="ms-4"/>
 :::
 
 <div>
@@ -33,7 +33,7 @@ report (join (letter (1) of (item (1) of (list of names))) (letter (1) of (item 
 script variables (list of names)
 set (list of names) to (split (name from contact (contact)) by (word))
 report (join (letter (1) of (item (1) of (list of names))) (letter (1) of (item (2) of (list of names))) )
-}" class="indent"/>
+}" class="ms-4"/>
 
 </div>
 
@@ -43,8 +43,8 @@ the difference between splitting by spaces and splitting by words?</a>
 
 ::: {#hint-splitting .collapse}
 <p>Try it! (Each brown dot represents a space.)<br />
-<img src="/img/3-lists/split-space.png" title="split &quot;hello␠␠␠␠␠␠␠world&quot; by (␠)" alt="split &quot;hello␠␠␠␠␠␠␠world&quot; by (␠)" class="indent"/>
-<img src="/img/3-lists/split-word.png" title="split &quot;hello␠␠␠␠␠␠␠world&quot; by word" alt="split &quot;hello␠␠␠␠␠␠␠world&quot; by word" class="indent"/></p>
+<img src="/img/3-lists/split-space.png" title="split &quot;hello␠␠␠␠␠␠␠world&quot; by (␠)" alt="split &quot;hello␠␠␠␠␠␠␠world&quot; by (␠)" class="ms-4"/>
+<img src="/img/3-lists/split-word.png" title="split &quot;hello␠␠␠␠␠␠␠world&quot; by word" alt="split &quot;hello␠␠␠␠␠␠␠world&quot; by word" class="ms-4"/></p>
 
 <p>In one case, <code>split</code> is focusing on the exact characters
 in the string. In the other case, it's giving you what you really want:
@@ -98,9 +98,9 @@ function as input (or reports a function as output).</p>
 
 <li>Build and experiment with these examples of the <code>map</code>
 function.<br />
-<img src="/img/3-lists/map-join-s.png" title="map (join( )(s)) over (list{block, script, Boolean})" alt="map (join( )(s)) over (list{block, script, Boolean})" class="indent"/><br />
-<img src="/img/3-lists/map-3x.png" title="map ((3) * ( )) over (list{7, 8, 1})" alt="map ((3) * ( )) over (list{7, 8, 1})" class="indent"/><br />
-<img src="/img/3-lists/map-letter-1.png" title="map (letter (1) of ( )) over (list{bounce, join, clear})" alt="map (letter (1) of ( )) over (list{bounce, join, clear})" class="indent"/></li>
+<img src="/img/3-lists/map-join-s.png" title="map (join( )(s)) over (list{block, script, Boolean})" alt="map (join( )(s)) over (list{block, script, Boolean})" class="ms-4"/><br />
+<img src="/img/3-lists/map-3x.png" title="map ((3) * ( )) over (list{7, 8, 1})" alt="map ((3) * ( )) over (list{7, 8, 1})" class="ms-4"/><br />
+<img src="/img/3-lists/map-letter-1.png" title="map (letter (1) of ( )) over (list{bounce, join, clear})" alt="map (letter (1) of ( )) over (list{bounce, join, clear})" class="ms-4"/></li>
 
 <li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
 Discuss and then explain in writing what these expressions are
@@ -115,8 +115,8 @@ block takes two inputs: a function (a reporter with a blank input slot)
 and a list, and it reports a new list in which each item is the result
 of calling the function with an item from the original list as input.
 For example:<br />
-<img src="/img/3-lists/map-example-2.png" title="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" alt="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" class="indent"/><br />
-<img src="/img/3-lists/map-example-3.png" title="map (round ( )) over (list{3.14159, 87, 5.4}) reporting {3, 87, 5}" alt="map (round ( )) over (list{3.14159, 87, 5.4}) reporting {3, 87, 5}" class="indent"/></p>
+<img src="/img/3-lists/map-example-2.png" title="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" alt="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" class="ms-4"/><br />
+<img src="/img/3-lists/map-example-3.png" title="map (round ( )) over (list{3.14159, 87, 5.4}) reporting {3, 87, 5}" alt="map (round ( )) over (list{3.14159, 87, 5.4}) reporting {3, 87, 5}" class="ms-4"/></p>
 
 ::: takeNote
 <p><strong>You choose the function that describes the result for one
@@ -136,15 +136,15 @@ each time the function is performed.</p>
 
 This picture shows how the three higher-order functions could be
 used:<br />
-<img src="/img/3-lists/hof-chart.png" title="picture of map transforming each item, keep blocking some input items so they don&apos;t appear in the result, and combine superimposing them into one icon" alt="picture of map transforming each item, keep blocking some input items so they don&apos;t appear in the result, and combine superimposing them into one icon" class="indent" height="157px"/><br />
+<img src="/img/3-lists/hof-chart.png" title="picture of map transforming each item, keep blocking some input items so they don&apos;t appear in the result, and combine superimposing them into one icon" alt="picture of map transforming each item, keep blocking some input items so they don&apos;t appear in the result, and combine superimposing them into one icon" class="ms-4" height="157px"/><br />
 <a href="#hint-shapes" data-bs-toggle="collapse" title="See the higher-order function expressions with these (imaginary) shape procedures.">See
 the higher-order function expressions with these (imaginary) shape
 procedures.</a>
 
 ::: {#hint-shapes .collapse}
-<img src="/img/3-lists/map-list-figures.png" title="map (shade figure ()) over (list of figures)" alt="map (shade figure ()) over (list of figures)" class="indent"/>
-<img src="/img/3-lists/keep-list-figures.png" title="keep items (is () a polygon?) over (list of figures)" alt="keep items (is () a polygon?) over (list of figures)" class="indent"/>
-<img src="/img/3-lists/combine-list-figures.png" title="combine (list of figures) using (overlay ())" alt="combine (list of figures) using (overlay ())" class="indent"/>
+<img src="/img/3-lists/map-list-figures.png" title="map (shade figure ()) over (list of figures)" alt="map (shade figure ()) over (list of figures)" class="ms-4"/>
+<img src="/img/3-lists/keep-list-figures.png" title="keep items (is () a polygon?) over (list of figures)" alt="keep items (is () a polygon?) over (list of figures)" class="ms-4"/>
+<img src="/img/3-lists/combine-list-figures.png" title="combine (list of figures) using (overlay ())" alt="combine (list of figures) using (overlay ())" class="ms-4"/>
 :::
 
 </p>
@@ -160,21 +160,21 @@ is a quick review of the higher-order functions <code>map</code>,
 
 <li><code>Map</code> performs a function on every item of a list and
 reports the list of changed items.<br />
-<img src="/img/3-lists/map-example-1.png" title="map (( )-(1)) over (list (96) (-100) (4.7)) reporting" alt="map (( )-(1)) over (list (96) (-100) (4.7)) reporting" class="indent"/></li>
+<img src="/img/3-lists/map-example-1.png" title="map (( )-(1)) over (list (96) (-100) (4.7)) reporting" alt="map (( )-(1)) over (list (96) (-100) (4.7)) reporting" class="ms-4"/></li>
 
 <li><code>Keep</code> uses a predicate function (a true/false question)
 to check every item in a list and reports the items that make the
 predicate true. (You learned about <code>keep</code> on
 <a href="/unit-2/lab-3/5-keeping-list-items.html" title="Unit 2 Lab 3 Page 5: Keeping Items from a List">Unit
 2 Lab 3 Page 5: <code>Keep</code>ing Items from a List</a>.)<br />
-<img src="/img/3-lists/keep-items-(last-letter-h)-reporting.png" alt="keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list" class="indent"/><br /></li>
+<img src="/img/3-lists/keep-items-(last-letter-h)-reporting.png" alt="keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list" class="ms-4"/><br /></li>
 
 <li><code>Combine</code> uses a combining function (a function with two
 inputs) to report the results of combining all the items in a list using
 that function. (You learned about <code>combine</code> on
 <a href="/unit-2/lab-4/3-other-math-reporters.html" title="Unit 2 Lab 4 Page 3: More Mathematical Reporters">Unit
 2 Lab 4 Page 3: More Mathematical Reporters</a>.)<br />
-<img src="/img/3-lists/combine-simple-example.png" title="combine (list {0, 1, 2}) with (()+()) reporting 3" alt="combine (list {0, 1, 2}) with (()+()) reporting 3" class="indent"/></li>
+<img src="/img/3-lists/combine-simple-example.png" title="combine (list {0, 1, 2}) with (()+()) reporting 3" alt="combine (list {0, 1, 2}) with (()+()) reporting 3" class="ms-4"/></li>
 
 </ul>
 :::
@@ -191,8 +191,8 @@ that function. (You learned about <code>combine</code> on
 <li>Use <code>map</code> and <code>combine</code> together to build an
 <code>initials from name</code> reporter that takes a name as input and
 reports that person's initials.<br />
-<img src="/img/3-lists/initials-reporting.png" title="initials from name (name from contact( (item (1) of (contact list)) reporting &apos;BA&apos;" alt="initials from name (name from contact( (item (1) of (contact list)) reporting &apos;BA&apos;" class="indent"/>
-<img src="/img/3-lists/initials-reporting-mlk.png" title="initials from name (Martin Luther King) reporting &apos;MLK&apos;" alt="initials from name (Martin Luther King) reporting &apos;MLK&apos;" class="indent"/></li>
+<img src="/img/3-lists/initials-reporting.png" title="initials from name (name from contact( (item (1) of (contact list)) reporting &apos;BA&apos;" alt="initials from name (name from contact( (item (1) of (contact list)) reporting &apos;BA&apos;" class="ms-4"/>
+<img src="/img/3-lists/initials-reporting-mlk.png" title="initials from name (Martin Luther King) reporting &apos;MLK&apos;" alt="initials from name (Martin Luther King) reporting &apos;MLK&apos;" class="ms-4"/></li>
 
 <li>Test and debug your <code>initials from name</code> block.</li>
 
@@ -208,13 +208,13 @@ a hint?</a>
 ::: {#hint-list-names .collapse}
 <p>First, create an expression to report a list of the names of all your
 contacts.<br />
-<img src="/img/3-lists/contact-list-list-view.png" title="contact list watcher in list view" alt="contact list watcher in list view" class="indent"/>
+<img src="/img/3-lists/contact-list-list-view.png" title="contact list watcher in list view" alt="contact list watcher in list view" class="ms-4"/>
 [→]{style="padding-right: 1em; padding-left: 1em; font-size: 36px;"}
 <img src="/img/3-lists/names.png" title="list in list view containing three items: Betsy Anderson, Alphie Preston, Gamal Abdel" alt="list in list view containing three items: Betsy Anderson, Alphie Preston, Gamal Abdel"/></p>
 :::
 :::
 
-<img src="/img/3-lists/contact-list-list-view.png" title="contact list watcher in list view" alt="contact list watcher in list view" class="indent"/>
+<img src="/img/3-lists/contact-list-list-view.png" title="contact list watcher in list view" alt="contact list watcher in list view" class="ms-4"/>
 [→]{style="padding-right: 1em; padding-left: 1em; font-size: 36px;"}
 <img src="/img/3-lists/initials.png" title="list in list view containing three items: BA, AP, GA" alt="list in list view containing three items: BA, AP, GA"/>
 
@@ -227,7 +227,7 @@ contacts.<br />
 ::: {.assessment-data type="multiplechoice" identifier="mapLetterVsItem" hasinlinefeedback="true" maxchoices="1" responseidentifier="resp1" shuffle="false"}
 ::: prompt
 Which of the following statements are true about this list?<br />
-<img src="/img/3-lists/words_numbers.png" title="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" alt="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" class="indent"/><br />
+<img src="/img/3-lists/words_numbers.png" title="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" alt="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" class="ms-4"/><br />
 :::
 
 ::: {.choice identifier="c1"}
@@ -292,7 +292,7 @@ list.
 ::: {.assessment-data type="multiplechoice" identifier="mapLetterVsItem" hasinlinefeedback="true" maxchoices="5" responseidentifier="resp2" shuffle="false"}
 ::: prompt
 Which of the following statements are true about this list?<br />
-<img src="/img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="indent"/><br />
+<img src="/img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="ms-4"/><br />
 Choose <strong>all</strong> that apply.
 
 ::: endnote
@@ -304,7 +304,7 @@ not use an ADT?</a>
 you answer this self-check item what the structure is, but you're right,
 in an actual program it would be better to use an abstract data
 type:<br />
-<img src="/img/3-lists/capitals-adt-reporting.png" title="state: (Augusta) capital: (Maine)" alt="state: (Augusta) capital: (Maine)" class="indent"/></p>
+<img src="/img/3-lists/capitals-adt-reporting.png" title="state: (Augusta) capital: (Maine)" alt="state: (Augusta) capital: (Maine)" class="ms-4"/></p>
 :::
 :::
 :::
@@ -400,8 +400,8 @@ set (names of contacts) to (list)
 for each (contact) of (contact list) {
 add (name from contact: (contact)) to (names of contacts)
 }
-report (names of contacts)" class="indent"/>
-<img src="/img/3-lists/abstraction-example-map.png" title="map (name from contact: ()) over (contacts list)" alt="map (name from contact: ()) over (contacts list)" class="indent"/></li>
+report (names of contacts)" class="ms-4"/>
+<img src="/img/3-lists/abstraction-example-map.png" title="map (name from contact: ()) over (contacts list)" alt="map (name from contact: ()) over (contacts list)" class="ms-4"/></li>
 
 <li>
 
@@ -413,7 +413,7 @@ the correct responses. Need to fix. --MF, 1/13/21
 ::: {.assessment-data type="multiplechoice" identifier="squares_mapkeepcombine" hasinlinefeedback="true" maxchoices="8" responseidentifier="resp1" shuffle="true"}
 ::: prompt
 <p>Consider this list of squares: <br />
-<img src="/img/3-lists/squares.png" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" class="indent"/><br />
+<img src="/img/3-lists/squares.png" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" class="ms-4"/><br />
 Which of the following expressions will report a list? Choose all that
 apply.</p>
 :::
@@ -502,7 +502,7 @@ Data from <em>Structure and Interpretation of Computer Programs</em> by
 Abelson and Sussman. Creative Commons licensed.
 :::
 
-<a class="run" href="/prog/3-lists/U3L2-Employee-Database.xml"><img src="/img/3-lists/microshaft-database.png" title="list block containing nine instances of the constructor &apos;employee, name: () job title: () salary: ()&apos; each with various inputs" alt="list block containing nine instances of the constructor &apos;employee, name: () job title: () salary: ()&apos; each with various inputs" class="indent"/></a><br />
+<a class="run" href="/prog/3-lists/U3L2-Employee-Database.xml"><img src="/img/3-lists/microshaft-database.png" title="list block containing nine instances of the constructor &apos;employee, name: () job title: () salary: ()&apos; each with various inputs" alt="list block containing nine instances of the constructor &apos;employee, name: () job title: () salary: ()&apos; each with various inputs" class="ms-4"/></a><br />
 This is the list of employees of a small company. Each of the smaller
 lists contains a person's name, job title, and yearly salary.
 

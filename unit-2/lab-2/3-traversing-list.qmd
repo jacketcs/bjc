@@ -6,7 +6,7 @@ gifffer: true
 ---
 
 ::: learn
-<p><strong>On this page,</strong> you will complete your quiz app by using a new block that loops through a list:<br /> <img src="/img/2-complexity/for-each-(item)-of().png" title="for-each-(item)-of(){}" alt="for-each-(item)-of(){}" class="indent" height="68"/></p>
+<p><strong>On this page,</strong> you will complete your quiz app by using a new block that loops through a list:<br /> <img src="/img/2-complexity/for-each-(item)-of().png" title="for-each-(item)-of(){}" alt="for-each-(item)-of(){}" class="ms-4" height="68"/></p>
 :::
 
 ::: todo
@@ -16,7 +16,6 @@ This should be an FYTD. Is is everywhere else. --MF, 5/30/20
 <p>If it's not already open, open your project U2L2-Quiz.</p>
 
 ::: dialogue
-<a name="seta" class="anchor"> </a>
 
 ::: stagedir
 The students are considering how to use their abstract data type as they develop the code for their project.
@@ -34,7 +33,7 @@ Gamal: Maybe we can use <code>item of</code> inside a <code>for</code> loop and 
 ask (question from (item (i) of (computer science quiz))) and wait
 }" alt="for (i) = (1) to (4) {
 ask (question from (item (i) of (computer science quiz))) and wait
-}" class="indent"/>
+}" class="ms-4"/>
 
 </div>
 
@@ -62,9 +61,7 @@ Gamal: We could even rename <var>item</var> something logical like <var>quiz ite
 ::: vocabFullWidth
 : <strong>Traversing a List</strong>
 
-::: comment
-AAP-2.O.2
-:::
+
 
 <p><strong>Traversing</strong> a list means looking at each item of the list. <code>For each</code> is iterative. That is, it's repetitive, like <code>for</code>, which can also traverse a list. But unlike <code>for</code>, <code>for each</code> traverses the list <em>without using index numbers</em>.</p>
 :::
@@ -72,9 +69,7 @@ AAP-2.O.2
 ::: forYouToDo
 <ol>
 
-::: comment
-AAP-2.K part a, AAP-2.O part a
-:::
+
 
 <li>Use <code>for each</code> to <em>traverse</em> your list, asking each quiz question, checking each answer, and letting the user know if they are right or wrong on each item.</li>
 
@@ -96,9 +91,7 @@ AAP-2.K part a, AAP-2.O part a
 ::: {#first .forYouToDo}
 <ol start="5">
 
-::: comment
-AAP-2.K part b
-:::
+
 
 <li>
 
@@ -106,7 +99,7 @@ AAP-2.K part b
 
 ::: {.assessment-data type="multiplechoice" identifier="abe" hasinlinefeedback="true" maxchoices="2" responseidentifier="ri1" shuffle="true"}
 ::: prompt
-<p>Which of the scripts below will produce the following sprite behavior?<br /> <img src="/img/3-lists/abelincoln.gif" title="sprite saying Abraham then Lincoln" alt="sprite saying Abraham then Lincoln" class="indent noshadow"/><br /> (When you run the script, though, it actually says Abraham Lincoln <em>only once</em>.)</p>
+<p>Which of the scripts below will produce the following sprite behavior?<br /> <img src="/img/3-lists/abelincoln.gif" title="sprite saying Abraham then Lincoln" alt="sprite saying Abraham then Lincoln" class="ms-4 noshadow"/><br /> (When you run the script, though, it actually says Abraham Lincoln <em>only once</em>.)</p>
 
 <p>Choose <strong>all</strong> that apply.</p>
 :::
@@ -166,9 +159,7 @@ Correct.
 :::
 
 ::: {.examFullWidth .AP-only}
-::: comment
-AAP-2.O.3
-:::
+
 
 ::: pseudop
 ::: sidenote
@@ -212,9 +203,7 @@ goto(point)
 
 ::: {.assessment-data type="multiplechoice" identifier="FOR EACH positive and square over 4" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="false"}
 ::: prompt
-::: comment
-AAP-2.O part b
-:::
+
 
 ```{=html}
 <pre>inputList ← [3, -1, 2, 10, -5]

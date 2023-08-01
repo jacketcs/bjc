@@ -16,7 +16,7 @@ a <em>linear search</em> algorithm.</p>
 <p>On
 <a href="/unit-2/lab-3/6-solving-word-puzzle.html" title="Unit 2 Lab 3 Page 6: Solving a Word Puzzle">Unit
 2 Lab 3 Page 6: Solving a Word Puzzle</a>, you built a
-<img src="/img/5-algorithms/does-word-have-number-letters.png" title="does () have () letters?" alt="does () have () letters?" class="inline nopadtb"/>
+<img src="/img/5-algorithms/does-word-have-number-letters.png" title="does () have () letters?" alt="does () have () letters?" class="inline py-0"/>
 block and used it with <code>keep</code> to find words of a specific
 length in a word list. <strong>How long does a process like that
 take?</strong></p>
@@ -52,7 +52,7 @@ computer to answer that question.</li>
 inputs filled in), computes the result but ignores it, and instead
 reports <em>how long it took</em> to do the computation (in
 milliseconds).<br />
-<img src="/img/5-algorithms/computation-time-reporting.png" title="computation time of (numbers from (1) to (1000)) reporting 27" alt="computation time of (numbers from (1) to (1000)) reporting 27" class="indent"/></p>
+<img src="/img/5-algorithms/computation-time-reporting.png" title="computation time of (numbers from (1) to (1000)) reporting 27" alt="computation time of (numbers from (1) to (1000)) reporting 27" class="ms-4"/></p>
 
 <p>In this example, it took 27 milliseconds to compute the list of
 integers from 1 to 1000. (The report you see will depend on how fast
@@ -150,7 +150,7 @@ long</strong> to check them all.</p>
 
 <li>An algorithm takes <strong>linear time</strong> if multiplying the
 input size by ten multiplies the time required by ten.<br />
-<img src="/img/5-algorithms/size-vs-time.png" title="graph of size vs. time showing a straight line through the origin and up to the right with the points for x=10,000 and x=100,000 marked" alt="graph of size vs. time showing a straight line through the origin and up to the right with the points for x=10,000 and x=100,000 marked" class="indent noshadow" style="height:300px"/></li>
+<img src="/img/5-algorithms/size-vs-time.png" title="graph of size vs. time showing a straight line through the origin and up to the right with the points for x=10,000 and x=100,000 marked" alt="graph of size vs. time showing a straight line through the origin and up to the right with the points for x=10,000 and x=100,000 marked" class="ms-4 noshadow" style="height:300px"/></li>
 
 ::: ap-standard
 AAP-2.O.5

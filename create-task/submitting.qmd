@@ -1,5 +1,6 @@
 ---
 title: "Submitting Your Create Task"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 author: "Ms. O'Keefe and Mr. Chang"
 order: 70
 ---

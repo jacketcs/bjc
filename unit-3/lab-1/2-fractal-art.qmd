@@ -8,8 +8,8 @@ order: 2
 <strong>In this project,</strong> you will nest <code>repeat</code>
 blocks inside <code>repeat</code> blocks to generate complex
 pictures.<br />
-<img src="/img/2-complexity/U2ImageVideoAddendum_img/three-color-sierpinski.png" title="Red triangle with blue children and green grandchildren" alt="Red triangle with blue children and green grandchildren" class="indent" height="300"/><br />
-<!--<img class="indent" src="/img/2-complexity/U2ImageVideoAddendum_img/RecursiveTriangleSteps.gif"  height="250" alt="Recursive triangle in steps" title="Recursive triangle in steps"/>&nbsp;<img src="/img/2-complexity/U2ImageVideoAddendum_img/RecursiveSquareSteps.gif" height="250" alt="Recursive square in steps" title="Recursive square in steps"/>-->
+<img src="/img/2-complexity/U2ImageVideoAddendum_img/three-color-sierpinski.png" title="Red triangle with blue children and green grandchildren" alt="Red triangle with blue children and green grandchildren" class="ms-4" height="300"/><br />
+<!--<img class="ms-4" src="/img/2-complexity/U2ImageVideoAddendum_img/RecursiveTriangleSteps.gif"  height="250" alt="Recursive triangle in steps" title="Recursive triangle in steps"/>&nbsp;<img src="/img/2-complexity/U2ImageVideoAddendum_img/RecursiveSquareSteps.gif" height="250" alt="Recursive square in steps" title="Recursive square in steps"/>-->
 :::
 
 ::: {#first .forYouToDo}
@@ -44,7 +44,7 @@ choose "duplicate".</li>
 for a video.</a>
 
 ::: {#hint-inputs .collapse}
-<img src="/img/1-introduction/duplicating-a-script.gif" title="duplicating a script" alt="duplicating a script" class="indent"/>
+<img src="/img/1-introduction/duplicating-a-script.gif" title="duplicating a script" alt="duplicating a script" class="ms-4"/>
 :::
 :::
 
@@ -57,7 +57,7 @@ stage.</li>
 Predict what will happen when you insert the entire script for the blue
 triangle between the <code>move</code> and <code>turn</code> blocks of
 the code for the red triangle: <br />
-<img src="/img/1-introduction/two-color-sierpinski-code.png" title="repeat (3) {set pen color to (red); move (100) steps; repeat (3) {set pen color to (blue); move (100) steps; turn clockwise (120) degrees}; turn right (120) degrees}" alt="repeat (3) {set pen color to (red); move (100) steps; repeat (3) {set pen color to (blue); move (100) steps; turn clockwise (120) degrees}; turn right (120) degrees}" class="indent"/></li>
+<img src="/img/1-introduction/two-color-sierpinski-code.png" title="repeat (3) {set pen color to (red); move (100) steps; repeat (3) {set pen color to (blue); move (100) steps; turn clockwise (120) degrees}; turn right (120) degrees}" alt="repeat (3) {set pen color to (red); move (100) steps; repeat (3) {set pen color to (blue); move (100) steps; turn clockwise (120) degrees}; turn right (120) degrees}" class="ms-4"/></li>
 
 <img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="float-end"/>
 
@@ -69,14 +69,14 @@ why?</li>
 
 <li>Using the scripts you have, find a way to make this picture. Use
 Visible Stepping to help you work out any bugs.<br />
-<img src="/img/2-complexity/U2ImageVideoAddendum_img/three-color-sierpinski.png" title="Red triangle with blue children and green grandchildren" alt="Red triangle with blue children and green grandchildren" class="indent noshadow" height="300"/></li>
+<img src="/img/2-complexity/U2ImageVideoAddendum_img/three-color-sierpinski.png" title="Red triangle with blue children and green grandchildren" alt="Red triangle with blue children and green grandchildren" class="ms-4 noshadow" height="300"/></li>
 
 ::: endnote
 <a href="#hint-reminder" data-bs-toggle="collapse" title="Click for a reminder video about Visible Stepping.">Click
 for a reminder video about Visible Stepping.</a>
 
 ::: {#hint-reminder .collapse}
-<img src="/img/2-complexity/VisualSteppinginFractal.gif" title="Animation that shows how to use Visible stepping in Snap!" alt="Animation that shows how to use Visible stepping in Snap!" class="indent"/>
+<img src="/img/2-complexity/VisualSteppinginFractal.gif" title="Animation that shows how to use Visible stepping in Snap!" alt="Animation that shows how to use Visible stepping in Snap!" class="ms-4"/>
 :::
 :::
 
@@ -94,7 +94,7 @@ in the same way.</li>
 <li>
 
 Examine this code without running it:<br />
-<img src="/img/2-complexity/blue-square-embedded-in-red-square.png" title="repeat{set pen color to (red); move(100) steps; repeat(4){set pen color to (blue); move (50) steps; turn clockwise(90) degrees}; turn clockwise(90) degrees}" alt="repeat{set pen color to (red); move(100) steps; repeat(4){set pen color to (blue); move (50) steps; turn clockwise(90) degrees}; turn clockwise(90) degrees}" class="indent"/>
+<img src="/img/2-complexity/blue-square-embedded-in-red-square.png" title="repeat{set pen color to (red); move(100) steps; repeat(4){set pen color to (blue); move (50) steps; turn clockwise(90) degrees}; turn clockwise(90) degrees}" alt="repeat{set pen color to (red); move(100) steps; repeat(4){set pen color to (blue); move (50) steps; turn clockwise(90) degrees}; turn clockwise(90) degrees}" class="ms-4"/>
 
 <ol>
 

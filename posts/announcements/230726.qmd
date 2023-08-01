@@ -1,5 +1,6 @@
 ---
 title: "Week 1 Announcements"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 author: "Pete"
 description: ""
 date: "8/14/2023"

@@ -8,7 +8,7 @@ order: 3
 <strong>In this project</strong>, you will create mathematical blocks
 that combine several numbers, such as a <code>sum</code> block, which
 combines two numbers using addition: <br />
-<img src="/img/3-lists/sum-from-4-to-6-reporting.png" title="sum from (4) to (6) reporting 15" alt="sum from (4) to (6) reporting 15" class="indent"/>
+<img src="/img/3-lists/sum-from-4-to-6-reporting.png" title="sum from (4) to (6) reporting 15" alt="sum from (4) to (6) reporting 15" class="ms-4"/>
 :::
 
 ::: {#first .forYouToDo}
@@ -19,8 +19,8 @@ combines two numbers using addition: <br />
 <li>Build blocks for <code>maximum</code> (reporting the larger of two
 input numbers) and <code>minimum</code> (reporting the smaller of two
 input numbers):<br />
-<img src="/img/2-complexity/max-of-6-and-4-reporting.png" title="max of (6) and (4) reporting 6" alt="max of (6) and (4) reporting 6" class="indent"/>
-<img src="/img/2-complexity/min-of-3-and--4-reporting.png" title="max of (3) and (-4) reporting -4" alt="max of (3) and (-4) reporting -4" class="indent"/></li>
+<img src="/img/2-complexity/max-of-6-and-4-reporting.png" title="max of (6) and (4) reporting 6" alt="max of (6) and (4) reporting 6" class="ms-4"/>
+<img src="/img/2-complexity/min-of-3-and--4-reporting.png" title="max of (3) and (-4) reporting -4" alt="max of (3) and (-4) reporting -4" class="ms-4"/></li>
 
 </ol>
 :::
@@ -31,7 +31,7 @@ block takes two inputs: a list and an operation <em>with two
 inputs</em>, and it reports the result of combining all the elements in
 the input list using the input operation. For example, the expression
 below reports: 0 + 1 + 2.<br />
-<img src="/img/3-lists/combine-simple-example.png" title="combine (list {0, 1, 2}) with (()+()) reporting 3" alt="combine (list {0, 1, 2}) with (()+()) reporting 3" class="indent"/></p>
+<img src="/img/3-lists/combine-simple-example.png" title="combine (list {0, 1, 2}) with (()+()) reporting 3" alt="combine (list {0, 1, 2}) with (()+()) reporting 3" class="ms-4"/></p>
 
 ::: takeNote
 <p><strong>You choose the operation, and <code>combine</code> performs
@@ -61,11 +61,11 @@ functions?</a>
 ::: {#hint-which-functions .collapse}
 <p><code>Combine</code> is mostly used with <em>only these
 functions</em>:<br />
-<img src="/img/3-lists/plus.png" title="+" alt="+" class="indent"/>
+<img src="/img/3-lists/plus.png" title="+" alt="+" class="ms-4"/>
 <img src="/img/3-lists/times.png" title="×" alt="×"/><br />
-<img src="/img/3-lists/and-block.png" title="and" alt="and" class="indent"/>
+<img src="/img/3-lists/and-block.png" title="and" alt="and" class="ms-4"/>
 <img src="/img/3-lists/or-block.png" title="or" alt="or"/><br />
-<img src="/img/3-lists/join.png" title="join" alt="join" class="indent"/>
+<img src="/img/3-lists/join.png" title="join" alt="join" class="ms-4"/>
 <img src="/img/3-lists/join-words.png" title="join words" alt="join words"/><br />
 and the
 <img src="/img/3-lists/maximum.png" title="maximum of () ()" alt="maximum of () ()" class="inline"/>
@@ -98,18 +98,18 @@ would be ambiguous.
 
 <li>Use <code>combine</code> to build <code>maximum of list</code> and
 <code>minimum of list</code>.<br />
-<img src="/img/3-lists/max-of-list-reporting.png" title="maximum of list {1, 22, 3, -4} reporting 22" alt="maximum of list {1, 22, 3, -4} reporting 22" class="indent"/>
-<img src="/img/3-lists/min-of-list-reporting.png" title="minimum of list {1, 22, 3, -4} reporting -4" alt="minimum of list {1, 22, 3, -4} reporting -4" class="indent"/></li>
+<img src="/img/3-lists/max-of-list-reporting.png" title="maximum of list {1, 22, 3, -4} reporting 22" alt="maximum of list {1, 22, 3, -4} reporting 22" class="ms-4"/>
+<img src="/img/3-lists/min-of-list-reporting.png" title="minimum of list {1, 22, 3, -4} reporting -4" alt="minimum of list {1, 22, 3, -4} reporting -4" class="ms-4"/></li>
 
 <li>Create a <code>sum of list</code> block that reports the sum of the
 items of a list.<br />
-<img src="/img/3-lists/sum-of-list-reporting.png" title="sum of list {1, 2, 3, 10} reporting 16" alt="sum of list {1, 2, 3, 10} reporting 16" class="indent"/></li>
+<img src="/img/3-lists/sum-of-list-reporting.png" title="sum of list {1, 2, 3, 10} reporting 16" alt="sum of list {1, 2, 3, 10} reporting 16" class="ms-4"/></li>
 
 <li>
 
 Create an <code>average of list</code> block that calculates the average
 of the items in a list:<br />
-<img src="/img/3-lists/average-of-list-reporting.png" title="average of list {1, 2, 3, 4} reporting 2.5" alt="average of list {1, 2, 3, 4} reporting 2.5" class="indent"/>
+<img src="/img/3-lists/average-of-list-reporting.png" title="average of list {1, 2, 3, 4} reporting 2.5" alt="average of list {1, 2, 3, 4} reporting 2.5" class="ms-4"/>
 
 ::: endnote
 <a href="#hint-average" data-bs-toggle="collapse" title="Hint about average of list">Hint
@@ -165,7 +165,7 @@ block). But the AP's language doesn't include variable declarations, so
 you won't see them on the exam.</p>
 :::
 
-<img src="/img/3-lists/square-roots-definition.png" title="square roots of (number) {script variables (positive root), set (positive root) to ((sqrt) of (number))), report (list (positive root) ((-1) × positive root))" alt="square roots of (number) {script variables (positive root), set (positive root) to ((sqrt) of (number))), report (list (positive root) ((-1) × positive root))" class="indent"/><br />
+<img src="/img/3-lists/square-roots-definition.png" title="square roots of (number) {script variables (positive root), set (positive root) to ((sqrt) of (number))), report (list (positive root) ((-1) × positive root))" alt="square roots of (number) {script variables (positive root), set (positive root) to ((sqrt) of (number))), report (list (positive root) ((-1) × positive root))" class="ms-4"/><br />
 would be written as
 
 ::: pre-container
@@ -285,7 +285,7 @@ code in second block of statements runs.
 ::: prompt
 <p>When will "Error. Invalid entry." be displayed?</p>
 
-::: {.pre-container .indent}
+::: {.pre-container .ms-4}
 ```{=html}
 <pre class="inline">PROCEDURE greaterThanOrEqualTo(a, b)
 IF(a &gt; b)
@@ -419,8 +419,8 @@ largest positive integer that is a divisor (a factor) of both integers.
 Develop a <code>greatest common divisor</code> block. (Use your
 <img src="/img/2-complexity/divisors.png" title="divisors of ()" alt="divisors of ()" class="inline"/>
 block.)<br />
-<img src="/img/3-lists/gcd-20-50-reporting.png" title="greatest common divisor of (20) and (50) reporting 10" alt="greatest common divisor of (20) and (50) reporting 10" class="indent"/>
-<img src="/img/3-lists/gcd-36-40-reporting.png" title="greatest common divisor of (36) and (40) reporting 4" alt="greatest common divisor of (36) and (40) reporting 4" class="indent"/>
+<img src="/img/3-lists/gcd-20-50-reporting.png" title="greatest common divisor of (20) and (50) reporting 10" alt="greatest common divisor of (20) and (50) reporting 10" class="ms-4"/>
+<img src="/img/3-lists/gcd-36-40-reporting.png" title="greatest common divisor of (36) and (40) reporting 4" alt="greatest common divisor of (36) and (40) reporting 4" class="ms-4"/>
 
 ::: endnote
 <a href="#hint-GCD-hint" data-bs-toggle="collapse" title="Hints about building greatest common divisor">Hint
@@ -431,7 +431,7 @@ You may find it useful to use <code>maximum of list</code> as well as
 <code>divisors</code> and also to build an <code>intersection</code>
 block that takes two lists as input and reports all of the items that
 are on both lists.<br />
-<img src="/img/3-lists/intersection-reporting.png" title="intersection of {apples, potatoes, carrots, pears} and {acorns, apples, pears, pine cones} reporting {apples, pears}" alt="intersection of {apples, potatoes, carrots, pears} and {acorns, apples, pears, pine cones} reporting {apples, pears}" class="indent"/><br />
+<img src="/img/3-lists/intersection-reporting.png" title="intersection of {apples, potatoes, carrots, pears} and {acorns, apples, pears, pine cones} reporting {apples, pears}" alt="intersection of {apples, potatoes, carrots, pears} and {acorns, apples, pears, pine cones} reporting {apples, pears}" class="ms-4"/><br />
 <a href="#hint-GCD-hints" data-bs-toggle="collapse" title="More detailed hints about greatest common divisor">More
 detailed hints about <code>greatest common divisor</code></a>
 
