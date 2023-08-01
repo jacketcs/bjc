@@ -1,0 +1,46 @@
+---
+title: "Bomb Game Instructions"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
+author: "Mr. Chang"
+description: "These are the instructions to the bomb game that we'll be playing today."
+date: "8/22/2023"
+date-modified: "8/22/2023"
+categories:
+  - Bomb Game
+  - Announcement
+draft: true # change to `false` when you want to actually render it
+---
+
+## About the Game
+
+::: learn
+
+You’re alone in a room with a bomb. Your friends, the “Experts”, have the manual needed to defuse it. But there’s a catch: the Experts can’t see the bomb, so everyone will need to talk it out – fast!
+
+Put your puzzle-solving and communication skills to the test as you and your friends race to defuse bombs quickly before time runs out!
+
+(Taken from [their website](https://keeptalkinggame.com/))
+
+:::
+
+::: takeNote
+
+### So what do you do?
+
+- In the game, you'll have a bomb on the "table", and you have to defuse it with a partner
+    * Here's the catch: the person who can see the bomb doesn't have the instructions to defuse it and the person who has the instructions cannot see the bomb
+    * Your goal is to communicate effectively so that the defuser (**driver**) knows what to do with the bomb and the manual reader (**navigator**) knows what instructions to provide to the defuser.
+
+:::
+
+::: forYouToDo
+
+(@) At every pair of computers, at least one of the computers has the game that we'll be playing: "Keep Talking and Nobody Explodes." Figure out which computer has the game. Only one computer per pair should have the game open.
+
+(@) On the other computer, have the bomb manual open. [LINK TO THE BOMB MANUAL](http://www.bombmanual.com/)
+
+(@) Play the tutorial together so that everyone knows how to work with the bomb.
+
+(@) After the tutorial is done, jump right into the game. At this point, the defuser (person on the game) should not be looking at the manual in any form; likewise the manual reader should not be looking at the game at all. The only way for you to know what's going on in the other person's side is to keep talking to each other.
+
+:::

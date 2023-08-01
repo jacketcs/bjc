@@ -15,6 +15,10 @@ gifffer: true
 
 <p>This means that <em>collaboration skills</em> are as important as coding skills today. Even if you don't end up working as a programmer, collaboration is part of most jobs.</p>
 
+We'll watch this video in class together, but here it is in case you want to watch it again:
+
+{{< video https://www.youtube.com/watch?v=q7d_JtyCq1A >}}
+
 <p>There are several ways to organize a collaboration. In this course, you'll use a collaboration technique called <a href="http://en.wikipedia.org/wiki/Pair_programming" title="Wikipedia: Pair programming" target="_blank"><em>pair programming</em></a>---writing computer programs in teams of two. One partner, the <em>driver,</em> controls the computer. The other, the <em>navigator</em>, helps catch errors and keeps track of how the code being written fits into the overall plan. The navigator is also in charge of reading the lab pages out loud. Aim for equal time in each role, switching about every five minutes.</p>
 
 ::: takeNote

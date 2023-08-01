@@ -15,29 +15,6 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"Checkpoint modal": {
-		"prefix": "bjc",
-		"body": [
-			"<button type='button' class='btn btn-danger' data-bs-toggle='modal' data-bs-target='#checkpoint'>",
-			"\tCheckpoint: Fill out this Google Form",
-			"</button>",
-			"",
-			"<div class='modal fade' id='checkpoint' tabindex='-1' role='dialog'>",
-			"<div class='modal-dialog modal-fullscreen'>",
-			"\t<div class='modal-content'>",
-			"\t\t<div class='modal-header'>",
-			"\t\t\t<button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>",
-			"\t\t</div>",
-			"\t\t<iframe src='${0:form_embed_link}' frameborder='0' marginheight='0' marginwidth='0' height='613'>Loading…</iframe>",
-			"\t\t<div class='modal-footer'>",
-			"\t\t\t<button type='button' class='btn btn-danger' data-bs-dismiss='modal'>Close</button>",
-			"\t\t</div>",
-			"\t</div>",
-			"</div>",
-			"</div>"
-		],
-		"description": "Modal checkpoint"
-	},
 	"Save work": {
 		"prefix": "bjc",
 		"body": "<img src='/img/icons/save-now.png' title='Save your work' alt='Save your work' class='inline'/>",
@@ -55,5 +32,9 @@
 			"${0:text}",
 			":::"
 		]
+	},
+	"Checkpoint": {
+		"prefix": "bjc",
+		"body": "{{< checkpoint text='Fill out this Google Form' id='${0:google_form_id}' >}}"
 	}
 }

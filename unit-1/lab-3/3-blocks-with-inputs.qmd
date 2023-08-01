@@ -6,31 +6,27 @@ gifffer: true
 ---
 
 ::: learn
-<p><strong>On this page,</strong> you will use inputs to allow one block to do many things.</p>
+
+<strong>On this page,</strong> you will use inputs to allow one block to do many things.
+
 :::
 
-<p>On the previous page you used blocks `asterisk` and `pinwheel` that we wrote for you, each with an input for the number of spokes. Now you're going to learn how to create your own blocks with inputs.</p>
+On the previous page you used blocks `asterisk` and `pinwheel` that we wrote for you, each with an input for the number of spokes. Now you're going to learn how to create your own blocks with inputs.
 
 ::: {#first .forYouToDo}
-<ol>
 
-<li><a href="/prog/1-introduction/U1L3-Pinwheel.xml" class="run"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a><br /> Make 5 copies of the script and modify those copies so that they make pinwheel designs like these with 3, 4, 5, 6, and 12 branches.<br /> <img src="/img/1-introduction/Blockswith-Inputs_img/3.png" title="pinwheel with 3 branches" alt="pinwheel with 3 branches" class="noshadow" height="120"/> <img src="/img/1-introduction/Blockswith-Inputs_img/4.png" title="pinwheel with 4 branches" alt="pinwheel with 4 branches" class="noshadow" height="120"/> <img src="/img/1-introduction/Blockswith-Inputs_img/5.png" title="pinwheel with 5 branches" alt="pinwheel with 5 branches" class="noshadow" height="120"/> <img src="/img/1-introduction/Blockswith-Inputs_img/6.png" title="pinwheel with 6 branches" alt="pinwheel with 6 branches" class="noshadow" height="120"/> <img src="/img/1-introduction/Blockswith-Inputs_img/12.png" title="pinwheel with 12 branches" alt="pinwheel with 12 branches" class="noshadow" height="120"/></li>
+(@) <a href="/prog/1-introduction/U1L3-Pinwheel.xml" class="run"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a><br /> Make 5 copies of the script and modify those copies so that they make pinwheel designs like these with 3, 4, 5, 6, and 12 branches.<br /> <img src="/img/1-introduction/Blockswith-Inputs_img/3.png" title="pinwheel with 3 branches" alt="pinwheel with 3 branches" class="noshadow" height="120"/> <img src="/img/1-introduction/Blockswith-Inputs_img/4.png" title="pinwheel with 4 branches" alt="pinwheel with 4 branches" class="noshadow" height="120"/> <img src="/img/1-introduction/Blockswith-Inputs_img/5.png" title="pinwheel with 5 branches" alt="pinwheel with 5 branches" class="noshadow" height="120"/> <img src="/img/1-introduction/Blockswith-Inputs_img/6.png" title="pinwheel with 6 branches" alt="pinwheel with 6 branches" class="noshadow" height="120"/> <img src="/img/1-introduction/Blockswith-Inputs_img/12.png" title="pinwheel with 12 branches" alt="pinwheel with 12 branches" class="noshadow" height="120"/>
 
-<li>Look at two of your scripts, and write down all of the differences between them.</li>
+(@) Look at two of your scripts, and write down all of the differences between them.
 
-</ol>
 :::
 
-<p>The scripts are essentially all the same; only some of the <em>input values</em> change. Instead of having many separate scripts, you can make one general block <img src="/img/1-introduction/pinwheel-block.png" title="pinwheel, branches:()" alt="pinwheel, branches:()" height="40"/> that will draw <em>all</em> such designs. The block has to work for a variety of inputs.</p>
+The scripts are essentially all the same; only some of the <em>input values</em> change. Instead of having many separate scripts, you can make one general block <img src="/img/1-introduction/pinwheel-block.png" title="pinwheel, branches:()" alt="pinwheel, branches:()" height="40"/> that will draw <em>all</em> such designs. The block has to work for a variety of inputs.
 
 ::: forYouToDo
 <img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="float-end"/>
 
-<ol start="3">
-
-<li>
-
-Create a `pinwheel` block with an input for the <var>number of branches</var>. Instructions are below and you can also watch the process in the video that follows the instructions.
+(@) Create a `pinwheel` block with an input for the <var>number of branches</var>. Instructions are below and you can also watch the process in the video that follows the instructions.
 
 ::: narrower
 ### <strong>Making a Block with an Input</strong>
@@ -106,93 +102,70 @@ Create a `pinwheel` block with an input for the <var>number of branches</var>. I
 :::
 :::
 
-</li>
-
-</ol>
 :::
 
 ::: takeNote
 
-<p><strong>What kind of data can be an input?</strong> All kinds of data. In this example, the input is supposed to be a number, but <em>any</em> kind of value can be used as an input. For instance, you've seen the `list` block called with text as inputs. In Snap<em>!</em>, any kind of data can be used as an input, can be reported by a block, or can be put in a list.</p>
+<strong>What kind of data can be an input?</strong> All kinds of data. In this example, the input is supposed to be a number, but <em>any</em> kind of value can be used as an input. For instance, you've seen the `list` block called with text as inputs. In Snap<em>!</em>, any kind of data can be used as an input, can be reported by a block, or can be put in a list.
+
 :::
 
 ::: vocabFullWidth
 : What's an input? <strong>Parameter</strong> vs. <strong>Argument</strong>
 
-<p>
+- A <strong>parameter</strong> (or <em>formal parameter</em>) is the input <em>name,</em> such as <var>number of branches</var>. The input name is set in the block definition. It never changes.<br /> <img src="/img/1-introduction/example-parameter.png" title="image of complete pinwheel, branches:(number of branches) block definition with parameter label pointing to number of branches" alt="image of complete pinwheel, branches:(number of branches) block definition with parameter label pointing to number of branches" class="ms-4"/>
 
-<ul>
-
-<li>A <strong>parameter</strong> (or <em>formal parameter</em>) is the input <em>name,</em> such as <var>number of branches</var>. The input name is set in the block definition. It never changes.<br /> <img src="/img/1-introduction/example-parameter.png" title="image of complete pinwheel, branches:(number of branches) block definition with parameter label pointing to number of branches" alt="image of complete pinwheel, branches:(number of branches) block definition with parameter label pointing to number of branches" class="ms-4"/></li>
-
-<li>An <strong>argument</strong> (or <em>actual argument</em>) is the input <em>value,</em> such as 6 for a hexagonal pinwheel. The input value is given each time the block is run; it can be a different value each time.<br /> <img src="/img/1-introduction/example-argument.png" title="pinwheel, branches: (6) with argument label pointing to the input 6" alt="pinwheel, branches: (6) with argument label pointing to the input 6" class="ms-4"/></li>
-
-</ul>
+- An <strong>argument</strong> (or <em>actual argument</em>) is the input <em>value,</em> such as 6 for a hexagonal pinwheel. The input value is given each time the block is run; it can be a different value each time.<br /> <img src="/img/1-introduction/example-argument.png" title="pinwheel, branches: (6) with argument label pointing to the input 6" alt="pinwheel, branches: (6) with argument label pointing to the input 6" class="ms-4"/>
 
 We use the word "input" both for parameters (input names) and for arguments (input values).
 
-</p>
 :::
 
-<p>Originally, you made five copies of the pinwheel script to create five slightly different pinwheels. Now, you've made a single procedure that includes the shared features of these five scripts and uses a parameter to handle the differences.</p>
+Originally, you made five copies of the pinwheel script to create five slightly different pinwheels. Now, you've made a single procedure that includes the shared features of these five scripts and uses a parameter to handle the differences.
 
-::: forYouToDo
-
-<ol start="4">
+::::::: forYouToDo
 
 <img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"/>
 
-<li>Comment your code.</li>
+(@) Comment your code.
 
-::: takeNote
+:::::: takeNote
+
 ### <strong>Debugging Tip: Commenting Your Code</strong>
+
 Adding comments to your code may help you remember what your code does, helps other people reading your code to understand it, and can help you avoid bugs by increasing the clarity of your program. But it won't do any of those things if you comment every line of code, so each comment just says how a block inside your script works. You can add comments to your Snap<em>!</em> code by right-clicking (or control-clicking) in the Scripts area and choosing "add comment." <a href="#hint-comments" data-bs-toggle="collapse" title="Click for an animation that shows how to add comments.">Click for an animation that shows how.</a>
 
-::: {#hint-comments .collapse}
+::::: {#hint-comments .collapse}
 <img title="Animation on how to add a comment to a block and how a comment added to a hat block becomes that custom block&apos;s help message." alt="Animation on how to  add a comment to a block and how a comment added to a hat block becomes that custom block&apos;s help message." class="ms-4" data-gifffer="/img/2-complexity/Debugging/commenting.gif"/>
-:::
+:::::
 
 You can attach a comment <em>to the hat block</em> in the Block Editor to create a help message for your block. This is the <em>best</em> way to comment, because people can find out what your block does without having to look inside, just like the help messages for primitive blocks.
 
-::: borderless-table
-<div>
+::::: grid
+
+:::: {.g-col-12}
 
 <strong>Bad commenting:</strong>
 
-</div>
-
-<div>
-
 <img src="/img/1-introduction/bad-comments.png" title="an example of bad commenting: block definition for a square-drawing block called &apos;square&apos; with a comment attached to the repeat (4) block that says, &apos;a square has four sides&apos; a comment attached to the move (size) steps block that says, &apos;the move says how big to make it&apos;, and a comment attached to the turn right (90) degrees block that says, &apos;You have to turn (90) degrees&apos;" alt="an example of bad commenting: block definition for a square-drawing block called &apos;square&apos; with a comment attached to the repeat (4) block that says, &apos;a square has four sides&apos; a comment attached to the move (size) steps block that says, &apos;the move says how big to make it&apos;, and a comment attached to the turn right (90) degrees block that says, &apos;You have to turn (90) degrees&apos;" class="ms-4"/>
 
-</div>
-:::
+::::
 
-::: borderless-table
-<div>
+:::: {.g-col-12}
 
 <strong>Good commenting:</strong>
 
-</div>
-
-<div>
-
 <img src="/img/1-introduction/good-comments.png" title="an example of good commenting: block definition for a square-drawing block called &apos;square&apos; with a comment attached to the hat block that says, &apos;This block draws a square. The input says how big to make the sides of the square.&apos;" alt="an example of good commenting: block definition for a square-drawing block called &apos;square&apos; with a comment attached to the hat block that says, &apos;This block draws a square. The input says how big to make the sides of the square.&apos;" class="ms-4"/>
-
-<div>
 
 <img src="/img/1-introduction/askhelp.png" title="the &apos;square&apos; block with the right-click menu open and the &apos;help...&apos; option selected" alt="the &apos;square&apos; block with the right-click menu open and the &apos;help...&apos; option selected" class="ms-4"/> <img src="/img/1-introduction/squarehelp.png" title="a Help window with a picture of the &apos;square&apos; block followed by the text &apos;This block draws a square. The input says how big to make the sides of the square.&apos; and then an &apos;OK&apos; button" alt="a Help window with a picture of the &apos;square&apos; block followed by the text &apos;This block draws a square. The input says how big to make the sides of the square.&apos; and then an &apos;OK&apos; button" class="ms-4"/>
 
-</div>
+::::
+:::::
 
-</div>
-:::
+Part of the reason some people emphasize the importance of detailed comments is that they are programming in text languages, which discourage long variable and procedure names. (Typically, you can't include spaces in the names, and you have to type the entire name every time you use that variable or procedure.) So you see names like `substLcUc` instead of `substitute lower case letters for capital letters in string`. If a program is full of drastically abbreviated names for procedures and variables, it's no surprise if the code needs documentation. In Snap<em>!,</em> the names in the program can be self-documenting.
 
-<p>Part of the reason some people emphasize the importance of detailed comments is that they are programming in text languages, which discourage long variable and procedure names. (Typically, you can't include spaces in the names, and you have to type the entire name every time you use that variable or procedure.) So you see names like `substLcUc` instead of `substitute lower case letters for capital letters in string`. If a program is full of drastically abbreviated names for procedures and variables, it's no surprise if the code needs documentation. In Snap<em>!,</em> the names in the program can be self-documenting.</p>
-:::
-
-</ol>
-:::
+::::::
+:::::::
 
 ## More About Program Documentation
 
@@ -205,7 +178,7 @@ If you're writing a program by yourself, internal documentation may seem silly. 
 It's best if the first attempt at documentation is made even before starting to code. The documentation will specify the desired program behavior (external) and the intended program structure (internal). These documents can be used in testing the code to ensure that it behaves as planned.
 
 ::: forYouToDo
-5. Create a script that draws two pinwheels on the stage, with different numbers of spokes.
+(@) Create a script that draws two pinwheels on the stage, with different numbers of spokes.
 :::
 
 When you embed a command procedure (such as `pinwheel`) within a script, the procedure is completed before continuing the script that called it.

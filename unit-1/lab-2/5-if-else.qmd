@@ -5,23 +5,20 @@ order: 5
 ---
 
 ::: learn
-<p><strong>On this page, </strong> you will improve your program so that sometimes the sentences are a bit longer and more complex.</p>
+
+<strong>On this page, </strong> you will improve your program so that sometimes the sentences are a bit longer and more complex.
+
 :::
 
 The block <img src="/img/1-introduction/more-complicated-who.png" title="more complicated who" alt="more complicated who"/> has been built for you. It randomly chooses 1, 2, 3, or 4, and if that number is 3, then it reports something more complicated than `who`. Otherwise, it reports `who`, just as before.
 
 ::: {#first .forYouToDo}
-<ol>
 
-<li>If it isn't open already, open your U1L2-Gossip project.</li>
+(@) If it isn't open already, open your U1L2-Gossip project.
 
-<li>Find <img src="/img/1-introduction/more-complicated-who.png" title="more complicated who" alt="more complicated who"/> in the red Lists palette, drag it into the scripting area, and click on it enough times to see how it's different from `who`.</li>
+(@) Find <img src="/img/1-introduction/more-complicated-who.png" title="more complicated who" alt="more complicated who"/> in the red Lists palette, drag it into the scripting area, and click on it enough times to see how it's different from `who`.</li>
 
-<li>
-
-<!--<div class="index-term" id="pick random`"></div>-->
-
-Here is the code for `more complicated who`. There are two new things in it: `pick random` and `if else`.<br /> <img src="/img/1-introduction/more-complicated-who-script.png" title="more complicated who {
+(@) Here is the code for `more complicated who`. There are two new things in it: `pick random` and `if else`.<br /> <img src="/img/1-introduction/more-complicated-who-script.png" title="more complicated who {
 if (pick random (1) to (4)) = (3) {
 report (join (who) (&apos;, who&apos;) (does what) ( ) (who) (,))                                                                                          
 } else {
@@ -34,20 +31,11 @@ report (join (who) (&apos; who&apos;) (does what) ( ) (who))
 report (who)
 }
 }" class="ms-4"/>
+    a. Find <img src="/img/blocks/pick-random-1-to-10-full-size.png" title="pick random (1) to (10)" alt="pick random (1) to (10)" class="inline"/> in the green Operators palette, and click it several times. What does the `random` block do?
+    b. <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> In the `more complicated who` block, what happens if the `pick random` block picks 3? What if it picks 4?
 
-<ol>
 
-<li>Find <img src="/img/blocks/pick-random-1-to-10-full-size.png" title="pick random (1) to (10)" alt="pick random (1) to (10)" class="inline"/> in the green Operators palette, and click it several times. What does the `random` block do?</li>
-
-<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> In the `more complicated who` block, what happens if the `pick random` block picks 3? What if it picks 4?</li>
-
-</ol>
-
-</li>
-
-<li>
-
-<!-- Question 1 -->
+(@) <!-- Question 1 -->
 
 ::: {.assessment-data type="multiplechoice" identifier="About how often will more complicated who pick the more complicated choice?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="false"}
 ::: prompt
@@ -187,33 +175,25 @@ The chosen number can never be 5, so we'll never get a complicated subject.
 ::: vocabFullWidth
 : <strong>Expressions</strong> and <strong>Values</strong>
 
-<ul>
+- An <strong>expression</strong> is a either a constant value (such as "4" or "winter") or a call to a reporter block including its inputs (such as <img src="/img/2-complexity/number.png" title="number" alt="number" class="inline"/>, <img src="/img/1-introduction/5+(4x3).png" title="5 + (4 * 3)" alt="5 + (4 * 3)" class="inline py-0"/>, or <img src="/img/2-complexity/join-who-doeswhat-who.png" title="join (who) ( ) (does what) ( ) (who)" alt="join (who) ( ) (does what) ( ) (who)" class="inline"/>).</li>
 
-<li>An <strong>expression</strong> is a either a constant value (such as "4" or "winter") or a call to a reporter block including its inputs (such as <img src="/img/2-complexity/number.png" title="number" alt="number" class="inline"/>, <img src="/img/1-introduction/5+(4x3).png" title="5 + (4 * 3)" alt="5 + (4 * 3)" class="inline py-0"/>, or <img src="/img/2-complexity/join-who-doeswhat-who.png" title="join (who) ( ) (does what) ( ) (who)" alt="join (who) ( ) (does what) ( ) (who)" class="inline"/>).</li>
+- Expressions are evaluated to produce a <em>single</em> <strong>value</strong> (a value can be a number, a string, a sprite, a costume, a script, a list---anything). For example, <img src="/img/1-introduction/5+(4x3).png" title="5 + (4 * 3)" alt="5 + (4 * 3)" class="inline py-0"/> will be evaluated to 17.</li>
 
-<li>Expressions are evaluated to produce a <em>single</em> <strong>value</strong> (a value can be a number, a string, a sprite, a costume, a script, a list---anything). For example, <img src="/img/1-introduction/5+(4x3).png" title="5 + (4 * 3)" alt="5 + (4 * 3)" class="inline py-0"/> will be evaluated to 17.</li>
-
-</ul>
 :::
 
 ::: examFullWidth
-<!--<div class="index-term" id="pick random`"></div>-->
-::: pseudop
-The expression <img src="/img/blocks/pick-random-1-to-10-full-size.png" title="pick random (1) to (10)" alt="pick random (1) to (10)" class="inline"/> would be written as
 
-```{=html}
-<pre class="inline">RANDOM(1, 10)</pre>
+The expression <img src="/img/blocks/pick-random-1-to-10-full-size.png" title="pick random (1) to (10)" alt="pick random (1) to (10)" class="inline"/> would be written as
+```
+RANDOM(1, 10)
 ```
 or <img src="/img/1-introduction/random-blocktran.png" title="RANDOM(1, 10)" alt="RANDOM(1, 10)" class="inline"/>. Every time you run this code, you will get a different random number between 1 and 10.
-:::
+
 :::
 
 ::: forYouToDo
-<ol start="5">
 
-<li>
-
-<!-- Question 3 -->
+(@) <!-- Question 3 -->
 
 ::: {.assessment-data type="multiplechoice" identifier="What expression would return a random even number between 1 and 10?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri3" shuffle="true"}
 ::: prompt
@@ -394,35 +374,30 @@ Can you score a total of 1 by rolling two dice?
 :::
 :::
 
-</li>
+(@) Create a new block <img src="/img/1-introduction/complicated-gossip.png" title="complicated gossip" alt="complicated gossip" class="inline py-0"/> that is similar to `gossip` but that uses `more complicated who` instead of `who`. (You can choose which `who` to replace, or you could replace both.)
 
-<li>Create a new block <img src="/img/1-introduction/complicated-gossip.png" title="complicated gossip" alt="complicated gossip" class="inline py-0"/> that is similar to `gossip` but that uses `more complicated who` instead of `who`. (You can choose which `who` to replace, or you could replace both.)</li>
-
-<li>Change the script for Sprite to use `complicated gossip` instead of `gossip`. Run your code, and fix any problems.</li>
+(@) Change the script for Sprite to use `complicated gossip` instead of `gossip`. Run your code, and fix any problems.
 
 <img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline"/>
 
-</ol>
 :::
 
 ## Making a Block Call Itself
 
 ::: forYouToDo
-<ol start="8">
 
-<li>Edit `more complicated who`. Replace <em>one</em> of the `who` blocks with a fresh copy of `more complicated who` that you drag in from the palette. Click `more complicated who` enough times to see how it has changed.</li>
+(@) Edit `more complicated who`. Replace <em>one</em> of the `who` blocks with a fresh copy of `more complicated who` that you drag in from the palette. Click `more complicated who` enough times to see how it has changed.
 
-<li><img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/> Describe the change in behavior, and explain what you think is causing it.</li>
+(@) <img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/> Describe the change in behavior, and explain what you think is causing it.
 
-</ol>
+(@) {{< checkpoint text='Fill out this Google Form' id='1FAIpQLSf8n7ShuN7ZHNJFlDHXOlnU9PklKImbT6DA_SRFUb2dOyDNoA' >}}
+
 :::
 
 ::: ifTime
-<ol start="10">
 
-<li>Make Sprite(2) occasionally give a more complicated reply.</li>
+(@) Make Sprite(2) occasionally give a more complicated reply.
 
-</ol>
 :::
 
 ::: endnote
@@ -430,15 +405,10 @@ Purple "Take It Further" boxes have more challenging activities that are <em>not
 :::
 
 ::: takeItFurther
+
 <ol type="A">
-
 <li>Make `more complicated who` give the more complicated response three out of four times instead of one out of four times.</li>
-
 <li>What happens when you try it out? Was it what you expected? Explain why it happened.</li>
-
 </ol>
+
 :::
-
-</body>
-
-</html>

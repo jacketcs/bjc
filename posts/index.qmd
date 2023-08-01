@@ -4,7 +4,7 @@ pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 listing:
   contents:
     - "announcements/*.qmd"
-    - "citn/*qmd"
+    - "citn/*.qmd"
   categories: true
   sort: "date desc"
   sort-ui: [title, date]

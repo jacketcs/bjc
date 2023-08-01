@@ -19,7 +19,9 @@ gifffer: true
 <li><a href="/prog/1-introduction/U1L2-Gossip.xml" class="run"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a></li>
 
 ::: endnote
-You'll need to be logged in to save to your account. You may wish to review how to log in at <a href="/unit-1/lab-1/1-creating-a-snap-account.html" title="Getting Started with Snap!">Unit 1 Lab 1 Page 1: Getting Started with Snap<em>!</em></a>
+You'll need to be logged in to save to your account. You know that you're logged in if you see a filled in cloud at the top right of the Snap<em>!</em> toolbar <img src="/img/1-introduction/cloud_button.png" title="Cloud menu button" alt="Cloud menu button"/>.
+
+You may wish to review how to log in at <a href="/unit-1/lab-1/1-creating-a-snap-account.html" title="Getting Started with Snap!">Unit 1 Lab 1 Page 1: Getting Started with Snap<em>!</em></a>
 :::
 
 <li>Perform each experiment (A-D) several times.</li>
