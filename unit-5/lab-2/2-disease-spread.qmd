@@ -94,33 +94,33 @@ that display the status of each clone</li>
 reports a list of sprites that are near the sprite that uses it.</p>
 :::
 
-a <code>simulate disease</code> function <strong>for you to
+a `simulate disease` function <strong>for you to
 complete</strong> that takes three inputs: total population, percent
 initially infected, and sprite speed; creates the clones that enact the
 simulation; and outputs the time until the entire population is infected
 
 </li>
 
-<li>an <code>initialize simulation</code> block that initializes the
+<li>an `initialize simulation` block that initializes the
 global variables and sets the parent sprite costume</li>
 
-<li>a <code>touching infected person?</code> predicate <strong>for you
+<li>a `touching infected person?` predicate <strong>for you
 to complete</strong> that checks whether the current clone is being
 exposed to the disease</li>
 
-<li>an <code>initialize clone</code> block that decides whether a clone
+<li>an `initialize clone` block that decides whether a clone
 will start out sick and positions it randomly on the stage</li>
 
-<li>a <code>when I start as a clone</code> script <strong>for you to
+<li>a `when I start as a clone` script <strong>for you to
 complete</strong> that moves the clones until they are all infected</li>
 
 </ul>
 
 </li>
 
-<li>Complete the <code>simulate disease</code> function, the
-<code>touching infected person?</code> predicate, and the <code>when I
-start as clone</code> script.</li>
+<li>Complete the `simulate disease` function, the
+`touching infected person?` predicate, and the `when I
+start as clone` script.</li>
 
 <li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/>
 Discuss how your simulation is similar to and different from a real-life

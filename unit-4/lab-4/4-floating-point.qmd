@@ -52,7 +52,7 @@ AAP-1.A.4
 :::
 
 In Snap<em>!</em>, you can store any data type in a variable (number,
-text string, list, costume, <code>quiz item</code>, etc.). But in some
+text string, list, costume, `quiz item`, etc.). But in some
 languages, you have to declare what kind of data your variables will
 store. If you have a collection of values, it's obvious that you'll need
 a list to store it. But it's not always obvious how best to represent a
@@ -61,8 +61,8 @@ to represent an amount of money is in <em>floating point</em> because it
 allows for decimals. But if you use floating point to store a value like
 3.20, it's likely to be displayed to the user as 3.2, and people rarely
 write money this way. Instead, even though it's more programming effort,
-you might choose to create an abstract data type <code>money, dollars: (
-) cents: ( )</code> with two integer inputs so that you can control how
+you might choose to create an abstract data type `money, dollars: (
+) cents: ( )` with two integer inputs so that you can control how
 the value is displayed.
 
 </p>
@@ -285,8 +285,8 @@ computer is represented as a binary sequence. For example:
 
 <ul>
 
-<li>A Boolean value is a single bit, 0 for <code>false</code> and 1 for
-<code>true</code>.</li>
+<li>A Boolean value is a single bit, 0 for `false` and 1 for
+`true`.</li>
 
 <li>A text string is a sequence of Unicode character codes, each of
 which is stored as a separate integer.</li>

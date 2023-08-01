@@ -189,9 +189,9 @@ $note:          #f3761d;
 .vocab, .vocabBig, .exam, .examBig, .atwork {
     font-size: .9em;
     float: right;
-    margin-right: 20px;
-    margin-left: 1em;
-    margin-bottom: 20px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
     padding: 10px;
     clear:both;
     text-indent: 0em;
@@ -201,7 +201,8 @@ $note:          #f3761d;
 .vocabFullWidth, .examFullWidth, .vocabSummary, .examSummary {
     width: 90%;
     margin-left: auto;
-    margin-top: .5em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     padding: 20px;
     text-indent: 0em;
 }

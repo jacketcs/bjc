@@ -8,15 +8,15 @@ order: 2
 <p><strong>On this page,</strong> you'll continue to develop your number guessing game to accept player guesses until the player guesses correctly.</p>
 :::
 
-<!--<div class="index-term" id="<code>repeat until</code> block" />-->
+<!--<div class="index-term" id="`repeat until` block" />-->
 
-<p>You'll want the computer to ask players to guess again and again until they guess correctly. To do that, you will use the <img src="/img/blocks/repeat-until.png" title="repeat until" alt="repeat until" class="inline py-0"/> block. <code>Repeat until</code> is a <em>loop</em> (just like <code>repeat</code>, <code>forever</code>, and <code>for</code>) but also a <em>conditional</em> (like <code>if</code> and <code>if else</code>). It repeats until a certain condition is met. For this program, the code should repeat until the player's answer equals the secret number.</p>
+<p>You'll want the computer to ask players to guess again and again until they guess correctly. To do that, you will use the <img src="/img/blocks/repeat-until.png" title="repeat until" alt="repeat until" class="inline py-0"/> block. `Repeat until` is a <em>loop</em> (just like `repeat`, `forever`, and `for`) but also a <em>conditional</em> (like `if` and `if else`). It repeats until a certain condition is met. For this program, the code should repeat until the player's answer equals the secret number.</p>
 
 ::: endnote
 <p>You learned about loops on <a href="/unit-1/lab-3/6-the-for-block.html" title="Unit 1 Lab 3 Page 6: Looping with a Counter">Unit 1 Lab 3 Page 6: Looping with a Counter</a>.</p>
 
 FIIIIXXX
-<p>You've seen conditionals on <a href="/unit-1/lab-2/5-if-else.html" title="Unit 1 Lab 2 Page 5: Adding Variety to Gossip">Unit 1 Lab 2 Page 5: Adding Variety to <code>Gossip</code></a> and <a href="/unit-1/lab-3/2-combining-predicates.qmd" title="Unit 1 Lab 2 Page 5: Adding Variety to <code>Gossip</code>">Unit 1 Lab 2 Page 5: Adding Variety to <code>Gossip</code></a>.</p>
+<p>You've seen conditionals on <a href="/unit-1/lab-2/5-if-else.html" title="Unit 1 Lab 2 Page 5: Adding Variety to Gossip">Unit 1 Lab 2 Page 5: Adding Variety to `Gossip`</a> and <a href="/unit-1/lab-3/2-combining-predicates.qmd" title="Unit 1 Lab 2 Page 5: Adding Variety to `Gossip`">Unit 1 Lab 2 Page 5: Adding Variety to `Gossip`</a>.</p>
 :::
 
 ::: forYouToDo
@@ -24,14 +24,14 @@ FIIIIXXX
 
 <ol start="1">
 
-<li>Use <code>repeat until</code> to ask the player (<img src="/img/blocks/ask-empty-full-size.png" title="ask () and wait" alt="ask () and wait" class="inline py-0"/>) to guess the secret number until their <img src="/img/blocks/answer-full-size.png" title="answer" alt="answer" class="inline"/> equals the <var>secret number</var>.</li>
+<li>Use `repeat until` to ask the player (<img src="/img/blocks/ask-empty-full-size.png" title="ask () and wait" alt="ask () and wait" class="inline py-0"/>) to guess the secret number until their <img src="/img/blocks/answer-full-size.png" title="answer" alt="answer" class="inline"/> equals the <var>secret number</var>.</li>
 
 ::: endnote
 <ul>
 
-<li>Drag the <var>secret number</var> variable out of the <code>script variables</code> block to use it.</li>
+<li>Drag the <var>secret number</var> variable out of the `script variables` block to use it.</li>
 
-<li>The <code>ask</code> and <code>answer</code> blocks go together. If you use <code>ask</code> to ask a question, the user's answer will be reported by <code>answer</code>.</li>
+<li>The `ask` and `answer` blocks go together. If you use `ask` to ask a question, the user's answer will be reported by `answer`.</li>
 
 </ul>
 :::
@@ -54,7 +54,7 @@ or <img src="/img/2-complexity/chicken-script-blocktran.png" title="a white roun
 
 
 ::: pseudop
-Notice that the procedure `INPUT()` accepts the value from the user and returns that input value, which is then assigned to the variable `userResponse` with the <code>&leftarrow;</code>
+Notice that the procedure `INPUT()` accepts the value from the user and returns that input value, which is then assigned to the variable `userResponse` with the `&leftarrow;`
 syntax. In Snap<em>!</em>, this is just like how `answer` accepts a value from the user and reports it, and that report is what the computer `set`s the variable `user response` to.
 :::
 :::
@@ -71,7 +71,7 @@ syntax. In Snap<em>!</em>, this is just like how `answer` accepts a value from t
 </ol>
 :::
 
-<p><code>Repeat until</code> makes its decision based on the output of a hexagonal <em>predicate</em> block.</p>
+<p>`Repeat until` makes its decision based on the output of a hexagonal <em>predicate</em> block.</p>
 
 ::: vocabFullWidth
 <strong>: Predicate</strong> and <strong>Boolean value</strong>
@@ -80,7 +80,7 @@ syntax. In Snap<em>!</em>, this is just like how `answer` accepts a value from t
 <a href="#hint-Boolean" data-bs-toggle="collapse" title="Why is Boolean capitalized?"> <img src="/img/icons/read-more-mini.png" title="Read More" alt="Read More" class="inline"/> Why is Boolean capitalized? </a>
 
 ::: {#hint-Boolean .collapse}
-<p>The word Boolean is capitalized because it's named after a person, George Boole, who invented the branch of mathematics dealing with Boolean operations (such as <code>and</code>, <code>or</code>, and <code>not</code>).</p>
+<p>The word Boolean is capitalized because it's named after a person, George Boole, who invented the branch of mathematics dealing with Boolean operations (such as `and`, `or`, and `not`).</p>
 :::
 :::
 
@@ -94,7 +94,7 @@ syntax. In Snap<em>!</em>, this is just like how `answer` accepts a value from t
 <p>Predicates fit into a hexagonal input slots of conditionals, such as in <img src="/img/blocks/if-full-size.png" title="if block" alt="if block" class="inline"/> and <img src="/img/blocks/repeat-until.png" title="repeat until" alt="repeat until" class="inline"/>. Predicates help conditionals <em>decide when to do something</em>.</p>
 
 ::: vocabFullWidth
-<p>The <code>if</code> and <code>if-else</code> blocks are called <strong>conditionals</strong> because they control the code based on a true-or-false <strong>condition</strong>.</p>
+<p>The `if` and `if-else` blocks are called <strong>conditionals</strong> because they control the code based on a true-or-false <strong>condition</strong>.</p>
 
 ::: endnote
 <a href="#hint-predicates-examples" data-bs-toggle="collapse" title="Click for examples of predicates being used inside conditionals.">Click for examples of predicates being used inside conditionals.</a>
@@ -152,7 +152,7 @@ if (input &lt; 5) (repeat until (input = 5)
 say (input) for (1) secs, 
 set (input) to (input + 1) 
 )
-report (finished)" class="float-end"/> Which inputs to <code>mystery function</code> will report "finished"?
+report (finished)" class="float-end"/> Which inputs to `mystery function` will report "finished"?
 :::
 
 ::: {.choice identifier="c1"}
@@ -171,7 +171,7 @@ Only integers greater than or equal to 5
 :::
 
 ::: feedback
-Write out some examples of what happens when the input is less than 5. For example, if the input is 3, the sprite will say 3, the input will be changed to 4, the sprite will say 4, the input will be changed to 5, the <code>repeat until</code> loop will stop, and the function will report "finished."
+Write out some examples of what happens when the input is less than 5. For example, if the input is 3, the sprite will say 3, the input will be changed to 4, the sprite will say 4, the input will be changed to 5, the `repeat until` loop will stop, and the function will report "finished."
 :::
 :::
 
@@ -181,7 +181,7 @@ Only integers less than 5
 :::
 
 ::: feedback
-The <code>report</code> command isn't inside the <code>if</code>.
+The `report` command isn't inside the `if`.
 :::
 :::
 
@@ -191,7 +191,7 @@ Only 5
 :::
 
 ::: feedback
-The <code>repeat until</code> block checks the value of <var>input</var> every time through the loop, not just its initial value.
+The `repeat until` block checks the value of <var>input</var> every time through the loop, not just its initial value.
 :::
 :::
 
@@ -240,7 +240,7 @@ It does say 4 at the end, but it says other things before that.
 :::
 
 ::: feedback
-How does <code>repeat until</code> work?
+How does `repeat until` work?
 :::
 :::
 
@@ -250,7 +250,7 @@ How does <code>repeat until</code> work?
 :::
 
 ::: feedback
-Correct! The <code>repeat until</code> block runs the code in its script slot <strong>until</strong> <var>input</var> = 5, then the computer skips down to the next command, <code>report (</code><var>finished</var><code>)</code>, without the sprite ever saying 5.
+Correct! The `repeat until` block runs the code in its script slot <strong>until</strong> <var>input</var> = 5, then the computer skips down to the next command, `report (`<var>finished</var>`)`, without the sprite ever saying 5.
 :::
 :::
 
@@ -260,7 +260,7 @@ Correct! The <code>repeat until</code> block runs the code in its script slot <s
 :::
 
 ::: feedback
-The <code>repeat until</code> block tests the value of <var>input</var> <strong>before</strong> running the code in its script slot.
+The `repeat until` block tests the value of <var>input</var> <strong>before</strong> running the code in its script slot.
 :::
 :::
 
@@ -303,7 +303,7 @@ The sprite will say 9, and the block will report "finished."
 :::
 
 ::: feedback
-What does the <code>if</code> block do when <var>input</var> is 9?
+What does the `if` block do when <var>input</var> is 9?
 :::
 :::
 
@@ -313,7 +313,7 @@ The sprite will say 9, 8, 7, 6, and the block will report "finished."
 :::
 
 ::: feedback
-What does the <code>set</code> instruction do to the value of <var>input</var>?
+What does the `set` instruction do to the value of <var>input</var>?
 :::
 :::
 
@@ -323,7 +323,7 @@ The sprite will say 9, 10, 11, 12, 13, ... and keep counting, and the block will
 :::
 
 ::: feedback
-When <var>input</var> is 9, will the code inside the <code>if</code> command run?
+When <var>input</var> is 9, will the code inside the `if` command run?
 :::
 :::
 
@@ -333,7 +333,7 @@ The sprite will say nothing, and the block will report "finished."
 :::
 
 ::: feedback
-Correct! The code inside the <code>if</code> command will not run.
+Correct! The code inside the `if` command will not run.
 :::
 :::
 
@@ -360,7 +360,7 @@ The feedback is not finished because I realized that BH might object to changing
 <!--<div class="index-term" id="<var>secret number</var> variable" />-->
 
 ::: endnote
-Use <code>join</code> to merge the text "You guessed it! My secret number was" with the value of the <var>secret number</var> variable.
+Use `join` to merge the text "You guessed it! My secret number was" with the value of the <var>secret number</var> variable.
 :::
 
 </ol>

@@ -5,15 +5,15 @@ order: 5
 ---
 
 ::: learn
-<p><strong>On this page,</strong> you will use the <code>map</code>
-block to create an <code>initials from name</code> block and then use
-<code>map</code> together with <code>initials from name</code> to find
+<p><strong>On this page,</strong> you will use the `map`
+block to create an `initials from name` block and then use
+`map` together with `initials from name` to find
 the initials of all of your contacts.</p>
 :::
 
 ::: dialogue
 ::: stagedir
-Alphie, Betsy, and Gamal are building an <code>initials from name</code>
+Alphie, Betsy, and Gamal are building an `initials from name`
 block that accepts one contact as input and reports that person's
 initials.<br />
 <img src="/img/3-lists/initials-reporting.png" title="initials from name (name from contact( (item (1) of (contact list)) reporting &apos;BA&apos;" alt="initials from name (name from contact( (item (1) of (contact list)) reporting &apos;BA&apos;" class="ms-4"/>
@@ -46,7 +46,7 @@ the difference between splitting by spaces and splitting by words?</a>
 <img src="/img/3-lists/split-space.png" title="split &quot;hello␠␠␠␠␠␠␠world&quot; by (␠)" alt="split &quot;hello␠␠␠␠␠␠␠world&quot; by (␠)" class="ms-4"/>
 <img src="/img/3-lists/split-word.png" title="split &quot;hello␠␠␠␠␠␠␠world&quot; by word" alt="split &quot;hello␠␠␠␠␠␠␠world&quot; by word" class="ms-4"/></p>
 
-<p>In one case, <code>split</code> is focusing on the exact characters
+<p>In one case, `split` is focusing on the exact characters
 in the string. In the other case, it's giving you what you really want:
 the words in the contact's name. At a low level of abstraction, text is
 made of characters and you look through each of the characters. But at a
@@ -66,8 +66,8 @@ Luther King? It would just report "ML" for him.
 <div>
 
 Gamal: Oh, that's because the block only takes the first letter of items
-1 and 2. We have to add in <code>letter (1) of (item (3) of (list of
-names))</code>.
+1 and 2. We have to add in `letter (1) of (item (3) of (list of
+names))`.
 
 </div>
 
@@ -80,7 +80,7 @@ they each have five or six names...
 
 <div>
 
-Gamal: Well, then we need to take <code>letter (1) of</code>
+Gamal: Well, then we need to take `letter (1) of`
 <em>each</em> item in the <var>list of names</var>. That sounds as if
 what we need is a <em>higher-order function</em>. Higher-order functions
 are good at doing things with individual items in a list.
@@ -96,7 +96,7 @@ function as input (or reports a function as output).</p>
 ::: forYouToDo
 <ol start="1">
 
-<li>Build and experiment with these examples of the <code>map</code>
+<li>Build and experiment with these examples of the `map`
 function.<br />
 <img src="/img/3-lists/map-join-s.png" title="map (join( )(s)) over (list{block, script, Boolean})" alt="map (join( )(s)) over (list{block, script, Boolean})" class="ms-4"/><br />
 <img src="/img/3-lists/map-3x.png" title="map ((3) * ( )) over (list{7, 8, 1})" alt="map ((3) * ( )) over (list{7, 8, 1})" class="ms-4"/><br />
@@ -120,14 +120,14 @@ For example:<br />
 
 ::: takeNote
 <p><strong>You choose the function that describes the result for one
-input item, and <code>map</code> applies that function to each item in
+input item, and `map` applies that function to each item in
 the input list and then reports the list of result values.</strong> If
-your function has <code>item 1 of</code> or <code>item 2 of</code> in
-it, you're probably trying to do <code>map</code>'s part of the
+your function has `item 1 of` or `item 2 of` in
+it, you're probably trying to do `map`'s part of the
 job.<a name="HOFreview"> </a></p>
 
-<p><code>Map</code> is a higher-order function just like
-<code>keep</code> and <code>combine</code>. The function mapped over the
+<p>`Map` is a higher-order function just like
+`keep` and `combine`. The function mapped over the
 list always has a blank input slot. This is where the list item goes
 each time the function is performed.</p>
 
@@ -152,26 +152,26 @@ procedures.</a>
 <p>
 
 <a href="#hint-hofs-review" data-bs-toggle="collapse" title="Here is a quick review of higher-order functions.">Here
-is a quick review of the higher-order functions <code>map</code>,
-<code>keep</code>, <code>combine</code>.</a>
+is a quick review of the higher-order functions `map`,
+`keep`, `combine`.</a>
 
 ::: {#hint-hofs-review .collapse}
 <ul>
 
-<li><code>Map</code> performs a function on every item of a list and
+<li>`Map` performs a function on every item of a list and
 reports the list of changed items.<br />
 <img src="/img/3-lists/map-example-1.png" title="map (( )-(1)) over (list (96) (-100) (4.7)) reporting" alt="map (( )-(1)) over (list (96) (-100) (4.7)) reporting" class="ms-4"/></li>
 
-<li><code>Keep</code> uses a predicate function (a true/false question)
+<li>`Keep` uses a predicate function (a true/false question)
 to check every item in a list and reports the items that make the
-predicate true. (You learned about <code>keep</code> on
+predicate true. (You learned about `keep` on
 <a href="/unit-2/lab-3/5-keeping-list-items.html" title="Unit 2 Lab 3 Page 5: Keeping Items from a List">Unit
-2 Lab 3 Page 5: <code>Keep</code>ing Items from a List</a>.)<br />
+2 Lab 3 Page 5: `Keep`ing Items from a List</a>.)<br />
 <img src="/img/3-lists/keep-items-(last-letter-h)-reporting.png" alt="keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list" class="ms-4"/><br /></li>
 
-<li><code>Combine</code> uses a combining function (a function with two
+<li>`Combine` uses a combining function (a function with two
 inputs) to report the results of combining all the items in a list using
-that function. (You learned about <code>combine</code> on
+that function. (You learned about `combine` on
 <a href="/unit-2/lab-4/3-other-math-reporters.html" title="Unit 2 Lab 4 Page 3: More Mathematical Reporters">Unit
 2 Lab 4 Page 3: More Mathematical Reporters</a>.)<br />
 <img src="/img/3-lists/combine-simple-example.png" title="combine (list {0, 1, 2}) with (()+()) reporting 3" alt="combine (list {0, 1, 2}) with (()+()) reporting 3" class="ms-4"/></li>
@@ -188,13 +188,13 @@ that function. (You learned about <code>combine</code> on
 
 <li>If it isn't open already, open your U3L2-ContactList project.</li>
 
-<li>Use <code>map</code> and <code>combine</code> together to build an
-<code>initials from name</code> reporter that takes a name as input and
+<li>Use `map` and `combine` together to build an
+`initials from name` reporter that takes a name as input and
 reports that person's initials.<br />
 <img src="/img/3-lists/initials-reporting.png" title="initials from name (name from contact( (item (1) of (contact list)) reporting &apos;BA&apos;" alt="initials from name (name from contact( (item (1) of (contact list)) reporting &apos;BA&apos;" class="ms-4"/>
 <img src="/img/3-lists/initials-reporting-mlk.png" title="initials from name (Martin Luther King) reporting &apos;MLK&apos;" alt="initials from name (Martin Luther King) reporting &apos;MLK&apos;" class="ms-4"/></li>
 
-<li>Test and debug your <code>initials from name</code> block.</li>
+<li>Test and debug your `initials from name` block.</li>
 
 <li>
 
@@ -248,8 +248,8 @@ reports the list {rabbit}.
 :::
 
 ::: feedback
-The blank space in <code>item of</code> expects a list as its input, but
-<code>map</code> puts a single item from <var>words and numbers</var>
+The blank space in `item of` expects a list as its input, but
+`map` puts a single item from <var>words and numbers</var>
 into that slot.
 :::
 :::
@@ -272,7 +272,7 @@ None of the above.
 :::
 
 ::: feedback
-<code>Map</code> performs the input function over each item in the input
+`Map` performs the input function over each item in the input
 list.
 :::
 :::
@@ -327,9 +327,9 @@ reports the list {Augusta, Maine}.
 :::
 
 ::: feedback
-No. <code>Map</code> performs the input function on <em>each item of the
-list</em>---not on the whole list. The expression <code>item (1) of
-(capitals)</code> (without using <code>map</code> at all) would report
+No. `Map` performs the input function on <em>each item of the
+list</em>---not on the whole list. The expression `item (1) of
+(capitals)` (without using `map` at all) would report
 the list {Augusta, Maine}.
 :::
 :::
@@ -342,8 +342,8 @@ reports the list {A, B, C, D}.
 
 ::: feedback
 No. You can find the first letter of a word, but not the first letter of
-a list. The expression <code>map (letter (1) of (item (1) of ( ))) over
-(capitals)</code> would report the list {A, B, C, D}.
+a list. The expression `map (letter (1) of (item (1) of ( ))) over
+(capitals)` would report the list {A, B, C, D}.
 :::
 :::
 
@@ -356,8 +356,8 @@ reports the list {Maine, Idaho, South Carolina, Iowa}.
 ::: feedback
 No. This is a tricky one. What gets reported is actually a list of
 one-item lists: {{Maine}, {Idaho}, {South Carolina}, {Iowa}}. You might
-want to try it in Snap<em>!</em>. The expression <code>map (item (2) of
-()) over (capitals)</code> would report the list {Maine, Idaho, South
+want to try it in Snap<em>!</em>. The expression `map (item (2) of
+()) over (capitals)` would report the list {Maine, Idaho, South
 Carolina, Iowa}.
 :::
 :::
@@ -370,9 +370,9 @@ Moines, Iowa}}.
 :::
 
 ::: feedback
-No. <code>Map</code> performs the input function on <em>each item of the
-list</em>---not on the whole list. The expression <code>all but first of
-(capitals)</code> (without using <code>map</code> at all) would report
+No. `Map` performs the input function on <em>each item of the
+list</em>---not on the whole list. The expression `all but first of
+(capitals)` (without using `map` at all) would report
 the list of lists {{Boise, Idaho}, {Columbia, South Carolina}, {Des
 Moines, Iowa}}.
 :::
@@ -444,7 +444,7 @@ Correct.
 :::
 
 ::: feedback
-No, + reports a number, so in this case <code>combine</code> will report
+No, + reports a number, so in this case `combine` will report
 a number.
 :::
 :::
@@ -465,7 +465,7 @@ Correct.
 :::
 
 ::: feedback
-No. <code>join</code>(1,4) will report 14.
+No. `join`(1,4) will report 14.
 :::
 :::
 

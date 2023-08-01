@@ -37,14 +37,14 @@ sound content collected together</a></li>
 Looks and Sound page</a></li>
 
 <li><a href="/2-complexity/old/new/map-music.html">The
-<code>Map</code> Block & Music</a> (has invert and round)</li>
+`Map` Block & Music</a> (has invert and round)</li>
 
 </ul>
 :::
 
 ::: learn
 <p><strong>In this project,</strong> you will use the Snap<em>!</em>
-<code>play note</code> block to create music while you review abstract
+`play note` block to create music while you review abstract
 data types and higher-order functions.</p>
 :::
 
@@ -71,13 +71,13 @@ data types and higher-order functions.</p>
 
 <li>
 
-Build and compare these <code>play</code> scripts. Run each script a few
+Build and compare these `play` scripts. Run each script a few
 times.
 
 <ol>
 
 ::: sidenote
-The inputs values given to the <code>play note</code> block are musical
+The inputs values given to the `play note` block are musical
 pitches. Higher values create higher notes. You can input any integer
 from 0 and 127. The number 60 represents middle C.
 :::
@@ -107,15 +107,15 @@ These need updating!! --MF, 4/5/19
 
 <ul>
 
-<li>You learned about <code>for each</code> in
+<li>You learned about `for each` in
 <a href="/unit-2/lab-2/3-traversing-list.html" title="Unit 2 Lab 2: Checking Each Quiz Answer">Unit
 2 Lab 2: Checking Each Quiz Answer</a>.</li>
 
-<li>You learned about <code>keep</code> in
+<li>You learned about `keep` in
 <a href="/unit-2/lab-3/5-keeping-list-items.html" title="Keeping Items from a List">Unit
 2 Lab 3</a>.</li>
 
-<li>You learned about <code>map</code> in
+<li>You learned about `map` in
 <a href="/unit-3/lab-2/5-mapping-over-list.html" title="Transforming Every List Item">Unit
 3 Lab 2</a>.</li>
 
@@ -132,15 +132,15 @@ These need updating!! --MF, 4/5/19
 
 ::: sidenoteBig
 <p><em>Pitch</em> is the amount of highness or lowness of a musical
-note; the pitch value goes in the first input slot of the <code>play
-note</code> block.</p>
+note; the pitch value goes in the first input slot of the `play
+note` block.</p>
 
 <p>The <em>length</em> of a note is the amount of time that the note
 plays (the number of beats); the length value goes in the second slot of
-<code>play note</code>.</p>
+`play note`.</p>
 :::
 
-Create a <code>note</code> ADT to manage the pitch and length of each
+Create a `note` ADT to manage the pitch and length of each
 note in a song.
 
 <ol>
@@ -166,7 +166,7 @@ note in a song.
 ::::: forYouToDo
 <ol start="5">
 
-<li>Use <code>for each</code> together with your selectors to build a
+<li>Use `for each` together with your selectors to build a
 <img src="/img/3-lists/play-song-block.png" title="play song {}" alt="play song {}" class="inline py-0"/> block that takes a list of notes as input and plays each <var>pitch</var> for the specified number <var>length</var> of time. <br />
 <img src="/img/3-lists/play-song-data-type.png" title="Play Song data type definition" alt="Play Song data type definition" class="ms-4"/></li>
 
@@ -187,7 +187,7 @@ Here's an example:<br />
 <img src="/img/3-lists/row-row-row-reporter.png" title="row row row your boat reporter block definition" alt="row row row your boat reporter block definition" class="ms-4"/>
 <img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"/></li>
 
-<li>Test your song with your <code>play song</code> block, and debug any
+<li>Test your song with your `play song` block, and debug any
 problems.<br />
 <img src="/img/3-lists/play-song-row-row-row.png" title="play song (row row row your boat)" alt="play song (row row row your boat)" class="ms-4"/></li>
 
@@ -220,13 +220,13 @@ slower.</li>
 
 <li><img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/>
 Compare the output of these two scripts that you created above. Discuss
-what <code>map + 5</code> does to the sounds you hear:<br />
+what `map + 5` does to the sounds you hear:<br />
 <img src="/img/3-lists/compare-play-note-2.png" title="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" alt="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" class="ms-4"/><br />
 <img src="/img/3-lists/compare-play-note-3.png" title="for each (note) of (map (_ + 5) over (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" alt="for each (note) of (map (_ + 5) over (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" class="ms-4"/></li>
 
 <li>
 
-Use <code>map</code> together with your ADT blocks to create a reporter
+Use `map` together with your ADT blocks to create a reporter
 that transposes (shifts) a list of notes. It should take a list of notes
 and a number indicating how much to transpose (shift) the song as input,
 and it should report the adjusted song. For example:<br />
@@ -243,9 +243,9 @@ hint.</a>
 
 </li>
 
-<li>Try playing your song using your <code>transpose</code> block with
+<li>Try playing your song using your `transpose` block with
 several different shift numbers so that you can <em>hear</em> the impact
-of <code>map</code>.</li>
+of `map`.</li>
 
 </ol>
 :::
@@ -273,7 +273,7 @@ Boring? Maybe not for A/V kids...
 
 <li><img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/>
 Compare the output of these two scripts that you created above. Discuss
-what <code>keep \< 65</code> does to the sounds you hear:<br />
+what `keep \< 65` does to the sounds you hear:<br />
 <img src="/img/3-lists/compare-play-note-2.png" title="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" alt="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" class="ms-4"/><br />
 <img src="/img/3-lists/compare-play-note-4.png" title="for each (note) of (keep items such that (() &lt; 65) from (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" alt="for each (note) of (keep items such that (() &lt; 65) from (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" class="ms-4"/></li>
 

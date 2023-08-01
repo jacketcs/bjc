@@ -29,16 +29,16 @@ What does this block report?</li>
 
 <li>
 
-Finish building the <code>are the items distinct?</code> predicate,
+Finish building the `are the items distinct?` predicate,
 which is started below. Since you're writing a predicate, your procedure
-should always report <code>true</code> or <code>false</code>.<br />
+should always report `true` or `false`.<br />
 
 ::: sidenote
 <a href="#hint-predicate" data-bs-toggle="collapse" title="Try doing it without this hint about the 'are the items distinct?' predicate">Try
 doing it without this hint.</a>
 
 ::: {#hint-predicate .collapse}
-If the program gets to the third <code>report</code> block at the
+If the program gets to the third `report` block at the
 bottom, what does that tell you about the items in the list?
 :::
 :::
@@ -99,8 +99,8 @@ What does this block report?</li>
 
 <li>
 
-Build a <code>distinct items from</code> reporter using a structure
-similar to that of the <code>are the items distinct?</code> predicate.
+Build a `distinct items from` reporter using a structure
+similar to that of the `are the items distinct?` predicate.
 
 ::: endnote
 <img src="/img/5-algorithms/distinct-reporter-starter.png" title="distinct items form (data)
@@ -128,21 +128,21 @@ report ()
 }" class="float-end"/>
 
 <p>The algorithm for this block will make the same decisions as in
-<code>are the items distinct?</code>. But that was a predicate. This one
-has to report a list. So look at the three <code>report</code> blocks in
-your code for the <code>are the items distinct?</code> predicate, and
-decide what they should report for the <code>distinct items from</code>
+`are the items distinct?`. But that was a predicate. This one
+has to report a list. So look at the three `report` blocks in
+your code for the `are the items distinct?` predicate, and
+decide what they should report for the `distinct items from`
 reporter.</p>
 
 <p>
 
-<a href="#hint-reporter" data-bs-toggle="collapse" title="Need another hint about the <code>distinct items from</code> reporter?">Need
+<a href="#hint-reporter" data-bs-toggle="collapse" title="Need another hint about the `distinct items from` reporter?">Need
 another hint?</a>
 
 ::: {#hint-reporter .collapse}
 <ul>
 
-<li>If the list is empty, what should <code>distinct items from</code>
+<li>If the list is empty, what should `distinct items from`
 report?</li>
 
 <li>
@@ -159,7 +159,7 @@ version of the list without one of those copies?
 
 </li>
 
-<li>If computer makes it to the third <code>report</code> block, what
+<li>If computer makes it to the third `report` block, what
 does that tell you about the first item in the list? Do you want the
 first item as part of the list you report?</li>
 

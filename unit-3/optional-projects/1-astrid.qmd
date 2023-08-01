@@ -102,7 +102,7 @@ for a suggestion about how to start in Snap<em>!</em></a></p>
 
 ::: {#hint-for-loop .collapse}
 There are many possible approaches to this problem. One approach could
-use the <code>for</code> block:<br />
+use the `for` block:<br />
 <img src="/img/3-lists/Astrid_img/forBlock.png" title="for (i)=(0) to (15)" alt="for (i)=(0) to (15)" class="ms-4" height="80"/>
 :::
 :::

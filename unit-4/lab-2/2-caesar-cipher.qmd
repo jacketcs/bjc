@@ -22,18 +22,18 @@ Unicode. This table shows the Unicode for some of the keyboard
 characters:<br />
 <img src="/img/4-internet/img_CaesarCipher/Mary_CharacterTable.jpeg" alt="Unicode Table" class="ms-4 noshadow" height="330px"/></p>
 
-<p>The <code>unicode of</code> block reports the number that is used for
+<p>The `unicode of` block reports the number that is used for
 a particular character:<br />
 <img src="/img/4-internet/img_CaesarCipher/SnapUnicode1.png" title="unicode of (a) reporting &apos;97&apos;" alt="unicode of (a) reporting &apos;97&apos;" class="ms-4" height="52"/><br />
-The <code>unicode as letter</code> block reports the character that a
+The `unicode as letter` block reports the character that a
 given Unicode number represents:<br />
 <img src="/img/4-internet/img_CaesarCipher/SnapUnicode2.png" title="unicode (65) as letter reporting &apos;A&apos;" alt="unicode (65) as letter reporting &apos;A&apos;" class="ms-4" height="52"/></p>
 
 ::: {#second .forYouToDo}
 <ol>
 
-<li>Experiment with the <code>unicode of</code> and <code>unicode as
-letter</code> blocks. Try changing a word into Unicode, telling the
+<li>Experiment with the `unicode of` and `unicode as
+letter` blocks. Try changing a word into Unicode, telling the
 Unicode to a friend, and then having them change it back into a
 word.</li>
 
@@ -120,7 +120,7 @@ computer which then you can copy/paste.<br />
 
 <li>
 
-Improve your <code>initials</code> block from your U3L2-ContactList
+Improve your `initials` block from your U3L2-ContactList
 project so that it will find the initials for a person with a hyphenated
 name like Alexandria Ocasio-Cortez.<br />
 <img src="/img/4-internet/initials-reporting-aoc.png" title="initials of (Alexandria Ocasio-Cortez) reporting AOC" alt="initials of (Alexandria Ocasio-Cortez) reporting AOC" class="ms-4"/>
@@ -132,8 +132,8 @@ for some hints.</a>
 ::: {#hint-initials .collapse}
 There are several ways you could solve this problem. Both of the
 following ways require higher order functions. (You can review the
-higher order functions <code>map</code>, <code>keep</code>, and
-<code>combine</code> on
+higher order functions `map`, `keep`, and
+`combine` on
 <a href="/unit-3/lab-2/5-mapping-over-list.html" title="Unit 3 Lab 2 Page 5: Transforming Every List Item">Unit
 3 Lab 2 Page 5: Transforming Every List Item</a>.)
 
@@ -141,13 +141,13 @@ higher order functions <code>map</code>, <code>keep</code>, and
 
 <li>
 
-One way is to use the <code>unicode</code> block to select all the
+One way is to use the `unicode` block to select all the
 capital letters rather than splitting by word breaks.\
 
 <ul>
 
 <li>If you want to use Unicode, you'll probably want to build or import
-a block like <code>is between?</code> from your U2L4-MathLibrary project
+a block like `is between?` from your U2L4-MathLibrary project
 to check which Unicode values are capital letters. (You learned about
 exporting and importing blocks on
 <a href="/unit-2/lab-4/2-math-predicates.html" title="Unit 2 Lab 4 Page 2: Making a Mathematical Library">Unit
@@ -159,14 +159,14 @@ exporting and importing blocks on
 
 <li>
 
-Another way is to use the <code>split</code> block to check for hyphens
+Another way is to use the `split` block to check for hyphens
 as well as to check for spaces between words.
 
 <ul>
 
-<li>If you want to use <code>split</code>, note that the second input to
-<code>split</code> can be the character you want to use as the word
-separator. (You learned about <code>split</code> on
+<li>If you want to use `split`, note that the second input to
+`split` can be the character you want to use as the word
+separator. (You learned about `split` on
 <a href="/unit-3/lab-2/5-mapping-over-list.html" title="Unit 3 Lab 2 Page 5: Transforming Every List Item">Unit
 3 Lab 2 Page 5: Transforming Every List Item</a>.)</li>
 

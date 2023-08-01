@@ -6,11 +6,11 @@ order: 4
 
 ::: todo
 <strong>Purpose (do/learn; why this/here):</strong> Create a "Find
-Contact" button that uses a <code>find contacts</code> block to
+Contact" button that uses a `find contacts` block to
 <em>select</em> items from the <var>contact list</var> based on the
 contact's name. Students get practice with list processing, navigating
 abstract data types, and using the higher-order function,
-<code>keep</code>.
+`keep`.
 :::
 
 ::: todo
@@ -34,7 +34,7 @@ list<!--develop An "Find Contact" button for accessing specific contacts in your
 
 ::: sidenote
 You learned about
-<a href="/unit-2/lab-3/5-keeping-list-items.html" title="Keeping Items from a List"><code>keep</code>
+<a href="/unit-2/lab-3/5-keeping-list-items.html" title="Keeping Items from a List">`keep`
 in Unit 2</a>.
 :::
 
@@ -96,7 +96,7 @@ name is in <var>contact list</var>.
 <ol type="a">
 
 <li><img src="/img/3-lists/string-contains.png" title="string () contains () ?" alt="string () contains () ?" class="inline"/>,
-which reports <code>true</code> if the first string (for example, a
+which reports `true` if the first string (for example, a
 contact's name in the list) contains the second string (for example, a
 name or part of a name)</li>
 
@@ -104,8 +104,8 @@ name or part of a name)</li>
 which reports only the items that make the function true</li>
 
 <li><img src="/img/blocks/empty.png" title="is &apos;list input slot&apos; empty?" alt="is &apos;list input slot&apos; empty?" class="inline"/>,
-which returns <code>true</code> if the list is empty and
-<code>false</code> otherwise</li>
+which returns `true` if the list is empty and
+`false` otherwise</li>
 
 <li>Selector
 <img src="/img/3-lists/name-selector.png" title="name from contact: ()" alt="name from contact: ()" class="inline"/></li>
@@ -122,7 +122,7 @@ Develop a "Find Contact" button.
 <ol>
 
 <li>Make the script ask the user whose contact to search for and have
-the sprite <code>say</code> each of the matching contacts.</li>
+the sprite `say` each of the matching contacts.</li>
 
 <li>If the contact is not in the list, make the sprite say "not
 found."</li>
@@ -171,7 +171,7 @@ Develop a "Delete Contact" button.
 <li>Make the script ask the user to "Enter the name of the contact(s)
 you wish to delete."</li>
 
-<li>Then, use your <code>find contacts</code> block to find all the
+<li>Then, use your `find contacts` block to find all the
 matching contacts.</li>
 
 <li>Give the user the list of matching contacts and ask them for
@@ -189,12 +189,12 @@ name does <em>not</em> match the input name.</li>
 <li>
 
 Modify your "Delete Contact" script so that it lets the user choose
-which contact they want to delete when <code>find</code> reports more
+which contact they want to delete when `find` reports more
 than one.
 
 <ol>
 
-<li>Write a helper block <code>delete contact</code> that takes a
+<li>Write a helper block `delete contact` that takes a
 contact as input and removes that contact from <var>contact
 list</var>.</li>
 
@@ -226,7 +226,7 @@ U3L2-TIF.</strong></p>
 <li>Write a predicate function that takes two contacts as inputs. It
 should return True if the first contact belongs before the second one in
 a sorted contact list. That is, you'll have to extract the names (in
-sorted form) from the two contacts, and then use <code>\<</code> to
+sorted form) from the two contacts, and then use `\<` to
 compare them. Respect the data abstractions.</li>
 
 <li>Make a block to sort the contact list. To do the actual sorting, you
@@ -234,7 +234,7 @@ can load the "List utilities" library. It has a block
 <img src="/img/blocks/sort-block.png" title="sort &apos;list input slot&apos; ordering with &apos;predicate input slot&apos;" alt="sort &apos;list input slot&apos; ordering with &apos;predicate input slot&apos;" width="242"/>.
 Use the contact list as the first input. The second input should be the
 predicate function you just wrote. (Leave its two input slots empty.)
-The <code>sort</code> block will report a new, sorted contact list.</li>
+The `sort` block will report a new, sorted contact list.</li>
 
 <li>Test what you've done so far.</li>
 
@@ -264,7 +264,7 @@ Is the middle name a family name or a given name?</li>
 
 <img src="/img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff" class="inline"/>
 Here's the tricky part: To make this all work correctly, a name (as
-defined by the <code>name</code> ADT) has to know whether it's a
+defined by the `name` ADT) has to know whether it's a
 given-first name such as Betsy Anderson or a family-first name such as
 Sun Yat-Sen. <strong>Redefine your Name ADT</strong> to make it a list
 of <em>three</em> items. The first will be either the text 'given-first'
@@ -301,7 +301,7 @@ so that they check the type tag of the name (the first item) when
 necessary. Be careful about when to add a comma.</li>
 
 <li><img src="/img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff" class="inline"/>
-Make sure your <code>find contacts</code> block and your sorting of the
+Make sure your `find contacts` block and your sorting of the
 contact list still work with a contact list containing both kinds of
 names.</li>
 

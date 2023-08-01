@@ -6,7 +6,7 @@ order: 3
 
 ::: learn
 <strong>In this project</strong>, you will create mathematical blocks
-that combine several numbers, such as a <code>sum</code> block, which
+that combine several numbers, such as a `sum` block, which
 combines two numbers using addition: <br />
 <img src="/img/3-lists/sum-from-4-to-6-reporting.png" title="sum from (4) to (6) reporting 15" alt="sum from (4) to (6) reporting 15" class="ms-4"/>
 :::
@@ -16,8 +16,8 @@ combines two numbers using addition: <br />
 
 <li>Open your U2L4-MathLibrary project if it isn't open already.</li>
 
-<li>Build blocks for <code>maximum</code> (reporting the larger of two
-input numbers) and <code>minimum</code> (reporting the smaller of two
+<li>Build blocks for `maximum` (reporting the larger of two
+input numbers) and `minimum` (reporting the smaller of two
 input numbers):<br />
 <img src="/img/2-complexity/max-of-6-and-4-reporting.png" title="max of (6) and (4) reporting 6" alt="max of (6) and (4) reporting 6" class="ms-4"/>
 <img src="/img/2-complexity/min-of-3-and--4-reporting.png" title="max of (3) and (-4) reporting -4" alt="max of (3) and (-4) reporting -4" class="ms-4"/></li>
@@ -34,32 +34,32 @@ below reports: 0 + 1 + 2.<br />
 <img src="/img/3-lists/combine-simple-example.png" title="combine (list {0, 1, 2}) with (()+()) reporting 3" alt="combine (list {0, 1, 2}) with (()+()) reporting 3" class="ms-4"/></p>
 
 ::: takeNote
-<p><strong>You choose the operation, and <code>combine</code> performs
+<p><strong>You choose the operation, and `combine` performs
 that operation by <em>combining</em> all the items in the input list and
 then reports the result.</strong></p>
 
 <p>Notice that the function used to <em>combine</em> the list items
-always has two blank input slots. The <code>keep</code> block only needs
-one blank in its input function, but with <code>combine</code>, two are
+always has two blank input slots. The `keep` block only needs
+one blank in its input function, but with `combine`, two are
 required.</p>
 :::
 
 ::: endnote
-<p><code>Combine</code> is a <em>higher-order function</em>; it is a
+<p>`Combine` is a <em>higher-order function</em>; it is a
 function that takes a function as input. You've seen another
-higher-order function already: <code>keep</code> (in
+higher-order function already: `keep` (in
 <a href="/unit-2/lab-3/5-keeping-list-items.html" title="Keeping Items from a List">Unit
 2 Lab 3</a>).</p>
 
 <p>
 
-Unlike <code>keep</code>, the <code>combine</code> function is only used
+Unlike `keep`, the `combine` function is only used
 with a few input functions.
 <a href="#hint-which-functions" data-bs-toggle="collapse" title="Which functions?">Which
 functions?</a>
 
 ::: {#hint-which-functions .collapse}
-<p><code>Combine</code> is mostly used with <em>only these
+<p>`Combine` is mostly used with <em>only these
 functions</em>:<br />
 <img src="/img/3-lists/plus.png" title="+" alt="+" class="ms-4"/>
 <img src="/img/3-lists/times.png" title="×" alt="×"/><br />
@@ -96,24 +96,24 @@ would be ambiguous.
 ::: forYouToDo
 <ol start="3">
 
-<li>Use <code>combine</code> to build <code>maximum of list</code> and
-<code>minimum of list</code>.<br />
+<li>Use `combine` to build `maximum of list` and
+`minimum of list`.<br />
 <img src="/img/3-lists/max-of-list-reporting.png" title="maximum of list {1, 22, 3, -4} reporting 22" alt="maximum of list {1, 22, 3, -4} reporting 22" class="ms-4"/>
 <img src="/img/3-lists/min-of-list-reporting.png" title="minimum of list {1, 22, 3, -4} reporting -4" alt="minimum of list {1, 22, 3, -4} reporting -4" class="ms-4"/></li>
 
-<li>Create a <code>sum of list</code> block that reports the sum of the
+<li>Create a `sum of list` block that reports the sum of the
 items of a list.<br />
 <img src="/img/3-lists/sum-of-list-reporting.png" title="sum of list {1, 2, 3, 10} reporting 16" alt="sum of list {1, 2, 3, 10} reporting 16" class="ms-4"/></li>
 
 <li>
 
-Create an <code>average of list</code> block that calculates the average
+Create an `average of list` block that calculates the average
 of the items in a list:<br />
 <img src="/img/3-lists/average-of-list-reporting.png" title="average of list {1, 2, 3, 4} reporting 2.5" alt="average of list {1, 2, 3, 4} reporting 2.5" class="ms-4"/>
 
 ::: endnote
 <a href="#hint-average" data-bs-toggle="collapse" title="Hint about average of list">Hint
-about <code>average of list</code></a>
+about `average of list`</a>
 
 ::: {#hint-average .collapse}
 <p>First think: how do you calculate an average? Then think: what blocks
@@ -130,7 +130,7 @@ could help you do that in Snap<em>!</em>?</p>
 AAP-2.M.2, AAP-2.O.4
 :::
 
-<p><code>Average of list</code> and <code>sum of list</code> are
+<p>`Average of list` and `sum of list` are
 procedures that you'll need repeatedly, so after a while, you just know
 how to write them, or you'll put them in a library, and you won't have
 to reinvent them each time. Finding the maximum or minimum value in a
@@ -155,12 +155,12 @@ command except that it includes a
 ```{=html}
 <pre class="inline">RETURN</pre>
 ```
-(like <code>report</code>). For example, this definition<br />
+(like `report`). For example, this definition<br />
 
 ::: sidenote
 <p>In many languages (including Snap<em>!</em>) variables must be
 <em>declared</em> in some way (in Snap<em>!</em>, you can click the
-"Make a variable" button or use the <code>script variables</code>
+"Make a variable" button or use the `script variables`
 block). But the AP's language doesn't include variable declarations, so
 you won't see them on the exam.</p>
 :::
@@ -186,7 +186,7 @@ AAP-3.A.7
 :::
 
 ::: pseudop
-As with <code>report</code> in Snap<em>!</em>, when a
+As with `report` in Snap<em>!</em>, when a
 
 ```{=html}
 <pre class="inline">RETURN</pre>
@@ -198,7 +198,7 @@ of the expression inside the
 ```{=html}
 <pre class="inline">RETURN</pre>
 ```
-command or <code>report</code> block.
+command or `report` block.
 :::
 
 ::: endnote
@@ -319,7 +319,7 @@ Think about what
 ```{=html}
 <pre class="inline">RETURN</pre>
 ```
-does. Like <code>report</code> in Snap<em>!</em>,
+does. Like `report` in Snap<em>!</em>,
 
 ```{=html}
 <pre class="inline">RETURN</pre>
@@ -346,7 +346,7 @@ Think about what
 ```{=html}
 <pre class="inline">RETURN</pre>
 ```
-does. Like <code>report</code> in Snap<em>!</em>,
+does. Like `report` in Snap<em>!</em>,
 
 ```{=html}
 <pre class="inline">RETURN</pre>
@@ -369,7 +369,7 @@ think about what
 ```{=html}
 <pre class="inline">RETURN</pre>
 ```
-does. Like <code>report</code> in Snap<em>!</em>,
+does. Like `report` in Snap<em>!</em>,
 
 ```{=html}
 <pre class="inline">RETURN</pre>
@@ -416,7 +416,7 @@ The <strong>greatest common divisor</strong> of two integers is the
 largest positive integer that is a divisor (a factor) of both integers.
 :::
 
-Develop a <code>greatest common divisor</code> block. (Use your
+Develop a `greatest common divisor` block. (Use your
 <img src="/img/2-complexity/divisors.png" title="divisors of ()" alt="divisors of ()" class="inline"/>
 block.)<br />
 <img src="/img/3-lists/gcd-20-50-reporting.png" title="greatest common divisor of (20) and (50) reporting 10" alt="greatest common divisor of (20) and (50) reporting 10" class="ms-4"/>
@@ -424,16 +424,16 @@ block.)<br />
 
 ::: endnote
 <a href="#hint-GCD-hint" data-bs-toggle="collapse" title="Hints about building greatest common divisor">Hint
-about building <code>greatest common divisor</code></a>
+about building `greatest common divisor`</a>
 
 ::: {#hint-GCD-hint .collapse}
-You may find it useful to use <code>maximum of list</code> as well as
-<code>divisors</code> and also to build an <code>intersection</code>
+You may find it useful to use `maximum of list` as well as
+`divisors` and also to build an `intersection`
 block that takes two lists as input and reports all of the items that
 are on both lists.<br />
 <img src="/img/3-lists/intersection-reporting.png" title="intersection of {apples, potatoes, carrots, pears} and {acorns, apples, pears, pine cones} reporting {apples, pears}" alt="intersection of {apples, potatoes, carrots, pears} and {acorns, apples, pears, pine cones} reporting {apples, pears}" class="ms-4"/><br />
 <a href="#hint-GCD-hints" data-bs-toggle="collapse" title="More detailed hints about greatest common divisor">More
-detailed hints about <code>greatest common divisor</code></a>
+detailed hints about `greatest common divisor`</a>
 
 ::: {#hint-GCD-hints .collapse}
 In order to find the greatest common divisor of two numbers you will

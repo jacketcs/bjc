@@ -41,22 +41,22 @@ information is represented inside the computer as sequences of bits.</p>
 In many programming languages there's a convention that every text
 string ends with a <em>null</em> byte, in which all eight bits are zero,
 a code that's reserved for this purpose. So our
-"<code>Welcome...</code>" string might actually occupy 44 bytes.
+"`Welcome...`" string might actually occupy 44 bytes.
 :::
 
 <p>So far we've been working with small chunks of data, from Boolean
 values (one bit) to characters (eight bits). But of course some
 information in your computer or smartphone is much bigger than that. For
 starters, characters aren't generally used one at a time; they're used
-in <em>text strings</em> such as "<code>Welcome to the Beauty and Joy of
-Computing.</code>" These 43 characters occupy 43 bytes of computer
+in <em>text strings</em> such as "`Welcome to the Beauty and Joy of
+Computing.`" These 43 characters occupy 43 bytes of computer
 memory. But the real champion users of space are media files: pictures,
 sounds (mostly music), and video.</p>
 
 <p>If we could see inside the memory's bits, a section of the memory
 might look something like this:</p>
 
-> <code >01000001001000000111001101101101011000010111001001110100001000000111000001101000011011110110111001100101001011000010000001101100011010010110101101100101001000000111100101101111011101010111001000100000011011000110000101110000011101000110111101110000001000000110111101110010001000000110010001100101011100110110101101110100011011110111000000100000011000110110111101101101011100000111010101110100011001010111001000101100001000000110001101100001011011100 </code>
+> <code >01000001001000000111001101101101011000010111001001110100001000000111000001101000011011110110111001100101001011000010000001101100011010010110101101100101001000000111100101101111011101010111001000100000011011000110000101110000011101000110111101110000001000000110111101110010001000000110010001100101011100110110101101110100011011110111000000100000011000110110111101101101011100000111010101110100011001010111001000101100001000000110001101100001011011100 `
 
 
 ::: vocab
@@ -130,8 +130,8 @@ strings to translate. --MF, 6/1/20</p>
 
 <p>Brian has more or less convinced Mary to change the block names from
 "convert decimal to binary" to "convert number to binary" and vice versa
-AND they both agreed to drop the recursion inside the <code>convert
-number to binary</code> block. The starter project, solutions, and
+AND they both agreed to drop the recursion inside the `convert
+number to binary` block. The starter project, solutions, and
 references to it in the page will all need edits. We haven't decided if
 changes are needed on the Binary Representation page. --MF, 6/5/20</p>
 :::
@@ -188,7 +188,7 @@ front, which would change the interpretation of where each byte begins
 and ends.
 :::
 
-<li>Find the <code>set (</code><var>output</var><code>) to...</code>
+<li>Find the `set (`<var>output</var>`) to...`
 instruction and <strong>change the input text</strong> to a short text
 string of your choosing. The reported binary sequence will be stored in
 the <var>output</var> variable with quotes around it.<br />
@@ -213,8 +213,8 @@ are working to fix this.<br />
 
 <li>
 
-Paste the outputted binary sequence into the <code>translate binary
-sequence to text</code> block and run it. (It may take a moment to
+Paste the outputted binary sequence into the `translate binary
+sequence to text` block and run it. (It may take a moment to
 report.)
 
 <ul>
@@ -250,18 +250,18 @@ DAT-1.A
 
 <li>Go back to the exported output.txt file and copy your original
 binary sequence again (without the quotes). Paste it into the
-<code>translate binary sequence to B&W image</code> block and run the
+`translate binary sequence to B&W image` block and run the
 block. You are not likely to see anything meaningful. Why not?</li>
 
 <li>
 
-Try this binary sequence in <code>translate binary sequence to B&W
-image</code> with the second input set to <var>14</var> pixels
+Try this binary sequence in `translate binary sequence to B&W
+image` with the second input set to <var>14</var> pixels
 wide:<br />
 
 <p class="ms-4">
 
-<code class="break">00000110000000000001000110000000010000000000001100100110000011111111000001100111100000010010110011000111001111100000100110110000000001000000000000110000000000111000000011000100011000010000000100000110000110000000111111000000</code><br />
+<code class="break">00000110000000000001000110000000010000000000001100100110000011111111000001100111100000010010110011000111001111100000100110110000000001000000000000110000000000111000000011000100011000010000000100000110000110000000111111000000`<br />
 
 </p>
 
@@ -442,18 +442,18 @@ Compute how many products can be identified before and after the change.
 
 <li>
 
-Look inside the <code>translate text to binary sequence</code> and
-<code>translate binary sequence to text</code> reporters.
+Look inside the `translate text to binary sequence` and
+`translate binary sequence to text` reporters.
 <strong>Describe how these two reporters work.</strong> There are
 several custom blocks inside:
 
 <ul>
 
-<li><code>pack 8-bit byte</code> takes a binary sequence of 8 bits or
+<li>`pack 8-bit byte` takes a binary sequence of 8 bits or
 less and add enough zeros to the front to make a whole byte. How is this
 used?</li>
 
-<li><code>translate text to Unicode list</code> takes a text string and
+<li>`translate text to Unicode list` takes a text string and
 outputs a list of each character's Unicode value. Why is a list output
 helpful here?</li>
 

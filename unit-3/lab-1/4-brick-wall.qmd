@@ -18,7 +18,7 @@ brick wall.</p>
 <p>
 
 A picture of a brick is just a rectangle with a brick red color.
-However, there's no <code>draw rectangle</code> block in [snap]{.snap}.
+However, there's no `draw rectangle` block in [snap]{.snap}.
 One way to draw one is by thinking of a rectangle as a very thick line.
 Here's the idea:<br />
 
@@ -82,7 +82,7 @@ AAP-3.B.1, AAP-3.B.5
 abstraction</strong> is the process of developing a program by breaking
 up a large problem into smaller sub-problems.</p>
 
-<p>Creating a <code>draw brick</code> block lets you think in terms of a
+<p>Creating a `draw brick` block lets you think in terms of a
 procedure with a name related to the problem you are solving. This makes
 your code easier to read, and once you've coded and debugged the block,
 you don't need to think about how it works each time you use it. That's
@@ -128,7 +128,7 @@ each:
 AAP-3.C
 :::
 
-<li>Use <code>draw brick</code> to make blocks
+<li>Use `draw brick` to make blocks
 <img src="/img/2-complexity/U2ImageVideoAddendum_img/draw-row-A.png" title="draw row A" alt="draw row A"/>
 and
 <img src="/img/2-complexity/U2ImageVideoAddendum_img/draw-row-B.png" title="draw row B" alt="draw row B"/>.</li>
@@ -143,17 +143,17 @@ much abstraction?</a>
 that your program is just as cluttered as it would be without the custom
 blocks. But it <em>can</em> be useful to make a custom block even when
 its definition is just one built-in block. For example, to draw the
-mortar between blocks (the white gaps), you can just use <code>move (4)
-steps</code>, but it might make sense to define a <code>draw
-mortar</code> block that uses <code>move</code> inside it.</p>
+mortar between blocks (the white gaps), you can just use `move (4)
+steps`, but it might make sense to define a `draw
+mortar` block that uses `move` inside it.</p>
 
 <p>Why? You might later decide that four steps is the wrong thickness
 for mortar and you'd rather have five. Or you might want the mortar to
-be mortar-colored, slightly gray. With many <code>move (4) steps</code>
+be mortar-colored, slightly gray. With many `move (4) steps`
 instructions scattered through your program, you would have to find and
 change each one. To make matters worse, your complete project might have
-<code>move</code> blocks that <em>aren't</em> about mortar. But with a
-<code>draw mortar</code> block, you can change just its definition, and
+`move` blocks that <em>aren't</em> about mortar. But with a
+`draw mortar` block, you can change just its definition, and
 all the mortar in your picture will be changed.</p>
 :::
 :::
@@ -195,7 +195,7 @@ Write and test the
 block.
 
 ::: endnote
-You might want to use the <code>odd?</code> predicate from your
+You might want to use the `odd?` predicate from your
 U2L4-MathLibrary. You learned about exporting and importing blocks on
 <a href="/unit-2/lab-3/1-what-is-predicate.html" title="What's a Predicate?">Unit
 2 Lab 3 Page 1: What's a Predicate?</a>
@@ -221,8 +221,8 @@ program?</li>
 
 <li>
 
-Add more inputs to <code>draw brick wall</code> (and as needed to
-<code>draw row A</code> and <code>draw row B</code>) for:<br />
+Add more inputs to `draw brick wall` (and as needed to
+`draw row A` and `draw row B`) for:<br />
 
 <ol style="list-style:lower-roman;">
 

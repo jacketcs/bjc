@@ -93,7 +93,7 @@ spreadsheets with multiple tabs.</p>
 block to access different rows in the dataset.</li>
 
 <li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
-How does the first item of your data set (<code>item (1) of</code>)
+How does the first item of your data set (`item (1) of`)
 differ from the other items?</li>
 
 <li>Locate the
@@ -199,11 +199,11 @@ Build
 to report just one column of your dataset.
 
 ::: endnote
-<p><code>Record</code> and <code>column</code> are <em>selectors</em>
-for a <code>table</code> abstract data type. We don't need a
+<p>`Record` and `column` are <em>selectors</em>
+for a `table` abstract data type. We don't need a
 <em>constructor</em> for this abstract data type because we are
 importing the data from the Internet, but the selectors will be useful.
-(<code>Field</code> is a selector for <code>record</code>, which is,
+(`Field` is a selector for `record`, which is,
 itself, an abstract data type.)</p>
 
 <p>Notice that these suggested block names include the word "table" or
@@ -221,13 +221,13 @@ need a hint.</a></p>
 <img src="/img/blocks/map.png" title="map () over ()" alt="map () over ()" class="inline"/>
 performs the same function on every item in a list.
 <a href="#hint-more-map" data-bs-toggle="collapse" title="Have I seen map before?">Have
-I seen <code>map</code> before?</a>
+I seen `map` before?</a>
 
 ::: {#hint-more-map .collapse}
 Since a table is a list of lists (where each inner list is one record),
-<code>map</code> will perform the same function on every record in your
+`map` will perform the same function on every record in your
 dataset. You will need to determine what function to map over the
-dataset. You learned about <code>map</code> on
+dataset. You learned about `map` on
 <a href="/unit-3/lab-2/5-mapping-over-list.html" title="Unit 3 Lab 2 Page 5: Transforming Every List Item">Unit
 3 Lab 2 Page 5: Transforming Every List Item</a>.
 :::
@@ -251,23 +251,23 @@ other projects.
 letter at the top of the column in table view.<br />
 <img src="/img/5-algorithms/column-number.png" title="image of the top of the table view for the cars dataset with the mouse pointer over the top of the second column; the columns are now labeled A, 2 (where the pointer is), C, D, etc." alt="image of the top of the table view for the cars dataset with the mouse pointer over the top of the second column; the columns are now labeled A, 2 (where the pointer is), C, D, etc." class="ms-4" height="120"/></p>
 
-<p>You may need to use <code>map</code>, <code>keep</code>, or
-<code>combine</code> to answer your question.
+<p>You may need to use `map`, `keep`, or
+`combine` to answer your question.
 <a href="#hint-HOFs" data-bs-toggle="collapse" title="Click to see where you learned about these higher order functions.">Click
 to see where you learned about these higher order functions.</a></p>
 
 ::: {#hint-HOFs .collapse}
 <ul>
 
-<li>You learned about <code>map</code> on
+<li>You learned about `map` on
 <a href="/unit-3/lab-2/5-mapping-over-list.html" title="Unit 3 Lab 2 Page 5: Transforming Every List Item">Unit
 3 Lab 2 Page 5: Transforming Every List Item</a>.</li>
 
-<li>You learned about <code>keep</code> on
+<li>You learned about `keep` on
 <a href="/unit-2/lab-3/5-keeping-list-items.html" title="Unit 2 Lab 3 Page 5: Keeping Items from a List">Unit
-2 Lab 3 Page 5: <code>Keep</code>ing Items from a List</a> .</li>
+2 Lab 3 Page 5: `Keep`ing Items from a List</a> .</li>
 
-<li>You learned about <code>combine</code> on
+<li>You learned about `combine` on
 <a href="/unit-2/lab-4/3-other-math-reporters.html" title="Unit 2 Lab 4 Page 3: Other Mathematical Reporters">Unit
 2 Lab 4 Page 3: Other Mathematical Reporters</a>.</li>
 
@@ -281,10 +281,10 @@ for example questions to ask about a single column.</a></p>
 <ul>
 
 <li>What's the average MPG that cars in this database get in the city?
-(You'd need an <code>average</code> block.)</li>
+(You'd need an `average` block.)</li>
 
 <li>What's the year of the oldest car in this dataset? (You'd need a
-<code>minimum</code> block.)</li>
+`minimum` block.)</li>
 
 <li>How many cars in this dataset have manual transmission?</li>
 
@@ -370,7 +370,7 @@ in the previous problem.</li>
 :::
 
 ::: todo
-<p>I need to redo these images and <code>code</code> statements with
+<p>I need to redo these images and `code` statements with
 "record" instead of "row." --MF, 6/27/19</p>
 :::
 
@@ -386,12 +386,12 @@ block.
 
 ::: endnote
 ```{=html}
-<!--This gives away the answer. <p><a href="#hint-rowwithmax" data-bs-toggle="collapse" title="See the row with maximum in column () of table () block in action.">See <code>row with maximum in column () of table ()</code> in action.</a></p>
+<!--This gives away the answer. <p><a href="#hint-rowwithmax" data-bs-toggle="collapse" title="See the row with maximum in column () of table () block in action.">See `row with maximum in column () of table ()` in action.</a></p>
 <div id="hint-rowwithmax" class="collapse"><img class="ms-4" src="/img/5-algorithms/row-with-max-of-table-reporting.png" alt="" title="" /></div>-->
 ```
 <p><a href="#hint-build" data-bs-toggle="collapse" title="Click for a hint about how to build row with maximum in column () of table ().">Click
-for a hint about how to build <code>row with maximum in column () of
-table ()</code>.</a></p>
+for a hint about how to build `row with maximum in column () of
+table ()`.</a></p>
 
 ::: {#hint-build .collapse}
 
@@ -401,7 +401,7 @@ table ()</code>.</a></p>
 function for a simple list (that isn't a table) is shown below. You can
 build a
 <img src="/img/5-algorithms/maximum.png" title="maximum of () and ()" alt="maximum of () and ()" class="inline py-0"/>
-block that compares two inputs and use it with <code>combine</code> to
+block that compares two inputs and use it with `combine` to
 find the maximum of a whole list.<br />
 <img src="/img/5-algorithms/max-operator-definition.png" title="maximum of (a) and (b) {
 if (a &gt; b) {

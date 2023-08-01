@@ -66,18 +66,18 @@ number, address, email, or whatever we write.
 
 Betsy:
 <a href="/unit-2/lab-2/2-quizzes.html" title="In Unit 2, we created a quiz item abstract data type">In
-Unit 2, we created a <code>quiz item</code> abstract data type</a> to
+Unit 2, we created a `quiz item` abstract data type</a> to
 store the questions and answers in a list of quiz items. Here, we can
-make a <code>contact</code> abstract data type to store the data for
+make a `contact` abstract data type to store the data for
 each contact in our list of contacts.
 
 </div>
 
 <div>
 
-Gamal: Yeah. In this project, we'll need a <code>contact</code>
-constructor and then selectors to access the <code>name</code>,
-<code>address</code>, and <code>phone number</code> for any given
+Gamal: Yeah. In this project, we'll need a `contact`
+constructor and then selectors to access the `name`,
+`address`, and `phone number` for any given
 contact.
 
 </div>
@@ -94,14 +94,14 @@ contact.
 
 <p style="margin-left:25px;">
 
-<code>contact with name: %name address: %address phone: %phone</code>
+`contact with name: %name address: %address phone: %phone`
 
 </p>
 
 The percent (%) signs make those words become input variables.
 :::
 
-Create a <code>contact</code> <em>constructor</em> that accepts three
+Create a `contact` <em>constructor</em> that accepts three
 pieces of data as input: the contact's <var>name</var>, <var>phone
 number</var>, and <var>address</var>. <br />
 <img src="/img/3-lists/contact-constructor-untyped.png" title="contact with name: () address: () phone: ()" alt="contact with name: () address: () phone: ()" class="ms-4"/><br />
@@ -112,9 +112,9 @@ It should report one whole contact (a list of the three items):<br />
 
 <li>
 
-Write the <em>selector</em> blocks to retrieve the <code>name from
-contact</code>, <code>address from contact</code>, or <code>phone from
-contact</code>.
+Write the <em>selector</em> blocks to retrieve the `name from
+contact`, `address from contact`, or `phone from
+contact`.
 <img src="/img/3-lists/contact-constructor-in-name-selector.png" title="contact name (contact block with inputs) reporting " alt="contact name (contact block with inputs) reporting " class="ms-4"/><br />
 <img src="/img/3-lists/contact-constructor-in-address-selector.png" title="contact address (contact block with inputs) reporting " alt="contact address (contact block with inputs) reporting " class="ms-4"/><br />
 <img src="/img/3-lists/contact-constructor-in-phone-selector.png" title="contact phone (contact block with inputs) reporting " alt="contact phone (contact block with inputs) reporting " class="ms-4"/>
@@ -127,22 +127,22 @@ You learned about input types and output types (domain and range) on
 :::
 
 <p>It's important to make sure that your inputs to a function match the
-expected input type. For example, the input type of <code>address from
-contact</code> matches the output type of <code>contact</code>; they are
+expected input type. For example, the input type of `address from
+contact` matches the output type of `contact`; they are
 both of type "contact."</p>
 
-<p>If you call <code>address from contact</code> with an input that
+<p>If you call `address from contact` with an input that
 doesn't match, such as a <em>list</em> of contacts (for example, the
 <var>contact list</var> variable or the result of running
-<code>keep</code> and having a subset of that list), it's not going to
+`keep` and having a subset of that list), it's not going to
 work. That may sound obvious, but in fact, beginning programmers make
 mistakes like that all the time; you have to teach yourself to think
 about the input and output types of your functions every time you write
 or use one.</p>
 
-<p>That's also true about the inputs to the <code>contact</code>
+<p>That's also true about the inputs to the `contact`
 constructor; you can't put something that isn't a name in the name input
-for <code>contact</code>.</p>
+for `contact`.</p>
 :::
 
 ::: endnote
@@ -184,7 +184,7 @@ data.</li>
 
 <li>
 
-Then, use the <code>contact</code> constructor to <code>add</code> a few
+Then, use the `contact` constructor to `add` a few
 contacts to your contact list.
 
 ::: endnote
@@ -202,8 +202,8 @@ If you don't remember about table view and list view, revisit
 2.2.2</a>.
 :::
 
-<li>Try selecting the <code>name</code>, <code>address</code>, or
-<code>phone</code> from a contact in your list<br />
+<li>Try selecting the `name`, `address`, or
+`phone` from a contact in your list<br />
 <img src="/img/3-lists/name-from-contact-random-reporting.png" title="name from contact: (item (random) of (contact list)) reporting Alphie Preston" alt="name from contact: (item (random) of (contact list)) reporting Alphie Preston" class="ms-4"/></li>
 
 <img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"/>

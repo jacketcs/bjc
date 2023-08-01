@@ -25,8 +25,8 @@ other languages like JavaScript to program algorithms into websites.</p>
 
 <p>The fundamental skeleton of every HTML webpage looks like the code
 below. Browsers use HTTP to turn the HTML into the site you see. Notice
-that most of the <strong>HTML tags</strong> (like <code>\<head\></code>)
-have a closing tag (like <code>\</head\></code>) designating the end,
+that most of the <strong>HTML tags</strong> (like `\<head\>`)
+have a closing tag (like `\</head\>`) designating the end,
 and the relevant content goes between the two tags. (The color and
 ms-4ation improve readability but are not necessary.)</p>
 
@@ -51,27 +51,27 @@ The page content goes here.
 Experiment with this
 <a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_default" target="_blank">HTML
 example from w3schools.com</a>. Write some HTML code inside the
-<code>\<body\></code> and <code>\</body\></code> tags. You might add a
+`\<body\>` and `\</body\>` tags. You might add a
 second heading and more paragraphs.
 
 <ul>
 
 <li>You can create various sized <em>headings</em> for your content
-using <code>\<h3\>\</h3\></code> tags. (Try numbers 1-6.)</li>
+using `\<h3\>\</h3\>` tags. (Try numbers 1-6.)</li>
 
-<li>You can add <em>paragraphs</em> with <code>\<p\>\</p\></code>.</li>
+<li>You can add <em>paragraphs</em> with `\<p\>\</p\>`.</li>
 
 <li>You can <em>link</em> to another webpage:<br />
 <code class="ms-4">\<a href="http://bjc.edc.org"\>BJC
-Website\</a\></code></li>
+Website\</a\>`</li>
 
 <li>You can create <em>lists</em>:<br />
 <img src="/img/4-internet/html-lists.jpg" title="HTML ul and ol lists" alt="HTML ul and ol lists" class="ms-4"/></li>
 
 <li>You can put <em>comments</em> in the HTML that will not show in the
-browser window using <code>\<!--</code> and <code>--\></code>
+browser window using `\<!--` and `--\>`
 tags:<br /> <code class="ms-4">\<!-- This is a comment.
---\></code></li>
+--\>`</li>
 
 </ul>
 
@@ -101,25 +101,25 @@ to websites:
 
 ```{=html}
 <!--<li>
-<code>function square(x) {<br />
+`function square(x) {<br />
 &nbsp;&nbsp;return x * x;<br />
-}</code><br />
-defines a new function called <code>square</code>. It's like<br /><img src="/img/4-internet/square.png" alt="square(x)"><br />in Snap<em>!</em>.
+}`<br />
+defines a new function called `square`. It's like<br /><img src="/img/4-internet/square.png" alt="square(x)"><br />in Snap<em>!</em>.
 </li>
 <li>
-<code>var length = 5;</code><br />
+`var length = 5;`<br />
 is like<br />
 <img src="/img/4-internet/var.png" width="242" height="74" alt="script variables (length); set (length) to 5">.
 </li>-->
 ```
 <li><img src="/img/4-internet/JS-function-myfunction.jpg" title="function myfunction() {" alt="function myfunction() {" class="inline noshadow"/>
-defines a new procedure called <code>myFunction</code>. It's like
+defines a new procedure called `myFunction`. It's like
 <img src="/img/4-internet/myFunction-hat-block.png" title="myFunction Snap! hat block" alt="myFunction Snap! hat block" class="inline"/>in
 Snap<em>!</em>.</li>
 
 <li><img src="/img/4-internet/JS-var-x-equals.jpg" title="var x = " alt="var x = " class="inline noshadow"/>
-is like the code below<code></code>; <code>var</code> creates the new
-variable, and <code>=</code> is like <code>set</code> in
+is like the code below``; `var` creates the new
+variable, and `=` is like `set` in
 Snap<em>!</em>.<br />
 <img src="/img/4-internet/script-var-x-set-x-to.png" title="script variables (x); set (x) to ()" alt="script variables (x); set (x) to ()" class="ms-4"/></li>
 

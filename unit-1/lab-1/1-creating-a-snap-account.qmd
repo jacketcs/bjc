@@ -18,18 +18,23 @@ order: 1
 
 <img src="/img/sys/dialog-cloud-signup.png" title="signing up for the cloud" alt="signing up for the cloud" class="float-end"/>
 
-2. In the Snap<em>!</em> window, click the Cloud menu, <img src="/img/1-introduction/cloud_button.png" title="Cloud menu button" alt="Cloud menu button"/>, select "Signup...", and follow the instructions. <br /> <img src="/img/sys/button-cloud-with-context.png" title="cloud icon" alt="cloud icon" class="ms-4"/>
+2. In the Snap<em>!</em> window, click the Cloud menu (<img src="/img/1-introduction/cloud_button.png" title="Cloud menu button" alt="Cloud menu button"/>), , select "Signup...", and follow the instructions.
+    - Please **use your first name somewhere in your username**. *Do not* just use your random non-sensical "handle" that you might use in a game, but rather something that we can *easily know who is who based off the username*.
+
+<img src="/img/sys/button-cloud-with-context.png" title="cloud icon" alt="cloud icon" class="ms-4"/>
 
 ::: endnote
+
 You'll be asked to click a link in your email to verify your account, but you don't have to do that right now.
 
 You may change your password at any time using the Cloud menu, <img src="/img/1-introduction/cloud_button.png" title="Cloud menu button" alt="Cloud menu button"/>.
+
 :::
 ::::
 
 ## Logging In to and Out of Your Snap<em>!</em> Account
 
-::: forYouToDo
+:::: forYouToDo
 You should be logged in whenever you are in Snap<em>!</em>. Here's how to check if you are logged in:
 
 3. Click the Cloud menu in the tool-bar.
@@ -43,4 +48,4 @@ You should be logged in whenever you are in Snap<em>!</em>. Here's how to check 
 Remember to log out of Snap<em>!</em> (using the Cloud menu) when you are done.
 :::
 
-:::
+::::

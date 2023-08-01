@@ -33,8 +33,8 @@ reports the list {rabbit}.
 :::
 
 ::: feedback
-The blank space in <code>item of</code> expects a list as its input, but
-<code>map</code> puts a single item from <var>words and numbers</var>
+The blank space in `item of` expects a list as its input, but
+`map` puts a single item from <var>words and numbers</var>
 into that slot.
 :::
 :::
@@ -57,7 +57,7 @@ None of the above.
 :::
 
 ::: feedback
-<code>Map</code> performs the input function over each item in the input
+`Map` performs the input function over each item in the input
 list.
 :::
 :::
@@ -114,9 +114,9 @@ reports the list {Augusta, Maine}.
 :::
 
 ::: feedback
-No. <code>Map</code> performs the input function on <em>each item of the
-list</em>---not on the whole list. The expression <code>item (1) of
-(capitals)</code> (without using <code>map</code> at all) would report
+No. `Map` performs the input function on <em>each item of the
+list</em>---not on the whole list. The expression `item (1) of
+(capitals)` (without using `map` at all) would report
 the list {Augusta, Maine}.
 :::
 :::
@@ -129,8 +129,8 @@ reports the list {A, B, C, D}.
 
 ::: feedback
 No. You can find the first letter of a word, but not the first letter of
-a list. The expression <code>map (letter (1) of (item (1) of ( ))) over
-(capitals)</code> would report the list {A, B, C, D}.
+a list. The expression `map (letter (1) of (item (1) of ( ))) over
+(capitals)` would report the list {A, B, C, D}.
 :::
 :::
 
@@ -143,8 +143,8 @@ reports the list {Maine, Idaho, South Carolina, Iowa}.
 ::: feedback
 No. This is a tricky one. What gets reported is actually a list of
 one-item lists: {{Maine}, {Idaho}, {South Carolina}, {Iowa}}. You might
-want to try it in Snap<em>!</em>. The expression <code>map (item (2) of
-()) over (capitals)</code> would report the list {Maine, Idaho, South
+want to try it in Snap<em>!</em>. The expression `map (item (2) of
+()) over (capitals)` would report the list {Maine, Idaho, South
 Carolina, Iowa}.
 :::
 :::
@@ -157,9 +157,9 @@ Moines, Iowa}}.
 :::
 
 ::: feedback
-No. <code>Map</code> performs the input function on <em>each item of the
-list</em>---not on the whole list. The expression <code>all but first of
-(capitals)</code> (without using <code>map</code> at all) would report
+No. `Map` performs the input function on <em>each item of the
+list</em>---not on the whole list. The expression `all but first of
+(capitals)` (without using `map` at all) would report
 the list of lists {{Boise, Idaho}, {Columbia, South Carolina}, {Des
 Moines, Iowa}}.
 :::
@@ -214,7 +214,7 @@ Correct.
 :::
 
 ::: feedback
-No, + reports a number, so in this case <code>combine</code> will report
+No, + reports a number, so in this case `combine` will report
 a number.
 :::
 :::
@@ -235,7 +235,7 @@ Correct.
 :::
 
 ::: feedback
-No. <code>join</code>(1,4) will report 14.
+No. `join`(1,4) will report 14.
 :::
 :::
 
@@ -284,8 +284,8 @@ reports the list {rabbit}.
 :::
 
 ::: feedback
-The blank space in <code>item of</code> expects a list as its input, but
-<code>map</code> puts a single item from <var>words and numbers</var>
+The blank space in `item of` expects a list as its input, but
+`map` puts a single item from <var>words and numbers</var>
 into that slot.
 :::
 :::
@@ -308,7 +308,7 @@ None of the above.
 :::
 
 ::: feedback
-<code>Map</code> performs the input function over each item in the input
+`Map` performs the input function over each item in the input
 list.
 :::
 :::
@@ -365,9 +365,9 @@ reports the list {Augusta, Maine}.
 :::
 
 ::: feedback
-No. <code>Map</code> performs the input function on <em>each item of the
-list</em>---not on the whole list. The expression <code>item (1) of
-(capitals)</code> (without using <code>map</code> at all) would report
+No. `Map` performs the input function on <em>each item of the
+list</em>---not on the whole list. The expression `item (1) of
+(capitals)` (without using `map` at all) would report
 the list {Augusta, Maine}.
 :::
 :::
@@ -380,8 +380,8 @@ reports the list {A, B, C, D}.
 
 ::: feedback
 No. You can find the first letter of a word, but not the first letter of
-a list. The expression <code>map (letter (1) of (item (1) of ( ))) over
-(capitals)</code> would report the list {A, B, C, D}.
+a list. The expression `map (letter (1) of (item (1) of ( ))) over
+(capitals)` would report the list {A, B, C, D}.
 :::
 :::
 
@@ -394,8 +394,8 @@ reports the list {Maine, Idaho, South Carolina, Iowa}.
 ::: feedback
 No. This is a tricky one. What gets reported is actually a list of
 one-item lists: {{Maine}, {Idaho}, {South Carolina}, {Iowa}}. You might
-want to try it in Snap<em>!</em>. The expression <code>map (item (2) of
-()) over (capitals)</code> would report the list {Maine, Idaho, South
+want to try it in Snap<em>!</em>. The expression `map (item (2) of
+()) over (capitals)` would report the list {Maine, Idaho, South
 Carolina, Iowa}.
 :::
 :::
@@ -408,9 +408,9 @@ Moines, Iowa}}.
 :::
 
 ::: feedback
-No. <code>Map</code> performs the input function on <em>each item of the
-list</em>---not on the whole list. The expression <code>all but first of
-(capitals)</code> (without using <code>map</code> at all) would report
+No. `Map` performs the input function on <em>each item of the
+list</em>---not on the whole list. The expression `all but first of
+(capitals)` (without using `map` at all) would report
 the list of lists {{Boise, Idaho}, {Columbia, South Carolina}, {Des
 Moines, Iowa}}.
 :::
@@ -465,7 +465,7 @@ Correct.
 :::
 
 ::: feedback
-No, + reports a number, so in this case <code>combine</code> will report
+No, + reports a number, so in this case `combine` will report
 a number.
 :::
 :::
@@ -486,7 +486,7 @@ Correct.
 :::
 
 ::: feedback
-No. <code>join</code>(1,4) will report 14.
+No. `join`(1,4) will report 14.
 :::
 :::
 
@@ -535,8 +535,8 @@ reports the list {rabbit}.
 :::
 
 ::: feedback
-The blank space in <code>item of</code> expects a list as its input, but
-<code>map</code> puts a single item from <var>words and numbers</var>
+The blank space in `item of` expects a list as its input, but
+`map` puts a single item from <var>words and numbers</var>
 into that slot.
 :::
 :::
@@ -559,7 +559,7 @@ None of the above.
 :::
 
 ::: feedback
-<code>Map</code> performs the input function over each item in the input
+`Map` performs the input function over each item in the input
 list.
 :::
 :::
@@ -616,9 +616,9 @@ reports the list {Augusta, Maine}.
 :::
 
 ::: feedback
-No. <code>Map</code> performs the input function on <em>each item of the
-list</em>---not on the whole list. The expression <code>item (1) of
-(capitals)</code> (without using <code>map</code> at all) would report
+No. `Map` performs the input function on <em>each item of the
+list</em>---not on the whole list. The expression `item (1) of
+(capitals)` (without using `map` at all) would report
 the list {Augusta, Maine}.
 :::
 :::
@@ -631,8 +631,8 @@ reports the list {A, B, C, D}.
 
 ::: feedback
 No. You can find the first letter of a word, but not the first letter of
-a list. The expression <code>map (letter (1) of (item (1) of ( ))) over
-(capitals)</code> would report the list {A, B, C, D}.
+a list. The expression `map (letter (1) of (item (1) of ( ))) over
+(capitals)` would report the list {A, B, C, D}.
 :::
 :::
 
@@ -645,8 +645,8 @@ reports the list {Maine, Idaho, South Carolina, Iowa}.
 ::: feedback
 No. This is a tricky one. What gets reported is actually a list of
 one-item lists: {{Maine}, {Idaho}, {South Carolina}, {Iowa}}. You might
-want to try it in Snap<em>!</em>. The expression <code>map (item (2) of
-()) over (capitals)</code> would report the list {Maine, Idaho, South
+want to try it in Snap<em>!</em>. The expression `map (item (2) of
+()) over (capitals)` would report the list {Maine, Idaho, South
 Carolina, Iowa}.
 :::
 :::
@@ -659,9 +659,9 @@ Moines, Iowa}}.
 :::
 
 ::: feedback
-No. <code>Map</code> performs the input function on <em>each item of the
-list</em>---not on the whole list. The expression <code>all but first of
-(capitals)</code> (without using <code>map</code> at all) would report
+No. `Map` performs the input function on <em>each item of the
+list</em>---not on the whole list. The expression `all but first of
+(capitals)` (without using `map` at all) would report
 the list of lists {{Boise, Idaho}, {Columbia, South Carolina}, {Des
 Moines, Iowa}}.
 :::
@@ -716,7 +716,7 @@ Correct.
 :::
 
 ::: feedback
-No, + reports a number, so in this case <code>combine</code> will report
+No, + reports a number, so in this case `combine` will report
 a number.
 :::
 :::
@@ -737,7 +737,7 @@ Correct.
 :::
 
 ::: feedback
-No. <code>join</code>(1,4) will report 14.
+No. `join`(1,4) will report 14.
 :::
 :::
 

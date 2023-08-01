@@ -139,12 +139,12 @@ sentences...<br />
 
 <img src="/img/2-complexity/even-obsolete.png" title="even? (number#){report(Obsolete!)}" alt="even? (number#){report(Obsolete!)}" class="float-end"/>
 
-<p>You created your <code>even?</code> block using another custom block,
-<code>divisible by?</code>. If you want to use <code>even?</code> in
+<p>You created your `even?` block using another custom block,
+`divisible by?`. If you want to use `even?` in
 another project one day, you must export <em>both</em> blocks in order
-for <code>even?</code> to work properly.</p>
+for `even?` to work properly.</p>
 
-<p>If you ever see this red <code>Obsolete!</code> block in code you
+<p>If you ever see this red `Obsolete!` block in code you
 have imported, it means that a required block was not exported. You'll
 have to go back to the original project and export again being sure to
 select all of the blocks needed by the blocks you want.</p>
@@ -159,8 +159,8 @@ select all of the blocks needed by the blocks you want.</p>
 AAP-2.M parts a and b, AAP-3.D
 :::
 
-Copy and modify the code from your <code>even?</code> predicate to
-develop an <code>odd?</code> predicate for your library.<br />
+Copy and modify the code from your `even?` predicate to
+develop an `odd?` predicate for your library.<br />
 <img src="/img/2-complexity/odd-6-reporting.png" title="odd? (6) reporting false" alt="odd? (6) reporting false" class="ms-4"/>
 <img src="/img/2-complexity/odd--7-reporting.png" title="odd? (-7) reporting true" alt="odd? (-7) reporting true" class="ms-4"/>
 
@@ -189,7 +189,7 @@ AAP-2.M parts a and b
 
 Develop a
 <img src="/img/2-complexity/number-of-divisors.png" title="number of divisors reporter with numeric input slot" alt="number of divisors reporter with numeric input slot"/>
-block (using <code>keep</code>), and use it to answer these questions:
+block (using `keep`), and use it to answer these questions:
 
 <ul style="list-style-type: disc">
 
@@ -210,28 +210,28 @@ steps.</a>
 
 <li>
 
-Build a <code>divisors</code> block using <code>keep</code>.<br />
+Build a `divisors` block using `keep`.<br />
 <img src="/img/2-complexity/divisors-9-reporting.png" title="divisors of (9) reporting {1, 3, 9}" alt="divisors of (9) reporting {1, 3, 9}" class="ms-4"/>
 <img src="/img/2-complexity/divisors-12-reporting.png" title="divisors of (12) reporting {1, 2, 3, 4, 6, 12}" alt="divisors of (12) reporting {1, 2, 3, 4, 6, 12}" class="ms-4"/>
 
 ::: endnote
 <a href="#hint-divisors" data-bs-toggle="collapse" title="Hints about building the divisors block">Hints
-about building the <code>divisors</code> block</a>
+about building the `divisors` block</a>
 
 ::: {#hint-divisors .collapse}
 <ul>
 
-<li>You <em>could</em> build this with <code>for</code> or <code>for
-each</code>, but it will require less code to build it with
+<li>You <em>could</em> build this with `for` or `for
+each`, but it will require less code to build it with
 <img src="/img/blocks/keep.png" title="keep items &apos;predicate input slot&apos; from &apos;list input slot&apos;" alt="keep items &apos;predicate input slot&apos; from &apos;list input slot&apos;" class="py-0"/>.
-(You learned about <code>keep</code> on
+(You learned about `keep` on
 <a href="/unit-2/lab-3/5-keeping-list-items.html" title="Unit 2 Lab 3 Page 5: Keeping Items from a List">Unit
-2 Lab 3 Page 5: <code>Keep</code>ing Items from a List</a>.)</li>
+2 Lab 3 Page 5: `Keep`ing Items from a List</a>.)</li>
 
-<li>You <em>could</em> build this with <code>mod</code>, but you already
+<li>You <em>could</em> build this with `mod`, but you already
 built
 <img src="/img/2-complexity/divisible-by.png" title="() divisible by () ?" alt="() divisible by () ?" class="py-0"/>
-(using <code>mod</code>), so <code>divisible by?</code> will be simpler
+(using `mod`), so `divisible by?` will be simpler
 to use.</li>
 
 <li>The
@@ -244,13 +244,13 @@ block may be helpful.</li>
 
 </li>
 
-<li>Build a <code>number of divisors</code> block.<br />
+<li>Build a `number of divisors` block.<br />
 <img src="/img/2-complexity/number-of-divisors-9-reporting.png" title="number of divisors (9) reporting 3" alt="number of divisors (9) reporting 3" class="ms-4"/>
 <img src="/img/2-complexity/number-of-divisors-12-reporting.png" title="number of divisors (12) reporting 6" alt="number of divisors (12) reporting 6" class="ms-4"/></li>
 
 <li>
 
-Build an expression using <code>keep</code> to answer each of these
+Build an expression using `keep` to answer each of these
 questions that were introduced above:
 
 <ul style="list-style-type: disc">
@@ -288,7 +288,7 @@ divisors?</li>
 
 <p>You've now made a small library, and you might want to write a list
 of instructions for how to use the functions in your library (for
-example, <code>divisors of</code> takes a positive integer as input and
+example, `divisors of` takes a positive integer as input and
 reports a list of numbers). The instructions form an <em>Application
 Program Interface</em> for the library.</p>
 

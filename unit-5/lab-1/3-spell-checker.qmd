@@ -16,10 +16,10 @@ algorithm to search efficiently in a <em>sorted</em> list.</p>
 <p>Answering this question is simple in Snap<em>!</em> because you can
 just ask a dictionary:
 <img src="/img/5-algorithms/100000-words-contains-seperate.png" title="(100,000 words) contains (seperate)" alt="100000-words-contains-seperate.png" class="inline py-0"/>.
-But <em>"simple" doesn't mean fast</em>. The <code>contains</code> block
+But <em>"simple" doesn't mean fast</em>. The `contains` block
 still has to look at each item in the list until it finds the one you
-are looking for (and says <code>true</code>) or reaches the end of the
-list (and says <code>false</code>). It is still a linear search.</p>
+are looking for (and says `true`) or reaches the end of the
+list (and says `false`). It is still a linear search.</p>
 
 <p>When you are only looking for <em>one</em> thing in a list (for
 example, checking whether a particular word is spelled correctly) rather
@@ -83,7 +83,7 @@ halves.
 <li>
 
 <img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/>
-Compare this <code>binary search</code> block with your code from
+Compare this `binary search` block with your code from
 <a href="/unit-5/lab-1/1-sorted-lists.html" title="Page 1: Guess My Number">Page
 1: Guess My Number</a>. What parts are the same? What parts are
 different?<br /> (high)) { set (current index) to (average of (low) and
@@ -103,22 +103,22 @@ list { set (high) to ((current index) -- (1)) } else { set (low) to
 
 ::: endnote
 ```         
-The <code>&gt;</code> block (as well as the <code>&lt;</code> and <code>=</code> blocks) compares words alphabetically: <br />
+The `&gt;` block (as well as the `&lt;` and `=` blocks) compares words alphabetically: <br />
 <img class="ms-4" src="/img/5-algorithms/carrot-gt-banana-reporting.png" alt="(carrot) > (banana) reporting true" title="(carrot) > (banana) reporting true" />
 <img class="ms-4" src="/img/5-algorithms/apple-gt-banana-reporting.png" alt="(apple) > (banana) reporting false" title="(apple) > (banana) reporting false" />
 </div>
 </li>
-<li>Check whether "seperate" is spelled correctly by using <code>binary search</code> to look for the word in the sorted list <img class="inline" src="/img/5-algorithms/100000-words-(sorted).png" alt="100,000 words (sorted)" title="100,000 words (sorted)" />.</li>
+<li>Check whether "seperate" is spelled correctly by using `binary search` to look for the word in the sorted list <img class="inline" src="/img/5-algorithms/100000-words-(sorted).png" alt="100,000 words (sorted)" title="100,000 words (sorted)" />.</li>
 ```
 
-<li>Try <code>binary search</code> with some words that you know are
+<li>Try `binary search` with some words that you know are
 spelled correctly and some that you know are incorrect.</li>
 
 ```         
-<div class="todo">Maybe change it to "Practice using <code>binary search</code>: Try it with some words that you know are spelled correctly and some that you know are incorrect." --MF, 7/13/20</div>
+<div class="todo">Maybe change it to "Practice using `binary search`: Try it with some words that you know are spelled correctly and some that you know are incorrect." --MF, 7/13/20</div>
 ```
 
-<li>Now use <code>binary search</code> to search for the same words in
+<li>Now use `binary search` to search for the same words in
 the unsorted <var>100,000 words</var>.</li>
 
 ```         
@@ -132,7 +132,7 @@ how the binary search algorithm works.</li>
 </ol>
 :::
 
-<p>The <code>contains</code> block can't make any assumptions about the
+<p>The `contains` block can't make any assumptions about the
 ordering in list you are searching, but if you are looking for one thing
 in a <em>sorted</em>, list you can use binary search.</p>
 

@@ -39,9 +39,9 @@ Markup Language) is just for structuring web pages.</p>
 mind. In a sense, these languages are all the same: if an algorithm can
 be expressed in one language, it can be expressed in all of them.
 Several basic features are included in nearly all languages including
-arithmetic operators (<code>+</code>, <code>-</code>, <code>×</code>,
-<code>÷</code>) and Boolean operators (<code>and</code>,
-<code>or</code>, <code>not</code>). The differences among languages are
+arithmetic operators (`+`, `-`, `×`,
+`÷`) and Boolean operators (`and`,
+`or`, `not`). The differences among languages are
 mostly about <em>levels of abstraction.</em></p>
 
 ## High-Level and Low-Level Languages
@@ -80,8 +80,8 @@ use.</p>
 
 <p>High-level languages can also make programming much more convenient
 because they offer more abstractions. One example is <em>higher-order
-functions</em> (like <code>map</code>, <code>keep</code>,
-<code>combine</code>, and <code>for each</code>), which allow the
+functions</em> (like `map`, `keep`,
+`combine`, and `for each`), which allow the
 programmer to write shorter, cleaner code.</p>
 
 ::: {#first .forYouToDo}
@@ -101,19 +101,19 @@ Identify the procedure that this code imitates:<br />
 ::: endnote
 <ul>
 
-<li>You learned about <code>for each</code> in
+<li>You learned about `for each` in
 <a href="/unit-2/lab-2/3-traversing-list.html" title="Unit 2 Lab 2: Checking Each Quiz Answer">Unit
 2 Lab 2: Checking Each Quiz Answer</a>.</li>
 
-<li>You learned about <code>keep</code> in
+<li>You learned about `keep` in
 <a href="/unit-2/lab-3/5-keeping-list-items.html" title="Keeping Items from a List">Unit
-2 Lab 3: <code>Keep</code>ing Items from a List</a>.</li>
+2 Lab 3: `Keep`ing Items from a List</a>.</li>
 
-<li>You learned about <code>map</code> in
+<li>You learned about `map` in
 <a href="/unit-3/lab-2/5-mapping-over-list.html" title="Transforming Every List Item">Unit
 3 Lab 2: Transforming Every List Item</a>.</li>
 
-<li>You learned about <code>combine</code> in
+<li>You learned about `combine` in
 <a href="/unit-2/lab-4/3-other-math-reporters.html" title="Unit 2 Lab 4: Other Mathematical Reporters">Unit
 2 Lab 4: Other Mathematical Reporters</a>.</li>
 
@@ -138,7 +138,7 @@ word separately? Which would this do?
 :::
 
 ::: feedback
-<code>Keep</code> takes a predicate (a question) as input and reports a
+`Keep` takes a predicate (a question) as input and reports a
 list of the items that make that predicate true.
 :::
 :::
@@ -159,7 +159,7 @@ Correct!
 :::
 
 ::: feedback
-<code>Combine</code> takes a predicate with two blanks (like
+`Combine` takes a predicate with two blanks (like
 <img src="/img/3-lists/plus.png" title="() + ()" alt="() + ()" class="inline"/>
 or
 <img src="/img/3-lists/join.png" title="join () ()" alt="join () ()" class="inline"/>)
@@ -186,7 +186,7 @@ but C doesn't let you take an expression (like
 <img src="/img/6-computers/join-with-s.png" title="join () (s)" alt="join () (s)" class="inline"/>
 or
 <img src="/img/6-computers/5-times-blank-plus-7.png" title="((5) × ( )) + (7)" alt="((5) × ( )) + (7)" class="inline"/>)
-and stick it into a higher-order function like <code>map</code>:<br />
+and stick it into a higher-order function like `map`:<br />
 <img src="/img/6-computers/map-s.png" title="report (map (join () (s)) over (words))" alt="report (map (join () (s)) over (words))" class="ms-4"/></p>
 
 #### <strong>Why do programmers use low-level languages?</strong>
@@ -474,7 +474,7 @@ One of the features that Snap<em>!</em> gives you is that you can put
 title text in the middle of a block.<br />
 
 ::: sidenote
-You built <code>polygon</code> in
+You built `polygon` in
 <a href="/unit-1/lab-3/5-remix-your-pinwheel.html" title="Graphics and Art">Unit
 1: Graphics and Art</a>.
 :::
@@ -486,7 +486,7 @@ readability of your function.<br />
 
 <p class="ms-4">
 
-<code>polygon(30, 15)</code>
+`polygon(30, 15)`
 
 </p>
 
@@ -551,17 +551,17 @@ suited to parallelism because there's no danger of one processor
 changing the value of a variable that another processor is using. We've
 introduced you to functional programming techniques wherever possible
 throughout this course, including writing reporters and using
-higher-order functions (<code>map</code>, <code>keep</code>, and
-<code>combine</code>).</p>
+higher-order functions (`map`, `keep`, and
+`combine`).</p>
 
 ::: endnote
 Snap<em>!</em> isn't a functional programming language, but it would be
 if the Snap<em>!</em> developers removed just a few procedures,
-including <code>set</code> (instead, you'd use input variables of
-recursive functions) and these four list commands: <code>add</code>,
-<code>delete</code>, <code>insert</code>, and <code>replace</code>
-(instead, you'd use <code>in front of</code>, <code>item 1 of</code>,
-and <code>all but first of</code> to report a new list with different
+including `set` (instead, you'd use input variables of
+recursive functions) and these four list commands: `add`,
+`delete`, `insert`, and `replace`
+(instead, you'd use `in front of`, `item 1 of`,
+and `all but first of` to report a new list with different
 values instead of changing the old list).
 :::
 

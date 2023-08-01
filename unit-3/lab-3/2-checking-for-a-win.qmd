@@ -28,15 +28,15 @@ that information to find out if one of the players has won the game.</p>
 <h3>Checking One Way to Win</h3>
 
 <p>We need a way to find out if a possible winning triple has actually
-happened. We can use <code>map</code> to check each position in one
+happened. We can use `map` to check each position in one
 triple to see if either player has won with that triple.</p>
 
 ::: endnote
-<p>You learned about <code>map</code> in
+<p>You learned about `map` in
 <a href="/unit-3/lab-2/5-mapping-over-list.html" title="Unit 3 Lab 2 Page 5: Transforming Every List Item">Unit
 3 Lab 2 Page 5: Transforming Every List Item</a>.</p>
 
-<p><code>Map</code> applies the function in the gray ring to each item
+<p>`Map` applies the function in the gray ring to each item
 in the input list, and it reports a list of all the results.<br />
 <img src="/img/3-lists/map-example-2.png" title="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" alt="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" class="ms-4"/></p>
 
@@ -59,20 +59,20 @@ Then build this expression, and see what it reports:<br />
 
 ::: endnote
 <a href="#hint-map-item" data-bs-toggle="collapse" title="How does map work here?">How
-does <code>map</code> work here?</a>
+does `map` work here?</a>
 
 ::: {#hint-map-item .collapse}
-<p>This <code>map</code> expression works the same way as the
-<code>join</code> example above, but people sometimes find it a little
+<p>This `map` expression works the same way as the
+`join` example above, but people sometimes find it a little
 more complex to think about, because it's natural to expect
 <img src="/img/3-lists/map-over-board.png" title="map (something) over (board)" alt="map (something) over (board)"/>,
 but that's <em>not</em> what the expression says. Instead, it maps over
-a <em>constant</em> list, not a variable. As before, <code>map</code>
+a <em>constant</em> list, not a variable. As before, `map`
 inserts each list item into the blank space in the function inside the
 gray ring, and it reports a list of the results.</p>
 
-<p>But here, the function in the gray ring is <code>item ( ) of
-(</code><var>board</var><code>)</code>, so <code>map</code> checks items
+<p>But here, the function in the gray ring is `item ( ) of
+(`<var>board</var>`)`, so `map` checks items
 1, 2, and 3 of the <var>board</var> list, and it reports a list of what
 is in those three positions (each of which is X, O, or a number if the
 square is empty).</p>
@@ -91,9 +91,9 @@ see its list items as in the picture below.<br />
 What does the result of that expression tell you about the state of the
 game?</li>
 
-<li>If <code>{1, 2, 3}</code> isn't the triple in which
+<li>If `{1, 2, 3}` isn't the triple in which
 <strong>x</strong> won the game, replace the list in the
-<code>map</code> expression with the winning triple, and click the
+`map` expression with the winning triple, and click the
 expression again.</li>
 
 <li>
@@ -104,10 +104,10 @@ block that takes one possible winning triple (a triple like
 <img src="/img/3-lists/{1,2,3}.png" title="list{1, 2, 3}" alt="list{1, 2, 3}"/>)
 as input and reports a list of what is in those three positions (X, O,
 or a number). Then use it to write an expression in the scripting area
-whose value will be <code>True</code> if X won the game <em>in the
+whose value will be `True` if X won the game <em>in the
 triple
 <img src="/img/3-lists/{1,2,3}.png" title="list{1, 2, 3}" alt="list{1, 2, 3}"/>,</em>
-or <code>False</code> otherwise.
+or `False` otherwise.
 
 ::: endnote
 You learned how to specify the list input type
@@ -120,19 +120,19 @@ on
 </li>
 
 <li><img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"/>
-Play another game where player O wins, and test your <code>status of
-triple</code> block with the winning triple. Fix any bugs.</li>
+Play another game where player O wins, and test your `status of
+triple` block with the winning triple. Fix any bugs.</li>
 
 </ol>
 :::
 
 <h3>Checking All the Ways to Win</h3>
 
-<p>Now you're going to use <code>status of triple</code> systematically
+<p>Now you're going to use `status of triple` systematically
 to check <em>all</em> the triples.</p>
 
-<p>For example, Player O has won the game below, and the <code>status of
-all winning triples</code> block finds the status of each possible
+<p>For example, Player O has won the game below, and the `status of
+all winning triples` block finds the status of each possible
 triple. The computer can use this block to check for a winning triple
 that has either all X or all O.<br />
 <img src="/img/3-lists/status-of-all-board.png" title="Tic Tac Toe game where Player O has won down the middle column. In row one, there is X, O, and X. In row two, there is X, O, and an empty square. In row three, there is an empty square, O, and an empty square." alt="Tic Tac Toe game where Player O has won down the middle column. In row one, there is X, O, and X. In row two, there is X, O, and an empty square. In row three, there is an empty square, O, and an empty square." class="ms-4 noshadow"/>
@@ -146,19 +146,19 @@ project might be different. This is OK as long as your project works.
 ::: forYouToDo
 <ol start="7">
 
-<li>Use <code>map</code> together with some of the other blocks you have
-made to build the <code>status of all winning triples</code> block. It
+<li>Use `map` together with some of the other blocks you have
+made to build the `status of all winning triples` block. It
 should report the status of all of the possible winning triples as a
 list of lists, as shown above.</li>
 
 ::: endnote
 <a href="#hint-status-all" data-bs-toggle="collapse" title="Click for a hint on how to use map.">Click
-for a hint on how to use <code>map</code>.</a>
+for a hint on how to use `map`.</a>
 
 ::: {#hint-status-all .collapse}
 <p>
 
-When you use <code>map</code> think:
+When you use `map` think:
 
 <ol>
 
@@ -178,7 +178,7 @@ Here, you want to know the status of each possible winning triple.
 
 ::: sidenoteBig
 <a href="#hint-won" data-bs-toggle="collapse" title="Click for a hint on building won?.">Click
-for a hint on building <code>won?</code>.</a>
+for a hint on building `won?`.</a>
 
 ::: {#hint-won .collapse}
 <p>Put it in words: What is it that you want to check?</p>
@@ -201,7 +201,7 @@ for another hint.</a>
 <li>Now make a block
 <img src="/img/3-lists/wonQ.png" title="won? ( )" alt="won? ( )"/>
 that takes the letter <strong>X</strong> or <strong>O</strong> as input,
-and reports <code>true</code> if and only if that player has won the
+and reports `true` if and only if that player has won the
 game.</li>
 
 <img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"/>

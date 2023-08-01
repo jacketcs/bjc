@@ -9,7 +9,7 @@ gifffer: true
 <p><strong>On this page,</strong> you will use inputs to allow one block to do many things.</p>
 :::
 
-<p>On the previous page you used blocks <code>asterisk</code> and <code>pinwheel</code> that we wrote for you, each with an input for the number of spokes. Now you're going to learn how to create your own blocks with inputs.</p>
+<p>On the previous page you used blocks `asterisk` and `pinwheel` that we wrote for you, each with an input for the number of spokes. Now you're going to learn how to create your own blocks with inputs.</p>
 
 ::: {#first .forYouToDo}
 <ol>
@@ -30,7 +30,7 @@ gifffer: true
 
 <li>
 
-Create a <code>pinwheel</code> block with an input for the <var>number of branches</var>. Instructions are below and you can also watch the process in the video that follows the instructions.
+Create a `pinwheel` block with an input for the <var>number of branches</var>. Instructions are below and you can also watch the process in the video that follows the instructions.
 
 ::: narrower
 ### <strong>Making a Block with an Input</strong>
@@ -39,7 +39,7 @@ Create a <code>pinwheel</code> block with an input for the <var>number of branch
 
 <li>
 
-<strong>Create a new block, type the block name and the label for your input, and click OK.</strong> For this project, type <code>pinwheel, branches:</code>.
+<strong>Create a new block, type the block name and the label for your input, and click OK.</strong> For this project, type `pinwheel, branches:`.
 
 ::: endnote
 <a href="#hint-new-block" data-bs-toggle="collapse" title="Click for an image of naming the new block.">Click for an image of naming the new block.</a>
@@ -57,7 +57,7 @@ Create a <code>pinwheel</code> block with an input for the <var>number of branch
 
 <li>
 
-<strong>Click the + (plus sign) after "<code>branches:</code>", type the name of the input, and click OK</strong> to add the input slot. For this project, click the + after "<code>branches:</code>" and type <var>number of branches</var> as the name of your input.
+<strong>Click the + (plus sign) after "`branches:`", type the name of the input, and click OK</strong> to add the input slot. For this project, click the + after "`branches:`" and type <var>number of branches</var> as the name of your input.
 
 ::: endnote
 <a href="#hint-input" data-bs-toggle="collapse" title="Click for images of naming the input.">Click for images of naming the input.</a>
@@ -68,7 +68,7 @@ Create a <code>pinwheel</code> block with an input for the <var>number of branch
 :::
 
 ::: endnote
-<img src="/img/1-introduction/prototype.png" title="Snap! hat block: pinwheel, branches: (number of branches)" alt="Snap! hat block: pinwheel, branches: (number of branches)" class="ms-4"/><br /> The picture of a blue <code>pinwheel</code> block inside the hat block is called the <em>prototype</em> of the block. As you add inputs and maybe title text to the prototype, it looks exactly like what the finished block will look like to the user, except that where the input slots go, there are orange ovals containing the <em>names</em> of the inputs.
+<img src="/img/1-introduction/prototype.png" title="Snap! hat block: pinwheel, branches: (number of branches)" alt="Snap! hat block: pinwheel, branches: (number of branches)" class="ms-4"/><br /> The picture of a blue `pinwheel` block inside the hat block is called the <em>prototype</em> of the block. As you add inputs and maybe title text to the prototype, it looks exactly like what the finished block will look like to the user, except that where the input slots go, there are orange ovals containing the <em>names</em> of the inputs.
 :::
 
 </li>
@@ -79,7 +79,7 @@ Create a <code>pinwheel</code> block with an input for the <var>number of branch
 
 <ul>
 
-<li>In this project, drag one of your pinwheel scripts into the Block Editor and snap it to the <code>pinwheel</code> hat block.</li>
+<li>In this project, drag one of your pinwheel scripts into the Block Editor and snap it to the `pinwheel` hat block.</li>
 
 <li>Then, drag the new input <var>number of branches</var> in to replace the values that change to allow for more general use of the script.</li>
 
@@ -99,7 +99,7 @@ Create a <code>pinwheel</code> block with an input for the <var>number of branch
 :::
 
 ::: endnote
-<a href="#hint-target" data-bs-toggle="collapse" title="Click for a video of of the whole process of building the pinwheel block.">Click for a video of of the whole process of building the <code>pinwheel</code> block.</a>
+<a href="#hint-target" data-bs-toggle="collapse" title="Click for a video of of the whole process of building the pinwheel block.">Click for a video of of the whole process of building the `pinwheel` block.</a>
 
 ::: {#hint-target .collapse}
 <img title="Animation summarizing how to create a block with input." alt="Animation summarizing how to create a block with input." class="ms-4" data-gifffer="/img/1-introduction/Blockswith-Inputs_img/blocks-with-inputs.gif"/>
@@ -113,7 +113,7 @@ Create a <code>pinwheel</code> block with an input for the <var>number of branch
 
 ::: takeNote
 
-<p><strong>What kind of data can be an input?</strong> All kinds of data. In this example, the input is supposed to be a number, but <em>any</em> kind of value can be used as an input. For instance, you've seen the <code>list</code> block called with text as inputs. In Snap<em>!</em>, any kind of data can be used as an input, can be reported by a block, or can be put in a list.</p>
+<p><strong>What kind of data can be an input?</strong> All kinds of data. In this example, the input is supposed to be a number, but <em>any</em> kind of value can be used as an input. For instance, you've seen the `list` block called with text as inputs. In Snap<em>!</em>, any kind of data can be used as an input, can be reported by a block, or can be put in a list.</p>
 :::
 
 ::: vocabFullWidth
@@ -188,7 +188,7 @@ You can attach a comment <em>to the hat block</em> in the Block Editor to create
 </div>
 :::
 
-<p>Part of the reason some people emphasize the importance of detailed comments is that they are programming in text languages, which discourage long variable and procedure names. (Typically, you can't include spaces in the names, and you have to type the entire name every time you use that variable or procedure.) So you see names like <code>substLcUc</code> instead of <code>substitute lower case letters for capital letters in string</code>. If a program is full of drastically abbreviated names for procedures and variables, it's no surprise if the code needs documentation. In Snap<em>!,</em> the names in the program can be self-documenting.</p>
+<p>Part of the reason some people emphasize the importance of detailed comments is that they are programming in text languages, which discourage long variable and procedure names. (Typically, you can't include spaces in the names, and you have to type the entire name every time you use that variable or procedure.) So you see names like `substLcUc` instead of `substitute lower case letters for capital letters in string`. If a program is full of drastically abbreviated names for procedures and variables, it's no surprise if the code needs documentation. In Snap<em>!,</em> the names in the program can be self-documenting.</p>
 :::
 
 </ol>
@@ -208,12 +208,12 @@ It's best if the first attempt at documentation is made even before starting to 
 5. Create a script that draws two pinwheels on the stage, with different numbers of spokes.
 :::
 
-When you embed a command procedure (such as <code>pinwheel</code>) within a script, the procedure is completed before continuing the script that called it.
+When you embed a command procedure (such as `pinwheel`) within a script, the procedure is completed before continuing the script that called it.
 
 ::: takeItFurther
 <ol type="A">
 
-<li>These images were created with the <code>pinwheel</code> block and <code>set pen color</code>. Create your own art.<br /> <!--<img src="/img/1-introduction/Blockswith-Inputs_img/Wreath2.png" height="200" alt="wreath of rainbow colored pinwheels" title="wreath of rainbow colored pinwheels"/>--> <img src="/img/1-introduction/Blockswith-Inputs_img/Wreath1.png" title="wreath of rainbow colored pinwheels" alt="wreath of rainbow colored pinwheels" class="ms-4" height="200"/> <img src="/img/1-introduction/Blockswith-Inputs_img/Wreath2.png" title="wreath of rainbow colored pinwheels" alt="wreath of rainbow colored pinwheels" class="ms-4" height="200"/></li>
+<li>These images were created with the `pinwheel` block and `set pen color`. Create your own art.<br /> <!--<img src="/img/1-introduction/Blockswith-Inputs_img/Wreath2.png" height="200" alt="wreath of rainbow colored pinwheels" title="wreath of rainbow colored pinwheels"/>--> <img src="/img/1-introduction/Blockswith-Inputs_img/Wreath1.png" title="wreath of rainbow colored pinwheels" alt="wreath of rainbow colored pinwheels" class="ms-4" height="200"/> <img src="/img/1-introduction/Blockswith-Inputs_img/Wreath2.png" title="wreath of rainbow colored pinwheels" alt="wreath of rainbow colored pinwheels" class="ms-4" height="200"/></li>
 
 <li>Make an animation.<br /> <img src="/img/1-introduction/Blockswith-Inputs_img/branchesCycle.gif" title="Branch Cycle Animation" alt="Branch Cycle Animation" class="ms-4" height="200"/></li>
 

@@ -6,7 +6,7 @@ gifffer: true
 ---
 
 ::: learn
-<strong>On this page,</strong> you will modify your existing <code>pinwheel</code> block so that you can use it to draw a variety of shapes.<br /> <img src="/img/1-introduction/assorted-pinwheels.png" title="assortment of pinwheels" alt="assortment of pinwheels" class="ms-4"/>
+<strong>On this page,</strong> you will modify your existing `pinwheel` block so that you can use it to draw a variety of shapes.<br /> <img src="/img/1-introduction/assorted-pinwheels.png" title="assortment of pinwheels" alt="assortment of pinwheels" class="ms-4"/>
 :::
 
 ## Adding Multiple Inputs
@@ -21,7 +21,7 @@ gifffer: true
 <li>
 
 
-Experiment with the input for the <em>second</em> <code>move</code> block inside your <code>pinwheel</code> block as shown below.<br />
+Experiment with the input for the <em>second</em> `move` block inside your `pinwheel` block as shown below.<br />
 
 <ol>
 
@@ -47,7 +47,7 @@ Add a <em>second input</em> to control the amount of "backing up" that the sprit
 
 <ol>
 
-<li>Edit your <code>pinwheel</code> block, then click the "+" sign at the end to add an input <strong>label</strong> (<strong>choose "Title text"</strong>). Type <code>backup:</code> as shown below, and click "OK".</li>
+<li>Edit your `pinwheel` block, then click the "+" sign at the end to add an input <strong>label</strong> (<strong>choose "Title text"</strong>). Type `backup:` as shown below, and click "OK".</li>
 
 ::: endnote
 <a href="#hint-target" data-bs-toggle="collapse" title="Watch a video of steps a and b for adding the second input to the pinwheel block.">Watch a video of steps a and b.</a>
@@ -59,9 +59,9 @@ Add a <em>second input</em> to control the amount of "backing up" that the sprit
 
 <li>Then click the "+" sign at the end <em>again</em> to add an input (choose "Input name"), and call it <var>backup</var>.</li>
 
-<li>Drag off the new <var>backup</var> input, place it where it belongs in the <code>pinwheel</code> code, and press "OK" or "Apply."</li>
+<li>Drag off the new <var>backup</var> input, place it where it belongs in the `pinwheel` code, and press "OK" or "Apply."</li>
 
-<li>Check that changing the <var>backup</var> input value when running the <code>pinwheel</code> block gives the correct result. Debug any problems.</li>
+<li>Check that changing the <var>backup</var> input value when running the `pinwheel` block gives the correct result. Debug any problems.</li>
 
 </ol>
 
@@ -73,7 +73,7 @@ Use an Operator block.
 
 <li>
 
-Change the <code>pinwheel</code> script so that it will accept a <em>positive</em> value (between 0 and 100) for <var>backup</var>, and test it with a variety of inputs.
+Change the `pinwheel` script so that it will accept a <em>positive</em> value (between 0 and 100) for <var>backup</var>, and test it with a variety of inputs.
 
 ::: endnote
 <a href="#hint-positivebackup" data-bs-toggle="collapse" title="Click for example inputs to test accepting a positive value for backup.">Click for example inputs to test.</a>
@@ -91,7 +91,7 @@ Change the <code>pinwheel</code> script so that it will accept a <em>positive</e
 ::: examFullWidth
 
 ::: pseudop
-The procedure definition for the custom <code>pinwheel</code> command<br /> <img src="/img/1-introduction/pinwheel-definition.png" title="pinwheel, branches: (number of branches)
+The procedure definition for the custom `pinwheel` command<br /> <img src="/img/1-introduction/pinwheel-definition.png" title="pinwheel, branches: (number of branches)
 {
 repeat(number of branches)
 {
@@ -179,11 +179,11 @@ tells you that that line of the code is like a hat block; the variable name in t
 
 <ol start="5">
 
-<li>Add another input called <var>size</var> to control the input to the <em>first</em> <code>move</code> block.<br /> <img src="/img/1-introduction/U1ImageVideoAddendum_img/U1L3-PinwheelwithInputs.png" title="pinwheel,  branches: (number of branches) size: (size) backup: (backup) hat block" alt="pinwheel, branches: (number of branches) size: (size) backup: (backup) hat block" class="ms-4" width="700"/></li>
+<li>Add another input called <var>size</var> to control the input to the <em>first</em> `move` block.<br /> <img src="/img/1-introduction/U1ImageVideoAddendum_img/U1L3-PinwheelwithInputs.png" title="pinwheel,  branches: (number of branches) size: (size) backup: (backup) hat block" alt="pinwheel, branches: (number of branches) size: (size) backup: (backup) hat block" class="ms-4" width="700"/></li>
 
 <li>
 
-Try out a variety of inputs to your <code>pinwheel</code> program.
+Try out a variety of inputs to your `pinwheel` program.
 
 ::: endnote
 <a href="#hint-size" data-bs-toggle="collapse" title="Click for example inputs to test accepting size value.">Click for example inputs to test.</a>
@@ -239,7 +239,7 @@ or <img src="/img/2-complexity/pinwheel-blocktran.png" title="a white rounded re
 ::: ifTime
 <ol start="9">
 
-<li>Find inputs to <code>pinwheel</code> that make the result look like a circle.</li>
+<li>Find inputs to `pinwheel` that make the result look like a circle.</li>
 
 </ol>
 :::
@@ -270,7 +270,7 @@ Most of Kandinsky's circles are solid, but a few aren't. most notably the large 
 Make a picture that looks more like a real pinwheel:<br />\
 <img src="/img/1-introduction/pinwheel.png" title="Photograph of a real pinwheel with four spokes. The pinwheel is red with a green stem and has a silver tack in the middle attaching the pinwheel to the stem." alt="Photograph of a real pinwheel with four spokes. The pinwheel is red with a green stem and has a silver tack in the middle attaching the pinwheel to the stem." class="ms-4" height="210"/><br /> <small>Copyright 2010 <a href="http://asubtlerevelry.com/a-pinwheel-tutorial-the-easiest-ever/" title="A Pinwheel Tutorial- The Easiest Ever" target="_blank">Victoria Hudgins</a>. Used by permission.</small>
 
-<p>(Save your project first; you'll need the <code>pinwheel</code> block you already have later.)</p>
+<p>(Save your project first; you'll need the `pinwheel` block you already have later.)</p>
 
 <p>It doesn't have to look exactly like the photo. But each arm of a pinwheel is essentially two triangles. You may find the <img src="/img/1-introduction/fill.png" title="fill block" alt="fill block"/> block helpful.</p>
 

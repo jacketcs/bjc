@@ -13,7 +13,7 @@ Selim and I worked on? --MF, 3/25/19</p>
 
 ::: learn
 <strong>On this page,</strong> you review three Boolean operators
-(<code>and</code>, <code>or</code>, and <code>not</code>) and learn how
+(`and`, `or`, and `not`) and learn how
 they relate to electronic circuitry.
 :::
 
@@ -46,8 +46,8 @@ computers do a lot of arithmetic, you might think that the basic circuit
 functions would be addition, subtraction, multiplication, and division,
 but that's not the case. Of course there <em>are</em> circuits to do
 those things, but they're made out of <em>logic gates:</em> circuits
-that compute <strong>Boolean functions</strong>: <code>and</code>,
-<code>or</code>, and <code>not</code>.</p>
+that compute <strong>Boolean functions</strong>: `and`,
+`or`, and `not`.</p>
 
 <p>The reason that Boolean functions are considered more fundamental is
 that their inputs and outputs can be represented with a single wire
@@ -62,8 +62,8 @@ is needed.</p>
 
 <p>You saw some examples in
 <a href="/unit-2/lab-3/1-what-is-predicate.html" title="What's a Predicate?">Unit
-2 Lab 3: Making Decisions by Using Predicates</a>: <code>AND</code>,
-<code>OR</code>, and <code>NOT</code>:<br />
+2 Lab 3: Making Decisions by Using Predicates</a>: `AND`,
+`OR`, and `NOT`:<br />
 <img src="/img/6-computers/logical-operators/and-TT-reporting.png" title="(true) AND (true) reporting true" alt="(true) AND (true) reporting true" class="ms-4"/>
 <img src="/img/6-computers/logical-operators/and-TF-reporting.png" title="(true) AND (false) reporting false" alt="(true) AND (false) reporting false" class="ms-4"/>
 <img src="/img/6-computers/logical-operators/and-FF-reporting.png" title="(false) AND (false) reporting false" alt="(false) AND (false) reporting false" class="ms-4"/>
@@ -84,11 +84,11 @@ true/false or ones/zeros).
 <li>
 
 <a href="#hint-truth-tables-and" data-bs-toggle="collapse" title="A circuit emulation and  truth tables for and">A
-circuit emulation and truth tables for <code>and</code>.</a>
+circuit emulation and truth tables for `and`.</a>
 
 ::: {#hint-truth-tables-and .collapse}
 <p>This electric circuit shows a simplified way to emulate the Boolean
-operator <code>and</code> electronically. The two switches are in
+operator `and` electronically. The two switches are in
 <em>series</em>; if both of the switches are on, the current flows and
 the light bulb turns on.</p>
 
@@ -122,17 +122,17 @@ true/false and the other with ones/zeros.
 <li>
 
 <a href="#hint-truth-tables-or" data-bs-toggle="collapse" title="A circuit emulation and  truth tables for or">A
-circuit emulation and truth tables for <code>or</code>.</a>
+circuit emulation and truth tables for `or`.</a>
 
 ::: {#hint-truth-tables-or .collapse}
 <p>This electric circuit shows a simplified way to emulate the Boolean
-operator <code>or</code> electronically. The two switches are in
+operator `or` electronically. The two switches are in
 <em>parallel</em>; if either (or both) of the switches are on, the
 current flows and the light bulb turns on.<br />
 <img title="Electric circuit for OR: The animation shows a battery connecting to two switches in parallel (one above the other) via the forking of an electrical wire and then the wire un-forking and connecting to a light bulb before returning to the battery. When either or both switches are closed, the light is on, and when both switches are open, the light turns off." alt="Electric circuit for OR: The animation shows a battery connecting to two switches in parallel (one above the other) via the forking of an electrical wire and then the wire un-forking and connecting to a light bulb before returning to the battery. When either or both switches are closed, the light is on, and when both switches are open, the light turns off." class="ms-4" data-gifffer="/img/6-computers/LogicGates_img/Animations/gif/OR_Animation.gif" width="335" height="250"/></p>
 
 ::: sidenoteBig
-<p>As with the <code>and</code> tables, these two tables are identical
+<p>As with the `and` tables, these two tables are identical
 except for whether they use true/false or ones/zeros.</p>
 
 <p>In ordinary language, the word "or" can have two slightly different
@@ -156,11 +156,11 @@ that.</p>
 <li>
 
 <a href="#hint-truth-tables-not" data-bs-toggle="collapse" title="A circuit emulation and  truth tables for not">A
-circuit emulation and truth tables for <code>not</code>.</a>
+circuit emulation and truth tables for `not`.</a>
 
 ::: {#hint-truth-tables-not .collapse}
 <p>This electric circuit shows a simplified way to emulate the Boolean
-operator <code>not</code> electronically. This switch is basically a
+operator `not` electronically. This switch is basically a
 <em>circuit breaker</em>: if the switch is <em>on</em>, the current flow
 is broken and the light bulb turns off; if the switch is off, the
 current flows directly to the light bulb and the light bulb turns
@@ -185,7 +185,7 @@ ones/zeros.
 
 <p>Inside a computer, Boolean operations are implemented in physical
 circuitry using logic gates. (A single gate implements one of the basic
-functions <code>and</code>, <code>or</code>, or <code>not</code>.) Logic
+functions `and`, `or`, or `not`.) Logic
 circuits are often represented with drawings that help engineers see how
 the information will flow through a circuit. For example, the following
 diagram of a logic circuit with two gates represents the Boolean
@@ -200,7 +200,7 @@ Can you see how?</p>
 
 <li><img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
 Look at the logic circuit drawn above. For what values of A and B will
-the output be <code>true</code>?</li>
+the output be `true`?</li>
 
 </ol>
 :::
@@ -224,7 +224,7 @@ the analog domain.)
 
 ::: {.assessment-data type="multiplechoice" identifier="Which expression will report TRUE?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="false"}
 ::: prompt
-Which of the following expressions will report <code>true</code>?
+Which of the following expressions will report `true`?
 
 <ol style="list-style:upper-roman;">
 
@@ -243,9 +243,9 @@ I only
 ::: feedback
 Evaluate each part separately first, and then determine what the
 outermost block in each expression will report. In expression I: What
-does <code>(true) and (false)</code> report? What does <code>not((true)
-and (false))</code> report? In expression II: What does <code>(true) or
-(false)</code> report? What does <code>not((true) or (false))</code>
+does `(true) and (false)` report? What does `not((true)
+and (false))` report? In expression II: What does `(true) or
+(false)` report? What does `not((true) or (false))`
 report?
 :::
 :::
@@ -266,8 +266,8 @@ I and II
 :::
 
 ::: feedback
-Take another look at expression I. What does <code>not((true) and
-(false))</code> (on the right) report to the outermost <code>and</code>
+Take another look at expression I. What does `not((true) and
+(false))` (on the right) report to the outermost `and`
 block?
 :::
 :::
@@ -278,8 +278,8 @@ Neither I nor II
 :::
 
 ::: feedback
-Take another look at expression II. What does <code>(true) and
-(false)</code> (on the right) report to the outermost <code>or</code>
+Take another look at expression II. What does `(true) and
+(false)` (on the right) report to the outermost `or`
 block?
 :::
 :::
@@ -298,8 +298,8 @@ block?
 
 ::: {.assessment-data type="multiplechoice" identifier="Which logic gate will report TRUE?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="false"}
 ::: prompt
-Which of the following logic circuits will report <code>true</code>? (T
-stands for <code>true</code>, and F stands for <code>false</code>.)
+Which of the following logic circuits will report `true`? (T
+stands for `true`, and F stands for `false`.)
 
 <ol style="list-style:upper-roman;">
 

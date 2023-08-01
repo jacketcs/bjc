@@ -16,7 +16,7 @@ order: 1
 
 <li>
 
-Here are some things to do at the start of your program <code>when green flag clicked</code>:
+Here are some things to do at the start of your program `when green flag clicked`:
 
 <ul>
 
@@ -34,9 +34,9 @@ Here are some things to do at the start of your program <code>when green flag cl
 
 </li>
 
-<li>Write code that will clear the drawings <code>when space key pressed</code> by the user.</li>
+<li>Write code that will clear the drawings `when space key pressed` by the user.</li>
 
-<li>The user will use the arrow keys to draw. You'll need a script for each key, starting with a <code>when key pressed</code> block:<br /> <img src="/img/blocks/when-space-key-pressed.png" alt="when space key pressed" class="ms-4"/><br /> For each of the four arrow keys, make the sprite point in the direction of the arrow and then move forward 10 steps.</li>
+<li>The user will use the arrow keys to draw. You'll need a script for each key, starting with a `when key pressed` block:<br /> <img src="/img/blocks/when-space-key-pressed.png" alt="when space key pressed" class="ms-4"/><br /> For each of the four arrow keys, make the sprite point in the direction of the arrow and then move forward 10 steps.</li>
 
 </ol>
 :::
@@ -62,7 +62,7 @@ Here is how Snap<em>!</em> assigns angles for directions: <br />
 
 <li>Change your code to draw only if the sprite is within the screen dimensions: -240 to 240 in the x direction (horizontal) and -180 to 180 in the y direction (vertical).</li>
 
-<li>Give your user some coloring options. For example, when the "1" key is pressed, the pen color is reset to black; when the "2" key is pressed, the pen color is set to red; etc. (Suggestion: Load the crayon library ("Provide 100 selected colors.") Also consider using some keys to put the <code>pen up</code> or <code>pen down</code>.</li>
+<li>Give your user some coloring options. For example, when the "1" key is pressed, the pen color is reset to black; when the "2" key is pressed, the pen color is set to red; etc. (Suggestion: Load the crayon library ("Provide 100 selected colors.") Also consider using some keys to put the `pen up` or `pen down`.</li>
 
 <li>Give your user the option to draw diagonal lines. For example, write code to move the sprite at 45°, 135°, 225°, 315°, using the "w," "s," "a," and "q" keys.</li>
 

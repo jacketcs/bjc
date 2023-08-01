@@ -22,7 +22,7 @@ order: 2
 
 <li>
 
-Create a <code>draw square</code> block that takes a <var>size</var> as input. Be sure to test it with different inputs.<br />
+Create a `draw square` block that takes a <var>size</var> as input. Be sure to test it with different inputs.<br />
 
 ::: sidenote
 You learned how to create a block with an input on <a href="/unit-1/lab-3/3-blocks-with-inputs.html" title="Lab 3 Page 3: Blocks with Inputs">Lab 3 Page 3: Blocks with Inputs</a>.
@@ -31,7 +31,7 @@ You learned how to create a block with an input on <a href="/unit-1/lab-3/3-bloc
 <img src="/img/1-introduction/draw-square-size.png" title="draw square, size: ()" alt="draw square, size: ()" class="ms-4"/> <img src="/img/1-introduction/square-size-100.png" title="a drawing of a square" alt="a drawing of a square" class="ms-4 noshadow"/>
 
 ::: endnote
-<a href="#hint-square" data-bs-toggle="collapse" title="Click to see one way to build draw square without an input.">Click to see one way to build <code>draw square</code> <em>without</em> an input.</a>
+<a href="#hint-square" data-bs-toggle="collapse" title="Click to see one way to build draw square without an input.">Click to see one way to build `draw square` <em>without</em> an input.</a>
 
 ::: {#hint-square .collapse}
 <img src="/img/1-introduction/draw-square-def-repeat-4(move-50-turn-right-90).png" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" alt="repeat-4(move-50-turn-clockwise-90)" class="ms-4"/>
@@ -42,7 +42,7 @@ You learned how to create a block with an input on <a href="/unit-1/lab-3/3-bloc
 
 <li>
 
-Using <code>draw</code> square as an example of where to start, create and test a <code>draw triangle</code> block that takes a <var>size</var> as input and draws an equilateral triangle.<br />
+Using `draw` square as an example of where to start, create and test a `draw triangle` block that takes a <var>size</var> as input and draws an equilateral triangle.<br />
 
 ::: sidenote
 You learned about turning angles on <a href="/unit-1/lab-3/2-exploring-snap-drawing-motion.qmd" title="Unit 1, Lab 3, Page 2, Angles and Turning">Unit 1, Lab 3, Page 2, Angles and Turning</a>.
@@ -54,7 +54,7 @@ You learned about turning angles on <a href="/unit-1/lab-3/2-exploring-snap-draw
 
 <li>
 
-Now, use <code>draw square</code> and <code>draw triangle</code> together to create a <code>draw house</code> blocks that takes a <var>size</var> as input and draws a house shape: a square with a triangular shaped roof sitting on top.<br />
+Now, use `draw square` and `draw triangle` together to create a `draw house` blocks that takes a <var>size</var> as input and draws a house shape: a square with a triangular shaped roof sitting on top.<br />
 
 ::: sidenote
 You might have to do some debugging to get the two shapes to connect properly.
@@ -74,9 +74,9 @@ Using a block inside another block is a form of <em>abstraction</em>.
 ::: forYouToDo
 <ol start="5">
 
-<li>Finally, use your <code>draw house</code> block together with <code>repeat until</code> to create a <code>draw row of houses</code> block that draws a row of attached houses with each new one to the right of the previous. Your program should keep drawing houses until the sprite moves too close to the right edge of the screen. For that, you will need <code>repeat until</code>.<br /> <img src="/img/1-introduction/draw-row-of-houses-size.png" title="draw row of houses, size: ()" alt="draw row of houses, size: ()" class="ms-4"/> <img src="/img/1-introduction/row-of-houses-size-100.png" title="a drawing of a row of houses" alt="a drawing of a row of houses" class="ms-4 noshadow"/><br /> <img src="/img/1-introduction/repeat-until-(x-position+size-greater-than-240).png" title="repeat until (((x position) + (size)) &gt; 240)" alt="repeat until (((x position) + (size)) &gt; 240)" class="ms-4"/></li>
+<li>Finally, use your `draw house` block together with `repeat until` to create a `draw row of houses` block that draws a row of attached houses with each new one to the right of the previous. Your program should keep drawing houses until the sprite moves too close to the right edge of the screen. For that, you will need `repeat until`.<br /> <img src="/img/1-introduction/draw-row-of-houses-size.png" title="draw row of houses, size: ()" alt="draw row of houses, size: ()" class="ms-4"/> <img src="/img/1-introduction/row-of-houses-size-100.png" title="a drawing of a row of houses" alt="a drawing of a row of houses" class="ms-4 noshadow"/><br /> <img src="/img/1-introduction/repeat-until-(x-position+size-greater-than-240).png" title="repeat until (((x position) + (size)) &gt; 240)" alt="repeat until (((x position) + (size)) &gt; 240)" class="ms-4"/></li>
 
-<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>The <em>x</em> positions on the Snap<em>!</em> stage go from -240 to 240. How does the <code>repeat until</code> code keep the sprite from drawing too close to the edge of the screen? <img src="/img/icons/save-mini.png" title="Now Is a Good Time to Save" alt="Now Is a Good Time to Save" class="inline"/></li>
+<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>The <em>x</em> positions on the Snap<em>!</em> stage go from -240 to 240. How does the `repeat until` code keep the sprite from drawing too close to the edge of the screen? <img src="/img/icons/save-mini.png" title="Now Is a Good Time to Save" alt="Now Is a Good Time to Save" class="inline"/></li>
 
 </ol>
 :::
@@ -84,7 +84,7 @@ Using a block inside another block is a form of <em>abstraction</em>.
 ::: takeItFurther
 <ol type="A">
 
-<li>Use your <code>draw square</code> block to create a <code>draw flower with square petals</code> block that will draw a flower with square petals with any specified number of petals of the specified size.<br />\
+<li>Use your `draw square` block to create a `draw flower with square petals` block that will draw a flower with square petals with any specified number of petals of the specified size.<br />\
 <img src="/img/1-introduction/draw-flower-with-6-petals-of-size-50.png" title="draw flower with (6) square petals of size (50)" alt="draw flower with (6) square petals of size (50)" class="ms-4"/> <img src="/img/1-introduction/flower-with-6-square-petals.png" title="a drawing of a flower with 6 square petals" alt="a drawing of a flower with 6 square petals" class="ms-4"/><br /></li>
 
 ::: endnote

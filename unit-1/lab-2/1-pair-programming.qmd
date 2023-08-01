@@ -44,7 +44,57 @@ gifffer: true
 
 </p>
 
-<p>In the first unit, we'll use these symbols to remind you to switch roles at specific points in the lab. After this unit, you're on your own to be sure to switch about every five minutes.<br /> <img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="ms-4"/> <img src="/img/icons/pair-programming-swap-mini.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="ms-4"/></p>
+In the first unit, we'll use these symbols to remind you to switch roles at specific points in the lab. After this unit, you're on your own to be sure to switch about every five minutes.<br /> <img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="ms-4"/> <img src="/img/icons/pair-programming-swap-mini.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="ms-4"/>
+
+If you are working with a partner, make sure you both have access to the project. It is **your responsibility** to make sure that you can access the project if your partner is absent the next day.
+
+::: narrower
+### <strong>Saving a Copy of a Project</strong>
+
+<ol type="a">
+
+<li>
+
+Change who is logged in to Snap<em>!</em>
+
+<ol style="list-style-type: lower-roman;">
+
+<li>Open the cloud menu, <img src="/img/1-introduction/cloud_button.png" alt="cloud menu button"/>, and choose "Logout." <strong>Don't leave the Snap<em>!</em> window or exit the browser.</strong></li>
+
+<li>Let your partner log in to Snap<em>!</em>.</li>
+
+</ol>
+
+</li>
+
+<li>Save the project in the second partner's account so that you both have a copy.</li>
+
+::: endnote
+The partner has a copy---not a shared file. So, if one person changes the project their account, it will not change in the other person's account; they will need to save it to their account again to have the change.
+:::
+
+</ol>
+:::
+
+</li>
+
+</ol>
+:::
+
+::: endnote
+The partner has a copy---not a shared file. So, if one person changes the project their account, it will not change in the other person's account; they will need to save it to their account again to have the change.
+:::
+
+</ol>
+:::
+
+</li>
+
+</ol>
+:::
+
+## Putting the Game on Your Phone
+
 
 ::: forYouToDo
 

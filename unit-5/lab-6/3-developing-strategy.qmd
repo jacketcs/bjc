@@ -13,8 +13,8 @@ computer will use by investigating the strategies that humans use.</p>
 :::
 
 <p>You've already built into your project the most basic Tic-Tac-Toe
-strategy rule: the computer will move to the <code>best empty
-square</code> on its turn. But there are other important elements to a
+strategy rule: the computer will move to the `best empty
+square` on its turn. But there are other important elements to a
 good strategy...</p>
 
 ::: {#first .forYouToDo}
@@ -41,7 +41,7 @@ turn, then play in the winning square."</p>
 
 <li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/>
 Think through how the computer can determine if a player can win on
-their next turn. The <code>won?</code> block works by looking for a
+their next turn. The `won?` block works by looking for a
 triple in which all three slots are X or all three slots are O. Describe
 what the slots of a triple will contain if player O can win on their
 next move by filling that triple's last square.</li>
@@ -92,11 +92,11 @@ the player could win on the next move.<br />
 
 </li>
 
-<li>Play part of a game, and then test <code>winning triple</code> for
+<li>Play part of a game, and then test `winning triple` for
 both inputs (X and O). Play a little more, and then test them both
 again. Fix any bugs.</li>
 
-<li>What does <code>winning triple</code> report if there is no winning
+<li>What does `winning triple` report if there is no winning
 triple?</li>
 
 <li>Now write the
@@ -105,7 +105,7 @@ block. Make sure it works even if there is no winning square.</li>
 
 ::: endnote
 <a href="#hint-winning-square" data-bs-toggle="collapse" title="Click for a hint about building winning square for player.">Click
-for a hint about <code>winning square</code>.</a>
+for a hint about `winning square`.</a>
 
 ::: {#hint-winning-square .collapse}
 <img src="/img/blocks/is-a-number.png" title="is () a number?" alt="is () a number?" class="ms-4"/>
@@ -113,7 +113,7 @@ for a hint about <code>winning square</code>.</a>
 :::
 :::
 
-<li>Play part of a game, test <code>winning square</code> for both
+<li>Play part of a game, test `winning square` for both
 players, and fix any bugs.</li>
 
 <img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline"/>
@@ -121,5 +121,5 @@ players, and fix any bugs.</li>
 </ol>
 :::
 
-<p>On the next page you'll use <code>winning square</code> to finish
+<p>On the next page you'll use `winning square` to finish
 giving the computer a better strategy.</p>

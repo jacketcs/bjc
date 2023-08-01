@@ -5,7 +5,7 @@ order: 6
 ---
 
 ::: learn
-<p><strong>On this page,</strong> you will use <code>for</code> loops not only to repeat, but also to count the repetitions and then use that counter to draw shapes with repeated patterns:<br /> <img src="/img/prog/spiral.png" title="spiral" alt="spiral" class="ms-4"/> <img src="/img/1-introduction/nested-squares.png" title="nested squares" alt="nested squares" class="ms-4"/></p>
+<p><strong>On this page,</strong> you will use `for` loops not only to repeat, but also to count the repetitions and then use that counter to draw shapes with repeated patterns:<br /> <img src="/img/prog/spiral.png" title="spiral" alt="spiral" class="ms-4"/> <img src="/img/1-introduction/nested-squares.png" title="nested squares" alt="nested squares" class="ms-4"/></p>
 :::
 
 <p>
@@ -15,7 +15,7 @@ You've seen these ways to repeat a set of commands:
 <ul>
 
 ::: sidenoteBig
-The <code>forever</code> block generates an <em>infinite loop</em> that goes on forever. An infinite loop can sometimes be the result of a bug, but in some interactive programs, you <em>want</em> the program to keep running until stopped by the user.
+The `forever` block generates an <em>infinite loop</em> that goes on forever. An infinite loop can sometimes be the result of a bug, but in some interactive programs, you <em>want</em> the program to keep running until stopped by the user.
 :::
 
 <li><img src="/img/blocks/forever.png" title="the forever block" alt="the forever block" class="inline"/> repeats the same commands <em>forever</em>. (You used it to make Alonzo keep moving in <a href="/unit-1/lab-1/2-start-your-first-snap-app.qmd" title="Unit 1 Lab 1 Page 2: Programming a Game">Unit 1 Lab 1 Page 2: Programming a Game</a>.)</li>
@@ -37,7 +37,7 @@ The <code>forever</code> block generates an <em>infinite loop</em> that goes on 
 
 
 
-<p>The code can be repeated <code>forever</code>, a specific number of times (such as when using <code>repeat</code>), or until something specific happens (such as when using <code>repeat until</code> as you'll see in Lab 5). <br /> <img src="/img/1-introduction/repeat-4(move-100-turn-right-90).png" title="repeat (4) (move (100), turn clockwise (90))" alt="repeat (4) (move (100), turn clockwise (90))" class="ms-4"/> <img src="/img/1-introduction/move-tiny-no-hat.png" title="repeat until (touching (Leader)?)
+<p>The code can be repeated `forever`, a specific number of times (such as when using `repeat`), or until something specific happens (such as when using `repeat until` as you'll see in Lab 5). <br /> <img src="/img/1-introduction/repeat-4(move-100-turn-right-90).png" title="repeat (4) (move (100), turn clockwise (90))" alt="repeat (4) (move (100), turn clockwise (90))" class="ms-4"/> <img src="/img/1-introduction/move-tiny-no-hat.png" title="repeat until (touching (Leader)?)
 {
 point towards (Leader)
 move (1) steps
@@ -48,14 +48,14 @@ move (1) steps
 }" class="ms-4"/></p>
 :::
 
-<p>Sometimes the script inside a loop needs to know which time through the loop it's in (first, second, etc.). You can use <img src="/img/prog/for.png" title="for(i)=(1) to (10){}" alt="for(i)=(1) to (10){}" class="inline"/> to keep track, and you can use its counter (the default name is <img src="/img/blocks/variable-i.png" title="i" alt="i" class="inline"/>) in the repeated script. For example, the <code>for</code> block lets you simplify long scripts like: <br /> <img src="/img/looping/for-loop-equivalent.png" title="say (1) for (2) secs, say (2) for (2) secs, say (3) for (2) secs... say (10) for (2) secs" alt="say (1) for (2) secs, say (2) for (2) secs, say (3) for (2) secs... say (10) for (2) secs" class="ms-4"/>\
+<p>Sometimes the script inside a loop needs to know which time through the loop it's in (first, second, etc.). You can use <img src="/img/prog/for.png" title="for(i)=(1) to (10){}" alt="for(i)=(1) to (10){}" class="inline"/> to keep track, and you can use its counter (the default name is <img src="/img/blocks/variable-i.png" title="i" alt="i" class="inline"/>) in the repeated script. For example, the `for` block lets you simplify long scripts like: <br /> <img src="/img/looping/for-loop-equivalent.png" title="say (1) for (2) secs, say (2) for (2) secs, say (3) for (2) secs... say (10) for (2) secs" alt="say (1) for (2) secs, say (2) for (2) secs, say (3) for (2) secs... say (10) for (2) secs" class="ms-4"/>\
       to\
 <img src="/img/looping/for-loop-drag-i.gif" title="for (i)= (1) to (10) {say (i) for (2) secs}" alt="for (i)= (1) to (10) {say (i) for (2) secs}" class="noshadow"/></p>
 
-<p>Each time the <code>for</code> block runs the script inside, it changes the value of the counter by 1, beginning with the first input number and ending after the second.</p>
+<p>Each time the `for` block runs the script inside, it changes the value of the counter by 1, beginning with the first input number and ending after the second.</p>
 
 ::: takeNote
-The <code>for</code> block's default counter name, <img src="/img/blocks/variable-i.png" title="i" alt="i" class="inline"/> stands for "index." You can change this name by clicking it. To use the counter, drag it into the script.
+The `for` block's default counter name, <img src="/img/blocks/variable-i.png" title="i" alt="i" class="inline"/> stands for "index." You can change this name by clicking it. To use the counter, drag it into the script.
 :::
 
 ::: {#first .forYouToDo}
@@ -95,11 +95,11 @@ This design got the nickname "squiral" because it's a <strong>squ</strong>are sp
 
 <li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Make sure you can explain why the squiral spirals outward.</li>
 
-<li>Try switching the order of the 100 and the 1 in the <code>for</code> block in the squiral script. What is the result?</li>
+<li>Try switching the order of the 100 and the 1 in the `for` block in the squiral script. What is the result?</li>
 
 <li>Try changing the turning angle in the squiral script to other numbers such as 92, 126, etc.</li>
 
-<li>Change the inputs to <code>turn</code> and <code>move</code> to get as close as you can get to a smooth spiral:<br /> <img src="/img/prog/spiral.png" title="spiral" alt="spiral" class="ms-4"/></li>
+<li>Change the inputs to `turn` and `move` to get as close as you can get to a smooth spiral:<br /> <img src="/img/prog/spiral.png" title="spiral" alt="spiral" class="ms-4"/></li>
 
 </ol>
 
@@ -113,7 +113,7 @@ This design got the nickname "squiral" because it's a <strong>squ</strong>are sp
 
 </li>
 
-<li>Open your U1L3-Pinwheel project, and build a <code>nest squares</code> block that uses <code>for</code> and your <code>polygon</code> block to draw nested squares. Give it an input so that it will draw whatever <var>number of squares</var> you specify, with each square larger than the previous: <br /> <img src="/img/1-introduction/nested-squares.png" title="nested squares" alt="nested squares" class="ms-4"/></li>
+<li>Open your U1L3-Pinwheel project, and build a `nest squares` block that uses `for` and your `polygon` block to draw nested squares. Give it an input so that it will draw whatever <var>number of squares</var> you specify, with each square larger than the previous: <br /> <img src="/img/1-introduction/nested-squares.png" title="nested squares" alt="nested squares" class="ms-4"/></li>
 
 </ol>
 :::
@@ -121,7 +121,7 @@ This design got the nickname "squiral" because it's a <strong>squ</strong>are sp
 ::: ifTime
 <ol start="5">
 
-<li>Build <code>nest polygons</code> that accepts the <var>number of polygons</var> and the <var>number of sides</var> for the polygons.</li>
+<li>Build `nest polygons` that accepts the <var>number of polygons</var> and the <var>number of sides</var> for the polygons.</li>
 
 <li>Build a script that draws 12 regular polygons, each with one more side than the previous one, as shown below.<br /> <img src="/img/1-introduction/polygons.png" title="polygons: triangle through decagon" alt="polygons: triangle through decagon" class="ms-4"/></li>
 
@@ -135,10 +135,10 @@ This design got the nickname "squiral" because it's a <strong>squ</strong>are sp
 
 <li>
 
-Below are two animations that use the <code>pinwheel</code> code with inputs. Find out how to create your own artistic animations.<br /> <img src="/img/1-introduction/Blockswith-Inputs_img/pinwheelArray.gif" title="Array of pinwheels animation" alt="Array of pinwheels animation" class="ms-4" height="200"/> <img src="/img/1-introduction/Blockswith-Inputs_img/PinwheelWreathAnimation.gif" title="Pinwheel wreath animation" alt="Pinwheel wreath animation" height="200"/><br />
+Below are two animations that use the `pinwheel` code with inputs. Find out how to create your own artistic animations.<br /> <img src="/img/1-introduction/Blockswith-Inputs_img/pinwheelArray.gif" title="Array of pinwheels animation" alt="Array of pinwheels animation" class="ms-4" height="200"/> <img src="/img/1-introduction/Blockswith-Inputs_img/PinwheelWreathAnimation.gif" title="Pinwheel wreath animation" alt="Pinwheel wreath animation" height="200"/><br />
 
 ::: endnote
-<p>The following code may give you ideas about how to create animations. The <code>warp</code> block allows the drawing of the pinwheel all at once.</p>
+<p>The following code may give you ideas about how to create animations. The `warp` block allows the drawing of the pinwheel all at once.</p>
 
 <img src="/img/1-introduction/Blockswith-Inputs_img/animationCode.png" title="forever{for(i)=(0) to (50){clear;warp{pinwheel, branches:(12) size:(50) backup:(i)}}}" alt="forever{for(i)=(0) to (50){clear;warp{pinwheel, branches:(12) size:(50) backup:(i)}}}" class="ms-4" height="150"/>
 :::
@@ -163,7 +163,7 @@ Below are two animations that use the <code>pinwheel</code> code with inputs. Fi
 ::: takeItTeased
 <ol type="A">
 
-<li>Find a way to use <code>for</code> to nest squares this way. Build your <em>block</em> with two inputs that let you specify how many squares the design will contain and how much bigger each square will be than the previous one.<br /> <img src="/img/icons/tough-stuff.png" title="Tough Stuff" alt="Tough Stuff" class="float-end"/> <img src="/img/1-introduction/concentric-squares.png" title="concentric squares" alt="concentric squares" class="ms-4" width="219" height="170"/></li>
+<li>Find a way to use `for` to nest squares this way. Build your <em>block</em> with two inputs that let you specify how many squares the design will contain and how much bigger each square will be than the previous one.<br /> <img src="/img/icons/tough-stuff.png" title="Tough Stuff" alt="Tough Stuff" class="float-end"/> <img src="/img/1-introduction/concentric-squares.png" title="concentric squares" alt="concentric squares" class="ms-4" width="219" height="170"/></li>
 
 </ol>
 
@@ -191,7 +191,7 @@ Okay, now dig in.
 
 <li>
 
-<img src="/img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff"/> <img src="/img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff"/> <img src="/img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff"/> This block is like the squiral, but instead of changing the input to <code>move</code>, it changes the input to <code>turn</code>:<br /> <img src="/img/1-introduction/inspi.png" title="inspi repeat:(num) size:(size) angle:(angle) : for (i) = (1) to (num) {move (size) steps; turn ((i) * (angle)) degrees}" alt="inspi repeat:(num) size:(size) angle:(angle) : for (i) = (1) to (num) {move (size) steps; turn ((i) * (angle)) degrees}" class="ms-4" height="150"/>
+<img src="/img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff"/> <img src="/img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff"/> <img src="/img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff"/> This block is like the squiral, but instead of changing the input to `move`, it changes the input to `turn`:<br /> <img src="/img/1-introduction/inspi.png" title="inspi repeat:(num) size:(size) angle:(angle) : for (i) = (1) to (num) {move (size) steps; turn ((i) * (angle)) degrees}" alt="inspi repeat:(num) size:(size) angle:(angle) : for (i) = (1) to (num) {move (size) steps; turn ((i) * (angle)) degrees}" class="ms-4" height="150"/>
 
 <ol>
 

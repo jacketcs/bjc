@@ -1,15 +1,15 @@
 ---
-title: "Page 5: <code>Keep</code>ing Items from a List"
+title: "Page 5: `Keep`ing Items from a List"
 subtitle: "Unit 2, Lab 3, Page 5"
 order: 5
 gifffer: true
 ---
 
 ::: learn
-<p><strong>On this page</strong>, you will use predicates with the <code>keep</code> block to keep items in a list that have specific characteristics.</p>
+<p><strong>On this page</strong>, you will use predicates with the `keep` block to keep items in a list that have specific characteristics.</p>
 :::
 
-<p>As you know, predicates can be used with conditionals to decide <em>when</em> to <em>do</em> something; they can also be used with <code>keep</code> to decide <em>which</em> things to keep. The <img src="/img/blocks/keep.png" title="keep items &apos;predicate input slot&apos; from &apos;list input slot&apos;" alt="keep items &apos;predicate input slot&apos; from &apos;list input slot&apos;" class="inline"/> block takes a list and a predicate as input, and it reports a new list keeping only the items from the input list that make the condition described by the predicate true.</p>
+<p>As you know, predicates can be used with conditionals to decide <em>when</em> to <em>do</em> something; they can also be used with `keep` to decide <em>which</em> things to keep. The <img src="/img/blocks/keep.png" title="keep items &apos;predicate input slot&apos; from &apos;list input slot&apos;" alt="keep items &apos;predicate input slot&apos; from &apos;list input slot&apos;" class="inline"/> block takes a list and a predicate as input, and it reports a new list keeping only the items from the input list that make the condition described by the predicate true.</p>
 
 <p>For example, the following expression will find words from the <var>words list</var> whose first letter is v. The <em>blank input slot</em> is where each item of the list goes to decide if it will be kept.<br> <img src="/img/2-complexity/keep-example-6.png" title="keep items  ((letter(1) of ( )) = (v)) from (words list)" alt="keep items  ((letter(1) of ( )) = (v)) from (words list)" class="ms-4"/></p>
 
@@ -24,18 +24,18 @@ gifffer: true
 
 
 
-<li><a href="/unit-2/lab-2/2-quizzes.html" title="You've already learned the word index">You've already learned</a> the word <strong>index</strong> for the position of an element in a list. The same word is used for the position of a character in a string (for example, a letter in a word). So the first input to <code>letter</code> is the index.</li>
+<li><a href="/unit-2/lab-2/2-quizzes.html" title="You've already learned the word index">You've already learned</a> the word <strong>index</strong> for the position of an element in a list. The same word is used for the position of a character in a string (for example, a letter in a word). So the first input to `letter` is the index.</li>
 
 </ul>
 :::
 
 ::: takeNote
-<p><strong>You write the predicate that does the checking, and <code>keep</code> applies the predicate to each item in the input list and then reports the list of items that make your predicate <code>true</code></strong>.</p>
+<p><strong>You write the predicate that does the checking, and `keep` applies the predicate to each item in the input list and then reports the list of items that make your predicate `true`</strong>.</p>
 
 <p>Note that the blank input slot in the predicate is <em>required</em>; this is where each item from the list goes as it is checked by the predicate.</p>
 
 ::: endnote
-The <code>letter</code> block in the palette looks like <img src="/img/blocks/letter-1-of-world.png" title="letter (1) of (world)" alt="letter (1) of (world)"/>. You have to delete the "world" so that there is a blank slot where you need it to be.
+The `letter` block in the palette looks like <img src="/img/blocks/letter-1-of-world.png" title="letter (1) of (world)" alt="letter (1) of (world)"/>. You have to delete the "world" so that there is a blank slot where you need it to be.
 :::
 :::
 
@@ -47,26 +47,26 @@ The <code>letter</code> block in the palette looks like <img src="/img/blocks/le
 <a class="run" href="/prog/2-complexity/U2L3-KeepingData.xml" target="_blank"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a>
 
 ::: endnote
-This project contains two example <code>keep</code> expressions and an <code>initialize list</code> procedure (you can look inside it to see what it does).
+This project contains two example `keep` expressions and an `initialize list` procedure (you can look inside it to see what it does).
 :::
 
 </li>
 
-<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Experiment with these examples of <code>keep</code>. Discuss and then explain <em>in writing</em> what these expressions are doing.<br /> <img src="/img/2-complexity/keep-example-4.png" title="keep items  ((length of ( )) = (5)) from {apple, banana, orange, grape, kiwi, mango, watermelon} reporting {apple, grape, mango}" alt="keep items  ((length of ( )) = (5)) from {apple, banana, orange, grape, kiwi, mango, watermelon} reporting {apple, grape, mango}" class="ms-4"/><br /> <img src="/img/2-complexity/keep-example-7.png" title="keep items  (not(is () a (number)?)) from {5, :), six, 7, elephant, 3} reporting {5,7,3}" alt="keep items  (not(is () a (number)?)) from {5, :), six, 7, elephant, 3} reporting {5,7,3}" class="ms-4"/></li>
+<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Experiment with these examples of `keep`. Discuss and then explain <em>in writing</em> what these expressions are doing.<br /> <img src="/img/2-complexity/keep-example-4.png" title="keep items  ((length of ( )) = (5)) from {apple, banana, orange, grape, kiwi, mango, watermelon} reporting {apple, grape, mango}" alt="keep items  ((length of ( )) = (5)) from {apple, banana, orange, grape, kiwi, mango, watermelon} reporting {apple, grape, mango}" class="ms-4"/><br /> <img src="/img/2-complexity/keep-example-7.png" title="keep items  (not(is () a (number)?)) from {5, :), six, 7, elephant, 3} reporting {5,7,3}" alt="keep items  (not(is () a (number)?)) from {5, :), six, 7, elephant, 3} reporting {5,7,3}" class="ms-4"/></li>
 
 </ol>
 :::
 
 <p>The first example keeps inputs of a certain <em>length</em>; every word in the list is asked whether its length is 5, and only those with five letters are reported. The second example keeps inputs that are <em>not numbers</em>; every item in this list is asked "Is this item <em>not</em> a number?" and only the elements that are not numbers are reported.</p>
 
-<p>There are two <code>length</code> blocks in Snap<em>!</em>. One (<img src="/img/blocks/length-of-blank-operator.png" title="length ()" alt="length ()" class="inline"/>) is designed for strings, and the other (<img src="/img/blocks/length-list.png" title="length ()" alt="length ()" class="inline"/>) is designed for lists.</p>
+<p>There are two `length` blocks in Snap<em>!</em>. One (<img src="/img/blocks/length-of-blank-operator.png" title="length ()" alt="length ()" class="inline"/>) is designed for strings, and the other (<img src="/img/blocks/length-list.png" title="length ()" alt="length ()" class="inline"/>) is designed for lists.</p>
 
 ::: forYouToDo
 <ol start="3">
 
 <li>
 
-If you don't see a list of words on the stage, run <code>initialize list</code>. Then use <code>keep</code> to answer these questions:
+If you don't see a list of words on the stage, run `initialize list`. Then use `keep` to answer these questions:
 
 <ol>
 

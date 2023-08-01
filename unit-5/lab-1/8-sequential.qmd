@@ -17,7 +17,7 @@ if we had a different computer for each sprite, that would be true
 parallelism. As it is, there is only one computer, and it divides its
 attention among the processes by running a little bit of one and then
 running a little bit of the next one. Specifically, it switches at the
-bottom of loops (<code>forever</code>, <code>repeat</code>, etc.).</p>
+bottom of loops (`forever`, `repeat`, etc.).</p>
 
 ::: vocabFullWidth
 : <strong>Sequential</strong> and <strong>Parallel Computing</strong>
@@ -157,7 +157,7 @@ How long will this <em>parallel</em> program take to run?<br />
 :::
 
 ::: feedback
-The two <code>when I receive</code> tasks happen in parallel, not one
+The two `when I receive` tasks happen in parallel, not one
 after the other.
 :::
 :::
@@ -179,7 +179,7 @@ contributes to the total time.
 :::
 
 ::: feedback
-<code>Broadcast and wait</code> waits until all the tasks that it
+`Broadcast and wait` waits until all the tasks that it
 started have finished.
 :::
 :::
@@ -223,7 +223,7 @@ the world).</p>
 unrealistic, but what <em>is</em> realistic is that in most problems,
 there isn't a solution that's purely parallel. Some part of the
 computation has to be done sequentially. In the previous question, the
-sequential part is modeled by <code>wait 6 secs</code>. Parallelization
+sequential part is modeled by `wait 6 secs`. Parallelization
 with this silly example feels trivial, but imagine you work for Google.
 Millions of search queries and web page edits have happened today, and
 it's your job to have to process them. If they didn't have huge server
@@ -433,7 +433,7 @@ $\frac{18}{6}$
 :::
 
 ::: feedback
-<code>Broadcast and wait</code> waits until all the tasks that it
+`Broadcast and wait` waits until all the tasks that it
 started have finished.
 :::
 :::

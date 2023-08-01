@@ -72,7 +72,7 @@ If you already have Snap<em>!</em> open and there is a project open, follow thes
 
 <li>
 
-Now build the script and run it. Move your mouse around the stage while the program is running. What does the <code>forever</code> block do?
+Now build the script and run it. Move your mouse around the stage while the program is running. What does the `forever` block do?
 
 ::: endnote
 To <em>stop</em> your script, click the red stop sign: <img src="/img/1-introduction/stop_button.png" title="stop button" alt="stop button" class="button" style="height:1.9em;"/>
@@ -118,7 +118,7 @@ To make your sprite names meaningful, change the name of <strong>Sprite</strong>
 While a script is running, its border lights up. If the running time is short, you may not notice the brief flash.
 :::
 
-Make sure you have the <strong>Follower</strong> sprite selected. Write a script for <strong>Follower</strong> so that once the green flag is clicked, it will point toward <strong>Leader</strong> <code>forever</code>.<br /> <img src="/img/blocks/point-towards.png" title="point towards []" alt="point towards []" class="ms-4"/>
+Make sure you have the <strong>Follower</strong> sprite selected. Write a script for <strong>Follower</strong> so that once the green flag is clicked, it will point toward <strong>Leader</strong> `forever`.<br /> <img src="/img/blocks/point-towards.png" title="point towards []" alt="point towards []" class="ms-4"/>
 
 </li>
 

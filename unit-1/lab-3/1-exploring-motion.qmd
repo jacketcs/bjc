@@ -37,7 +37,7 @@ order: 1
 
 <p><strong>In this lab,</strong> you'll draw polygons so you can create your own art: <img src="/img/1-introduction/polygon-row.png" title="regular polygons" alt="regular polygons" class="noshadow" width="20%"/></p>
 
-<p><strong>On this page,</strong> you will explore the basics of drawing a shape in Snap<em>!</em> by using the <code>repeat</code> block to loop through the same code multiple times.</p>
+<p><strong>On this page,</strong> you will explore the basics of drawing a shape in Snap<em>!</em> by using the `repeat` block to loop through the same code multiple times.</p>
 :::
 
 ```{=html}
@@ -74,7 +74,7 @@ Log in to <a href="http://snap.berkeley.edu/run" title="Snap! Build Your Own Blo
 </li>
 
 ::: endnote
-You can click <code>pen down</code> (or any block) in the palette on the left or in the scripting area to run it. If you click a block inside a script, the whole script runs.
+You can click `pen down` (or any block) in the palette on the left or in the scripting area to run it. If you click a block inside a script, the whole script runs.
 :::
 
 <li><img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Analyze <em>why</em> that script does what it does.</li>
@@ -131,20 +131,20 @@ You can slow the stepping to do only one step at a time and wait until you tell 
 You can put your sprite back in the center of the screen with <img src="/img/blocks/go-to-x-y-0-0.png" title="go to x: (0) y: (0)" alt="go to x: (0) y: (0)" class="inline"/> and you can reset the direction it's pointing with <img src="/img/blocks/point-in-direction-90.png" title="point in direction (90)" alt="point in direction (90)" class="inline"/>.
 :::
 
-<li>Change 100 to 50 in the <code>move</code> block <em>of your script</em> by clicking on the 100 and typing 50. Then click the script again to run it with the new input value.</li>
+<li>Change 100 to 50 in the `move` block <em>of your script</em> by clicking on the 100 and typing 50. Then click the script again to run it with the new input value.</li>
 
 <li>Click the <img src="/img/blocks/clear-full-size.png" title="clear" alt="clear" class="inline"/> block in the green Pen palette.</li>
 
-<li>Change the number in the <code>turn</code> block and run the script again... and again... and again.</li>
+<li>Change the number in the `turn` block and run the script again... and again... and again.</li>
 
-<li><code>Clear</code> the stage again, and change the number in the <img src="/img/1-introduction/repeat-4.png" title="repeat (4){}" alt="repeat (4){}" class="inline"/> block.</li>
+<li>`Clear` the stage again, and change the number in the <img src="/img/1-introduction/repeat-4.png" title="repeat (4){}" alt="repeat (4){}" class="inline"/> block.</li>
 
-<li>Experiment with the input numbers in the <code>turn</code> and <code>repeat</code> blocks. Try to draw a triangle with equal sides.</li>
+<li>Experiment with the input numbers in the `turn` and `repeat` blocks. Try to draw a triangle with equal sides.</li>
 
-<li>Use <img src="/img/blocks/set-pen-size-to-blank.png" title="set pen size to ()" alt="set pen size to ()" class="inline"/> to set the pen size to something like 4 or 10 or 50. Then click your <code>repeat</code>, <code>move</code>, <code>turn</code> script again.</li>
+<li>Use <img src="/img/blocks/set-pen-size-to-blank.png" title="set pen size to ()" alt="set pen size to ()" class="inline"/> to set the pen size to something like 4 or 10 or 50. Then click your `repeat`, `move`, `turn` script again.</li>
 
 ::: endnote
-To change the pen size you must <em>click</em> the <code>set pen size</code> block to run it after you've entered the number you want.
+To change the pen size you must <em>click</em> the `set pen size` block to run it after you've entered the number you want.
 :::
 
 <li>Use <img src="/img/blocks/set-pen-color-full-size.png" title="set pen color to &apos;magenta colored square&apos;" alt="set pen color to &apos;magenta colored square&apos;" class="inline"/> to experiment with the pen color.</li>
@@ -189,9 +189,9 @@ Experiment: What leaves a trace?
 ::: takeItTeased
 <ol type="A">
 
-<li><strong>Solid rectangles.</strong> Make and run this script:<br /> <img src="/img/1-introduction/flat.png" title="point in direction (45); set (flat line ends) to (True); set pen size to (20); pen down; move (150) steps" alt="point in direction (45); set (flat line ends) to (True); set pen size to (20); pen down; move (150) steps" class="ms-4"/><br /> The light blue <code>set</code> block is in the Sensing palette, where it looks like <img src="/img/1-introduction/vid-cap.png" title="set (video capture) to ( )" alt="set (video capture) to ( )"/>. Just click once in the hexagonal slot to get True (the green check box). If you're not sure what difference the "flat line ends" makes, try clicking the hexagonal slot again to run the script with that option False. And of course you can change all the numbers, or have your program pick random numbers.</li>
+<li><strong>Solid rectangles.</strong> Make and run this script:<br /> <img src="/img/1-introduction/flat.png" title="point in direction (45); set (flat line ends) to (True); set pen size to (20); pen down; move (150) steps" alt="point in direction (45); set (flat line ends) to (True); set pen size to (20); pen down; move (150) steps" class="ms-4"/><br /> The light blue `set` block is in the Sensing palette, where it looks like <img src="/img/1-introduction/vid-cap.png" title="set (video capture) to ( )" alt="set (video capture) to ( )"/>. Just click once in the hexagonal slot to get True (the green check box). If you're not sure what difference the "flat line ends" makes, try clicking the hexagonal slot again to run the script with that option False. And of course you can change all the numbers, or have your program pick random numbers.</li>
 
-<li><strong>Color families.</strong> Click the file menu icon and select "Libraries..." Then, find the "Colors and Crayons" library and click "Import."<br /> <img src="/img/1-introduction/libs.png" title="Snap! file menu, highlighting &quot;Libraries...&quot;" alt="Snap! file menu, highlighting &quot;Libraries...&quot;" class="ms-4"/> <img src="/img/1-introduction/color-lib.png" title="Import library dialog box with &quot;Colors and Crayons&quot; library highlighted" alt="Import library dialog box with &quot;Colors and Crayons&quot; library highlighted" class="ms-4" height="350px"/><br /> In the Pen menu you'll find the <code>set pen to crayon</code> block. Computers can display billions of colors, but unless you have to match the paint on your wall very precisely, finding your way through all those colors may be more trouble than it's worth. The crayon library, just like a box of crayons, gives you a small set of vibrant colors, arranged in families. So if you want a lot of browns in your picture, you could pick a random number between 30 and 39.<br /> <img src="/img/1-introduction/brown.png" title="Set pen to crayon block with menu of color families, selecting &quot;browns&quot; and showing submenu of ten brownish named colors, highlighting &quot;34 chestnut #954535&quot;" alt="Set pen to crayon block with menu of color families, selecting &quot;browns&quot; and showing submenu of ten brownish named colors, highlighting &quot;34 chestnut #954535&quot;" class="ms-4"/></li>
+<li><strong>Color families.</strong> Click the file menu icon and select "Libraries..." Then, find the "Colors and Crayons" library and click "Import."<br /> <img src="/img/1-introduction/libs.png" title="Snap! file menu, highlighting &quot;Libraries...&quot;" alt="Snap! file menu, highlighting &quot;Libraries...&quot;" class="ms-4"/> <img src="/img/1-introduction/color-lib.png" title="Import library dialog box with &quot;Colors and Crayons&quot; library highlighted" alt="Import library dialog box with &quot;Colors and Crayons&quot; library highlighted" class="ms-4" height="350px"/><br /> In the Pen menu you'll find the `set pen to crayon` block. Computers can display billions of colors, but unless you have to match the paint on your wall very precisely, finding your way through all those colors may be more trouble than it's worth. The crayon library, just like a box of crayons, gives you a small set of vibrant colors, arranged in families. So if you want a lot of browns in your picture, you could pick a random number between 30 and 39.<br /> <img src="/img/1-introduction/brown.png" title="Set pen to crayon block with menu of color families, selecting &quot;browns&quot; and showing submenu of ten brownish named colors, highlighting &quot;34 chestnut #954535&quot;" alt="Set pen to crayon block with menu of color families, selecting &quot;browns&quot; and showing submenu of ten brownish named colors, highlighting &quot;34 chestnut #954535&quot;" class="ms-4"/></li>
 
 <img src="/img/1-introduction/1024px-Suprematist_Composition_-_Kazimir_Malevich.jpg" title="painting-by-Malevich" alt="painting-by-Malevich" class="float-end" height="180"/>
 
@@ -214,7 +214,7 @@ Gamal: I know ours don't have to look like the original, but I really like that 
 
 <div>
 
-Betsy: I bet we can use the idea of drawing really thick lines <em>without</em> using <code>flat line ends</code> and get interesting results:
+Betsy: I bet we can use the idea of drawing really thick lines <em>without</em> using `flat line ends` and get interesting results:
 
 </div>
 

@@ -24,11 +24,11 @@ Change <strong>Follower</strong>'s code to point towards <strong>Leader</strong>
 
 <li>Select <strong>Follower</strong> by clicking its button below the stage.</li>
 
-<li>Replace the <code>forever</code> block with a <code>repeat until</code> block.</li>
+<li>Replace the `forever` block with a `repeat until` block.</li>
 
 <li>
 
-Drag <img src="/img/blocks/touching.png" title="touching ()?" alt="touching ()?"/> into the hexagonal space in the <code>repeat until</code> block. Set it to repeat until it is <code>touching</code> <strong>Leader</strong>.<br />
+Drag <img src="/img/blocks/touching.png" title="touching ()?" alt="touching ()?"/> into the hexagonal space in the `repeat until` block. Set it to repeat until it is `touching` <strong>Leader</strong>.<br />
 
 ::: endnote
 <a href="#hint-touching" data-bs-toggle="collapse" title="Click for a video of this code being built.">Click for a video of this code being built.</a>
@@ -68,7 +68,7 @@ point towards (Leader)
 
 </li>
 
-<li>Do the same for <strong>Leader</strong>. Change its code to follow your mouse only until it is <code>touching</code> <strong>Follower</strong>.</li>
+<li>Do the same for <strong>Leader</strong>. Change its code to follow your mouse only until it is `touching` <strong>Follower</strong>.</li>
 
 <li>
 
@@ -95,7 +95,7 @@ So far, <strong>Follower</strong> <em>points </em>toward <strong>Leader</strong>
 Add a line of code to <strong>Follower</strong>'s script so that it chases <strong>Leader</strong>. Here's the idea:<br />
 
 ::: sidenote
-Fill the input slot in the <code>move</code> block with a small number so <strong>Follower</strong> doesn't catch <strong>Leader</strong> too quickly.
+Fill the input slot in the `move` block with a small number so <strong>Follower</strong> doesn't catch <strong>Leader</strong> too quickly.
 :::
 
 <img src="/img/1-introduction/move-tiny.png" title="when green flag clicked:
@@ -118,7 +118,7 @@ move () steps ← Comment: Type a small value in this empty input slot.
 
 
 
-<li>Experiment. What happens if the input to <code>move</code> is 0?</li>
+<li>Experiment. What happens if the input to `move` is 0?</li>
 
 </ol>
 
@@ -136,7 +136,7 @@ move () steps ← Comment: Type a small value in this empty input slot.
 
 ::: sidenoteBig
 ::: pseudop
-The language used on the AP Exam doesn't allow spaces in names of inputs (such as <var>number of fish</var>) or in programmer-defined procedures (such as <code>mouse y</code>, which isn't built into their language). So this example translates them to
+The language used on the AP Exam doesn't allow spaces in names of inputs (such as <var>number of fish</var>) or in programmer-defined procedures (such as `mouse y`, which isn't built into their language). So this example translates them to
 
 ```{=html}
 <pre class="inline">numFish</pre>

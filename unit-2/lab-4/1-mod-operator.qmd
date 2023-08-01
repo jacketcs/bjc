@@ -1,5 +1,5 @@
 ---
-title: "Page 1: The <code>Mod</code> Operator"
+title: "Page 1: The `Mod` Operator"
 subtitle: "Unit 2, Lab 4, Page 1"
 order: 1
 ---
@@ -46,7 +46,7 @@ inputs for the first number.</li>
 :::
 
 ::: takeNote
-The <code>mod</code> block <strong>reports the remainder</strong> when
+The `mod` block <strong>reports the remainder</strong> when
 the first input is divided by the second. For example,
 <img src="/img/1-introduction/17-mod-5.png" title="(17) mod (5)" alt="(17) mod (5)"/>
 reports 2 because when 17 is divided by 5, the remainder is 2. When one
@@ -63,7 +63,7 @@ inputs to the mod function. So you won't see any negative numbers used
 with mod on the exam.
 :::
 
-<strong>The <code>mod</code> operator:</strong> The expression
+<strong>The `mod` operator:</strong> The expression
 <img src="/img/1-introduction/17-mod-5.png" title="(17) mod (5)" alt="(17) mod (5)" class="inline py-0"/>
 would be written as
 
@@ -71,7 +71,7 @@ would be written as
 <pre class="inline">17 MOD 5</pre>
 ```
 on the exam. If you see an expression with variables as input to
-<code>mod</code>, such as
+`mod`, such as
 
 ```{=html}
 <pre class="inline">a MOD b</pre>
@@ -138,8 +138,8 @@ AAP-2.L.2
 <strong>Order of operations:</strong> In a block language, the nesting
 of blocks determines the order of operations. For example, in
 <img src="/img/6-computers/3-times(5+4).png" title="3 × (5 + 4)" alt="3 × (5 + 4)" class="inline py-0"/>
-you can <em>see</em> that the <code>+</code> block is an input to the
-<code>×</code> block, so the expression means 3×(5+4). Similarly,
+you can <em>see</em> that the `+` block is an input to the
+`×` block, so the expression means 3×(5+4). Similarly,
 <img src="/img/6-computers/(3-times-5)+4.png" title="(3 × 5) + 4" alt="(3 × 5) + 4" class="inline py-0"/>
 means (3×5)+4. In Snap<em>!</em>, it's as if there are parentheses
 around <em>every</em> operation. But in text languages, you can write
@@ -148,7 +148,7 @@ around <em>every</em> operation. But in text languages, you can write
 <pre class="inline">3 * 4 + 5</pre>
 ```
 without parentheses, so they need the rules you learn in math class
-(multiplication before addition, and so on). The <code>mod</code>
+(multiplication before addition, and so on). The `mod`
 operator is like multiplication and division; it happens <em>before</em>
 addition and subtraction. So for example,
 
@@ -168,19 +168,19 @@ means
 <ol start="3">
 
 ::: sidenote
-In a later lab, you can use your <code>even?</code> block to draw a
+In a later lab, you can use your `even?` block to draw a
 <a href="/unit-3/lab-1/4-brick-wall.html" title="Brick Wall">brick
 wall</a> because the even and odd numbered rows are different. <br />
 <img src="/img/abstraction/new-brickwall/wall.png" title="Sample image of brick wall" alt="Sample image of brick wall" class="inline"/>
 :::
 
-<li>Use <code>mod</code> to build a
+<li>Use `mod` to build a
 <img src="/img/2-complexity/divisible-by.png" title="is () divisible by () ?" alt="is () divisible by () ?" class="py-0"/>
 predicate that tests for divisibility.<br />
 <img src="/img/2-complexity/15-divisible-by-3-reporting-true.png" title="is (15) divisible by (3) ? reporting true" alt="is (15) divisible by (3) ? reporting true" class="ms-4"/>
 <img src="/img/2-complexity/15-divisible-by-6-reporting-false.png" title="is (15) divisible by (6) ? reporting false" alt="is (15) divisible by (6) ? reporting false" class="ms-4"/></li>
 
-<li>Use this <code>divisible by?</code> predicate to build a predicate
+<li>Use this `divisible by?` predicate to build a predicate
 that tests whether its input is even (divisible by 2).<br />
 <img src="/img/2-complexity/even--22-reporting-true.png" title="even? (-22) reporting true" alt="even? (-22) reporting true" class="ms-4"/>
 <img src="/img/2-complexity/even-7-reporting-false.png" title="even? (7) reporting false" alt="even? (7) reporting false" class="ms-4"/></li>
@@ -265,9 +265,9 @@ turn clockwise(90)
 :::
 
 <p>As in Snap<em>!</em>, if the condition
-<code>(</code><var>size</var><code>) \> 15</code> is <code>true</code>,
-the code inside the <code>if</code> statement runs; if the condition is
-<code>false</code>, the code does not run.</p>
+`(`<var>size</var>`) \> 15` is `true`,
+the code inside the `if` statement runs; if the condition is
+`false`, the code does not run.</p>
 :::
 
 ::: forYouToDo
@@ -410,7 +410,7 @@ Remainders are always whole numbers.
 
 ::: feedback
 ```         
-<code>Mod</code> gives you the remainder, not the quotient.
+`Mod` gives you the remainder, not the quotient.
 ```
 :::
 :::
@@ -454,7 +454,7 @@ useful.<br />
 </ol>
 :::
 
-<!--<div class="endnote">You can <a href="/unit-2/lab-1/3-importing-exporting.html">import</a> your <code>integer?</code>, <code>between?</code>, and <code>even?</code> predicates into other projects when you need them.</div>-->
+<!--<div class="endnote">You can <a href="/unit-2/lab-1/3-importing-exporting.html">import</a> your `integer?`, `between?`, and `even?` predicates into other projects when you need them.</div>-->
 
 <div class="takeItFurther">
 

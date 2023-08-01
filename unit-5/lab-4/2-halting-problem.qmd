@@ -57,34 +57,34 @@ subcategory of unsolvable problems that include only problems that
 should have a yes/no answer (such as: does my code have a bug?).</p>
 :::
 
-<h3>Assuming That a <code>Halts?</code> Function Exists</h3>
+<h3>Assuming That a `Halts?` Function Exists</h3>
 
 <h4><strong>Making the Assumption</strong></h4>
 
 <p>
 
 ::: sidenote
-We can't show the code inside <code>halts?</code>; we are proving that
+We can't show the code inside `halts?`; we are proving that
 it can't be written at all, no matter what code implements it.
 :::
 
 First, we <em>assume</em> there exists a function called
-<code>halts?</code> that determines whether a given reporter will report
+`halts?` that determines whether a given reporter will report
 a value in a finite time. (If so, we say that the reporter
 <em>halts.</em>) It takes two inputs: a function and an input value for
-that function. It reports <code>true</code> if the function would report
-a value when given that input; it reports <code>false</code> if the
+that function. It reports `true` if the function would report
+a value when given that input; it reports `false` if the
 function would run forever (in an infinite loop).<br />
 <img src="/img/5-algorithms/halts.png" title="halts? (function) (input)" alt="halts? (function) (input)" class="ms-4"/>
 
 </p>
 
-<p>For example, the function <code>round</code> will not run forever
+<p>For example, the function `round` will not run forever
 when given the input <var>7.5</var>; it will report 8.</p>
 
 ::: sidenote
 The gray ring around the input function means that the
-<code>halts?</code> code will treat the input function as data instead
+`halts?` code will treat the input function as data instead
 of running it.
 :::
 
@@ -123,16 +123,16 @@ result in a finite amount of time?</strong>
 </p>
 
 ::: endnote
-<p>The "computer program" is the first input to <code>halts?</code>. The
-"given input" is the second input to <code>halts?</code>. And what
-<code>halts?</code> reports is either <code>true</code> or
-<code>false</code>: yes the "computer program" will halt or no it
+<p>The "computer program" is the first input to `halts?`. The
+"given input" is the second input to `halts?`. And what
+`halts?` reports is either `true` or
+`false`: yes the "computer program" will halt or no it
 won't.</p>
 
-<p>Note that <code>halts?</code> itself must always report a result,
+<p>Note that `halts?` itself must always report a result,
 even if the program it's testing doesn't. This is because we are
 <em>assuming</em> (an assumption we'll show is false) that
-<code>halts?</code> always works---that it always reports an answer.</p>
+`halts?` always works---that it always reports an answer.</p>
 :::
 
 <p>We <em>can</em> answer this question for some <em>specific</em>
@@ -174,9 +174,9 @@ us whether <em>any</em> particular function will report a value for
 
 <li>Describe the process of proof by contradiction.</li>
 
-<li>Describe what the <code>halts?</code> function does.</li>
+<li>Describe what the `halts?` function does.</li>
 
-<li>Describe how you are going use the <code>halts?</code> function in
+<li>Describe how you are going use the `halts?` function in
 this proof by contradiction process.</li>
 
 </ol>
@@ -188,27 +188,27 @@ this proof by contradiction process.</li>
 
 <h3>Showing How This Creates a Contradiction</h3>
 
-<h4><strong>Constructing a Program For Which <code>Halts?</code> Won't
+<h4><strong>Constructing a Program For Which `Halts?` Won't
 Work</strong></h4>
 
 <p>
 
 To prove there can be no such function, we need to create a
 contradiction. We need to show that there has to be at least one
-function and one input to that function for which <code>halts?</code>
+function and one input to that function for which `halts?`
 fails to work the way we assumed it does. So, we can make up a block,
-<code>tester</code>, specifically for the purpose of breaking
-<code>halts?</code>:<br />
+`tester`, specifically for the purpose of breaking
+`halts?`:<br />
 
 ::: sidenoteBig
-Just like the <code>\#</code> and <code>⋮</code> symbols for inputs
-declared to be <em>numbers</em> or <em>lists</em>, the <code>λ</code> is
+Just like the `\#` and `⋮` symbols for inputs
+declared to be <em>numbers</em> or <em>lists</em>, the `λ` is
 not part of the input's name but is a <strong>type hint</strong> that
 was created when selecting the <em>reporter</em> input type:<br />\
 <img src="/img/5-algorithms/input-type-reporter.png" title="selecting the Reporter input type" alt="selecting the Reporter input type" class="ms-4"/><br />
 Recall that selecting an input type changes the appearance of the input
 slot so that it indicates what kind of input is expected. The input slot
-for <code>tester</code> will have a rounded gray ring to indicate that
+for `tester` will have a rounded gray ring to indicate that
 the input should be a reporter:
 <img src="/img/5-algorithms/tester().png" title="tester ()" alt="tester ()" class="inline py-0"/>
 :::
@@ -217,11 +217,11 @@ the input should be a reporter:
 
 </p>
 
-<p>The <code>forever</code> block in this script creates an infinite
-loop. If the <code>tester</code> code ends up in this part of the
-<code>if</code> statement, it will never report anything. So whether
-<code>tester</code> <em>itself</em> will halt depends on the output of
-the <code>halts?</code> predicate in the <code>if</code> statement
+<p>The `forever` block in this script creates an infinite
+loop. If the `tester` code ends up in this part of the
+`if` statement, it will never report anything. So whether
+`tester` <em>itself</em> will halt depends on the output of
+the `halts?` predicate in the `if` statement
 inside it.</p>
 
 <p>The expression
@@ -235,8 +235,8 @@ false."</p>
 ::: endnote
 <img src="/img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff" class="inline"/>
 This <em>is</em> challenging. Stick with it! We are <em>creating a
-contradiction</em> to prove that the <code>halts?</code> function called
-inside <code>tester</code> can't exist.
+contradiction</em> to prove that the `halts?` function called
+inside `tester` can't exist.
 :::
 
 <h4><strong>Using Self-Reference to Lead to Contradiction</strong></h4>
@@ -245,13 +245,13 @@ inside <code>tester</code> can't exist.
 
 To make the situation <em>exactly</em> like what Betsy said ("The
 statement I'm making <em>right now </em>is false."), we'll call
-<code>tester</code> on <em>itself</em>:<br />
+`tester` on <em>itself</em>:<br />
 <img src="/img/5-algorithms/testertester.png" title="tester(tester())" alt="tester(tester())" class="ms-4"/><br />
-Now, the <code>if</code> statement inside the <code>tester</code> block
-will ask if <code>tester</code> will halt (not run forever) if it's
-called with <code>tester</code> as its input. The predicate in the
-<code>if</code> statement will become <code>halts? (tester)
-(tester)</code>.<br />
+Now, the `if` statement inside the `tester` block
+will ask if `tester` will halt (not run forever) if it's
+called with `tester` as its input. The predicate in the
+`if` statement will become `halts? (tester)
+(tester)`.<br />
 
 ::: todo
 I took out class="ms-4" on this picture so that it'd fit in the
@@ -289,7 +289,7 @@ loops infinitely.
 <p>When we call
 <img src="/img/5-algorithms/testertester.png" title="tester(tester())" alt="tester(tester())" class="inline"/>,
 we run into the contradiction. To see how, look back at the
-<code>tester</code> definition:<br />
+`tester` definition:<br />
 <img src="/img/5-algorithms/tester-halting.png" title="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(true)}}" alt="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(true)}}" class="ms-4"/></p>
 
 <p>
@@ -302,34 +302,34 @@ page 1. Consider the two possible cases:
 
 <li>If
 <img src="/img/5-algorithms/halts-tester-tester-reporting-true.png" title="halts (tester) (tester) reports true" alt="halts (tester) (tester) reports true" class="inline"/>
-then <code>tester</code> will take the first branch of the
-<code>if</code>, and so it will loop forever. That means
+then `tester` will take the first branch of the
+`if`, and so it will loop forever. That means
 <img src="/img/5-algorithms/testertester.png" title="tester(tester())" alt="tester(tester())" class="inline"/>
-<em>won't</em> halt, and so <code>halts?</code> gave the wrong
+<em>won't</em> halt, and so `halts?` gave the wrong
 answer.</li>
 
 <li>If
 <img src="/img/5-algorithms/halts-tester-tester-reporting-false.png" title="halts (tester) (tester) reports false" alt="halts (tester) (tester) reports false" class="inline"/>
-then <code>tester</code> will take the <code>else</code> branch and
+then `tester` will take the `else` branch and
 report "It doesn't matter what value is reported." That means
 <img src="/img/5-algorithms/testertester.png" title="tester(tester())" alt="tester(tester())" class="inline"/>
-<em>will</em> halt, and so <code>halts?</code> is wrong again.</li>
+<em>will</em> halt, and so `halts?` is wrong again.</li>
 
 </ol>
 
 </p>
 
 ::: endnote
-It doesn't matter <em>what</em> value <code>tester</code> reports, just
+It doesn't matter <em>what</em> value `tester` reports, just
 that it reports <em>some</em> value, but it <em>does</em> matter what
-value <code>halts?</code> reports.
+value `halts?` reports.
 :::
 
 ::: takeNote
-<p>No matter what <code>halts?</code> reports, it will always disagree
+<p>No matter what `halts?` reports, it will always disagree
 with itself in a program like this. <strong>This contradiction (this
 logical impossibility) means that the assumption that it's possible
-write <code>halts?</code> has to be wrong</strong>. This isn't just a
+write `halts?` has to be wrong</strong>. This isn't just a
 claim about what will happen in Snap<em>!</em>. The language you use to
 explore a computational problem can impact the clarity or readability of
 your code but not whether a solution to a problem exists. Even with
@@ -351,10 +351,10 @@ partner understand:
 <ol>
 
 <li>Everything from exercise 1 about proof by contradiction, what
-<code>halts?</code> does, and how <code>halts?</code> is going to be
+`halts?` does, and how `halts?` is going to be
 used in the proof</li>
 
-<li>The basics of how the <code>tester</code> function behaves (for
+<li>The basics of how the `tester` function behaves (for
 <em>any</em> input function)</li>
 
 <li>How calling

@@ -6,7 +6,7 @@ order: 3
 
 ::: todo
 <p><strong>Purpose (do/learn; why this/here):</strong> Extend the ADT by
-adding a <code>date</code> ADT, adapting the <code>contact</code> ADT to
+adding a `date` ADT, adapting the `contact` ADT to
 accept it, and adding more helper blocks.</p>
 
 <p>Can we cut all the commented out text on this page? --MF, 7/22/19</p>
@@ -55,7 +55,7 @@ Create an ADT to manage three data points for each date:
 
 <ol>
 
-<li>Create a <code>date</code> <em>constructor</em> that accepts this
+<li>Create a `date` <em>constructor</em> that accepts this
 data as input and then reports a date as a list of three items. <br />
 <img src="/img/3-lists/date-constructor-reporting.png" title="date (July) (9) (2005) reporting {July, 9, 2005}" alt="date (July) (9) (2005) reporting {July, 9, 2005}" class="ms-4"/></li>
 
@@ -74,15 +74,15 @@ selectors.</li>
 
 <li>
 
-Integrate your <code>date</code> ADT into the <code>contact</code> ADT.
+Integrate your `date` ADT into the `contact` ADT.
 
 <ul>
 
-<li>Edit the <code>contact</code> constructor block definition to accept
-a birthdate as a list by using the <code>date</code> constructor. <br />
+<li>Edit the `contact` constructor block definition to accept
+a birthdate as a list by using the `date` constructor. <br />
 <img src="/img/3-lists/contact-constructor-with-date-reporting.png" title="contact with name: (Betsy) address: (123 Main St., New York NY 10001) phone: (212-555-1234) birthdate: (date (July) (9) (2005)) reporting {Betsy, 123 Main St., New York NY 10001, 212-555-1234, {July, 9, 2005}}" alt="contact with name: (Betsy) address: (123 Main St., New York NY 10001) phone: (212-555-1234) birthdate: (date (July) (9) (2005)) reporting {Betsy, 123 Main St., New York NY 10001, 212-555-1234, {July, 9, 2005}}" class="ms-4"/></li>
 
-<li>Create a <code>birthdate from contact</code> <em>selector</em> to
+<li>Create a `birthdate from contact` <em>selector</em> to
 retrieve the contact birthdate from the inputted contact.<br />
 <img src="/img/3-lists/birthdate-from-contact-reporting.png" title="birthdate from contact: (contact with name: (Betsy) address: (123 Main St., New York NY 10001) phone: (212-555-1234) birthdate: (date (July) (9) (2005))) reporting {July, 9, 2005}" alt="birthdate from contact: (contact with name: (Betsy) address: (123 Main St., New York NY 10001) phone: (212-555-1234) birthdate: (date (July) (9) (2005))) reporting {July, 9, 2005}" class="ms-4"/></li>
 
@@ -126,7 +126,7 @@ that reports a list of the user's answers to these prompts:
 
 <img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"/>
 
-<li><strong>Debug.</strong> Clear your <code>contact list</code>, and
+<li><strong>Debug.</strong> Clear your `contact list`, and
 add a new few contacts with birthdays. Fix any problems.</li>
 
 </ol>

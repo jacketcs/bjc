@@ -52,8 +52,8 @@ make.</li>
 </p>
 
 ::: endnote
-<p>The <code>by intervals of</code> input to the <code>group
-table</code> block should be left empty when, as in this example, the
+<p>The `by intervals of` input to the `group
+table` block should be left empty when, as in this example, the
 field on which you're grouping is text rather than numbers. Later on
 this page, you'll see how to use intervals in graphing.</p>
 :::
@@ -82,12 +82,12 @@ for example questions for which grouping is helpful.</a>
 <li>Which brand in the table has the most models listed?</li>
 
 <li>How many 2010 Hyundais are in the database? (This requires looking
-inside one of the lists in column C, so you'd need two <code>keep</code>
+inside one of the lists in column C, so you'd need two `keep`
 functions.)</li>
 
 </ul>
 
-<p><code>Pipe</code> may be useful for questions that require looking
+<p>`Pipe` may be useful for questions that require looking
 inside the inner lists of the grouped data (in column C).</p>
 :::
 :::
@@ -101,7 +101,7 @@ inside the inner lists of the grouped data (in column C).</p>
 
 <p>
 
-The <code>bar chart</code> function works like the <code>group</code>
+The `bar chart` function works like the `group`
 function, but with special features for numeric data: it allows you to
 select upper and lower limits of the data; you can have a range of
 values in one bucket, such as values 6--10, values 11--15, and so on;
@@ -132,7 +132,7 @@ anything larger. For example, the group numbered 15 includes values from
 10.0001 (or anything more than 10) to exactly 15.</p>
 :::
 
-<p>You can plot the data from <code>bar chart</code> to visualize
+<p>You can plot the data from `bar chart` to visualize
 them:<br />
 <img src="/img/5-algorithms/plot-cars-histogram.png" title="plot bar chart (bar chart of table (data of table (cars)) grouped by field: (9) from: (5) to: (50) interval: (5)) bars at x: (-200) y: (-100) width: (400) height: (200)" alt="plot bar chart (bar chart of table (data of table (cars)) grouped by field: (9) from: (5) to: (50) interval: (5)) bars at x: (-200) y: (-100) width: (400) height: (200)" class="ms-4"/>
 <img src="/img/5-algorithms/plot-cars-histogram-stage.png" title="bar graph running from 0 to 50 on the horizontal axis and from 0 to 2050 on the vertical axis with bars indicating 0 between 0 and 5, about 300 between 5 and 10, about 1500 between 10 and 15, about 2000 between 15 and 30, about 800 between 20 and 25, about 200 between 25 and 30, and 0 beyond 30" alt="bar graph running from 0 to 50 on the horizontal axis and from 0 to 2050 on the vertical axis with bars indicating 0 between 0 and 5, about 300 between 5 and 10, about 1500 between 10 and 15, about 2000 between 15 and 30, about 800 between 20 and 25, about 200 between 25 and 30, and 0 beyond 30" class="ms-4 noshadow"/></p>

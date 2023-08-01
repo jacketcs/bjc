@@ -29,23 +29,23 @@ gifffer: true
 
 <li><strong>Choose the color</strong>, in this case red for Lists.</li>
 
-<li><strong>Type the title</strong> for your block: <code>gossip response</code>.</li>
+<li><strong>Type the title</strong> for your block: `gossip response`.</li>
 
 <li><strong>Select the shape and click OK.</strong> For this block, choose the oval <em>reporter</em> shape because you want it to <i>report</i> a value (the chosen response) to another block.</li>
 
 </ol>
 
 ::: endnote
-<p>Because you chose the reporter shape, the block editor opens with a <img src="/img/blocks/report.png" title="report" alt="report" class="inline py-0"/> block already attached to the hat block. Whatever input you give to <code>report</code> will become the value reported by your new block.</p>
+<p>Because you chose the reporter shape, the block editor opens with a <img src="/img/blocks/report.png" title="report" alt="report" class="inline py-0"/> block already attached to the hat block. Whatever input you give to `report` will become the value reported by your new block.</p>
 :::
 
 ### <strong>Coding the Block's Script</strong>
 
 <ol type="a" start="5">
 
-<li><strong>Drag in the blocks you need.</strong> For your new block, use <img src="/img/1-introduction/list.png" title="the list block" alt="the list block"/> and <img src="/img/1-introduction/item.png" title="item(1) of ()" alt="item(1) of ()"/>. Use the value reported by <code>list</code> as an input to <code>item</code>.</li>
+<li><strong>Drag in the blocks you need.</strong> For your new block, use <img src="/img/1-introduction/list.png" title="the list block" alt="the list block"/> and <img src="/img/1-introduction/item.png" title="item(1) of ()" alt="item(1) of ()"/>. Use the value reported by `list` as an input to `item`.</li>
 
-<li><strong>Snap the blocks together.</strong> The code's <em>structure</em> will be just like the code inside <code>who</code>, <code>does what</code>, and <code>who 2</code>. <!--<div class="sidenote">If you forget what's inside <code>who</code>, you can edit it and just leave the editor open for you to see as you work on your new block.  </div>--></li>
+<li><strong>Snap the blocks together.</strong> The code's <em>structure</em> will be just like the code inside `who`, `does what`, and `who 2`. <!--<div class="sidenote">If you forget what's inside `who`, you can edit it and just leave the editor open for you to see as you work on your new block.  </div>--></li>
 
 <li>
 
@@ -53,9 +53,9 @@ gifffer: true
 
 <ul>
 
-<li>For this project, click the down-arrow in <code>item</code> to change "1" to "random".</li>
+<li>For this project, click the down-arrow in `item` to change "1" to "random".</li>
 
-<li>Then fill <code>list</code> with phrases like "Guess what," "I heard," or "Who cares!"</li>
+<li>Then fill `list` with phrases like "Guess what," "I heard," or "Who cares!"</li>
 
 </ul>
 
@@ -116,7 +116,7 @@ RETURN(2 * x)
 RETURN(2 * x)
 }"/>.
 
-<p>Many languages (and the AP CS Principles Exam) use <code>return</code> instead of <code>report</code> as the name of the command to give a value back at the end of a function call.</p>
+<p>Many languages (and the AP CS Principles Exam) use `return` instead of `report` as the name of the command to give a value back at the end of a function call.</p>
 
 </li>
 <li>
@@ -140,27 +140,27 @@ The exam uses "value of a procedure" to mean the value the procedure returns whe
 
 <img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="float-end"/>
 
-<li>Test your custom <code>gossip response</code> block by clicking it several times. It should behave like the <code>who</code>, <code>does what</code>, and <code>who 2</code> blocks. Debug any problems before moving on.</li>
+<li>Test your custom `gossip response` block by clicking it several times. It should behave like the `who`, `does what`, and `who 2` blocks. Debug any problems before moving on.</li>
 
 ::: sidenote
 Review how to edit a block in <a href="/unit-1/lab-2/3-customizing.html" title="Customizing and Debugging">Unit 1 Lab 2 Page 2: Customizing and Debugging</a>, if needed.
 :::
 
-<li>Use your new block: Edit <code>gossip 2</code>, and insert <code>gossip response</code> in place of the text "Oh, but...."<br /> <img src="/img/1-introduction/gossip2-definition.png" title="gossip 2 {
+<li>Use your new block: Edit `gossip 2`, and insert `gossip response` in place of the text "Oh, but...."<br /> <img src="/img/1-introduction/gossip2-definition.png" title="gossip 2 {
 report (join (gossip response) ( ) (who 2) ( ) (does what) ( ) (who) )
 }" alt="gossip 2 {
 report (join (gossip response) ( ) (who 2) ( ) (does what) ( ) (who) )
 }" class="ms-4"/></li>
 
 ::: endnote
-<p><a href="#hint-plus-signs" data-bs-toggle="collapse" title="Why do I see plus signs around gossip2 in Snap! but they're not in this picture?">Why do I see plus signs around <code>gossip 2</code> in Snap<em>!</em> but they're not in this picture?</a></p>
+<p><a href="#hint-plus-signs" data-bs-toggle="collapse" title="Why do I see plus signs around gossip2 in Snap! but they're not in this picture?">Why do I see plus signs around `gossip 2` in Snap<em>!</em> but they're not in this picture?</a></p>
 
 ::: {#hint-plus-signs .collapse}
 Normally, when you are using the Block Editor, you see plus signs because you have to click on them to add inputs to your blocks. But to show you the finished code here, it looks cleaner without the plus signs.
 :::
 :::
 
-<li>Test and debug <code>gossip 2</code> also.</li>
+<li>Test and debug `gossip 2` also.</li>
 
 <li>Then test the whole program by clicking script D several times, and fix any bugs. <img src="/img/icons/save-mini.png" title="Save your work" alt="Save your work" class="inline py-0"/></li>
 

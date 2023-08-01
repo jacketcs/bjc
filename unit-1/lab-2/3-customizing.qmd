@@ -33,7 +33,7 @@ Open your U1L2-Gossip project. Edit these three reporter blocks to change the ph
 
 ::: endnote
 ::: todo
-Brian, you need to redo this video with the plus signs on and with the space before the 2 in <code>who 2</code> (start from the starter file, please). --MF, 6/15/20
+Brian, you need to redo this video with the plus signs on and with the space before the 2 in `who 2` (start from the starter file, please). --MF, 6/15/20
 :::
 
 <a href="#hint-edit-block" data-bs-toggle="collapse" title="Click for a video of these steps of how to edit a block.">Click for a video of these steps of how to edit a block.</a>
@@ -55,7 +55,7 @@ Brian, you need to redo this video with the plus signs on and with the space bef
 <a href="#hint-report" data-bs-toggle="collapse" title="Why do these blocks use report? Why not just use say?">Why do these blocks use <img src="/img/blocks/report.png" title="report ()" alt="report ()" class="inline py-0"/>? Why not just use <img src="/img/blocks/say-empty-full-size.png" title="say ()" alt="say ()"/>?</a>
 
 ::: {#hint-report .collapse}
-<p>The <code>report</code> and <code>say</code> blocks mean very different things. <code>Report</code> tells something to the computer, and that value can be used as input to another block, such as the <code>join</code> block inside <code>gossip</code>. <code>Say</code> just shows a value to the user in a speech bubble.</p>
+<p>The `report` and `say` blocks mean very different things. `Report` tells something to the computer, and that value can be used as input to another block, such as the `join` block inside `gossip`. `Say` just shows a value to the user in a speech bubble.</p>
 :::
 :::
 
@@ -64,7 +64,7 @@ Brian, you need to redo this video with the plus signs on and with the space bef
 
 <ul>
 
-<!--<div class="index-term" id="report</code>"></div>-->
+<!--<div class="index-term" id="report`"></div>-->
 
 <li>
 
@@ -89,8 +89,8 @@ A <strong>list</strong> is an ordered sequence of items. You've seen this exampl
 
 ::: forYouToDo
 ```{=html}
-<!--<div class="index-term" id="list</code>"></div>
-<div class="index-term" id="join</code>"></div>-->
+<!--<div class="index-term" id="list`"></div>
+<div class="index-term" id="join`"></div>-->
 ```
 <ol start="2">
 
@@ -109,7 +109,7 @@ A <strong>list</strong> is an ordered sequence of items. You've seen this exampl
 ::: {.assessment-data type="multiplechoice" identifier="Which of the following sentences could be reported by gossip?" hasinlinefeedback="true" maxchoices="4" responseidentifier="ri1" shuffle="true"}
 ::: prompt
 
-Which <em><strong>two</strong></em> of the following sentences could be reported by <code>gossip</code>?<br /> <img src="/img/1-introduction/gossip-definition.png" title="gossip: (report (join (who) ( ) (does what) ( ) (who)))" alt="gossip: (report (join (who) ( ) (does what) ( ) (who)))" class="ms-4"/>
+Which <em><strong>two</strong></em> of the following sentences could be reported by `gossip`?<br /> <img src="/img/1-introduction/gossip-definition.png" title="gossip: (report (join (who) ( ) (does what) ( ) (who)))" alt="gossip: (report (join (who) ( ) (does what) ( ) (who)))" class="ms-4"/>
 
 ::: endnote
 For reference:<br > <img src="/img/1-introduction/who-block-definition.png" title="who reporter block definition: report (item (random) of (list (Señora) (Ms. C) (my cat) (Hannah) (Jake)))" alt="who reporter block definition: report (item (random) of (list (Señora) (Ms. C) (my cat) (Hannah) (Jake)))" class="ms-4" height="77px"/> <img src="/img/1-introduction/does-what-block-definition.png" title="does what reporter block definition: report (item (random) of (list (listened to) (loves) (ran away from) (helped) (is in a band with)))" alt="does what reporter block definition: report (item (random) of (list (listened to) (loves) (ran away from) (helped) (is in a band with)))" class="ms-4" height="89px"/>
@@ -203,9 +203,9 @@ Fix any issues with your costumes.
 ### <strong>Adjusting a Costume</strong>
 
 ```{=html}
-<!--<div class="index-term" id="set size</code>"></div>
-<div class="index-term" id="go to x y</code>"></div>
-<div class="index-term" id="point in direction</code>"></div>-->
+<!--<div class="index-term" id="set size`"></div>
+<div class="index-term" id="go to x y`"></div>
+<div class="index-term" id="point in direction`"></div>-->
 ```
 <ul>
 
@@ -231,6 +231,10 @@ Fix any issues with your costumes.
 </li>
 
 </ol>
+:::
+
+::: endnote
+Blue "If There Is Time" boxes have optional activities that are not required for this course. If you finish everything else on the page early, try these instead of jumping ahead to the next page. <strong>If you have a smartphone, you'll definitely want to click this one.</strong>
 :::
 
 ::: ifTime

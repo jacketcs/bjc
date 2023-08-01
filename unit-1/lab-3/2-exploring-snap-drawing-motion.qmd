@@ -24,9 +24,9 @@ Then, experiment with the last script (shown right):<br /> <img src="/img/1-intr
 
 <ol>
 
-<li>Experiment with a <em>quarter</em> turn (<code>turn</code> 90 degrees instead of 180). Adjust the number of repetitions (the number you give to <code>repeat</code>) until you get the sprite to finish facing the same way it started.<br /> <img title="animation of drawing an asterisk with four spokes" alt="animation of drawing an asterisk with four spokes" class="ms-4" data-gifffer="/img/1-introduction/U1ImageVideoAddendum_img/U1L3P2-AngleExperiment-4.gif" height="150"/></li>
+<li>Experiment with a <em>quarter</em> turn (`turn` 90 degrees instead of 180). Adjust the number of repetitions (the number you give to `repeat`) until you get the sprite to finish facing the same way it started.<br /> <img title="animation of drawing an asterisk with four spokes" alt="animation of drawing an asterisk with four spokes" class="ms-4" data-gifffer="/img/1-introduction/U1ImageVideoAddendum_img/U1L3P2-AngleExperiment-4.gif" height="150"/></li>
 
-<li>Experiment with a <em>tenth</em> of a turn (<code>turn</code> 36 degrees). What input must you give to <code>repeat</code> to get the sprite to finish facing the same way it started?</li>
+<li>Experiment with a <em>tenth</em> of a turn (`turn` 36 degrees). What input must you give to `repeat` to get the sprite to finish facing the same way it started?</li>
 
 <li><em>Without trying it on the computer,</em> figure out what turning angle to use for a five-spoke asterisk. Make sure your partner agrees.</li>
 
@@ -60,7 +60,7 @@ A 360° turn is a full turn. Half of that (180°) is a half turn. A fourth of 36
 :::
 
 ```{=html}
-<!--                        <li>Try completely removing the second <code>move</code> block (right-click or control-click and then choose "delete"). Try some of the turning experiments again.</li>
+<!--                        <li>Try completely removing the second `move` block (right-click or control-click and then choose "delete"). Try some of the turning experiments again.</li>
 -->
 ```
 <img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="inline"/>
@@ -70,16 +70,16 @@ A 360° turn is a full turn. Half of that (180°) is a half turn. A fourth of 36
 ::: forYouToDo
 <ol start="6">
 
-<li>Try different negative input values for the <code>move</code> <var>-100</var> <code>steps</code> block (first -90, then -50, then -10), and do some of the turning experiments (above) with each value. Does this change the values needed for the <code>repeat</code> or <code>turn</code> blocks? These pictures are called "pinwheels."</li>
+<li>Try different negative input values for the `move` <var>-100</var> `steps` block (first -90, then -50, then -10), and do some of the turning experiments (above) with each value. Does this change the values needed for the `repeat` or `turn` blocks? These pictures are called "pinwheels."</li>
 
 ```{=html}
 <!--Commenting out for now. --MF, 9/2/19
-<li><img class="inline" src="/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Fill in the blanks:  A pinwheel with <code>move -90 steps</code> looks almost like a(n) ________, but a pinwheel with <code>move -10 steps</code> looks almost like a(n) _________.</li>
-<li>Find the <code>pinwheel, ( ) spokes</code> block, and try a three-spoke pinwheel with it.  Are the colored angles the same as for the three-spoke asterisk?</li>
+<li><img class="inline" src="/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Fill in the blanks:  A pinwheel with `move -90 steps` looks almost like a(n) ________, but a pinwheel with `move -10 steps` looks almost like a(n) _________.</li>
+<li>Find the `pinwheel, ( ) spokes` block, and try a three-spoke pinwheel with it.  Are the colored angles the same as for the three-spoke asterisk?</li>
 <li>How many degrees has the sprite turned altogether when drawing a pinwheel?  (Just watch the turning, not the moving.)</li>
 <li>
 <img class="inline" src="/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> 
-Find the blocks <code>all3</code> and <code>slide</code> at the bottom of the scripting area.  Try them with an input of <code>3</code>.  Which animation do you find more helpful in explaining turning angles in triangles?
+Find the blocks `all3` and `slide` at the bottom of the scripting area.  Try them with an input of `3`.  Which animation do you find more helpful in explaining turning angles in triangles?
 </li>-->
 ```
 <li>
@@ -110,7 +110,7 @@ Make a copy of the three-branch script you built (right-click or control-click t
 
 <ol style="list-style-type:lower-roman;">
 
-<li>In the copy, remove the <code>move</code> <var>-100</var> <code>steps</code> block.</li>
+<li>In the copy, remove the `move` <var>-100</var> `steps` block.</li>
 
 <li>What does this new script do?</li>
 
@@ -126,7 +126,7 @@ Make another copy of the three-branch script you built, and then:
 
 <li>Change it to a four-branch script.</li>
 
-<li>Remove the <code>move</code> <var>-100</var> <code>steps</code> block again.</li>
+<li>Remove the `move` <var>-100</var> `steps` block again.</li>
 
 <li>What does this new script do?</li>
 
@@ -148,7 +148,7 @@ Make another copy of the three-branch script you built, and then:
 
 <p>
 
-<a href="#hint-say-for" data-bs-toggle="collapse" title="This animation shows how to use say for to determine the bug in  code that is supposed to draw a rectangle.">This animation</a> shows how to use <code>say for</code> to determine the bug in code that is supposed to draw a rectangle. Notice how <code>say for</code> makes the program pause and gives you information to help you identify the source of error.
+<a href="#hint-say-for" data-bs-toggle="collapse" title="This animation shows how to use say for to determine the bug in  code that is supposed to draw a rectangle.">This animation</a> shows how to use `say for` to determine the bug in code that is supposed to draw a rectangle. Notice how `say for` makes the program pause and gives you information to help you identify the source of error.
 
 ::: {#hint-say-for .collapse}
 <img title="Animation on how to use say for blocks for debugging an erroneous rectangle construction." alt="Animation on how to use say for blocks for debugging an erroneous rectangle construction." class="ms-4" data-gifffer="/img/2-complexity/Debugging/say-for-in-rectangle.gif"/>

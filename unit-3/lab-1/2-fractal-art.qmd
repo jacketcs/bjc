@@ -5,8 +5,8 @@ order: 2
 ---
 
 ::: learn
-<strong>In this project,</strong> you will nest <code>repeat</code>
-blocks inside <code>repeat</code> blocks to generate complex
+<strong>In this project,</strong> you will nest `repeat`
+blocks inside `repeat` blocks to generate complex
 pictures.<br />
 <img src="/img/2-complexity/U2ImageVideoAddendum_img/three-color-sierpinski.png" title="Red triangle with blue children and green grandchildren" alt="Red triangle with blue children and green grandchildren" class="ms-4" height="300"/><br />
 <!--<img class="ms-4" src="/img/2-complexity/U2ImageVideoAddendum_img/RecursiveTriangleSteps.gif"  height="250" alt="Recursive triangle in steps" title="Recursive triangle in steps"/>&nbsp;<img src="/img/2-complexity/U2ImageVideoAddendum_img/RecursiveSquareSteps.gif" height="250" alt="Recursive square in steps" title="Recursive square in steps"/>-->
@@ -32,7 +32,7 @@ other copy to draw a green one half the size of the blue.
 <ul>
 
 <li>To duplicate a script, right-click (or control-click) on the first
-block of the script (in this case, the <code>repeat</code> block) and
+block of the script (in this case, the `repeat` block) and
 choose "duplicate".</li>
 
 <li>Then change the inputs.</li>
@@ -55,7 +55,7 @@ stage.</li>
 
 <li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
 Predict what will happen when you insert the entire script for the blue
-triangle between the <code>move</code> and <code>turn</code> blocks of
+triangle between the `move` and `turn` blocks of
 the code for the red triangle: <br />
 <img src="/img/1-introduction/two-color-sierpinski-code.png" title="repeat (3) {set pen color to (red); move (100) steps; repeat (3) {set pen color to (blue); move (100) steps; turn clockwise (120) degrees}; turn right (120) degrees}" alt="repeat (3) {set pen color to (red); move (100) steps; repeat (3) {set pen color to (blue); move (100) steps; turn clockwise (120) degrees}; turn right (120) degrees}" class="ms-4"/></li>
 
@@ -64,7 +64,7 @@ the code for the red triangle: <br />
 <li>Then build it to see what it does.</li>
 
 <li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>How
-many times does the <code>move 50 steps</code> instruction run and
+many times does the `move 50 steps` instruction run and
 why?</li>
 
 <li>Using the scripts you have, find a way to make this picture. Use

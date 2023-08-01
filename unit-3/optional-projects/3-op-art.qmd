@@ -67,12 +67,12 @@ points.<br />
 
 <ol>
 
-<li>Create a constructor <code>corner</code> that will report a list of
+<li>Create a constructor `corner` that will report a list of
 <em>x</em> and <em>y</em> coordinates of one corner.<br />
 <img src="/img/3-lists/corner-reporting.png" title="corner x:(mouse x) y:(mouse y) reporting {-239, 38}" alt="corner x:(mouse x) y:(mouse y) reporting {-239, 38}" class="ms-4"/></li>
 
-<li>Create two selectors <code>x of corner</code> and <code>y of
-corner</code> that will report either the <em>x</em> or <em>y</em>
+<li>Create two selectors `x of corner` and `y of
+corner` that will report either the <em>x</em> or <em>y</em>
 values for an input <var>corner</var>.<br />
 <img src="/img/3-lists/x-of-corner-reporting.png" title="x of corner: (corner) reporting -239" alt="x of corner: (corner) reporting -239" class="ms-4"/>
 <img src="/img/3-lists/y-of-corner-reporting.png" title="y of corner: (corner) reporting 38" alt="y of corner: (corner) reporting 38" class="ms-4"/></li>
@@ -99,7 +99,7 @@ this value will be the final position of the second corner)</li>
 
 </li>
 
-<li>Now create a <code>rectangle</code> ADT for storing the two opposite
+<li>Now create a `rectangle` ADT for storing the two opposite
 corners of a single rectangle.<br />
 <img src="/img/3-lists/rectangle-reporting.png" title="rectangle, corner1:(corner1) corner2:(corner2){report(list(corner1)(corner2)}" alt="rectangle, corner 1: (current corner 1) corner 2: (current corner 2) reporting {{-239, 38}, {41, -7}}" class="ms-4"/><br />
 <img src="/img/3-lists/corner-1-of-rectangle-reporting.png" title="corner 1 of rectangle reporting {-239, 38}" alt="corner 1 of rectangle reporting {-239, 38}" class="ms-4"/>
@@ -123,17 +123,17 @@ the rectangles that have been drawn.</li>
 
 <li>Your program needs a way to know whether the user is finished
 drawing. Create a global variable <var>drawing done?</var> that will
-store a Boolean value (either <code>true</code> or <code>false</code>)
+store a Boolean value (either `true` or `false`)
 to keep track of the phase of the program (drawing or painting).</li>
 
 ::: todo
 I don't think we need this. --MF, 9/10/18<br />It is initially
-<code>false</code> but when the space bar is pressed---which concludes
-the drawing phase---it is set to <code>true</code>.
+`false` but when the space bar is pressed---which concludes
+the drawing phase---it is set to `true`.
 :::
 
 <li>The program also needs a way to draw a rectangle given its two
-defining corners. Create a <code>draw rectangle</code> block, and test
+defining corners. Create a `draw rectangle` block, and test
 that it correctly draws a rectangle with the input corners.<br />
 <img src="/img/3-lists/draw-rectangle-with-stage.jpg" title="stage showing a rectangle drawn and scripting area showing the script: clear, draw rectangle corner 1: (corner, x:(-139) y:(38)) corner 2: (corner, x:(41) y:(-7))" alt="stage showing a rectangle drawn and scripting area showing the script: clear, draw rectangle corner 1: (corner, x:(-139) y:(38)) corner 2: (corner, x:(41) y:(-7))" class="ms-4"/></li>
 
@@ -191,8 +191,8 @@ state of the mouse?</li>
 and
 <img src="/img/blocks/hide.png" title="hide block" alt="hide block" class="inline"/>
 to improve the efficiency and appearance of your program. The
-<code>warp</code> block allows the drawing to happen quickly, and
-<code>hide</code> hides the sprite.</li>
+`warp` block allows the drawing to happen quickly, and
+`hide` hides the sprite.</li>
 
 </ul>
 :::

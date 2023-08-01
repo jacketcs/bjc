@@ -49,7 +49,7 @@ strategy.
 
 ::: endnote
 There are three sprites with costumes ("too small,"just right," and "too
-big") that are hidden in your project file. Use the <code>show</code>
+big") that are hidden in your project file. Use the `show`
 block in the "Looks" menu to see them.
 :::
 

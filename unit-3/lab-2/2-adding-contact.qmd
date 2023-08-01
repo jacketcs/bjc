@@ -9,7 +9,7 @@ order: 2
 Contact" and "Clear List" buttons in your contact list program.
 <!--develop:
 <ul>
-<li>An <strong>"Add Contact" button</strong> for adding each new contact using the <code>contact</code> constructor</li>
+<li>An <strong>"Add Contact" button</strong> for adding each new contact using the `contact` constructor</li>
 <li>A <strong>"Clear List" button</strong> for emptying the <var>contact list</var> while debugging</li>
 </ul>--></p>
 :::
@@ -42,7 +42,7 @@ CRD-2.C.1, CRD-2.C.4, CRD-2.C.6, CRD-2.D.1, CRD-2.D.2
 
 <p>We use "input" loosely to mean the empty boxes in a block that get
 filled with values. But <strong>input</strong> also means information
-entered into a program by the user, as in the <code>ask and wait</code>
+entered into a program by the user, as in the `ask and wait`
 block. Program input can also come from data tables, sounds, pictures,
 video, or other programs.</p>
 
@@ -52,7 +52,7 @@ on the input.</p>
 :::
 
 <li>Make the script ask the user for contact data and then add that data
-to the <var>contact list</var> using the <code>contact</code>
+to the <var>contact list</var> using the `contact`
 constructor.</li>
 
 ::: narrower
@@ -65,10 +65,10 @@ address, and phone number) separately.
 
 <ul>
 
-<li><strong>You <em>could</em> use several <code>ask</code> and
-<code>answer</code> blocks together with script variables</strong> to
+<li><strong>You <em>could</em> use several `ask` and
+`answer` blocks together with script variables</strong> to
 request and then store each piece of user input until you are ready to
-report them all together using <code>contact</code>.<br />
+report them all together using `contact`.<br />
 <img src="/img/3-lists/contact-constructor-with-variables.png" title="contact with name: (name) address: (address) phone: (phone)" alt="contact with name: (name) address: (address) phone: (phone)" class="ms-4"/></li>
 
 <li><strong><em>Another way</em> that makes for cleaner code is to use
@@ -77,11 +77,11 @@ report them all together using <code>contact</code>.<br />
 and
 <img src="/img/3-lists/ask-phone.png" title="ask phone" alt="ask phone"/>)
 that each ask the user for one piece of data and report their answer to
-the <code>contact</code> constructor.<br />
+the `contact` constructor.<br />
 <img src="/img/3-lists/contact-constructor-with-helpers.png" title="contact with name: (ask name) address: (ask address) phone: (ask phone)" alt="contact with name: (ask name) address: (ask address) phone: (ask phone)" class="ms-4"/><br />
-Each of these helper blocks will <code>ask</code> the user a specific
+Each of these helper blocks will `ask` the user a specific
 question (like, "What is the contact's address?") and then report the
-user's <code>answer</code>.</li>
+user's `answer`.</li>
 
 </ul>
 
@@ -89,7 +89,7 @@ user's <code>answer</code>.</li>
 <p>You could first build a more general
 <img src="/img/3-lists/answer-to-prompt.png" title="answer to prompt ()" alt="answer to prompt ()"/>
 helper block (yet another abstraction) to use in the other helper blocks
-instead of rewriting the <code>ask</code> and <code>answer</code> script
+instead of rewriting the `ask` and `answer` script
 every time. <!--<br />
 <a href="#hint-1" data-bs-toggle="collapse" class="collapsed">Click here for a hint.</a>--></p>
 
@@ -129,7 +129,7 @@ Make the script ask the user for confirmation (so the user won't
 accidentally delete their list).
 
 ::: endnote
-For example, clicking, "Clear List" might <code>ask</code> the user,
+For example, clicking, "Clear List" might `ask` the user,
 "Enter c to clear the list, or enter anything else to cancel."
 :::
 
@@ -161,8 +161,8 @@ requires. This kind of program structure is called
 <ol start="4">
 
 <li>The sprites' questions might be covered up by the <var>contact
-list</var> watcher on the stage. Use <code>hide variable</code> and
-<code>show variable</code> to hide the <var>contact list</var> watcher
+list</var> watcher on the stage. Use `hide variable` and
+`show variable` to hide the <var>contact list</var> watcher
 until the end of each sprite's script.</li>
 
 </ol>
@@ -207,10 +207,10 @@ contact.</li>
 program you wrote above so that it asks separately for the first name
 and the last name, constructs a name (that is, a list) using the
 constructor you just wrote, and uses that list as the name input to the
-<code>contact with name</code> block. This is an abstract data type
+`contact with name` block. This is an abstract data type
 (name) inside another abstract data type (contact).</li>
 
-<li><strong>Writing a name:</strong> Your <code>name from contact</code>
+<li><strong>Writing a name:</strong> Your `name from contact`
 block will now report a list, as it should. But some other parts of the
 program, such as the part that displays a contact to the user, want to
 display the name as a text string: "Betsy Anderson." The part that sorts

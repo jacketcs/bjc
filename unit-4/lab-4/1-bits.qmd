@@ -171,9 +171,9 @@ should consider moving it to U6, but not tonight... -bh
 <div class="endnote">
 <p><a href="#hint-ldb" data-bs-toggle="collapse">Some old computers did allow that.</a>
   <div id="hint-ldb" class="collapse">The PDP-10, that big blue computer you saw in Lab 1, had
-  <code>ldb</code>
+  `ldb`
 (Load Byte) and
-<code>dpb</code>
+`dpb`
 (Deposit Byte) machine language instructions that included operands (inputs, essentially) for the width of the desired byte (how many bits) as well as location operands for the exact memory position of those bits.</p>
 <p>This much control over the use of memory was great for a machine that would largely be programmed at the machine language level, the lowest possible level of abstraction in the software domain. As higher level languages grew in popularity, computer architecture designers learned that <em>compilers,</em> the programs that translate a high level language into the machine language that the computer can actually run, could generate more efficient translations if the machine language was as simple as possible, doing a few things really quickly rather than doing a lot of things at varying speeds.</p></div></div>
 </div>

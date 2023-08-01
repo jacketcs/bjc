@@ -115,10 +115,10 @@ this make sense?</li>
 
 <li>Note that <em>both</em> the clones and the parent <em>are
 sprites</em>. Both are clickable (try it) and draggable (try that too).
-This is different from the effect of the <code>stamp</code> Pen block,
+This is different from the effect of the `stamp` Pen block,
 which just leaves a picture of the sprite on the stage.</li>
 
-<li>The <code>create a clone</code> block takes an input because it can
+<li>The `create a clone` block takes an input because it can
 copy <em>any</em> sprite. In this project, there's only one sprite at
 the beginning, so your choices are either <var>myself</var> or
 <var>Square</var> (the sprite's name), which in this case, means the
@@ -135,11 +135,11 @@ Prepare to create your project:
 
 <ol>
 
-<li>Delete the <code>when I am clicked</code> demonstration script from
+<li>Delete the `when I am clicked` demonstration script from
 exercise 3.</li>
 
-<li>Connect the <code>when</code> [⚑]{style="color:green"}
-<code>clicked</code> block toward the bottom of the scripting area to
+<li>Connect the `when` [⚑]{style="color:green"}
+`clicked` block toward the bottom of the scripting area to
 the script just below it.<br />
 <img src="/img/3-lists/TTT1_img/make-board-script.png" title="makeBoard, set (X&apos;s turn?) to (true) [Comment: X plays first.]" alt="makeBoard, set (X&apos;s turn?) to (true) [Comment: X plays first.]" class="ms-4"/></li>
 
@@ -150,19 +150,19 @@ Read that script and notice...
 ::: narrower
 <ul type="circle">
 
-<li>The <code>makeBoard</code> block is empty. You'll write it in the
+<li>The `makeBoard` block is empty. You'll write it in the
 next problem.</li>
 
 <li>
 
-The variable <var>X's turn?</var> will be <code>true</code> when it's
-X's turn to play or <code>false</code> when it's O's turn.
+The variable <var>X's turn?</var> will be `true` when it's
+X's turn to play or `false` when it's O's turn.
 
 ::: endnote
 When alternating between two values, it's convenient to use Booleans
-because you can use <code>not</code> to switch between them and you can
-use <code>if</code> to <em>test</em> the variable. (Recall that
-<code>if</code> requires a <code>true</code>/<code>false</code>
+because you can use `not` to switch between them and you can
+use `if` to <em>test</em> the variable. (Recall that
+`if` requires a `true`/`false`
 input.)<br />
 <img src="/img/3-lists/TTT1_img/setXsturn.png" title="set (X&apos;s turn?) to (not (X&apos;s turn?))" alt="set (X&apos;s turn?) to (not (X&apos;s turn?))" class="ms-4" height="50"/>
 <img src="/img/2-complexity/if-x-turn.png" title="if (X&apos;s turn?){}" alt="if (X&apos;s turn?){}" class="ms-4"/>
@@ -181,7 +181,7 @@ input.)<br />
 
 <li>
 
-Edit the block <code>makeBoard</code> to set up nine clones in three
+Edit the block `makeBoard` to set up nine clones in three
 rows of three.<br />
 <img src="/img/3-lists/TTT1_img/Row1.png" title="One row of squares" alt="One row of squares" class="ms-4" height="100"/>
 <img src="/img/3-lists/TTT1_img/Row2.png" title="Two rows of squares" alt="Two rows of squares" height="100"/>
@@ -196,15 +196,15 @@ Tips:
 
 <li>Make sure the clones start out with the empty square costume.</li>
 
-<li>Be sure to <code>show</code> the original sprite before cloning it,
+<li>Be sure to `show` the original sprite before cloning it,
 so that the clones will be visible. After cloning nine times to create
-the board, <code>hide</code> the original sprite so it does not
+the board, `hide` the original sprite so it does not
 interfere with the game as a tenth square.</li>
 
 <li>
 
 <a href="#hint-for" data-bs-toggle="collapse" title="Click if you need an additional hint.">Click
-if you need an additional hint about <code>makeBoard</code>.</a>
+if you need an additional hint about `makeBoard`.</a>
 
 ::: {#hint-for .collapse}
 <img src="/img/3-lists/TTT1_img/for-row-column.png" title="for (row) = 1 to 3 {for (column) = 1 to 3 {} }" alt="for (row) = 1 to 3 {for (column) = 1 to 3 {} }" class="ms-4"/>
@@ -223,7 +223,7 @@ Now finish up:
 
 <ol>
 
-<li>Write a <code>when I am clicked</code> script that will make each
+<li>Write a `when I am clicked` script that will make each
 clone wear the proper costume when clicked: X or O depending on whose
 turn it is.</li>
 

@@ -142,12 +142,12 @@ You learned about
 
 <ul>
 
-<li><code>Pause all</code> in
+<li>`Pause all` in
 <a href="/unit-1/lab-3/5-remix-your-pinwheel.html" title="Pause all in Unit 1 Lab 3 Page 5: Using Pinwheel to Make Polygon">Unit
-1 Lab 3 Page 5: Using <code>Pinwheel</code> to Make
-<code>Polygon</code></a></li>
+1 Lab 3 Page 5: Using `Pinwheel` to Make
+`Polygon`</a></li>
 
-<li><code>Say</code> in
+<li>`Say` in
 <a href="/unit-1/lab-3/2-exploring-snap-drawing-motion.html" title="Say in Unit 1 Lab 3 Page 2: Angles and Turning">Unit
 1 Lab 3 Page 2: Angles and Turning</a></li>
 
@@ -174,12 +174,12 @@ Game</a></li>
 <li><img src="/img/2-complexity/Debugging/pause-all-block.png" title="pause all" alt="pause all" height="36"/>
 places breaks in your code so you can step through the code at your own
 pace.
-<!--<div class="endnote">You learned about <code>pause all</code> in <a href="/unit-2/lab-2/4-mandala.html" title="Unit 2 Lab 2 Page 4: Mandala Design">Unit 2 Lab 2 Page 4: Mandala Design</a>.</div>--></li>
+<!--<div class="endnote">You learned about `pause all` in <a href="/unit-2/lab-2/4-mandala.html" title="Unit 2 Lab 2 Page 4: Mandala Design">Unit 2 Lab 2 Page 4: Mandala Design</a>.</div>--></li>
 
 <li><img src="/img/2-complexity/Debugging/say-for-secs-block.png" title="say for" alt="say for" height="36"/>
 can give you information about the state of your program while it's
 running.
-<!--<div class="endnote">You learned about <code>say for</code> in <a href="/unit-1/lab-3/7-graphics-and-art.html" title="Unit 1 Lab 3 Page 7: Graphics and Art">Unit 1 Lab 3 Page 7: Graphics and Art</a>.</div>--></li>
+<!--<div class="endnote">You learned about `say for` in <a href="/unit-1/lab-3/7-graphics-and-art.html" title="Unit 1 Lab 3 Page 7: Graphics and Art">Unit 1 Lab 3 Page 7: Graphics and Art</a>.</div>--></li>
 
 <li><strong>Visible Stepping</strong>
 (<img src="/img/2-complexity/visible-stepping.png" title="Visible Stepping button with two footprints" alt="Visible Stepping button with two footprints" class="inline py-0"/>)

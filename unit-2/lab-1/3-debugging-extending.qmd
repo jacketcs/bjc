@@ -21,7 +21,7 @@ order: 3
 
 <li>
 
-<a class="run" href="/prog/2-complexity/U2L1-Buggy-Secret-Number.xml" target="_blank"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a> In the file is a definition of a <code>number guessing game</code> block. It has a <strong>bug</strong>---an error in the code that makes the program behave differently than expected. This code, if you keep playing over and over, will mostly work, but <em>sometimes</em> (not often) it will congratulate you <em>before you even guess</em>.
+<a class="run" href="/prog/2-complexity/U2L1-Buggy-Secret-Number.xml" target="_blank"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a> In the file is a definition of a `number guessing game` block. It has a <strong>bug</strong>---an error in the code that makes the program behave differently than expected. This code, if you keep playing over and over, will mostly work, but <em>sometimes</em> (not often) it will congratulate you <em>before you even guess</em>.
 
 <p><img src="/img/icons/talk-with-another-pair-mini.png" title="Talk with Another Pair" alt="Talk with Another Pair" class="inline"/> Analyze the code, explain how this can happen, fix the bug, and save the project.</p>
 

@@ -26,9 +26,9 @@ the computer is playing O.</p>
 <em>random</em> positions on the board. (It won't be a very good player,
 but you'll fix that once the structure of the code for the computer's
 move is in place.) Once the program decides where it wants to move,
-you'll use <code>broadcast</code> to send a message to tell the clone
+you'll use `broadcast` to send a message to tell the clone
 with the matching <var>position number</var> to record a move. (For the
-human player, <code>when I am clicked</code> serves this purpose, but
+human player, `when I am clicked` serves this purpose, but
 the computer's moves aren't prompted by the user clicking a square.)</p>
 
 ::: endnote
@@ -42,18 +42,18 @@ them in
 <img src="/img/blocks/when-i-receive.png" title="when I receive" alt="when I receive" class="ms-4"/></p>
 
 ::: sidenote
-You first saw <code>broadcast</code> and <code>when I receive</code> on
+You first saw `broadcast` and `when I receive` on
 <a href="/unit-1/lab-2/2-gossip.html" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unit
 1 Lab 2 Page 2: Making Programs Talk</a>.
 :::
 
-<p><code>Broadcast</code> sends out a message to all the sprites in the
-project. Any scripts that start with <code>when I receive</code> and
+<p>`Broadcast` sends out a message to all the sprites in the
+project. Any scripts that start with `when I receive` and
 have a matching message in the input slot will run.</p>
 
-<p>If you select "any message" from the <code>when I receive</code>
+<p>If you select "any message" from the `when I receive`
 dropdown menu and you click the right-pointing triangle, you can use the
-<code>data</code> variable to access the message.<br />
+`data` variable to access the message.<br />
 <img src="/img/blocks/when-i-receive-any-message.png" title="when I receive (any message) (data)" alt="when I receive (any message) (data)" class="ms-4"/></p>
 
 ::: {#first .forYouToDo}
@@ -61,13 +61,13 @@ dropdown menu and you click the right-pointing triangle, you can use the
 
 <li>If it isn't open already, open your U5L6-TicTacToe project.</li>
 
-<li>Find the script that starts <code>when I am clicked</code>. That
+<li>Find the script that starts `when I am clicked`. That
 script handles a move by the human player. Now start a new script next
 to it:<br />
 <img src="/img/5-algorithms/when-receive.png" title="when I receive (any message) : if (message) = (square number) [nothing in script slot yet]" alt="when I receive (any message) : if (message) = (square number) [nothing in script slot yet]" class="ms-4"/></li>
 
 <li>Create an abstraction to contain everything inside the
-<code>if</code> statement from the <code>when I am (clicked)</code>
+`if` statement from the `when I am (clicked)`
 script and use it in both scripts.<br />
 <img src="/img/5-algorithms/when-clicked.png" title="when I am (clicked) {
 if ((costume #) = 1) {
@@ -99,11 +99,11 @@ do I know which squares are vacant?</a>
 :::
 :::
 
-In order to debug the <code>when I receive</code> script, edit the
-<code>move in this square</code> block. After your code for Player X's
+In order to debug the `when I receive` script, edit the
+`move in this square` block. After your code for Player X's
 turn, <em>temporarily</em> pick a random vacant square and use
-<code>broadcast</code> with that square number as the message. (If your
-<code>when I receive</code> script is working, the computer will move in
+`broadcast` with that square number as the message. (If your
+`when I receive` script is working, the computer will move in
 the corresponding square.)
 
 </li>
@@ -135,12 +135,12 @@ your explanation with that of other students.<br></li>
 Create a
 <img src="/img/5-algorithms/best-empty-square.png" title="best empty square" alt="best empty square" class="inline"/>
 block that reports the best position on the board that is not yet
-filled. Use it as input to your <code>broadcast</code> instruction in
-place of <code>random</code>.
+filled. Use it as input to your `broadcast` instruction in
+place of `random`.
 
 ::: endnote
 <a href="#hint-empty" data-bs-toggle="collapse" title="Click for a hint about best empty square.">Click
-for a hint about <code>best empty square</code>.</a>
+for a hint about `best empty square`.</a>
 
 ::: {#hint-empty .collapse}
 <img src="/img/5-algorithms/empties.png" title="list (5, 1, 3, 7, 9, 2, 4, 6, 8)" alt="list (5, 1, 3, 7, 9, 2, 4, 6, 8)" class="ms-4"/>

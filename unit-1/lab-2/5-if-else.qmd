@@ -1,5 +1,5 @@
 ---
-title: "Page 5: Adding Variety to <code>Gossip</code>"
+title: "Page 5: Adding Variety to `Gossip`"
 subtitle: "Unit 1, Lab 2, Page 5"
 order: 5
 ---
@@ -8,20 +8,20 @@ order: 5
 <p><strong>On this page, </strong> you will improve your program so that sometimes the sentences are a bit longer and more complex.</p>
 :::
 
-The block <img src="/img/1-introduction/more-complicated-who.png" title="more complicated who" alt="more complicated who"/> has been built for you. It randomly chooses 1, 2, 3, or 4, and if that number is 3, then it reports something more complicated than <code>who</code>. Otherwise, it reports <code>who</code>, just as before.
+The block <img src="/img/1-introduction/more-complicated-who.png" title="more complicated who" alt="more complicated who"/> has been built for you. It randomly chooses 1, 2, 3, or 4, and if that number is 3, then it reports something more complicated than `who`. Otherwise, it reports `who`, just as before.
 
 ::: {#first .forYouToDo}
 <ol>
 
 <li>If it isn't open already, open your U1L2-Gossip project.</li>
 
-<li>Find <img src="/img/1-introduction/more-complicated-who.png" title="more complicated who" alt="more complicated who"/> in the red Lists palette, drag it into the scripting area, and click on it enough times to see how it's different from <code>who</code>.</li>
+<li>Find <img src="/img/1-introduction/more-complicated-who.png" title="more complicated who" alt="more complicated who"/> in the red Lists palette, drag it into the scripting area, and click on it enough times to see how it's different from `who`.</li>
 
 <li>
 
-<!--<div class="index-term" id="pick random</code>"></div>-->
+<!--<div class="index-term" id="pick random`"></div>-->
 
-Here is the code for <code>more complicated who</code>. There are two new things in it: <code>pick random</code> and <code>if else</code>.<br /> <img src="/img/1-introduction/more-complicated-who-script.png" title="more complicated who {
+Here is the code for `more complicated who`. There are two new things in it: `pick random` and `if else`.<br /> <img src="/img/1-introduction/more-complicated-who-script.png" title="more complicated who {
 if (pick random (1) to (4)) = (3) {
 report (join (who) (&apos;, who&apos;) (does what) ( ) (who) (,))                                                                                          
 } else {
@@ -37,9 +37,9 @@ report (who)
 
 <ol>
 
-<li>Find <img src="/img/blocks/pick-random-1-to-10-full-size.png" title="pick random (1) to (10)" alt="pick random (1) to (10)" class="inline"/> in the green Operators palette, and click it several times. What does the <code>random</code> block do?</li>
+<li>Find <img src="/img/blocks/pick-random-1-to-10-full-size.png" title="pick random (1) to (10)" alt="pick random (1) to (10)" class="inline"/> in the green Operators palette, and click it several times. What does the `random` block do?</li>
 
-<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> In the <code>more complicated who</code> block, what happens if the <code>pick random</code> block picks 3? What if it picks 4?</li>
+<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> In the `more complicated who` block, what happens if the `pick random` block picks 3? What if it picks 4?</li>
 
 </ol>
 
@@ -64,7 +64,7 @@ report (join (who) (&apos;, who&apos;) (does what) ( ) (who) (,))
 } else {
 report (who)
 }
-}" class="float-end"/> About how often will <code>more complicated who</code> pick the more complicated choice?
+}" class="float-end"/> About how often will `more complicated who` pick the more complicated choice?
 :::
 
 ::: {.choice identifier="c1"}
@@ -130,7 +130,7 @@ report (join (who) (&apos;, who&apos;) (does what) ( ) (who) (,))
 } else {
 report (who)
 }
-}" class="float-end"/> Here is the script inside <code>more complicated who</code>. What change to this script will make the more complicated phrase appear more often?
+}" class="float-end"/> Here is the script inside `more complicated who`. What change to this script will make the more complicated phrase appear more often?
 :::
 
 ::: {.choice identifier="c1"}
@@ -197,7 +197,7 @@ The chosen number can never be 5, so we'll never get a complicated subject.
 :::
 
 ::: examFullWidth
-<!--<div class="index-term" id="pick random</code>"></div>-->
+<!--<div class="index-term" id="pick random`"></div>-->
 ::: pseudop
 The expression <img src="/img/blocks/pick-random-1-to-10-full-size.png" title="pick random (1) to (10)" alt="pick random (1) to (10)" class="inline"/> would be written as
 
@@ -396,9 +396,9 @@ Can you score a total of 1 by rolling two dice?
 
 </li>
 
-<li>Create a new block <img src="/img/1-introduction/complicated-gossip.png" title="complicated gossip" alt="complicated gossip" class="inline py-0"/> that is similar to <code>gossip</code> but that uses <code>more complicated who</code> instead of <code>who</code>. (You can choose which <code>who</code> to replace, or you could replace both.)</li>
+<li>Create a new block <img src="/img/1-introduction/complicated-gossip.png" title="complicated gossip" alt="complicated gossip" class="inline py-0"/> that is similar to `gossip` but that uses `more complicated who` instead of `who`. (You can choose which `who` to replace, or you could replace both.)</li>
 
-<li>Change the script for Sprite to use <code>complicated gossip</code> instead of <code>gossip</code>. Run your code, and fix any problems.</li>
+<li>Change the script for Sprite to use `complicated gossip` instead of `gossip`. Run your code, and fix any problems.</li>
 
 <img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline"/>
 
@@ -410,7 +410,7 @@ Can you score a total of 1 by rolling two dice?
 ::: forYouToDo
 <ol start="8">
 
-<li>Edit <code>more complicated who</code>. Replace <em>one</em> of the <code>who</code> blocks with a fresh copy of <code>more complicated who</code> that you drag in from the palette. Click <code>more complicated who</code> enough times to see how it has changed.</li>
+<li>Edit `more complicated who`. Replace <em>one</em> of the `who` blocks with a fresh copy of `more complicated who` that you drag in from the palette. Click `more complicated who` enough times to see how it has changed.</li>
 
 <li><img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/> Describe the change in behavior, and explain what you think is causing it.</li>
 
@@ -432,7 +432,7 @@ Purple "Take It Further" boxes have more challenging activities that are <em>not
 ::: takeItFurther
 <ol type="A">
 
-<li>Make <code>more complicated who</code> give the more complicated response three out of four times instead of one out of four times.</li>
+<li>Make `more complicated who` give the more complicated response three out of four times instead of one out of four times.</li>
 
 <li>What happens when you try it out? Was it what you expected? Explain why it happened.</li>
 

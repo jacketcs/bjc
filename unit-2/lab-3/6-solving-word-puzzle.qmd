@@ -17,8 +17,8 @@ started files, solutions, and TG in both units as needed. --MF,
 
 ::: learn
 <p><strong>On this page</strong>, you will solve a crossword puzzle by
-combining predicates using the <code>and</code> block. You will then use
-the resulting predicates with <code>keep</code> to find words with
+combining predicates using the `and` block. You will then use
+the resulting predicates with `keep` to find words with
 specific characteristics.</p>
 
 <img src="/img/2-complexity/radiux.png" title="keeping words with 6 letters with 1st letter r and 3rd letter d" alt="keeping words with 6 letters with 1st letter r and 3rd letter d" class="ms-4"/>
@@ -33,8 +33,8 @@ specific characteristics.</p>
 
 You have used the
 <img src="/img/blocks/length-of-blank-operator.png" title="length of ()" alt="length of ()" class="inline"/>
-block in the Operators palette together with <code>=</code> and
-<code>keep</code> to find words of a certain length in the <var>words
+block in the Operators palette together with `=` and
+`keep` to find words of a certain length in the <var>words
 list</var>.
 
 <ol>
@@ -59,7 +59,7 @@ input and works like this:<br />
 
 Build an <em>expression</em> using the
 <img src="/img/blocks/letter-blank-of-blank.png" title="letter () of ()" alt="letter () of ()" class="inline"/>
-block with <code>=</code> and <code>keep</code> to find words that have
+block with `=` and `keep` to find words that have
 certain letters in certain places.
 
 <ol>
@@ -85,7 +85,7 @@ it does the same job.
 <li>
 
 <strong>Work with another pair.</strong> Use your predicates, along with
-<code>and</code> and <code>keep</code>, to solve
+`and` and `keep`, to solve
 <a href="https://drive.google.com/open?id=1x8ShDe58qUQJDK8n97xoQGY4J4rw9aDsJCmkY-6SQc0" target="_blank" title="Solving a Word Puzzle">this
 Unit 2 Lab 3 Word Puzzle</a>.<br />
 

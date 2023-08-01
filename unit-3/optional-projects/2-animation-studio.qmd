@@ -76,7 +76,7 @@ work.</li>
 :::
 
 ::: endnote
-<p>You may wish to use the <code>warp</code> block to make your
+<p>You may wish to use the `warp` block to make your
 animations render more quickly.<br />
 <img src="/img/blocks/warp.png" title="warp block" alt="warp block" class="ms-4"/></p>
 

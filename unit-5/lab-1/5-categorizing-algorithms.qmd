@@ -31,7 +31,7 @@ pattern.</li>
 
 ::: sidenoteBig
 There are several different ways to sort a list, some of which you will
-learn about in Unit 8. This <code>sort</code> block uses an "insertion
+learn about in Unit 8. This `sort` block uses an "insertion
 sort" algorithm.
 :::
 
@@ -50,7 +50,7 @@ list gets bigger? Write a hypothesis.</li>
 :::
 
 <p>You can classify algorithms by the amount of time they take to run.
-<!--To classify an algorithm, you look at the number of steps it takes to complete the algorithm and compare it to the size of the input. For example, <code>25,000 integers</code> takes <em>constant time:</em> computing 25,000 integers starting at seven takes as long as computing 25,000 integers starting at seven million. As a second example, <code>linear search</code> takes <em>linear time:</em> if you have ten times as many words in the dictionary, then it takes ten times as long to search through them all. As a third example, consider the <code>sort</code> algorithm you timed. It takes <em>quadratic time:</em> multiplying the input size by ten multiplies the time required by 10<sup>2</sup>. As another example, consider the <code>binary search</code> algorithm you timed. In binary search, multiplying the input size by ten <em>adds</em> a constant amount to the time required instead of multiplying by a constant amount. This is an example of <em>sublinear time</em>.--></p>
+<!--To classify an algorithm, you look at the number of steps it takes to complete the algorithm and compare it to the size of the input. For example, `25,000 integers` takes <em>constant time:</em> computing 25,000 integers starting at seven takes as long as computing 25,000 integers starting at seven million. As a second example, `linear search` takes <em>linear time:</em> if you have ten times as many words in the dictionary, then it takes ten times as long to search through them all. As a third example, consider the `sort` algorithm you timed. It takes <em>quadratic time:</em> multiplying the input size by ten multiplies the time required by 10<sup>2</sup>. As another example, consider the `binary search` algorithm you timed. In binary search, multiplying the input size by ten <em>adds</em> a constant amount to the time required instead of multiplying by a constant amount. This is an example of <em>sublinear time</em>.--></p>
 
 ::: forYouToDo
 ::: vocabBig
@@ -74,20 +74,20 @@ steps is proportional to the <em>square</em> of the input size.</li>
 
 <ol start="5">
 
-<li>Look back at your table for <code>linear search</code>. Confirm that
+<li>Look back at your table for `linear search`. Confirm that
 multiplying the list length by ten roughly multiplies the time taken by
 ten (<em>linear
 time</em>).<!--the search time for the <var>100,000 word list</var> is (about) ten times as long as the time for the <var>10,000 word list</var>, which is (about) ten times as long as the time for the <var>1,000 word list</var>.--></li>
 
-<li>Look back at your table for <code>binary search</code>. Confirm that
+<li>Look back at your table for `binary search`. Confirm that
 the search time for each word list is less than for linear search
 (<em>sublinear time</em>).</li>
 
-<li>Look back at your table for <code>25,000 integers</code>. Confirm
+<li>Look back at your table for `25,000 integers`. Confirm
 that it takes about the same amount of time regardless of the input
 (<em>constant time</em>).</li>
 
-<li>Look back at your table for <code>sort</code>. Confirm that
+<li>Look back at your table for `sort`. Confirm that
 multiplying the list length by ten roughly multiplies the time taken by
 one hundred (<em>quadratic
 time</em>).<!--Confirm that the time to sort the <var>100,000 word list</var> is (about) one hundred times as long as the time for the <var>10,000 word list</var>, which is (about) one hundred times as long as the time for the <var>1,000 word list</var>.--></li>
@@ -165,8 +165,8 @@ it's worthwhile to sort the list before searching. Knowing about
 algorithms that already exist can help you construct new algorithms.</p>
 
 <p>All of the algorithms you've explored so far in this lab
-(<code>linear search</code>; <code>binary search</code>; <code>25,000
-integers</code>; and <code>sort</code>) are reasonable time algorithms.
+(`linear search`; `binary search`; `25,000
+integers`; and `sort`) are reasonable time algorithms.
 The following optional activity is an example of an exponential time
 algorithm.</p>
 
@@ -214,16 +214,16 @@ the table as far as the speed of your computer will allow.
 31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATwBRAEEANQBBAEQASQBBAE0AdwBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBQAEEAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAEkAQQBCAGoAQQBHAHcAQQBZAFEAQgB6AEEASABNAEEAUABRAEEAaQBBAEcASQBBAGIAdwBCAHkAQQBHAFEAQQBaAFEAQgB5AEEARwBVAEEAWgBBAEEAZwBBAEcATQBBAFoAUQBCAHUAQQBIAFEAQQBaAFEAQgB5AEEAQwBJAEEASQBBAEIAegBBAEgAVQBBAGIAUQBCAHQAQQBHAEUAQQBjAGcAQgA1AEEARAAwAEEASQBnAEIAMABBAEcARQBBAFkAZwBCAHMAQQBHAFUAQQBJAEEAQgB6AEEARwBnAEEAYgB3AEIAMwBBAEcAawBBAGIAZwBCAG4AQQBDAEEAQQBkAEEAQgBvAEEARwBVAEEASQBBAEIAdQBBAEgAVQBBAGIAUQBCAGkAQQBHAFUAQQBjAGcAQQBnAEEARwA4AEEAWgBnAEEAZwBBAEcAYwBBAGQAUQBCAGwAQQBIAE0AQQBjAHcAQgBsAEEASABNAEEASQBBAEIAdQBBAEcAVQBBAFoAUQBCAGsAQQBHAFUAQQBaAEEAQQBnAEEASABRAEEAYgB3AEEAZwBBAEcAWQBBAGEAUQBCAHUAQQBHAFEAQQBJAEEAQgAwAEEARwBnAEEAWgBRAEEAZwBBAEcAdwBBAFkAUQBCAHoAQQBIAFEAQQBJAEEAQgB1AEEASABVAEEAYgBRAEIAaQBBAEcAVQBBAGMAZwBBAGcAQQBHAGsAQQBiAGcAQQBnAEEARwBFAEEASQBBAEIAegBBAEcAOABBAGMAZwBCADAAQQBHAFUAQQBaAEEAQQBnAEEARwB3AEEAYQBRAEIAegBBAEgAUQBBAEkAQQBCAG0AQQBHADgAQQBjAGcAQQBnAEEARwBFAEEASQBBAEIAcwBBAEcAawBBAGMAdwBCADAAQQBDAEEAQQBiAHcAQgBtAEEAQwBBAEEAWQBRAEEAZwBBAEcAYwBBAGEAUQBCADIAQQBHAFUAQQBiAGcAQQBnAEEARwB3AEEAWgBRAEIAdQBBAEcAYwBBAGQAQQBCAG8AQQBDAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBhAEEAQQBnAEEASABNAEEAWQB3AEIAdgBBAEgAQQBBAFoAUQBBADkAQQBDAEkAQQBZAHcAQgB2AEEARwB3AEEASQBnAEEAZwBBAEgATQBBAGQAQQBCADUAQQBHAHcAQQBaAFEAQQA5AEEAQwBJAEEAZAB3AEIAbwBBAEcAawBBAGQAQQBCAGwAQQBDADAAQQBjAHcAQgB3AEEARwBFAEEAWQB3AEIAbABBAEQAbwBBAEkAQQBCAHUAQQBHADgAQQBkAHcAQgB5AEEARwBFAEEAYwBBAEEANwBBAEMASQBBAFAAZwBCAEoAQQBHADQAQQBjAEEAQgAxAEEASABRAEEAYwB3AEEAOABBAEMAOABBAGQAQQBCAG8AQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYQBBAEEAZwBBAEgATQBBAFkAdwBCAHYAQQBIAEEAQQBaAFEAQQA5AEEAQwBJAEEAWQB3AEIAdgBBAEcAdwBBAEkAZwBBAGcAQQBIAE0AQQBkAEEAQgA1AEEARwB3AEEAWgBRAEEAOQBBAEMASQBBAGQAdwBCAG8AQQBHAGsAQQBkAEEAQgBsAEEAQwAwAEEAYwB3AEIAdwBBAEcARQBBAFkAdwBCAGwAQQBEAG8AQQBJAEEAQgB1AEEARwA4AEEAZAB3AEIAeQBBAEcARQBBAGMAQQBBADcAQQBDAEkAQQBQAGcAQgBRAEEARwBFAEEAYwB3AEIAagBBAEcARQBBAGIAQQBBAG4AQQBIAE0AQQBJAEEAQgBVAEEASABJAEEAYQBRAEIAaABBAEcANABBAFoAdwBCAHMAQQBHAFUAQQBJAEEAQgBVAEEARwBrAEEAYgBRAEIAbABBAEQAdwBBAEwAdwBCADAAQQBHAGcAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBEAFUAQQBMAEEAQQBnAEEARABJAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBAHgAQQBEAEEAQQBMAEEAQQBnAEEARABVAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBAHgAQQBEAFUAQQBMAEEAQQBnAEEARABjAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBAHkAQQBEAEEAQQBMAEEAQQBnAEEARABFAEEATQBBAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBEAEkAQQBOAFEAQQBzAEEAQwBBAEEATQBRAEEAeQBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEEAdgBBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQQB2AEEASABRAEEAWQBRAEIAaQBBAEcAdwBBAFoAUQBBACsAQQBBAD0APQAKAHMAdQBmAGYAaQB4ADoA:31b8e172-b470-440e-83d8-e6b185028602
 
 ::: endnote
-The <var>row</var> value is the input to <code>pascals triangle</code>
+The <var>row</var> value is the input to `pascals triangle`
 that matters. (The <var>position</var> input is only given so you get a
 time for one of the positions near the middle of the row, which take
 longer to compute.)
 :::
 
 <p>These <var>row</var> inputs are very small compared to the input size
-for the <code>linear search</code>, <code>binary search</code>, and
-<code>sort</code> algorithms, and yet the time required for
-<code>pascals triangle</code> is much higher. Your computer probably
+for the `linear search`, `binary search`, and
+`sort` algorithms, and yet the time required for
+`pascals triangle` is much higher. Your computer probably
 can't do much past <var>25</var>.</p>
 
 ::: endnote

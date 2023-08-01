@@ -17,13 +17,15 @@ filters:
 website:
   title: "JacketCS CSP"
   favicon: "/img/jac.png"
+  reader-mode: true
   page-navigation: true
   page-footer: |
     The curriculum, text, and styling on this website is adapted from [The Beauty and Joy of Computing](https://bjc.edc.org/bjc-r/)
     by University of California, Berkeley and Education Development Center, Inc. which is licensed
     under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
   navbar:
-    background: primary
+    logo: "/img/jac.png"
+    background: red
     search: true
     left:
       - text: "Posts"
@@ -78,8 +80,13 @@ format:
     toc: true
     theme:   
       light: bjc.scss
-      dark: [theme-dark.scss, bjc.scss]
+      dark: [bjc-dark.scss, bjc.scss]
     include-in-header:
       - text: |
           <script type="text/javascript" src="/llab/loader.js"></script>
     slide-format: revealjs
+    grid:
+      sidebar-width: 350px
+      body-width: 2000px
+      margin-width: 350px
+      gutter-width: 1.5rem

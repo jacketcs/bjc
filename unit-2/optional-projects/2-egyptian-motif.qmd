@@ -33,7 +33,7 @@ patterns to form complex forms. For example, the Egyptian Motif above
 has six overlapping rectangles.</p>
 
 <p><strong>In this project,</strong> you will learn how to extend your
-<code>pinwheel</code> code from Unit 1 to create such intricate
+`pinwheel` code from Unit 1 to create such intricate
 patterns.</p>
 :::
 
@@ -53,11 +53,11 @@ now I just moved #10 from a solo FYTD into the ITIT box. --MF,
 <li>
 
 In this project, you will repeatedly use rectangles, so first recall how
-to create a <code>rectangle</code> block. <br />
+to create a `rectangle` block. <br />
 <img src="/img/2-complexity/EgyptianMotif_img/rectangleCode.png" title="rectangle, width:(width) length:(length){pen down; repeat(2){move(width) steps; turn clockwise (90) degrees; move(length) steps; turn clockwise (90) degrees};pen up}" alt="rectangle, width:(width) length:(length){pen down; repeat(2){move(width) steps; turn clockwise (90) degrees; move(length) steps; turn clockwise (90) degrees};pen up}" class="ms-4" height="275"/>
 
 ::: endnote
-Note the use of <code>pen down</code> and <code>pen up</code> blocks
+Note the use of `pen down` and `pen up` blocks
 inside the rectangle definition. We don't normally do this but here this
 is done to simplify the more complex code coming ahead. This will ensure
 that once a rectangle is drawn, the pen is up and you don't need to
@@ -67,7 +67,7 @@ to execute the rest of the code.
 
 </li>
 
-<li>Also recall the <code>pinwheel</code> code you have written in Unit
+<li>Also recall the `pinwheel` code you have written in Unit
 1.<br />
 <img src="/img/2-complexity/EgyptianMotif_img/pinwheelCode.png" title="pinwheel, branches:(number of branches) size:(size) backup:(backup){repeat(number of branches){move(size) steps; move(-1Xbackup) steps; turn clockwise(360/number of branches) degrees}}" alt="pinwheel, branches:(number of branches) size:(size) backup:(backup){repeat(number of branches){move(size) steps; move(-1Xbackup) steps; turn clockwise(360/number of branches) degrees}}" class="ms-4" height="225"/></li>
 
@@ -77,19 +77,19 @@ shown below. Note use of color is optional and is used here for
 clarity.<br />
 <img src="/img/2-complexity/EgyptianMotif_img/multiColorPinwheel.png" title="Multicolored pinwheel" alt="Multicolored pinwheel" class="ms-4" height="250"/>
 <img src="/img/2-complexity/EgyptianMotif_img/multiColorPinwheelwithRectangles.png" title="Multicolored pinwheel with rectangles" alt="Multicolored pinwheel with rectangles" height="250"/>
-<br /> Now create a <code>pinwheel with rectangles</code> block. It will
+<br /> Now create a `pinwheel with rectangles` block. It will
 have two more inputs <var>width</var> and <var>length</var> for the
 width and length of the rectangles.<br />
 <img src="/img/2-complexity/EgyptianMotif_img/pinwheelWithRectanglesCodeHeader.png" title="pinwheel with rectangles, branches:(number of branches) size:(size) backup:(backup) width:(width) length:(length)" alt="pinwheel with rectangles, branches:(number of branches) size:(size) backup:(backup) width:(width) length:(length)" class="ms-4" height="100"/><br />
-Its code will be identical to the <code>pinwheel</code> code except that
-it has the <code>rectangle</code> block inserted in between the two
-<code>move</code> blocks that created the pinwheel branches. <br />
+Its code will be identical to the `pinwheel` code except that
+it has the `rectangle` block inserted in between the two
+`move` blocks that created the pinwheel branches. <br />
 <img src="/img/2-complexity/EgyptianMotif_img/rectangleInBetween.png" title="move(size) steps; rectangle, width:(width) length:(length); move(-1Xbackup) steps" alt="move(size) steps; rectangle, width:(width) length:(length); move(-1Xbackup) steps" class="ms-4" height="175"/><br /></li>
 
 <li>Now, use the "Variables" menu to make variables that will allow you
 to vary all aspects of the designs you create and do not forget to
-initialize these variables right after the <code>when green flag
-clicked</code> block<br />
+initialize these variables right after the `when green flag
+clicked` block<br />
 <img src="/img/2-complexity/EgyptianMotif_img/makeVariables.png" title="Make variables: length, width, backup, size, number of branches" alt="Make variables: length, width, backup, size, number of branches" class="ms-4" height="175"/><img src="/img/2-complexity/EgyptianMotif_img/initializeVariables.png" title="Initialize variables" alt="Initialize variables" height="175"/></li>
 
 <li>
@@ -132,12 +132,12 @@ vast number of variations of your designs. <br />
 
 Your code needs to make sure that the computer is always on the watch in
 case any of the variables are changed by the user via the sliders. You
-can do so with a <code>forever</code> block.<br />
+can do so with a `forever` block.<br />
 <img src="/img/2-complexity/EgyptianMotif_img/foreverLoop2.png" title="forever{warp{clear; pinwheel with rectangles, branches:(number of branches) size:(size) backup:(backup) width:(width) length:(length) }}" alt="forever{warp{clear; pinwheel with rectangles, branches:(number of branches) size:(size) backup:(backup) width:(width) length:(length) }}" class="ms-4" height="175"/>
 
 ::: endnote
-The <code>warp</code> block makes sure that the <code>pinwheel with
-rectangles</code> is drawn all at once rather than step by step.
+The `warp` block makes sure that the `pinwheel with
+rectangles` is drawn all at once rather than step by step.
 :::
 
 </li>
@@ -162,9 +162,9 @@ sliders.<br />
 
 <li>Add color to your rectangles by inserting
 <img src="/img/2-complexity/EgyptianMotif_img/setColor.png" title="set pen color to (red)" alt="set pen color to (red)" height="40"/>
-into the start of the <code>warp</code> block in the forever loop and
+into the start of the `warp` block in the forever loop and
 inserting<img src="/img/2-complexity/EgyptianMotif_img/changeColor.png" title="change pen color by (10)" alt="change pen color by (10)" height="40"/>
-into the <code>pinwheel with rectangles</code> code.</li>
+into the `pinwheel with rectangles` code.</li>
 
 <li>
 

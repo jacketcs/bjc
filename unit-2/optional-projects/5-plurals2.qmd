@@ -23,9 +23,9 @@ pluralized.</li>
 </ul>
 :::
 
-<p>You can improve <code>plural</code> to work correctly with more
+<p>You can improve `plural` to work correctly with more
 words. If the project is not already open, please reload it. (The
-suggested file name was <code>U2-Plural</code>.)</p>
+suggested file name was `U2-Plural`.)</p>
 
 ::: {#first .forYouToDo}
 <ol>
@@ -39,7 +39,7 @@ letter "h".
 
 <ul>
 
-<li>Start with a <code>list</code> of the words you want it to work
+<li>Start with a `list` of the words you want it to work
 for.</li>
 
 <li>This specialist block should work correctly for words that fit its
@@ -50,15 +50,15 @@ specialty
 It can be completely wrong about words that <em>don't</em> fit its
 specialty
 <img src="/img/2-complexity/plural_h-mouse-with-(wrong)result.png" title="plural-h (mouse) reporting &apos;mousees&apos;" alt="plural-h (mouse) reporting &apos;mousees&apos;"/>
-because the <code>plural</code> block should never give words to
-<code>plural-h</code> unless those words end with "h".</li>
+because the `plural` block should never give words to
+`plural-h` unless those words end with "h".</li>
 
 <li>
 
 Test
 <img src="/img/2-complexity/plural_h.png" title="plural-h ()" alt="plural-h ()"/>
 with a variety of words to make sure it works the way you want. Then use
-<code>map</code> to test it on the entire list you made earlier.
+`map` to test it on the entire list you made earlier.
 
 ::: endnote
 <a href="#hint-just-hwords" data-bs-toggle="collapse" title="Click for a hint about creating a test list of words that begin with 'h'.">Click
@@ -67,8 +67,8 @@ for a hint about creating a test list of words that begin with "h".</a>
 ::: {#hint-just-hwords .collapse}
 Because you know what
 <img src="/img/2-complexity/keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list.png" title="keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list" alt="keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list"/>
-does, you can use its output as input to a test of <code>plural</code>
-or <code>plural-h</code>:<br />
+does, you can use its output as input to a test of `plural`
+or `plural-h`:<br />
 <img src="/img/2-complexity/map-plural(with-input)-over-(keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list).png" title="map-plural(with-input)-over-(keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list)" alt="map-plural(with-input)-over-(keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list)" class="ms-4"/>
 :::
 :::
@@ -86,10 +86,10 @@ English, the plurals of some nouns add "s"; some add "es"; nouns like
 letters before adding "es". And more. For a programming task this
 complex, it's (generally) best to break it into parts, handle each part
 separately with its own procedure (its own block), and then have the
-"top-level" block---in this case, <code>plural</code>, itself---use
+"top-level" block---in this case, `plural`, itself---use
 those specialists. That is, instead of coding every little detail
-directly in <code>plural</code>, it is cleaner and clearer to make
-<code>plural</code> look something like this.<br />
+directly in `plural`, it is cleaner and clearer to make
+`plural` look something like this.<br />
 <img src="/img/2-complexity/plural-abstract-definition.png" title="abstract definition of plural: if h = last letter of word, report h-case plural; if y = last letter of word, report y-case plural; if some other case, use a block that specializes in that case; etc.; else report join word s" alt="abstract definition of plural: if h = last letter of word, report h-case plural; if y = last letter of word, report y-case plural; if some other case, use a block that specializes in that case; etc.; else report join word s" class="ms-4 noshadow"/></p>
 
 Showing the <em>structure</em> of the method---just the overall strategy---in the
@@ -99,12 +99,12 @@ Abstraction keeps your code clear, readable, and more easily debugged.
 It will also help your code be more flexible.
 :::
 
-<li>When you trust your new specialist block, edit <code> plural</code>
-to use the specialist. Test (you can use <code>map</code>) to make sure
-<code>plural</code> still works for all the words it used to work for,
+<li>When you trust your new specialist block, edit ` plural`
+to use the specialist. Test (you can use `map`) to make sure
+`plural` still works for all the words it used to work for,
 as well as the new ones.</li>
 
-<li>Create <code>plural-y</code> to handle words like
+<li>Create `plural-y` to handle words like
 <img src="/img/2-complexity/plural_y-tray-with-result.png" title="plural-y (tray) reporting &apos;trays&apos;" alt="plural-y (tray) reporting &apos;trays&apos;"/>
 and
 <img src="/img/2-complexity/plural_y-sky-with-result.png" title="plural-y (sky) reporting &apos;skies&apos;" alt="plural-y (sky) reporting &apos;skies&apos;"/></li>
@@ -113,7 +113,7 @@ and
 Remember, any specialist can make mistakes if it's asked to do a job
 that isn't its specialty. For example:<br />
 <img src="/img/2-complexity/plural_y-mouse-with-(wrong)result.png" title="plural-y (mouse) reporting &apos;mousies&apos;" alt="plural-y (mouse) reporting &apos;mousies&apos;" class="ms-4"/><br />
-Make sure <code>plural</code> gives <code>plural-y</code> only words it
+Make sure `plural` gives `plural-y` only words it
 knows how to handle correctly.
 :::
 
@@ -151,21 +151,21 @@ match</strong> this version after you review it? Thanks! --MF,
 
 <li>
 
-Extend <code>plural</code> to correctly handle a input word that has a
+Extend `plural` to correctly handle a input word that has a
 space at the end.
 
 ::: endnote
-<p>Right now, if <code>plural</code> is given a word with a space at the
+<p>Right now, if `plural` is given a word with a space at the
 end, it leaves that space in the plural:<br />
 <img src="/img/2-complexity/plural-bulldog[space]-with-result(bulldog[space]s).png" title="plural (bulldog ) reporting &apos;bulldog s&apos;. There is a space after &apos;bulldog&apos; in the input and a space between &apos;bulldog&apos; and &apos;s&apos; in the reported value." alt="plural (bulldog ) reporting &apos;bulldog s&apos;. There is a space after &apos;bulldog&apos; in the input and a space between &apos;bulldog&apos; and &apos;s&apos; in the reported value." class="ms-4"/><br />
-Figure out how to handle this special case and edit <code>plural</code>
+Figure out how to handle this special case and edit `plural`
 so that the result is<br />
 <img src="/img/2-complexity/plural-bulldog[space]-with-result(bulldogs).png" title="plural (bulldog ) reporting &apos;bulldogs&apos;. There is a space after &apos;bulldog&apos; in the input but no space in the reported value." alt="plural (bulldog ) reporting &apos;bulldogs&apos;. There is a space after &apos;bulldog&apos; in the input but no space in the reported value." class="ms-4"/><br />
 You already have a block that <em>specializes</em> in making plurals of
 words that <em>don't</em> have a space at the end. <em>Use</em> it.</p>
 :::
 
-<p>Surprise! Once <code>plural</code> works for a single space at the
+<p>Surprise! Once `plural` works for a single space at the
 end of a word, try giving it
 <img src="/img/2-complexity/plural-bulldog[four-spaces].png" title="plural (bulldog  ). There iare six spaces after &apos;bulldog&apos; in the input." alt="plural (bulldog  ). There iare six spaces after &apos;bulldog&apos; in the input."/>.
 That works too! But why?</p>
@@ -175,7 +175,7 @@ That works too! But why?</p>
 <li>
 
 <img src="/img/icons/tough-stuff.png" title="Tough Stuff" alt="Tough Stuff" class="float-end"/>
-Does your <code>plurals</code> block still feel cluttered, even though
+Does your `plurals` block still feel cluttered, even though
 the details about how to handle each possible last letter are abstracted
 into specialist blocks? One way to improve on this situation is to use
 another kind of abstraction called <em>data-directed programming.</em>
@@ -190,9 +190,9 @@ the keys and specialist procedures as the values:<br />
 
 ::: narrowpurple
 To make the second item of each small list, find the block you want, put
-it in the second input to <code>list</code>, then right-click on the
+it in the second input to `list`, then right-click on the
 block and choose "ringify." As the "x" example shows, it doesn't have to
-be a block named <code>plural-</code>something. It just has to have an
+be a block named `plural-`something. It just has to have an
 empty input slot where you want the word to go.
 :::
 
@@ -202,8 +202,8 @@ empty input slot where you want the word to go.
 
 
 
-Then in your <code>plural</code> procedure, you can replace most of the
-<code>if</code> blocks with<br />
+Then in your `plural` procedure, you can replace most of the
+`if` blocks with<br />
 <img src="/img/2-complexity/plural-specialist-dispatch.png" title="script variables (pair)
 set (pair) to (find first item (ringed ((item (1) of ( )) = (last letter of (word)))) in (plural specialists))
 if (is (pair) a (list)?) {
@@ -225,26 +225,26 @@ So I dragged some of that content back into U3 and also here. --MF,
 1/11/21
 :::
 
-<p><code>Find first</code> is a higher-order function works similarly to
-<code>keep</code>, but it reports only the first item that's found. It
-is equivalent to <code>item (1) of (keep)</code>.</p>
+<p>`Find first` is a higher-order function works similarly to
+`keep`, but it reports only the first item that's found. It
+is equivalent to `item (1) of (keep)`.</p>
 
 
 
-<p>The <code>call</code> block in the palette doesn't include the
-"<code>with inputs</code>" in the picture; when you click on its right
+<p>The `call` block in the palette doesn't include the
+"`with inputs`" in the picture; when you click on its right
 arrowhead, those words will appear along with an input slot. The
-<code>call</code> block's first input slot is the empty gray ring, which
-means that <code>call</code> wants a block in that input slot. When you
-drag <code>item 2 of pair</code> into that slot, the ring remains around
-it. That's usually what we want when using <code>call</code>, but not
-this time. Right-click on the <code>item of</code> block and choose
+`call` block's first input slot is the empty gray ring, which
+means that `call` wants a block in that input slot. When you
+drag `item 2 of pair` into that slot, the ring remains around
+it. That's usually what we want when using `call`, but not
+this time. Right-click on the `item of` block and choose
 "unringify" from the menu.</p>
 
 ::: endnote
-You can experiment with <code>call</code> to see what else you can do
-with it. What happens if you don't unringify the <code>item</code>
-block? What happens if you leave out the "<code>with inputs</code>" and
+You can experiment with `call` to see what else you can do
+with it. What happens if you don't unringify the `item`
+block? What happens if you leave out the "`with inputs`" and
 the second input?
 :::
 :::
@@ -256,7 +256,7 @@ the second input?
 
 
 There's no reason the keys have to be single letters. Modify the code in
-<code>plural</code> so that it tests all <em>trailing substrings</em> of
+`plural` so that it tests all <em>trailing substrings</em> of
 the word against the specialist list. That is, if the word is "ditch,"
 you'd look in the specialist list for "ditch," then for "itch," then
 "tch," "ch," and finally, if nothing else is found, "h." You'd put<br />
@@ -264,10 +264,10 @@ you'd look in the specialist list for "ditch," then for "itch," then
 in the list, and then words ending "ch" would have "es" added. This
 mechanism is very general; it works even for special cases such as<br />
 <img src="/img/2-complexity/child-dispatch.png" title="list (child) (ringified (word (children)))" alt="list (child) (ringified (word (children)))" class="ms-4"/><br />
-(You'll have to define the <code>word</code> function that just reports
+(You'll have to define the `word` function that just reports
 its input; it's needed because you can't type letters directly into a
 ring.) <em>Now</em> you have a <em>really</em> uncluttered
-<code>plural</code> block. And it'll even work for a language other than
+`plural` block. And it'll even work for a language other than
 English, if you make a different specialist list.
 
 </li>
@@ -282,9 +282,9 @@ further and looks for an <em>empty</em> key in the specialist list, and
 you add<br />
 <img src="/img/2-complexity/default-dispatch.png" title="(item ( ) (ringed (join ( ) (s))))" alt="(item ( ) (ringed (join ( ) (s))))" class="ms-4"/><br />
 to the list, then you can be sure that every possible word will match
-that, if nothing else, so you don't need the <code>if</code> any more.
-Your <code>plural</code> block can now be just one-line: <code>report
-(call (item 2 of (longest trailing substring ...</code>.
+that, if nothing else, so you don't need the `if` any more.
+Your `plural` block can now be just one-line: `report
+(call (item 2 of (longest trailing substring ...`.
 
 </li>
 

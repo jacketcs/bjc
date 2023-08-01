@@ -12,8 +12,8 @@ triangle script inside itself as you learn about <em>recursion</em>.</p>
 
 <p>Does all that copying and pasting of triangle scripts feel awkward to
 you? You know a better way: <em>abstraction</em>. In Unit 1, you used a
-<code>pinwheel</code> block to implement the similar programs
-<code>asterisk</code> and <code>polygon</code> rather than copying the
+`pinwheel` block to implement the similar programs
+`asterisk` and `polygon` rather than copying the
 code. Here, you can use a block to manage the abstraction too. But in
 this case, we want the similar code (a smaller triangle) <em>nested
 inside</em>, so we will actually use the same block inside itself, a
@@ -26,7 +26,7 @@ process called <em>recursion</em>.</p>
 
 <li>
 
-Create a<code> </code>block called <code>nested triangle</code> that
+Create a` `block called `nested triangle` that
 takes one input, <var>size</var>, and, for now, only draws one triangle,
 but only if <var>size</var> \> 9. (Leave out the code about changing
 colors.)
@@ -43,7 +43,7 @@ script later.</p>
 :::
 
 <p><a href="#hint-nested" data-bs-toggle="collapse" title="Click for hints about building a nested triangle block.">Click
-for hints about building a <code>nested triangle</code> block.</a></p>
+for hints about building a `nested triangle` block.</a></p>
 
 ::: {#hint-nested .collapse}
 <ol type="a">
@@ -76,15 +76,15 @@ recursive.</p>
 :::
 
 <p>On the previous page, you dragged a copy of the triangle script in
-between the <code>move</code> and <code>turn</code> blocks. You can do a
-similar thing with your <code>nested triangle</code> block.</p>
+between the `move` and `turn` blocks. You can do a
+similar thing with your `nested triangle` block.</p>
 
 ::: forYouToDo
 <ol start="4">
 
-<li>From the palette, drag <code>nested triangle</code> into the
-definition of <code>nested triangle</code> between the <code>move</code>
-and <code>turn</code> blocks. Make its <var>size</var> input half the
+<li>From the palette, drag `nested triangle` into the
+definition of `nested triangle` between the `move`
+and `turn` blocks. Make its <var>size</var> input half the
 current value of <var>size</var>.<br />
 <img src="/img/2-complexity/nested-tri-recur-no-color.png" title="nested triangle, size: (size/2)" alt="nested triangle, size: (size/2)" class="ms-4"/></li>
 
@@ -94,7 +94,7 @@ Again try out your block with at least the inputs 9, 18, 20 and 100 to
 make sure it works as you expect.\
 
 ::: endnote
-You are using <code>nested triangle</code> in its own definition; this
+You are using `nested triangle` in its own definition; this
 makes it a recursive procedure. Recursion is one of the most powerful
 techniques in computer science and you will learn more about it in later
 projects.
@@ -110,8 +110,8 @@ projects.
 ::: ifTime
 <ol start="6">
 
-<li>Use <code>nested triangle</code> as a model to define a recursive
-<code>nested square</code> block.</li>
+<li>Use `nested triangle` as a model to define a recursive
+`nested square` block.</li>
 
 <li>In order to draw the parent triangle, the sprite must turn 120°
 between sides. For the fractal you just created, that turning happens
@@ -131,7 +131,7 @@ recursive call. Try some modifications like these:<br />
 <li>Experiment with the scale factor for the <var>size</var> of the
 recursive calls. A couple of interesting values are $\frac{1}{3}$ and $\frac{1}{\sqrt{3}}$.</li>
 
-<li>Use <code>for</code> to make an animation that cycles through
+<li>Use `for` to make an animation that cycles through
 different turning angle arrangements (that is, 0° and 120°, then 1° and
 119°, then 2° and 118°, etc.).<br />
 <img src="/img/2-complexity/U2ImageVideoAddendum_img/RecursiveTriangleAnimation.gif" title="Recursive Triangle Animation" alt="Recursive Triangle Animation" height="300"/>

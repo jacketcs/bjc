@@ -1,0 +1,182 @@
+/*-- scss:defaults --*/
+// Base document colors
+
+$forYouToDo:    #62C213;
+$dialogue:      #0494DC;
+$ifTime:        #2f61f8;
+$ifTime-bg:     #005fa8;
+$takeIt:        #6f11fc;
+$takeIt-bg:     #913d8a;
+$learn-bg:      #a31508;
+$sidenote:      #E6A822;
+$sidenote-bg:   #6b6a00;
+$atwork-bg:     #6e461e;
+$define-bg:     #6a6a6a;
+$note:          #f3761d;
+
+$body-bg:                   $gray-900;
+$body-color:                $white;
+$link-color:                #20c997;
+
+// Fonts
+
+$text-muted:                  $gray-600;
+
+// Tables
+
+$table-border-color:          $gray-700;
+
+$table-bg-scale:              0%;
+
+// Forms
+
+$input-bg:                          $white;
+$input-color:                       $gray-800;
+$input-border-color:                $body-bg;
+$input-group-addon-color:           $gray-500;
+$input-group-addon-bg:              $gray-700;
+$input-placeholder-color:           $gray-600;
+
+$form-check-input-bg:                     $white;
+$form-check-input-border:                 none;
+
+$form-select-disabled-color:        $gray-600;
+
+$form-file-button-color:          $input-group-addon-color;
+$form-file-button-bg:             $input-group-addon-bg;
+$form-file-button-hover-bg:       darken($form-file-button-bg, 5%);
+
+// Dropdowns
+
+$dropdown-bg:                       $gray-900;
+$dropdown-border-color:             $gray-700 ;
+$dropdown-divider-bg:               $gray-700 ;
+$dropdown-link-color:               $white ;
+$dropdown-link-hover-color:         $white ;
+$dropdown-link-hover-bg:            $primary ;
+
+// Navs
+
+$nav-link-disabled-color:           $gray-500 ;
+$nav-tabs-border-color:             $gray-700 ;
+$nav-tabs-link-hover-border-color:  $nav-tabs-border-color $nav-tabs-border-color transparent ;
+$nav-tabs-link-active-color:        $white ;
+$nav-tabs-link-active-border-color: $nav-tabs-border-color $nav-tabs-border-color transparent ;
+
+// Navbar
+
+$navbar-dark-color:                rgba($white, .6) ;
+$navbar-dark-hover-color:          $white ;
+$navbar-light-color:                rgba($gray-900, .7) ;
+$navbar-light-hover-color:          $gray-900 ;
+$navbar-light-active-color:         $gray-900 ;
+$navbar-light-toggler-border-color: rgba($gray-900, .1) ;
+
+// Pagination
+
+$pagination-color:                  $white ;
+$pagination-bg:                     $success ;
+$pagination-border-color:           transparent ;
+$pagination-hover-color:            $white ;
+$pagination-hover-bg:               lighten($success, 10%) ;
+$pagination-hover-border-color:     transparent ;
+$pagination-active-bg:              $pagination-hover-bg ;
+$pagination-active-border-color:    transparent ;
+$pagination-disabled-color:         $white ;
+$pagination-disabled-bg:            darken($success, 15%) ;
+$pagination-disabled-border-color:  transparent ;
+
+// Cards
+
+$card-cap-bg:                       $gray-700 ;
+$card-bg:                           $gray-800 ;
+
+// Popovers
+
+$popover-bg:                        $gray-800 ;
+$popover-header-bg:                 $gray-700 ;
+
+// Toasts
+
+$toast-background-color:            $gray-700 ;
+$toast-header-background-color:     $gray-800 ;
+
+// Modals
+
+$modal-content-bg:                  $gray-800 ;
+$modal-content-border-color:        $gray-700 ;
+$modal-header-border-color:         $gray-700 ;
+
+// Progress bars
+
+$progress-bg:                       $gray-700 ;
+
+// List group
+
+$list-group-color:                  $body-color ;
+$list-group-bg:                     $gray-800 ;
+$list-group-border-color:           $gray-700 ;
+$list-group-hover-bg:               $gray-700 ;
+$list-group-action-hover-color:     $list-group-color ;
+$list-group-action-active-bg:       $gray-900 ;
+
+// Breadcrumbs
+
+// $breadcrumb-bg:                     $gray-700 ;
+
+// Close
+
+$btn-close-color:            $white ;
+$btn-close-opacity:          .4 ;
+$btn-close-hover-opacity:    1 ;
+
+// Code
+
+$pre-color:                         inherit ;
+
+// Code blocks
+$code-block-bg-alpha: -.8;
+$code-block-bg: #eeeeee;
+$code-bg: #eeeeee;
+
+// $forYouToDo:    #62C213;
+// $dialogue:      #0494DC;
+// $ifTime:        #4A6CD4;
+// $ifTime-bg:     #cce4f6;
+// $takeIt:        #8F56E3;
+// $takeIt-bg:     #e4cde3;
+// $learn-bg:      #fcc7c2;
+// $sidenote:      #E6A822;
+// $sidenote-bg:   #FFF8AD;
+// $atwork-bg:     #fcc589;
+// $define-bg:     #eaeaea;
+// $note:          #f3761d;
+
+// code {
+//   background-color: #ededed !important;
+// }
+
+// .learn {
+//   background-color: #8B0000 !important;
+// }
+
+// .ifTime {
+//     background-color: #003396 !important;
+// }
+
+// .takeItFurther {
+//   background-color: #33007b !important;
+// }
+
+// .endnote, .sidenote, .sidenoteBig {
+//   background-color: #DE970B !important;
+// }
+
+// .forYouToDo, .card, .takeNote, .question-choice {
+//   background-color: inherit !important;
+//   color: inherit !important;
+// }
+
+// .vocab, .vocabBig, .exam, .examBig, .vocabFullWidth, .examFullWidth, .vocabSummary, .examSummary {
+//   color: black !important;
+// }

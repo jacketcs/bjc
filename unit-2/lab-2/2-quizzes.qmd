@@ -41,7 +41,7 @@ say (That&apos;s correct!) for (2) secs
 
 
 
-<p>But code like <img src="/img/2-complexity/item-1-of-item-3-of.png" title="item (1) of (item (3) of (computer science quiz))" alt="item (1) of (item (3) of (computer science quiz))" class="inline"/> is hard to read and understand. A better way is to <em>use abstraction</em> to organize the quiz items. The abstraction just hides the <code>list</code> and <code>item of</code> blocks, so it isn't complicated to build, but it can make your code much easier to write, read, and debug.<br /> <img src="/img/2-complexity/quiz-questions-list-of-adts.png" title="set (computer science quiz) to (list (question: (What is the computer science term for looping or repetition?) answer: (iteration)) (question: (What is the name for the abstraction in a program that can hold a value?) answer: (variable)) (question: (What kind of variable is available only in the part of the program where it is defined?) answer: (local variable)))" alt="set (computer science quiz) to (list (question: (What is the computer science term for looping or repetition?) answer: (iteration)) (question: (What is the name for the abstraction in a program that can hold a value?) answer: (variable)) (question: (What kind of variable is available only in the part of the program where it is defined?) answer: (local variable)))" class="ms-4"/> <img src="/img/2-complexity/abstracted-quiz-script.png" title="ask (question of quiz item (item (3) of (computer science quiz))) and wait
+<p>But code like <img src="/img/2-complexity/item-1-of-item-3-of.png" title="item (1) of (item (3) of (computer science quiz))" alt="item (1) of (item (3) of (computer science quiz))" class="inline"/> is hard to read and understand. A better way is to <em>use abstraction</em> to organize the quiz items. The abstraction just hides the `list` and `item of` blocks, so it isn't complicated to build, but it can make your code much easier to write, read, and debug.<br /> <img src="/img/2-complexity/quiz-questions-list-of-adts.png" title="set (computer science quiz) to (list (question: (What is the computer science term for looping or repetition?) answer: (iteration)) (question: (What is the name for the abstraction in a program that can hold a value?) answer: (variable)) (question: (What kind of variable is available only in the part of the program where it is defined?) answer: (local variable)))" alt="set (computer science quiz) to (list (question: (What is the computer science term for looping or repetition?) answer: (iteration)) (question: (What is the name for the abstraction in a program that can hold a value?) answer: (variable)) (question: (What kind of variable is available only in the part of the program where it is defined?) answer: (local variable)))" class="ms-4"/> <img src="/img/2-complexity/abstracted-quiz-script.png" title="ask (question of quiz item (item (3) of (computer science quiz))) and wait
 if (answer = answer from quiz item (item (3) of (computer science quiz))) {
 say (That&apos;s correct!) for (2) secs
 }" alt="ask (question of quiz item (item (3) of (computer science quiz))) and wait
@@ -82,7 +82,7 @@ Each programming language provides some <strong>primitive data types</strong> (d
 <p>The word "abstract" is often used casually to mean something <em>harder</em> to understand or more complex, but in computer science, its meaning is almost the opposite. ADTs are things that you, the programmer, create to make your program <em>easier</em> for you and others to read, debug, and improve.</p>
 :::
 
-<li>An <strong>abstract data type (ADT)</strong> is a custom data type that's meaningful to your program. It's not built into the language; you develop it as you code. This is an abstraction because it hides the details inside the constructor and selectors so that the programmer who uses a <code>quiz item</code> has to think only about questions and answers, not about list indices.</li>
+<li>An <strong>abstract data type (ADT)</strong> is a custom data type that's meaningful to your program. It's not built into the language; you develop it as you code. This is an abstraction because it hides the details inside the constructor and selectors so that the programmer who uses a `quiz item` has to think only about questions and answers, not about list indices.</li>
 
 <li>The <img src="/img/2-complexity/quiz-item-constructor.png" title="quiz item, question: () answer: ()" alt="quiz item, question: () answer: ()" class="inline"/> block is the <strong>constructor</strong>; it <em>constructs</em> one example of the data structure. By naming the pieces of the structure, the constructor makes it certain that every time you use it, you build the structure in the right order.<br /> <!--<img class="ms-4" src="/img/2-complexity/quiz-questions-constructor-definition.png" alt="quiz item, question: (question) answer: (answer) {report (list (question) (answer))}" title="quiz item, question: (question) answer: (answer) {report (list (question) (answer))}">--></li>
 
@@ -91,7 +91,7 @@ Each programming language provides some <strong>primitive data types</strong> (d
 
 </ul>
 
-The constructor and selector together implement the <code>quiz item</code> <em>abstract data type</em>.
+The constructor and selector together implement the `quiz item` <em>abstract data type</em>.
 
 <ul>
 
@@ -115,7 +115,7 @@ The constructor and selector together implement the <code>quiz item</code> <em>a
 
 
 
-<li>Build the custom <code>quiz item</code> abstract data type (both the constructor and the two selectors).</li>
+<li>Build the custom `quiz item` abstract data type (both the constructor and the two selectors).</li>
 
 ::: narrower
 ### <strong>Specifying an Input Type</strong>
@@ -193,7 +193,7 @@ At first the watcher will look like this:<br /> <img src="/img/2-complexity/csqu
 
 ::: {.assessment-data type="multiplechoice" identifier="capitals" hasinlinefeedback="true" maxchoices="8" responseidentifier="ri1" shuffle="true"}
 ::: prompt
-<p>Imagine you make a variable <var>capitals</var> and use <code>set</code> to give this list of lists a name: <br /> <img src="/img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="ms-4"/><br /> Which of the following statements are <strong>true</strong>?<br /> <br /> Choose <strong>all</strong> that apply.</p>
+<p>Imagine you make a variable <var>capitals</var> and use `set` to give this list of lists a name: <br /> <img src="/img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="ms-4"/><br /> Which of the following statements are <strong>true</strong>?<br /> <br /> Choose <strong>all</strong> that apply.</p>
 :::
 
 ::: {.choice identifier="c1"}
@@ -262,7 +262,7 @@ The items of <var>capitals</var> are lists.
 :::
 
 ::: feedback
-The items of <code>all but first of (capitals)</code> are lists.
+The items of `all but first of (capitals)` are lists.
 :::
 :::
 
