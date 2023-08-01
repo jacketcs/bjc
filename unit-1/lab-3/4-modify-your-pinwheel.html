@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script src="../../site_libs/quarto-contrib/gifffer/gifffer.min.js"></script>
 <link href="../../site_libs/quarto-contrib/gifffer/bjc-gifffer.css" rel="stylesheet">
 <script type="text/javascript">window.onload = function() {Gifffer();};</script>
@@ -69,7 +69,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -124,6 +123,10 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
@@ -436,7 +439,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="learn">
-<p><strong>On this page,</strong> you will modify your existing <code>pinwheel</code> block so that you can use it to draw a variety of shapes.<br> <img src="../../img/1-introduction/assorted-pinwheels.png" title="assortment of pinwheels" alt="assortment of pinwheels" class="indent"></p>
+<p><strong>On this page,</strong> you will modify your existing <code>pinwheel</code> block so that you can use it to draw a variety of shapes.<br> <img src="../../img/1-introduction/assorted-pinwheels.png" title="assortment of pinwheels" alt="assortment of pinwheels" class="ms-4"></p>
 </div>
 <section id="adding-multiple-inputs" class="level2">
 <h2 class="anchored" data-anchor-id="adding-multiple-inputs">Adding Multiple Inputs</h2>
@@ -449,20 +452,17 @@ Recall how you first <em>generalized</em> your original pinwheel script: you add
 If it isn’t already open, open your U1L3-Pinwheel project.
 </li>
 <li>
-<div class="comment">
-<p>AAP-3.A part b</p>
-</div>
 <p>Experiment with the input for the <em>second</em> <code>move</code> block inside your <code>pinwheel</code> block as shown below.<br></p>
 <ol>
 <li>
 <img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> First predict. What do you think will happen?
 </li>
-<p><img src="../../img/1-introduction/pinwheel-change-second-move-input.png" title="pinwheel block definition with comment asking students to experiment with the input for the second move block" alt="pinwheel block definition with comment asking students to experiment with the input for the second move block" class="indent"></p>
+<p><img src="../../img/1-introduction/pinwheel-change-second-move-input.png" title="pinwheel block definition with comment asking students to experiment with the input for the second move block" alt="pinwheel block definition with comment asking students to experiment with the input for the second move block" class="ms-4"></p>
 <li>
 Then try several inputs between -100 and 0.
 </li>
 <li>
-<img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> What happened? How does it compare to what you predicted? How does this input value impact the sprite’s behavior? How does it impact the resulting image on the stage? What number input number gives an asterisk? What input number gives a polygon?<br> <img title="Animation cycle from Asterisk to Polygon" alt="Animation cycle from Asterisk to Polygon" class="indent" data-gifffer="/img/1-introduction/Blockswith-Inputs_img/asteriskpolygonCycleBW.gif" height="200">
+<img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> What happened? How does it compare to what you predicted? How does this input value impact the sprite’s behavior? How does it impact the resulting image on the stage? What number input number gives an asterisk? What input number gives a polygon?<br> <img title="Animation cycle from Asterisk to Polygon" alt="Animation cycle from Asterisk to Polygon" class="ms-4" data-gifffer="/img/1-introduction/Blockswith-Inputs_img/asteriskpolygonCycleBW.gif" height="200">
 </li>
 </ol>
 </li>
@@ -500,16 +500,13 @@ Check that changing the <var>backup</var> input value when running the <code>pin
 <div class="endnote">
 <p><a href="#hint-positivebackup" data-bs-toggle="collapse" title="Click for example inputs to test accepting a positive value for backup.">Click for example inputs to test.</a></p>
 <div id="hint-positivebackup" class="collapse">
-<p><img src="../../img/1-introduction/pinwheel-branches-6-backup-20.png" title="pinwheel, branches: (6) backup: (20)" alt="pinwheel, branches: (6) backup: (20)" class="indent"> <img src="../../img/1-introduction/pinwheel-branches-6-backup-20-result.png" title="A large hexagon with the clockwise end of each side extended 20 steps beyond the hexagon. The full length of each side is 100 steps." alt="A large hexagon with the clockwise end of each side extended 20 steps beyond the hexagon. The full length of each side is 100 steps." class="indent"><br> <img src="../../img/1-introduction/pinwheel-branches-6-backup-50.png" title="pinwheel, branches: (6) backup: (50)" alt="pinwheel, branches: (6) backup: (50)" class="indent"> <img src="../../img/1-introduction/pinwheel-branches-6-backup-50-result.png" title="A medium hexagon with the clockwise end of each side extended 50 steps beyond the hexagon. The full length of each side is 100 steps." alt="A medium hexagon with the clockwise end of each side extended 50 steps beyond the hexagon. The full length of each side is 100 steps." class="indent"><br> <img src="../../img/1-introduction/pinwheel-branches-6-backup-80.png" title="pinwheel, branches: (6) backup: (80)" alt="pinwheel, branches: (6) backup: (80)" class="indent"> <img src="../../img/1-introduction/pinwheel-branches-6-backup-80-result.png" title="A small hexagon with the clockwise end of each side extended 80 steps beyond the hexagon. The full length of each side is 100 steps." alt="A small hexagon with the clockwise end of each side extended 80 steps beyond the hexagon. The full length of each side is 100 steps." class="indent"></p>
+<p><img src="../../img/1-introduction/pinwheel-branches-6-backup-20.png" title="pinwheel, branches: (6) backup: (20)" alt="pinwheel, branches: (6) backup: (20)" class="ms-4"> <img src="../../img/1-introduction/pinwheel-branches-6-backup-20-result.png" title="A large hexagon with the clockwise end of each side extended 20 steps beyond the hexagon. The full length of each side is 100 steps." alt="A large hexagon with the clockwise end of each side extended 20 steps beyond the hexagon. The full length of each side is 100 steps." class="ms-4"><br> <img src="../../img/1-introduction/pinwheel-branches-6-backup-50.png" title="pinwheel, branches: (6) backup: (50)" alt="pinwheel, branches: (6) backup: (50)" class="ms-4"> <img src="../../img/1-introduction/pinwheel-branches-6-backup-50-result.png" title="A medium hexagon with the clockwise end of each side extended 50 steps beyond the hexagon. The full length of each side is 100 steps." alt="A medium hexagon with the clockwise end of each side extended 50 steps beyond the hexagon. The full length of each side is 100 steps." class="ms-4"><br> <img src="../../img/1-introduction/pinwheel-branches-6-backup-80.png" title="pinwheel, branches: (6) backup: (80)" alt="pinwheel, branches: (6) backup: (80)" class="ms-4"> <img src="../../img/1-introduction/pinwheel-branches-6-backup-80-result.png" title="A small hexagon with the clockwise end of each side extended 80 steps beyond the hexagon. The full length of each side is 100 steps." alt="A small hexagon with the clockwise end of each side extended 80 steps beyond the hexagon. The full length of each side is 100 steps." class="ms-4"></p>
 </div>
 </div>
 </li>
 </ol>
 </div>
 <div class="examFullWidth">
-<div class="comment">
-<p>AAP-3.C.1, AAP-2.K.2</p>
-</div>
 <div class="pseudop">
 <p>The procedure definition for the custom <code>pinwheel</code> command<br> <img src="../../img/1-introduction/pinwheel-definition.png" title="pinwheel, branches: (number of branches)
 {
@@ -527,8 +524,8 @@ move (100) steps
 move (-37) steps
 turn clockwise (360 / number of branches) degrees
 }
-}" class="indent"><br> would be written as<br></p>
-<div class="pre-container indent">
+}" class="ms-4"><br> would be written as<br></p>
+<div class="pre-container ms-4">
 <pre>PROCEDURE pinwheel(numberOfBranches)
 {
 REPEAT numberOfBranches TIMES
@@ -566,7 +563,7 @@ turn_clockwise (360 / numberOfBranches)
 <p>aren’t built in to the AP’s language so they are written in lower case like other programmer-defined procedures.</p>
 </div>
 <div class="pseudop">
-<p>Notice that the hat block, <img src="../../img/1-introduction/pinwheel-hat-block.png" title="pinwheel, branches: (number of branches)" alt="pinwheel, branches: (number of branches)" class="inline nopadtb">, would be written as</p>
+<p>Notice that the hat block, <img src="../../img/1-introduction/pinwheel-hat-block.png" title="pinwheel, branches: (number of branches)" alt="pinwheel, branches: (number of branches)" class="inline py-0">, would be written as</p>
 <pre class="inline">PROCEDURE pinwheel(numberOfBranches)</pre>
 <p>. The word</p>
 <pre class="inline">PROCEDURE</pre>
@@ -578,19 +575,19 @@ turn_clockwise (360 / numberOfBranches)
 <p><img src="../../img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="float-end"></p>
 <ol start="5">
 <li>
-Add another input called <var>size</var> to control the input to the <em>first</em> <code>move</code> block.<br> <img src="../../img/1-introduction/U1ImageVideoAddendum_img/U1L3-PinwheelwithInputs.png" title="pinwheel,  branches: (number of branches) size: (size) backup: (backup) hat block" alt="pinwheel, branches: (number of branches) size: (size) backup: (backup) hat block" class="indent" width="700">
+Add another input called <var>size</var> to control the input to the <em>first</em> <code>move</code> block.<br> <img src="../../img/1-introduction/U1ImageVideoAddendum_img/U1L3-PinwheelwithInputs.png" title="pinwheel,  branches: (number of branches) size: (size) backup: (backup) hat block" alt="pinwheel, branches: (number of branches) size: (size) backup: (backup) hat block" class="ms-4" width="700">
 </li>
 <li>
 <p>Try out a variety of inputs to your <code>pinwheel</code> program.</p>
 <div class="endnote">
 <p><a href="#hint-size" data-bs-toggle="collapse" title="Click for example inputs to test accepting size value.">Click for example inputs to test.</a></p>
 <div id="hint-size" class="collapse">
-<p><img src="../../img/1-introduction/pinwheel-branches-3-size-100-backup-20.png" title="pinwheel, branches: (3) size: (100) backup: (20)" alt="pinwheel, branches: (3) size: (100) backup: (20)" class="indent"> <img src="../../img/1-introduction/pinwheel-branches-3-size-100-backup-20-result.png" title="A large triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 100 steps." alt="A large triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 100 steps." class="indent"><br> <img src="../../img/1-introduction/pinwheel-branches-3-size-65-backup-20.png" title="pinwheel, branches: (3) size: (100) backup: (20)" alt="pinwheel, branches: (3) size: (65) backup: (20)" class="indent"> <img src="../../img/1-introduction/pinwheel-branches-3-size-65-backup-20-result.png" title="A medium triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 65 steps." alt="A medium triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 65 steps." class="indent"><br> <img src="../../img/1-introduction/pinwheel-branches-3-size-30-backup-20.png" title="pinwheel, branches: (3) size: (30) backup: (20)" alt="pinwheel, branches: (3) size: (30) backup: (20)" class="indent"> <img src="../../img/1-introduction/pinwheel-branches-3-size-30-backup-20-result.png" title="A small triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 30 steps." alt="A small triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 30 steps." class="indent"><br></p>
+<p><img src="../../img/1-introduction/pinwheel-branches-3-size-100-backup-20.png" title="pinwheel, branches: (3) size: (100) backup: (20)" alt="pinwheel, branches: (3) size: (100) backup: (20)" class="ms-4"> <img src="../../img/1-introduction/pinwheel-branches-3-size-100-backup-20-result.png" title="A large triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 100 steps." alt="A large triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 100 steps." class="ms-4"><br> <img src="../../img/1-introduction/pinwheel-branches-3-size-65-backup-20.png" title="pinwheel, branches: (3) size: (100) backup: (20)" alt="pinwheel, branches: (3) size: (65) backup: (20)" class="ms-4"> <img src="../../img/1-introduction/pinwheel-branches-3-size-65-backup-20-result.png" title="A medium triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 65 steps." alt="A medium triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 65 steps." class="ms-4"><br> <img src="../../img/1-introduction/pinwheel-branches-3-size-30-backup-20.png" title="pinwheel, branches: (3) size: (30) backup: (20)" alt="pinwheel, branches: (3) size: (30) backup: (20)" class="ms-4"> <img src="../../img/1-introduction/pinwheel-branches-3-size-30-backup-20-result.png" title="A small triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 30 steps." alt="A small triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 30 steps." class="ms-4"><br></p>
 </div>
 </div>
 </li>
 <li>
-<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Discuss what input values will give you a polygon or an asterisk. <img src="../../img/icons/save-mini.png" title="Save your work" alt="Save your work" class="inline"><br> <img src="../../img/1-introduction/polygon-result.png" title="polygon" alt="polygon" class="indent"> <img src="../../img/1-introduction/asterisk-result.png" title="asterisk" alt="asterisk" class="indent">
+<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Discuss what input values will give you a polygon or an asterisk. <img src="../../img/icons/save-mini.png" title="Save your work" alt="Save your work" class="inline"><br> <img src="../../img/1-introduction/polygon-result.png" title="polygon" alt="polygon" class="ms-4"> <img src="../../img/1-introduction/asterisk-result.png" title="asterisk" alt="asterisk" class="ms-4">
 </li>
 </ol>
 </div>
@@ -599,7 +596,7 @@ Add another input called <var>size</var> to control the input to the <em>first</
 <p>
 </p><p>One way to avoid having bugs in your program in the first place is to keep your code organized by deleting any unused scripts. You can use the <strong>clean up</strong> option by right-clicking (or control-clicking on a Mac) in the scripting area to organize your blocks. You can <strong>remove a block or script</strong> either by dragging it out of the scripting area and back to the palettes on the left or by choosing the “delete” option from the drop-down menu. <a href="#hint-organizing" data-bs-toggle="collapse" title="Click here for a video of cleaning up the scripting area and removing blocks.">Click here for a video</a>. (Note that this is different from the “delete block definition” option which will permanently delete a custom block and all its instances from your entire project.)<br></p>
 <div id="hint-organizing" class="collapse">
-<p><img src="../../img/2-complexity/Debugging/cleanup-deleting.gif" title="Animation about deleting blocks by dragging them off to the palette or by choosing the delete option by right-clicking." alt="Animation about deleting blocks by dragging them off to the palette or by choosing the delete option by right-clicking." class="indent" height="500"></p>
+<p><img src="../../img/2-complexity/Debugging/cleanup-deleting.gif" title="Animation about deleting blocks by dragging them off to the palette or by choosing the delete option by right-clicking." alt="Animation about deleting blocks by dragging them off to the palette or by choosing the delete option by right-clicking." class="ms-4" height="500"></p>
 </div>
 <p></p>
 </section>
@@ -611,13 +608,10 @@ Tidy up the code in your project, if necessary.
 </ol>
 </div>
 <div class="examFullWidth">
-<div class="comment">
-<p>AAP-3.A.5</p>
-</div>
 <div class="pseudop">
 <p>This instruction <img src="../../img/1-introduction/U1ImageVideoAddendum_img/U1L3-PinwheelwithInputs1.png" title=" pinwheel, branches: (6) size: (80) backup: (20)" alt="setup; pinwheel, branches: (6) size: (80) backup: (20)" class="inline" height="50"> would be written as</p>
 <pre class="inline">Pinwheel(6, 80, 20)</pre>
-<p>or <img src="../../img/2-complexity/pinwheel-blocktran.png" title="a white rounded rectangle containing first the word 'PINWHEEL' in all caps and then a smaller white rectangle containing the inputs '6, 80, 20'" alt="a white rounded rectangle containing first the word 'PINWHEEL' in all caps and then a smaller white rectangle containing the inputs '6, 80, 20'" class="nopadtb">.</p>
+<p>or <img src="../../img/2-complexity/pinwheel-blocktran.png" title="a white rounded rectangle containing first the word 'PINWHEEL' in all caps and then a smaller white rectangle containing the inputs '6, 80, 20'" alt="a white rounded rectangle containing first the word 'PINWHEEL' in all caps and then a smaller white rectangle containing the inputs '6, 80, 20'" class="py-0">.</p>
 </div>
 <p>
 You may hear people use the term “pseudocode” to refer to this pseudo-language used on the AP CS Principles exam, but it’s <em>not</em> pseudocode. Pseudocode isn’t a programming language at all, it’s the use of normal human language to describe an algorithm.
@@ -645,7 +639,7 @@ Find inputs to <code>pinwheel</code> that make the result look like a circle.
 </li>
 <li>
 <p>Make a picture that looks more like a real pinwheel:<br><br>
-<img src="../../img/1-introduction/pinwheel.png" title="Photograph of a real pinwheel with four spokes. The pinwheel is red with a green stem and has a silver tack in the middle attaching the pinwheel to the stem." alt="Photograph of a real pinwheel with four spokes. The pinwheel is red with a green stem and has a silver tack in the middle attaching the pinwheel to the stem." class="indent" height="210"><br> <small>Copyright 2010 <a href="http://asubtlerevelry.com/a-pinwheel-tutorial-the-easiest-ever/" title="A Pinwheel Tutorial- The Easiest Ever" target="_blank">Victoria Hudgins</a>. Used by permission.</small></p>
+<img src="../../img/1-introduction/pinwheel.png" title="Photograph of a real pinwheel with four spokes. The pinwheel is red with a green stem and has a silver tack in the middle attaching the pinwheel to the stem." alt="Photograph of a real pinwheel with four spokes. The pinwheel is red with a green stem and has a silver tack in the middle attaching the pinwheel to the stem." class="ms-4" height="210"><br> <small>Copyright 2010 <a href="http://asubtlerevelry.com/a-pinwheel-tutorial-the-easiest-ever/" title="A Pinwheel Tutorial- The Easiest Ever" target="_blank">Victoria Hudgins</a>. Used by permission.</small></p>
 <p>
 (Save your project first; you’ll need the <code>pinwheel</code> block you already have later.)
 </p>

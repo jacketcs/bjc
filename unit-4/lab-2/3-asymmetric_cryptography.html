@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-4/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-4/lab-2/1-cryptography.html">Lab 2</a></li><li class="breadcrumb-item"><a href="../../unit-4/lab-2/3-asymmetric_cryptography.html">Page 3: Public Key Encryption</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-4/index.html">Unit 4: How the Internet Works</a></li><li class="breadcrumb-item"><a href="../../unit-4/lab-2/1-cryptography.html">Lab 2</a></li><li class="breadcrumb-item"><a href="../../unit-4/lab-2/3-asymmetric_cryptography.html">Page 3: Public Key Encryption</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-4/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 4: How the Internet Works</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -438,20 +441,17 @@ The fundamental problem that cryptography is trying to solve is how to get a mes
 </p>
 </div>
 <div class="endnote">
-<div class="commentBig">
-<p><a href="https://commons.wikimedia.org/wiki/File:Public_key_encryption.svg" target="_blank">https://commons.wikimedia.org/wiki/File:Public_key_encryption.svg</a></p>
-</div>
 <p>
 <a href="#hint-model" data-bs-toggle="collapse" title="Here is a visual model of public key encryption (from wikimedia.org).">Here is a visual model of public key encryption</a> (from wikimedia.org).
 </p>
 <div id="hint-model" class="collapse">
-<p><img src="../../img/3-lists/525px-Public_key_encryption.png" title="Diagram of public key encryption showing a message being encrypted with a public key and decrypted with a private key" alt="Diagram of public key encryption showing a message being encrypted with a public key and decrypted with a private key" class="indent noshadow" border="0"></p>
+<p><img src="../../img/3-lists/525px-Public_key_encryption.png" title="Diagram of public key encryption showing a message being encrypted with a public key and decrypted with a private key" alt="Diagram of public key encryption showing a message being encrypted with a public key and decrypted with a private key" class="ms-4 noshadow" border="0"></p>
 </div>
 <p>
 <a href="#hint-paint" data-bs-toggle="collapse" title="Here is a video that uses paint mixing as a metaphor for public key encryption.">Here is a video that uses paint mixing as a metaphor for public key encryption.</a>
 </p>
 <div id="hint-paint" class="collapse">
-<p><img src="../../img/icons/headphones-mini.png" title="Set Up Your Headphones or Speakers" alt="Set Up Your Headphones or Speakers" class="float-end"> <iframe width="560" height="315" src="https://www.youtube.com/embed/YEBfamv-_do?start=145&amp;rel=0" frameborder="0" allowfullscreen="" class="indent"></iframe></p>
+<p><img src="../../img/icons/headphones-mini.png" title="Set Up Your Headphones or Speakers" alt="Set Up Your Headphones or Speakers" class="float-end"> <iframe width="560" height="315" src="https://www.youtube.com/embed/YEBfamv-_do?start=145&amp;rel=0" frameborder="0" allowfullscreen="" class="ms-4"></iframe></p>
 <p>
 If your connection blocks YouTube, <a href="http://scratch.mit.edu/discuss/youtube/YEBfamv-_do" target="_blank" title="Public key cryptography - Diffie-Hellman Key Exchange">watch the video here</a>, but start it at 2:25.
 </p>
@@ -495,7 +495,7 @@ That’s no good for secret messages (why not?), but it’s useful for <strong>d
 </div>
 </div>
 <div class="endnote">
-<p>This comic was written by Randall Munroe (source: xkcd).<br> <img src="http://imgs.xkcd.com/comics/public_key.png" title="I guess I should be signing stuff, but I've never been sure what to sign. Maybe if I post my private key, I can crowdsource my decisions about what to sign." alt="A comic with 4 panels. In each panel, a person is sitting at a computer. In panel 1, they say 'I've been posting my public key for 15 years now, but no one has ever asked me for it or used it for anything as far as I can tell.' In panels 2 and 3, the person sits quietly. In panel 4, they say 'Maybe I should try posting my private key instead.'" class="indent"></p>
+<p>This comic was written by Randall Munroe (source: xkcd).<br> <img src="http://imgs.xkcd.com/comics/public_key.png" title="I guess I should be signing stuff, but I've never been sure what to sign. Maybe if I post my private key, I can crowdsource my decisions about what to sign." alt="A comic with 4 panels. In each panel, a person is sitting at a computer. In panel 1, they say 'I've been posting my public key for 15 years now, but no one has ever asked me for it or used it for anything as far as I can tell.' In panels 2 and 3, the person sits quietly. In panel 4, they say 'Maybe I should try posting my private key instead.'" class="ms-4"></p>
 </div>
 <h3 class="anchored">
 Secure HTTP
@@ -511,7 +511,7 @@ Secure HTTP connections (those that use <strong>https://</strong> instead of <st
 <!--<div class="todo">
 <div class="sidenote">If your connection blocks YouTube, <a href="http://scratch.mit.edu/discuss/youtube/kBXQZMmiA4s" target="_blank" title="The Internet: HTTP & HTML">watch the video here</a>, but start it at 4:40. </div>
 <img class="float-end" src="/img/icons/headphones-mini.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" />
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kBXQZMmiA4s?start=280&rel=0" frameborder="0" allowfullscreen class="indent"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kBXQZMmiA4s?start=280&rel=0" frameborder="0" allowfullscreen class="ms-4"></iframe>
 </div>-->
 <div class="endnote">
 <p><a href="#hint-open-standards" data-bs-toggle="collapse" title="Open Standards Help Security">Open standards help security…</a></p>

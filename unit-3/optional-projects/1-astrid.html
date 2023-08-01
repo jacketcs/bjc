@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Unit , Lab , Page 1 | JacketCS CSP</title>
+<title>Curve Stitching | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-3/index.html">Data Structures</a></li><li class="breadcrumb-item"><a href="../../unit-3/optional-projects/1-astrid.html">Optional Projects</a></li><li class="breadcrumb-item"><a href="../../unit-3/optional-projects/1-astrid.html">Curve Stitching</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-3/index.html">Unit 3: Data Structures</a></li><li class="breadcrumb-item"><a href="../../unit-3/optional-projects/1-astrid.html">Optional Projects</a></li><li class="breadcrumb-item"><a href="../../unit-3/optional-projects/1-astrid.html">Curve Stitching</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-3/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Structures</span></a>
+ <span class="menu-text">Unit 3: Data Structures</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -396,7 +399,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Curve Stitching</h1>
-<p class="subtitle lead">Unit , Lab , Page 1</p>
+<p class="subtitle lead">Unit 3 Optional Project</p>
 </div>
 
 
@@ -426,7 +429,7 @@ MF: Needs rewrites
 <p><strong>Why do this?</strong> To give the students a chance to apply their skills of developing algorithms and using abstractions in the context of a visual arts project. To motivate students with interest in arts and to give them an opportunity to synthesize their artistic skills with their knowledge of algorithms and coding.<br> <strong>Why here?</strong> At this point in the curriculum the students know enough to be able to complete a computational visual art project with minimal hand-holding.</p>
 </div>
 <div class="learn">
-<p><strong>In this project,</strong> you will create a mathematical art design and explore its variations. (Click the picture to see an animation.)<br> <img title="Curve stitching design being drawn line by line in each quadrant" alt="Curve stitching design being drawn line by line in each quadrant" class="indent" data-gifffer="/img/3-lists/Astrid_img/AstridAnimation.gif" height="300"></p>
+<p><strong>In this project,</strong> you will create a mathematical art design and explore its variations. (Click the picture to see an animation.)<br> <img title="Curve stitching design being drawn line by line in each quadrant" alt="Curve stitching design being drawn line by line in each quadrant" class="ms-4" data-gifffer="/img/3-lists/Astrid_img/AstridAnimation.gif" height="300"></p>
 </div>
 <p>
 </p><p>This design uses straight lines to make shapes that look curved and is sometimes sewn with thread or drawn on paper. Here are some examples of and variations on this design made with string, computers, pencils on paper, and even pencils glued together:</p>
@@ -454,14 +457,14 @@ With your partner discuss how to make this design. Develop an <em>algorithm</em>
 <p><a href="#hint-coordinates" data-bs-toggle="collapse" title="Click for a hint about setting up the design.">Click for a hint about setting up the design.</a></p>
 <div id="hint-coordinates" class="collapse">
 <p>
-Below is a partial table of coordinates for the first quadrant of the design, showing which points on the y-axis are joined to which points on the x-axis.<br> <img src="../../img/3-lists/Astrid_img/Q1.png" title="axes with first quadrant of design" alt="axes with first quadrant of design" class="indent" style="float:left; margin-right: 100px;" height="250">
+Below is a partial table of coordinates for the first quadrant of the design, showing which points on the y-axis are joined to which points on the x-axis.<br> <img src="../../img/3-lists/Astrid_img/Q1.png" title="axes with first quadrant of design" alt="axes with first quadrant of design" class="ms-4" style="float:left; margin-right: 100px;" height="250">
 </p>
 <p>31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATgBBAEEAeABBAEQAawBBAE8AQQBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBQAEEAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAEkAQQBCAGoAQQBHAHcAQQBZAFEAQgB6AEEASABNAEEAUABRAEEAaQBBAEcASQBBAGIAdwBCAHkAQQBHAFEAQQBaAFEAQgB5AEEARwBVAEEAWgBBAEEAaQBBAEMAQQBBAGMAdwBCADAAQQBIAGsAQQBiAEEAQgBsAEEARAAwAEEASQBnAEIAdABBAEcARQBBAGMAZwBCAG4AQQBHAGsAQQBiAGcAQQB0AEEARwB3AEEAWgBRAEIAbQBBAEgAUQBBAE8AZwBBAGcAQQBEAEUAQQBNAEEAQQBsAEEARABzAEEASQBnAEEAZwBBAEgATQBBAGQAUQBCAHQAQQBHADAAQQBZAFEAQgB5AEEASABrAEEAUABRAEEAaQBBAEgATQBBAGQAUQBCAG4AQQBHAGMAQQBaAFEAQgB6AEEASABRAEEAWgBRAEIAawBBAEMAQQBBAGMAQQBCAHYAQQBHAGsAQQBiAGcAQgAwAEEASABNAEEASQBBAEIAbQBBAEcAOABBAGMAZwBBAGcAQQBHAFEAQQBaAFEAQgB6AEEARwBrAEEAWgB3AEIAdQBBAEMASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAGEAQQBBAGcAQQBIAE0AQQBZAHcAQgB2AEEASABBAEEAWgBRAEEAOQBBAEMASQBBAFkAdwBCAHYAQQBHAHcAQQBJAGcAQQBnAEEASABNAEEAZABBAEIANQBBAEcAdwBBAFoAUQBBADkAQQBDAEkAQQBkAHcAQgBvAEEARwBrAEEAZABBAEIAbABBAEMAMABBAGMAdwBCAHcAQQBHAEUAQQBZAHcAQgBsAEEARABvAEEASQBBAEIAdQBBAEcAOABBAGQAdwBCAHkAQQBHAEUAQQBjAEEAQQA3AEEAQwBJAEEAUABnAEIARwBBAEgASQBBAGIAdwBCAHQAQQBDAEEAQQBLAEEAQgA1AEEAQwAwAEEAWQBRAEIANABBAEcAawBBAGMAdwBBAHAAQQBEAHcAQQBMAHcAQgAwAEEARwBnAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAG8AQQBDAEEAQQBjAHcAQgBqAEEARwA4AEEAYwBBAEIAbABBAEQAMABBAEkAZwBCAGoAQQBHADgAQQBiAEEAQQBpAEEAQwBBAEEAYwB3AEIAMABBAEgAawBBAGIAQQBCAGwAQQBEADAAQQBJAGcAQgAzAEEARwBnAEEAYQBRAEIAMABBAEcAVQBBAEwAUQBCAHoAQQBIAEEAQQBZAFEAQgBqAEEARwBVAEEATwBnAEEAZwBBAEcANABBAGIAdwBCADMAQQBIAEkAQQBZAFEAQgB3AEEARABzAEEASQBnAEEAKwBBAEYAUQBBAGIAdwBBAGcAQQBDAGcAQQBlAEEAQQB0AEEARwBFAEEAZQBBAEIAcABBAEgATQBBAEsAUQBBADgAQQBDADgAQQBkAEEAQgBvAEEARAA0AEEAQwBnAEEAOABBAEMAOABBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQQBvAEEARABBAEEATABBAEEAZwBBAEQARQBBAE4AUQBBAHcAQQBDAGsAQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQQBvAEEARABBAEEATABBAEEAZwBBAEQAQQBBAEsAUQBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEMAOABBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQQBvAEEARABBAEEATABBAEEAZwBBAEQARQBBAE4AQQBBAHcAQQBDAGsAQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQQBvAEEARABFAEEATQBBAEEAcwBBAEMAQQBBAE0AQQBBAHAAQQBEAHcAQQBMAHcAQgAwAEEARwBRAEEAUABnAEEASwBBAEQAdwBBAEwAdwBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBaAEEAQQArAEEAQwBnAEEATQBBAEEAcwBBAEMAQQBBAE0AUQBBAHoAQQBEAEEAQQBLAFEAQQA4AEEAQwA4AEEAZABBAEIAawBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBaAEEAQQArAEEAQwBnAEEATQBnAEEAdwBBAEMAdwBBAEkAQQBBAHcAQQBDAGsAQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBBAHYAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEATABnAEEAdQBBAEMANABBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBAHUAQQBDADQAQQBMAGcAQQA4AEEAQwA4AEEAZABBAEIAawBBAEQANABBAEMAZwBBADgAQQBDADgAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAbwBBAEQAQQBBAEwAQQBBAGcAQQBEAEkAQQBNAEEAQQBwAEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEASwBBAEEAeABBAEQATQBBAE0AQQBBAHMAQQBDAEEAQQBNAEEAQQBwAEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBMAHcAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEMAZwBBAE0AQQBBAHMAQQBDAEEAQQBNAFEAQQB3AEEAQwBrAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAbwBBAEQARQBBAE4AQQBBAHcAQQBDAHcAQQBJAEEAQQB3AEEAQwBrAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQQB2AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAEsAQQBBAHcAQQBDAHcAQQBJAEEAQQB3AEEAQwBrAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAbwBBAEQARQBBAE4AUQBBAHcAQQBDAHcAQQBJAEEAQQB3AEEAQwBrAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQQB2AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBBAHYAQQBIAFEAQQBZAFEAQgBpAEEARwB3AEEAWgBRAEEAKwBBAEEAPQA9AAoAcwB1AGYAZgBpAHgAOgA=:31b8e172-b470-440e-83d8-e6b185028602</p>
 <p>
 <a href="#hint-for-loop" data-bs-toggle="collapse" title="Click for a suggestion about how to start in Snap!">Click for a suggestion about how to start in Snap<em>!</em></a>
 </p>
 <div id="hint-for-loop" class="collapse">
-<p>There are many possible approaches to this problem. One approach could use the <code>for</code> block:<br> <img src="../../img/3-lists/Astrid_img/forBlock.png" title="for (i)=(0) to (15)" alt="for (i)=(0) to (15)" class="indent" height="80"></p>
+<p>There are many possible approaches to this problem. One approach could use the <code>for</code> block:<br> <img src="../../img/3-lists/Astrid_img/forBlock.png" title="for (i)=(0) to (15)" alt="for (i)=(0) to (15)" class="ms-4" height="80"></p>
 </div>
 </div>
 </div>
@@ -471,10 +474,7 @@ Below is a partial table of coordinates for the first quadrant of the design, sh
 <div class="ifTime">
 <ol start="3">
 <li>
-<div class="comment">
-<p>Some other day, remake this image with two colors and then say “…create a surrounding frame for your design in red.” –MF, 9/7/18</p>
-</div>
-<p>Using the same principles, create a surrounding frame for your design.<br> <img src="../../img/3-lists/Astrid_img/AstridwithPerim.png" title="Curve stitching design with its perimeter frame" alt="Curve stitching design with its perimeter frame" class="indent" height="200"></p>
+<p>Using the same principles, create a surrounding frame for your design.<br> <img src="../../img/3-lists/Astrid_img/AstridwithPerim.png" title="Curve stitching design with its perimeter frame" alt="Curve stitching design with its perimeter frame" class="ms-4" height="200"></p>
 <div class="endnote">
 <p>Both the original curve and the frame are made of four quarter-pictures.</p>
 </div>
@@ -484,15 +484,12 @@ Below is a partial table of coordinates for the first quadrant of the design, sh
 <div class="takeItFurther">
 <ol type="A">
 <li>
-<div class="comment">
-<p>Same comment as above on #3. –MF, 9/7/18</p>
-</div>
-<p>Add another copy of the design slanted at 45° as shown below.<br> <img src="../../img/3-lists/Astrid_img/Astrid2.png" title="8 spiked curve stitching design" alt="8 spiked curve stitching design" class="indent" height="200"></p>
+<p>Add another copy of the design slanted at 45° as shown below.<br> <img src="../../img/3-lists/Astrid_img/Astrid2.png" title="8 spiked curve stitching design" alt="8 spiked curve stitching design" class="ms-4" height="200"></p>
 <div class="endnote">
 <p><a href="#hint-pythagorean" data-bs-toggle="collapse" title="Want a mathematical hint?">Want a mathematical hint?</a></p>
 <div id="hint-pythagorean" class="collapse">
 <p>
-You could use the Pythagorean Theorem:<br> <img src="../../img/3-lists/Astrid_img/Pythagoras1.png" title="First quadrant triangle with hypotenuse 1 in a unit circle" alt="First quadrant triangle with hypotenuse 1 in a unit circle" class="indent" height="200"> <img src="../../img/3-lists/Astrid_img/Pythagoras2.png" title="Application of Pythagorean Theorem to triangle with hypotenuse 1 using algebra to show that other sides are each square root(2)/2" alt="Application of Pythagorean Theorem to triangle with hypotenuse 1 using algebra to show that other sides are each square root(2)/2" class="indent" height="200">
+You could use the Pythagorean Theorem:<br> <img src="../../img/3-lists/Astrid_img/Pythagoras1.png" title="First quadrant triangle with hypotenuse 1 in a unit circle" alt="First quadrant triangle with hypotenuse 1 in a unit circle" class="ms-4" height="200"> <img src="../../img/3-lists/Astrid_img/Pythagoras2.png" title="Application of Pythagorean Theorem to triangle with hypotenuse 1 using algebra to show that other sides are each square root(2)/2" alt="Application of Pythagorean Theorem to triangle with hypotenuse 1 using algebra to show that other sides are each square root(2)/2" class="ms-4" height="200">
 </p>
 </div>
 </div>
@@ -507,7 +504,7 @@ Here are some more variations that employ color and more complex geometric arran
 <p><a href="#hint-example" data-bs-toggle="collapse" class="collapsed" title="Want to see an example?">Want to see an example?</a></p>
 <div id="hint-example" class="collapse">
 <p>
-This animation explores the artistic concept of “<a href="https://en.wikipedia.org/wiki/Negative_space" target="_blank">negative space</a>” by using a grid of rotating copies of the design. How would you revise your program to generate animations like this?<br> <img src="../../img/3-lists/Astrid_img/Negative-Space.gif" title="A 6 by 4 grid of curve stitching designs rotating to reveal the negative space of the underlying background" alt="A 6 by 4 grid of curve stitching designs rotating to reveal the negative space of the underlying background" class="noshadow indent" height="400">
+This animation explores the artistic concept of “<a href="https://en.wikipedia.org/wiki/Negative_space" target="_blank">negative space</a>” by using a grid of rotating copies of the design. How would you revise your program to generate animations like this?<br> <img src="../../img/3-lists/Astrid_img/Negative-Space.gif" title="A 6 by 4 grid of curve stitching designs rotating to reveal the negative space of the underlying background" alt="A 6 by 4 grid of curve stitching designs rotating to reveal the negative space of the underlying background" class="noshadow ms-4" height="400">
 </p>
 </div>
 </div>

@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -121,6 +120,10 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
@@ -457,7 +460,7 @@ report (join (who) (' who') (does what) ( ) (who))
 } else {
 report (who)
 }
-}" class="indent"></p>
+}" class="ms-4"></p>
 <ol>
 <li>
 Find <img src="../../img/blocks/pick-random-1-to-10-full-size.png" title="pick random (1) to (10)" alt="pick random (1) to (10)" class="inline"> in the green Operators palette, and click it several times. What does the <code>random</code> block do?
@@ -471,9 +474,6 @@ Find <img src="../../img/blocks/pick-random-1-to-10-full-size.png" title="pick r
 <!-- Question 1 -->
 <div class="assessment-data" type="multiplechoice" data-identifier="About how often will more complicated who pick the more complicated choice?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri1" data-shuffle="false">
 <div class="prompt">
-<div class="comment">
-<p>AAP-3.E</p>
-</div>
 <p><img src="../../img/1-introduction/more-complicated-who-script.png" title="more complicated who {
 if (pick random (1) to (4)) = (3) {
 report (join (who) (', who') (does what) ( ) (who) (,))                                                                                          
@@ -529,9 +529,6 @@ report (who)
 <!-- Question 2 -->
 <div class="assessment-data" type="multiplechoice" data-identifier="About how often will more complicated who pick the more complicated choice?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri2" data-shuffle="false">
 <div class="prompt">
-<div class="comment">
-<p>AAP-3.E</p>
-</div>
 <p><img src="../../img/1-introduction/more-complicated-who-script.png" title="more complicated who {
 if (pick random (1) to (4)) = (3) {
 report (join (who) (', who') (does what) ( ) (who) (,))                                                                                          
@@ -589,23 +586,17 @@ report (who)
 </div>
 <div class="vocabFullWidth">
 <p>: <strong>Expressions</strong> and <strong>Values</strong></p>
-<div class="comment">
-<p>AAP-2.B.3, AAP-2.B.4</p>
-</div>
 <ul>
 <li>
-An <strong>expression</strong> is a either a constant value (such as “4” or “winter”) or a call to a reporter block including its inputs (such as <img src="../../img/2-complexity/number.png" title="number" alt="number" class="inline">, <img src="../../img/1-introduction/5+(4x3).png" title="5 + (4 * 3)" alt="5 + (4 * 3)" class="inline nopadtb">, or <img src="../../img/2-complexity/join-who-doeswhat-who.png" title="join (who) ( ) (does what) ( ) (who)" alt="join (who) ( ) (does what) ( ) (who)" class="inline">).
+An <strong>expression</strong> is a either a constant value (such as “4” or “winter”) or a call to a reporter block including its inputs (such as <img src="../../img/2-complexity/number.png" title="number" alt="number" class="inline">, <img src="../../img/1-introduction/5+(4x3).png" title="5 + (4 * 3)" alt="5 + (4 * 3)" class="inline py-0">, or <img src="../../img/2-complexity/join-who-doeswhat-who.png" title="join (who) ( ) (does what) ( ) (who)" alt="join (who) ( ) (does what) ( ) (who)" class="inline">).
 </li>
 <li>
-Expressions are evaluated to produce a <em>single</em> <strong>value</strong> (a value can be a number, a string, a sprite, a costume, a script, a list—anything). For example, <img src="../../img/1-introduction/5+(4x3).png" title="5 + (4 * 3)" alt="5 + (4 * 3)" class="inline nopadtb"> will be evaluated to 17.
+Expressions are evaluated to produce a <em>single</em> <strong>value</strong> (a value can be a number, a string, a sprite, a costume, a script, a list—anything). For example, <img src="../../img/1-introduction/5+(4x3).png" title="5 + (4 * 3)" alt="5 + (4 * 3)" class="inline py-0"> will be evaluated to 17.
 </li>
 </ul>
 </div>
 <div class="examFullWidth">
 <!--<div class="index-term" id="pick random</code>"></div>-->
-<div class="comment">
-<p>AAP-3.E.1, AAP-3.E.2</p>
-</div>
 <div class="pseudop">
 <p>The expression <img src="../../img/blocks/pick-random-1-to-10-full-size.png" title="pick random (1) to (10)" alt="pick random (1) to (10)" class="inline"> would be written as</p>
 <pre class="inline">RANDOM(1, 10)</pre>
@@ -618,9 +609,6 @@ Expressions are evaluated to produce a <em>single</em> <strong>value</strong> (a
 <!-- Question 3 -->
 <div class="assessment-data" type="multiplechoice" data-identifier="What expression would return a random even number between 1 and 10?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri3" data-shuffle="true">
 <div class="prompt">
-<div class="comment">
-<p>AAP-3.E</p>
-</div>
 <div class="sidenoteBig">
 <p><a href="#hint-parity" data-bs-toggle="collapse" title="Click for a review about odd and even numbers.">Click for a review of odd and even numbers.</a></p>
 <div id="hint-parity" class="collapse">
@@ -684,9 +672,6 @@ In contrast, <strong>odd</strong> numbers are integers <em>not</em> divisible by
 <!-- Question 4 -->
 <div class="assessment-data" type="multiplechoice" data-identifier="Which expression will simulate the rolling of two dice?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri4" data-shuffle="true">
 <div class="prompt">
-<div class="comment">
-<p>AAP-3.E</p>
-</div>
 <p>Which expression will simulate the rolling of two dice?</p>
 </div>
 <div class="choice" data-identifier="c1">
@@ -738,7 +723,7 @@ In contrast, <strong>odd</strong> numbers are integers <em>not</em> divisible by
 </div>
 </li>
 <li>
-Create a new block <img src="../../img/1-introduction/complicated-gossip.png" title="complicated gossip" alt="complicated gossip" class="inline nopadtb"> that is similar to <code>gossip</code> but that uses <code>more complicated who</code> instead of <code>who</code>. (You can choose which <code>who</code> to replace, or you could replace both.)
+Create a new block <img src="../../img/1-introduction/complicated-gossip.png" title="complicated gossip" alt="complicated gossip" class="inline py-0"> that is similar to <code>gossip</code> but that uses <code>more complicated who</code> instead of <code>who</code>. (You can choose which <code>who</code> to replace, or you could replace both.)
 </li>
 <li>
 Change the script for Sprite to use <code>complicated gossip</code> instead of <code>gossip</code>. Run your code, and fix any problems.
@@ -753,9 +738,6 @@ Change the script for Sprite to use <code>complicated gossip</code> instead of <
 <li>
 Edit <code>more complicated who</code>. Replace <em>one</em> of the <code>who</code> blocks with a fresh copy of <code>more complicated who</code> that you drag in from the palette. Click <code>more complicated who</code> enough times to see how it has changed.
 </li>
-<div class="comment">
-<p>CRD-2.B</p>
-</div>
 <li>
 <img src="../../img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"> Describe the change in behavior, and explain what you think is causing it.
 </li>

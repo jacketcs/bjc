@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script src="../../site_libs/quarto-contrib/gifffer/gifffer.min.js"></script>
 <link href="../../site_libs/quarto-contrib/gifffer/bjc-gifffer.css" rel="stylesheet">
 <script type="text/javascript">window.onload = function() {Gifffer();};</script>
@@ -69,7 +69,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -125,6 +124,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -140,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-2/1-shopping-list-app.html">Lab 2</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-2/1-shopping-list-app.html">Page 1: Shopping List App</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Unit 2: Abstraction</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-2/1-shopping-list-app.html">Lab 2</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-2/1-shopping-list-app.html">Page 1: Shopping List App</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -155,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-2/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 2: Abstraction</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -454,9 +457,6 @@ ul.task-list li input[type="checkbox"] {
 Many computer applications—contact lists, playlists, calendars, reminders—involve manipulating <em>lists</em> of information using tools that search, sort, or change the items on the list. You’ve worked with lists before as you customized the gossip project.<br>
 </p>
 <div class="examFullWidth">
-<div class="comment">
-<p>AAP-1.C.1 second sentence, AAP-1.D.7</p>
-</div>
 <div class="pseudop">
 <p>The list expression <img src="../../img/1-introduction/list-from-who.png" title="list{Señora, Ms. C, my cat, Hannah, Jake}" alt="list{Señora, Ms. C, my cat, Hannah, Jake}" class="inline"> would be written as</p>
 <pre class="inline">[Señora, Ms. C, my cat, Hannah, Jake]</pre>
@@ -472,16 +472,13 @@ Many computer applications—contact lists, playlists, calendars, reminders—in
 <div class="endnote">
 <p><a href="#hint-shopping-list-example" data-bs-toggle="collapse" title="Click for a video showing how the shopping list app might look.">Click for a video showing how this might look.</a></p>
 <div id="hint-shopping-list-example" class="collapse">
-<p><img alt="animation of shopping list app" class="indent" data-gifffer="/img/3-lists/shopping-list-project-v3.gif"></p>
+<p><img alt="animation of shopping list app" class="ms-4" data-gifffer="/img/3-lists/shopping-list-project-v3.gif"></p>
 </div>
 </div>
 <div class="sidenoteBig">
 <p>You learned how to initialize (create and set) a global variable on <a href="../../unit-2/lab-1/4-keeping-score.html" title="Unit 2 Lab 1 Page 4: Keeping Score with Global Variables">Unit 2 Lab 1 Page 4: Keeping Score with Global Variables</a>.</p>
 </div>
 <li>
-<div class="comment">
-<p>AAP-1.C</p>
-</div>
 <p>Initialize a <var>shopping list</var> variable to store the information.</p>
 <ol>
 <li>
@@ -498,16 +495,10 @@ Make a global variable called <var>shopping list</var>.
 </ol>
 </div>
 <div class="examFullWidth">
-<div class="comment">
-<p>AAP-1.D.7 bullet 2</p>
-</div>
 <div class="pseudop">
 <p>The assignment instruction <img src="../../img/2-complexity/example-blank-list-assignment.png" title="set (shopping list) to (list)" alt="set (shopping list) to (list)" class="inline"> would be written as</p>
 <pre class="inline">shoppingList ← []</pre>
 <p>or <img src="../../img/2-complexity/shoppinglist-empty-list-assignment-blocktran.png" title="shoppingList ← []" alt="shoppingList ← []">.</p>
-</div>
-<div class="comment">
-<p>AAP-1.D.7 bullet 1</p>
 </div>
 <div class="pseudop">
 <p>The assignment instruction <img src="../../img/2-complexity/example-list-assignment.png" title="set (shopping list) to {apples, bread, carrots, rice, pasta}" alt="set (shopping list) to {apples, bread, carrots, rice, pasta}" class="inline"> would be written as</p>
@@ -519,9 +510,6 @@ Make a global variable called <var>shopping list</var>.
 <h2 class="anchored" data-anchor-id="adding-items-to-a-list">Adding Items to a List</h2>
 <p>
 </p><div class="vocabBig">
-<div class="commentBig">
-<p>AAP-1.C.2</p>
-</div>
 <p>
 An <strong>element</strong> is another name for an item in a list. (If the same value is in the list twice, that counts as two different elements.) Each element has a unique <em>index</em> (position) in the list.
 </p>
@@ -536,23 +524,14 @@ An <strong>element</strong> is another name for an item in a list. (If the same 
 </li>
 </ul>
 <p></p>
-<div class="comment">
-<p>AAP-1.D.6</p>
-</div>
 <p>
 Assigning a list to a variable lets you use one name to represent all the elements of a list as a unit.
 </p>
 <div class="examFullWidth">
-<div class="comment">
-<p>AAP-2.N.1 bullet 4</p>
-</div>
 <div class="pseudop">
 <p><img src="../../img/2-complexity/insert-tomatoes-at-2-of-shopping-list.png" title="insert (tomatoes) at (2) of (shopping list)" alt="insert (tomatoes) at (2) of (shopping list)" class="inline"> would be written as</p>
 <pre class="inline">INSERT(shoppingList, 2, "tomatoes")</pre>
 <p>or <img src="../../img/2-complexity/insert-blocktran.png" title="INSERT(shoppingList, 2, 'tomatoes')" alt="INSERT(shoppingList, 2, 'tomatoes')" class="inline">.</p>
-</div>
-<div class="comment">
-<p>AAP-2.N.1 bullet 5</p>
 </div>
 <div class="pseudop">
 <p><img src="../../img/2-complexity/add-tomatoes-to-shopping-list.png" title="add (tomatoes) to (shopping list)" alt="add (tomatoes) to (shopping list)" class="inline"> would be written as</p>
@@ -562,9 +541,6 @@ Assigning a list to a variable lets you use one name to represent all the elemen
 </div>
 <div class="forYouToDo">
 <ol start="3">
-<div class="comment">
-<p>AAP-2.N part a</p>
-</div>
 <div class="sidenoteBig">
 <p>
 You’ve seen the <code>ask</code> and <code>answer</code> blocks on <a href="../../unit-2/lab-1/2-checking-player-guess.html" title="Unit 2 Lab 1 Page 2: Checking the Player's Guess">Unit 2 Lab 1 Page 2: Checking the Player’s Guess</a>.
@@ -599,9 +575,6 @@ You can also remove items from a list using <img src="../../img/blocks/delete.pn
 </p>
 <div class="examFullWidth">
 <div class="pseudop">
-<div class="comment">
-<p>AAP-2.N.1 bullet 6</p>
-</div>
 <p><img src="../../img/2-complexity/delete-item-2-of-shopping-list.png" title="delete item (2) of (shopping list)" alt="delete item (2) of (shopping list)" class="inline"> would be written as</p>
 <pre class="inline">REMOVE(shoppingList, 2)</pre>
 <p>or <img src="../../img/2-complexity/remove-blocktran.png" title="REMOVE(shoppingList, 2)" alt="REMOVE(shoppingList, 2)" class="inline">.</p>
@@ -621,9 +594,6 @@ Test your “Delete Item” button.
 <div class="pseudop">
 <p>The items in a list are <em>values</em>, so <strong>you can use <code>item of</code> anywhere you can use any other expression</strong>. For example:</p>
 <ul>
-<div class="comment">
-<p>AAP-2.N.1 bullets 2 and 3</p>
-</div>
 <li>
 <p>You can assign a list item to a variable. <a href="#hint-assigning-element-to-variable" data-bs-toggle="collapse" title="You can assign a list item to a variable. On the exam...">On the exam…</a></p>
 <div id="hint-assigning-element-to-variable" class="collapse">
@@ -662,11 +632,8 @@ When you run this script in Snap<em>!</em>, the second line of code assigns to <
 set(shopping list 2) to (shopping list)
 add (carrot) to (shopping list)" alt="set(shopping list) to (list(apple)(banana))
 set(shopping list 2) to (shopping list)
-add (carrot) to (shopping list)" class="indent"> <img src="../../img/2-complexity/example-list-by-reference-stage.png" title="shopping list watcher showing the contents of the variable to be apple, banana, carrot; and the shopping list 2 watcher showing the contents of the variable to be apple, banana, carrot" alt="shopping list watcher showing the contents of the variable to be apple, banana, carrot; and the shopping list 2 watcher showing the contents of the variable to be apple, banana, carrot" class="indent"><br>
+add (carrot) to (shopping list)" class="ms-4"> <img src="../../img/2-complexity/example-list-by-reference-stage.png" title="shopping list watcher showing the contents of the variable to be apple, banana, carrot; and the shopping list 2 watcher showing the contents of the variable to be apple, banana, carrot" alt="shopping list watcher showing the contents of the variable to be apple, banana, carrot; and the shopping list 2 watcher showing the contents of the variable to be apple, banana, carrot" class="ms-4"><br>
 </p>
-<div class="comment">
-<p>AAP-1.D.7 bullet 3, AAP-2.N.2</p>
-</div>
 <div class="pseudop">
 <p>However on the exam, the statement</p>
 <pre class="inline">shoppingList2 ← shoppingList</pre>

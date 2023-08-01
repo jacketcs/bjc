@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-5/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-4/1-logical-inconsistency.html">Lab 4</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-4/2-halting-problem.html">Page 2: An Undecidable Problem</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-5/index.html">Unit 5: Algorithms and Simulations</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-4/1-logical-inconsistency.html">Lab 4</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-4/2-halting-problem.html">Page 2: An Undecidable Problem</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-5/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 5: Algorithms and Simulations</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -472,7 +475,7 @@ Assuming That a <code>Halts?</code> Function Exists
 </p><div class="sidenote">
 <p>We can’t show the code inside <code>halts?</code>; we are proving that it can’t be written at all, no matter what code implements it.</p>
 </div>
-<p>First, we <em>assume</em> there exists a function called <code>halts?</code> that determines whether a given reporter will report a value in a finite time. (If so, we say that the reporter <em>halts.</em>) It takes two inputs: a function and an input value for that function. It reports <code>true</code> if the function would report a value when given that input; it reports <code>false</code> if the function would run forever (in an infinite loop).<br> <img src="../../img/5-algorithms/halts.png" title="halts? (function) (input)" alt="halts? (function) (input)" class="indent"></p>
+<p>First, we <em>assume</em> there exists a function called <code>halts?</code> that determines whether a given reporter will report a value in a finite time. (If so, we say that the reporter <em>halts.</em>) It takes two inputs: a function and an input value for that function. It reports <code>true</code> if the function would report a value when given that input; it reports <code>false</code> if the function would run forever (in an infinite loop).<br> <img src="../../img/5-algorithms/halts.png" title="halts? (function) (input)" alt="halts? (function) (input)" class="ms-4"></p>
 <p></p>
 <p>
 For example, the function <code>round</code> will not run forever when given the input <var>7.5</var>; it will report 8.
@@ -480,13 +483,13 @@ For example, the function <code>round</code> will not run forever when given the
 <div class="sidenote">
 <p>The gray ring around the input function means that the <code>halts?</code> code will treat the input function as data instead of running it.</p>
 </div>
-<p class="indent">
+<p class="ms-4">
 </p><p><img src="../../img/5-algorithms/halts-reporting.png" title="halts?(round())(7.5) reporting true" alt="halts?(round())(7.5) reporting true" class="inline"> because <img src="../../img/5-algorithms/round(7-5).png" title="round (7.5)" alt="round (7.5)" class="inline"> reports a value.</p>
 <p></p>
 <p>
 On the other hand, imagine we had a function that will get stuck in an infinite loop when given the input <var>foo</var>; it would never report (never halt).
 </p>
-<p class="indent">
+<p class="ms-4">
 </p><p><img src="../../img/5-algorithms/halts-reporting-false.png" title="halts?(program with an infinite loop ())(foo) reporting false" alt="halts?(program with an infinite loop ())(foo) reporting false" class="inline"> because <img src="../../img/5-algorithms/program-with-loop(foo).png" title="program with an infinite loop (foo)" alt="program with an infinite loop (foo)" class="inline"> loops infinitely.</p>
 <p></p>
 <h4 class="anchored">
@@ -495,7 +498,7 @@ On the other hand, imagine we had a function that will get stuck in an infinite 
 <p>
 We’ll use proof by contradiction to show that the following question <em>can’t</em> be answered <em>in general</em>:
 </p>
-<p class="center">
+<p>
 </p><p><strong>Will a certain computer program, given a certain input, report a result in a finite amount of time?</strong></p>
 <p></p>
 <div class="endnote">
@@ -513,13 +516,13 @@ We <em>can</em> answer this question for some <em>specific</em> functions, but w
 <p><a href="#hint-general" data-bs-toggle="collapse" title="What does it mean to answer the question for specific functions?">What does it mean to answer the question for <em>specific</em> functions?</a></p>
 <div id="hint-general" class="collapse">
 <p>
-The “in general” part is important. Of course we can answer the question for certain particular programs. This one halts (reports a value) for <em>any</em> input:<br> <img src="../../img/5-algorithms/three-fn.png" title="three(x): report (3)" alt="three(x): report (3)" class="indent">
+The “in general” part is important. Of course we can answer the question for certain particular programs. This one halts (reports a value) for <em>any</em> input:<br> <img src="../../img/5-algorithms/three-fn.png" title="three(x): report (3)" alt="three(x): report (3)" class="ms-4">
 </p>
 <p>
-This one <em>never</em> halts for any input:<br> <img src="../../img/5-algorithms/loop-fn.png" title="loop(x): forever (wait 1 secs)" alt="loop(x): forever (wait 1 secs)" class="indent" width="158">
+This one <em>never</em> halts for any input:<br> <img src="../../img/5-algorithms/loop-fn.png" title="loop(x): forever (wait 1 secs)" alt="loop(x): forever (wait 1 secs)" class="ms-4" width="158">
 </p>
 <p>
-And this one halts <em>sometimes</em>—for any input except 87:<br> <img src="../../img/5-algorithms/weird-fn.png" title="weird(x): if (x = 87) (forever (wait 1 secs)) else (report (3))" alt="weird(x): if (x = 87) (forever (wait 1 secs)) else (report (3))" class="indent" width="158">
+And this one halts <em>sometimes</em>—for any input except 87:<br> <img src="../../img/5-algorithms/weird-fn.png" title="weird(x): if (x = 87) (forever (wait 1 secs)) else (report (3))" alt="weird(x): if (x = 87) (forever (wait 1 secs)) else (report (3))" class="ms-4" width="158">
 </p>
 <p>
 Recall: the question is whether we can devise a test that will tell us whether <em>any</em> particular function will report a value for <em>any</em> specific input.
@@ -554,9 +557,9 @@ Showing How This Creates a Contradiction
 </p><p>To prove there can be no such function, we need to create a contradiction. We need to show that there has to be at least one function and one input to that function for which <code>halts?</code> fails to work the way we assumed it does. So, we can make up a block, <code>tester</code>, specifically for the purpose of breaking <code>halts?</code>:<br></p>
 <div class="sidenoteBig">
 <p>Just like the <code>#</code> and <code>⋮</code> symbols for inputs declared to be <em>numbers</em> or <em>lists</em>, the <code>λ</code> is not part of the input’s name but is a <strong>type hint</strong> that was created when selecting the <em>reporter</em> input type:<br><br>
-<img src="../../img/5-algorithms/input-type-reporter.png" title="selecting the Reporter input type" alt="selecting the Reporter input type" class="indent"><br> Recall that selecting an input type changes the appearance of the input slot so that it indicates what kind of input is expected. The input slot for <code>tester</code> will have a rounded gray ring to indicate that the input should be a reporter: <img src="../../img/5-algorithms/tester().png" title="tester ()" alt="tester ()" class="inline nopadtb"></p>
+<img src="../../img/5-algorithms/input-type-reporter.png" title="selecting the Reporter input type" alt="selecting the Reporter input type" class="ms-4"><br> Recall that selecting an input type changes the appearance of the input slot so that it indicates what kind of input is expected. The input slot for <code>tester</code> will have a rounded gray ring to indicate that the input should be a reporter: <img src="../../img/5-algorithms/tester().png" title="tester ()" alt="tester ()" class="inline py-0"></p>
 </div>
-<p><img src="../../img/5-algorithms/tester-halting.png" title="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(It doesn't matter what value is reported.)}}" alt="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(It doesn't matter what value is reported.)}}" class="indent"></p>
+<p><img src="../../img/5-algorithms/tester-halting.png" title="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(It doesn't matter what value is reported.)}}" alt="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(It doesn't matter what value is reported.)}}" class="ms-4"></p>
 <p></p>
 <p>
 The <code>forever</code> block in this script creates an infinite loop. If the <code>tester</code> code ends up in this part of the <code>if</code> statement, it will never report anything. So whether <code>tester</code> <em>itself</em> will halt depends on the output of the <code>halts?</code> predicate in the <code>if</code> statement inside it.
@@ -571,26 +574,26 @@ The expression <img src="../../img/5-algorithms/halts-reporter-reporter.png" tit
 <strong>Using Self-Reference to Lead to Contradiction</strong>
 </h4>
 <p>
-</p><p>To make the situation <em>exactly</em> like what Betsy said (“The statement I’m making <em>right now </em>is false.”), we’ll call <code>tester</code> on <em>itself</em>:<br> <img src="../../img/5-algorithms/testertester.png" title="tester(tester())" alt="tester(tester())" class="indent"><br> Now, the <code>if</code> statement inside the <code>tester</code> block will ask if <code>tester</code> will halt (not run forever) if it’s called with <code>tester</code> as its input. The predicate in the <code>if</code> statement will become <code>halts? (tester) (tester)</code>.<br></p>
+</p><p>To make the situation <em>exactly</em> like what Betsy said (“The statement I’m making <em>right now </em>is false.”), we’ll call <code>tester</code> on <em>itself</em>:<br> <img src="../../img/5-algorithms/testertester.png" title="tester(tester())" alt="tester(tester())" class="ms-4"><br> Now, the <code>if</code> statement inside the <code>tester</code> block will ask if <code>tester</code> will halt (not run forever) if it’s called with <code>tester</code> as its input. The predicate in the <code>if</code> statement will become <code>halts? (tester) (tester)</code>.<br></p>
 <div class="todo">
-<p>I took out class=“indent” on this picture so that it’d fit in the window. If you don’t like that, figure out how to shrink the picture without fuzzing it up. -bh<br>OK, leaving this comment here to remind me for another day. –MF, 2/1/18</p>
+<p>I took out class=“ms-4” on this picture so that it’d fit in the window. If you don’t like that, figure out how to shrink the picture without fuzzing it up. -bh<br>OK, leaving this comment here to remind me for another day. –MF, 2/1/18</p>
 </div>
 <p><img src="../../img/5-algorithms/tt-t-htt.png" title="tester(tester) -> reporter input in tester definition -> halts? (tester) (tester)" alt="tester(tester) -> reporter input in tester definition -> halts? (tester) (tester)"></p>
 <p></p>
 <p>
 So, just as in the examples above,
 </p>
-<p class="indent">
+<p class="ms-4">
 </p><p><img src="../../img/5-algorithms/halts-tester-tester-reporting-true.png" title="halts (tester) (tester) reporting true" alt="halts (tester) (tester) reporting true" class="inline"> would mean that <img src="../../img/5-algorithms/testertester.png" title="tester(tester())" alt="tester(tester())" class="inline"> returns a value.</p>
 <p></p>
-<p class="indent">
+<p class="ms-4">
 </p><p><img src="../../img/5-algorithms/halts-tester-tester-reporting-false.png" title="halts (tester) (tester) reporting false" alt="halts (tester) (tester) reporting false" class="inline"> would mean that <img src="../../img/5-algorithms/testertester.png" title="tester(tester())" alt="tester(tester())" class="inline"> loops infinitely.</p>
 <p></p>
 <h4 class="anchored">
 <strong>Understanding the Contradiction</strong>
 </h4>
 <p>
-When we call <img src="../../img/5-algorithms/testertester.png" title="tester(tester())" alt="tester(tester())" class="inline">, we run into the contradiction. To see how, look back at the <code>tester</code> definition:<br> <img src="../../img/5-algorithms/tester-halting.png" title="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(true)}}" alt="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(true)}}" class="indent">
+When we call <img src="../../img/5-algorithms/testertester.png" title="tester(tester())" alt="tester(tester())" class="inline">, we run into the contradiction. To see how, look back at the <code>tester</code> definition:<br> <img src="../../img/5-algorithms/tester-halting.png" title="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(true)}}" alt="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(true)}}" class="ms-4">
 </p>
 <p>
 </p><p>Showing that <strong>the result has to be wrong</strong> involves a <em>case analysis</em> like the ones used to solve the logic puzzles on page 1. Consider the two possible cases:</p>

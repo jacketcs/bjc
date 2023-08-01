@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Unit , Lab , Page 3 | JacketCS CSP</title>
+<title>Op Art | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-3/index.html">Data Structures</a></li><li class="breadcrumb-item"><a href="../../unit-3/optional-projects/1-astrid.html">Optional Projects</a></li><li class="breadcrumb-item"><a href="../../unit-3/optional-projects/3-op-art.html">Op Art</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-3/index.html">Unit 3: Data Structures</a></li><li class="breadcrumb-item"><a href="../../unit-3/optional-projects/1-astrid.html">Optional Projects</a></li><li class="breadcrumb-item"><a href="../../unit-3/optional-projects/3-op-art.html">Op Art</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-3/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Structures</span></a>
+ <span class="menu-text">Unit 3: Data Structures</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -396,7 +399,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Op Art</h1>
-<p class="subtitle lead">Unit , Lab , Page 3</p>
+<p class="subtitle lead">Unit 3 Optional Project</p>
 </div>
 
 
@@ -421,18 +424,15 @@ MF: BH has reviewing to do (see TG)
 </div>
 <div class="learn">
 <p>In this project, you will create tools to explore op art—a form of visual art using optical illusions.<br></p>
-<div class="comment">
-<p>I find the little circle confusing amidst all the shapes. Anyone else? –MF, 9/10/18</p>
-</div>
-<p><img title="Animation of the user drawing a collection of overlapping rectangles and then coloring each region black and white in such a way that no two adjacent regions have the same color." alt="Animation of the user drawing a collection of overlapping rectangles and then coloring each region black and white in such a way that no two adjacent regions have the same color." class="indent" data-gifffer="/img/3-lists/OpArt_img/OpArtAnimation.gif" height="300"></p>
+<p><img title="Animation of the user drawing a collection of overlapping rectangles and then coloring each region black and white in such a way that no two adjacent regions have the same color." alt="Animation of the user drawing a collection of overlapping rectangles and then coloring each region black and white in such a way that no two adjacent regions have the same color." class="ms-4" data-gifffer="/img/3-lists/OpArt_img/OpArtAnimation.gif" height="300"></p>
 </div>
 <p>
 Initially, the mouse is used to draw rectangles. Then when the user presses the space bar, the drawing phase ends and the mouse click becomes a paint bucket that fills bounded regions with paint. Here are two examples of phase 1 (drawing rectangles) and phase 2 (filling regions):
 </p>
-<p class="indent">
+<p class="ms-4">
 </p><p>Example 1: <img src="../../img/3-lists/OpArt_img/OpArt2Phase1.png" title="Op Art 1 Phase 1" alt="Op Art 1 Phase 1" height="175"> <img src="../../img/3-lists/OpArt_img/OpArt2Phase2.png" title="Op Art 1 Phase 2" alt="Op Art 1 Phase 2" height="175"></p>
 <p></p>
-<p class="indent">
+<p class="ms-4">
 </p><p>Example 2: <img src="../../img/3-lists/OpArt_img/OpArt3Phase1.png" title="Op Art 2 Phase 1" alt="Op Art 2 Phase 1" height="175"> <img src="../../img/3-lists/OpArt_img/OpArt3Phase2.png" title="Op Art 2 Phase 2" alt="Op Art 2 Phase 2" height="175"></p>
 <p></p>
 <div class="forYouToDo">
@@ -444,19 +444,13 @@ Initially, the mouse is used to draw rectangles. Then when the user presses the 
 </li>
 <li>
 <p>In the drawing phase (phase 1), you will be drawing many rectangles by clicking and dragging from corner to opposite corner, so it will be helpful to have an abstract data type (ADT) to manage the corner points.<br></p>
-<div class="comment">
-<h3 class="anchored">
-POINT is being optionalized in U2.
-</h3>
-<p>The <code>corner</code> ADT will work just like the <code>point</code> ADT that you created in <a href="../../2-complexity/optional-projects/future/2-data-types.html" title="Unit 2 Lab 2: Making Art by Using Data Structures, Page 2">Unit 2</a>.</p>
-</div>
-<p><img src="../../img/3-lists/OpArt_img/corner12.png" title="Opposite corners of a rectangle" alt="Opposite corners of a rectangle" class="indent" height="150"><br></p>
+<p><img src="../../img/3-lists/OpArt_img/corner12.png" title="Opposite corners of a rectangle" alt="Opposite corners of a rectangle" class="ms-4" height="150"><br></p>
 <ol>
 <li>
-Create a constructor <code>corner</code> that will report a list of <em>x</em> and <em>y</em> coordinates of one corner.<br> <img src="../../img/3-lists/corner-reporting.png" title="corner x:(mouse x) y:(mouse y) reporting {-239, 38}" alt="corner x:(mouse x) y:(mouse y) reporting {-239, 38}" class="indent">
+Create a constructor <code>corner</code> that will report a list of <em>x</em> and <em>y</em> coordinates of one corner.<br> <img src="../../img/3-lists/corner-reporting.png" title="corner x:(mouse x) y:(mouse y) reporting {-239, 38}" alt="corner x:(mouse x) y:(mouse y) reporting {-239, 38}" class="ms-4">
 </li>
 <li>
-Create two selectors <code>x of corner</code> and <code>y of corner</code> that will report either the <em>x</em> or <em>y</em> values for an input <var>corner</var>.<br> <img src="../../img/3-lists/x-of-corner-reporting.png" title="x of corner: (corner) reporting -239" alt="x of corner: (corner) reporting -239" class="indent"> <img src="../../img/3-lists/y-of-corner-reporting.png" title="y of corner: (corner) reporting 38" alt="y of corner: (corner) reporting 38" class="indent">
+Create two selectors <code>x of corner</code> and <code>y of corner</code> that will report either the <em>x</em> or <em>y</em> values for an input <var>corner</var>.<br> <img src="../../img/3-lists/x-of-corner-reporting.png" title="x of corner: (corner) reporting -239" alt="x of corner: (corner) reporting -239" class="ms-4"> <img src="../../img/3-lists/y-of-corner-reporting.png" title="y of corner: (corner) reporting 38" alt="y of corner: (corner) reporting 38" class="ms-4">
 </li>
 </ol>
 </li>
@@ -472,7 +466,7 @@ Create two selectors <code>x of corner</code> and <code>y of corner</code> that 
 </ul>
 </li>
 <li>
-Now create a <code>rectangle</code> ADT for storing the two opposite corners of a single rectangle.<br> <img src="../../img/3-lists/rectangle-reporting.png" title="rectangle, corner1:(corner1) corner2:(corner2){report(list(corner1)(corner2)}" alt="rectangle, corner 1: (current corner 1) corner 2: (current corner 2) reporting {{-239, 38}, {41, -7}}" class="indent"><br> <img src="../../img/3-lists/corner-1-of-rectangle-reporting.png" title="corner 1 of rectangle reporting {-239, 38}" alt="corner 1 of rectangle reporting {-239, 38}" class="indent"> <img src="../../img/3-lists/corner-2-of-rectangle-reporting.png" title="corner 2 of rectangle reporting {41, -7}" alt="corner 2 of rectangle reporting {41, -7}" class="indent">
+Now create a <code>rectangle</code> ADT for storing the two opposite corners of a single rectangle.<br> <img src="../../img/3-lists/rectangle-reporting.png" title="rectangle, corner1:(corner1) corner2:(corner2){report(list(corner1)(corner2)}" alt="rectangle, corner 1: (current corner 1) corner 2: (current corner 2) reporting {{-239, 38}, {41, -7}}" class="ms-4"><br> <img src="../../img/3-lists/corner-1-of-rectangle-reporting.png" title="corner 1 of rectangle reporting {-239, 38}" alt="corner 1 of rectangle reporting {-239, 38}" class="ms-4"> <img src="../../img/3-lists/corner-2-of-rectangle-reporting.png" title="corner 2 of rectangle reporting {41, -7}" alt="corner 2 of rectangle reporting {41, -7}" class="ms-4">
 </li>
 </ol>
 </div>
@@ -491,7 +485,7 @@ Your program needs a way to know whether the user is finished drawing. Create a 
 <p>I don’t think we need this. –MF, 9/10/18<br>It is initially <code>false</code> but when the space bar is pressed—which concludes the drawing phase—it is set to <code>true</code>.</p>
 </div>
 <li>
-The program also needs a way to draw a rectangle given its two defining corners. Create a <code>draw rectangle</code> block, and test that it correctly draws a rectangle with the input corners.<br> <img src="../../img/3-lists/draw-rectangle-with-stage.jpg" title="stage showing a rectangle drawn and scripting area showing the script: clear, draw rectangle corner 1: (corner, x:(-139) y:(38)) corner 2: (corner, x:(41) y:(-7))" alt="stage showing a rectangle drawn and scripting area showing the script: clear, draw rectangle corner 1: (corner, x:(-139) y:(38)) corner 2: (corner, x:(41) y:(-7))" class="indent">
+The program also needs a way to draw a rectangle given its two defining corners. Create a <code>draw rectangle</code> block, and test that it correctly draws a rectangle with the input corners.<br> <img src="../../img/3-lists/draw-rectangle-with-stage.jpg" title="stage showing a rectangle drawn and scripting area showing the script: clear, draw rectangle corner 1: (corner, x:(-139) y:(38)) corner 2: (corner, x:(41) y:(-7))" alt="stage showing a rectangle drawn and scripting area showing the script: clear, draw rectangle corner 1: (corner, x:(-139) y:(38)) corner 2: (corner, x:(41) y:(-7))" class="ms-4">
 </li>
 <li>
 <p>Use the seven blocks and four variables you have created to create a program that:</p>
@@ -525,9 +519,6 @@ Which variables need to be initialized? Why?
 <li>
 How can you detect the state of the mouse? How can you location the state of the mouse?
 </li>
-<div class="comment">
-<p><strong>Brian</strong>, how do you like this characterization of warp. I think it’s only been in TIFs so far in the course. –MF, 9/10/18</p>
-</div>
 <li>
 You might want to use <img src="../../img/blocks/warp.png" title="warp block" alt="warp block" class="inline"> and <img src="../../img/blocks/hide.png" title="hide block" alt="hide block" class="inline"> to improve the efficiency and appearance of your program. The <code>warp</code> block allows the drawing to happen quickly, and <code>hide</code> hides the sprite.
 </li>

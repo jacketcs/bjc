@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-3/index.html">Data Structures</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-3/1-find-ties.html">Lab 3</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-3/1-find-ties.html">Page 1: Remembering the Moves and Possible Wins</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-3/index.html">Unit 3: Data Structures</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-3/1-find-ties.html">Lab 3</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-3/1-find-ties.html">Page 1: Remembering the Moves and Possible Wins</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-3/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Structures</span></a>
+ <span class="menu-text">Unit 3: Data Structures</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -426,7 +429,7 @@ ul.task-list li input[type="checkbox"] {
 You learned about <strong>global variables</strong> on <a href="../../unit-2/lab-1/4-keeping-score.html" title="Unit 2 Lab 1 Page 4: Keeping Score with Global Variables">Unit 2 Lab 1 Page 4: Keeping Score with Global Variables</a>.
 </p>
 </div>
-<p><img src="../../img/3-lists/ttt-board-var.png" title="picture of: watcher of board variable showing {O, O, X, 4, X, 6, X, 8, 9}; and Tic Tac Toe game with X, X, O in top row; empty, X, empty in middle row; and X, empty, empty in bottom row" alt="picture of: watcher of board variable showing {O, O, X, 4, X, 6, X, 8, 9}; and Tic Tac Toe game with X, X, O in top row; empty, X, empty in middle row; and X, empty, empty in bottom row" class="indent noshadow"></p>
+<p><img src="../../img/3-lists/ttt-board-var.png" title="picture of: watcher of board variable showing {O, O, X, 4, X, 6, X, 8, 9}; and Tic Tac Toe game with X, X, O in top row; empty, X, empty in middle row; and X, empty, empty in bottom row" alt="picture of: watcher of board variable showing {O, O, X, 4, X, 6, X, 8, 9}; and Tic Tac Toe game with X, X, O in top row; empty, X, empty in middle row; and X, empty, empty in bottom row" class="ms-4 noshadow"></p>
 <p></p>
 <div id="first" class="forYouToDo">
 <ol>
@@ -439,7 +442,7 @@ Make a global variable called <var>board</var> that, at the beginning of the gam
 </ol>
 </div>
 <p>
-Each sprite needs to know its own position on the board so that you can use the <code>item of</code> block to replace that position with an X or an O. So, you’ll create a <em>sprite variable</em>, <img src="../../img/3-lists/position-number.png" title="position number" alt="position number" class="inline nopadtb">, and each clone will have its <em>own version</em> of this variable.
+Each sprite needs to know its own position on the board so that you can use the <code>item of</code> block to replace that position with an X or an O. So, you’ll create a <em>sprite variable</em>, <img src="../../img/3-lists/position-number.png" title="position number" alt="position number" class="inline py-0">, and each clone will have its <em>own version</em> of this variable.
 </p>
 <div class="vocabFullWidth">
 <p>: <strong>Sprite Variable</strong></p>
@@ -461,14 +464,14 @@ You learned about <strong>initializing variables</strong> on <a href="../../unit
 </p><p>You make a sprite variable similarly to how you make global variables:</p>
 <ul>
 <li>
-Click <img src="../../img/1-introduction/make-a-variable.png" title="make a variable button" alt="make a variable button" class="inline nopadtb noshadow"> in the Variables palette.
+Click <img src="../../img/1-introduction/make-a-variable.png" title="make a variable button" alt="make a variable button" class="inline py-0 noshadow"> in the Variables palette.
 </li>
 <li>
 Then, as you are typing the variable’s name, select “for this sprite only” to make it a sprite variable.
 </li>
 </ul>
 <p></p>
-<p><img src="../../img/3-lists/square-number-var.png" title="variable name dialog box with 'for this sprite only' selected" alt="variable name dialog box with 'for this sprite only' selected" class="indent"><br></p>
+<p><img src="../../img/3-lists/square-number-var.png" title="variable name dialog box with 'for this sprite only' selected" alt="variable name dialog box with 'for this sprite only' selected" class="ms-4"><br></p>
 </div>
 </li>
 <li>
@@ -495,7 +498,7 @@ Watch the values stored in the <var>board</var> variable as you play a game of T
 Storing All the Ways to Win
 </h3>
 <p>
-To program a way to detect a win, you need to determine what counts as a win. You’ll store each possible winning triple as a list of three position numbers (a <em>triple</em>). For example, this winning triple could be represented as <img src="../../img/3-lists/{3,5,7}.png" title="list{3, 5, 7}" alt="list{3, 5, 7}"> because the win is in the 3<sup>rd</sup>, 5<sup>th</sup>, and 7<sup>th</sup> positions:<br> <img src="../../img/3-lists/winning-combo-357.png" title="diagonal win bottom left to top right" alt="diagonal win bottom left to top right" class="indent noshadow"><br>
+To program a way to detect a win, you need to determine what counts as a win. You’ll store each possible winning triple as a list of three position numbers (a <em>triple</em>). For example, this winning triple could be represented as <img src="../../img/3-lists/{3,5,7}.png" title="list{3, 5, 7}" alt="list{3, 5, 7}"> because the win is in the 3<sup>rd</sup>, 5<sup>th</sup>, and 7<sup>th</sup> positions:<br> <img src="../../img/3-lists/winning-combo-357.png" title="diagonal win bottom left to top right" alt="diagonal win bottom left to top right" class="ms-4 noshadow"><br>
 </p>
 <div class="forYouToDo">
 <ol start="7">
@@ -513,7 +516,7 @@ Write down each of the possible winning triples.
 </ol>
 </div>
 <p>
-You <em>could</em> check for each possible win separately:<br> <img src="../../img/3-lists/silly-check-win.png" title="is there a win? (Comment: Don't build this!! Just read it.) : if (is there a win at (1) (2) (3) ?) report (true); if (is there a win at (4) (5) (6) ?) report (true); ...; if (is there a win at (3) (5) (7) ?) report (true); report (false)" alt="is there a win? (Comment: Don't build this!! Just read it.) : if (is there a win at (1) (2) (3) ?) report (true); if (is there a win at (4) (5) (6) ?) report (true); ...; if (is there a win at (3) (5) (7) ?) report (true); report (false)" class="indent">
+You <em>could</em> check for each possible win separately:<br> <img src="../../img/3-lists/silly-check-win.png" title="is there a win? (Comment: Don't build this!! Just read it.) : if (is there a win at (1) (2) (3) ?) report (true); if (is there a win at (4) (5) (6) ?) report (true); ...; if (is there a win at (3) (5) (7) ?) report (true); report (false)" alt="is there a win? (Comment: Don't build this!! Just read it.) : if (is there a win at (1) (2) (3) ?) report (true); if (is there a win at (4) (5) (6) ?) report (true); ...; if (is there a win at (3) (5) (7) ?) report (true); report (false)" class="ms-4">
 </p>
 <p>
 But that’s way too much code, especially because you’ll have to do something very similar again, later on, when the computer actually plays against you. Instead, you’ll create a list to store all of the possible winning triples so you can check it against the current state of the game stored by <var>board</var>.
@@ -522,7 +525,7 @@ But that’s way too much code, especially because you’ll have to do something
 <ol start="8">
 <p><img src="../../img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"></p>
 <li>
-Create a reporter that outputs a list of all possible winning triples. It will look something like this:<br> <img src="../../img/3-lists/winning-triples.png" title="winning triples partial block definition showing a list with at least two lists inside it: {1,2,3} and {2,5,8}" alt="winning triples partial block definition showing a list with at least two lists inside it: {1,2,3} and {2,5,8}" class="indent">
+Create a reporter that outputs a list of all possible winning triples. It will look something like this:<br> <img src="../../img/3-lists/winning-triples.png" title="winning triples partial block definition showing a list with at least two lists inside it: {1,2,3} and {2,5,8}" alt="winning triples partial block definition showing a list with at least two lists inside it: {1,2,3} and {2,5,8}" class="ms-4">
 </li>
 <li>
 <img src="../../img/icons/save-use-later.png" title="Save. You will use this later." alt="Save. You will use this later." class="inline">

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Unit , Lab , Page 4 | JacketCS CSP</title>
+<title>Modeling Language: Plurals, Part 1 | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-2/optional-projects/1-magic8ball.html">Optional Projects</a></li><li class="breadcrumb-item"><a href="../../unit-2/optional-projects/4-plurals1.html">Modeling Language: Plurals, Part 1</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Unit 2: Abstraction</a></li><li class="breadcrumb-item"><a href="../../unit-2/optional-projects/1-magic8ball.html">Optional Projects</a></li><li class="breadcrumb-item"><a href="../../unit-2/optional-projects/4-plurals1.html">Modeling Language: Plurals, Part 1</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-2/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 2: Abstraction</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -414,7 +417,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Modeling Language: Plurals, Part 1</h1>
-<p class="subtitle lead">Unit , Lab , Page 4</p>
+<p class="subtitle lead">Unit 2 Optional Project</p>
 </div>
 
 
@@ -438,7 +441,7 @@ Brian and Mary are considering possibly one day making these two pages into a no
 </p>
 </div>
 <div class="learn">
-<p>Siri and other robots are programmed to generate language. Siri speaks; some robots write. You have developed a program, <code>gossip</code>, that writes. <b>In this project,</b> you will extend the computer’s abilities with language by developing a reporter block, <code>plural</code>, that takes a noun as input and correctly spells and outputs the plural <br> <img src="../../img/2-complexity/plural-day-with-result.png" title="plural (day) reporting (days)" alt="plural (day) reporting (days)" class="indent"> <img src="../../img/2-complexity/plural-boss-with-result.png" title="plural (boss) reporting (bosses)" alt="plural (boss) reporting (bosses)"> <br> Spelling a plural can seem almost automatic for a person, but it is not simple: a computer needs an algorithm to do that task.</p>
+<p>Siri and other robots are programmed to generate language. Siri speaks; some robots write. You have developed a program, <code>gossip</code>, that writes. <b>In this project,</b> you will extend the computer’s abilities with language by developing a reporter block, <code>plural</code>, that takes a noun as input and correctly spells and outputs the plural <br> <img src="../../img/2-complexity/plural-day-with-result.png" title="plural (day) reporting (days)" alt="plural (day) reporting (days)" class="ms-4"> <img src="../../img/2-complexity/plural-boss-with-result.png" title="plural (boss) reporting (bosses)" alt="plural (boss) reporting (bosses)"> <br> Spelling a plural can seem almost automatic for a person, but it is not simple: a computer needs an algorithm to do that task.</p>
 </div>
 <div id="first" class="forYouToDo">
 <div class="sidenote">
@@ -465,7 +468,7 @@ if (s = last letter of (word)) {
 report (join (word) ('two letters: es'))
 }
 report (join (word) ('one letters: s'))
-}" class="indent">
+}" class="ms-4">
 </li>
 <li>
 <strong>Debugging: </strong> Try to find words for which this version of <code>plural</code> does <em>not</em> work correctly. List the words you find. <em>Organize that list</em>, sorting the words into categories according to their last letter. For example, it will get wrong some words that end with the letter “h”. Try to find many words it gets wrong.
@@ -484,7 +487,7 @@ Create a Snap<em>!</em> list like this <img src="../../img/2-complexity/noun-lis
 </ol>
 </li>
 <li>
-Your <code>plural</code> block should now work correctly for “day” and “boss” and “moth,” but it probably doesn’t yet work correctly for the word “box”:<br> <img src="../../img/2-complexity/plural-box-with-(wrong)-result.png" title="suffix s box (with wrong result)" alt="suffix s box (with wrong result)" class="indent"><br> Edit your <code>plural</code> block to make it work for words that end with “x”. <em>Test</em> it to make sure it does work properly. <img src="../../img/icons/save-mini.png" title="Save your work" alt="Save your work" class="inline">
+Your <code>plural</code> block should now work correctly for “day” and “boss” and “moth,” but it probably doesn’t yet work correctly for the word “box”:<br> <img src="../../img/2-complexity/plural-box-with-(wrong)-result.png" title="suffix s box (with wrong result)" alt="suffix s box (with wrong result)" class="ms-4"><br> Edit your <code>plural</code> block to make it work for words that end with “x”. <em>Test</em> it to make sure it does work properly. <img src="../../img/icons/save-mini.png" title="Save your work" alt="Save your work" class="inline">
 </li>
 </ol>
 </div>
@@ -497,20 +500,20 @@ The next two steps are worth learning—very useful for <em>testing</em> <code>p
 <div class="forYouToDo">
 <ol start="6">
 <li>
-Use <code>map</code> to test <em>all</em> the words on your list. Leave the slot in <code>plural</code> <em>empty</em>, as you see here. The <code>map</code> block inserts each element of the list into that slot and reports a list of the results.<br> <img src="../../img/2-complexity/map-plural-over-list-of-nouns.png" title="map (plural ( )) over 'a list block containing: day, boss, moth, box, butterfly, brush...' (the end of the image is cut off)" alt="map (plural ( )) over 'a list block containing: day, boss, moth, box, butterfly, brush...' (the end of the image is cut off)" class="indent"><br> For now, don’t worry about the words it still gets wrong, as long as it works for “day,” “boss,” “moth,” and “box.”
+Use <code>map</code> to test <em>all</em> the words on your list. Leave the slot in <code>plural</code> <em>empty</em>, as you see here. The <code>map</code> block inserts each element of the list into that slot and reports a list of the results.<br> <img src="../../img/2-complexity/map-plural-over-list-of-nouns.png" title="map (plural ( )) over 'a list block containing: day, boss, moth, box, butterfly, brush...' (the end of the image is cut off)" alt="map (plural ( )) over 'a list block containing: day, boss, moth, box, butterfly, brush...' (the end of the image is cut off)" class="ms-4"><br> For now, don’t worry about the words it still gets wrong, as long as it works for “day,” “boss,” “moth,” and “box.”
 </li>
 <li>
 In your <code>map</code> script, replace <code>plural</code> with<img src="../../img/2-complexity/join-()-y.png" title="join () (y)" alt="join () (y)">. Try it. Now explain what the <code>map</code> block does, <em>in general</em>.
 </li>
 <li>
-Experiment with<br> <img src="../../img/2-complexity/keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list.png" title="keep items (last letter of 'empty input slot' = h) from 'a list block containing: day, boss, moth, box, butterfly, brush...' (the end of the image is cut off)" alt="keep items (last letter of 'empty input slot' = h) from 'a list block containing: day, boss, moth, box, butterfly, brush...' (the end of the image is cut off)" class="indent"><br> and<br> <img src="../../img/2-complexity/keep-items-such-that-(last-letter-of-(input)-equals-y)-from-test-list.png" title="keep items (last letter of 'empty input slot' = y) from 'a list block containing: day, boss, moth, box, butterfly, brush...' (the end of the image is cut off)" alt="keep items (last letter of 'empty input slot' = y) from 'a list block containing: day, boss, moth, box, butterfly, brush...' (the end of the image is cut off)" class="indent"><br> to see what they do. Again, leave the slot in <code>last letter of</code> <em>empty</em>, as you see here. That is the placeholder for <code>keep</code> to test each word the list. Explain what the <code>keep</code> block does.
+Experiment with<br> <img src="../../img/2-complexity/keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list.png" title="keep items (last letter of 'empty input slot' = h) from 'a list block containing: day, boss, moth, box, butterfly, brush...' (the end of the image is cut off)" alt="keep items (last letter of 'empty input slot' = h) from 'a list block containing: day, boss, moth, box, butterfly, brush...' (the end of the image is cut off)" class="ms-4"><br> and<br> <img src="../../img/2-complexity/keep-items-such-that-(last-letter-of-(input)-equals-y)-from-test-list.png" title="keep items (last letter of 'empty input slot' = y) from 'a list block containing: day, boss, moth, box, butterfly, brush...' (the end of the image is cut off)" alt="keep items (last letter of 'empty input slot' = y) from 'a list block containing: day, boss, moth, box, butterfly, brush...' (the end of the image is cut off)" class="ms-4"><br> to see what they do. Again, leave the slot in <code>last letter of</code> <em>empty</em>, as you see here. That is the placeholder for <code>keep</code> to test each word the list. Explain what the <code>keep</code> block does.
 </li>
 </ol>
 </div>
 <div class="takeItFurther">
 <ol type="A">
 <li>
-If you know another language, build a block that takes a pronoun and verb as input and outputs the correct form of that verb. For example:<br> <img src="../../img/2-complexity/conjugate-verb-(spanish)-for-nosotros-comer.png" title="conjugate verb (Spanish), pronoun: (nosotros) verb: (comer) reporting 'comemos'" alt="conjugate verb (Spanish), pronoun: (nosotros) verb: (comer) reporting 'comemos'" class="indent"> <img src="../../img/2-complexity/conjugate-verb-(spanish)-for-yo-tocar.png" title="conjugate verb (Spanish), pronoun: (yo) verb: (tocar) reporting 'toco'" alt="conjugate verb (Spanish), pronoun: (yo) verb: (tocar) reporting 'toco'" class="indent">
+If you know another language, build a block that takes a pronoun and verb as input and outputs the correct form of that verb. For example:<br> <img src="../../img/2-complexity/conjugate-verb-(spanish)-for-nosotros-comer.png" title="conjugate verb (Spanish), pronoun: (nosotros) verb: (comer) reporting 'comemos'" alt="conjugate verb (Spanish), pronoun: (nosotros) verb: (comer) reporting 'comemos'" class="ms-4"> <img src="../../img/2-complexity/conjugate-verb-(spanish)-for-yo-tocar.png" title="conjugate verb (Spanish), pronoun: (yo) verb: (tocar) reporting 'toco'" alt="conjugate verb (Spanish), pronoun: (yo) verb: (tocar) reporting 'toco'" class="ms-4">
 </li>
 </ol>
 </div>

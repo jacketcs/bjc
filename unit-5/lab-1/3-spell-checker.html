@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-5/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-1/1-sorted-lists.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-1/3-spell-checker.html">Page 3: Is ‘Seperate’ Spelled Correctly?</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-5/index.html">Unit 5: Algorithms and Simulations</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-1/1-sorted-lists.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-1/3-spell-checker.html">Page 3: Is ‘Seperate’ Spelled Correctly?</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-5/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 5: Algorithms and Simulations</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -440,7 +443,7 @@ TG and solutions need to be checked. –MF, 12/19/18
 </p>
 </div>
 <p>
-Answering this question is simple in Snap<em>!</em> because you can just ask a dictionary: <img src="../../img/5-algorithms/100000-words-contains-seperate.png" title="(100,000 words) contains (seperate)" alt="100000-words-contains-seperate.png" class="inline nopadtb">. But <em>“simple” doesn’t mean fast</em>. The <code>contains</code> block still has to look at each item in the list until it finds the one you are looking for (and says <code>true</code>) or reaches the end of the list (and says <code>false</code>). It is still a linear search.
+Answering this question is simple in Snap<em>!</em> because you can just ask a dictionary: <img src="../../img/5-algorithms/100000-words-contains-seperate.png" title="(100,000 words) contains (seperate)" alt="100000-words-contains-seperate.png" class="inline py-0">. But <em>“simple” doesn’t mean fast</em>. The <code>contains</code> block still has to look at each item in the list until it finds the one you are looking for (and says <code>true</code>) or reaches the end of the list (and says <code>false</code>). It is still a linear search.
 </p>
 <p>
 When you are only looking for <em>one</em> thing in a list (for example, checking whether a particular word is spelled correctly) rather than finding <em>all</em> the words with some characteristic (for example, looking for all five-letter words), you can use the strategy from <a href="../../unit-5/lab-1/1-sorted-lists.html" title="Page 1: Guess My Number">Page 1: Guess My Number</a> to make your algorithm faster. The best strategy for that problem is a <em>binary search</em> algorithm: always guess the <em>middle</em> value and then adjust your guess based on whether it was too high or too low. That way, you eliminate half the possibilities with each guess. We can use a similar strategy to look for a word in a word list.
@@ -476,8 +479,8 @@ Linear search does a <em>complete</em> traversal of the list. Binary search save
 <p><img src="../../img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"> Compare this <code>binary search</code> block with your code from <a href="../../unit-5/lab-1/1-sorted-lists.html" title="Page 1: Guess My Number">Page 1: Guess My Number</a>. What parts are the same? What parts are different?<br> (high)) { set (current index) to (average of (low) and (high)) #comment: find the middle word set (current item) to (item (current index) of (data)) if ((current item) = (value)) { report (true) } else { if ((current item) &gt; (value)) #comment: eliminate half the list { set (high) to ((current index) – (1)) } else { set (low) to ((current index) + (1)) } } } report (false) }” title=“binary search for (value) in (data) { script variables (low) (high) (current index) (current item) set (low) to (1) set (high) to (length of (data)) repeat until ((low) &gt; (high)) { set (current index) to (average of (low) and (high)) #comment: find the middle word set (current item) to (item (current index) of (data)) if ((current item) = (value)) { report (true) } else { if ((current item) &gt; (value)) #comment: eliminate half the list { set (high) to ((current index) – (1)) } else { set (low) to ((current index) + (1)) } } } report (false) }” /&gt;</p>
 <div class="endnote">
 <pre><code>The &lt;code&gt;&amp;gt;&lt;/code&gt; block (as well as the &lt;code&gt;&amp;lt;&lt;/code&gt; and &lt;code&gt;=&lt;/code&gt; blocks) compares words alphabetically: &lt;br /&gt;
-&lt;img class="indent" src="/img/5-algorithms/carrot-gt-banana-reporting.png" alt="(carrot) &gt; (banana) reporting true" title="(carrot) &gt; (banana) reporting true" /&gt;
-&lt;img class="indent" src="/img/5-algorithms/apple-gt-banana-reporting.png" alt="(apple) &gt; (banana) reporting false" title="(apple) &gt; (banana) reporting false" /&gt;
+&lt;img class="ms-4" src="/img/5-algorithms/carrot-gt-banana-reporting.png" alt="(carrot) &gt; (banana) reporting true" title="(carrot) &gt; (banana) reporting true" /&gt;
+&lt;img class="ms-4" src="/img/5-algorithms/apple-gt-banana-reporting.png" alt="(apple) &gt; (banana) reporting false" title="(apple) &gt; (banana) reporting false" /&gt;
 &lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;Check whether "seperate" is spelled correctly by using &lt;code&gt;binary search&lt;/code&gt; to look for the word in the sorted list &lt;img class="inline" src="/img/5-algorithms/100000-words-(sorted).png" alt="100,000 words (sorted)" title="100,000 words (sorted)" /&gt;.&lt;/li&gt;</code></pre>

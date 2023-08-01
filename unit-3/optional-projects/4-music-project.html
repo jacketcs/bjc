@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Unit , Lab , Page 4 | JacketCS CSP</title>
+<title>Music Project | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -65,7 +65,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -121,6 +120,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -136,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-3/index.html">Data Structures</a></li><li class="breadcrumb-item"><a href="../../unit-3/optional-projects/1-astrid.html">Optional Projects</a></li><li class="breadcrumb-item"><a href="../../unit-3/optional-projects/4-music-project.html">Music Project</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-3/index.html">Unit 3: Data Structures</a></li><li class="breadcrumb-item"><a href="../../unit-3/optional-projects/1-astrid.html">Optional Projects</a></li><li class="breadcrumb-item"><a href="../../unit-3/optional-projects/4-music-project.html">Music Project</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -151,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-3/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Structures</span></a>
+ <span class="menu-text">Unit 3: Data Structures</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -395,7 +398,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Music Project</h1>
-<p class="subtitle lead">Unit , Lab , Page 4</p>
+<p class="subtitle lead">Unit 3 Optional Project</p>
 </div>
 
 
@@ -522,10 +525,10 @@ The <em>length</em> of a note is the amount of time that the note plays (the num
 <p>Create a <code>note</code> ADT to manage the pitch and length of each note in a song.</p>
 <ol>
 <li>
-Create the constructor:<br> <img src="../../img/3-lists/note-constructor.png" title="note, pitch: () length: ()" alt="note, pitch: () length: ()" class="indent">
+Create the constructor:<br> <img src="../../img/3-lists/note-constructor.png" title="note, pitch: () length: ()" alt="note, pitch: () length: ()" class="ms-4">
 </li>
 <li>
-Create two selectors:<br> <img src="../../img/3-lists/note-selector-pitch.png" title="pitch from note: ()" alt="pitch from note: ()" class="indent"> <img src="../../img/3-lists/note-selector-length.png" title="length from note: ()" alt="length from note: ()" class="indent">
+Create two selectors:<br> <img src="../../img/3-lists/note-selector-pitch.png" title="pitch from note: ()" alt="pitch from note: ()" class="ms-4"> <img src="../../img/3-lists/note-selector-length.png" title="length from note: ()" alt="length from note: ()" class="ms-4">
 </li>
 </ol>
 </li>
@@ -538,21 +541,19 @@ Creating Blocks to Play Music
 <div class="forYouToDo">
 <ol start="5">
 <li>
-Use <code>for each</code> together with your selectors to build a <img src="../../img/3-lists/play-song-block.png" title="play song {}" alt="play song {}" class="inline nopadtb"><a name="playsong" class="anchor">&nbsp;</a>block that takes a list of notes as input and plays each <var>pitch</var> for the specified number <var>length</var> of time. <br> <img src="../../img/3-lists/play-song-data-type.png" title="Play Song data type definition" alt="Play Song data type definition" class="indent">
+Use <code>for each</code> together with your selectors to build a <img src="../../img/3-lists/play-song-block.png" title="play song {}" alt="play song {}" class="inline py-0"> block that takes a list of notes as input and plays each <var>pitch</var> for the specified number <var>length</var> of time. <br> <img src="../../img/3-lists/play-song-data-type.png" title="Play Song data type definition" alt="Play Song data type definition" class="ms-4">
 </li>
 <div class="endnote">
 <p><a href="#hint-target" data-bs-toggle="collapse" title="Chart for note pitch numbers">Chart for note pitch numbers. </a></p>
 <div id="hint-target" class="collapse">
-<p class="center">
-</p><p><img src="../../img/3-lists/keyboard.jpg" title="picture of keyboard with keys labeled with letters and numbers; 60 is middle C and the numbers change by 1 with each half step" alt="picture of keyboard with keys labeled with letters and numbers; 60 is middle C and the numbers change by 1 with each half step"></p>
-<p></p>
+<p><img src="../../img/3-lists/keyboard.jpg" title="picture of keyboard with keys labeled with letters and numbers; 60 is middle C and the numbers change by 1 with each half step" alt="picture of keyboard with keys labeled with letters and numbers; 60 is middle C and the numbers change by 1 with each half step"></p>
 </div>
 </div>
 <li>
-Create a reporter to reports the notes for a song of your choosing. Here’s an example:<br> <img src="../../img/3-lists/row-row-row-reporter.png" title="row row row your boat reporter block definition" alt="row row row your boat reporter block definition" class="indent"> <img src="../../img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end">
+Create a reporter to reports the notes for a song of your choosing. Here’s an example:<br> <img src="../../img/3-lists/row-row-row-reporter.png" title="row row row your boat reporter block definition" alt="row row row your boat reporter block definition" class="ms-4"> <img src="../../img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end">
 </li>
 <li>
-Test your song with your <code>play song</code> block, and debug any problems.<br> <img src="../../img/3-lists/play-song-row-row-row.png" title="play song (row row row your boat)" alt="play song (row row row your boat)" class="indent">
+Test your song with your <code>play song</code> block, and debug any problems.<br> <img src="../../img/3-lists/play-song-row-row-row.png" title="play song (row row row your boat)" alt="play song (row row row your boat)" class="ms-4">
 </li>
 <p><img src="../../img/icons/save-now.png" title="Save your work" alt="Save your work" class="float-end"></p>
 </ol>
@@ -573,10 +574,10 @@ Transposing Music
 <div class="forYouToDo">
 <ol start="9">
 <li>
-<img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"> Compare the output of these two scripts that you created above. Discuss what <code>map + 5</code> does to the sounds you hear:<br> <img src="../../img/3-lists/compare-play-note-2.png" title="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" alt="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" class="indent"><br> <img src="../../img/3-lists/compare-play-note-3.png" title="for each (note) of (map (_ + 5) over (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" alt="for each (note) of (map (_ + 5) over (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" class="indent">
+<img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"> Compare the output of these two scripts that you created above. Discuss what <code>map + 5</code> does to the sounds you hear:<br> <img src="../../img/3-lists/compare-play-note-2.png" title="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" alt="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" class="ms-4"><br> <img src="../../img/3-lists/compare-play-note-3.png" title="for each (note) of (map (_ + 5) over (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" alt="for each (note) of (map (_ + 5) over (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" class="ms-4">
 </li>
 <li>
-<p>Use <code>map</code> together with your ADT blocks to create a reporter that transposes (shifts) a list of notes. It should take a list of notes and a number indicating how much to transpose (shift) the song as input, and it should report the adjusted song. For example:<br> <img src="../../img/3-lists/play-song-transpose-row-row-row-by-19.png" title="play song (transpose (row row row your boat) by (19))" alt="play song (transpose (row row row your boat) by (19))" class="indent"></p>
+<p>Use <code>map</code> together with your ADT blocks to create a reporter that transposes (shifts) a list of notes. It should take a list of notes and a number indicating how much to transpose (shift) the song as input, and it should report the adjusted song. For example:<br> <img src="../../img/3-lists/play-song-transpose-row-row-row-by-19.png" title="play song (transpose (row row row your boat) by (19))" alt="play song (transpose (row row row your boat) by (19))" class="ms-4"></p>
 <div class="endnote">
 <p><a href="#hint-target-2" data-bs-toggle="collapse" title="Hint">Reveal a hint.</a></p>
 <div id="hint-target-2" class="collapse">
@@ -594,10 +595,7 @@ Try playing your song using your <code>transpose</code> block with several diffe
 <h3 class="anchored">
 Creating a Round
 </h3>
-<div class="comment">
-<p>If kept, include an explanation of what rounds are like on <a href="../../2-complexity/old/new/map-music.html" target="_blank">this draft page</a>.</p>
-</div>
-<p><img src="../../img/3-lists/musical-round.png" title="launch(play song(row row row your boat)); wait (3) secs; launch(play song(row row row your boat));" alt="launch(play song(row row row your boat)); wait (3) secs; launch(play song(row row row your boat));" class="indent"> <a href="https://github.com/jmoenig/Snap--Build-Your-Own-Blocks/issues/1807">GitHub Issue #1807</a></p>
+<p><img src="../../img/3-lists/musical-round.png" title="launch(play song(row row row your boat)); wait (3) secs; launch(play song(row row row your boat));" alt="launch(play song(row row row your boat)); wait (3) secs; launch(play song(row row row your boat));" class="ms-4"> <a href="https://github.com/jmoenig/Snap--Build-Your-Own-Blocks/issues/1807">GitHub Issue #1807</a></p>
 </div>
 <div class="todo">
 <p>Boring? Maybe not for A/V kids…</p>
@@ -607,7 +605,7 @@ Using a Frequency Cutoff
 <div class="forYouToDo">
 <ol start="12">
 <li>
-<img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"> Compare the output of these two scripts that you created above. Discuss what <code>keep &lt; 65</code> does to the sounds you hear:<br> <img src="../../img/3-lists/compare-play-note-2.png" title="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" alt="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" class="indent"><br> <img src="../../img/3-lists/compare-play-note-4.png" title="for each (note) of (keep items such that (() < 65) from (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" alt="for each (note) of (keep items such that (() < 65) from (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" class="indent">
+<img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"> Compare the output of these two scripts that you created above. Discuss what <code>keep &lt; 65</code> does to the sounds you hear:<br> <img src="../../img/3-lists/compare-play-note-2.png" title="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" alt="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" class="ms-4"><br> <img src="../../img/3-lists/compare-play-note-4.png" title="for each (note) of (keep items such that (() < 65) from (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" alt="for each (note) of (keep items such that (() < 65) from (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" class="ms-4">
 </li>
 <li>
 …

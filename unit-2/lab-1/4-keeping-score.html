@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-1/1-number-guessing-game.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-1/4-keeping-score.html">Page 4: Keeping Score with Global Variables</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Unit 2: Abstraction</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-1/1-number-guessing-game.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-1/4-keeping-score.html">Page 4: Keeping Score with Global Variables</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-2/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 2: Abstraction</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -496,18 +499,15 @@ Initialize <var>score</var> to 0 at the beginning of the game.
 </li>
 <div class="vocabFullWidth">
 <p>
-Setting the starting value of a variable is known as <strong>initializing</strong><a name="initialize" class="anchor">&nbsp;</a>the variable.
+Setting the starting value of a variable is known as <strong>initializing</strong> the variable.
 </p>
-</div>
-<div class="comment">
-<p>AAP-1.B.1</p>
 </div>
 <li>
 Make the program <code>change</code> the score by 1 whenever the sprite is clicked.
 </li>
 <div class="examFullWidth">
 <div class="pseudop">
-<p><img src="../../img/2-complexity/change-score-by-1.png" title="change (score) by (1)" alt="change (score) by (1)" class="inline nopadtb" height="26"> (which means <img src="../../img/2-complexity/set-score-to-score-plus-one.png" title="set(score) to (score+1)" alt="set(score) to (score+1)" height="40">) would be written as</p>
+<p><img src="../../img/2-complexity/change-score-by-1.png" title="change (score) by (1)" alt="change (score) by (1)" class="inline py-0" height="26"> (which means <img src="../../img/2-complexity/set-score-to-score-plus-one.png" title="set(score) to (score+1)" alt="set(score) to (score+1)" height="40">) would be written as</p>
 <pre class="inline">score ← score + 1</pre>
 <p>or <img src="../../img/2-complexity/score-increment-blocktran.png" title="score ← score + 1" alt="score ← score + 1" class="inline">.</p>
 </div>
@@ -544,7 +544,7 @@ Congratulate the player for a few seconds.
 </p><p>When you are debugging your code, it can help to see the value of a variable at different points in your program. This is done differently for local and global variables:</p>
 <ul>
 <li>
-Global variables have check-boxes that control the display of the variable <em>watcher</em> on the stage (shown below).<br> <img src="../../img/2-complexity/Debugging/golbal-variables-checked.png" title="Checking the global variables in the palette." alt="Checking the global variables in the palette." class="indent" height="300"><img src="../../img/2-complexity/Debugging/global-variables-displayed.png" title="Displaying the global variable on the stage" alt="Displaying the global variable on the stage" class="indent" height="300">
+Global variables have check-boxes that control the display of the variable <em>watcher</em> on the stage (shown below).<br> <img src="../../img/2-complexity/Debugging/golbal-variables-checked.png" title="Checking the global variables in the palette." alt="Checking the global variables in the palette." class="ms-4" height="300"><img src="../../img/2-complexity/Debugging/global-variables-displayed.png" title="Displaying the global variable on the stage" alt="Displaying the global variable on the stage" class="ms-4" height="300">
 </li>
 <li>
 If it’s a <em>local</em> (script) variable, you can <strong>use the <code>show variable</code> block</strong> inside the script to display a watcher on the stage (and use <code>hide variable</code> to hide it again).

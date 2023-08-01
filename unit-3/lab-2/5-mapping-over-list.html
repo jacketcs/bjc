@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-3/index.html">Data Structures</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-2/1-build-the-list.html">Lab 2</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-2/5-mapping-over-list.html">Page 5: Transforming Every List Item</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-3/index.html">Unit 3: Data Structures</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-2/1-build-the-list.html">Lab 2</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-2/5-mapping-over-list.html">Page 5: Transforming Every List Item</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-3/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Structures</span></a>
+ <span class="menu-text">Unit 3: Data Structures</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -418,7 +421,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="dialogue">
 <div class="stagedir">
-<p>Alphie, Betsy, and Gamal are building an <code>initials from name</code> block that accepts one contact as input and reports that person’s initials.<br> <img src="../../img/3-lists/initials-reporting.png" title="initials from name (name from contact( (item (1) of (contact list)) reporting 'BA'" alt="initials from name (name from contact( (item (1) of (contact list)) reporting 'BA'" class="indent"></p>
+<p>Alphie, Betsy, and Gamal are building an <code>initials from name</code> block that accepts one contact as input and reports that person’s initials.<br> <img src="../../img/3-lists/initials-reporting.png" title="initials from name (name from contact( (item (1) of (contact list)) reporting 'BA'" alt="initials from name (name from contact( (item (1) of (contact list)) reporting 'BA'" class="ms-4"></p>
 </div>
 <div>
 <p>Betsy: I used the <img src="../../img/blocks/split-by.png" title="split () by ('pink dot indicating a space character')" alt="split () by ('pink dot indicating a space character')" class="inline"> block to break up the contact’s full name into a list of their names, and then I joined the first letter of each name:<br> <img src="../../img/3-lists/initials-definition.png" title="initials from contact: (contact) {
@@ -429,13 +432,13 @@ report (join (letter (1) of (item (1) of (list of names))) (letter (1) of (item 
 script variables (list of names)
 set (list of names) to (split (name from contact (contact)) by (word))
 report (join (letter (1) of (item (1) of (list of names))) (letter (1) of (item (2) of (list of names))) )
-}" class="indent"></p>
+}" class="ms-4"></p>
 </div>
 <div class="endnote">
 <p><a href="#hint-splitting" data-bs-toggle="collapse" title="What's the difference between splitting by spaces and spltting by words?">What’s the difference between splitting by spaces and splitting by words?</a></p>
 <div id="hint-splitting" class="collapse">
 <p>
-Try it! (Each brown dot represents a space.)<br> <img src="../../img/3-lists/split-space.png" title="split &quot;hello␠␠␠␠␠␠␠world&quot; by (␠)" alt="split &quot;hello␠␠␠␠␠␠␠world&quot; by (␠)" class="indent"> <img src="../../img/3-lists/split-word.png" title="split &quot;hello␠␠␠␠␠␠␠world&quot; by word" alt="split &quot;hello␠␠␠␠␠␠␠world&quot; by word" class="indent">
+Try it! (Each brown dot represents a space.)<br> <img src="../../img/3-lists/split-space.png" title="split &quot;hello␠␠␠␠␠␠␠world&quot; by (␠)" alt="split &quot;hello␠␠␠␠␠␠␠world&quot; by (␠)" class="ms-4"> <img src="../../img/3-lists/split-word.png" title="split &quot;hello␠␠␠␠␠␠␠world&quot; by word" alt="split &quot;hello␠␠␠␠␠␠␠world&quot; by word" class="ms-4">
 </p>
 <p>
 In one case, <code>split</code> is focusing on the exact characters in the string. In the other case, it’s giving you what you really want: the words in the contact’s name. At a low level of abstraction, text is made of characters and you look through each of the characters. But at a higher level of abstraction (such as when you are reading), text is made up of words. Snap<em>!</em> lets you think at this higher level of abstraction.
@@ -463,7 +466,7 @@ A <strong>higher-order function</strong> is a function that takes a function as 
 <div class="forYouToDo">
 <ol start="1">
 <li>
-Build and experiment with these examples of the <code>map</code> function.<br> <img src="../../img/3-lists/map-join-s.png" title="map (join( )(s)) over (list{block, script, Boolean})" alt="map (join( )(s)) over (list{block, script, Boolean})" class="indent"><br> <img src="../../img/3-lists/map-3x.png" title="map ((3) * ( )) over (list{7, 8, 1})" alt="map ((3) * ( )) over (list{7, 8, 1})" class="indent"><br> <img src="../../img/3-lists/map-letter-1.png" title="map (letter (1) of ( )) over (list{bounce, join, clear})" alt="map (letter (1) of ( )) over (list{bounce, join, clear})" class="indent">
+Build and experiment with these examples of the <code>map</code> function.<br> <img src="../../img/3-lists/map-join-s.png" title="map (join( )(s)) over (list{block, script, Boolean})" alt="map (join( )(s)) over (list{block, script, Boolean})" class="ms-4"><br> <img src="../../img/3-lists/map-3x.png" title="map ((3) * ( )) over (list{7, 8, 1})" alt="map ((3) * ( )) over (list{7, 8, 1})" class="ms-4"><br> <img src="../../img/3-lists/map-letter-1.png" title="map (letter (1) of ( )) over (list{bounce, join, clear})" alt="map (letter (1) of ( )) over (list{bounce, join, clear})" class="ms-4">
 </li>
 <li>
 <img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Discuss and then explain in writing what these expressions are doing.
@@ -471,7 +474,7 @@ Build and experiment with these examples of the <code>map</code> function.<br> <
 </ol>
 </div>
 <p>
-The <img src="../../img/blocks/map.png" title="map 'reporter input slot' over 'list input slot'" alt="map 'reporter input slot' over 'list input slot'" class="inline"> block takes two inputs: a function (a reporter with a blank input slot) and a list, and it reports a new list in which each item is the result of calling the function with an item from the original list as input. For example:<br> <img src="../../img/3-lists/map-example-2.png" title="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" alt="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" class="indent"><br> <img src="../../img/3-lists/map-example-3.png" title="map (round ( )) over (list{3.14159, 87, 5.4}) reporting {3, 87, 5}" alt="map (round ( )) over (list{3.14159, 87, 5.4}) reporting {3, 87, 5}" class="indent">
+The <img src="../../img/blocks/map.png" title="map 'reporter input slot' over 'list input slot'" alt="map 'reporter input slot' over 'list input slot'" class="inline"> block takes two inputs: a function (a reporter with a blank input slot) and a list, and it reports a new list in which each item is the result of calling the function with an item from the original list as input. For example:<br> <img src="../../img/3-lists/map-example-2.png" title="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" alt="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" class="ms-4"><br> <img src="../../img/3-lists/map-example-3.png" title="map (round ( )) over (list{3.14159, 87, 5.4}) reporting {3, 87, 5}" alt="map (round ( )) over (list{3.14159, 87, 5.4}) reporting {3, 87, 5}" class="ms-4">
 </p>
 <div class="takeNote">
 <p>
@@ -482,9 +485,9 @@ The <img src="../../img/blocks/map.png" title="map 'reporter input slot' over 'l
 </p>
 <div class="endnote">
 <p>
-</p><p>This picture shows how the three higher-order functions could be used:<br> <img src="../../img/3-lists/hof-chart.png" title="picture of map transforming each item, keep blocking some input items so they don't appear in the result, and combine superimposing them into one icon" alt="picture of map transforming each item, keep blocking some input items so they don't appear in the result, and combine superimposing them into one icon" class="indent" height="157px"><br> <a href="#hint-shapes" data-bs-toggle="collapse" title="See the higher-order function expressions with these (imaginary) shape procedures.">See the higher-order function expressions with these (imaginary) shape procedures.</a></p>
+</p><p>This picture shows how the three higher-order functions could be used:<br> <img src="../../img/3-lists/hof-chart.png" title="picture of map transforming each item, keep blocking some input items so they don't appear in the result, and combine superimposing them into one icon" alt="picture of map transforming each item, keep blocking some input items so they don't appear in the result, and combine superimposing them into one icon" class="ms-4" height="157px"><br> <a href="#hint-shapes" data-bs-toggle="collapse" title="See the higher-order function expressions with these (imaginary) shape procedures.">See the higher-order function expressions with these (imaginary) shape procedures.</a></p>
 <div id="hint-shapes" class="collapse">
-<p><img src="../../img/3-lists/map-list-figures.png" title="map (shade figure ()) over (list of figures)" alt="map (shade figure ()) over (list of figures)" class="indent"> <img src="../../img/3-lists/keep-list-figures.png" title="keep items (is () a polygon?) over (list of figures)" alt="keep items (is () a polygon?) over (list of figures)" class="indent"> <img src="../../img/3-lists/combine-list-figures.png" title="combine (list of figures) using (overlay ())" alt="combine (list of figures) using (overlay ())" class="indent"></p>
+<p><img src="../../img/3-lists/map-list-figures.png" title="map (shade figure ()) over (list of figures)" alt="map (shade figure ()) over (list of figures)" class="ms-4"> <img src="../../img/3-lists/keep-list-figures.png" title="keep items (is () a polygon?) over (list of figures)" alt="keep items (is () a polygon?) over (list of figures)" class="ms-4"> <img src="../../img/3-lists/combine-list-figures.png" title="combine (list of figures) using (overlay ())" alt="combine (list of figures) using (overlay ())" class="ms-4"></p>
 </div>
 <p></p>
 <p>
@@ -492,13 +495,13 @@ The <img src="../../img/blocks/map.png" title="map 'reporter input slot' over 'l
 <div id="hint-hofs-review" class="collapse">
 <ul>
 <li>
-<code>Map</code> performs a function on every item of a list and reports the list of changed items.<br> <img src="../../img/3-lists/map-example-1.png" title="map (( )-(1)) over (list (96) (-100) (4.7)) reporting" alt="map (( )-(1)) over (list (96) (-100) (4.7)) reporting" class="indent">
+<code>Map</code> performs a function on every item of a list and reports the list of changed items.<br> <img src="../../img/3-lists/map-example-1.png" title="map (( )-(1)) over (list (96) (-100) (4.7)) reporting" alt="map (( )-(1)) over (list (96) (-100) (4.7)) reporting" class="ms-4">
 </li>
 <li>
-<code>Keep</code> uses a predicate function (a true/false question) to check every item in a list and reports the items that make the predicate true. (You learned about <code>keep</code> on <a href="../../unit-2/lab-3/5-keeping-list-items.html" title="Unit 2 Lab 3 Page 5: Keeping Items from a List">Unit 2 Lab 3 Page 5: <code>Keep</code>ing Items from a List</a>.)<br> <img src="../../img/3-lists/keep-items-(last-letter-h)-reporting.png" alt="keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list" class="indent"><br>
+<code>Keep</code> uses a predicate function (a true/false question) to check every item in a list and reports the items that make the predicate true. (You learned about <code>keep</code> on <a href="../../unit-2/lab-3/5-keeping-list-items.html" title="Unit 2 Lab 3 Page 5: Keeping Items from a List">Unit 2 Lab 3 Page 5: <code>Keep</code>ing Items from a List</a>.)<br> <img src="../../img/3-lists/keep-items-(last-letter-h)-reporting.png" alt="keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list" class="ms-4"><br>
 </li>
 <li>
-<code>Combine</code> uses a combining function (a function with two inputs) to report the results of combining all the items in a list using that function. (You learned about <code>combine</code> on <a href="../../unit-2/lab-4/3-other-math-reporters.html" title="Unit 2 Lab 4 Page 3: More Mathematical Reporters">Unit 2 Lab 4 Page 3: More Mathematical Reporters</a>.)<br> <img src="../../img/3-lists/combine-simple-example.png" title="combine (list {0, 1, 2}) with (()+()) reporting 3" alt="combine (list {0, 1, 2}) with (()+()) reporting 3" class="indent">
+<code>Combine</code> uses a combining function (a function with two inputs) to report the results of combining all the items in a list using that function. (You learned about <code>combine</code> on <a href="../../unit-2/lab-4/3-other-math-reporters.html" title="Unit 2 Lab 4 Page 3: More Mathematical Reporters">Unit 2 Lab 4 Page 3: More Mathematical Reporters</a>.)<br> <img src="../../img/3-lists/combine-simple-example.png" title="combine (list {0, 1, 2}) with (()+()) reporting 3" alt="combine (list {0, 1, 2}) with (()+()) reporting 3" class="ms-4">
 </li>
 </ul>
 </div>
@@ -511,7 +514,7 @@ The <img src="../../img/blocks/map.png" title="map 'reporter input slot' over 'l
 If it isn’t open already, open your U3L2-ContactList project.
 </li>
 <li>
-Use <code>map</code> and <code>combine</code> together to build an <code>initials from name</code> reporter that takes a name as input and reports that person’s initials.<br> <img src="../../img/3-lists/initials-reporting.png" title="initials from name (name from contact( (item (1) of (contact list)) reporting 'BA'" alt="initials from name (name from contact( (item (1) of (contact list)) reporting 'BA'" class="indent"> <img src="../../img/3-lists/initials-reporting-mlk.png" title="initials from name (Martin Luther King) reporting 'MLK'" alt="initials from name (Martin Luther King) reporting 'MLK'" class="indent">
+Use <code>map</code> and <code>combine</code> together to build an <code>initials from name</code> reporter that takes a name as input and reports that person’s initials.<br> <img src="../../img/3-lists/initials-reporting.png" title="initials from name (name from contact( (item (1) of (contact list)) reporting 'BA'" alt="initials from name (name from contact( (item (1) of (contact list)) reporting 'BA'" class="ms-4"> <img src="../../img/3-lists/initials-reporting-mlk.png" title="initials from name (Martin Luther King) reporting 'MLK'" alt="initials from name (Martin Luther King) reporting 'MLK'" class="ms-4">
 </li>
 <li>
 Test and debug your <code>initials from name</code> block.
@@ -522,17 +525,17 @@ Test and debug your <code>initials from name</code> block.
 <p><a href="#hint-list-names" data-bs-toggle="collapse" title="Need a hint about reporting the initials of everyone in your contact list?">Need a hint?</a></p>
 <div id="hint-list-names" class="collapse">
 <p>
-First, create an expression to report a list of the names of all your contacts.<br> <img src="../../img/3-lists/contact-list-list-view.png" title="contact list watcher in list view" alt="contact list watcher in list view" class="indent"> <span style="padding-right: 1em; padding-left: 1em; font-size: 36px;">→</span> <img src="../../img/3-lists/names.png" title="list in list view containing three items: Betsy Anderson, Alphie Preston, Gamal Abdel" alt="list in list view containing three items: Betsy Anderson, Alphie Preston, Gamal Abdel">
+First, create an expression to report a list of the names of all your contacts.<br> <img src="../../img/3-lists/contact-list-list-view.png" title="contact list watcher in list view" alt="contact list watcher in list view" class="ms-4"> <span style="padding-right: 1em; padding-left: 1em; font-size: 36px;">→</span> <img src="../../img/3-lists/names.png" title="list in list view containing three items: Betsy Anderson, Alphie Preston, Gamal Abdel" alt="list in list view containing three items: Betsy Anderson, Alphie Preston, Gamal Abdel">
 </p>
 </div>
 </div>
-<p><img src="../../img/3-lists/contact-list-list-view.png" title="contact list watcher in list view" alt="contact list watcher in list view" class="indent"> <span style="padding-right: 1em; padding-left: 1em; font-size: 36px;">→</span> <img src="../../img/3-lists/initials.png" title="list in list view containing three items: BA, AP, GA" alt="list in list view containing three items: BA, AP, GA"></p>
+<p><img src="../../img/3-lists/contact-list-list-view.png" title="contact list watcher in list view" alt="contact list watcher in list view" class="ms-4"> <span style="padding-right: 1em; padding-left: 1em; font-size: 36px;">→</span> <img src="../../img/3-lists/initials.png" title="list in list view containing three items: BA, AP, GA" alt="list in list view containing three items: BA, AP, GA"></p>
 </li>
 <li>
 <!-- question 1 -->
 <div class="assessment-data" type="multiplechoice" data-identifier="mapLetterVsItem" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="resp1" data-shuffle="false">
 <div class="prompt">
-<p>Which of the following statements are true about this list?<br> <img src="../../img/3-lists/words_numbers.png" title="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" alt="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" class="indent"><br></p>
+<p>Which of the following statements are true about this list?<br> <img src="../../img/3-lists/words_numbers.png" title="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" alt="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" class="ms-4"><br></p>
 </div>
 <div class="choice" data-identifier="c1">
 <div class="text">
@@ -577,12 +580,12 @@ First, create an expression to report a list of the names of all your contacts.<
 <!-- question 2 -->
 <div class="assessment-data" type="multiplechoice" data-identifier="mapLetterVsItem" data-hasinlinefeedback="true" data-maxchoices="5" data-responseidentifier="resp2" data-shuffle="false">
 <div class="prompt">
-<p>Which of the following statements are true about this list?<br> <img src="../../img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="indent"><br> Choose <strong>all</strong> that apply.</p>
+<p>Which of the following statements are true about this list?<br> <img src="../../img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="ms-4"><br> Choose <strong>all</strong> that apply.</p>
 <div class="endnote">
 <p><a href="#hint-capital-adt" data-bs-toggle="collapse" title="Why not use an ADT?">Why not use an ADT?</a></p>
 <div id="hint-capital-adt" class="collapse">
 <p>
-The list inside a list shown above makes it clearest to you now as you answer this self-check item what the structure is, but you’re right, in an actual program it would be better to use an abstract data type:<br> <img src="../../img/3-lists/capitals-adt-reporting.png" title="state: (Augusta) capital: (Maine)" alt="state: (Augusta) capital: (Maine)" class="indent">
+The list inside a list shown above makes it clearest to you now as you answer this self-check item what the structure is, but you’re right, in an actual program it would be better to use an abstract data type:<br> <img src="../../img/3-lists/capitals-adt-reporting.png" title="state: (Augusta) capital: (Maine)" alt="state: (Augusta) capital: (Maine)" class="ms-4">
 </p>
 </div>
 </div>
@@ -645,7 +648,7 @@ set (names of contacts) to (list)
 for each (contact) of (contact list) {
 add (name from contact: (contact)) to (names of contacts)
 }
-report (names of contacts)" class="indent"> <img src="../../img/3-lists/abstraction-example-map.png" title="map (name from contact: ()) over (contacts list)" alt="map (name from contact: ()) over (contacts list)" class="indent">
+report (names of contacts)" class="ms-4"> <img src="../../img/3-lists/abstraction-example-map.png" title="map (name from contact: ()) over (contacts list)" alt="map (name from contact: ()) over (contacts list)" class="ms-4">
 </li>
 <li>
 <div class="todo">
@@ -654,7 +657,7 @@ report (names of contacts)" class="indent"> <img src="../../img/3-lists/abstract
 <div class="assessment-data" type="multiplechoice" data-identifier="squares_mapkeepcombine" data-hasinlinefeedback="true" data-maxchoices="8" data-responseidentifier="resp1" data-shuffle="true">
 <div class="prompt">
 <p>
-Consider this list of squares: <br> <img src="../../img/3-lists/squares.png" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" class="indent"><br> Which of the following expressions will report a list? Choose all that apply.
+Consider this list of squares: <br> <img src="../../img/3-lists/squares.png" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" class="ms-4"><br> Which of the following expressions will report a list? Choose all that apply.
 </p>
 </div>
 <div class="choice" data-identifier="c1">
@@ -721,7 +724,7 @@ Consider this list of squares: <br> <img src="../../img/3-lists/squares.png" tit
 <div class="sidenote">
 <p>Data from <em>Structure and Interpretation of Computer Programs</em> by Abelson and Sussman. Creative Commons licensed.</p>
 </div>
-<p><a class="run" href="../../prog/3-lists/U3L2-Employee-Database.xml"><img src="../../img/3-lists/microshaft-database.png" title="list block containing nine instances of the constructor 'employee, name: () job title: () salary: ()' each with various inputs" alt="list block containing nine instances of the constructor 'employee, name: () job title: () salary: ()' each with various inputs" class="indent"></a><br> This is the list of employees of a small company. Each of the smaller lists contains a person’s name, job title, and yearly salary.</p>
+<p><a class="run" href="../../prog/3-lists/U3L2-Employee-Database.xml"><img src="../../img/3-lists/microshaft-database.png" title="list block containing nine instances of the constructor 'employee, name: () job title: () salary: ()' each with various inputs" alt="list block containing nine instances of the constructor 'employee, name: () job title: () salary: ()' each with various inputs" class="ms-4"></a><br> This is the list of employees of a small company. Each of the smaller lists contains a person’s name, job title, and yearly salary.</p>
 <p>
 “This company spends more money on the big bosses than on the people who do the work,” says Alyssa one day. Is she right? Write an expression to compute the total salaries of everyone paid less than $100,000 per year. Then find the total for everyone paid more than $100,000 per year.
 </p>

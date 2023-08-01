@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-4/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-4/lab-4/1-bits.html">Lab 4</a></li><li class="breadcrumb-item"><a href="../../unit-4/lab-4/5-binary.html">Page 5: Binary Representation</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-4/index.html">Unit 4: How the Internet Works</a></li><li class="breadcrumb-item"><a href="../../unit-4/lab-4/1-bits.html">Lab 4</a></li><li class="breadcrumb-item"><a href="../../unit-4/lab-4/5-binary.html">Page 5: Binary Representation</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-4/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 4: How the Internet Works</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -440,13 +443,13 @@ People generally use base ten (decimal) digits to write numbers. Computers use b
 <p>DAT-1.C.3</p>
 </div>
 <p>
-In <strong>base 10</strong>, there are ten digits (0-9), and each place is worth <em>ten</em> times as much as the place to its right. <br> <img src="../../img/4-internet/decimal-places.jpg" title="place values in decimal 3761: 3 1000's 7 100's 6 10's 1 1's" alt="place values in decimal 3761: 3 1000's 7 100's 6 10's 1 1's" class="indent noshadow">
+In <strong>base 10</strong>, there are ten digits (0-9), and each place is worth <em>ten</em> times as much as the place to its right. <br> <img src="../../img/4-internet/decimal-places.jpg" title="place values in decimal 3761: 3 1000's 7 100's 6 10's 1 1's" alt="place values in decimal 3761: 3 1000's 7 100's 6 10's 1 1's" class="ms-4 noshadow">
 </p>
 <div class="ap-standard">
 <p>DAT-1.C.2</p>
 </div>
 <p>
-In <strong>binary, base 2</strong>, there are only two digits (0 and 1), and each place is worth <em>two</em> times the place to its right.<br> <img src="../../img/4-internet/binary-places.jpg" title="place values in binary 1101: 1 8's 1 4's 0 2's 1 1's" alt="place values in binary 1101: 1 8's 1 4's 0 2's 1 1's" class="indent noshadow">
+In <strong>binary, base 2</strong>, there are only two digits (0 and 1), and each place is worth <em>two</em> times the place to its right.<br> <img src="../../img/4-internet/binary-places.jpg" title="place values in binary 1101: 1 8's 1 4's 0 2's 1 1's" alt="place values in binary 1101: 1 8's 1 4's 0 2's 1 1's" class="ms-4 noshadow">
 </p>
 <div class="endnote">
 <p>The subscript 2 on 1101<sub>2</sub> means the 1101 is in base 2. Numbers are normally written in base 10, so a subscript 10 is only used when needed for clarity.</p>
@@ -460,7 +463,7 @@ Reading Binary
 <p>
 In <strong>base 10</strong> notation, each place value represents a <strong>power of ten</strong>: the units place (10<sup>0</sup> = 1), the tens place (10<sup>1</sup> = 10), the hundreds place (10<sup>2</sup> = 100), the thousands place (10<sup>3</sup> = 1000), etc. So, for example:
 </p>
-<p class="center">
+<p>
 </p><p>9827 &nbsp; = &nbsp; 9 × 10<sup>3</sup> &nbsp;+&nbsp; 8 × 10<sup>2</sup> &nbsp;+&nbsp; 2 × 10<sup>1</sup> &nbsp;+&nbsp; 7 × 10<sup>0</sup></p>
 <p></p>
 <div class="ap-standard">
@@ -478,9 +481,6 @@ To translate from binary (for example, 101101<sub>2</sub>) to base 10, <strong>f
 </p>
 <div class="sidenoteBig">
 <p>101101<sub>2</sub> has only six digits, so we don’t need powers of two to the left of that.</p>
-</div>
-<div class="commentBig">
-<p>Instead of the big blue arrow that nobody understands, let’s use five small blue arrows between the cells of the second row.</p>
 </div>
 <p>31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATQB3AEEAMgBBAEQAVQBBAE0AZwBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBQAEEAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAEkAQQBCAGoAQQBHAHcAQQBZAFEAQgB6AEEASABNAEEAUABRAEEAaQBBAEcASQBBAGUAUQBCADAAQQBHAFUAQQBJAEEAQgBwAEEARwA0AEEAWgBBAEIAbABBAEcANABBAGQAQQBBAGkAQQBDAEEAQQBjAHcAQgAxAEEARwAwAEEAYgBRAEIAaABBAEgASQBBAGUAUQBBADkAQQBDAEkAQQBkAEEAQgB5AEEARwBFAEEAYgBnAEIAegBBAEcAdwBBAFkAUQBCADAAQQBHAGsAQQBiAHcAQgB1AEEAQwBBAEEAYwBBAEIAeQBBAEcAOABBAFkAdwBCAGwAQQBIAE0AQQBjAHcAQQBnAEEARwBZAEEAYwBnAEIAdgBBAEcAMABBAEkAQQBCAGkAQQBHAGsAQQBiAGcAQgBoAEEASABJAEEAZQBRAEEAZwBBAEgAUQBBAGIAdwBBAGcAQQBHAEkAQQBZAFEAQgB6AEEARwBVAEEASQBBAEEAeABBAEQAQQBBAEkAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAG8AQQBDAEEAQQBjAHcAQgBqAEEARwA4AEEAYwBBAEIAbABBAEQAMABBAEkAZwBCAGoAQQBHADgAQQBiAEEAQQBpAEEARAA0AEEATQBRAEEAOABBAEMAOABBAGQAQQBCAG8AQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYQBBAEEAZwBBAEgATQBBAFkAdwBCAHYAQQBIAEEAQQBaAFEAQQA5AEEAQwBJAEEAWQB3AEIAdgBBAEcAdwBBAEkAZwBBAGcAQQBIAE0AQQBkAEEAQgA1AEEARwB3AEEAWgBRAEEAOQBBAEMASQBBAFoAZwBCAHYAQQBHADQAQQBkAEEAQQB0AEEASABjAEEAWgBRAEIAcABBAEcAYwBBAGEAQQBCADAAQQBEAG8AQQBiAGcAQgB2AEEASABJAEEAYgBRAEIAaABBAEcAdwBBAE8AdwBBAGkAQQBEADQAQQBNAEEAQQA4AEEAQwA4AEEAZABBAEIAbwBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBhAEEAQQBnAEEASABNAEEAWQB3AEIAdgBBAEgAQQBBAFoAUQBBADkAQQBDAEkAQQBZAHcAQgB2AEEARwB3AEEASQBnAEEAKwBBAEQARQBBAFAAQQBBAHYAQQBIAFEAQQBhAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAZwBBAEkAQQBCAHoAQQBHAE0AQQBiAHcAQgB3AEEARwBVAEEAUABRAEEAaQBBAEcATQBBAGIAdwBCAHMAQQBDAEkAQQBQAGcAQQB4AEEARAB3AEEATAB3AEIAMABBAEcAZwBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBvAEEAQwBBAEEAYwB3AEIAagBBAEcAOABBAGMAQQBCAGwAQQBEADAAQQBJAGcAQgBqAEEARwA4AEEAYgBBAEEAaQBBAEMAQQBBAGMAdwBCADAAQQBIAGsAQQBiAEEAQgBsAEEARAAwAEEASQBnAEIAbQBBAEcAOABBAGIAZwBCADAAQQBDADAAQQBkAHcAQgBsAEEARwBrAEEAWgB3AEIAbwBBAEgAUQBBAE8AZwBCAHUAQQBHADgAQQBjAGcAQgB0AEEARwBFAEEAYgBBAEEANwBBAEMASQBBAFAAZwBBAHcAQQBEAHcAQQBMAHcAQgAwAEEARwBnAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAG8AQQBDAEEAQQBjAHcAQgBqAEEARwA4AEEAYwBBAEIAbABBAEQAMABBAEkAZwBCAGoAQQBHADgAQQBiAEEAQQBpAEEARAA0AEEATQBRAEEAOABBAEMAOABBAGQAQQBCAG8AQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBADgAQQBIAE0AQQBkAEEAQgB5AEEARwA4AEEAYgBnAEIAbgBBAEQANABBAE0AdwBBAHkAQQBEAHcAQQBMAHcAQgB6AEEASABRAEEAYwBnAEIAdgBBAEcANABBAFoAdwBBACsAQQBEAHcAQQBMAHcAQgAwAEEARwBRAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBEADQAQQBNAFEAQQAyAEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEAUABBAEIAegBBAEgAUQBBAGMAZwBCAHYAQQBHADQAQQBaAHcAQQArAEEARABnAEEAUABBAEEAdgBBAEgATQBBAGQAQQBCAHkAQQBHADgAQQBiAGcAQgBuAEEARAA0AEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAOABBAEgATQBBAGQAQQBCAHkAQQBHADgAQQBiAGcAQgBuAEEARAA0AEEATgBBAEEAOABBAEMAOABBAGMAdwBCADAAQQBIAEkAQQBiAHcAQgB1AEEARwBjAEEAUABnAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQASQBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBADgAQQBIAE0AQQBkAEEAQgB5AEEARwA4AEEAYgBnAEIAbgBBAEQANABBAE0AUQBBADgAQQBDADgAQQBjAHcAQgAwAEEASABJAEEAYgB3AEIAdQBBAEcAYwBBAFAAZwBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEMAOABBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBJAEEAQgBqAEEARwB3AEEAWQBRAEIAegBBAEgATQBBAFAAUQBBAGkAQQBHADQAQQBiAHcAQgBpAEEARwA4AEEAYwBnAEIAawBBAEcAVQBBAGMAZwBBAGkAQQBDAEEAQQBZAHcAQgB2AEEARwB3AEEAYwB3AEIAdwBBAEcARQBBAGIAZwBBADkAQQBDAEkAQQBOAGcAQQBpAEEARAA0AEEAQwBnAEEAOABBAEcAawBBAGIAUQBCAG4AQQBDAEEAQQBZAHcAQgBzAEEARwBFAEEAYwB3AEIAegBBAEQAMABBAEkAZwBCAHAAQQBHADQAQQBaAEEAQgBsAEEARwA0AEEAZABBAEEAZwBBAEcANABBAGIAdwBCAHoAQQBHAGcAQQBZAFEAQgBrAEEARwA4AEEAZAB3AEEAaQBBAEMAQQBBAGMAdwBCAHkAQQBHAE0AQQBQAFEAQQBpAEEAQwA4AEEAWQBnAEIAcQBBAEcATQBBAEwAUQBCAHkAQQBDADgAQQBhAFEAQgB0AEEARwBjAEEATAB3AEEANABBAEMAMABBAGMAZwBCAGwAQQBHAE0AQQBkAFEAQgB5AEEASABNAEEAYQBRAEIAMgBBAEcAVQBBAEwAUQBCAHkAQQBHAFUAQQBjAEEAQgB2AEEASABJAEEAZABBAEIAbABBAEgASQBBAGMAdwBBAHYAQQBIAEkAQQBMAFEAQgAwAEEARwA4AEEATABRAEIAcwBBAEMANABBAGMAQQBCAHUAQQBHAGMAQQBJAGcAQQBnAEEARwBFAEEAYgBBAEIAMABBAEQAMABBAEkAZwBCAHkAQQBHAGsAQQBaAHcAQgBvAEEASABRAEEATABRAEIAMABBAEcAOABBAEwAUQBCAHMAQQBHAFUAQQBaAGcAQgAwAEEAQwBBAEEAWQBRAEIAeQBBAEgASQBBAGIAdwBCADMAQQBDAEkAQQBJAEEAQgAwAEEARwBrAEEAZABBAEIAcwBBAEcAVQBBAFAAUQBBAGkAQQBIAEkAQQBhAFEAQgBuAEEARwBnAEEAZABBAEEAdABBAEgAUQBBAGIAdwBBAHQAQQBHAHcAQQBaAFEAQgBtAEEASABRAEEASQBBAEIAaABBAEgASQBBAGMAZwBCAHYAQQBIAGMAQQBJAGcAQQBnAEEAQwA4AEEAUABnAEEASwBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBMAHcAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAFAAZwBBAD0ACgBzAHUAZgBmAGkAeAA6AA==:31b8e172-b470-440e-83d8-e6b185028602</p>
 <p>
@@ -519,7 +519,7 @@ Writing Binary
 To translate from base 10 (like 89<sub>10</sub>) to base 2, <strong>first write out the binary place values</strong> by <em>doubling left from the units place</em> until you get to a value larger than your number (128 for this example). <strong>Then think</strong>, “I can take out a 64, so I write a 1 there, and there’s 25 left (89&nbsp;−&nbsp;64). I have 0 thirty-twos, because I only have 25. But I can take out 16, and there’s 9 left. So, 8 and 1 are the last nonzero bits.
 </p>
 <!--  <div class="sidenoteBig">Either way you are converting (and between any bases), always write the place values right-to-left (just as with units, tens, hundreds, etc.), and always write the number itself left-to-right.</div>  -->
-<table class="indent table" data-quarto-postprocess="true" data-summary="translation process from binary to base 10">
+<table class="ms-4 table" data-quarto-postprocess="true" data-summary="translation process from binary to base 10">
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th" scope="col">1</td>
@@ -538,7 +538,7 @@ To translate from base 10 (like 89<sub>10</sub>) to base 2, <strong>first write 
 <td><strong>1</strong></td>
 </tr>
 <tr class="odd">
-<td colspan="6" class="noborder"><img src="../../img/8-recursive-reporters/r-to-l.png" title="right-to-left arrow" class="indent noshadow img-fluid" alt="right-to-left arrow"></td>
+<td colspan="6" class="noborder"><img src="../../img/8-recursive-reporters/r-to-l.png" title="right-to-left arrow" class="ms-4 noshadow img-fluid" alt="right-to-left arrow"></td>
 </tr>
 </tbody>
 </table>
@@ -559,9 +559,6 @@ First, find the largest power of two that is less than the number.
 Then, subtract that power of 2 from the number, keep the new number, and record a 1 in the place for that power of 2.
 </li>
 <!--<div class="sidenote">You could <a href="/unit-6/lab-1/5-binary-counter.html">create a program</a> based on an algorithm like this.</div>   -->
-<div class="comment">
-<p>There is <a href="../../unit-4/lab-4/5b-binary-alternate.html" target="_blank">Another Algorithm for Converting to Binary</a>.<br>(Change from a “comment” to a “sidenote” when page is complete.) –MF, 11/20/17</p>
-</div>
 <li>
 <p>Then, determine if the next largest power of 2 that is less than the new number, and:</p>
 <ul>

@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-5/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-2/1-intro-to-simulations.html">Lab 2</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-2/2-disease-spread.html">Page 2: Disease Spread Project</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-5/index.html">Unit 5: Algorithms and Simulations</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-2/1-intro-to-simulations.html">Lab 2</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-2/2-disease-spread.html">Page 2: Disease Spread Project</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-5/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 5: Algorithms and Simulations</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -429,16 +432,11 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="commentBig">
-<p>
-Paul suggested we review DHH’s Calculus text, which does a great job of building an intellectual model that could be programmed in Snap. –MF, 6/27/21 with BH
-</p>
-</div>
 <div class="learn">
 <p>
 <strong>On this page,</strong> you will model the spread of a disease in a population.
 </p>
-<p><img title="Simulation of a disease spreading in a population.  A single infected individual eventually causes everyone to be infected." alt="Simulation of a disease spreading in a population.  A single infected individual eventually causes everyone to be infected." class="indent" data-gifffer="/img/5-algorithms/img_disease-spread/disease-spread.gif"></p>
+<p><img title="Simulation of a disease spreading in a population.  A single infected individual eventually causes everyone to be infected." alt="Simulation of a disease spreading in a population.  A single infected individual eventually causes everyone to be infected." class="ms-4" data-gifffer="/img/5-algorithms/img_disease-spread/disease-spread.gif"></p>
 <p>
 <strong>Note:</strong> There was a disease spread simulation in BJC long before covid-19, but we want to acknowledge that right now the spread of a disease isn’t an abstract question. Everyone has been affected by isolation at home, and some students may have lost loved ones to this disease. Medical researchers do use simulations (much more complex than this one) to try to predict the future course of the disease.
 </p>
@@ -527,7 +525,7 @@ You want to know the effect of population size on the time elapsed. Because ther
 <div class="ap-standard">
 <p>AAP-3.F.8</p>
 </div>
-<p>Write a function that takes population size as input, runs the simulation ten times, keeps the percent initially infected at 10 and the speed of infection at 2, and reports the average time elapsed.<br> <img src="../../img/5-algorithms/average-of-disease-spread.png" title="average time for disease spread with population size: ()" alt="average time for disease spread with population size: ()" class="indent"></p>
+<p>Write a function that takes population size as input, runs the simulation ten times, keeps the percent initially infected at 10 and the speed of infection at 2, and reports the average time elapsed.<br> <img src="../../img/5-algorithms/average-of-disease-spread.png" title="average time for disease spread with population size: ()" alt="average time for disease spread with population size: ()" class="ms-4"></p>
 </li>
 <div class="ap-standard">
 <p>AAP-3.F.7</p>
@@ -573,7 +571,7 @@ a single line where the customers stand in arrival order and wait for the next a
 separate lines for each teller.
 </li>
 </ul>
-<p>Design and implement two simulations in Snap<em>!</em> to help the bank determine the <em>average wait time</em> for customers in each scenario in order to choose the best option.<br> <img src="../../img/5-algorithms/img_disease-spread/single-queue.png" title="Single queue" alt="Single queue" class="indent" height="180"><img src="../../img/5-algorithms/img_disease-spread/multiple-queues.png" title="Multiple queues" alt="Multiple queues" height="180"></p>
+<p>Design and implement two simulations in Snap<em>!</em> to help the bank determine the <em>average wait time</em> for customers in each scenario in order to choose the best option.<br> <img src="../../img/5-algorithms/img_disease-spread/single-queue.png" title="Single queue" alt="Single queue" class="ms-4" height="180"><img src="../../img/5-algorithms/img_disease-spread/multiple-queues.png" title="Multiple queues" alt="Multiple queues" height="180"></p>
 </li>
 <li>
 Do some research: Why do (most) banks use a single teller line, but (most) grocery stores use a line per checkout station?

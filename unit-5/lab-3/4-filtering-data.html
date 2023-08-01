@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-5/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-3/1-health-data.html">Lab 3</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-3/4-filtering-data.html">Page 4: Analyzing Data</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-5/index.html">Unit 5: Algorithms and Simulations</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-3/1-health-data.html">Lab 3</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-3/4-filtering-data.html">Page 4: Analyzing Data</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-5/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 5: Algorithms and Simulations</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -438,7 +441,7 @@ ul.task-list li input[type="checkbox"] {
 </p><div class="ap-standard">
 <p>DAT-2.D.4</p>
 </div>
-<p>You can ask questions about a specific subset of your data by <em>filtering</em> the data using <code>keep</code>. Filtering is a powerful technique for finding information and recognizing patterns in data. For example, filtering can help you answer questions like “What is the average city MPG <em>for just the Subarus</em> in this dataset?”<br> <img src="../../img/5-algorithms/average-mpg-of-subarus-reporting.png" title="average of (column (9) of table (keep items (field (14) of record 'empty list input slot' = Subaru) from (data of table (cars))) reporting 19.704..." alt="average of (column (9) of table (keep items (field (14) of record 'empty list input slot' = Subaru) from (data of table (cars))) reporting 19.704..." class="indent"><br> Column 14 is the “Make” of the vehicle, so we <code>keep</code> all the records from <var>cars</var> for which the 14<sup>th</sup> field is “Subaru.” Then, we take column 9 of those records (the “City MPG”) and find their average.</p>
+<p>You can ask questions about a specific subset of your data by <em>filtering</em> the data using <code>keep</code>. Filtering is a powerful technique for finding information and recognizing patterns in data. For example, filtering can help you answer questions like “What is the average city MPG <em>for just the Subarus</em> in this dataset?”<br> <img src="../../img/5-algorithms/average-mpg-of-subarus-reporting.png" title="average of (column (9) of table (keep items (field (14) of record 'empty list input slot' = Subaru) from (data of table (cars))) reporting 19.704..." alt="average of (column (9) of table (keep items (field (14) of record 'empty list input slot' = Subaru) from (data of table (cars))) reporting 19.704..." class="ms-4"><br> Column 14 is the “Make” of the vehicle, so we <code>keep</code> all the records from <var>cars</var> for which the 14<sup>th</sup> field is “Subaru.” Then, we take column 9 of those records (the “City MPG”) and find their average.</p>
 <p></p>
 <div class="endnote">
 <p>
@@ -448,7 +451,7 @@ Notice that there are many digits in the answer above. How many digits are given
 </p><p>You might find expressions with many nested function calls easier to build by using the <code>pipe</code> function. <a href="#hint-pipe" data-bs-toggle="collapse" title="What would this look like using pipe?">What would this look like using <code>pipe</code>?</a></p>
 <div id="hint-pipe" class="collapse">
 <p>
-You can use the <code>pipe</code> function from the “Bar Charts” library to work through your data analysis one function at at time:<br> <img src="../../img/5-algorithms/pipe-cars-reporting.png" title="pipe (data of table (cars)) → (keep items (field (14) of record 'list input slot' = Subaru) from 'list input slot') (column (9) of table ()) (average of ()) reporting 19.49..." alt="pipe (data of table (cars)) → (keep items (field (14) of record 'list input slot' = Subaru) from 'list input slot') (column (9) of table ()) (average of ()) reporting 19.49..." class="indent"><br> The <code>pipe</code> function sends the <code>data from table (</code><var>cars</var><code>)</code> through <code>keep</code> to filter it for just the Subarus, through <code>column (9) of table</code> to get just the “City MPG” for those Subarus, and finally through <code>average</code> to get the average of those Subaru MPG values.
+You can use the <code>pipe</code> function from the “Bar Charts” library to work through your data analysis one function at at time:<br> <img src="../../img/5-algorithms/pipe-cars-reporting.png" title="pipe (data of table (cars)) → (keep items (field (14) of record 'list input slot' = Subaru) from 'list input slot') (column (9) of table ()) (average of ()) reporting 19.49..." alt="pipe (data of table (cars)) → (keep items (field (14) of record 'list input slot' = Subaru) from 'list input slot') (column (9) of table ()) (average of ()) reporting 19.49..." class="ms-4"><br> The <code>pipe</code> function sends the <code>data from table (</code><var>cars</var><code>)</code> through <code>keep</code> to filter it for just the Subarus, through <code>column (9) of table</code> to get just the “City MPG” for those Subarus, and finally through <code>average</code> to get the average of those Subaru MPG values.
 </p>
 <p>
 Recall that the empty input slots in each function are filled by the output of the previous function (or the starting dataset in the case of the first function): the empty slots in the <code>keep</code> function are both filled by <code>data from table (</code><var>cars</var><code>)</code>; the empty slot in <code>column (9) of table</code> is filled by the output of <code>keep</code>; and the empty slot in <code>average</code> is filled by the output of <code>column (9) of table</code>. It’s like a pipe of made of pieces connected together; the data goes in one end and works through each function, computing a new value at each step.
@@ -507,7 +510,7 @@ Notice that the column you use to filter the data (such as year) doesn’t have 
 </ol>
 </div>
 <p>
-Sometimes, you want to keep a subset of your data (such as “Which cars were made in 2010?”), but other times, you just want one item that matches your requirement, often because what you really want to know is whether <em>any</em> items match, and as soon as you find one, the answer is “yes” (such as “Were any electric cars made in 2010?”). Snap<em>!</em> has a higher order function <img src="../../img/blocks/find-first.png" title="find first item () in 'list input slot'" alt="find first item () in 'list input slot'" class="inline nopadtb"> that works similarly to <code>keep</code>, but it reports only the first item that’s found, so it can be faster.
+Sometimes, you want to keep a subset of your data (such as “Which cars were made in 2010?”), but other times, you just want one item that matches your requirement, often because what you really want to know is whether <em>any</em> items match, and as soon as you find one, the answer is “yes” (such as “Were any electric cars made in 2010?”). Snap<em>!</em> has a higher order function <img src="../../img/blocks/find-first.png" title="find first item () in 'list input slot'" alt="find first item () in 'list input slot'" class="inline py-0"> that works similarly to <code>keep</code>, but it reports only the first item that’s found, so it can be faster.
 </p>
 <div class="endnote">
 <p>

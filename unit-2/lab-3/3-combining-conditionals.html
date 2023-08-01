@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script src="../../site_libs/quarto-contrib/gifffer/gifffer.min.js"></script>
 <link href="../../site_libs/quarto-contrib/gifffer/bjc-gifffer.css" rel="stylesheet">
 <script type="text/javascript">window.onload = function() {Gifffer();};</script>
@@ -69,7 +69,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -125,6 +124,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -140,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-3/1-what-is-predicate.html">Lab 3</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-3/3-combining-conditionals.html">Page 3: Combining Conditionals</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Unit 2: Abstraction</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-3/1-what-is-predicate.html">Lab 3</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-3/3-combining-conditionals.html">Page 3: Combining Conditionals</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -155,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-2/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 2: Abstraction</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -438,9 +441,6 @@ ul.task-list li input[type="checkbox"] {
 <div class="forYouToDo">
 <ol>
 <li>
-<div class="comment">
-<p>AAP-2.E part b, AAP-2.L, AAP-2.L.1, AAP-2.L.3, AAP-2.L.4, AAP-2.L.5</p>
-</div>
 <p><img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Here are four possible ways to define <code>≥</code>. Discuss what advantages each style has: <br></p>
 <ol>
 <li>
@@ -462,14 +462,11 @@ Which is closest to how you think about ≥ in math class?
 Which seems <em>clearest to you</em>?
 </li>
 </ol>
-<p><img src="../../img/2-complexity/ge-ifelseelse.png" title="a ≥ b {if (a > b) {report true} else {if (a = b) {report true} else {report false}}}" alt="a ≥ b {if (a > b) {report true} else {if (a = b) {report true} else {report false}}}" class="indent"> <img src="../../img/2-complexity/ge-ifelse.png" title="a ≥ b {if (a > b) {report true} else {report (a = b)}}" alt="a ≥ b {if (a > b) {report true} else {report (a = b)}}" class="indent"> <img src="../../img/2-complexity/ge-notless.png" title="a ≥ b {report (not (a < b))}" alt="a ≥ b {report (not (a < b))}" class="indent"> <img src="../../img/2-complexity/ge-or.png" title="a ≥ b {report ((a > b) or (a = b))}" alt="a ≥ b {report ((a > b) or (a = b))}" class="indent"></p>
+<p><img src="../../img/2-complexity/ge-ifelseelse.png" title="a ≥ b {if (a > b) {report true} else {if (a = b) {report true} else {report false}}}" alt="a ≥ b {if (a > b) {report true} else {if (a = b) {report true} else {report false}}}" class="ms-4"> <img src="../../img/2-complexity/ge-ifelse.png" title="a ≥ b {if (a > b) {report true} else {report (a = b)}}" alt="a ≥ b {if (a > b) {report true} else {report (a = b)}}" class="ms-4"> <img src="../../img/2-complexity/ge-notless.png" title="a ≥ b {report (not (a < b))}" alt="a ≥ b {report (not (a < b))}" class="ms-4"> <img src="../../img/2-complexity/ge-or.png" title="a ≥ b {report ((a > b) or (a = b))}" alt="a ≥ b {report ((a > b) or (a = b))}" class="ms-4"></p>
 </li>
 </ol>
 </div>
 <div class="vocabBig">
-<div class="comment">
-<p>AAP-2.I.1</p>
-</div>
 <p>
 A <strong>nested conditional statement</strong> is an <code>if</code> or <code>if else</code> statement inside another <code>if else</code> statement.
 </p>
@@ -480,9 +477,6 @@ Look back at the first two examples in the previous problem. Since the predicate
 <div class="forYouToDo">
 <ol start="2">
 <li>
-<div class="comment">
-<p>AAP-2.I part b</p>
-</div>
 <p><img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"> Describe what this code segment will do.<br> <img src="../../img/2-complexity/is-today-tuesday.png" title="ask (Is today Tuesday?) and wait
 if (answer = 'yes')
 {
@@ -511,11 +505,8 @@ else
 {
 say (You didn't answer yes or no.)
 }
-}" class="indent"></p>
+}" class="ms-4"></p>
 </li>
-<div class="comment">
-<p>AAP-2.I part a</p>
-</div>
 <li>
 Look back at your code for writing on the stage in three colors. If it doesn’t already use a nested conditional statement, copy the code, and create a new version that does.
 </li>

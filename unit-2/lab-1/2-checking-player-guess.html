@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-1/1-number-guessing-game.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-1/2-checking-player-guess.html">Page 2: Checking the Player’s Guess</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Unit 2: Abstraction</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-1/1-number-guessing-game.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-1/2-checking-player-guess.html">Page 2: Checking the Player’s Guess</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-2/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 2: Abstraction</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -436,7 +439,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <!--<div class="index-term" id="<code>repeat until</code> block" />-->
 <p>
-You’ll want the computer to ask players to guess again and again until they guess correctly. To do that, you will use the <img src="../../img/blocks/repeat-until.png" title="repeat until" alt="repeat until" class="inline nopadtb"> block. <code>Repeat until</code> is a <em>loop</em> (just like <code>repeat</code>, <code>forever</code>, and <code>for</code>) but also a <em>conditional</em> (like <code>if</code> and <code>if else</code>). It repeats until a certain condition is met. For this program, the code should repeat until the player’s answer equals the secret number.
+You’ll want the computer to ask players to guess again and again until they guess correctly. To do that, you will use the <img src="../../img/blocks/repeat-until.png" title="repeat until" alt="repeat until" class="inline py-0"> block. <code>Repeat until</code> is a <em>loop</em> (just like <code>repeat</code>, <code>forever</code>, and <code>for</code>) but also a <em>conditional</em> (like <code>if</code> and <code>if else</code>). It repeats until a certain condition is met. For this program, the code should repeat until the player’s answer equals the secret number.
 </p>
 <div class="endnote">
 <p>
@@ -451,7 +454,7 @@ You’ve seen conditionals on <a href="../../unit-1/lab-2/5-if-else.html" title=
 <p><img src="../../img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="float-end"></p>
 <ol start="1">
 <li>
-Use <code>repeat until</code> to ask the player (<img src="../../img/blocks/ask-empty-full-size.png" title="ask () and wait" alt="ask () and wait" class="inline nopadtb">) to guess the secret number until their <img src="../../img/blocks/answer-full-size.png" title="answer" alt="answer" class="inline"> equals the <var>secret number</var>.
+Use <code>repeat until</code> to ask the player (<img src="../../img/blocks/ask-empty-full-size.png" title="ask () and wait" alt="ask () and wait" class="inline py-0">) to guess the secret number until their <img src="../../img/blocks/answer-full-size.png" title="answer" alt="answer" class="inline"> equals the <var>secret number</var>.
 </li>
 <div class="endnote">
 <ul>
@@ -474,18 +477,12 @@ userResponse ← INPUT()</pre>
 </div>
 <p>or <img src="../../img/2-complexity/chicken-script-blocktran.png" title="a white rounded rectangle containing two smaller white rounded rectangles: The first one contains first the word 'DISPLAY' in all caps and then a smaller white rectangle containing the quoted text 'Why did the chicken cross the road?'. The second one contains the text 'userResponse ← INPUT()'" alt="a white rounded rectangle containing two smaller white rounded rectangles: The first one contains first the word 'DISPLAY' in all caps and then a smaller white rectangle containing the quoted text 'Why did the chicken cross the road?'. The second one contains the text 'userResponse ← INPUT()'" class="inline">.</p>
 </div>
-<div class="comment">
-<p>AAP-3.A.8, AAP-3.A.9</p>
-</div>
 <div class="pseudop">
 <p>Notice that the procedure <code>INPUT()</code> accepts the value from the user and returns that input value, which is then assigned to the variable <code>userResponse</code> with the <code>←</code> syntax. In Snap<em>!</em>, this is just like how <code>answer</code> accepts a value from the user and reports it, and that report is what the computer <code>set</code>s the variable <code>user response</code> to.</p>
 </div>
 </div>
 <div class="forYouToDo">
 <ol start="2">
-<div class="comment">
-<p>AAP-2.B</p>
-</div>
 <li>
 After the player guesses the secret number, make the computer congratulate the player.
 </li>
@@ -510,9 +507,6 @@ The word Boolean is capitalized because it’s named after a person, George Bool
 <p>
 A <strong>predicate</strong> is a hexagon-shaped reporter that asks a true/false question such as these examples:<br> 7 reporting true” title=“8 &gt; 7 reporting true” /&gt; 7 reporting false” title=“6 &gt; 7 reporting false” /&gt;
 </p>
-<div class="comment">
-<p>AAP-2.E.1</p>
-</div>
 <p>
 Predicates report a <strong>Boolean value</strong> (either <img src="../../img/blocks/true.png" title="true" alt="true" class="inline"> or <img src="../../img/blocks/false.png" title="false" alt="false" class="inline">).
 </p>
@@ -539,7 +533,7 @@ report (join (who) (', who') (does what) ( ) (who) (,))
 } else {
 report (who)
 }
-}" class="indent"></a> <a href="../../unit-1/lab-2/img/1-introduction/move-tiny-no-comment.png" title="when green flag clicked:
+}" class="ms-4"></a> <a href="../../unit-1/lab-2/img/1-introduction/move-tiny-no-comment.png" title="when green flag clicked:
 repeat until (touching (Leader)?)
 {
 point towards (Leader)
@@ -549,7 +543,7 @@ repeat until (touching (Leader)?)
 {
 point towards (Leader)
 move (1) steps
-}" class="indent"></a></p>
+}" class="ms-4"></a></p>
 </div>
 </div>
 </div>

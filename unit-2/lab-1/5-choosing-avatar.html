@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-1/1-number-guessing-game.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-1/5-choosing-avatar.html">Page 5: Choosing a Costume</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Unit 2: Abstraction</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-1/1-number-guessing-game.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-1/5-choosing-avatar.html">Page 5: Choosing a Costume</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-2/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 2: Abstraction</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -457,7 +460,7 @@ Remove the code in the program that changes the costume when you click the sprit
 </ol>
 </li>
 <li>
-Experiment with the <img src="../../img/blocks/switch-to-costume.png" title="switch to costume []" alt="switch to costume []" class="inline nopadtb"> block using different inputs to switch the sprite’s costume manually a few times.
+Experiment with the <img src="../../img/blocks/switch-to-costume.png" title="switch to costume []" alt="switch to costume []" class="inline py-0"> block using different inputs to switch the sprite’s costume manually a few times.
 </li>
 </ol>
 </div>
@@ -470,45 +473,35 @@ When you used <code>item of</code> before (for example, inside <code>who</code> 
 <div class="vocabFullWidth">
 <p>: <strong>Index</strong></p>
 <p>
-The position number is called the <strong>index</strong> of the item in the list. <br> <img src="../../img/3-lists/item-2-of-list-reporting.png" title="item (2) of (list (apple) (cantaloupe) (banana)) reporting 'cantaloupe'" alt="item (2) of (list (apple) (cantaloupe) (banana)) reporting 'cantaloupe'" class="indent"><br> In this list, 1 is the index of the item “apple,” 2 is the index of the item “cantaloupe,” and so on.
+The position number is called the <strong>index</strong> of the item in the list. <br> <img src="../../img/3-lists/item-2-of-list-reporting.png" title="item (2) of (list (apple) (cantaloupe) (banana)) reporting 'cantaloupe'" alt="item (2) of (list (apple) (cantaloupe) (banana)) reporting 'cantaloupe'" class="ms-4"><br> In this list, 1 is the index of the item “apple,” 2 is the index of the item “cantaloupe,” and so on.
 </p>
-<div class="comment">
-<p>AAP-1.D.8</p>
-</div>
 <p>
 In Snap<em>!</em> and on the AP exam, the index is always a whole number (1, 2, 3, 4, etc.). It is an error to use an index less than 1 or greater than the length of the list.
 </p>
 </div>
 <p>
-<!--<img class="float-end" src="/img/2-complexity/my-menu.png" alt="my (neighbors) with drop-down menu open showing: neighbors, self, other sprites, clones, parts, anchor, stage, children, parent, name, costumes, sounds, dangling?, draggable?, rotation x, rotation y, center x, center y" title="my (neighbors) with drop-down menu open showing: neighbors, self, other sprites, clones, parts, anchor, stage, children, parent, name, costumes, sounds, dangling?, draggable?, rotation x, rotation y, center x, center y" />-->
 </p><p>Lists can contain anything: letters or words, costumes, other lists, or even blocks. You can use <code>my</code> to report a list of the costumes for your sprite.<br></p>
 <div class="sidenote">
 <p>The <code>my</code> block looks like <img src="../../img/blocks/my-neighbors.png" title="my (neighbors)" alt="my (neighbors)" class="inline"> until you select “costumes” from its drop-down menu.</p>
 </div>
-<p><img src="../../img/2-complexity/my-costumes-reporting.png" title="my (costumes) reporting a list of three costumes: a girl with an afro, a penguin, and a unicorn" alt="my (costumes) reporting a list of three costumes: a girl with an afro, a penguin, and a unicorn" class="indent"></p>
+<p><img src="../../img/2-complexity/my-costumes-reporting.png" title="my (costumes) reporting a list of three costumes: a girl with an afro, a penguin, and a unicorn" alt="my (costumes) reporting a list of three costumes: a girl with an afro, a penguin, and a unicorn" class="ms-4"></p>
 <p></p>
 <p>
 And you can use <code>item of</code> together with <code>my</code> to select a costume in a specific position in the list.
 </p>
 <div class="endnote">
-<p>Some blocks (such as <code>item of</code>) have input slots that expect a list. You can tell because the input slot looks kind of like a list:<br> <img src="../../img/blocks/item.png" title="item (1) of 'list input slot'" alt="item (1) of 'list input slot'" class="indent"> <img src="../../img/2-complexity/listpic.png" alt="picture of 2-item list" class="indent"></p>
+<p>Some blocks (such as <code>item of</code>) have input slots that expect a list. You can tell because the input slot looks kind of like a list:<br> <img src="../../img/blocks/item.png" title="item (1) of 'list input slot'" alt="item (1) of 'list input slot'" class="ms-4"> <img src="../../img/2-complexity/listpic.png" alt="picture of 2-item list" class="ms-4"></p>
 </div>
 <div class="forYouToDo">
 <ol start="4">
-<div class="comment">
-<p>AAP-2.N part a</p>
-</div>
 <li>
 <p>Practice using the <em>index</em> of the costumes in your list to switch the sprite’s costume a few times.</p>
 <div class="narrower">
 <p>
-You can drag blocks into the input slot of <code>switch to costume</code> even though it’s a drop-down menu.<br> <img src="../../img/blocks/switch-to-costume.png" title="switch to costume []" alt="switch to costume []" class="indent"> <img src="../../img/2-complexity/switch-to-costume(item-of).png" title="switch to costume (item (1) of 'list input slot')" alt="switch to costume (item (1) of 'list input slot')" class="indent">
+You can drag blocks into the input slot of <code>switch to costume</code> even though it’s a drop-down menu.<br> <img src="../../img/blocks/switch-to-costume.png" title="switch to costume []" alt="switch to costume []" class="ms-4"> <img src="../../img/2-complexity/switch-to-costume(item-of).png" title="switch to costume (item (1) of 'list input slot')" alt="switch to costume (item (1) of 'list input slot')" class="ms-4">
 </p>
 </div>
 </li>
-<div class="comment">
-<p>AAP-2.N part a</p>
-</div>
 <div class="sidenote">
 <p>You used <code>ask</code> and <code>answer</code> on <a href="../../unit-2/lab-1/2-checking-player-guess.html" title="">Unit 2 Lab 1 Page 2: Checking the Player’s Guess</a>.</p>
 </div>
@@ -519,7 +512,7 @@ You can drag blocks into the input slot of <code>switch to costume</code> even t
 Use a <var>costumes</var> script variable to store the list of sprite costumes.
 </li>
 <li>
-Use <img src="../../img/blocks/show-variable-full-size.png" title="show variable []" alt="show variable []" class="inline nopadtb"> to show the contents of that variable.
+Use <img src="../../img/blocks/show-variable-full-size.png" title="show variable []" alt="show variable []" class="inline py-0"> to show the contents of that variable.
 </li>
 <li>
 <code>Ask</code> the player “Which costume number do you want?”
@@ -535,13 +528,10 @@ Hide the costume list.
 </ol>
 </div>
 <div class="examFullWidth">
-<div class="comment">
-<p>AAP-2.N.1 bullet 1</p>
-</div>
 <div class="pseudop">
 <p>The list expression <img src="../../img/2-complexity/item-2-of-costumes.png" title="item (2) of (costumes)" alt="item (2) of (costumes)" class="inline"> would be written as</p>
 <pre class="inline">costumes[2]</pre>
-<p>or <img src="../../img/2-complexity/accessing-blocktran.png" title="costumes[2]" alt="costumes[2]" class="inline">. All three versions of this code would report/return the penguin costume (if only the AP language had costumes as a data type):<br> <img src="../../img/2-complexity/item-2-of-costumes-reporting-penguin.png" title="item (2) of (costumes) reporting a picture of the penguin costume" alt="item (2) of (costumes) reporting a picture of the penguin costume" class="indent"></p>
+<p>or <img src="../../img/2-complexity/accessing-blocktran.png" title="costumes[2]" alt="costumes[2]" class="inline">. All three versions of this code would report/return the penguin costume (if only the AP language had costumes as a data type):<br> <img src="../../img/2-complexity/item-2-of-costumes-reporting-penguin.png" title="item (2) of (costumes) reporting a picture of the penguin costume" alt="item (2) of (costumes) reporting a picture of the penguin costume" class="ms-4"></p>
 </div>
 </div>
 <div class="forYouToDo">
@@ -558,9 +548,6 @@ Hide the costume list.
 <li>
 <img src="../../img/2-complexity/list-length-quiz-nested.png" title="length of ( list (list (pineapple) (strawberry) (kiwi)) (mango))" alt="length of ( list (list (pineapple) (strawberry) (kiwi)) (mango))" class="inline">
 </li>
-<div class="comment">
-<p>AAP-2.N part b</p>
-</div>
 <li>
 <img src="../../img/2-complexity/list-length-quiz-item-of-nested.png" title="length of (item (1) of (list (list (pineapple) (strawberry) (kiwi)) (mango)))" alt="length of (item (1) of (list (list (pineapple) (strawberry) (kiwi)) (mango)))" class="inline">
 </li>
@@ -574,10 +561,7 @@ Experiment in Snap<em>!</em> to verify your predictions.
 <div class="assessment-data" type="multiplechoice" data-identifier="length2" data-hasinlinefeedback="true" data-maxchoices="3" data-responseidentifier="ri1" data-shuffle="true">
 <div class="prompt">
 <p>
-</p><div class="comment">
-<p>AAP-2.N part b</p>
-</div>
-<p>Which of the following blocks will report <strong>a list of length 3</strong>?<br><br> Choose <strong>all</strong> that apply.</p>
+</p><p>Which of the following blocks will report <strong>a list of length 3</strong>?<br><br> Choose <strong>all</strong> that apply.</p>
 <p></p>
 </div>
 <div class="choice" data-identifier="c1">
@@ -625,9 +609,6 @@ Experiment in Snap<em>!</em> to verify your predictions.
 </ol>
 </div>
 <div class="examFullWidth">
-<div class="comment">
-<p>AAP-2.N.1 bullet 7</p>
-</div>
 <div class="pseudop">
 <p>The expression <img src="../../img/2-complexity/example-length.png" title="length of (words list)" alt="length of (words list)" class="inline"> would be written as</p>
 <pre class="inline">LENGTH(wordsList)</pre>

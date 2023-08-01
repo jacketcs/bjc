@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script src="../../site_libs/quarto-contrib/gifffer/gifffer.min.js"></script>
 <link href="../../site_libs/quarto-contrib/gifffer/bjc-gifffer.css" rel="stylesheet">
 <script type="text/javascript">window.onload = function() {Gifffer();};</script>
@@ -69,7 +69,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -125,6 +124,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -140,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-3/1-what-is-predicate.html">Lab 3</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-3/1-what-is-predicate.html">Page 1: What’s a Predicate?</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Unit 2: Abstraction</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-3/1-what-is-predicate.html">Lab 3</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-3/1-what-is-predicate.html">Page 1: What’s a Predicate?</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -155,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-2/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 2: Abstraction</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -440,11 +443,8 @@ ul.task-list li input[type="checkbox"] {
 <strong>On this page</strong>, you will review predicates and build a few that you can use in other projects.
 </p>
 </div>
-<div class="comment">
-<p>AAP-2.H.1</p>
-</div>
 <p>
-As you know, predicates are reporter blocks (functions) that always report a <em>Boolean value</em> (they report only the values <img src="../../img/blocks/true.png" title="true" alt="true" class="inline nopadtb"> or <img src="../../img/blocks/false.png" title="false" alt="false" class="inline nopadtb">). In Snap<em>!</em>, predicates are represented by hexagonal blocks. They compute the <em>condition</em> used by <em>conditionals</em> (such as <code>if</code>, <code>if else</code>, or <code>repeat until</code>) to decide when to do something.
+As you know, predicates are reporter blocks (functions) that always report a <em>Boolean value</em> (they report only the values <img src="../../img/blocks/true.png" title="true" alt="true" class="inline py-0"> or <img src="../../img/blocks/false.png" title="false" alt="false" class="inline py-0">). In Snap<em>!</em>, predicates are represented by hexagonal blocks. They compute the <em>condition</em> used by <em>conditionals</em> (such as <code>if</code>, <code>if else</code>, or <code>repeat until</code>) to decide when to do something.
 </p>
 <div class="takeNote">
 <p>
@@ -475,7 +475,7 @@ report (who)
 report (join (who) (', who') (does what) ( ) (who) (,))
 } else {
 report (who)
-}" class="indent"></a> <a href="../../unit-1/lab-5/2-sprite-interaction.html"><img class="indent" src="../../img/1-introduction/move-tiny-no-comment.png" alt="when green flag clicked:
+}" class="ms-4"></a> <a href="../../unit-1/lab-5/2-sprite-interaction.html"><img class="ms-4" src="../../img/1-introduction/move-tiny-no-comment.png" alt="when green flag clicked:
 repeat until (touching (Leader)?)
 {
     point towards (Leader)
@@ -495,30 +495,24 @@ repeat until (touching (Leader)?)
 </div>
 </li>
 <li>
-<p>In <a href="../../unit-1/lab-5/1-following-sprites.html">Unit 1 Lab 5</a>, you made a script to get the sprite to follow the mouse. <br> <img class="indent" src="../../img/2-complexity/U2-follow-that-mouse.png" alt="go to (mouse-pointer)" title="go to (mouse-pointer)"><br></p>
-<div class="comment">
-<p>AAP-2.E part a</p>
-</div>
-<p>Now use one or more of the following <em>relational operators</em> to create a script that lets you use your mouse to write on the stage in two colors depending on the mouse’s position on the stage.<br> <img src="../../img/2-complexity/relations.jpg" title="less than, equal to, and greater than predicate blocks" alt="less than, equal to, and greater than predicate blocks" class="indent"></p>
+<p>In <a href="../../unit-1/lab-5/1-following-sprites.html">Unit 1 Lab 5</a>, you made a script to get the sprite to follow the mouse. <br> <img class="ms-4" src="../../img/2-complexity/U2-follow-that-mouse.png" alt="go to (mouse-pointer)" title="go to (mouse-pointer)"><br></p>
+<p>Now use one or more of the following <em>relational operators</em> to create a script that lets you use your mouse to write on the stage in two colors depending on the mouse’s position on the stage.<br> <img src="../../img/2-complexity/relations.jpg" title="less than, equal to, and greater than predicate blocks" alt="less than, equal to, and greater than predicate blocks" class="ms-4"></p>
 <div class="endnote">
 <p><a href="#hint-two-colors" data-bs-toggle="collapse" title="Click for an example of writing on the stage in two colors.">Click for an example of writing on the stage in two colors.</a></p>
 <div id="hint-two-colors" class="collapse">
-<p><img title="using the mouse to write 'mouse' on the stage" alt="using the mouse to write 'mouse' on the stage" class="indent" data-gifffer="/img/2-complexity/writing-mouse-on-stage.gif"></p>
+<p><img title="using the mouse to write 'mouse' on the stage" alt="using the mouse to write 'mouse' on the stage" class="ms-4" data-gifffer="/img/2-complexity/writing-mouse-on-stage.gif"></p>
 </div>
 </div>
 </li>
 </ol>
 </div>
 <div class="examFullWidth">
-<div class="comment">
-<p>AAP-2.E.2</p>
-</div>
 <div class="pseudop">
 <p>You may see these five relational operators:</p>
 <pre class="inline">=, &gt;, &lt;, ≥, ≤</pre>
 <p>as well as a sixth:</p>
 <pre class="inline">≠</pre>
-<p>, which means “not-equal” and reports <code>false</code> if the two inputs are equal and otherwise reports <code>true</code> (if they are not equal). When you write the <img src="../../img/2-complexity/not-equal.png" title="() not equal ()" alt="() not equal ()" class="inline"> block, it will work like this:<br> <img src="../../img/2-complexity/not-equal-reporting-true.png" title="(3) not equal (4) reporting true" alt="(3) not equal (4) reporting true" class="indent"> <img src="../../img/2-complexity/not-equal-reporting-false.png" title="(3) not equal (3) reporting false" alt="(3) not equal (3) reporting false" class="indent"></p>
+<p>, which means “not-equal” and reports <code>false</code> if the two inputs are equal and otherwise reports <code>true</code> (if they are not equal). When you write the <img src="../../img/2-complexity/not-equal.png" title="() not equal ()" alt="() not equal ()" class="inline"> block, it will work like this:<br> <img src="../../img/2-complexity/not-equal-reporting-true.png" title="(3) not equal (4) reporting true" alt="(3) not equal (4) reporting true" class="ms-4"> <img src="../../img/2-complexity/not-equal-reporting-false.png" title="(3) not equal (3) reporting false" alt="(3) not equal (3) reporting false" class="ms-4"></p>
 </div>
 <p>
 These six relational operators all report a Boolean value (<code>true</code> or <code>false</code>).
@@ -531,15 +525,12 @@ These six relational operators all report a Boolean value (<code>true</code> or 
 <div class="sidenote">
 <p>You’ll probably want to use the <img src="../../img/blocks/mouse-down.png" title="mouse down? predicate block" alt="mouse down? predicate block" class="inline"> block, which you can find in the Sensing palette.</p>
 </div>
-<p><img src="../../img/2-complexity/bicolor-hello.png" title="bicolor printed hello" alt="bicolor printed hello" class="indent" style="height:200px;"></p>
+<p><img src="../../img/2-complexity/bicolor-hello.png" title="bicolor printed hello" alt="bicolor printed hello" class="ms-4" style="height:200px;"></p>
 </li>
 </ol>
 </div>
 <div class="vocabFullWidth">
 <p>: <strong>Sequencing, Selection, Iteration</strong></p>
-<div class="comment">
-<p>Selection: AAP-2.G.1; sequencing, selection, iteration: AAP-2.A.4</p>
-</div>
 <p>
 <strong>Selection</strong> means deciding (selecting) which part of an algorithm to run based on whether a condition is true or false.
 </p>

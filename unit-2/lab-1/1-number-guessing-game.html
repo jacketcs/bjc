@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-1/1-number-guessing-game.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-1/1-number-guessing-game.html">Page 1: Starting a Number Guessing Game</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Unit 2: Abstraction</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-1/1-number-guessing-game.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-1/1-number-guessing-game.html">Page 1: Starting a Number Guessing Game</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-2/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 2: Abstraction</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -454,13 +457,10 @@ Start building a new command block called <code>number guessing game</code> that
 </ol>
 </div>
 <p>
-In a number-guessing game, the player tries to guess the computer’s secret number. The computer needs a way to store the secret number in a <em>variable</em> so that it can compare it to the player’s guesses.<br> <img src="../../img/2-complexity/script-variables-secret-number.png" title="script variables (secret number)" alt="script variables (secret number)" class="indent">
+In a number-guessing game, the player tries to guess the computer’s secret number. The computer needs a way to store the secret number in a <em>variable</em> so that it can compare it to the player’s guesses.<br> <img src="../../img/2-complexity/script-variables-secret-number.png" title="script variables (secret number)" alt="script variables (secret number)" class="ms-4">
 </p>
 <div class="vocabFullWidth">
 <p>: <strong>Variable</strong></p>
-<div class="comment">
-<p>AAP-1.A.1</p>
-</div>
 <p>
 A <strong>variable</strong> is like a labeled box that can hold one value at a time, such as one word, one costume, or one list (which can contain many things). You can look at what’s inside as many times as you want.
 </p>
@@ -476,7 +476,7 @@ A <strong>variable</strong> is like a labeled box that can hold one value at a t
 <h3 class="anchored" data-anchor-id="making-a-script-variable"><strong>Making a Script Variable</strong></h3>
 <ol type="a">
 <li>
-<strong>Move a <code>script variables</code> block into the Scripting Area.</strong> You can find it in the Variables palette.<br> <img src="../../img/prog/scriptvar.png" title="script variables" alt="script variables" class="indent">
+<strong>Move a <code>script variables</code> block into the Scripting Area.</strong> You can find it in the Variables palette.<br> <img src="../../img/prog/scriptvar.png" title="script variables" alt="script variables" class="ms-4">
 </li>
 <li>
 <strong>Name the variable</strong> by clicking on the orange <var>a</var> at the end and typing the name you want. Here, it should be called <var>secret number</var>.
@@ -486,25 +486,19 @@ A <strong>variable</strong> is like a labeled box that can hold one value at a t
 </section>
 </li>
 <li>
-<div class="comment">
-<p>AAP-1.A, AAP-3.E</p>
-</div>
-<p>Use <img src="../../img/blocks/set-empty.png" title="set () to ()" alt="set () to ()" class="inline nopadtb"> to set the initial value of <var>secret number</var> to a random number from 1 to 10. The <code>set</code> menu lets you select which variable to set. <br></p>
+<p>Use <img src="../../img/blocks/set-empty.png" title="set () to ()" alt="set () to ()" class="inline py-0"> to set the initial value of <var>secret number</var> to a random number from 1 to 10. The <code>set</code> menu lets you select which variable to set. <br></p>
 <div class="sidenoteBig">
 <p>The variable <var>secret number</var> is available in the <code>set</code> block only when you snap it somewhere after the <code>script variables</code> block.</p>
 </div>
-<p><img src="../../img/2-complexity/set-secret-number-menu.jpg" title="set block menu selecting secret number" alt="set block menu selecting secret number" class="indent"></p>
+<p><img src="../../img/2-complexity/set-secret-number-menu.jpg" title="set block menu selecting secret number" alt="set block menu selecting secret number" class="ms-4"></p>
 </li>
 </ol>
 </div>
 <div class="examFullWidth">
-<div class="comment">
-<p>AAP-1.B.2</p>
-</div>
 <div class="pseudop">
 <p><img src="../../img/2-complexity/set-secret-number-to-7.png" title="set (secret number) to (7)" alt="set (secret number) to (7)" class="inline"> would be written as</p>
 <pre class="inline">secretNumber ← 7</pre>
-<p>or <img src="../../img/2-complexity/secret-number-assignment-blocktran.png" title="a white rounded rectangle containing the text 'secretNumber ← 7'" alt="a white rounded rectangle containing the text 'secretNumber ← 7'" class="nopadtb">.</p>
+<p>or <img src="../../img/2-complexity/secret-number-assignment-blocktran.png" title="a white rounded rectangle containing the text 'secretNumber ← 7'" alt="a white rounded rectangle containing the text 'secretNumber ← 7'" class="py-0">.</p>
 </div>
 </div>
 <p>
@@ -516,10 +510,10 @@ Script variables are a kind of <em>local variable</em>; they work only within th
 </p>
 <div id="hint-inputs" class="collapse">
 <p>
-You have created variables as inputs to blocks that you made:<br> <img src="../../img/2-complexity/input-variable-for-pinwheelbranches-commented.png" title="block definition for pinwheel and setting 'number of branches' input variable for pinwheel" alt="block definition for pinwheel and setting 'number of branches' input variable for pinwheel" class="indent noshadow">
+You have created variables as inputs to blocks that you made:<br> <img src="../../img/2-complexity/input-variable-for-pinwheelbranches-commented.png" title="block definition for pinwheel and setting 'number of branches' input variable for pinwheel" alt="block definition for pinwheel and setting 'number of branches' input variable for pinwheel" class="ms-4 noshadow">
 </p>
 <p>
-You have used the counter variable that the <code>for</code> block gave you:<br> <img src="../../img/2-complexity/local-variable-created-by-for-block-commented.png" title="local variable created by for block" alt="local variable created by for block" class="indent noshadow">
+You have used the counter variable that the <code>for</code> block gave you:<br> <img src="../../img/2-complexity/local-variable-created-by-for-block-commented.png" title="local variable created by for block" alt="local variable created by for block" class="ms-4 noshadow">
 </p>
 </div>
 </div>
@@ -534,9 +528,6 @@ A <strong>local variable</strong> can be set or used only in the environment in 
 In algebra, a variable is sometimes used for something whose value you don’t know yet, and the goal is to find out its value. In programming <em>you decide</em> the values of variables.
 </p>
 </div>
-<div class="comment">
-<p>AAP-1.A.1</p>
-</div>
 <div class="sidenote">
 <p>You learned about input variables on <a href="../../unit-1/lab-3/3-blocks-with-inputs.html" title="Unit 1 Lab 3 Page 3: Blocks with Inputs">Unit 1 Lab 3 Page 3: Blocks with Inputs</a>.</p>
 </div>
@@ -549,9 +540,6 @@ In algebra, a variable is sometimes used for something whose value you don’t k
 </div>
 <div class="forYouToDo">
 <ol start="5">
-<div class="comment">
-<p>AAP-1.B, AAP-1.B.3</p>
-</div>
 <li>
 <!-- Question 1 -->
 <div class="assessment-data" type="multiplechoice" data-identifier="What value will this code return?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri1" data-shuffle="true">
@@ -612,7 +600,7 @@ DISPLAY(b)</pre>
 <!-- Question 2 -->
 <div class="assessment-data" type="multiplechoice" data-identifier="What value will this script report?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri2" data-shuffle="true">
 <div class="prompt">
-<p>What value will this script report?<br> <img src="../../img/2-complexity/variable-assignment-quizlet.png" title="set m to 9, set k to 5, set m to (m + 1), set k to (k - m), report k" alt="set m to 9, set k to 5, set m to (m + 1), set k to (k - m), report k" class="indent"></p>
+<p>What value will this script report?<br> <img src="../../img/2-complexity/variable-assignment-quizlet.png" title="set m to 9, set k to 5, set m to (m + 1), set k to (k - m), report k" alt="set m to 9, set k to 5, set m to (m + 1), set k to (k - m), report k" class="ms-4"></p>
 </div>
 <div class="choice" data-identifier="c1">
 <div class="text">
@@ -1010,7 +998,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../../unit-2/index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction to Programming</span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Unit 2: Abstraction</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-5/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-6/1-review.html">Lab 6</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-6/2-creating-computer-player.html">Page 2: Creating a Computer Player</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-5/index.html">Unit 5: Algorithms and Simulations</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-6/1-review.html">Lab 6</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-6/2-creating-computer-player.html">Page 2: Creating a Computer Player</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-5/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 5: Algorithms and Simulations</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -452,7 +455,7 @@ For now, you’ll create a computer player that moves to <em>random</em> positio
 <p>Recall that clones are temporary copies of a sprite. You learned about them in <a href="../../unit-3/lab-1/5-building-tic-tac-toe.html" title="Unit 3 Lab 1 Page 5: Building a Tic-Tac-Toe Board">Unit 3 Lab 1 Page 5: Building a Tic-Tac-Toe Board</a>.</p>
 </div>
 <p>
-<img src="../../img/blocks/broadcast.png" title="broadcast" alt="broadcast" class="indent"> <img src="../../img/blocks/when-i-receive.png" title="when I receive" alt="when I receive" class="indent">
+<img src="../../img/blocks/broadcast.png" title="broadcast" alt="broadcast" class="ms-4"> <img src="../../img/blocks/when-i-receive.png" title="when I receive" alt="when I receive" class="ms-4">
 </p>
 <div class="sidenote">
 <p>You first saw <code>broadcast</code> and <code>when I receive</code> on <a href="../../unit-1/lab-2/2-gossip.html" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unit 1 Lab 2 Page 2: Making Programs Talk</a>.</p>
@@ -461,7 +464,7 @@ For now, you’ll create a computer player that moves to <em>random</em> positio
 <code>Broadcast</code> sends out a message to all the sprites in the project. Any scripts that start with <code>when I receive</code> and have a matching message in the input slot will run.
 </p>
 <p>
-If you select “any message” from the <code>when I receive</code> dropdown menu and you click the right-pointing triangle, you can use the <code>data</code> variable to access the message.<br> <img src="../../img/blocks/when-i-receive-any-message.png" title="when I receive (any message) (data)" alt="when I receive (any message) (data)" class="indent">
+If you select “any message” from the <code>when I receive</code> dropdown menu and you click the right-pointing triangle, you can use the <code>data</code> variable to access the message.<br> <img src="../../img/blocks/when-i-receive-any-message.png" title="when I receive (any message) (data)" alt="when I receive (any message) (data)" class="ms-4">
 </p>
 <div id="first" class="forYouToDo">
 <ol>
@@ -469,7 +472,7 @@ If you select “any message” from the <code>when I receive</code> dropdown me
 If it isn’t open already, open your U5L6-TicTacToe project.
 </li>
 <li>
-Find the script that starts <code>when I am clicked</code>. That script handles a move by the human player. Now start a new script next to it:<br> <img src="../../img/5-algorithms/when-receive.png" title="when I receive (any message) : if (message) = (square number) [nothing in script slot yet]" alt="when I receive (any message) : if (message) = (square number) [nothing in script slot yet]" class="indent">
+Find the script that starts <code>when I am clicked</code>. That script handles a move by the human player. Now start a new script next to it:<br> <img src="../../img/5-algorithms/when-receive.png" title="when I receive (any message) : if (message) = (square number) [nothing in script slot yet]" alt="when I receive (any message) : if (message) = (square number) [nothing in script slot yet]" class="ms-4">
 </li>
 <li>
 Create an abstraction to contain everything inside the <code>if</code> statement from the <code>when I am (clicked)</code> script and use it in both scripts.<br> <img src="../../img/5-algorithms/when-clicked.png" title="when I am (clicked) {
@@ -480,7 +483,7 @@ move in this square
 if ((costume #) = 1) {
 move in this square
 }
-}" class="indent">&nbsp;&nbsp;&nbsp; <img src="../../img/5-algorithms/when-receive-move.png" title="when I am (clicked) {
+}" class="ms-4">&nbsp;&nbsp;&nbsp; <img src="../../img/5-algorithms/when-receive-move.png" title="when I am (clicked) {
 if ((message) = (square number)) {
 move in this square
 }
@@ -488,7 +491,7 @@ move in this square
 if ((message) = (square number)) {
 move in this square
 }
-}" class="indent">
+}" class="ms-4">
 </li>
 <li>
 <div class="sidenoteBig">
@@ -510,7 +513,7 @@ Take turns with your partner playing Tic-Tac-Toe against the computer. Fix any b
 Give the Computer a Simple Strategy
 </h3>
 <p>
-Instead of having the computer move at random, you will start to give the computer some strategy. Unlike people, all squares on the tic-tac-toe board are <em>not</em> created equal. Playing in the center (position 5) or on a corner (positions 1, 3, 7, or 9) is better than playing on an edge (positions 2, 4, 6, or 8).<br> <img src="../../img/5-algorithms/position-ranking.png" title="Tic-tac-toe grid showing happy faces in the corners and center and sad faces on the four edges" alt="Tic-tac-toe grid showing happy faces in the corners and center and sad faces on the four edges" class="indent noshadow">
+Instead of having the computer move at random, you will start to give the computer some strategy. Unlike people, all squares on the tic-tac-toe board are <em>not</em> created equal. Playing in the center (position 5) or on a corner (positions 1, 3, 7, or 9) is better than playing on an edge (positions 2, 4, 6, or 8).<br> <img src="../../img/5-algorithms/position-ranking.png" title="Tic-tac-toe grid showing happy faces in the corners and center and sad faces on the four edges" alt="Tic-tac-toe grid showing happy faces in the corners and center and sad faces on the four edges" class="ms-4 noshadow">
 </p>
 <div class="forYouToDo">
 <ol start="6">
@@ -522,7 +525,7 @@ Instead of having the computer move at random, you will start to give the comput
 <div class="endnote">
 <p><a href="#hint-empty" data-bs-toggle="collapse" title="Click for a hint about best empty square.">Click for a hint about <code>best empty square</code>.</a></p>
 <div id="hint-empty" class="collapse">
-<p><img src="../../img/5-algorithms/empties.png" title="list (5, 1, 3, 7, 9, 2, 4, 6, 8)" alt="list (5, 1, 3, 7, 9, 2, 4, 6, 8)" class="indent"></p>
+<p><img src="../../img/5-algorithms/empties.png" title="list (5, 1, 3, 7, 9, 2, 4, 6, 8)" alt="list (5, 1, 3, 7, 9, 2, 4, 6, 8)" class="ms-4"></p>
 </div>
 </div>
 </li>

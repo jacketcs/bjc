@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script src="../../site_libs/quarto-contrib/gifffer/gifffer.min.js"></script>
 <link href="../../site_libs/quarto-contrib/gifffer/bjc-gifffer.css" rel="stylesheet">
 <script type="text/javascript">window.onload = function() {Gifffer();};</script>
@@ -69,7 +69,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -125,6 +124,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -140,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-3/1-what-is-predicate.html">Lab 3</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-3/5-keeping-list-items.html">Page 5: <code>Keep</code>ing Items from a List</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Unit 2: Abstraction</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-3/1-what-is-predicate.html">Lab 3</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-3/5-keeping-list-items.html">Page 5: <code>Keep</code>ing Items from a List</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -155,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-2/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 2: Abstraction</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -441,20 +444,14 @@ ul.task-list li input[type="checkbox"] {
 As you know, predicates can be used with conditionals to decide <em>when</em> to <em>do</em> something; they can also be used with <code>keep</code> to decide <em>which</em> things to keep. The <img src="../../img/blocks/keep.png" title="keep items 'predicate input slot' from 'list input slot'" alt="keep items 'predicate input slot' from 'list input slot'" class="inline"> block takes a list and a predicate as input, and it reports a new list keeping only the items from the input list that make the condition described by the predicate true.
 </p>
 <p>
-For example, the following expression will find words from the <var>words list</var> whose first letter is v. The <em>blank input slot</em> is where each item of the list goes to decide if it will be kept.<br> <img src="../../img/2-complexity/keep-example-6.png" title="keep items  ((letter(1) of ( )) = (v)) from (words list)" alt="keep items  ((letter(1) of ( )) = (v)) from (words list)" class="indent">
+For example, the following expression will find words from the <var>words list</var> whose first letter is v. The <em>blank input slot</em> is where each item of the list goes to decide if it will be kept.<br> <img src="../../img/2-complexity/keep-example-6.png" title="keep items  ((letter(1) of ( )) = (v)) from (words list)" alt="keep items  ((letter(1) of ( )) = (v)) from (words list)" class="ms-4">
 </p>
 <div class="vocabFullWidth">
 <p>: <strong>String</strong> and <strong>Index</strong></p>
 <ul>
-<div class="comment">
-<p>AAP-1.C.4</p>
-</div>
 <li>
 A <strong>string</strong> is an ordered sequence of characters.
 </li>
-<div class="comment">
-<p>AAP-1.C.3 (strings)</p>
-</div>
 <li>
 <a href="../../unit-2/lab-2/2-quizzes.html" title="You've already learned the word index">You’ve already learned</a> the word <strong>index</strong> for the position of an element in a list. The same word is used for the position of a character in a string (for example, a letter in a word). So the first input to <code>letter</code> is the index.
 </li>
@@ -480,7 +477,7 @@ Note that the blank input slot in the predicate is <em>required</em>; this is wh
 </div>
 </li>
 <li>
-<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Experiment with these examples of <code>keep</code>. Discuss and then explain <em>in writing</em> what these expressions are doing.<br> <img src="../../img/2-complexity/keep-example-4.png" title="keep items  ((length of ( )) = (5)) from {apple, banana, orange, grape, kiwi, mango, watermelon} reporting {apple, grape, mango}" alt="keep items  ((length of ( )) = (5)) from {apple, banana, orange, grape, kiwi, mango, watermelon} reporting {apple, grape, mango}" class="indent"><br> <img src="../../img/2-complexity/keep-example-7.png" title="keep items  (not(is () a (number)?)) from {5, :), six, 7, elephant, 3} reporting {5,7,3}" alt="keep items  (not(is () a (number)?)) from {5, :), six, 7, elephant, 3} reporting {5,7,3}" class="indent">
+<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Experiment with these examples of <code>keep</code>. Discuss and then explain <em>in writing</em> what these expressions are doing.<br> <img src="../../img/2-complexity/keep-example-4.png" title="keep items  ((length of ( )) = (5)) from {apple, banana, orange, grape, kiwi, mango, watermelon} reporting {apple, grape, mango}" alt="keep items  ((length of ( )) = (5)) from {apple, banana, orange, grape, kiwi, mango, watermelon} reporting {apple, grape, mango}" class="ms-4"><br> <img src="../../img/2-complexity/keep-example-7.png" title="keep items  (not(is () a (number)?)) from {5, :), six, 7, elephant, 3} reporting {5,7,3}" alt="keep items  (not(is () a (number)?)) from {5, :), six, 7, elephant, 3} reporting {5,7,3}" class="ms-4">
 </li>
 </ol>
 </div>

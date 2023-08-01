@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Unit , Lab , Page 5 | JacketCS CSP</title>
+<title>Modeling Language: Plurals, Part 2 | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-2/optional-projects/1-magic8ball.html">Optional Projects</a></li><li class="breadcrumb-item"><a href="../../unit-2/optional-projects/5-plurals2.html">Modeling Language: Plurals, Part 2</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Unit 2: Abstraction</a></li><li class="breadcrumb-item"><a href="../../unit-2/optional-projects/1-magic8ball.html">Optional Projects</a></li><li class="breadcrumb-item"><a href="../../unit-2/optional-projects/5-plurals2.html">Modeling Language: Plurals, Part 2</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-2/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 2: Abstraction</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -414,7 +417,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Modeling Language: Plurals, Part 2</h1>
-<p class="subtitle lead">Unit , Lab , Page 5</p>
+<p class="subtitle lead">Unit 2 Optional Project</p>
 </div>
 
 
@@ -461,7 +464,7 @@ This specialist block should work correctly for words that fit its specialty <im
 <div class="endnote">
 <p><a href="#hint-just-hwords" data-bs-toggle="collapse" title="Click for a hint about creating a test list of words that begin with 'h'.">Click for a hint about creating a test list of words that begin with “h”.</a></p>
 <div id="hint-just-hwords" class="collapse">
-<p>Because you know what <img src="../../img/2-complexity/keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list.png" title="keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list" alt="keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list"> does, you can use its output as input to a test of <code>plural</code> or <code>plural-h</code>:<br> <img src="../../img/2-complexity/map-plural(with-input)-over-(keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list).png" title="map-plural(with-input)-over-(keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list)" alt="map-plural(with-input)-over-(keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list)" class="indent"></p>
+<p>Because you know what <img src="../../img/2-complexity/keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list.png" title="keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list" alt="keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list"> does, you can use its output as input to a test of <code>plural</code> or <code>plural-h</code>:<br> <img src="../../img/2-complexity/map-plural(with-input)-over-(keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list).png" title="map-plural(with-input)-over-(keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list)" alt="map-plural(with-input)-over-(keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list)" class="ms-4"></p>
 </div>
 </div>
 </li>
@@ -469,11 +472,9 @@ This specialist block should work correctly for words that fit its specialty <im
 </li>
 <div class="takeNote">
 <p>
-<strong>Abstraction:</strong> Language often has special cases. In English, the plurals of some nouns add “s”; some add “es”; nouns like “calf” and “fly” become “calves” and “flies”, changing their final letters before adding “es”. And more. For a programming task this complex, it’s (generally) best to break it into parts, handle each part separately with its own procedure (its own block), and then have the “top-level” block—in this case, <code>plural</code>, itself—use those specialists. That is, instead of coding every little detail directly in <code>plural</code>, it is cleaner and clearer to make <code>plural</code> look something like this.<br> <img src="../../img/2-complexity/plural-abstract-definition.png" title="abstract definition of plural: if h = last letter of word, report h-case plural; if y = last letter of word, report y-case plural; if some other case, use a block that specializes in that case; etc.; else report join word s" alt="abstract definition of plural: if h = last letter of word, report h-case plural; if y = last letter of word, report y-case plural; if some other case, use a block that specializes in that case; etc.; else report join word s" class="indent noshadow">
+<strong>Abstraction:</strong> Language often has special cases. In English, the plurals of some nouns add “s”; some add “es”; nouns like “calf” and “fly” become “calves” and “flies”, changing their final letters before adding “es”. And more. For a programming task this complex, it’s (generally) best to break it into parts, handle each part separately with its own procedure (its own block), and then have the “top-level” block—in this case, <code>plural</code>, itself—use those specialists. That is, instead of coding every little detail directly in <code>plural</code>, it is cleaner and clearer to make <code>plural</code> look something like this.<br> <img src="../../img/2-complexity/plural-abstract-definition.png" title="abstract definition of plural: if h = last letter of word, report h-case plural; if y = last letter of word, report y-case plural; if some other case, use a block that specializes in that case; etc.; else report join word s" alt="abstract definition of plural: if h = last letter of word, report h-case plural; if y = last letter of word, report y-case plural; if some other case, use a block that specializes in that case; etc.; else report join word s" class="ms-4 noshadow">
 </p>
-<p>
-Showing<a name="abstraction" class="anchor">&nbsp;</a>the <em>structure</em> of the method—just the overall strategy—in the “top-level” block and leaving the details to separate blocks is one part of an important computer science idea called <em>abstraction</em>. Abstraction keeps your code clear, readable, and more easily debugged. It will also help your code be more flexible.
-</p>
+<p>Showing the <em>structure</em> of the method—just the overall strategy—in the “top-level” block and leaving the details to separate blocks is one part of an important computer science idea called <em>abstraction</em>. Abstraction keeps your code clear, readable, and more easily debugged. It will also help your code be more flexible.</p>
 </div>
 <li>
 When you trust your new specialist block, edit <code> plural</code> to use the specialist. Test (you can use <code>map</code>) to make sure <code>plural</code> still works for all the words it used to work for, as well as the new ones.
@@ -482,7 +483,7 @@ When you trust your new specialist block, edit <code> plural</code> to use the s
 Create <code>plural-y</code> to handle words like <img src="../../img/2-complexity/plural_y-tray-with-result.png" title="plural-y (tray) reporting 'trays'" alt="plural-y (tray) reporting 'trays'"> and <img src="../../img/2-complexity/plural_y-sky-with-result.png" title="plural-y (sky) reporting 'skies'" alt="plural-y (sky) reporting 'skies'">
 </li>
 <div class="endnote">
-<p>Remember, any specialist can make mistakes if it’s asked to do a job that isn’t its specialty. For example:<br> <img src="../../img/2-complexity/plural_y-mouse-with-(wrong)result.png" title="plural-y (mouse) reporting 'mousies'" alt="plural-y (mouse) reporting 'mousies'" class="indent"><br> Make sure <code>plural</code> gives <code>plural-y</code> only words it knows how to handle correctly.</p>
+<p>Remember, any specialist can make mistakes if it’s asked to do a job that isn’t its specialty. For example:<br> <img src="../../img/2-complexity/plural_y-mouse-with-(wrong)result.png" title="plural-y (mouse) reporting 'mousies'" alt="plural-y (mouse) reporting 'mousies'" class="ms-4"><br> Make sure <code>plural</code> gives <code>plural-y</code> only words it knows how to handle correctly.</p>
 </div>
 <p><img src="../../img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline"></p>
 </ol>
@@ -507,7 +508,7 @@ Also, <strong>can you make sure that the TG and the solutions match</strong> thi
 <p>Extend <code>plural</code> to correctly handle a input word that has a space at the end.</p>
 <div class="endnote">
 <p>
-Right now, if <code>plural</code> is given a word with a space at the end, it leaves that space in the plural:<br> <img src="../../img/2-complexity/plural-bulldog[space]-with-result(bulldog[space]s).png" title="plural (bulldog ) reporting 'bulldog s'. There is a space after 'bulldog' in the input and a space between 'bulldog' and 's' in the reported value." alt="plural (bulldog ) reporting 'bulldog s'. There is a space after 'bulldog' in the input and a space between 'bulldog' and 's' in the reported value." class="indent"><br> Figure out how to handle this special case and edit <code>plural</code> so that the result is<br> <img src="../../img/2-complexity/plural-bulldog[space]-with-result(bulldogs).png" title="plural (bulldog ) reporting 'bulldogs'. There is a space after 'bulldog' in the input but no space in the reported value." alt="plural (bulldog ) reporting 'bulldogs'. There is a space after 'bulldog' in the input but no space in the reported value." class="indent"><br> You already have a block that <em>specializes</em> in making plurals of words that <em>don’t</em> have a space at the end. <em>Use</em> it.
+Right now, if <code>plural</code> is given a word with a space at the end, it leaves that space in the plural:<br> <img src="../../img/2-complexity/plural-bulldog[space]-with-result(bulldog[space]s).png" title="plural (bulldog ) reporting 'bulldog s'. There is a space after 'bulldog' in the input and a space between 'bulldog' and 's' in the reported value." alt="plural (bulldog ) reporting 'bulldog s'. There is a space after 'bulldog' in the input and a space between 'bulldog' and 's' in the reported value." class="ms-4"><br> Figure out how to handle this special case and edit <code>plural</code> so that the result is<br> <img src="../../img/2-complexity/plural-bulldog[space]-with-result(bulldogs).png" title="plural (bulldog ) reporting 'bulldogs'. There is a space after 'bulldog' in the input but no space in the reported value." alt="plural (bulldog ) reporting 'bulldogs'. There is a space after 'bulldog' in the input but no space in the reported value." class="ms-4"><br> You already have a block that <em>specializes</em> in making plurals of words that <em>don’t</em> have a space at the end. <em>Use</em> it.
 </p>
 </div>
 <p>
@@ -518,15 +519,12 @@ Surprise! Once <code>plural</code> works for a single space at the end of a word
 <p><img src="../../img/icons/tough-stuff.png" title="Tough Stuff" alt="Tough Stuff" class="float-end"> Does your <code>plurals</code> block still feel cluttered, even though the details about how to handle each possible last letter are abstracted into specialist blocks? One way to improve on this situation is to use another kind of abstraction called <em>data-directed programming.</em></p>
 <ol style="list-style-type: lower-roman">
 <li>
-<p>Start by making a list of <em>key-value pairs</em>, with last letters as the keys and specialist procedures as the values:<br> <img src="../../img/2-complexity/plural-specialists-list.png" title="set (plural specialists) to (list (list (h) (ringed plural-h ( ) block)) (list (y) (ringed plural-y ( ) block)) (list (f) (ringed plural-f ( ) block)) (list (x) (ringed (join ( ) (es)) block)) (list (...) (...)))" alt="set (plural specialists) to (list (list (h) (ringed plural-h ( ) block)) (list (y) (ringed plural-y ( ) block)) (list (f) (ringed plural-f ( ) block)) (list (x) (ringed (join ( ) (es)) block)) (list (...) (...)))" class="indent"><br></p>
+<p>Start by making a list of <em>key-value pairs</em>, with last letters as the keys and specialist procedures as the values:<br> <img src="../../img/2-complexity/plural-specialists-list.png" title="set (plural specialists) to (list (list (h) (ringed plural-h ( ) block)) (list (y) (ringed plural-y ( ) block)) (list (f) (ringed plural-f ( ) block)) (list (x) (ringed (join ( ) (es)) block)) (list (...) (...)))" alt="set (plural specialists) to (list (list (h) (ringed plural-h ( ) block)) (list (y) (ringed plural-y ( ) block)) (list (f) (ringed plural-f ( ) block)) (list (x) (ringed (join ( ) (es)) block)) (list (...) (...)))" class="ms-4"><br></p>
 <div class="narrowpurple">
 <p>To make the second item of each small list, find the block you want, put it in the second input to <code>list</code>, then right-click on the block and choose “ringify.” As the “x” example shows, it doesn’t have to be a block named <code>plural-</code>something. It just has to have an empty input slot where you want the word to go.</p>
 </div>
 </li>
 <li>
-<div class="comment">
-<p>FYI, this breaks the rule of not teaching more than one thing at a time, we are teaching key-value pairing, FIND FIRST, and CALL. As a result, you’ve defaulted to hand-holding here. –MF, 1/11/21</p>
-</div>
 <p>Then in your <code>plural</code> procedure, you can replace most of the <code>if</code> blocks with<br> <img src="../../img/2-complexity/plural-specialist-dispatch.png" title="script variables (pair)
 set (pair) to (find first item (ringed ((item (1) of ( )) = (last letter of (word)))) in (plural specialists))
 if (is (pair) a (list)?) {
@@ -535,7 +533,7 @@ report (call (item (2) of (pair)) with inputs (word))
 set (pair) to (find first item (ringed ((item (1) of ( )) = (last letter of (word)))) in (plural specialists))
 if (is (pair) a (list)?) {
 report (call (item (2) of (pair)) with inputs (word))
-}" class="indent"><br></p>
+}" class="ms-4"><br></p>
 <div class="narrowpurple">
 <div class="todo">
 <p>We haven’t taught FIND FIRST yet. So I looked at <a href="../../unit-3/lab-3/3-checking-for-ties.html">3.3.3</a> where we first use it, and we don’t teach it there either. :/ We actually teach it in <a href="../../unit-5/lab-3/4-filtering-data.html">5.3.4</a>. So I dragged some of that content back into U3 and also here. –MF, 1/11/21</p>
@@ -543,9 +541,6 @@ report (call (item (2) of (pair)) with inputs (word))
 <p>
 <code>Find first</code> is a higher-order function works similarly to <code>keep</code>, but it reports only the first item that’s found. It is equivalent to <code>item (1) of (keep)</code>.
 </p>
-<div class="commentBig">
-<p>Ringifying is unclear here. What does it mean to have the ring? What does it mean not to have it? If they don’t know, they are “just doing what the book says to.” –MF, 1/11/21</p>
-</div>
 <p>
 The <code>call</code> block in the palette doesn’t include the “<code>with inputs</code>” in the picture; when you click on its right arrowhead, those words will appear along with an input slot. The <code>call</code> block’s first input slot is the empty gray ring, which means that <code>call</code> wants a block in that input slot. When you drag <code>item 2 of pair</code> into that slot, the ring remains around it. That’s usually what we want when using <code>call</code>, but not this time. Right-click on the <code>item of</code> block and choose “unringify” from the menu.
 </p>
@@ -555,19 +550,13 @@ The <code>call</code> block in the palette doesn’t include the “<code>with i
 </div>
 </li>
 <li>
-<div class="comment">
-<p>I think a hint here about testing all trailing substrings would be helpful. Also, a definition of the term would be nice. –MF, 1/11/21</p>
-</div>
-<p>There’s no reason the keys have to be single letters. Modify the code in <code>plural</code> so that it tests all <em>trailing substrings</em> of the word against the specialist list. That is, if the word is “ditch,” you’d look in the specialist list for “ditch,” then for “itch,” then “tch,” “ch,” and finally, if nothing else is found, “h.” You’d put<br> <img src="../../img/2-complexity/ch-dispatch.png" title="list (ch) (ringed block (join ( ) (es)))" alt="list (ch) (ringed block (join ( ) (es)))" class="indent"><br> in the list, and then words ending “ch” would have “es” added. This mechanism is very general; it works even for special cases such as<br> <img src="../../img/2-complexity/child-dispatch.png" title="list (child) (ringified (word (children)))" alt="list (child) (ringified (word (children)))" class="indent"><br> (You’ll have to define the <code>word</code> function that just reports its input; it’s needed because you can’t type letters directly into a ring.) <em>Now</em> you have a <em>really</em> uncluttered <code>plural</code> block. And it’ll even work for a language other than English, if you make a different specialist list.</p>
+<p>There’s no reason the keys have to be single letters. Modify the code in <code>plural</code> so that it tests all <em>trailing substrings</em> of the word against the specialist list. That is, if the word is “ditch,” you’d look in the specialist list for “ditch,” then for “itch,” then “tch,” “ch,” and finally, if nothing else is found, “h.” You’d put<br> <img src="../../img/2-complexity/ch-dispatch.png" title="list (ch) (ringed block (join ( ) (es)))" alt="list (ch) (ringed block (join ( ) (es)))" class="ms-4"><br> in the list, and then words ending “ch” would have “es” added. This mechanism is very general; it works even for special cases such as<br> <img src="../../img/2-complexity/child-dispatch.png" title="list (child) (ringified (word (children)))" alt="list (child) (ringified (word (children)))" class="ms-4"><br> (You’ll have to define the <code>word</code> function that just reports its input; it’s needed because you can’t type letters directly into a ring.) <em>Now</em> you have a <em>really</em> uncluttered <code>plural</code> block. And it’ll even work for a language other than English, if you make a different specialist list.</p>
 </li>
 <li>
-<div class="comment">
-<p>Here is where you really start to lose me. I’m not actually building this in Snap<em>!</em>now, as I’ve spent far too long on this already, but the text doesn’t explain this adequately for me. –MF, 1/11/21</p>
-</div>
-<p>If you modify the trailing-substring test so that instead of giving up if it can’t find the last letter of the word as a key, it goes one step further and looks for an <em>empty</em> key in the specialist list, and you add<br> <img src="../../img/2-complexity/default-dispatch.png" title="(item ( ) (ringed (join ( ) (s))))" alt="(item ( ) (ringed (join ( ) (s))))" class="indent"><br> to the list, then you can be sure that every possible word will match that, if nothing else, so you don’t need the <code>if</code> any more. Your <code>plural</code> block can now be just one-line: <code>report (call (item 2 of (longest trailing substring …</code>.</p>
+<p>If you modify the trailing-substring test so that instead of giving up if it can’t find the last letter of the word as a key, it goes one step further and looks for an <em>empty</em> key in the specialist list, and you add<br> <img src="../../img/2-complexity/default-dispatch.png" title="(item ( ) (ringed (join ( ) (s))))" alt="(item ( ) (ringed (join ( ) (s))))" class="ms-4"><br> to the list, then you can be sure that every possible word will match that, if nothing else, so you don’t need the <code>if</code> any more. Your <code>plural</code> block can now be just one-line: <code>report (call (item 2 of (longest trailing substring …</code>.</p>
 </li>
 <li>
-For an extra challenge, modify your trailing-substring test so that a plus sign in the key matches any vowel (it will serve as a wild-card character), so you can do this:<br> <img src="../../img/2-complexity/match-vowels.png" title="list (...) (list (+y) (ringed (join ( ) (s)))) (list (y) (ringed (join (all but last letter of ( )) (ies)))) (...)" alt="list (...) (list (+y) (ringed (join ( ) (s)))) (list (y) (ringed (join (all but last letter of ( )) (ies)))) (...)" class="indent">
+For an extra challenge, modify your trailing-substring test so that a plus sign in the key matches any vowel (it will serve as a wild-card character), so you can do this:<br> <img src="../../img/2-complexity/match-vowels.png" title="list (...) (list (+y) (ringed (join ( ) (s)))) (list (y) (ringed (join (all but last letter of ( )) (ies)))) (...)" alt="list (...) (list (+y) (ringed (join ( ) (s)))) (list (y) (ringed (join (all but last letter of ( )) (ies)))) (...)" class="ms-4">
 </li>
 </ol>
 </li>

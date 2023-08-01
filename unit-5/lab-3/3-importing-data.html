@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script src="../../site_libs/quarto-contrib/gifffer/gifffer.min.js"></script>
 <link href="../../site_libs/quarto-contrib/gifffer/bjc-gifffer.css" rel="stylesheet">
 <script type="text/javascript">window.onload = function() {Gifffer();};</script>
@@ -69,7 +69,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -125,6 +124,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -140,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-5/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-3/1-health-data.html">Lab 3</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-3/3-importing-data.html">Page 3: Importing and Accessing Data</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-5/index.html">Unit 5: Algorithms and Simulations</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-3/1-health-data.html">Lab 3</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-3/3-importing-data.html">Page 3: Importing and Accessing Data</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -155,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-5/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 5: Algorithms and Simulations</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -479,7 +482,7 @@ Although spreadsheets are a common kind of data, they aren’t the only kind. Co
 <div class="forYouToDo">
 <ol start="4">
 <li>
-Experiment with different inputs to the <img src="../../img/blocks/item.png" title="item () of 'list input slot'" alt="item () of 'list input slot'" class="inline nopadtb"> block to access different rows in the dataset.
+Experiment with different inputs to the <img src="../../img/blocks/item.png" title="item () of 'list input slot'" alt="item () of 'list input slot'" class="inline py-0"> block to access different rows in the dataset.
 </li>
 <li>
 <img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> How does the first item of your data set (<code>item (1) of</code>) differ from the other items?
@@ -513,10 +516,10 @@ A table is represented in Snap<em>!</em> as a list of lists. If you right-click 
 <p><strong>List View</strong></p>
 </div>
 <div style="padding-right: 50px;">
-<p><img src="../../img/5-algorithms/cars-table-view.png" title="report of cars dataset displayed as a table with columns and rows; the first row is the label of each column; the remaining rows each contain the data for a single record" alt="report of cars dataset displayed as a table with columns and rows; the first row is the label of each column; the remaining rows each contain the data for a single record" class="indent"></p>
+<p><img src="../../img/5-algorithms/cars-table-view.png" title="report of cars dataset displayed as a table with columns and rows; the first row is the label of each column; the remaining rows each contain the data for a single record" alt="report of cars dataset displayed as a table with columns and rows; the first row is the label of each column; the remaining rows each contain the data for a single record" class="ms-4"></p>
 </div>
 <div style="padding-left: 50px;">
-<p><img src="../../img/5-algorithms/cars-list-view.png" title="report of cars dataset displayed as a list of lists; the first list contains the labels for each of the columns shown in the table view; the remaining lists each contain the data for a single record" alt="report of cars dataset displayed as a list of lists; the first list contains the labels for each of the columns shown in the table view; the remaining lists each contain the data for a single record" class="indent"></p>
+<p><img src="../../img/5-algorithms/cars-list-view.png" title="report of cars dataset displayed as a list of lists; the first list contains the labels for each of the columns shown in the table view; the remaining lists each contain the data for a single record" alt="report of cars dataset displayed as a list of lists; the first list contains the labels for each of the columns shown in the table view; the remaining lists each contain the data for a single record" class="ms-4"></p>
 </div>
 </div>
 </div>
@@ -534,15 +537,15 @@ A <strong>field</strong> is one item of a record in a dataset. It might be one p
 A <strong>column</strong> is a list containing the data from one field for all records in a dataset. A column might be the homeroom teacher for <em>every</em> student in your school, the magnitude of <em>every</em> earthquake in the dataset, the owner of <em>every</em> hospital in the U.S., or the phone number of <em>every</em> person in your contact list. In other words, a column is a vertical slice of the dataset.
 </li>
 </ul>
-<p><img title="three frame animation of the report of cars dataset displayed as a table with columns and rows; in the first frame, the fourth row of the table is highlighted and labeled 'record (row)'; in the second frame, the third column of the table is highlighted and labeled 'column'; in the third frame, the cell in the fourth row and third column is hightlighted and labeled 'field'" alt="three frame animation of the report of cars dataset displayed as a table with columns and rows; in the first frame, the fourth row of the table is highlighted and labeled 'record (row)'; in the second frame, the third column of the table is highlighted and labeled 'column'; in the third frame, the cell in the fourth row and third column is highlighted and labeled 'field'" class="indent" height="231" data-gifffer="/img/5-algorithms/cars-table-view-parts.gif"></p>
+<p><img title="three frame animation of the report of cars dataset displayed as a table with columns and rows; in the first frame, the fourth row of the table is highlighted and labeled 'record (row)'; in the second frame, the third column of the table is highlighted and labeled 'column'; in the third frame, the cell in the fourth row and third column is hightlighted and labeled 'field'" alt="three frame animation of the report of cars dataset displayed as a table with columns and rows; in the first frame, the fourth row of the table is highlighted and labeled 'record (row)'; in the second frame, the third column of the table is highlighted and labeled 'column'; in the third frame, the cell in the fourth row and third column is highlighted and labeled 'field'" class="ms-4" height="231" data-gifffer="/img/5-algorithms/cars-table-view-parts.gif"></p>
 </div>
 <div class="forYouToDo">
 <ol start="8">
 <li>
-Build <img src="../../img/5-algorithms/record-of-table.png" title="record () of table ()" alt="record () of table ()" class="inline nopadtb"> and <img src="../../img/5-algorithms/field-of-record.png" title="field () of record ()" alt="field () of record ()" class="inline nopadtb"> blocks to make it easier to think about the structure of the table.
+Build <img src="../../img/5-algorithms/record-of-table.png" title="record () of table ()" alt="record () of table ()" class="inline py-0"> and <img src="../../img/5-algorithms/field-of-record.png" title="field () of record ()" alt="field () of record ()" class="inline py-0"> blocks to make it easier to think about the structure of the table.
 </li>
 <li>
-<p><img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Build <img src="../../img/5-algorithms/column-of-table.png" title="column () of table ()" alt="column () of table ()" class="inline nopadtb"> to report just one column of your dataset.</p>
+<p><img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Build <img src="../../img/5-algorithms/column-of-table.png" title="column () of table ()" alt="column () of table ()" class="inline py-0"> to report just one column of your dataset.</p>
 <div class="endnote">
 <p>
 <code>Record</code> and <code>column</code> are <em>selectors</em> for a <code>table</code> abstract data type. We don’t need a <em>constructor</em> for this abstract data type because we are importing the data from the Internet, but the selectors will be useful. (<code>Field</code> is a selector for <code>record</code>, which is, itself, an abstract data type.)
@@ -567,7 +570,7 @@ Notice that these suggested block names include the word “table” or “recor
 <p><img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Determine one question you can answer by <strong>looking at a single column</strong> of your data set, and then build code to answer your question. You may need to build additional blocks or import them from other projects.</p>
 <div class="endnote">
 <p>
-You can see the column number by holding your mouse pointer over the letter at the top of the column in table view.<br> <img src="../../img/5-algorithms/column-number.png" title="image of the top of the table view for the cars dataset with the mouse pointer over the top of the second column; the columns are now labeled A, 2 (where the pointer is), C, D, etc." alt="image of the top of the table view for the cars dataset with the mouse pointer over the top of the second column; the columns are now labeled A, 2 (where the pointer is), C, D, etc." class="indent" height="120">
+You can see the column number by holding your mouse pointer over the letter at the top of the column in table view.<br> <img src="../../img/5-algorithms/column-number.png" title="image of the top of the table view for the cars dataset with the mouse pointer over the top of the second column; the columns are now labeled A, 2 (where the pointer is), C, D, etc." alt="image of the top of the table view for the cars dataset with the mouse pointer over the top of the second column; the columns are now labeled A, 2 (where the pointer is), C, D, etc." class="ms-4" height="120">
 </p>
 <p>
 You may need to use <code>map</code>, <code>keep</code>, or <code>combine</code> to answer your question. <a href="#hint-HOFs" data-bs-toggle="collapse" title="Click to see where you learned about these higher order functions.">Click to see where you learned about these higher order functions.</a>
@@ -655,20 +658,17 @@ I need to redo these images and <code>code</code> statements with “record” i
 <div class="takeItFurther">
 <ol type="A">
 <li>
-<p>Answer a question like “What’s the model of the car with the highest MPG?” by building a <img src="../../img/5-algorithms/row-with-max-of-table.png" title="row with maximum in column () of table ()" alt="row with maximum in column () of table ()" class="inline nopadtb"> block.</p>
+<p>Answer a question like “What’s the model of the car with the highest MPG?” by building a <img src="../../img/5-algorithms/row-with-max-of-table.png" title="row with maximum in column () of table ()" alt="row with maximum in column () of table ()" class="inline py-0"> block.</p>
 <div class="endnote">
 
 <!--This gives away the answer. <p><a href="#hint-rowwithmax" data-bs-toggle="collapse" title="See the row with maximum in column () of table () block in action.">See <code>row with maximum in column () of table ()</code> in action.</a></p>
-<div id="hint-rowwithmax" class="collapse"><img class="indent" src="/img/5-algorithms/row-with-max-of-table-reporting.png" alt="" title="" /></div>-->
+<div id="hint-rowwithmax" class="collapse"><img class="ms-4" src="/img/5-algorithms/row-with-max-of-table-reporting.png" alt="" title="" /></div>-->
 <p>
 <a href="#hint-build" data-bs-toggle="collapse" title="Click for a hint about how to build row with maximum in column () of table ().">Click for a hint about how to build <code>row with maximum in column () of table ()</code>.</a>
 </p>
 <div id="hint-build" class="collapse">
-<div class="comment">
-<p>BH please review the alt text on all five images. –MF, 6/26/19</p>
-</div>
 <p>
-One way to build a <img src="../../img/5-algorithms/maximum-of-list.png" title="maximum of 'list input slot'" alt="maximum of 'list input slot'" class="inline nopadtb"> function for a simple list (that isn’t a table) is shown below. You can build a <img src="../../img/5-algorithms/maximum.png" title="maximum of () and ()" alt="maximum of () and ()" class="inline nopadtb"> block that compares two inputs and use it with <code>combine</code> to find the maximum of a whole list.<br> <img src="../../img/5-algorithms/max-operator-definition.png" title="maximum of (a) and (b) {
+One way to build a <img src="../../img/5-algorithms/maximum-of-list.png" title="maximum of 'list input slot'" alt="maximum of 'list input slot'" class="inline py-0"> function for a simple list (that isn’t a table) is shown below. You can build a <img src="../../img/5-algorithms/maximum.png" title="maximum of () and ()" alt="maximum of () and ()" class="inline py-0"> block that compares two inputs and use it with <code>combine</code> to find the maximum of a whole list.<br> <img src="../../img/5-algorithms/max-operator-definition.png" title="maximum of (a) and (b) {
 if (a > b) {
 report (a)
 }
@@ -678,11 +678,11 @@ if (a > b) {
 report (a)
 }
 report (b)
-}" class="indent"> <img src="../../img/5-algorithms/max-of-list-definition.png" title="maximum of (data) {
+}" class="ms-4"> <img src="../../img/5-algorithms/max-of-list-definition.png" title="maximum of (data) {
 report (combine (data) using (maximum of ( ) and ( )))
 }" alt="maximum of (data) {
 report (combine (data) using (maximum of ( ) and ( )))
-}" class="indent"><br> You can use a similar approach here by first building a <img src="../../img/5-algorithms/row-with-max-between.png" title="row with maximum in column () between row () and row ()" alt="row with maximum in column () between row () and row ()"> that compares a specific field (column) for two rows and reports the row with the higher value in the specified column.
+}" class="ms-4"><br> You can use a similar approach here by first building a <img src="../../img/5-algorithms/row-with-max-between.png" title="row with maximum in column () between row () and row ()" alt="row with maximum in column () between row () and row ()"> that compares a specific field (column) for two rows and reports the row with the higher value in the specified column.
 </p>
 </div>
 <div class="todo">

@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script src="../../site_libs/quarto-contrib/gifffer/gifffer.min.js"></script>
 <link href="../../site_libs/quarto-contrib/gifffer/bjc-gifffer.css" rel="stylesheet">
 <script type="text/javascript">window.onload = function() {Gifffer();};</script>
@@ -69,7 +69,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -125,6 +124,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -140,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-2/1-shopping-list-app.html">Lab 2</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-2/3-traversing-list.html">Page 3: Checking Each Quiz Answer</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Unit 2: Abstraction</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-2/1-shopping-list-app.html">Lab 2</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-2/3-traversing-list.html">Page 3: Checking Each Quiz Answer</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -155,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-2/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 2: Abstraction</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -434,7 +437,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="learn">
 <p>
-<strong>On this page,</strong> you will complete your quiz app by using a new block that loops through a list:<br> <img src="../../img/2-complexity/for-each-(item)-of().png" title="for-each-(item)-of(){}" alt="for-each-(item)-of(){}" class="indent" height="68">
+<strong>On this page,</strong> you will complete your quiz app by using a new block that loops through a list:<br> <img src="../../img/2-complexity/for-each-(item)-of().png" title="for-each-(item)-of(){}" alt="for-each-(item)-of(){}" class="ms-4" height="68">
 </p>
 </div>
 <div class="todo">
@@ -444,7 +447,6 @@ ul.task-list li input[type="checkbox"] {
 If it’s not already open, open your project U2L2-Quiz.
 </p>
 <div class="dialogue">
-<p><a name="seta" class="anchor">&nbsp;</a></p>
 <div class="stagedir">
 <p>The students are considering how to use their abstract data type as they develop the code for their project.</p>
 </div>
@@ -456,7 +458,7 @@ If it’s not already open, open your project U2L2-Quiz.
 ask (question from (item (i) of (computer science quiz))) and wait
 }" alt="for (i) = (1) to (4) {
 ask (question from (item (i) of (computer science quiz))) and wait
-}" class="indent"></p>
+}" class="ms-4"></p>
 </div>
 <div class="vocabFullWidth">
 <p>
@@ -475,18 +477,12 @@ Using the result from <code>item</code> as the input to <code>address from conta
 </div>
 <div class="vocabFullWidth">
 <p>: <strong>Traversing a List</strong></p>
-<div class="comment">
-<p>AAP-2.O.2</p>
-</div>
 <p>
 <strong>Traversing</strong> a list means looking at each item of the list. <code>For each</code> is iterative. That is, it’s repetitive, like <code>for</code>, which can also traverse a list. But unlike <code>for</code>, <code>for each</code> traverses the list <em>without using index numbers</em>.
 </p>
 </div>
 <div class="forYouToDo">
 <ol>
-<div class="comment">
-<p>AAP-2.K part a, AAP-2.O part a</p>
-</div>
 <li>
 Use <code>for each</code> to <em>traverse</em> your list, asking each quiz question, checking each answer, and letting the user know if they are right or wrong on each item.
 </li>
@@ -507,15 +503,12 @@ Use a script variable to keep track of the player’s score and report it at the
 </div>
 <div id="first" class="forYouToDo">
 <ol start="5">
-<div class="comment">
-<p>AAP-2.K part b</p>
-</div>
 <li>
 <!-- Question 1-->
 <div class="assessment-data" type="multiplechoice" data-identifier="abe" data-hasinlinefeedback="true" data-maxchoices="2" data-responseidentifier="ri1" data-shuffle="true">
 <div class="prompt">
 <p>
-Which of the scripts below will produce the following sprite behavior?<br> <img src="../../img/3-lists/abelincoln.gif" title="sprite saying Abraham then Lincoln" alt="sprite saying Abraham then Lincoln" class="indent noshadow"><br> (When you run the script, though, it actually says Abraham Lincoln <em>only once</em>.)
+Which of the scripts below will produce the following sprite behavior?<br> <img src="../../img/3-lists/abelincoln.gif" title="sprite saying Abraham then Lincoln" alt="sprite saying Abraham then Lincoln" class="ms-4 noshadow"><br> (When you run the script, though, it actually says Abraham Lincoln <em>only once</em>.)
 </p>
 <p>
 Choose <strong>all</strong> that apply.
@@ -566,9 +559,6 @@ Choose <strong>all</strong> that apply.
 </ol>
 </div>
 <div class="examFullWidth AP-only">
-<div class="comment">
-<p>AAP-2.O.3</p>
-</div>
 <div class="pseudop">
 <div class="sidenote">
 <p>The procedure</p>
@@ -600,9 +590,6 @@ These questions are similar to those you will see on the AP CSP exam.
 <!-- Question 2 -->
 <div class="assessment-data" type="multiplechoice" data-identifier="FOR EACH positive and square over 4" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri2" data-shuffle="false">
 <div class="prompt">
-<div class="comment">
-<p>AAP-2.O part b</p>
-</div>
 <pre>inputList ← [3, -1, 2, 10, -5]
 
 FOR EACH item IN inputList

@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-3/index.html">Data Structures</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-1/1-robot-in-a-maze.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-1/4-brick-wall.html">Page 4: Brick Wall</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-3/index.html">Unit 3: Data Structures</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-1/1-robot-in-a-maze.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-1/4-brick-wall.html">Page 4: Brick Wall</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-3/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Structures</span></a>
+ <span class="menu-text">Unit 3: Data Structures</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -416,7 +419,7 @@ ul.task-list li input[type="checkbox"] {
 <p>
 <strong>In this project,</strong> you will use abstraction to draw a brick wall.
 </p>
-<p><img src="../../img/abstraction/new-brickwall/wall.png" title="Sample image of brick wall" alt="Sample image of brick wall" class="indent" border="0"></p>
+<p><img src="../../img/abstraction/new-brickwall/wall.png" title="Sample image of brick wall" alt="Sample image of brick wall" class="ms-4" border="0"></p>
 </div>
 <h3 class="anchored">
 Drawing One Brick
@@ -426,16 +429,16 @@ Drawing One Brick
 <div class="sidenoteBig">
 <p>Any good programming language might have many tools for drawing and moving, but it wouldn’t make sense to have special tools for drawing bricks because most programs don’t involve bricks. That’s the sort of tool you make yourself when you need it.</p>
 </div>
-<p><img src="../../img/2-complexity/U2ImageVideoAddendum_img/simpleBrickCode.png" title="draw brick, length:(length) width:(width){set pen size to(width); move(length) steps}" alt="draw brick, length:(length) width:(width){set pen size to(width); move(length) steps}" class="indent"></p>
+<p><img src="../../img/2-complexity/U2ImageVideoAddendum_img/simpleBrickCode.png" title="draw brick, length:(length) width:(width){set pen size to(width); move(length) steps}" alt="draw brick, length:(length) width:(width){set pen size to(width); move(length) steps}" class="ms-4"></p>
 <p></p>
 <div id="first" class="forYouToDo">
 <ol>
 <li>
-<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> The code below has more details than the picture above. Review it, and determine what it will do.<br> <img src="../../img/3-lists/drawBrickCode.png" title="draw brick, length:(length#) width:(width#){set pen color to (red); set flat line ends to (true); set pen size to (width); pen down; move(length) steps; pen up}" alt="draw brick, length:(length#) width:(width#){set pen color to (red); set flat line ends to (true); set pen size to (width); pen down; move(length) steps; pen up}" class="indent"><br> <a class="run" href="../../prog/3-lists/U3L1-brickwall.xml"><img src="../../img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline" width="550"></a> Run the code. Does it do what you expected?
+<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> The code below has more details than the picture above. Review it, and determine what it will do.<br> <img src="../../img/3-lists/drawBrickCode.png" title="draw brick, length:(length#) width:(width#){set pen color to (red); set flat line ends to (true); set pen size to (width); pen down; move(length) steps; pen up}" alt="draw brick, length:(length#) width:(width#){set pen color to (red); set flat line ends to (true); set pen size to (width); pen down; move(length) steps; pen up}" class="ms-4"><br> <a class="run" href="../../prog/3-lists/U3L1-brickwall.xml"><img src="../../img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline" width="550"></a> Run the code. Does it do what you expected?
 </li>
 <div class="endnote">
 <p>
-Ordinarily, Snap<em>!</em> draws rounded ends on thick lines: <img src="../../img/2-complexity/U2ImageVideoAddendum_img/round-ends.png" title="line with round ends" alt="line with round ends" class="nopadtb">. That’s often the best choice, and you can see why below. But for bricks, we want <em>flat</em> line ends: <img src="../../img/2-complexity/U2ImageVideoAddendum_img/flat-ends.png" title="flat line ends" alt="flat line ends" class="nopadtb">, and so we’ll use <img src="../../img/blocks/set-flat-line-ends.png" title="set (flat line ends) to 'predicate input slot'" alt="set (flat line ends) to 'predicate input slot'"> to turn on flat line ends.
+Ordinarily, Snap<em>!</em> draws rounded ends on thick lines: <img src="../../img/2-complexity/U2ImageVideoAddendum_img/round-ends.png" title="line with round ends" alt="line with round ends" class="py-0">. That’s often the best choice, and you can see why below. But for bricks, we want <em>flat</em> line ends: <img src="../../img/2-complexity/U2ImageVideoAddendum_img/flat-ends.png" title="flat line ends" alt="flat line ends" class="py-0">, and so we’ll use <img src="../../img/blocks/set-flat-line-ends.png" title="set (flat line ends) to 'predicate input slot'" alt="set (flat line ends) to 'predicate input slot'"> to turn on flat line ends.
 </p>
 <div class="grid">
 <div class="g-col-6">
@@ -464,7 +467,7 @@ Creating a <code>draw brick</code> block lets you think in terms of a procedure 
 Using Modularity
 </h3>
 <p>
-You’d like the “top level” block to be something like this:<br> <img src="../../img/2-complexity/U2ImageVideoAddendum_img/draw-brick-wall-7.png" title="draw brick wall, rows: (7)" alt="draw brick wall, rows: (7)" class="indent"><br> Getting there involves <em>modularity</em>.
+You’d like the “top level” block to be something like this:<br> <img src="../../img/2-complexity/U2ImageVideoAddendum_img/draw-brick-wall-7.png" title="draw brick wall, rows: (7)" alt="draw brick wall, rows: (7)" class="ms-4"><br> Getting there involves <em>modularity</em>.
 </p>
 <div class="vocabFullWidth">
 <div class="ap-standard">
@@ -526,7 +529,7 @@ Or think “What would <em>make the most sense</em> in a <em>real</em> brick wal
 </div>
 </li>
 <li>
-<p>Write and test the <img src="../../img/2-complexity/U2ImageVideoAddendum_img/draw-brick-wall-7.png" title="draw brick wall, rows: (7)" alt="draw brick wall, rows: (7)" class="nopadtb"> block.</p>
+<p>Write and test the <img src="../../img/2-complexity/U2ImageVideoAddendum_img/draw-brick-wall-7.png" title="draw brick wall, rows: (7)" alt="draw brick wall, rows: (7)" class="py-0"> block.</p>
 <div class="endnote">
 <p>You might want to use the <code>odd?</code> predicate from your U2L4-MathLibrary. You learned about exporting and importing blocks on <a href="../../unit-2/lab-3/1-what-is-predicate.html" title="What's a Predicate?">Unit 2 Lab 3 Page 1: What’s a Predicate?</a></p>
 </div>
@@ -555,7 +558,7 @@ Number of <var>bricks per row</var>
 Gap <var>thickness</var>
 </li>
 </ol>
-<p><img src="../../img/2-complexity/U2ImageVideoAddendum_img/draw-brick-wall-TIF.png" title="draw brick wall, rows: (21) bricks per row: (11) brick length: (30) width: (10) gap thickness: (5)" alt="draw brick wall, rows: (21) bricks per row: (11) brick length: (30) width: (10) gap thickness: (5)" class="indent"><br></p>
+<p><img src="../../img/2-complexity/U2ImageVideoAddendum_img/draw-brick-wall-TIF.png" title="draw brick wall, rows: (21) bricks per row: (11) brick length: (30) width: (10) gap thickness: (5)" alt="draw brick wall, rows: (21) bricks per row: (11) brick length: (30) width: (10) gap thickness: (5)" class="ms-4"><br></p>
 <div class="endnote">
 <p>Add these extra inputs one at a time, not all at once! When you modify the length of a brick, that should also change the length of an end brick for row B. When you modify the gap thickness, that should also change the distance between the rows.</p>
 </div>

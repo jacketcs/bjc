@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-3/index.html">Data Structures</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-1/1-robot-in-a-maze.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-1/5-building-tic-tac-toe.html">Page 5: Building a Tic-Tac-Toe Board</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-3/index.html">Unit 3: Data Structures</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-1/1-robot-in-a-maze.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-1/5-building-tic-tac-toe.html">Page 5: Building a Tic-Tac-Toe Board</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-3/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Structures</span></a>
+ <span class="menu-text">Unit 3: Data Structures</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -418,7 +421,7 @@ ul.task-list li input[type="checkbox"] {
 <p>
 <strong>On this first page,</strong> you use <em>clones</em> to display a Tic-Tac-Toe board and let two human players enter moves.
 </p>
-<p><img src="../../img/3-lists/TTT1_img/Three States of TTT.png" title="Three states of Tic-Tac-Toe: in progress, win, tie" alt="Three states of Tic-Tac-Toe: in progress, win, tie" class="indent" width="550"></p>
+<p><img src="../../img/3-lists/TTT1_img/Three States of TTT.png" title="Three states of Tic-Tac-Toe: in progress, win, tie" alt="Three states of Tic-Tac-Toe: in progress, win, tie" class="ms-4" width="550"></p>
 </div>
 <p>
 The project is spread out over different units because there’s a lot to do, and because some steps require techniques you haven’t learned yet. On <em>this</em> page, you’ll learn about <em>cloning</em> a sprite (like copying it, only better). In the future, you’ll extend the project to detect wins and ties and, ultimately, to let the computer be one of the players.
@@ -432,17 +435,13 @@ One approach to building this game is to use <em>multiple sprites</em>; each squ
 <a class="run" href="../../prog/3-lists/U3L1-TicTacToe.xml" target="_blank"><img src="../../img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"></a>
 </li>
 <li>
-The first sprite has already been set up for you. It has three costumes: Empty, X, and O. Click <img src="../../img/blocks/next-costume.png" title="next costume" alt="next costume" class="inline"> a few times to see all of them.<br> <img src="../../img/3-lists/TTT1_img/Costumes.png" title="Costumes of a square: Empty, X and O" alt="Costumes of a square: Empty, X and O" class="indent noshadow" height="100">
+The first sprite has already been set up for you. It has three costumes: Empty, X, and O. Click <img src="../../img/blocks/next-costume.png" title="next costume" alt="next costume" class="inline"> a few times to see all of them.<br> <img src="../../img/3-lists/TTT1_img/Costumes.png" title="Costumes of a square: Empty, X and O" alt="Costumes of a square: Empty, X and O" class="ms-4 noshadow" height="100">
 </li>
 </ol>
 </div>
-<p>
-You will use <em>clones</em> to create the 3×3 Tic-Tac-Toe board.<a name="clones" class="anchor">&nbsp;</a>
-</p>
+<p>You will use <em>clones</em> to create the 3×3 Tic-Tac-Toe board.</p>
 <div class="vocabFullWidth">
-<p>
-A <strong>clone</strong> is a copy of a sprite that <em>shares information</em> with its parent sprite (the original sprite). For example, clones have copies of any scripts from the parent, and if the parent’s script is changed, then the clones’ scripts change too. However, changes you make to a clone are <em>not</em> shared with the parent, so you can do things like move each clone to a different position.
-</p>
+<p>A <strong>clone</strong> is a copy of a sprite that <em>shares information</em> with its parent sprite (the original sprite). For example, clones have copies of any scripts from the parent, and if the parent’s script is changed, then the clones’ scripts change too. However, changes you make to a clone are <em>not</em> shared with the parent, so you can do things like move each clone to a different position.</p>
 </div>
 <p>
 </p><p>Clones start with the same position, costumes, and scripts of their parent. But clones made by a program…</p>
@@ -459,7 +458,7 @@ Are <em>temporary</em>. Clicking the stop button or green flag will delete all t
 (There can also be permanent clones, which are created differently, but they’re not used in this project.)
 </p>
 <div class="endnote">
-<p>In this project, you’ll need <em>nine</em> clones, one for each square of the Tic-Tac-Toe board. So, you’d need something like:<br> <img src="../../img/2-complexity/9-copies.png" title="repeat (9){create a clone of (myself)}" alt="repeat (9){create a clone of (myself)}" class="indent"><br> The actual code you write will be slightly more than this, but this is the central idea. You’ll need nine clones, and you will hide the parent. This will allow you to control the squares of the grid with blocks like:<br> <img src="../../img/blocks/when-i-start-as-clone.png" title="When I start as a clone" alt="When I start as a clone" class="indent"></p>
+<p>In this project, you’ll need <em>nine</em> clones, one for each square of the Tic-Tac-Toe board. So, you’d need something like:<br> <img src="../../img/2-complexity/9-copies.png" title="repeat (9){create a clone of (myself)}" alt="repeat (9){create a clone of (myself)}" class="ms-4"><br> The actual code you write will be slightly more than this, but this is the central idea. You’ll need nine clones, and you will hide the parent. This will allow you to control the squares of the grid with blocks like:<br> <img src="../../img/blocks/when-i-start-as-clone.png" title="When I start as a clone" alt="When I start as a clone" class="ms-4"></p>
 </div>
 <div class="forYouToDo">
 <ol start="3">
@@ -468,7 +467,7 @@ Are <em>temporary</em>. Clicking the stop button or green flag will delete all t
 <div class="sidenote">
 <p>This script will help you learn about clones, but it won’t be part of your finished project.</p>
 </div>
-<p><img src="../../img/3-lists/TTT1_img/WhenIamClicked.png" title="when I am (clicked){ create a clone of (myself); say(I'm the parent.); glide (1) secs to x: (pick random(-200) to (200)) y: (pick random(-150) to (150)); say()}" alt="when I am (clicked){ create a clone of (myself); say(I'm the parent.); glide (1) secs to x: (pick random(-200) to (200)) y: (pick random(-150) to (150)); say()}" class="indent" height="200"><br></p>
+<p><img src="../../img/3-lists/TTT1_img/WhenIamClicked.png" title="when I am (clicked){ create a clone of (myself); say(I'm the parent.); glide (1) secs to x: (pick random(-200) to (200)) y: (pick random(-150) to (150)); say()}" alt="when I am (clicked){ create a clone of (myself); say(I'm the parent.); glide (1) secs to x: (pick random(-200) to (200)) y: (pick random(-150) to (150)); say()}" class="ms-4" height="200"><br></p>
 </li>
 <li>
 <p>Then click the sprite on the stage, and compare what happens with what you expected.</p>
@@ -493,7 +492,7 @@ The <code>create a clone</code> block takes an input because it can copy <em>any
 Delete the <code>when I am clicked</code> demonstration script from exercise 3.
 </li>
 <li>
-Connect the <code>when</code> <span style="color:green">⚑</span> <code>clicked</code> block toward the bottom of the scripting area to the script just below it.<br> <img src="../../img/3-lists/TTT1_img/make-board-script.png" title="makeBoard, set (X's turn?) to (true) [Comment: X plays first.]" alt="makeBoard, set (X's turn?) to (true) [Comment: X plays first.]" class="indent">
+Connect the <code>when</code> <span style="color:green">⚑</span> <code>clicked</code> block toward the bottom of the scripting area to the script just below it.<br> <img src="../../img/3-lists/TTT1_img/make-board-script.png" title="makeBoard, set (X's turn?) to (true) [Comment: X plays first.]" alt="makeBoard, set (X's turn?) to (true) [Comment: X plays first.]" class="ms-4">
 </li>
 <li>
 <p>Read that script and notice…</p>
@@ -505,7 +504,7 @@ The <code>makeBoard</code> block is empty. You’ll write it in the next problem
 <li>
 <p>The variable <var>X’s turn?</var> will be <code>true</code> when it’s X’s turn to play or <code>false</code> when it’s O’s turn.</p>
 <div class="endnote">
-<p>When alternating between two values, it’s convenient to use Booleans because you can use <code>not</code> to switch between them and you can use <code>if</code> to <em>test</em> the variable. (Recall that <code>if</code> requires a <code>true</code>/<code>false</code> input.)<br> <img src="../../img/3-lists/TTT1_img/setXsturn.png" title="set (X's turn?) to (not (X's turn?))" alt="set (X's turn?) to (not (X's turn?))" class="indent" height="50"> <img src="../../img/2-complexity/if-x-turn.png" title="if (X's turn?){}" alt="if (X's turn?){}" class="indent"></p>
+<p>When alternating between two values, it’s convenient to use Booleans because you can use <code>not</code> to switch between them and you can use <code>if</code> to <em>test</em> the variable. (Recall that <code>if</code> requires a <code>true</code>/<code>false</code> input.)<br> <img src="../../img/3-lists/TTT1_img/setXsturn.png" title="set (X's turn?) to (not (X's turn?))" alt="set (X's turn?) to (not (X's turn?))" class="ms-4" height="50"> <img src="../../img/2-complexity/if-x-turn.png" title="if (X's turn?){}" alt="if (X's turn?){}" class="ms-4"></p>
 </div>
 </li>
 </ul>
@@ -514,7 +513,7 @@ The <code>makeBoard</code> block is empty. You’ll write it in the next problem
 </ol>
 </li>
 <li>
-<p>Edit the block <code>makeBoard</code> to set up nine clones in three rows of three.<br> <img src="../../img/3-lists/TTT1_img/Row1.png" title="One row of squares" alt="One row of squares" class="indent" height="100"> <img src="../../img/3-lists/TTT1_img/Row2.png" title="Two rows of squares" alt="Two rows of squares" height="100"> <img src="../../img/3-lists/TTT1_img/Row3.png" title="Three rows of squares" alt="Three rows of squares" height="100"><br></p>
+<p>Edit the block <code>makeBoard</code> to set up nine clones in three rows of three.<br> <img src="../../img/3-lists/TTT1_img/Row1.png" title="One row of squares" alt="One row of squares" class="ms-4" height="100"> <img src="../../img/3-lists/TTT1_img/Row2.png" title="Two rows of squares" alt="Two rows of squares" height="100"> <img src="../../img/3-lists/TTT1_img/Row3.png" title="Three rows of squares" alt="Three rows of squares" height="100"><br></p>
 <div class="narrower">
 <p>Tips:</p>
 <ul>
@@ -530,7 +529,7 @@ Be sure to <code>show</code> the original sprite before cloning it, so that the 
 <li>
 <p><a href="#hint-for" data-bs-toggle="collapse" title="Click if you need an additional hint.">Click if you need an additional hint about <code>makeBoard</code>.</a></p>
 <div id="hint-for" class="collapse">
-<p><img src="../../img/3-lists/TTT1_img/for-row-column.png" title="for (row) = 1 to 3 {for (column) = 1 to 3 {} }" alt="for (row) = 1 to 3 {for (column) = 1 to 3 {} }" class="indent"></p>
+<p><img src="../../img/3-lists/TTT1_img/for-row-column.png" title="for (row) = 1 to 3 {for (column) = 1 to 3 {} }" alt="for (row) = 1 to 3 {for (column) = 1 to 3 {} }" class="ms-4"></p>
 </div>
 </li>
 </ul>
@@ -546,7 +545,7 @@ Write a <code>when I am clicked</code> script that will make each clone wear the
 Decide how a square should behave when it is clicked while already wearing an X or O costume.
 </li>
 <li>
-Make the parent sprite <em>not</em>-draggable so that the clone squares aren’t accidentally moved around when the player clicks.<br> <img src="../../img/2-complexity/not-draggable.png" title="Draggable box un-checked" alt="Draggable box un-checked" class="indent">
+Make the parent sprite <em>not</em>-draggable so that the clone squares aren’t accidentally moved around when the player clicks.<br> <img src="../../img/2-complexity/not-draggable.png" title="Draggable box un-checked" alt="Draggable box un-checked" class="ms-4">
 </li>
 </ol>
 </li>

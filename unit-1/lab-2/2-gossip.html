@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script src="../../site_libs/quarto-contrib/gifffer/gifffer.min.js"></script>
 <link href="../../site_libs/quarto-contrib/gifffer/bjc-gifffer.css" rel="stylesheet">
 <script type="text/javascript">window.onload = function() {Gifffer();};</script>
@@ -69,7 +69,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -124,6 +123,10 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
@@ -408,7 +411,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#exploring-custom-blocks" id="toc-exploring-custom-blocks" class="nav-link active" data-scroll-target="#exploring-custom-blocks">Exploring Custom Blocks</a></li>
-  <li><a href="#exploring-a-second-sprite" id="toc-exploring-a-second-sprite" class="nav-link" data-scroll-target="#exploring-a-second-sprite">Exploring a Second Sprite</a><a name="second" class="anchor nav-link" data-scroll-target="undefined">&nbsp;</a></li>
+  <li><a href="#exploring-a-second-sprite" id="toc-exploring-a-second-sprite" class="nav-link" data-scroll-target="#exploring-a-second-sprite">Exploring a Second Sprite</a></li>
   </ul>
 </nav>
     </div>
@@ -435,7 +438,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="learn">
 <p>
-<strong>In this lab,</strong> you will program two sprites to gossip.<br> <img src="../../img/1-introduction/U1L2-Gossip.jpg" title="Image of stage with two characters talking. One says, 'my cat is in a band with Jake,' and the other says 'Oh, but... Mr. C loves my cat.'" alt="Image of stage with two characters talking. One says, 'my cat is in a band with Jake,' and the other says 'Oh, but... Mr. C loves my cat.'" class="indent">
+<strong>In this lab,</strong> you will program two sprites to gossip.<br> <img src="../../img/1-introduction/U1L2-Gossip.jpg" title="Image of stage with two characters talking. One says, 'my cat is in a band with Jake,' and the other says 'Oh, but... Mr. C loves my cat.'" alt="Image of stage with two characters talking. One says, 'my cat is in a band with Jake,' and the other says 'Oh, but... Mr. C loves my cat.'" class="ms-4">
 </p>
 <p>
 <strong>On this page,</strong> you will experiment with an existing program as an introduction to the project.
@@ -458,24 +461,20 @@ Perform each experiment (A-D) several times.
 <p><img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"></p>
 <ul>
 <li>
-What does each <em>reporter</em> block report?<br> <img src="../../img/1-introduction/who.png" title="who block" alt="who block" class="indent"> <img src="../../img/1-introduction/does-what.png" title="does what block" alt="does what block" class="inline"> <img src="../../img/1-introduction/gossip.png" title="gossip block" alt="gossip block" class="inline">
+What does each <em>reporter</em> block report?<br> <img src="../../img/1-introduction/who.png" title="who block" alt="who block" class="ms-4"> <img src="../../img/1-introduction/does-what.png" title="does what block" alt="does what block" class="inline"> <img src="../../img/1-introduction/gossip.png" title="gossip block" alt="gossip block" class="inline">
 </li>
 <li>
-What happens when you click this script (labeled D)?<br> <img src="../../img/1-introduction/say-broadcast.png" title="say (gossip) broadcast (your turn)" alt="say (gossip) broadcast (your turn)" class="indent">
+What happens when you click this script (labeled D)?<br> <img src="../../img/1-introduction/say-broadcast.png" title="say (gossip) broadcast (your turn)" alt="say (gossip) broadcast (your turn)" class="ms-4">
 </li>
 </ul>
 </li>
 </ol>
 </div>
 <div class="examFullWidth">
-<!--<div class="index-term anchor" id="say</code>">&nbsp;</div>-->
-<div class="comment">
-<p>AAP-3.A.6</p>
-</div>
 <div class="pseudop">
-<p>There is nothing exactly like <img src="../../img/1-introduction/say-gossip.png" title="say (gossip)" alt="say (gossip)" class="nopadtb"> or <img src="../../img/1-introduction/say-gossip-for-3-secs.png" title="say (gossip) for (3) secs" alt="say (gossip) for (3) secs" class="nopadtb"> on the AP Exam because they don’t have sprites and speech balloons, but their way of showing this text to the user is</p>
+<p>There is nothing exactly like <img src="../../img/1-introduction/say-gossip.png" title="say (gossip)" alt="say (gossip)" class="py-0"> or <img src="../../img/1-introduction/say-gossip-for-3-secs.png" title="say (gossip) for (3) secs" alt="say (gossip) for (3) secs" class="py-0"> on the AP Exam because they don’t have sprites and speech balloons, but their way of showing this text to the user is</p>
 <pre class="inline">DISPLAY(gossip())</pre>
-<p>if it’s written as text or <img src="../../img/1-introduction/display(gossip).png" title="a white rounded rectangle containing first the word 'DISPLAY' in all caps and then a smaller white rectangle containing the word 'gossip' in lower case" alt="a white rounded rectangle containing first the word 'DISPLAY' in all caps and then a smaller white rectangle containing the word 'gossip' in lower case" class="nopadtb"> if it’s shown as blocks.</p>
+<p>if it’s written as text or <img src="../../img/1-introduction/display(gossip).png" title="a white rounded rectangle containing first the word 'DISPLAY' in all caps and then a smaller white rectangle containing the word 'gossip' in lower case" alt="a white rounded rectangle containing first the word 'DISPLAY' in all caps and then a smaller white rectangle containing the word 'gossip' in lower case" class="py-0"> if it’s shown as blocks.</p>
 </div>
 <p>
 You won’t have to be able to <em>write</em> code in this notation on the AP exam. You just have to be able to <em>read</em> it so you can answer questions about it.
@@ -490,26 +489,20 @@ In the Settings menu (<img src="../../img/sys/settings.png" title="Settings menu
 </div>
 </div>
 <div class="takeNote">
-<div class="comment">
-<p>AAP-3.B.6, DAT-1.A.5</p>
-</div>
 <p>
 <strong>Abstraction</strong> is the most fundamental idea in computer science, but it’s hard to define until you’ve seen some examples. The most basic kind of abstraction is to <em>give a name</em> to something in a program. For example, here we gave the name <code>who</code> to the idea “pick an item at random from this list of people (or cats).” This is called <strong><em>procedural</em> abstraction</strong> because we use a procedure (a block) to name the idea. This makes your code readable. You’ll see other kinds of abstraction later.
 </p>
-</div>
-<div class="comment">
-<p>AAP-3.B.7</p>
 </div>
 <p>
 If you find yourself wanting to copy and paste code from one place to another without changing it, then give it a name (open a Block Editor and paste the code there) and call your procedure in both places. If you discover later on that you need to fix a bug in this code, you only have to change it once instead of finding every copy throughout your program.
 </p>
 </section>
 <section id="exploring-a-second-sprite" class="level2">
-<h2 class="anchored" data-anchor-id="exploring-a-second-sprite">Exploring a Second Sprite<a name="second" class="anchor">&nbsp;</a></h2>
+<h2 class="anchored" data-anchor-id="exploring-a-second-sprite">Exploring a Second Sprite</h2>
 <div class="forYouToDo">
 <ol start="4">
 <li>
-<img src="../../img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="float-end"> In the sprite corral, click on the green sprite named “Sprite(2)” to control its scripts and costumes.<br> <img src="../../img/1-introduction/stage-and-sprite-corral.png" title="stage-and-sprite-corral" alt="stage-and-sprite-corral" class="indent">
+<img src="../../img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="float-end"> In the sprite corral, click on the green sprite named “Sprite(2)” to control its scripts and costumes.<br> <img src="../../img/1-introduction/stage-and-sprite-corral.png" title="stage-and-sprite-corral" alt="stage-and-sprite-corral" class="ms-4">
 </li>
 <li>
 Perform each experiment (A-C) several times.
@@ -523,16 +516,15 @@ Perform each experiment (A-C) several times.
 <li>
 <img src="../../img/icons/save-now.png" title="Save your work" alt="Save your work" class="float-end"> Make Sprite(2) tell Sprite to respond. What happens?
 </li>
-<!--<div class="index-term anchor" id="when I receive</code>">&nbsp;</div>-->
 <div id="broadcast">
 <p>&nbsp;</p>
 </div>
 <div class="endnote">
 <p>
-The <code>broadcast</code><!--class="index-term anchor"--><!--<img class="inline nopadtb" src="/img/blocks/broadcast.png" alt="broadcast ()" title="broadcast ()" />--> block sends a message to all the sprites. To set the message, click the down arrow and select “new…”<br> <img src="../../img/1-introduction/broadcast-dropdown.png" title="broadcast block with menu open showing two options: your turn, new..." alt="broadcast block with menu open showing two options: your turn, new..." class="indent">
+The <code>broadcast</code> block sends a message to all the sprites. To set the message, click the down arrow and select “new…”<br> <img src="../../img/1-introduction/broadcast-dropdown.png" title="broadcast block with menu open showing two options: your turn, new..." alt="broadcast block with menu open showing two options: your turn, new..." class="ms-4">
 </p>
 <p>
-For more information about the <code>when I receive</code> block, right-click (or control-click on a Mac) the block and select “help…”<br> <img src="../../img/1-introduction/when-i-receive-dropdown.png" title="when I receive block with right-click menu open showing four options: help..., duplicate, delete, script pic..." alt="when I receive block with right-click menu open showing four options: help..., duplicate, delete, script pic..." class="indent">
+For more information about the <code>when I receive</code> block, right-click (or control-click on a Mac) the block and select “help…”<br> <img src="../../img/1-introduction/when-i-receive-dropdown.png" title="when I receive block with right-click menu open showing four options: help..., duplicate, delete, script pic..." alt="when I receive block with right-click menu open showing four options: help..., duplicate, delete, script pic..." class="ms-4">
 </p>
 </div>
 </ol>

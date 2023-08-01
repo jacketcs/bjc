@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script src="../../site_libs/quarto-contrib/gifffer/gifffer.min.js"></script>
 <link href="../../site_libs/quarto-contrib/gifffer/bjc-gifffer.css" rel="stylesheet">
 <script type="text/javascript">window.onload = function() {Gifffer();};</script>
@@ -69,7 +69,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -125,6 +124,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -140,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-3/1-what-is-predicate.html">Lab 3</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-3/4-boolean-experiments.html">Page 4: Boolean Expression Experiments</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Unit 2: Abstraction</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-3/1-what-is-predicate.html">Lab 3</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-3/4-boolean-experiments.html">Page 4: Boolean Expression Experiments</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -155,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-2/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 2: Abstraction</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -460,14 +463,11 @@ set pen color to purple
 set pen color to orange
 }
 make a point
-}" class="indent"> <img src="../../img/2-complexity/y-gtr-x.png" title=" Imagine a 45-degree line sloping upward toward the right, through the center of the stage. The area up and to the left of this line is purple; the area below and to the right is orange." alt=" Imagine a 45-degree line sloping upward toward the right, through the center of the stage. The area up and to the left of this line is purple; the area below and to the right is orange." class="indent">
+}" class="ms-4"> <img src="../../img/2-complexity/y-gtr-x.png" title=" Imagine a 45-degree line sloping upward toward the right, through the center of the stage. The area up and to the left of this line is purple; the area below and to the right is orange." alt=" Imagine a 45-degree line sloping upward toward the right, through the center of the stage. The area up and to the left of this line is purple; the area below and to the right is orange." class="ms-4">
 </li>
 <li>
-Changing the Boolean expression in the <code>if</code> block changes the picture. Discuss why the expression 0) and (distance to apple &gt; 100)” title=“(x position &gt; 0) and (distance to apple &gt; 100)” /&gt; generates this picture:<br> <img src="../../img/2-complexity/apple.png" title="There's an apple in the center. The entire left half of the stage is orange; so is a circle around the apple. What's left is purple." alt="There's an apple in the center. The entire left half of the stage is orange; so is a circle around the apple. What's left is purple." class="indent">
+Changing the Boolean expression in the <code>if</code> block changes the picture. Discuss why the expression 0) and (distance to apple &gt; 100)” title=“(x position &gt; 0) and (distance to apple &gt; 100)” /&gt; generates this picture:<br> <img src="../../img/2-complexity/apple.png" title="There's an apple in the center. The entire left half of the stage is orange; so is a circle around the apple. What's left is purple." alt="There's an apple in the center. The entire left half of the stage is orange; so is a circle around the apple. What's left is purple." class="ms-4">
 </li>
-<div class="comment">
-<p>AAP-2.E part b, AAP.-2.C</p>
-</div>
 <li>
 <p>Match the Boolean expressions with the pictures. There are more expressions than pictures.<br></p>
 <div style="display: grid; grid-template-columns: auto auto;">
@@ -571,9 +571,6 @@ On paper, sketch the pictures for the expressions you didn’t match with pictur
 <li>
 <a href="../../prog/2-complexity/U2L3-Dots.xml" class="run"><img src="../../img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"></a>
 </li>
-<div class="comment">
-<p>AAP-2.F part a</p>
-</div>
 <li>
 <p>Invent Boolean expressions you can plug into the dot-picture script to generate these pictures:<br></p>
 <ol class="horizontal">

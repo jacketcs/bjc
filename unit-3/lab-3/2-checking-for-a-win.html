@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-3/index.html">Data Structures</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-3/1-find-ties.html">Lab 3</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-3/2-checking-for-a-win.html">Page 2: Detecting A Win</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-3/index.html">Unit 3: Data Structures</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-3/1-find-ties.html">Lab 3</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-3/2-checking-for-a-win.html">Page 2: Detecting A Win</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-3/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Structures</span></a>
+ <span class="menu-text">Unit 3: Data Structures</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -438,7 +441,7 @@ We need a way to find out if a possible winning triple has actually happened. We
 You learned about <code>map</code> in <a href="../../unit-3/lab-2/5-mapping-over-list.html" title="Unit 3 Lab 2 Page 5: Transforming Every List Item">Unit 3 Lab 2 Page 5: Transforming Every List Item</a>.
 </p>
 <p>
-<code>Map</code> applies the function in the gray ring to each item in the input list, and it reports a list of all the results.<br> <img src="../../img/3-lists/map-example-2.png" title="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" alt="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" class="indent">
+<code>Map</code> applies the function in the gray ring to each item in the input list, and it reports a list of all the results.<br> <img src="../../img/3-lists/map-example-2.png" title="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" alt="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" class="ms-4">
 </p>
 <p>
 Recall that the blank input slot in the function inside the gray ring is where one list item goes every time the function is performed.
@@ -450,7 +453,7 @@ Recall that the blank input slot in the function inside the gray ring is where o
 Click <img src="../../img/1-introduction/green-flag_button.png" title="green flag button" alt="green flag button"> to start a new game. Play one game, <em>deliberately letting <strong>x</strong> win</em>.
 </li>
 <li>
-<p>Then build this expression, and see what it reports:<br> <img src="../../img/3-lists/map-item-board.png" title="map (item ( ) of (board)) over (list{1, 2, 3})" alt="map (item ( ) of (board)) over (list{1, 2, 3})" class="indent"><br></p>
+<p>Then build this expression, and see what it reports:<br> <img src="../../img/3-lists/map-item-board.png" title="map (item ( ) of (board)) over (list{1, 2, 3})" alt="map (item ( ) of (board)) over (list{1, 2, 3})" class="ms-4"><br></p>
 <div class="endnote">
 <p><a href="#hint-map-item" data-bs-toggle="collapse" title="How does map work here?">How does <code>map</code> work here?</a></p>
 <div id="hint-map-item" class="collapse">
@@ -461,7 +464,7 @@ This <code>map</code> expression works the same way as the <code>join</code> exa
 But here, the function in the gray ring is <code>item ( ) of (</code><var>board</var><code>)</code>, so <code>map</code> checks items 1, 2, and 3 of the <var>board</var> list, and it reports a list of what is in those three positions (each of which is X, O, or a number if the square is empty).
 </p>
 <p>
-If you can’t see what’s inside the <var>board</var> variable, be sure its box is checked in the Variables palette and expand its watcher to see its list items as in the picture below.<br> <img src="../../img/3-lists/ttt-board-var.png" title="picture of: watcher of board variable showing {O, O, X, 4, X, 6, X, 8, 9}; and Tic Tac Toe game with X, X, O in top row; empty, X, empty in middle row; and X, empty, empty in bottom row" alt="picture of: watcher of board variable showing {O, O, X, 4, X, 6, X, 8, 9}; and Tic Tac Toe game with X, X, O in top row; empty, X, empty in middle row; and X, empty, empty in bottom row" class="indent noshadow"> <img src="../../img/3-lists/map-item-board-reporting.png" title="map (item ( ) of (board)) over (list{1, 2, 3}) reporting {O, O, X}" alt="map (item ( ) of (board)) over (list{1, 2, 3}) reporting {O, O, X}" class="indent"><br>
+If you can’t see what’s inside the <var>board</var> variable, be sure its box is checked in the Variables palette and expand its watcher to see its list items as in the picture below.<br> <img src="../../img/3-lists/ttt-board-var.png" title="picture of: watcher of board variable showing {O, O, X, 4, X, 6, X, 8, 9}; and Tic Tac Toe game with X, X, O in top row; empty, X, empty in middle row; and X, empty, empty in bottom row" alt="picture of: watcher of board variable showing {O, O, X, 4, X, 6, X, 8, 9}; and Tic Tac Toe game with X, X, O in top row; empty, X, empty in middle row; and X, empty, empty in bottom row" class="ms-4 noshadow"> <img src="../../img/3-lists/map-item-board-reporting.png" title="map (item ( ) of (board)) over (list{1, 2, 3}) reporting {O, O, X}" alt="map (item ( ) of (board)) over (list{1, 2, 3}) reporting {O, O, X}" class="ms-4"><br>
 </p>
 </div>
 </div>
@@ -490,7 +493,7 @@ Checking All the Ways to Win
 Now you’re going to use <code>status of triple</code> systematically to check <em>all</em> the triples.
 </p>
 <p>
-For example, Player O has won the game below, and the <code>status of all winning triples</code> block finds the status of each possible triple. The computer can use this block to check for a winning triple that has either all X or all O.<br> <img src="../../img/3-lists/status-of-all-board.png" title="Tic Tac Toe game where Player O has won down the middle column. In row one, there is X, O, and X. In row two, there is X, O, and an empty square. In row three, there is an empty square, O, and an empty square." alt="Tic Tac Toe game where Player O has won down the middle column. In row one, there is X, O, and X. In row two, there is X, O, and an empty square. In row three, there is an empty square, O, and an empty square." class="indent noshadow"> <img src="../../img/3-lists/status-of-all-reporting.png" title="The status of all winning triples block is reporting a list of lists (a table). There are three columns and eight rows, and each cell contains either a X, an O, or a number. There is text to the right of each row listing the corresponding triple and where it appears on the board (such as 1, 5, 9 being the top-left to bottom-right diagonal). The triple in which Player O has won this game (2, 5, 8) shows O, O, O in the table. That is the only row with either all O or all X." alt="The status of all winning triples block is reporting a list of lists (a table). There are three columns and eight rows, and each cell contains either a X, an O, or a number. There is text to the right of each row listing the corresponding triple and where it appears on the board (such as 1, 5, 9 being the top-left to bottom-right diagonal). The triple in which Player O has won this game (2, 5, 8) shows O, O, O in the table. That is the only row with either all O or all X." class="indent noshadow">
+For example, Player O has won the game below, and the <code>status of all winning triples</code> block finds the status of each possible triple. The computer can use this block to check for a winning triple that has either all X or all O.<br> <img src="../../img/3-lists/status-of-all-board.png" title="Tic Tac Toe game where Player O has won down the middle column. In row one, there is X, O, and X. In row two, there is X, O, and an empty square. In row three, there is an empty square, O, and an empty square." alt="Tic Tac Toe game where Player O has won down the middle column. In row one, there is X, O, and X. In row two, there is X, O, and an empty square. In row three, there is an empty square, O, and an empty square." class="ms-4 noshadow"> <img src="../../img/3-lists/status-of-all-reporting.png" title="The status of all winning triples block is reporting a list of lists (a table). There are three columns and eight rows, and each cell contains either a X, an O, or a number. There is text to the right of each row listing the corresponding triple and where it appears on the board (such as 1, 5, 9 being the top-left to bottom-right diagonal). The triple in which Player O has won this game (2, 5, 8) shows O, O, O in the table. That is the only row with either all O or all X." alt="The status of all winning triples block is reporting a list of lists (a table). There are three columns and eight rows, and each cell contains either a X, an O, or a number. There is text to the right of each row listing the corresponding triple and where it appears on the board (such as 1, 5, 9 being the top-left to bottom-right diagonal). The triple in which Player O has won this game (2, 5, 8) shows O, O, O in the table. That is the only row with either all O or all X." class="ms-4 noshadow">
 </p>
 <div class="endnote">
 <p>The order of your triples and/or the numbering of the positions in your project might be different. This is OK as long as your project works.</p>

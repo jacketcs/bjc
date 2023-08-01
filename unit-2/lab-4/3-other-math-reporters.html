@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-4/1-mod-operator.html">Lab 4</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-4/3-other-math-reporters.html">Page 3: More Mathematical Reporters</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Unit 2: Abstraction</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-4/1-mod-operator.html">Lab 4</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-4/3-other-math-reporters.html">Page 3: More Mathematical Reporters</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-2/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 2: Abstraction</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -430,7 +433,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="learn">
-<p><strong>In this project</strong>, you will create mathematical blocks that combine several numbers, such as a <code>sum</code> block, which combines two numbers using addition: <br> <img src="../../img/3-lists/sum-from-4-to-6-reporting.png" title="sum from (4) to (6) reporting 15" alt="sum from (4) to (6) reporting 15" class="indent"></p>
+<p><strong>In this project</strong>, you will create mathematical blocks that combine several numbers, such as a <code>sum</code> block, which combines two numbers using addition: <br> <img src="../../img/3-lists/sum-from-4-to-6-reporting.png" title="sum from (4) to (6) reporting 15" alt="sum from (4) to (6) reporting 15" class="ms-4"></p>
 </div>
 <div id="first" class="forYouToDo">
 <ol>
@@ -438,12 +441,12 @@ ul.task-list li input[type="checkbox"] {
 Open your U2L4-MathLibrary project if it isn’t open already.
 </li>
 <li>
-Build blocks for <code>maximum</code> (reporting the larger of two input numbers) and <code>minimum</code> (reporting the smaller of two input numbers):<br> <img src="../../img/2-complexity/max-of-6-and-4-reporting.png" title="max of (6) and (4) reporting 6" alt="max of (6) and (4) reporting 6" class="indent"> <img src="../../img/2-complexity/min-of-3-and--4-reporting.png" title="max of (3) and (-4) reporting -4" alt="max of (3) and (-4) reporting -4" class="indent">
+Build blocks for <code>maximum</code> (reporting the larger of two input numbers) and <code>minimum</code> (reporting the smaller of two input numbers):<br> <img src="../../img/2-complexity/max-of-6-and-4-reporting.png" title="max of (6) and (4) reporting 6" alt="max of (6) and (4) reporting 6" class="ms-4"> <img src="../../img/2-complexity/min-of-3-and--4-reporting.png" title="max of (3) and (-4) reporting -4" alt="max of (3) and (-4) reporting -4" class="ms-4">
 </li>
 </ol>
 </div>
 <p>
-The <img src="../../img/blocks/combine.png" title="combine 'list input slot' using 'reporter input slot'" alt="combine 'list input slot' using 'reporter input slot'" class="inline"> block takes two inputs: a list and an operation <em>with two inputs</em>, and it reports the result of combining all the elements in the input list using the input operation. For example, the expression below reports: 0 + 1 + 2.<br> <img src="../../img/3-lists/combine-simple-example.png" title="combine (list {0, 1, 2}) with (()+()) reporting 3" alt="combine (list {0, 1, 2}) with (()+()) reporting 3" class="indent">
+The <img src="../../img/blocks/combine.png" title="combine 'list input slot' using 'reporter input slot'" alt="combine 'list input slot' using 'reporter input slot'" class="inline"> block takes two inputs: a list and an operation <em>with two inputs</em>, and it reports the result of combining all the elements in the input list using the input operation. For example, the expression below reports: 0 + 1 + 2.<br> <img src="../../img/3-lists/combine-simple-example.png" title="combine (list {0, 1, 2}) with (()+()) reporting 3" alt="combine (list {0, 1, 2}) with (()+()) reporting 3" class="ms-4">
 </p>
 <div class="takeNote">
 <p>
@@ -461,7 +464,7 @@ Notice that the function used to <em>combine</em> the list items always has two 
 </p><p>Unlike <code>keep</code>, the <code>combine</code> function is only used with a few input functions. <a href="#hint-which-functions" data-bs-toggle="collapse" title="Which functions?">Which functions?</a></p>
 <div id="hint-which-functions" class="collapse">
 <p>
-<code>Combine</code> is mostly used with <em>only these functions</em>:<br> <img src="../../img/3-lists/plus.png" title="+" alt="+" class="indent"> <img src="../../img/3-lists/times.png" title="×" alt="×"><br> <img src="../../img/3-lists/and-block.png" title="and" alt="and" class="indent"> <img src="../../img/3-lists/or-block.png" title="or" alt="or"><br> <img src="../../img/3-lists/join.png" title="join" alt="join" class="indent"> <img src="../../img/3-lists/join-words.png" title="join words" alt="join words"><br> and the <img src="../../img/3-lists/maximum.png" title="maximum of () ()" alt="maximum of () ()" class="inline"> and <img src="../../img/3-lists/minimum.png" title="minimum of () ()" alt="minimum of () ()" class="inline"> blocks you’ve just written yourself.
+<code>Combine</code> is mostly used with <em>only these functions</em>:<br> <img src="../../img/3-lists/plus.png" title="+" alt="+" class="ms-4"> <img src="../../img/3-lists/times.png" title="×" alt="×"><br> <img src="../../img/3-lists/and-block.png" title="and" alt="and" class="ms-4"> <img src="../../img/3-lists/or-block.png" title="or" alt="or"><br> <img src="../../img/3-lists/join.png" title="join" alt="join" class="ms-4"> <img src="../../img/3-lists/join-words.png" title="join words" alt="join words"><br> and the <img src="../../img/3-lists/maximum.png" title="maximum of () ()" alt="maximum of () ()" class="inline"> and <img src="../../img/3-lists/minimum.png" title="minimum of () ()" alt="minimum of () ()" class="inline"> blocks you’ve just written yourself.
 </p>
 <p>
 </p><p><a data-bs-toggle="collapse" href="#hint-3">Why so few?</a></p>
@@ -475,13 +478,13 @@ Notice that the function used to <em>combine</em> the list items always has two 
 <div class="forYouToDo">
 <ol start="3">
 <li>
-Use <code>combine</code> to build <code>maximum of list</code> and <code>minimum of list</code>.<br> <img src="../../img/3-lists/max-of-list-reporting.png" title="maximum of list {1, 22, 3, -4} reporting 22" alt="maximum of list {1, 22, 3, -4} reporting 22" class="indent"> <img src="../../img/3-lists/min-of-list-reporting.png" title="minimum of list {1, 22, 3, -4} reporting -4" alt="minimum of list {1, 22, 3, -4} reporting -4" class="indent">
+Use <code>combine</code> to build <code>maximum of list</code> and <code>minimum of list</code>.<br> <img src="../../img/3-lists/max-of-list-reporting.png" title="maximum of list {1, 22, 3, -4} reporting 22" alt="maximum of list {1, 22, 3, -4} reporting 22" class="ms-4"> <img src="../../img/3-lists/min-of-list-reporting.png" title="minimum of list {1, 22, 3, -4} reporting -4" alt="minimum of list {1, 22, 3, -4} reporting -4" class="ms-4">
 </li>
 <li>
-Create a <code>sum of list</code> block that reports the sum of the items of a list.<br> <img src="../../img/3-lists/sum-of-list-reporting.png" title="sum of list {1, 2, 3, 10} reporting 16" alt="sum of list {1, 2, 3, 10} reporting 16" class="indent">
+Create a <code>sum of list</code> block that reports the sum of the items of a list.<br> <img src="../../img/3-lists/sum-of-list-reporting.png" title="sum of list {1, 2, 3, 10} reporting 16" alt="sum of list {1, 2, 3, 10} reporting 16" class="ms-4">
 </li>
 <li>
-<p>Create an <code>average of list</code> block that calculates the average of the items in a list:<br> <img src="../../img/3-lists/average-of-list-reporting.png" title="average of list {1, 2, 3, 4} reporting 2.5" alt="average of list {1, 2, 3, 4} reporting 2.5" class="indent"></p>
+<p>Create an <code>average of list</code> block that calculates the average of the items in a list:<br> <img src="../../img/3-lists/average-of-list-reporting.png" title="average of list {1, 2, 3, 4} reporting 2.5" alt="average of list {1, 2, 3, 4} reporting 2.5" class="ms-4"></p>
 <div class="endnote">
 <p><a href="#hint-average" data-bs-toggle="collapse" title="Hint about average of list">Hint about <code>average of list</code></a></p>
 <div id="hint-average" class="collapse">
@@ -515,7 +518,7 @@ First think: how do you calculate an average? Then think: what blocks could help
 In many languages (including Snap<em>!</em>) variables must be <em>declared</em> in some way (in Snap<em>!</em>, you can click the “Make a variable” button or use the <code>script variables</code> block). But the AP’s language doesn’t include variable declarations, so you won’t see them on the exam.
 </p>
 </div>
-<p><img src="../../img/3-lists/square-roots-definition.png" title="square roots of (number) {script variables (positive root), set (positive root) to ((sqrt) of (number))), report (list (positive root) ((-1) × positive root))" alt="square roots of (number) {script variables (positive root), set (positive root) to ((sqrt) of (number))), report (list (positive root) ((-1) × positive root))" class="indent"><br> would be written as</p>
+<p><img src="../../img/3-lists/square-roots-definition.png" title="square roots of (number) {script variables (positive root), set (positive root) to ((sqrt) of (number))), report (list (positive root) ((-1) × positive root))" alt="square roots of (number) {script variables (positive root), set (positive root) to ((sqrt) of (number))), report (list (positive root) ((-1) × positive root))" class="ms-4"><br> would be written as</p>
 <div class="pre-container">
 <pre class="inline">PROCEDURE squareRoots(number)
 {
@@ -599,7 +602,7 @@ RETURN(a = b)
 <p>
 When will “Error. Invalid entry.” be displayed?
 </p>
-<div class="pre-container indent">
+<div class="pre-container ms-4">
 <pre class="inline">PROCEDURE greaterThanOrEqualTo(a, b)
 IF(a &gt; b)
 {
@@ -680,11 +683,11 @@ DISPLAY("Error. Invalid entry.")
 <div class="sidenote">
 <p>The <strong>greatest common divisor</strong> of two integers is the largest positive integer that is a divisor (a factor) of both integers.</p>
 </div>
-<p>Develop a <code>greatest common divisor</code> block. (Use your <img src="../../img/2-complexity/divisors.png" title="divisors of ()" alt="divisors of ()" class="inline"> block.)<br> <img src="../../img/3-lists/gcd-20-50-reporting.png" title="greatest common divisor of (20) and (50) reporting 10" alt="greatest common divisor of (20) and (50) reporting 10" class="indent"> <img src="../../img/3-lists/gcd-36-40-reporting.png" title="greatest common divisor of (36) and (40) reporting 4" alt="greatest common divisor of (36) and (40) reporting 4" class="indent"></p>
+<p>Develop a <code>greatest common divisor</code> block. (Use your <img src="../../img/2-complexity/divisors.png" title="divisors of ()" alt="divisors of ()" class="inline"> block.)<br> <img src="../../img/3-lists/gcd-20-50-reporting.png" title="greatest common divisor of (20) and (50) reporting 10" alt="greatest common divisor of (20) and (50) reporting 10" class="ms-4"> <img src="../../img/3-lists/gcd-36-40-reporting.png" title="greatest common divisor of (36) and (40) reporting 4" alt="greatest common divisor of (36) and (40) reporting 4" class="ms-4"></p>
 <div class="endnote">
 <p><a href="#hint-GCD-hint" data-bs-toggle="collapse" title="Hints about building greatest common divisor">Hint about building <code>greatest common divisor</code></a></p>
 <div id="hint-GCD-hint" class="collapse">
-<p>You may find it useful to use <code>maximum of list</code> as well as <code>divisors</code> and also to build an <code>intersection</code> block that takes two lists as input and reports all of the items that are on both lists.<br> <img src="../../img/3-lists/intersection-reporting.png" title="intersection of {apples, potatoes, carrots, pears} and {acorns, apples, pears, pine cones} reporting {apples, pears}" alt="intersection of {apples, potatoes, carrots, pears} and {acorns, apples, pears, pine cones} reporting {apples, pears}" class="indent"><br> <a href="#hint-GCD-hints" data-bs-toggle="collapse" title="More detailed hints about greatest common divisor">More detailed hints about <code>greatest common divisor</code></a></p>
+<p>You may find it useful to use <code>maximum of list</code> as well as <code>divisors</code> and also to build an <code>intersection</code> block that takes two lists as input and reports all of the items that are on both lists.<br> <img src="../../img/3-lists/intersection-reporting.png" title="intersection of {apples, potatoes, carrots, pears} and {acorns, apples, pears, pine cones} reporting {apples, pears}" alt="intersection of {apples, potatoes, carrots, pears} and {acorns, apples, pears, pine cones} reporting {apples, pears}" class="ms-4"><br> <a href="#hint-GCD-hints" data-bs-toggle="collapse" title="More detailed hints about greatest common divisor">More detailed hints about <code>greatest common divisor</code></a></p>
 <div id="hint-GCD-hints" class="collapse">
 <p>In order to find the greatest common divisor of two numbers you will need to find:</p>
 <ol>

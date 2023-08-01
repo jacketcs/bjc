@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-5/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-1/1-sorted-lists.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-1/2-how-many-five-letter-words.html">Page 2: How Many Five-Letter Words Are There?</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-5/index.html">Unit 5: Algorithms and Simulations</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-1/1-sorted-lists.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-1/2-how-many-five-letter-words.html">Page 2: How Many Five-Letter Words Are There?</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-5/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 5: Algorithms and Simulations</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -440,7 +443,7 @@ TG and solutions need to be checked. –MF, 12/19/18
 </p>
 </div>
 <p>
-On <a href="../../unit-2/lab-3/6-solving-word-puzzle.html" title="Unit 2 Lab 3 Page 6: Solving a Word Puzzle">Unit 2 Lab 3 Page 6: Solving a Word Puzzle</a>, you built a <img src="../../img/5-algorithms/does-word-have-number-letters.png" title="does () have () letters?" alt="does () have () letters?" class="inline nopadtb"> block and used it with <code>keep</code> to find words of a specific length in a word list. <strong>How long does a process like that take?</strong>
+On <a href="../../unit-2/lab-3/6-solving-word-puzzle.html" title="Unit 2 Lab 3 Page 6: Solving a Word Puzzle">Unit 2 Lab 3 Page 6: Solving a Word Puzzle</a>, you built a <img src="../../img/5-algorithms/does-word-have-number-letters.png" title="does () have () letters?" alt="does () have () letters?" class="inline py-0"> block and used it with <code>keep</code> to find words of a specific length in a word list. <strong>How long does a process like that take?</strong>
 </p>
 <div id="first" class="forYouToDo">
 <ol>
@@ -459,7 +462,7 @@ Use the <img src="../../img/5-algorithms/computation-time-of.png" title="computa
 </ol>
 </div>
 <p>
-The <code>computation time</code> block takes any reporter (with its inputs filled in), computes the result but ignores it, and instead reports <em>how long it took</em> to do the computation (in milliseconds).<br> <img src="../../img/5-algorithms/computation-time-reporting.png" title="computation time of (numbers from (1) to (1000)) reporting 27" alt="computation time of (numbers from (1) to (1000)) reporting 27" class="indent">
+The <code>computation time</code> block takes any reporter (with its inputs filled in), computes the result but ignores it, and instead reports <em>how long it took</em> to do the computation (in milliseconds).<br> <img src="../../img/5-algorithms/computation-time-reporting.png" title="computation time of (numbers from (1) to (1000)) reporting 27" alt="computation time of (numbers from (1) to (1000)) reporting 27" class="ms-4">
 </p>
 <p>
 In this example, it took 27 milliseconds to compute the list of integers from 1 to 1000. (The report you see will depend on how fast your computer is and what other programs are running on it.)
@@ -531,7 +534,7 @@ The only way to answer a “How many words…” problem is to check every singl
 <p>: <strong>Linear Search</strong> or <strong>Sequential Search</strong></p>
 <ul>
 <li>
-An algorithm takes <strong>linear time</strong> if multiplying the input size by ten multiplies the time required by ten.<br> <img src="../../img/5-algorithms/size-vs-time.png" title="graph of size vs. time showing a straight line through the origin and up to the right with the points for x=10,000 and x=100,000 marked" alt="graph of size vs. time showing a straight line through the origin and up to the right with the points for x=10,000 and x=100,000 marked" class="indent noshadow" style="height:300px">
+An algorithm takes <strong>linear time</strong> if multiplying the input size by ten multiplies the time required by ten.<br> <img src="../../img/5-algorithms/size-vs-time.png" title="graph of size vs. time showing a straight line through the origin and up to the right with the points for x=10,000 and x=100,000 marked" alt="graph of size vs. time showing a straight line through the origin and up to the right with the points for x=10,000 and x=100,000 marked" class="ms-4 noshadow" style="height:300px">
 </li>
 <div class="ap-standard">
 <p>AAP-2.O.5</p>

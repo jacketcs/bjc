@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-5/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-1/1-sorted-lists.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-1/7-comparing-search-algorithms.html">Page 7: Removing Duplicates</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-5/index.html">Unit 5: Algorithms and Simulations</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-1/1-sorted-lists.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../unit-5/lab-1/7-comparing-search-algorithms.html">Page 7: Removing Duplicates</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-5/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 5: Algorithms and Simulations</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -431,19 +434,19 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="learn">
 <p>
-<strong>On this page,</strong> you will learn a recursive technique to remove duplicates from a list.<br> <img src="../../img/5-algorithms/distinct-reporter-reporting.png" title="distinct items from (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) repoting { apples, oranges, bananas, bread, carrots}" alt="distinct items from (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) reporting { apples, oranges, bananas, bread, carrots}" class="indent">
+<strong>On this page,</strong> you will learn a recursive technique to remove duplicates from a list.<br> <img src="../../img/5-algorithms/distinct-reporter-reporting.png" title="distinct items from (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) repoting { apples, oranges, bananas, bread, carrots}" alt="distinct items from (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) reporting { apples, oranges, bananas, bread, carrots}" class="ms-4">
 </p>
 </div>
 <p>
 Suppose you have a list of items and want to know if the elements of the list are <em>distinct</em>. For example, you might want to make sure that you don’t have anything on your shopping list twice.
 </p>
 <p>
-As a first step, we’ll just answer the yes/no question: are there any duplicates on your list?<br> <img src="../../img/5-algorithms/distinct-predicate-reporting.png" title="are the items of (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) distinct? reporting false" alt="are the items of (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) distinct? reporting false" class="indent">
+As a first step, we’ll just answer the yes/no question: are there any duplicates on your list?<br> <img src="../../img/5-algorithms/distinct-predicate-reporting.png" title="are the items of (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) distinct? reporting false" alt="are the items of (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) distinct? reporting false" class="ms-4">
 </p>
 <div id="first" class="forYouToDo">
 <ol>
 <li>
-Experiment with the <img src="../../img/blocks/all-but-first.png" title="all but first of 'list input slot'" alt="all but first of 'list input slot'" class="inline nopadtb"> block using a few different input lists. <img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> What does this block report?
+Experiment with the <img src="../../img/blocks/all-but-first.png" title="all but first of 'list input slot'" alt="all but first of 'list input slot'" class="inline py-0"> block using a few different input lists. <img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> What does this block report?
 </li>
 <li>
 <p>Finish building the <code>are the items distinct?</code> predicate, which is started below. Since you’re writing a predicate, your procedure should always report <code>true</code> or <code>false</code>.<br></p>
@@ -475,7 +478,7 @@ if ((all but first of (data)) contains ())
 report ()
 }
 report (are the items of () distinct?)
-}" class="indent"><br>
+}" class="ms-4"><br>
 </p>
 <div class="endnote">
 <p>Notice that this procedure calls itself at the end. (It is <em>recursive.</em>) This won’t work if the input to that call is the same as the original input. So you can’t say <img src="../../img/5-algorithms/report-are-items-of-data-distinct.png" title="report (are the items of (data) distinct?)" alt="report (are the items of (data) distinct?)" class="inline">. Instead, you have to use a smaller input value.</p>
@@ -492,7 +495,7 @@ For your grocery list, you wouldn’t just want to know whether or not there are
 <div class="forYouToDo">
 <ol start="4">
 <li>
-Experiment with the <img src="../../img/blocks/in-front-of-full-size.png" title="() in front of 'list input slot'" alt="() in front of 'list input slot'" class="inline nopadtb"> block using a few different inputs. <img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> What does this block report?
+Experiment with the <img src="../../img/blocks/in-front-of-full-size.png" title="() in front of 'list input slot'" alt="() in front of 'list input slot'" class="inline py-0"> block using a few different inputs. <img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> What does this block report?
 </li>
 <li>
 <p>Build a <code>distinct items from</code> reporter using a structure similar to that of the <code>are the items distinct?</code> predicate.</p>

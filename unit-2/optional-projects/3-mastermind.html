@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Unit , Lab , Page 3 | JacketCS CSP</title>
+<title>Mastermind | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-2/optional-projects/1-magic8ball.html">Optional Projects</a></li><li class="breadcrumb-item"><a href="../../unit-2/optional-projects/3-mastermind.html">Mastermind</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Unit 2: Abstraction</a></li><li class="breadcrumb-item"><a href="../../unit-2/optional-projects/1-magic8ball.html">Optional Projects</a></li><li class="breadcrumb-item"><a href="../../unit-2/optional-projects/3-mastermind.html">Mastermind</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-2/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 2: Abstraction</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -414,7 +417,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Mastermind</h1>
-<p class="subtitle lead">Unit , Lab , Page 3</p>
+<p class="subtitle lead">Unit 2 Optional Project</p>
 </div>
 
 
@@ -444,7 +447,7 @@ MF: I want to revise this page to reduce the text wall and to make the rest of t
 </p>
 </div>
 <div class="learn">
-<p><strong>In this project,</strong> you will begin to build the game Mastermind™. In this game, one player selects a sequence of four secret colors, and the other player tries to guess it.<br> <img src="../../img/1-introduction/mm-snapshot.png" title="Snapshot of game" alt="Snapshot of game" class="indent" width="250"></p>
+<p><strong>In this project,</strong> you will begin to build the game Mastermind™. In this game, one player selects a sequence of four secret colors, and the other player tries to guess it.<br> <img src="../../img/1-introduction/mm-snapshot.png" title="Snapshot of game" alt="Snapshot of game" class="ms-4" width="250"></p>
 </div>
 <div id="first" class="forYouToDo">
 <ol>
@@ -507,20 +510,20 @@ For example, after <strong>goby</strong> in the example above, you might think, 
 Find out the two players’ names so you can use them to keep track of whose turn it is.
 </li>
 <li>
-Ask one player to make a guess (using four letters like <strong>goby</strong> above).<br> <img src="../../img/2-complexity/mm1.png" title="first guess interaction" alt="first guess interaction" class="indent noshadow">
+Ask one player to make a guess (using four letters like <strong>goby</strong> above).<br> <img src="../../img/2-complexity/mm1.png" title="first guess interaction" alt="first guess interaction" class="ms-4 noshadow">
 </li>
 <li>
-Display that guess on the screen.<br> <img src="../../img/2-complexity/mm2.png" title="four colors displayed" alt="four colors displayed" class="indent noshadow">
+Display that guess on the screen.<br> <img src="../../img/2-complexity/mm2.png" title="four colors displayed" alt="four colors displayed" class="ms-4 noshadow">
 </li>
 <li>
-Ask the other player for feedback, as two numbers.<br> <img src="../../img/2-complexity/mm3.png" title="asking interaction" alt="asking interaction" class="indent noshadow"> <img src="../../img/2-complexity/mm4.png" title="four colors 2 points" alt="four colors 2 points" class="indent noshadow">
+Ask the other player for feedback, as two numbers.<br> <img src="../../img/2-complexity/mm3.png" title="asking interaction" alt="asking interaction" class="ms-4 noshadow"> <img src="../../img/2-complexity/mm4.png" title="four colors 2 points" alt="four colors 2 points" class="ms-4 noshadow">
 </li>
 <li>
 Keep doing that until the guesser gets the correct answer.
 </li>
 </ul>
 <div class="endnote">
-<p>You’ll find it useful for a script to be able to tell a particular sprite what to do. There’s a tool to do that: the <img src="../../img/1-introduction/tell.png" title="tell (sprite) to (action)" alt="tell (sprite) to (action)"> block. For example:<br> <img src="../../img/1-introduction/tell-alonzo.png" title="tell (Alonzo) to (say ...)" alt="tell (Alonzo) to (say ...)" class="indent"> <img src="../../img/1-introduction/tell-correct.png" title="tell (correct position) to (show value (# correct))" alt="tell (correct position) to (show value (# correct))" class="indent"></p>
+<p>You’ll find it useful for a script to be able to tell a particular sprite what to do. There’s a tool to do that: the <img src="../../img/1-introduction/tell.png" title="tell (sprite) to (action)" alt="tell (sprite) to (action)"> block. For example:<br> <img src="../../img/1-introduction/tell-alonzo.png" title="tell (Alonzo) to (say ...)" alt="tell (Alonzo) to (say ...)" class="ms-4"> <img src="../../img/1-introduction/tell-correct.png" title="tell (correct position) to (show value (# correct))" alt="tell (correct position) to (show value (# correct))" class="ms-4"></p>
 </div>
 </li>
 </ol>

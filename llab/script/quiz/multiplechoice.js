@@ -122,7 +122,7 @@ MC.prototype.render = function() {
         //$('.MultipleChoice').html(pageTemplate);
 
         /* set the question type title */
-        this.multipleChoice.find('.questionType').html(/*'Question ' + (this.num + 1)*/ 'Self-Check Question'); /* This line edited by Mary Fries on 4/14/19 so that For You To Do problem numbers and quiz numbers don't conflict. */
+        this.multipleChoice.find('.questionType').html(/*'Question ' + (this.num + 1)*/ '<strong>Self-Check Question</strong>'); /* This line edited by Mary Fries on 4/14/19 so that For You To Do problem numbers and quiz numbers don't conflict. */
     }
 
     /* render the prompt */
@@ -154,7 +154,7 @@ MC.prototype.render = function() {
     // FIXME -- WRITE TO DOM OUTSIDE OF LOOP
     for (i = 0; i < this.choices.length; i++) {
         // TODO: Reduce this duplication......
-        choiceHTML = '<li class="list-group-item question-choice"> <div class="d-flex align-items-center"><div class="p-2"><input type="' + type + '" name="radiobutton"' + ' id="' + this.removeSpace(this.choices[i].identifier) + '" value="' + this.removeSpace(this.choices[i].identifier) + '" class="' + type + '"/></div>' + '<div class="p-2" id="choicetext:' + this.removeSpace(this.choices[i].identifier) + '">' + this.choices[i].text + '</div> <div class="p-2" id="feedback_' + this.removeSpace(this.choices[i].identifier) + '" name="feedbacks"></div></div></li>';
+        choiceHTML = '<li class="list-group-item question-choice"> <div class="grid align-items-center" style="--bs-gap: 0.5rem;"><div class="g-col-1 d-flex justify-content-center"><input type="' + type + '" name="radiobutton"' + ' id="' + this.removeSpace(this.choices[i].identifier) + '" value="' + this.removeSpace(this.choices[i].identifier) + '" class="' + type + '"/></div>' + '<div class="g-col-5 questionchoicetext" id="choicetext:' + this.removeSpace(this.choices[i].identifier) + '">' + this.choices[i].text + '</div> <div class="g-col-6 questionchoicetext" id="feedback_' + this.removeSpace(this.choices[i].identifier) + '" name="feedbacks"></div></div></li>';
 
         this.multipleChoice.find('.radiobuttondiv').append(choiceHTML);
 
@@ -492,7 +492,7 @@ MC.prototype.postRender = function() {
 
 // BEAUTIOUS
 MC.prototype.getTemplate = function() {
-    return "<div class='card MultipleChoice Question'>" +
+    return "<div class='card MultipleChoice Question mb-3'>" +
         "        <div class='card-header questionType'>" +
         "            Multiple Choice" +
         "        </div>" +
@@ -505,17 +505,16 @@ MC.prototype.getTemplate = function() {
         "            <div class='feedbackdiv'></div>" +
         "        </div>" +
         "        <div class='card-body interactionBox'>" +
-        "            <div class='statusMessages'>" +
+        "            <div class='statusMessages mb-3'>" +
         "                <div class='numberAttemptsDiv'></div>" +
         "                <div class='scoreDiv'></div>" +
         "                <div class='resultMessageDiv'></div>" +
         "            </div>" +
-        "            <!-- Anchor-Based Button Layout using TABLE -->" +
-        "            <div class='d-flex'>" +
-        "                <div class='p-2'>" +
+        "            <div class='grid'>" +
+        "                <div class='g-col-3'>" +
         "                    <button class='checkAnswerButton btn btn-primary'>Check Answer</button>" +
         "                </div>" +
-        "                <div class='p-2'>" +
+        "                <div class='g-col-3'>" +
         "                    <button class='tryAgainButton btn btn-primary'>Try Again</button>" +
         "                </div>" +
         "            </div>" +

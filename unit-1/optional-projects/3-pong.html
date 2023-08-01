@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Unit 1 Optional Project | JacketCS CSP</title>
+<title>The Game of Pong | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -121,6 +120,10 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
@@ -424,13 +427,13 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="learn">
-<p><strong>In this project,</strong> you are going to model a computer game called Pong, first developed by Atari in 1972. You will write the code for the paddle which will allow it to move up and down based on user keyboard input and also write the code for the ball which will allow it to bounce every time it hits a wall or the paddle.<br> <img src="../../img/1-introduction/Pong_img/pongAnimation.gif" title="Game of Pong" alt="Game of Pong" class="indent" width="325"></p>
+<p><strong>In this project,</strong> you are going to model a computer game called Pong, first developed by Atari in 1972. You will write the code for the paddle which will allow it to move up and down based on user keyboard input and also write the code for the ball which will allow it to bounce every time it hits a wall or the paddle.<br> <img src="../../img/1-introduction/Pong_img/pongAnimation.gif" title="Game of Pong" alt="Game of Pong" class="ms-4" width="325"></p>
 </div>
 <div id="first" class="forYouToDo">
 <ol>
 <!--<li>Play with the program <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=bjcsolutions&ProjectName=U1L5Pong_Teacher&hideControls" target="_blank"> linked here </a>to get a feel how the game works. Use the up and down arrow keys to move the paddle. The initial angle at which the ball starts is random, so if it is not to your liking, you can reload the page for a different initial angle.</li>-->
 <li>
-<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"> Discuss with your partner the mathematics behind the ball bouncing off the paddle. How does the initial direction of the ball as it hits the paddle relate to the final direction of the ball as it bounces off the paddle? The following diagram may help. <br> <img src="../../img/1-introduction/Pong_img/Bounce.png" title="Initial and final directions of ball" alt="Initial and final directions of ball" class="indent" height="346">
+<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"> Discuss with your partner the mathematics behind the ball bouncing off the paddle. How does the initial direction of the ball as it hits the paddle relate to the final direction of the ball as it bounces off the paddle? The following diagram may help. <br> <img src="../../img/1-introduction/Pong_img/Bounce.png" title="Initial and final directions of ball" alt="Initial and final directions of ball" class="ms-4" height="346">
 </li>
 <li>
 Create the paddle and the ball sprites and give them their costumes (filled rectangle and circle).
@@ -450,13 +453,13 @@ Write the code to start the ball moving when green flag is clicked and to bounce
 <div class="takeItFurther">
 <ol type="A">
 <li>
-Add scoring to your game. Every time the paddles bounces off the ball, the player should earn a point and every time the ball hits the right wall, the player should lose a point. You can create a variable to keep track of the score.<br> <img src="../../img/1-introduction/Pong_img/ScoreVariable.png" title="Make variable score" alt="Make variable score" class="indent" height="200">
+Add scoring to your game. Every time the paddles bounces off the ball, the player should earn a point and every time the ball hits the right wall, the player should lose a point. You can create a variable to keep track of the score.<br> <img src="../../img/1-introduction/Pong_img/ScoreVariable.png" title="Make variable score" alt="Make variable score" class="ms-4" height="200">
 </li>
 <li>
-Create a second paddle to allow the game to become multiplayer game. Adjust your code to accommodate keyboard input from two users.<br> <img src="../../img/1-introduction/Pong_img/TwoPlayer.png" title="Multi Player Pong" alt="Multi Player Pong" class="indent" width="325">
+Create a second paddle to allow the game to become multiplayer game. Adjust your code to accommodate keyboard input from two users.<br> <img src="../../img/1-introduction/Pong_img/TwoPlayer.png" title="Multi Player Pong" alt="Multi Player Pong" class="ms-4" width="325">
 </li>
 <li>
-Create a second paddle (or use the one from part B if you did that) and let this paddle be driven automatically by the computer for a “human versus computer” version of the game. Hint: You can automate the second paddle by using the following block from the Sensing menu:<br> <img src="../../img/1-introduction/Pong_img/yPositionofBallSensing.png" title="(y position) of (Ball)" alt="(y position) of (Ball)" class="indent">
+Create a second paddle (or use the one from part B if you did that) and let this paddle be driven automatically by the computer for a “human versus computer” version of the game. Hint: You can automate the second paddle by using the following block from the Sensing menu:<br> <img src="../../img/1-introduction/Pong_img/yPositionofBallSensing.png" title="(y position) of (Ball)" alt="(y position) of (Ball)" class="ms-4">
 </li>
 <!--<li> You may notice that sometimes when the ball hits the paddle at a steep angle, the ball gets “trapped”. Why do you think this is so?  Which part of your code is responsible for this?  Can you improve your code so that this does not happen?</li>-->
 </ol>

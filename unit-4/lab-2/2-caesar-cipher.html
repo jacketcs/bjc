@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,7 +68,6 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -124,6 +123,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -139,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-4/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-4/lab-2/1-cryptography.html">Lab 2</a></li><li class="breadcrumb-item"><a href="../../unit-4/lab-2/2-caesar-cipher.html">Page 2: Caesar Cipher Project</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-4/index.html">Unit 4: How the Internet Works</a></li><li class="breadcrumb-item"><a href="../../unit-4/lab-2/1-cryptography.html">Lab 2</a></li><li class="breadcrumb-item"><a href="../../unit-4/lab-2/2-caesar-cipher.html">Page 2: Caesar Cipher Project</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -154,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-4/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 4: How the Internet Works</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -427,10 +430,10 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>On this page,</strong> you will program a shift cipher procedure to encrypt/decrypt text.</p>
 </div>
 <p>
-Computers store keyboard characters (capital and small letters, punctuation marks, space, digits, symbols, and so on) as numbers called Unicode. This table shows the Unicode for some of the keyboard characters:<br> <img src="../../img/4-internet/img_CaesarCipher/Mary_CharacterTable.jpeg" alt="Unicode Table" class="indent noshadow" height="330px">
+Computers store keyboard characters (capital and small letters, punctuation marks, space, digits, symbols, and so on) as numbers called Unicode. This table shows the Unicode for some of the keyboard characters:<br> <img src="../../img/4-internet/img_CaesarCipher/Mary_CharacterTable.jpeg" alt="Unicode Table" class="ms-4 noshadow" height="330px">
 </p>
 <p>
-The <code>unicode of</code> block reports the number that is used for a particular character:<br> <img src="../../img/4-internet/img_CaesarCipher/SnapUnicode1.png" title="unicode of (a) reporting '97'" alt="unicode of (a) reporting '97'" class="indent" height="52"><br> The <code>unicode as letter</code> block reports the character that a given Unicode number represents:<br> <img src="../../img/4-internet/img_CaesarCipher/SnapUnicode2.png" title="unicode (65) as letter reporting 'A'" alt="unicode (65) as letter reporting 'A'" class="indent" height="52">
+The <code>unicode of</code> block reports the number that is used for a particular character:<br> <img src="../../img/4-internet/img_CaesarCipher/SnapUnicode1.png" title="unicode of (a) reporting '97'" alt="unicode of (a) reporting '97'" class="ms-4" height="52"><br> The <code>unicode as letter</code> block reports the character that a given Unicode number represents:<br> <img src="../../img/4-internet/img_CaesarCipher/SnapUnicode2.png" title="unicode (65) as letter reporting 'A'" alt="unicode (65) as letter reporting 'A'" class="ms-4" height="52">
 </p>
 <div id="second" class="forYouToDo">
 <ol>
@@ -454,13 +457,13 @@ You can safely assume that shifting any set of text characters a reasonable dist
 <p>
 For example, if we use a shift of 4 to encrypt:
 </p>
-<p class="indent">
+<p class="ms-4">
 </p><p><em><strong>Invasion of Normandy is on 6 June 1944</strong></em></p>
 <p></p>
 <p>
 it becomes:
 </p>
-<p class="indent">
+<p class="ms-4">
 </p><p><em><strong>Mrzewmsr<span class="math inline">\(sj\)</span>Rsvqerh}<span class="math inline">\(mw\)</span>sr<span class="math inline">\(:\)</span>Nyri$5=88</strong></em></p>
 <p></p>
 <p>
@@ -487,14 +490,14 @@ If you copy your encrypted message with a method other than by using copy and pa
 Now test your work. Agree with your partner on a shift value for the encryption. Then use your program to encrypt a secret message and e-mail it to your partner. Then let your partner decrypt your message by using the program to reverse the shift.
 </li>
 <div class="endnote">
-<p>You can extract the encrypted messages from the Snap<em>!</em> interface by right-clicking on the variable that holds the encrypted message and selecting the “Export” option which will download a text file to your computer which then you can copy/paste.<br> <img src="../../img/4-internet/img_CaesarCipher/Export.png" title="export option" alt="export option" class="indent" width="350"></p>
+<p>You can extract the encrypted messages from the Snap<em>!</em> interface by right-clicking on the variable that holds the encrypted message and selecting the “Export” option which will download a text file to your computer which then you can copy/paste.<br> <img src="../../img/4-internet/img_CaesarCipher/Export.png" title="export option" alt="export option" class="ms-4" width="350"></p>
 </div>
 </ol>
 </div>
 <div class="ifTime">
 <ol start="5">
 <li>
-<p>Improve your <code>initials</code> block from your U3L2-ContactList project so that it will find the initials for a person with a hyphenated name like Alexandria Ocasio-Cortez.<br> <img src="../../img/4-internet/initials-reporting-aoc.png" title="initials of (Alexandria Ocasio-Cortez) reporting AOC" alt="initials of (Alexandria Ocasio-Cortez) reporting AOC" class="indent"></p>
+<p>Improve your <code>initials</code> block from your U3L2-ContactList project so that it will find the initials for a person with a hyphenated name like Alexandria Ocasio-Cortez.<br> <img src="../../img/4-internet/initials-reporting-aoc.png" title="initials of (Alexandria Ocasio-Cortez) reporting AOC" alt="initials of (Alexandria Ocasio-Cortez) reporting AOC" class="ms-4"></p>
 <div class="endnote">
 <p><a href="#hint-initials" data-bs-toggle="collapse" title="Click for some hints about improving your initials block.">Click for some hints.</a></p>
 <div id="hint-initials" class="collapse">

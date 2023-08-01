@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script src="../../site_libs/quarto-contrib/gifffer/gifffer.min.js"></script>
 <link href="../../site_libs/quarto-contrib/gifffer/bjc-gifffer.css" rel="stylesheet">
 <script type="text/javascript">window.onload = function() {Gifffer();};</script>
@@ -69,7 +69,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -124,6 +123,10 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
@@ -434,7 +437,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="first" class="forYouToDo">
 <ol>
 <li>
-<p>Open your U1L2-Gossip project. Edit these three reporter blocks to change the phrases that the program uses. (See the instructions in the box below.) Be creative and funny but thoughtful.<br> <img src="../../img/1-introduction/who.png" title="who block" alt="who block" class="indent"> <img src="../../img/1-introduction/does-what.png" title="does what block" alt="does what block" class="inline"> <img src="../../img/1-introduction/who2.png" title="who2 block" alt="who2 block" class="inline"></p>
+<p>Open your U1L2-Gossip project. Edit these three reporter blocks to change the phrases that the program uses. (See the instructions in the box below.) Be creative and funny but thoughtful.<br> <img src="../../img/1-introduction/who.png" title="who block" alt="who block" class="ms-4"> <img src="../../img/1-introduction/does-what.png" title="does what block" alt="does what block" class="inline"> <img src="../../img/1-introduction/who2.png" title="who2 block" alt="who2 block" class="inline"></p>
 <section id="how-to-edit-a-block" class="level3 narrower">
 <h3 class="anchored" data-anchor-id="how-to-edit-a-block"><strong>How to Edit a Block</strong></h3>
 <ol type="a">
@@ -467,7 +470,7 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 </div>
 <div class="endnote">
-<p><a href="#hint-report" data-bs-toggle="collapse" title="Why do these blocks use report? Why not just use say?">Why do these blocks use <img src="../../img/blocks/report.png" title="report ()" alt="report ()" class="inline nopadtb">? Why not just use <img src="../../img/blocks/say-empty-full-size.png" title="say ()" alt="say ()">?</a></p>
+<p><a href="#hint-report" data-bs-toggle="collapse" title="Why do these blocks use report? Why not just use say?">Why do these blocks use <img src="../../img/blocks/report.png" title="report ()" alt="report ()" class="inline py-0">? Why not just use <img src="../../img/blocks/say-empty-full-size.png" title="say ()" alt="say ()">?</a></p>
 <div id="hint-report" class="collapse">
 <p>
 The <code>report</code> and <code>say</code> blocks mean very different things. <code>Report</code> tells something to the computer, and that value can be used as input to another block, such as the <code>join</code> block inside <code>gossip</code>. <code>Say</code> just shows a value to the user in a speech bubble.
@@ -478,9 +481,6 @@ The <code>report</code> and <code>say</code> blocks mean very different things. 
 <p>: <strong>Lists</strong>, <strong>Strings</strong>, and <strong>Concatenation</strong></p>
 <ul>
 <!--<div class="index-term" id="report</code>"></div>-->
-<div class="comment">
-<p>AAP-1.C.1 first sentence</p>
-</div>
 <li>
 <div class="sidenoteBig">
 <p><a href="#ordered" data-bs-toggle="collapse" title="What does &quot;ordered&quot; mean?">What does “ordered” mean?</a></p>
@@ -488,16 +488,13 @@ The <code>report</code> and <code>say</code> blocks mean very different things. 
 <p>It doesn’t mean that the items have to appear in alphabetical or numeric order. It just means that <img src="../../img/1-introduction/list-a-b.png" title="(list a b" alt="(list a b)" height="57"> is a different list from <img src="../../img/1-introduction/list-b-a.png" title="(list b a)" alt="(list b a)" height="57">.</p>
 </div>
 </div>
-<p>A <strong>list</strong> is an ordered sequence of items. You’ve seen this example:<br> <img src="../../img/1-introduction/list-from-who-result.png" title="list{Senora, Ms. C, my cat, Hannah, Jake}" alt="list{Senora, Ms. C, my cat, Hannah, Jake}" class="indent"></p>
+<p>A <strong>list</strong> is an ordered sequence of items. You’ve seen this example:<br> <img src="../../img/1-introduction/list-from-who-result.png" title="list{Senora, Ms. C, my cat, Hannah, Jake}" alt="list{Senora, Ms. C, my cat, Hannah, Jake}" class="ms-4"></p>
 </li>
-<div class="comment">
-<p>AAP-2.D.1, AAP-2.D.2</p>
-</div>
 <li>
 The items of this list are <em>strings</em>. A <strong>string</strong> is a sequence of characters (letters, digits, punctuation, etc.). A <strong>substring</strong> is just a piece of some existing string. For example, “Hanna,” “anna”, and “nnah” are each substrings of the string “Hannah.” (The empty string as well as the original string are both also substrings.)
 </li>
 <li>
-To <strong>concatenate</strong> strings means to make a bigger string by connecting two or more smaller strings. In Snap<em>!</em>, the <img src="../../img/blocks/join()().png" title="join () ()" alt="join () ()" class="inline nopadtb"> block lets you concatenate strings.
+To <strong>concatenate</strong> strings means to make a bigger string by connecting two or more smaller strings. In Snap<em>!</em>, the <img src="../../img/blocks/join()().png" title="join () ()" alt="join () ()" class="inline py-0"> block lets you concatenate strings.
 </li>
 </ul>
 </div>
@@ -518,12 +515,9 @@ Make sure your program works. Test each block as well as the program as a whole.
 <!-- Question 1 -->
 <div class="assessment-data" type="multiplechoice" data-identifier="Which of the following sentences could be reported by gossip?" data-hasinlinefeedback="true" data-maxchoices="4" data-responseidentifier="ri1" data-shuffle="true">
 <div class="prompt">
-<div class="comment">
-<p>AAP-2.D</p>
-</div>
-<p>Which <em><strong>two</strong></em> of the following sentences could be reported by <code>gossip</code>?<br> <img src="../../img/1-introduction/gossip-definition.png" title="gossip: (report (join (who) ( ) (does what) ( ) (who)))" alt="gossip: (report (join (who) ( ) (does what) ( ) (who)))" class="indent"></p>
+<p>Which <em><strong>two</strong></em> of the following sentences could be reported by <code>gossip</code>?<br> <img src="../../img/1-introduction/gossip-definition.png" title="gossip: (report (join (who) ( ) (does what) ( ) (who)))" alt="gossip: (report (join (who) ( ) (does what) ( ) (who)))" class="ms-4"></p>
 <div class="endnote">
-<p>For reference:<br> <img src="../../img/1-introduction/who-block-definition.png" title="who reporter block definition: report (item (random) of (list (Señora) (Ms. C) (my cat) (Hannah) (Jake)))" alt="who reporter block definition: report (item (random) of (list (Señora) (Ms. C) (my cat) (Hannah) (Jake)))" class="indent" height="77px"> <img src="../../img/1-introduction/does-what-block-definition.png" title="does what reporter block definition: report (item (random) of (list (listened to) (loves) (ran away from) (helped) (is in a band with)))" alt="does what reporter block definition: report (item (random) of (list (listened to) (loves) (ran away from) (helped) (is in a band with)))" class="indent" height="89px"></p>
+<p>For reference:<br> <img src="../../img/1-introduction/who-block-definition.png" title="who reporter block definition: report (item (random) of (list (Señora) (Ms. C) (my cat) (Hannah) (Jake)))" alt="who reporter block definition: report (item (random) of (list (Señora) (Ms. C) (my cat) (Hannah) (Jake)))" class="ms-4" height="77px"> <img src="../../img/1-introduction/does-what-block-definition.png" title="does what reporter block definition: report (item (random) of (list (listened to) (loves) (ran away from) (helped) (is in a band with)))" alt="does what reporter block definition: report (item (random) of (list (listened to) (loves) (ran away from) (helped) (is in a band with)))" class="ms-4" height="89px"></p>
 </div>
 </div>
 <div class="choice" data-identifier="c1">
@@ -603,22 +597,22 @@ Click “Cancel” to close the dialog box.
 <div class="index-term" id="point in direction</code>"></div>-->
 <ul>
 <li>
-You can change the size of your sprite using <img src="../../img/blocks/set-size-empty.png" title="set size to ( ) %" alt="set size to ( ) %" class="inline nopadtb">.
+You can change the size of your sprite using <img src="../../img/blocks/set-size-empty.png" title="set size to ( ) %" alt="set size to ( ) %" class="inline py-0">.
 </li>
 <li>
-You can change the position of your sprite using <img src="../../img/blocks/go-to-x-y.png" title="go to x: () y: ()" alt="go to x: () y: ()" class="inline nopadtb">.
+You can change the position of your sprite using <img src="../../img/blocks/go-to-x-y.png" title="go to x: () y: ()" alt="go to x: () y: ()" class="inline py-0">.
 </li>
 <li>
-You can change the direction your sprite is facing:<br> <img src="../../img/1-introduction/point-in-direction-menu-showing.png" title="point in direction (270) with menu open showing right left, up, down, random" alt="point in direction (270) with menu open showing right left, up, down, random" class="indent"><br>
+You can change the direction your sprite is facing:<br> <img src="../../img/1-introduction/point-in-direction-menu-showing.png" title="point in direction (270) with menu open showing right left, up, down, random" alt="point in direction (270) with menu open showing right left, up, down, random" class="ms-4"><br>
 </li>
 </ul>
 </section>
 <!--<div class="endnote">You may also want to adjust the rotation style of your sprite using the buttons near the upper left corner of your scripting area.<br />
-<img class="indent" src="/img/1-introduction/U1ImageVideoAddendum_img/U1L5-Rotate1.png"  height="100" alt="can rotate button" title="can rotate button" />
+<img class="ms-4" src="/img/1-introduction/U1ImageVideoAddendum_img/U1L5-Rotate1.png"  height="100" alt="can rotate button" title="can rotate button" />
 <img src="/img/1-introduction/U1ImageVideoAddendum_img/U1L5p2-puppyrotate1.gif"  height="100" alt="rotating puppy" title="rotating puppy"/><br />
-<img class="indent" src="/img/1-introduction/U1ImageVideoAddendum_img/U1L5-Rotate2.png"  height="100" alt="only face left/right button" title="only face left/right button"/>
+<img class="ms-4" src="/img/1-introduction/U1ImageVideoAddendum_img/U1L5-Rotate2.png"  height="100" alt="only face left/right button" title="only face left/right button"/>
 <img src="/img/1-introduction/U1ImageVideoAddendum_img/U1L5p2-puppyrotate2.gif" height="100" alt="left/right facing puppy" title="left/right facing puppy"/><br />
-<img class="indent" src="/img/1-introduction/U1ImageVideoAddendum_img/U1L5-Rotate3.png"  height="100" alt="don't rotate button" title="don't rotate button"/>
+<img class="ms-4" src="/img/1-introduction/U1ImageVideoAddendum_img/U1L5-Rotate3.png"  height="100" alt="don't rotate button" title="don't rotate button"/>
 <img src="/img/1-introduction/U1ImageVideoAddendum_img/U1L5p2-puppyrotate3.png"  height="95" alt="non-rotating puppy" title="non-rotating puppy"/>
 </div>-->
 </li>

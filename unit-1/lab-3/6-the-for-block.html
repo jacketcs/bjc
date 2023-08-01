@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -121,6 +120,10 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
@@ -425,7 +428,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="learn">
 <p>
-<strong>On this page,</strong> you will use <code>for</code> loops not only to repeat, but also to count the repetitions and then use that counter to draw shapes with repeated patterns:<br> <img src="../../img/prog/spiral.png" title="spiral" alt="spiral" class="indent"> <img src="../../img/1-introduction/nested-squares.png" title="nested squares" alt="nested squares" class="indent">
+<strong>On this page,</strong> you will use <code>for</code> loops not only to repeat, but also to count the repetitions and then use that counter to draw shapes with repeated patterns:<br> <img src="../../img/prog/spiral.png" title="spiral" alt="spiral" class="ms-4"> <img src="../../img/1-introduction/nested-squares.png" title="nested squares" alt="nested squares" class="ms-4">
 </p>
 </div>
 <p>
@@ -445,17 +448,11 @@ ul.task-list li input[type="checkbox"] {
 <p></p>
 <div class="vocabFullWidth">
 <p>: <strong>Iteration</strong></p>
-<div class="comment">
-<p>AAP-2.J.1</p>
-</div>
 <p>
 Computer scientists describe a repeating program structure as <em>looping</em>, <em>repetition</em>, or <strong>iteration</strong>.
 </p>
-<div class="comment">
-<p>AAP-2.K.1</p>
-</div>
 <p>
-The code can be repeated <code>forever</code>, a specific number of times (such as when using <code>repeat</code>), or until something specific happens (such as when using <code>repeat until</code> as you’ll see in Lab 5). <br> <img src="../../img/1-introduction/repeat-4(move-100-turn-right-90).png" title="repeat (4) (move (100), turn clockwise (90))" alt="repeat (4) (move (100), turn clockwise (90))" class="indent"> <img src="../../img/1-introduction/move-tiny-no-hat.png" title="repeat until (touching (Leader)?)
+The code can be repeated <code>forever</code>, a specific number of times (such as when using <code>repeat</code>), or until something specific happens (such as when using <code>repeat until</code> as you’ll see in Lab 5). <br> <img src="../../img/1-introduction/repeat-4(move-100-turn-right-90).png" title="repeat (4) (move (100), turn clockwise (90))" alt="repeat (4) (move (100), turn clockwise (90))" class="ms-4"> <img src="../../img/1-introduction/move-tiny-no-hat.png" title="repeat until (touching (Leader)?)
 {
 point towards (Leader)
 move (1) steps
@@ -463,11 +460,11 @@ move (1) steps
 {
 point towards (Leader)
 move (1) steps
-}" class="indent">
+}" class="ms-4">
 </p>
 </div>
 <p>
-Sometimes the script inside a loop needs to know which time through the loop it’s in (first, second, etc.). You can use <img src="../../img/prog/for.png" title="for(i)=(1) to (10){}" alt="for(i)=(1) to (10){}" class="imageCenter"> to keep track, and you can use its counter (the default name is <img src="../../img/blocks/variable-i.png" title="i" alt="i" class="inline">) in the repeated script. For example, the <code>for</code> block lets you simplify long scripts like: <br> <img src="../../img/looping/for-loop-equivalent.png" title="say (1) for (2) secs, say (2) for (2) secs, say (3) for (2) secs... say (10) for (2) secs" alt="say (1) for (2) secs, say (2) for (2) secs, say (3) for (2) secs... say (10) for (2) secs" class="indent"><br>
+Sometimes the script inside a loop needs to know which time through the loop it’s in (first, second, etc.). You can use <img src="../../img/prog/for.png" title="for(i)=(1) to (10){}" alt="for(i)=(1) to (10){}" class="inline"> to keep track, and you can use its counter (the default name is <img src="../../img/blocks/variable-i.png" title="i" alt="i" class="inline">) in the repeated script. For example, the <code>for</code> block lets you simplify long scripts like: <br> <img src="../../img/looping/for-loop-equivalent.png" title="say (1) for (2) secs, say (2) for (2) secs, say (3) for (2) secs... say (10) for (2) secs" alt="say (1) for (2) secs, say (2) for (2) secs, say (3) for (2) secs... say (10) for (2) secs" class="ms-4"><br>
 &nbsp; &nbsp; &nbsp; to<br>
 <img src="../../img/looping/for-loop-drag-i.gif" title="for (i)= (1) to (10) {say (i) for (2) secs}" alt="for (i)= (1) to (10) {say (i) for (2) secs}" class="noshadow">
 </p>
@@ -480,7 +477,7 @@ Each time the <code>for</code> block runs the script inside, it changes the valu
 <div id="first" class="forYouToDo">
 <ol>
 <li>
-<p>Build this script that makes the sprite say the numbers 1 through 10. <br> <img src="../../img/1-introduction/for-i-1-10-say-i.png" title="for (i) = (1) to (10) {say (i) for (2) secs}" alt="for (i) = (1) to (10) {say (i) for (2) secs}" class="indent"></p>
+<p>Build this script that makes the sprite say the numbers 1 through 10. <br> <img src="../../img/1-introduction/for-i-1-10-say-i.png" title="for (i) = (1) to (10) {say (i) for (2) secs}" alt="for (i) = (1) to (10) {say (i) for (2) secs}" class="ms-4"></p>
 <ol>
 <li>
 Then modify it so that the sprite says 0, 2, 4, 6, 8, … up through 30.
@@ -498,7 +495,7 @@ Discuss your solutions with another pair.
 <div class="sidenote">
 <p>This design got the nickname “squiral” because it’s a <strong>squ</strong>are sp<strong>iral</strong>.</p>
 </div>
-<p><img src="../../img/looping/squirral-script.png" title="pen down; for(length)=(1) to (100){move(2Xlength) steps; turn clockwise (90) degrees}" alt="pen down; for(length)=(1) to (100){move(2Xlength) steps; turn clockwise (90) degrees}" class="indent"><br></p>
+<p><img src="../../img/looping/squirral-script.png" title="pen down; for(length)=(1) to (100){move(2Xlength) steps; turn clockwise (90) degrees}" alt="pen down; for(length)=(1) to (100){move(2Xlength) steps; turn clockwise (90) degrees}" class="ms-4"><br></p>
 </li>
 <li>
 <img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Make sure you can explain why the squiral spirals outward.
@@ -510,7 +507,7 @@ Try switching the order of the 100 and the 1 in the <code>for</code> block in th
 Try changing the turning angle in the squiral script to other numbers such as 92, 126, etc.
 </li>
 <li>
-Change the inputs to <code>turn</code> and <code>move</code> to get as close as you can get to a smooth spiral:<br> <img src="../../img/prog/spiral.png" title="spiral" alt="spiral" class="indent">
+Change the inputs to <code>turn</code> and <code>move</code> to get as close as you can get to a smooth spiral:<br> <img src="../../img/prog/spiral.png" title="spiral" alt="spiral" class="ms-4">
 </li>
 </ol>
 </li>
@@ -520,7 +517,7 @@ Change the inputs to <code>turn</code> and <code>move</code> to get as close as 
 </div>
 </li>
 <li>
-Open your U1L3-Pinwheel project, and build a <code>nest squares</code> block that uses <code>for</code> and your <code>polygon</code> block to draw nested squares. Give it an input so that it will draw whatever <var>number of squares</var> you specify, with each square larger than the previous: <br> <img src="../../img/1-introduction/nested-squares.png" title="nested squares" alt="nested squares" class="indent">
+Open your U1L3-Pinwheel project, and build a <code>nest squares</code> block that uses <code>for</code> and your <code>polygon</code> block to draw nested squares. Give it an input so that it will draw whatever <var>number of squares</var> you specify, with each square larger than the previous: <br> <img src="../../img/1-introduction/nested-squares.png" title="nested squares" alt="nested squares" class="ms-4">
 </li>
 </ol>
 </div>
@@ -530,10 +527,10 @@ Open your U1L3-Pinwheel project, and build a <code>nest squares</code> block tha
 Build <code>nest polygons</code> that accepts the <var>number of polygons</var> and the <var>number of sides</var> for the polygons.
 </li>
 <li>
-Build a script that draws 12 regular polygons, each with one more side than the previous one, as shown below.<br> <img src="../../img/1-introduction/polygons.png" title="polygons: triangle through decagon" alt="polygons: triangle through decagon" class="indent">
+Build a script that draws 12 regular polygons, each with one more side than the previous one, as shown below.<br> <img src="../../img/1-introduction/polygons.png" title="polygons: triangle through decagon" alt="polygons: triangle through decagon" class="ms-4">
 </li>
 <li>
-Predict what this script will do before you try it:<br><img src="../../img/1-introduction/nested-fors.png" title="for (tens) = (0) to (9){ for (ones) = (0) to (9){ say (join (tens) (ones)) for (0.3) secs}}" alt="for (tens) = (0) to (9){ for (ones) = (0) to (9){ say (join (tens) (ones)) for (0.3) secs}}" class="indent" width="399" height="147">
+Predict what this script will do before you try it:<br><img src="../../img/1-introduction/nested-fors.png" title="for (tens) = (0) to (9){ for (ones) = (0) to (9){ say (join (tens) (ones)) for (0.3) secs}}" alt="for (tens) = (0) to (9){ for (ones) = (0) to (9){ say (join (tens) (ones)) for (0.3) secs}}" class="ms-4" width="399" height="147">
 </li>
 <li>
 Build a script that counts down by 10 from 100 to 0 (that is, 100, 90, 80, etc.).
@@ -541,12 +538,12 @@ Build a script that counts down by 10 from 100 to 0 (that is, 100, 90, 80, etc.)
 <!--<li><img class="inline" src="/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" /> Build a <em>block</em> with inputs that let you specify how to count. If you say <img src="/img/1-introduction/count-by-10-from-100-to-0.png" alt="count-by-10-from-100-to-0">, it counts 100, 90, 80, etc., but if you say <img src="/img/1-introduction/count-by-2-from-0-to-30.png" alt="count-by-2-from-0-to-30">, it counts 0, 2, 4, 6, ..., 28, 30.</li>-->
 <!--<div class="comment">We might want to teach them about sliders as part of the TiF. It is useful here, not essential (so TiF) and cool (so TiF). </div>-->
 <li>
-<p>Below are two animations that use the <code>pinwheel</code> code with inputs. Find out how to create your own artistic animations.<br> <img src="../../img/1-introduction/Blockswith-Inputs_img/pinwheelArray.gif" title="Array of pinwheels animation" alt="Array of pinwheels animation" class="indent" height="200"> <img src="../../img/1-introduction/Blockswith-Inputs_img/PinwheelWreathAnimation.gif" title="Pinwheel wreath animation" alt="Pinwheel wreath animation" height="200"><br></p>
+<p>Below are two animations that use the <code>pinwheel</code> code with inputs. Find out how to create your own artistic animations.<br> <img src="../../img/1-introduction/Blockswith-Inputs_img/pinwheelArray.gif" title="Array of pinwheels animation" alt="Array of pinwheels animation" class="ms-4" height="200"> <img src="../../img/1-introduction/Blockswith-Inputs_img/PinwheelWreathAnimation.gif" title="Pinwheel wreath animation" alt="Pinwheel wreath animation" height="200"><br></p>
 <div class="endnote">
 <p>
 The following code may give you ideas about how to create animations. The <code>warp</code> block allows the drawing of the pinwheel all at once.
 </p>
-<p><img src="../../img/1-introduction/Blockswith-Inputs_img/animationCode.png" title="forever{for(i)=(0) to (50){clear;warp{pinwheel, branches:(12) size:(50) backup:(i)}}}" alt="forever{for(i)=(0) to (50){clear;warp{pinwheel, branches:(12) size:(50) backup:(i)}}}" class="indent" height="150"></p>
+<p><img src="../../img/1-introduction/Blockswith-Inputs_img/animationCode.png" title="forever{for(i)=(0) to (50){clear;warp{pinwheel, branches:(12) size:(50) backup:(i)}}}" alt="forever{for(i)=(0) to (50){clear;warp{pinwheel, branches:(12) size:(50) backup:(i)}}}" class="ms-4" height="150"></p>
 </div>
 </li>
 <p><img src="../../img/1-introduction/mini-Albers-picture.png" alt="mini-Albers-style picture" class="float-end" height="180"></p>
@@ -563,7 +560,7 @@ Make sure your other work has been saved, then <a href="../../prog/1-introductio
 <div class="takeItTeased">
 <ol type="A">
 <li>
-Find a way to use <code>for</code> to nest squares this way. Build your <em>block</em> with two inputs that let you specify how many squares the design will contain and how much bigger each square will be than the previous one.<br> <img src="../../img/icons/tough-stuff.png" title="Tough Stuff" alt="Tough Stuff" class="float-end"> <img src="../../img/1-introduction/concentric-squares.png" title="concentric squares" alt="concentric squares" class="indent" width="219" height="170">
+Find a way to use <code>for</code> to nest squares this way. Build your <em>block</em> with two inputs that let you specify how many squares the design will contain and how much bigger each square will be than the previous one.<br> <img src="../../img/icons/tough-stuff.png" title="Tough Stuff" alt="Tough Stuff" class="float-end"> <img src="../../img/1-introduction/concentric-squares.png" title="concentric squares" alt="concentric squares" class="ms-4" width="219" height="170">
 </li>
 </ol>
 <p><img src="../../img/1-introduction/Josef_Albers's_painting_'Homage_to_the_Square',_1965.jpg" title="painting-by-Josef-Albers" alt="painting-by-Josef-Albers" class="float-end" height="150"></p>
@@ -587,7 +584,7 @@ If you haven’t already, do If There Is Time #10, which shows a simple version 
 </div>
 </li>
 <li>
-<p><img src="../../img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff"> <img src="../../img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff"> <img src="../../img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff"> This block is like the squiral, but instead of changing the input to <code>move</code>, it changes the input to <code>turn</code>:<br> <img src="../../img/1-introduction/inspi.png" title="inspi repeat:(num) size:(size) angle:(angle) : for (i) = (1) to (num) {move (size) steps; turn ((i) * (angle)) degrees}" alt="inspi repeat:(num) size:(size) angle:(angle) : for (i) = (1) to (num) {move (size) steps; turn ((i) * (angle)) degrees}" class="indent" height="150"></p>
+<p><img src="../../img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff"> <img src="../../img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff"> <img src="../../img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff"> This block is like the squiral, but instead of changing the input to <code>move</code>, it changes the input to <code>turn</code>:<br> <img src="../../img/1-introduction/inspi.png" title="inspi repeat:(num) size:(size) angle:(angle) : for (i) = (1) to (num) {move (size) steps; turn ((i) * (angle)) degrees}" alt="inspi repeat:(num) size:(size) angle:(angle) : for (i) = (1) to (num) {move (size) steps; turn ((i) * (angle)) degrees}" class="ms-4" height="150"></p>
 <ol>
 <li>
 Try sketching what it will draw with an angle of 2.
@@ -597,7 +594,7 @@ Try sketching what it will draw with an angle of 2.
 <div class="sidenoteBig">
 <p>You can stop each test with the stop button <img src="../../img/1-introduction/stop_button.png" title="stop button" alt="stop button" class="button"> when you’re sure nothing new will happen, but don’t decide that too quickly!</p>
 </div>
-<p><img src="../../img/1-introduction/inspi-tests.png" title="inspi with (1000,10,80), (1000,5,1), (1000,5,7), (1000,5,13), (1000,10,77)" alt="inspi with (1000,10,80), (1000,5,1), (1000,5,7), (1000,5,13), (1000,10,77)" class="indent"></p>
+<p><img src="../../img/1-introduction/inspi-tests.png" title="inspi with (1000,10,80), (1000,5,1), (1000,5,7), (1000,5,13), (1000,10,77)" alt="inspi with (1000,10,80), (1000,5,1), (1000,5,7), (1000,5,13), (1000,10,77)" class="ms-4"></p>
 </li>
 <!--<li>What's going on? Can you work out a theory to predict anything about the shape it draws for a particular angle input? <a id="hintbutton" onClick="document.getElementById('hintbutton').innerHTML='Think about divisibility.';">(Don't click unless you really, really need a super big hint.)</a></li>-->
 <li>

@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script src="../../site_libs/quarto-contrib/gifffer/gifffer.min.js"></script>
 <link href="../../site_libs/quarto-contrib/gifffer/bjc-gifffer.css" rel="stylesheet">
 <script type="text/javascript">window.onload = function() {Gifffer();};</script>
@@ -69,7 +69,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -125,6 +124,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -140,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-3/1-what-is-predicate.html">Lab 3</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-3/6-solving-word-puzzle.html">Page 6: Solving a Word Puzzle</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Unit 2: Abstraction</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-3/1-what-is-predicate.html">Lab 3</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-3/6-solving-word-puzzle.html">Page 6: Solving a Word Puzzle</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -155,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-2/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 2: Abstraction</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -444,7 +447,7 @@ Then chase the change forward into 5.1 starting on page 2, editing started files
 <p>
 <strong>On this page</strong>, you will solve a crossword puzzle by combining predicates using the <code>and</code> block. You will then use the resulting predicates with <code>keep</code> to find words with specific characteristics.
 </p>
-<p><img src="../../img/2-complexity/radiux.png" title="keeping words with 6 letters with 1st letter r and 3rd letter d" alt="keeping words with 6 letters with 1st letter r and 3rd letter d" class="indent"></p>
+<p><img src="../../img/2-complexity/radiux.png" title="keeping words with 6 letters with 1st letter r and 3rd letter d" alt="keeping words with 6 letters with 1st letter r and 3rd letter d" class="ms-4"></p>
 </div>
 <div id="first" class="forYouToDo">
 <ol>
@@ -461,7 +464,7 @@ Reassemble that script so that you can find all the words that have 8 letters.
 Find all the words that have 11 letters.
 </li>
 <li>
-You now have an <em>expression</em> that you can edit to test any word for any number of letters. This is a useful tool to have. Create and test a predicate <em>block</em> that takes a word and number as input and works like this:<br> <img src="../../img/2-complexity/does-orange-6-letters-true.png" title="does (orange) have (6) letters? reporting true" alt="does (orange) have (6) letters? reporting true" class="indent"> <img src="../../img/2-complexity/does-apple-7-letters-false.png" title="does (apple) have (7) letters? reporting false" alt="does (apple) have (7) letters? reporting false" class="indent">
+You now have an <em>expression</em> that you can edit to test any word for any number of letters. This is a useful tool to have. Create and test a predicate <em>block</em> that takes a word and number as input and works like this:<br> <img src="../../img/2-complexity/does-orange-6-letters-true.png" title="does (orange) have (6) letters? reporting true" alt="does (orange) have (6) letters? reporting true" class="ms-4"> <img src="../../img/2-complexity/does-apple-7-letters-false.png" title="does (apple) have (7) letters? reporting false" alt="does (apple) have (7) letters? reporting false" class="ms-4">
 </li>
 </ol>
 </li>
@@ -478,17 +481,14 @@ Find all the words whose fourth letter is r.
 <p>Your block’s title can be different from the one shown here as long as it does the same job.</p>
 </div>
 <li>
-If you have not yet turned your expression into a predicate <em>block</em>, do that now. Your block should work like this: <br> <img src="../../img/2-complexity/is-letter-4-of-carrot-o-reporting-false.png" title="is letter (4) of (carrot) the letter (o)? reporting false" alt="is letter (4) of (carrot) the letter (o)? reporting false" class="indent"> <img src="../../img/2-complexity/is-letter-2-of-giraffe-i-reporting-true.png" title="is letter (2) of (giraffe) the letter (i)? reporting true" alt="is letter (2) of (giraffe) the letter (i)? reporting true" class="indent">
+If you have not yet turned your expression into a predicate <em>block</em>, do that now. Your block should work like this: <br> <img src="../../img/2-complexity/is-letter-4-of-carrot-o-reporting-false.png" title="is letter (4) of (carrot) the letter (o)? reporting false" alt="is letter (4) of (carrot) the letter (o)? reporting false" class="ms-4"> <img src="../../img/2-complexity/is-letter-2-of-giraffe-i-reporting-true.png" title="is letter (2) of (giraffe) the letter (i)? reporting true" alt="is letter (2) of (giraffe) the letter (i)? reporting true" class="ms-4">
 </li>
 </ol>
 </li>
 <li>
 <p><strong>Work with another pair.</strong> Use your predicates, along with <code>and</code> and <code>keep</code>, to solve <a href="https://drive.google.com/open?id=1x8ShDe58qUQJDK8n97xoQGY4J4rw9aDsJCmkY-6SQc0" target="_blank" title="Solving a Word Puzzle">this Unit 2 Lab 3 Word Puzzle</a>.<br></p>
 <div class="endnote">
-<div class="comment">
-<p>Can we hint this?</p>
-</div>
-<p>For example, this expression searches for 6 letter words that start with <var>r</var> and have <var>d</var> as the third letter: <img src="../../img/2-complexity/radiux.png" title="keeping words with 6 letters with 1st letter r and 3rd letter d" alt="keeping words with 6 letters with 1st letter r and 3rd letter d" class="indent"></p>
+<p>For example, this expression searches for 6 letter words that start with <var>r</var> and have <var>d</var> as the third letter: <img src="../../img/2-complexity/radiux.png" title="keeping words with 6 letters with 1st letter r and 3rd letter d" alt="keeping words with 6 letters with 1st letter r and 3rd letter d" class="ms-4"></p>
 </div>
 <div class="AP-only">
 <div class="vocab">
@@ -497,7 +497,7 @@ All the words in the puzzle are related to the AP CS Principles course.
 </p>
 </div>
 </div>
-<p><a class="run" href="https://drive.google.com/open?id=1x8ShDe58qUQJDK8n97xoQGY4J4rw9aDsJCmkY-6SQc0" target="_blank"><img src="../../img/2-complexity/crossword.jpg" title="Solving a Word Puzzle" alt="Solving a Word Puzzle" class="indent"></a></p>
+<p><a class="run" href="https://drive.google.com/open?id=1x8ShDe58qUQJDK8n97xoQGY4J4rw9aDsJCmkY-6SQc0" target="_blank"><img src="../../img/2-complexity/crossword.jpg" title="Solving a Word Puzzle" alt="Solving a Word Puzzle" class="ms-4"></a></p>
 </li>
 <p><img src="../../img/icons/save-now.png" title="Save your work" alt="Save your work" class="float-end"></p>
 </ol>
@@ -514,10 +514,10 @@ Accept two inputs: a <var>letter</var> to check for and a <var>word</var>, and
 Report whether or not the input <var>word</var> has the input <var>letter</var>.
 </li>
 </ul>
-<p><img src="../../img/2-complexity/is-w-in-boston-reporting-false.png" title="is there a (w) in (Boston)? reporting false" alt="is there a (w) in (Boston)? reporting false" class="indent"> <img src="../../img/2-complexity/is-w-in-new-york-reporting-true.png" title="is there a (w) in (New York)? reporting true" alt="is there a (w) in (New York)? reporting true" class="indent"></p>
+<p><img src="../../img/2-complexity/is-w-in-boston-reporting-false.png" title="is there a (w) in (Boston)? reporting false" alt="is there a (w) in (Boston)? reporting false" class="ms-4"> <img src="../../img/2-complexity/is-w-in-new-york-reporting-true.png" title="is there a (w) in (New York)? reporting true" alt="is there a (w) in (New York)? reporting true" class="ms-4"></p>
 </li>
 <li>
-<img src="../../img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff" class="inline"> Create this block:<br> <img src="../../img/2-complexity/pattern-matcher.png" title="words matching (-e-u--c--g) from (word list)" alt="words matching (-e-u--c--g) from (word list)" class="indent"><br> The first input is a <em>pattern,</em> which is a word in which some of the letters have been replaced by hyphens (minus signs).<!--  The hard part will be to write a helper<br />
+<img src="../../img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff" class="inline"> Create this block:<br> <img src="../../img/2-complexity/pattern-matcher.png" title="words matching (-e-u--c--g) from (word list)" alt="words matching (-e-u--c--g) from (word list)" class="ms-4"><br> The first input is a <em>pattern,</em> which is a word in which some of the letters have been replaced by hyphens (minus signs).<!--  The hard part will be to write a helper<br />
 <img src="/img/2-complexity/does-word-match-pattern.png" alt="does word (foo) match pattern (f-o) ?" title="does word (foo) match pattern (f-o) ?"><br />
 that checks whether each letter in the pattern is either the same as the corresponding letter of the input word or a hyphen. -->
 </li>

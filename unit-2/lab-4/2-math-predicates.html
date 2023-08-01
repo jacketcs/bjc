@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-4/1-mod-operator.html">Lab 4</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-4/2-math-predicates.html">Page 2: Making a Mathematical Library</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Unit 2: Abstraction</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-4/1-mod-operator.html">Lab 4</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-4/2-math-predicates.html">Page 2: Making a Mathematical Library</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-2/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 2: Abstraction</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -436,9 +439,6 @@ ul.task-list li input[type="checkbox"] {
 <p>AAP-2.M.3, AAP-3.D.3</p>
 </div>
 <div class="vocabBig">
-<div class="commentBig">
-<p>AAP-3.D.1</p>
-</div>
 <p>
 A <strong>software library</strong> is a collection of procedures that can be used in programs.
 </p>
@@ -462,7 +462,7 @@ Using <em>libraries</em> simplifies the development of new programs. When you us
 <strong>Choose “Export blocks…”</strong> from the Snap<em>!</em> file menu (<img src="../../img/1-introduction/file_button.png" title="File menu button" alt="File menu button" class="inline">).
 </li>
 <li>
-<p><strong>Select only the block(s) you wish to export</strong>. (In this case, you want <img src="../../img/2-complexity/between.png" title="is () between () and ()?" alt="is () between () and ()?" class="inline nopadtb">, <img src="../../img/blocks/less-than-or-equal.png" title="less than or equal" alt="less than or equal" class="inline nopadtb">, <img src="../../img/blocks/greater-than-or-equal.png" title="greater than or equal" alt="greater than or equal" class="inline nopadtb">, and <img src="../../img/2-complexity/not-equal.png" title="() not equal ()" alt="() not equal ()" class="inline nopadtb">.)</p>
+<p><strong>Select only the block(s) you wish to export</strong>. (In this case, you want <img src="../../img/2-complexity/between.png" title="is () between () and ()?" alt="is () between () and ()?" class="inline py-0">, <img src="../../img/blocks/less-than-or-equal.png" title="less than or equal" alt="less than or equal" class="inline py-0">, <img src="../../img/blocks/greater-than-or-equal.png" title="greater than or equal" alt="greater than or equal" class="inline py-0">, and <img src="../../img/2-complexity/not-equal.png" title="() not equal ()" alt="() not equal ()" class="inline py-0">.)</p>
 <div class="endnote">
 <p>You can either <em>deselect</em> the blocks you don’t need exported, or you can right-click the background, choose “none,” and then select only the ones you want.</p>
 </div>
@@ -509,11 +509,11 @@ Using <em>libraries</em> simplifies the development of new programs. When you us
 </ol>
 </div>
 <div class="endnote">
-<p>You are creating a math library. Snap<em>!</em> has libraries for many things, such as one for accessing different parts of words and sentences…<br> <img src="../../img/6-computers/libraries-1.png" title="Snap! File menu opened with cursor over 'Libraries'" alt="Snap! File menu opened with cursor over 'Libraries'" class="indent"> <img src="../../img/6-computers/libraries-words.png" title="Snap! 'Import library' dialog box highlighting 'Words, sentences' library" alt="Snap! 'Import library' dialog box highlighting 'Words, sentences' library" class="indent"></p>
+<p>You are creating a math library. Snap<em>!</em> has libraries for many things, such as one for accessing different parts of words and sentences…<br> <img src="../../img/6-computers/libraries-1.png" title="Snap! File menu opened with cursor over 'Libraries'" alt="Snap! File menu opened with cursor over 'Libraries'" class="ms-4"> <img src="../../img/6-computers/libraries-words.png" title="Snap! 'Import library' dialog box highlighting 'Words, sentences' library" alt="Snap! 'Import library' dialog box highlighting 'Words, sentences' library" class="ms-4"></p>
 </div>
 <div class="takeNote">
 <h4 class="anchored">
-<strong>Debugging<a name="dependencies" class="anchor">&nbsp;</a>Dependencies</strong>
+<strong>Debugging Dependencies</strong>
 </h4>
 <p><img src="../../img/2-complexity/even-obsolete.png" title="even? (number#){report(Obsolete!)}" alt="even? (number#){report(Obsolete!)}" class="float-end"></p>
 <p>
@@ -529,7 +529,7 @@ If you ever see this red <code>Obsolete!</code> block in code you have imported,
 <div class="ap-standard">
 <p>AAP-2.M parts a and b, AAP-3.D</p>
 </div>
-<p>Copy and modify the code from your <code>even?</code> predicate to develop an <code>odd?</code> predicate for your library.<br> <img src="../../img/2-complexity/odd-6-reporting.png" title="odd? (6) reporting false" alt="odd? (6) reporting false" class="indent"> <img src="../../img/2-complexity/odd--7-reporting.png" title="odd? (-7) reporting true" alt="odd? (-7) reporting true" class="indent"></p>
+<p>Copy and modify the code from your <code>even?</code> predicate to develop an <code>odd?</code> predicate for your library.<br> <img src="../../img/2-complexity/odd-6-reporting.png" title="odd? (6) reporting false" alt="odd? (6) reporting false" class="ms-4"> <img src="../../img/2-complexity/odd--7-reporting.png" title="odd? (-7) reporting true" alt="odd? (-7) reporting true" class="ms-4"></p>
 </li>
 </ol>
 </div>
@@ -558,16 +558,16 @@ You can create algorithms from scratch or by combining or modifying existing alg
 <div id="hint-steps" class="collapse">
 <ol type="a">
 <li>
-<p>Build a <code>divisors</code> block using <code>keep</code>.<br> <img src="../../img/2-complexity/divisors-9-reporting.png" title="divisors of (9) reporting {1, 3, 9}" alt="divisors of (9) reporting {1, 3, 9}" class="indent"> <img src="../../img/2-complexity/divisors-12-reporting.png" title="divisors of (12) reporting {1, 2, 3, 4, 6, 12}" alt="divisors of (12) reporting {1, 2, 3, 4, 6, 12}" class="indent"></p>
+<p>Build a <code>divisors</code> block using <code>keep</code>.<br> <img src="../../img/2-complexity/divisors-9-reporting.png" title="divisors of (9) reporting {1, 3, 9}" alt="divisors of (9) reporting {1, 3, 9}" class="ms-4"> <img src="../../img/2-complexity/divisors-12-reporting.png" title="divisors of (12) reporting {1, 2, 3, 4, 6, 12}" alt="divisors of (12) reporting {1, 2, 3, 4, 6, 12}" class="ms-4"></p>
 <div class="endnote">
 <p><a href="#hint-divisors" data-bs-toggle="collapse" title="Hints about building the divisors block">Hints about building the <code>divisors</code> block</a></p>
 <div id="hint-divisors" class="collapse">
 <ul>
 <li>
-You <em>could</em> build this with <code>for</code> or <code>for each</code>, but it will require less code to build it with <img src="../../img/blocks/keep.png" title="keep items 'predicate input slot' from 'list input slot'" alt="keep items 'predicate input slot' from 'list input slot'" class="nopadtb">. (You learned about <code>keep</code> on <a href="../../unit-2/lab-3/5-keeping-list-items.html" title="Unit 2 Lab 3 Page 5: Keeping Items from a List">Unit 2 Lab 3 Page 5: <code>Keep</code>ing Items from a List</a>.)
+You <em>could</em> build this with <code>for</code> or <code>for each</code>, but it will require less code to build it with <img src="../../img/blocks/keep.png" title="keep items 'predicate input slot' from 'list input slot'" alt="keep items 'predicate input slot' from 'list input slot'" class="py-0">. (You learned about <code>keep</code> on <a href="../../unit-2/lab-3/5-keeping-list-items.html" title="Unit 2 Lab 3 Page 5: Keeping Items from a List">Unit 2 Lab 3 Page 5: <code>Keep</code>ing Items from a List</a>.)
 </li>
 <li>
-You <em>could</em> build this with <code>mod</code>, but you already built <img src="../../img/2-complexity/divisible-by.png" title="() divisible by () ?" alt="() divisible by () ?" class="nopadtb"> (using <code>mod</code>), so <code>divisible by?</code> will be simpler to use.
+You <em>could</em> build this with <code>mod</code>, but you already built <img src="../../img/2-complexity/divisible-by.png" title="() divisible by () ?" alt="() divisible by () ?" class="py-0"> (using <code>mod</code>), so <code>divisible by?</code> will be simpler to use.
 </li>
 <li>
 The <img src="../../img/blocks/numbers-from-to.png" title="numbers from () to ()" alt="numbers from () to ()" class="inline"> block may be helpful.
@@ -577,7 +577,7 @@ The <img src="../../img/blocks/numbers-from-to.png" title="numbers from () to ()
 </div>
 </li>
 <li>
-Build a <code>number of divisors</code> block.<br> <img src="../../img/2-complexity/number-of-divisors-9-reporting.png" title="number of divisors (9) reporting 3" alt="number of divisors (9) reporting 3" class="indent"> <img src="../../img/2-complexity/number-of-divisors-12-reporting.png" title="number of divisors (12) reporting 6" alt="number of divisors (12) reporting 6" class="indent">
+Build a <code>number of divisors</code> block.<br> <img src="../../img/2-complexity/number-of-divisors-9-reporting.png" title="number of divisors (9) reporting 3" alt="number of divisors (9) reporting 3" class="ms-4"> <img src="../../img/2-complexity/number-of-divisors-12-reporting.png" title="number of divisors (12) reporting 6" alt="number of divisors (12) reporting 6" class="ms-4">
 </li>
 <li>
 <p>Build an expression using <code>keep</code> to answer each of these questions that were introduced above:</p>

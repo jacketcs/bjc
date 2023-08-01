@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-3/index.html">Data Structures</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-2/1-build-the-list.html">Lab 2</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-2/1-build-the-list.html">Page 1: Creating the Contact ADT</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-3/index.html">Unit 3: Data Structures</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-2/1-build-the-list.html">Lab 2</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-2/1-build-the-list.html">Page 1: Creating the Contact ADT</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-3/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Structures</span></a>
+ <span class="menu-text">Unit 3: Data Structures</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -479,10 +482,10 @@ Creating the ADT
 <p></p>
 <p>The percent (%) signs make those words become input variables.</p>
 </div>
-<p>Create a <code>contact</code> <em>constructor</em> that accepts three pieces of data as input: the contact’s <var>name</var>, <var>phone number</var>, and <var>address</var>. <br> <img src="../../img/3-lists/contact-constructor-untyped.png" title="contact with name: () address: () phone: ()" alt="contact with name: () address: () phone: ()" class="indent"><br> It should report one whole contact (a list of the three items):<br> <img src="../../img/3-lists/contact-constructor-reporting.png" title="contact with name: (Betsy Anderson) address: (123 Main St. #4, New York, NY 10001) phone: (212-555-1234) reporting {Betsy Anderson; 123 Main St. #4, New York, NY 10001; 212-555-1234}" alt="contact with name: (Betsy) address: (123 Main St. #4, New York, NY 10001) phone: (212-555-1234) reporting {Betsy Anderson; 123 Main St. #4, New York, NY 10001; 212-555-1234}" class="indent"><br></p>
+<p>Create a <code>contact</code> <em>constructor</em> that accepts three pieces of data as input: the contact’s <var>name</var>, <var>phone number</var>, and <var>address</var>. <br> <img src="../../img/3-lists/contact-constructor-untyped.png" title="contact with name: () address: () phone: ()" alt="contact with name: () address: () phone: ()" class="ms-4"><br> It should report one whole contact (a list of the three items):<br> <img src="../../img/3-lists/contact-constructor-reporting.png" title="contact with name: (Betsy Anderson) address: (123 Main St. #4, New York, NY 10001) phone: (212-555-1234) reporting {Betsy Anderson; 123 Main St. #4, New York, NY 10001; 212-555-1234}" alt="contact with name: (Betsy) address: (123 Main St. #4, New York, NY 10001) phone: (212-555-1234) reporting {Betsy Anderson; 123 Main St. #4, New York, NY 10001; 212-555-1234}" class="ms-4"><br></p>
 </li>
 <li>
-<p>Write the <em>selector</em> blocks to retrieve the <code>name from contact</code>, <code>address from contact</code>, or <code>phone from contact</code>. <img src="../../img/3-lists/contact-constructor-in-name-selector.png" title="contact name (contact block with inputs) reporting " alt="contact name (contact block with inputs) reporting " class="indent"><br> <img src="../../img/3-lists/contact-constructor-in-address-selector.png" title="contact address (contact block with inputs) reporting " alt="contact address (contact block with inputs) reporting " class="indent"><br> <img src="../../img/3-lists/contact-constructor-in-phone-selector.png" title="contact phone (contact block with inputs) reporting " alt="contact phone (contact block with inputs) reporting " class="indent"></p>
+<p>Write the <em>selector</em> blocks to retrieve the <code>name from contact</code>, <code>address from contact</code>, or <code>phone from contact</code>. <img src="../../img/3-lists/contact-constructor-in-name-selector.png" title="contact name (contact block with inputs) reporting " alt="contact name (contact block with inputs) reporting " class="ms-4"><br> <img src="../../img/3-lists/contact-constructor-in-address-selector.png" title="contact address (contact block with inputs) reporting " alt="contact address (contact block with inputs) reporting " class="ms-4"><br> <img src="../../img/3-lists/contact-constructor-in-phone-selector.png" title="contact phone (contact block with inputs) reporting " alt="contact phone (contact block with inputs) reporting " class="ms-4"></p>
 <div class="takeNote">
 <div class="sidenote">
 <p>You learned about input types and output types (domain and range) on <a href="../../unit-2/lab-3/1-what-is-predicate.html" title="Unit 2 Lab 3 Page 1: What's a Predicate?">Unit 2 Lab 3 Page 1: What’s a Predicate?</a>.</p>
@@ -499,12 +502,12 @@ That’s also true about the inputs to the <code>contact</code> constructor; you
 </div>
 <div class="endnote">
 <p>
-It’s somewhat artificial to use the constructor as the input to a selector; these images are just examples to show what the selectors should be able to do when given a contact as input. In <em>your</em> program, the selectors will take an item from the contact list as input and output the correct piece of that contact, like this:<br> <img src="../../img/3-lists/address-from-contact-item-1-of-contact-list-reporting.png" title="address from contact (item (1) of (contact list)) reporting '123 Main St. #4, New York, NY 10001'" alt="address from contact (item (1) of (contact list)) reporting '123 Main St. #4, New York, NY 10001'" class="indent">
+It’s somewhat artificial to use the constructor as the input to a selector; these images are just examples to show what the selectors should be able to do when given a contact as input. In <em>your</em> program, the selectors will take an item from the contact list as input and output the correct piece of that contact, like this:<br> <img src="../../img/3-lists/address-from-contact-item-1-of-contact-list-reporting.png" title="address from contact (item (1) of (contact list)) reporting '123 Main St. #4, New York, NY 10001'" alt="address from contact (item (1) of (contact list)) reporting '123 Main St. #4, New York, NY 10001'" class="ms-4">
 </p>
 </div>
 </li>
 <li>
-<p>Declare input types for each selector to make it obvious that they expect a list (one whole contact) as input.<br> <img src="../../img/3-lists/name-selector.png" title="name from contact: ()" alt="name from contact: ()" class="indent"> <img src="../../img/3-lists/address-selector.png" title="address from contact: ()" alt="address from contact: ()" class="indent"> <img src="../../img/3-lists/phone-selector.png" title="phone from contact: ()" alt="phone from contact: ()" class="indent"></p>
+<p>Declare input types for each selector to make it obvious that they expect a list (one whole contact) as input.<br> <img src="../../img/3-lists/name-selector.png" title="name from contact: ()" alt="name from contact: ()" class="ms-4"> <img src="../../img/3-lists/address-selector.png" title="address from contact: ()" alt="address from contact: ()" class="ms-4"> <img src="../../img/3-lists/phone-selector.png" title="phone from contact: ()" alt="phone from contact: ()" class="ms-4"></p>
 <div class="endnote">
 <p>You learned about Specifying an Input Type on <a href="../../unit-2/lab-2/2-quizzes.html" title="Unit 2 Lab 2 Page 2: Planning a Quiz App">Unit 2 Lab 2 Page 2: Planning a Quiz App</a>.</p>
 </div>
@@ -528,7 +531,7 @@ Notice how your contacts appear in the list.
 <p>If you don’t remember about table view and list view, revisit <a href="../../unit-2/lab-2/2-quizzes.html#two-views">page 2.2.2</a>.</p>
 </div>
 <li>
-Try selecting the <code>name</code>, <code>address</code>, or <code>phone</code> from a contact in your list<br> <img src="../../img/3-lists/name-from-contact-random-reporting.png" title="name from contact: (item (random) of (contact list)) reporting Alphie Preston" alt="name from contact: (item (random) of (contact list)) reporting Alphie Preston" class="indent">
+Try selecting the <code>name</code>, <code>address</code>, or <code>phone</code> from a contact in your list<br> <img src="../../img/3-lists/name-from-contact-random-reporting.png" title="name from contact: (item (random) of (contact list)) reporting Alphie Preston" alt="name from contact: (item (random) of (contact list)) reporting Alphie Preston" class="ms-4">
 </li>
 <p><img src="../../img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"></p>
 <li>

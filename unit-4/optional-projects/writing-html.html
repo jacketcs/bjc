@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Unit , Lab , Page | JacketCS CSP</title>
+<title>Writing HTML (Teacher’s Choice) | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,7 +66,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -122,6 +121,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
@@ -137,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-4/index.html">Introduction to Programming</a></li><li class="breadcrumb-item"><a href="../../unit-4/optional-projects/1-binary-counter.html">Optional Projects</a></li><li class="breadcrumb-item"><a href="../../unit-4/optional-projects/writing-html.html">Writing HTML (Teacher’s Choice)</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-4/index.html">Unit 4: How the Internet Works</a></li><li class="breadcrumb-item"><a href="../../unit-4/optional-projects/1-binary-counter.html">Optional Projects</a></li><li class="breadcrumb-item"><a href="../../unit-4/optional-projects/writing-html.html">Writing HTML (Teacher’s Choice)</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -152,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../unit-4/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Programming</span></a>
+ <span class="menu-text">Unit 4: How the Internet Works</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -403,7 +406,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Writing HTML (Teacher’s Choice)</h1>
-<p class="subtitle lead">Unit , Lab , Page</p>
+<p class="subtitle lead">Unit 4 Optional Project</p>
 </div>
 
 
@@ -422,9 +425,9 @@ ul.task-list li input[type="checkbox"] {
 Unlike Snap<em>!</em>, which is a <strong>general purpose</strong> programming language that can be used to develop a variety of algorithms, HTML is a <strong>special purpose</strong> programming language; it’s designed for one specific task: designing web pages. HTML controls the layout and style of text and images on a webpage, but it doesn’t allow for real programming like Snap<em>!</em> does. People use other languages like JavaScript to program algorithms into websites.
 </p>
 <p>
-The fundamental skeleton of every HTML webpage looks like the code below. Browsers use HTTP to turn the HTML into the site you see. Notice that most of the <strong>HTML tags</strong> (like <code>&lt;head&gt;</code>) have a closing tag (like <code>&lt;/head&gt;</code>) designating the end, and the relevant content goes between the two tags. (The color and indentation improve readability but are not necessary.)
+The fundamental skeleton of every HTML webpage looks like the code below. Browsers use HTTP to turn the HTML into the site you see. Notice that most of the <strong>HTML tags</strong> (like <code>&lt;head&gt;</code>) have a closing tag (like <code>&lt;/head&gt;</code>) designating the end, and the relevant content goes between the two tags. (The color and ms-4ation improve readability but are not necessary.)
 </p>
-<pre class="indent" style="width:800px"><span class="purple">&lt;!DOCTYPE html&gt;</span>
+<pre class="ms-4" style="width:800px"><span class="purple">&lt;!DOCTYPE html&gt;</span>
 <span class="blue">&lt;html&gt;</span>
 <span class="red">&lt;head&gt;</span>
 <span class="orange">&lt;title&gt;</span>The Page Title Goes Here<span class="orange">&lt;/title&gt;</span>
@@ -446,13 +449,13 @@ You can create various sized <em>headings</em> for your content using <code>&lt;
 You can add <em>paragraphs</em> with <code>&lt;p&gt;&lt;/p&gt;</code>.
 </li>
 <li>
-You can <em>link</em> to another webpage:<br> <code class="indent">&lt;a href=“http://bjc.edc.org”&gt;BJC Website&lt;/a&gt;</code>
+You can <em>link</em> to another webpage:<br> <code class="ms-4">&lt;a href=“http://bjc.edc.org”&gt;BJC Website&lt;/a&gt;</code>
 </li>
 <li>
-You can create <em>lists</em>:<br> <img src="../../img/4-internet/html-lists.jpg" title="HTML ul and ol lists" alt="HTML ul and ol lists" class="indent">
+You can create <em>lists</em>:<br> <img src="../../img/4-internet/html-lists.jpg" title="HTML ul and ol lists" alt="HTML ul and ol lists" class="ms-4">
 </li>
 <li>
-You can put <em>comments</em> in the HTML that will not show in the browser window using <code>&lt;!–</code> and <code>–&gt;</code> tags:<br> <code class="indent">&lt;!– This is a comment. –&gt;</code>
+You can put <em>comments</em> in the HTML that will not show in the browser window using <code>&lt;!–</code> and <code>–&gt;</code> tags:<br> <code class="ms-4">&lt;!– This is a comment. –&gt;</code>
 </li>
 </ul>
 </li>
@@ -482,7 +485,7 @@ is like<br />
 <img src="../../img/4-internet/JS-function-myfunction.jpg" title="function myfunction() {" alt="function myfunction() {" class="inline noshadow"> defines a new procedure called <code>myFunction</code>. It’s like <img src="../../img/4-internet/myFunction-hat-block.png" title="myFunction Snap! hat block" alt="myFunction Snap! hat block" class="inline">in Snap<em>!</em>.
 </li>
 <li>
-<img src="../../img/4-internet/JS-var-x-equals.jpg" title="var x = " alt="var x = " class="inline noshadow"> is like the code below<code></code>; <code>var</code> creates the new variable, and <code>=</code> is like <code>set</code> in Snap<em>!</em>.<br> <img src="../../img/4-internet/script-var-x-set-x-to.png" title="script variables (x); set (x) to ()" alt="script variables (x); set (x) to ()" class="indent">
+<img src="../../img/4-internet/JS-var-x-equals.jpg" title="var x = " alt="var x = " class="inline noshadow"> is like the code below<code></code>; <code>var</code> creates the new variable, and <code>=</code> is like <code>set</code> in Snap<em>!</em>.<br> <img src="../../img/4-internet/script-var-x-set-x-to.png" title="script variables (x); set (x) to ()" alt="script variables (x); set (x) to ()" class="ms-4">
 </li>
 </ul>
 </div>
@@ -516,7 +519,7 @@ Learn more with the <a href="http://www.w3schools.com/js/default.asp" target="_b
 </ul>
 </li>
 <li>
-Snap<em>!</em> itself is written in JavaScript, and the <img src="../../img/4-internet/jsfunc.png" alt="Javascript function"> block lets you extend Snap<em>!</em> by writing new blocks using JavaScript. Some of the Snap<em>!</em> libraries are written that way. You can experiment with this block by choosing “Libraries…” from the File menu, choosing “Set RGB or HSV pen color”, and looking in the “Pen” palette.<br> <img src="../../img/4-internet/setRGB.png" title="set pen color to r: g: b:" alt="set pen color to r: g: b:" class="indent">
+Snap<em>!</em> itself is written in JavaScript, and the <img src="../../img/4-internet/jsfunc.png" alt="Javascript function"> block lets you extend Snap<em>!</em> by writing new blocks using JavaScript. Some of the Snap<em>!</em> libraries are written that way. You can experiment with this block by choosing “Libraries…” from the File menu, choosing “Set RGB or HSV pen color”, and looking in the “Pen” palette.<br> <img src="../../img/4-internet/setRGB.png" title="set pen color to r: g: b:" alt="set pen color to r: g: b:" class="ms-4">
 </li>
 <div class="sidenoteBig">
 <p>You may also enjoy these <a href="https://www.openprocessing.org/" target="_blank">“Algorithmic Designs” done with Processing</a>.</p>

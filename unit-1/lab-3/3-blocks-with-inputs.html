@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script src="../../site_libs/quarto-contrib/gifffer/gifffer.min.js"></script>
 <link href="../../site_libs/quarto-contrib/gifffer/bjc-gifffer.css" rel="stylesheet">
 <script type="text/javascript">window.onload = function() {Gifffer();};</script>
@@ -69,7 +69,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../../llab/loader.js"></script>
 
 
-<link rel="stylesheet" href="../../css/bjc.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed">
@@ -124,6 +123,10 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+ <span class="menu-text">Help Queue</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
  <span class="menu-text">Snap<em>!</em></span></a>
@@ -450,9 +453,6 @@ Look at two of your scripts, and write down all of the differences between them.
 </li>
 </ol>
 </div>
-<div class="comment">
-<p>CRD-2.B.3 (white text)</p>
-</div>
 <p>
 The scripts are essentially all the same; only some of the <em>input values</em> change. Instead of having many separate scripts, you can make one general block <img src="../../img/1-introduction/pinwheel-block.png" title="pinwheel, branches:()" alt="pinwheel, branches:()" height="40"> that will draw <em>all</em> such designs. The block has to work for a variety of inputs.
 </p>
@@ -469,7 +469,7 @@ The scripts are essentially all the same; only some of the <em>input values</em>
 <div class="endnote">
 <p><a href="#hint-new-block" data-bs-toggle="collapse" title="Click for an image of naming the new block.">Click for an image of naming the new block.</a></p>
 <div id="hint-new-block" class="collapse">
-<p><img src="../../img/1-introduction/Blockswith-Inputs_img/category.png" title="Make a block" alt="Make a block" class="indent" height="300"></p>
+<p><img src="../../img/1-introduction/Blockswith-Inputs_img/category.png" title="Make a block" alt="Make a block" class="ms-4" height="300"></p>
 <p>
 This block is about <em>moving</em> your sprite, so you might choose the blue Motion palette.
 </p>
@@ -484,11 +484,11 @@ Using a comma and a colon are not requirements; they are here to help with clari
 <div class="endnote">
 <p><a href="#hint-input" data-bs-toggle="collapse" title="Click for images of naming the input.">Click for images of naming the input.</a></p>
 <div id="hint-input" class="collapse">
-<p><img src="../../img/1-introduction/Blockswith-Inputs_img/plusSign.png" title="Plus sign" alt="Plus sign" class="indent" height="75"> <img src="../../img/1-introduction/Blockswith-Inputs_img/inputName.png" title="Create input name" alt="Create input name" class="indent" height="175"></p>
+<p><img src="../../img/1-introduction/Blockswith-Inputs_img/plusSign.png" title="Plus sign" alt="Plus sign" class="ms-4" height="75"> <img src="../../img/1-introduction/Blockswith-Inputs_img/inputName.png" title="Create input name" alt="Create input name" class="ms-4" height="175"></p>
 </div>
 </div>
 <div class="endnote">
-<p><img src="../../img/1-introduction/prototype.png" title="Snap! hat block: pinwheel, branches: (number of branches)" alt="Snap! hat block: pinwheel, branches: (number of branches)" class="indent"><br> The picture of a blue <code>pinwheel</code> block inside the hat block is called the <em>prototype</em> of the block. As you add inputs and maybe title text to the prototype, it looks exactly like what the finished block will look like to the user, except that where the input slots go, there are orange ovals containing the <em>names</em> of the inputs.</p>
+<p><img src="../../img/1-introduction/prototype.png" title="Snap! hat block: pinwheel, branches: (number of branches)" alt="Snap! hat block: pinwheel, branches: (number of branches)" class="ms-4"><br> The picture of a blue <code>pinwheel</code> block inside the hat block is called the <em>prototype</em> of the block. As you add inputs and maybe title text to the prototype, it looks exactly like what the finished block will look like to the user, except that where the input slots go, there are orange ovals containing the <em>names</em> of the inputs.</p>
 </div>
 </li>
 <li>
@@ -504,7 +504,7 @@ Then, drag the new input <var>number of branches</var> in to replace the values 
 <div class="endnote">
 <p><a href="#hint-setup-code" data-bs-toggle="collapse" title="Click for an image of setting up the code inside the Block Editor.">Click for an image of setting up the code inside the Block Editor.</a></p>
 <div id="hint-setup-code" class="collapse">
-<p><img src="../../img/1-introduction/Blockswith-Inputs_img/blockwith21.png" title="pinwheel, branches:(number of branches) {repeat(21){move(100) steps; move(-70) steps; turn clockwise(360/21) degrees}}" alt="pinwheel, branches:(number of branches) {repeat(21){move(100) steps; move(-70) steps; turn clockwise(360/21) degrees}}" class="indent"> <img src="../../img/1-introduction/Blockswith-Inputs_img/numberofbranches.png" title="pinwheel, branches:(number of branches){repeat(number of branches){move(100) steps; wait(0.1) secs; move(-70) steps; wait(0.1) secs; turn clockwise(360/number of branches) degrees}}" alt="pinwheel, branches:(number of branches){repeat(number of branches){move(100) steps; wait(0.1) secs; move(-70) steps; wait(0.1) secs; turn clockwise(360/number of branches) degrees}}" class="indent"></p>
+<p><img src="../../img/1-introduction/Blockswith-Inputs_img/blockwith21.png" title="pinwheel, branches:(number of branches) {repeat(21){move(100) steps; move(-70) steps; turn clockwise(360/21) degrees}}" alt="pinwheel, branches:(number of branches) {repeat(21){move(100) steps; move(-70) steps; turn clockwise(360/21) degrees}}" class="ms-4"> <img src="../../img/1-introduction/Blockswith-Inputs_img/numberofbranches.png" title="pinwheel, branches:(number of branches){repeat(number of branches){move(100) steps; wait(0.1) secs; move(-70) steps; wait(0.1) secs; turn clockwise(360/number of branches) degrees}}" alt="pinwheel, branches:(number of branches){repeat(number of branches){move(100) steps; wait(0.1) secs; move(-70) steps; wait(0.1) secs; turn clockwise(360/number of branches) degrees}}" class="ms-4"></p>
 </div>
 </div>
 </li>
@@ -513,47 +513,35 @@ Then, drag the new input <var>number of branches</var> in to replace the values 
 <div class="endnote">
 <p><a href="#hint-target" data-bs-toggle="collapse" title="Click for a video of of the whole process of building the pinwheel block.">Click for a video of of the whole process of building the <code>pinwheel</code> block.</a></p>
 <div id="hint-target" class="collapse">
-<p><img title="Animation summarizing how to create a block with input." alt="Animation summarizing how to create a block with input." class="indent" data-gifffer="/img/1-introduction/Blockswith-Inputs_img/blocks-with-inputs.gif"></p>
+<p><img title="Animation summarizing how to create a block with input." alt="Animation summarizing how to create a block with input." class="ms-4" data-gifffer="/img/1-introduction/Blockswith-Inputs_img/blocks-with-inputs.gif"></p>
 </div>
 </div>
 </li>
 </ol>
 </div>
 <div class="takeNote">
-<div class="comment">
-<p>DAT-1.A.1</p>
-</div>
 <p>
 <strong>What kind of data can be an input?</strong> All kinds of data. In this example, the input is supposed to be a number, but <em>any</em> kind of value can be used as an input. For instance, you’ve seen the <code>list</code> block called with text as inputs. In Snap<em>!</em>, any kind of data can be used as an input, can be reported by a block, or can be put in a list.
 </p>
 </div>
 <div class="vocabFullWidth">
 <p>: What’s an input? <strong>Parameter</strong> vs.&nbsp;<strong>Argument</strong></p>
-<div class="comment">
-<p>AAP-3.A.3</p>
-</div>
 <p>
 </p><ul>
 <li>
-A <strong>parameter</strong> (or <em>formal parameter</em>) is the input <em>name,</em> such as <var>number of branches</var>. The input name is set in the block definition. It never changes.<br> <img src="../../img/1-introduction/example-parameter.png" title="image of complete pinwheel, branches:(number of branches) block definition with parameter label pointing to number of branches" alt="image of complete pinwheel, branches:(number of branches) block definition with parameter label pointing to number of branches" class="indent">
+A <strong>parameter</strong> (or <em>formal parameter</em>) is the input <em>name,</em> such as <var>number of branches</var>. The input name is set in the block definition. It never changes.<br> <img src="../../img/1-introduction/example-parameter.png" title="image of complete pinwheel, branches:(number of branches) block definition with parameter label pointing to number of branches" alt="image of complete pinwheel, branches:(number of branches) block definition with parameter label pointing to number of branches" class="ms-4">
 </li>
 <li>
-An <strong>argument</strong> (or <em>actual argument</em>) is the input <em>value,</em> such as 6 for a hexagonal pinwheel. The input value is given each time the block is run; it can be a different value each time.<br> <img src="../../img/1-introduction/example-argument.png" title="pinwheel, branches: (6) with argument label pointing to the input 6" alt="pinwheel, branches: (6) with argument label pointing to the input 6" class="indent">
+An <strong>argument</strong> (or <em>actual argument</em>) is the input <em>value,</em> such as 6 for a hexagonal pinwheel. The input value is given each time the block is run; it can be a different value each time.<br> <img src="../../img/1-introduction/example-argument.png" title="pinwheel, branches: (6) with argument label pointing to the input 6" alt="pinwheel, branches: (6) with argument label pointing to the input 6" class="ms-4">
 </li>
 </ul>
 <p>We use the word “input” both for parameters (input names) and for arguments (input values).</p>
 <p></p>
 </div>
-<div class="comment">
-<p>AAP-3.B.4</p>
-</div>
 <p>
 Originally, you made five copies of the pinwheel script to create five slightly different pinwheels. Now, you’ve made a single procedure that includes the shared features of these five scripts and uses a parameter to handle the differences.
 </p>
 <div class="forYouToDo">
-<div class="comment">
-<p>CRD-2.G</p>
-</div>
 <ol start="4">
 <p><img src="../../img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"></p>
 <li>
@@ -561,24 +549,17 @@ Comment your code.
 </li>
 <section id="debugging-tip-commenting-your-code" class="level3 takeNote">
 <h3 class="anchored" data-anchor-id="debugging-tip-commenting-your-code"><strong>Debugging Tip: Commenting Your Code</strong></h3>
-<div class="comment">
-<p>CRD-2.G.2</p>
-</div>
-<p>
-</p><p>Adding comments to your code may help you remember what your code does, helps other people reading your code to understand it, and can help you avoid bugs by increasing the clarity of your program. But it won’t do any of those things if you comment every line of code, so each comment just says how a block inside your script works. You can add comments to your Snap<em>!</em> code by right-clicking (or control-clicking) in the Scripts area and choosing “add comment.” <a href="#hint-comments" data-bs-toggle="collapse" title="Click for an animation that shows how to add comments.">Click for an animation that shows how.</a></p>
+<p>Adding comments to your code may help you remember what your code does, helps other people reading your code to understand it, and can help you avoid bugs by increasing the clarity of your program. But it won’t do any of those things if you comment every line of code, so each comment just says how a block inside your script works. You can add comments to your Snap<em>!</em> code by right-clicking (or control-clicking) in the Scripts area and choosing “add comment.” <a href="#hint-comments" data-bs-toggle="collapse" title="Click for an animation that shows how to add comments.">Click for an animation that shows how.</a></p>
 <div id="hint-comments" class="collapse">
-<p><img title="Animation on how to add a comment to a block and how a comment added to a hat block becomes that custom block's help message." alt="Animation on how to  add a comment to a block and how a comment added to a hat block becomes that custom block's help message." class="indent" data-gifffer="/img/2-complexity/Debugging/commenting.gif"></p>
+<p><img title="Animation on how to add a comment to a block and how a comment added to a hat block becomes that custom block's help message." alt="Animation on how to  add a comment to a block and how a comment added to a hat block becomes that custom block's help message." class="ms-4" data-gifffer="/img/2-complexity/Debugging/commenting.gif"></p>
 </div>
-<p></p>
-<p>
-You can attach a comment <em>to the hat block</em> in the Block Editor to create a help message for your block. This is the <em>best</em> way to comment, because people can find out what your block does without having to look inside, just like the help messages for primitive blocks.
-</p>
+<p>You can attach a comment <em>to the hat block</em> in the Block Editor to create a help message for your block. This is the <em>best</em> way to comment, because people can find out what your block does without having to look inside, just like the help messages for primitive blocks.</p>
 <div class="borderless-table">
 <div>
 <p><strong>Bad commenting:</strong></p>
 </div>
 <div>
-<p><img src="../../img/1-introduction/bad-comments.png" title="an example of bad commenting: block definition for a square-drawing block called 'square' with a comment attached to the repeat (4) block that says, 'a square has four sides' a comment attached to the move (size) steps block that says, 'the move says how big to make it', and a comment attached to the turn right (90) degrees block that says, 'You have to turn (90) degrees'" alt="an example of bad commenting: block definition for a square-drawing block called 'square' with a comment attached to the repeat (4) block that says, 'a square has four sides' a comment attached to the move (size) steps block that says, 'the move says how big to make it', and a comment attached to the turn right (90) degrees block that says, 'You have to turn (90) degrees'" class="indent"></p>
+<p><img src="../../img/1-introduction/bad-comments.png" title="an example of bad commenting: block definition for a square-drawing block called 'square' with a comment attached to the repeat (4) block that says, 'a square has four sides' a comment attached to the move (size) steps block that says, 'the move says how big to make it', and a comment attached to the turn right (90) degrees block that says, 'You have to turn (90) degrees'" alt="an example of bad commenting: block definition for a square-drawing block called 'square' with a comment attached to the repeat (4) block that says, 'a square has four sides' a comment attached to the move (size) steps block that says, 'the move says how big to make it', and a comment attached to the turn right (90) degrees block that says, 'You have to turn (90) degrees'" class="ms-4"></p>
 </div>
 </div>
 <div class="borderless-table">
@@ -586,9 +567,9 @@ You can attach a comment <em>to the hat block</em> in the Block Editor to create
 <p><strong>Good commenting:</strong></p>
 </div>
 <div>
-<p><img src="../../img/1-introduction/good-comments.png" title="an example of good commenting: block definition for a square-drawing block called 'square' with a comment attached to the hat block that says, 'This block draws a square. The input says how big to make the sides of the square.'" alt="an example of good commenting: block definition for a square-drawing block called 'square' with a comment attached to the hat block that says, 'This block draws a square. The input says how big to make the sides of the square.'" class="indent"></p>
+<p><img src="../../img/1-introduction/good-comments.png" title="an example of good commenting: block definition for a square-drawing block called 'square' with a comment attached to the hat block that says, 'This block draws a square. The input says how big to make the sides of the square.'" alt="an example of good commenting: block definition for a square-drawing block called 'square' with a comment attached to the hat block that says, 'This block draws a square. The input says how big to make the sides of the square.'" class="ms-4"></p>
 <div>
-<p><img src="../../img/1-introduction/askhelp.png" title="the 'square' block with the right-click menu open and the 'help...' option selected" alt="the 'square' block with the right-click menu open and the 'help...' option selected" class="indent"> <img src="../../img/1-introduction/squarehelp.png" title="a Help window with a picture of the 'square' block followed by the text 'This block draws a square. The input says how big to make the sides of the square.' and then an 'OK' button" alt="a Help window with a picture of the 'square' block followed by the text 'This block draws a square. The input says how big to make the sides of the square.' and then an 'OK' button" class="indent"></p>
+<p><img src="../../img/1-introduction/askhelp.png" title="the 'square' block with the right-click menu open and the 'help...' option selected" alt="the 'square' block with the right-click menu open and the 'help...' option selected" class="ms-4"> <img src="../../img/1-introduction/squarehelp.png" title="a Help window with a picture of the 'square' block followed by the text 'This block draws a square. The input says how big to make the sides of the square.' and then an 'OK' button" alt="a Help window with a picture of the 'square' block followed by the text 'This block draws a square. The input says how big to make the sides of the square.' and then an 'OK' button" class="ms-4"></p>
 </div>
 </div>
 </div>
@@ -600,50 +581,23 @@ Part of the reason some people emphasize the importance of detailed comments is 
 </div>
 <section id="more-about-program-documentation" class="level2">
 <h2 class="anchored" data-anchor-id="more-about-program-documentation">More About Program Documentation</h2>
-<div class="comment">
-<p>CRD-2.G.1, CRD-2.G.5</p>
-</div>
-<p>
-Commenting is only one form of documentation. It’s not the <em>best</em> form, because attaching a comment to a particular place in the program documents only that one procedure or code segment, and doesn’t explain how different sections of the program interact. But commenting is an easy way to document small details.
-</p>
-<p>
-Documentation can be <em>external</em> (written for users of the program) or <em>internal</em> (written for yourself or other developers of the program). Both kinds are important, if it’s a program people other than the author are going to use. Usually they should be separate documents—another reason why comments aren’t the best form of documentation.
-</p>
-<div class="comment">
-<p>CRD-2.G.4</p>
-</div>
-<p>
-If you’re writing a program by yourself, internal documentation may seem silly. “I know how my own program works.” But if the program will still be in use a year later, it will probably need maintenance, and you may well have forgotten the details of its implementation. In a programming class like this one, most of the programs you write are very small, and you can understand them at a glance. But real programs are generally much bigger than lab exercises designed to take less than an hour of work.
-</p>
-<div class="comment">
-<p>CRD-2.G.3</p>
-</div>
-<p>
-It’s best if the first attempt at documentation is made even before starting to code. The documentation will specify the desired program behavior (external) and the intended program structure (internal). These documents can be used in testing the code to ensure that it behaves as planned.
-</p>
+<p>Commenting is only one form of documentation. It’s not the <em>best</em> form, because attaching a comment to a particular place in the program documents only that one procedure or code segment, and doesn’t explain how different sections of the program interact. But commenting is an easy way to document small details.</p>
+<p>Documentation can be <em>external</em> (written for users of the program) or <em>internal</em> (written for yourself or other developers of the program). Both kinds are important, if it’s a program people other than the author are going to use. Usually they should be separate documents—another reason why comments aren’t the best form of documentation.</p>
+<p>If you’re writing a program by yourself, internal documentation may seem silly. “I know how my own program works.” But if the program will still be in use a year later, it will probably need maintenance, and you may well have forgotten the details of its implementation. In a programming class like this one, most of the programs you write are very small, and you can understand them at a glance. But real programs are generally much bigger than lab exercises designed to take less than an hour of work.</p>
+<p>It’s best if the first attempt at documentation is made even before starting to code. The documentation will specify the desired program behavior (external) and the intended program structure (internal). These documents can be used in testing the code to ensure that it behaves as planned.</p>
 <div class="forYouToDo">
-<ol start="5">
-<div class="comment">
-<p>AAP-3.A part a</p>
-</div>
-<li>
-Create a script that draws two pinwheels on the stage, with different numbers of spokes.
-</li>
+<ol start="5" type="1">
+<li>Create a script that draws two pinwheels on the stage, with different numbers of spokes.</li>
 </ol>
 </div>
-<div class="comment">
-<p>AAP-3.A.4</p>
-</div>
-<p>
-When you embed a command procedure (such as <code>pinwheel</code>) within a script, the procedure is completed before continuing the script that called it.
-</p>
+<p>When you embed a command procedure (such as <code>pinwheel</code>) within a script, the procedure is completed before continuing the script that called it.</p>
 <div class="takeItFurther">
 <ol type="A">
 <li>
-These images were created with the <code>pinwheel</code> block and <code>set pen color</code>. Create your own art.<br> <!--<img src="/img/1-introduction/Blockswith-Inputs_img/Wreath2.png" height="200" alt="wreath of rainbow colored pinwheels" title="wreath of rainbow colored pinwheels"/>--> <img src="../../img/1-introduction/Blockswith-Inputs_img/Wreath1.png" title="wreath of rainbow colored pinwheels" alt="wreath of rainbow colored pinwheels" class="indent" height="200"> <img src="../../img/1-introduction/Blockswith-Inputs_img/Wreath2.png" title="wreath of rainbow colored pinwheels" alt="wreath of rainbow colored pinwheels" class="indent" height="200">
+These images were created with the <code>pinwheel</code> block and <code>set pen color</code>. Create your own art.<br> <!--<img src="/img/1-introduction/Blockswith-Inputs_img/Wreath2.png" height="200" alt="wreath of rainbow colored pinwheels" title="wreath of rainbow colored pinwheels"/>--> <img src="../../img/1-introduction/Blockswith-Inputs_img/Wreath1.png" title="wreath of rainbow colored pinwheels" alt="wreath of rainbow colored pinwheels" class="ms-4" height="200"> <img src="../../img/1-introduction/Blockswith-Inputs_img/Wreath2.png" title="wreath of rainbow colored pinwheels" alt="wreath of rainbow colored pinwheels" class="ms-4" height="200">
 </li>
 <li>
-Make an animation.<br> <img src="../../img/1-introduction/Blockswith-Inputs_img/branchesCycle.gif" title="Branch Cycle Animation" alt="Branch Cycle Animation" class="indent" height="200">
+Make an animation.<br> <img src="../../img/1-introduction/Blockswith-Inputs_img/branchesCycle.gif" title="Branch Cycle Animation" alt="Branch Cycle Animation" class="ms-4" height="200">
 </li>
 </ol>
 </div>
