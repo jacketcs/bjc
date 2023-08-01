@@ -75,6 +75,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../img/jac.png" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">JacketCS CSP</span>
     </a>
@@ -131,6 +134,11 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <div class="quarto-navbar-tools ms-auto">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
@@ -425,7 +433,7 @@ ul.task-list li input[type="checkbox"] {
 Unlike Snap<em>!</em>, which is a <strong>general purpose</strong> programming language that can be used to develop a variety of algorithms, HTML is a <strong>special purpose</strong> programming language; it’s designed for one specific task: designing web pages. HTML controls the layout and style of text and images on a webpage, but it doesn’t allow for real programming like Snap<em>!</em> does. People use other languages like JavaScript to program algorithms into websites.
 </p>
 <p>
-The fundamental skeleton of every HTML webpage looks like the code below. Browsers use HTTP to turn the HTML into the site you see. Notice that most of the <strong>HTML tags</strong> (like <code>&lt;head&gt;</code>) have a closing tag (like <code>&lt;/head&gt;</code>) designating the end, and the relevant content goes between the two tags. (The color and ms-4ation improve readability but are not necessary.)
+The fundamental skeleton of every HTML webpage looks like the code below. Browsers use HTTP to turn the HTML into the site you see. Notice that most of the <strong>HTML tags</strong> (like <code>\&lt;head\&gt;</code>) have a closing tag (like <code>\&lt;/head\&gt;</code>) designating the end, and the relevant content goes between the two tags. (The color and ms-4ation improve readability but are not necessary.)
 </p>
 <pre class="ms-4" style="width:800px"><span class="purple">&lt;!DOCTYPE html&gt;</span>
 <span class="blue">&lt;html&gt;</span>
@@ -440,44 +448,44 @@ The page content goes here.
 <p><a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_default" target="_blank"><img src="../../img/4-internet/w3-html-example.jpg" title="w3schools HTML example" alt="w3schools HTML example" class="float-end"></a></p>
 <ol>
 <li>
-<p>Experiment with this <a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_default" target="_blank">HTML example from w3schools.com</a>. Write some HTML code inside the <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code> tags. You might add a second heading and more paragraphs.</p>
+<p>Experiment with this <a href="http://www.w3schools.com/html/tryit.asp?filename=tryhtml_default" target="_blank">HTML example from w3schools.com</a>. Write some HTML code inside the <code>\&lt;body\&gt;</code> and <code>\&lt;/body\&gt;</code> tags. You might add a second heading and more paragraphs.</p>
 <ul>
 <li>
-You can create various sized <em>headings</em> for your content using <code>&lt;h3&gt;&lt;/h3&gt;</code> tags. (Try numbers 1-6.)
+You can create various sized <em>headings</em> for your content using <code>\&lt;h3\&gt;\&lt;/h3\&gt;</code> tags. (Try numbers 1-6.)
 </li>
 <li>
-You can add <em>paragraphs</em> with <code>&lt;p&gt;&lt;/p&gt;</code>.
+You can add <em>paragraphs</em> with <code>\&lt;p\&gt;\&lt;/p\&gt;</code>.
 </li>
 <li>
-You can <em>link</em> to another webpage:<br> <code class="ms-4">&lt;a href=“http://bjc.edc.org”&gt;BJC Website&lt;/a&gt;</code>
-</li>
+You can <em>link</em> to another webpage:<br> <code class="ms-4">&lt;a href=“http://bjc.edc.org”&gt;BJC Website&lt;/a&gt;`
+</code></li><code class="ms-4">
 <li>
 You can create <em>lists</em>:<br> <img src="../../img/4-internet/html-lists.jpg" title="HTML ul and ol lists" alt="HTML ul and ol lists" class="ms-4">
 </li>
 <li>
-You can put <em>comments</em> in the HTML that will not show in the browser window using <code>&lt;!–</code> and <code>–&gt;</code> tags:<br> <code class="ms-4">&lt;!– This is a comment. –&gt;</code>
-</li>
-</ul>
-</li>
+You can put <em>comments</em> in the HTML that will not show in the browser window using <code>\&lt;!--</code> and <code>--\&gt;</code> tags:<br> <code class="ms-4">&lt;!– This is a comment. –&gt;`
+</code></li><code class="ms-4">
+</code></code></ul><code class="ms-4"><code class="ms-4">
+</code></code></li><code class="ms-4"><code class="ms-4">
 <li>
 Find the “View Page Source” feature of your browser (try right-clicking or control-clicking a page, or look around in menus like “View” or “Developer”).
 </li>
 <li>
 <img src="../../img/icons/write-out-thoughts-mini.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="float-end">Look at the source code for a few different web pages and compare them to the pages. Make a list of the HTML formatting commands you can figure out. For example, what code makes text appear in <strong>bold</strong> or <em>italics</em>?
 </li>
-</ol>
-</div>
+</code></code></ol><code class="ms-4"><code class="ms-4">
+</code></code></div><code class="ms-4"><code class="ms-4">
 <div class="endnote">
 <p>As you learn other programming languages, you will begin to see similarities. Here’s an example from <a href="http://www.w3schools.com/js/tryit.asp?filename=tryjs_default" target="_blank">JavaScript</a>, a language that website developers use to add behavior and interactivity to websites:</p>
 <ul>
 <!--<li>
-<code>function square(x) {<br />
+`function square(x) {<br />
 &nbsp;&nbsp;return x * x;<br />
-}</code><br />
-defines a new function called <code>square</code>. It's like<br /><img src="/img/4-internet/square.png" alt="square(x)"><br />in Snap<em>!</em>.
+}`<br />
+defines a new function called `square`. It's like<br /><img src="/img/4-internet/square.png" alt="square(x)"><br />in Snap<em>!</em>.
 </li>
 <li>
-<code>var length = 5;</code><br />
+`var length = 5;`<br />
 is like<br />
 <img src="/img/4-internet/var.png" width="242" height="74" alt="script variables (length); set (length) to 5">.
 </li>-->
@@ -485,7 +493,7 @@ is like<br />
 <img src="../../img/4-internet/JS-function-myfunction.jpg" title="function myfunction() {" alt="function myfunction() {" class="inline noshadow"> defines a new procedure called <code>myFunction</code>. It’s like <img src="../../img/4-internet/myFunction-hat-block.png" title="myFunction Snap! hat block" alt="myFunction Snap! hat block" class="inline">in Snap<em>!</em>.
 </li>
 <li>
-<img src="../../img/4-internet/JS-var-x-equals.jpg" title="var x = " alt="var x = " class="inline noshadow"> is like the code below<code></code>; <code>var</code> creates the new variable, and <code>=</code> is like <code>set</code> in Snap<em>!</em>.<br> <img src="../../img/4-internet/script-var-x-set-x-to.png" title="script variables (x); set (x) to ()" alt="script variables (x); set (x) to ()" class="ms-4">
+<img src="../../img/4-internet/JS-var-x-equals.jpg" title="var x = " alt="var x = " class="inline noshadow"> is like the code below`<code>;</code>var<code>creates the new variable, and</code>=<code>is like</code>set` in Snap<em>!</em>.<br> <img src="../../img/4-internet/script-var-x-set-x-to.png" title="script variables (x); set (x) to ()" alt="script variables (x); set (x) to ()" class="ms-4">
 </li>
 </ul>
 </div>
@@ -532,7 +540,7 @@ Check out <a href="https://p5js.org" target="_blank">p5.js</a>, a web-based, Jav
 
 
 
-</main> <!-- /main -->
+</code></code></main><code class="ms-4"><code class="ms-4"> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -893,7 +901,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>
   </div>
 </nav>
-</div> <!-- /content -->
+</code></code></div><code class="ms-4"><code class="ms-4"> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
@@ -908,4 +916,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+</code></code></body></html>

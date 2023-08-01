@@ -75,6 +75,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../img/jac.png" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">JacketCS CSP</span>
     </a>
@@ -131,6 +134,11 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <div class="quarto-navbar-tools ms-auto">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
@@ -537,9 +545,9 @@ A <strong>word</strong> is a sequence of however many bits the CPU processes at 
 <div class="endnote">
 <p><a href="#hint-ldb" data-bs-toggle="collapse">Some old computers did allow that.</a>
   <div id="hint-ldb" class="collapse">The PDP-10, that big blue computer you saw in Lab 1, had
-  <code>ldb</code>
+  `ldb`
 (Load Byte) and
-<code>dpb</code>
+`dpb`
 (Deposit Byte) machine language instructions that included operands (inputs, essentially) for the width of the desired byte (how many bits) as well as location operands for the exact memory position of those bits.</p>
 <p>This much control over the use of memory was great for a machine that would largely be programmed at the machine language level, the lowest possible level of abstraction in the software domain. As higher level languages grew in popularity, computer architecture designers learned that <em>compilers,</em> the programs that translate a high level language into the machine language that the computer can actually run, could generate more efficient translations if the machine language was as simple as possible, doing a few things really quickly rather than doing a lot of things at varying speeds.</p></div></div>
 </div>

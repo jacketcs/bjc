@@ -75,6 +75,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../img/jac.png" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">JacketCS CSP</span>
     </a>
@@ -131,6 +134,11 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <div class="quarto-navbar-tools ms-auto">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
@@ -478,16 +486,16 @@ Linear search does a <em>complete</em> traversal of the list. Binary search save
 <li>
 <p><img src="../../img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"> Compare this <code>binary search</code> block with your code from <a href="../../unit-5/lab-1/1-sorted-lists.html" title="Page 1: Guess My Number">Page 1: Guess My Number</a>. What parts are the same? What parts are different?<br> (high)) { set (current index) to (average of (low) and (high)) #comment: find the middle word set (current item) to (item (current index) of (data)) if ((current item) = (value)) { report (true) } else { if ((current item) &gt; (value)) #comment: eliminate half the list { set (high) to ((current index) – (1)) } else { set (low) to ((current index) + (1)) } } } report (false) }” title=“binary search for (value) in (data) { script variables (low) (high) (current index) (current item) set (low) to (1) set (high) to (length of (data)) repeat until ((low) &gt; (high)) { set (current index) to (average of (low) and (high)) #comment: find the middle word set (current item) to (item (current index) of (data)) if ((current item) = (value)) { report (true) } else { if ((current item) &gt; (value)) #comment: eliminate half the list { set (high) to ((current index) – (1)) } else { set (low) to ((current index) + (1)) } } } report (false) }” /&gt;</p>
 <div class="endnote">
-<pre><code>The &lt;code&gt;&amp;gt;&lt;/code&gt; block (as well as the &lt;code&gt;&amp;lt;&lt;/code&gt; and &lt;code&gt;=&lt;/code&gt; blocks) compares words alphabetically: &lt;br /&gt;
+<pre><code>The `&amp;gt;` block (as well as the `&amp;lt;` and `=` blocks) compares words alphabetically: &lt;br /&gt;
 &lt;img class="ms-4" src="/img/5-algorithms/carrot-gt-banana-reporting.png" alt="(carrot) &gt; (banana) reporting true" title="(carrot) &gt; (banana) reporting true" /&gt;
 &lt;img class="ms-4" src="/img/5-algorithms/apple-gt-banana-reporting.png" alt="(apple) &gt; (banana) reporting false" title="(apple) &gt; (banana) reporting false" /&gt;
 &lt;/div&gt;
 &lt;/li&gt;
-&lt;li&gt;Check whether "seperate" is spelled correctly by using &lt;code&gt;binary search&lt;/code&gt; to look for the word in the sorted list &lt;img class="inline" src="/img/5-algorithms/100000-words-(sorted).png" alt="100,000 words (sorted)" title="100,000 words (sorted)" /&gt;.&lt;/li&gt;</code></pre>
+&lt;li&gt;Check whether "seperate" is spelled correctly by using `binary search` to look for the word in the sorted list &lt;img class="inline" src="/img/5-algorithms/100000-words-(sorted).png" alt="100,000 words (sorted)" title="100,000 words (sorted)" /&gt;.&lt;/li&gt;</code></pre>
 </div></li><li>
 Try <code>binary search</code> with some words that you know are spelled correctly and some that you know are incorrect.
 </li>
-<pre><code>&lt;div class="todo"&gt;Maybe change it to "Practice using &lt;code&gt;binary search&lt;/code&gt;: Try it with some words that you know are spelled correctly and some that you know are incorrect." --MF, 7/13/20&lt;/div&gt;</code></pre>
+<pre><code>&lt;div class="todo"&gt;Maybe change it to "Practice using `binary search`: Try it with some words that you know are spelled correctly and some that you know are incorrect." --MF, 7/13/20&lt;/div&gt;</code></pre>
 <li>
 Now use <code>binary search</code> to search for the same words in the unsorted <var>100,000 words</var>.
 </li>

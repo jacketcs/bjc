@@ -75,6 +75,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../img/jac.png" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">JacketCS CSP</span>
     </a>
@@ -131,6 +134,11 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <div class="quarto-navbar-tools ms-auto">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
@@ -443,7 +451,7 @@ The PHP script that I used to get the binary sequences for images is here: <a hr
 </p>
 </div>
 <div class="sidenote">
-<p>In many programming languages there’s a convention that every text string ends with a <em>null</em> byte, in which all eight bits are zero, a code that’s reserved for this purpose. So our “<code>Welcome…</code>” string might actually occupy 44 bytes.</p>
+<p>In many programming languages there’s a convention that every text string ends with a <em>null</em> byte, in which all eight bits are zero, a code that’s reserved for this purpose. So our “<code>Welcome...</code>” string might actually occupy 44 bytes.</p>
 </div>
 <p>
 So far we’ve been working with small chunks of data, from Boolean values (one bit) to characters (eight bits). But of course some information in your computer or smartphone is much bigger than that. For starters, characters aren’t generally used one at a time; they’re used in <em>text strings</em> such as “<code>Welcome to the Beauty and Joy of Computing.</code>” These 43 characters occupy 43 bytes of computer memory. But the real champion users of space are media files: pictures, sounds (mostly music), and video.
@@ -452,8 +460,8 @@ So far we’ve been working with small chunks of data, from Boolean values (one 
 If we could see inside the memory’s bits, a section of the memory might look something like this:
 </p>
 <blockquote class="blockquote">
-<p><code>01000001001000000111001101101101011000010111001001110100001000000111000001101000011011110110111001100101001011000010000001101100011010010110101101100101001000000111100101101111011101010111001000100000011011000110000101110000011101000110111101110000001000000110111101110010001000000110010001100101011100110110101101110100011011110111000000100000011000110110111101101101011100000111010101110100011001010111001000101100001000000110001101100001011011100 </code></p>
-</blockquote>
+<p><code>01000001001000000111001101101101011000010111001001110100001000000111000001101000011011110110111001100101001011000010000001101100011010010110101101100101001000000111100101101111011101010111001000100000011011000110000101110000011101000110111101110000001000000110111101110010001000000110010001100101011100110110101101110100011011110111000000100000011000110110111101101101011100000111010101110100011001010111001000101100001000000110001101100001011011100 `</code></p><code>
+</code></blockquote><code>
 <div class="vocab">
 <p>
 A <strong>binary sequence</strong> (also called a <em>bitstream</em>) is a string of ones and zeros.
@@ -532,7 +540,7 @@ A reporter that accepts a binary sequence as input and translates it into text:<
 <p>The quotes tell Snap<em>!</em> that the binary sequence should be saved “as is.” Without some text at the beginning, Snap<em>!</em> will think your binary sequence is a number, and it would remove any zeros at the front, which would change the interpretation of where each byte begins and ends.</p>
 </div>
 <li>
-Find the <code>set (</code><var>output</var><code>) to…</code> instruction and <strong>change the input text</strong> to a short text string of your choosing. The reported binary sequence will be stored in the <var>output</var> variable with quotes around it.<br> <img src="../../img/6-computers/set-output-to-translate-text.png" title="set (output) to (translate text (Beauty and Joy of Computing) to binary sequence)" alt="set (output) to (translate text (Beauty and Joy of Computing) to binary sequence)" class="ms-4">
+Find the <code>set (</code><var>output</var><code>) to...</code> instruction and <strong>change the input text</strong> to a short text string of your choosing. The reported binary sequence will be stored in the <var>output</var> variable with quotes around it.<br> <img src="../../img/6-computers/set-output-to-translate-text.png" title="set (output) to (translate text (Beauty and Joy of Computing) to binary sequence)" alt="set (output) to (translate text (Beauty and Joy of Computing) to binary sequence)" class="ms-4">
 </li>
 <li>
 Access the output by right-clicking (or control-clicking) on the OUTPUT watcher on the stage and choosing “export…” The binary sequence will download as a text file. Copy the binary sequence out of the file, but not the quotes.<br> <img src="../../img/6-computers/exporting-output-watcher.png" title="image of output watcher on stage storing a binary sequence with the drop-down menu open and  'export...' option selected" alt="image of output watcher on stage storing a binary sequence with the drop-down menu open and  'export...' option selected" class="ms-4">
@@ -573,18 +581,18 @@ Go back to the exported output.txt file and copy your original binary sequence a
 <li>
 <p>Try this binary sequence in <code>translate binary sequence to B&amp;W image</code> with the second input set to <var>14</var> pixels wide:<br></p>
 <p class="ms-4">
-</p><p><code class="break">00000110000000000001000110000000010000000000001100100110000011111111000001100111100000010010110011000111001111100000100110110000000001000000000000110000000000111000000011000100011000010000000100000110000110000000111111000000</code><br></p>
+</p><p><code class="break">00000110000000000001000110000000010000000000001100100110000011111111000001100111100000010010110011000111001111100000100110110000000001000000000000110000000000111000000011000100011000010000000100000110000110000000111111000000`<br></code></p><code class="break">
 <p></p>
 <p>You see should something like the BJC logo:<br> <img src="../../img/web/bjc-logo.png" title="Beauty and Joy of Computing logo: a 'b,' a 'j,' and a 'c' looking like two eyes and a nose with a smile below" alt="Beauty and Joy of Computing logo: a 'b,' a 'j,' and a 'c' looking like two eyes and a nose with a smile below" class="ms-4"></p>
-</li>
+</code></li><code class="break">
 <div class="ap-standard">
 <p>DAT-1.A</p>
 </div>
 <li>
 What do you get if you translate that same binary sequence into text? Why?
 </li>
-</ol>
-</div>
+</code></ol><code class="break">
+</code></div><code class="break">
 <div class="ap-standard">
 <p>DAT-1.A.8, DAT-1.A.9, DAT-1.A.10</p>
 </div>
@@ -698,7 +706,7 @@ Snap<em>!</em> has strengths that many programming languages do not, and it’s 
 
 
 
-</main> <!-- /main -->
+</code></code></main><code><code class="break"> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -1059,7 +1067,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>
   </div>
 </nav>
-</div> <!-- /content -->
+</code></code></div><code><code class="break"> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
@@ -1074,4 +1082,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+</code></code></body></html>

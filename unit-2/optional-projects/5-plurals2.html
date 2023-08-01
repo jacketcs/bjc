@@ -75,6 +75,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../img/jac.png" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">JacketCS CSP</span>
     </a>
@@ -131,6 +134,11 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <div class="quarto-navbar-tools ms-auto">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
@@ -477,7 +485,7 @@ This specialist block should work correctly for words that fit its specialty <im
 <p>Showing the <em>structure</em> of the method—just the overall strategy—in the “top-level” block and leaving the details to separate blocks is one part of an important computer science idea called <em>abstraction</em>. Abstraction keeps your code clear, readable, and more easily debugged. It will also help your code be more flexible.</p>
 </div>
 <li>
-When you trust your new specialist block, edit <code> plural</code> to use the specialist. Test (you can use <code>map</code>) to make sure <code>plural</code> still works for all the words it used to work for, as well as the new ones.
+When you trust your new specialist block, edit <code>plural</code> to use the specialist. Test (you can use <code>map</code>) to make sure <code>plural</code> still works for all the words it used to work for, as well as the new ones.
 </li>
 <li>
 Create <code>plural-y</code> to handle words like <img src="../../img/2-complexity/plural_y-tray-with-result.png" title="plural-y (tray) reporting 'trays'" alt="plural-y (tray) reporting 'trays'"> and <img src="../../img/2-complexity/plural_y-sky-with-result.png" title="plural-y (sky) reporting 'skies'" alt="plural-y (sky) reporting 'skies'">
@@ -553,7 +561,7 @@ The <code>call</code> block in the palette doesn’t include the “<code>with i
 <p>There’s no reason the keys have to be single letters. Modify the code in <code>plural</code> so that it tests all <em>trailing substrings</em> of the word against the specialist list. That is, if the word is “ditch,” you’d look in the specialist list for “ditch,” then for “itch,” then “tch,” “ch,” and finally, if nothing else is found, “h.” You’d put<br> <img src="../../img/2-complexity/ch-dispatch.png" title="list (ch) (ringed block (join ( ) (es)))" alt="list (ch) (ringed block (join ( ) (es)))" class="ms-4"><br> in the list, and then words ending “ch” would have “es” added. This mechanism is very general; it works even for special cases such as<br> <img src="../../img/2-complexity/child-dispatch.png" title="list (child) (ringified (word (children)))" alt="list (child) (ringified (word (children)))" class="ms-4"><br> (You’ll have to define the <code>word</code> function that just reports its input; it’s needed because you can’t type letters directly into a ring.) <em>Now</em> you have a <em>really</em> uncluttered <code>plural</code> block. And it’ll even work for a language other than English, if you make a different specialist list.</p>
 </li>
 <li>
-<p>If you modify the trailing-substring test so that instead of giving up if it can’t find the last letter of the word as a key, it goes one step further and looks for an <em>empty</em> key in the specialist list, and you add<br> <img src="../../img/2-complexity/default-dispatch.png" title="(item ( ) (ringed (join ( ) (s))))" alt="(item ( ) (ringed (join ( ) (s))))" class="ms-4"><br> to the list, then you can be sure that every possible word will match that, if nothing else, so you don’t need the <code>if</code> any more. Your <code>plural</code> block can now be just one-line: <code>report (call (item 2 of (longest trailing substring …</code>.</p>
+<p>If you modify the trailing-substring test so that instead of giving up if it can’t find the last letter of the word as a key, it goes one step further and looks for an <em>empty</em> key in the specialist list, and you add<br> <img src="../../img/2-complexity/default-dispatch.png" title="(item ( ) (ringed (join ( ) (s))))" alt="(item ( ) (ringed (join ( ) (s))))" class="ms-4"><br> to the list, then you can be sure that every possible word will match that, if nothing else, so you don’t need the <code>if</code> any more. Your <code>plural</code> block can now be just one-line: <code>report (call (item 2 of (longest trailing substring ...</code>.</p>
 </li>
 <li>
 For an extra challenge, modify your trailing-substring test so that a plus sign in the key matches any vowel (it will serve as a wild-card character), so you can do this:<br> <img src="../../img/2-complexity/match-vowels.png" title="list (...) (list (+y) (ringed (join ( ) (s)))) (list (y) (ringed (join (all but last letter of ( )) (ies)))) (...)" alt="list (...) (list (+y) (ringed (join ( ) (s)))) (list (y) (ringed (join (all but last letter of ( )) (ies)))) (...)" class="ms-4">

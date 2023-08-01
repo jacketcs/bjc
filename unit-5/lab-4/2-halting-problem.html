@@ -75,6 +75,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../img/jac.png" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">JacketCS CSP</span>
     </a>
@@ -131,6 +134,11 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <div class="quarto-navbar-tools ms-auto">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
@@ -556,7 +564,7 @@ Showing How This Creates a Contradiction
 <p>
 </p><p>To prove there can be no such function, we need to create a contradiction. We need to show that there has to be at least one function and one input to that function for which <code>halts?</code> fails to work the way we assumed it does. So, we can make up a block, <code>tester</code>, specifically for the purpose of breaking <code>halts?</code>:<br></p>
 <div class="sidenoteBig">
-<p>Just like the <code>#</code> and <code>⋮</code> symbols for inputs declared to be <em>numbers</em> or <em>lists</em>, the <code>λ</code> is not part of the input’s name but is a <strong>type hint</strong> that was created when selecting the <em>reporter</em> input type:<br><br>
+<p>Just like the <code>\#</code> and <code>⋮</code> symbols for inputs declared to be <em>numbers</em> or <em>lists</em>, the <code>λ</code> is not part of the input’s name but is a <strong>type hint</strong> that was created when selecting the <em>reporter</em> input type:<br><br>
 <img src="../../img/5-algorithms/input-type-reporter.png" title="selecting the Reporter input type" alt="selecting the Reporter input type" class="ms-4"><br> Recall that selecting an input type changes the appearance of the input slot so that it indicates what kind of input is expected. The input slot for <code>tester</code> will have a rounded gray ring to indicate that the input should be a reporter: <img src="../../img/5-algorithms/tester().png" title="tester ()" alt="tester ()" class="inline py-0"></p>
 </div>
 <p><img src="../../img/5-algorithms/tester-halting.png" title="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(It doesn't matter what value is reported.)}}" alt="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(It doesn't matter what value is reported.)}}" class="ms-4"></p>
