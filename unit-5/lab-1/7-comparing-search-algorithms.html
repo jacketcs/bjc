@@ -441,16 +441,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="learn">
-<p>
-<strong>On this page,</strong> you will learn a recursive technique to remove duplicates from a list.<br> <img src="../../img/5-algorithms/distinct-reporter-reporting.png" title="distinct items from (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) repoting { apples, oranges, bananas, bread, carrots}" alt="distinct items from (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) reporting { apples, oranges, bananas, bread, carrots}" class="ms-4">
-</p>
+<p><strong>On this page,</strong> you will learn a recursive technique to remove duplicates from a list.<br> <img src="../../img/5-algorithms/distinct-reporter-reporting.png" title="distinct items from (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) repoting { apples, oranges, bananas, bread, carrots}" alt="distinct items from (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) reporting { apples, oranges, bananas, bread, carrots}" class="ms-4"></p>
 </div>
-<p>
-Suppose you have a list of items and want to know if the elements of the list are <em>distinct</em>. For example, you might want to make sure that you don’t have anything on your shopping list twice.
-</p>
-<p>
-As a first step, we’ll just answer the yes/no question: are there any duplicates on your list?<br> <img src="../../img/5-algorithms/distinct-predicate-reporting.png" title="are the items of (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) distinct? reporting false" alt="are the items of (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) distinct? reporting false" class="ms-4">
-</p>
+<p>Suppose you have a list of items and want to know if the elements of the list are <em>distinct</em>. For example, you might want to make sure that you don’t have anything on your shopping list twice.</p>
+<p>As a first step, we’ll just answer the yes/no question: are there any duplicates on your list?<br> <img src="../../img/5-algorithms/distinct-predicate-reporting.png" title="are the items of (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) distinct? reporting false" alt="are the items of (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) distinct? reporting false" class="ms-4"></p>
 <div id="first" class="forYouToDo">
 <ol>
 <li>
@@ -497,18 +491,15 @@ report (are the items of () distinct?)
 </li>
 </ol>
 </div>
-<p>
-For your grocery list, you wouldn’t just want to know whether or not there are duplicates. You’d want a new list with the duplicates removed.
-</p>
-<div class="forYouToDo">
+<p>For your grocery list, you wouldn’t just want to know whether or not there are duplicates. You’d want a new list with the duplicates removed.</p>
+::: forYouToDo
 <ol start="4">
 <li>
 Experiment with the <img src="../../img/blocks/in-front-of-full-size.png" title="() in front of 'list input slot'" alt="() in front of 'list input slot'" class="inline py-0"> block using a few different inputs. <img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> What does this block report?
 </li>
 <li>
 <p>Build a <code>distinct items from</code> reporter using a structure similar to that of the <code>are the items distinct?</code> predicate.</p>
-<div class="endnote">
-<p><img src="../../img/5-algorithms/distinct-reporter-starter.png" title="distinct items form (data)
+<p>::: endnote <img src="../../img/5-algorithms/distinct-reporter-starter.png" title="distinct items form (data)
 {
 if (is (data) empty?)
 {
@@ -531,11 +522,8 @@ report ()
 }
 report ()
 }" class="float-end"></p>
-<p>
-The algorithm for this block will make the same decisions as in <code>are the items distinct?</code>. But that was a predicate. This one has to report a list. So look at the three <code>report</code> blocks in your code for the <code>are the items distinct?</code> predicate, and decide what they should report for the <code>distinct items from</code> reporter.
-</p>
-<p>
-</p><p><a href="#hint-reporter" data-bs-toggle="collapse" title="Need another hint about the `distinct items from` reporter?">Need another hint?</a></p>
+<p>The algorithm for this block will make the same decisions as in <code>are the items distinct?</code>. But that was a predicate. This one has to report a list. So look at the three <code>report</code> blocks in your code for the <code>are the items distinct?</code> predicate, and decide what they should report for the <code>distinct items from</code> reporter.</p>
+<p><a href="#hint-reporter" data-bs-toggle="collapse" title="Need another hint about the `distinct items from` reporter?">Need another hint?</a></p>
 <div id="hint-reporter" class="collapse">
 <ul>
 <li>
@@ -554,10 +542,8 @@ If computer makes it to the third <code>report</code> block, what does that tell
 </li>
 </ul>
 </div>
-<p></p>
 <p style="clear: both; height: 0px;">
-</p>
-</div>
+</p><p>:::</p>
 </li>
 <li>
 Test it. Be sure to pick good test cases: More than one pair of duplicates, more than two items of the same value, duplicates right next to each other in the list, etc.
@@ -568,7 +554,7 @@ Test it. Be sure to pick good test cases: More than one pair of duplicates, more
 </div>
 </li>
 </ol>
-</div>
+<p>:::</p>
 
 
 

@@ -424,30 +424,24 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="learn">
 <p><img src="../../img/2-complexity/humpty-dumpty-tenniel.png" title="Humpty Dumpty on brick wall" alt="Humpty Dumpty on brick wall" class="float-end"></p>
-<p>
-<strong>In this project,</strong> you will use abstraction to draw a brick wall.
-</p>
+<p><strong>In this project,</strong> you will use abstraction to draw a brick wall.</p>
 <p><img src="../../img/abstraction/new-brickwall/wall.png" title="Sample image of brick wall" alt="Sample image of brick wall" class="ms-4" border="0"></p>
 </div>
 <h3 class="anchored">
 Drawing One Brick
 </h3>
-<p>
-</p><p>A picture of a brick is just a rectangle with a brick red color. However, there’s no <code>draw rectangle</code> block in <span class="snap">snap</span>. One way to draw one is by thinking of a rectangle as a very thick line. Here’s the idea:<br></p>
+<p>A picture of a brick is just a rectangle with a brick red color. However, there’s no <code>draw rectangle</code> block in <span class="snap">snap</span>. One way to draw one is by thinking of a rectangle as a very thick line. Here’s the idea:<br></p>
 <div class="sidenoteBig">
 <p>Any good programming language might have many tools for drawing and moving, but it wouldn’t make sense to have special tools for drawing bricks because most programs don’t involve bricks. That’s the sort of tool you make yourself when you need it.</p>
 </div>
 <p><img src="../../img/2-complexity/U2ImageVideoAddendum_img/simpleBrickCode.png" title="draw brick, length:(length) width:(width){set pen size to(width); move(length) steps}" alt="draw brick, length:(length) width:(width){set pen size to(width); move(length) steps}" class="ms-4"></p>
-<p></p>
 <div id="first" class="forYouToDo">
 <ol>
 <li>
 <img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> The code below has more details than the picture above. Review it, and determine what it will do.<br> <img src="../../img/3-lists/drawBrickCode.png" title="draw brick, length:(length#) width:(width#){set pen color to (red); set flat line ends to (true); set pen size to (width); pen down; move(length) steps; pen up}" alt="draw brick, length:(length#) width:(width#){set pen color to (red); set flat line ends to (true); set pen size to (width); pen down; move(length) steps; pen up}" class="ms-4"><br> <a class="run" href="../../prog/3-lists/U3L1-brickwall.xml"><img src="../../img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline" width="550"></a> Run the code. Does it do what you expected?
 </li>
 <div class="endnote">
-<p>
-Ordinarily, Snap<em>!</em> draws rounded ends on thick lines: <img src="../../img/2-complexity/U2ImageVideoAddendum_img/round-ends.png" title="line with round ends" alt="line with round ends" class="py-0">. That’s often the best choice, and you can see why below. But for bricks, we want <em>flat</em> line ends: <img src="../../img/2-complexity/U2ImageVideoAddendum_img/flat-ends.png" title="flat line ends" alt="flat line ends" class="py-0">, and so we’ll use <img src="../../img/blocks/set-flat-line-ends.png" title="set (flat line ends) to 'predicate input slot'" alt="set (flat line ends) to 'predicate input slot'"> to turn on flat line ends.
-</p>
+<p>Ordinarily, Snap<em>!</em> draws rounded ends on thick lines: <img src="../../img/2-complexity/U2ImageVideoAddendum_img/round-ends.png" title="line with round ends" alt="line with round ends" class="py-0">. That’s often the best choice, and you can see why below. But for bricks, we want <em>flat</em> line ends: <img src="../../img/2-complexity/U2ImageVideoAddendum_img/flat-ends.png" title="flat line ends" alt="flat line ends" class="py-0">, and so we’ll use <img src="../../img/blocks/set-flat-line-ends.png" title="set (flat line ends) to 'predicate input slot'" alt="set (flat line ends) to 'predicate input slot'"> to turn on flat line ends.</p>
 <div class="grid">
 <div class="g-col-6">
 <p><img src="../../img/2-complexity/flat-line-ends-why.jpg" title="Square with flat line ends versus square with round line ends" alt="Square with flat line ends versus square with round line ends"><br><strong>flat</strong> vs.&nbsp;<strong>rounded</strong> line ends</p>
@@ -464,29 +458,20 @@ Ordinarily, Snap<em>!</em> draws rounded ends on thick lines: <img src="../../im
 <div class="ap-standard">
 <p>AAP-3.B.1, AAP-3.B.5</p>
 </div>
-<p>
-As you learned in <a href="../../unit-1/lab-2/2-gossip.html" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unit 1 Lab 2 Page 2: Making Programs Talk</a>, <strong>procedural abstraction</strong> is the process of developing a program by breaking up a large problem into smaller sub-problems.
-</p>
-<p>
-Creating a <code>draw brick</code> block lets you think in terms of a procedure with a name related to the problem you are solving. This makes your code easier to read, and once you’ve coded and debugged the block, you don’t need to think about how it works each time you use it. That’s the beauty of procedural abstraction.
-</p>
+<p>As you learned in <a href="../../unit-1/lab-2/2-gossip.html" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unit 1 Lab 2 Page 2: Making Programs Talk</a>, <strong>procedural abstraction</strong> is the process of developing a program by breaking up a large problem into smaller sub-problems.</p>
+<p>Creating a <code>draw brick</code> block lets you think in terms of a procedure with a name related to the problem you are solving. This makes your code easier to read, and once you’ve coded and debugged the block, you don’t need to think about how it works each time you use it. That’s the beauty of procedural abstraction.</p>
 </div>
 <h3 class="anchored">
 Using Modularity
 </h3>
-<p>
-You’d like the “top level” block to be something like this:<br> <img src="../../img/2-complexity/U2ImageVideoAddendum_img/draw-brick-wall-7.png" title="draw brick wall, rows: (7)" alt="draw brick wall, rows: (7)" class="ms-4"><br> Getting there involves <em>modularity</em>.
-</p>
+<p>You’d like the “top level” block to be something like this:<br> <img src="../../img/2-complexity/U2ImageVideoAddendum_img/draw-brick-wall-7.png" title="draw brick wall, rows: (7)" alt="draw brick wall, rows: (7)" class="ms-4"><br> Getting there involves <em>modularity</em>.</p>
 <div class="vocabFullWidth">
 <div class="ap-standard">
 <p>AAP-3.B.2, AAP-3.B.3</p>
 </div>
-<p>
-<strong>Modularity</strong> is the process of breaking a problem into smaller pieces. Modularity is a form of procedural abstraction.
-</p>
+<p><strong>Modularity</strong> is the process of breaking a problem into smaller pieces. Modularity is a form of procedural abstraction.</p>
 </div>
-<p>
-</p><p>There are two kinds of rows, so you’ll make blocks that specialize in each:</p>
+<p>There are two kinds of rows, so you’ll make blocks that specialize in each:</p>
 <ul>
 <li>
 <strong>Row A</strong>: <img src="../../img/abstraction/new-brickwall/row-a.png" title="Row A" alt="Row A" class="noshadow" border="0">
@@ -495,7 +480,6 @@ You’d like the “top level” block to be something like this:<br> <img src="
 <strong>Row B</strong>: <img src="../../img/abstraction/new-brickwall/row-b.png" title="Row B" alt="Row B" class="noshadow" border="0">
 </li>
 </ul>
-<p></p>
 <div id="second" class="forYouToDo">
 <ol start="2">
 <div class="ap-standard">
@@ -507,20 +491,14 @@ Use <code>draw brick</code> to make blocks <img src="../../img/2-complexity/U2Im
 <div class="endnote">
 <p><img src="../../img/icons/read-more-mini.png" title="Read More" alt="Read More" class="inline"> <a href="#hint-too-much" data-bs-toggle="collapse" title="Too much abstraction?">Too much abstraction?</a></p>
 <div id="hint-too-much" class="collapse">
-<p>
-It’s possible to go overboard on abstraction and build so many blocks that your program is just as cluttered as it would be without the custom blocks. But it <em>can</em> be useful to make a custom block even when its definition is just one built-in block. For example, to draw the mortar between blocks (the white gaps), you can just use <code>move (4) steps</code>, but it might make sense to define a <code>draw mortar</code> block that uses <code>move</code> inside it.
-</p>
-<p>
-Why? You might later decide that four steps is the wrong thickness for mortar and you’d rather have five. Or you might want the mortar to be mortar-colored, slightly gray. With many <code>move (4) steps</code> instructions scattered through your program, you would have to find and change each one. To make matters worse, your complete project might have <code>move</code> blocks that <em>aren’t</em> about mortar. But with a <code>draw mortar</code> block, you can change just its definition, and all the mortar in your picture will be changed.
-</p>
+<p>It’s possible to go overboard on abstraction and build so many blocks that your program is just as cluttered as it would be without the custom blocks. But it <em>can</em> be useful to make a custom block even when its definition is just one built-in block. For example, to draw the mortar between blocks (the white gaps), you can just use <code>move (4) steps</code>, but it might make sense to define a <code>draw mortar</code> block that uses <code>move</code> inside it.</p>
+<p>Why? You might later decide that four steps is the wrong thickness for mortar and you’d rather have five. Or you might want the mortar to be mortar-colored, slightly gray. With many <code>move (4) steps</code> instructions scattered through your program, you would have to find and change each one. To make matters worse, your complete project might have <code>move</code> blocks that <em>aren’t</em> about mortar. But with a <code>draw mortar</code> block, you can change just its definition, and all the mortar in your picture will be changed.</p>
 </div>
 </div>
 <li>
 <p>The two kinds of rows should be exactly the same length. Your first try at drawing Row B is probably a little too long. <strong>If so, debug it.</strong></p>
 <div class="endnote">
-<p>
-Debug by thinking about what you are trying to accomplish, not about your code. <a href="#hint-debug" data-bs-toggle="collapse" title="Debug by thinking about what you are trying to accomplish, not about your code. For example...">For example…</a>
-</p>
+<p>Debug by thinking about what you are trying to accomplish, not about your code. <a href="#hint-debug" data-bs-toggle="collapse" title="Debug by thinking about what you are trying to accomplish, not about your code. For example...">For example…</a></p>
 <div id="hint-debug" class="collapse">
 <ul>
 <li>

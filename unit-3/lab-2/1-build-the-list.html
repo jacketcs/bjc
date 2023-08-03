@@ -423,20 +423,14 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="learn">
-<p>
-<strong>In this lab,</strong> you will develop a Contact List database application like the one on your phone.
-</p>
-<p>
-<strong>On this page,</strong> you will develop an <strong>Abstract Data Type</strong> to store and access <em>contact data</em> (name, address, phone number, etc.).
-</p>
+<p><strong>In this lab,</strong> you will develop a Contact List database application like the one on your phone.</p>
+<p><strong>On this page,</strong> you will develop an <strong>Abstract Data Type</strong> to store and access <em>contact data</em> (name, address, phone number, etc.).</p>
 </div>
 <div class="takeNote">
 <h4 class="anchored">
 <strong>Preserve Privacy</strong>
 </h4>
-<p>
-Snap<em>!</em> projects are not secure. Do not use your or your classmates’ personal information.
-</p>
+<p>Snap<em>!</em> projects are not secure. Do not use your or your classmates’ personal information.</p>
 </div>
 <h3 class="anchored">
 Setting Up the Contact List
@@ -480,16 +474,13 @@ Creating the ADT
 <p>Gamal: Yeah. In this project, we’ll need a <code>contact</code> constructor and then selectors to access the <code>name</code>, <code>address</code>, and <code>phone number</code> for any given contact.</p>
 </div>
 </div>
-<div class="forYouToDo">
+::: forYouToDo
 <ol start="4">
 <li>
-<div class="sidenoteBig">
-<p><strong>Shortcut:</strong> You could paste the following text into the “Make a block” window to build the block more quickly.</p>
+<p>::: sidenoteBig <strong>Shortcut:</strong> You could paste the following text into the “Make a block” window to build the block more quickly.</p>
 <p style="margin-left:25px;">
 </p><p><code>contact with name: %name address: %address phone: %phone</code></p>
-<p></p>
-<p>The percent (%) signs make those words become input variables.</p>
-</div>
+<p>The percent (%) signs make those words become input variables. :::</p>
 <p>Create a <code>contact</code> <em>constructor</em> that accepts three pieces of data as input: the contact’s <var>name</var>, <var>phone number</var>, and <var>address</var>. <br> <img src="../../img/3-lists/contact-constructor-untyped.png" title="contact with name: () address: () phone: ()" alt="contact with name: () address: () phone: ()" class="ms-4"><br> It should report one whole contact (a list of the three items):<br> <img src="../../img/3-lists/contact-constructor-reporting.png" title="contact with name: (Betsy Anderson) address: (123 Main St. #4, New York, NY 10001) phone: (212-555-1234) reporting {Betsy Anderson; 123 Main St. #4, New York, NY 10001; 212-555-1234}" alt="contact with name: (Betsy) address: (123 Main St. #4, New York, NY 10001) phone: (212-555-1234) reporting {Betsy Anderson; 123 Main St. #4, New York, NY 10001; 212-555-1234}" class="ms-4"><br></p>
 </li>
 <li>
@@ -498,20 +489,12 @@ Creating the ADT
 <div class="sidenote">
 <p>You learned about input types and output types (domain and range) on <a href="../../unit-2/lab-3/1-what-is-predicate.html" title="Unit 2 Lab 3 Page 1: What's a Predicate?">Unit 2 Lab 3 Page 1: What’s a Predicate?</a>.</p>
 </div>
-<p>
-It’s important to make sure that your inputs to a function match the expected input type. For example, the input type of <code>address from contact</code> matches the output type of <code>contact</code>; they are both of type “contact.”
-</p>
-<p>
-If you call <code>address from contact</code> with an input that doesn’t match, such as a <em>list</em> of contacts (for example, the <var>contact list</var> variable or the result of running <code>keep</code> and having a subset of that list), it’s not going to work. That may sound obvious, but in fact, beginning programmers make mistakes like that all the time; you have to teach yourself to think about the input and output types of your functions every time you write or use one.
-</p>
-<p>
-That’s also true about the inputs to the <code>contact</code> constructor; you can’t put something that isn’t a name in the name input for <code>contact</code>.
-</p>
+<p>It’s important to make sure that your inputs to a function match the expected input type. For example, the input type of <code>address from contact</code> matches the output type of <code>contact</code>; they are both of type “contact.”</p>
+<p>If you call <code>address from contact</code> with an input that doesn’t match, such as a <em>list</em> of contacts (for example, the <var>contact list</var> variable or the result of running <code>keep</code> and having a subset of that list), it’s not going to work. That may sound obvious, but in fact, beginning programmers make mistakes like that all the time; you have to teach yourself to think about the input and output types of your functions every time you write or use one.</p>
+<p>That’s also true about the inputs to the <code>contact</code> constructor; you can’t put something that isn’t a name in the name input for <code>contact</code>.</p>
 </div>
 <div class="endnote">
-<p>
-It’s somewhat artificial to use the constructor as the input to a selector; these images are just examples to show what the selectors should be able to do when given a contact as input. In <em>your</em> program, the selectors will take an item from the contact list as input and output the correct piece of that contact, like this:<br> <img src="../../img/3-lists/address-from-contact-item-1-of-contact-list-reporting.png" title="address from contact (item (1) of (contact list)) reporting '123 Main St. #4, New York, NY 10001'" alt="address from contact (item (1) of (contact list)) reporting '123 Main St. #4, New York, NY 10001'" class="ms-4">
-</p>
+<p>It’s somewhat artificial to use the constructor as the input to a selector; these images are just examples to show what the selectors should be able to do when given a contact as input. In <em>your</em> program, the selectors will take an item from the contact list as input and output the correct piece of that contact, like this:<br> <img src="../../img/3-lists/address-from-contact-item-1-of-contact-list-reporting.png" title="address from contact (item (1) of (contact list)) reporting '123 Main St. #4, New York, NY 10001'" alt="address from contact (item (1) of (contact list)) reporting '123 Main St. #4, New York, NY 10001'" class="ms-4"></p>
 </div>
 </li>
 <li>
@@ -554,7 +537,7 @@ Try selecting the <code>name</code>, <code>address</code>, or <code>phone</code>
 <img src="../../img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"> Write down how the use of an abstract data type helps manage complexity in your program.
 </li>
 </ol>
-</div>
+<p>:::</p>
 
 
 

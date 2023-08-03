@@ -453,35 +453,21 @@ Build blocks for <code>maximum</code> (reporting the larger of two input numbers
 </li>
 </ol>
 </div>
-<p>
-The <img src="../../img/blocks/combine.png" title="combine 'list input slot' using 'reporter input slot'" alt="combine 'list input slot' using 'reporter input slot'" class="inline"> block takes two inputs: a list and an operation <em>with two inputs</em>, and it reports the result of combining all the elements in the input list using the input operation. For example, the expression below reports: 0 + 1 + 2.<br> <img src="../../img/3-lists/combine-simple-example.png" title="combine (list {0, 1, 2}) with (()+()) reporting 3" alt="combine (list {0, 1, 2}) with (()+()) reporting 3" class="ms-4">
-</p>
+<p>The <img src="../../img/blocks/combine.png" title="combine 'list input slot' using 'reporter input slot'" alt="combine 'list input slot' using 'reporter input slot'" class="inline"> block takes two inputs: a list and an operation <em>with two inputs</em>, and it reports the result of combining all the elements in the input list using the input operation. For example, the expression below reports: 0 + 1 + 2.<br> <img src="../../img/3-lists/combine-simple-example.png" title="combine (list {0, 1, 2}) with (()+()) reporting 3" alt="combine (list {0, 1, 2}) with (()+()) reporting 3" class="ms-4"></p>
 <div class="takeNote">
-<p>
-<strong>You choose the operation, and <code>combine</code> performs that operation by <em>combining</em> all the items in the input list and then reports the result.</strong>
-</p>
-<p>
-Notice that the function used to <em>combine</em> the list items always has two blank input slots. The <code>keep</code> block only needs one blank in its input function, but with <code>combine</code>, two are required.
-</p>
+<p><strong>You choose the operation, and <code>combine</code> performs that operation by <em>combining</em> all the items in the input list and then reports the result.</strong></p>
+<p>Notice that the function used to <em>combine</em> the list items always has two blank input slots. The <code>keep</code> block only needs one blank in its input function, but with <code>combine</code>, two are required.</p>
 </div>
 <div class="endnote">
-<p>
-<code>Combine</code> is a <em>higher-order function</em>; it is a function that takes a function as input. You’ve seen another higher-order function already: <code>keep</code> (in <a href="../../unit-2/lab-3/5-keeping-list-items.html" title="Keeping Items from a List">Unit 2 Lab 3</a>).
-</p>
-<p>
-</p><p>Unlike <code>keep</code>, the <code>combine</code> function is only used with a few input functions. <a href="#hint-which-functions" data-bs-toggle="collapse" title="Which functions?">Which functions?</a></p>
+<p><code>Combine</code> is a <em>higher-order function</em>; it is a function that takes a function as input. You’ve seen another higher-order function already: <code>keep</code> (in <a href="../../unit-2/lab-3/5-keeping-list-items.html" title="Keeping Items from a List">Unit 2 Lab 3</a>).</p>
+<p>Unlike <code>keep</code>, the <code>combine</code> function is only used with a few input functions. <a href="#hint-which-functions" data-bs-toggle="collapse" title="Which functions?">Which functions?</a></p>
 <div id="hint-which-functions" class="collapse">
-<p>
-<code>Combine</code> is mostly used with <em>only these functions</em>:<br> <img src="../../img/3-lists/plus.png" title="+" alt="+" class="ms-4"> <img src="../../img/3-lists/times.png" title="×" alt="×"><br> <img src="../../img/3-lists/and-block.png" title="and" alt="and" class="ms-4"> <img src="../../img/3-lists/or-block.png" title="or" alt="or"><br> <img src="../../img/3-lists/join.png" title="join" alt="join" class="ms-4"> <img src="../../img/3-lists/join-words.png" title="join words" alt="join words"><br> and the <img src="../../img/3-lists/maximum.png" title="maximum of () ()" alt="maximum of () ()" class="inline"> and <img src="../../img/3-lists/minimum.png" title="minimum of () ()" alt="minimum of () ()" class="inline"> blocks you’ve just written yourself.
-</p>
-<p>
-</p><p><a data-bs-toggle="collapse" href="#hint-3">Why so few?</a></p>
+<p><code>Combine</code> is mostly used with <em>only these functions</em>:<br> <img src="../../img/3-lists/plus.png" title="+" alt="+" class="ms-4"> <img src="../../img/3-lists/times.png" title="×" alt="×"><br> <img src="../../img/3-lists/and-block.png" title="and" alt="and" class="ms-4"> <img src="../../img/3-lists/or-block.png" title="or" alt="or"><br> <img src="../../img/3-lists/join.png" title="join" alt="join" class="ms-4"> <img src="../../img/3-lists/join-words.png" title="join words" alt="join words"><br> and the <img src="../../img/3-lists/maximum.png" title="maximum of () ()" alt="maximum of () ()" class="inline"> and <img src="../../img/3-lists/minimum.png" title="minimum of () ()" alt="minimum of () ()" class="inline"> blocks you’ve just written yourself.</p>
+<p><a data-bs-toggle="collapse" href="#hint-3">Why so few?</a></p>
 <div id="hint-3" class="collapse">
 <p>The function has to be <em>associative</em>, meaning that it can’t matter what order you group the items in. For example, addition is associative: (7 + 8) + 1 is the same as 7 + (8 + 1) (work it out yourself), but subtraction is not: (7 − 8) − 1 is different from 7 − (8 − 1). So expressions like <img src="../../img/3-lists/combine-minus.png" alt="combine with (-) items of (list 7 8 1)"> would be ambiguous.</p>
 </div>
-<p></p>
 </div>
-<p></p>
 </div>
 <div class="forYouToDo">
 <ol start="3">
@@ -496,9 +482,7 @@ Create a <code>sum of list</code> block that reports the sum of the items of a l
 <div class="endnote">
 <p><a href="#hint-average" data-bs-toggle="collapse" title="Hint about average of list">Hint about <code>average of list</code></a></p>
 <div id="hint-average" class="collapse">
-<p>
-First think: how do you calculate an average? Then think: what blocks could help you do that in Snap<em>!</em>?
-</p>
+<p>First think: how do you calculate an average? Then think: what blocks could help you do that in Snap<em>!</em>?</p>
 </div>
 </div>
 </li>
@@ -507,9 +491,7 @@ First think: how do you calculate an average? Then think: what blocks could help
 <div class="ap-standard">
 <p>AAP-2.M.2, AAP-2.O.4</p>
 </div>
-<p>
-<code>Average of list</code> and <code>sum of list</code> are procedures that you’ll need repeatedly, so after a while, you just know how to write them, or you’ll put them in a library, and you won’t have to reinvent them each time. Finding the maximum or minimum value in a list and checking for divisibility are also commonly needed algorithms.
-</p>
+<p><code>Average of list</code> and <code>sum of list</code> are procedures that you’ll need repeatedly, so after a while, you just know how to write them, or you’ll put them in a library, and you won’t have to reinvent them each time. Finding the maximum or minimum value in a list and checking for divisibility are also commonly needed algorithms.</p>
 <div class="examFullWidth">
 <div class="ap-standard">
 <p>AAP-3.C.2</p>
@@ -522,9 +504,7 @@ First think: how do you calculate an average? Then think: what blocks could help
 <pre class="inline">RETURN</pre>
 <p>(like <code>report</code>). For example, this definition<br></p>
 <div class="sidenote">
-<p>
-In many languages (including Snap<em>!</em>) variables must be <em>declared</em> in some way (in Snap<em>!</em>, you can click the “Make a variable” button or use the <code>script variables</code> block). But the AP’s language doesn’t include variable declarations, so you won’t see them on the exam.
-</p>
+<p>In many languages (including Snap<em>!</em>) variables must be <em>declared</em> in some way (in Snap<em>!</em>, you can click the “Make a variable” button or use the <code>script variables</code> block). But the AP’s language doesn’t include variable declarations, so you won’t see them on the exam.</p>
 </div>
 <p><img src="../../img/3-lists/square-roots-definition.png" title="square roots of (number) {script variables (positive root), set (positive root) to ((sqrt) of (number))), report (list (positive root) ((-1) × positive root))" alt="square roots of (number) {script variables (positive root), set (positive root) to ((sqrt) of (number))), report (list (positive root) ((-1) × positive root))" class="ms-4"><br> would be written as</p>
 <div class="pre-container">
@@ -607,9 +587,7 @@ RETURN(a = b)
 <!-- Question 5 -->
 <div class="assessment-data" type="multiplechoice" data-identifier="What is the value of x?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri5" data-shuffle="true">
 <div class="prompt">
-<p>
-When will “Error. Invalid entry.” be displayed?
-</p>
+<p>When will “Error. Invalid entry.” be displayed?</p>
 <div class="pre-container ms-4">
 <pre class="inline">PROCEDURE greaterThanOrEqualTo(a, b)
 IF(a &gt; b)

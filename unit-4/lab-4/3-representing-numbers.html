@@ -432,21 +432,13 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="todo">
-<p>
-BH: Keep… But with my original wording in TIF A.
-</p>
-<p>
-MF: lightly clean up to make the text more concise; do we really need to teach width and word??
-</p>
+<p>BH: Keep… But with my original wording in TIF A.</p>
+<p>MF: lightly clean up to make the text more concise; do we really need to teach width and word??</p>
 </div>
 <div class="learn">
-<p>
-<strong>On this page,</strong> you’ll learn how computers store nonnegative integers.
-</p>
+<p><strong>On this page,</strong> you’ll learn how computers store nonnegative integers.</p>
 </div>
-<p>
-As you know, numbers show up everywhere in computer algorithms—even if numbers aren’t the topic. For example, the user may be interested in a picture, but that picture is an abstraction over numbers. Numbers are also used to find a specific item in a list. Over the next several pages, you’ll look more closely at numbers inside the computer.
-</p>
+<p>As you know, numbers show up everywhere in computer algorithms—even if numbers aren’t the topic. For example, the user may be interested in a picture, but that picture is an abstraction over numbers. Numbers are also used to find a specific item in a list. Over the next several pages, you’ll look more closely at numbers inside the computer.</p>
 <div id="first" class="forYouToDo">
 <ol>
 <li>
@@ -456,7 +448,7 @@ As you know, numbers show up everywhere in computer algorithms—even if numbers
 <div class="sidenote">
 <p>If you look at the code, you’ll see that it’s a recursive reporter. How does it work? You first saw recursion on <a href="../../unit-3/lab-1/2-fractal-art.html" title="Unit 3 Lab 1 Page 2: Fractal Art">Unit 3 Lab 1 Page 2: Fractal Art</a>.</p>
 </div>
-<p><strong></strong> The <em>factorial</em> of a positive integer <span class="math inline">\(n\)</span> (written “<span class="math inline">\(n!\)</span>”) is the product of all the integers from 1 to <span class="math inline">\(n\)</span>. For example:</p>
+<p>**** The <em>factorial</em> of a positive integer <span class="math inline">\(n\)</span> (written “<span class="math inline">\(n!\)</span>”) is the product of all the integers from 1 to <span class="math inline">\(n\)</span>. For example:</p>
 <p><span class="math display">\[5! = 1 \times 2 \times 3 \times 4 \times 5 = 120\]</span></p>
 <p><a class="run" href="../../prog/4-internet/U4L4-BigNumbers.xml" target="_blank"><img src="../../img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"></a> Try out these inputs:<br></p>
 <div class="sidenote">
@@ -489,25 +481,17 @@ As you know, numbers show up everywhere in computer algorithms—even if numbers
 Fixed Width Computer Hardware
 </h3>
 <div class="vocabBig">
-<p>
-<strong>width</strong>: the number of bits that a CPU processes at a time
-</p>
-<p>
-<strong>word</strong>: a binary sequence of that many bits
-</p>
+<p><strong>width</strong>: the number of bits that a CPU processes at a time</p>
+<p><strong>word</strong>: a binary sequence of that many bits</p>
 </div>
-<p>
-So why did Snap<em>!</em> display 20! in ordinary whole number representation but 30! in scientific notation? Every computer model is designed with a certain<strong> width</strong>, the number of bits that the processor reads from memory or writes into memory at a time. That number of bits is called a <strong>word</strong>. As of 2016, most new computers are 64 bits wide. The first microcomputer, sold in 1971, was four bits wide!
-</p>
+<p>So why did Snap<em>!</em> display 20! in ordinary whole number representation but 30! in scientific notation? Every computer model is designed with a certain** width<strong>, the number of bits that the processor reads from memory or writes into memory at a time. That number of bits is called a </strong>word**. As of 2016, most new computers are 64 bits wide. The first microcomputer, sold in 1971, was four bits wide!</p>
 <div class="endnote">
 <p>If you got an answer in scientific notation for 20!, you’re using a 32-bit computer.</p>
 </div>
 <div class="ap-standard">
 <p>DAT-1.B.1</p>
 </div>
-<p>
-A 64-bit word represents 2<sup>64</sup> different values. We use half for negative numbers, one for zero, and the rest for positives. Half of 2<sup>64</sup> (which is 2<sup>63</sup> = 9,223,372,036,854,775,808) is about 9 × 10<sup>18</sup>. That means that the 19 digits of 20! just barely fit in a 64-bit word. But the 33 digits of 30! don’t. So the computer hardware reports an <em>overflow</em> error, and Snap<em>!</em> computes an approximation.
-</p>
+<p>A 64-bit word represents 2<sup>64</sup> different values. We use half for negative numbers, one for zero, and the rest for positives. Half of 2<sup>64</sup> (which is 2<sup>63</sup> = 9,223,372,036,854,775,808) is about 9 × 10<sup>18</sup>. That means that the 19 digits of 20! just barely fit in a 64-bit word. But the 33 digits of 30! don’t. So the computer hardware reports an <em>overflow</em> error, and Snap<em>!</em> computes an approximation.</p>
 <div class="endnote">
 <p><a href="#hint-power-2" data-bs-toggle="collapse" title="Are processor widths always powers of two?">Are processor widths always powers of two?</a></p>
 <div id="hint-power-2" class="collapse">
@@ -530,9 +514,7 @@ Bignums
 <div class="ap-standard">
 <p>DAT-1.B.2</p>
 </div>
-<p>
-Why can’t programming languages just use more than one word to represent an integer? They can. It’s just that a single machine language instruction can only add one-word numbers. A programming language must work a little harder to make addition work with multiple-word values. Not all languages do this, but the highest-level languages do.
-</p>
+<p>Why can’t programming languages just use more than one word to represent an integer? They can. It’s just that a single machine language instruction can only add one-word numbers. A programming language must work a little harder to make addition work with multiple-word values. Not all languages do this, but the highest-level languages do.</p>
 <div class="takeItFurther">
 <p><img src="../../img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff" class="float-end"></p>
 <ol type="A">
@@ -549,9 +531,7 @@ A great example of a high-level programming language is <a href="http://groups.c
 <div class="sidenoteBig">
 <p>You can use bignums in any Snap<em>!</em> project by importing the “Bignums, exact rationals, complex #s” library.</p>
 <div class="todo">
-<p>
-You learned to import libraries on the <a href="../../unit-6/lab-1/04-software-libraries.html" title="The Software Domain: Libraries">Libraries</a> page.
-</p>
+<p>You learned to import libraries on the <a href="../../unit-6/lab-1/04-software-libraries.html" title="The Software Domain: Libraries">Libraries</a> page.</p>
 <p>They did not. –MF, 6/13/19</p>
 </div>
 </div>

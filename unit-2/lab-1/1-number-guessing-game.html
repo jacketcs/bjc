@@ -441,47 +441,31 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="learn">
-<p>
-<strong>In this lab,</strong> you will use local and global <em>variables</em> to store information. <!--<ul>
-<li><em>Script variables</em> (a kind of <em>local</em> variable) that can be used only within a single script, and</li>
-<li><em>Global variables</em> that can be set, used, or changed anywhere in the program.</li>
-</ul-->
-</p>
-<p>
-<strong>On this page,</strong> you will begin to develop a number guessing game that uses a <em>local variable</em> to keep track of a secret number.
-</p>
+<p><strong>In this lab,</strong> you will use local and global <em>variables</em> to store information.</p>
+<p><strong>On this page,</strong> you will begin to develop a number guessing game that uses a <em>local variable</em> to keep track of a secret number.</p>
 </div>
-<!--## Using a Script Variable (a Local Variable)-->
 <div id="first" class="forYouToDo">
-<ol>
-<li>
-<div class="newProject">
+<ol class="example" type="1">
+<li><div>
 <p><span class="text">“U2L1-NumberGuessing”</span><img src="../../img/icons/new-project-called.png" title="Create a new project called U2L1-NumberGuessing" alt="Create a new project called U2L1-NumberGuessing"></p>
-</div>
-</li>
-<li>
-Start building a new command block called <code>number guessing game</code> that will contain the code for the game. Leave the Block Editor open.
+</div></li>
+<li>Start building a new command block called <code>number guessing game</code> that will contain the code for the game. Leave the Block Editor open.
 </li>
 </ol>
 </div>
-<p>
-In a number-guessing game, the player tries to guess the computer’s secret number. The computer needs a way to store the secret number in a <em>variable</em> so that it can compare it to the player’s guesses.<br> <img src="../../img/2-complexity/script-variables-secret-number.png" title="script variables (secret number)" alt="script variables (secret number)" class="ms-4">
-</p>
+<p>In a number-guessing game, the player tries to guess the computer’s secret number. The computer needs a way to store the secret number in a <em>variable</em> so that it can compare it to the player’s guesses.<br> <img src="../../img/2-complexity/script-variables-secret-number.png" title="script variables (secret number)" alt="script variables (secret number)" class="ms-4"></p>
 <div class="vocabFullWidth">
 <p>: <strong>Variable</strong></p>
-<p>
-A <strong>variable</strong> is like a labeled box that can hold one value at a time, such as one word, one costume, or one list (which can contain many things). You can look at what’s inside as many times as you want.
-</p>
+<p>A <strong>variable</strong> is like a labeled box that can hold one value at a time, such as one word, one costume, or one list (which can contain many things). You can look at what’s inside as many times as you want.</p>
 <div class="endnote">
 <p>On <a href="../../unit-1/lab-2/2-gossip.html" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unit 1 Lab 2 Page 2: Making Programs Talk</a>, you learned about <em>procedural abstraction:</em> giving scripts names by putting them in new blocks. Here, we are starting to look at <em>data abstraction</em>, giving names to numbers, text, lists, etc. When you give something a name, you can refer to it without knowing exactly what the value is.</p>
 </div>
 </div>
-<div class="forYouToDo" style="clear: right;">
-<ol start="3">
-<li>
-<p>Create a script variable called <var>secret number</var> to store the number that the player will try to guess (instructions below).</p>
-<section id="making-a-script-variable" class="level3 narrower">
-<h3 class="anchored" data-anchor-id="making-a-script-variable"><strong>Making a Script Variable</strong></h3>
+<div class="forYouToDo">
+<ol start="3" class="example" type="1">
+<li><p>Create a script variable called <var>secret number</var> to store the number that the player will try to guess (instructions below).</p>
+<div class="narrower">
+<h3 id="making-a-script-variable" class="anchored">Making a Script Variable</h3>
 <ol type="a">
 <li>
 <strong>Move a <code>script variables</code> block into the Scripting Area.</strong> You can find it in the Variables palette.<br> <img src="../../img/prog/scriptvar.png" title="script variables" alt="script variables" class="ms-4">
@@ -491,65 +475,45 @@ A <strong>variable</strong> is like a labeled box that can hold one value at a t
 </li>
 </ol>
 <p><strong>Later, you will use the script variable</strong> by dragging it out of the <code>script variables</code> block (the way you drag an input) and placing it where you need it in your code.</p>
-</section>
-</li>
-<li>
-<p>Use <img src="../../img/blocks/set-empty.png" title="set () to ()" alt="set () to ()" class="inline py-0"> to set the initial value of <var>secret number</var> to a random number from 1 to 10. The <code>set</code> menu lets you select which variable to set. <br></p>
+</div></li>
+<li><p>Use <img src="../../img/blocks/set-empty.png" title="set () to ()" alt="set () to ()" class="inline py-0"> to set the initial value of <var>secret number</var> to a random number from 1 to 10. The <code>set</code> menu lets you select which variable to set.</p>
 <div class="sidenoteBig">
 <p>The variable <var>secret number</var> is available in the <code>set</code> block only when you snap it somewhere after the <code>script variables</code> block.</p>
 </div>
-<p><img src="../../img/2-complexity/set-secret-number-menu.jpg" title="set block menu selecting secret number" alt="set block menu selecting secret number" class="ms-4"></p>
-</li>
+<p><img src="../../img/2-complexity/set-secret-number-menu.jpg" title="set block menu selecting secret number" alt="set block menu selecting secret number" class="ms-4"></p></li>
 </ol>
 </div>
 <div class="examFullWidth">
-<div class="pseudop">
-<p><img src="../../img/2-complexity/set-secret-number-to-7.png" title="set (secret number) to (7)" alt="set (secret number) to (7)" class="inline"> would be written as</p>
+<img src="../../img/2-complexity/set-secret-number-to-7.png" title="set (secret number) to (7)" alt="set (secret number) to (7)" class="inline"> would be written as
 <pre class="inline">secretNumber ← 7</pre>
 <p>or <img src="../../img/2-complexity/secret-number-assignment-blocktran.png" title="a white rounded rectangle containing the text 'secretNumber ← 7'" alt="a white rounded rectangle containing the text 'secretNumber ← 7'" class="py-0">.</p>
 </div>
-</div>
-<p>
-Script variables are a kind of <em>local variable</em>; they work only within the script where they’re created. If you drag one into a different script, it won’t work. You’ve seen two kinds of local variables before: inputs to blocks and <code>for</code> counters.
-</p>
+<p>Script variables are a kind of <em>local variable</em>; they work only within the script where they’re created. If you drag one into a different script, it won’t work. You’ve seen two kinds of local variables before: inputs to blocks and <code>for</code> counters.</p>
 <div class="endnote">
-<p>
-<a href="#hint-inputs" data-bs-toggle="collapse" title="Examples you've seen before.">Examples you’ve seen before.</a>
-</p>
+<p><a href="#hint-inputs" data-bs-toggle="collapse" title="Examples you've seen before.">Examples you’ve seen before.</a></p>
 <div id="hint-inputs" class="collapse">
-<p>
-You have created variables as inputs to blocks that you made:<br> <img src="../../img/2-complexity/input-variable-for-pinwheelbranches-commented.png" title="block definition for pinwheel and setting 'number of branches' input variable for pinwheel" alt="block definition for pinwheel and setting 'number of branches' input variable for pinwheel" class="ms-4 noshadow">
-</p>
-<p>
-You have used the counter variable that the <code>for</code> block gave you:<br> <img src="../../img/2-complexity/local-variable-created-by-for-block-commented.png" title="local variable created by for block" alt="local variable created by for block" class="ms-4 noshadow">
-</p>
+<p>You have created variables as inputs to blocks that you made:<br> <img src="../../img/2-complexity/input-variable-for-pinwheelbranches-commented.png" title="block definition for pinwheel and setting 'number of branches' input variable for pinwheel" alt="block definition for pinwheel and setting 'number of branches' input variable for pinwheel" class="ms-4 noshadow"></p>
+<p>You have used the counter variable that the <code>for</code> block gave you:<br> <img src="../../img/2-complexity/local-variable-created-by-for-block-commented.png" title="local variable created by for block" alt="local variable created by for block" class="ms-4 noshadow"></p>
 </div>
 </div>
 <div class="vocabFullWidth">
 <p>: <strong>Local Variable</strong></p>
-<p>
-A <strong>local variable</strong> can be set or used only in the environment in which it is defined. This term includes inputs to procedures and variables created by the <code>for</code> or <code>script variables</code> block.
-</p>
+<p>A <strong>local variable</strong> can be set or used only in the environment in which it is defined. This term includes inputs to procedures and variables created by the <code>for</code> or <code>script variables</code> block.</p>
 </div>
 <div class="endnote">
-<p>
-In algebra, a variable is sometimes used for something whose value you don’t know yet, and the goal is to find out its value. In programming <em>you decide</em> the values of variables.
-</p>
+<p>In algebra, a variable is sometimes used for something whose value you don’t know yet, and the goal is to find out its value. In programming <em>you decide</em> the values of variables.</p>
 </div>
 <div class="sidenote">
 <p>You learned about input variables on <a href="../../unit-1/lab-3/3-blocks-with-inputs.html" title="Unit 1 Lab 3 Page 3: Blocks with Inputs">Unit 1 Lab 3 Page 3: Blocks with Inputs</a>.</p>
 </div>
-<div class="pseudop">
-<p>When you assign a value to a variable, the variable holds that value, not where it came from. For example, if <var>apples</var> = 2 and you <img src="../../img/2-complexity/set-bananas-to-apples.png" title="set (bananas) to (apples)" alt="set (bananas) to (apples)">, then <var>bananas</var> will hold the value 2 and have no memory of it having come from <var>apples</var>. This is why</p>
+When you assign a value to a variable, the variable holds that value, not where it came from. For example, if <var>apples</var> = 2 and you <img src="../../img/2-complexity/set-bananas-to-apples.png" title="set (bananas) to (apples)" alt="set (bananas) to (apples)">, then <var>bananas</var> will hold the value 2 and have no memory of it having come from <var>apples</var>. This is why
 <pre class="inline">a ← a * 2</pre>
-<p>means something. (Suppose <var>a</var> = 8. First compute the value of</p>
+means something. (Suppose <var>a</var> = 8. First compute the value of
 <pre class="inline">a * 2</pre>
 <p>, namely 16, and then replace the old value of <var>a</var> with 16). Up to now, the only variables you’ve used are input variables, and you never assign a value to an input because the value is given by the code that calls it. But a script variable won’t have a value until you give it one with <code>set</code>.</p>
-</div>
 <div class="forYouToDo">
-<ol start="5">
-<li>
-<!-- Question 1 -->
+<ol start="5" class="example" type="1">
+<li><!-- Question 1 -->
 <div class="assessment-data" type="multiplechoice" data-identifier="What value will this code return?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri1" data-shuffle="true">
 <div class="prompt">
 <div class="sidenote">
@@ -602,10 +566,8 @@ DISPLAY(b)</pre>
 
 </div>
 </div>
-</div>
-</li>
-<li>
-<!-- Question 2 -->
+</div></li>
+<li><!-- Question 2 -->
 <div class="assessment-data" type="multiplechoice" data-identifier="What value will this script report?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri2" data-shuffle="true">
 <div class="prompt">
 <p>What value will this script report?<br> <img src="../../img/2-complexity/variable-assignment-quizlet.png" title="set m to 9, set k to 5, set m to (m + 1), set k to (k - m), report k" alt="set m to 9, set k to 5, set m to (m + 1), set k to (k - m), report k" class="ms-4"></p>
@@ -647,8 +609,7 @@ DISPLAY(b)</pre>
 
 </div>
 </div>
-</div>
-</li>
+</div></li>
 </ol>
 </div>
 

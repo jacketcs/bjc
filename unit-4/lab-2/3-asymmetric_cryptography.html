@@ -430,56 +430,36 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="learn">
-<p>
-<strong>On this page,</strong> you will learn about a commonly used method of cryptography that is more secure.
-</p>
+<p><strong>On this page,</strong> you will learn about a commonly used method of cryptography that is more secure.</p>
 </div>
-<p>
-The fundamental problem that cryptography is trying to solve is how to get a message to your friend that can’t be intercepted by your enemies. Symmetric encryption has a fundamental weakness: the encryption key is itself a message that needs to be send to your friend but not intercepted by your enemy.
-</p>
-<p>
-<em>Public key cryptography</em> is a mathematical technique to avoid the need to communicate a secret key from one person to another. Instead, each person has <em>two</em> keys: a private key known only to that person and a public key that everyone in the world is allowed to know. If Bob wants to send Alice a secret message, he encrypts it with Alice’s public key. Then no one but Alice can decrypt it. Only her private key can undo the encryption, and no one <em>can figure out</em> the private key from the public key.
-</p>
+<p>The fundamental problem that cryptography is trying to solve is how to get a message to your friend that can’t be intercepted by your enemies. Symmetric encryption has a fundamental weakness: the encryption key is itself a message that needs to be send to your friend but not intercepted by your enemy.</p>
+<p><em>Public key cryptography</em> is a mathematical technique to avoid the need to communicate a secret key from one person to another. Instead, each person has <em>two</em> keys: a private key known only to that person and a public key that everyone in the world is allowed to know. If Bob wants to send Alice a secret message, he encrypts it with Alice’s public key. Then no one but Alice can decrypt it. Only her private key can undo the encryption, and no one <em>can figure out</em> the private key from the public key.</p>
 <div class="vocabFullWidth">
 <div class="ap-standard">
 <p>IOC-2.B.5</p>
 </div>
-<p>
-<strong>Public key encryption</strong> uses a pair of keys: a public key for encryption and a private key for decryption. The sender uses the public key to encrypt the message, and receiver uses their private key to decrypt it.
-</p>
+<p><strong>Public key encryption</strong> uses a pair of keys: a public key for encryption and a private key for decryption. The sender uses the public key to encrypt the message, and receiver uses their private key to decrypt it.</p>
 </div>
 <div class="endnote">
-<p>
-<a href="#hint-model" data-bs-toggle="collapse" title="Here is a visual model of public key encryption (from wikimedia.org).">Here is a visual model of public key encryption</a> (from wikimedia.org).
-</p>
+<p><a href="#hint-model" data-bs-toggle="collapse" title="Here is a visual model of public key encryption (from wikimedia.org).">Here is a visual model of public key encryption</a> (from wikimedia.org).</p>
 <div id="hint-model" class="collapse">
 <p><img src="../../img/3-lists/525px-Public_key_encryption.png" title="Diagram of public key encryption showing a message being encrypted with a public key and decrypted with a private key" alt="Diagram of public key encryption showing a message being encrypted with a public key and decrypted with a private key" class="ms-4 noshadow" border="0"></p>
 </div>
-<p>
-<a href="#hint-paint" data-bs-toggle="collapse" title="Here is a video that uses paint mixing as a metaphor for public key encryption.">Here is a video that uses paint mixing as a metaphor for public key encryption.</a>
-</p>
+<p><a href="#hint-paint" data-bs-toggle="collapse" title="Here is a video that uses paint mixing as a metaphor for public key encryption.">Here is a video that uses paint mixing as a metaphor for public key encryption.</a></p>
 <div id="hint-paint" class="collapse">
 <p><img src="../../img/icons/headphones-mini.png" title="Set Up Your Headphones or Speakers" alt="Set Up Your Headphones or Speakers" class="float-end"> <iframe width="560" height="315" src="https://www.youtube.com/embed/YEBfamv-_do?start=145&amp;rel=0" frameborder="0" allowfullscreen="" class="ms-4"></iframe></p>
-<p>
-If your connection blocks YouTube, <a href="http://scratch.mit.edu/discuss/youtube/YEBfamv-_do" target="_blank" title="Public key cryptography - Diffie-Hellman Key Exchange">watch the video here</a>, but start it at 2:25.
-</p>
+<p>If your connection blocks YouTube, <a href="http://scratch.mit.edu/discuss/youtube/YEBfamv-_do" target="_blank" title="Public key cryptography - Diffie-Hellman Key Exchange">watch the video here</a>, but start it at 2:25.</p>
 </div>
 </div>
 <div class="takeNote">
-<p>
-<strong>Symmetric cryptography</strong> uses the <em>same secret key</em> to encode and to decode a message, and it’s been around for thousands of years. Its weakness is that the key becomes <em>another</em> message that needs to be transmitted securely.
-</p>
+<p><strong>Symmetric cryptography</strong> uses the <em>same secret key</em> to encode and to decode a message, and it’s been around for thousands of years. Its weakness is that the key becomes <em>another</em> message that needs to be transmitted securely.</p>
 <div class="sidenote">
-<p>
-<a href="#hint-invented" data-bs-toggle="collapse" title="Who invented public key encryption?">Who created public key encryption?</a>
-</p>
+<p><a href="#hint-invented" data-bs-toggle="collapse" title="Who invented public key encryption?">Who created public key encryption?</a></p>
 <div id="hint-invented" class="collapse">
 <p>The public key idea was first published by Whitfield Diffie and Martin Hellman in 1976. But it turns out that it had been invented earlier but kept secret by governments.</p>
 </div>
 </div>
-<p>
-<strong>Public key (asymmetric) cryptography</strong> was created in the 1970s. It uses <em>two different keys</em> for encryption and decryption, so sharing the public key doesn’t give away the private key. Public key encryption is the primary method of encryption today because of its high level of security.
-</p>
+<p><strong>Public key (asymmetric) cryptography</strong> was created in the 1970s. It uses <em>two different keys</em> for encryption and decryption, so sharing the public key doesn’t give away the private key. Public key encryption is the primary method of encryption today because of its high level of security.</p>
 </div>
 <div class="forYouToDo">
 <ol>
@@ -497,9 +477,7 @@ If your connection blocks YouTube, <a href="http://scratch.mit.edu/discuss/youtu
 <div class="endnote">
 <p><a href="#hint-digital-signatures" data-bs-toggle="collapse" title="It's also possible to use the private key for encryption and the public key for decryption...">It’s also possible to use the <em>private</em> key for encryption and the <em>public</em> key for decryption…</a></p>
 <div id="hint-digital-signatures" class="collapse">
-<p>
-That’s no good for secret messages (why not?), but it’s useful for <strong>digital signatures</strong>. I use my private key to encrypt a message; you use my public key to decrypt it. If you get a meaningful message as the result, that proves that the message was encrypted with my private key. (If I want both secrecy and digital signing, I encrypt the message with my private key to sign it, then encrypt the encrypted result <em>again</em> with your public key to keep it secret. You decrypt it twice, first with your private key and then with my public key.) This is a nice example of <em>composition of functions:</em> the output from the first encryption is the input to the second encryption.
-</p>
+<p>That’s no good for secret messages (why not?), but it’s useful for <strong>digital signatures</strong>. I use my private key to encrypt a message; you use my public key to decrypt it. If you get a meaningful message as the result, that proves that the message was encrypted with my private key. (If I want both secrecy and digital signing, I encrypt the message with my private key to sign it, then encrypt the encrypted result <em>again</em> with your public key to keep it secret. You decrypt it twice, first with your private key and then with my public key.) This is a nice example of <em>composition of functions:</em> the output from the first encryption is the input to the second encryption.</p>
 </div>
 </div>
 <div class="endnote">
@@ -509,13 +487,9 @@ That’s no good for secret messages (why not?), but it’s useful for <strong>d
 Secure HTTP
 </h3>
 <div class="vocabBig">
-<p>
-<strong>SSL/TLS</strong> (secure sockets layer/transport layer security) is the standard used for cryptographically secured information transfer on the Internet.
-</p>
+<p><strong>SSL/TLS</strong> (secure sockets layer/transport layer security) is the standard used for cryptographically secured information transfer on the Internet.</p>
 </div>
-<p>
-Secure HTTP connections (those that use <strong>https://</strong> instead of <strong>http://</strong>) use a protocol called <em>Transport Layer Security</em> (TLS) or maybe an older version called <em>Secure Sockets Layer</em> (SSL). Both are based on public key cryptography. With SSL/TLS, the site you are visiting sends its public key, and your browser uses it to encrypt the information you send.
-</p>
+<p>Secure HTTP connections (those that use <strong>https://</strong> instead of <strong>http://</strong>) use a protocol called <em>Transport Layer Security</em> (TLS) or maybe an older version called <em>Secure Sockets Layer</em> (SSL). Both are based on public key cryptography. With SSL/TLS, the site you are visiting sends its public key, and your browser uses it to encrypt the information you send.</p>
 <!--<div class="todo">
 <div class="sidenote">If your connection blocks YouTube, <a href="http://scratch.mit.edu/discuss/youtube/kBXQZMmiA4s" target="_blank" title="The Internet: HTTP & HTML">watch the video here</a>, but start it at 4:40. </div>
 <img class="float-end" src="/img/icons/headphones-mini.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" />
@@ -524,12 +498,8 @@ Secure HTTP connections (those that use <strong>https://</strong> instead of <st
 <div class="endnote">
 <p><a href="#hint-open-standards" data-bs-toggle="collapse" title="Open Standards Help Security">Open standards help security…</a></p>
 <div id="hint-open-standards" class="collapse">
-<p>
-In order to work properly, a cryptographic function has to be easy for the private key holder to invert, but hard for anyone else to invert. How do we know what “hard” means? For example, current cryptographic methods rely on the difficulty of finding prime factors of very large numbers. There’s no <em>proof</em> that someone won’t come up with a fast way to do that, but people are pretty confident about it because the problem has been well studied by many mathematicians. (On the other hand, when <em>quantum computers</em> become practical, factorization <em>will</em> be easy, and new cryptographic methods will be needed. New research developments in 2019 make practical quantum cryptanalysis seem not so far away.)
-</p>
-<p>
-What makes it possible for mathematicians to study the difficulty of breaking Internet cryptography is that the method used—the cryptographic function—is openly published. This may seem strange; if you want to keep secrets, shouldn’t you keep the technique secret, too? But secret algorithms can have weaknesses that go undiscovered until some bad guy exploits them. Open standards allow an algorithm to be studied <em>before</em> it is used in practice.
-</p>
+<p>In order to work properly, a cryptographic function has to be easy for the private key holder to invert, but hard for anyone else to invert. How do we know what “hard” means? For example, current cryptographic methods rely on the difficulty of finding prime factors of very large numbers. There’s no <em>proof</em> that someone won’t come up with a fast way to do that, but people are pretty confident about it because the problem has been well studied by many mathematicians. (On the other hand, when <em>quantum computers</em> become practical, factorization <em>will</em> be easy, and new cryptographic methods will be needed. New research developments in 2019 make practical quantum cryptanalysis seem not so far away.)</p>
+<p>What makes it possible for mathematicians to study the difficulty of breaking Internet cryptography is that the method used—the cryptographic function—is openly published. This may seem strange; if you want to keep secrets, shouldn’t you keep the technique secret, too? But secret algorithms can have weaknesses that go undiscovered until some bad guy exploits them. Open standards allow an algorithm to be studied <em>before</em> it is used in practice.</p>
 </div>
 </div>
 <h3 class="anchored">
@@ -539,16 +509,10 @@ Certificate Authorities
 <div class="ap-standard">
 <p>IOC-2.B.6</p>
 </div>
-<p>
-<strong>Certificate authorities</strong> are organizations that issue digital certificates to verify who owns the encryption keys used for secured communications.
-</p>
-<p>
-Instead of trusting that the website is who they say they are, you now have to trust that the Certificate Authority is reliable.
-</p>
+<p><strong>Certificate authorities</strong> are organizations that issue digital certificates to verify who owns the encryption keys used for secured communications.</p>
+<p>Instead of trusting that the website is who they say they are, you now have to trust that the Certificate Authority is reliable.</p>
 </div>
-<p>
-Public key cryptography doesn’t solve all the problems, because an eavesdropper (say, Eve) might publish a fake public key pretending to be Alice. Then Bob might accidentally encrypt his message to Alice using Eve’s fake key, and then only Eve can read the message meant for Alice. In practice, this is partly fixed by relying on trusted third parties, called <em>Certificate Authorities</em>, to certify public keys. In your browser’s security options you can see all of the Certificate Authorities that it trusts.
-</p>
+<p>Public key cryptography doesn’t solve all the problems, because an eavesdropper (say, Eve) might publish a fake public key pretending to be Alice. Then Bob might accidentally encrypt his message to Alice using Eve’s fake key, and then only Eve can read the message meant for Alice. In practice, this is partly fixed by relying on trusted third parties, called <em>Certificate Authorities</em>, to certify public keys. In your browser’s security options you can see all of the Certificate Authorities that it trusts.</p>
 <div class="endnote">
 <p>But this just pushes the problem back a layer. How does the Certificate Authorities know that you are who you say you are? The problem is a little bit like how your bank knows that you who you say you are when you call them on the phone. Namely, they ask you questions for which they hope only you know the answer.</p>
 </div>

@@ -444,24 +444,17 @@ ul.task-list li input[type="checkbox"] {
 <div class="ap-standard">
 <p>DAT-2.D.2, DAT-2.D.6 bullet 4</p>
 </div>
-<p>
-Tables, diagrams, text, charts, graphs, and other visual tools help extract, modify, and communicate information from data.
-</p>
-<p>
-<strong>On this page</strong>, you will create a visualizations to help you analyze and communicate information from your dataset.
-</p>
+<p>Tables, diagrams, text, charts, graphs, and other visual tools help extract, modify, and communicate information from data.</p>
+<p><strong>On this page</strong>, you will create a visualizations to help you analyze and communicate information from your dataset.</p>
 </div>
 <h3 class="anchored">
 Grouping Data
 </h3>
-<p>
-</p><div class="vocab">
+<div class="vocab">
 <div class="ap-standard">
 <p>DAT-2.E.3 classifying only</p>
 </div>
-<p>
-<strong>Classifying data</strong> means distributing data into groups based on common characteristics.
-</p>
+<p><strong>Classifying data</strong> means distributing data into groups based on common characteristics.</p>
 </div>
 <p>Another thing that’s often done in data science is <em>grouping</em> (or <em>classifying</em>) data. For example, here is the <var>cars</var> data grouped by vehicle make (column 14):<br> <img src="../../img/5-algorithms/group-data-of-cars-reporting.png" title="group (data of table (cars)) by field (14) by intervals of ( )) reporting a table with three columns; column A contains each make of car from the original data set; column B shows the total number of cars in the original data set that are of that make; column C shows a picture of a list icon in each row of the table." alt="group (data of table (cars)) by field (14) by intervals of ( )) reporting a table with three columns; column A contains each make of car from the original data set; column B shows the total number of cars in the original data set that are of that make; column C shows a picture of a list icon in each row of the table." class="ms-4"><br></p>
 <ul>
@@ -475,11 +468,8 @@ Column B shows the total number of vehicles of each make.
 Column C contains a list of all the data from <var>cars</var> for the vehicles of that Make (such as all the data for the Acuras or all the data for the Nissans). If you double-click one of the lists in column C, another table will open showing the data for all cars of that make.
 </li>
 </ul>
-<p></p>
 <div class="endnote">
-<p>
-The <code>by intervals of</code> input to the <code>group table</code> block should be left empty when, as in this example, the field on which you’re grouping is text rather than numbers. Later on this page, you’ll see how to use intervals in graphing.
-</p>
+<p>The <code>by intervals of</code> input to the <code>group table</code> block should be left empty when, as in this example, the field on which you’re grouping is text rather than numbers. Later on this page, you’ll see how to use intervals in graphing.</p>
 </div>
 <div id="first" class="forYouToDo">
 <ol>
@@ -502,9 +492,7 @@ Which brand in the table has the most models listed?
 How many 2010 Hyundais are in the database? (This requires looking inside one of the lists in column C, so you’d need two <code>keep</code> functions.)
 </li>
 </ul>
-<p>
-<code>Pipe</code> may be useful for questions that require looking inside the inner lists of the grouped data (in column C).
-</p>
+<p><code>Pipe</code> may be useful for questions that require looking inside the inner lists of the grouped data (in column C).</p>
 </div>
 </div>
 </li>
@@ -513,8 +501,7 @@ How many 2010 Hyundais are in the database? (This requires looking inside one of
 <h3 class="anchored">
 Plotting Data
 </h3>
-<p>
-</p><p>The <code>bar chart</code> function works like the <code>group</code> function, but with special features for numeric data: it allows you to select upper and lower limits of the data; you can have a range of values in one bucket, such as values 6–10, values 11–15, and so on; and it sorts the groups. For example, here is the <var>cars</var> data grouped by city MPG (column 9):<br> <img src="../../img/5-algorithms/histogram-by-mpg.png" title="bar chart of table (data of table (cars)) groups by field: (9) from: (5) to: (50) interval: (5) reporting a table with three columns and 10 rows; the values in the first column are multiples of 5 from 5 to 50; the values in the second column are 0, 311, 1554, 2057, 879, 267, 6, 2, 0, 0; the values in the third column are each a list icon indicating that a sublist is stored in that field" alt="bar chart of table (data of table (cars)) groups by field: (9) from: (5) to: (50) interval: (5) reporting a table with three columns and 10 rows; the values in the first column are multiples of 5 from 5 to 50; the values in the second column are 0, 311, 1554, 2057, 879, 267, 6, 2, 0, 0; the values in the third column are each a list icon indicating that a sublist is stored in that field" class="ms-4"></p>
+<p>The <code>bar chart</code> function works like the <code>group</code> function, but with special features for numeric data: it allows you to select upper and lower limits of the data; you can have a range of values in one bucket, such as values 6–10, values 11–15, and so on; and it sorts the groups. For example, here is the <var>cars</var> data grouped by city MPG (column 9):<br> <img src="../../img/5-algorithms/histogram-by-mpg.png" title="bar chart of table (data of table (cars)) groups by field: (9) from: (5) to: (50) interval: (5) reporting a table with three columns and 10 rows; the values in the first column are multiples of 5 from 5 to 50; the values in the second column are 0, 311, 1554, 2057, 879, 267, 6, 2, 0, 0; the values in the third column are each a list icon indicating that a sublist is stored in that field" alt="bar chart of table (data of table (cars)) groups by field: (9) from: (5) to: (50) interval: (5) reporting a table with three columns and 10 rows; the values in the first column are multiples of 5 from 5 to 50; the values in the second column are 0, 311, 1554, 2057, 879, 267, 6, 2, 0, 0; the values in the third column are each a list icon indicating that a sublist is stored in that field" class="ms-4"></p>
 <ul>
 <li>
 Now, Column A shows city MPG (field 9 of each record) grouped into intervals of 5 and sorted.
@@ -526,15 +513,10 @@ As before, Column B shows the total number of vehicles within each MPG range (0�
 As before, Column C contains a list of all the data from cars within that MPG range (such as all the data for the 879 cars that get between 21 and 25 MPG in the city).
 </li>
 </ul>
-<p></p>
 <div class="endnote">
-<p>
-The number in column A is the <em>largest</em> value included in each group. If the values aren’t all integers, the next group includes anything larger. For example, the group numbered 15 includes values from 10.0001 (or anything more than 10) to exactly 15.
-</p>
+<p>The number in column A is the <em>largest</em> value included in each group. If the values aren’t all integers, the next group includes anything larger. For example, the group numbered 15 includes values from 10.0001 (or anything more than 10) to exactly 15.</p>
 </div>
-<p>
-You can plot the data from <code>bar chart</code> to visualize them:<br> <img src="../../img/5-algorithms/plot-cars-histogram.png" title="plot bar chart (bar chart of table (data of table (cars)) grouped by field: (9) from: (5) to: (50) interval: (5)) bars at x: (-200) y: (-100) width: (400) height: (200)" alt="plot bar chart (bar chart of table (data of table (cars)) grouped by field: (9) from: (5) to: (50) interval: (5)) bars at x: (-200) y: (-100) width: (400) height: (200)" class="ms-4"> <img src="../../img/5-algorithms/plot-cars-histogram-stage.png" title="bar graph running from 0 to 50 on the horizontal axis and from 0 to 2050 on the vertical axis with bars indicating 0 between 0 and 5, about 300 between 5 and 10, about 1500 between 10 and 15, about 2000 between 15 and 30, about 800 between 20 and 25, about 200 between 25 and 30, and 0 beyond 30" alt="bar graph running from 0 to 50 on the horizontal axis and from 0 to 2050 on the vertical axis with bars indicating 0 between 0 and 5, about 300 between 5 and 10, about 1500 between 10 and 15, about 2000 between 15 and 30, about 800 between 20 and 25, about 200 between 25 and 30, and 0 beyond 30" class="ms-4 noshadow">
-</p>
+<p>You can plot the data from <code>bar chart</code> to visualize them:<br> <img src="../../img/5-algorithms/plot-cars-histogram.png" title="plot bar chart (bar chart of table (data of table (cars)) grouped by field: (9) from: (5) to: (50) interval: (5)) bars at x: (-200) y: (-100) width: (400) height: (200)" alt="plot bar chart (bar chart of table (data of table (cars)) grouped by field: (9) from: (5) to: (50) interval: (5)) bars at x: (-200) y: (-100) width: (400) height: (200)" class="ms-4"> <img src="../../img/5-algorithms/plot-cars-histogram-stage.png" title="bar graph running from 0 to 50 on the horizontal axis and from 0 to 2050 on the vertical axis with bars indicating 0 between 0 and 5, about 300 between 5 and 10, about 1500 between 10 and 15, about 2000 between 15 and 30, about 800 between 20 and 25, about 200 between 25 and 30, and 0 beyond 30" alt="bar graph running from 0 to 50 on the horizontal axis and from 0 to 2050 on the vertical axis with bars indicating 0 between 0 and 5, about 300 between 5 and 10, about 1500 between 10 and 15, about 2000 between 15 and 30, about 800 between 20 and 25, about 200 between 25 and 30, and 0 beyond 30" class="ms-4 noshadow"></p>
 <div class="forYouToDo">
 <ol start="3">
 <li>
@@ -542,9 +524,7 @@ Plot a few bar charts of some fields from your dataset and make at least one new
 </li>
 <li>
 <div class="vocab">
-<p>
-The <strong>mode</strong> of a data set is the value that appears most often in it.
-</p>
+<p>The <strong>mode</strong> of a data set is the value that appears most often in it.</p>
 </div>
 <p>Here is a bar chart of field 11 from the <var>cars</var> data set (highway MPG) with MPG values from 5 to 50, using an interval of 3. Identify the <em>mode</em>. (It will be a range of values such as 13–15 or 16–18.)<br> <img src="../../img/5-algorithms/interval3.png" title="[same plot bar chart instruction as above, but with grouped by field: (11) and interval: (3)] plot bar chart (bar chart of table (data of table (cars)) grouped by field: (11) from: (5) to: (50) interval: (3)) bars at x: (-200) y: (-100) width: (400) height: (200)" alt="[same plot bar chart instruction as above, but with grouped by field: (11) and interval: (3)] plot bar chart (bar chart of table (data of table (cars)) grouped by field: (11) from: (5) to: (50) interval: (3)) bars at x: (-200) y: (-100) width: (400) height: (200)" class="ms-4"> <img src="../../img/5-algorithms/interval3-Stage.png" title="bar graph running from 0 to 51 on the horizontal axis and from 0 to 1050 on the vertical axis with bars indicating 0 for less than 9, about 30 between 9 and 12, about 220 between 12 and 15, about 550 between 15 and 18, about 900 between 18 and 21, about 900 between 21 and 24, about 1000 between 24 and 27, about 550 between 27 and 30, about 300 between 30 and 33, about 250 between 33 and 36, about 20 between 36 and 39, about 20 between 39 and 42, and 0 beyond 42" alt="bar graph running from 0 to 51 on the horizontal axis and from 0 to 1050 on the vertical axis with bars indicating 0 for less than 9, about 30 between 9 and 12, about 220 between 12 and 15, about 550 between 15 and 18, about 900 between 18 and 21, about 900 between 21 and 24, about 1000 between 24 and 27, about 550 between 27 and 30, about 300 between 30 and 33, about 250 between 33 and 36, about 20 between 36 and 39, about 20 between 39 and 42, and 0 beyond 42" class="ms-4 noshadow"></p>
 </li>

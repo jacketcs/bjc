@@ -444,16 +444,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="learn">
-<p>
-<strong>On this page</strong>, you will use predicates with the <code>keep</code> block to keep items in a list that have specific characteristics.
-</p>
+<p><strong>On this page</strong>, you will use predicates with the <code>keep</code> block to keep items in a list that have specific characteristics.</p>
 </div>
-<p>
-As you know, predicates can be used with conditionals to decide <em>when</em> to <em>do</em> something; they can also be used with <code>keep</code> to decide <em>which</em> things to keep. The <img src="../../img/blocks/keep.png" title="keep items 'predicate input slot' from 'list input slot'" alt="keep items 'predicate input slot' from 'list input slot'" class="inline"> block takes a list and a predicate as input, and it reports a new list keeping only the items from the input list that make the condition described by the predicate true.
-</p>
-<p>
-For example, the following expression will find words from the <var>words list</var> whose first letter is v. The <em>blank input slot</em> is where each item of the list goes to decide if it will be kept.<br> <img src="../../img/2-complexity/keep-example-6.png" title="keep items  ((letter(1) of ( )) = (v)) from (words list)" alt="keep items  ((letter(1) of ( )) = (v)) from (words list)" class="ms-4">
-</p>
+<p>As you know, predicates can be used with conditionals to decide <em>when</em> to <em>do</em> something; they can also be used with <code>keep</code> to decide <em>which</em> things to keep. The <img src="../../img/blocks/keep.png" title="keep items 'predicate input slot' from 'list input slot'" alt="keep items 'predicate input slot' from 'list input slot'" class="inline"> block takes a list and a predicate as input, and it reports a new list keeping only the items from the input list that make the condition described by the predicate true.</p>
+<p>For example, the following expression will find words from the <var>words list</var> whose first letter is v. The <em>blank input slot</em> is where each item of the list goes to decide if it will be kept.<br> <img src="../../img/2-complexity/keep-example-6.png" title="keep items  ((letter(1) of ( )) = (v)) from (words list)" alt="keep items  ((letter(1) of ( )) = (v)) from (words list)" class="ms-4"></p>
 <div class="vocabFullWidth">
 <p>: <strong>String</strong> and <strong>Index</strong></p>
 <ul>
@@ -466,12 +460,8 @@ A <strong>string</strong> is an ordered sequence of characters.
 </ul>
 </div>
 <div class="takeNote">
-<p>
-<strong>You write the predicate that does the checking, and <code>keep</code> applies the predicate to each item in the input list and then reports the list of items that make your predicate <code>true</code></strong>.
-</p>
-<p>
-Note that the blank input slot in the predicate is <em>required</em>; this is where each item from the list goes as it is checked by the predicate.
-</p>
+<p><strong>You write the predicate that does the checking, and <code>keep</code> applies the predicate to each item in the input list and then reports the list of items that make your predicate <code>true</code></strong>.</p>
+<p>Note that the blank input slot in the predicate is <em>required</em>; this is where each item from the list goes as it is checked by the predicate.</p>
 <div class="endnote">
 <p>The <code>letter</code> block in the palette looks like <img src="../../img/blocks/letter-1-of-world.png" title="letter (1) of (world)" alt="letter (1) of (world)">. You have to delete the “world” so that there is a blank slot where you need it to be.</p>
 </div>
@@ -489,12 +479,8 @@ Note that the blank input slot in the predicate is <em>required</em>; this is wh
 </li>
 </ol>
 </div>
-<p>
-The first example keeps inputs of a certain <em>length</em>; every word in the list is asked whether its length is 5, and only those with five letters are reported. The second example keeps inputs that are <em>not numbers</em>; every item in this list is asked “Is this item <em>not</em> a number?” and only the elements that are not numbers are reported.
-</p>
-<p>
-There are two <code>length</code> blocks in Snap<em>!</em>. One (<img src="../../img/blocks/length-of-blank-operator.png" title="length ()" alt="length ()" class="inline">) is designed for strings, and the other (<img src="../../img/blocks/length-list.png" title="length ()" alt="length ()" class="inline">) is designed for lists.
-</p>
+<p>The first example keeps inputs of a certain <em>length</em>; every word in the list is asked whether its length is 5, and only those with five letters are reported. The second example keeps inputs that are <em>not numbers</em>; every item in this list is asked “Is this item <em>not</em> a number?” and only the elements that are not numbers are reported.</p>
+<p>There are two <code>length</code> blocks in Snap<em>!</em>. One (<img src="../../img/blocks/length-of-blank-operator.png" title="length ()" alt="length ()" class="inline">) is designed for strings, and the other (<img src="../../img/blocks/length-list.png" title="length ()" alt="length ()" class="inline">) is designed for lists.</p>
 <div class="forYouToDo">
 <ol start="3">
 <li>

@@ -446,19 +446,13 @@ TG and solutions need to be checked. –MF, 12/19/18
 </h3>
 </div>
 <div class="learn">
-<p>
-<strong>On this page,</strong> you’ll learn that even for unreasonable time problems, there can still be reasonable time “close enough” solutions.
-</p>
+<p><strong>On this page,</strong> you’ll learn that even for unreasonable time problems, there can still be reasonable time “close enough” solutions.</p>
 </div>
 <div class="ap-standard">
 <p>AAP-4.A.6, AAP-4.A.8, AAP-4.A.9</p>
 </div>
-<p>
-If a problem can be solved in exponential time, there might be a different algorithm that can do it in polynomial time (that is, more quickly), but some problems can’t possibly be answered in polynomial time. It’s important to recognize that an exponential time algorithm <strong>still solves a problem correctly</strong>; it just takes a unreasonably long time (perhaps even hundreds of years for some inputs, for example).
-</p>
-<p>
-Exponential time algorithms can sometimes be replaced by <em>heuristics</em>, which are polynomial-time algorithms that don’t solve the problem exactly, but give a good enough approximation. But heuristics are useful only for certain kinds of problems.<!--Heuristics are useful when a problem has has a solution, and although we can't compute the solution in a practical amount a time, we can still find "pretty good" solutions.-->
-</p>
+<p>If a problem can be solved in exponential time, there might be a different algorithm that can do it in polynomial time (that is, more quickly), but some problems can’t possibly be answered in polynomial time. It’s important to recognize that an exponential time algorithm <strong>still solves a problem correctly</strong>; it just takes a unreasonably long time (perhaps even hundreds of years for some inputs, for example).</p>
+<p>Exponential time algorithms can sometimes be replaced by <em>heuristics</em>, which are polynomial-time algorithms that don’t solve the problem exactly, but give a good enough approximation. But heuristics are useful only for certain kinds of problems.<!--Heuristics are useful when a problem has has a solution, and although we can't compute the solution in a practical amount a time, we can still find "pretty good" solutions.--></p>
 <div class="vocabFullWidth">
 <div class="ap-standard">
 <p>AAP-4.A.2</p>
@@ -479,8 +473,7 @@ For which kind of problems (optimization problems or decision problems) is a heu
 </li>
 </ol>
 </div>
-<p>
-</p><p>An example of a problem for which a heuristic solution is useful is the <strong>traveling salesperson problem</strong>: For a group of cities, <em>what is the shortest route</em> for a salesperson to visit every city and return to their home city? This is good case for heuristics because:</p>
+<p>An example of a problem for which a heuristic solution is useful is the <strong>traveling salesperson problem</strong>: For a group of cities, <em>what is the shortest route</em> for a salesperson to visit every city and return to their home city? This is good case for heuristics because:</p>
 <ol>
 <li>
 It’s clear that there must actually be a shortest route.
@@ -495,7 +488,6 @@ There <em>is</em> a possible heuristic: pick a path at random, then try to impro
 <div class="endnote">
 <p>This heuristic is called “hill climbing” because you’ll find the best <em>nearby</em> path (the top of a hill), but there might be a higher hill (a better path) further away.</p>
 </div>
-<p></p>
 <div class="forYouToDo">
 <ol start="2">
 <li>
@@ -551,27 +543,17 @@ There <em>is</em> a possible heuristic: pick a path at random, then try to impro
 <h3 class="anchored">
 Can All Decision Problems Be Solved?
 </h3>
-<p>
-As it turns out, not all decision problems (true/false questions) can be solved with an algorithm.
-</p>
+<p>As it turns out, not all decision problems (true/false questions) can be solved with an algorithm.</p>
 <div class="vocabFullWidth">
 <div class="ap-standard">
 <p>AAP-4.B.1, AAP-4.B.2, AAP-4.B.3</p>
 </div>
-<p>
-A <strong>decidable</strong> problem a decision problem for which it’s possible to write an algorithm that will give a correct output for all inputs.
-</p>
-<p>
-An <strong>undecidable</strong> problem is the opposite. It’s <em>not</em> possible to write an algorithm that will give a correct output for all inputs—even though it might be possible for some of them.
-</p>
+<p>A <strong>decidable</strong> problem a decision problem for which it’s possible to write an algorithm that will give a correct output for all inputs.</p>
+<p>An <strong>undecidable</strong> problem is the opposite. It’s <em>not</em> possible to write an algorithm that will give a correct output for all inputs—even though it might be possible for some of them.</p>
 </div>
 <div class="endnote">
-<p>
-The question “Is the integer even?” is an example of a <em>decidable problem</em> because it’s possible to write an algorithm that will determine whether <em>any</em> integer is even.
-</p>
-<p>
-The question “Will this computer program that takes an input always eventually report a result?” is an <em>undecidable problem</em>. It’s possible to write such a checking algorithm that would be able to say for <em>some</em> programs with <em>some</em> inputs whether they will report a result or get stuck in an infinite loop and never report. But it turns out that it’s not possible write a checking algorithm that will work for <em>any</em> program with <em>any</em> input. (You can see a proof that no such checking algorithm—for a computer or a person—can be written in <a href="../../unit-5/lab-4/1-logical-inconsistency.html" title="Unit 5 Lab 4">Lab 4</a>.)
-</p>
+<p>The question “Is the integer even?” is an example of a <em>decidable problem</em> because it’s possible to write an algorithm that will determine whether <em>any</em> integer is even.</p>
+<p>The question “Will this computer program that takes an input always eventually report a result?” is an <em>undecidable problem</em>. It’s possible to write such a checking algorithm that would be able to say for <em>some</em> programs with <em>some</em> inputs whether they will report a result or get stuck in an infinite loop and never report. But it turns out that it’s not possible write a checking algorithm that will work for <em>any</em> program with <em>any</em> input. (You can see a proof that no such checking algorithm—for a computer or a person—can be written in <a href="../../unit-5/lab-4/1-logical-inconsistency.html" title="Unit 5 Lab 4">Lab 4</a>.)</p>
 </div>
 <div class="forYouToDo">
 <ol start="3">

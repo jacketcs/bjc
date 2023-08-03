@@ -453,9 +453,7 @@ Rebuild the images without white backgrounds. –MF
 </li>
 </ul>
 </div>
-<p>
-You can improve <code>plural</code> to work correctly with more words. If the project is not already open, please reload it. (The suggested file name was <code>U2-Plural</code>.)
-</p>
+<p>You can improve <code>plural</code> to work correctly with more words. If the project is not already open, please reload it. (The suggested file name was <code>U2-Plural</code>.)</p>
 <div id="first" class="forYouToDo">
 <ol>
 <li>
@@ -479,9 +477,7 @@ This specialist block should work correctly for words that fit its specialty <im
 </ul>
 </li>
 <div class="takeNote">
-<p>
-<strong>Abstraction:</strong> Language often has special cases. In English, the plurals of some nouns add “s”; some add “es”; nouns like “calf” and “fly” become “calves” and “flies”, changing their final letters before adding “es”. And more. For a programming task this complex, it’s (generally) best to break it into parts, handle each part separately with its own procedure (its own block), and then have the “top-level” block—in this case, <code>plural</code>, itself—use those specialists. That is, instead of coding every little detail directly in <code>plural</code>, it is cleaner and clearer to make <code>plural</code> look something like this.<br> <img src="../../img/2-complexity/plural-abstract-definition.png" title="abstract definition of plural: if h = last letter of word, report h-case plural; if y = last letter of word, report y-case plural; if some other case, use a block that specializes in that case; etc.; else report join word s" alt="abstract definition of plural: if h = last letter of word, report h-case plural; if y = last letter of word, report y-case plural; if some other case, use a block that specializes in that case; etc.; else report join word s" class="ms-4 noshadow">
-</p>
+<p><strong>Abstraction:</strong> Language often has special cases. In English, the plurals of some nouns add “s”; some add “es”; nouns like “calf” and “fly” become “calves” and “flies”, changing their final letters before adding “es”. And more. For a programming task this complex, it’s (generally) best to break it into parts, handle each part separately with its own procedure (its own block), and then have the “top-level” block—in this case, <code>plural</code>, itself—use those specialists. That is, instead of coding every little detail directly in <code>plural</code>, it is cleaner and clearer to make <code>plural</code> look something like this.<br> <img src="../../img/2-complexity/plural-abstract-definition.png" title="abstract definition of plural: if h = last letter of word, report h-case plural; if y = last letter of word, report y-case plural; if some other case, use a block that specializes in that case; etc.; else report join word s" alt="abstract definition of plural: if h = last letter of word, report h-case plural; if y = last letter of word, report y-case plural; if some other case, use a block that specializes in that case; etc.; else report join word s" class="ms-4 noshadow"></p>
 <p>Showing the <em>structure</em> of the method—just the overall strategy—in the “top-level” block and leaving the details to separate blocks is one part of an important computer science idea called <em>abstraction</em>. Abstraction keeps your code clear, readable, and more easily debugged. It will also help your code be more flexible.</p>
 </div>
 <li>
@@ -499,29 +495,19 @@ Create <code>plural-y</code> to handle words like <img src="../../img/2-complexi
 <div class="takeItFurther">
 <div class="todo">
 <p>I’m not thrilled with the way this pushes a particular implementation for a reason that’s hidden until they get there, and doesn’t make sense on its own. bh</p>
-<p>
-Any better now? BTW, I moved what was TIF A up into an endnote in 1. –MF, 1/11/21
-</p>
+<p>Any better now? BTW, I moved what was TIF A up into an endnote in 1. –MF, 1/11/21</p>
 </div>
 <div class="todo">
-<p>
-I cleaned this up a bit and added a “tough stuff” icon on part B. I think part B is <em>very</em> hard. More could be done to make it clearer, but I don’t have the time for that now. One concern that this we should address now is not using “…” where what we need is jaggies. <strong>Can you please replace those two images with the complete images, and I’ll jaggy them?</strong> <br> <img src="../../img/2-complexity/plural-specialists-list.png"> <img src="../../img/2-complexity/match-vowels.png">
-</p>
-<p>
-Also, <strong>can you make sure that the TG and the solutions match</strong> this version after you review it? Thanks! –MF, 1/11/21
-</p>
+<p>I cleaned this up a bit and added a “tough stuff” icon on part B. I think part B is <em>very</em> hard. More could be done to make it clearer, but I don’t have the time for that now. One concern that this we should address now is not using “…” where what we need is jaggies. <strong>Can you please replace those two images with the complete images, and I’ll jaggy them?</strong> <br> <img src="../../img/2-complexity/plural-specialists-list.png"> <img src="../../img/2-complexity/match-vowels.png"></p>
+<p>Also, <strong>can you make sure that the TG and the solutions match</strong> this version after you review it? Thanks! –MF, 1/11/21</p>
 </div>
 <ol type="A">
 <li>
 <p>Extend <code>plural</code> to correctly handle a input word that has a space at the end.</p>
 <div class="endnote">
-<p>
-Right now, if <code>plural</code> is given a word with a space at the end, it leaves that space in the plural:<br> <img src="../../img/2-complexity/plural-bulldog[space]-with-result(bulldog[space]s).png" title="plural (bulldog ) reporting 'bulldog s'. There is a space after 'bulldog' in the input and a space between 'bulldog' and 's' in the reported value." alt="plural (bulldog ) reporting 'bulldog s'. There is a space after 'bulldog' in the input and a space between 'bulldog' and 's' in the reported value." class="ms-4"><br> Figure out how to handle this special case and edit <code>plural</code> so that the result is<br> <img src="../../img/2-complexity/plural-bulldog[space]-with-result(bulldogs).png" title="plural (bulldog ) reporting 'bulldogs'. There is a space after 'bulldog' in the input but no space in the reported value." alt="plural (bulldog ) reporting 'bulldogs'. There is a space after 'bulldog' in the input but no space in the reported value." class="ms-4"><br> You already have a block that <em>specializes</em> in making plurals of words that <em>don’t</em> have a space at the end. <em>Use</em> it.
-</p>
+<p>Right now, if <code>plural</code> is given a word with a space at the end, it leaves that space in the plural:<br> <img src="../../img/2-complexity/plural-bulldog[space]-with-result(bulldog[space]s).png" title="plural (bulldog ) reporting 'bulldog s'. There is a space after 'bulldog' in the input and a space between 'bulldog' and 's' in the reported value." alt="plural (bulldog ) reporting 'bulldog s'. There is a space after 'bulldog' in the input and a space between 'bulldog' and 's' in the reported value." class="ms-4"><br> Figure out how to handle this special case and edit <code>plural</code> so that the result is<br> <img src="../../img/2-complexity/plural-bulldog[space]-with-result(bulldogs).png" title="plural (bulldog ) reporting 'bulldogs'. There is a space after 'bulldog' in the input but no space in the reported value." alt="plural (bulldog ) reporting 'bulldogs'. There is a space after 'bulldog' in the input but no space in the reported value." class="ms-4"><br> You already have a block that <em>specializes</em> in making plurals of words that <em>don’t</em> have a space at the end. <em>Use</em> it.</p>
 </div>
-<p>
-Surprise! Once <code>plural</code> works for a single space at the end of a word, try giving it <img src="../../img/2-complexity/plural-bulldog[four-spaces].png" title="plural (bulldog  ). There iare six spaces after 'bulldog' in the input." alt="plural (bulldog  ). There iare six spaces after 'bulldog' in the input.">. That works too! But why?
-</p>
+<p>Surprise! Once <code>plural</code> works for a single space at the end of a word, try giving it <img src="../../img/2-complexity/plural-bulldog[four-spaces].png" title="plural (bulldog  ). There iare six spaces after 'bulldog' in the input." alt="plural (bulldog  ). There iare six spaces after 'bulldog' in the input.">. That works too! But why?</p>
 </li>
 <li>
 <p><img src="../../img/icons/tough-stuff.png" title="Tough Stuff" alt="Tough Stuff" class="float-end"> Does your <code>plurals</code> block still feel cluttered, even though the details about how to handle each possible last letter are abstracted into specialist blocks? One way to improve on this situation is to use another kind of abstraction called <em>data-directed programming.</em></p>
@@ -546,12 +532,8 @@ report (call (item (2) of (pair)) with inputs (word))
 <div class="todo">
 <p>We haven’t taught FIND FIRST yet. So I looked at <a href="../../unit-3/lab-3/3-checking-for-ties.html">3.3.3</a> where we first use it, and we don’t teach it there either. :/ We actually teach it in <a href="../../unit-5/lab-3/4-filtering-data.html">5.3.4</a>. So I dragged some of that content back into U3 and also here. –MF, 1/11/21</p>
 </div>
-<p>
-<code>Find first</code> is a higher-order function works similarly to <code>keep</code>, but it reports only the first item that’s found. It is equivalent to <code>item (1) of (keep)</code>.
-</p>
-<p>
-The <code>call</code> block in the palette doesn’t include the “<code>with inputs</code>” in the picture; when you click on its right arrowhead, those words will appear along with an input slot. The <code>call</code> block’s first input slot is the empty gray ring, which means that <code>call</code> wants a block in that input slot. When you drag <code>item 2 of pair</code> into that slot, the ring remains around it. That’s usually what we want when using <code>call</code>, but not this time. Right-click on the <code>item of</code> block and choose “unringify” from the menu.
-</p>
+<p><code>Find first</code> is a higher-order function works similarly to <code>keep</code>, but it reports only the first item that’s found. It is equivalent to <code>item (1) of (keep)</code>.</p>
+<p>The <code>call</code> block in the palette doesn’t include the “<code>with inputs</code>” in the picture; when you click on its right arrowhead, those words will appear along with an input slot. The <code>call</code> block’s first input slot is the empty gray ring, which means that <code>call</code> wants a block in that input slot. When you drag <code>item 2 of pair</code> into that slot, the ring remains around it. That’s usually what we want when using <code>call</code>, but not this time. Right-click on the <code>item of</code> block and choose “unringify” from the menu.</p>
 <div class="endnote">
 <p>You can experiment with <code>call</code> to see what else you can do with it. What happens if you don’t unringify the <code>item</code> block? What happens if you leave out the “<code>with inputs</code>” and the second input?</p>
 </div>

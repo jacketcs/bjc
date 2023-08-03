@@ -429,36 +429,26 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>
-We’ve looked at how the number of bits used to represent an integer affects how big it can be. Now we turn to the specific way a single-word integer is encoded as bits.
-</p>
+<p>We’ve looked at how the number of bits used to represent an integer affects how big it can be. Now we turn to the specific way a single-word integer is encoded as bits.</p>
 <div class="vocab">
 <p>: <strong>Bit</strong></p>
 <div class="ap-standard">
 <p>DAT-1.A.3</p>
 </div>
-<p>
-The word “bit” is an abbreviation for <em><strong>bi</strong>nary digi<strong>t</strong>.</em>
-</p>
+<p>The word “bit” is an abbreviation for <em><strong>bi</strong>nary digi<strong>t</strong>.</em></p>
 </div>
 <div class="ap-standard">
 <p>DAT-1.C.1</p>
 </div>
-<p>
-People generally use base ten (decimal) digits to write numbers. Computers use base two (binary).
-</p>
+<p>People generally use base ten (decimal) digits to write numbers. Computers use base two (binary).</p>
 <div class="ap-standard">
 <p>DAT-1.C.3</p>
 </div>
-<p>
-In <strong>base 10</strong>, there are ten digits (0-9), and each place is worth <em>ten</em> times as much as the place to its right. <br> <img src="../../img/4-internet/decimal-places.jpg" title="place values in decimal 3761: 3 1000's 7 100's 6 10's 1 1's" alt="place values in decimal 3761: 3 1000's 7 100's 6 10's 1 1's" class="ms-4 noshadow">
-</p>
+<p>In <strong>base 10</strong>, there are ten digits (0-9), and each place is worth <em>ten</em> times as much as the place to its right. <br> <img src="../../img/4-internet/decimal-places.jpg" title="place values in decimal 3761: 3 1000's 7 100's 6 10's 1 1's" alt="place values in decimal 3761: 3 1000's 7 100's 6 10's 1 1's" class="ms-4 noshadow"></p>
 <div class="ap-standard">
 <p>DAT-1.C.2</p>
 </div>
-<p>
-In <strong>binary, base 2</strong>, there are only two digits (0 and 1), and each place is worth <em>two</em> times the place to its right.<br> <img src="../../img/4-internet/binary-places.jpg" title="place values in binary 1101: 1 8's 1 4's 0 2's 1 1's" alt="place values in binary 1101: 1 8's 1 4's 0 2's 1 1's" class="ms-4 noshadow">
-</p>
+<p>In <strong>binary, base 2</strong>, there are only two digits (0 and 1), and each place is worth <em>two</em> times the place to its right.<br> <img src="../../img/4-internet/binary-places.jpg" title="place values in binary 1101: 1 8's 1 4's 0 2's 1 1's" alt="place values in binary 1101: 1 8's 1 4's 0 2's 1 1's" class="ms-4 noshadow"></p>
 <div class="endnote">
 <p>The subscript 2 on 1101<sub>2</sub> means the 1101 is in base 2. Numbers are normally written in base 10, so a subscript 10 is only used when needed for clarity.</p>
 </div>
@@ -468,32 +458,21 @@ Reading Binary
 <div class="ap-standard">
 <p>DAT-1.C.5</p>
 </div>
-<p>
-In <strong>base 10</strong> notation, each place value represents a <strong>power of ten</strong>: the units place (10<sup>0</sup> = 1), the tens place (10<sup>1</sup> = 10), the hundreds place (10<sup>2</sup> = 100), the thousands place (10<sup>3</sup> = 1000), etc. So, for example:
-</p>
-<p>
-</p><p>9827 &nbsp; = &nbsp; 9 × 10<sup>3</sup> &nbsp;+&nbsp; 8 × 10<sup>2</sup> &nbsp;+&nbsp; 2 × 10<sup>1</sup> &nbsp;+&nbsp; 7 × 10<sup>0</sup></p>
-<p></p>
+<p>In <strong>base 10</strong> notation, each place value represents a <strong>power of ten</strong>: the units place (10<sup>0</sup> = 1), the tens place (10<sup>1</sup> = 10), the hundreds place (10<sup>2</sup> = 100), the thousands place (10<sup>3</sup> = 1000), etc. So, for example:</p>
+<p>9827 &nbsp; = &nbsp; 9 × 10<sup>3</sup> &nbsp;+&nbsp; 8 × 10<sup>2</sup> &nbsp;+&nbsp; 2 × 10<sup>1</sup> &nbsp;+&nbsp; 7 × 10<sup>0</sup></p>
 <div class="ap-standard">
 <p>DAT-1.C.4</p>
 </div>
-<p>
-<img src="../../img/4-internet/binary-places(18).jpg" title="place values in binary 10010: 1 16's 0 8's 0 4's 1 2's 0 1's" alt="place values in binary 10010: 1 16's 0 8's 0 4's 1 2's 0 1's" class="float-end"> <strong>Base 2</strong> uses the same idea but with <strong>powers of two</strong> instead of powers of ten. Binary place values represent the units place (2<sup>0</sup> = 1), the twos place (2<sup>1</sup> = 2), the fours place (2<sup>2</sup> = 4), the eights place (2<sup>3</sup> = 8), the sixteens place (2<sup>4</sup> = 16), etc. So, for example:
-</p>
+<p><img src="../../img/4-internet/binary-places(18).jpg" title="place values in binary 10010: 1 16's 0 8's 0 4's 1 2's 0 1's" alt="place values in binary 10010: 1 16's 0 8's 0 4's 1 2's 0 1's" class="float-end"> <strong>Base 2</strong> uses the same idea but with <strong>powers of two</strong> instead of powers of ten. Binary place values represent the units place (2<sup>0</sup> = 1), the twos place (2<sup>1</sup> = 2), the fours place (2<sup>2</sup> = 4), the eights place (2<sup>3</sup> = 8), the sixteens place (2<sup>4</sup> = 16), etc. So, for example:</p>
 <p align="center">
 </p><p>10010<sub>2</sub> &nbsp; = &nbsp; <strong>1 × 2<sup>4</sup></strong> &nbsp;+&nbsp; 0 × 2<sup>3</sup> &nbsp;+&nbsp; 0 × 2<sup>2</sup> &nbsp;+&nbsp; <strong>1 × 2<sup>1</sup></strong> &nbsp;+&nbsp; 0 × 2<sup>0</sup> &nbsp; = &nbsp; 16 &nbsp;+&nbsp; 2 &nbsp; = &nbsp; 18<sub>10</sub></p>
-<p></p>
 <div class="takeNote">
-<p>
-To translate from binary (for example, 101101<sub>2</sub>) to base 10, <strong>first, write the number out on paper. Then write out the binary place values</strong> by <em>doubling left from the units place</em>:
-</p>
+<p>To translate from binary (for example, 101101<sub>2</sub>) to base 10, <strong>first, write the number out on paper. Then write out the binary place values</strong> by <em>doubling left from the units place</em>:</p>
 <div class="sidenoteBig">
 <p>101101<sub>2</sub> has only six digits, so we don’t need powers of two to the left of that.</p>
 </div>
 <p>31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATQB3AEEAMgBBAEQAVQBBAE0AZwBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBQAEEAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAEkAQQBCAGoAQQBHAHcAQQBZAFEAQgB6AEEASABNAEEAUABRAEEAaQBBAEcASQBBAGUAUQBCADAAQQBHAFUAQQBJAEEAQgBwAEEARwA0AEEAWgBBAEIAbABBAEcANABBAGQAQQBBAGkAQQBDAEEAQQBjAHcAQgAxAEEARwAwAEEAYgBRAEIAaABBAEgASQBBAGUAUQBBADkAQQBDAEkAQQBkAEEAQgB5AEEARwBFAEEAYgBnAEIAegBBAEcAdwBBAFkAUQBCADAAQQBHAGsAQQBiAHcAQgB1AEEAQwBBAEEAYwBBAEIAeQBBAEcAOABBAFkAdwBCAGwAQQBIAE0AQQBjAHcAQQBnAEEARwBZAEEAYwBnAEIAdgBBAEcAMABBAEkAQQBCAGkAQQBHAGsAQQBiAGcAQgBoAEEASABJAEEAZQBRAEEAZwBBAEgAUQBBAGIAdwBBAGcAQQBHAEkAQQBZAFEAQgB6AEEARwBVAEEASQBBAEEAeABBAEQAQQBBAEkAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAG8AQQBDAEEAQQBjAHcAQgBqAEEARwA4AEEAYwBBAEIAbABBAEQAMABBAEkAZwBCAGoAQQBHADgAQQBiAEEAQQBpAEEARAA0AEEATQBRAEEAOABBAEMAOABBAGQAQQBCAG8AQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYQBBAEEAZwBBAEgATQBBAFkAdwBCAHYAQQBIAEEAQQBaAFEAQQA5AEEAQwBJAEEAWQB3AEIAdgBBAEcAdwBBAEkAZwBBAGcAQQBIAE0AQQBkAEEAQgA1AEEARwB3AEEAWgBRAEEAOQBBAEMASQBBAFoAZwBCAHYAQQBHADQAQQBkAEEAQQB0AEEASABjAEEAWgBRAEIAcABBAEcAYwBBAGEAQQBCADAAQQBEAG8AQQBiAGcAQgB2AEEASABJAEEAYgBRAEIAaABBAEcAdwBBAE8AdwBBAGkAQQBEADQAQQBNAEEAQQA4AEEAQwA4AEEAZABBAEIAbwBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBhAEEAQQBnAEEASABNAEEAWQB3AEIAdgBBAEgAQQBBAFoAUQBBADkAQQBDAEkAQQBZAHcAQgB2AEEARwB3AEEASQBnAEEAKwBBAEQARQBBAFAAQQBBAHYAQQBIAFEAQQBhAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAZwBBAEkAQQBCAHoAQQBHAE0AQQBiAHcAQgB3AEEARwBVAEEAUABRAEEAaQBBAEcATQBBAGIAdwBCAHMAQQBDAEkAQQBQAGcAQQB4AEEARAB3AEEATAB3AEIAMABBAEcAZwBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBvAEEAQwBBAEEAYwB3AEIAagBBAEcAOABBAGMAQQBCAGwAQQBEADAAQQBJAGcAQgBqAEEARwA4AEEAYgBBAEEAaQBBAEMAQQBBAGMAdwBCADAAQQBIAGsAQQBiAEEAQgBsAEEARAAwAEEASQBnAEIAbQBBAEcAOABBAGIAZwBCADAAQQBDADAAQQBkAHcAQgBsAEEARwBrAEEAWgB3AEIAbwBBAEgAUQBBAE8AZwBCAHUAQQBHADgAQQBjAGcAQgB0AEEARwBFAEEAYgBBAEEANwBBAEMASQBBAFAAZwBBAHcAQQBEAHcAQQBMAHcAQgAwAEEARwBnAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAG8AQQBDAEEAQQBjAHcAQgBqAEEARwA4AEEAYwBBAEIAbABBAEQAMABBAEkAZwBCAGoAQQBHADgAQQBiAEEAQQBpAEEARAA0AEEATQBRAEEAOABBAEMAOABBAGQAQQBCAG8AQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBADgAQQBIAE0AQQBkAEEAQgB5AEEARwA4AEEAYgBnAEIAbgBBAEQANABBAE0AdwBBAHkAQQBEAHcAQQBMAHcAQgB6AEEASABRAEEAYwBnAEIAdgBBAEcANABBAFoAdwBBACsAQQBEAHcAQQBMAHcAQgAwAEEARwBRAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBEADQAQQBNAFEAQQAyAEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEAUABBAEIAegBBAEgAUQBBAGMAZwBCAHYAQQBHADQAQQBaAHcAQQArAEEARABnAEEAUABBAEEAdgBBAEgATQBBAGQAQQBCAHkAQQBHADgAQQBiAGcAQgBuAEEARAA0AEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAOABBAEgATQBBAGQAQQBCAHkAQQBHADgAQQBiAGcAQgBuAEEARAA0AEEATgBBAEEAOABBAEMAOABBAGMAdwBCADAAQQBIAEkAQQBiAHcAQgB1AEEARwBjAEEAUABnAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQASQBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBADgAQQBIAE0AQQBkAEEAQgB5AEEARwA4AEEAYgBnAEIAbgBBAEQANABBAE0AUQBBADgAQQBDADgAQQBjAHcAQgAwAEEASABJAEEAYgB3AEIAdQBBAEcAYwBBAFAAZwBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEMAOABBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBJAEEAQgBqAEEARwB3AEEAWQBRAEIAegBBAEgATQBBAFAAUQBBAGkAQQBHADQAQQBiAHcAQgBpAEEARwA4AEEAYwBnAEIAawBBAEcAVQBBAGMAZwBBAGkAQQBDAEEAQQBZAHcAQgB2AEEARwB3AEEAYwB3AEIAdwBBAEcARQBBAGIAZwBBADkAQQBDAEkAQQBOAGcAQQBpAEEARAA0AEEAQwBnAEEAOABBAEcAawBBAGIAUQBCAG4AQQBDAEEAQQBZAHcAQgBzAEEARwBFAEEAYwB3AEIAegBBAEQAMABBAEkAZwBCAHAAQQBHADQAQQBaAEEAQgBsAEEARwA0AEEAZABBAEEAZwBBAEcANABBAGIAdwBCAHoAQQBHAGcAQQBZAFEAQgBrAEEARwA4AEEAZAB3AEEAaQBBAEMAQQBBAGMAdwBCAHkAQQBHAE0AQQBQAFEAQQBpAEEAQwA4AEEAWQBnAEIAcQBBAEcATQBBAEwAUQBCAHkAQQBDADgAQQBhAFEAQgB0AEEARwBjAEEATAB3AEEANABBAEMAMABBAGMAZwBCAGwAQQBHAE0AQQBkAFEAQgB5AEEASABNAEEAYQBRAEIAMgBBAEcAVQBBAEwAUQBCAHkAQQBHAFUAQQBjAEEAQgB2AEEASABJAEEAZABBAEIAbABBAEgASQBBAGMAdwBBAHYAQQBIAEkAQQBMAFEAQgAwAEEARwA4AEEATABRAEIAcwBBAEMANABBAGMAQQBCAHUAQQBHAGMAQQBJAGcAQQBnAEEARwBFAEEAYgBBAEIAMABBAEQAMABBAEkAZwBCAHkAQQBHAGsAQQBaAHcAQgBvAEEASABRAEEATABRAEIAMABBAEcAOABBAEwAUQBCAHMAQQBHAFUAQQBaAGcAQgAwAEEAQwBBAEEAWQBRAEIAeQBBAEgASQBBAGIAdwBCADMAQQBDAEkAQQBJAEEAQgAwAEEARwBrAEEAZABBAEIAcwBBAEcAVQBBAFAAUQBBAGkAQQBIAEkAQQBhAFEAQgBuAEEARwBnAEEAZABBAEEAdABBAEgAUQBBAGIAdwBBAHQAQQBHAHcAQQBaAFEAQgBtAEEASABRAEEASQBBAEIAaABBAEgASQBBAGMAZwBCAHYAQQBIAGMAQQBJAGcAQQBnAEEAQwA4AEEAUABnAEEASwBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBMAHcAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAFAAZwBBAD0ACgBzAHUAZgBmAGkAeAA6AA==:31b8e172-b470-440e-83d8-e6b185028602</p>
-<p>
-This means that this number is, in base 10, 32 + 8 + 4 + 1 = 45. So, 101101<sub>2</sub> = 45<sub>10</sub>.
-</p>
+<p>This means that this number is, in base 10, 32 + 8 + 4 + 1 = 45. So, 101101<sub>2</sub> = 45<sub>10</sub>.</p>
 </div>
 <div class="forYouToDo">
 <ol start="1">
@@ -523,9 +502,7 @@ This means that this number is, in base 10, 32 + 8 + 4 + 1 = 45. So, 101101<sub>
 Writing Binary
 </h3>
 <div class="takeNote">
-<p>
-To translate from base 10 (like 89<sub>10</sub>) to base 2, <strong>first write out the binary place values</strong> by <em>doubling left from the units place</em> until you get to a value larger than your number (128 for this example). <strong>Then think</strong>, “I can take out a 64, so I write a 1 there, and there’s 25 left (89&nbsp;−&nbsp;64). I have 0 thirty-twos, because I only have 25. But I can take out 16, and there’s 9 left. So, 8 and 1 are the last nonzero bits.
-</p>
+<p>To translate from base 10 (like 89<sub>10</sub>) to base 2, <strong>first write out the binary place values</strong> by <em>doubling left from the units place</em> until you get to a value larger than your number (128 for this example). <strong>Then think</strong>, “I can take out a 64, so I write a 1 there, and there’s 25 left (89&nbsp;−&nbsp;64). I have 0 thirty-twos, because I only have 25. But I can take out 16, and there’s 9 left. So, 8 and 1 are the last nonzero bits.</p>
 <!--  <div class="sidenoteBig">Either way you are converting (and between any bases), always write the place values right-to-left (just as with units, tens, hundreds, etc.), and always write the number itself left-to-right.</div>  -->
 <table class="ms-4 table" data-quarto-postprocess="true" data-summary="translation process from binary to base 10">
 <tbody>
@@ -538,12 +515,12 @@ To translate from base 10 (like 89<sub>10</sub>) to base 2, <strong>first write 
 <td data-quarto-table-cell-role="th" scope="col">1</td>
 </tr>
 <tr class="even">
-<td><strong>32</strong></td>
+<td>**32**</td>
 <td>16</td>
-<td><strong>8</strong></td>
-<td><strong>4</strong></td>
+<td>**8**</td>
+<td>**4**</td>
 <td>2</td>
-<td><strong>1</strong></td>
+<td>**1**</td>
 </tr>
 <tr class="odd">
 <td colspan="6" class="noborder"><img src="../../img/8-recursive-reporters/r-to-l.png" title="right-to-left arrow" class="ms-4 noshadow img-fluid" alt="right-to-left arrow"></td>
@@ -553,12 +530,9 @@ To translate from base 10 (like 89<sub>10</sub>) to base 2, <strong>first write 
 <div class="todo">
 <p>I’m confused about why the arrow is going from right to left. Will that confuse students? Most of the work happens going left to right. Maybe there should be another arrow below the table that goes the other way… –MF, 2/12/18 It may be left over from when we were using the correct algorithm, which does go right to left. -bh</p>
 </div>
-<p>
-Now, read the number off: 1011001<sub>2</sub> = 89<sub>10</sub>.
-</p>
+<p>Now, read the number off: 1011001<sub>2</sub> = 89<sub>10</sub>.</p>
 </div>
-<p>
-</p><p>Here’s a more precise description of this <em>algorithm</em> to find the base 2 representation of any positive integer:</p>
+<p>Here’s a more precise description of this <em>algorithm</em> to find the base 2 representation of any positive integer:</p>
 <ol type="a">
 <li>
 First, find the largest power of two that is less than the number.
@@ -580,10 +554,7 @@ If it doesn’t, keep the same number, and record a 0 for that power of 2.
 <p>Repeat this whole step with the next largest power of 2 until you have a bit (1 or 0) for all the remaining places down to and including the ones place (by which point you should have nothing left of the original number).</p>
 </li>
 </ol>
-<p></p>
-<p>
-The string of ones and zeros you have recorded is the binary representation of your original number.
-</p>
+<p>The string of ones and zeros you have recorded is the binary representation of your original number.</p>
 <div class="forYouToDo">
 <ol start="2">
 <div class="ap-standard">

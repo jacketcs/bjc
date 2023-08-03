@@ -446,16 +446,10 @@ TG and solutions need to be checked. –MF, 12/19/18
 </h3>
 </div>
 <div class="learn">
-<p>
-<strong>On this page</strong>, you will use a <em>binary search</em> algorithm to search efficiently in a <em>sorted</em> list.
-</p>
+<p><strong>On this page</strong>, you will use a <em>binary search</em> algorithm to search efficiently in a <em>sorted</em> list.</p>
 </div>
-<p>
-Answering this question is simple in Snap<em>!</em> because you can just ask a dictionary: <img src="../../img/5-algorithms/100000-words-contains-seperate.png" title="(100,000 words) contains (seperate)" alt="100000-words-contains-seperate.png" class="inline py-0">. But <em>“simple” doesn’t mean fast</em>. The <code>contains</code> block still has to look at each item in the list until it finds the one you are looking for (and says <code>true</code>) or reaches the end of the list (and says <code>false</code>). It is still a linear search.
-</p>
-<p>
-When you are only looking for <em>one</em> thing in a list (for example, checking whether a particular word is spelled correctly) rather than finding <em>all</em> the words with some characteristic (for example, looking for all five-letter words), you can use the strategy from <a href="../../unit-5/lab-1/1-sorted-lists.html" title="Page 1: Guess My Number">Page 1: Guess My Number</a> to make your algorithm faster. The best strategy for that problem is a <em>binary search</em> algorithm: always guess the <em>middle</em> value and then adjust your guess based on whether it was too high or too low. That way, you eliminate half the possibilities with each guess. We can use a similar strategy to look for a word in a word list.
-</p>
+<p>Answering this question is simple in Snap<em>!</em> because you can just ask a dictionary: <img src="../../img/5-algorithms/100000-words-contains-seperate.png" title="(100,000 words) contains (seperate)" alt="100000-words-contains-seperate.png" class="inline py-0">. But <em>“simple” doesn’t mean fast</em>. The <code>contains</code> block still has to look at each item in the list until it finds the one you are looking for (and says <code>true</code>) or reaches the end of the list (and says <code>false</code>). It is still a linear search.</p>
+<p>When you are only looking for <em>one</em> thing in a list (for example, checking whether a particular word is spelled correctly) rather than finding <em>all</em> the words with some characteristic (for example, looking for all five-letter words), you can use the strategy from <a href="../../unit-5/lab-1/1-sorted-lists.html" title="Page 1: Guess My Number">Page 1: Guess My Number</a> to make your algorithm faster. The best strategy for that problem is a <em>binary search</em> algorithm: always guess the <em>middle</em> value and then adjust your guess based on whether it was too high or too low. That way, you eliminate half the possibilities with each guess. We can use a similar strategy to look for a word in a word list.</p>
 <div class="endnote">
 <p>You could have written a simpler number guessing program: the computer could guess the number 1, then 2, then 3, and so on until it finds the number. That would be a <em>linear search</em> algorithm; it’s easier to code, but it takes longer to run because every time it makes a wrong guess, it eliminates only that guess. With binary search, every wrong guess eliminates <em>half</em> the possibilities at once.</p>
 </div>
@@ -464,18 +458,14 @@ When you are only looking for <em>one</em> thing in a list (for example, checkin
 <div class="ap-standard">
 <p>AAP-2.P.1, AAP-2.P.2</p>
 </div>
-<p>
-A <strong>binary search</strong> algorithm starts in the middle of a <em>sorted</em> list and repeatedly eliminates half the list until either the desired value is found or all elements have been eliminated.
-</p>
+<p>A <strong>binary search</strong> algorithm starts in the middle of a <em>sorted</em> list and repeatedly eliminates half the list until either the desired value is found or all elements have been eliminated.</p>
 <div class="ap-standard">
 <p>AAP-2.O.1</p>
 </div>
 <div class="sidenoteBig">
 <p>You learned about traversing a list on <a href="../../unit-2/lab-2/3-traversing-list.html" title="Unit 2 Lab 2 Page 3: Checking Each Quiz Answer">Unit 2 Lab 2 Page 3: Checking Each Quiz Answer</a>.</p>
 </div>
-<p>
-Linear search does a <em>complete</em> traversal of the list. Binary search saves time by doing a <em>partial</em> traversal of the list.
-</p>
+<p>Linear search does a <em>complete</em> traversal of the list. Binary search saves time by doing a <em>partial</em> traversal of the list.</p>
 </div>
 <div class="endnote">
 <p>The one thing that almost everyone knows about computers is that they use binary: ones and zeros. Binary search has nothing to do with that. The word “binary” just means “two,” whether it’s two digits or two halves.</p>
@@ -505,13 +495,11 @@ Now use <code>binary search</code> to search for the same words in the unsorted 
 </li>
 </ol>
 </div>
-<p>
-The <code>contains</code> block can’t make any assumptions about the ordering in list you are searching, but if you are looking for one thing in a <em>sorted</em>, list you can use binary search.
-</p>
+<p>The <code>contains</code> block can’t make any assumptions about the ordering in list you are searching, but if you are looking for one thing in a <em>sorted</em>, list you can use binary search.</p>
 <div class="takeNote">
 
 <pre><code>&lt;div class="ap-standard"&gt;AAP-2.P.2&lt;/div&gt;
-&lt;p&gt;
+
 Two things affect whether you can use a binary search algorithm to make your program more efficient:
 &lt;ul&gt;
 &lt;li&gt;What question you are trying to answer? Are you searching for &lt;em&gt;one&lt;/em&gt; thing in a list or are you finding &lt;em&gt;all&lt;/em&gt; the things in the list with some characteristic?&lt;/li&gt;
@@ -534,7 +522,7 @@ Two things affect whether you can use a binary search algorithm to make your pro
 &lt;td&gt;must use linear search&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/table&gt;
-&lt;/p&gt;
+
 &lt;/div&gt;
 &lt;div class="endnote"&gt;If you are working with short lists, it's not so important which algorithm you use. It's when you are dealing with a lot of data that you have to think carefully about the algorithm.&lt;/div&gt;
 &lt;div class="forYouToDo"&gt;</code></pre>
@@ -583,25 +571,25 @@ Which of the following questions can be answered with a binary search, assuming 
 &lt;div class="choice" identifier="c1"&gt;
 &lt;div class="text"&gt;What is my friend Rasheed's phone number?&lt;/div&gt;
 &lt;div class="feedback"&gt;
-Correct! You are searching for &lt;strong&gt;one&lt;/strong&gt; phone number in the list.
+Correct! You are searching for **one** phone number in the list.
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="choice" identifier="c2"&gt;
 &lt;div class="text"&gt;Give me a list of all the Beyoncé songs.&lt;/div&gt;
 &lt;div class="feedback"&gt;
-We have to find &lt;strong&gt;all&lt;/strong&gt; the Beyoncé songs, not just one.
+We have to find **all** the Beyoncé songs, not just one.
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="choice" identifier="c3"&gt;
 &lt;div class="text"&gt;Tell me if bread is on my shopping list.&lt;/div&gt;
 &lt;div class="feedback"&gt;
-Correct! You are searching for &lt;strong&gt;one&lt;/strong&gt; item in the list.
+Correct! You are searching for **one** item in the list.
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="choice" identifier="c4"&gt;
 &lt;div class="text"&gt;Who in my contact list lives on Grand Avenue?&lt;/div&gt;
 &lt;div class="feedback"&gt;
-Your contact list is probably &lt;strong&gt;sorted by name&lt;/strong&gt;, not by address. Also, there may be &lt;strong&gt;more than one&lt;/strong&gt; person who lives on Grand Avenue.
+Your contact list is probably **sorted by name**, not by address. Also, there may be **more than one** person who lives on Grand Avenue.
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="responseDeclaration" identifier="ri2"&gt;

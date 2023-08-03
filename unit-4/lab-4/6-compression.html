@@ -435,14 +435,11 @@ ul.task-list li input[type="checkbox"] {
 <div class="ap-standard">
 <p>DAT-1.D.1</p>
 </div>
-<p>
-The size of data (the number of bits required to store it) affects the time it takes to send that data across the Internet. So, people use <em>data compression</em> algorithms to reduce the size of images, sounds, movies and some other kinds of data.
-</p>
+<p>The size of data (the number of bits required to store it) affects the time it takes to send that data across the Internet. So, people use <em>data compression</em> algorithms to reduce the size of images, sounds, movies and some other kinds of data.</p>
 <div class="ap-standard">
 <p>DAT-1.D.3</p>
 </div>
-<p>
-</p><p>The amount of size reduction depends on two things:</p>
+<p>The amount of size reduction depends on two things:</p>
 <ol>
 <li>
 the amount of redundancy in the original data
@@ -451,32 +448,20 @@ the amount of redundancy in the original data
 the compression algorithm applied
 </li>
 </ol>
-<p></p>
-<p>
-There are two broad categories of data compression algorithms: <em>lossless</em> and <em>lossy,</em> depending on whether information is lost.
-</p>
+<p>There are two broad categories of data compression algorithms: <em>lossless</em> and <em>lossy,</em> depending on whether information is lost.</p>
 <div class="vocabFullWidth">
 <p>: <strong>Lossless Compression</strong></p>
-<p>
-<strong>Lossless data&nbsp;compression</strong> algorithms (such as PNG) are reversible (there is no loss in quality); you can reconstruct the original data.
-</p>
+<p><strong>Lossless data&nbsp;compression</strong> algorithms (such as PNG) are reversible (there is no loss in quality); you can reconstruct the original data.</p>
 </div>
 <div class="ap-standard">
 <p>DAT-1.D.4</p>
 </div>
-<p>
-Lossless compression works by <em>removing redundant data</em>. These algorithms can <em>usually</em> reduce the number of bits required to store or transmit the data while guaranteeing that the original data can be perfectly reconstructed.
-</p>
+<p>Lossless compression works by <em>removing redundant data</em>. These algorithms can <em>usually</em> reduce the number of bits required to store or transmit the data while guaranteeing that the original data can be perfectly reconstructed.</p>
 <p><img src="../../img/6-computers/bjc-logo-original.png" title="BJC logo uncompressed" alt="BJC logo uncompressed" class="float-end"></p>
-<p>
-Run-length encoding is an example of lossless compression. Consider the 158 pixels in the top row of the BJC logo (at right). The first 60 pixels are white. Then come five pixels of yellowish orange (the top slice of the “b”). And the rest of that row is white.
-</p>
+<p>Run-length encoding is an example of lossless compression. Consider the 158 pixels in the top row of the BJC logo (at right). The first 60 pixels are white. Then come five pixels of yellowish orange (the top slice of the “b”). And the rest of that row is white.</p>
 <p class="ms-4">
 </p><p>…<img src="../../img/6-computers/top-row-of-pixels-in-bjc-logo.png" title="top-row-of-pixels-in-bjc-logo: 4 white, 6 yellow-orange, 3 white" alt="top-row-of-pixels-in-bjc-logo: 4 white, 6 yellow-orange, 3 white">…</p>
-<p></p>
-<p>
-Instead of storing all 158 pixels individually, we could compress them with <em>run-length encoding</em> and just store six values (three numbers and three colors):
-</p>
+<p>Instead of storing all 158 pixels individually, we could compress them with <em>run-length encoding</em> and just store six values (three numbers and three colors):</p>
 <table class="table">
 <colgroup>
 <col style="width: 19%">
@@ -506,43 +491,28 @@ Instead of storing all 158 pixels individually, we could compress them with <em>
 <div class="ap-standard">
 <p>DAT-1.D.2</p>
 </div>
-<p>
-Those six values (60, FFFFFF, 5, E5A84A, 93, FFFFFF) can be reconstructed into that whole first row of the image (158 pixels). So, fewer bits does not necessarily mean less information.
-</p>
+<p>Those six values (60, FFFFFF, 5, E5A84A, 93, FFFFFF) can be reconstructed into that whole first row of the image (158 pixels). So, fewer bits does not necessarily mean less information.</p>
 <div class="vocabFullWidth">
 <p>: <strong>Lossy Compression</strong></p>
-<p>
-<strong>Lossy data&nbsp;compression</strong> algorithms are <em>not</em> fully reversible; you can reconstruct only an <em>approximation</em> of the original data.
-</p>
+<p><strong>Lossy data&nbsp;compression</strong> algorithms are <em>not</em> fully reversible; you can reconstruct only an <em>approximation</em> of the original data.</p>
 </div>
 <div class="ap-standard">
 <p>DAT-1.D.5</p>
 </div>
-<p>
-Lossy Compression works by removing details that people aren’t likely to notice. The most commonly used lossy compression algorithm for pictures is called JPEG (or JPG, both pronounced “jay peg” for “Joint Photographic Experts Group,” the committee that invented it). JPEG works by preserving most of the brightness information for each pixel (since human eyes are sensitive to that) and performing a kind of averaging process to the color information (because human eyes aren’t as good at distinguishing color, especially colors close to white).
-</p>
-<p>
-Below are an original, uncompressed picture of pebbles in a pond and a highly compressed JPEG of the same image. Can you tell which is which?<br> <img src="../../img/6-computers/pond.bmp" title="pond pebbles" alt="pond pebbles" class="ms-4"> <img src="../../img/6-computers/pond.jpg" title="pond pebbles" alt="pond pebbles">
-</p>
-<p>
-You probably <em>can</em> tell which is which, especially if you looked for sharp edges or very shiny spots. But the compressed file uses 1/30th of the space used by the original, and you could still tell that it’s a picture of rocks. So, for many purposes the compressed version would be good enough. Lossy algorithms usually let you <em>control the degree of precision</em>, and generally, people select less extreme compression settings, so the compressed file looks much more like the original than this example.
-</p>
+<p>Lossy Compression works by removing details that people aren’t likely to notice. The most commonly used lossy compression algorithm for pictures is called JPEG (or JPG, both pronounced “jay peg” for “Joint Photographic Experts Group,” the committee that invented it). JPEG works by preserving most of the brightness information for each pixel (since human eyes are sensitive to that) and performing a kind of averaging process to the color information (because human eyes aren’t as good at distinguishing color, especially colors close to white).</p>
+<p>Below are an original, uncompressed picture of pebbles in a pond and a highly compressed JPEG of the same image. Can you tell which is which?<br> <img src="../../img/6-computers/pond.bmp" title="pond pebbles" alt="pond pebbles" class="ms-4"> <img src="../../img/6-computers/pond.jpg" title="pond pebbles" alt="pond pebbles"></p>
+<p>You probably <em>can</em> tell which is which, especially if you looked for sharp edges or very shiny spots. But the compressed file uses 1/30th of the space used by the original, and you could still tell that it’s a picture of rocks. So, for many purposes the compressed version would be good enough. Lossy algorithms usually let you <em>control the degree of precision</em>, and generally, people select less extreme compression settings, so the compressed file looks much more like the original than this example.</p>
 <div class="endnote">
-<p>
-<a href="#hint-sizes" data-bs-toggle="collapse" title="What size is this file when encoded in different formats?">What size is this file when encoded in different formats?</a>
-</p>
+<p><a href="#hint-sizes" data-bs-toggle="collapse" title="What size is this file when encoded in different formats?">What size is this file when encoded in different formats?</a></p>
 <div id="hint-sizes" class="collapse">
 <p>Here are the sizes of the pond pebbles picture in four different formats: 31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATgBBAEEANABBAEQAUQBBAE8AUQBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBQAEEAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAEkAQQBCAGoAQQBHAHcAQQBZAFEAQgB6AEEASABNAEEAUABRAEEAaQBBAEcASQBBAGUAUQBCADAAQQBHAFUAQQBJAEEAQgBwAEEARwA0AEEAWgBBAEIAbABBAEcANABBAGQAQQBBAGkAQQBDAEEAQQBkAHcAQgBwAEEARwBRAEEAZABBAEIAbwBBAEQAMABBAEkAZwBBADEAQQBEAFkAQQBKAFEAQQBpAEEAQwBBAEEAYwB3AEIAMQBBAEcAMABBAGIAUQBCAGgAQQBIAEkAQQBlAFEAQQA5AEEAQwBJAEEAWQB3AEIAdgBBAEcAMABBAGMAQQBCAHkAQQBHAFUAQQBjAHcAQgB6AEEARwBrAEEAYgB3AEIAdQBBAEMAQQBBAFoAZwBCAGgAQQBHAE0AQQBkAEEAQgB2AEEASABJAEEAYwB3AEEAZwBBAEcAVQBBAGUAQQBCAGgAQQBHADAAQQBjAEEAQgBzAEEARwBVAEEASQBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAbwBBAEMAQQBBAGMAdwBCAGoAQQBHADgAQQBjAEEAQgBsAEEARAAwAEEASQBnAEIAagBBAEcAOABBAGIAQQBBAGkAQQBEADQAQQBaAGcAQgB2AEEASABJAEEAYgBRAEIAaABBAEgAUQBBAFAAQQBBAHYAQQBIAFEAQQBhAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAZwBBAEkAQQBCAHoAQQBHAE0AQQBiAHcAQgB3AEEARwBVAEEAUABRAEEAaQBBAEcATQBBAGIAdwBCAHMAQQBDAEkAQQBQAGcAQgB6AEEARwBrAEEAZQBnAEIAbABBAEQAdwBBAEwAdwBCADAAQQBHAGcAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBAGcAQQBIAE0AQQBkAEEAQgA1AEEARwB3AEEAWgBRAEEAOQBBAEMASQBBAGQAQQBCAGwAQQBIAGcAQQBkAEEAQQB0AEEARwBFAEEAYgBBAEIAcABBAEcAYwBBAGIAZwBBADYAQQBDAEEAQQBiAEEAQgBsAEEARwBZAEEAZABBAEEANwBBAEMASQBBAFAAZwBCAEMAQQBFADAAQQBVAEEAQQBnAEEARwBVAEEAYgBnAEIAagBBAEcAOABBAFoAQQBCAHAAQQBHADQAQQBaAHcAQQBnAEEARwBVAEEAZABnAEIAbABBAEgASQBBAGUAUQBBAGcAQQBIAEEAQQBhAFEAQgA0AEEARwBVAEEAYgBBAEEAZwBBAEcAawBBAGIAZwBCAGsAQQBHAGsAQQBkAGcAQgBwAEEARwBRAEEAZABRAEIAaABBAEcAdwBBAGIAQQBCADUAQQBDAEEAQQBLAEEAQgB6AEEARwBnAEEAYgB3AEIAMwBBAEcANABBAEkAQQBCAGgAQQBHAEkAQQBiAHcAQgAyAEEARwBVAEEASwBRAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQARQBBAE4AQQBBADQAQQBDAEEAQQBhAHcAQgBDAEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBMAHcAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAZwBBAEgATQBBAGQAQQBCADUAQQBHAHcAQQBaAFEAQQA5AEEAQwBJAEEAZABBAEIAbABBAEgAZwBBAGQAQQBBAHQAQQBHAEUAQQBiAEEAQgBwAEEARwBjAEEAYgBnAEEANgBBAEMAQQBBAGIAQQBCAGwAQQBHAFkAQQBkAEEAQQA3AEEAQwBJAEEAUABnAEIAUQBBAEUANABBAFIAdwBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBEAEUAQQBNAEEAQQAyAEEAQwBBAEEAYQB3AEIAQwBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBAGcAQQBIAE0AQQBkAEEAQgA1AEEARwB3AEEAWgBRAEEAOQBBAEMASQBBAGQAQQBCAGwAQQBIAGcAQQBkAEEAQQB0AEEARwBFAEEAYgBBAEIAcABBAEcAYwBBAGIAZwBBADYAQQBDAEEAQQBiAEEAQgBsAEEARwBZAEEAZABBAEEANwBBAEMASQBBAFAAZwBCAEsAQQBGAEEAQQBSAFEAQgBIAEEAQwBBAEEAZAB3AEIAcABBAEgAUQBBAGEAQQBBAGcAQQBHAHcAQQBaAFEAQgBoAEEASABNAEEAZABBAEEAZwBBAEcATQBBAGIAdwBCAHQAQQBIAEEAQQBjAGcAQgBsAEEASABNAEEAYwB3AEIAcABBAEcAOABBAGIAZwBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBEAGsAQQBOAEEAQQBnAEEARwBzAEEAUQBnAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAEkAQQBCAHoAQQBIAFEAQQBlAFEAQgBzAEEARwBVAEEAUABRAEEAaQBBAEgAUQBBAFoAUQBCADQAQQBIAFEAQQBMAFEAQgBoAEEARwB3AEEAYQBRAEIAbgBBAEcANABBAE8AZwBBAGcAQQBHAHcAQQBaAFEAQgBtAEEASABRAEEATwB3AEEAaQBBAEQANABBAFMAZwBCAFEAQQBFAFUAQQBSAHcAQQBnAEEASABjAEEAYQBRAEIAMABBAEcAZwBBAEkAQQBCAHQAQQBHADgAQQBjAHcAQgAwAEEAQwBBAEEAWQB3AEIAdgBBAEcAMABBAGMAQQBCAHkAQQBHAFUAQQBjAHcAQgB6AEEARwBrAEEAYgB3AEIAdQBBAEMAQQBBAEsAQQBCAHoAQQBHAGcAQQBiAHcAQgAzAEEARwA0AEEASQBBAEIAaABBAEcASQBBAGIAdwBCADIAQQBHAFUAQQBLAFEAQQA4AEEAQwA4AEEAZABBAEIAawBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBaAEEAQQArAEEARABVAEEASQBBAEIAcgBBAEUASQBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEEAdgBBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQQB2AEEASABRAEEAWQBRAEIAaQBBAEcAdwBBAFoAUQBBACsAQQBBAD0APQAKAHMAdQBmAGYAaQB4ADoA:31b8e172-b470-440e-83d8-e6b185028602</p>
 </div>
 </div>
-<p>
-The MP3 format, which you almost certainly use for portable music files, is a lossy compression format. It tends to emphasize high frequencies, so people accustomed to MP3 music find uncompressed versions of the same music boomy (bassy).
-</p>
+<p>The MP3 format, which you almost certainly use for portable music files, is a lossy compression format. It tends to emphasize high frequencies, so people accustomed to MP3 music find uncompressed versions of the same music boomy (bassy).</p>
 <h3 class="anchored">
 Which is best?
 </h3>
-<p>
-</p><p>Both types of data compression exist because each is useful in certain circumstances:</p>
+<p>Both types of data compression exist because each is useful in certain circumstances:</p>
 <ul>
 <div class="ap-standard">
 <p>DAT-1.D.7</p>
@@ -557,7 +527,6 @@ Lossless compression is a good choice when there are very sharp transitions betw
 Lossy compression is a good choice when the data does not require precision (such as images, sound, or movies, which people may not even notice have been compressed) <em>and</em> when reducing number of bits stored or transmitted is most important.
 </li>
 </ul>
-<p></p>
 <div class="forYouToDo">
 <ol>
 <li>

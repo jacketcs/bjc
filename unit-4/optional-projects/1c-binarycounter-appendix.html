@@ -432,11 +432,8 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored">
 Base Conversion with Method 1 (<em>Short Division by Two with Remainder</em>)
 </h3>
-<p>
-First a reminder how to extract each digit in base 10 system.
-</p>
-<p>
-</p><p><strong>Example:</strong> If you were trying to extract the digits of a number, say, 527 in base 10, you would take the following steps.<br> <img src="../../img/6-computers/BinaryClock_img/527.png" title="Decimal Digit Extraction" alt="Decimal Digit Extraction" class="ms-4" width="459"><br> (Recall that the floor() function rounds a number down to the closest integer.)<br></p>
+<p>First a reminder how to extract each digit in base 10 system.</p>
+<p><strong>Example:</strong> If you were trying to extract the digits of a number, say, 527 in base 10, you would take the following steps.<br> <img src="../../img/6-computers/BinaryClock_img/527.png" title="Decimal Digit Extraction" alt="Decimal Digit Extraction" class="ms-4" width="459"><br> (Recall that the floor() function rounds a number down to the closest integer.)<br></p>
 <ol>
 <li>
 Find the “ones” digit, via remainder in 527 divided by 10: <br> 527 mod 10 = <strong>7</strong><br> Get quotient:<br> floor(527/10)= 52
@@ -448,15 +445,9 @@ Repeat, find the “tens” digit, via remainder in 52 divided by 10: <br> 52 mo
 Repeat, find the “hundreds” digit, via remainder in 5 divided by 10: <br> 5 mod 10 = <strong>5</strong><br> Get quotient:<br> floor(5/10) = 0
 </li>
 </ol>
-<p></p>
-<p>
-This is where we stop. So 527= <strong>5</strong>(100) + <strong>2</strong>(10) + <strong>7</strong>(1)
-</p>
-<p>
-Note with the algorithm we extracted the digits right to left. (7 first, 2 next, 5 last)
-</p>
-<p>
-</p><p><strong>Example:</strong> If you apply a similar procedure to get the binary representation of a number, say, 25, you would take the following steps.<br> <img src="../../img/6-computers/BinaryClock_img/25.png" title="Binary Digit Extraction" alt="Binary Digit Extraction" class="ms-4" width="747"><br></p>
+<p>This is where we stop. So 527= <strong>5</strong>(100) + <strong>2</strong>(10) + <strong>7</strong>(1)</p>
+<p>Note with the algorithm we extracted the digits right to left. (7 first, 2 next, 5 last)</p>
+<p><strong>Example:</strong> If you apply a similar procedure to get the binary representation of a number, say, 25, you would take the following steps.<br> <img src="../../img/6-computers/BinaryClock_img/25.png" title="Binary Digit Extraction" alt="Binary Digit Extraction" class="ms-4" width="747"><br></p>
 <ol>
 <li>
 Find the “ones” digit, via remainder in 25 divided by 2: <br> 25 mod 2 = <strong>1</strong><br> Get quotient:<br> floor(25/2)= 12
@@ -474,16 +465,9 @@ Repeat, find the “eights” digit, via remainder in 3 divided by 2: <br> 3 mod
 Repeat, find the “sixteens” digit, via remainder in 1 divided by 2: <br> 1 mod 2= <strong>1</strong><br> Get quotient:<br> floor(1/2)= 0
 </li>
 </ol>
-<p></p>
-<p>
-This is where we stop. Note with the algorithm again we extracted the digits right to left.
-</p>
-<p>
-So 25= <strong>1</strong>(16) + <strong>1</strong>(8)+ <strong>0</strong>(4) + <strong>0</strong>(2) + <strong>1</strong>(1) = (<strong>11001</strong>)<sub>2</sub>
-</p>
-<p>
-Using these examples come up with an algorithm to represent any base 10 number in base 2.
-</p>
+<p>This is where we stop. Note with the algorithm again we extracted the digits right to left.</p>
+<p>So 25= <strong>1</strong>(16) + <strong>1</strong>(8)+ <strong>0</strong>(4) + <strong>0</strong>(2) + <strong>1</strong>(1) = (<strong>11001</strong>)<sub>2</sub></p>
+<p>Using these examples come up with an algorithm to represent any base 10 number in base 2.</p>
 <h3 class="anchored">
 Base conversion with Method 2: (<em>Descending Powers of Two and Subtraction</em>)
 </h3>

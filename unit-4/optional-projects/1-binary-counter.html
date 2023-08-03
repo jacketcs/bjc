@@ -430,27 +430,18 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="todo">
-<p>
-BH: SCRAP.
-</p>
-<p>
-MF: Needs a pink box; image shouldn’t have greenflag; I want to review; duplicate content with 8.3.4?
-</p>
+<p>BH: SCRAP.</p>
+<p>MF: Needs a pink box; image shouldn’t have greenflag; I want to review; duplicate content with 8.3.4?</p>
 </div>
-<p>
-In this project you will create a timer that reports the number of seconds elapsed in both decimal and binary notations.
-</p>
+<p>In this project you will create a timer that reports the number of seconds elapsed in both decimal and binary notations.</p>
 <div id="first" class="forYouToDo">
 <ol>
 <li>
 First, review this Binary Timer, and then discuss what you know about binary notation.<br> <img title="A timer which shows the time both in the decimal and the binary system" alt="A timer which shows the time both in the decimal and the binary system" class="ms-4" data-gifffer="/img/4-internet/bin-timer-preview.gif">
 </li>
 <div class="endnote">
-<p>
-You can visit this <a href="http://www.wikihow.com/Convert-from-Decimal-to-Binary" target="_blank" title="Wikihow: How to Convert from Decimal to Binary">wikihow.com</a> page and discuss conversion from base 10 to base 2.
-</p>
-<p>
-</p><p>Note that there are two methods presented in the link.</p>
+<p>You can visit this <a href="http://www.wikihow.com/Convert-from-Decimal-to-Binary" target="_blank" title="Wikihow: How to Convert from Decimal to Binary">wikihow.com</a> page and discuss conversion from base 10 to base 2.</p>
+<p>Note that there are two methods presented in the link.</p>
 <ul>
 <li>
 The first method (<em>Short Division by Two with Remainder</em>), is more general and works for conversion to any base.
@@ -460,25 +451,17 @@ The second method (<em>Descending Powers of Two and Subtraction</em>), is in tan
 </li>
 </ul>
 <p>Choose one of the methods described and come up with a simple algorithm for this procedure.</p>
-<p></p>
 </div>
 <li>
 <a class="run" href="../../prog/6-computers/U6-BinaryTimer.xml" target="_blank"><img src="../../img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"></a><br>Several sprites, blocks, and costumes have already been created for you. The <code>Get Binary Digits</code> block (in Timer) is the only place where you will need to fill in some code.
 </li>
 </ol>
 </div>
-<p>
-If you look at the Timer sprite code, you will see that the <code>timer</code> block (from the “Sensing” menu) is used as a time keeper. The decimal and binary digits are computed and stored in lists, and then a broadcast is made to the sprites representing the digits to put on the appropriate costumes (0 and 1 for the binary digits and 0 through 9 for the decimal digits.)
-</p>
+<p>If you look at the Timer sprite code, you will see that the <code>timer</code> block (from the “Sensing” menu) is used as a time keeper. The decimal and binary digits are computed and stored in lists, and then a broadcast is made to the sprites representing the digits to put on the appropriate costumes (0 and 1 for the binary digits and 0 through 9 for the decimal digits.)</p>
 <p><br></p>
 <p>(255)){script variables (time); set (time) to (round(timer)); set (Decimal Digits List) to empty list; set (Binary Digits List) to empty list; warp{Get Binary Digits (time); Get Decimal Digits (time); broadcast (time)}}}” title=“when green flag clicked{reset timer; repeat until(round(timer)&gt;(255)){script variables (time); set (time) to (round(timer)); set (Decimal Digits List) to empty list; set (Binary Digits List) to empty list; warp{Get Binary Digits (time); Get Decimal Digits (time); broadcast (time)}}}”/&gt;</p>
-<p></p>
-<p>
-The “warp” block is used to ensure that all the computation within the block is completed prior to the refreshing of the screen .
-</p>
-<p>
-The code for extracting the base 10 digits of a given number,<code>Get Decimal Digits</code>, is written for you. If you are using method 2 (<em>Descending Powers of Two and Subtraction</em>) to write <code>Get Binary Digits</code> you can ignore the code in <code>Get Decimal Digits</code>. If you are using method 1 (<em>Short Division by Two with Remainder</em>) however, you can use this code as a model to write the <code>Get Binary Digits</code> code as it is based on method 1.
-</p>
+<p>The “warp” block is used to ensure that all the computation within the block is completed prior to the refreshing of the screen .</p>
+<p>The code for extracting the base 10 digits of a given number,<code>Get Decimal Digits</code>, is written for you. If you are using method 2 (<em>Descending Powers of Two and Subtraction</em>) to write <code>Get Binary Digits</code> you can ignore the code in <code>Get Decimal Digits</code>. If you are using method 1 (<em>Short Division by Two with Remainder</em>) however, you can use this code as a model to write the <code>Get Binary Digits</code> code as it is based on method 1.</p>
 <div id="second" class="forYouToDo">
 <ol start="4">
 <li>

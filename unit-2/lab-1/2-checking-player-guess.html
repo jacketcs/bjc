@@ -441,91 +441,55 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="learn">
-<p>
-<strong>On this page,</strong> you’ll continue to develop your number guessing game to accept player guesses until the player guesses correctly.
-</p>
+<p><strong>On this page,</strong> you’ll continue to develop your number guessing game to accept player guesses until the player guesses correctly.</p>
 </div>
-<!--<div class="index-term" id="`repeat until` block" />-->
-<p>
-You’ll want the computer to ask players to guess again and again until they guess correctly. To do that, you will use the <img src="../../img/blocks/repeat-until.png" title="repeat until" alt="repeat until" class="inline py-0"> block. <code>Repeat until</code> is a <em>loop</em> (just like <code>repeat</code>, <code>forever</code>, and <code>for</code>) but also a <em>conditional</em> (like <code>if</code> and <code>if else</code>). It repeats until a certain condition is met. For this program, the code should repeat until the player’s answer equals the secret number.
-</p>
+<p>You’ll want the computer to ask players to guess again and again until they guess correctly. To do that, you will use the <img src="../../img/blocks/repeat-until.png" title="repeat until" alt="repeat until" class="inline py-0"> block. <code>Repeat until</code> is a <em>loop</em> (just like <code>repeat</code>, <code>forever</code>, and <code>for</code>) but also a <em>conditional</em> (like <code>if</code> and <code>if else</code>). It repeats until a certain condition is met. For this program, the code should repeat until the player’s answer equals the secret number.</p>
 <div class="endnote">
-<p>
-You learned about loops on <a href="../../unit-1/lab-3/6-the-for-block.html" title="Unit 1 Lab 3 Page 6: Looping with a Counter">Unit 1 Lab 3 Page 6: Looping with a Counter</a>.
-</p>
-FIIIIXXX
-<p>
-You’ve seen conditionals on <a href="../../unit-1/lab-2/5-if-else.html" title="Unit 1 Lab 2 Page 5: Adding Variety to Gossip">Unit 1 Lab 2 Page 5: Adding Variety to <code>Gossip</code></a> and <a href="../../unit-1/lab-3/2-combining-predicates.qmd" title="Unit 1 Lab 2 Page 5: Adding Variety to `Gossip`">Unit 1 Lab 2 Page 5: Adding Variety to <code>Gossip</code></a>.
-</p>
+<p>You learned about loops on <a href="../../unit-1/lab-3/6-the-for-block.html" title="Unit 1 Lab 3 Page 6: Looping with a Counter">Unit 1 Lab 3 Page 6: Looping with a Counter</a>.</p>
+<p>You’ve seen conditionals on <a href="../../unit-1/lab-2/5-if-else.html" title="Unit 1 Lab 2 Page 5: Adding Variety to Gossip">Unit 1 Lab 2 Page 5: Adding Variety to <code>Gossip</code></a> and <a href="../../unit-1/lab-5/2-sprite-interaction.html" title="Unit 1 Lab 5 Page 2: Sprite Following a Sprite">Unit 1 Lab 5 Page 2: Sprite Following a Sprite</a>.</p>
 </div>
 <div class="forYouToDo">
 <p><img src="../../img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="float-end"></p>
-<ol start="1">
-<li>
-Use <code>repeat until</code> to ask the player (<img src="../../img/blocks/ask-empty-full-size.png" title="ask () and wait" alt="ask () and wait" class="inline py-0">) to guess the secret number until their <img src="../../img/blocks/answer-full-size.png" title="answer" alt="answer" class="inline"> equals the <var>secret number</var>.
-</li>
+<ol class="example" type="1">
+<li>Use <code>repeat until</code> to ask the player (<img src="../../img/blocks/ask-empty-full-size.png" title="ask () and wait" alt="ask () and wait" class="inline py-0">) to guess the secret number until their <img src="../../img/blocks/answer-full-size.png" title="answer" alt="answer" class="inline"> equals the <var>secret number</var>.</li>
+</ol>
 <div class="endnote">
 <ul>
-<li>
-Drag the <var>secret number</var> variable out of the <code>script variables</code> block to use it.
-</li>
-<li>
-The <code>ask</code> and <code>answer</code> blocks go together. If you use <code>ask</code> to ask a question, the user’s answer will be reported by <code>answer</code>.
-</li>
+<li>Drag the <var>secret number</var> variable out of the <code>script variables</code> block to use it.</li>
+<li>The <code>ask</code> and <code>answer</code> blocks go together. If you use <code>ask</code> to ask a question, the user’s answer will be reported by <code>answer</code>.</li>
 </ul>
 </div>
-</ol>
 </div>
 <div class="examFullWidth">
-<div class="pseudop">
 <p>The code <img src="../../img/2-complexity/chicken-script.png" title="ask (Why did the chicken cross the road?) and wait; set (user response) to (answer)" alt="ask (Why did the chicken cross the road?) and wait; set (user response) to (answer)" class="inline"> would be written as</p>
-<div class="pre-container">
-<pre class="inline">DISPLAY("Why did the chicken cross the road?")
-userResponse ← INPUT()</pre>
-</div>
+<pre class="ms-4">DISPLAY("Why did the chicken cross the road?")
+userResponse ← INPUT()
+</pre>
 <p>or <img src="../../img/2-complexity/chicken-script-blocktran.png" title="a white rounded rectangle containing two smaller white rounded rectangles: The first one contains first the word 'DISPLAY' in all caps and then a smaller white rectangle containing the quoted text 'Why did the chicken cross the road?'. The second one contains the text 'userResponse ← INPUT()'" alt="a white rounded rectangle containing two smaller white rounded rectangles: The first one contains first the word 'DISPLAY' in all caps and then a smaller white rectangle containing the quoted text 'Why did the chicken cross the road?'. The second one contains the text 'userResponse ← INPUT()'" class="inline">.</p>
-</div>
-<div class="pseudop">
 <p>Notice that the procedure <code>INPUT()</code> accepts the value from the user and returns that input value, which is then assigned to the variable <code>userResponse</code> with the <code>&amp;leftarrow;</code> syntax. In Snap<em>!</em>, this is just like how <code>answer</code> accepts a value from the user and reports it, and that report is what the computer <code>set</code>s the variable <code>user response</code> to.</p>
 </div>
-</div>
 <div class="forYouToDo">
-<ol start="2">
-<li>
-After the player guesses the secret number, make the computer congratulate the player.
-</li>
-<li>
-<strong>Test and debug.</strong> Take turns playing the game, and fix any problems with the code before moving on.
-</li>
+<ol start="2" class="example" type="1">
+<li>After the player guesses the secret number, make the computer congratulate the player.</li>
+<li><strong>Test and debug.</strong> Take turns playing the game, and fix any problems with the code before moving on.</li>
 </ol>
 </div>
-<p>
-<code>Repeat until</code> makes its decision based on the output of a hexagonal <em>predicate</em> block.
-</p>
+<p><code>Repeat until</code> makes its decision based on the output of a hexagonal <em>predicate</em> block.</p>
 <div class="vocabFullWidth">
 <p><strong>: Predicate</strong> and <strong>Boolean value</strong></p>
 <div class="sidenoteBig">
 <p><a href="#hint-Boolean" data-bs-toggle="collapse" title="Why is Boolean capitalized?"> <img src="../../img/icons/read-more-mini.png" title="Read More" alt="Read More" class="inline"> Why is Boolean capitalized? </a></p>
 <div id="hint-Boolean" class="collapse">
-<p>
-The word Boolean is capitalized because it’s named after a person, George Boole, who invented the branch of mathematics dealing with Boolean operations (such as <code>and</code>, <code>or</code>, and <code>not</code>).
-</p>
+<p>The word Boolean is capitalized because it’s named after a person, George Boole, who invented the branch of mathematics dealing with Boolean operations (such as <code>and</code>, <code>or</code>, and <code>not</code>).</p>
 </div>
 </div>
-<p>
-A <strong>predicate</strong> is a hexagon-shaped reporter that asks a true/false question such as these examples:<br> 7 reporting true” title=“8 &gt; 7 reporting true” /&gt; 7 reporting false” title=“6 &gt; 7 reporting false” /&gt;
-</p>
-<p>
-Predicates report a <strong>Boolean value</strong> (either <img src="../../img/blocks/true.png" title="true" alt="true" class="inline"> or <img src="../../img/blocks/false.png" title="false" alt="false" class="inline">).
-</p>
+<p>A <strong>predicate</strong> is a hexagon-shaped reporter that asks a true/false question such as these examples:</p>
+<p><img class="ms-4" src="../../img/2-complexity/8-gt-7-reporting-true.png" alt="8 > 7 reporting true" title="8 > 7 reporting true"> <img class="ms-4" src="../../img/2-complexity/6-gt-7-reporting-false.png" alt="6 > 7 reporting false" title="6 > 7 reporting false"></p>
+<p>Predicates report a <strong>Boolean value</strong> (either <img src="../../img/blocks/true.png" title="true" alt="true" class="inline"> or <img src="../../img/blocks/false.png" title="false" alt="false" class="inline">).</p>
 </div>
-<p>
-Predicates fit into a hexagonal input slots of conditionals, such as in <img src="../../img/blocks/if-full-size.png" title="if block" alt="if block" class="inline"> and <img src="../../img/blocks/repeat-until.png" title="repeat until" alt="repeat until" class="inline">. Predicates help conditionals <em>decide when to do something</em>.
-</p>
+<p>Predicates fit into a hexagonal input slots of conditionals, such as in <img src="../../img/blocks/if-full-size.png" title="if block" alt="if block" class="inline"> and <img src="../../img/blocks/repeat-until.png" title="repeat until" alt="repeat until" class="inline">. Predicates help conditionals <em>decide when to do something</em>.</p>
 <div class="vocabFullWidth">
-<p>
-The <code>if</code> and <code>if-else</code> blocks are called <strong>conditionals</strong> because they control the code based on a true-or-false <strong>condition</strong>.
-</p>
+<p>The <code>if</code> and <code>if-else</code> blocks are called <strong>conditionals</strong> because they control the code based on a true-or-false <strong>condition</strong>.</p>
 <div class="endnote">
 <p><a href="#hint-predicates-examples" data-bs-toggle="collapse" title="Click for examples of predicates being used inside conditionals.">Click for examples of predicates being used inside conditionals.</a></p>
 <div id="hint-predicates-examples" class="collapse">
@@ -556,14 +520,10 @@ move (1) steps
 </div>
 </div>
 <div class="forYouToDo">
-<ol start="4">
-<li>
-<!-- Question 1 -->
+<ol start="4" class="example" type="1">
+<li><!-- Question 1 -->
 <div class="assessment-data" type="multiplechoice" data-identifier="Which inputs to mystery function will give the output finished?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri1" data-shuffle="true">
 <div class="prompt">
-<div class="todo">
-<p>We really shouldn’t be encouraging students to mutate a block’s inputs. There are really two issues here; one is with the x=x+1 style of programming altogether, and the second is that formal parameters specifically shouldn’t generally be mutated; it’s better to make a script variable that’s initialized to the input value. (If we change this, we need to update the Guided Notes.) –MF, 6/26/21 with BH</p>
-</div>
 <p><img src="../../img/2-complexity/mystery-function.png" title="mystery function (input):
 if (input < 5) (repeat until (input = 5) 
 (
@@ -615,10 +575,8 @@ report (finished)" class="float-end"> Which inputs to <code>mystery function</co
 
 </div>
 </div>
-</div>
-</li>
-<li>
-<!-- Question 2 -->
+</div></li>
+<li><!-- Question 2 -->
 <div class="assessment-data" type="multiplechoice" data-identifier="Which inputs to mystery function will give the output finished?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri2" data-shuffle="true">
 <div class="prompt">
 <p><img src="../../img/2-complexity/mystery-function.png" title="mystery function (input):
@@ -675,10 +633,8 @@ report (finished)" class="float-end"> <strong>What will the sprite say</strong> 
 
 </div>
 </div>
-</div>
-</li>
-<li>
-<!-- Question 3 -->
+</div></li>
+<li><!-- Question 3 -->
 <div class="assessment-data" type="multiplechoice" data-identifier="Which inputs to mystery function will give the output finished?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri3" data-shuffle="true">
 <div class="prompt">
 <p><img src="../../img/2-complexity/mystery-function.png" title="mystery function (input):
@@ -735,20 +691,16 @@ report (finished)" class="float-end"> <strong>What will happen</strong> if you r
 
 </div>
 </div>
-</div>
-</li>
+</div></li>
 </ol>
 </div>
 <div class="ifTime">
-<ol start="7">
-<li>
-When the computer congratulates the player for guessing correctly, have the computer say the number. For example, it might say, “You guessed it! My secret number was 7.”
-</li>
-<!--<div class="index-term" id="<var>secret number</var> variable" />-->
+<ol start="7" class="example" type="1">
+<li>When the computer congratulates the player for guessing correctly, have the computer say the number. For example, it might say, “You guessed it! My secret number was 7.”</li>
+</ol>
 <div class="endnote">
 <p>Use <code>join</code> to merge the text “You guessed it! My secret number was” with the value of the <var>secret number</var> variable.</p>
 </div>
-</ol>
 </div>
 
 

@@ -312,29 +312,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="todo">
-<p>
-MF: lightly clean up to cut down on the boxes
-</p>
+<p>MF: lightly clean up to cut down on the boxes</p>
 </div>
 <div class="learn">
 <p><strong>On this page</strong>, you’ll learn about the transistors that implement logic gates.</p>
 </div>
 <div class="sidenote">
-<p>
-The <strong>transistor</strong> is the fundamental building block of electronic circuits, where they are used as on/off switches.
-</p>
+<p>The <strong>transistor</strong> is the fundamental building block of electronic circuits, where they are used as on/off switches.</p>
 <p><img src="../../img/6-computers/transistors.jpg" title="image of several transistor types" alt="image of several transistor types" class="ms-4"><br> <small>Image by sv.Wikipedia user DaRy</small> <!-- https://commons.wikimedia.org/wiki/File:Transistorer_(cropped).jpg --></p>
 </div>
-<p>
-You’ve learned that a wire can either have a voltage or not have a voltage on it. The reality is more complicated. The on-or-off picture of a wire, a transistor, or a logic gate output is a simplification—an abstraction.
-</p>
+<p>You’ve learned that a wire can either have a voltage or not have a voltage on it. The reality is more complicated. The on-or-off picture of a wire, a transistor, or a logic gate output is a simplification—an abstraction.</p>
 <p><img src="../../img/6-computers/transistor-curve.png" title="graph showing 'Input voltage' on the horizontal axis and 'Output voltage' on the vertical axis; the graph begins near the origin and remains nearly flat for a while, then it curves upward and becomes nearly straight again at this new angle, then it curves back down to nearly flat until the end; the lower flat region is labeled 'cutoff' and colored blue; the central, inclined region is labeled 'linear' and colored pink; the upper flat region is labeled 'saturation' and colored blue" alt="graph showing 'Input voltage' on the horizontal axis and 'Output voltage' on the vertical axis; the graph begins near the origin and remains nearly flat for a while, then it curves upward and becomes nearly straight again at this new angle, then it curves back down to nearly flat until the end; the lower flat region is labeled 'cutoff' and colored blue; the central, inclined region is labeled 'linear' and colored pink; the upper flat region is labeled 'saturation' and colored blue" class="float-start" height="220"></p>
-<p>
-This is a rough graph of the actual input-output behavior of a transistor. Don’t worry about the details; just notice the two blue <em>flat</em> parts of the graph. <!--With a very small input (cutoff) or a very large input (saturation), the output is relatively unchanged by small variations.--> Within the “cutoff” region, small changes to the input voltage do not change the output voltage at all; the output is always <em>zero</em> volts. Likewise within the “saturation” region, small input changes hardly impact output voltage; the output is interpreted as a <em>one</em>. This is how transistors are used as <em>switches</em> in a computer.
-</p>
-<p>
-Transistors are versatile devices. When used in the middle, linear (pink) part of the graph, they’re <em>amplifiers</em>; a small variation in input voltage produces a large variation in output voltage. That’s how they’re used to play music in a stereo.
-</p>
+<p>This is a rough graph of the actual input-output behavior of a transistor. Don’t worry about the details; just notice the two blue <em>flat</em> parts of the graph. <!--With a very small input (cutoff) or a very large input (saturation), the output is relatively unchanged by small variations.--> Within the “cutoff” region, small changes to the input voltage do not change the output voltage at all; the output is always <em>zero</em> volts. Likewise within the “saturation” region, small input changes hardly impact output voltage; the output is interpreted as a <em>one</em>. This is how transistors are used as <em>switches</em> in a computer.</p>
+<p>Transistors are versatile devices. When used in the middle, linear (pink) part of the graph, they’re <em>amplifiers</em>; a small variation in input voltage produces a large variation in output voltage. That’s how they’re used to play music in a stereo.</p>
 <div class="endnote" style="overflow: hidden;">
 <!-- one day make a class for this --MF, 11/21/17 -->
 <p><a href="#hint-chart-labels" data-bs-toggle="collapse" title="Why are they called 'cutoff,' 'linear,' and 'saturation'?">Why are they called “cutoff,” “linear,” and “saturation”?</a></p>
@@ -351,15 +341,9 @@ Transistors are versatile devices. When used in the middle, linear (pink) part o
 <div class="endnote">
 <p><a href="#hint-digital-abstraction" data-bs-toggle="collapse" title="Learn more about what's below the digital abstraction and how it's applied">Learn more about what’s below the digital abstraction and how it’s applied.</a></p>
 <div id="hint-digital-abstraction" class="collapse">
-<p>
-The flatness of the output at the two extremes is important because there <em>will</em> be small changes in the input. Electrical circuits have “noise,” undesired changes in voltages, for reasons from the transistors getting hot to loose connections on the circuit board to cosmic rays. This is why computers use zeros and ones: a transistor has two flat regions in its input-output curve.
-</p>
-<p>
-But the flatness of the saturated region is only approximate, and it depends on how the transistor is connected to the rest of the circuit. One example of a potential problem is <em>fanout,</em> the number of transistor inputs to which one transistor’s output is connected. Beyond a certain number (it depends on the particular transistor type, but certainly ten inputs would be too many), the output voltage is reduced to the point that those inputs might not be sure whether they’re getting a zero or a one.
-</p>
-<p>
-The way a transistor really works depends on quantum physics. (We’re not talking about <em>quantum computers;</em> plain old computer circuits are based on quantum effects also.) To learn more about analog-domain circuit design and what’s inside a transistor, take an Electrical Engineering course.
-</p>
+<p>The flatness of the output at the two extremes is important because there <em>will</em> be small changes in the input. Electrical circuits have “noise,” undesired changes in voltages, for reasons from the transistors getting hot to loose connections on the circuit board to cosmic rays. This is why computers use zeros and ones: a transistor has two flat regions in its input-output curve.</p>
+<p>But the flatness of the saturated region is only approximate, and it depends on how the transistor is connected to the rest of the circuit. One example of a potential problem is <em>fanout,</em> the number of transistor inputs to which one transistor’s output is connected. Beyond a certain number (it depends on the particular transistor type, but certainly ten inputs would be too many), the output voltage is reduced to the point that those inputs might not be sure whether they’re getting a zero or a one.</p>
+<p>The way a transistor really works depends on quantum physics. (We’re not talking about <em>quantum computers;</em> plain old computer circuits are based on quantum effects also.) To learn more about analog-domain circuit design and what’s inside a transistor, take an Electrical Engineering course.</p>
 </div>
 </div>
 <!--<div class="ifTime">
@@ -379,7 +363,7 @@ Imagine the programs are running too slowly on your brand new, state of the art 
 
 <div class="todo">TG:
 <ul>
-<li>Discussion: The If There Is Time problem on this page is about improving computer speed across several different levels of abstraction; it reviews and extends the ideas of the entire lab. This is a nice problem to have students discuss first in small groups and then together as a class. As students share their ideas with the class, you might ask <strong>"why hasn't someone already done this?"</strong>  of their various answers. Often, the answer is that people <em>have</em> done it; for example, running an older OS on newer hardware often <em>does</em> speed up the system, although it runs the risk of malware infection.  But sometimes, the answer is "it's hard, but they're trying."</li>
+<li>Discussion: The If There Is Time problem on this page is about improving computer speed across several different levels of abstraction; it reviews and extends the ideas of the entire lab. This is a nice problem to have students discuss first in small groups and then together as a class. As students share their ideas with the class, you might ask **"why hasn't someone already done this?"**  of their various answers. Often, the answer is that people <em>have</em> done it; for example, running an older OS on newer hardware often <em>does</em> speed up the system, although it runs the risk of malware infection.  But sometimes, the answer is "it's hard, but they're trying."</li>
 <li><div class="commentBig">We should have at least one example for each level and present <em>beside</em> the level for teachers who need at support. --MF, 11/27/17</div>Solutions (will require an ancillary page like lab 2): You might hear answers like: 
 
 <ul>

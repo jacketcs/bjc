@@ -423,9 +423,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="learn">
-<p>
-<strong>On this page,</strong> you will use the <code>map</code> block to create an <code>initials from name</code> block and then use <code>map</code> together with <code>initials from name</code> to find the initials of all of your contacts.
-</p>
+<p><strong>On this page,</strong> you will use the <code>map</code> block to create an <code>initials from name</code> block and then use <code>map</code> together with <code>initials from name</code> to find the initials of all of your contacts.</p>
 </div>
 <div class="dialogue">
 <div class="stagedir">
@@ -445,12 +443,8 @@ report (join (letter (1) of (item (1) of (list of names))) (letter (1) of (item 
 <div class="endnote">
 <p><a href="#hint-splitting" data-bs-toggle="collapse" title="What's the difference between splitting by spaces and spltting by words?">What’s the difference between splitting by spaces and splitting by words?</a></p>
 <div id="hint-splitting" class="collapse">
-<p>
-Try it! (Each brown dot represents a space.)<br> <img src="../../img/3-lists/split-space.png" title="split &quot;hello␠␠␠␠␠␠␠world&quot; by (␠)" alt="split &quot;hello␠␠␠␠␠␠␠world&quot; by (␠)" class="ms-4"> <img src="../../img/3-lists/split-word.png" title="split &quot;hello␠␠␠␠␠␠␠world&quot; by word" alt="split &quot;hello␠␠␠␠␠␠␠world&quot; by word" class="ms-4">
-</p>
-<p>
-In one case, <code>split</code> is focusing on the exact characters in the string. In the other case, it’s giving you what you really want: the words in the contact’s name. At a low level of abstraction, text is made of characters and you look through each of the characters. But at a higher level of abstraction (such as when you are reading), text is made up of words. Snap<em>!</em> lets you think at this higher level of abstraction.
-</p>
+<p>Try it! (Each brown dot represents a space.)<br> <img src="../../img/3-lists/split-space.png" title="split &quot;hello␠␠␠␠␠␠␠world&quot; by (␠)" alt="split &quot;hello␠␠␠␠␠␠␠world&quot; by (␠)" class="ms-4"> <img src="../../img/3-lists/split-word.png" title="split &quot;hello␠␠␠␠␠␠␠world&quot; by word" alt="split &quot;hello␠␠␠␠␠␠␠world&quot; by word" class="ms-4"></p>
+<p>In one case, <code>split</code> is focusing on the exact characters in the string. In the other case, it’s giving you what you really want: the words in the contact’s name. At a low level of abstraction, text is made of characters and you look through each of the characters. But at a higher level of abstraction (such as when you are reading), text is made up of words. Snap<em>!</em> lets you think at this higher level of abstraction.</p>
 </div>
 </div>
 <div>
@@ -466,9 +460,7 @@ In one case, <code>split</code> is focusing on the exact characters in the strin
 <p>Gamal: Well, then we need to take <code>letter (1) of</code> <em>each</em> item in the <var>list of names</var>. That sounds as if what we need is a <em>higher-order function</em>. Higher-order functions are good at doing things with individual items in a list.</p>
 </div>
 <div class="vocabFullWidth">
-<p>
-A <strong>higher-order function</strong> is a function that takes a function as input (or reports a function as output).
-</p>
+<p>A <strong>higher-order function</strong> is a function that takes a function as input (or reports a function as output).</p>
 </div>
 </div>
 <div class="forYouToDo">
@@ -481,25 +473,16 @@ Build and experiment with these examples of the <code>map</code> function.<br> <
 </li>
 </ol>
 </div>
-<p>
-The <img src="../../img/blocks/map.png" title="map 'reporter input slot' over 'list input slot'" alt="map 'reporter input slot' over 'list input slot'" class="inline"> block takes two inputs: a function (a reporter with a blank input slot) and a list, and it reports a new list in which each item is the result of calling the function with an item from the original list as input. For example:<br> <img src="../../img/3-lists/map-example-2.png" title="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" alt="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" class="ms-4"><br> <img src="../../img/3-lists/map-example-3.png" title="map (round ( )) over (list{3.14159, 87, 5.4}) reporting {3, 87, 5}" alt="map (round ( )) over (list{3.14159, 87, 5.4}) reporting {3, 87, 5}" class="ms-4">
-</p>
+<p>The <img src="../../img/blocks/map.png" title="map 'reporter input slot' over 'list input slot'" alt="map 'reporter input slot' over 'list input slot'" class="inline"> block takes two inputs: a function (a reporter with a blank input slot) and a list, and it reports a new list in which each item is the result of calling the function with an item from the original list as input. For example:<br> <img src="../../img/3-lists/map-example-2.png" title="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" alt="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" class="ms-4"><br> <img src="../../img/3-lists/map-example-3.png" title="map (round ( )) over (list{3.14159, 87, 5.4}) reporting {3, 87, 5}" alt="map (round ( )) over (list{3.14159, 87, 5.4}) reporting {3, 87, 5}" class="ms-4"></p>
 <div class="takeNote">
-<p>
-<strong>You choose the function that describes the result for one input item, and <code>map</code> applies that function to each item in the input list and then reports the list of result values.</strong> If your function has <code>item 1 of</code> or <code>item 2 of</code> in it, you’re probably trying to do <code>map</code>’s part of the job.<a name="HOFreview">&nbsp;</a>
-</p>
-<p>
-<code>Map</code> is a higher-order function just like <code>keep</code> and <code>combine</code>. The function mapped over the list always has a blank input slot. This is where the list item goes each time the function is performed.
-</p>
+<p><strong>You choose the function that describes the result for one input item, and <code>map</code> applies that function to each item in the input list and then reports the list of result values.</strong> If your function has <code>item 1 of</code> or <code>item 2 of</code> in it, you’re probably trying to do <code>map</code>’s part of the job.<a name="HOFreview">&nbsp;</a></p>
+<p><code>Map</code> is a higher-order function just like <code>keep</code> and <code>combine</code>. The function mapped over the list always has a blank input slot. This is where the list item goes each time the function is performed.</p>
 <div class="endnote">
-<p>
-</p><p>This picture shows how the three higher-order functions could be used:<br> <img src="../../img/3-lists/hof-chart.png" title="picture of map transforming each item, keep blocking some input items so they don't appear in the result, and combine superimposing them into one icon" alt="picture of map transforming each item, keep blocking some input items so they don't appear in the result, and combine superimposing them into one icon" class="ms-4" height="157px"><br> <a href="#hint-shapes" data-bs-toggle="collapse" title="See the higher-order function expressions with these (imaginary) shape procedures.">See the higher-order function expressions with these (imaginary) shape procedures.</a></p>
+<p>This picture shows how the three higher-order functions could be used:<br> <img src="../../img/3-lists/hof-chart.png" title="picture of map transforming each item, keep blocking some input items so they don't appear in the result, and combine superimposing them into one icon" alt="picture of map transforming each item, keep blocking some input items so they don't appear in the result, and combine superimposing them into one icon" class="ms-4" height="157px"><br> <a href="#hint-shapes" data-bs-toggle="collapse" title="See the higher-order function expressions with these (imaginary) shape procedures.">See the higher-order function expressions with these (imaginary) shape procedures.</a></p>
 <div id="hint-shapes" class="collapse">
 <p><img src="../../img/3-lists/map-list-figures.png" title="map (shade figure ()) over (list of figures)" alt="map (shade figure ()) over (list of figures)" class="ms-4"> <img src="../../img/3-lists/keep-list-figures.png" title="keep items (is () a polygon?) over (list of figures)" alt="keep items (is () a polygon?) over (list of figures)" class="ms-4"> <img src="../../img/3-lists/combine-list-figures.png" title="combine (list of figures) using (overlay ())" alt="combine (list of figures) using (overlay ())" class="ms-4"></p>
 </div>
-<p></p>
-<p>
-</p><p><a href="#hint-hofs-review" data-bs-toggle="collapse" title="Here is a quick review of higher-order functions.">Here is a quick review of the higher-order functions <code>map</code>, <code>keep</code>, <code>combine</code>.</a></p>
+<p><a href="#hint-hofs-review" data-bs-toggle="collapse" title="Here is a quick review of higher-order functions.">Here is a quick review of the higher-order functions <code>map</code>, <code>keep</code>, <code>combine</code>.</a></p>
 <div id="hint-hofs-review" class="collapse">
 <ul>
 <li>
@@ -513,7 +496,6 @@ The <img src="../../img/blocks/map.png" title="map 'reporter input slot' over 'l
 </li>
 </ul>
 </div>
-<p></p>
 </div>
 </div>
 <div class="forYouToDo">
@@ -532,9 +514,7 @@ Test and debug your <code>initials from name</code> block.
 <div class="endnote">
 <p><a href="#hint-list-names" data-bs-toggle="collapse" title="Need a hint about reporting the initials of everyone in your contact list?">Need a hint?</a></p>
 <div id="hint-list-names" class="collapse">
-<p>
-First, create an expression to report a list of the names of all your contacts.<br> <img src="../../img/3-lists/contact-list-list-view.png" title="contact list watcher in list view" alt="contact list watcher in list view" class="ms-4"> <span style="padding-right: 1em; padding-left: 1em; font-size: 36px;">→</span> <img src="../../img/3-lists/names.png" title="list in list view containing three items: Betsy Anderson, Alphie Preston, Gamal Abdel" alt="list in list view containing three items: Betsy Anderson, Alphie Preston, Gamal Abdel">
-</p>
+<p>First, create an expression to report a list of the names of all your contacts.<br> <img src="../../img/3-lists/contact-list-list-view.png" title="contact list watcher in list view" alt="contact list watcher in list view" class="ms-4"> <span style="padding-right: 1em; padding-left: 1em; font-size: 36px;">→</span> <img src="../../img/3-lists/names.png" title="list in list view containing three items: Betsy Anderson, Alphie Preston, Gamal Abdel" alt="list in list view containing three items: Betsy Anderson, Alphie Preston, Gamal Abdel"></p>
 </div>
 </div>
 <p><img src="../../img/3-lists/contact-list-list-view.png" title="contact list watcher in list view" alt="contact list watcher in list view" class="ms-4"> <span style="padding-right: 1em; padding-left: 1em; font-size: 36px;">→</span> <img src="../../img/3-lists/initials.png" title="list in list view containing three items: BA, AP, GA" alt="list in list view containing three items: BA, AP, GA"></p>
@@ -592,9 +572,7 @@ First, create an expression to report a list of the names of all your contacts.<
 <div class="endnote">
 <p><a href="#hint-capital-adt" data-bs-toggle="collapse" title="Why not use an ADT?">Why not use an ADT?</a></p>
 <div id="hint-capital-adt" class="collapse">
-<p>
-The list inside a list shown above makes it clearest to you now as you answer this self-check item what the structure is, but you’re right, in an actual program it would be better to use an abstract data type:<br> <img src="../../img/3-lists/capitals-adt-reporting.png" title="state: (Augusta) capital: (Maine)" alt="state: (Augusta) capital: (Maine)" class="ms-4">
-</p>
+<p>The list inside a list shown above makes it clearest to you now as you answer this self-check item what the structure is, but you’re right, in an actual program it would be better to use an abstract data type:<br> <img src="../../img/3-lists/capitals-adt-reporting.png" title="state: (Augusta) capital: (Maine)" alt="state: (Augusta) capital: (Maine)" class="ms-4"></p>
 </div>
 </div>
 </div>
@@ -664,9 +642,7 @@ report (names of contacts)" class="ms-4"> <img src="../../img/3-lists/abstractio
 </div>
 <div class="assessment-data" type="multiplechoice" data-identifier="squares_mapkeepcombine" data-hasinlinefeedback="true" data-maxchoices="8" data-responseidentifier="resp1" data-shuffle="true">
 <div class="prompt">
-<p>
-Consider this list of squares: <br> <img src="../../img/3-lists/squares.png" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" class="ms-4"><br> Which of the following expressions will report a list? Choose all that apply.
-</p>
+<p>Consider this list of squares: <br> <img src="../../img/3-lists/squares.png" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" class="ms-4"><br> Which of the following expressions will report a list? Choose all that apply.</p>
 </div>
 <div class="choice" data-identifier="c1">
 <div class="text">
@@ -733,9 +709,7 @@ Consider this list of squares: <br> <img src="../../img/3-lists/squares.png" tit
 <p>Data from <em>Structure and Interpretation of Computer Programs</em> by Abelson and Sussman. Creative Commons licensed.</p>
 </div>
 <p><a class="run" href="../../prog/3-lists/U3L2-Employee-Database.xml"><img src="../../img/3-lists/microshaft-database.png" title="list block containing nine instances of the constructor 'employee, name: () job title: () salary: ()' each with various inputs" alt="list block containing nine instances of the constructor 'employee, name: () job title: () salary: ()' each with various inputs" class="ms-4"></a><br> This is the list of employees of a small company. Each of the smaller lists contains a person’s name, job title, and yearly salary.</p>
-<p>
-“This company spends more money on the big bosses than on the people who do the work,” says Alyssa one day. Is she right? Write an expression to compute the total salaries of everyone paid less than $100,000 per year. Then find the total for everyone paid more than $100,000 per year.
-</p>
+<p>“This company spends more money on the big bosses than on the people who do the work,” says Alyssa one day. Is she right? Write an expression to compute the total salaries of everyone paid less than $100,000 per year. Then find the total for everyone paid more than $100,000 per year.</p>
 </li>
 <li>
 Ben suggests that the results will be more convincing in the form of a list containing that total and all the names of the people in that category (paid less than $100,000, for example). So, if there are five people in that category, your list will have six items: first the total of the salaries, and then the names of the people. Try this both for less than $100,000 and for more than $100,000.

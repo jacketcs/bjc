@@ -444,9 +444,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="learn">
-<p>
-<strong>On this page,</strong> you will begin to develop a quiz app by creating an <em>abstract data type</em> to pair the questions with their answers.
-</p>
+<p><strong>On this page,</strong> you will begin to develop a quiz app by creating an <em>abstract data type</em> to pair the questions with their answers.</p>
 </div>
 <div id="first" class="forYouToDo">
 <ol>
@@ -458,15 +456,10 @@ ul.task-list li input[type="checkbox"] {
 </li>
 </ol>
 </div>
-<p>
-</p><div class="vocab">
+<div class="vocab">
 <p>: <strong>Sublist</strong></p>
-<p>
-A <strong>sublist</strong> is a list used as an item of another list.
-</p>
-<p>
-(The word sublist is also used to refer to some subset of a list.)
-</p>
+<p>A <strong>sublist</strong> is a list used as an item of another list.</p>
+<p>(The word sublist is also used to refer to some subset of a list.)</p>
 </div>
 <p>You’ll use a list to store your quiz items in a global variable and use a <em>sublist</em> for each question/answer pair. Then you can choose just one pair at a time to work with. <img src="../../img/2-complexity/quiz-questions-list-of-lists.png" title="set (computer science quiz) to (list (list (What is the computer science term for looping or repetition?) (iteration)) (list (What is the name for the abstraction in a program that can hold a value?) (variable)) (list (What kind of variable is available only in the part of the program where it is defined?) (local variable)))" alt="set (computer science quiz) to (list (list (What is the computer science term for looping or repetition?) (iteration)) (list (What is the name for the abstraction in a program that can hold a value?) (variable)) (list (What kind of variable is available only in the part of the program where it is defined?) (local variable)))" class="ms-4"> <img src="../../img/2-complexity/item-of-item-of-script.png" title="ask (item(1) of (item (3) of (computer science quiz))) and wait
 if (item (2) of (item (3) of (computer science quiz)) = answer) {
@@ -475,16 +468,13 @@ say (That's correct!) for (2) secs
 if (item (2) of (item (3) of (computer science quiz)) = answer) {
 say (That's correct!) for (2) secs
 }" class="ms-4"></p>
-<p></p>
-<p>
-But code like <img src="../../img/2-complexity/item-1-of-item-3-of.png" title="item (1) of (item (3) of (computer science quiz))" alt="item (1) of (item (3) of (computer science quiz))" class="inline"> is hard to read and understand. A better way is to <em>use abstraction</em> to organize the quiz items. The abstraction just hides the <code>list</code> and <code>item of</code> blocks, so it isn’t complicated to build, but it can make your code much easier to write, read, and debug.<br> <img src="../../img/2-complexity/quiz-questions-list-of-adts.png" title="set (computer science quiz) to (list (question: (What is the computer science term for looping or repetition?) answer: (iteration)) (question: (What is the name for the abstraction in a program that can hold a value?) answer: (variable)) (question: (What kind of variable is available only in the part of the program where it is defined?) answer: (local variable)))" alt="set (computer science quiz) to (list (question: (What is the computer science term for looping or repetition?) answer: (iteration)) (question: (What is the name for the abstraction in a program that can hold a value?) answer: (variable)) (question: (What kind of variable is available only in the part of the program where it is defined?) answer: (local variable)))" class="ms-4"> <img src="../../img/2-complexity/abstracted-quiz-script.png" title="ask (question of quiz item (item (3) of (computer science quiz))) and wait
+<p>But code like <img src="../../img/2-complexity/item-1-of-item-3-of.png" title="item (1) of (item (3) of (computer science quiz))" alt="item (1) of (item (3) of (computer science quiz))" class="inline"> is hard to read and understand. A better way is to <em>use abstraction</em> to organize the quiz items. The abstraction just hides the <code>list</code> and <code>item of</code> blocks, so it isn’t complicated to build, but it can make your code much easier to write, read, and debug.<br> <img src="../../img/2-complexity/quiz-questions-list-of-adts.png" title="set (computer science quiz) to (list (question: (What is the computer science term for looping or repetition?) answer: (iteration)) (question: (What is the name for the abstraction in a program that can hold a value?) answer: (variable)) (question: (What kind of variable is available only in the part of the program where it is defined?) answer: (local variable)))" alt="set (computer science quiz) to (list (question: (What is the computer science term for looping or repetition?) answer: (iteration)) (question: (What is the name for the abstraction in a program that can hold a value?) answer: (variable)) (question: (What kind of variable is available only in the part of the program where it is defined?) answer: (local variable)))" class="ms-4"> <img src="../../img/2-complexity/abstracted-quiz-script.png" title="ask (question of quiz item (item (3) of (computer science quiz))) and wait
 if (answer = answer from quiz item (item (3) of (computer science quiz))) {
 say (That's correct!) for (2) secs
 }" alt="ask (question of quiz item (item (3) of (computer science quiz))) and wait
 if (answer = answer from quiz item (item (3) of (computer science quiz))) {
 say (That's correct!) for (2) secs
-}" class="ms-4">
-</p>
+}" class="ms-4"></p>
 <div class="vocabFullWidth">
 <p><strong>: Data Types</strong></p>
 <ul>
@@ -503,9 +493,7 @@ A <strong>data type</strong> is what kind of data something is (number, text str
 <p><strong>: Abstract Data Types</strong></p>
 <ul>
 <div class="sidenoteBig">
-<p>
-The word “abstract” is often used casually to mean something <em>harder</em> to understand or more complex, but in computer science, its meaning is almost the opposite. ADTs are things that you, the programmer, create to make your program <em>easier</em> for you and others to read, debug, and improve.
-</p>
+<p>The word “abstract” is often used casually to mean something <em>harder</em> to understand or more complex, but in computer science, its meaning is almost the opposite. ADTs are things that you, the programmer, create to make your program <em>easier</em> for you and others to read, debug, and improve.</p>
 </div>
 <li>
 An <strong>abstract data type (ADT)</strong> is a custom data type that’s meaningful to your program. It’s not built into the language; you develop it as you code. This is an abstraction because it hides the details inside the constructor and selectors so that the programmer who uses a <code>quiz item</code> has to think only about questions and answers, not about list indices.
@@ -537,11 +525,8 @@ Build the custom <code>quiz item</code> abstract data type (both the constructor
 </li>
 <section id="specifying-an-input-type" class="level3 narrower">
 <h3 class="anchored" data-anchor-id="specifying-an-input-type"><strong>Specifying an Input Type</strong></h3>
-<p>
-Your selectors expect a quiz item, i.e., a list, as input. You can make your blocks <em>show</em> what type of data they expect. It’s not necessary in Snap<em>!</em> but, like assigning a color to a block, it can be a helpful reminder of what the block does and what type of input it expects. You’ve already seen input slots of several shapes, indicating different expected data types.
-</p>
-<p>
-</p><p>In the Block Editor while creating a selector, click on a plus sign to enter an input name. Then…</p>
+<p>Your selectors expect a quiz item, i.e., a list, as input. You can make your blocks <em>show</em> what type of data they expect. It’s not necessary in Snap<em>!</em> but, like assigning a color to a block, it can be a helpful reminder of what the block does and what type of input it expects. You’ve already seen input slots of several shapes, indicating different expected data types.</p>
+<p>In the Block Editor while creating a selector, click on a plus sign to enter an input name. Then…</p>
 <ol style="list-style-type:lower-alpha">
 <li>
 Click on the arrow to the right of the input name:<br> <img src="../../img/2-complexity/create-input-name-right_arrow.png" title="create input name right arrow" alt="create input name right arrow" class="ms-4" height="125">
@@ -553,7 +538,6 @@ Choose the data type you want for that input. (For this project, you’ll use th
 Click “OK.”
 </li>
 </ol>
-<p></p>
 </section>
 <li>
 Create a global variable to store your quiz items and initialize it as a list of items, using your constructor where appropriate.
@@ -582,12 +566,8 @@ Create a global variable to store your quiz items and initialize it as a list of
 </div>
 <div class="vocabFullWidth">
 <p>: <strong>Table</strong></p>
-<p>
-A <strong>table</strong> is a two-dimensional data structure with rows and columns. If you’ve used a <em>spreadsheet</em> program, what it displays is a table.
-</p>
-<p>
-In Snap<em>!</em>, a table is implemented as a list of lists, in which each sublist is one row of the table.
-</p>
+<p>A <strong>table</strong> is a two-dimensional data structure with rows and columns. If you’ve used a <em>spreadsheet</em> program, what it displays is a table.</p>
+<p>In Snap<em>!</em>, a table is implemented as a list of lists, in which each sublist is one row of the table.</p>
 </div>
 <p><img src="../../img/icons/save-now.png" title="Save your work" alt="Save your work" class="float-end"></p>
 <li>
@@ -597,9 +577,7 @@ Test both the selectors for different items in your list of quiz items, and debu
 <!-- Question 1-->
 <div class="assessment-data" type="multiplechoice" data-identifier="capitals" data-hasinlinefeedback="true" data-maxchoices="8" data-responseidentifier="ri1" data-shuffle="true">
 <div class="prompt">
-<p>
-Imagine you make a variable <var>capitals</var> and use <code>set</code> to give this list of lists a name: <br> <img src="../../img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="ms-4"><br> Which of the following statements are <strong>true</strong>?<br> <br> Choose <strong>all</strong> that apply.
-</p>
+<p>Imagine you make a variable <var>capitals</var> and use <code>set</code> to give this list of lists a name: <br> <img src="../../img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="ms-4"><br> Which of the following statements are <strong>true</strong>?<br> <br> Choose <strong>all</strong> that apply.</p>
 </div>
 <div class="choice" data-identifier="c1">
 <div class="text">
