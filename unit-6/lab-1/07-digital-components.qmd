@@ -5,37 +5,37 @@ order: 7
 ---
 
 ::: todo
-<p>BH: I would scrap the part about external components, and focus on
-what's important and on the AP exam: processor, memory, I/O.</p>
+BH: I would scrap the part about external components, and focus on
+what's important and on the AP exam: processor, memory, I/O.
 :::
 
 ::: learn
-<strong>On this page</strong>, you'll explore the <em>parts</em>
+**On this page**, you'll explore the <em>parts</em>
 (components) of the computer hardware.
 :::
 
-<p>For as long as people have been teaching other people about
+For as long as people have been teaching other people about
 computers, they always say "A computer consists of the processor,
-memory, and input/output (I/O) devices."</p>
+memory, and input/output (I/O) devices."
 
-<p>In the early days of computers, it was easy to point out the huge
+In the early days of computers, it was easy to point out the huge
 racks of equipment that contained each of those three components:<br />
 <img src="/img/6-computers/pdp-10.jpg" title="Digital Equipment Corporation PDP-10 Processor and Memory" alt="Digital Equipment Corporation PDP-10 Processor and Memory" class="ms-4" width="400px"/>
-<img src="/img/6-computers/pdp-10-disks.jpg" title="Digital Equipment Corporation PDP-10 Magnetic tape drives, disk drives, and other I/O devices" alt="Digital Equipment Corporation PDP-10 Magnetic tape drives, disk drives, and other I/O devices" class="inline" width="360px"/></p>
+<img src="/img/6-computers/pdp-10-disks.jpg" title="Digital Equipment Corporation PDP-10 Magnetic tape drives, disk drives, and other I/O devices" alt="Digital Equipment Corporation PDP-10 Magnetic tape drives, disk drives, and other I/O devices" class="inline" width="360px"/>
 
-<p>These are pictures of a powerful computer from the 1970s. Each of the
+These are pictures of a powerful computer from the 1970s. Each of the
 big racks full of circuitry is about the size of a refrigerator. Today,
 a much more powerful computer---more speed, more memory---fits inside a
-cell phone.</p>
+cell phone.
 
-<p>Because today's processors and memory are so small, most of what we
-see is the <strong>input/output (I/O)</strong> devices, like keyboard,
+Because today's processors and memory are so small, most of what we
+see is the **input/output (I/O)** devices, like keyboard,
 mouse, screens. <em>Input</em> devices include the keyboard, mouse, and
 microphone. <em>Output</em> devices include the printer, speaker, and
 (for laptop or desktop computers) the display screen. On phones and
 tablets, touchscreens are used for both input and output. Disk drives,
 optical drives (for CDs and DVDs), and the Internet interface are also
-used for both.</p>
+used for both.
 
 <div class="forYouToDo">
 
@@ -52,9 +52,9 @@ Components PDF</a>.)</li>
 
 <area shape="rect" coords="6,351,32,377" href="#">
 
-<p><strong>Scanner:</strong> An input device that can convert the
+**Scanner:** An input device that can convert the
 contents of a paper document into a digital image that can be stored in
-the computer.</p>
+the computer.
 
 </div>
 
@@ -62,14 +62,14 @@ the computer.</p>
 
 <area shape="rect" coords="141,4,172,29" href="#">
 
-<p><strong>CPU (Central Processing Unit)</strong> or <strong>the
-processor:</strong> The "brain" of the computer where programs are run.
+**CPU (Central Processing Unit)** or **the
+processor:** The "brain" of the computer where programs are run.
 It is one of the most expensive parts of the hardware.
 <!--Its speed is measured in gigahertz (GHz).--> Modern CPUs can perform
 multiple tasks simultaneously. <br />
 <img src="/img/6-computers/Hardware_img/CPU.jpg" title="CPU" alt="CPU" class="ms-4" height="150"/><br />
 <!--<a href="https://en.wikipedia.org/wiki/Central_processing_unit#/media/File:Intel_80486DX2_bottom.jpg" target="_blank">-->
-<small>Image credit: Wikipedia user Solipsist</small><!--</a>--></p>
+<small>Image credit: Wikipedia user Solipsist</small><!--</a>-->
 
 </div>
 
@@ -77,13 +77,13 @@ multiple tasks simultaneously. <br />
 
 <area shape="rect" coords="143,60,169,90" href="#">
 
-<p><strong>RAM (Random Access Memory):</strong> The computer's
+**RAM (Random Access Memory):** The computer's
 high-speed, short-term memory. It temporarily stores data and
 instructions for programs that run on the computer.
 <!--Its capacity is measured in gigabytes (GB) and its speed is measured in megahertz (MHz).--><br />
 <img src="/img/6-computers/Hardware_img/RAM.jpg" alt="RAM" class="ms-4" height="200"/><br />
 <!--<a href="https://en.wikipedia.org/wiki/Random-access_memory#/media/File:Memory_module_DDRAM_20-03-2006.jpg" target="_blank">-->
-<small>Image credit: Wikipedia user Cyberdex</small><!--</a>--></p>
+<small>Image credit: Wikipedia user Cyberdex</small><!--</a>-->
 
 </div>
 
@@ -91,12 +91,12 @@ instructions for programs that run on the computer.
 
 <area shape="rect" coords="108,102,133,129" href="#">
 
-<p><strong>Expansion cards:</strong> Circuit boards that can be inserted
+**Expansion cards:** Circuit boards that can be inserted
 to add functionality to a computer system (for example: network, sound,
 or video cards). <br />
 <img src="/img/6-computers/Hardware_img/ExpansionCard.jpg" title="Expansion Card" alt="Expansion Card" class="ms-4" height="200"/><br />
 <!--<a href="https://en.wikipedia.org/wiki/Expansion_card#/media/File:Chassis-plans-Digital-IO-Card.jpg" target="_blank">-->
-<small>Image credit: Wikipedia user Rackmount-guy</small><!--</a>--></p>
+<small>Image credit: Wikipedia user Rackmount-guy</small><!--</a>-->
 
 </div>
 
@@ -104,8 +104,8 @@ or video cards). <br />
 
 <area shape="rect" coords="60,137,87,164" href="#">
 
-<p><strong>Power supply:</strong> Converts electricity from the wall
-into the form that the other computer components use.</p>
+**Power supply:** Converts electricity from the wall
+into the form that the other computer components use.
 
 </div>
 
@@ -113,8 +113,8 @@ into the form that the other computer components use.</p>
 
 <area shape="rect" coords="135,239,161,267" href="#">
 
-<p><strong>Optical Drive:</strong> An input/output device that reads
-data from and writes data to CDs and DVDs.</p>
+**Optical Drive:** An input/output device that reads
+data from and writes data to CDs and DVDs.
 
 </div>
 
@@ -122,7 +122,7 @@ data from and writes data to CDs and DVDs.</p>
 
 <area shape="rect" coords="166,307,196,332" href="#">
 
-<p><strong>Hard Drive:</strong> An input/output device that serves as
+**Hard Drive:** An input/output device that serves as
 the long-term storage memory of the computer. There are two primary
 kinds: mechanical drives that use a mechanical arm to read and write
 data on a rotating disk (shown below), and "solid state" drives that
@@ -130,7 +130,7 @@ have no moving parts.
 <!--Storage capacity is measured in gigabytes (GB)-->.<br />
 <img src="/img/6-computers/Hardware_img/HardDiskDrive.gif" title="Hard drive" alt="Hard drive" class="ms-4" height="200"/><br />
 <!--<a href="https://en.wikipedia.org/wiki/File:HardDisk1.ogv" target="_blank">-->
-<small>Video credit: Wikipedia user Peter17</small><!--</a>--></p>
+<small>Video credit: Wikipedia user Peter17</small><!--</a>-->
 
 </div>
 
@@ -138,12 +138,12 @@ have no moving parts.
 
 <area shape="rect" coords="251,21,280,52" href="#">
 
-<p><strong>Motherboard:</strong> A circuit board that holds and connects
+**Motherboard:** A circuit board that holds and connects
 various components of the computer and allows their communication.<br />
 <img src="/img/6-computers/Hardware_img/Motherboard.JPG" title="Motherboard" alt="Motherboard" class="ms-4" height="200"/><br />
 <!--<a href="https://en.wikipedia.org/wiki/Motherboard#/media/File:Intel_D945GCPE_Board.JPG" target="_blank">-->
 <small>Image credit: Wikipedia user
-Julianprescott2604juuly</small><!--</a>-->.</p>
+Julianprescott2604juuly</small><!--</a>-->.
 
 </div>
 
@@ -151,8 +151,8 @@ Julianprescott2604juuly</small><!--</a>-->.</p>
 
 <area shape="rect" coords="266,178,296,204" href="#">
 
-<p><strong>Speaker:</strong> An input/output device that outputs sound
-from the computer.</p>
+**Speaker:** An input/output device that outputs sound
+from the computer.
 
 </div>
 
@@ -160,11 +160,11 @@ from the computer.</p>
 
 <area shape="rect" coords="319,131,353,161" href="#">
 
-<p><strong>Monitor:</strong> An input/output device that displays
+**Monitor:** An input/output device that displays
 information visually. Generally, monitors are output devices where the
 computer visually displays information. <em>Touchscreens</em> combine
 the functions of output and input.
-<!--The size of the screen is measured as the diagonal distance between opposite corners.--></p>
+<!--The size of the screen is measured as the diagonal distance between opposite corners.-->
 
 </div>
 
@@ -172,8 +172,8 @@ the functions of output and input.
 
 <area shape="rect" coords="430,330,464,361" href="#">
 
-<p><strong>Keyboard:</strong> An input device on which the user can type
-to communicate with the computer.</p>
+**Keyboard:** An input device on which the user can type
+to communicate with the computer.
 
 </div>
 
@@ -181,8 +181,8 @@ to communicate with the computer.</p>
 
 <area shape="rect" coords="496,292,532,326" href="#">
 
-<p><strong>Mouse:</strong> An input device that allows the user to
-interact with visual objects displayed on the monitor.</p>
+**Mouse:** An input device that allows the user to
+interact with visual objects displayed on the monitor.
 
 </div>
 
@@ -190,8 +190,8 @@ interact with visual objects displayed on the monitor.</p>
 
 <area shape="rect" coords="528,252,563,282" href="#">
 
-<p><strong>External Hard Drive:</strong> An input/output device that
-serves as an extra hard drive used for additional or backup storage.</p>
+**External Hard Drive:** An input/output device that
+serves as an extra hard drive used for additional or backup storage.
 
 </div>
 
@@ -199,8 +199,8 @@ serves as an extra hard drive used for additional or backup storage.</p>
 
 <area shape="rect" coords="569,235,599,270" href="#">
 
-<p><strong>Printer:</strong> An output device that can transfer digital
-data onto paper.</p>
+**Printer:** An output device that can transfer digital
+data onto paper.
 
 </div>
 
@@ -225,8 +225,8 @@ is it called <em>motherboard</em>?</a>
 ::: {#hint-target .collapse}
 In a desktop computer, there are other boards too---the Ethernet port,
 "serial" ports for the keyboard and mouse, and other expansion
-cards---and <strong>all the other boards plug into the
-motherboard</strong>. In laptops, there isn't room for many other
+cards---and **all the other boards plug into the
+motherboard**. In laptops, there isn't room for many other
 boards, and there is <em>no</em> room for boards perpendicular to the
 motherboard, but we still use the same name.
 :::
@@ -255,9 +255,9 @@ watching many movies).</li>
 </ol>
 
 Assume you each want the least expensive computer that does a great job
-for your purpose. <strong>Research what features of the computer are
+for your purpose. **Research what features of the computer are
 most important for your purpose, choose a computer, and compare notes
-with the rest of the group.</strong> Which computer is most expensive?
+with the rest of the group.** Which computer is most expensive?
 Least expensive? Did you choose a laptop or a desktop, and why?
 
 </li>

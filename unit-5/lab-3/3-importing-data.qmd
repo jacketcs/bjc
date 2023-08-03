@@ -10,13 +10,13 @@ gifffer: true
 DAT-2.D.1, DAT-2.C.1
 :::
 
-<p>Computers can be useful in processing data to gain information, but
+Computers can be useful in processing data to gain information, but
 your ability process data depends both on your capabilities and the
-tools you have available.</p>
+tools you have available.
 
-<p><strong>On this page</strong>, you will build various tools
+**On this page**, you will build various tools
 (specifically, selectors) to help you answer questions about data that
-interests you.</p>
+interests you.
 
 ::: endnote
 You learned about selectors on
@@ -55,13 +55,13 @@ the Snap<em>!</em> stage.</li>
 DAT-2.D.5
 :::
 
-<p><img src="/img/5-algorithms/correlation-positive-trend.png" title="a graph with a bunch of data points, in which they generally follow a straight line from top left to bottom right" alt="a graph with a bunch of data points, in which they generally follow a straight line from top left to bottom right" class="float-end"/>
+<img src="/img/5-algorithms/correlation-positive-trend.png" title="a graph with a bunch of data points, in which they generally follow a straight line from top left to bottom right" alt="a graph with a bunch of data points, in which they generally follow a straight line from top left to bottom right" class="float-end"/>
 You may be familiar with tables from spreadsheet applications (such as
 Google Sheets, Apple Numbers, or Microsoft Excel) which store tabular
 data in different file formats. Spreadsheet programs help efficiently
 organize information, and they can find trends in data automatically
 (such as the line shown at right). CSV is an open spreadsheet format
-that works in any of these applications and in Snap<em>!</em>.</p>
+that works in any of these applications and in Snap<em>!</em>.
 
 ::: endnote
 <a href="#hint-CSV" data-bs-toggle="collapse" title="What does CSV stand for">What
@@ -75,7 +75,7 @@ by opening it in a text editor.)
 :::
 :::
 
-<p>Although spreadsheets are a common kind of data, they aren't the only
+Although spreadsheets are a common kind of data, they aren't the only
 kind. Consider the list of words that you used in Lab 1 to check
 spelling. It's not a <em>list of lists</em> with two dimensions of data
 (rows and columns); it's just a <em>list</em> with one dimension of
@@ -83,7 +83,7 @@ data. "Spreadsheet" refers to two-dimensional data organized in rows and
 columns. "Dataset" is the more general term for <em>any</em> collection
 of data, including simple, one-dimensional lists; spreadsheets
 (two-dimensional lists of lists); and more complicated datasets such as
-spreadsheets with multiple tabs.</p>
+spreadsheets with multiple tabs.
 
 ::: forYouToDo
 <ol start="4">
@@ -120,23 +120,23 @@ that reports just the data (not the headings)</li>
 :::
 
 ::: endnote
-<p>A table is represented in Snap<em>!</em> as a list of lists. If you
+A table is represented in Snap<em>!</em> as a list of lists. If you
 right-click (or control-click on a Mac) a table, you can switch to "list
 view" and see how the data (and column headings) are stored.
 <a href="#hint-views" data-bs-toggle="collapse" title="See examples of table view and list view.">See
-examples of table view and list view.</a></p>
+examples of table view and list view.</a>
 
 ::: {#hint-views .collapse style="text-align:center;"}
 ::: {style="display: inline-grid; grid-template-columns: auto auto; text-align:center;"}
 <div>
 
-<strong>Table View</strong>
+**Table View**
 
 </div>
 
 <div>
 
-<strong>List View</strong>
+**List View**
 
 </div>
 
@@ -152,24 +152,24 @@ examples of table view and list view.</a></p>
 :::
 
 ::: vocabFullWidth
-: <strong>Records</strong>, <strong>Fields</strong>, and
-<strong>Columns</strong>
+: **Records**, **Fields**, and
+**Columns**
 
 <ul>
 
-<li>A <strong>record</strong> is one row in a dataset (other than the
+<li>A **record** is one row in a dataset (other than the
 first row, which contains the column headings). A single record might be
 the data for one student in your school, the data for one earthquake
 that happened, the data for one hospital in the U.S, or the data for one
 contact in your contact list. In other words, a record is a horizontal
 slice of the dataset.</li>
 
-<li>A <strong>field</strong> is one item of a record in a dataset. It
+<li>A **field** is one item of a record in a dataset. It
 might be one person's homeroom teacher, the magnitude of an earthquake
 in Los Angeles last week, the owner of one hospital in Chicago, or the
 phone number of one person in your contact list.</li>
 
-<li>A <strong>column</strong> is a list containing the data from one
+<li>A **column** is a list containing the data from one
 field for all records in a dataset. A column might be the homeroom
 teacher for <em>every</em> student in your school, the magnitude of
 <em>every</em> earthquake in the dataset, the owner of <em>every</em>
@@ -199,24 +199,24 @@ Build
 to report just one column of your dataset.
 
 ::: endnote
-<p>`Record` and `column` are <em>selectors</em>
+`Record` and `column` are <em>selectors</em>
 for a `table` abstract data type. We don't need a
 <em>constructor</em> for this abstract data type because we are
 importing the data from the Internet, but the selectors will be useful.
 (`Field` is a selector for `record`, which is,
-itself, an abstract data type.)</p>
+itself, an abstract data type.)
 
-<p>Notice that these suggested block names include the word "table" or
+Notice that these suggested block names include the word "table" or
 "record" before the second input. Including the expected input data type
 in the block name can help you avoid bugs caused by using a selector
-that doesn't match the input you want to use.</p>
+that doesn't match the input you want to use.
 
-<p><a href="#hint-map" data-bs-toggle="collapse" title="Try to figure out how to report just one column, but click if you really need a hint.">Try
+<a href="#hint-map" data-bs-toggle="collapse" title="Try to figure out how to report just one column, but click if you really need a hint.">Try
 to figure out how to report just one column, but click if you really
-need a hint.</a></p>
+need a hint.</a>
 
 ::: {#hint-map .collapse}
-<p>
+
 
 <img src="/img/blocks/map.png" title="map () over ()" alt="map () over ()" class="inline"/>
 performs the same function on every item in a list.
@@ -232,7 +232,7 @@ dataset. You learned about `map` on
 3 Lab 2 Page 5: Transforming Every List Item</a>.
 :::
 
-</p>
+
 :::
 :::
 
@@ -241,20 +241,20 @@ dataset. You learned about `map` on
 <li>
 
 <img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
-Determine one question you can answer by <strong>looking at a single
-column</strong> of your data set, and then build code to answer your
+Determine one question you can answer by **looking at a single
+column** of your data set, and then build code to answer your
 question. You may need to build additional blocks or import them from
 other projects.
 
 ::: endnote
-<p>You can see the column number by holding your mouse pointer over the
+You can see the column number by holding your mouse pointer over the
 letter at the top of the column in table view.<br />
-<img src="/img/5-algorithms/column-number.png" title="image of the top of the table view for the cars dataset with the mouse pointer over the top of the second column; the columns are now labeled A, 2 (where the pointer is), C, D, etc." alt="image of the top of the table view for the cars dataset with the mouse pointer over the top of the second column; the columns are now labeled A, 2 (where the pointer is), C, D, etc." class="ms-4" height="120"/></p>
+<img src="/img/5-algorithms/column-number.png" title="image of the top of the table view for the cars dataset with the mouse pointer over the top of the second column; the columns are now labeled A, 2 (where the pointer is), C, D, etc." alt="image of the top of the table view for the cars dataset with the mouse pointer over the top of the second column; the columns are now labeled A, 2 (where the pointer is), C, D, etc." class="ms-4" height="120"/>
 
-<p>You may need to use `map`, `keep`, or
+You may need to use `map`, `keep`, or
 `combine` to answer your question.
 <a href="#hint-HOFs" data-bs-toggle="collapse" title="Click to see where you learned about these higher order functions.">Click
-to see where you learned about these higher order functions.</a></p>
+to see where you learned about these higher order functions.</a>
 
 ::: {#hint-HOFs .collapse}
 <ul>
@@ -274,8 +274,8 @@ to see where you learned about these higher order functions.</a></p>
 </ul>
 :::
 
-<p><a href="#hint-questions" data-bs-toggle="collapse" title="Click for example questions to ask about a single column.">Click
-for example questions to ask about a single column.</a></p>
+<a href="#hint-questions" data-bs-toggle="collapse" title="Click for example questions to ask about a single column.">Click
+for example questions to ask about a single column.</a>
 
 ::: {#hint-questions .collapse}
 <ul>
@@ -290,10 +290,10 @@ for example questions to ask about a single column.</a></p>
 
 </ul>
 
-<p>Notice that all of these examples only require data from one column.
+Notice that all of these examples only require data from one column.
 If you want to ask a question that requires looking at another column
 (for example, "What's the model of the car with the highest MPG?"), you
-can do the Take It Further Activity below.</p>
+can do the Take It Further Activity below.
 :::
 :::
 
@@ -313,7 +313,7 @@ down. --MF, 4/4/20
 DAT-2.C.3, DAT-2.C.2 all bullets
 :::
 
-<p>Researchers often face challenges with data before they even begin
+Researchers often face challenges with data before they even begin
 analysis. Suppose you are combining data from different countries about
 distances between cities, and you discover that the distance data from
 the U.S. is measured in miles, but the distance data from Europe is
@@ -322,37 +322,37 @@ measured in kilometers; to make meaningful comparisons, you need
 example, if you use an online survey to collect data, the way
 participants abbreviate, spell, or capitalize their entries may vary.
 Data may also be incomplete (if some people didn't complete the survey)
-or invalid (if some people made mistakes).</p>
+or invalid (if some people made mistakes).
 
 ::: vocabFullWidth
 ::: ap-standard
 DAT-2.C.4, DAT-2.E.2
 :::
 
-<p><strong>Cleaning data</strong> is the process of making the data
+**Cleaning data** is the process of making the data
 uniform <em>without changing its meaning</em> (such as replacing
 abbreviations, spellings, and capitalizations with the intended word or
 converting miles to kilometers). Programmers can use programs to filter
-and clean digital data, thereby gaining insight and knowledge.</p>
+and clean digital data, thereby gaining insight and knowledge.
 :::
 
 ::: ap-standard
 DAT-2.C.5
 :::
 
-<p>Imagine you read in the news that people who eat a lot of broccoli
+Imagine you read in the news that people who eat a lot of broccoli
 are less likely to get cancer. The conclusion that broccoli prevents
 cancer could be a result of <em>bias</em>. It could be that people who
 eat a lot of broccoli tend to be the same people who also get a lot of
 exercise, and it's actually the exercise that makes the difference. In
 research, the term "bias" doesn't have to mean prejudice; it's about
-reasons the data might not mean what they seem to mean.</p>
+reasons the data might not mean what they seem to mean.
 
-<p>People sometimes think that the way to overcome bias is to use a
+People sometimes think that the way to overcome bias is to use a
 bigger sample (asking more people if they eat broccoli and have cancer).
 But if the bigger sample has the same problem (people getting more
 exercise also eat more broccoli), then a bigger sample won't eliminate
-the bias.</p>
+the bias.
 
 ::: forYouToDo
 <ol start="11">
@@ -370,8 +370,8 @@ in the previous problem.</li>
 :::
 
 ::: todo
-<p>I need to redo these images and `code` statements with
-"record" instead of "row." --MF, 6/27/19</p>
+I need to redo these images and `code` statements with
+"record" instead of "row." --MF, 6/27/19
 :::
 
 ::: takeItFurther
@@ -386,17 +386,17 @@ block.
 
 ::: endnote
 ```{=html}
-<!--This gives away the answer. <p><a href="#hint-rowwithmax" data-bs-toggle="collapse" title="See the row with maximum in column () of table () block in action.">See `row with maximum in column () of table ()` in action.</a></p>
+<!--This gives away the answer. <a href="#hint-rowwithmax" data-bs-toggle="collapse" title="See the row with maximum in column () of table () block in action.">See `row with maximum in column () of table ()` in action.</a>
 <div id="hint-rowwithmax" class="collapse"><img class="ms-4" src="/img/5-algorithms/row-with-max-of-table-reporting.png" alt="" title="" /></div>-->
 ```
-<p><a href="#hint-build" data-bs-toggle="collapse" title="Click for a hint about how to build row with maximum in column () of table ().">Click
+<a href="#hint-build" data-bs-toggle="collapse" title="Click for a hint about how to build row with maximum in column () of table ().">Click
 for a hint about how to build `row with maximum in column () of
-table ()`.</a></p>
+table ()`.</a>
 
 ::: {#hint-build .collapse}
 
 
-<p>One way to build a
+One way to build a
 <img src="/img/5-algorithms/maximum-of-list.png" title="maximum of &apos;list input slot&apos;" alt="maximum of &apos;list input slot&apos;" class="inline py-0"/>
 function for a simple list (that isn't a table) is shown below. You can
 build a
@@ -422,7 +422,7 @@ report (combine (data) using (maximum of ( ) and ( )))
 building a
 <img src="/img/5-algorithms/row-with-max-between.png" title="row with maximum in column () between row () and row ()" alt="row with maximum in column () between row () and row ()"/>
 that compares a specific field (column) for two rows and reports the row
-with the higher value in the specified column.</p>
+with the higher value in the specified column.
 :::
 
 ::: todo

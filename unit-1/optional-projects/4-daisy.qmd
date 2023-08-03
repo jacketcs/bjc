@@ -6,7 +6,7 @@ order: 4
 ---
 
 ::: learn
-<strong>In this project,</strong> you are going to write code to draw the geometric design shown below, explore its variations and use it draw more complex designs.<br /> <img src="/img/1-introduction/Daisy_img/Daisy.png" title="Daisy" alt="Daisy" class="ms-4 noshadow" width="242"/>
+**In this project,** you are going to write code to draw the geometric design shown below, explore its variations and use it draw more complex designs.<br /> <img src="/img/1-introduction/Daisy_img/Daisy.png" title="Daisy" alt="Daisy" class="ms-4 noshadow" width="242"/>
 :::
 
 ::: {#first .forYouToDo}
@@ -15,7 +15,7 @@ order: 4
 <li>Discuss how this design was created. What are the fundamental building blocks? How are these arranged?</li>
 
 ::: endnote
-<p>You can watch <a href="#hint-animation" data-bs-toggle="collapse" title="You can watch this animation to get some ideas.">this animation</a> to get some ideas.</p>
+You can watch <a href="#hint-animation" data-bs-toggle="collapse" title="You can watch this animation to get some ideas.">this animation</a> to get some ideas.
 
 ::: {#hint-animation .collapse}
 <img src="/img/1-introduction/Daisy_img/DaisyAnimation.gif" title="Animation showing the creation of the Daisy design by rotation of a circle" alt="Animation showing the creation of the Daisy design by rotation of a circle" class="center ms-4" height="400"/>

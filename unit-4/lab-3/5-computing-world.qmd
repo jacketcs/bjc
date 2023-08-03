@@ -5,7 +5,7 @@ order: 5
 ---
 
 ::: learn
-<strong>On this page,</strong> you will investigate how much of the
+**On this page,** you will investigate how much of the
 world has access to the Internet.
 :::
 
@@ -60,10 +60,10 @@ do not. This is called the <em>digital divide</em>.
 IOC-1.C.1, IOC-1.C.2, IOC-1.C.3
 :::
 
-<p>The <strong>digital divide</strong> refers to unequal access to
+The **digital divide** refers to unequal access to
 computers and the Internet based on poverty, racism, sexism, isolation
 in the countryside, age, and other factors. The digital divide affects
-both individuals within a country and countries themselves.</p>
+both individuals within a country and countries themselves.
 :::
 
 <ol>

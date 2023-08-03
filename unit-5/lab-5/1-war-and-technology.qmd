@@ -5,24 +5,24 @@ order: 1
 ---
 
 ::: todo
-<p>BH: I think 5.5 is the best lab in the whole curriculum!</p>
+BH: I think 5.5 is the best lab in the whole curriculum!
 
-<p>MF: I still have concerns about the only thing a POC invented in this
+MF: I still have concerns about the only thing a POC invented in this
 course being a children's toy (that POC children are killed for playing
-with)</p>
+with)
 :::
 
 ::: learn
-<p><strong>In this lab,</strong> you will consider the implications of
-technology on warfare.</p>
+**In this lab,** you will consider the implications of
+technology on warfare.
 
-<p><strong>On this page,</strong> you will consider the importance of
-pre-computer technologies in warfare.</p>
+**On this page,** you will consider the importance of
+pre-computer technologies in warfare.
 :::
 
 ::: todo
-<p>Brian, what is this "Explain" text? Are we planning to do something
-with it? --MF, 9/6/18</p>
+Brian, what is this "Explain" text? Are we planning to do something
+with it? --MF, 9/6/18
 
 <ul>
 
@@ -56,7 +56,7 @@ that.</li>
 
 </ul>
 
-<p>
+
 
 Please do not use tables for anything other than tabular data. --MF
 12/15/16
@@ -68,7 +68,7 @@ Use CSS instead." --MF, 9/6/18</li>
 
 </ul>
 
-</p>
+
 :::
 
 31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATQBRAEEAMABBAEQAYwBBAE4AQQBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBQAEEAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAEkAQQBCADMAQQBHAGsAQQBaAEEAQgAwAEEARwBnAEEAUABRAEEAaQBBAEQARQBBAE0AQQBBAHcAQQBDAFUAQQBJAGcAQQBnAEEARwBJAEEAYgB3AEIAeQBBAEcAUQBBAFoAUQBCAHkAQQBEADAAQQBJAGcAQQB3AEEAQwBJAEEAUABnAEEAZwBBAEEAbwBBAFAAQQBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEMAQQBBAGMAdwBCADAAQQBIAGsAQQBiAEEAQgBsAEEARAAwAEEASQBnAEIAMABBAEcAVQBBAGUAQQBCADAAQQBDADAAQQBZAFEAQgBzAEEARwBrAEEAWgB3AEIAdQBBAEQAbwBBAGMAZwBCAHAAQQBHAGMAQQBhAEEAQgAwAEEARABzAEEASQBBAEIAdwBBAEcARQBBAFoAQQBCAGsAQQBHAGsAQQBiAGcAQgBuAEEAQwAwAEEAYwBnAEIAcABBAEcAYwBBAGEAQQBCADAAQQBEAG8AQQBNAFEAQQAxAEEASABBAEEAZQBBAEEAaQBBAEQANABBAFYAdwBCAGgAQQBIAFEAQQBaAFEAQgB5AEEAQwBBAEEAWgB3AEIAMQBBAEcANABBAGMAdwBBAGcAQQBIAFUAQQBjAHcAQgBsAEEARwBRAEEASQBBAEIAMABBAEcAOABBAEkAQQBCAHMAQQBHADgAQQBiAHcAQgByAEEAQwBBAEEAYgBBAEIAcABBAEcAcwBBAFoAUQBBAGcAQQBIAFEAQQBhAEEAQgBwAEEASABNAEEATwBnAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAZwBBAEgAYwBBAGEAUQBCAGsAQQBIAFEAQQBhAEEAQQA5AEEAQwBJAEEATgBBAEEAdwBBAEMAVQBBAEkAZwBBACsAQQBBAG8AQQBQAEEAQgBwAEEARwAwAEEAWgB3AEEAZwBBAEgATQBBAGMAZwBCAGoAQQBEADAAQQBJAGcAQQB2AEEARwBJAEEAYQBnAEIAagBBAEMAMABBAGMAZwBBAHYAQQBHAGsAQQBiAFEAQgBuAEEAQwA4AEEATgBRAEEAdABBAEcARQBBAGIAQQBCAG4AQQBHADgAQQBjAGcAQgBwAEEASABRAEEAYQBBAEIAdABBAEgATQBBAEwAdwBCADMAQQBHAEUAQQBkAEEAQgBsAEEASABJAEEAWgBnAEIAcABBAEcAYwBBAGEAQQBCADAAQQBGADgAQQBhAFEAQgB0AEEARwBjAEEATAB3AEIAMwBBAEcARQBBAGQAQQBCAGwAQQBIAEkAQQBaAHcAQgAxAEEARwA0AEEATQBnAEEAdQBBAEgAQQBBAGIAZwBCAG4AQQBDAEkAQQBJAEEAQgBoAEEARwB3AEEAZABBAEEAOQBBAEMASQBBAFQAdwBCAHMAQQBHAFEAQQBJAEEAQgAzAEEARwBFAEEAZABBAEIAbABBAEgASQBBAEkAQQBCAG4AQQBIAFUAQQBiAGcAQQBpAEEAQwBBAEEAZABBAEIAcABBAEgAUQBBAGIAQQBCAGwAQQBEADAAQQBJAGcAQgBQAEEARwB3AEEAWgBBAEEAZwBBAEgAYwBBAFkAUQBCADAAQQBHAFUAQQBjAGcAQQBnAEEARwBjAEEAZABRAEIAdQBBAEMASQBBAEwAdwBBACsAQQBBAG8AQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBBAHYAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEgASQBBAFAAZwBBADgAQQBIAFEAQQBaAEEAQQArAEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBADgAQQBIAFEAQQBaAEEAQQBnAEEARwBFAEEAYgBBAEIAcABBAEcAYwBBAGIAZwBBADkAQQBDAEkAQQBZAHcAQgBsAEEARwA0AEEAZABBAEIAbABBAEgASQBBAEkAZwBBACsAQQBEAHcAQQBjAHcAQgB0AEEARwBFAEEAYgBBAEIAcwBBAEQANABBAFAAQQBCAHoAQQBHADAAQQBZAFEAQgBzAEEARwB3AEEAUABnAEIARwBBAEcAdwBBAGEAUQBCAGoAQQBHAHMAQQBjAGcAQQA2AEEAQwBBAEEAUgBBAEIAbABBAEcARQBBAGIAZwBBAGcAQQBFAGcAQQBiAHcAQgBqAEEARwBnAEEAYgBRAEIAaABBAEcANABBAEwAQQBBAGcAQQBFAE0AQQBRAHcAQQB0AEEARQBJAEEAVwBRAEEAdABBAEQASQBBAEwAZwBBAHcAQQBEAHcAQQBMAHcAQgB6AEEARwAwAEEAWQBRAEIAcwBBAEcAdwBBAFAAZwBBADgAQQBDADgAQQBjAHcAQgB0AEEARwBFAEEAYgBBAEIAcwBBAEQANABBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEARAB3AEEATAB3AEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBMAHcAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAFAAZwBBAD0ACgBzAHUAZgBmAGkAeAA6AA==:31b8e172-b470-440e-83d8-e6b185028602
@@ -81,7 +81,7 @@ Use CSS instead." --MF, 9/6/18</li>
 <img src="/img/atwork/Lonnie_Johnson.jpeg" title="photo of Lonnie Johnson" alt="photo of Lonnie Johnson" class="noshadow" height="200px"/>
 :::
 
-<p>Lonnie Johnson (born 1949) is an engineer working on energy
+Lonnie Johnson (born 1949) is an engineer working on energy
 production, especially solid-state batteries and solar panels, and he is
 the inventor of the Super Soaker. His earliest professional work was in
 the U.S. Air Force, and he later worked at NASA's Jet Propulsion
@@ -90,13 +90,13 @@ Williamson High School, an all-black school in Mobile, Alabama. In 1968,
 he won the first-place prize at the state science fair for his
 compressed air powered robot. Before working for the U.S. Air Force,
 Johnson obtained a B.S. in mechanical engineering and a master's degree
-in nuclear engineering from Tuskegee University.</p>
+in nuclear engineering from Tuskegee University.
 
-<p><a href="http://lonniejohnson.com/timeline/#/bt_section5f2ae3fdd703c" title="Timeline of Lonnie Johnson’s Life" target="_blank">Timeline
-of Lonnie Johnson's Life</a></p>
+<a href="http://lonniejohnson.com/timeline/#/bt_section5f2ae3fdd703c" title="Timeline of Lonnie Johnson’s Life" target="_blank">Timeline
+of Lonnie Johnson's Life</a>
 :::
 
-<p>Technology affects real wars, too. The outcome of individual battles
+Technology affects real wars, too. The outcome of individual battles
 may be decided by numbers of soldiers, the strategies of generals, and
 other human factors. But, with rare exceptions, if one side has better
 technology, they win in the long run. For example, in the Seventh
@@ -105,7 +105,7 @@ its invention of "Greek fire," a flammable chemical that was fired
 through hoses or in projectiles, with the special property that it would
 keep burning in water, so it was valuable in naval battles. This weapon
 was very important to the survival of the empire, which lasted until the
-15th Century.</p>
+15th Century.
 
 ::: {#first .forYouToDo}
 <ol>

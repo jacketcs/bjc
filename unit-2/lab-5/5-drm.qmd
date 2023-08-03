@@ -5,8 +5,8 @@ order: 5
 ---
 
 ::: learn
-<p><strong>On this page,</strong> you will learn how encryption is used
-for copyright enforcement.</p>
+**On this page,** you will learn how encryption is used
+for copyright enforcement.
 :::
 
 <h3>Digital Rights Management (DRM)</h3>
@@ -15,25 +15,25 @@ for copyright enforcement.</p>
 IOC-1.F.3
 :::
 
-<p>Computers and the Internet support the free exchange of media, but
+Computers and the Internet support the free exchange of media, but
 they can also be used to prevent it. Many digital media are distributed
 in encrypted form. Buyers can't play the media without the software that
 decrypts them, and the software will only do so if certain conditions
 designed by the publisher are met. Maybe a file can only be played on a
 particular computer. Maybe there can't be two copies with the same
 serial number. Maybe the file times out on a particular date and can
-never be used again.</p>
+never be used again.
 
-<p>Digital Rights Management (DRM) software is a big change in the
+Digital Rights Management (DRM) software is a big change in the
 social contract. The whole idea of copyright is that eventually it
 expires and the work is in the public domain, freely copyable by anyone.
 But DRM allows publishers to have it both ways: they get copyright
 protection during the time when a work is most popular, <em>and</em> DRM
-gives them control over the content forever.</p>
+gives them control over the content forever.
 
 <h3>The Digital Millennium Copyright Act</h3>
 
-<p>The Digital Millennium Copyright Act (DMCA) is a US law that went
+The Digital Millennium Copyright Act (DMCA) is a US law that went
 into effect in 1998. It makes it a crime to figure out how to defeat DRM
 systems, whether or not a copyright is actually violated. It protects
 Internet service providers and website operators from third-party
@@ -41,7 +41,7 @@ copyright violation penalties (for example, if you post a copyrighted
 video on YouTube, YouTube is not liable) provided that the operator
 (YouTube) removes the infringing material as soon as it is notified of
 the violation. If the original poster thinks the material does not
-violate a copyright, the burden is on them to prove it.</p>
+violate a copyright, the burden is on them to prove it.
 
 ::: endnote
 <a href="#hint-exemptions" data-bs-toggle="collapse" title="Are there any exemptions to DMCA?">Are
@@ -60,7 +60,7 @@ jailbreak their cell phones.
 :::
 :::
 
-<p>
+
 
 Here two examples of manufacturers using the DMCA in creative ways,
 possibly not for purposes envisioned in the original copyright
@@ -68,7 +68,7 @@ provisions.
 
 <ul>
 
-<li><strong>Printer Ink Cartridges:</strong> Printer manufacturers don't
+<li>**Printer Ink Cartridges:** Printer manufacturers don't
 make much money when you buy a printer; competition drives prices down.
 Instead, they make profits when you buy replacement ink cartridges
 because you have to buy ones that fit the printer. Lexmark, a printer
@@ -81,7 +81,7 @@ copied the tiny program that provided the signature. Ultimately Lexmark
 lost; what they did was determined not to be a legitimate use of the
 DMCA.</li>
 
-<li><strong>DVD Region Codes:</strong> The fine print on the back of a
+<li>**DVD Region Codes:** The fine print on the back of a
 DVD case often says something like "this DVD is licensed for sale in
 North America." This restriction is enforced by DRM. Your DVD player
 knows what region of the world it's in. The purpose of this system is to
@@ -108,7 +108,7 @@ people argue that it is a treaty violation.
 
 </ul>
 
-</p>
+
 
 ::: {#first .forYouToDo}
 <ol>

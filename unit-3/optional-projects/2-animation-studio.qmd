@@ -6,23 +6,23 @@ order: 2
 ---
 
 ::: todo
-<p>PG: Page has been rearranged without being rewritten. "Watch the
+PG: Page has been rearranged without being rewritten. "Watch the
 following video" comes after the video. In general, "the following" or
 "below" should be scrapped as pointlessly heavy writing wherever it
 appears in the curriculum. There is rarely any ambiguity about where to
-look (e.g., here, there is only one video to watch).</p>
+look (e.g., here, there is only one video to watch).
 
-<p>BH: The TIFs aren't TIFfy.</p>
+BH: The TIFs aren't TIFfy.
 :::
 
 ::: learn
-<strong>In this project</strong>, you will create a studio for designing
+**In this project**, you will create a studio for designing
 and animating a character.<br /><br />
 <img title="Animating a UFO" alt="Animation of user drawing a UFO with the mouse and then -using arrow keys- moving the UFO up, down, right, left" class="ms-4" data-gifffer="/img/3-lists/AnimationStudio_img/UFO.gif" height="350"/>
 <!--<img class="ms-4" src="/img/3-lists/AnimationStudio_img/woof.png" height="300" alt="cartoon doggy" title="cartoon doggy"/>-->
 :::
 
-<p>
+
 
 In this project:<br />
 
@@ -39,7 +39,7 @@ left arrow keys.</li>
 
 </ul>
 
-</p>
+
 
 ::: {#first .forYouToDo}
 <ol>
@@ -76,18 +76,18 @@ work.</li>
 :::
 
 ::: endnote
-<p>You may wish to use the `warp` block to make your
+You may wish to use the `warp` block to make your
 animations render more quickly.<br />
-<img src="/img/blocks/warp.png" title="warp block" alt="warp block" class="ms-4"/></p>
+<img src="/img/blocks/warp.png" title="warp block" alt="warp block" class="ms-4"/>
 
-<p>If you <em>uncheck</em> the <var>point list</var> variable at the
+If you <em>uncheck</em> the <var>point list</var> variable at the
 Variables palette, your animation will run faster because your computer
 won't have to display hundreds of coordinates on the stage.<br />
-<img src="/img/3-lists/AnimationStudio_img/uncheckpointlist.png" title="uncheck point list" alt="uncheck point list" class="ms-4" height="80"/></p>
+<img src="/img/3-lists/AnimationStudio_img/uncheckpointlist.png" title="uncheck point list" alt="uncheck point list" class="ms-4" height="80"/>
 :::
 
 ::: takeItFurther
-<p>
+
 
 Brainstorm with your partner about some possible extensions to the
 project. Here are some ideas:
@@ -112,5 +112,5 @@ classmates.</li>
 
 </ol>
 
-</p>
+
 :::

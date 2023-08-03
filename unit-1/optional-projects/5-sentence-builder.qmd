@@ -6,7 +6,7 @@ order: 5
 ---
 
 ::: learn
-<p><strong>In this project</strong>, you will create a program capable of creating more complicated language than the Gossip project.</p>
+**In this project**, you will create a program capable of creating more complicated language than the Gossip project.
 :::
 
 ::: {#first .forYouToDo}
@@ -15,17 +15,17 @@ order: 5
 ::: sidenote
 <ul>
 
-<li><strong>nouns</strong> (things)</li>
+<li>**nouns** (things)</li>
 
-<li><strong>verbs</strong> (actions)</li>
+<li>**verbs** (actions)</li>
 
-<li><strong>adjectives</strong> (thing describers)</li>
+<li>**adjectives** (thing describers)</li>
 
-<li><strong>adverbs</strong> (action describers)</li>
+<li>**adverbs** (action describers)</li>
 
-<li><strong>determiners</strong> (identifiers---tells you <em>which</em> thing)</li>
+<li>**determiners** (identifiers---tells you <em>which</em> thing)</li>
 
-<li><strong>prepositions</strong> (relationship indicators)</li>
+<li>**prepositions** (relationship indicators)</li>
 
 </ul>
 :::
@@ -34,7 +34,7 @@ order: 5
 
 <a href="/prog/1-introduction/U1-ModelingLanguage.xml" class="run"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a>
 
-<p>It contains six reporters that each report a random word from a list of words in that category.</p>
+It contains six reporters that each report a random word from a list of words in that category.
 
 </li>
 

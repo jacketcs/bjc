@@ -6,14 +6,14 @@ gifffer: true
 ---
 
 ::: learn
-<p><strong>On this page,</strong> you will complete your quiz app by using a new block that loops through a list:<br /> <img src="/img/2-complexity/for-each-(item)-of().png" title="for-each-(item)-of(){}" alt="for-each-(item)-of(){}" class="ms-4" height="68"/></p>
+**On this page,** you will complete your quiz app by using a new block that loops through a list:<br /> <img src="/img/2-complexity/for-each-(item)-of().png" title="for-each-(item)-of(){}" alt="for-each-(item)-of(){}" class="ms-4" height="68"/>
 :::
 
 ::: todo
 This should be an FYTD. Is is everywhere else. --MF, 5/30/20
 :::
 
-<p>If it's not already open, open your project U2L2-Quiz.</p>
+If it's not already open, open your project U2L2-Quiz.
 
 ::: dialogue
 
@@ -38,7 +38,7 @@ ask (question from (item (i) of (computer science quiz))) and wait
 </div>
 
 ::: vocabFullWidth
-<p>Using the result from `item` as the input to `address from contact` is called <strong>composition</strong> of functions.</p>
+Using the result from `item` as the input to `address from contact` is called **composition** of functions.
 :::
 
 <div>
@@ -59,11 +59,11 @@ Gamal: We could even rename <var>item</var> something logical like <var>quiz ite
 :::
 
 ::: vocabFullWidth
-: <strong>Traversing a List</strong>
+: **Traversing a List**
 
 
 
-<p><strong>Traversing</strong> a list means looking at each item of the list. `For each` is iterative. That is, it's repetitive, like `for`, which can also traverse a list. But unlike `for`, `for each` traverses the list <em>without using index numbers</em>.</p>
+**Traversing** a list means looking at each item of the list. `For each` is iterative. That is, it's repetitive, like `for`, which can also traverse a list. But unlike `for`, `for each` traverses the list <em>without using index numbers</em>.
 :::
 
 ::: forYouToDo
@@ -99,9 +99,9 @@ Gamal: We could even rename <var>item</var> something logical like <var>quiz ite
 
 ::: {.assessment-data type="multiplechoice" identifier="abe" hasinlinefeedback="true" maxchoices="2" responseidentifier="ri1" shuffle="true"}
 ::: prompt
-<p>Which of the scripts below will produce the following sprite behavior?<br /> <img src="/img/3-lists/abelincoln.gif" title="sprite saying Abraham then Lincoln" alt="sprite saying Abraham then Lincoln" class="ms-4 noshadow"/><br /> (When you run the script, though, it actually says Abraham Lincoln <em>only once</em>.)</p>
+Which of the scripts below will produce the following sprite behavior?<br /> <img src="/img/3-lists/abelincoln.gif" title="sprite saying Abraham then Lincoln" alt="sprite saying Abraham then Lincoln" class="ms-4 noshadow"/><br /> (When you run the script, though, it actually says Abraham Lincoln <em>only once</em>.)
 
-<p>Choose <strong>all</strong> that apply.</p>
+Choose **all** that apply.
 :::
 
 ::: {.choice identifier="c1"}
@@ -193,7 +193,7 @@ goto(point)
 :::
 
 ::: forYouToDo
-<p>These questions are similar to those you will see on the AP CSP exam.</p>
+These questions are similar to those you will see on the AP CSP exam.
 
 <ol start="6">
 

@@ -5,10 +5,10 @@ order: 5
 ---
 
 ::: learn
-<p><strong>On this page,</strong> you will use the `map`
+**On this page,** you will use the `map`
 block to create an `initials from name` block and then use
 `map` together with `initials from name` to find
-the initials of all of your contacts.</p>
+the initials of all of your contacts.
 :::
 
 ::: dialogue
@@ -42,17 +42,17 @@ report (join (letter (1) of (item (1) of (list of names))) (letter (1) of (item 
 the difference between splitting by spaces and splitting by words?</a>
 
 ::: {#hint-splitting .collapse}
-<p>Try it! (Each brown dot represents a space.)<br />
+Try it! (Each brown dot represents a space.)<br />
 <img src="/img/3-lists/split-space.png" title="split &quot;hello␠␠␠␠␠␠␠world&quot; by (␠)" alt="split &quot;hello␠␠␠␠␠␠␠world&quot; by (␠)" class="ms-4"/>
-<img src="/img/3-lists/split-word.png" title="split &quot;hello␠␠␠␠␠␠␠world&quot; by word" alt="split &quot;hello␠␠␠␠␠␠␠world&quot; by word" class="ms-4"/></p>
+<img src="/img/3-lists/split-word.png" title="split &quot;hello␠␠␠␠␠␠␠world&quot; by word" alt="split &quot;hello␠␠␠␠␠␠␠world&quot; by word" class="ms-4"/>
 
-<p>In one case, `split` is focusing on the exact characters
+In one case, `split` is focusing on the exact characters
 in the string. In the other case, it's giving you what you really want:
 the words in the contact's name. At a low level of abstraction, text is
 made of characters and you look through each of the characters. But at a
 higher level of abstraction (such as when you are reading), text is made
 up of words. Snap<em>!</em> lets you think at this higher level of
-abstraction.</p>
+abstraction.
 :::
 :::
 
@@ -88,8 +88,8 @@ are good at doing things with individual items in a list.
 </div>
 
 ::: vocabFullWidth
-<p>A <strong>higher-order function</strong> is a function that takes a
-function as input (or reports a function as output).</p>
+A **higher-order function** is a function that takes a
+function as input (or reports a function as output).
 :::
 :::
 
@@ -109,30 +109,30 @@ doing.</li>
 </ol>
 :::
 
-<p>The
+The
 <img src="/img/blocks/map.png" title="map &apos;reporter input slot&apos; over &apos;list input slot&apos;" alt="map &apos;reporter input slot&apos; over &apos;list input slot&apos;" class="inline"/>
 block takes two inputs: a function (a reporter with a blank input slot)
 and a list, and it reports a new list in which each item is the result
 of calling the function with an item from the original list as input.
 For example:<br />
 <img src="/img/3-lists/map-example-2.png" title="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" alt="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" class="ms-4"/><br />
-<img src="/img/3-lists/map-example-3.png" title="map (round ( )) over (list{3.14159, 87, 5.4}) reporting {3, 87, 5}" alt="map (round ( )) over (list{3.14159, 87, 5.4}) reporting {3, 87, 5}" class="ms-4"/></p>
+<img src="/img/3-lists/map-example-3.png" title="map (round ( )) over (list{3.14159, 87, 5.4}) reporting {3, 87, 5}" alt="map (round ( )) over (list{3.14159, 87, 5.4}) reporting {3, 87, 5}" class="ms-4"/>
 
 ::: takeNote
-<p><strong>You choose the function that describes the result for one
+**You choose the function that describes the result for one
 input item, and `map` applies that function to each item in
-the input list and then reports the list of result values.</strong> If
+the input list and then reports the list of result values.** If
 your function has `item 1 of` or `item 2 of` in
 it, you're probably trying to do `map`'s part of the
-job.<a name="HOFreview"> </a></p>
+job.<a name="HOFreview"> </a>
 
-<p>`Map` is a higher-order function just like
+`Map` is a higher-order function just like
 `keep` and `combine`. The function mapped over the
 list always has a blank input slot. This is where the list item goes
-each time the function is performed.</p>
+each time the function is performed.
 
 ::: endnote
-<p>
+
 
 This picture shows how the three higher-order functions could be
 used:<br />
@@ -147,9 +147,9 @@ procedures.</a>
 <img src="/img/3-lists/combine-list-figures.png" title="combine (list of figures) using (overlay ())" alt="combine (list of figures) using (overlay ())" class="ms-4"/>
 :::
 
-</p>
 
-<p>
+
+
 
 <a href="#hint-hofs-review" data-bs-toggle="collapse" title="Here is a quick review of higher-order functions.">Here
 is a quick review of the higher-order functions `map`,
@@ -179,7 +179,7 @@ that function. (You learned about `combine` on
 </ul>
 :::
 
-</p>
+
 :::
 :::
 
@@ -206,11 +206,11 @@ contacts.<br />
 a hint?</a>
 
 ::: {#hint-list-names .collapse}
-<p>First, create an expression to report a list of the names of all your
+First, create an expression to report a list of the names of all your
 contacts.<br />
 <img src="/img/3-lists/contact-list-list-view.png" title="contact list watcher in list view" alt="contact list watcher in list view" class="ms-4"/>
 [→]{style="padding-right: 1em; padding-left: 1em; font-size: 36px;"}
-<img src="/img/3-lists/names.png" title="list in list view containing three items: Betsy Anderson, Alphie Preston, Gamal Abdel" alt="list in list view containing three items: Betsy Anderson, Alphie Preston, Gamal Abdel"/></p>
+<img src="/img/3-lists/names.png" title="list in list view containing three items: Betsy Anderson, Alphie Preston, Gamal Abdel" alt="list in list view containing three items: Betsy Anderson, Alphie Preston, Gamal Abdel"/>
 :::
 :::
 
@@ -293,18 +293,18 @@ list.
 ::: prompt
 Which of the following statements are true about this list?<br />
 <img src="/img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="ms-4"/><br />
-Choose <strong>all</strong> that apply.
+Choose **all** that apply.
 
 ::: endnote
 <a href="#hint-capital-adt" data-bs-toggle="collapse" title="Why not use an ADT?">Why
 not use an ADT?</a>
 
 ::: {#hint-capital-adt .collapse}
-<p>The list inside a list shown above makes it clearest to you now as
+The list inside a list shown above makes it clearest to you now as
 you answer this self-check item what the structure is, but you're right,
 in an actual program it would be better to use an abstract data
 type:<br />
-<img src="/img/3-lists/capitals-adt-reporting.png" title="state: (Augusta) capital: (Maine)" alt="state: (Augusta) capital: (Maine)" class="ms-4"/></p>
+<img src="/img/3-lists/capitals-adt-reporting.png" title="state: (Augusta) capital: (Maine)" alt="state: (Augusta) capital: (Maine)" class="ms-4"/>
 :::
 :::
 :::
@@ -412,10 +412,10 @@ the correct responses. Need to fix. --MF, 1/13/21
 
 ::: {.assessment-data type="multiplechoice" identifier="squares_mapkeepcombine" hasinlinefeedback="true" maxchoices="8" responseidentifier="resp1" shuffle="true"}
 ::: prompt
-<p>Consider this list of squares: <br />
+Consider this list of squares: <br />
 <img src="/img/3-lists/squares.png" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" class="ms-4"/><br />
 Which of the following expressions will report a list? Choose all that
-apply.</p>
+apply.
 :::
 
 ::: {.choice identifier="c1"}
@@ -506,11 +506,11 @@ Abelson and Sussman. Creative Commons licensed.
 This is the list of employees of a small company. Each of the smaller
 lists contains a person's name, job title, and yearly salary.
 
-<p>"This company spends more money on the big bosses than on the people
+"This company spends more money on the big bosses than on the people
 who do the work," says Alyssa one day. Is she right? Write an expression
 to compute the total salaries of everyone paid less than \$100,000 per
 year. Then find the total for everyone paid more than \$100,000 per
-year.</p>
+year.
 
 </li>
 

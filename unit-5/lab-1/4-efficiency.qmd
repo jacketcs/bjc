@@ -9,8 +9,8 @@ order: 4
 :::
 
 ::: learn
-<p><strong>On this page</strong>, you will compare the time required for
-binary search and for linear search.</p>
+**On this page**, you will compare the time required for
+binary search and for linear search.
 
 ::: todo
 TG: Students compare these two algorithms in two ways: empirically (with
@@ -49,7 +49,7 @@ the input gets bigger?</li>
 </ol>
 :::
 
-<p>The actual amount of physical time that it takes to solve a problem
+The actual amount of physical time that it takes to solve a problem
 depends not only on your algorithm but also on how fast your computer is
 and what other programs you have running, etc. Therefore, computer
 scientists who want to measure the speed of an algorithm do it in terms
@@ -58,7 +58,7 @@ know about the efficiency of the `linear search` algorithm is
 how many times <var>current item</var> is compared to <var>value</var>
 (that is, how many times
 <img src="/img/5-algorithms/current-item=value.png" title="(current item) = (value)" alt="(current item) = (value)" class="inline py-0"/>
-is called).</p>
+is called).
 
 ::: forYouToDo
 <ol start="4">
@@ -92,19 +92,19 @@ can you count steps as a measure of time?</li>
 AAP-4.A.3
 :::
 
-<p>The relationship between the input size and the number of steps
-required to solve a problem is the <strong>efficiency</strong> of the
-algorithm used to solve the problem.</p>
+The relationship between the input size and the number of steps
+required to solve a problem is the **efficiency** of the
+algorithm used to solve the problem.
 :::
 
 ::: ap-standard
 AAP-4.A.4, AAP-4.A.5
 :::
 
-<p>Counting the number of steps, as you just did, is an
+Counting the number of steps, as you just did, is an
 <em>informal</em>, but perfectly good way to determine the efficiency of
 an algorithm. The <em>formal</em> measurement of an algorithm requires a
-mathematical proof.</p>
+mathematical proof.
 
 ::: takeNote
 In this course, you are mostly working with small problems, so it

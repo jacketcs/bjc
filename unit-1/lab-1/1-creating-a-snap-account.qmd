@@ -5,8 +5,6 @@ order: 1
 ---
 
 ::: learn
-**In this *lab*,** you'll program an app that you can share with others and play on your phone.
-
 **On this *page*,** you'll learn how to create your own account and how to log in and out.
 :::
 
@@ -14,7 +12,7 @@ order: 1
 
 :::: forYouToDo
 
-1. If you haven't already opened [snap]{.snap}, open it now: <a href="http://snap.berkeley.edu/run" title="Snap! Build Your Own Blocks" target="_blank"><strong>http://snap.berkeley.edu/run</strong></a>
+1. If you haven't already opened [snap]{.snap}, open it now: <a href="http://snap.berkeley.edu/run" title="Snap! Build Your Own Blocks" target="_blank">**http://snap.berkeley.edu/run**</a>
 
 <img src="/img/sys/dialog-cloud-signup.png" title="signing up for the cloud" alt="signing up for the cloud" class="float-end"/>
 
@@ -38,9 +36,9 @@ You may change your password at any time using the Cloud menu, <img src="/img/1-
 You should be logged in whenever you are in Snap<em>!</em>. Here's how to check if you are logged in:
 
 3. Click the Cloud menu in the tool-bar.
-- <strong>If</strong> it says "Logout" and your user name, then you are already logged in.
-- <strong>If</strong> it says someone else's user name, then log them out and log in with your own user name.
-- <strong>Otherwise</strong>, choose "Login..." and enter your user name and password.
+- **If** it says "Logout" and your user name, then you are already logged in.
+- **If** it says someone else's user name, then log them out and log in with your own user name.
+- **Otherwise**, choose "Login..." and enter your user name and password.
 
 4. Click to the next page to continue (navigation at the bottom of the page, or the left side bar)
 

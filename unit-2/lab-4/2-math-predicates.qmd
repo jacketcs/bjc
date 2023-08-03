@@ -5,7 +5,7 @@ order: 2
 ---
 
 ::: learn
-<strong>In this project</strong>, you will create a <em>library</em> (a
+**In this project**, you will create a <em>library</em> (a
 collection) of math tools that builds on the blocks you created in
 <a href="/unit-2/lab-3/2-combining-predicates.html" title="Lab 3 Page 2: Combining Predicates">Lab
 3 Page 2: Combining Predicates</a>.
@@ -18,14 +18,14 @@ AAP-2.M.3, AAP-3.D.3
 ::: vocabBig
 
 
-<p>A <strong>software library</strong> is a collection of procedures
-that can be used in programs.</p>
+A **software library** is a collection of procedures
+that can be used in programs.
 :::
 
-<p>Using <em>libraries</em> simplifies the development of new programs.
+Using <em>libraries</em> simplifies the development of new programs.
 When you use procedures that you already know work correctly, you reduce
 the amount of time you need to spend coding, the number of possible bugs
-your code can have, and how much of your project you need to test.</p>
+your code can have, and how much of your project you need to test.
 
 ::: {#first .forYouToDo}
 <ol>
@@ -35,20 +35,20 @@ your code can have, and how much of your project you need to test.</p>
 Export the mathematical blocks from your U2L3-Predicates project.
 
 ::: narrower
-<h4><strong>Exporting Blocks</strong></h4>
+<h4>**Exporting Blocks**</h4>
 
 <ol type="a">
 
-<li><strong>Open the Snap<em>!</em> project</strong> from which you want
+<li>**Open the Snap<em>!</em> project** from which you want
 to export blocks. (In this case, your U2L3-Predicates project.)</li>
 
-<li><strong>Choose "Export blocks..."</strong> from the Snap<em>!</em>
+<li>**Choose "Export blocks..."** from the Snap<em>!</em>
 file menu
 (<img src="/img/1-introduction/file_button.png" title="File menu button" alt="File menu button" class="inline"/>).</li>
 
 <li>
 
-<strong>Select only the block(s) you wish to export</strong>. (In this
+**Select only the block(s) you wish to export**. (In this
 case, you want
 <img src="/img/2-complexity/between.png" title="is () between () and ()?" alt="is () between () and ()?" class="inline py-0"/>,
 <img src="/img/blocks/less-than-or-equal.png" title="less than or equal" alt="less than or equal" class="inline py-0"/>,
@@ -69,7 +69,7 @@ Snap<em>!</em> libraries and Snap<em>!</em> projects are both exported
 as XML files.
 :::
 
-<li><strong>Click "OK."</strong> An XML file will download.</li>
+<li>**Click "OK."** An XML file will download.</li>
 
 </ol>
 :::
@@ -82,16 +82,16 @@ Import these blocks into your U2L4-MathLibrary project, test them and
 resolve any issues, and save.
 
 ::: narrower
-<h4><strong>Importing Blocks</strong></h4>
+<h4>**Importing Blocks**</h4>
 
 <ol type="a">
 
-<li><strong>Open the Snap<em>!</em> project</strong> into which you want
+<li>**Open the Snap<em>!</em> project** into which you want
 to import blocks. (In this case, your U2L4-MathLibrary project.)</li>
 
 <li>
 
-<strong>Import the XML file</strong> by dragging the XML file from your
+**Import the XML file** by dragging the XML file from your
 downloads folder into the Snap<em>!</em> window.
 
 ::: endnote
@@ -104,15 +104,15 @@ clicking "Open."
 
 <li>
 
-<strong>Test the blocks</strong> that you imported:
+**Test the blocks** that you imported:
 
 <ol>
 
-<li><strong>Find the imported block(s)</strong> at the <em>end</em> of
+<li>**Find the imported block(s)** at the <em>end</em> of
 the palettes that contain them.</li>
 
-<li><strong>Click each imported block to make sure it runs
-properly.</strong></li>
+<li>**Click each imported block to make sure it runs
+properly.**</li>
 
 </ol>
 
@@ -135,19 +135,19 @@ sentences...<br />
 :::
 
 ::: takeNote
-<h4><strong>Debugging Dependencies</strong></h4>
+<h4>**Debugging Dependencies**</h4>
 
 <img src="/img/2-complexity/even-obsolete.png" title="even? (number#){report(Obsolete!)}" alt="even? (number#){report(Obsolete!)}" class="float-end"/>
 
-<p>You created your `even?` block using another custom block,
+You created your `even?` block using another custom block,
 `divisible by?`. If you want to use `even?` in
 another project one day, you must export <em>both</em> blocks in order
-for `even?` to work properly.</p>
+for `even?` to work properly.
 
-<p>If you ever see this red `Obsolete!` block in code you
+If you ever see this red `Obsolete!` block in code you
 have imported, it means that a required block was not exported. You'll
 have to go back to the original project and export again being sure to
-select all of the blocks needed by the blocks you want.</p>
+select all of the blocks needed by the blocks you want.
 :::
 
 ::: forYouToDo
@@ -173,10 +173,10 @@ develop an `odd?` predicate for your library.<br />
 AAP-2.M.1, AAP-3.D.2
 :::
 
-<p>You can create algorithms from scratch or by combining or modifying
+You can create algorithms from scratch or by combining or modifying
 existing algorithms. When you are thinking of using existing code, you
 can either use your own code or use code from someone else's
-library.</p>
+library.
 
 ::: forYouToDo
 <ol start="4">
@@ -193,11 +193,11 @@ block (using `keep`), and use it to answer these questions:
 
 <ul style="list-style-type: disc">
 
-<li><strong>What kinds of numbers have an odd number of
-divisors?</strong></li>
+<li>**What kinds of numbers have an odd number of
+divisors?**</li>
 
-<li><strong>What kinds of numbers have exactly two
-divisors?</strong></li>
+<li>**What kinds of numbers have exactly two
+divisors?**</li>
 
 </ul>
 
@@ -255,11 +255,11 @@ questions that were introduced above:
 
 <ul style="list-style-type: disc">
 
-<li><strong>What kinds of numbers have an odd number of
-divisors?</strong></li>
+<li>**What kinds of numbers have an odd number of
+divisors?**</li>
 
-<li><strong>What kinds of numbers have exactly two
-divisors?</strong></li>
+<li>**What kinds of numbers have exactly two
+divisors?**</li>
 
 </ul>
 
@@ -286,41 +286,41 @@ divisors?</li>
 </ol>
 :::
 
-<p>You've now made a small library, and you might want to write a list
+You've now made a small library, and you might want to write a list
 of instructions for how to use the functions in your library (for
 example, `divisors of` takes a positive integer as input and
 reports a list of numbers). The instructions form an <em>Application
-Program Interface</em> for the library.</p>
+Program Interface</em> for the library.
 
 ::: vocabFullWidth
-: <strong>APIs</strong>
+: **APIs**
 
 ::: ap-standard
 AAP-3.D.4, AAP-3.D.5
 :::
 
-<p>An <strong>application program interface (API)</strong> documents
+An **application program interface (API)** documents
 what a programmer needs to know about using a library: it's a
 description of each procedure's purpose, inputs, and outputs (but not
-its algorithms).</p>
+its algorithms).
 
 ::: endnote
 <a href="#hint-webAPI" data-bs-toggle="collapse" title="What is a Web API?">What
 is a Web API?</a>
 
 ::: {#hint-webAPI .collapse}
-<p>A common kind of API is a <em>web API</em> in which the library
+A common kind of API is a <em>web API</em> in which the library
 exists on someone else's computer. For example, the
 <a href="https://developers.google.com/maps/documentation/embed/start" title="Google Maps API" target="_blank">Google
 Maps API</a> describes how to embed a Google Map on your own
-website.</p>
+website.
 
 ::: todo
 I'm actually inclined to cut all the rest of this yellow box. --MF,
 1/15/20
 :::
 
-<p>
+
 
 A web API is just a call to a procedure on another machine. For example,
 these are three different notations for the same procedure call, which
@@ -344,7 +344,7 @@ looks up the number of searches for "BJC" in the US:
 The only difference is that the URL shows where on the Internet to find
 the procedure.
 
-</p>
+
 :::
 :::
 :::

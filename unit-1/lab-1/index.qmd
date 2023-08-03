@@ -1,0 +1,23 @@
+---
+title: "Lab 1: Click Alonzo Game"
+subtitle: "Unit 1, Lab 1"
+gifffer: true
+order: 1
+---
+
+::: takeNote
+
+Instructions in these pages are always given very **concretely**. Please *follow the steps closely*.
+
+:::
+
+::: learn
+
+**In this *lab*,** you'll learn the basics of the Snap<em>!</em> programming language by programming an app that you can share with others.
+
+<img title="demostration of the final product of the Click Alonzo Game" alt="demostration of the final product of the Click Alonzo Game" class="ms-4" data-gifffer="/img/1-introduction/U1ImageVideoAddendum_img/U1L1P6_AlonzoFading.gif"/>
+
+:::
+
+
+

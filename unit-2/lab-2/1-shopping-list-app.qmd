@@ -6,16 +6,16 @@ gifffer: true
 ---
 
 ::: learn
-<p><strong>In this lab,</strong> you will create tools for storing and accessing data.</p>
+**In this lab,** you will create tools for storing and accessing data.
 
-<p><strong>On this page,</strong> you will create a shopping list app.</p>
+**On this page,** you will create a shopping list app.
 :::
 
 ::: sidenoteBig
 Some programming languages use the word <em>array</em> instead of <em>list</em>.
 :::
 
-<p>Many computer applications---contact lists, playlists, calendars, reminders---involve manipulating <em>lists</em> of information using tools that search, sort, or change the items on the list. You've worked with lists before as you customized the gossip project.<br /></p>
+Many computer applications---contact lists, playlists, calendars, reminders---involve manipulating <em>lists</em> of information using tools that search, sort, or change the items on the list. You've worked with lists before as you customized the gossip project.<br />
 
 ::: examFullWidth
 
@@ -102,12 +102,12 @@ or <img src="/img/2-complexity/shoppinglist-full-list-assignment-blocktran.png" 
 
 ## Adding Items to a List
 
-<p>
+
 
 ::: vocabBig
 
 
-<p>An <strong>element</strong> is another name for an item in a list. (If the same value is in the list twice, that counts as two different elements.) Each element has a unique <em>index</em> (position) in the list.</p>
+An **element** is another name for an item in a list. (If the same value is in the list twice, that counts as two different elements.) Each element has a unique <em>index</em> (position) in the list.
 :::
 
 You can use the <img src="/img/blocks/insert.png" title="insert (thing) at (1) of &apos;list input slot&apos;" alt="insert (thing) at (1) of &apos;list input slot&apos;" class="inline"/> or <img src="/img/blocks/add.png" title="add (thing) to &apos;list input slot&apos;" alt="add (thing) to &apos;list input slot&apos;" class="inline"/> block to add elements to a list.
@@ -120,11 +120,11 @@ You can use the <img src="/img/blocks/insert.png" title="insert (thing) at (1) o
 
 </ul>
 
-</p>
 
 
 
-<p>Assigning a list to a variable lets you use one name to represent all the elements of a list as a unit.</p>
+
+Assigning a list to a variable lets you use one name to represent all the elements of a list as a unit.
 
 ::: examFullWidth
 
@@ -156,9 +156,9 @@ or <img src="/img/2-complexity/add-blocktran.png" title="APPEND(shoppingList, &a
 
 
 ::: sidenoteBig
-<p>You've seen the `ask` and `answer` blocks on <a href="/unit-2/lab-1/2-checking-player-guess.html" title="Unit 2 Lab 1 Page 2: Checking the Player's Guess">Unit 2 Lab 1 Page 2: Checking the Player's Guess</a>.</p>
+You've seen the `ask` and `answer` blocks on <a href="/unit-2/lab-1/2-checking-player-guess.html" title="Unit 2 Lab 1 Page 2: Checking the Player's Guess">Unit 2 Lab 1 Page 2: Checking the Player's Guess</a>.
 
-<p>You've worked with multiple sprites on <a href="/unit-1/lab-2/2-gossip.html" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unit 1 Lab 2 Page 2: Making Programs Talk</a>.</p>
+You've worked with multiple sprites on <a href="/unit-1/lab-2/2-gossip.html" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unit 1 Lab 2 Page 2: Making Programs Talk</a>.
 :::
 
 <li>Write a script for the "Add Item" button sprite so that when that sprite is clicked, it will `ask` the user for a new item, and then put the user's `answer` in the grocery list.</li>
@@ -180,7 +180,7 @@ or <img src="/img/2-complexity/add-blocktran.png" title="APPEND(shoppingList, &a
 </ol>
 :::
 
-<p>You can also remove items from a list using <img src="/img/blocks/delete.png" title="delete (1) of &apos;list input slot&apos;" alt="delete (1) of &apos;list input slot&apos;" class="inline"/>. The `delete` block takes an item number and a list as input and it removes the item at that position from the list.</p>
+You can also remove items from a list using <img src="/img/blocks/delete.png" title="delete (1) of &apos;list input slot&apos;" alt="delete (1) of &apos;list input slot&apos;" class="inline"/>. The `delete` block takes an item number and a list as input and it removes the item at that position from the list.
 
 ::: examFullWidth
 ::: pseudop
@@ -207,7 +207,7 @@ or <img src="/img/2-complexity/remove-blocktran.png" title="REMOVE(shoppingList,
 
 ::: examFullWidth
 ::: pseudop
-The items in a list are <em>values</em>, so <strong>you can use `item of` anywhere you can use any other expression</strong>. For example:
+The items in a list are <em>values</em>, so **you can use `item of` anywhere you can use any other expression**. For example:
 
 <ul>
 
@@ -275,11 +275,11 @@ or <img src="/img/2-complexity/assigning-element-to-element-blocktran.png" title
 :::
 
 ::: examFullWidth
-<p>When you run this script in Snap<em>!</em>, the second line of code assigns to <var>shopping list 2</var> the value of <var>shopping list</var> (that is, the same list, not a copy). So, the third line of code modifies <em>both</em> variables: <br /> <img src="/img/2-complexity/example-list-by-reference.png" title="set(shopping list) to (list(apple)(banana))
+When you run this script in Snap<em>!</em>, the second line of code assigns to <var>shopping list 2</var> the value of <var>shopping list</var> (that is, the same list, not a copy). So, the third line of code modifies <em>both</em> variables: <br /> <img src="/img/2-complexity/example-list-by-reference.png" title="set(shopping list) to (list(apple)(banana))
 set(shopping list 2) to (shopping list)
 add (carrot) to (shopping list)" alt="set(shopping list) to (list(apple)(banana))
 set(shopping list 2) to (shopping list)
-add (carrot) to (shopping list)" class="ms-4"/> <img src="/img/2-complexity/example-list-by-reference-stage.png" title="shopping list watcher showing the contents of the variable to be apple, banana, carrot; and the shopping list 2 watcher showing the contents of the variable to be apple, banana, carrot" alt="shopping list watcher showing the contents of the variable to be apple, banana, carrot; and the shopping list 2 watcher showing the contents of the variable to be apple, banana, carrot" class="ms-4"/><br /></p>
+add (carrot) to (shopping list)" class="ms-4"/> <img src="/img/2-complexity/example-list-by-reference-stage.png" title="shopping list watcher showing the contents of the variable to be apple, banana, carrot; and the shopping list 2 watcher showing the contents of the variable to be apple, banana, carrot" alt="shopping list watcher showing the contents of the variable to be apple, banana, carrot; and the shopping list 2 watcher showing the contents of the variable to be apple, banana, carrot" class="ms-4"/><br />
 
 
 
@@ -292,5 +292,5 @@ However on the exam, the statement
 makes a <em>copy</em> of the list. So modifying one of them <em>does not</em> modify the other.
 :::
 
-<p>The rules for how to use lists and how they behave differ depending on the programming language you are using.</p>
+The rules for how to use lists and how they behave differ depending on the programming language you are using.
 :::

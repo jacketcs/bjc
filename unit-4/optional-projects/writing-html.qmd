@@ -15,20 +15,20 @@ order: 10
 
 ```
 
-<p>Unlike Snap<em>!</em>, which is a <strong>general purpose</strong>
+Unlike Snap<em>!</em>, which is a **general purpose**
 programming language that can be used to develop a variety of
-algorithms, HTML is a <strong>special purpose</strong> programming
+algorithms, HTML is a **special purpose** programming
 language; it's designed for one specific task: designing web pages. HTML
 controls the layout and style of text and images on a webpage, but it
 doesn't allow for real programming like Snap<em>!</em> does. People use
-other languages like JavaScript to program algorithms into websites.</p>
+other languages like JavaScript to program algorithms into websites.
 
-<p>The fundamental skeleton of every HTML webpage looks like the code
+The fundamental skeleton of every HTML webpage looks like the code
 below. Browsers use HTTP to turn the HTML into the site you see. Notice
-that most of the <strong>HTML tags</strong> (like `\<head\>`)
+that most of the **HTML tags** (like `\<head\>`)
 have a closing tag (like `\</head\>`) designating the end,
 and the relevant content goes between the two tags. (The color and
-ms-4ation improve readability but are not necessary.)</p>
+ms-4ation improve readability but are not necessary.)
 
 ```{=html}
 <pre class="ms-4" style="width:800px"><span class="purple">&lt;!DOCTYPE html&gt;</span>
@@ -84,7 +84,7 @@ right-clicking or control-clicking a page, or look around in menus like
 <li><img src="/img/icons/write-out-thoughts-mini.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="float-end"/>Look
 at the source code for a few different web pages and compare them to the
 pages. Make a list of the HTML formatting commands you can figure out.
-For example, what code makes text appear in <strong>bold</strong> or
+For example, what code makes text appear in **bold** or
 <em>italics</em>?</li>
 
 </ol>

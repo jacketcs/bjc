@@ -5,11 +5,11 @@ order: 1
 ---
 
 ::: learn
-<p><strong>In this lab,</strong> you will program procedures to carry
-out mathematical tasks.</p>
+**In this lab,** you will program procedures to carry
+out mathematical tasks.
 
-<p><strong>On this page,</strong> you create a predicate to check
-whether one number is divisible by another.</p>
+**On this page,** you create a predicate to check
+whether one number is divisible by another.
 :::
 
 ::: forYouToDo
@@ -31,12 +31,12 @@ block.
 
 <ol style="list-style-type:lower-roman;">
 
-<li><strong>Try various inputs</strong>.</li>
+<li>**Try various inputs**.</li>
 
-<li><strong>Keep the second number constant</strong>, and try various
+<li>**Keep the second number constant**, and try various
 inputs for the first number.</li>
 
-<li><strong>Form a hypothesis.</strong> What do you notice?</li>
+<li>**Form a hypothesis.** What do you notice?</li>
 
 </ol>
 
@@ -46,7 +46,7 @@ inputs for the first number.</li>
 :::
 
 ::: takeNote
-The `mod` block <strong>reports the remainder</strong> when
+The `mod` block **reports the remainder** when
 the first input is divided by the second. For example,
 <img src="/img/1-introduction/17-mod-5.png" title="(17) mod (5)" alt="(17) mod (5)"/>
 reports 2 because when 17 is divided by 5, the remainder is 2. When one
@@ -63,7 +63,7 @@ inputs to the mod function. So you won't see any negative numbers used
 with mod on the exam.
 :::
 
-<strong>The `mod` operator:</strong> The expression
+**The `mod` operator:** The expression
 <img src="/img/1-introduction/17-mod-5.png" title="(17) mod (5)" alt="(17) mod (5)" class="inline py-0"/>
 would be written as
 
@@ -135,7 +135,7 @@ AAP-2.L.2
 :::
 
 ::: pseudop
-<strong>Order of operations:</strong> In a block language, the nesting
+**Order of operations:** In a block language, the nesting
 of blocks determines the order of operations. For example, in
 <img src="/img/6-computers/3-times(5+4).png" title="3 × (5 + 4)" alt="3 × (5 + 4)" class="inline py-0"/>
 you can <em>see</em> that the `+` block is an input to the
@@ -193,16 +193,16 @@ that tests whether its input is even (divisible by 2).<br />
 ::: atworkFullWidth
 <img src="/img/atwork/Katherine_Johnson.jpg" title="photo of Katherine Johnson" alt="photo of Katherine Johnson" class="noshadow float-end" height="200px"/>
 
-<p>Katherine Johnson (1918--2020) was an aerospace technologist with a
+Katherine Johnson (1918--2020) was an aerospace technologist with a
 Ph.D. in mathematics who worked for NASA calculating the motion of
 spacecraft. Johnson, originally hired as a human computer, verified the
 calculations of digital computers, helped calculate the trajectory of
 Apollo 11 (the first time humans walked on the Moon), worked on plans
 for a mission to Mars, and encouraged students to pursue careers in
-science, technology, engineering, and mathematics.</p>
+science, technology, engineering, and mathematics.
 
-<p><a href="https://www.youtube.com/watch?v=nKxgieXQ82w" title="NASA's memorial video: 'Katherine Johnson: An American Hero'" target="_blank">NASA's
-memorial video: "Katherine Johnson: An American Hero"</a></p>
+<a href="https://www.youtube.com/watch?v=nKxgieXQ82w" title="NASA's memorial video: 'Katherine Johnson: An American Hero'" target="_blank">NASA's
+memorial video: "Katherine Johnson: An American Hero"</a>
 :::
 
 ::: examFullWidth
@@ -264,10 +264,10 @@ turn clockwise(90)
 }" class="inline"/>
 :::
 
-<p>As in Snap<em>!</em>, if the condition
+As in Snap<em>!</em>, if the condition
 `(`<var>size</var>`) \> 15` is `true`,
 the code inside the `if` statement runs; if the condition is
-`false`, the code does not run.</p>
+`false`, the code does not run.
 :::
 
 ::: forYouToDo
@@ -458,10 +458,10 @@ useful.<br />
 
 <div class="takeItFurther">
 
-<p>
 
-Open your <strong>U2L3-Dots</strong> project, and save it again as
-<strong>U2L4-DotsTIF</strong>. Remind yourself about how the pictures
+
+Open your **U2L3-Dots** project, and save it again as
+**U2L4-DotsTIF**. Remind yourself about how the pictures
 are determined by the Boolean expression used.
 
 <ol type="A">

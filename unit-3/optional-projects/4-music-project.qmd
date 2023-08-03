@@ -10,19 +10,19 @@ This page needs KEEP SUCH THAT updated. --MF, 6/22/20
 :::
 
 ::: todo
-<p>PG: I'd very much want to have a map-onto-scale one. (I have an
+PG: I'd very much want to have a map-onto-scale one. (I have an
 example somewhere.) Kids who care about music will find the switches
 interesting, and even kids who claim not to be able to hear the
-differences will.</p>
+differences will.
 
-<p>BH: This is fine as far as it goes, but it calls out for more,
+BH: This is fine as far as it goes, but it calls out for more,
 starting with a note-name-to-midi-number reporter, and then making a
-round.</p>
+round.
 
-<p>MF: BH has reviewing to do (see TG)</p>
+MF: BH has reviewing to do (see TG)
 
-<p>This page has been renumbered; need to check if this throws off the
-numbering in the solutions or TG. --MF, 4/26/19</p>
+This page has been renumbered; need to check if this throws off the
+numbering in the solutions or TG. --MF, 4/26/19
 :::
 
 ::: todo
@@ -43,9 +43,9 @@ Looks and Sound page</a></li>
 :::
 
 ::: learn
-<p><strong>In this project,</strong> you will use the Snap<em>!</em>
+**In this project,** you will use the Snap<em>!</em>
 `play note` block to create music while you review abstract
-data types and higher-order functions.</p>
+data types and higher-order functions.
 :::
 
 ::: {#first .forYouToDo}
@@ -99,7 +99,7 @@ from 0 and 127. The number 60 represents middle C.
 </ol>
 
 ::: endnote
-<h4><strong>Need to Review?</strong></h4>
+<h4>**Need to Review?**</h4>
 
 ::: todo
 These need updating!! --MF, 4/5/19
@@ -131,13 +131,13 @@ These need updating!! --MF, 4/5/19
 <li>
 
 ::: sidenoteBig
-<p><em>Pitch</em> is the amount of highness or lowness of a musical
+<em>Pitch</em> is the amount of highness or lowness of a musical
 note; the pitch value goes in the first input slot of the `play
-note` block.</p>
+note` block.
 
-<p>The <em>length</em> of a note is the amount of time that the note
+The <em>length</em> of a note is the amount of time that the note
 plays (the number of beats); the length value goes in the second slot of
-`play note`.</p>
+`play note`.
 :::
 
 Create a `note` ADT to manage the pitch and length of each

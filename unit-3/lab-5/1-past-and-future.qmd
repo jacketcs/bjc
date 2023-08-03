@@ -5,15 +5,15 @@ order: 1
 ---
 
 ::: todo
-<p>pink box new. maybe discuss other todo also? --MF, 12/21/17 "Impact"
-is a noun. --bh</p>
+pink box new. maybe discuss other todo also? --MF, 12/21/17 "Impact"
+is a noun. --bh
 
-<p>MF: could use review/light revision; tough to have 2.17 SI labs back
-to back</p>
+MF: could use review/light revision; tough to have 2.17 SI labs back
+to back
 :::
 
 ::: todo
-<strong>JK: I don't have a place for this note from Brian</strong>: I'd
+**JK: I don't have a place for this note from Brian**: I'd
 like to say something, if we can make it understandable, about the way
 non-physical products (software, movies, etc.) distort the market for
 physical stuff (especially housing). People get rich on ideas, but you
@@ -23,12 +23,12 @@ not in the virtual-stuff business.
 :::
 
 ::: learn
-<p><strong>In this lab,</strong> you will consider the implications of
-computing to the workplace.</p>
+**In this lab,** you will consider the implications of
+computing to the workplace.
 
-<p><strong>On this page,</strong> you will discuss how technology has
+**On this page,** you will discuss how technology has
 changed jobs and how it may affect what jobs are available in the
-future.</p>
+future.
 :::
 
 ::: {#first .forYouToDo}
@@ -75,23 +75,23 @@ ideas with the class.
 :::
 :::
 
-<p>Angelica Ross (born 1980) is an American actress, businesswoman, and
+Angelica Ross (born 1980) is an American actress, businesswoman, and
 transgender rights advocate. After a turbulent youth, Angelica taught
 herself computer programming and graphic design and worked in web
 management. In 2014 she launched TransTech Social Enterprises, a
 nonprofit that helps people lift themselves out of poverty through
 technical training and digital work creating a social impact and
 bringing economic empowerment to marginalized trans and gender non
-conforming communities and members.</p>
+conforming communities and members.
 
-<p><a href="https://transtechsocial.org/about/" title="About Trans Tech Social Enterprises" target="_blank">About
-Trans Tech Social Enterprises</a></p>
+<a href="https://transtechsocial.org/about/" title="About Trans Tech Social Enterprises" target="_blank">About
+Trans Tech Social Enterprises</a>
 :::
 
-<p>Until recently, many economists argued that jobs lost through
+Until recently, many economists argued that jobs lost through
 automation would be replaced by new jobs controlling the machinery.
 Recent research has established that the number of new
 technology-control jobs is too small to make up for the jobs replaced by
 the technology. There <em>are</em> new jobs available, but they're not
 as good as the old ones; they are some or all of part-time, low-pay,
-short-term, or without benefits such as health insurance.</p>
+short-term, or without benefits such as health insurance.

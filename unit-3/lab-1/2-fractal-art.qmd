@@ -5,7 +5,7 @@ order: 2
 ---
 
 ::: learn
-<strong>In this project,</strong> you will nest `repeat`
+**In this project,** you will nest `repeat`
 blocks inside `repeat` blocks to generate complex
 pictures.<br />
 <img src="/img/2-complexity/U2ImageVideoAddendum_img/three-color-sierpinski.png" title="Red triangle with blue children and green grandchildren" alt="Red triangle with blue children and green grandchildren" class="ms-4" height="300"/><br />

@@ -44,10 +44,10 @@ On this page, you will learn about nested conditional statements.
 ::: vocabBig
 
 
-<p>A <strong>nested conditional statement</strong> is an `if` or `if else` statement inside another `if else` statement.</p>
+A **nested conditional statement** is an `if` or `if else` statement inside another `if else` statement.
 :::
 
-<p>Look back at the first two examples in the previous problem. Since the predicate expression <var>a</var> `=` <var>b</var> will report true when they are equal and false otherwise, it's unnecessary to use the nested conditional statement in the first example, and the second example using the predicate inside the `else` part is sufficient. Sometimes, however (especially when you aren't building a predicate), it can be helpful to use nested conditional statements.</p>
+Look back at the first two examples in the previous problem. Since the predicate expression <var>a</var> `=` <var>b</var> will report true when they are equal and false otherwise, it's unnecessary to use the nested conditional statement in the first example, and the second example using the predicate inside the `else` part is sufficient. Sometimes, however (especially when you aren't building a predicate), it can be helpful to use nested conditional statements.
 
 ::: forYouToDo
 <ol start="2">

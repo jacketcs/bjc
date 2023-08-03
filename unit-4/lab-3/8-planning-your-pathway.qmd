@@ -5,7 +5,7 @@ order: 8
 ---
 
 ::: learn
-<p><strong>On this page,</strong> ...</p>
+**On this page,** ...
 :::
 
 ::: todo
@@ -13,9 +13,9 @@ IOC-1.E.5: Human capabilities can be enhanced by collaboration via
 computing.<br />
 :::
 
-<p>
 
-</p>
+
+
 
 <h3>Finding Your Communities in Tech</h3>
 
@@ -221,7 +221,7 @@ in person.</li>
 
 <h3>Jobs and Income</h3>
 
-<p>Many of the above communities share job listings with the public.</p>
+Many of the above communities share job listings with the public.
 
 ::: forYouToDo
 <ol>
@@ -253,8 +253,8 @@ etc.)</li>
 
 <h3>Beyond Being a Programmer</h3>
 
-<p>Computers and programming is important to careers far beyond software
-engineers.</p>
+Computers and programming is important to careers far beyond software
+engineers.
 
 ::: forYouToDo
 <ol>

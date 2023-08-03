@@ -7,15 +7,15 @@ order: 4
 ::: learn
 <img src="/img/2-complexity/humpty-dumpty-tenniel.png" title="Humpty Dumpty on brick wall" alt="Humpty Dumpty on brick wall" class="float-end"/>
 
-<p><strong>In this project,</strong> you will use abstraction to draw a
-brick wall.</p>
+**In this project,** you will use abstraction to draw a
+brick wall.
 
 <img src="/img/abstraction/new-brickwall/wall.png" title="Sample image of brick wall" alt="Sample image of brick wall" class="ms-4" border="0"/>
 :::
 
 <h3>Drawing One Brick</h3>
 
-<p>
+
 
 A picture of a brick is just a rectangle with a brick red color.
 However, there's no `draw rectangle` block in [snap]{.snap}.
@@ -31,7 +31,7 @@ tool you make yourself when you need it.
 
 <img src="/img/2-complexity/U2ImageVideoAddendum_img/simpleBrickCode.png" title="draw brick, length:(length) width:(width){set pen size to(width); move(length) steps}" alt="draw brick, length:(length) width:(width){set pen size to(width); move(length) steps}" class="ms-4"/>
 
-</p>
+
 
 ::: {#first .forYouToDo}
 <ol>
@@ -44,19 +44,19 @@ determine what it will do.<br />
 Run the code. Does it do what you expected?</li>
 
 ::: endnote
-<p>Ordinarily, Snap<em>!</em> draws rounded ends on thick lines:
+Ordinarily, Snap<em>!</em> draws rounded ends on thick lines:
 <img src="/img/2-complexity/U2ImageVideoAddendum_img/round-ends.png" title="line with round ends" alt="line with round ends" class="py-0"/>.
 That's often the best choice, and you can see why below. But for bricks,
 we want <em>flat</em> line ends:
 <img src="/img/2-complexity/U2ImageVideoAddendum_img/flat-ends.png" title="flat line ends" alt="flat line ends" class="py-0"/>,
 and so we'll use
 <img src="/img/blocks/set-flat-line-ends.png" title="set (flat line ends) to &apos;predicate input slot&apos;" alt="set (flat line ends) to &apos;predicate input slot&apos;"/>
-to turn on flat line ends.</p>
+to turn on flat line ends.
 
 :::: {.grid}
 ::: g-col-6
-<img src="/img/2-complexity/flat-line-ends-why.jpg" title="Square with flat line ends versus square with round line ends" alt="Square with flat line ends versus square with round line ends"/><br /><strong>flat</strong>
-vs. <strong>rounded</strong> line ends
+<img src="/img/2-complexity/flat-line-ends-why.jpg" title="Square with flat line ends versus square with round line ends" alt="Square with flat line ends versus square with round line ends"/><br />**flat**
+vs. **rounded** line ends
 :::
 
 ::: g-col-6
@@ -70,56 +70,56 @@ vs. <strong>rounded</strong> line ends
 :::
 
 ::: vocabFullWidth
-: <strong>Abstraction</strong>
+: **Abstraction**
 
 ::: ap-standard
 AAP-3.B.1, AAP-3.B.5
 :::
 
-<p>As you learned in
+As you learned in
 <a href="/unit-1/lab-2/2-gossip.html" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unit
-1 Lab 2 Page 2: Making Programs Talk</a>, <strong>procedural
-abstraction</strong> is the process of developing a program by breaking
-up a large problem into smaller sub-problems.</p>
+1 Lab 2 Page 2: Making Programs Talk</a>, **procedural
+abstraction** is the process of developing a program by breaking
+up a large problem into smaller sub-problems.
 
-<p>Creating a `draw brick` block lets you think in terms of a
+Creating a `draw brick` block lets you think in terms of a
 procedure with a name related to the problem you are solving. This makes
 your code easier to read, and once you've coded and debugged the block,
 you don't need to think about how it works each time you use it. That's
-the beauty of procedural abstraction.</p>
+the beauty of procedural abstraction.
 :::
 
 <h3>Using Modularity</h3>
 
-<p>You'd like the "top level" block to be something like this:<br />
+You'd like the "top level" block to be something like this:<br />
 <img src="/img/2-complexity/U2ImageVideoAddendum_img/draw-brick-wall-7.png" title="draw brick wall, rows: (7)" alt="draw brick wall, rows: (7)" class="ms-4"/><br />
-Getting there involves <em>modularity</em>.</p>
+Getting there involves <em>modularity</em>.
 
 ::: vocabFullWidth
 ::: ap-standard
 AAP-3.B.2, AAP-3.B.3
 :::
 
-<p><strong>Modularity</strong> is the process of breaking a problem into
-smaller pieces. Modularity is a form of procedural abstraction.</p>
+**Modularity** is the process of breaking a problem into
+smaller pieces. Modularity is a form of procedural abstraction.
 :::
 
-<p>
+
 
 There are two kinds of rows, so you'll make blocks that specialize in
 each:
 
 <ul>
 
-<li><strong>Row A</strong>:
+<li>**Row A**:
 <img src="/img/abstraction/new-brickwall/row-a.png" title="Row A" alt="Row A" class="noshadow" border="0"/></li>
 
-<li><strong>Row B</strong>:
+<li>**Row B**:
 <img src="/img/abstraction/new-brickwall/row-b.png" title="Row B" alt="Row B" class="noshadow" border="0"/></li>
 
 </ul>
 
-</p>
+
 
 ::: {#second .forYouToDo}
 <ol start="2">
@@ -139,36 +139,36 @@ and
 much abstraction?</a>
 
 ::: {#hint-too-much .collapse}
-<p>It's possible to go overboard on abstraction and build so many blocks
+It's possible to go overboard on abstraction and build so many blocks
 that your program is just as cluttered as it would be without the custom
 blocks. But it <em>can</em> be useful to make a custom block even when
 its definition is just one built-in block. For example, to draw the
 mortar between blocks (the white gaps), you can just use `move (4)
 steps`, but it might make sense to define a `draw
-mortar` block that uses `move` inside it.</p>
+mortar` block that uses `move` inside it.
 
-<p>Why? You might later decide that four steps is the wrong thickness
+Why? You might later decide that four steps is the wrong thickness
 for mortar and you'd rather have five. Or you might want the mortar to
 be mortar-colored, slightly gray. With many `move (4) steps`
 instructions scattered through your program, you would have to find and
 change each one. To make matters worse, your complete project might have
 `move` blocks that <em>aren't</em> about mortar. But with a
 `draw mortar` block, you can change just its definition, and
-all the mortar in your picture will be changed.</p>
+all the mortar in your picture will be changed.
 :::
 :::
 
 <li>
 
 The two kinds of rows should be exactly the same length. Your first try
-at drawing Row B is probably a little too long. <strong>If so, debug
-it.</strong>
+at drawing Row B is probably a little too long. **If so, debug
+it.**
 
 ::: endnote
-<p>Debug by thinking about what you are trying to accomplish, not about
+Debug by thinking about what you are trying to accomplish, not about
 your code.
 <a href="#hint-debug" data-bs-toggle="collapse" title="Debug by thinking about what you are trying to accomplish, not about your code. For example...">For
-example...</a></p>
+example...</a>
 
 ::: {#hint-debug .collapse}
 <ul>

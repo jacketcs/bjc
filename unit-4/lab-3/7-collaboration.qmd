@@ -5,8 +5,8 @@ order: 7
 ---
 
 ::: learn
-<p><strong>On this page,</strong> you will learn how people use
-computing to enhance collaboration.</p>
+**On this page,** you will learn how people use
+computing to enhance collaboration.
 :::
 
 ::: ap-standard
@@ -18,9 +18,9 @@ computing.<br />
 IOC-1.E.5
 :::
 
-<p>The worldwide nature of the Internet both <em>requires</em> and
+The worldwide nature of the Internet both <em>requires</em> and
 <em>enables</em> collaborative design. Human capabilities can be
-enhanced by collaboration via computing.</p>
+enhanced by collaboration via computing.
 
 ::: todo
 CRD-1.A.3: Effective collaboration produces a computing innovation that
@@ -36,7 +36,7 @@ develop a program that fully incorporates these perspectives.
 CRD-1.A.3, CRD-1.A.5, CRD-1.A.6
 :::
 
-<p>
+
 
 <!--No part of that picture holds true today.-->
 
@@ -80,7 +80,7 @@ It's only partly to help catch out-and-out bugs; it also finds out early
 if some users are going to get angry about something the developers
 never considered.
 
-</p>
+
 
 ::: ap-standard
 CRD-1.A.4: Collaboration that includes diverse perspectives helps avoid
@@ -94,7 +94,7 @@ include bias<br />
 CRD-1.A.4, IOC-1.F.11(2)
 :::
 
-<p>Another reason a variety of people on the design team is desirable is
+Another reason a variety of people on the design team is desirable is
 to help avoid <em>bias</em> in the innovation. In some early testing of
 self-driving cars, it was found that they weren't good at detecting
 pedestrians who were people of color. This wasn't deliberate, of course;
@@ -102,7 +102,7 @@ the artificial intelligence program that detected pedestrians had been
 trained on a vast collection of photographs of people, in which all the
 people happened to be light-skinned. Luckily this problem was discovered
 in early testing, before the self-driving cars were really sent out on
-the road.</p>
+the road.
 
 ::: ap-standard
 CRD-1.B.1: Online tools support collaboration by allowing programmers to
@@ -113,30 +113,30 @@ share and provide feedback on ideas and documents.
 CRD-1.B.1 (next four paragraphs)
 :::
 
-<p>How do computers and the Internet enable collaboration? The way
+How do computers and the Internet enable collaboration? The way
 that's most taken for granted is the worldwide telephone system.
 Telephones are older than computers, but the early telephone systems
 didn't have area codes, let alone country codes. You could dial people
 in your town, but to call anyone else you had to ask an operator (a
 telephone company worker) to connect you by hand. Today, connecting
 telephone calls is done by computer, and you can dial just about any
-telephone on Earth yourself.</p>
+telephone on Earth yourself.
 
-<p>Computers are more visibly involved when you use virtual meeting
+Computers are more visibly involved when you use virtual meeting
 software. Skype, the best-known example, is free in the sense of not
 costing you money to use it (although not in the sense of giving you the
 right to see or modify the software). But Skype's free service degrades
 significantly if more than two or three people are on the call. Both
 Skype and other companies offer commercial virtual meeting software that
-can connect dozens of users with good quality.</p>
+can connect dozens of users with good quality.
 
-<p>Besides talking with each other, developers can collaborate on
+Besides talking with each other, developers can collaborate on
 <em>multi-author documents</em> using software that allows them to share
 the ownership of an online document. The best-known such system is
 Google Docs; like Skype, it's free in the money sense but not in the
-sense of sharing the software that implements it.</p>
+sense of sharing the software that implements it.
 
-<p>Systems that allow several people to edit the same document at the
+Systems that allow several people to edit the same document at the
 same time have the problem that one person's edits may contradict
 another person's. <em>Revision control systems,</em> of which the
 best-known is Git (free in both senses), support a more complicated but
@@ -149,7 +149,7 @@ synchronization until the conflicting text is resolved. The software
 also remembers the complete history of who changed what when, so it's
 possible to undo a change even if other parts of the document have
 changed since then. But succeeding with Git does require a certain level
-of expertise.</p>
+of expertise.
 
 ::: forYouToDo
 <ol>

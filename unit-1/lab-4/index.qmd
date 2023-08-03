@@ -1,0 +1,13 @@
+---
+title: "Lab 4: Protecting Your Privacy"
+subtitle: "Unit 1, Lab 4"
+---
+
+::: learn
+
+**In this lab,** you will learn about your digital privacy.
+
+:::
+
+
+

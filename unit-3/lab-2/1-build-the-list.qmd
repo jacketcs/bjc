@@ -5,19 +5,19 @@ order: 1
 ---
 
 ::: learn
-<p><strong>In this lab,</strong> you will develop a Contact List
-database application like the one on your phone.</p>
+**In this lab,** you will develop a Contact List
+database application like the one on your phone.
 
-<p><strong>On this page,</strong> you will develop an <strong>Abstract
-Data Type</strong> to store and access <em>contact data</em> (name,
-address, phone number, etc.).</p>
+**On this page,** you will develop an **Abstract
+Data Type** to store and access <em>contact data</em> (name,
+address, phone number, etc.).
 :::
 
 ::: takeNote
-<h4><strong>Preserve Privacy</strong></h4>
+<h4>**Preserve Privacy**</h4>
 
-<p>Snap<em>!</em> projects are not secure. Do not use your or your
-classmates' personal information.</p>
+Snap<em>!</em> projects are not secure. Do not use your or your
+classmates' personal information.
 :::
 
 <h3>Setting Up the Contact List</h3>
@@ -35,10 +35,10 @@ classmates' personal information.</p>
 :::
 
 ::: takeNote
-<h4><strong>Why global?</strong></h4>
+<h4>**Why global?**</h4>
 
-<strong>Multiple scripts</strong> across the project <strong>will use
-this variable</strong>, so it shouldn't be attached to just one script
+**Multiple scripts** across the project **will use
+this variable**, so it shouldn't be attached to just one script
 like a local, script variable.
 :::
 
@@ -89,14 +89,14 @@ contact.
 <li>
 
 ::: sidenoteBig
-<strong>Shortcut:</strong> You could paste the following text into the
+**Shortcut:** You could paste the following text into the
 "Make a block" window to build the block more quickly.
 
 <p style="margin-left:25px;">
 
 `contact with name: %name address: %address phone: %phone`
 
-</p>
+
 
 The percent (%) signs make those words become input variables.
 :::
@@ -126,32 +126,32 @@ You learned about input types and output types (domain and range) on
 2 Lab 3 Page 1: What's a Predicate?</a>.
 :::
 
-<p>It's important to make sure that your inputs to a function match the
+It's important to make sure that your inputs to a function match the
 expected input type. For example, the input type of `address from
 contact` matches the output type of `contact`; they are
-both of type "contact."</p>
+both of type "contact."
 
-<p>If you call `address from contact` with an input that
+If you call `address from contact` with an input that
 doesn't match, such as a <em>list</em> of contacts (for example, the
 <var>contact list</var> variable or the result of running
 `keep` and having a subset of that list), it's not going to
 work. That may sound obvious, but in fact, beginning programmers make
 mistakes like that all the time; you have to teach yourself to think
 about the input and output types of your functions every time you write
-or use one.</p>
+or use one.
 
-<p>That's also true about the inputs to the `contact`
+That's also true about the inputs to the `contact`
 constructor; you can't put something that isn't a name in the name input
-for `contact`.</p>
+for `contact`.
 :::
 
 ::: endnote
-<p>It's somewhat artificial to use the constructor as the input to a
+It's somewhat artificial to use the constructor as the input to a
 selector; these images are just examples to show what the selectors
 should be able to do when given a contact as input. In <em>your</em>
 program, the selectors will take an item from the contact list as input
 and output the correct piece of that contact, like this:<br />
-<img src="/img/3-lists/address-from-contact-item-1-of-contact-list-reporting.png" title="address from contact (item (1) of (contact list)) reporting &apos;123 Main St. #4, New York, NY 10001&apos;" alt="address from contact (item (1) of (contact list)) reporting &apos;123 Main St. #4, New York, NY 10001&apos;" class="ms-4"/></p>
+<img src="/img/3-lists/address-from-contact-item-1-of-contact-list-reporting.png" title="address from contact (item (1) of (contact list)) reporting &apos;123 Main St. #4, New York, NY 10001&apos;" alt="address from contact (item (1) of (contact list)) reporting &apos;123 Main St. #4, New York, NY 10001&apos;" class="ms-4"/>
 :::
 
 </li>
@@ -208,7 +208,7 @@ If you don't remember about table view and list view, revisit
 
 <img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"/>
 
-<li><strong>Debug</strong> any problems.</li>
+<li>**Debug** any problems.</li>
 
 </ol>
 

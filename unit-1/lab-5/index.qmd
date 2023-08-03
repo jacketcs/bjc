@@ -1,0 +1,18 @@
+---
+title: "Lab 5: Follow the Leader"
+subtitle: "Unit 1, Lab 5"
+gifffer: true
+---
+
+::: learn
+
+In many programs, the visual elements on the screen need to interact---follow each other, avoid each other, react a certain way when they meet each other, etc. 
+
+**In this lab,** you will program <em>two</em> sprites. One sprite will follow your mouse. The other sprite will chase the first. When they meet, they will have a short conversation.
+
+<img title="animation of a cartoon tiger chasing a cartoon bat that is following the mouse pointer" alt="animation of a cartoon tiger chasing a cartoon bat that is following the mouse pointer" class="ms-4" data-gifffer="/img/1-introduction/leader-follower-animation.gif"/>
+
+:::
+
+
+

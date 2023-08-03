@@ -5,12 +5,12 @@ order: 1
 ---
 
 ::: learn
-<p><strong>In this lab</strong>, you will use two different algorithms
+**In this lab**, you will use two different algorithms
 to search a list, and you will learn that algorithms are categorized by
-the time required to run them.</p>
+the time required to run them.
 
-<p><strong>On this page</strong>, you will modify your number guessing
-game from Unit 2 to make the computer do the guessing.</p>
+**On this page**, you will modify your number guessing
+game from Unit 2 to make the computer do the guessing.
 :::
 
 ::: {#first .forYouToDo}

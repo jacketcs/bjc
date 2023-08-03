@@ -6,7 +6,7 @@ gifffer: true
 ---
 
 ::: learn
-<strong>On this page,</strong> you will modify your existing `pinwheel` block so that you can use it to draw a variety of shapes.<br /> <img src="/img/1-introduction/assorted-pinwheels.png" title="assortment of pinwheels" alt="assortment of pinwheels" class="ms-4"/>
+**On this page,** you will modify your existing `pinwheel` block so that you can use it to draw a variety of shapes.<br /> <img src="/img/1-introduction/assorted-pinwheels.png" title="assortment of pinwheels" alt="assortment of pinwheels" class="ms-4"/>
 :::
 
 ## Adding Multiple Inputs
@@ -40,7 +40,7 @@ Review how to add an input at <a href="/unit-1/lab-3/3-blocks-with-inputs.html" 
 
 <ol>
 
-<li>Edit your `pinwheel` block, then click the "+" sign at the end to add an input <strong>label</strong> (<strong>choose "Title text"</strong>). Type `backup:` as shown below, and click "OK".</li>
+<li>Edit your `pinwheel` block, then click the "+" sign at the end to add an input **label** (**choose "Title text"**). Type `backup:` as shown below, and click "OK".</li>
 
 ::: endnote
 <a href="#hint-target" data-bs-toggle="collapse" title="Watch a video of steps a and b for adding the second input to the pinwheel block.">Watch a video of steps a and b.</a>
@@ -179,9 +179,9 @@ tells you that that line of the code is like a hat block; the variable name in t
 :::
 
 ::: takeNote
-### <strong>Debugging Tip: Organizing Your Code</strong>
+### **Debugging Tip: Organizing Your Code**
 
-One way to avoid having bugs in your program in the first place is to keep your code organized by deleting any unused scripts. You can use the <strong>clean up</strong> option by right-clicking (or control-clicking on a Mac) in the scripting area to organize your blocks. You can <strong>remove a block or script</strong> either by dragging it out of the scripting area and back to the palettes on the left or by choosing the "delete" option from the drop-down menu. <a href="#hint-organizing" data-bs-toggle="collapse" title="Click here for a video of cleaning up the scripting area and removing blocks.">Click here for a video</a>. (Note that this is different from the "delete block definition" option which will permanently delete a custom block and all its instances from your entire project.)<br />
+One way to avoid having bugs in your program in the first place is to keep your code organized by deleting any unused scripts. You can use the **clean up** option by right-clicking (or control-clicking on a Mac) in the scripting area to organize your blocks. You can **remove a block or script** either by dragging it out of the scripting area and back to the palettes on the left or by choosing the "delete" option from the drop-down menu. <a href="#hint-organizing" data-bs-toggle="collapse" title="Click here for a video of cleaning up the scripting area and removing blocks.">Click here for a video</a>. (Note that this is different from the "delete block definition" option which will permanently delete a custom block and all its instances from your entire project.)<br />
 
 ::: {#hint-organizing .collapse}
 <img src="/img/2-complexity/Debugging/cleanup-deleting.gif" title="Animation about deleting blocks by dragging them off to the palette or by choosing the delete option by right-clicking." alt="Animation about deleting blocks by dragging them off to the palette or by choosing the delete option by right-clicking." class="ms-4" height="500"/>

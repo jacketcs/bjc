@@ -5,7 +5,7 @@ order: 3
 ---
 
 ::: learn
-<strong>In this project</strong>, you will create mathematical blocks
+**In this project**, you will create mathematical blocks
 that combine several numbers, such as a `sum` block, which
 combines two numbers using addition: <br />
 <img src="/img/3-lists/sum-from-4-to-6-reporting.png" title="sum from (4) to (6) reporting 15" alt="sum from (4) to (6) reporting 15" class="ms-4"/>
@@ -25,33 +25,33 @@ input numbers):<br />
 </ol>
 :::
 
-<p>The
+The
 <img src="/img/blocks/combine.png" title="combine &apos;list input slot&apos; using &apos;reporter input slot&apos;" alt="combine &apos;list input slot&apos; using &apos;reporter input slot&apos;" class="inline"/>
 block takes two inputs: a list and an operation <em>with two
 inputs</em>, and it reports the result of combining all the elements in
 the input list using the input operation. For example, the expression
 below reports: 0 + 1 + 2.<br />
-<img src="/img/3-lists/combine-simple-example.png" title="combine (list {0, 1, 2}) with (()+()) reporting 3" alt="combine (list {0, 1, 2}) with (()+()) reporting 3" class="ms-4"/></p>
+<img src="/img/3-lists/combine-simple-example.png" title="combine (list {0, 1, 2}) with (()+()) reporting 3" alt="combine (list {0, 1, 2}) with (()+()) reporting 3" class="ms-4"/>
 
 ::: takeNote
-<p><strong>You choose the operation, and `combine` performs
+**You choose the operation, and `combine` performs
 that operation by <em>combining</em> all the items in the input list and
-then reports the result.</strong></p>
+then reports the result.**
 
-<p>Notice that the function used to <em>combine</em> the list items
+Notice that the function used to <em>combine</em> the list items
 always has two blank input slots. The `keep` block only needs
 one blank in its input function, but with `combine`, two are
-required.</p>
+required.
 :::
 
 ::: endnote
-<p>`Combine` is a <em>higher-order function</em>; it is a
+`Combine` is a <em>higher-order function</em>; it is a
 function that takes a function as input. You've seen another
 higher-order function already: `keep` (in
 <a href="/unit-2/lab-3/5-keeping-list-items.html" title="Keeping Items from a List">Unit
-2 Lab 3</a>).</p>
+2 Lab 3</a>).
 
-<p>
+
 
 Unlike `keep`, the `combine` function is only used
 with a few input functions.
@@ -59,7 +59,7 @@ with a few input functions.
 functions?</a>
 
 ::: {#hint-which-functions .collapse}
-<p>`Combine` is mostly used with <em>only these
+`Combine` is mostly used with <em>only these
 functions</em>:<br />
 <img src="/img/3-lists/plus.png" title="+" alt="+" class="ms-4"/>
 <img src="/img/3-lists/times.png" title="×" alt="×"/><br />
@@ -71,9 +71,9 @@ and the
 <img src="/img/3-lists/maximum.png" title="maximum of () ()" alt="maximum of () ()" class="inline"/>
 and
 <img src="/img/3-lists/minimum.png" title="minimum of () ()" alt="minimum of () ()" class="inline"/>
-blocks you've just written yourself.</p>
+blocks you've just written yourself.
 
-<p>
+
 
 <a data-bs-toggle="collapse" href="#hint-3">Why so few?</a>
 
@@ -87,10 +87,10 @@ yourself), but subtraction is not: (7 − 8) − 1 is different from
 would be ambiguous.
 :::
 
-</p>
+
 :::
 
-</p>
+
 :::
 
 ::: forYouToDo
@@ -116,8 +116,8 @@ of the items in a list:<br />
 about `average of list`</a>
 
 ::: {#hint-average .collapse}
-<p>First think: how do you calculate an average? Then think: what blocks
-could help you do that in Snap<em>!</em>?</p>
+First think: how do you calculate an average? Then think: what blocks
+could help you do that in Snap<em>!</em>?
 :::
 :::
 
@@ -130,12 +130,12 @@ could help you do that in Snap<em>!</em>?</p>
 AAP-2.M.2, AAP-2.O.4
 :::
 
-<p>`Average of list` and `sum of list` are
+`Average of list` and `sum of list` are
 procedures that you'll need repeatedly, so after a while, you just know
 how to write them, or you'll put them in a library, and you won't have
 to reinvent them each time. Finding the maximum or minimum value in a
 list and checking for divisibility are also commonly needed
-algorithms.</p>
+algorithms.
 
 ::: examFullWidth
 ::: ap-standard
@@ -158,11 +158,11 @@ command except that it includes a
 (like `report`). For example, this definition<br />
 
 ::: sidenote
-<p>In many languages (including Snap<em>!</em>) variables must be
+In many languages (including Snap<em>!</em>) variables must be
 <em>declared</em> in some way (in Snap<em>!</em>, you can click the
 "Make a variable" button or use the `script variables`
 block). But the AP's language doesn't include variable declarations, so
-you won't see them on the exam.</p>
+you won't see them on the exam.
 :::
 
 <img src="/img/3-lists/square-roots-definition.png" title="square roots of (number) {script variables (positive root), set (positive root) to ((sqrt) of (number))), report (list (positive root) ((-1) × positive root))" alt="square roots of (number) {script variables (positive root), set (positive root) to ((sqrt) of (number))), report (list (positive root) ((-1) × positive root))" class="ms-4"/><br />
@@ -283,7 +283,7 @@ code in second block of statements runs.
 
 ::: {.assessment-data type="multiplechoice" identifier="What is the value of x?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri5" shuffle="true"}
 ::: prompt
-<p>When will "Error. Invalid entry." be displayed?</p>
+When will "Error. Invalid entry." be displayed?
 
 ::: {.pre-container .ms-4}
 ```{=html}
@@ -412,7 +412,7 @@ and the NCTM presentation I'm giving. --MF, 8/12/19
 <li>
 
 ::: sidenote
-The <strong>greatest common divisor</strong> of two integers is the
+The **greatest common divisor** of two integers is the
 largest positive integer that is a divisor (a factor) of both integers.
 :::
 

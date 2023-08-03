@@ -7,25 +7,25 @@ order: 2
 
 
 ::: learn
-<p><strong>On this page,</strong> you will model the spread of a disease
-in a population.</p>
+**On this page,** you will model the spread of a disease
+in a population.
 
 <img title="Simulation of a disease spreading in a population.  A single infected individual eventually causes everyone to be infected." alt="Simulation of a disease spreading in a population.  A single infected individual eventually causes everyone to be infected." class="ms-4" data-gifffer="/img/5-algorithms/img_disease-spread/disease-spread.gif"/>
 
-<p><strong>Note:</strong> There was a disease spread simulation in BJC
+**Note:** There was a disease spread simulation in BJC
 long before covid-19, but we want to acknowledge that right now the
 spread of a disease isn't an abstract question. Everyone has been
 affected by isolation at home, and some students may have lost loved
 ones to this disease. Medical researchers do use simulations (much more
 complex than this one) to try to predict the future course of the
-disease.</p>
+disease.
 :::
 
-<p>Suppose you are a medical researcher and would like to understand the
+Suppose you are a medical researcher and would like to understand the
 factors that contribute to the spread of disease. In particular, you
 want to know the effect of population size on the time it takes for
 everyone to be infected, under the simplifying assumption that once
-infected, a person stays infected.</p>
+infected, a person stays infected.
 
 ::: {#first .forYouToDo}
 <ol>
@@ -40,10 +40,10 @@ frequently?</li>
 </ol>
 :::
 
-<p>You may not have enough data to test your hypothesis, and it would be
+You may not have enough data to test your hypothesis, and it would be
 unethical to induce the disease in a population just to gather new data.
 A simulation would allow you to test your hypotheses without the
-constraints of time, cost, and ethics.</p>
+constraints of time, cost, and ethics.
 
 ::: {#second .forYouToDo}
 <ol start="3">
@@ -85,17 +85,17 @@ that display the status of each clone</li>
 <li>
 
 ::: sidenoteBig
-<p>You learned how to clone a sprite in
+You learned how to clone a sprite in
 <a href="/unit-3/lab-1/5-building-tic-tac-toe.html" title="Unit 3 Lab 1 Page 5: Building a Tic-Tac-Toe Board">Unit
-3 Lab 1 Page 5: Building a Tic-Tac-Toe Board</a>.</p>
+3 Lab 1 Page 5: Building a Tic-Tac-Toe Board</a>.
 
-<p>The primitive block
+The primitive block
 <img src="/img/blocks/my-neighbors.png" title="my (neighbors)" alt="my (neighbors)" class="inline"/>
-reports a list of sprites that are near the sprite that uses it.</p>
+reports a list of sprites that are near the sprite that uses it.
 :::
 
-a `simulate disease` function <strong>for you to
-complete</strong> that takes three inputs: total population, percent
+a `simulate disease` function **for you to
+complete** that takes three inputs: total population, percent
 initially infected, and sprite speed; creates the clones that enact the
 simulation; and outputs the time until the entire population is infected
 
@@ -104,15 +104,15 @@ simulation; and outputs the time until the entire population is infected
 <li>an `initialize simulation` block that initializes the
 global variables and sets the parent sprite costume</li>
 
-<li>a `touching infected person?` predicate <strong>for you
-to complete</strong> that checks whether the current clone is being
+<li>a `touching infected person?` predicate **for you
+to complete** that checks whether the current clone is being
 exposed to the disease</li>
 
 <li>an `initialize clone` block that decides whether a clone
 will start out sick and positions it randomly on the stage</li>
 
-<li>a `when I start as a clone` script <strong>for you to
-complete</strong> that moves the clones until they are all infected</li>
+<li>a `when I start as a clone` script **for you to
+complete** that moves the clones until they are all infected</li>
 
 </ul>
 
@@ -130,10 +130,10 @@ in this simulation.</li>
 </ol>
 :::
 
-<p>You want to know the effect of population size on the time elapsed.
+You want to know the effect of population size on the time elapsed.
 Because there is some randomness in the simulation, you are going to get
 some variation in the reported time. (This isn't a bug; in real life,
-random events affect the elapsed time.)</p>
+random events affect the elapsed time.)
 
 ::: forYouToDo
 <ol start="6">
@@ -174,10 +174,10 @@ invalidate the conclusions you might draw?</li>
 </ol>
 :::
 
-<p>This is a simplified model. There are many things you could do to
+This is a simplified model. There are many things you could do to
 make the model more realistic. For example, you could make the infected
 people get better over time or some people could be immune to the
-disease, but you will always have to make some simplifications.</p>
+disease, but you will always have to make some simplifications.
 
 ::: takeItFurther
 <ol type="A">

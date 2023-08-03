@@ -6,7 +6,7 @@ gifffer: true
 ---
 
 ::: learn
-Now the game is challenging, but players can't tell how well they're doing because Alonzo jumps around whether the player clicks him or not. <strong>On this page</strong>, you will create a way for the player of your game to know how well they are doing.
+Now the game is challenging, but players can't tell how well they're doing because Alonzo jumps around whether the player clicks him or not. **On this page**, you will create a way for the player of your game to know how well they are doing.
 :::
 
 ## Confirming Whether Alonzo Was Clicked
@@ -14,12 +14,12 @@ Now the game is challenging, but players can't tell how well they're doing becau
 First, the person playing your game wants to know right away whether they succeeded at clicking Alonzo before he moved out of the way.
 
 ::: vocabFullWidth
-<strong>: Sprites and Costumes</strong>
+**: Sprites and Costumes**
 
 The Alonzo character is named after Alonzo Church, a major contributor to early computer science. In this project, there are three objects related to Alonzo:
 
-- One is a <em><strong>sprite</strong></em>, which is like an actor on the stage who knows how to do many different things, such as walk around the stage and speak the lines of the play.
-- The other two are <em><strong>costumes</strong></em>, picture that can be "worn" by a sprite.
+- One is a <em>**sprite**</em>, which is like an actor on the stage who knows how to do many different things, such as walk around the stage and speak the lines of the play.
+- The other two are <em>**costumes**</em>, picture that can be "worn" by a sprite.
 :::
 
 ::: forYouToDo
@@ -35,7 +35,7 @@ Program Alonzo to face the other way when clicked. <img src="/img/1-introduction
 The player will also want to know how much progress they have made in the game. The command <img src="/img/1-introduction/ghosteffect.png" title="change (ghost) effect by ()" alt="change (ghost) effect by ()"/> can control Alonzo's <em>transparency</em>.
 
 ::: vocabFullWidth
-The <strong>transparency</strong> of an image is how much you can see what's behind it. For example, here is the Alonzo sprite shown with three different transparencies (which have been set using the `ghost effect` block).<br /> <img src="/img/1-introduction/transparency2.png" title="three pictures of Alonzo, with ghost effect 0%, 25%, and 50%, on a background of a brick wall" alt="three pictures of Alonzo, with ghost effect 0%, 25%, and 50%, on a background of a brick wall" class="ms-4"/>
+The **transparency** of an image is how much you can see what's behind it. For example, here is the Alonzo sprite shown with three different transparencies (which have been set using the `ghost effect` block).<br /> <img src="/img/1-introduction/transparency2.png" title="three pictures of Alonzo, with ghost effect 0%, 25%, and 50%, on a background of a brick wall" alt="three pictures of Alonzo, with ghost effect 0%, 25%, and 50%, on a background of a brick wall" class="ms-4"/>
 :::
 
 ::: forYouToDo

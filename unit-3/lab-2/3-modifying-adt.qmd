@@ -5,29 +5,29 @@ order: 3
 ---
 
 ::: todo
-<p><strong>Purpose (do/learn; why this/here):</strong> Extend the ADT by
+**Purpose (do/learn; why this/here):** Extend the ADT by
 adding a `date` ADT, adapting the `contact` ADT to
-accept it, and adding more helper blocks.</p>
+accept it, and adding more helper blocks.
 
-<p>Can we cut all the commented out text on this page? --MF, 7/22/19</p>
+Can we cut all the commented out text on this page? --MF, 7/22/19
 
-<p>MARY: change the DATE ADT to use the correct ADT format. --MF,
-5/23/20</p>
+MARY: change the DATE ADT to use the correct ADT format. --MF,
+5/23/20
 
-<p>BRIAN: as a low priority (that is, after ALL the solutions for all
+BRIAN: as a low priority (that is, after ALL the solutions for all
 units and all optional projects are done), you want to add a "parse a
-date" TIF. --MF, 5/23/20</p>
+date" TIF. --MF, 5/23/20
 :::
 
 ::: learn
-<p><strong>On this page,</strong> you will develop an abstract data type
+**On this page,** you will develop an abstract data type
 (ADT) to store and access <em>dates</em>, and you will adapt your
 contact ADT to use it to store each contact's birthday.<br />
-<img src="/img/3-lists/contact-constructor-with-birthdate.png" title="contact with name: ... birthday: (date (July) (9) (2005))" alt="contact with name: ... birthday: (date (July) (9) (2005))" class="ms-4"/></p>
+<img src="/img/3-lists/contact-constructor-with-birthdate.png" title="contact with name: ... birthday: (date (July) (9) (2005))" alt="contact with name: ... birthday: (date (July) (9) (2005))" class="ms-4"/>
 :::
 
 ::: takeNote
-<p>As we add more complexity to contacts---birthday, work address, and
+As we add more complexity to contacts---birthday, work address, and
 so on---the location of each data point (such as the phone number)
 inside a contact might change. This is where an abstract data type
 helps. If you were to move the phone number as you refine your contact
@@ -35,15 +35,15 @@ ADT, you <em>could</em> fix every single block that uses the phone
 number, or if you have an ADT, you could just fix the one
 <em>selector</em> that chooses the phone number from the list. With that
 one change, all the other blocks using that selector will get the data
-they need automatically.</p>
+they need automatically.
 :::
 
 ::: ap-standard
 AAP-1.D.5
 :::
 
-<p>Notice that name, address, and text are strings, but birthdate is a
-list. You can combine elements of different types in a list.</p>
+Notice that name, address, and text are strings, but birthdate is a
+list. You can combine elements of different types in a list.
 
 ::: {#first .forYouToDo}
 <ol>
@@ -65,7 +65,7 @@ data as input and then reports a date as a list of three items. <br />
 <img src="/img/3-lists/date-constructor-in-day-selector-reporting.png" title="day from date: () reporting 9" alt="day from date: () reporting 9" class="ms-4"/>
 <img src="/img/3-lists/date-constructor-in-year-selector-reporting.png" title="year from date: () reporting 2005" alt="year from date: () reporting 2005" class="ms-4"/></li>
 
-<li><strong>Debug</strong> any problems with the constructor or
+<li>**Debug** any problems with the constructor or
 selectors.</li>
 
 </ol>
@@ -92,12 +92,12 @@ Adapt your "Add Contact" button to input this new type of contact into
 your list.
 
 ::: narrower
-<h4><strong>Adding Contacts with Birthdays</strong></h4>
+<h4>**Adding Contacts with Birthdays**</h4>
 
-<p>You could use several ask and answer blocks together with script
-variables.</p>
+You could use several ask and answer blocks together with script
+variables.
 
-<p>
+
 
 Another way is to use <em>abstraction</em> and create another helper,
 <img src="/img/3-lists/ask-birthdate.png" title="ask birthdate" alt="ask birthdate" class="inlinde"/>
@@ -115,7 +115,7 @@ that reports a list of the user's answers to these prompts:
 
 <img src="/img/3-lists/contact-constructor-with-date-with-helpers.png" title="contact with name: (ask name) address: (ask address) phone: (ask phone) birthdate: (ask birthdate)" alt="contact with name: (ask name) address: (ask address) phone: (ask phone) birthdate: (ask birthdate)" class="ms-4"/>
 
-</p>
+
 :::
 
 </li>
@@ -126,7 +126,7 @@ that reports a list of the user's answers to these prompts:
 
 <img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"/>
 
-<li><strong>Debug.</strong> Clear your `contact list`, and
+<li>**Debug.** Clear your `contact list`, and
 add a new few contacts with birthdays. Fix any problems.</li>
 
 </ol>

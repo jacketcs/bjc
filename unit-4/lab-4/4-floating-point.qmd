@@ -5,10 +5,10 @@ order: 4
 ---
 
 ::: todo
-<p>BH: Keep... But promote TIF A to a FYTD.</p>
+BH: Keep... But promote TIF A to a FYTD.
 
-<p>MF: lightly clean up to make the text more concise; do we really need
-to teach to this depth?</p>
+MF: lightly clean up to make the text more concise; do we really need
+to teach to this depth?
 :::
 
 ::: todo
@@ -17,18 +17,18 @@ do justice to these ideas without as much text and detail. --MF, 9/26/18
 :::
 
 ::: learn
-<p><strong>On this page,</strong> you'll learn how computers store
-numbers that are not integers.</p>
+**On this page,** you'll learn how computers store
+numbers that are not integers.
 :::
 
-<p>The way computers store numbers that are not integers is called
-<em>floating point</em>.</p>
+The way computers store numbers that are not integers is called
+<em>floating point</em>.
 
 ::: vocabFullWidth
-<p>Scientific notation (such as 2,350,000 = 2.35 × 10<sup>6</sup>) uses
+Scientific notation (such as 2,350,000 = 2.35 × 10<sup>6</sup>) uses
 powers of ten to represent very large or very small values.
-<strong>Floating point</strong> is the same idea but with powers of
-two.</p>
+**Floating point** is the same idea but with powers of
+two.
 :::
 
 ::: endnote
@@ -45,7 +45,7 @@ floating point for non-integer values.
 :::
 :::
 
-<p>
+
 
 ::: ap-standard
 AAP-1.A.4
@@ -65,18 +65,18 @@ you might choose to create an abstract data type `money, dollars: (
 ) cents: ( )` with two integer inputs so that you can control how
 the value is displayed.
 
-</p>
+
 
 ::: takeNote
 ::: ap-standard
 DAT-1.B.3
 :::
 
-<p>Floating point allows computers to store very large numbers and also
+Floating point allows computers to store very large numbers and also
 decimals, but the format still has a specific number of bits, and that
 limits the range of floating point values and mathematical operations
 just as with integers. However with floating point, values that exceed
-the limitation may result in <em>round off</em> errors instead.</p>
+the limitation may result in <em>round off</em> errors instead.
 :::
 
 ::: {#first .forYouToDo}
@@ -89,13 +89,13 @@ once with bignums on and once with bignums off.</li>
 </ol>
 :::
 
-<p>The decimal representation of ⅓ is 0.33333... It has infinitely many
+The decimal representation of ⅓ is 0.33333... It has infinitely many
 digits, so the closest you can come in floating point isn't
 <em>exactly</em> ⅓; it gets cut off after a while because your computer
-doesn't have enough memory.</p>
+doesn't have enough memory.
 
-<p>Roundoff errors can result in some pretty non-intuitive
-results...</p>
+Roundoff errors can result in some pretty non-intuitive
+results...
 
 
 
@@ -110,8 +110,8 @@ and then try
 </ol>
 :::
 
-<p>This isn't a bug in Snap<em>!</em>, which is correctly reporting the
-result computed by the floating point hardware.</p>
+This isn't a bug in Snap<em>!</em>, which is correctly reporting the
+result computed by the floating point hardware.
 
 ::: endnote
 <a href="#hint-roundoff" data-bs-toggle="collapse" title="How can such simple computations get wrong results?">How
@@ -129,11 +129,11 @@ higher representable value.
 :::
 :::
 
-<p>No matter how good the hardware is, certain kinds of computations are
+No matter how good the hardware is, certain kinds of computations are
 likely to give severe errors in floating point. One simple example is
 subtracting two numbers that are almost equal in value. The correct
 answer will be near zero, and if it's near enough, it will
-<em>underflow</em> and an exact zero might be reported.</p>
+<em>underflow</em> and an exact zero might be reported.
 
 ::: endnote
 <a href="#hint-killer" data-bs-toggle="collapse" title="Floating point errors can be very expensive and can even kill people">Floating
@@ -144,19 +144,19 @@ point errors can be very expensive and can even kill people.</a>
 Brian wants to add links to these references. --MF, 10/16/19
 :::
 
-<p>A notorious example is the fate of the Ariane rocket launched on June
+A notorious example is the fate of the Ariane rocket launched on June
 4, 1996 (European Space Agency 1996). In the 37th second of flight, the
 inertial reference system attempted to convert a 64-bit floating-point
 number to a 16-bit number, but instead triggered an overflow error which
 was interpreted by the guidance system as flight data, causing the
-rocket to veer off course and be destroyed.</p>
+rocket to veer off course and be destroyed.
 
-<p>The Patriot missile defense system used during the Gulf War was also
+The Patriot missile defense system used during the Gulf War was also
 rendered ineffective due to roundoff error (Skeel 1992, U.S. GAO 1992).
 The system used an integer timing register which was incremented at
 intervals of 0.1 s. However, the integers were converted to decimal
 numbers by multiplying by the binary approximation of 0.1,
-0.00011001100110011001100<sub>2</sub> = 209715/2097152.</p>
+0.00011001100110011001100<sub>2</sub> = 209715/2097152.
 
 As a result, after 100 hours (3.6 × 10<sup>6</sup> ticks), an error
 of 
@@ -167,26 +167,26 @@ continuously recycle itself instead of targeting properly. As a result,
 an Iraqi Scud missile could not be targeted and was allowed to detonate
 on a barracks, killing 28 people.
 
-<p><small>From <em>Analog and Digital Conversion</em>, by Wikibooks
+<small>From <em>Analog and Digital Conversion</em>, by Wikibooks
 contributors,
-<a href="https://en.wikibooks.org/wiki/Analog_and_Digital_Conversion/Fixed_Wordlength_Effects" title="Analog and Digital Conversion/Fixed Wordlength Effects" target="_blank">https://en.wikibooks.org/wiki/Analog_and_Digital_Conversion/Fixed_Wordlength_Effects</a></small></p>
+<a href="https://en.wikibooks.org/wiki/Analog_and_Digital_Conversion/Fixed_Wordlength_Effects" title="Analog and Digital Conversion/Fixed Wordlength Effects" target="_blank">https://en.wikibooks.org/wiki/Analog_and_Digital_Conversion/Fixed_Wordlength_Effects</a></small>
 :::
 :::
 
-<p>Computer arithmetic on <em>integers</em> is straightforward. Either
+Computer arithmetic on <em>integers</em> is straightforward. Either
 you get an exactly correct integer result or, if the result won't fit in
 (non-bignum) integer representation, you get an <em>overflow error</em>
 and the result is, usually, converted to floating point representation
-(as 30! was).</p>
+(as 30! was).
 
-<p>By contrast, computer arithmetic on <em>floating point numbers</em>
+By contrast, computer arithmetic on <em>floating point numbers</em>
 is hard to get exactly right. Prior to 1985, every model of computer had
 a slightly different floating point format, and all of them got wrong
 answers to certain problems. This situation was resolved by the
 <a href="https://en.wikipedia.org/wiki/IEEE_floating_point" target="_blank" title="IEEE 754">IEEE
 754 floating point standard</a>, which is now used by every computer
 manufacturer and has been improved several times since it was created in
-1985.</p>
+1985.
 
 ::: endnote
 <a href="#hint-alternatives" data-bs-toggle="collapse" title="There are alternatives to floating point">There
@@ -199,11 +199,11 @@ representations:
 
 <ul>
 
-<li><strong>Exact rationals.</strong> Two bignums, one for the numerator
+<li>**Exact rationals.** Two bignums, one for the numerator
 and one for the denominator, can be used to represent any fractional
 value exactly.</li>
 
-<li><strong>Binary coded decimal.</strong> A decimal digit can be
+<li>**Binary coded decimal.** A decimal digit can be
 represented in four bits, with a few four-bit combinations left over for
 a minus sign and a decimal point. A sequence of decimal digits of any
 length can be used to create decimal bignums, representing exactly any
@@ -211,7 +211,7 @@ fractional value that takes a finite number of decimal digits. This
 would avoid the 0.2+0.4 problem, but wouldn't work for problems
 involving ⅓.</li>
 
-<li><strong>Decimal floating point.</strong> If the binary coded decimal
+<li>**Decimal floating point.** If the binary coded decimal
 notation is extended with a four-bit code for "times ten to the power,"
 numbers in (base 10) scientific notation can be represented
 exactly.</li>
@@ -220,9 +220,9 @@ exactly.</li>
 :::
 :::
 
-<p>With bignums turned off, when a result is too large to be an integer,
+With bignums turned off, when a result is too large to be an integer,
 it is converted to floating point.<br />
-<img src="/img/4-internet/bang30.png" title="(30) ! reporting 2.6525285981219103e+32" alt="(30) ! reporting 2.6525285981219103e+32" class="ms-4"/></p>
+<img src="/img/4-internet/bang30.png" title="(30) ! reporting 2.6525285981219103e+32" alt="(30) ! reporting 2.6525285981219103e+32" class="ms-4"/>
 
 ::: forYouToDo
 <ol start="3">
@@ -233,11 +233,11 @@ it is converted to floating point.<br />
 </ol>
 :::
 
-<p><strong>What's going on?</strong> Although 200! is very large, it's
+**What's going on?** Although 200! is very large, it's
 not "infinity." This report is caused by the size limitation of the
 floating point format. If the result of a computation is bigger than
 than the range of numbers that can be stored, then the computer returns
-a special code that languages print as Infinity or ∞.</p>
+a special code that languages print as Infinity or ∞.
 
 ::: endnote
 In floating point, there are special codes for infinity, --infinity
@@ -265,11 +265,11 @@ similar to this.)</li>
 </ol>
 :::
 
-<p>
 
-<strong>How does a programming language know whether to interpret a bit
+
+**How does a programming language know whether to interpret a bit
 sequence as an integer, a floating point, a text string of Unicode
-characters, an instruction, or something else?</strong>
+characters, an instruction, or something else?**
 
 
 
@@ -277,7 +277,7 @@ Programming languages differ in how they do this, but there's always
 some <em>extra</em> bit sequence that encodes the <em>data type</em> of
 any sequence of bits that tells the computer how to interpret it.
 
-</p>
+
 
 ::: takeNote
 At the lowest level of software abstraction, <em>everything</em> in a
@@ -301,7 +301,7 @@ which is stored as a separate integer.</li>
 different languages use data types differently.</a>
 
 ::: {#hint-data-types .collapse}
-<p>In well-designed languages (those based on Scheme, for example), that
+In well-designed languages (those based on Scheme, for example), that
 data type code is attached to the value itself. In other languages, when
 you make a variable, you have to say what type of value it will contain,
 and the data type is attached to the <em>variable</em>, so you can't
@@ -314,11 +314,11 @@ you see things like:<br />
 In a language with <em>dynamic typing</em> (where you don't have to
 declare the types of variables) it's just as easy to make a list whose
 items are of different data types as it is to make one whose items are
-all the same type (all integers or all character strings, etc.)</p>
+all the same type (all integers or all character strings, etc.)
 
-<p>Snap<em>!</em> has strengths that many programming languages do not,
+Snap<em>!</em> has strengths that many programming languages do not,
 and it's very likely that your <em>next</em> computer science class will
-use one of those other languages.</p>
+use one of those other languages.
 :::
 :::
 

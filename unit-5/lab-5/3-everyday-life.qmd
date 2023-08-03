@@ -10,13 +10,13 @@ splitting this page). cut a FYTD that didn't make sense. --MF, 12/24/17
 :::
 
 ::: todo
-<p>MF: could use a review and perhaps a page cut</p>
+MF: could use a review and perhaps a page cut
 :::
 
 ::: learn
-<p><strong>On this page,</strong> you will learn how military
+**On this page,** you will learn how military
 technologies end up being used for civilian purposes and consider the
-ethics of working on military technologies.</p>
+ethics of working on military technologies.
 :::
 
 ::: todo
@@ -117,14 +117,14 @@ Look up the following:
 </ol>
 :::
 
-<p>Many technologies are developed for military purposes and turn out
-also to be useful for the rest of us.</p>
+Many technologies are developed for military purposes and turn out
+also to be useful for the rest of us.
 
 ::: forYouToDo
 <ol start="2">
 
-<li>Brainstorm as big a list as you can of <strong>dual-use
-technologies</strong>. (It doesn't count as dual-use if a technology
+<li>Brainstorm as big a list as you can of **dual-use
+technologies**. (It doesn't count as dual-use if a technology
 developed for everyone to use, such as the telephone, is useful to the
 military in the same way that it's useful to anyone.)</li>
 
@@ -147,7 +147,7 @@ This feels like it should be a separate page. --MF, 12/24/17
 :::
 :::
 
-<p>Mary Golda Ross (1908--2008) was a ground-breaking Native American
+Mary Golda Ross (1908--2008) was a ground-breaking Native American
 engineer and the first female employed by Lockheed, an American
 aerospace technology corporation. Ross was passionate about educating
 women and Native Americans and spent over ten years teaching while
@@ -155,10 +155,10 @@ earning her Master's degree in mathematics during the summer. Lockheed
 hired her as a mathematician in 1942. During her thirty-plus years
 there, Ross contributed to cutting-edge aerospace designs including
 concepts for interplanetary space travel, crewed and uncrewed
-Earth-orbiting flights, and orbiting satellites.</p>
+Earth-orbiting flights, and orbiting satellites.
 
-<p><a href="https://airandspace.si.edu/stories/editorial/mary-g-ross-aerospace-engineer" title="Article: Aerospace Engineer, Educator, and Advocate" target="_blank">Article:
-Aerospace Engineer, Educator, and Advocate</a></p>
+<a href="https://airandspace.si.edu/stories/editorial/mary-g-ross-aerospace-engineer" title="Article: Aerospace Engineer, Educator, and Advocate" target="_blank">Article:
+Aerospace Engineer, Educator, and Advocate</a>
 :::
 
 <h4>The
@@ -166,13 +166,13 @@ Aerospace Engineer, Educator, and Advocate</a></p>
 of Ethics and Professional Conduct</a> from the Association for
 Computing Machinery</h4>
 
-<strong>1. General Moral Imperatives</strong>
+**1. General Moral Imperatives**
 
-<p>As an ACM member I will...</p>
+As an ACM member I will...
 
-<p><strong>1.1 Contribute to society and human well-being.</strong></p>
+**1.1 Contribute to society and human well-being.**
 
-<p>This principle concerning the quality of life of all people affirms
+This principle concerning the quality of life of all people affirms
 an obligation to protect fundamental human rights and to respect the
 diversity of all cultures. An essential aim of computing professionals
 is to minimize negative consequences of computing systems, including
@@ -180,11 +180,11 @@ threats to health and safety. When designing or implementing systems,
 computing professionals must attempt to ensure that the products of
 their efforts will be used in socially responsible ways, will meet
 social needs, and will avoid harmful effects to health and
-welfare...</p>
+welfare...
 
-<p><strong>1.2 Avoid harm to others.</strong></p>
+**1.2 Avoid harm to others.**
 
-<p>"Harm" means injury or negative consequences, such as undesirable
+"Harm" means injury or negative consequences, such as undesirable
 loss of information, loss of property, property damage, or unwanted
 environmental impacts. This principle prohibits use of computing
 technology in ways that result in harm to any of the following: users,
@@ -192,7 +192,7 @@ the general public, employees, employers. Harmful actions include
 intentional destruction or modification of files and programs leading to
 serious loss of resources or unnecessary expenditure of human resources
 such as the time and effort required to purge systems of "computer
-viruses." ...</p>
+viruses." ...
 :::
 
 ::: forYouToDo

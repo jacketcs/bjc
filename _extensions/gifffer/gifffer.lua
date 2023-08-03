@@ -10,11 +10,3 @@ return {
     end
   end
 }
-
--- ```{=html}
--- <script type="text/javascript" src="/utilities/gifffer.min.js"></script>
--- ```
--- ```{=html}
--- 
--- ```
--- <link rel="stylesheet" type="text/css" href="/css/bjc-gifffer.css">

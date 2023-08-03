@@ -5,22 +5,22 @@ order: 3
 ---
 
 ::: todo
-<p>BH: Keep... But with my original wording in TIF A.</p>
+BH: Keep... But with my original wording in TIF A.
 
-<p>MF: lightly clean up to make the text more concise; do we really need
-to teach width and word??</p>
+MF: lightly clean up to make the text more concise; do we really need
+to teach width and word??
 :::
 
 ::: learn
-<p><strong>On this page,</strong> you'll learn how computers store
-nonnegative integers.</p>
+**On this page,** you'll learn how computers store
+nonnegative integers.
 :::
 
-<p>As you know, numbers show up everywhere in computer algorithms---even
+As you know, numbers show up everywhere in computer algorithms---even
 if numbers aren't the topic. For example, the user may be interested in
 a picture, but that picture is an abstraction over numbers. Numbers are
 also used to find a specific item in a list. Over the next several
-pages, you'll look more closely at numbers inside the computer.</p>
+pages, you'll look more closely at numbers inside the computer.
 
 ::: {#first .forYouToDo}
 <ol>
@@ -41,7 +41,7 @@ does it work? You first saw recursion on
 3 Lab 1 Page 2: Fractal Art</a>.
 :::
 
-<strong></strong> The <em>factorial</em> of a positive integer $n$ (written "$n!$") is the product of all the integers from 1
+**** The <em>factorial</em> of a positive integer $n$ (written "$n!$") is the product of all the integers from 1
 to $n$. For example:
 
 $$5! = 1 \times 2 \times 3 \times 4 \times 5 = 120$$
@@ -84,19 +84,19 @@ $= 265,252,859,812,191,030,000,000,000,000,000$.
 <h3>Fixed Width Computer Hardware</h3>
 
 ::: vocabBig
-<p><strong>width</strong>: the number of bits that a CPU processes at a
-time</p>
+**width**: the number of bits that a CPU processes at a
+time
 
-<p><strong>word</strong>: a binary sequence of that many bits</p>
+**word**: a binary sequence of that many bits
 :::
 
-<p>So why did Snap<em>!</em> display 20! in ordinary whole number
+So why did Snap<em>!</em> display 20! in ordinary whole number
 representation but 30! in scientific notation? Every computer model is
-designed with a certain<strong> width</strong>, the number of bits that
+designed with a certain** width**, the number of bits that
 the processor reads from memory or writes into memory at a time. That
-number of bits is called a <strong>word</strong>. As of 2016, most new
+number of bits is called a **word**. As of 2016, most new
 computers are 64 bits wide. The first microcomputer, sold in 1971, was
-four bits wide!</p>
+four bits wide!
 
 ::: endnote
 If you got an answer in scientific notation for 20!, you're using a
@@ -107,13 +107,13 @@ If you got an answer in scientific notation for 20!, you're using a
 DAT-1.B.1
 :::
 
-<p>A 64-bit word represents 2<sup>64</sup> different values. We use half
+A 64-bit word represents 2<sup>64</sup> different values. We use half
 for negative numbers, one for zero, and the rest for positives. Half of
 2<sup>64</sup> (which is 2<sup>63</sup> = 9,223,372,036,854,775,808) is
 about 9 × 10<sup>18</sup>. That means that the 19 digits of 20! just
 barely fit in a 64-bit word. But the 33 digits of 30! don't. So the
 computer hardware reports an <em>overflow</em> error, and Snap<em>!</em>
-computes an approximation.</p>
+computes an approximation.
 
 ::: endnote
 <a href="#hint-power-2" data-bs-toggle="collapse" title="Are processor widths always powers of two?">Are
@@ -140,18 +140,18 @@ whose factorial doesn't fit in a word?</li>
 <h3>Bignums</h3>
 
 ::: sidenote
-A multiple-word integer is called a <strong>bignum</strong>.
+A multiple-word integer is called a **bignum**.
 :::
 
 ::: ap-standard
 DAT-1.B.2
 :::
 
-<p>Why can't programming languages just use more than one word to
+Why can't programming languages just use more than one word to
 represent an integer? They can. It's just that a single machine language
 instruction can only add one-word numbers. A programming language must
 work a little harder to make addition work with multiple-word values.
-Not all languages do this, but the highest-level languages do.</p>
+Not all languages do this, but the highest-level languages do.
 
 ::: takeItFurther
 <img src="/img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff" class="float-end"/>
@@ -187,9 +187,9 @@ You can use bignums in any Snap<em>!</em> project by importing the
 "Bignums, exact rationals, complex #s" library.
 
 ::: todo
-<p>You learned to import libraries on the
+You learned to import libraries on the
 <a href="/unit-6/lab-1/04-software-libraries.html" title="The Software Domain: Libraries">Libraries</a>
-page.</p>
+page.
 
 They did not. --MF, 6/13/19
 :::
@@ -205,7 +205,7 @@ Now try `30!` again.<br />
 
 ::: endnote
 This (exactly correct) value is different from the (rounded off)
-<strong>floating point</strong> value above. (More about floating point
+**floating point** value above. (More about floating point
 in a moment.)
 :::
 

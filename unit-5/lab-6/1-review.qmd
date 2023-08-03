@@ -5,23 +5,23 @@ order: 1
 ---
 
 ::: todo
-<p>MF: Project still needs to be wrapped up and updated online</p>
+MF: Project still needs to be wrapped up and updated online
 :::
 
 ::: learn
-<p><strong>In this lab</strong>, you'll extend your
+**In this lab**, you'll extend your
 <a href="/unit-3/lab-3/1-find-ties.html" title="Tic-Tac-Toe program">Tic-Tac-Toe
-program</a> to make the computer play against you.</p>
+program</a> to make the computer play against you.
 
-<p><strong>On this page</strong>, you'll review the blocks in your
-previous Tic-Tac-Toe project.</p>
+**On this page**, you'll review the blocks in your
+previous Tic-Tac-Toe project.
 :::
 
 ::: forYouToDo
 <ol>
 
-<li>Open your <strong>U3L3-TicTacToe</strong> project, and save it as
-<strong>U5L6-TicTacToe</strong> so you'll still have your old version as
+<li>Open your **U3L3-TicTacToe** project, and save it as
+**U5L6-TicTacToe** so you'll still have your old version as
 a backup.</li>
 
 <li>

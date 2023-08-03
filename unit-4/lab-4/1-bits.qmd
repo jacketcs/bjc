@@ -5,32 +5,32 @@ order: 1
 ---
 
 ::: learn
-<p><strong>In this lab,</strong> you will explore how different kinds of
-information are represented in a computer.</p>
+**In this lab,** you will explore how different kinds of
+information are represented in a computer.
 
-<p><strong>On this page,</strong> you will learn about <em>bits</em>,
-the basic units of data in computing.</p>
+**On this page,** you will learn about <em>bits</em>,
+the basic units of data in computing.
 :::
 
 ::: vocab
-: <strong>Bit</strong>
+: **Bit**
 
 ::: ap-standard
 DAT-1.A.3
 :::
 
-<p>A <strong>bit</strong> is a single unit of data that can only have
+A **bit** is a single unit of data that can only have
 one of two values. We usually represent the two values as 0 (off) and 1
-(on).</p>
+(on).
 :::
 
-<p>As you probably know, information travels over wires inside the
+As you probably know, information travels over wires inside the
 computer, and each wire is either <em>on</em> or <em>off,</em> with no
 intermediate states allowed. This small piece of information is called a
-<strong>bit</strong>, the smallest possible unit of information in the
-digital domain.</p>
+**bit**, the smallest possible unit of information in the
+digital domain.
 
-<p>
+
 
 What does the value of a bit <em>mean</em>? By convention, the two
 states of a bit are interpreted as 0 and 1, but that doesn't mean they
@@ -48,13 +48,13 @@ have to represent numbers. A single bit can represent
 
 </ul>
 
-</p>
 
-<p>But what if the traffic light also needs a yellow value? It's
+
+But what if the traffic light also needs a yellow value? It's
 tempting to say that, for example, 0 volts on the wire means red, 1 volt
 means yellow, and 2 volts means green. Long ago, there were computers
 that worked that way, but there are good reasons to stick with two
-possible values per wire.</p>
+possible values per wire.
 
 ::: endnote
 <img src="/img/icons/read-more-mini.png" title="Read More" alt="Read More" class="inline"/>
@@ -64,13 +64,13 @@ good reasons?</a>
 ::: {#hint-bistable .collapse}
 <img src="/img/6-computers/transistor-curve.png" title="graph showing &apos;Input voltage&apos; on the horizontal axis and &apos;Output voltage&apos; on the vertical axis; the graph begins near the origin and remains nearly flat for a while, then it curves upward and becomes nearly straight again at this new angle, then it curves back down to nearly flat until the end; the lower flat region is labeled &apos;cutoff&apos; and colored blue; the central, inclined region is labeled &apos;linear&apos; and colored pink; the upper flat region is labeled &apos;saturation&apos; and colored blue" alt="graph showing &apos;Input voltage&apos; on the horizontal axis and &apos;Output voltage&apos; on the vertical axis; the graph begins near the origin and remains nearly flat for a while, then it curves upward and becomes nearly straight again at this new angle, then it curves back down to nearly flat until the end; the lower flat region is labeled &apos;cutoff&apos; and colored blue; the central, inclined region is labeled &apos;linear&apos; and colored pink; the upper flat region is labeled &apos;saturation&apos; and colored blue" class="float-start"/>
 
-<p>The fundamental building block of computer circuitry is the
+The fundamental building block of computer circuitry is the
 <em>transistor.</em> In a digital computer, the input to a transistor is
 either zero or whatever voltage represents one. But electrical circuits
 aren't perfect; the input may be a little larger or smaller than it
-should be.</p>
+should be.
 
-<p>This is a rough graph of the actual input-output behavior of a
+This is a rough graph of the actual input-output behavior of a
 transistor. Don't worry about the details; just notice the two blue
 <em>flat</em> parts of the graph.
 <!--With a very small input (cutoff) or a very large input (saturation), the output is relatively unchanged by small variations.-->
@@ -80,20 +80,20 @@ volts. Likewise within the "saturation" region, small input changes
 don't affect the output voltage; this output is interpreted as a
 <em>one</em>. This is how transistors are used as <em>switches</em> in a
 computer. If there were three flat parts of the curve, maybe we
-<em>would</em> have three possible values for each wire.</p>
+<em>would</em> have three possible values for each wire.
 
-<p>Transistors are versatile devices. When used in the middle, linear
+Transistors are versatile devices. When used in the middle, linear
 (pink) part of the graph, they're <em>amplifiers</em>; a small variation
 in input voltage produces a <em>large</em> variation in output voltage.
-That's how they're used to play music in a stereo.</p>
+That's how they're used to play music in a stereo.
 
 <p style="clear: both; height: 0px;">
 
-</p>
+
 :::
 :::
 
-<p>
+
 
 ::: ap-standard
 DAT-1.A.2
@@ -104,11 +104,11 @@ we need to represent more than two possible values. So, for the traffic
 light, we could use two bits:
 31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATgBBAEEAMQBBAEQASQBBAE0AUQBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBQAEEAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAEkAQQBCAGoAQQBHAHcAQQBZAFEAQgB6AEEASABNAEEAUABRAEEAaQBBAEcASQBBAGUAUQBCADAAQQBHAFUAQQBJAEEAQgBwAEEARwA0AEEAWgBBAEIAbABBAEcANABBAGQAQQBBAGkAQQBDAEEAQQBkAHcAQgBwAEEARwBRAEEAZABBAEIAbwBBAEQAMABBAEkAZwBBADAAQQBEAEEAQQBNAEEAQgB3AEEASABnAEEASQBnAEEAZwBBAEcARQBBAGIAQQBCAHAAQQBHAGMAQQBiAGcAQQA5AEEAQwBJAEEAWQB3AEIAbABBAEcANABBAGQAQQBCAGwAQQBIAEkAQQBJAGcAQQBnAEEASABNAEEAZABRAEIAdABBAEcAMABBAFkAUQBCAHkAQQBIAGsAQQBQAFEAQQBpAEEASABRAEEAWQBRAEIAaQBBAEcAdwBBAFoAUQBBAGcAQQBHADgAQQBaAGcAQQBnAEEARwBJAEEAYQBRAEIAdQBBAEcARQBBAGMAZwBCADUAQQBDAEEAQQBjAGcAQgBsAEEASABBAEEAYwBnAEIAbABBAEgATQBBAFoAUQBCAHUAQQBIAFEAQQBZAFEAQgAwAEEARwBrAEEAYgB3AEIAdQBBAEMAQQBBAGIAdwBCAG0AQQBDAEEAQQBkAEEAQgB5AEEARwBFAEEAWgBnAEIAbQBBAEcAawBBAFkAdwBBAGcAQQBIAE0AQQBhAFEAQgBuAEEARwA0AEEAWQBRAEIAcwBBAEMAQQBBAFkAdwBCAHYAQQBHAHcAQQBiAHcAQgB5AEEASABNAEEASQBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAbwBBAEMAQQBBAGMAdwBCAGoAQQBHADgAQQBjAEEAQgBsAEEARAAwAEEASQBnAEIAagBBAEcAOABBAGIAQQBBAGkAQQBEADQAQQBaAGcAQgBwAEEASABJAEEAYwB3AEIAMABBAEMAQQBBAFkAZwBCAHAAQQBIAFEAQQBQAEEAQQB2AEEASABRAEEAYQBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAGcAQQBJAEEAQgB6AEEARwBNAEEAYgB3AEIAdwBBAEcAVQBBAFAAUQBBAGkAQQBHAE0AQQBiAHcAQgBzAEEAQwBJAEEAUABnAEIAegBBAEcAVQBBAFkAdwBCAHYAQQBHADQAQQBaAEEAQQBnAEEARwBJAEEAYQBRAEIAMABBAEQAdwBBAEwAdwBCADAAQQBHAGcAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAbwBBAEMAQQBBAGMAdwBCAGoAQQBHADgAQQBjAEEAQgBsAEEARAAwAEEASQBnAEIAagBBAEcAOABBAGIAQQBBAGkAQQBEADQAQQBiAFEAQgBsAEEARwBFAEEAYgBnAEIAcABBAEcANABBAFoAdwBBADgAQQBDADgAQQBkAEEAQgBvAEEARAA0AEEAQwBnAEEAOABBAEMAOABBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBJAEEAQgB6AEEASABRAEEAZQBRAEIAcwBBAEcAVQBBAFAAUQBBAGkAQQBIAFEAQQBaAFEAQgA0AEEASABRAEEATABRAEIAaABBAEcAdwBBAGEAUQBCAG4AQQBHADQAQQBPAGcAQgB5AEEARwBrAEEAWgB3AEIAbwBBAEgAUQBBAE8AdwBBAGkAQQBEADQAQQBNAEEAQQBtAEEARwA0AEEAWQBnAEIAegBBAEgAQQBBAE8AdwBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBAGcAQQBIAE0AQQBkAEEAQgA1AEEARwB3AEEAWgBRAEEAOQBBAEMASQBBAGQAQQBCAGwAQQBIAGcAQQBkAEEAQQB0AEEARwBFAEEAYgBBAEIAcABBAEcAYwBBAGIAZwBBADYAQQBHAHcAQQBaAFEAQgBtAEEASABRAEEATwB3AEEAaQBBAEQANABBAEoAZwBCAHUAQQBHAEkAQQBjAHcAQgB3AEEARABzAEEATQBBAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEMAWQBBAGIAZwBCAGkAQQBIAE0AQQBjAEEAQQA3AEEASABJAEEAWgBRAEIAawBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBAGcAQQBIAE0AQQBkAEEAQgA1AEEARwB3AEEAWgBRAEEAOQBBAEMASQBBAGQAQQBCAGwAQQBIAGcAQQBkAEEAQQB0AEEARwBFAEEAYgBBAEIAcABBAEcAYwBBAGIAZwBBADYAQQBIAEkAQQBhAFEAQgBuAEEARwBnAEEAZABBAEEANwBBAEMASQBBAFAAZwBBAHcAQQBDAFkAQQBiAGcAQgBpAEEASABNAEEAYwBBAEEANwBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEMAQQBBAGMAdwBCADAAQQBIAGsAQQBiAEEAQgBsAEEARAAwAEEASQBnAEIAMABBAEcAVQBBAGUAQQBCADAAQQBDADAAQQBZAFEAQgBzAEEARwBrAEEAWgB3AEIAdQBBAEQAbwBBAGIAQQBCAGwAQQBHAFkAQQBkAEEAQQA3AEEAQwBJAEEAUABnAEEAbQBBAEcANABBAFkAZwBCAHoAQQBIAEEAQQBPAHcAQQB4AEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEASgBnAEIAdQBBAEcASQBBAGMAdwBCAHcAQQBEAHMAQQBlAFEAQgBsAEEARwB3AEEAYgBBAEIAdgBBAEgAYwBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEEAdgBBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBDAEEAQQBjAHcAQgAwAEEASABrAEEAYgBBAEIAbABBAEQAMABBAEkAZwBCADAAQQBHAFUAQQBlAEEAQgAwAEEAQwAwAEEAWQBRAEIAcwBBAEcAawBBAFoAdwBCAHUAQQBEAG8AQQBjAGcAQgBwAEEARwBjAEEAYQBBAEIAMABBAEQAcwBBAEkAZwBBACsAQQBEAEUAQQBKAGcAQgB1AEEARwBJAEEAYwB3AEIAdwBBAEQAcwBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAEkAQQBCAHoAQQBIAFEAQQBlAFEAQgBzAEEARwBVAEEAUABRAEEAaQBBAEgAUQBBAFoAUQBCADQAQQBIAFEAQQBMAFEAQgBoAEEARwB3AEEAYQBRAEIAbgBBAEcANABBAE8AZwBCAHMAQQBHAFUAQQBaAGcAQgAwAEEARABzAEEASQBnAEEAKwBBAEMAWQBBAGIAZwBCAGkAQQBIAE0AQQBjAEEAQQA3AEEARABBAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAbQBBAEcANABBAFkAZwBCAHoAQQBIAEEAQQBPAHcAQgBuAEEASABJAEEAWgBRAEIAbABBAEcANABBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEEAdgBBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBDAEEAQQBjAHcAQgAwAEEASABrAEEAYgBBAEIAbABBAEQAMABBAEkAZwBCADAAQQBHAFUAQQBlAEEAQgAwAEEAQwAwAEEAWQBRAEIAcwBBAEcAawBBAFoAdwBCAHUAQQBEAG8AQQBjAGcAQgBwAEEARwBjAEEAYQBBAEIAMABBAEQAcwBBAEkAZwBBACsAQQBEAEUAQQBKAGcAQgB1AEEARwBJAEEAYwB3AEIAdwBBAEQAcwBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAEkAQQBCAHoAQQBIAFEAQQBlAFEAQgBzAEEARwBVAEEAUABRAEEAaQBBAEgAUQBBAFoAUQBCADQAQQBIAFEAQQBMAFEAQgBoAEEARwB3AEEAYQBRAEIAbgBBAEcANABBAE8AZwBCAHMAQQBHAFUAQQBaAGcAQgAwAEEARABzAEEASQBnAEEAKwBBAEMAWQBBAGIAZwBCAGkAQQBIAE0AQQBjAEEAQQA3AEEARABFAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAbQBBAEcANABBAFkAZwBCAHoAQQBIAEEAQQBPAHcAQQBtAEEARwA0AEEAWQBnAEIAegBBAEgAQQBBAE8AdwBBAG0AQQBHADQAQQBZAGcAQgB6AEEASABBAEEATwB3AEEAbwBBAEgAVQBBAGIAZwBCADEAQQBIAE0AQQBaAFEAQgBrAEEAQwBrAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQQB2AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBBAHYAQQBIAFEAQQBZAFEAQgBpAEEARwB3AEEAWgBRAEEAKwBBAEEAPQA9AAoAcwB1AGYAZgBpAHgAOgA=:31b8e172-b470-440e-83d8-e6b185028602
 
-</p>
 
-<p>There are four possible combinations of two bits, so with two bits we
+
+There are four possible combinations of two bits, so with two bits we
 can represent up to four different values, even though we only need
-three for the traffic light.</p>
+three for the traffic light.
 
 ::: forYouToDo
 <ol>
@@ -124,10 +124,10 @@ many are there?</li>
 </ol>
 :::
 
-<p>Each added bit <em>doubles</em> the number of values you can
+Each added bit <em>doubles</em> the number of values you can
 represent. This means that <em>representing complex situations doesn't
 cost a lot of hardware</em>; ten bits is enough to represent over 1000
-distinct values.</p>
+distinct values.
 
 ::: forYouToDo
 <ol start="4">
@@ -143,19 +143,19 @@ to specify a digit 0-9)?</li>
 :::
 
 ::: vocabBig
-: <strong>Byte</strong> and <strong>Word</strong>
+: **Byte** and **Word**
 
 ::: ap-standard
 DAT-1.A.4
 :::
 
-<p>A <strong>byte</strong> is eight bits.</p>
+A **byte** is eight bits.
 
-<p>A <strong>word</strong> is a sequence of however many bits the CPU
-processes at a time. As of 2017, words are 32 or 64 bits.</p>
+A **word** is a sequence of however many bits the CPU
+processes at a time. As of 2017, words are 32 or 64 bits.
 :::
 
-<p>
+
 
 Bits aren't expensive, but what <em>is</em> expensive is the circuitry
 to let the programmer use exactly the smallest number of bits for a
@@ -169,25 +169,25 @@ should consider moving it to U6, but not tonight... -bh
 ```{=html}
 <!--
 <div class="endnote">
-<p><a href="#hint-ldb" data-bs-toggle="collapse">Some old computers did allow that.</a>
+<a href="#hint-ldb" data-bs-toggle="collapse">Some old computers did allow that.</a>
   <div id="hint-ldb" class="collapse">The PDP-10, that big blue computer you saw in Lab 1, had
   `ldb`
 (Load Byte) and
 `dpb`
-(Deposit Byte) machine language instructions that included operands (inputs, essentially) for the width of the desired byte (how many bits) as well as location operands for the exact memory position of those bits.</p>
-<p>This much control over the use of memory was great for a machine that would largely be programmed at the machine language level, the lowest possible level of abstraction in the software domain. As higher level languages grew in popularity, computer architecture designers learned that <em>compilers,</em> the programs that translate a high level language into the machine language that the computer can actually run, could generate more efficient translations if the machine language was as simple as possible, doing a few things really quickly rather than doing a lot of things at varying speeds.</p></div></div>
+(Deposit Byte) machine language instructions that included operands (inputs, essentially) for the width of the desired byte (how many bits) as well as location operands for the exact memory position of those bits.
+This much control over the use of memory was great for a machine that would largely be programmed at the machine language level, the lowest possible level of abstraction in the software domain. As higher level languages grew in popularity, computer architecture designers learned that <em>compilers,</em> the programs that translate a high level language into the machine language that the computer can actually run, could generate more efficient translations if the machine language was as simple as possible, doing a few things really quickly rather than doing a lot of things at varying speeds.</div></div>
 </div>
- <p>
+ 
 
  </div>  <!-- AC -->
 ```
 Instead, modern computers generally allow memory allocation in only two
-sizes: the <strong>byte</strong>, which is standardized at eight bits,
-and the <strong>word</strong>, which is defined as a sequence of however
+sizes: the **byte**, which is standardized at eight bits,
+and the **word**, which is defined as a sequence of however
 many bits the CPU processes at a time. As of 2017, words can be 32 bits
 or 64 bits wide, although most <em>new</em> computer models use 64 bits.
 
-</p>
+
 
 ::: takeNote
 ::: sidenote
@@ -195,22 +195,22 @@ The exact answer for 32 bits is 4,294,967,296 so this approximation is
 pretty close.
 :::
 
-<p>How many distinct values can be represented in 32 bits? You don't
+How many distinct values can be represented in 32 bits? You don't
 have to memorize the answer, because you can quickly approximate it
 using the fact that 2<sup><small>10</small></sup> = 1024, which is about
 1000. This means that every ten bits of width multiplies the number of
 values that can be represented by about 1000. So, 10 bits allows about a
 thousand values, 20 bits is about a million values, 30 bits is about a
 billion, and 32 bits allows over four billion values (because we double
-the billion two more times for the difference between 30 and 32).</p>
+the billion two more times for the difference between 30 and 32).
 
-<p>You might find this trick helpful on the AP exam.</p>
+You might find this trick helpful on the AP exam.
 :::
 
-<p>Four billion values sounds like it ought to be enough, but it's not
+Four billion values sounds like it ought to be enough, but it's not
 if you're an astronomer or a banker (or Google or Facebook). That's why
 we now have 64-bit computers, which as of 2019 are the standard. (Apple
-has just removed support for 32-bit programs from MacOS.)</p>
+has just removed support for 32-bit programs from MacOS.)
 
 ::: forYouToDo
 <ol start="7">
@@ -223,8 +223,8 @@ has just removed support for 32-bit programs from MacOS.)</p>
 
 <h3>Bytes and Characters</h3>
 
-<p>The main use of eight-bit bytes is to represent characters of
-text.</p>
+The main use of eight-bit bytes is to represent characters of
+text.
 
 ::: forYouToDo
 <ol start="8">
@@ -241,7 +241,7 @@ the eight-bit byte became standard. (Another reason is that computer
 circuitry can most easily deal with widths that are powers of two.)
 :::
 
-<p>Computers used six-bit-wide character codes for many years, but to
+Computers used six-bit-wide character codes for many years, but to
 have both <em>UPPER CASE</em> and <em>lower case</em> letters and
 punctuation requires seven bits. The first officially recognized
 character encoding was the seven bit ASCII (American Standard Code for
@@ -250,14 +250,14 @@ bit for error detection, which was taken over to include accented
 characters in Spanish, French, German, and some other European
 languages. For example, there is an accented character in the name of
 the main developer of Snap<em>!</em>, Jens Mönig, who is German. (The
-closest English sound is the "u" in "lunch.")</p>
+closest English sound is the "u" in "lunch.")
 
-<p>As the use of computers and the Internet spread around the world,
+As the use of computers and the Internet spread around the world,
 people wanted to be able to write Chinese, Japanese, Arabic, Kabyle,
 Russian, Tamil, etc. The <em>Unicode</em> character set supports about
 1900 languages, using 32 modern alphabets and 107 historical alphabets
 that are no longer in living use. The complete Unicode character set
-includes 136,755 characters.</p>
+includes 136,755 characters.
 
 ::: forYouToDo
 <ol start="9">
@@ -274,7 +274,7 @@ character?</li>
 <em>actual</em> computer representation of Unicode is complicated.</a>
 
 ::: {#hint-unicode .collapse}
-<p>The most straightforward representation of Unicode uses one 32-bit
+The most straightforward representation of Unicode uses one 32-bit
 word per character, which is more than enough. But program developers
 consider that an inefficient use of computer memory, and also, a lot of
 old software still in use was written when eight bits per character was
@@ -283,7 +283,7 @@ standard. So Unicode characters are generally represented in a
 characters occupy one byte, while other characters may require up to
 four bytes. (It's also possible to use a multi-byte sequence to tell
 your word processing software that you want to use one-byte or two-byte
-codes to represent a particular non-Latin alphabet.)</p>
+codes to represent a particular non-Latin alphabet.)
 :::
 :::
 

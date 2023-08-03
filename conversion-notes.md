@@ -62,3 +62,6 @@ find ./  -type f -path "*/unit-*/lab-*.html" -exec bash -c 'mv
 "$1" "${1%.html}.qmd"' _ {} \;
 ```
 
+## 6. Manual processing
+
+After changing most things, you may want to remove `html` specific syntax with markdown syntax. For example, changing `div` to `:::` enclosures, removing all `<p>` `</p>` tags, etc...

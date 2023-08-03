@@ -4,45 +4,45 @@ subtitle: "Unit 4, Lab 4, Page 5"
 order: 5
 ---
 
-<p>We've looked at how the number of bits used to represent an integer
+We've looked at how the number of bits used to represent an integer
 affects how big it can be. Now we turn to the specific way a single-word
-integer is encoded as bits.</p>
+integer is encoded as bits.
 
 ::: vocab
-: <strong>Bit</strong>
+: **Bit**
 
 ::: ap-standard
 DAT-1.A.3
 :::
 
-<p>The word "bit" is an abbreviation for <em><strong>bi</strong>nary
-digi<strong>t</strong>.</em></p>
+The word "bit" is an abbreviation for <em>**bi**nary
+digi**t**.</em>
 :::
 
 ::: ap-standard
 DAT-1.C.1
 :::
 
-<p>People generally use base ten (decimal) digits to write numbers.
-Computers use base two (binary).</p>
+People generally use base ten (decimal) digits to write numbers.
+Computers use base two (binary).
 
 ::: ap-standard
 DAT-1.C.3
 :::
 
-<p>In <strong>base 10</strong>, there are ten digits (0-9), and each
+In **base 10**, there are ten digits (0-9), and each
 place is worth <em>ten</em> times as much as the place to its right.
 <br />
-<img src="/img/4-internet/decimal-places.jpg" title="place values in decimal 3761: 3 1000&apos;s 7 100&apos;s 6 10&apos;s 1 1&apos;s" alt="place values in decimal 3761: 3 1000&apos;s 7 100&apos;s 6 10&apos;s 1 1&apos;s" class="ms-4 noshadow"/></p>
+<img src="/img/4-internet/decimal-places.jpg" title="place values in decimal 3761: 3 1000&apos;s 7 100&apos;s 6 10&apos;s 1 1&apos;s" alt="place values in decimal 3761: 3 1000&apos;s 7 100&apos;s 6 10&apos;s 1 1&apos;s" class="ms-4 noshadow"/>
 
 ::: ap-standard
 DAT-1.C.2
 :::
 
-<p>In <strong>binary, base 2</strong>, there are only two digits (0 and
+In **binary, base 2**, there are only two digits (0 and
 1), and each place is worth <em>two</em> times the place to its
 right.<br />
-<img src="/img/4-internet/binary-places.jpg" title="place values in binary 1101: 1 8&apos;s 1 4&apos;s 0 2&apos;s 1 1&apos;s" alt="place values in binary 1101: 1 8&apos;s 1 4&apos;s 0 2&apos;s 1 1&apos;s" class="ms-4 noshadow"/></p>
+<img src="/img/4-internet/binary-places.jpg" title="place values in binary 1101: 1 8&apos;s 1 4&apos;s 0 2&apos;s 1 1&apos;s" alt="place values in binary 1101: 1 8&apos;s 1 4&apos;s 0 2&apos;s 1 1&apos;s" class="ms-4 noshadow"/>
 
 ::: endnote
 The subscript 2 on 1101<sub>2</sub> means the 1101 is in base 2. Numbers
@@ -56,44 +56,44 @@ needed for clarity.
 DAT-1.C.5
 :::
 
-<p>In <strong>base 10</strong> notation, each place value represents a
-<strong>power of ten</strong>: the units place (10<sup>0</sup> = 1), the
+In **base 10** notation, each place value represents a
+**power of ten**: the units place (10<sup>0</sup> = 1), the
 tens place (10<sup>1</sup> = 10), the hundreds place (10<sup>2</sup> =
 100), the thousands place (10<sup>3</sup> = 1000), etc. So, for
-example:</p>
+example:
 
-<p>
+
 
 9827   =   9 × 10<sup>3</sup>  +  8 × 10<sup>2</sup>  +  2 ×
 10<sup>1</sup>  +  7 × 10<sup>0</sup>
 
-</p>
+
 
 ::: ap-standard
 DAT-1.C.4
 :::
 
-<p><img src="/img/4-internet/binary-places(18).jpg" title="place values in binary 10010: 1 16&apos;s 0 8&apos;s 0 4&apos;s 1 2&apos;s 0 1&apos;s" alt="place values in binary 10010: 1 16&apos;s 0 8&apos;s 0 4&apos;s 1 2&apos;s 0 1&apos;s" class="float-end"/>
-<strong>Base 2</strong> uses the same idea but with <strong>powers of
-two</strong> instead of powers of ten. Binary place values represent the
+<img src="/img/4-internet/binary-places(18).jpg" title="place values in binary 10010: 1 16&apos;s 0 8&apos;s 0 4&apos;s 1 2&apos;s 0 1&apos;s" alt="place values in binary 10010: 1 16&apos;s 0 8&apos;s 0 4&apos;s 1 2&apos;s 0 1&apos;s" class="float-end"/>
+**Base 2** uses the same idea but with **powers of
+two** instead of powers of ten. Binary place values represent the
 units place (2<sup>0</sup> = 1), the twos place (2<sup>1</sup> = 2), the
 fours place (2<sup>2</sup> = 4), the eights place (2<sup>3</sup> = 8),
-the sixteens place (2<sup>4</sup> = 16), etc. So, for example:</p>
+the sixteens place (2<sup>4</sup> = 16), etc. So, for example:
 
 <p align="center">
 
-10010<sub>2</sub>   =   <strong>1 × 2<sup>4</sup></strong>  +  0 ×
-2<sup>3</sup>  +  0 × 2<sup>2</sup>  +  <strong>1 ×
-2<sup>1</sup></strong>  +  0 × 2<sup>0</sup>   =   16  +  2   =  
+10010<sub>2</sub>   =   **1 × 2<sup>4</sup>**  +  0 ×
+2<sup>3</sup>  +  0 × 2<sup>2</sup>  +  **1 ×
+2<sup>1</sup>**  +  0 × 2<sup>0</sup>   =   16  +  2   =  
 18<sub>10</sub>
 
-</p>
+
 
 ::: takeNote
-<p>To translate from binary (for example, 101101<sub>2</sub>) to base
-10, <strong>first, write the number out on paper. Then write out the
-binary place values</strong> by <em>doubling left from the units
-place</em>:</p>
+To translate from binary (for example, 101101<sub>2</sub>) to base
+10, **first, write the number out on paper. Then write out the
+binary place values** by <em>doubling left from the units
+place</em>:
 
 ::: sidenoteBig
 101101<sub>2</sub> has only six digits, so we don't need powers of two
@@ -104,8 +104,8 @@ to the left of that.
 
 31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATQB3AEEAMgBBAEQAVQBBAE0AZwBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBQAEEAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAEkAQQBCAGoAQQBHAHcAQQBZAFEAQgB6AEEASABNAEEAUABRAEEAaQBBAEcASQBBAGUAUQBCADAAQQBHAFUAQQBJAEEAQgBwAEEARwA0AEEAWgBBAEIAbABBAEcANABBAGQAQQBBAGkAQQBDAEEAQQBjAHcAQgAxAEEARwAwAEEAYgBRAEIAaABBAEgASQBBAGUAUQBBADkAQQBDAEkAQQBkAEEAQgB5AEEARwBFAEEAYgBnAEIAegBBAEcAdwBBAFkAUQBCADAAQQBHAGsAQQBiAHcAQgB1AEEAQwBBAEEAYwBBAEIAeQBBAEcAOABBAFkAdwBCAGwAQQBIAE0AQQBjAHcAQQBnAEEARwBZAEEAYwBnAEIAdgBBAEcAMABBAEkAQQBCAGkAQQBHAGsAQQBiAGcAQgBoAEEASABJAEEAZQBRAEEAZwBBAEgAUQBBAGIAdwBBAGcAQQBHAEkAQQBZAFEAQgB6AEEARwBVAEEASQBBAEEAeABBAEQAQQBBAEkAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAG8AQQBDAEEAQQBjAHcAQgBqAEEARwA4AEEAYwBBAEIAbABBAEQAMABBAEkAZwBCAGoAQQBHADgAQQBiAEEAQQBpAEEARAA0AEEATQBRAEEAOABBAEMAOABBAGQAQQBCAG8AQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYQBBAEEAZwBBAEgATQBBAFkAdwBCAHYAQQBIAEEAQQBaAFEAQQA5AEEAQwBJAEEAWQB3AEIAdgBBAEcAdwBBAEkAZwBBAGcAQQBIAE0AQQBkAEEAQgA1AEEARwB3AEEAWgBRAEEAOQBBAEMASQBBAFoAZwBCAHYAQQBHADQAQQBkAEEAQQB0AEEASABjAEEAWgBRAEIAcABBAEcAYwBBAGEAQQBCADAAQQBEAG8AQQBiAGcAQgB2AEEASABJAEEAYgBRAEIAaABBAEcAdwBBAE8AdwBBAGkAQQBEADQAQQBNAEEAQQA4AEEAQwA4AEEAZABBAEIAbwBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBhAEEAQQBnAEEASABNAEEAWQB3AEIAdgBBAEgAQQBBAFoAUQBBADkAQQBDAEkAQQBZAHcAQgB2AEEARwB3AEEASQBnAEEAKwBBAEQARQBBAFAAQQBBAHYAQQBIAFEAQQBhAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAZwBBAEkAQQBCAHoAQQBHAE0AQQBiAHcAQgB3AEEARwBVAEEAUABRAEEAaQBBAEcATQBBAGIAdwBCAHMAQQBDAEkAQQBQAGcAQQB4AEEARAB3AEEATAB3AEIAMABBAEcAZwBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBvAEEAQwBBAEEAYwB3AEIAagBBAEcAOABBAGMAQQBCAGwAQQBEADAAQQBJAGcAQgBqAEEARwA4AEEAYgBBAEEAaQBBAEMAQQBBAGMAdwBCADAAQQBIAGsAQQBiAEEAQgBsAEEARAAwAEEASQBnAEIAbQBBAEcAOABBAGIAZwBCADAAQQBDADAAQQBkAHcAQgBsAEEARwBrAEEAWgB3AEIAbwBBAEgAUQBBAE8AZwBCAHUAQQBHADgAQQBjAGcAQgB0AEEARwBFAEEAYgBBAEEANwBBAEMASQBBAFAAZwBBAHcAQQBEAHcAQQBMAHcAQgAwAEEARwBnAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAG8AQQBDAEEAQQBjAHcAQgBqAEEARwA4AEEAYwBBAEIAbABBAEQAMABBAEkAZwBCAGoAQQBHADgAQQBiAEEAQQBpAEEARAA0AEEATQBRAEEAOABBAEMAOABBAGQAQQBCAG8AQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBADgAQQBIAE0AQQBkAEEAQgB5AEEARwA4AEEAYgBnAEIAbgBBAEQANABBAE0AdwBBAHkAQQBEAHcAQQBMAHcAQgB6AEEASABRAEEAYwBnAEIAdgBBAEcANABBAFoAdwBBACsAQQBEAHcAQQBMAHcAQgAwAEEARwBRAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBEADQAQQBNAFEAQQAyAEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEAUABBAEIAegBBAEgAUQBBAGMAZwBCAHYAQQBHADQAQQBaAHcAQQArAEEARABnAEEAUABBAEEAdgBBAEgATQBBAGQAQQBCAHkAQQBHADgAQQBiAGcAQgBuAEEARAA0AEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAOABBAEgATQBBAGQAQQBCAHkAQQBHADgAQQBiAGcAQgBuAEEARAA0AEEATgBBAEEAOABBAEMAOABBAGMAdwBCADAAQQBIAEkAQQBiAHcAQgB1AEEARwBjAEEAUABnAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQASQBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBADgAQQBIAE0AQQBkAEEAQgB5AEEARwA4AEEAYgBnAEIAbgBBAEQANABBAE0AUQBBADgAQQBDADgAQQBjAHcAQgAwAEEASABJAEEAYgB3AEIAdQBBAEcAYwBBAFAAZwBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEMAOABBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBJAEEAQgBqAEEARwB3AEEAWQBRAEIAegBBAEgATQBBAFAAUQBBAGkAQQBHADQAQQBiAHcAQgBpAEEARwA4AEEAYwBnAEIAawBBAEcAVQBBAGMAZwBBAGkAQQBDAEEAQQBZAHcAQgB2AEEARwB3AEEAYwB3AEIAdwBBAEcARQBBAGIAZwBBADkAQQBDAEkAQQBOAGcAQQBpAEEARAA0AEEAQwBnAEEAOABBAEcAawBBAGIAUQBCAG4AQQBDAEEAQQBZAHcAQgBzAEEARwBFAEEAYwB3AEIAegBBAEQAMABBAEkAZwBCAHAAQQBHADQAQQBaAEEAQgBsAEEARwA0AEEAZABBAEEAZwBBAEcANABBAGIAdwBCAHoAQQBHAGcAQQBZAFEAQgBrAEEARwA4AEEAZAB3AEEAaQBBAEMAQQBBAGMAdwBCAHkAQQBHAE0AQQBQAFEAQQBpAEEAQwA4AEEAWQBnAEIAcQBBAEcATQBBAEwAUQBCAHkAQQBDADgAQQBhAFEAQgB0AEEARwBjAEEATAB3AEEANABBAEMAMABBAGMAZwBCAGwAQQBHAE0AQQBkAFEAQgB5AEEASABNAEEAYQBRAEIAMgBBAEcAVQBBAEwAUQBCAHkAQQBHAFUAQQBjAEEAQgB2AEEASABJAEEAZABBAEIAbABBAEgASQBBAGMAdwBBAHYAQQBIAEkAQQBMAFEAQgAwAEEARwA4AEEATABRAEIAcwBBAEMANABBAGMAQQBCAHUAQQBHAGMAQQBJAGcAQQBnAEEARwBFAEEAYgBBAEIAMABBAEQAMABBAEkAZwBCAHkAQQBHAGsAQQBaAHcAQgBvAEEASABRAEEATABRAEIAMABBAEcAOABBAEwAUQBCAHMAQQBHAFUAQQBaAGcAQgAwAEEAQwBBAEEAWQBRAEIAeQBBAEgASQBBAGIAdwBCADMAQQBDAEkAQQBJAEEAQgAwAEEARwBrAEEAZABBAEIAcwBBAEcAVQBBAFAAUQBBAGkAQQBIAEkAQQBhAFEAQgBuAEEARwBnAEEAZABBAEEAdABBAEgAUQBBAGIAdwBBAHQAQQBHAHcAQQBaAFEAQgBtAEEASABRAEEASQBBAEIAaABBAEgASQBBAGMAZwBCAHYAQQBIAGMAQQBJAGcAQQBnAEEAQwA4AEEAUABnAEEASwBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBMAHcAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAFAAZwBBAD0ACgBzAHUAZgBmAGkAeAA6AA==:31b8e172-b470-440e-83d8-e6b185028602
 
-<p>This means that this number is, in base 10, 32 + 8 + 4 + 1 = 45. So,
-101101<sub>2</sub> = 45<sub>10</sub>.</p>
+This means that this number is, in base 10, 32 + 8 + 4 + 1 = 45. So,
+101101<sub>2</sub> = 45<sub>10</sub>.
 :::
 
 ::: forYouToDo
@@ -139,13 +139,13 @@ Translate these binary representations into base 10 notation:
 <h3>Writing Binary</h3>
 
 ::: takeNote
-<p>To translate from base 10 (like 89<sub>10</sub>) to base 2,
-<strong>first write out the binary place values</strong> by <em>doubling
+To translate from base 10 (like 89<sub>10</sub>) to base 2,
+**first write out the binary place values** by <em>doubling
 left from the units place</em> until you get to a value larger than your
-number (128 for this example). <strong>Then think</strong>, "I can take
+number (128 for this example). **Then think**, "I can take
 out a 64, so I write a 1 there, and there's 25 left (89 − 64). I have 0
 thirty-twos, because I only have 25. But I can take out 16, and there's
-9 left. So, 8 and 1 are the last nonzero bits.</p>
+9 left. So, 8 and 1 are the last nonzero bits.
 
 <!--  <div class="sidenoteBig">Either way you are converting (and between any bases), always write the place values right-to-left (just as with units, tens, hundreds, etc.), and always write the number itself left-to-right.</div>  -->
 
@@ -160,12 +160,12 @@ thirty-twos, because I only have 25. But I can take out 16, and there's
 <th scope="col">1</th>
 </tr>
 <tr>
-<td><strong>32</strong></td>
+<td>**32**</td>
 <td>16</td>
-<td><strong>8</strong></td>
-<td><strong>4</strong></td>
+<td>**8**</td>
+<td>**4**</td>
 <td>2</td>
-<td><strong>1</strong></td>
+<td>**1**</td>
 </tr>
 <tr>
 <td class="noborder" colspan="6">
@@ -183,10 +183,10 @@ there should be another arrow below the table that goes the other way...
 algorithm, which does go right to left. -bh
 :::
 
-<p>Now, read the number off: 1011001<sub>2</sub> = 89<sub>10</sub>.</p>
+Now, read the number off: 1011001<sub>2</sub> = 89<sub>10</sub>.
 :::
 
-<p>
+
 
 Here's a more precise description of this <em>algorithm</em> to find the
 base 2 representation of any positive integer:
@@ -227,10 +227,10 @@ number).
 
 </ol>
 
-</p>
 
-<p>The string of ones and zeros you have recorded is the binary
-representation of your original number.</p>
+
+The string of ones and zeros you have recorded is the binary
+representation of your original number.
 
 ::: forYouToDo
 <ol start="2">

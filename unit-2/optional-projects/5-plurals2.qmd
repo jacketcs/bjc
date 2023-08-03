@@ -12,9 +12,9 @@ Need to redo KEEP images. --MF, 6/27/20
 ::: todo
 <ul>
 
-<li>REVISION NOTE: Students EXTEND their <strong>list</strong> of nouns
-as needed. At each testing stage, have them <strong>map</strong> their
-"specialist block" or their <strong>plural </strong>block over the
+<li>REVISION NOTE: Students EXTEND their **list** of nouns
+as needed. At each testing stage, have them **map** their
+"specialist block" or their **plural **block over the
 entire list and note which words are and aren't correctly
 pluralized.</li>
 
@@ -23,16 +23,16 @@ pluralized.</li>
 </ul>
 :::
 
-<p>You can improve `plural` to work correctly with more
+You can improve `plural` to work correctly with more
 words. If the project is not already open, please reload it. (The
-suggested file name was `U2-Plural`.)</p>
+suggested file name was `U2-Plural`.)
 
 ::: {#first .forYouToDo}
 <ol>
 
 <li>
 
-<strong>Abstraction: </strong> Make a
+**Abstraction: ** Make a
 <img src="/img/2-complexity/plural_h.png" title="plural-h ()" alt="plural-h ()"/>
 block that "specializes" on just one category, words that end with the
 letter "h".
@@ -80,7 +80,7 @@ or `plural-h`:<br />
 </li>
 
 ::: takeNote
-<p><strong>Abstraction:</strong> Language often has special cases. In
+**Abstraction:** Language often has special cases. In
 English, the plurals of some nouns add "s"; some add "es"; nouns like
 "calf" and "fly" become "calves" and "flies", changing their final
 letters before adding "es". And more. For a programming task this
@@ -90,7 +90,7 @@ separately with its own procedure (its own block), and then have the
 those specialists. That is, instead of coding every little detail
 directly in `plural`, it is cleaner and clearer to make
 `plural` look something like this.<br />
-<img src="/img/2-complexity/plural-abstract-definition.png" title="abstract definition of plural: if h = last letter of word, report h-case plural; if y = last letter of word, report y-case plural; if some other case, use a block that specializes in that case; etc.; else report join word s" alt="abstract definition of plural: if h = last letter of word, report h-case plural; if y = last letter of word, report y-case plural; if some other case, use a block that specializes in that case; etc.; else report join word s" class="ms-4 noshadow"/></p>
+<img src="/img/2-complexity/plural-abstract-definition.png" title="abstract definition of plural: if h = last letter of word, report h-case plural; if y = last letter of word, report y-case plural; if some other case, use a block that specializes in that case; etc.; else report join word s" alt="abstract definition of plural: if h = last letter of word, report h-case plural; if y = last letter of word, report y-case plural; if some other case, use a block that specializes in that case; etc.; else report join word s" class="ms-4 noshadow"/>
 
 Showing the <em>structure</em> of the method---just the overall strategy---in the
 "top-level" block and leaving the details to separate blocks is one part
@@ -128,23 +128,23 @@ I'm not thrilled with the way this pushes a particular implementation
 for a reason that's hidden until they get there, and doesn't make sense
 on its own. bh
 
-<p>Any better now? BTW, I moved what was TIF A up into an endnote in 1.
---MF, 1/11/21</p>
+Any better now? BTW, I moved what was TIF A up into an endnote in 1.
+--MF, 1/11/21
 :::
 
 ::: todo
-<p>I cleaned this up a bit and added a "tough stuff" icon on part B. I
+I cleaned this up a bit and added a "tough stuff" icon on part B. I
 think part B is <em>very</em> hard. More could be done to make it
 clearer, but I don't have the time for that now. One concern that this
 we should address now is not using "..." where what we need is jaggies.
-<strong>Can you please replace those two images with the complete
-images, and I'll jaggy them?</strong> <br />
+**Can you please replace those two images with the complete
+images, and I'll jaggy them?** <br />
 <img src="/img/2-complexity/plural-specialists-list.png"/>
-<img src="/img/2-complexity/match-vowels.png"/></p>
+<img src="/img/2-complexity/match-vowels.png"/>
 
-<p>Also, <strong>can you make sure that the TG and the solutions
-match</strong> this version after you review it? Thanks! --MF,
-1/11/21</p>
+Also, **can you make sure that the TG and the solutions
+match** this version after you review it? Thanks! --MF,
+1/11/21
 :::
 
 <ol type="A">
@@ -155,20 +155,20 @@ Extend `plural` to correctly handle a input word that has a
 space at the end.
 
 ::: endnote
-<p>Right now, if `plural` is given a word with a space at the
+Right now, if `plural` is given a word with a space at the
 end, it leaves that space in the plural:<br />
 <img src="/img/2-complexity/plural-bulldog[space]-with-result(bulldog[space]s).png" title="plural (bulldog ) reporting &apos;bulldog s&apos;. There is a space after &apos;bulldog&apos; in the input and a space between &apos;bulldog&apos; and &apos;s&apos; in the reported value." alt="plural (bulldog ) reporting &apos;bulldog s&apos;. There is a space after &apos;bulldog&apos; in the input and a space between &apos;bulldog&apos; and &apos;s&apos; in the reported value." class="ms-4"/><br />
 Figure out how to handle this special case and edit `plural`
 so that the result is<br />
 <img src="/img/2-complexity/plural-bulldog[space]-with-result(bulldogs).png" title="plural (bulldog ) reporting &apos;bulldogs&apos;. There is a space after &apos;bulldog&apos; in the input but no space in the reported value." alt="plural (bulldog ) reporting &apos;bulldogs&apos;. There is a space after &apos;bulldog&apos; in the input but no space in the reported value." class="ms-4"/><br />
 You already have a block that <em>specializes</em> in making plurals of
-words that <em>don't</em> have a space at the end. <em>Use</em> it.</p>
+words that <em>don't</em> have a space at the end. <em>Use</em> it.
 :::
 
-<p>Surprise! Once `plural` works for a single space at the
+Surprise! Once `plural` works for a single space at the
 end of a word, try giving it
 <img src="/img/2-complexity/plural-bulldog[four-spaces].png" title="plural (bulldog  ). There iare six spaces after &apos;bulldog&apos; in the input." alt="plural (bulldog  ). There iare six spaces after &apos;bulldog&apos; in the input."/>.
-That works too! But why?</p>
+That works too! But why?
 
 </li>
 
@@ -225,13 +225,13 @@ So I dragged some of that content back into U3 and also here. --MF,
 1/11/21
 :::
 
-<p>`Find first` is a higher-order function works similarly to
+`Find first` is a higher-order function works similarly to
 `keep`, but it reports only the first item that's found. It
-is equivalent to `item (1) of (keep)`.</p>
+is equivalent to `item (1) of (keep)`.
 
 
 
-<p>The `call` block in the palette doesn't include the
+The `call` block in the palette doesn't include the
 "`with inputs`" in the picture; when you click on its right
 arrowhead, those words will appear along with an input slot. The
 `call` block's first input slot is the empty gray ring, which
@@ -239,7 +239,7 @@ means that `call` wants a block in that input slot. When you
 drag `item 2 of pair` into that slot, the ring remains around
 it. That's usually what we want when using `call`, but not
 this time. Right-click on the `item of` block and choose
-"unringify" from the menu.</p>
+"unringify" from the menu.
 
 ::: endnote
 You can experiment with `call` to see what else you can do

@@ -9,8 +9,7 @@ include-in-header:
 
 ## Introduction
 
-
-Welcome AP Computer Science Principles at Berkeley High School, taught by Ms. O'Keefe and Mr. Chang. 
+Welcome to AP Computer Science Principles at Berkeley High School, taught by Ms. O'Keefe and Mr. Chang. 
 
 In this course, we'll be studying the big ideas of computing using the [Snap<em>!</em> programming language](https://snap.berkeley.edu/). No matter what career you choose to pursue, an understanding of computer science is becoming increasingly essential in today’s world.
 
@@ -40,7 +39,7 @@ This website will be the main source of assignments and instructional material. 
 
 ## Internet Usage
 
-The use of the Internet in class is a ***PRIVILEGE***, this privilege can be revoked or suspended at any time deemed necessary as described in the BUSD Internet usage policy. All students have access to the Internet, unless otherwise specified by a parent/guardian. In addition, the Internet is to be used for educational purposes only as described in the [BUSD Acceptable Use Policy for Electronic Resources & the Internet](https://www.berkeleyschools.net/wp-content/uploads/2011/12/AUP_Student_form.pdf) which all students and parents/guardians have signed.
+The use of the Internet in class is a ***PRIVILEGE***, this privilege can be revoked or suspended at any time deemed necessary as described in the [BUSD Acceptable Use Policy for Electronic Resources & the Internet](https://www.berkeleyschools.net/wp-content/uploads/2011/12/AUP_Student_form.pdf) which all students and parents/guardians have signed. All students have access to the Internet, unless otherwise specified by a parent/guardian. In addition, the Internet is to be used for educational purposes only as described in the policy.
 
 ## Computer Lab Expectations
 

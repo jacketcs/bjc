@@ -5,9 +5,9 @@ order: 2
 ---
 
 ::: learn
-<p><strong>On this page,</strong> you will learn how the layout of the
+**On this page,** you will learn how the layout of the
 Internet is redundant (more than one path from here to there) in order
-to ensure reliability.</p>
+to ensure reliability.
 :::
 
 ::: ap-standard
@@ -22,19 +22,19 @@ CSN-1.A.5, CSN-1.A.6, CSN-1.B.6, CSN-1.E.2, CSN-1.E.5
 
 <ul>
 
-<li>A <strong>path</strong> is a sequence of directly connected
+<li>A **path** is a sequence of directly connected
 computing devices that connect a sender to a receiver.</li>
 
-<li><strong>Routing</strong> is the process of finding a path from
+<li>**Routing** is the process of finding a path from
 sender to receiver.</li>
 
-<li><strong>Scalability</strong> is the ability of the Internet to keep
+<li>**Scalability** is the ability of the Internet to keep
 working as it grows.</li>
 
-<li><strong>Redundancy</strong> is the inclusion of back-up elements in
+<li>**Redundancy** is the inclusion of back-up elements in
 case one part fails.</li>
 
-<li><strong>Fault tolerance</strong> is the ability of a system to work
+<li>**Fault tolerance** is the ability of a system to work
 around problems.</li>
 
 </ul>
@@ -43,20 +43,20 @@ around problems.</li>
 ::: atwork
 <img src="/img/atwork/Thomas_David_Petite.jpeg" title="photo of Thomas Petite" alt="photo of Thomas Petite" class="noshadow float-end" height="200px"/>
 
-<p>Thomas (David) Petite (born 1956) is a member of the Fond du Lac Band
+Thomas (David) Petite (born 1956) is a member of the Fond du Lac Band
 of the Lake Superior Chippewa tribe. David is best known for his work on
 wireless enabled devices. He is one of the early inventors of the
 wireless ad hoc networks, a temporary decentralized type of wireless
 network that enables all mobile phones to work today. His inventions
 were also a driving force behind the development of what is now known as
 the "Smart Grid" which monitors and harnesses the power of
-wireless-enabled devices at a specific location.</p>
+wireless-enabled devices at a specific location.
 
-<p><a href="https://en.wikipedia.org/wiki/Thomas_David_Petite" title="Wikipedia Article on Thomas Petite" target="_blank">Learn
-More</a></p>
+<a href="https://en.wikipedia.org/wiki/Thomas_David_Petite" title="Wikipedia Article on Thomas Petite" target="_blank">Learn
+More</a>
 :::
 
-<p>Given the enormous number of devices on the Internet and the reality
+Given the enormous number of devices on the Internet and the reality
 that pieces of a complex system fail at unexpected times (and often in
 groups of neighbors such as a whole city), the Internet had to be
 designed to be <em>reliable</em>. This is achieved by building many
@@ -68,7 +68,7 @@ not specified in advance. Creating such redundancy can require
 additional resources (such as additional computers and cables) but it
 also increases the Internet's <em>fault tolerance</em> (ability to work
 around problems) and helps the Internet <em>scale</em> (expand) to more
-devices and people.</p>
+devices and people.
 
 ::: {#first .forYouToDo}
 <ol>
@@ -90,12 +90,12 @@ Someone should follow-up with Dan about where these images came from.
 </ol>
 :::
 
-<p>In the animation, a lightening bolt strikes one of the nodes. There
+In the animation, a lightening bolt strikes one of the nodes. There
 are many reasons a node can fail, such as power failure, chip burnout,
 etc. The other thing that can happen is that the nodes can all be fine,
 but the green lines linking the nodes, which represent connections,
 could fail (e.g., a cable could be cut or disconnected, either
-accidentally or on purpose).</p>
+accidentally or on purpose).
 
 ::: forYouToDo
 <ol start="2">

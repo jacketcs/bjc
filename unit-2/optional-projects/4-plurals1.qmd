@@ -6,16 +6,16 @@ order: 4
 ---
 
 ::: todo
-<p>PG: This /has/ a learning purpose. It's lost in "optional." The
+PG: This /has/ a learning purpose. It's lost in "optional." The
 learning purpose is couched in machine generation of language, but the
 content/programming goals are also practice of old, learning new, and
 foreshadowing. The important "new" is the essential element of problem
 decomposition and abstraction: this problem is too difficult /without/
 decomposing it, but perfectly tractable /with/ decomposition. And then,
-perfectly extensible to Spanish or...</p>
+perfectly extensible to Spanish or...
 
-<p>Brian and Mary are considering possibly one day making these two
-pages into a non optional lab before or after Lab 4. --MF, 1/2/21</p>
+Brian and Mary are considering possibly one day making these two
+pages into a non optional lab before or after Lab 4. --MF, 1/2/21
 :::
 
 ::: learn
@@ -91,7 +91,7 @@ report (join (word) (&apos;two letters: es&apos;))
 report (join (word) (&apos;one letters: s&apos;))
 }" class="ms-4"/></li>
 
-<li><strong>Debugging: </strong> Try to find words for which this
+<li>**Debugging: ** Try to find words for which this
 version of `plural` does <em>not</em> work correctly. List
 the words you find. <em>Organize that list</em>, sorting the words into
 categories according to their last letter. For example, it will get
@@ -100,7 +100,7 @@ gets wrong.</li>
 
 <li>
 
-<strong><em>Save your list.</em></strong>
+**<em>Save your list.</em>**
 
 <ol>
 
@@ -133,12 +133,12 @@ with "x". <em>Test</em> it to make sure it does work properly.
 </ol>
 :::
 
-<p>You can do the same for conjugating verbs in Spanish or some other
-language you choose. See the Take It Further section at the bottom.</p>
+You can do the same for conjugating verbs in Spanish or some other
+language you choose. See the Take It Further section at the bottom.
 
-<p>The next two steps are worth learning---very useful for
+The next two steps are worth learning---very useful for
 <em>testing</em> `plural` and in more advanced work later
-on---but not essential for <em>building</em> `plural`.</p>
+on---but not essential for <em>building</em> `plural`.
 
 ::: forYouToDo
 <ol start="6">

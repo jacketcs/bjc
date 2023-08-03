@@ -5,8 +5,8 @@ order: 3
 ---
 
 ::: learn
-<p><strong>On this page,</strong> you'll check for a tie game, that is,
-whether there are no more empty squares but neither player has won.</p>
+**On this page,** you'll check for a tie game, that is,
+whether there are no more empty squares but neither player has won.
 :::
 
 ::: forYouToDo
@@ -18,19 +18,19 @@ Develop a way to determine if the game has tied, and if so, make the
 program notify the players.
 
 ::: endnote
-<p>Snap<em>!</em> has a higher-order function
+Snap<em>!</em> has a higher-order function
 <img src="/img/blocks/find-first.png" title="find first item () in &apos;list input slot&apos;" alt="find first item () in &apos;list input slot&apos;" class="inline py-0"/>
 that works similarly to `keep`, but it reports only the first
 item that's found, so it can be faster. `Find first` is
-equivalent to `item (1) of (keep)`.</p>
+equivalent to `item (1) of (keep)`.
 
-<p>`Find first` is a higher-order function like
+`Find first` is a higher-order function like
 `keep`, `map`, and `combine` because it
-takes a function (a predicate) as input.</p>
+takes a function (a predicate) as input.
 
-<p><a href="#hint-tie-contains" data-bs-toggle="collapse" title="Click for a hint about using find first to check for ties.">Click
+<a href="#hint-tie-contains" data-bs-toggle="collapse" title="Click for a hint about using find first to check for ties.">Click
 for a hint about using `find first` to check for
-ties.</a></p>
+ties.</a>
 
 ::: {#hint-tie-contains .collapse}
 <img src="/img/3-lists/any-numbers.png" title="find first item (is () a number?) in ()" alt="find first item (is () a number?) in ()" class="ms-4"/>
@@ -43,9 +43,9 @@ ties.</a></p>
 bugs.</li>
 
 ::: sidenoteBig
-<p>You can work on this project more in
+You can work on this project more in
 <a href="/unit-5/lab-6/1-review.html" title="Unit 5 Lab 6: Tic-Tac-Toe with a Computer Player">Unit
-5 Lab 6: Tic-Tac-Toe with a Computer Player</a>.</p>
+5 Lab 6: Tic-Tac-Toe with a Computer Player</a>.
 :::
 
 <li>Why does the order of the tests (for wins vs. for ties) matter?

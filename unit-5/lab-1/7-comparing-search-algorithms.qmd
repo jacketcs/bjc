@@ -5,18 +5,18 @@ order: 7
 ---
 
 ::: learn
-<p><strong>On this page,</strong> you will learn a recursive technique
+**On this page,** you will learn a recursive technique
 to remove duplicates from a list.<br />
-<img src="/img/5-algorithms/distinct-reporter-reporting.png" title="distinct items from (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) repoting { apples, oranges, bananas, bread, carrots}" alt="distinct items from (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) reporting { apples, oranges, bananas, bread, carrots}" class="ms-4"/></p>
+<img src="/img/5-algorithms/distinct-reporter-reporting.png" title="distinct items from (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) repoting { apples, oranges, bananas, bread, carrots}" alt="distinct items from (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) reporting { apples, oranges, bananas, bread, carrots}" class="ms-4"/>
 :::
 
-<p>Suppose you have a list of items and want to know if the elements of
+Suppose you have a list of items and want to know if the elements of
 the list are <em>distinct</em>. For example, you might want to make sure
-that you don't have anything on your shopping list twice.</p>
+that you don't have anything on your shopping list twice.
 
-<p>As a first step, we'll just answer the yes/no question: are there any
+As a first step, we'll just answer the yes/no question: are there any
 duplicates on your list?<br />
-<img src="/img/5-algorithms/distinct-predicate-reporting.png" title="are the items of (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) distinct? reporting false" alt="are the items of (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) distinct? reporting false" class="ms-4"/></p>
+<img src="/img/5-algorithms/distinct-predicate-reporting.png" title="are the items of (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) distinct? reporting false" alt="are the items of (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) distinct? reporting false" class="ms-4"/>
 
 ::: {#first .forYouToDo}
 <ol>
@@ -84,9 +84,9 @@ same amount of time? Twice as long? More than twice as long?</li>
 </ol>
 :::
 
-<p>For your grocery list, you wouldn't just want to know whether or not
+For your grocery list, you wouldn't just want to know whether or not
 there are duplicates. You'd want a new list with the duplicates
-removed.</p>
+removed.
 
 ::: forYouToDo
 <ol start="4">
@@ -127,14 +127,14 @@ report ()
 report ()
 }" class="float-end"/>
 
-<p>The algorithm for this block will make the same decisions as in
+The algorithm for this block will make the same decisions as in
 `are the items distinct?`. But that was a predicate. This one
 has to report a list. So look at the three `report` blocks in
 your code for the `are the items distinct?` predicate, and
 decide what they should report for the `distinct items from`
-reporter.</p>
+reporter.
 
-<p>
+
 
 <a href="#hint-reporter" data-bs-toggle="collapse" title="Need another hint about the `distinct items from` reporter?">Need
 another hint?</a>
@@ -166,11 +166,11 @@ first item as part of the list you report?</li>
 </ul>
 :::
 
-</p>
+
 
 <p style="clear: both; height: 0px;">
 
-</p>
+
 :::
 
 </li>

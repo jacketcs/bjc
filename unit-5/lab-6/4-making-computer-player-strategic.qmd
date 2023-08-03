@@ -5,21 +5,21 @@ order: 4
 ---
 
 ::: todo
-<p>MF: Project still needs to be wrapped up and updated online</p>
+MF: Project still needs to be wrapped up and updated online
 :::
 
 ::: learn
-<p><strong>On this page</strong>, you'll implement the Tic-Tac-Toe
-strategy rules to make the computer play strategically.</p>
+**On this page**, you'll implement the Tic-Tac-Toe
+strategy rules to make the computer play strategically.
 :::
 
-<p>You'll set up a
+You'll set up a
 <img src="/img/5-algorithms/next-move.png" title="next move for computer" alt="next move for computer"/>
 block so you can broadcast to all the clones the position where the
 computer will move. As before, only the clone with the matching
-<var>position number</var> will make the move.</p>
+<var>position number</var> will make the move.
 
-<p>
+
 
 The code for `next move for computer` will implement the
 three strategy rules:
@@ -35,7 +35,7 @@ them.</li>
 
 </ul>
 
-</p>
+
 
 ::: {#first .forYouToDo}
 <ol>
@@ -61,9 +61,9 @@ empty square`.</li>
 for a hint about implementing the strategy rules.</a>
 
 ::: {#hint-rules .collapse}
-<p>Use your
+Use your
 <img src="/img/5-algorithms/best-empty-square.png" title="best empty square" alt="best empty square" class="inline"/>
-block too.</p>
+block too.
 :::
 :::
 

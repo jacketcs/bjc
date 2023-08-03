@@ -5,17 +5,17 @@ order: 1
 ---
 
 ::: todo
-<p>BH: It would be nice to look at some serious ciphers, e.g.,
-Playfair.</p>
+BH: It would be nice to look at some serious ciphers, e.g.,
+Playfair.
 :::
 
 ::: learn
-<p><strong>In this lab,</strong> you will learn about security risks on
-the Internet and how data can be encoded to protect it.</p>
+**In this lab,** you will learn about security risks on
+the Internet and how data can be encoded to protect it.
 
-<p><strong>On this page,</strong> you will experiment with different
+**On this page,** you will experiment with different
 ways of encoding and decoding a message and learn a simple method of
-symmetric encryption.</p>
+symmetric encryption.
 :::
 
 ::: {#first .forYouToDo}
@@ -36,7 +36,7 @@ messages. Was anyone able to decode their message? How?</li>
 :::
 
 ::: vocabFullWidth
-: <strong>Encryption and Decryption</strong>
+: **Encryption and Decryption**
 
 ::: ap-standard
 IOC-2.B.5
@@ -44,16 +44,16 @@ IOC-2.B.5
 
 <ul>
 
-<li><strong>Encryption</strong> is the process of encoding data to
+<li>**Encryption** is the process of encoding data to
 prevent unauthorized access.</li>
 
-<li><strong>Decryption</strong> is the process of decoding the
+<li>**Decryption** is the process of decoding the
 data.</li>
 
 </ul>
 :::
 
-<p>
+
 
 You might have used a <em>substitution cipher</em> to encode your
 message, substituting each letter of the alphabet with some other
@@ -69,9 +69,9 @@ letter. You could substitute letters in any order, like this:
 
 That's called a <em>simple substitution cipher</em>.
 
-</p>
 
-<p>
+
+
 
 An easier way is to just shift the letters in order. For example, this
 is a shift of 3:
@@ -87,25 +87,25 @@ is a shift of 3:
 That's a special kind of simple substitution cipher called a <em>Caesar
 Cipher</em> (named for Julius Caesar) or a <em>shift cipher</em>.
 
-</p>
+
 
 ::: vocabFullWidth
-: <strong>Symmetric Encryption</strong>
+: **Symmetric Encryption**
 
 ::: ap-standard
 IOC-2.B.5
 :::
 
-<p>Substitution ciphers are examples of <strong>symmetric
-encryption</strong> because they use the <em>same key</em> for both
-encryption and decryption.</p>
+Substitution ciphers are examples of **symmetric
+encryption** because they use the <em>same key</em> for both
+encryption and decryption.
 :::
 
 ::: endnote
-<p>There are more complicated methods of symmetric encryption, but they
+There are more complicated methods of symmetric encryption, but they
 always use the same key at both ends.
 <a href="#hint-symmetric" data-bs-toggle="collapse" title="How has symmetric encryption been used?">How
-has symmetric encryption been used?</a></p>
+has symmetric encryption been used?</a>
 
 ::: {#hint-symmetric .collapse}
 Up through the 1970s, symmetric encryption was all people had, but they

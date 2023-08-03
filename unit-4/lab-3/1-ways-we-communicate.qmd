@@ -5,21 +5,21 @@ order: 1
 ---
 
 ::: todo
-<p>pink box new. --MF, 12/21/17</p>
+pink box new. --MF, 12/21/17
 
-<p>BH: I'm inclined to flush the TIF (make a video) or at least move it
-to after the next FYTD.</p>
+BH: I'm inclined to flush the TIF (make a video) or at least move it
+to after the next FYTD.
 
-<p>MF: could use review/light revision; tough to have 2.17 SI labs back
-to back</p>
+MF: could use review/light revision; tough to have 2.17 SI labs back
+to back
 :::
 
 ::: learn
-<p><strong>In this lab,</strong> you will consider the impacts of
-technology on how we build community.</p>
+**In this lab,** you will consider the impacts of
+technology on how we build community.
 
-<p><strong>On this page,</strong> you will consider how technology is
-used to communicate and how it can impact community.</p>
+**On this page,** you will consider how technology is
+used to communicate and how it can impact community.
 :::
 
 ::: todo

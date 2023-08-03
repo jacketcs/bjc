@@ -6,48 +6,48 @@ order: 2
 ---
 
 ::: todo
-<p>Need to rebuild images with plain prototype labels. --MF, 9/26/18</p>
+Need to rebuild images with plain prototype labels. --MF, 9/26/18
 :::
 
 ::: todo
-<p>PG: Islamic art is a great candidate for computer drawing, and the
+PG: Islamic art is a great candidate for computer drawing, and the
 samples in TiF B seem like good ones. I'd prefer to have some good
 /real/ illustrations. I don't see how the top stuff (everything before
 TiF B) is Egyptian. Feels like another bow to "some culture" without
 being genuine. But the project is pretty, so can we give it a learning
-purpose?</p>
+purpose?
 
-<p>BH: The obvious way to draw the picture in the pink box is as a
-decorated hexagon.</p>
+BH: The obvious way to draw the picture in the pink box is as a
+decorated hexagon.
 
-<p>MF: I want to revise this page. Some suggestions added to the
-page.</p>
+MF: I want to revise this page. Some suggestions added to the
+page.
 :::
 
 ::: learn
 <img src="/img/2-complexity/EgyptianMotif_img/HexalDesign1.png" title="Hexagonal Design" alt="Hexagonal Design" class="ms-4" height="250"/>
 <img src="/img/2-complexity/EgyptianMotif_img/HexaDesign2.png" title="Hexagonal Design in color" alt="Hexagonal Design in color" height="250"/>
 
-<p>Much Islamic art applies principles of geometry and repeats simple
+Much Islamic art applies principles of geometry and repeats simple
 patterns to form complex forms. For example, the Egyptian Motif above
-has six overlapping rectangles.</p>
+has six overlapping rectangles.
 
-<p><strong>In this project,</strong> you will learn how to extend your
+**In this project,** you will learn how to extend your
 `pinwheel` code from Unit 1 to create such intricate
-patterns.</p>
+patterns.
 :::
 
 ::: {#first .forYouToDo}
 <ol>
 
 ::: todo
-<p>Why are we giving them the code for these blocks instead of asking
+Why are we giving them the code for these blocks instead of asking
 that they build and/or import them? I suggest cutting #1 and #2 and
 merging the first part of #3 into the pink box (I like the #3 images
 better than those in the pink box anyway). The work starts halfway
-through problem #3. <strong>I want to revise this page</strong>, but for
+through problem #3. **I want to revise this page**, but for
 now I just moved #10 from a solo FYTD into the ITIT box. --MF,
-9/26/18</p>
+9/26/18
 :::
 
 <li>
@@ -71,8 +71,8 @@ to execute the rest of the code.
 1.<br />
 <img src="/img/2-complexity/EgyptianMotif_img/pinwheelCode.png" title="pinwheel, branches:(number of branches) size:(size) backup:(backup){repeat(number of branches){move(size) steps; move(-1Xbackup) steps; turn clockwise(360/number of branches) degrees}}" alt="pinwheel, branches:(number of branches) size:(size) backup:(backup){repeat(number of branches){move(size) steps; move(-1Xbackup) steps; turn clockwise(360/number of branches) degrees}}" class="ms-4" height="225"/></li>
 
-<li>In this project, you will replace the <em><strong>pinwheel
-branches</strong></em> with <em><strong>rectangles</strong></em> as
+<li>In this project, you will replace the <em>**pinwheel
+branches**</em> with <em>**rectangles**</em> as
 shown below. Note use of color is optional and is used here for
 clarity.<br />
 <img src="/img/2-complexity/EgyptianMotif_img/multiColorPinwheel.png" title="Multicolored pinwheel" alt="Multicolored pinwheel" class="ms-4" height="250"/>

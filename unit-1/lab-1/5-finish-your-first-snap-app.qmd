@@ -5,7 +5,7 @@ order: 5
 ---
 
 ::: learn
-There's always something more you can do to make a program better. <strong>On this page,</strong> you'll improve your game by making Alonzo welcome the player when the green flag (<img src="/img/1-introduction/green-flag_button.png" title="green-flag button" alt="green-flag button" class="button"/>) is clicked.
+There's always something more you can do to make a program better. **On this page,** you'll improve your game by making Alonzo welcome the player when the green flag (<img src="/img/1-introduction/green-flag_button.png" title="green-flag button" alt="green-flag button" class="button"/>) is clicked.
 :::
 
 ::: {#first .forYouToDo}
@@ -21,7 +21,7 @@ Clicking the green flag button in the top right corner of the window (<img src="
 3. Make that message disappear when the player clicks on Alonzo.
 
 ::: endnote
-The `say` block with an empty text in the white <em><strong>input</strong></em> slot will make the sprite say nothing.
+The `say` block with an empty text in the white <em>**input**</em> slot will make the sprite say nothing.
 :::
 
 4. Check that your app does everything you want:

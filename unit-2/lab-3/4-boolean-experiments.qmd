@@ -6,8 +6,8 @@ gifffer: true
 ---
 
 ::: learn
-<p><strong>On this page,</strong> you will match Boolean expressions
-with the pictures they help create.</p>
+**On this page,** you will match Boolean expressions
+with the pictures they help create.
 :::
 
 ::: forYouToDo
@@ -156,7 +156,7 @@ generate these pictures:<br />
 
 <p style="clear: both; height: 0px;">
 
-</p>
+
 
 </li>
 

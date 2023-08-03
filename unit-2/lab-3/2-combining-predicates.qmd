@@ -11,7 +11,7 @@ On this page, you will combine predicates using Boolean functions to write on th
 
 ## Boolean Functions
 
-<p>
+
 
 At the very lowest level, computer circuitry is made of wires, and each wire is either on or off. So the only operations that can be performed at that lowest level are those that <em>operate on single-bit values</em> (just ones and zeros, that is, just ons and offs). These are called <em>logical (or Boolean) functions</em>. (They're predicates, because their range is Booleans, but these are special in that their <em>domain</em> is also Booleans.) There are three Boolean functions in the Operators palette:<br /> <img src="/img/prog/Booleans.png" title="and, or, not blocks" alt="and, or, not blocks" class="ms-4"/><br />
 
@@ -19,7 +19,7 @@ At the very lowest level, computer circuitry is made of wires, and each wire is 
 
 Notice that both the blocks themselves and the input slots in the blocks are hexagonal. Boolean functions take Boolean values (`True` or `False`) as inputs and report a new Boolean value as output. When you use Boolean functions in a program, though, the inputs will usually be expressions such as <img src="/img/2-complexity/var=3.png" title="variable = 3" alt="variable = 3"/>.
 
-</p>
+
 
 ::: forYouToDo
 <ol>
@@ -29,7 +29,7 @@ Notice that both the blocks themselves and the input slots in the blocks are hex
 Experiment with different input values in all three blocks, and take notes about the results you get.
 
 ::: endnote
-<p>Instead of dragging a `true` or `false` block into the input slot of an `and`, `or`, or `not` block, you can click the empty input slot to control a `true`/`false` toggle: <img src="/img/2-complexity/true-and-false.png" title="(true) and (false)" alt="(true) and (false)" class="inline"/></p>
+Instead of dragging a `true` or `false` block into the input slot of an `and`, `or`, or `not` block, you can click the empty input slot to control a `true`/`false` toggle: <img src="/img/2-complexity/true-and-false.png" title="(true) and (false)" alt="(true) and (false)" class="inline"/>
 :::
 
 </li>
@@ -37,7 +37,7 @@ Experiment with different input values in all three blocks, and take notes about
 </ol>
 :::
 
-<p>
+
 
 The `and` and `not` blocks work exactly the way you'd expect from the meanings of those words in English:
 
@@ -59,13 +59,13 @@ But `or` is a little different in computer science. In English, the word "or" ha
 
 <ul>
 
-<li><strong>Either but not both:</strong> such as "Let's check whether it will be rainy or sunny tomorrow." In computer science, this is called <em>exclusive or</em> because one option excludes the other.</li>
+<li>**Either but not both:** such as "Let's check whether it will be rainy or sunny tomorrow." In computer science, this is called <em>exclusive or</em> because one option excludes the other.</li>
 
-<li><strong>Either or both:</strong> such as "Ask your teacher if you have any questions or if you need help." This is called <em>inclusive or</em> because it's possible for both options to be included.</li>
+<li>**Either or both:** such as "Ask your teacher if you have any questions or if you need help." This is called <em>inclusive or</em> because it's possible for both options to be included.</li>
 
 </ul>
 
-</p>
+
 
 ::: forYouToDo
 <ol start="2">
@@ -114,7 +114,7 @@ You can decide whether `between?` will include the two boundary inputs or not.
 <img src="/img/2-complexity/number-between-two-others(with-result-false).png" title="is (3.8) between (3.9) and (4.7) ? reporting false" alt="is (3.8) between (3.9) and (4.7) ? reporting false" class="ms-4"/> <img src="/img/2-complexity/word-between-two-others(with-result-true).png" title="is (apples) between (alphabet) and (azure) ? reporting true" alt="is (apples) between (alphabet) and (azure) ? reporting true" class="ms-4"/>
 
 ::: narrower
-### <strong>Making a Predicate </strong>
+### **Making a Predicate **
 
 <ul>
 
@@ -131,7 +131,7 @@ Choose the hexagonal <em>predicate</em> shape.<br />
 </ul>
 :::
 
-<!--<p><img class="ms-4" data-gifffer="/img/2-complexity/defining-even-predicate.gif" alt="defining a predicate block" title="defining a predicate block" /></p>-->
+<!--<img class="ms-4" data-gifffer="/img/2-complexity/defining-even-predicate.gif" alt="defining a predicate block" title="defining a predicate block" />-->
 
 </li>
 
@@ -157,7 +157,7 @@ Use `between?` to create a script that lets you write on the stage in three colo
 
 ::: {.assessment-data type="multiplechoice" identifier="What's equivalent to num less than or equal to 23?" hasinlinefeedback="true" maxchoices="2" responseidentifier="ri1" shuffle="false"}
 ::: prompt
-There's no built in ≤ block in Snap<em>!</em>. Suppose we wanted to build one. Which <em><strong>two</strong></em> of the following Boolean expressions are equivalent to the expression <img src="/img/2-complexity/num-le-23.png" title="num less than or equal to 23 predicate" alt="num less than or equal to 23 predicate" class="inline"/>?
+There's no built in ≤ block in Snap<em>!</em>. Suppose we wanted to build one. Which <em>**two**</em> of the following Boolean expressions are equivalent to the expression <img src="/img/2-complexity/num-le-23.png" title="num less than or equal to 23 predicate" alt="num less than or equal to 23 predicate" class="inline"/>?
 :::
 
 ::: {.choice identifier="c1"}
@@ -186,7 +186,7 @@ Correct! This picture shows an expression that will report `true` if <var>num</v
 :::
 
 ::: feedback
-Correct! If <var>num</var> is <strong>not</strong> greater than 23, then it is either less than 23 or equal to 23.
+Correct! If <var>num</var> is **not** greater than 23, then it is either less than 23 or equal to 23.
 :::
 :::
 

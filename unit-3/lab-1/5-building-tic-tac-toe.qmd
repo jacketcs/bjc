@@ -5,27 +5,27 @@ order: 5
 ---
 
 ::: learn
-<p><strong>In this project,</strong> you will develop a program that
-plays Tic-Tac-Toe as well as you do.</p>
+**In this project,** you will develop a program that
+plays Tic-Tac-Toe as well as you do.
 
-<p><strong>On this first page,</strong> you use <em>clones</em> to
-display a Tic-Tac-Toe board and let two human players enter moves.</p>
+**On this first page,** you use <em>clones</em> to
+display a Tic-Tac-Toe board and let two human players enter moves.
 
 <img src="/img/3-lists/TTT1_img/Three States of TTT.png" title="Three states of Tic-Tac-Toe: in progress, win, tie" alt="Three states of Tic-Tac-Toe: in progress, win, tie" class="ms-4" width="550"/>
 :::
 
-<p>The project is spread out over different units because there's a lot
+The project is spread out over different units because there's a lot
 to do, and because some steps require techniques you haven't learned
 yet. On <em>this</em> page, you'll learn about <em>cloning</em> a sprite
 (like copying it, only better). In the future, you'll extend the project
 to detect wins and ties and, ultimately, to let the computer be one of
-the players.</p>
+the players.
 
-<p>One approach to building this game is to use <em>multiple
+One approach to building this game is to use <em>multiple
 sprites</em>; each square of the board is a separate sprite. Each sprite
 knows where it is on the board, and, once positioned, the sprites never
 move. The player clicks one of the nine squares, and that sprite changes
-its costume to display the move.</p>
+its costume to display the move.
 
 ::: {#first .forYouToDo}
 <ol>
@@ -45,7 +45,7 @@ You will use <em>clones</em> to create the 3×3 Tic-Tac-Toe
 board.
 
 ::: vocabFullWidth
-A <strong>clone</strong> is a copy of a sprite that <em>shares
+A **clone** is a copy of a sprite that <em>shares
 information</em> with its parent sprite (the original sprite). For
 example, clones have copies of any scripts from the parent, and if the
 parent's script is changed, then the clones' scripts change too.
@@ -54,7 +54,7 @@ parent, so you can do things like move each clone to a different
 position.
 :::
 
-<p>
+
 
 Clones start with the same position, costumes, and scripts of their
 parent. But clones made by a program...
@@ -68,10 +68,10 @@ delete all temporary clones in the project.</li>
 
 </ul>
 
-</p>
 
-<p>(There can also be permanent clones, which are created differently,
-but they're not used in this project.)</p>
+
+(There can also be permanent clones, which are created differently,
+but they're not used in this project.)
 
 ::: endnote
 In this project, you'll need <em>nine</em> clones, one for each square
@@ -242,8 +242,8 @@ squares aren't accidentally moved around when the player clicks.<br />
 bugs. Then, discuss what else you might want to add to the project.</li>
 
 ::: endnote
-<p>You can leave comments in the project file to remind yourself of
-things you might want to do later.</p>
+You can leave comments in the project file to remind yourself of
+things you might want to do later.
 :::
 
 <img src="/img/icons/save-use-later.png" title="Save. You will use this later." alt="Save. You will use this later." class="inline"/>

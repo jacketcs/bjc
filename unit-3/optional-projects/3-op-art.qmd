@@ -6,10 +6,10 @@ order: 3
 ---
 
 ::: todo
-<p>BH: Only the last TIF is TIFfy, and I really think it should be a
-regular FYTD. Coloring the picture by hand is weird.</p>
+BH: Only the last TIF is TIFfy, and I really think it should be a
+regular FYTD. Coloring the picture by hand is weird.
 
-<p>MF: BH has reviewing to do (see TG)</p>
+MF: BH has reviewing to do (see TG)
 :::
 
 ::: learn
@@ -21,11 +21,11 @@ visual art using optical illusions.<br />
 <img title="Animation of the user drawing a collection of overlapping rectangles and then coloring each region black and white in such a way that no two adjacent regions have the same color." alt="Animation of the user drawing a collection of overlapping rectangles and then coloring each region black and white in such a way that no two adjacent regions have the same color." class="ms-4" data-gifffer="/img/3-lists/OpArt_img/OpArtAnimation.gif" height="300"/>
 :::
 
-<p>Initially, the mouse is used to draw rectangles. Then when the user
+Initially, the mouse is used to draw rectangles. Then when the user
 presses the space bar, the drawing phase ends and the mouse click
 becomes a paint bucket that fills bounded regions with paint. Here are
 two examples of phase 1 (drawing rectangles) and phase 2 (filling
-regions):</p>
+regions):
 
 <p class="ms-4">
 
@@ -33,7 +33,7 @@ Example 1:
 <img src="/img/3-lists/OpArt_img/OpArt2Phase1.png" title="Op Art 1 Phase 1" alt="Op Art 1 Phase 1" height="175"/>
 <img src="/img/3-lists/OpArt_img/OpArt2Phase2.png" title="Op Art 1 Phase 2" alt="Op Art 1 Phase 2" height="175"/>
 
-</p>
+
 
 <p class="ms-4">
 
@@ -41,7 +41,7 @@ Example 2:
 <img src="/img/3-lists/OpArt_img/OpArt3Phase1.png" title="Op Art 2 Phase 1" alt="Op Art 2 Phase 1" height="175"/>
 <img src="/img/3-lists/OpArt_img/OpArt3Phase2.png" title="Op Art 2 Phase 2" alt="Op Art 2 Phase 2" height="175"/>
 
-</p>
+
 
 ::: forYouToDo
 <ol>
@@ -108,12 +108,12 @@ corners of a single rectangle.<br />
 </ol>
 :::
 
-<p>Like in the Animation Studio project on the previous page, the stage
+Like in the Animation Studio project on the previous page, the stage
 will have to be cleared and redrawn many times so that the user can see
 each new rectangle changing in size as it drawn. The program needs a way
 to store all of the rectangles that have already been drawn so that they
 can be redrawn along with the current rectangle after each stage
-clear.</p>
+clear.
 
 ::: forYouToDo
 <ol start="5">
@@ -202,9 +202,9 @@ to improve the efficiency and appearance of your program. The
 I thought about keeping some version of this, but I think it is not
 needed given the above. --MF, 9/9/18
 
-<p>It is recommended that you first write down the algorithm detailing
+It is recommended that you first write down the algorithm detailing
 the sequence of events in the program and what should happen at each
-case before you build the actual code.</p>
+case before you build the actual code.
 :::
 
 </li>

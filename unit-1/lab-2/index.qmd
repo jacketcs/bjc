@@ -1,0 +1,12 @@
+---
+title: "Lab 2: Gossip"
+subtitle: "Unit 1, Lab 2"
+order: 2
+---
+
+:::::: learn
+**In this lab,** you will program two sprites to gossip.
+
+<img src="/img/1-introduction/U1L2-Gossip.jpg" title="Image of stage with two characters talking. One says, &apos;my cat is in a band with Jake,&apos; and the other says &apos;Oh, but... Mr. C loves my cat.&apos;" alt="Image of stage with two characters talking. One says, &apos;my cat is in a band with Jake,&apos; and the other says &apos;Oh, but... Mr. C loves my cat.&apos;" class="ms-4"/>
+
+::::::

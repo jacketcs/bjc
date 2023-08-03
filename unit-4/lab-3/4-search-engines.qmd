@@ -5,20 +5,20 @@ order: 4
 ---
 
 ::: todo
-<p>pink box new (somewhat stolen from the H3). look at other todo box
-too. --MF, 12/21/17</p>
+pink box new (somewhat stolen from the H3). look at other todo box
+too. --MF, 12/21/17
 
-<p>BH: Flush the video. And promote the TIF to FYTD. Maybe some of the
-existing FYTD should be ITIT.</p>
+BH: Flush the video. And promote the TIF to FYTD. Maybe some of the
+existing FYTD should be ITIT.
 
-<p>MF: could use review/light revision; tough to have 2.17 SI labs back
-to back</p>
+MF: could use review/light revision; tough to have 2.17 SI labs back
+to back
 :::
 
 ::: learn
-<p><strong>On this page,</strong> you will learn about search engines
+**On this page,** you will learn about search engines
 and consider whether it matters which tools you use to search the
-web.</p>
+web.
 :::
 
 ::: todo
@@ -87,7 +87,7 @@ searching on the Internet?</li>
 <img src="/img/atwork/Jerry_Yang.jpeg" title="photo of Jerry Yang" alt="photo of Jerry Yang" class="noshadow" height="200px"/>
 :::
 
-<p>Jerry Yang (born 1968) is best known as the co-founder and former CEO
+Jerry Yang (born 1968) is best known as the co-founder and former CEO
 of Yahoo Inc. Yang's family immigrated to America from Taiwan when he
 was ten years old. Although at that time he only knew one English word,
 "shoe", Yang went on to graduate with a BS and a MS in electrical
@@ -95,10 +95,10 @@ engineering from Stanford University. While studying at Stanford, Yang
 co-created an Internet website which acted as a directory of other
 websites. Eventually named Yahoo!, this website became the most popular
 search engine and starting point for web users by 1998. In 2016, Yahoo!
-was sold to Verizon for \$5 Billion.</p>
+was sold to Verizon for \$5 Billion.
 
-<p><a href="https://history-computer.com/yahoo-guide/" title="Article: History of Yahoo" target="_blank">Article:
-History of Yahoo</a></p>
+<a href="https://history-computer.com/yahoo-guide/" title="Article: History of Yahoo" target="_blank">Article:
+History of Yahoo</a>
 :::
 
 ::: takeItFurther

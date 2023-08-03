@@ -1,12 +1,12 @@
 ---
-title: "Row of Houses"
+title: "Lab 3.5: Row of Houses"
 subtitle: "Unit 1, Lab 3.5"
 pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 order: 4
 ---
 
 ::: learn
-<p><strong>In this project,</strong> you'll use abstractions inside of abstractions to build a row of houses.<br /> <img src="/img/1-introduction/row-of-houses-size-100.png" title="a drawing of a row of houses" alt="a drawing of a row of houses" class="ms-4 noshadow" style="height: 119px;"/></p>
+**In this project,** you'll use abstractions inside of abstractions to build a row of houses.<br /> <img src="/img/1-introduction/row-of-houses-size-100.png" title="a drawing of a row of houses" alt="a drawing of a row of houses" class="ms-4 noshadow" style="height: 119px;"/>
 :::
 
 ::: {#first .forYouToDo}

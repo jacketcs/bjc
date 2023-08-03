@@ -5,43 +5,43 @@ order: 2
 ---
 
 ::: todo
-<p>I made some edits to include the word "possible" more. I'm not sure I
+I made some edits to include the word "possible" more. I'm not sure I
 didn't make it more confusing. Need to look again another day. --MF,
-6/13/18</p>
+6/13/18
 
-<p>I need to review the rest of this lab. Looks different than before.
---MF, 5/31/20</p>
+I need to review the rest of this lab. Looks different than before.
+--MF, 5/31/20
 
-<p>PG: I haven't thought deeply (haven't even read carefully!) but would
+PG: I haven't thought deeply (haven't even read carefully!) but would
 want to check carefully to make sure this is /developmentally/ helpful.
-Maybe it already is.</p>
+Maybe it already is.
 :::
 
 ::: learn
-<p><strong>On this page</strong>, you'll program your Tic-Tac-Toe
+**On this page**, you'll program your Tic-Tac-Toe
 project first to report the contents of one specific set of three
 squares that would make a win (such as the top row), and then to use
 that to find the contents of all possible winning triples. You'll use
-that information to find out if one of the players has won the game.</p>
+that information to find out if one of the players has won the game.
 :::
 
 <h3>Checking One Way to Win</h3>
 
-<p>We need a way to find out if a possible winning triple has actually
+We need a way to find out if a possible winning triple has actually
 happened. We can use `map` to check each position in one
-triple to see if either player has won with that triple.</p>
+triple to see if either player has won with that triple.
 
 ::: endnote
-<p>You learned about `map` in
+You learned about `map` in
 <a href="/unit-3/lab-2/5-mapping-over-list.html" title="Unit 3 Lab 2 Page 5: Transforming Every List Item">Unit
-3 Lab 2 Page 5: Transforming Every List Item</a>.</p>
+3 Lab 2 Page 5: Transforming Every List Item</a>.
 
-<p>`Map` applies the function in the gray ring to each item
+`Map` applies the function in the gray ring to each item
 in the input list, and it reports a list of all the results.<br />
-<img src="/img/3-lists/map-example-2.png" title="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" alt="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" class="ms-4"/></p>
+<img src="/img/3-lists/map-example-2.png" title="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" alt="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" class="ms-4"/>
 
-<p>Recall that the blank input slot in the function inside the gray ring
-is where one list item goes every time the function is performed.</p>
+Recall that the blank input slot in the function inside the gray ring
+is where one list item goes every time the function is performed.
 :::
 
 ::: forYouToDo
@@ -50,7 +50,7 @@ is where one list item goes every time the function is performed.</p>
 <li>Click
 <img src="/img/1-introduction/green-flag_button.png" title="green flag button" alt="green flag button"/>
 to start a new game. Play one game, <em>deliberately letting
-<strong>x</strong> win</em>.</li>
+**x** win</em>.</li>
 
 <li>
 
@@ -62,26 +62,26 @@ Then build this expression, and see what it reports:<br />
 does `map` work here?</a>
 
 ::: {#hint-map-item .collapse}
-<p>This `map` expression works the same way as the
+This `map` expression works the same way as the
 `join` example above, but people sometimes find it a little
 more complex to think about, because it's natural to expect
 <img src="/img/3-lists/map-over-board.png" title="map (something) over (board)" alt="map (something) over (board)"/>,
 but that's <em>not</em> what the expression says. Instead, it maps over
 a <em>constant</em> list, not a variable. As before, `map`
 inserts each list item into the blank space in the function inside the
-gray ring, and it reports a list of the results.</p>
+gray ring, and it reports a list of the results.
 
-<p>But here, the function in the gray ring is `item ( ) of
+But here, the function in the gray ring is `item ( ) of
 (`<var>board</var>`)`, so `map` checks items
 1, 2, and 3 of the <var>board</var> list, and it reports a list of what
 is in those three positions (each of which is X, O, or a number if the
-square is empty).</p>
+square is empty).
 
-<p>If you can't see what's inside the <var>board</var> variable, be sure
+If you can't see what's inside the <var>board</var> variable, be sure
 its box is checked in the Variables palette and expand its watcher to
 see its list items as in the picture below.<br />
 <img src="/img/3-lists/ttt-board-var.png" title="picture of: watcher of board variable showing {O, O, X, 4, X, 6, X, 8, 9}; and Tic Tac Toe game with X, X, O in top row; empty, X, empty in middle row; and X, empty, empty in bottom row" alt="picture of: watcher of board variable showing {O, O, X, 4, X, 6, X, 8, 9}; and Tic Tac Toe game with X, X, O in top row; empty, X, empty in middle row; and X, empty, empty in bottom row" class="ms-4 noshadow"/>
-<img src="/img/3-lists/map-item-board-reporting.png" title="map (item ( ) of (board)) over (list{1, 2, 3}) reporting {O, O, X}" alt="map (item ( ) of (board)) over (list{1, 2, 3}) reporting {O, O, X}" class="ms-4"/><br /></p>
+<img src="/img/3-lists/map-item-board-reporting.png" title="map (item ( ) of (board)) over (list{1, 2, 3}) reporting {O, O, X}" alt="map (item ( ) of (board)) over (list{1, 2, 3}) reporting {O, O, X}" class="ms-4"/><br />
 :::
 :::
 
@@ -92,7 +92,7 @@ What does the result of that expression tell you about the state of the
 game?</li>
 
 <li>If `{1, 2, 3}` isn't the triple in which
-<strong>x</strong> won the game, replace the list in the
+**x** won the game, replace the list in the
 `map` expression with the winning triple, and click the
 expression again.</li>
 
@@ -128,15 +128,15 @@ triple` block with the winning triple. Fix any bugs.</li>
 
 <h3>Checking All the Ways to Win</h3>
 
-<p>Now you're going to use `status of triple` systematically
-to check <em>all</em> the triples.</p>
+Now you're going to use `status of triple` systematically
+to check <em>all</em> the triples.
 
-<p>For example, Player O has won the game below, and the `status of
+For example, Player O has won the game below, and the `status of
 all winning triples` block finds the status of each possible
 triple. The computer can use this block to check for a winning triple
 that has either all X or all O.<br />
 <img src="/img/3-lists/status-of-all-board.png" title="Tic Tac Toe game where Player O has won down the middle column. In row one, there is X, O, and X. In row two, there is X, O, and an empty square. In row three, there is an empty square, O, and an empty square." alt="Tic Tac Toe game where Player O has won down the middle column. In row one, there is X, O, and X. In row two, there is X, O, and an empty square. In row three, there is an empty square, O, and an empty square." class="ms-4 noshadow"/>
-<img src="/img/3-lists/status-of-all-reporting.png" title="The status of all winning triples block is reporting a list of lists (a table). There are three columns and eight rows, and each cell contains either a X, an O, or a number. There is text to the right of each row listing the corresponding triple and where it appears on the board (such as 1, 5, 9 being the top-left to bottom-right diagonal). The triple in which Player O has won this game (2, 5, 8) shows O, O, O in the table. That is the only row with either all O or all X." alt="The status of all winning triples block is reporting a list of lists (a table). There are three columns and eight rows, and each cell contains either a X, an O, or a number. There is text to the right of each row listing the corresponding triple and where it appears on the board (such as 1, 5, 9 being the top-left to bottom-right diagonal). The triple in which Player O has won this game (2, 5, 8) shows O, O, O in the table. That is the only row with either all O or all X." class="ms-4 noshadow"/></p>
+<img src="/img/3-lists/status-of-all-reporting.png" title="The status of all winning triples block is reporting a list of lists (a table). There are three columns and eight rows, and each cell contains either a X, an O, or a number. There is text to the right of each row listing the corresponding triple and where it appears on the board (such as 1, 5, 9 being the top-left to bottom-right diagonal). The triple in which Player O has won this game (2, 5, 8) shows O, O, O in the table. That is the only row with either all O or all X." alt="The status of all winning triples block is reporting a list of lists (a table). There are three columns and eight rows, and each cell contains either a X, an O, or a number. There is text to the right of each row listing the corresponding triple and where it appears on the board (such as 1, 5, 9 being the top-left to bottom-right diagonal). The triple in which Player O has won this game (2, 5, 8) shows O, O, O in the table. That is the only row with either all O or all X." class="ms-4 noshadow"/>
 
 ::: endnote
 The order of your triples and/or the numbering of the positions in your
@@ -156,7 +156,7 @@ list of lists, as shown above.</li>
 for a hint on how to use `map`.</a>
 
 ::: {#hint-status-all .collapse}
-<p>
+
 
 When you use `map` think:
 
@@ -172,7 +172,7 @@ are mapping over.</li>
 
 Here, you want to know the status of each possible winning triple.
 
-</p>
+
 :::
 :::
 
@@ -181,11 +181,11 @@ Here, you want to know the status of each possible winning triple.
 for a hint on building `won?`.</a>
 
 ::: {#hint-won .collapse}
-<p>Put it in words: What is it that you want to check?</p>
+Put it in words: What is it that you want to check?
 
-<p>Are there any blocks that might be helpful for that?</p>
+Are there any blocks that might be helpful for that?
 
-<p>
+
 
 <a href="#hint-won-contains" data-bs-toggle="collapse" title="Click for another hint.">Click
 for another hint.</a>
@@ -194,13 +194,13 @@ for another hint.</a>
 <img src="/img/3-lists/contains.png" title="( ) contains ( )" alt="( ) contains ( )"/>
 :::
 
-</p>
+
 :::
 :::
 
 <li>Now make a block
 <img src="/img/3-lists/wonQ.png" title="won? ( )" alt="won? ( )"/>
-that takes the letter <strong>X</strong> or <strong>O</strong> as input,
+that takes the letter **X** or **O** as input,
 and reports `true` if and only if that player has won the
 game.</li>
 

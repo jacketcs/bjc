@@ -5,11 +5,11 @@ order: 1
 ---
 
 ::: learn
-<p><strong>In this lab,</strong> you will explore how simulations can be
-used to gain insight into real-world phenomena.</p>
+**In this lab,** you will explore how simulations can be
+used to gain insight into real-world phenomena.
 
-<p><strong>On this page,</strong> you will learn why simulations are
-used instead of real-world experiments.</p>
+**On this page,** you will learn why simulations are
+used instead of real-world experiments.
 :::
 
 ::: vocabFullWidth
@@ -17,16 +17,16 @@ used instead of real-world experiments.</p>
 AAP-3.F.1, AAP-3.F.2
 :::
 
-<p><strong>Simulations</strong> are computer representations of real
+**Simulations** are computer representations of real
 things or situations that vary over time. A simulation is an abstraction
-designed for a particular purpose.</p>
+designed for a particular purpose.
 :::
 
 ::: ap-standard
 AAP-3.F.3, AAP-3.F.6
 :::
 
-<p>
+
 
 There are many reasons to use computer simulations rather than
 real-world experiments to prove things about a situation. Experimenting
@@ -34,48 +34,48 @@ in the real world may be:
 
 <ul>
 
-<li><strong>Expensive</strong>, such as testing a proposed new airplane
+<li>**Expensive**, such as testing a proposed new airplane
 that might fall apart in strong winds. A simulation of the airplane and
 wind can eliminate some bad designs before building and testing a real
 airplane.</li>
 
-<li><strong>Time-consuming</strong>, such as testing the effects of a
+<li>**Time-consuming**, such as testing the effects of a
 genetic mutation in a species across generations.</li>
 
-<li><strong>Dangerous</strong>, such as testing whether a nuclear
+<li>**Dangerous**, such as testing whether a nuclear
 reactor will survive an earthquake.</li>
 
-<li><strong>Unethical</strong>, such as giving a population a disease to
+<li>**Unethical**, such as giving a population a disease to
 test how fast it spreads.</li>
 
 </ul>
 
-</p>
+
 
 ::: ap-standard
 AAP-3.F.4
 :::
 
-<p>Computer simulations rarely capture the full complexity of real
+Computer simulations rarely capture the full complexity of real
 situations. For example, simulations of global climate change should
 account for hundreds of interconnected factors such as wind patterns,
 the course of rivers, geological fault lines that cause earthquakes, and
 interactions of local plants and animals. However, because of
 limitations in computer speed, researchers leave out details to make
-simulations practical.</p>
+simulations practical.
 
 ::: ap-standard
 AAP-3.F.5
 :::
 
-<p>There are risks in making simplifications. For example, there might
+There are risks in making simplifications. For example, there might
 be an interaction between elements of the real situation that isn't
 obvious but turns out to be crucial. A simplification might lose the
 details that would have shown that interaction. Another issue is that if
 you have ideas in mind about what's going on, you are more likely to
 emphasize details---even unconsciously---that support your ideas. (This
 kind of distortion is so common that researchers have a name for it:
-<em>confirmation bias</em>.)</p>
+<em>confirmation bias</em>.)
 
 ::: {#first .forYouToDo}
 <ol>

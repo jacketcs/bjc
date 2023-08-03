@@ -5,17 +5,17 @@ order: 1
 ---
 
 ::: learn
-<p><strong>In this lab</strong>, you will continue your
+**In this lab**, you will continue your
 <a href="/unit-3/lab-1/5-building-tic-tac-toe.html" title="Building a Tic-Tac-Toe Board">Tic-Tac-Toe
 project</a> to make the program <em>analyze</em> the game board to
-detect wins and ties.</p>
+detect wins and ties.
 
-<p><strong>On this page</strong>, you'll prepare by allowing the program
+**On this page**, you'll prepare by allowing the program
 to record the moves that are made, and teach it the winning groups of
-three squares.</p>
+three squares.
 :::
 
-<p>
+
 
 When you first wrote Tic Tac Toe, it was easy to detect illegal moves
 (moving to a square that's already wearing an X or O costume) because
@@ -28,20 +28,20 @@ to keep track of whether the square in each position is empty or filled
 with an X or an O.<br />
 
 ::: sidenote
-<p>You learned about <strong>global variables</strong> on
+You learned about **global variables** on
 <a href="/unit-2/lab-1/4-keeping-score.html" title="Unit 2 Lab 1 Page 4: Keeping Score with Global Variables">Unit
-2 Lab 1 Page 4: Keeping Score with Global Variables</a>.</p>
+2 Lab 1 Page 4: Keeping Score with Global Variables</a>.
 :::
 
 <img src="/img/3-lists/ttt-board-var.png" title="picture of: watcher of board variable showing {O, O, X, 4, X, 6, X, 8, 9}; and Tic Tac Toe game with X, X, O in top row; empty, X, empty in middle row; and X, empty, empty in bottom row" alt="picture of: watcher of board variable showing {O, O, X, 4, X, 6, X, 8, 9}; and Tic Tac Toe game with X, X, O in top row; empty, X, empty in middle row; and X, empty, empty in bottom row" class="ms-4 noshadow"/>
 
-</p>
+
 
 ::: {#first .forYouToDo}
 <ol>
 
-<li>Open your <strong>U3L1-TicTacToe</strong> project, and save it as
-<strong>U3L3-TicTacToe</strong> so you'll still have your old version
+<li>Open your **U3L1-TicTacToe** project, and save it as
+**U3L3-TicTacToe** so you'll still have your old version
 when you edit the new one.</li>
 
 <li>Make a global variable called <var>board</var> that, at the
@@ -51,18 +51,18 @@ beginning of the game, contains a list with the numbers from 1 to
 </ol>
 :::
 
-<p>Each sprite needs to know its own position on the board so that you
+Each sprite needs to know its own position on the board so that you
 can use the `item of` block to replace that position with an
 X or an O. So, you'll create a <em>sprite variable</em>,
 <img src="/img/3-lists/position-number.png" title="position number" alt="position number" class="inline py-0"/>,
-and each clone will have its <em>own version</em> of this variable.</p>
+and each clone will have its <em>own version</em> of this variable.
 
 ::: vocabFullWidth
-: <strong>Sprite Variable</strong>
+: **Sprite Variable**
 
-<p>A <strong>sprite variable</strong> is like a global variable in that
+A **sprite variable** is like a global variable in that
 it <em>doesn't</em> belong to a particular <em>script</em>, but it does
-belong to a particular <em>sprite.</em></p>
+belong to a particular <em>sprite.</em>
 :::
 
 ::: forYouToDo
@@ -71,16 +71,16 @@ belong to a particular <em>sprite.</em></p>
 <li>
 
 ::: sidenote
-<p>You learned about <strong>initializing variables</strong> on
+You learned about **initializing variables** on
 <a href="/unit-2/lab-1/1-number-guessing-game.html" title="Unit 2 Lab 1 Page 1: Developing a Number Guessing Game with Script Variables">Unit
 2 Lab 1 Page 1: Developing a Number Guessing Game with Script
-Variables</a>.</p>
+Variables</a>.
 :::
 
 Create a sprite variable <var>position number</var>.
 
 ::: narrower
-<p>
+
 
 You make a sprite variable similarly to how you make global variables:
 
@@ -95,7 +95,7 @@ only" to make it a sprite variable.</li>
 
 </ul>
 
-</p>
+
 
 <img src="/img/3-lists/square-number-var.png" title="variable name dialog box with &apos;for this sprite only&apos; selected" alt="variable name dialog box with &apos;for this sprite only&apos; selected" class="ms-4"/><br />
 :::
@@ -136,14 +136,14 @@ and fix any bugs.</li>
 
 <h3>Storing All the Ways to Win</h3>
 
-<p>To program a way to detect a win, you need to determine what counts
+To program a way to detect a win, you need to determine what counts
 as a win. You'll store each possible winning triple as a list of three
 position numbers (a <em>triple</em>). For example, this winning triple
 could be represented as
 <img src="/img/3-lists/{3,5,7}.png" title="list{3, 5, 7}" alt="list{3, 5, 7}"/>
 because the win is in the 3<sup>rd</sup>, 5<sup>th</sup>, and
 7<sup>th</sup> positions:<br />
-<img src="/img/3-lists/winning-combo-357.png" title="diagonal win bottom left to top right" alt="diagonal win bottom left to top right" class="ms-4 noshadow"/><br /></p>
+<img src="/img/3-lists/winning-combo-357.png" title="diagonal win bottom left to top right" alt="diagonal win bottom left to top right" class="ms-4 noshadow"/><br />
 
 ::: forYouToDo
 <ol start="7">
@@ -165,14 +165,14 @@ because the win is in the 3<sup>rd</sup>, 5<sup>th</sup>, and
 </ol>
 :::
 
-<p>You <em>could</em> check for each possible win separately:<br />
-<img src="/img/3-lists/silly-check-win.png" title="is there a win? (Comment: Don&apos;t build this!! Just read it.) : if (is there a win at (1) (2) (3) ?) report (true); if (is there a win at (4) (5) (6) ?) report (true); ...; if (is there a win at (3) (5) (7) ?) report (true); report (false)" alt="is there a win? (Comment: Don&apos;t build this!! Just read it.) : if (is there a win at (1) (2) (3) ?) report (true); if (is there a win at (4) (5) (6) ?) report (true); ...; if (is there a win at (3) (5) (7) ?) report (true); report (false)" class="ms-4"/></p>
+You <em>could</em> check for each possible win separately:<br />
+<img src="/img/3-lists/silly-check-win.png" title="is there a win? (Comment: Don&apos;t build this!! Just read it.) : if (is there a win at (1) (2) (3) ?) report (true); if (is there a win at (4) (5) (6) ?) report (true); ...; if (is there a win at (3) (5) (7) ?) report (true); report (false)" alt="is there a win? (Comment: Don&apos;t build this!! Just read it.) : if (is there a win at (1) (2) (3) ?) report (true); if (is there a win at (4) (5) (6) ?) report (true); ...; if (is there a win at (3) (5) (7) ?) report (true); report (false)" class="ms-4"/>
 
-<p>But that's way too much code, especially because you'll have to do
+But that's way too much code, especially because you'll have to do
 something very similar again, later on, when the computer actually plays
 against you. Instead, you'll create a list to store all of the possible
 winning triples so you can check it against the current state of the
-game stored by <var>board</var>.</p>
+game stored by <var>board</var>.
 
 ::: forYouToDo
 <ol start="8">

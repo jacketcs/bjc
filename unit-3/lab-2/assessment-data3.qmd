@@ -76,14 +76,14 @@ Which of the following statements are true about this list?<br>
 
 <img src="/img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="ms-4"/><br>
 
-Choose <strong>all</strong> that apply.
+Choose **all** that apply.
 
 ::: endnote
 <a href="#hint-capital-adt" data-bs-toggle="collapse" title="Why not use an ADT?">Why
 not use an ADT?</a>
 
 ::: {#hint-capital-adt .collapse}
-<p>
+
 
 The list inside a list shown above makes it clearest to you now as you
 answer this self-check item what the structure is, but you're right, in
@@ -91,7 +91,7 @@ an actual program it would be better to use an abstract data type:<br>
 
 <img src="/img/3-lists/capitals-adt-reporting.png" title="state: (Augusta) capital: (Maine)" alt="state: (Augusta) capital: (Maine)" class="ms-4"/>
 
-</p>
+
 :::
 :::
 :::
@@ -175,7 +175,7 @@ Moines, Iowa}}.
 <a href="https://bjc.berkeley.edu/3-lists/2-contact-list/5-mapping-over-list.html">3.2.5</a>
 
 ::: prompt
-<p>
+
 
 Consider this list of squares: <br>
 
@@ -185,7 +185,7 @@ Which of the following expressions will report a list?
 
 Choose all that apply.
 
-</p>
+
 :::
 
 ::: {.choice identifier="c1"}
@@ -327,14 +327,14 @@ Which of the following statements are true about this list?<br>
 
 <img src="/img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="ms-4"/><br>
 
-Choose <strong>all</strong> that apply.
+Choose **all** that apply.
 
 ::: endnote
 <a href="#hint-capital-adt" data-bs-toggle="collapse" title="Why not use an ADT?">Why
 not use an ADT?</a>
 
 ::: collapse
-<p>
+
 
 The list inside a list shown above makes it clearest to you now as you
 answer this self-check item what the structure is, but you're right, in
@@ -342,7 +342,7 @@ an actual program it would be better to use an abstract data type:<br>
 
 <img src="/img/3-lists/capitals-adt-reporting.png" title="state: (Augusta) capital: (Maine)" alt="state: (Augusta) capital: (Maine)" class="ms-4"/>
 
-</p>
+
 :::
 :::
 :::
@@ -426,7 +426,7 @@ Moines, Iowa}}.
 <a href="https://bjc.berkeley.edu/3-lists/2-contact-list/5-mapping-over-list.html">3.2.5</a>
 
 ::: prompt
-<p>
+
 
 Consider this list of squares: <br>
 
@@ -436,7 +436,7 @@ Which of the following expressions will report a list?
 
 Choose all that apply.
 
-</p>
+
 :::
 
 ::: {.choice identifier="c1"}
@@ -578,14 +578,14 @@ Which of the following statements are true about this list?<br>
 
 <img src="/img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="ms-4"/><br>
 
-Choose <strong>all</strong> that apply.
+Choose **all** that apply.
 
 ::: endnote
 <a href="#hint-capital-adt" data-bs-toggle="collapse" title="Why not use an ADT?">Why
 not use an ADT?</a>
 
 ::: collapse
-<p>
+
 
 The list inside a list shown above makes it clearest to you now as you
 answer this self-check item what the structure is, but you're right, in
@@ -593,7 +593,7 @@ an actual program it would be better to use an abstract data type:<br>
 
 <img src="/img/3-lists/capitals-adt-reporting.png" title="state: (Augusta) capital: (Maine)" alt="state: (Augusta) capital: (Maine)" class="ms-4"/>
 
-</p>
+
 :::
 :::
 :::
@@ -677,7 +677,7 @@ Moines, Iowa}}.
 <a href="https://bjc.berkeley.edu/3-lists/2-contact-list/5-mapping-over-list.html">3.2.5</a>
 
 ::: prompt
-<p>
+
 
 Consider this list of squares: <br>
 
@@ -687,7 +687,7 @@ Which of the following expressions will report a list?
 
 Choose all that apply.
 
-</p>
+
 :::
 
 ::: {.choice identifier="c1"}

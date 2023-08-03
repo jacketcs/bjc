@@ -6,33 +6,33 @@ gifffer: true
 ---
 
 ::: learn
-<p><strong>On this page</strong>, you will use predicates with the `keep` block to keep items in a list that have specific characteristics.</p>
+**On this page**, you will use predicates with the `keep` block to keep items in a list that have specific characteristics.
 :::
 
-<p>As you know, predicates can be used with conditionals to decide <em>when</em> to <em>do</em> something; they can also be used with `keep` to decide <em>which</em> things to keep. The <img src="/img/blocks/keep.png" title="keep items &apos;predicate input slot&apos; from &apos;list input slot&apos;" alt="keep items &apos;predicate input slot&apos; from &apos;list input slot&apos;" class="inline"/> block takes a list and a predicate as input, and it reports a new list keeping only the items from the input list that make the condition described by the predicate true.</p>
+As you know, predicates can be used with conditionals to decide <em>when</em> to <em>do</em> something; they can also be used with `keep` to decide <em>which</em> things to keep. The <img src="/img/blocks/keep.png" title="keep items &apos;predicate input slot&apos; from &apos;list input slot&apos;" alt="keep items &apos;predicate input slot&apos; from &apos;list input slot&apos;" class="inline"/> block takes a list and a predicate as input, and it reports a new list keeping only the items from the input list that make the condition described by the predicate true.
 
-<p>For example, the following expression will find words from the <var>words list</var> whose first letter is v. The <em>blank input slot</em> is where each item of the list goes to decide if it will be kept.<br> <img src="/img/2-complexity/keep-example-6.png" title="keep items  ((letter(1) of ( )) = (v)) from (words list)" alt="keep items  ((letter(1) of ( )) = (v)) from (words list)" class="ms-4"/></p>
+For example, the following expression will find words from the <var>words list</var> whose first letter is v. The <em>blank input slot</em> is where each item of the list goes to decide if it will be kept.<br> <img src="/img/2-complexity/keep-example-6.png" title="keep items  ((letter(1) of ( )) = (v)) from (words list)" alt="keep items  ((letter(1) of ( )) = (v)) from (words list)" class="ms-4"/>
 
 ::: vocabFullWidth
-: <strong>String</strong> and <strong>Index</strong>
+: **String** and **Index**
 
 <ul>
 
 
 
-<li>A <strong>string</strong> is an ordered sequence of characters.</li>
+<li>A **string** is an ordered sequence of characters.</li>
 
 
 
-<li><a href="/unit-2/lab-2/2-quizzes.html" title="You've already learned the word index">You've already learned</a> the word <strong>index</strong> for the position of an element in a list. The same word is used for the position of a character in a string (for example, a letter in a word). So the first input to `letter` is the index.</li>
+<li><a href="/unit-2/lab-2/2-quizzes.html" title="You've already learned the word index">You've already learned</a> the word **index** for the position of an element in a list. The same word is used for the position of a character in a string (for example, a letter in a word). So the first input to `letter` is the index.</li>
 
 </ul>
 :::
 
 ::: takeNote
-<p><strong>You write the predicate that does the checking, and `keep` applies the predicate to each item in the input list and then reports the list of items that make your predicate `true`</strong>.</p>
+**You write the predicate that does the checking, and `keep` applies the predicate to each item in the input list and then reports the list of items that make your predicate `true`**.
 
-<p>Note that the blank input slot in the predicate is <em>required</em>; this is where each item from the list goes as it is checked by the predicate.</p>
+Note that the blank input slot in the predicate is <em>required</em>; this is where each item from the list goes as it is checked by the predicate.
 
 ::: endnote
 The `letter` block in the palette looks like <img src="/img/blocks/letter-1-of-world.png" title="letter (1) of (world)" alt="letter (1) of (world)"/>. You have to delete the "world" so that there is a blank slot where you need it to be.
@@ -57,9 +57,9 @@ This project contains two example `keep` expressions and an `initialize list` pr
 </ol>
 :::
 
-<p>The first example keeps inputs of a certain <em>length</em>; every word in the list is asked whether its length is 5, and only those with five letters are reported. The second example keeps inputs that are <em>not numbers</em>; every item in this list is asked "Is this item <em>not</em> a number?" and only the elements that are not numbers are reported.</p>
+The first example keeps inputs of a certain <em>length</em>; every word in the list is asked whether its length is 5, and only those with five letters are reported. The second example keeps inputs that are <em>not numbers</em>; every item in this list is asked "Is this item <em>not</em> a number?" and only the elements that are not numbers are reported.
 
-<p>There are two `length` blocks in Snap<em>!</em>. One (<img src="/img/blocks/length-of-blank-operator.png" title="length ()" alt="length ()" class="inline"/>) is designed for strings, and the other (<img src="/img/blocks/length-list.png" title="length ()" alt="length ()" class="inline"/>) is designed for lists.</p>
+There are two `length` blocks in Snap<em>!</em>. One (<img src="/img/blocks/length-of-blank-operator.png" title="length ()" alt="length ()" class="inline"/>) is designed for strings, and the other (<img src="/img/blocks/length-list.png" title="length ()" alt="length ()" class="inline"/>) is designed for lists.
 
 ::: forYouToDo
 <ol start="3">

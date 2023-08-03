@@ -5,7 +5,7 @@ order: 6
 ---
 
 ::: learn
-<strong>On this page,</strong> you learn about different <em>data
+**On this page,** you learn about different <em>data
 compression algorithms</em>.
 :::
 
@@ -13,16 +13,16 @@ compression algorithms</em>.
 DAT-1.D.1
 :::
 
-<p>The size of data (the number of bits required to store it) affects
+The size of data (the number of bits required to store it) affects
 the time it takes to send that data across the Internet. So, people use
 <em>data compression</em> algorithms to reduce the size of images,
-sounds, movies and some other kinds of data.</p>
+sounds, movies and some other kinds of data.
 
 ::: ap-standard
 DAT-1.D.3
 :::
 
-<p>
+
 
 The amount of size reduction depends on two things:
 
@@ -34,45 +34,45 @@ The amount of size reduction depends on two things:
 
 </ol>
 
-</p>
 
-<p>There are two broad categories of data compression algorithms:
+
+There are two broad categories of data compression algorithms:
 <em>lossless</em> and <em>lossy,</em> depending on whether information
-is lost.</p>
+is lost.
 
 ::: vocabFullWidth
-: <strong>Lossless Compression</strong>
+: **Lossless Compression**
 
-<p><strong>Lossless data compression</strong> algorithms (such as PNG)
+**Lossless data compression** algorithms (such as PNG)
 are reversible (there is no loss in quality); you can reconstruct the
-original data.</p>
+original data.
 :::
 
 ::: ap-standard
 DAT-1.D.4
 :::
 
-<p>Lossless compression works by <em>removing redundant data</em>. These
+Lossless compression works by <em>removing redundant data</em>. These
 algorithms can <em>usually</em> reduce the number of bits required to
 store or transmit the data while guaranteeing that the original data can
-be perfectly reconstructed.</p>
+be perfectly reconstructed.
 
 <img src="/img/6-computers/bjc-logo-original.png" title="BJC logo uncompressed" alt="BJC logo uncompressed" class="float-end"/>
 
-<p>Run-length encoding is an example of lossless compression. Consider
+Run-length encoding is an example of lossless compression. Consider
 the 158 pixels in the top row of the BJC logo (at right). The first 60
 pixels are white. Then come five pixels of yellowish orange (the top
-slice of the "b"). And the rest of that row is white.</p>
+slice of the "b"). And the rest of that row is white.
 
 <p class="ms-4">
 
 ...<img src="/img/6-computers/top-row-of-pixels-in-bjc-logo.png" title="top-row-of-pixels-in-bjc-logo: 4 white, 6 yellow-orange, 3 white" alt="top-row-of-pixels-in-bjc-logo: 4 white, 6 yellow-orange, 3 white"/>...
 
-</p>
 
-<p>Instead of storing all 158 pixels individually, we could compress
+
+Instead of storing all 158 pixels individually, we could compress
 them with <em>run-length encoding</em> and just store six values (three
-numbers and three colors):</p>
+numbers and three colors):
 
 +-------------+------------+
 | pixel count | color code |
@@ -88,49 +88,49 @@ numbers and three colors):</p>
 DAT-1.D.2
 :::
 
-<p>Those six values (60, FFFFFF, 5, E5A84A, 93, FFFFFF) can be
+Those six values (60, FFFFFF, 5, E5A84A, 93, FFFFFF) can be
 reconstructed into that whole first row of the image (158 pixels). So,
-fewer bits does not necessarily mean less information.</p>
+fewer bits does not necessarily mean less information.
 
 ::: vocabFullWidth
-: <strong>Lossy Compression</strong>
+: **Lossy Compression**
 
-<p><strong>Lossy data compression</strong> algorithms are <em>not</em>
+**Lossy data compression** algorithms are <em>not</em>
 fully reversible; you can reconstruct only an <em>approximation</em> of
-the original data.</p>
+the original data.
 :::
 
 ::: ap-standard
 DAT-1.D.5
 :::
 
-<p>Lossy Compression works by removing details that people aren't likely
+Lossy Compression works by removing details that people aren't likely
 to notice. The most commonly used lossy compression algorithm for
 pictures is called JPEG (or JPG, both pronounced "jay peg" for "Joint
 Photographic Experts Group," the committee that invented it). JPEG works
 by preserving most of the brightness information for each pixel (since
 human eyes are sensitive to that) and performing a kind of averaging
 process to the color information (because human eyes aren't as good at
-distinguishing color, especially colors close to white).</p>
+distinguishing color, especially colors close to white).
 
-<p>Below are an original, uncompressed picture of pebbles in a pond and
+Below are an original, uncompressed picture of pebbles in a pond and
 a highly compressed JPEG of the same image. Can you tell which is
 which?<br />
 <img src="/img/6-computers/pond.bmp" title="pond pebbles" alt="pond pebbles" class="ms-4"/>
-<img src="/img/6-computers/pond.jpg" title="pond pebbles" alt="pond pebbles"/></p>
+<img src="/img/6-computers/pond.jpg" title="pond pebbles" alt="pond pebbles"/>
 
-<p>You probably <em>can</em> tell which is which, especially if you
+You probably <em>can</em> tell which is which, especially if you
 looked for sharp edges or very shiny spots. But the compressed file uses
 1/30th of the space used by the original, and you could still tell that
 it's a picture of rocks. So, for many purposes the compressed version
 would be good enough. Lossy algorithms usually let you <em>control the
 degree of precision</em>, and generally, people select less extreme
 compression settings, so the compressed file looks much more like the
-original than this example.</p>
+original than this example.
 
 ::: endnote
-<p><a href="#hint-sizes" data-bs-toggle="collapse" title="What size is this file when encoded in different formats?">What
-size is this file when encoded in different formats?</a></p>
+<a href="#hint-sizes" data-bs-toggle="collapse" title="What size is this file when encoded in different formats?">What
+size is this file when encoded in different formats?</a>
 
 ::: {#hint-sizes .collapse}
 Here are the sizes of the pond pebbles picture in four different
@@ -139,14 +139,14 @@ formats:
 :::
 :::
 
-<p>The MP3 format, which you almost certainly use for portable music
+The MP3 format, which you almost certainly use for portable music
 files, is a lossy compression format. It tends to emphasize high
 frequencies, so people accustomed to MP3 music find uncompressed
-versions of the same music boomy (bassy).</p>
+versions of the same music boomy (bassy).
 
 <h3>Which is best?</h3>
 
-<p>
+
 
 Both types of data compression exist because each is useful in certain
 circumstances:
@@ -173,7 +173,7 @@ stored or transmitted is most important.</li>
 
 </ul>
 
-</p>
+
 
 ::: forYouToDo
 <ol>
@@ -188,7 +188,7 @@ These questions are similar to those you will see on the AP CSP exam.
 A film student records a movie on his smartphone and then saves a copy
 on his computer. He notices that the saved copy is of much lower image
 quality than the original. Which of the following could
-<strong>NOT</strong> be a possible explanation for the lower image
+**NOT** be a possible explanation for the lower image
 quality?
 :::
 
@@ -249,7 +249,7 @@ without any loss.
 ::: {.assessment-data type="multiplechoice" identifier="Which are examples of lossless transformation?" hasinlinefeedback="true" maxchoices="2" responseidentifier="ri2" shuffle="true"}
 ::: prompt
 A visual artist is processing a digital image. Which of the following
-describe a <strong>lossless</strong> transformation from which the
+describe a **lossless** transformation from which the
 original image can be recovered? <em>Choose two answers.</em>
 :::
 

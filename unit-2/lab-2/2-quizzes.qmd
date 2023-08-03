@@ -6,7 +6,7 @@ gifffer: true
 ---
 
 ::: learn
-<p><strong>On this page,</strong> you will begin to develop a quiz app by creating an <em>abstract data type</em> to pair the questions with their answers.</p>
+**On this page,** you will begin to develop a quiz app by creating an <em>abstract data type</em> to pair the questions with their answers.
 :::
 
 ::: {#first .forYouToDo}
@@ -19,14 +19,14 @@ gifffer: true
 </ol>
 :::
 
-<p>
+
 
 ::: vocab
-: <strong>Sublist</strong>
+: **Sublist**
 
-<p>A <strong>sublist</strong> is a list used as an item of another list.</p>
+A **sublist** is a list used as an item of another list.
 
-<p>(The word sublist is also used to refer to some subset of a list.)</p>
+(The word sublist is also used to refer to some subset of a list.)
 :::
 
 You'll use a list to store your quiz items in a global variable and use a <em>sublist</em> for each question/answer pair. Then you can choose just one pair at a time to work with. <img src="/img/2-complexity/quiz-questions-list-of-lists.png" title="set (computer science quiz) to (list (list (What is the computer science term for looping or repetition?) (iteration)) (list (What is the name for the abstraction in a program that can hold a value?) (variable)) (list (What kind of variable is available only in the part of the program where it is defined?) (local variable)))" alt="set (computer science quiz) to (list (list (What is the computer science term for looping or repetition?) (iteration)) (list (What is the name for the abstraction in a program that can hold a value?) (variable)) (list (What kind of variable is available only in the part of the program where it is defined?) (local variable)))" class="ms-4"/> <img src="/img/2-complexity/item-of-item-of-script.png" title="ask (item(1) of (item (3) of (computer science quiz))) and wait
@@ -37,30 +37,30 @@ if (item (2) of (item (3) of (computer science quiz)) = answer) {
 say (That&apos;s correct!) for (2) secs
 }" class="ms-4"/>
 
-</p>
 
 
 
-<p>But code like <img src="/img/2-complexity/item-1-of-item-3-of.png" title="item (1) of (item (3) of (computer science quiz))" alt="item (1) of (item (3) of (computer science quiz))" class="inline"/> is hard to read and understand. A better way is to <em>use abstraction</em> to organize the quiz items. The abstraction just hides the `list` and `item of` blocks, so it isn't complicated to build, but it can make your code much easier to write, read, and debug.<br /> <img src="/img/2-complexity/quiz-questions-list-of-adts.png" title="set (computer science quiz) to (list (question: (What is the computer science term for looping or repetition?) answer: (iteration)) (question: (What is the name for the abstraction in a program that can hold a value?) answer: (variable)) (question: (What kind of variable is available only in the part of the program where it is defined?) answer: (local variable)))" alt="set (computer science quiz) to (list (question: (What is the computer science term for looping or repetition?) answer: (iteration)) (question: (What is the name for the abstraction in a program that can hold a value?) answer: (variable)) (question: (What kind of variable is available only in the part of the program where it is defined?) answer: (local variable)))" class="ms-4"/> <img src="/img/2-complexity/abstracted-quiz-script.png" title="ask (question of quiz item (item (3) of (computer science quiz))) and wait
+
+But code like <img src="/img/2-complexity/item-1-of-item-3-of.png" title="item (1) of (item (3) of (computer science quiz))" alt="item (1) of (item (3) of (computer science quiz))" class="inline"/> is hard to read and understand. A better way is to <em>use abstraction</em> to organize the quiz items. The abstraction just hides the `list` and `item of` blocks, so it isn't complicated to build, but it can make your code much easier to write, read, and debug.<br /> <img src="/img/2-complexity/quiz-questions-list-of-adts.png" title="set (computer science quiz) to (list (question: (What is the computer science term for looping or repetition?) answer: (iteration)) (question: (What is the name for the abstraction in a program that can hold a value?) answer: (variable)) (question: (What kind of variable is available only in the part of the program where it is defined?) answer: (local variable)))" alt="set (computer science quiz) to (list (question: (What is the computer science term for looping or repetition?) answer: (iteration)) (question: (What is the name for the abstraction in a program that can hold a value?) answer: (variable)) (question: (What kind of variable is available only in the part of the program where it is defined?) answer: (local variable)))" class="ms-4"/> <img src="/img/2-complexity/abstracted-quiz-script.png" title="ask (question of quiz item (item (3) of (computer science quiz))) and wait
 if (answer = answer from quiz item (item (3) of (computer science quiz))) {
 say (That&apos;s correct!) for (2) secs
 }" alt="ask (question of quiz item (item (3) of (computer science quiz))) and wait
 if (answer = answer from quiz item (item (3) of (computer science quiz))) {
 say (That&apos;s correct!) for (2) secs
-}" class="ms-4"/></p>
+}" class="ms-4"/>
 
 ::: vocabFullWidth
-<strong>: Data Types</strong>
+**: Data Types**
 
 <ul>
 
-<li>A <strong>data type</strong> is what kind of data something is (number, text string, list, etc.). For example, <em>number</em> is the data type for the first input to <img src="/img/blocks/item.png" title="item (1) of ()" alt="item (1) of ()" height="35"/> and <em>list</em> is the the data type for its second input.</li>
+<li>A **data type** is what kind of data something is (number, text string, list, etc.). For example, <em>number</em> is the data type for the first input to <img src="/img/blocks/item.png" title="item (1) of ()" alt="item (1) of ()" height="35"/> and <em>list</em> is the the data type for its second input.</li>
 
 
 
 <li>
 
-Each programming language provides some <strong>primitive data types</strong> (data types that are built-in). For example, Snap<em>!</em> provides numbers, text (words and sentences), Booleans (true or false), lists, and some you haven't yet used as data (such as sprites and costumes). <a href="#hint-primitive" data-bs-toggle="collapse" title="This menu shows all of Snap!'s primitive types.">This menu shows all of Snap<em>!</em>'s primitive types.</a>
+Each programming language provides some **primitive data types** (data types that are built-in). For example, Snap<em>!</em> provides numbers, text (words and sentences), Booleans (true or false), lists, and some you haven't yet used as data (such as sprites and costumes). <a href="#hint-primitive" data-bs-toggle="collapse" title="This menu shows all of Snap!'s primitive types.">This menu shows all of Snap<em>!</em>'s primitive types.</a>
 
 ::: {#hint-primitive .collapse}
 <img src="/img/2-complexity/isa-menu.png" title="primitive types: number, text, Boolean, list, sprite, command, reporter, predicate" alt="primitive types: number, text, Boolean, list, sprite, command, reporter, predicate" class="ms-4"/>
@@ -72,21 +72,21 @@ Each programming language provides some <strong>primitive data types</strong> (d
 :::
 
 ::: vocabFullWidth
-<strong>: Abstract Data Types</strong>
+**: Abstract Data Types**
 
 <ul>
 
 
 
 ::: sidenoteBig
-<p>The word "abstract" is often used casually to mean something <em>harder</em> to understand or more complex, but in computer science, its meaning is almost the opposite. ADTs are things that you, the programmer, create to make your program <em>easier</em> for you and others to read, debug, and improve.</p>
+The word "abstract" is often used casually to mean something <em>harder</em> to understand or more complex, but in computer science, its meaning is almost the opposite. ADTs are things that you, the programmer, create to make your program <em>easier</em> for you and others to read, debug, and improve.
 :::
 
-<li>An <strong>abstract data type (ADT)</strong> is a custom data type that's meaningful to your program. It's not built into the language; you develop it as you code. This is an abstraction because it hides the details inside the constructor and selectors so that the programmer who uses a `quiz item` has to think only about questions and answers, not about list indices.</li>
+<li>An **abstract data type (ADT)** is a custom data type that's meaningful to your program. It's not built into the language; you develop it as you code. This is an abstraction because it hides the details inside the constructor and selectors so that the programmer who uses a `quiz item` has to think only about questions and answers, not about list indices.</li>
 
-<li>The <img src="/img/2-complexity/quiz-item-constructor.png" title="quiz item, question: () answer: ()" alt="quiz item, question: () answer: ()" class="inline"/> block is the <strong>constructor</strong>; it <em>constructs</em> one example of the data structure. By naming the pieces of the structure, the constructor makes it certain that every time you use it, you build the structure in the right order.<br /> <!--<img class="ms-4" src="/img/2-complexity/quiz-questions-constructor-definition.png" alt="quiz item, question: (question) answer: (answer) {report (list (question) (answer))}" title="quiz item, question: (question) answer: (answer) {report (list (question) (answer))}">--></li>
+<li>The <img src="/img/2-complexity/quiz-item-constructor.png" title="quiz item, question: () answer: ()" alt="quiz item, question: () answer: ()" class="inline"/> block is the **constructor**; it <em>constructs</em> one example of the data structure. By naming the pieces of the structure, the constructor makes it certain that every time you use it, you build the structure in the right order.<br /> <!--<img class="ms-4" src="/img/2-complexity/quiz-questions-constructor-definition.png" alt="quiz item, question: (question) answer: (answer) {report (list (question) (answer))}" title="quiz item, question: (question) answer: (answer) {report (list (question) (answer))}">--></li>
 
-<li>The <img src="/img/2-complexity/question-selector.png" title="question from quiz item: ()" alt="question from quiz item: ()" class="inline"/> and <img src="/img/2-complexity/answer-selector.png" title="answer from quiz item: ()" alt="answer from quiz item: ()" class="inline"/> blocks are the <strong>selectors</strong>; they each <em>select</em> one piece of the data structure.<br /> <!--<img class="ms-4" src="/img/2-complexity/question-definition.png" alt="question from quiz item: (quiz item) {report (item (1) of (quiz item)}" title="question from quiz item: (quiz item) {report (item (1) of (quiz item)}" />
+<li>The <img src="/img/2-complexity/question-selector.png" title="question from quiz item: ()" alt="question from quiz item: ()" class="inline"/> and <img src="/img/2-complexity/answer-selector.png" title="answer from quiz item: ()" alt="answer from quiz item: ()" class="inline"/> blocks are the **selectors**; they each <em>select</em> one piece of the data structure.<br /> <!--<img class="ms-4" src="/img/2-complexity/question-definition.png" alt="question from quiz item: (quiz item) {report (item (1) of (quiz item)}" title="question from quiz item: (quiz item) {report (item (1) of (quiz item)}" />
 <img class="ms-4" src="/img/2-complexity/answer-definition.png" alt="answer from quiz item: (quiz item) {report (item (2) of (quiz item)}" title="answer from quiz item: (quiz item) {report (item (2) of (quiz item)}" />--></li>
 
 </ul>
@@ -97,7 +97,7 @@ The constructor and selector together implement the `quiz item` <em>abstract dat
 
 
 
-<li><strong>Data abstraction</strong> is the creation and use of abstract data types in a program.</li>
+<li>**Data abstraction** is the creation and use of abstract data types in a program.</li>
 
 </ul>
 :::
@@ -118,11 +118,11 @@ The constructor and selector together implement the `quiz item` <em>abstract dat
 <li>Build the custom `quiz item` abstract data type (both the constructor and the two selectors).</li>
 
 ::: narrower
-### <strong>Specifying an Input Type</strong>
+### **Specifying an Input Type**
 
-<p>Your selectors expect a quiz item, i.e., a list, as input. You can make your blocks <em>show</em> what type of data they expect. It's not necessary in Snap<em>!</em> but, like assigning a color to a block, it can be a helpful reminder of what the block does and what type of input it expects. You've already seen input slots of several shapes, indicating different expected data types.</p>
+Your selectors expect a quiz item, i.e., a list, as input. You can make your blocks <em>show</em> what type of data they expect. It's not necessary in Snap<em>!</em> but, like assigning a color to a block, it can be a helpful reminder of what the block does and what type of input it expects. You've already seen input slots of several shapes, indicating different expected data types.
 
-<p>
+
 
 In the Block Editor while creating a selector, click on a plus sign to enter an input name. Then...
 
@@ -136,7 +136,7 @@ In the Block Editor while creating a selector, click on a plus sign to enter an 
 
 </ol>
 
-</p>
+
 :::
 
 <li>Create a global variable to store your quiz items and initialize it as a list of items, using your constructor where appropriate.</li>
@@ -158,7 +158,7 @@ If you don't see the watcher on the stage, make sure the checkbox beside the <va
 
 <li>
 
-<strong>Table View</strong> for <var>computer science quiz</var> Watcher (your quiz will be different):<br /> <img src="/img/2-complexity/csquiz-big.png" title="cs quiz watcher with first column expanded" alt="cs quiz watcher with first column expanded" class="ms-4"/>
+**Table View** for <var>computer science quiz</var> Watcher (your quiz will be different):<br /> <img src="/img/2-complexity/csquiz-big.png" title="cs quiz watcher with first column expanded" alt="cs quiz watcher with first column expanded" class="ms-4"/>
 
 ::: endnote
 <a href="#table-hint" data-bs-toggle="collapse" title="">My watcher is too narrow.</a>
@@ -170,17 +170,17 @@ At first the watcher will look like this:<br /> <img src="/img/2-complexity/csqu
 
 </li>
 
-<li><strong>List View</strong> for <var>computer science quiz</var> Watcher:<br /> <img src="/img/2-complexity/csquiz-list.png" title="cs quiz watcher, list view" alt="cs quiz watcher, list view" class="ms-4"/></li>
+<li>**List View** for <var>computer science quiz</var> Watcher:<br /> <img src="/img/2-complexity/csquiz-list.png" title="cs quiz watcher, list view" alt="cs quiz watcher, list view" class="ms-4"/></li>
 
 </ul>
 :::
 
 ::: vocabFullWidth
-: <strong>Table</strong>
+: **Table**
 
-<p>A <strong>table</strong> is a two-dimensional data structure with rows and columns. If you've used a <em>spreadsheet</em> program, what it displays is a table.</p>
+A **table** is a two-dimensional data structure with rows and columns. If you've used a <em>spreadsheet</em> program, what it displays is a table.
 
-<p>In Snap<em>!</em>, a table is implemented as a list of lists, in which each sublist is one row of the table.</p>
+In Snap<em>!</em>, a table is implemented as a list of lists, in which each sublist is one row of the table.
 :::
 
 <img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="float-end"/>
@@ -193,12 +193,12 @@ At first the watcher will look like this:<br /> <img src="/img/2-complexity/csqu
 
 ::: {.assessment-data type="multiplechoice" identifier="capitals" hasinlinefeedback="true" maxchoices="8" responseidentifier="ri1" shuffle="true"}
 ::: prompt
-<p>Imagine you make a variable <var>capitals</var> and use `set` to give this list of lists a name: <br /> <img src="/img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="ms-4"/><br /> Which of the following statements are <strong>true</strong>?<br /> <br /> Choose <strong>all</strong> that apply.</p>
+Imagine you make a variable <var>capitals</var> and use `set` to give this list of lists a name: <br /> <img src="/img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="ms-4"/><br /> Which of the following statements are **true**?<br /> <br /> Choose **all** that apply.
 :::
 
 ::: {.choice identifier="c1"}
 ::: text
-<img src="/img/3-lists/check1capitalsc1.png" title="item (1) of (capitals)" alt="item (1) of (capitals)" border="0"/> reports a <strong>list</strong> with two items: "Augusta" and "Maine".
+<img src="/img/3-lists/check1capitalsc1.png" title="item (1) of (capitals)" alt="item (1) of (capitals)" border="0"/> reports a **list** with two items: "Augusta" and "Maine".
 :::
 
 ::: feedback
@@ -238,7 +238,7 @@ No. Each of the small lists is a single item in the list "capitals" .
 
 ::: {.choice identifier="c5"}
 ::: text
-<img src="/img/3-lists/check1capitalsc5.png" title="all but first of (item (last) of (capitals))" alt="all but first of (item (last) of (capitals))" border="0"/> reports a <strong>list</strong> with one item: "Iowa".
+<img src="/img/3-lists/check1capitalsc5.png" title="all but first of (item (last) of (capitals))" alt="all but first of (item (last) of (capitals))" border="0"/> reports a **list** with one item: "Iowa".
 :::
 
 ::: feedback

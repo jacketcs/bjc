@@ -30,34 +30,34 @@ unsuccessful or very successful.
 :::
 
 ::: todo
-<p>PG: Language inconsistency! Edit to clean up typos. I /really/ like
-the ideas here but the feedback has not been good.</p>
+PG: Language inconsistency! Edit to clean up typos. I /really/ like
+the ideas here but the feedback has not been good.
 
-<p>BH: But change the "at least four" problem to make it clear that
-you're only allowed to ask one question.</p>
+BH: But change the "at least four" problem to make it clear that
+you're only allowed to ask one question.
 
-<p>MF: I want review this page and cut down on the switching back and
-forth among colored boxes.</p>
+MF: I want review this page and cut down on the switching back and
+forth among colored boxes.
 :::
 
 ::: todo
 "Zoey and I are from the same family." is a poor choice for motivating
 proof by contradiction because it doesn't require it. --MF, 9/1/19
 
-<p>Also, this lab overdoes decidability and solvability which has been
+Also, this lab overdoes decidability and solvability which has been
 simplified in the standards now (and is fully covered in 5.1.6 Heuristic
 Solutions. When we revise, we should distill down to the core of what we
-want to teach. --MF, 9/1/19</p>
+want to teach. --MF, 9/1/19
 :::
 
 ::: learn
-<p><strong>In this lab,</strong> you will learn that some problems can't
-be solved at all.</p>
+**In this lab,** you will learn that some problems can't
+be solved at all.
 
-<p><strong>On this page,</strong> you will solve logic puzzles by
+**On this page,** you will solve logic puzzles by
 finding a <em>contradiction</em>, that is, by showing that one
 possibility has to be true because the other possibility doesn't make
-sense.</p>
+sense.
 :::
 
 ::: {#first .forYouToDo}
@@ -71,8 +71,8 @@ This Truth-teller family <em>can't ever</em> make false statements, even
 by mistake. The other family, the False-Teller family, is just as
 reliable but in the opposite way: they can't make true statements ever.
 
-<p>You are visiting the island and meet two of its people, Diego and
-Zoey. Diego says, "Zoey and I are from the same family."</p>
+You are visiting the island and meet two of its people, Diego and
+Zoey. Diego says, "Zoey and I are from the same family."
 
 <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/>
 
@@ -104,9 +104,9 @@ prove it.
 </div>
 
 ::: vocab
-<p>
 
-A <strong>proof by contradiction</strong> is a two-step proof that a
+
+A **proof by contradiction** is a two-step proof that a
 statement is false, which is done by
 
 <ol>
@@ -118,7 +118,7 @@ is, showing the assumption creates a contradiction)</li>
 
 </ol>
 
-</p>
+
 :::
 
 <div>
@@ -215,25 +215,25 @@ False-teller could say that.
 There are four kinds of true/false statements:
 
 ::: vocabBig
-<p>An <strong>undecidable</strong> statement might be true or might be
-false; we don't know which.</p>
+An **undecidable** statement might be true or might be
+false; we don't know which.
 
-<p>A <strong>self-contradictory</strong> statement can be neither true
-nor false.</p>
+A **self-contradictory** statement can be neither true
+nor false.
 :::
 
 <ul>
 
-<li><strong>Provably True</strong>: For example in this problem, "Zoey
+<li>**Provably True**: For example in this problem, "Zoey
 is a Truth-teller."</li>
 
-<li><strong>Provably False</strong>: For example, "Zoey is a
+<li>**Provably False**: For example, "Zoey is a
 False-teller."</li>
 
-<li><strong>Undecidable</strong>: For example, "Diego is a
+<li>**Undecidable**: For example, "Diego is a
 Truth-teller."</li>
 
-<li><strong>Self-Contradictory</strong>: Such as "This statement is
+<li>**Self-Contradictory**: Such as "This statement is
 false."</li>
 
 </ul>
@@ -261,11 +261,11 @@ to make sure that if he were a False-Teller, he'd answer differently.
 :::
 
 ::: endnote
-<p><strong>Theorem</strong>: All positive integers are interesting.</p>
+**Theorem**: All positive integers are interesting.
 
-<p>
 
-<strong>Proof</strong>:
+
+**Proof**:
 
 <ul>
 
@@ -280,7 +280,7 @@ all positive integers are interesting.</li>
 
 </ul>
 
-</p>
+
 :::
 
 ::: takeItFurther

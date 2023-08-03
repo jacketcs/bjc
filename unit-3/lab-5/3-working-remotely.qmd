@@ -5,13 +5,13 @@ order: 3
 ---
 
 ::: todo
-<p>MF: could use review/light revision; tough to have 2.17 SI labs back
-to back</p>
+MF: could use review/light revision; tough to have 2.17 SI labs back
+to back
 :::
 
 ::: learn
-<p><strong>On this page,</strong> you will consider the ways that
-technology enables long-distance working relationships.</p>
+**On this page,** you will consider the ways that
+technology enables long-distance working relationships.
 :::
 
 ::: {#first .forYouToDo}
@@ -52,7 +52,7 @@ Choose one or more of these topics to research and discuss.
 especially useful for clinics in rural areas, or for helping more people
 access doctors who specialize in the areas they need. Other developments
 in technology are helping doctors monitor vital signs or perform surgery
-using robots. Search for articles about <strong>telemedicine</strong> to
+using robots. Search for articles about **telemedicine** to
 learn about its benefits and potential downsides.</li>
 
 <li>Farming can't be done remotely. So how is technology affecting
@@ -67,7 +67,7 @@ Africa)</a><!-- or <a href="http://www.scidev.net/south-asia/agriculture/news/sm
 
 <li>
 
-<p><strong>Outsourcing</strong> is paying other companies to perform
+**Outsourcing** is paying other companies to perform
 tasks or provide services at a lower price than it costs to hire
 employees to do them. Companies often outsource certain tasks to other
 companies that may (sometimes) be in other countries where people are
@@ -75,7 +75,7 @@ paid less. Technology has made outsourcing easier. But technology
 companies often outsource things like janitorial services, in part so
 they can say things like "All our employees have excellent health
 benefits." (... But the janitors aren't employees, so they don't
-count.)</p>
+count.)
 
 ::: endnote
 How can it cost less to pay another company to pay a janitor for you, so
@@ -89,9 +89,9 @@ janitorial company instead, you're not hiring workers directly and it's
 not your obligation to check on their eligibility for employment.
 :::
 
-<p>Sometimes individuals, not just companies, outsource parts of their
-lives. Search for articles to read about <strong>personal
-outsourcing</strong> companies and people who use them. For example:
+Sometimes individuals, not just companies, outsource parts of their
+lives. Search for articles to read about **personal
+outsourcing** companies and people who use them. For example:
 <a href="http://www.cbsnews.com/news/average-joes-janes-outsourcing-tasks/" target="_blank" title="Average Joes, Janes Outsourcing Tasks (CBS News)">Average
 Joes, Janes Outsourcing Tasks (CBS
 News)</a><!-- or <a href="http://www.wsj.com/articles/SB118073815238422013" target="_blank" title="Outsourcing Your Life (Wall Street Journal)">Outsourcing Your Life (Wall Street Journal)</a>-->.
@@ -100,7 +100,7 @@ You can also learn about
 Mechanical Turk</a>, a forum that pays humans to do tasks that computers
 cannot do. They call them ''Human Intelligence Tasks'' (HITs); people
 who perform these tasks successfully are generally paid very low
-amounts.</p>
+amounts.
 
 </li>
 

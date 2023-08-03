@@ -7,14 +7,14 @@ gifffer: true
 
 ::: learn
 
-<strong>On this page,</strong> you'll build a simple game in which the player tries to click a character that's jumping around.
+**On this page,** you'll build a simple game in which the player tries to click a character that's jumping around.
 
 :::
 
 <!-- ::: takeNote
 <img src="/img/icons/work-with-a-partner.png" title="Work with a Partner" alt="Work with a Partner" class="inline"/> If you're doing this in class, you should be working with a partner. It's not just for students; professional programmers work with partners too.
 
-<p>If each of you is in front of a computer, one of you should keep Snap<em>!</em> open, and the other should keep this lab page open. If you are sharing a computer, use two browser tabs.</p>
+If each of you is in front of a computer, one of you should keep Snap<em>!</em> open, and the other should keep this lab page open. If you are sharing a computer, use two browser tabs.
 ::: -->
 
 ## Making a Character Move
@@ -25,7 +25,7 @@ gifffer: true
 2. <a href="/prog/1-introduction/U1L1-ClickAlonzo.xml" class="run"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a>
 
 ::: narrower
-### <strong>Saving a Snap<em>!</em> Project</strong>
+### **Saving a Snap<em>!</em> Project**
 
 Choose "Save" from the Snap<em>!</em> File menu, <img src="/img/1-introduction/file_button.png" title="File menu button" alt="File menu button"/>.
 :::
@@ -72,7 +72,7 @@ Orange boxes contain the ideas you should still remember three years from now.
 
 <img src="/img/blocks/when-i-am-clicked.png" title="when i am (clicked)" alt="when i am (clicked)" class="ms-4"/> <img src="/img/blocks/when-green-flag-clicked-full-size.png" title="when &apos;green flag&apos; clicked" alt="when &apos;green flag&apos; clicked" class="ms-4"/> <img src="/img/blocks/when-space-key-pressed.png" title="when (space) key pressed" alt="when (space) key pressed" class="ms-4"/>
 
-Blocks that look like this can be used to detect an <strong>event</strong> such as clicking on the sprite, pressing a key, or clicking the green flag button (<img src="/img/1-introduction/green-flag_button.png" title="green-flag button" alt="green-flag button" class="button"/>). They tell the script to start when that event occurs. Because these blocks can sit only on top of a script (as a way to start the script), Snap<em>!</em> programmers call them "hat blocks." Using events to control a program is called <em><strong>event-driven programming</strong></em>.
+Blocks that look like this can be used to detect an **event** such as clicking on the sprite, pressing a key, or clicking the green flag button (<img src="/img/1-introduction/green-flag_button.png" title="green-flag button" alt="green-flag button" class="button"/>). They tell the script to start when that event occurs. Because these blocks can sit only on top of a script (as a way to start the script), Snap<em>!</em> programmers call them "hat blocks." Using events to control a program is called <em>**event-driven programming**</em>.
 
 Not every script needs a hat block; you can also run a script by clicking on it.
 :::
@@ -100,7 +100,7 @@ A bunch of blocks clicked together is called a <em>script</em>.
 7. Attach this to the bottom of your Alonzo script:<br /> <img src="/img/1-introduction/forever-jump.png" title="forever {go to (random position)}" alt="forever {go to (random position)}" class="ms-4"/>
 
 :::: narrower
-The sequence of blocks <em>inside</em> the `forever` block will repeat until you <strong>click the red stop sign</strong>, <img src="/img/1-introduction/stop_button.png" title="red stop button" alt="red stop button"/>, or stop the script in some other way.
+The sequence of blocks <em>inside</em> the `forever` block will repeat until you **click the red stop sign**, <img src="/img/1-introduction/stop_button.png" title="red stop button" alt="red stop button"/>, or stop the script in some other way.
 ::::
 
 :::: endnote

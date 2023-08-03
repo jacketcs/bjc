@@ -6,40 +6,40 @@ gifffer: true
 ---
 
 ::: learn
-<p><strong>In this lab,</strong> you will develop tools to help solve word puzzles by searching for words that match specific characteristics.</p>
+**In this lab,** you will develop tools to help solve word puzzles by searching for words that match specific characteristics.
 
-<p><strong>On this page</strong>, you will review predicates and build a few that you can use in other projects.</p>
+**On this page**, you will review predicates and build a few that you can use in other projects.
 :::
 
 
 
-<p>As you know, predicates are reporter blocks (functions) that always report a <em>Boolean value</em> (they report only the values <img src="/img/blocks/true.png" title="true" alt="true" class="inline py-0"/> or <img src="/img/blocks/false.png" title="false" alt="false" class="inline py-0"/>). In Snap<em>!</em>, predicates are represented by hexagonal blocks. They compute the <em>condition</em> used by <em>conditionals</em> (such as `if`, `if else`, or `repeat until`) to decide when to do something.</p>
+As you know, predicates are reporter blocks (functions) that always report a <em>Boolean value</em> (they report only the values <img src="/img/blocks/true.png" title="true" alt="true" class="inline py-0"/> or <img src="/img/blocks/false.png" title="false" alt="false" class="inline py-0"/>). In Snap<em>!</em>, predicates are represented by hexagonal blocks. They compute the <em>condition</em> used by <em>conditionals</em> (such as `if`, `if else`, or `repeat until`) to decide when to do something.
 
 ::: takeNote
-<p>
+
 
 So, the <em>input type</em> of a conditional is Booleans, and the <em>output type</em> of a predicate is also Booleans.
 
 ::: vocabFullWidth
-<strong>: Domain and Range</strong>
+**: Domain and Range**
 
 <ul>
 
-<li>The <strong>input type</strong> (often called <strong>domain</strong> by programmers) of a function is the type of data that it accepts as input.</li>
+<li>The **input type** (often called **domain** by programmers) of a function is the type of data that it accepts as input.</li>
 
-<li>The <strong>output type</strong> (often called <strong>range</strong>) of a function is the type of data that it reports as output.</li>
+<li>The **output type** (often called **range**) of a function is the type of data that it reports as output.</li>
 
 </ul>
 :::
 
 Along with "abstraction," these two ideas are among the most important in computer science. If you get in the habit of using them in your thinking, you'll have many fewer bugs in your programs, because you'll automatically double-check that the output type of a reporter matches the input type of the block in which you're trying to use it.
 
-</p>
+
 :::
 
-<p>Predicates ask a true/false question such as "Is the random number 3?" or "Is this sprite touching the sprite called 'Leader'?"</p>
+Predicates ask a true/false question such as "Is the random number 3?" or "Is this sprite touching the sprite called 'Leader'?"
 
-<p>Every `if else` block has two scripts inside of it, exactly one of which will be run depending on the value that the predicate reports. Then the computer continues with whatever comes after the `if else` block.<br /> <a href="/unit-1/lab-2/5-if-else.html"><img src="/img/2-complexity/more-complicated-who-conditional.png" title="if (pick random (1) to (4)) = (3) {
+Every `if else` block has two scripts inside of it, exactly one of which will be run depending on the value that the predicate reports. Then the computer continues with whatever comes after the `if else` block.<br /> <a href="/unit-1/lab-2/5-if-else.html"><img src="/img/2-complexity/more-complicated-who-conditional.png" title="if (pick random (1) to (4)) = (3) {
 report (join (who) (&apos;, who&apos;) (does what) ( ) (who) (,))
 } else {
 report (who)
@@ -57,7 +57,7 @@ repeat until (touching (Leader)?)
 {
     point towards (Leader)
     move (1) steps
-}"></a></p>
+}"></a>
 
 ::: {#first .forYouToDo}
 <ol>
@@ -110,7 +110,7 @@ as well as a sixth:
 , which means "not-equal" and reports `false` if the two inputs are equal and otherwise reports `true` (if they are not equal). When you write the <img src="/img/2-complexity/not-equal.png" title="() not equal ()" alt="() not equal ()" class="inline"/> block, it will work like this:<br /> <img src="/img/2-complexity/not-equal-reporting-true.png" title="(3) not equal (4) reporting true" alt="(3) not equal (4) reporting true" class="ms-4"/> <img src="/img/2-complexity/not-equal-reporting-false.png" title="(3) not equal (3) reporting false" alt="(3) not equal (3) reporting false" class="ms-4"/>
 :::
 
-<p>These six relational operators all report a Boolean value (`true` or `false`).</p>
+These six relational operators all report a Boolean value (`true` or `false`).
 :::
 
 ::: forYouToDo
@@ -132,13 +132,13 @@ You'll probably want to use the <img src="/img/blocks/mouse-down.png" title="mou
 :::
 
 ::: vocabFullWidth
-: <strong>Sequencing, Selection, Iteration</strong>
+: **Sequencing, Selection, Iteration**
 
 
 
-<p><strong>Selection</strong> means deciding (selecting) which part of an algorithm to run based on whether a condition is true or false.</p>
+**Selection** means deciding (selecting) which part of an algorithm to run based on whether a condition is true or false.
 
-<p>Every algorithm can be constructed using <strong>sequencing</strong> (following steps in order), <strong>selection</strong> (deciding), and <strong>iteration</strong> (repeating).</p>
+Every algorithm can be constructed using **sequencing** (following steps in order), **selection** (deciding), and **iteration** (repeating).
 :::
 
 </body>

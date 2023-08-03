@@ -6,16 +6,16 @@ gifffer: true
 ---
 
 ::: learn
-<!--<p><strong>In this lab</strong>, you'll make the computer play against the human player <em>strategically</em>.</p>-->
+<!--**In this lab**, you'll make the computer play against the human player <em>strategically</em>.-->
 
-<p><strong>On this page</strong>, you'll define the strategy that the
-computer will use by investigating the strategies that humans use.</p>
+**On this page**, you'll define the strategy that the
+computer will use by investigating the strategies that humans use.
 :::
 
-<p>You've already built into your project the most basic Tic-Tac-Toe
+You've already built into your project the most basic Tic-Tac-Toe
 strategy rule: the computer will move to the `best empty
 square` on its turn. But there are other important elements to a
-good strategy...</p>
+good strategy...
 
 ::: {#first .forYouToDo}
 <ol>
@@ -30,9 +30,9 @@ is the case, then play here").</li>
 </ol>
 :::
 
-<p>The strategy rules for Tic-Tac-Toe have different degrees of
+The strategy rules for Tic-Tac-Toe have different degrees of
 priority. For example, the most important rule is "if I can win on this
-turn, then play in the winning square."</p>
+turn, then play in the winning square."
 
 ::: forYouToDo
 <ol start="3">
@@ -121,5 +121,5 @@ players, and fix any bugs.</li>
 </ol>
 :::
 
-<p>On the next page you'll use `winning square` to finish
-giving the computer a better strategy.</p>
+On the next page you'll use `winning square` to finish
+giving the computer a better strategy.

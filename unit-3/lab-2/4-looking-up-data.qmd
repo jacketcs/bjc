@@ -5,7 +5,7 @@ order: 4
 ---
 
 ::: todo
-<strong>Purpose (do/learn; why this/here):</strong> Create a "Find
+**Purpose (do/learn; why this/here):** Create a "Find
 Contact" button that uses a `find contacts` block to
 <em>select</em> items from the <var>contact list</var> based on the
 contact's name. Students get practice with list processing, navigating
@@ -14,8 +14,8 @@ abstract data types, and using the higher-order function,
 :::
 
 ::: todo
-<p>BH: Ditto. (I still want given and family names! We can make it
-doable.)</p>
+BH: Ditto. (I still want given and family names! We can make it
+doable.)
 
 <ul>
 
@@ -26,10 +26,10 @@ this page in a TIF, and Mary will review/edit. --MF, 4/9/19</li>
 :::
 
 ::: learn
-<p><strong>On this page,</strong> you will develop code for a "Find
+**On this page,** you will develop code for a "Find
 Contact" button to locate contacts in the
 list<!--develop An "Find Contact" button for accessing specific contacts in your <var>contact list</var>-->.<br />
-<img src="/img/3-lists/find-contacts-with-name-Alphie-reporting.png" title="find contacts with name: (Alphie) reporting" alt="find contacts with name: (Alphie) reporting" class="ms-4"/></p>
+<img src="/img/3-lists/find-contacts-with-name-Alphie-reporting.png" title="find contacts with name: (Alphie) reporting" alt="find contacts with name: (Alphie) reporting" class="ms-4"/>
 :::
 
 ::: sidenote
@@ -42,18 +42,18 @@ in Unit 2</a>.
 DAT-2.D.3
 :::
 
-<p>As you add more contacts to your list, it will become less and less
+As you add more contacts to your list, it will become less and less
 realistic to find the one you want by reading through the whole list. So
 building a search feature will become essential for finding the desired
 information efficiently. Lists, adding and removing items from lists,
-and searching lists are common features in many programs.</p>
+and searching lists are common features in many programs.
 
 ::: atworkFullWidth
 ::: float-end
 <img src="/img/atwork/Farida_Bedwei.jpeg" title="photo of Farida Bedwei" alt="photo of Farida Bedwei" class="noshadow" height="200px"/>
 :::
 
-<p>Farida Bedwei (born in 1979) is a software engineer and the
+Farida Bedwei (born in 1979) is a software engineer and the
 co-founder/Chief Technology Officer of Logiciel, a financial technology
 company based in Ghana. Due to difficulties in muscle control as a
 result of cerebral palsy, she began using a typewriter as an alternative
@@ -61,11 +61,11 @@ to writing at an early age. Badwei attributes her future interest in
 computers to this early reliance on technology. In addition to being
 named as one of the most successful women in finance technology in
 Africa, Bedwei is a powerful advocate and role model for girls in STEM
-and for people with disabilities.</p>
+and for people with disabilities.
 
-<p><a href="https://edition.cnn.com/2015/02/13/africa/farida-bedwei-ghanaian-software-genius/index.html" title="Article: The inspirational tech guru who’s owning cerebral palsy like a boss" target="_blank">Article:
+<a href="https://edition.cnn.com/2015/02/13/africa/farida-bedwei-ghanaian-software-genius/index.html" title="Article: The inspirational tech guru who’s owning cerebral palsy like a boss" target="_blank">Article:
 The inspirational tech guru who's owning cerebral palsy like a
-boss</a></p>
+boss</a>
 :::
 
 ::: todo
@@ -73,8 +73,8 @@ BH and Mary want to use this again and mention tables and include images
 of both in snap and discuss how to change back and forth between the two
 views. --MF, 4/9/19
 
-<p>Each new contact is a list (item 1 is a name and item 2 should be a
-phone number), so the list of contacts is a <em>list of lists</em>.</p>
+Each new contact is a list (item 1 is a name and item 2 should be a
+phone number), so the list of contacts is a <em>list of lists</em>.
 :::
 
 ::: {#first .forYouToDo}
@@ -91,7 +91,7 @@ contacts whose name includes that string or an empty list if no such
 name is in <var>contact list</var>.
 
 ::: narrower
-<strong>Use these blocks:</strong>
+**Use these blocks:**
 
 <ol type="a">
 
@@ -131,7 +131,7 @@ found."</li>
 
 </li>
 
-<li><strong>Debug.</strong> Make sure everything works the way you want
+<li>**Debug.** Make sure everything works the way you want
 it to before going on.</li>
 
 ::: ap-standard
@@ -151,10 +151,10 @@ is the output of this program?</li>
 AAP-3.B.2, AAP-3.B.3
 :::
 
-<p><strong>Modularity</strong> is the process of breaking a programming
+**Modularity** is the process of breaking a programming
 project up into separate sub-problems. For example on page 2 of this
 lab, you built code to add a contact to your app, and on this page, you
-built code to find contacts.</p>
+built code to find contacts.
 :::
 
 ::: ifTime
@@ -217,9 +217,9 @@ it. (Optional.)</li>
 :::
 
 ::: takeItFurther
-<p>This set of exercises requires that you've already done the Take It
-Further exercises on page 2. <strong>Open your project
-U3L2-TIF.</strong></p>
+This set of exercises requires that you've already done the Take It
+Further exercises on page 2. **Open your project
+U3L2-TIF.**
 
 <ol type="A">
 
@@ -266,7 +266,7 @@ Is the middle name a family name or a given name?</li>
 Here's the tricky part: To make this all work correctly, a name (as
 defined by the `name` ADT) has to know whether it's a
 given-first name such as Betsy Anderson or a family-first name such as
-Sun Yat-Sen. <strong>Redefine your Name ADT</strong> to make it a list
+Sun Yat-Sen. **Redefine your Name ADT** to make it a list
 of <em>three</em> items. The first will be either the text 'given-first'
 or 'family-first'. This first item is called a <em>type tag.</em> The
 second item will be the given name (or names), and the third will be the
@@ -284,7 +284,7 @@ getting text."
 </li>
 
 <li><img src="/img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff" class="inline"/>
-<strong>Reading a name:</strong> Find where you ask the user for first
+**Reading a name:** Find where you ask the user for first
 and last name, and change the code to ask for given name(s) and family
 name. Also ask which comes first. You might want to have two name
 constructors,
@@ -292,8 +292,8 @@ constructors,
 and
 <img src="/img/3-lists/family-first-constructor.png" title="contact name, family-first, from given: () family: ()" alt="contact name, family-first, from given: () family: ()" class="inline"/>.</li>
 
-<li><img src="/img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff" class="inline"/><strong>Writing
-a name:</strong> Modify your
+<li><img src="/img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff" class="inline"/>**Writing
+a name:** Modify your
 <img src="/img/3-lists/name-display-form-from-contact.png" title="name, display form, from contact &apos;list input slot" alt="name, display form, from contact &apos;list input slot" class="inline"/>
 and
 <img src="/img/3-lists/name-sort-form-from-contact.png" title="name, sort form, from contact &apos;list input slot&apos;" alt="name, sort form, from contact &apos;list input slot&apos;" class="inline"/>

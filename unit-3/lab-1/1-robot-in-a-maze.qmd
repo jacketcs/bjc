@@ -8,11 +8,11 @@ editor:
 ---
 
 ::: learn
-<strong>In this project,</strong> you will create algorithms to escape
+**In this project,** you will create algorithms to escape
 from a maze.
 :::
 
-<p>
+
 
 Imagine you're a robot trapped in a maze. You don't have a bird's-eye
 view so you can see all the possibilities (shown below left). Instead,
@@ -30,7 +30,7 @@ user Oxyman</a></small>
 <img src="img/2-complexity/maze-above.png" title="drawing of maze seen from above" alt="drawing of maze seen from above" class="ms-4"/>
 <img src="img/2-complexity/maze-inside.jpg" title="photograph of maze of hedges with tall walls seen from the inside" alt="photograph of maze of hedges with tall walls seen from the inside" class="ms-4" width="240"/>
 
-</p>
+
 
 ::: forYouToDo
 <ol>
@@ -75,14 +75,14 @@ red X.</li>
 AAP-2.M.2 bullet 4
 :::
 
-<p>One well-known maze algorithm is called "Follow the left wall." The
+One well-known maze algorithm is called "Follow the left wall." The
 idea is to keep your left hand touching a wall. If suddenly your left
 hand isn't touching a wall, there's a corridor to the left, and in order
 to keep your hand on the left wall, you turn left and go down the
 corridor. If instead you bump into a wall in front of you, then in order
 to keep your hand on the left wall you'll have to turn right. (Draw a
 sketch if that doesn't make sense to you.) For many mazes, this simple
-algorithm will eventually get you to the exit.</p>
+algorithm will eventually get you to the exit.
 
 ::: forYouToDo
 <ol start="5">
@@ -94,7 +94,7 @@ If not, can you debug it?</li>
 :::
 
 ::: examFullWidth
-<p>
+
 
 There are problems about a robot in a grid with special procedures that
 don't exist in Snap<em>!</em>:
@@ -149,7 +149,7 @@ You can read more about these AP language procedures on the
 <a href="cur/snap-cheat-sheet.html?course=bjc4nyc.html&novideo&noassignment" title="Snap! Cheat Sheet" target="_blank">Snap<em>!</em>
 Cheat Sheet</a> in the Robot section at the bottom.
 
-</p>
+
 :::
 
 ::: forYouToDo

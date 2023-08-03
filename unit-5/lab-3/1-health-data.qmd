@@ -10,15 +10,15 @@ of the lab. --MF, 5/23/20
 :::
 
 ::: learn
-<p><strong>On this page</strong>, you will learn how data visualization
-can help people understand data.</p>
+**On this page**, you will learn how data visualization
+can help people understand data.
 :::
 
-<p>Large data sets can be overwhelming to analyze, but software tools
+Large data sets can be overwhelming to analyze, but software tools
 can help people extract information, identify trends, make connections,
 and solve problems with data. Software programs, such as the graph below
 from Google can allow you to process data interactively to gain insight
-and knowledge.</p>
+and knowledge.
 
 ::: {#first .forYouToDo}
 <ol>
@@ -33,7 +33,7 @@ If the interactive graph doesn't work on this page, you can
 it on google.com</a>.
 :::
 
-<strong>Explore</strong> the following interactive data set.
+**Explore** the following interactive data set.
 
 <ol>
 
@@ -71,7 +71,7 @@ is.)</small>
 <li>
 
 <img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/>
-<strong>Analyze</strong> the data. In the interactive graph above, click
+**Analyze** the data. In the interactive graph above, click
 the play button in the lower-left or move the slider at the bottom.
 Discuss the following:
 
@@ -93,7 +93,7 @@ DAT-2.E, DAT-2.E.3 clustering only
 :::
 
 Looking at clusters in the data can help you gain insight and knowledge.
-<strong>Do some research</strong> online or in the library to help you
+**Do some research** online or in the library to help you
 answer the following:
 
 ::: todo
@@ -128,12 +128,12 @@ time period.</li>
 </ol>
 :::
 
-<p>In ordinary speech, the words "data" and "information" are used
+In ordinary speech, the words "data" and "information" are used
 interchangeably. But in computing, these words have specific technical
-meanings.</p>
+meanings.
 
 ::: vocabFullWidth
-: <strong>Data</strong> vs. <strong>Information</strong>
+: **Data** vs. **Information**
 
 ::: ap-standard
 DAT-2.A.1
@@ -141,15 +141,15 @@ DAT-2.A.1
 
 <ul>
 
-<li><strong>Data</strong> are the values that computers receive from
+<li>**Data** are the values that computers receive from
 various sources, including human activity, sensors, etc.</li>
 
-<li><strong>Information</strong> is the humanly-useful patterns
+<li>**Information** is the humanly-useful patterns
 extracted from data.</li>
 
 </ul>
 
-<p>
+
 
 ::: ap-standard
 DAT-2.A.2
@@ -159,14 +159,14 @@ Data provide opportunities for identifying trends, making connections,
 and addressing problems. Information is the result of analyzing that
 data.
 
-</p>
+
 :::
 
-<p>The data given in the graph above let us answer some questions but
+The data given in the graph above let us answer some questions but
 not others. We can, for example, answer questions about how patterns of
 fertility and life expectancy differ from one continent to another, but
 not questions about how life expectancy is affected by the jobs people
-do, because the data displayed doesn't show jobs.</p>
+do, because the data displayed doesn't show jobs.
 
 ::: forYouToDo
 <ol start="4">
@@ -187,11 +187,11 @@ picture, but it would not have been obvious just looking at the data.
 </li>
 
 ::: vocabFullWidth
-<p>A <strong>correlation</strong> is a particular kind of information,
+A **correlation** is a particular kind of information,
 namely a dependence between two variables. For example in the first
 picture here, as one variable goes up the other goes down. It's also a
 correlation when as one variable goes up or down the other changes in
-the same manner.</p>
+the same manner.
 
 ::: {style="display: inline-grid; grid-template-columns: auto auto auto; text-align: center;"}
 <div>
@@ -245,32 +245,32 @@ high fertility rates.</li>
 DAT-2.E.4
 :::
 
-<p><strong>Insight</strong> is a meaningful conclusion drawn from
-analyzing information.</p>
+**Insight** is a meaningful conclusion drawn from
+analyzing information.
 :::
 
 ::: ap-standard
 DAT-2.A.3, DAT-2.A.4
 :::
 
-<p>The data by themselves don't tell you what causes what. There may be
+The data by themselves don't tell you what causes what. There may be
 a correlation between two things, but this does not mean one thing
 causes the other. People often say, "Correlation does not imply
 causation." Additional research is needed to gain <em>insight</em> into
-the exact nature of the relationship, such as causation.</p>
+the exact nature of the relationship, such as causation.
 
 ::: endnote
-<p><a href="http://tylervigen.com/view_correlation?id=79804" title="An example of two things that are obviously correlated, but obviously neither caused the other." target="_blank">An
+<a href="http://tylervigen.com/view_correlation?id=79804" title="An example of two things that are obviously correlated, but obviously neither caused the other." target="_blank">An
 example of two things that are obviously correlated, but obviously
 neither caused the other.</a> You can click "Discover a new correlation"
-on that site to find other strange correlations.</p>
+on that site to find other strange correlations.
 :::
 
 ::: ap-standard
 DAT-2.E.3, DAT-2.E.1
 :::
 
-<p>Often, a single source does not contain the data needed to draw a
+Often, a single source does not contain the data needed to draw a
 conclusion; it may be necessary to combine data from a variety of
 sources. As you found using visualization software with the fertility
 and life expectancy data, sometimes a pattern you discover in one data
@@ -279,7 +279,7 @@ these things correlated with median income in the country?" To answer
 this question, you could find an economic database, download some data,
 and use look for additional correlations. There can be several cycles of
 seeing something in the data and collecting more data to examine before
-you have what seems like a reliable insight about causation.</p>
+you have what seems like a reliable insight about causation.
 
 ::: forYouToDo
 <ol start="6">
@@ -288,8 +288,8 @@ you have what seems like a reliable insight about causation.</p>
 DAT-2.A
 :::
 
-<li><img src="/img/icons/write-out-thoughts-mini.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/><strong>Summarize
-your findings.</strong> Write a paragraph or two with your partner
+<li><img src="/img/icons/write-out-thoughts-mini.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/>**Summarize
+your findings.** Write a paragraph or two with your partner
 describing your findings about life expectancy and fertility for the
 country you chose over this time period.</li>
 
@@ -309,18 +309,18 @@ increased?</li>
 :::
 
 ::: endnote
-<p><a href="#hint-jokes" data-bs-toggle="collapse" title="Two jokes about correlation and causation from XKCD...">Two
-jokes about correlation and causation from XKCD...</a></p>
+<a href="#hint-jokes" data-bs-toggle="collapse" title="Two jokes about correlation and causation from XKCD...">Two
+jokes about correlation and causation from XKCD...</a>
 
 ::: {#hint-jokes .collapse}
 <img src="https://imgs.xkcd.com/comics/correlation.png" title="Comic with two people talking across three panels. In panel one, one person says &apos;I used to think correlation implied causation.&apos; In panel two, the same person says, &apos;Then I took a statistics class. Now I don&apos;t.&apos; In panel three, the other person says, &apos;Sounds like the class helped,&apos; and the first person says, &apos;Well, maybe.&apos;" alt="Comic with two people talking across three panels. In panel one, one person says &apos;I used to think correlation implied causation.&apos; In panel two, the same person says, &apos;Then I took a statistics class. Now I don&apos;t.&apos; In panel three, the other person says, &apos;Sounds like the class helped,&apos; and the first person says, &apos;Well, maybe.&apos;" class="ms-4"/>
 
-<p><a href="https://www.explainxkcd.com/wiki/index.php/552:_Correlation" title="Don't get the correlation joke about statistics class?" target="_blank">Don't
-get the correlation joke about statistics class?</a></p>
+<a href="https://www.explainxkcd.com/wiki/index.php/552:_Correlation" title="Don't get the correlation joke about statistics class?" target="_blank">Don't
+get the correlation joke about statistics class?</a>
 
 <img src="https://imgs.xkcd.com/comics/cell_phones.png" alt="Comic with two people talking across four panels. In panel one, the first person says &apos;Another huge study found no evidence that cell phones cause cancer. What was the W.H.O. thinking?&apos; and the second person says, &apos;I think they just got it backward.&apos; In panel two, the first person says, &apos;Huh?&apos; and the second says, &apos;Well, take a look,&apos; while holding out a laptop. Panel three shows a graph in which the &apos;Total cancer incidence&apos; in the U.S. rises between 1970 and 1990 and the number of &apos;cell phone users&apos; rises between 1990 and 2010. In panel four, the first person says, &apos;Your not... There are *so* many problems with that,&apos; and the second person says, &apos;Well, just to be safe, until I see more data I&apos;m going to assume cancer causes cell phones.&apos;" class="ms-4"/>
 
-<p><a href="https://www.explainxkcd.com/wiki/index.php/925:_Cell_Phones" title="Don't get the correlation joke about cell phones and cancer?" target="_blank">Don't
-get the correlation joke about cell phones and cancer?</a></p>
+<a href="https://www.explainxkcd.com/wiki/index.php/925:_Cell_Phones" title="Don't get the correlation joke about cell phones and cancer?" target="_blank">Don't
+get the correlation joke about cell phones and cancer?</a>
 :::
 :::

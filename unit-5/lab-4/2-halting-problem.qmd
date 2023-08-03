@@ -5,7 +5,7 @@ order: 2
 ---
 
 ::: todo
-<p>PG: This is a lovely piece of logic, well written. I'd love to keep
+PG: This is a lovely piece of logic, well written. I'd love to keep
 it (and see if we can simplify writing even further), but reasoning by
 contradiction is notoriously hard in all contexts (though, perhaps, page
 1 sets it up well enough?) and it isn't obvious that doing it in a
@@ -13,55 +13,55 @@ programming context would be easier. In fact, the unfamiliarity and
 extra layer of technicality might make it harder. Do we have any
 feedback? All this said, CB insists on "teaching this," so the question
 is how we can make more than an empty factoid out of it. I like our
-approach. Does it work?</p>
+approach. Does it work?
 
-<p>BH: But FYTD 1c is kinda TIFfy. And, I think Church actually proved
-it before Turing, but we should check. And, bring back his picture!</p>
+BH: But FYTD 1c is kinda TIFfy. And, I think Church actually proved
+it before Turing, but we should check. And, bring back his picture!
 
-<p>MF: I want to review this page just because the idea deserves it</p>
+MF: I want to review this page just because the idea deserves it
 :::
 
 ::: learn
-<p><strong>On this page,</strong> you will consider a problem that
-<em>can't</em> have an answer.</p>
+**On this page,** you will consider a problem that
+<em>can't</em> have an answer.
 :::
 
-<p>By this point in the course, you've experienced the frustration of
+By this point in the course, you've experienced the frustration of
 debugging a program. It would be great if there were a general-purpose
 debugging program that could read any code and determine if there were
 bugs. Unfortunately, we can use proof by contradiction (as Alphie,
 Betsy, and Gamal did on the previous page) to prove that this can't be
-done.</p>
+done.
 
-<p>First, we'll assume that it's possible to write a function to
+First, we'll assume that it's possible to write a function to
 determine if there are <em>infinite loops</em> in a program (situations
 in which a function runs forever without reporting a value). Then, we'll
 use that function in a program especially designed to create a
 contradiction (a logical incompatibility) to prove that the assumption
-is wrong---<strong>no general-purpose debugging program can
-exist</strong>. "Does this program have bugs" is an <em>undecidable
+is wrong---**no general-purpose debugging program can
+exist**. "Does this program have bugs" is an <em>undecidable
 problem</em>; no algorithm can ever be constructed that always solves it
-correctly for every program.</p>
+correctly for every program.
 
 ::: vocabFullWidth
-<p>An <strong>infinite loop</strong> is a sequence of computer
-instructions that repeats forever.</p>
+An **infinite loop** is a sequence of computer
+instructions that repeats forever.
 
-<p>An <strong>unsolvable problem</strong> is one for which no algorithm
-can ever be written to find the solution.</p>
+An **unsolvable problem** is one for which no algorithm
+can ever be written to find the solution.
 
-<p>An <strong>undecidable problem</strong> is one for which no algorithm
+An **undecidable problem** is one for which no algorithm
 can ever be written that will always give a correct <em>true/false
 decision</em> for every input value. Undecidable problems are a
 subcategory of unsolvable problems that include only problems that
-should have a yes/no answer (such as: does my code have a bug?).</p>
+should have a yes/no answer (such as: does my code have a bug?).
 :::
 
 <h3>Assuming That a `Halts?` Function Exists</h3>
 
-<h4><strong>Making the Assumption</strong></h4>
+<h4>**Making the Assumption**</h4>
 
-<p>
+
 
 ::: sidenote
 We can't show the code inside `halts?`; we are proving that
@@ -77,10 +77,10 @@ a value when given that input; it reports `false` if the
 function would run forever (in an infinite loop).<br />
 <img src="/img/5-algorithms/halts.png" title="halts? (function) (input)" alt="halts? (function) (input)" class="ms-4"/>
 
-</p>
 
-<p>For example, the function `round` will not run forever
-when given the input <var>7.5</var>; it will report 8.</p>
+
+For example, the function `round` will not run forever
+when given the input <var>7.5</var>; it will report 8.
 
 ::: sidenote
 The gray ring around the input function means that the
@@ -95,11 +95,11 @@ because
 <img src="/img/5-algorithms/round(7-5).png" title="round (7.5)" alt="round (7.5)" class="inline"/>
 reports a value.
 
-</p>
 
-<p>On the other hand, imagine we had a function that will get stuck in
+
+On the other hand, imagine we had a function that will get stuck in
 an infinite loop when given the input <var>foo</var>; it would never
-report (never halt).</p>
+report (never halt).
 
 <p class="ms-4">
 
@@ -108,58 +108,58 @@ because
 <img src="/img/5-algorithms/program-with-loop(foo).png" title="program with an infinite loop (foo)" alt="program with an infinite loop (foo)" class="inline"/>
 loops infinitely.
 
-</p>
 
-<h4><strong>Reviewing the Plan for the Proof</strong></h4>
 
-<p>We'll use proof by contradiction to show that the following question
-<em>can't</em> be answered <em>in general</em>:</p>
+<h4>**Reviewing the Plan for the Proof**</h4>
 
-<p>
+We'll use proof by contradiction to show that the following question
+<em>can't</em> be answered <em>in general</em>:
 
-<strong>Will a certain computer program, given a certain input, report a
-result in a finite amount of time?</strong>
 
-</p>
+
+**Will a certain computer program, given a certain input, report a
+result in a finite amount of time?**
+
+
 
 ::: endnote
-<p>The "computer program" is the first input to `halts?`. The
+The "computer program" is the first input to `halts?`. The
 "given input" is the second input to `halts?`. And what
 `halts?` reports is either `true` or
 `false`: yes the "computer program" will halt or no it
-won't.</p>
+won't.
 
-<p>Note that `halts?` itself must always report a result,
+Note that `halts?` itself must always report a result,
 even if the program it's testing doesn't. This is because we are
 <em>assuming</em> (an assumption we'll show is false) that
-`halts?` always works---that it always reports an answer.</p>
+`halts?` always works---that it always reports an answer.
 :::
 
-<p>We <em>can</em> answer this question for some <em>specific</em>
+We <em>can</em> answer this question for some <em>specific</em>
 functions, but we are trying to determine whether we can devise a
 <em>general</em> test that will tell us whether <em>any</em> particular
-function will report a value for <em>any</em> specific input.</p>
+function will report a value for <em>any</em> specific input.
 
 ::: endnote
 <a href="#hint-general" data-bs-toggle="collapse" title="What does it mean to answer the question for specific functions?">What
 does it mean to answer the question for <em>specific</em> functions?</a>
 
 ::: {#hint-general .collapse}
-<p>The "in general" part is important. Of course we can answer the
+The "in general" part is important. Of course we can answer the
 question for certain particular programs. This one halts (reports a
 value) for <em>any</em> input:<br />
-<img src="/img/5-algorithms/three-fn.png" title="three(x): report (3)" alt="three(x): report (3)" class="ms-4"/></p>
+<img src="/img/5-algorithms/three-fn.png" title="three(x): report (3)" alt="three(x): report (3)" class="ms-4"/>
 
-<p>This one <em>never</em> halts for any input:<br />
-<img src="/img/5-algorithms/loop-fn.png" title="loop(x): forever (wait 1 secs)" alt="loop(x): forever (wait 1 secs)" class="ms-4" width="158"/></p>
+This one <em>never</em> halts for any input:<br />
+<img src="/img/5-algorithms/loop-fn.png" title="loop(x): forever (wait 1 secs)" alt="loop(x): forever (wait 1 secs)" class="ms-4" width="158"/>
 
-<p>And this one halts <em>sometimes</em>---for any input except
+And this one halts <em>sometimes</em>---for any input except
 87:<br />
-<img src="/img/5-algorithms/weird-fn.png" title="weird(x): if (x = 87) (forever (wait 1 secs)) else (report (3))" alt="weird(x): if (x = 87) (forever (wait 1 secs)) else (report (3))" class="ms-4" width="158"/></p>
+<img src="/img/5-algorithms/weird-fn.png" title="weird(x): if (x = 87) (forever (wait 1 secs)) else (report (3))" alt="weird(x): if (x = 87) (forever (wait 1 secs)) else (report (3))" class="ms-4" width="158"/>
 
-<p>Recall: the question is whether we can devise a test that will tell
+Recall: the question is whether we can devise a test that will tell
 us whether <em>any</em> particular function will report a value for
-<em>any</em> specific input.</p>
+<em>any</em> specific input.
 :::
 :::
 
@@ -188,10 +188,10 @@ this proof by contradiction process.</li>
 
 <h3>Showing How This Creates a Contradiction</h3>
 
-<h4><strong>Constructing a Program For Which `Halts?` Won't
-Work</strong></h4>
+<h4>**Constructing a Program For Which `Halts?` Won't
+Work**</h4>
 
-<p>
+
 
 To prove there can be no such function, we need to create a
 contradiction. We need to show that there has to be at least one
@@ -203,7 +203,7 @@ fails to work the way we assumed it does. So, we can make up a block,
 ::: sidenoteBig
 Just like the `\#` and `⋮` symbols for inputs
 declared to be <em>numbers</em> or <em>lists</em>, the `λ` is
-not part of the input's name but is a <strong>type hint</strong> that
+not part of the input's name but is a **type hint** that
 was created when selecting the <em>reporter</em> input type:<br />\
 <img src="/img/5-algorithms/input-type-reporter.png" title="selecting the Reporter input type" alt="selecting the Reporter input type" class="ms-4"/><br />
 Recall that selecting an input type changes the appearance of the input
@@ -215,22 +215,22 @@ the input should be a reporter:
 
 <img src="/img/5-algorithms/tester-halting.png" title="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(It doesn&apos;t matter what value is reported.)}}" alt="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(It doesn&apos;t matter what value is reported.)}}" class="ms-4"/>
 
-</p>
 
-<p>The `forever` block in this script creates an infinite
+
+The `forever` block in this script creates an infinite
 loop. If the `tester` code ends up in this part of the
 `if` statement, it will never report anything. So whether
 `tester` <em>itself</em> will halt depends on the output of
 the `halts?` predicate in the `if` statement
-inside it.</p>
+inside it.
 
-<p>The expression
+The expression
 <img src="/img/5-algorithms/halts-reporter-reporter.png" title="halts? (reporter) (reporter)" alt="halts? (reporter) (reporter)" class="inline"/>
 asks what will happen if we call the input function
 (<var>reporter</var>) with <em>itself</em> as its own input. This is
 similar to when Betsy made a statement about the statement she was
 making, when she said, "The statement I'm making <em>right now</em> is
-false."</p>
+false."
 
 ::: endnote
 <img src="/img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff" class="inline"/>
@@ -239,9 +239,9 @@ contradiction</em> to prove that the `halts?` function called
 inside `tester` can't exist.
 :::
 
-<h4><strong>Using Self-Reference to Lead to Contradiction</strong></h4>
+<h4>**Using Self-Reference to Lead to Contradiction**</h4>
 
-<p>
+
 
 To make the situation <em>exactly</em> like what Betsy said ("The
 statement I'm making <em>right now </em>is false."), we'll call
@@ -262,9 +262,9 @@ me for another day. --MF, 2/1/18
 
 <img src="/img/5-algorithms/tt-t-htt.png" title="tester(tester) -&gt; reporter input in tester definition -&gt; halts? (tester) (tester)" alt="tester(tester) -&gt; reporter input in tester definition -&gt; halts? (tester) (tester)"/>
 
-</p>
 
-<p>So, just as in the examples above,</p>
+
+So, just as in the examples above,
 
 <p class="ms-4">
 
@@ -273,7 +273,7 @@ would mean that
 <img src="/img/5-algorithms/testertester.png" title="tester(tester())" alt="tester(tester())" class="inline"/>
 returns a value.
 
-</p>
+
 
 <p class="ms-4">
 
@@ -282,19 +282,19 @@ would mean that
 <img src="/img/5-algorithms/testertester.png" title="tester(tester())" alt="tester(tester())" class="inline"/>
 loops infinitely.
 
-</p>
 
-<h4><strong>Understanding the Contradiction</strong></h4>
 
-<p>When we call
+<h4>**Understanding the Contradiction**</h4>
+
+When we call
 <img src="/img/5-algorithms/testertester.png" title="tester(tester())" alt="tester(tester())" class="inline"/>,
 we run into the contradiction. To see how, look back at the
 `tester` definition:<br />
-<img src="/img/5-algorithms/tester-halting.png" title="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(true)}}" alt="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(true)}}" class="ms-4"/></p>
+<img src="/img/5-algorithms/tester-halting.png" title="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(true)}}" alt="tester(reporter){if(halts?(reporter)(reporter){forever{}}else{report(true)}}" class="ms-4"/>
 
-<p>
 
-Showing that <strong>the result has to be wrong</strong> involves a
+
+Showing that **the result has to be wrong** involves a
 <em>case analysis</em> like the ones used to solve the logic puzzles on
 page 1. Consider the two possible cases:
 
@@ -317,7 +317,7 @@ report "It doesn't matter what value is reported." That means
 
 </ol>
 
-</p>
+
 
 ::: endnote
 It doesn't matter <em>what</em> value `tester` reports, just
@@ -326,17 +326,17 @@ value `halts?` reports.
 :::
 
 ::: takeNote
-<p>No matter what `halts?` reports, it will always disagree
-with itself in a program like this. <strong>This contradiction (this
+No matter what `halts?` reports, it will always disagree
+with itself in a program like this. **This contradiction (this
 logical impossibility) means that the assumption that it's possible
-write `halts?` has to be wrong</strong>. This isn't just a
+write `halts?` has to be wrong**. This isn't just a
 claim about what will happen in Snap<em>!</em>. The language you use to
 explore a computational problem can impact the clarity or readability of
 your code but not whether a solution to a problem exists. Even with
 advances in quantum computing, we will never be able to create a
 general-purpose debugging program. This famous example is known as the
 <em>halting problem,</em> and the fact that the halting problem is not
-decidable is the <em>Halting Theorem.</em></p>
+decidable is the <em>Halting Theorem.</em>
 :::
 
 ::: forYouToDo
@@ -382,7 +382,7 @@ that takes unreasonable time.</li>
 <img src="/img/atwork/Alan_Turing.jpeg" title="photo of Alan Turing" alt="photo of Alan Turing" class="noshadow" height="200px"/>
 :::
 
-<p>Alan Turing (1912--1954) was a British computer scientist and
+Alan Turing (1912--1954) was a British computer scientist and
 mathematician. During World War II, he developed a number of critical
 technologies to decipher encrypted German messages, playing a key role
 in helping the Allied forces defeat the Nazis. While working at the
@@ -390,15 +390,15 @@ University of Manchester after the war, he devoted more of his time to
 the idea of Artificial Intelligence, proposing what is now known as the
 "Turing Test". Together with his colleague Alonzo Church, Turing was a
 founder of theoretical computer science: proving that computers must
-work regardless of future technology.</p>
+work regardless of future technology.
 
-<p>He proved that there are well-defined mathematical problems that
+He proved that there are well-defined mathematical problems that
 computers can never solve, no matter how large and fast they get.
 Tragically, Turing was prosecuted for "indecency" when authorities
 discovered he was gay, and it is suspected that he commited suicide
 after being subjected to hormone treatments. He is often considered to
-be the "father of modern computing."</p>
+be the "father of modern computing."
 
-<p><a href="https://www.nytimes.com/2019/06/05/obituaries/alan-turing-overlooked.html" title="Article: Overlooked No More" target="_blank">Article:
-Overlooked No More</a></p>
+<a href="https://www.nytimes.com/2019/06/05/obituaries/alan-turing-overlooked.html" title="Article: Overlooked No More" target="_blank">Article:
+Overlooked No More</a>
 :::

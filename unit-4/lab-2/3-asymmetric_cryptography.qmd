@@ -5,69 +5,69 @@ order: 3
 ---
 
 ::: learn
-<p><strong>On this page,</strong> you will learn about a commonly used
-method of cryptography that is more secure.</p>
+**On this page,** you will learn about a commonly used
+method of cryptography that is more secure.
 :::
 
-<p>The fundamental problem that cryptography is trying to solve is how
+The fundamental problem that cryptography is trying to solve is how
 to get a message to your friend that can't be intercepted by your
 enemies. Symmetric encryption has a fundamental weakness: the encryption
 key is itself a message that needs to be send to your friend but not
-intercepted by your enemy.</p>
+intercepted by your enemy.
 
-<p><em>Public key cryptography</em> is a mathematical technique to avoid
+<em>Public key cryptography</em> is a mathematical technique to avoid
 the need to communicate a secret key from one person to another.
 Instead, each person has <em>two</em> keys: a private key known only to
 that person and a public key that everyone in the world is allowed to
 know. If Bob wants to send Alice a secret message, he encrypts it with
 Alice's public key. Then no one but Alice can decrypt it. Only her
 private key can undo the encryption, and no one <em>can figure out</em>
-the private key from the public key.</p>
+the private key from the public key.
 
 ::: vocabFullWidth
 ::: ap-standard
 IOC-2.B.5
 :::
 
-<p><strong>Public key encryption</strong> uses a pair of keys: a public
+**Public key encryption** uses a pair of keys: a public
 key for encryption and a private key for decryption. The sender uses the
 public key to encrypt the message, and receiver uses their private key
-to decrypt it.</p>
+to decrypt it.
 :::
 
 ::: endnote
 
 
-<p><a href="#hint-model" data-bs-toggle="collapse" title="Here is a visual model of public key encryption (from wikimedia.org).">Here
-is a visual model of public key encryption</a> (from wikimedia.org).</p>
+<a href="#hint-model" data-bs-toggle="collapse" title="Here is a visual model of public key encryption (from wikimedia.org).">Here
+is a visual model of public key encryption</a> (from wikimedia.org).
 
 ::: {#hint-model .collapse}
 <img src="/img/3-lists/525px-Public_key_encryption.png" title="Diagram of public key encryption showing a message being encrypted with a public key and decrypted with a private key" alt="Diagram of public key encryption showing a message being encrypted with a public key and decrypted with a private key" class="ms-4 noshadow" border="0"/>
 :::
 
-<p><a href="#hint-paint" data-bs-toggle="collapse" title="Here is a video that uses paint mixing as a metaphor for public key encryption.">Here
+<a href="#hint-paint" data-bs-toggle="collapse" title="Here is a video that uses paint mixing as a metaphor for public key encryption.">Here
 is a video that uses paint mixing as a metaphor for public key
-encryption.</a></p>
+encryption.</a>
 
 ::: {#hint-paint .collapse}
 <img src="/img/icons/headphones-mini.png" title="Set Up Your Headphones or Speakers" alt="Set Up Your Headphones or Speakers" class="float-end"/>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YEBfamv-_do?start=145&rel=0" frameborder="0" allowfullscreen class="ms-4"></iframe>
 
-<p>If your connection blocks YouTube,
+If your connection blocks YouTube,
 <a href="http://scratch.mit.edu/discuss/youtube/YEBfamv-_do" target="_blank" title="Public key cryptography - Diffie-Hellman Key Exchange">watch
-the video here</a>, but start it at 2:25.</p>
+the video here</a>, but start it at 2:25.
 :::
 :::
 
 ::: takeNote
-<p><strong>Symmetric cryptography</strong> uses the <em>same secret
+**Symmetric cryptography** uses the <em>same secret
 key</em> to encode and to decode a message, and it's been around for
 thousands of years. Its weakness is that the key becomes
-<em>another</em> message that needs to be transmitted securely.</p>
+<em>another</em> message that needs to be transmitted securely.
 
 ::: sidenote
-<p><a href="#hint-invented" data-bs-toggle="collapse" title="Who invented public key encryption?">Who
-created public key encryption?</a></p>
+<a href="#hint-invented" data-bs-toggle="collapse" title="Who invented public key encryption?">Who
+created public key encryption?</a>
 
 ::: {#hint-invented .collapse}
 The public key idea was first published by Whitfield Diffie and Martin
@@ -76,11 +76,11 @@ kept secret by governments.
 :::
 :::
 
-<p><strong>Public key (asymmetric) cryptography</strong> was created in
+**Public key (asymmetric) cryptography** was created in
 the 1970s. It uses <em>two different keys</em> for encryption and
 decryption, so sharing the public key doesn't give away the private key.
 Public key encryption is the primary method of encryption today because
-of its high level of security.</p>
+of its high level of security.
 :::
 
 ::: forYouToDo
@@ -115,8 +115,8 @@ also possible to use the <em>private</em> key for encryption and the
 <em>public</em> key for decryption...</a>
 
 ::: {#hint-digital-signatures .collapse}
-<p>That's no good for secret messages (why not?), but it's useful for
-<strong>digital signatures</strong>. I use my private key to encrypt a
+That's no good for secret messages (why not?), but it's useful for
+**digital signatures**. I use my private key to encrypt a
 message; you use my public key to decrypt it. If you get a meaningful
 message as the result, that proves that the message was encrypted with
 my private key. (If I want both secrecy and digital signing, I encrypt
@@ -125,7 +125,7 @@ result <em>again</em> with your public key to keep it secret. You
 decrypt it twice, first with your private key and then with my public
 key.) This is a nice example of <em>composition of functions:</em> the
 output from the first encryption is the input to the second
-encryption.</p>
+encryption.
 :::
 :::
 
@@ -137,17 +137,17 @@ This comic was written by Randall Munroe (source: xkcd).<br />
 <h3>Secure HTTP</h3>
 
 ::: vocabBig
-<p><strong>SSL/TLS</strong> (secure sockets layer/transport layer
+**SSL/TLS** (secure sockets layer/transport layer
 security) is the standard used for cryptographically secured information
-transfer on the Internet.</p>
+transfer on the Internet.
 :::
 
-<p>Secure HTTP connections (those that use <strong>https://</strong>
-instead of <strong>http://</strong>) use a protocol called <em>Transport
+Secure HTTP connections (those that use **https://**
+instead of **http://**) use a protocol called <em>Transport
 Layer Security</em> (TLS) or maybe an older version called <em>Secure
 Sockets Layer</em> (SSL). Both are based on public key cryptography.
 With SSL/TLS, the site you are visiting sends its public key, and your
-browser uses it to encrypt the information you send.</p>
+browser uses it to encrypt the information you send.
 
 ```{=html}
 <!--<div class="todo">
@@ -161,7 +161,7 @@ browser uses it to encrypt the information you send.</p>
 standards help security...</a>
 
 ::: {#hint-open-standards .collapse}
-<p>In order to work properly, a cryptographic function has to be easy
+In order to work properly, a cryptographic function has to be easy
 for the private key holder to invert, but hard for anyone else to
 invert. How do we know what "hard" means? For example, current
 cryptographic methods rely on the difficulty of finding prime factors of
@@ -171,15 +171,15 @@ because the problem has been well studied by many mathematicians. (On
 the other hand, when <em>quantum computers</em> become practical,
 factorization <em>will</em> be easy, and new cryptographic methods will
 be needed. New research developments in 2019 make practical quantum
-cryptanalysis seem not so far away.)</p>
+cryptanalysis seem not so far away.)
 
-<p>What makes it possible for mathematicians to study the difficulty of
+What makes it possible for mathematicians to study the difficulty of
 breaking Internet cryptography is that the method used---the
 cryptographic function---is openly published. This may seem strange; if
 you want to keep secrets, shouldn't you keep the technique secret, too?
 But secret algorithms can have weaknesses that go undiscovered until
 some bad guy exploits them. Open standards allow an algorithm to be
-studied <em>before</em> it is used in practice.</p>
+studied <em>before</em> it is used in practice.
 :::
 :::
 
@@ -190,22 +190,22 @@ studied <em>before</em> it is used in practice.</p>
 IOC-2.B.6
 :::
 
-<p><strong>Certificate authorities</strong> are organizations that issue
+**Certificate authorities** are organizations that issue
 digital certificates to verify who owns the encryption keys used for
-secured communications.</p>
+secured communications.
 
-<p>Instead of trusting that the website is who they say they are, you
-now have to trust that the Certificate Authority is reliable.</p>
+Instead of trusting that the website is who they say they are, you
+now have to trust that the Certificate Authority is reliable.
 :::
 
-<p>Public key cryptography doesn't solve all the problems, because an
+Public key cryptography doesn't solve all the problems, because an
 eavesdropper (say, Eve) might publish a fake public key pretending to be
 Alice. Then Bob might accidentally encrypt his message to Alice using
 Eve's fake key, and then only Eve can read the message meant for Alice.
 In practice, this is partly fixed by relying on trusted third parties,
 called <em>Certificate Authorities</em>, to certify public keys. In your
 browser's security options you can see all of the Certificate
-Authorities that it trusts.</p>
+Authorities that it trusts.
 
 ::: endnote
 But this just pushes the problem back a layer. How does the Certificate

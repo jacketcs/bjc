@@ -9,24 +9,24 @@ order: 5
 DAT-2.D.2, DAT-2.D.6 bullet 4
 :::
 
-<p>Tables, diagrams, text, charts, graphs, and other visual tools help
-extract, modify, and communicate information from data.</p>
+Tables, diagrams, text, charts, graphs, and other visual tools help
+extract, modify, and communicate information from data.
 
-<p><strong>On this page</strong>, you will create a visualizations to
-help you analyze and communicate information from your dataset.</p>
+**On this page**, you will create a visualizations to
+help you analyze and communicate information from your dataset.
 :::
 
 <h3>Grouping Data</h3>
 
-<p>
+
 
 ::: vocab
 ::: ap-standard
 DAT-2.E.3 classifying only
 :::
 
-<p><strong>Classifying data</strong> means distributing data into groups
-based on common characteristics.</p>
+**Classifying data** means distributing data into groups
+based on common characteristics.
 :::
 
 Another thing that's often done in data science is <em>grouping</em> (or
@@ -49,13 +49,13 @@ make.</li>
 
 </ul>
 
-</p>
+
 
 ::: endnote
-<p>The `by intervals of` input to the `group
+The `by intervals of` input to the `group
 table` block should be left empty when, as in this example, the
 field on which you're grouping is text rather than numbers. Later on
-this page, you'll see how to use intervals in graphing.</p>
+this page, you'll see how to use intervals in graphing.
 :::
 
 ::: {#first .forYouToDo}
@@ -67,7 +67,7 @@ already.</li>
 <li>
 
 <img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
-Determine one question you can answer by <strong>grouping</strong> your
+Determine one question you can answer by **grouping** your
 data, and build code to answer it.
 
 ::: endnote
@@ -87,8 +87,8 @@ functions.)</li>
 
 </ul>
 
-<p>`Pipe` may be useful for questions that require looking
-inside the inner lists of the grouped data (in column C).</p>
+`Pipe` may be useful for questions that require looking
+inside the inner lists of the grouped data (in column C).
 :::
 :::
 
@@ -99,7 +99,7 @@ inside the inner lists of the grouped data (in column C).</p>
 
 <h3>Plotting Data</h3>
 
-<p>
+
 
 The `bar chart` function works like the `group`
 function, but with special features for numeric data: it allows you to
@@ -123,19 +123,19 @@ that MPG range (such as all the data for the 879 cars that get between
 
 </ul>
 
-</p>
+
 
 ::: endnote
-<p>The number in column A is the <em>largest</em> value included in each
+The number in column A is the <em>largest</em> value included in each
 group. If the values aren't all integers, the next group includes
 anything larger. For example, the group numbered 15 includes values from
-10.0001 (or anything more than 10) to exactly 15.</p>
+10.0001 (or anything more than 10) to exactly 15.
 :::
 
-<p>You can plot the data from `bar chart` to visualize
+You can plot the data from `bar chart` to visualize
 them:<br />
 <img src="/img/5-algorithms/plot-cars-histogram.png" title="plot bar chart (bar chart of table (data of table (cars)) grouped by field: (9) from: (5) to: (50) interval: (5)) bars at x: (-200) y: (-100) width: (400) height: (200)" alt="plot bar chart (bar chart of table (data of table (cars)) grouped by field: (9) from: (5) to: (50) interval: (5)) bars at x: (-200) y: (-100) width: (400) height: (200)" class="ms-4"/>
-<img src="/img/5-algorithms/plot-cars-histogram-stage.png" title="bar graph running from 0 to 50 on the horizontal axis and from 0 to 2050 on the vertical axis with bars indicating 0 between 0 and 5, about 300 between 5 and 10, about 1500 between 10 and 15, about 2000 between 15 and 30, about 800 between 20 and 25, about 200 between 25 and 30, and 0 beyond 30" alt="bar graph running from 0 to 50 on the horizontal axis and from 0 to 2050 on the vertical axis with bars indicating 0 between 0 and 5, about 300 between 5 and 10, about 1500 between 10 and 15, about 2000 between 15 and 30, about 800 between 20 and 25, about 200 between 25 and 30, and 0 beyond 30" class="ms-4 noshadow"/></p>
+<img src="/img/5-algorithms/plot-cars-histogram-stage.png" title="bar graph running from 0 to 50 on the horizontal axis and from 0 to 2050 on the vertical axis with bars indicating 0 between 0 and 5, about 300 between 5 and 10, about 1500 between 10 and 15, about 2000 between 15 and 30, about 800 between 20 and 25, about 200 between 25 and 30, and 0 beyond 30" alt="bar graph running from 0 to 50 on the horizontal axis and from 0 to 2050 on the vertical axis with bars indicating 0 between 0 and 5, about 300 between 5 and 10, about 1500 between 10 and 15, about 2000 between 15 and 30, about 800 between 20 and 25, about 200 between 25 and 30, and 0 beyond 30" class="ms-4 noshadow"/>
 
 ::: forYouToDo
 <ol start="3">
@@ -146,8 +146,8 @@ least one new observation about your data.</li>
 <li>
 
 ::: vocab
-<p>The <strong>mode</strong> of a data set is the value that appears
-most often in it.</p>
+The **mode** of a data set is the value that appears
+most often in it.
 :::
 
 Here is a bar chart of field 11 from the <var>cars</var> data set

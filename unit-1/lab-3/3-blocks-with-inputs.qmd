@@ -7,7 +7,7 @@ gifffer: true
 
 ::: learn
 
-<strong>On this page,</strong> you will use inputs to allow one block to do many things.
+**On this page,** you will use inputs to allow one block to do many things.
 
 :::
 
@@ -29,13 +29,13 @@ The scripts are essentially all the same; only some of the <em>input values</em>
 (@) Create a `pinwheel` block with an input for the <var>number of branches</var>. Instructions are below and you can also watch the process in the video that follows the instructions.
 
 ::: narrower
-### <strong>Making a Block with an Input</strong>
+### **Making a Block with an Input**
 
 <ol type="a">
 
 <li>
 
-<strong>Create a new block, type the block name and the label for your input, and click OK.</strong> For this project, type `pinwheel, branches:`.
+**Create a new block, type the block name and the label for your input, and click OK.** For this project, type `pinwheel, branches:`.
 
 ::: endnote
 <a href="#hint-new-block" data-bs-toggle="collapse" title="Click for an image of naming the new block.">Click for an image of naming the new block.</a>
@@ -43,9 +43,9 @@ The scripts are essentially all the same; only some of the <em>input values</em>
 ::: {#hint-new-block .collapse}
 <img src="/img/1-introduction/Blockswith-Inputs_img/category.png" title="Make a block" alt="Make a block" class="ms-4" height="300"/>
 
-<p>This block is about <em>moving</em> your sprite, so you might choose the blue Motion palette.</p>
+This block is about <em>moving</em> your sprite, so you might choose the blue Motion palette.
 
-<p>Using a comma and a colon are not requirements; they are here to help with clarity.</p>
+Using a comma and a colon are not requirements; they are here to help with clarity.
 :::
 :::
 
@@ -53,7 +53,7 @@ The scripts are essentially all the same; only some of the <em>input values</em>
 
 <li>
 
-<strong>Click the + (plus sign) after "`branches:`", type the name of the input, and click OK</strong> to add the input slot. For this project, click the + after "`branches:`" and type <var>number of branches</var> as the name of your input.
+**Click the + (plus sign) after "`branches:`", type the name of the input, and click OK** to add the input slot. For this project, click the + after "`branches:`" and type <var>number of branches</var> as the name of your input.
 
 ::: endnote
 <a href="#hint-input" data-bs-toggle="collapse" title="Click for images of naming the input.">Click for images of naming the input.</a>
@@ -71,7 +71,7 @@ The scripts are essentially all the same; only some of the <em>input values</em>
 
 <li>
 
-<strong>Drag in the blocks you need, and use the new input.</strong>
+**Drag in the blocks you need, and use the new input.**
 
 <ul>
 
@@ -106,16 +106,16 @@ The scripts are essentially all the same; only some of the <em>input values</em>
 
 ::: takeNote
 
-<strong>What kind of data can be an input?</strong> All kinds of data. In this example, the input is supposed to be a number, but <em>any</em> kind of value can be used as an input. For instance, you've seen the `list` block called with text as inputs. In Snap<em>!</em>, any kind of data can be used as an input, can be reported by a block, or can be put in a list.
+**What kind of data can be an input?** All kinds of data. In this example, the input is supposed to be a number, but <em>any</em> kind of value can be used as an input. For instance, you've seen the `list` block called with text as inputs. In Snap<em>!</em>, any kind of data can be used as an input, can be reported by a block, or can be put in a list.
 
 :::
 
 ::: vocabFullWidth
-: What's an input? <strong>Parameter</strong> vs. <strong>Argument</strong>
+: What's an input? **Parameter** vs. **Argument**
 
-- A <strong>parameter</strong> (or <em>formal parameter</em>) is the input <em>name,</em> such as <var>number of branches</var>. The input name is set in the block definition. It never changes.<br /> <img src="/img/1-introduction/example-parameter.png" title="image of complete pinwheel, branches:(number of branches) block definition with parameter label pointing to number of branches" alt="image of complete pinwheel, branches:(number of branches) block definition with parameter label pointing to number of branches" class="ms-4"/>
+- A **parameter** (or <em>formal parameter</em>) is the input <em>name,</em> such as <var>number of branches</var>. The input name is set in the block definition. It never changes.<br /> <img src="/img/1-introduction/example-parameter.png" title="image of complete pinwheel, branches:(number of branches) block definition with parameter label pointing to number of branches" alt="image of complete pinwheel, branches:(number of branches) block definition with parameter label pointing to number of branches" class="ms-4"/>
 
-- An <strong>argument</strong> (or <em>actual argument</em>) is the input <em>value,</em> such as 6 for a hexagonal pinwheel. The input value is given each time the block is run; it can be a different value each time.<br /> <img src="/img/1-introduction/example-argument.png" title="pinwheel, branches: (6) with argument label pointing to the input 6" alt="pinwheel, branches: (6) with argument label pointing to the input 6" class="ms-4"/>
+- An **argument** (or <em>actual argument</em>) is the input <em>value,</em> such as 6 for a hexagonal pinwheel. The input value is given each time the block is run; it can be a different value each time.<br /> <img src="/img/1-introduction/example-argument.png" title="pinwheel, branches: (6) with argument label pointing to the input 6" alt="pinwheel, branches: (6) with argument label pointing to the input 6" class="ms-4"/>
 
 We use the word "input" both for parameters (input names) and for arguments (input values).
 
@@ -131,7 +131,7 @@ Originally, you made five copies of the pinwheel script to create five slightly 
 
 :::::: takeNote
 
-### <strong>Debugging Tip: Commenting Your Code</strong>
+### **Debugging Tip: Commenting Your Code**
 
 Adding comments to your code may help you remember what your code does, helps other people reading your code to understand it, and can help you avoid bugs by increasing the clarity of your program. But it won't do any of those things if you comment every line of code, so each comment just says how a block inside your script works. You can add comments to your Snap<em>!</em> code by right-clicking (or control-clicking) in the Scripts area and choosing "add comment." <a href="#hint-comments" data-bs-toggle="collapse" title="Click for an animation that shows how to add comments.">Click for an animation that shows how.</a>
 
@@ -145,7 +145,7 @@ You can attach a comment <em>to the hat block</em> in the Block Editor to create
 
 :::: {.g-col-12}
 
-<strong>Bad commenting:</strong>
+**Bad commenting:**
 
 <img src="/img/1-introduction/bad-comments.png" title="an example of bad commenting: block definition for a square-drawing block called &apos;square&apos; with a comment attached to the repeat (4) block that says, &apos;a square has four sides&apos; a comment attached to the move (size) steps block that says, &apos;the move says how big to make it&apos;, and a comment attached to the turn right (90) degrees block that says, &apos;You have to turn (90) degrees&apos;" alt="an example of bad commenting: block definition for a square-drawing block called &apos;square&apos; with a comment attached to the repeat (4) block that says, &apos;a square has four sides&apos; a comment attached to the move (size) steps block that says, &apos;the move says how big to make it&apos;, and a comment attached to the turn right (90) degrees block that says, &apos;You have to turn (90) degrees&apos;" class="ms-4"/>
 
@@ -153,7 +153,7 @@ You can attach a comment <em>to the hat block</em> in the Block Editor to create
 
 :::: {.g-col-12}
 
-<strong>Good commenting:</strong>
+**Good commenting:**
 
 <img src="/img/1-introduction/good-comments.png" title="an example of good commenting: block definition for a square-drawing block called &apos;square&apos; with a comment attached to the hat block that says, &apos;This block draws a square. The input says how big to make the sides of the square.&apos;" alt="an example of good commenting: block definition for a square-drawing block called &apos;square&apos; with a comment attached to the hat block that says, &apos;This block draws a square. The input says how big to make the sides of the square.&apos;" class="ms-4"/>
 

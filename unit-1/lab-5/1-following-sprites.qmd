@@ -6,145 +6,111 @@ gifffer: true
 ---
 
 ::: learn
-<p>In many programs, the visual elements on the screen need to interact---follow each other, avoid each other, react a certain way when they meet each other, etc. <strong>In this lab,</strong> you will program <em>two</em> sprites. One sprite will follow your mouse. The other sprite will chase the first. When they meet, they will have a short conversation.</p>
+**On this page,** you will program the first sprite to follow your mouse and program the second sprite to point in the direction of the first sprite in preparation for following it.
 
-<img title="animation of a cartoon tiger chasing a cartoon bat that is following the mouse pointer" alt="animation of a cartoon tiger chasing a cartoon bat that is following the mouse pointer" class="ms-4" data-gifffer="/img/1-introduction/leader-follower-animation.gif"/>
-
-<p><strong>On this page,</strong> you will program the first sprite to follow your mouse and program the second sprite to point in the direction of the first sprite in preparation for following it.</p>
 :::
 
 ::: atwork
 <!--<img class="noshadow float-end" height="200px" src="/img/atwork/Diana_Macias.jpg" alt="photo of Diana Macias" title="photo of Diana Macias" />-->
 
-<p>Diana Macias, an American born of Mexican parents, manages a team of 20 engineers that design visual elements for Twitter (GIFs, stickers, and polls). She is the co-founder of Twitter Able, a group at Twitter for disabled employees and allies, and has served as the co-chair of Twitter's Latinx group, Twitter Alas. Macias has a B.S. in Computer Science and Mathematics from California State University, East Bay and over 15 years of experience in software development with a focus on user experience.</p>
+Diana Macias, an American born of Mexican parents, manages a team of 20 engineers that design visual elements for Twitter (GIFs, stickers, and polls). She is the co-founder of Twitter Able, a group at Twitter for disabled employees and allies, and has served as the co-chair of Twitter's Latinx group, Twitter Alas. Macias has a B.S. in Computer Science and Mathematics from California State University, East Bay and over 15 years of experience in software development with a focus on user experience.
 
-<p><a href="https://www.lanacion.com.ar/tecnologia/los-20-latinos-mas-influyentes-en-tecnologia-de-2017-segun-cnet-nid2066888/" title="Article: Los 20 Latinos Más Influyentes en Tecnología" target="_blank">Article: Los 20 Latinos Más Influyentes en Tecnología</a> (<a href="https://www-lanacion-com-ar.translate.goog/tecnologia/los-20-latinos-mas-influyentes-en-tecnologia-de-2017-segun-cnet-nid2066888/?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp" title="Article: The 20 most influential Latinos in technology" target="_blank">English</a>)</p>
+<a href="https://www.lanacion.com.ar/tecnologia/los-20-latinos-mas-influyentes-en-tecnologia-de-2017-segun-cnet-nid2066888/" title="Article: Los 20 Latinos Más Influyentes en Tecnología" target="_blank">Article: Los 20 Latinos Más Influyentes en Tecnología</a> (<a href="https://www-lanacion-com-ar.translate.goog/tecnologia/los-20-latinos-mas-influyentes-en-tecnologia-de-2017-segun-cnet-nid2066888/?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp" title="Article: The 20 most influential Latinos in technology" target="_blank">English</a>)
+
 :::
 
 ## Following the Mouse
 
-::: {#first .forYouToDo}
-<ol>
+::::: {#first .forYouToDo}
 
-<li>
-
-::: newProject
+(@) <div class="newProject">
 ["U1L5-SpriteChase"]{.text}<img src="/img/icons/new-project-called.png" title="Create a new project called U1L5-SpriteChase" alt="Create a new project called U1L5-SpriteChase"/>
-:::
+</div>
 
-::: narrower
-### <strong>Creating a New Snap<em>!</em> Project</strong>
+    :::: narrower
+    ### **Creating a New Snap<em>!</em> Project**
 
-<ol style="list-style-type:lower-alpha">
+    <ol style="list-style-type:lower-alpha">
 
-<li>
+    <li>
 
-Open <a href="https://snap.berkeley.edu/run" title="Snap!" target="_blank">Snap<em>!</em></a>.
+    Open <a href="https://snap.berkeley.edu/run" title="Snap!" target="_blank">Snap<em>!</em></a>.
 
-::: endnote
-If you already have Snap<em>!</em> open and there is a project open, follow these steps first:
+    ::: endnote
+    If you already have Snap<em>!</em> open and there is a project open, follow these steps first:
 
-<ol style="list-style-type:lower-roman">
+    <ol style="list-style-type:lower-roman">
 
-<li>If necessary, save your open work in Snap<em>!</em>.</li>
+    <li>If necessary, save your open work in Snap<em>!</em>.</li>
 
-<li>Choose "New" from the Snap<em>!</em> File menu, <img src="/img/1-introduction/file_button.png" title="File menu button" alt="File menu button"/>.</li>
+    <li>Choose "New" from the Snap<em>!</em> File menu, <img src="/img/1-introduction/file_button.png" title="File menu button" alt="File menu button"/>.</li>
 
-<li>Click "Yes" to open a new project (and close the open one).</li>
+    <li>Click "Yes" to open a new project (and close the open one).</li>
 
-</ol>
-:::
+    </ol>
 
-</li>
+    :::
 
-<li>Choose "Save As..." from the Snap<em>!</em> File menu, <img src="/img/1-introduction/file_button.png" title="File menu button" alt="File menu button"/>.</li>
+    </li>
 
-<li>Type the project name.</li>
+    <li>Choose "Save As..." from the Snap<em>!</em> File menu, <img src="/img/1-introduction/file_button.png" title="File menu button" alt="File menu button"/>.</li>
 
-<li>Click the "Save" button.</li>
+    <li>Type the project name.</li>
 
-</ol>
-:::
+    <li>Click the "Save" button.</li>
 
-</li>
+    </ol>
 
-<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Read and think about this script before you build it. What do you expect it to do?<br /> <img src="/img/1-introduction/follow-that-mouse.png" title="when green flag clicked{forever{go to x:(mouse x) y:(mouse y)}}" alt="when green flag clicked{forever{go to x:(mouse x) y:(mouse y)}}" class="ms-4"/></li>
+    ::::
 
-<li>
+(@) <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Read and think about this script before you build it. What do you expect it to do?<br /> <img src="/img/1-introduction/follow-that-mouse.png" title="when green flag clicked{forever{go to x:(mouse x) y:(mouse y)}}" alt="when green flag clicked{forever{go to x:(mouse x) y:(mouse y)}}" class="ms-4 mt-2"/>
 
-Now build the script and run it. Move your mouse around the stage while the program is running. What does the `forever` block do?
+(@) Now build the script and run it. Move your mouse around the stage while the program is running. What does the `forever` block do?
 
-::: endnote
-To <em>stop</em> your script, click the red stop sign: <img src="/img/1-introduction/stop_button.png" title="stop button" alt="stop button" class="button" style="height:1.9em;"/>
-:::
+    ::: endnote
+    To <em>stop</em> your script, click the red stop sign: <img src="/img/1-introduction/stop_button.png" title="stop button" alt="stop button" class="button" style="height:1.9em;"/>
+    :::
 
-</li>
 
-<li><img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>Does the program work the way you expected?</li>
+(@) <img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>Does the program work the way you expected?
 
-</ol>
-:::
+:::::
 
 ## Programming a Second Sprite
 
 ::: forYouToDo
-<ol start="5">
+(@) Create a second sprite by clicking on the <img src="/img/1-introduction/add-a-new-turtle-sprite.png" title="add a new turtle sprite" alt="add a new turtle sprite"/> button just below the stage.
 
-<li>
+    ::: endnote
 
-Create a second sprite by clicking on the <img src="/img/1-introduction/add-a-new-turtle-sprite.png" title="add a new turtle sprite" alt="add a new turtle sprite"/> button just below the stage.
+    The new sprite, automatically named **Sprite(2)**, appears on the stage. It's brand new, so it has no scripts. The pictures of the sprites beneath the stage let you select the sprite you want to program.
 
-::: endnote
-The new sprite, automatically named <strong>Sprite(2)</strong>, appears on the stage. It's brand new, so it has no scripts. The pictures of the sprites beneath the stage let you select the sprite you want to program.
-:::
+    :::
 
-</li>
-
-<li>
-
-To make your sprite names meaningful, change the name of <strong>Sprite</strong> to <strong>Leader</strong>, and change <strong>Sprite(2)</strong> to <strong>Follower</strong>.
+(@) To make your sprite names meaningful, change the name of **Sprite** to **Leader**, and change **Sprite(2)** to **Follower**.
 
 ::: narrower
-### <strong>Changing the Name of a Sprite</strong>
 
-<p>Look for the name in a gray box above the scripting area. Click inside the name and you'll be able to edit it.<br /> <img src="/img/1-introduction/change-sprite-name.jpg" title="image of sprite name input field above the scripting area and below the project name" alt="image of sprite name input field above the scripting area and below the project name" class="ms-4"/></p>
+### **Changing the Name of a Sprite**
+
+Look for the name in a gray box above the scripting area. Click inside the name and you'll be able to edit it.<br /> <img src="/img/1-introduction/change-sprite-name.jpg" title="image of sprite name input field above the scripting area and below the project name" alt="image of sprite name input field above the scripting area and below the project name" class="ms-4 mt-2"/>
 :::
-
-</li>
-
-<li>
 
 ::: sidenoteBig
 While a script is running, its border lights up. If the running time is short, you may not notice the brief flash.
 :::
 
-Make sure you have the <strong>Follower</strong> sprite selected. Write a script for <strong>Follower</strong> so that once the green flag is clicked, it will point toward <strong>Leader</strong> `forever`.<br /> <img src="/img/blocks/point-towards.png" title="point towards []" alt="point towards []" class="ms-4"/>
+(@)  Make sure you have the **Follower** sprite selected. Write a script for **Follower** so that once the green flag is clicked, it will point toward **Leader** `forever`.<br /> <img src="/img/blocks/point-towards.png" title="point towards []" alt="point towards []" class="ms-4 mt-2"/>
 
-</li>
-
-<li>
 
 ::: sidenoteBig
 Both sprites have scripts that use <img src="/img/blocks/when-green-flag-clicked-full-size.png" title="When &apos;Green Flag&apos; Clicked" alt="When &apos;Green Flag&apos; Clicked" class="inline"/>, so <em>both</em> of those scripts run when <img src="/img/1-introduction/green-flag_button.png" title="green-flag button" alt="green-flag button" style="height:1.9em;"/> is clicked.
 :::
 
-Click <img src="/img/1-introduction/green-flag_button.png" title="green-flag button" alt="green-flag button" style="height:1.9em;"/> and check that your scripts do what you intended:
-
-<ul>
-
-<li><strong>Leader</strong> always follows your mouse when you move your mouse around.</li>
-
-<li><strong>Follower</strong> stays in one place, but always points toward <strong>Leader</strong>.</li>
-
-</ul>
-
-</li>
+(@)  Click <img src="/img/1-introduction/green-flag_button.png" title="green-flag button" alt="green-flag button" style="height:1.9em;"/> and check that your scripts do what you intended:
+    - **Leader** always follows your mouse when you move your mouse around.
+    - **Follower** stays in one place, but always points toward **Leader**.
 
 <img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline"/>
 
-</ol>
 :::
-
-</body>
-
-</html>

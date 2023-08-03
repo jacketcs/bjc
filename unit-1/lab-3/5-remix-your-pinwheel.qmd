@@ -6,7 +6,7 @@ gifffer: true
 ---
 
 ::: learn
-<strong>On this page,</strong> you will use your existing `pinwheel` block to make `asterisk` and `polygon` blocks.<br /> <img src="/img/1-introduction/Blockswith-Inputs_img/asteriskpolygonCycle.gif" title="Animation cycle from Asterisk to Polygon" alt="Animation cycle from Asterisk to Polygon" class="ms-4" height="250"/>
+**On this page,** you will use your existing `pinwheel` block to make `asterisk` and `polygon` blocks.<br /> <img src="/img/1-introduction/Blockswith-Inputs_img/asteriskpolygonCycle.gif" title="Animation cycle from Asterisk to Polygon" alt="Animation cycle from Asterisk to Polygon" class="ms-4" height="250"/>
 :::
 
 You can use your <em>general</em>-purpose pinwheel procedure to create other, simpler <em>special</em>-purpose procedures that each do a particular job.
@@ -32,7 +32,7 @@ You can use your <em>general</em>-purpose pinwheel procedure to create other, si
 </ol>
 
 ::: takeNote
-### <strong>Debugging with <img src="/img/2-complexity/Debugging/pause-all-block.png" title="pause all" alt="pause all" height="42"/></strong>
+### **Debugging with <img src="/img/2-complexity/Debugging/pause-all-block.png" title="pause all" alt="pause all" height="42"/>**
 
 You can use `pause all` to place breaks in your code so you can see what's happening along the way. When you run code with `pause all` in it, you can click the yellow Run/Pause button next to the Green Flag (<img src="/img/sys/play-button.png" title="play button" alt="play button"/>/<img src="/img/1-introduction/pause_button.png" title="pause button" alt="pause button"/>) to move through the code up until a `pause all` block is reached again. The `pause all` block will pause <em>every</em> script that is running until the yellow Run/Pause button is clicked.
 :::
@@ -47,7 +47,7 @@ On page <a href="/unit-1/lab-2/2-gossip.html" title="Unit 1 Lab 2 Page 2: Making
 
 Here is another kind of <em>abstraction</em>: noticing that `asterisk` and `polygon` are both kinds of pinwheels, and writing one, more general, `pinwheel` block that uses an input so that the block can be used to make asterisks, polygons, or other interesting designs.
 
-This is an example of <strong>abstraction by generalization</strong>: looking at chunks of code that are <em>almost the same</em> and writing a single block by <em>using an input</em> to distinguish among the different cases.
+This is an example of **abstraction by generalization**: looking at chunks of code that are <em>almost the same</em> and writing a single block by <em>using an input</em> to distinguish among the different cases.
 :::
 
 ::: forYouToDo
@@ -78,7 +78,7 @@ As long as your `polygon` block draws the right picture, it doesn't matter to th
 ::: takeItFurther
 <ol type="A">
 
-<li><strong>Challenge:</strong> Create a script that draws a blue square of size 100 and then draws a red circle that fits perfectly inside it.<br /> <img src="/img/1-introduction/red-circle-in-blue-square.png" title="red circle in blue square" alt="red circle in blue square" class="ms-4"/><br /></li>
+<li>**Challenge:** Create a script that draws a blue square of size 100 and then draws a red circle that fits perfectly inside it.<br /> <img src="/img/1-introduction/red-circle-in-blue-square.png" title="red circle in blue square" alt="red circle in blue square" class="ms-4"/><br /></li>
 
 </ol>
 :::

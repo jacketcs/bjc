@@ -6,18 +6,18 @@ gifffer: true
 ---
 
 ::: learn
-<p><strong>On this page,</strong> you will use abstraction to nest your
-triangle script inside itself as you learn about <em>recursion</em>.</p>
+**On this page,** you will use abstraction to nest your
+triangle script inside itself as you learn about <em>recursion</em>.
 :::
 
-<p>Does all that copying and pasting of triangle scripts feel awkward to
+Does all that copying and pasting of triangle scripts feel awkward to
 you? You know a better way: <em>abstraction</em>. In Unit 1, you used a
 `pinwheel` block to implement the similar programs
 `asterisk` and `polygon` rather than copying the
 code. Here, you can use a block to manage the abstraction too. But in
 this case, we want the similar code (a smaller triangle) <em>nested
 inside</em>, so we will actually use the same block inside itself, a
-process called <em>recursion</em>.</p>
+process called <em>recursion</em>.
 
 ::: forYouToDo
 <ol start="1">
@@ -33,17 +33,17 @@ colors.)
 <br /><img src="/img/2-complexity/nested-tri-no-color-proto.png" title="nested triangle, size: (size)" alt="nested triangle, size: (size)" class="ms-4"/>
 
 ::: endnote
-<p><a href="#hint-purple" data-bs-toggle="collapse" title="Shouldn't it be blue?">Shouldn't
-it be blue?</a></p>
+<a href="#hint-purple" data-bs-toggle="collapse" title="Shouldn't it be blue?">Shouldn't
+it be blue?</a>
 
 ::: {#hint-purple .collapse}
-<p>When you're building a new block, you can use any color you want.
+When you're building a new block, you can use any color you want.
 This block is purple so that it will stand out when you use it in a
-script later.</p>
+script later.
 :::
 
-<p><a href="#hint-nested" data-bs-toggle="collapse" title="Click for hints about building a nested triangle block.">Click
-for hints about building a `nested triangle` block.</a></p>
+<a href="#hint-nested" data-bs-toggle="collapse" title="Click for hints about building a nested triangle block.">Click
+for hints about building a `nested triangle` block.</a>
 
 ::: {#hint-nested .collapse}
 <ol type="a">
@@ -67,17 +67,17 @@ make sure it works as you expect.</li>
 </ol>
 :::
 
-<p>So far, this is just a triangle procedure, but next you'll make it
-recursive.</p>
+So far, this is just a triangle procedure, but next you'll make it
+recursive.
 
 ::: vocabFullWidth
-<p>Calling a procedure from inside itself is called
-<strong>recursion</strong>.</p>
+Calling a procedure from inside itself is called
+**recursion**.
 :::
 
-<p>On the previous page, you dragged a copy of the triangle script in
+On the previous page, you dragged a copy of the triangle script in
 between the `move` and `turn` blocks. You can do a
-similar thing with your `nested triangle` block.</p>
+similar thing with your `nested triangle` block.
 
 ::: forYouToDo
 <ol start="4">

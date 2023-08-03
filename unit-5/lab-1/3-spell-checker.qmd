@@ -9,19 +9,19 @@ order: 3
 :::
 
 ::: learn
-<p><strong>On this page</strong>, you will use a <em>binary search</em>
-algorithm to search efficiently in a <em>sorted</em> list.</p>
+**On this page**, you will use a <em>binary search</em>
+algorithm to search efficiently in a <em>sorted</em> list.
 :::
 
-<p>Answering this question is simple in Snap<em>!</em> because you can
+Answering this question is simple in Snap<em>!</em> because you can
 just ask a dictionary:
 <img src="/img/5-algorithms/100000-words-contains-seperate.png" title="(100,000 words) contains (seperate)" alt="100000-words-contains-seperate.png" class="inline py-0"/>.
 But <em>"simple" doesn't mean fast</em>. The `contains` block
 still has to look at each item in the list until it finds the one you
 are looking for (and says `true`) or reaches the end of the
-list (and says `false`). It is still a linear search.</p>
+list (and says `false`). It is still a linear search.
 
-<p>When you are only looking for <em>one</em> thing in a list (for
+When you are only looking for <em>one</em> thing in a list (for
 example, checking whether a particular word is spelled correctly) rather
 than finding <em>all</em> the words with some characteristic (for
 example, looking for all five-letter words), you can use the strategy
@@ -32,7 +32,7 @@ for that problem is a <em>binary search</em> algorithm: always guess the
 <em>middle</em> value and then adjust your guess based on whether it was
 too high or too low. That way, you eliminate half the possibilities with
 each guess. We can use a similar strategy to look for a word in a word
-list.</p>
+list.
 
 ::: endnote
 You could have written a simpler number guessing program: the computer
@@ -44,16 +44,16 @@ guess eliminates <em>half</em> the possibilities at once.
 :::
 
 ::: vocabFullWidth
-: <strong>Binary Search</strong>
+: **Binary Search**
 
 ::: ap-standard
 AAP-2.P.1, AAP-2.P.2
 :::
 
-<p>A <strong>binary search</strong> algorithm starts in the middle of a
+A **binary search** algorithm starts in the middle of a
 <em>sorted</em> list and repeatedly eliminates half the list until
 either the desired value is found or all elements have been
-eliminated.</p>
+eliminated.
 
 ::: ap-standard
 AAP-2.O.1
@@ -65,8 +65,8 @@ You learned about traversing a list on
 2 Lab 2 Page 3: Checking Each Quiz Answer</a>.
 :::
 
-<p>Linear search does a <em>complete</em> traversal of the list. Binary
-search saves time by doing a <em>partial</em> traversal of the list.</p>
+Linear search does a <em>complete</em> traversal of the list. Binary
+search saves time by doing a <em>partial</em> traversal of the list.
 :::
 
 ::: endnote
@@ -132,15 +132,15 @@ how the binary search algorithm works.</li>
 </ol>
 :::
 
-<p>The `contains` block can't make any assumptions about the
+The `contains` block can't make any assumptions about the
 ordering in list you are searching, but if you are looking for one thing
-in a <em>sorted</em>, list you can use binary search.</p>
+in a <em>sorted</em>, list you can use binary search.
 
 <div class="takeNote">
 
 ```         
 <div class="ap-standard">AAP-2.P.2</div>
-<p>
+
 Two things affect whether you can use a binary search algorithm to make your program more efficient:
 <ul>
 <li>What question you are trying to answer? Are you searching for <em>one</em> thing in a list or are you finding <em>all</em> the things in the list with some characteristic?</li>
@@ -163,7 +163,7 @@ Two things affect whether you can use a binary search algorithm to make your pro
 <td>must use linear search</td>
 </tr>
 </table>
-</p>
+
 </div>
 <div class="endnote">If you are working with short lists, it's not so important which algorithm you use. It's when you are dealing with a lot of data that you have to think carefully about the algorithm.</div>
 <div class="forYouToDo">
@@ -218,25 +218,25 @@ Which of the following questions can be answered with a binary search, assuming 
 <div class="choice" identifier="c1">
 <div class="text">What is my friend Rasheed's phone number?</div>
 <div class="feedback">
-Correct! You are searching for <strong>one</strong> phone number in the list.
+Correct! You are searching for **one** phone number in the list.
 </div>
 </div>
 <div class="choice" identifier="c2">
 <div class="text">Give me a list of all the Beyoncé songs.</div>
 <div class="feedback">
-We have to find <strong>all</strong> the Beyoncé songs, not just one.
+We have to find **all** the Beyoncé songs, not just one.
 </div>
 </div>
 <div class="choice" identifier="c3">
 <div class="text">Tell me if bread is on my shopping list.</div>
 <div class="feedback">
-Correct! You are searching for <strong>one</strong> item in the list.
+Correct! You are searching for **one** item in the list.
 </div>
 </div>
 <div class="choice" identifier="c4">
 <div class="text">Who in my contact list lives on Grand Avenue?</div>
 <div class="feedback">
-Your contact list is probably <strong>sorted by name</strong>, not by address. Also, there may be <strong>more than one</strong> person who lives on Grand Avenue.
+Your contact list is probably **sorted by name**, not by address. Also, there may be **more than one** person who lives on Grand Avenue.
 </div>
 </div>
 <div class="responseDeclaration" identifier="ri2">

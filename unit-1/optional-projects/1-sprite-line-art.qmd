@@ -6,7 +6,7 @@ order: 1
 ---
 
 ::: learn
-<p><strong>In this project,</strong> you are going to simulate the famous children's toy <em>Etch A Sketch</em><sup>®</sup>.</p>
+**In this project,** you are going to simulate the famous children's toy <em>Etch A Sketch</em><sup>®</sup>.
 
 <img src="/img/1-introduction/SpriteLineArt_img/SpriteArt.png" title="Sprite Art" alt="Sprite Art" class="ms-4" width="320"/>
 :::

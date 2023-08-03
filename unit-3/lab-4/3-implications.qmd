@@ -5,8 +5,8 @@ order: 3
 ---
 
 ::: learn
-<p><strong>On this page,</strong> you will consider some of the ethical
-issues of robots and AI.</p>
+**On this page,** you will consider some of the ethical
+issues of robots and AI.
 :::
 
 ::: {#first .forYouToDo}
@@ -65,7 +65,7 @@ What laws apply to AI? What happens when a robot commits a crime? Who
 gets punished?
 
 ::: endnote
-<h4><strong>Some relevant articles:</strong></h4>
+<h4>**Some relevant articles:**</h4>
 
 <ul>
 

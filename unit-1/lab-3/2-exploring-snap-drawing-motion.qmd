@@ -7,7 +7,7 @@ gifffer: true
 
 ::: learn
 
-<strong>On this page,</strong> you will learn about sprite turning angles, which are needed for drawing polygons. For starters, you'll draw various asterisks, like these: <br /> <img src="/img/1-introduction/Three-spokes.png" title="three spokes" alt="asterisk with three spokes" class="ms-4"/> <img src="/img/1-introduction/Five-spokes.png" title="asterisk with five spokes" alt="asterisk with five spokes"/> <img src="/img/1-introduction/Eight-spokes.png" title="asterisk with eight spokes" alt="asterisk with eight spokes"/>
+**On this page,** you will learn about sprite turning angles, which are needed for drawing polygons. For starters, you'll draw various asterisks, like these: <br /> <img src="/img/1-introduction/Three-spokes.png" title="three spokes" alt="asterisk with three spokes" class="ms-4"/> <img src="/img/1-introduction/Five-spokes.png" title="asterisk with five spokes" alt="asterisk with five spokes"/> <img src="/img/1-introduction/Eight-spokes.png" title="asterisk with eight spokes" alt="asterisk with eight spokes"/>
 
 :::
 
@@ -116,9 +116,9 @@ Make another copy of the three-branch script you built, and then:
 ::: takeNote
 ### Debugging with `say for`
 
-<p>You can use <img src="/img/2-complexity/Debugging/say-for-secs-block.png" title="say for" alt="say for" height="24px" class="inline"/> to get information about the state of your program while it's running.</p>
+You can use <img src="/img/2-complexity/Debugging/say-for-secs-block.png" title="say for" alt="say for" height="24px" class="inline"/> to get information about the state of your program while it's running.
 
-<p>
+
 
 <a href="#hint-say-for" data-bs-toggle="collapse" title="This animation shows how to use say for to determine the bug in  code that is supposed to draw a rectangle.">This animation</a> shows how to use `say for` to determine the bug in code that is supposed to draw a rectangle. Notice how `say for` makes the program pause and gives you information to help you identify the source of error.
 
@@ -126,7 +126,7 @@ Make another copy of the three-branch script you built, and then:
 <img title="Animation on how to use say for blocks for debugging an erroneous rectangle construction." alt="Animation on how to use say for blocks for debugging an erroneous rectangle construction." class="ms-4" data-gifffer="/img/2-complexity/Debugging/say-for-in-rectangle.gif"/>
 :::
 
-</p>
+
 :::
 
 ```{=html}
@@ -168,7 +168,7 @@ Script B in the same file shows how you can make a 60-branch script behave like 
 
 <li>
 
-At the right is a painting by Alma Thomas. See what it inspires you to do.<br /> <strong>It's your art. Take liberties.</strong>
+At the right is a painting by Alma Thomas. See what it inspires you to do.<br /> **It's your art. Take liberties.**
 
 ::: dialogue
 <div>

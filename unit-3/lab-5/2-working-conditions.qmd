@@ -5,19 +5,19 @@ order: 2
 ---
 
 ::: todo
-<p>pink box new. --MF, 12/21/17</p>
+pink box new. --MF, 12/21/17
 
-<p>MF: could use review/light revision; tough to have 2.17 SI labs back
-to back</p>
+MF: could use review/light revision; tough to have 2.17 SI labs back
+to back
 :::
 
 ::: learn
-<p><strong>On this page,</strong> you will consider two ways that
-technology is changing the employment experience.</p>
+**On this page,** you will consider two ways that
+technology is changing the employment experience.
 :::
 
-<p>Computers can affect the <em>style</em> of work, even if they don't
-take your job away.</p>
+Computers can affect the <em>style</em> of work, even if they don't
+take your job away.
 
 ::: {#first .forYouToDo}
 <ol>

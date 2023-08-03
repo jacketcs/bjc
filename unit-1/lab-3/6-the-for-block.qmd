@@ -6,7 +6,7 @@ order: 6
 
 ::: learn
 
-<strong>On this page,</strong> you will use `for` loops not only to repeat, but also to count the repetitions and then use that counter to draw shapes with repeated patterns:<br /> <img src="/img/prog/spiral.png" title="spiral" alt="spiral" class="ms-4"/> <img src="/img/1-introduction/nested-squares.png" title="nested squares" alt="nested squares" class="ms-4"/>
+**On this page,** you will use `for` loops not only to repeat, but also to count the repetitions and then use that counter to draw shapes with repeated patterns:<br /> <img src="/img/prog/spiral.png" title="spiral" alt="spiral" class="ms-4"/> <img src="/img/1-introduction/nested-squares.png" title="nested squares" alt="nested squares" class="ms-4"/>
 
 :::
 
@@ -22,9 +22,9 @@ The `forever` block generates an <em>infinite loop</em> that goes on forever. An
 
 ::: vocabFullWidth
 
-: <strong>Iteration</strong>
+: **Iteration**
 
-Computer scientists describe a repeating program structure as <em>looping</em>, <em>repetition</em>, or <strong>iteration</strong>.
+Computer scientists describe a repeating program structure as <em>looping</em>, <em>repetition</em>, or **iteration**.
 
 The code can be repeated `forever`, a specific number of times (such as when using `repeat`), or until something specific happens (such as when using `repeat until` as you'll see in Lab 5). <br /> <img src="/img/1-introduction/repeat-4(move-100-turn-right-90).png" title="repeat (4) (move (100), turn clockwise (90))" alt="repeat (4) (move (100), turn clockwise (90))" class="ms-4"/> <img src="/img/1-introduction/move-tiny-no-hat.png" title="repeat until (touching (Leader)?)
 {
@@ -82,7 +82,7 @@ The `for` block's default counter name, <img src="/img/blocks/variable-i.png" ti
 Build this script and try it out:<br />
 
 ::: sidenote
-This design got the nickname "squiral" because it's a <strong>squ</strong>are sp<strong>iral</strong>.
+This design got the nickname "squiral" because it's a **squ**are sp**iral**.
 :::
 
 <img src="/img/looping/squirral-script.png" title="pen down; for(length)=(1) to (100){move(2Xlength) steps; turn clockwise (90) degrees}" alt="pen down; for(length)=(1) to (100){move(2Xlength) steps; turn clockwise (90) degrees}" class="ms-4"/><br />
@@ -128,7 +128,7 @@ This design got the nickname "squiral" because it's a <strong>squ</strong>are sp
 
     ::: endnote
 
-    <p>The following code may give you ideas about how to create animations. The `warp` block allows the drawing of the pinwheel all at once.</p>
+    The following code may give you ideas about how to create animations. The `warp` block allows the drawing of the pinwheel all at once.
 
     <img src="/img/1-introduction/Blockswith-Inputs_img/animationCode.png" title="forever{for(i)=(0) to (50){clear;warp{pinwheel, branches:(12) size:(50) backup:(i)}}}" alt="forever{for(i)=(0) to (50){clear;warp{pinwheel, branches:(12) size:(50) backup:(i)}}}" class="ms-4" height="150"/>
 
@@ -153,7 +153,7 @@ This design got the nickname "squiral" because it's a <strong>squ</strong>are sp
 
 <img src="/img/1-introduction/Josef_Albers&apos;s_painting_&apos;Homage_to_the_Square&apos;,_1965.jpg" title="painting-by-Josef-Albers" alt="painting-by-Josef-Albers" class="float-end" height="150"/>
 
-<p>On the right is a painting by Josef Albers. He was interested in experimenting with variations of color within a "family" of similar colors. Snap<i>!</i> will let you make similar experiments.</p>
+On the right is a painting by Josef Albers. He was interested in experimenting with variations of color within a "family" of similar colors. Snap<i>!</i> will let you make similar experiments.
 
 <ol type="A" start="2">
 
@@ -168,7 +168,7 @@ This design got the nickname "squiral" because it's a <strong>squ</strong>are sp
 Okay, now dig in.
 
 ::: narrowpurple
-<strong>Randomness:</strong> The four examples above are different from the actual Albers picture in that they include occasional colors that aren't from the same family. This can make the pictures more interesting to someone who doesn't share Albers's interest in subtle differences in color. (Albers himself, in fact, had more color variation in other pictures of this type.) <em>Too much</em> randomness, though, can make the picture <em>less</em> interesting. Compare the last two examples above; the left one of those two is clearly based on the orange family, with rainbow-neighbors red and yellow, but the right one has violets, greens, oranges, a yellow---too much chaos, maybe. Look back at the Gossip project if you don't remember how to choose something special once out of six times, or once out of 14 times. Other random choices you can make are the number of squares, how much to shrink the size from one square to the next, and how much to move the corner of the next square horizontally and vertically (the picture is more interesting if those two numbers are different, so the smallest square isn't exactly in the center).
+**Randomness:** The four examples above are different from the actual Albers picture in that they include occasional colors that aren't from the same family. This can make the pictures more interesting to someone who doesn't share Albers's interest in subtle differences in color. (Albers himself, in fact, had more color variation in other pictures of this type.) <em>Too much</em> randomness, though, can make the picture <em>less</em> interesting. Compare the last two examples above; the left one of those two is clearly based on the orange family, with rainbow-neighbors red and yellow, but the right one has violets, greens, oranges, a yellow---too much chaos, maybe. Look back at the Gossip project if you don't remember how to choose something special once out of six times, or once out of 14 times. Other random choices you can make are the number of squares, how much to shrink the size from one square to the next, and how much to move the corner of the next square horizontally and vertically (the picture is more interesting if those two numbers are different, so the smallest square isn't exactly in the center).
 :::
 
 </li>
