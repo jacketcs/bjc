@@ -1,6 +1,7 @@
 ---
 title: "Lab 4: Protecting Your Privacy"
 subtitle: "Unit 1, Lab 4"
+order: 5
 ---
 
 ::: learn

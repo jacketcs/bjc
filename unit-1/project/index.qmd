@@ -1,0 +1,82 @@
+---
+title: "Project: eCard"
+subtitle: "Unit 1"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
+order: 10
+---
+
+You'll be able to see this when the time comes :)
+
+<!-- 
+::: takeNote
+This is an **individual** project. This means that all of your work must be your own, indisputable work. If you need help on something, you may ask other people for help, however, the scripts that you create *must* be your own work. If there's any convincing evidence that the work that you submit is not your own, you will recieve an automatic 0 on this project and any participation grade related to working on the project.
+:::
+
+::: learn
+**In this project**, you will apply your current knowledge of computer science towards creating an *eCard* of your choice following the specifications listed on this page.
+
+In addition, you'll have a writeup where you will explain why, where, and how you used blocks in your project.
+
+On the last day of this project, we will have a gallery walk to show everyone the progress that you've made!
+:::
+
+## eCard Specifications
+
+::: forYouToDo
+
+Create an eCard ([see what an eCard is](https://en.wikipedia.org/wiki/E-card)) that meets all of the following specifications:
+
+(@) Has a message for the viewer (such as "Happy New Year," "Happy Birthday," "Get Well Soon," etc.)
+(@) Has a theme (such as holiday, sports, TV show, a photo, original art, etc.)
+(@) Has stage and sprite costumes
+(@) Works properly (is not buggy)
+(@) Includes a custom block. This can be either:
+    - A `start over` block that resets the eCard to the beginning (resets pen, stage, and sprites) OR
+    - Another custom block containing at least 3 blocks (this could move a sprite, change the background, etc.)
+(@) Uses `repeat until` or `for`
+(@) Lets the user interact (e.g., by clicking a sprite, pressing a key, or moving the mouse)
+(@) Includes one additional feature. You can choose either:
+    - Includes sounds or music (using the `play` block and/or the "Sounds" tab) OR
+    - Uses the `random` block
+:::
+
+## Writeup Specifications
+
+::: forYouToDo
+When you have finished your app, fill in the writeup on the **given template in Google Classroom**. This kind of write-up is part of what you will need to do for the AP Create Task.
+
+<details>
+<summary>The template has the following questions for you to answer:</summary>
+
+1. What message does your e-card contain?
+
+1. What is your e-card’s theme?
+
+1. Describe how your e-card uses stage and sprite costumes
+
+1. Does your e-card work perfectly? If it has any bugs, describe them below. It is supposed to work well but if there’s something minor going on, write it up here and I promise I won’t take points off :)
+
+1. What is the name of the custom block you made for your e card and how is it used? Please include a screenshot of the inside of the block (to take a screenshot, hold down command control shift 4 and select the portion of the screen you want to select. Then paste directly into this document) 
+
+1. How did you use a repeat or for loop in your code?
+
+1. 1. Explain how the user interacts with your e-card
+
+Did you use a random block or sounds? Whichever one you used, please explain below how you used it in your project.
+
+1. Is there anything else you’d like to include, explain or ask? Put it here. 
+
+</details>
+
+:::
+
+## Rubric
+
+The rubric for this project is included in the Google Classroom assignment.
+
+
+## Examples
+
+{{< video https://youtu.be/kdkrhd4N4Ic >}}
+
+{{< video https://youtu.be/8rfDb0A7XsA >}} -->

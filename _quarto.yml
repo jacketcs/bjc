@@ -28,7 +28,6 @@ website:
     under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
   navbar:
     logo: "/img/jac.png"
-    background: red
     search: true
     left:
       - text: "Posts"
@@ -51,6 +50,10 @@ website:
             file: unit-6/index.qmd
       - text: "Help Queue"
         href: https://help.gigamonkeys.com/
+      - text: "Resources"
+        menu:
+          - text: "Snap<em>!</em> Cheat Sheet"
+            file: snap-cheat-sheet.qmd
       - text: "Snap<em>!</em>"
         href: https://snap.berkeley.edu/snap/snap.html
 

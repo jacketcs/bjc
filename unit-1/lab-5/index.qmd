@@ -2,6 +2,7 @@
 title: "Lab 5: Follow the Leader"
 subtitle: "Unit 1, Lab 5"
 gifffer: true
+order: 6
 ---
 
 ::: learn

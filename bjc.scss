@@ -32,12 +32,12 @@ $green:   #3fb618 !default;
 $teal:    #20c997 !default;
 $cyan:    #9954bb !default;
 
-$primary:       $blue !default;
+$primary:       $red !default;
 $secondary:     $gray-800 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
-$danger:        $red !default;
+$danger:        $orange !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 
@@ -346,8 +346,8 @@ table.remainders {float:left; margin-right:100px;}
 .borderless-table, .bordered-table {display: grid;}
 .borderless-table > .header, .bordered-table > .header {font-weight: bold;}
 .borderless-table {border: 0px;}
-.bordered-table {border: solid 1px black;}
-.bordered-table > div {padding: 10px; border: solid 1px black;}
+.bordered-table {border: solid 1px $table-border-color;}
+.bordered-table > div {padding: 10px; border: solid 1px $table-border-color;}
 .two-col {grid-template-columns: auto auto;}
 .three-col {grid-template-columns: auto auto auto;}
 .four-col {grid-template-columns: auto auto auto auto;}
@@ -409,6 +409,8 @@ ol.horizontal li {
 img.inline {
     vertical-align: middle;
     display: inline;
+    max-width: 100%;
+    height: auto;
 }
 
 // .float-end {
@@ -437,8 +439,6 @@ div.newProject span.text {
     z-index:2;
     color: #333;
 }
-
-.snap {font-variant: normal;}
 
 .captioned {
     float: right;

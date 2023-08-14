@@ -9,18 +9,12 @@ order: 3
 **In this project,** you are going to model a computer game called Pong, first developed by Atari in 1972. You will write the code for the paddle which will allow it to move up and down based on user keyboard input and also write the code for the ball which will allow it to bounce every time it hits a wall or the paddle.<br /> <img src="/img/1-introduction/Pong_img/pongAnimation.gif" title="Game of Pong" alt="Game of Pong" class="ms-4" width="325"/>
 :::
 
-::: {#first .forYouToDo}
+::::: {#first .forYouToDo}
 <ol>
-
-<!--<li>Play with the program <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=bjcsolutions&ProjectName=U1L5Pong_Teacher&hideControls" target="_blank"> linked here </a>to get a feel how the game works. Use the up and down arrow keys to move the paddle. The initial angle at which the ball starts is random, so if it is not to your liking, you can reload the page for a different initial angle.</li>-->
 
 <li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/> Discuss with your partner the mathematics behind the ball bouncing off the paddle. How does the initial direction of the ball as it hits the paddle relate to the final direction of the ball as it bounces off the paddle? The following diagram may help. <br /> <img src="/img/1-introduction/Pong_img/Bounce.png" title="Initial and final directions of ball" alt="Initial and final directions of ball" class="ms-4" height="346"/></li>
 
 <li>Create the paddle and the ball sprites and give them their costumes (filled rectangle and circle).</li>
-
-::: sidenote
-Do this on your own but if you get stuck, look at these <a href="/1-introduction/optional-projects/3b-pong-hints.html" target="_blank" title="Hints for the Game of Pong">hints for the Game of Pong</a> on how to proceed.
-:::
 
 <li>Write the code to have the paddle move up and down when the user presses the up arrow and down arrow keys. Don't let the paddle move beyond the edges of the stage.</li>
 
@@ -28,8 +22,27 @@ Do this on your own but if you get stuck, look at these <a href="/1-introduction
 
 </ol>
 
- 
+<details class="mt-5">
+<summary> Stuck? Click here to look at some hints on how to proceed with the rest of this. </summary>
+
+::: forYouToDo
+<ol>
+<li>
+<a href="/prog/1-introduction/U1L5-pong-student.xml" class="run"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a><br> Examine the starter file where a rectangular paddle sprite and a circular ball sprite have been created for you.
+</li>
+<li>
+Write the code for the paddle first. The paddle should be allowed to move only up and down near the right edge of the screen. When the user presses the up/down arrow keys on the keyboard, the paddle should move up or down a certain amount but it should never wander off the edges of the screen. You may find the following blocks useful.<br> <img class="indent" src="/img/1-introduction/Pong_img/PaddleCodeHint.png" width="400" alt="Paddle code blocks: when green flag clicked, when up arrow pressed, when down arrow pressed, go to x: (230) y:(0), if on edge, bounce, change y by (15), change y by (-15)" title="Paddle code blocks: when green flag clicked, when up arrow pressed, when down arrow pressed, go to x: (230) y:(0), if on edge, bounce, change y by (15), change y by (-15)">
+</li>
+<li>
+The code for the ball is a bit trickier due to the paddle bounce.<br>
+Initialize the ball to appear in the middle of the screen and give it a random direction. Then check if the ball is at the edge of the screen or is touching the paddle. In each case the ball needs to bounce. Snap<em>!</em> already provides you with a block for bouncing off the edges of the screen.<br> <img class="indent" src="/img/1-introduction/Pong_img/edgeBounce.png" width="161" alt="if on edge, bounce" title="if on edge, bounce"><br> You can write the code for the ball bouncing off the paddle by realizing that the ball bounces from the paddle with the negative of the direction at which it hits the paddle. Remember that in Snap<em>!</em> positive angles are measured clockwise from the 0°, up direction, and negative angles are measured counterclockwise from the 0°, up direction.<br> <img class="indent" src="/img/1-introduction/Pong_img/Bounce.png" height="346" alt="Ball bouncing with final direction equal to the negative of the initial direction." title="Ball bouncing with final direction equal to the negative of the initial direction."> <img src="/img/1-introduction/Pong_img/Directions.png" width="517" alt="Directions: 0, 90, 180, 270 and 0, -90, -180, -270" title="Directions: 0, 90, 180, 270 and 0, -90, -180, -270"><br> Now write the code for the ball. You may find the following blocks useful.<br> <img class="indent" src="/img/1-introduction/Pong_img/BallCodeHint.png" width="400" alt="Ball Code blocks: when green flag clicked, forever, if( ), (-1)X(direction), touching(Paddle)?, go to x:(0) y:(0), point in direction (), if on edge, bounce, move (5) steps, pick random (0) to (360)" title="Ball Code blocks: when green flag clicked, forever, if( ), (-1)X(direction), touching(Paddle)?, go to x:(0) y:(0), point in direction (), if on edge, bounce, move (5) steps, pick random (0) to (360)">
+</li>
+</ol>
 :::
+
+</details>
+
+:::::
 
 ::: takeItFurther
 <ol type="A">

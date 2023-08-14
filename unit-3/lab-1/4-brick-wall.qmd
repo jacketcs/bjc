@@ -18,7 +18,7 @@ brick wall.
 
 
 A picture of a brick is just a rectangle with a brick red color.
-However, there's no `draw rectangle` block in [snap]{.snap}.
+However, there's no `draw rectangle` block in Snap<em>!</em>.
 One way to draw one is by thinking of a rectangle as a very thick line.
 Here's the idea:<br />
 

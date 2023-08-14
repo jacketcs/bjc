@@ -1,10 +1,8 @@
 ---
-title: ""
-subtitle: "Unit 3, Lab 2, Page "
+title: "Lab 2 Practice Questions"
+subtitle: "Unit 3, Lab 2"
 order: 6
 ---
-
-<h3>Lab 2: Contact List</h3>
 
 ::: {.assessment-data type="multiplechoice" identifier="mapLetterVsItem" hasinlinefeedback="true" maxchoices="1" responseidentifier="resp1" shuffle="false"}
 <a href="https://bjc.berkeley.edu/3-lists/2-contact-list/5-mapping-over-list.html">3.2.5</a>
