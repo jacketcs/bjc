@@ -21,7 +21,7 @@ gifffer: true
 a. **Find the block** in the scripting area or the colored palettes on the left.
 b. **Control-click** (or right-click) on the block and choose "edit..."
 c. **Make changes** to the block's internal code. (Instructions are already inside these blocks.)
-d.**Click OK** when you're satisfied. (Or click "Cancel" if you don't want to make changes.)
+d. **Click OK** when you're satisfied. (Or click "Cancel" if you don't want to make changes.)
 
 ::: endnote
 ::: todo

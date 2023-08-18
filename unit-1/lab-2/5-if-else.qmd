@@ -10,7 +10,7 @@ order: 5
 
 :::
 
-The block <img src="/img/1-introduction/more-complicated-who.png" title="more complicated who" alt="more complicated who"/> has been built for you. It randomly chooses 1, 2, 3, or 4, and if that number is 3, then it reports something more complicated than `who`. Otherwise, it reports `who`, just as before.
+The block <img src="/img/1-introduction/more-complicated-who.png" title="more complicated who" alt="more complicated who"/> **has been built for you** (look through the blocks to find it) (hint: what colour is this block? where are all blocks of that colour contained?). It randomly chooses 1, 2, 3, or 4, and if that number is 3, then it reports something more complicated than `who`. Otherwise, it reports `who`, just as before.
 
 ::: {#first .forYouToDo}
 
@@ -384,7 +384,7 @@ or <img src="/img/1-introduction/random-blocktran.png" title="RANDOM(1, 10)" alt
 
 (@) Edit `more complicated who`. Replace <em>one</em> of the `who` blocks with a fresh copy of `more complicated who` that you drag in from the palette. Click `more complicated who` enough times to see how it has changed.
 
-(@) <img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/> Describe the change in behavior, and explain what you think is causing it.
+(@) Discuss the the change in behavior with your partner, and explain what you think is causing it.
 
 (@) {{< checkpoint text='Fill out this Google Form' id='1FAIpQLSf8n7ShuN7ZHNJFlDHXOlnU9PklKImbT6DA_SRFUb2dOyDNoA' >}}
 
