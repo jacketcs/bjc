@@ -3,12 +3,12 @@ title: "Bomb Game Instructions"
 pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 author: "Mr. Chang"
 description: "These are the instructions to the bomb game that we'll be playing today."
-date: "8/22/2023"
-date-modified: "8/22/2023"
+date: "8/21/2023"
+date-modified: "8/21/2023"
 categories:
   - Bomb Game
   - Announcement
-draft: true # change to `false` when you want to actually render it
+draft: false # change to `false` when you want to actually render it
 ---
 
 ## About the Game
