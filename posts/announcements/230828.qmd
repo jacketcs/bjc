@@ -1,0 +1,11 @@
+---
+title: "Week 3 Announcements"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
+author: "Mr. Chang and Ms. O'Keefe"
+description: "A congratulations, about grading, and about computing in the news." # should add a helpful description
+date: "8/28/2023"
+date-modified: "8/28/2023"
+draft: true # change to `false` when you want to actually render it
+---
+
+Otherwise, add any text, and remember to just follow [markdown syntax](https://www.markdownguide.org/cheat-sheet/); more specifically [quarto markdown](https://quarto.org/docs/authoring/markdown-basics.html).8
