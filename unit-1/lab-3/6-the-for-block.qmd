@@ -107,7 +107,7 @@ This design got the nickname "squiral" because it's a **squ**are sp**iral**.
 
 (@) Open your U1L3-Pinwheel project, and build a `nest squares` block that uses `for` and your `polygon` block to draw nested squares. Give it an input so that it will draw whatever <var>number of squares</var> you specify, with each square larger than the previous: <br /> <img src="/img/1-introduction/nested-squares.png" title="nested squares" alt="nested squares" class="ms-4"/>
 
-(@) {{< checkpoint text='Fill out this Google Form' id='1FAIpQLSdpjoDQjMe5SfesN3QaeQY2dvdDAIv08fgzoRgQZMbETo8z5w' >}}
+(@) {{< checkpoint id='1FAIpQLSdpjoDQjMe5SfesN3QaeQY2dvdDAIv08fgzoRgQZMbETo8z5w' >}}
 
 :::
 

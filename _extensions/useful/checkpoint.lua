@@ -6,7 +6,7 @@ function checkpoint(args, kwargs)
     end
 
     local template = 
-      [[<button type='button' class='btn btn-danger' data-bs-toggle='modal' data-bs-target='#checkpoint-%s'> %s </button>
+      [=[<button type='button' class='btn btn-danger' data-bs-toggle='modal' data-bs-target='#checkpoint-%s'> %s </button>
       <div class='modal fade' id='checkpoint-%s' tabindex='-1' role='dialog'>
         <div class='modal-dialog modal-fullscreen'>
           <div class='modal-content'>
@@ -19,7 +19,7 @@ function checkpoint(args, kwargs)
               </div>
           </div>
         </div>
-      </div>]]
+      </div>]=]
 
     return pandoc.RawInline("html", string.format(template, id, text, id , id)) 
 end
