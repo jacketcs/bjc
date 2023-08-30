@@ -125,6 +125,6 @@ Where the `wait` block goes in your script matters. Do you want the script to wa
 
 
 
-10. {{< checkpoint text="Fill out this Google Form" id="1FAIpQLSeIjgiBz_nh0d4dN9nLuU7sUkVTF-gdmqFlrEuSqTfJiwikXg" >}}
+10. {{< checkpoint  id="1FAIpQLSeIjgiBz_nh0d4dN9nLuU7sUkVTF-gdmqFlrEuSqTfJiwikXg" >}}
 
 :::::

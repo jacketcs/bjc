@@ -72,6 +72,6 @@ When Alonzo is completely transparent, the game should <em>stop.</em>
 
 8. <img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline"/>
 
-9. {{< checkpoint text="Fill out this Google Form" id="1FAIpQLSe2lbquJaD3SMPHpZYu1_oswR5IfxUgbZhZKlg7gvyGT3Gc4w" >}}
+9. {{< checkpoint  id="1FAIpQLSe2lbquJaD3SMPHpZYu1_oswR5IfxUgbZhZKlg7gvyGT3Gc4w" >}}
 
 :::

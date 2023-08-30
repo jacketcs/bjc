@@ -9,6 +9,8 @@ order: 4
 **In this project,** you'll use abstractions inside of abstractions to build a row of houses.<br /> <img src="/img/1-introduction/row-of-houses-size-100.png" title="a drawing of a row of houses" alt="a drawing of a row of houses" class="ms-4 noshadow" style="height: 119px;"/>
 :::
 
+When you're done, turn in your project with this form {{< checkpoint text='Turn in Your Project' id='1FAIpQLSe_E1ALMy2QgzZhYnzPWY-xk00xAj3LnRDPS__vntrfW7ul_Q' >}}
+
 ::: {#first .forYouToDo}
 
 (@) <div class="newProject">
@@ -117,3 +119,5 @@ You will need to use <img src="/img/blocks/pen-up-full-size.png" title="pen up" 
 
 </ol>
 :::
+
+Make sure to turn in your project! {{< checkpoint text='Turn in Your Project' id='1FAIpQLSe_E1ALMy2QgzZhYnzPWY-xk00xAj3LnRDPS__vntrfW7ul_Q' >}}

@@ -2,11 +2,11 @@ function checkpoint(args, kwargs)
     local text = pandoc.utils.stringify(kwargs['text'])
     local id = pandoc.utils.stringify(kwargs['id'])
     if text == '' then
-      text = 'Fill out this Google Form'
+      text = 'Checkpoint: Fill out this Google Form'
     end
 
     local template = 
-      [[<button type='button' class='btn btn-danger' data-bs-toggle='modal' data-bs-target='#checkpoint-%s'> Checkpoint: %s </button>
+      [[<button type='button' class='btn btn-danger' data-bs-toggle='modal' data-bs-target='#checkpoint-%s'> %s </button>
       <div class='modal fade' id='checkpoint-%s' tabindex='-1' role='dialog'>
         <div class='modal-dialog modal-fullscreen'>
           <div class='modal-content'>

@@ -31,6 +31,6 @@ The `say` block with an empty text in the white <em>**input**</em> slot will mak
 
 5. <img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline"/>
 
-6. {{< checkpoint text="Fill out this Google Form" id="1FAIpQLSdRuRTqwD_gnLNPPgUTU7oZBlPbvTSzrFhSWe_aUjPBnNaHQg" >}}
+6. {{< checkpoint  id="1FAIpQLSdRuRTqwD_gnLNPPgUTU7oZBlPbvTSzrFhSWe_aUjPBnNaHQg" >}}
 
 :::
