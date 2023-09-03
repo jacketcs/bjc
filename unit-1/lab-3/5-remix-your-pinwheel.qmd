@@ -64,7 +64,7 @@ As long as your `polygon` block draws the right picture, it doesn't matter to th
 
 <img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline"/>
 
-(@) {{< checkpoint text='Fill out this Google Form' id='1FAIpQLSdpOK9EOWOW0yux1TeXyfHbaGPQR9Buwne5P-mKAmv1StGxnA' >}}
+(@) {{< checkpoint id='1FAIpQLSdpOK9EOWOW0yux1TeXyfHbaGPQR9Buwne5P-mKAmv1StGxnA' >}}
 
 :::
 

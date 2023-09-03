@@ -193,7 +193,7 @@ One way to avoid having bugs in your program in the first place is to keep your 
 
 (@) Tidy up the code in your project, if necessary.
 
-(@) {{< checkpoint text='Fill out this Google Form' id='1FAIpQLSfbHl5kvli8Xfmtwj5NE7L77wg3-bgLFxSsfmY8NDeIOPZD6g' >}}
+(@) {{< checkpoint id='1FAIpQLSfbHl5kvli8Xfmtwj5NE7L77wg3-bgLFxSsfmY8NDeIOPZD6g' >}}
 
 :::
 

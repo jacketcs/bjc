@@ -386,7 +386,7 @@ or <img src="/img/1-introduction/random-blocktran.png" title="RANDOM(1, 10)" alt
 
 (@) Discuss the the change in behavior with your partner, and explain what you think is causing it.
 
-(@) {{< checkpoint text='Fill out this Google Form' id='1FAIpQLSf8n7ShuN7ZHNJFlDHXOlnU9PklKImbT6DA_SRFUb2dOyDNoA' >}}
+(@) {{< checkpoint id='1FAIpQLSf8n7ShuN7ZHNJFlDHXOlnU9PklKImbT6DA_SRFUb2dOyDNoA' >}}
 
 :::
 

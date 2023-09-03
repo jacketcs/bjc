@@ -109,7 +109,7 @@ Make another copy of the three-branch script you built, and then:
 
 </ol>
 
-(@) {{< checkpoint text='Fill out this Google Form' id='1FAIpQLSelXO0igT5BgO3N9ao9aWKXOIxD11tTKERWLtAJxVRSVedO2w' >}}
+(@) {{< checkpoint id='1FAIpQLSelXO0igT5BgO3N9ao9aWKXOIxD11tTKERWLtAJxVRSVedO2w' >}}
 
 :::
 

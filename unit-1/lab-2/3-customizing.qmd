@@ -172,7 +172,7 @@ You can use a photograph or picture from the Internet by dragging the image onto
 - You can change the direction your sprite is facing:<br /> <img src="/img/1-introduction/point-in-direction-menu-showing.png" title="point in direction (270) with menu open showing right left, up, down, random" alt="point in direction (270) with menu open showing right left, up, down, random" class="ms-4"/><br>
 :::
 
-(@) {{< checkpoint text='Fill out this Google Form' id='1FAIpQLSfVyOsmY8kFrnNJWQKScHsBFZrLbDAo4-paxogKcA73cQf-Og' >}}
+(@) {{< checkpoint id='1FAIpQLSfVyOsmY8kFrnNJWQKScHsBFZrLbDAo4-paxogKcA73cQf-Og' >}}
 
 :::
 

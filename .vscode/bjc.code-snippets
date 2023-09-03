@@ -35,6 +35,6 @@
 	},
 	"Checkpoint": {
 		"prefix": "bjc",
-		"body": "{{< checkpoint text='Fill out this Google Form' id='${0:google_form_id}' >}}"
+		"body": "{{< checkpoint id='${0:google_form_id}' >}}"
 	}
 }
