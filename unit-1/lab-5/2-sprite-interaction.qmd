@@ -172,6 +172,9 @@ To prevent the two sprites from being stuck to each other unable to move, the sp
 :::
 
 <img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline"/>
+
+(@) {{< checkpoint id='1FAIpQLScdfueUwP1TpRjEqEWqSO3M93WzvzC744Vh1VqcCkJ2DdK5jg' >}}
+
 :::::::
 
 ::::::: ifTime
