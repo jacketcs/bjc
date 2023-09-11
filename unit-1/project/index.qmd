@@ -7,7 +7,6 @@ order: 10
 
 You'll be able to see this when the time comes :)
 
-<!-- 
 ::: takeNote
 This is an **individual** project. This means that all of your work must be your own, indisputable work. If you need help on something, you may ask other people for help, however, the scripts that you create *must* be your own work. If there's any convincing evidence that the work that you submit is not your own, you will recieve an automatic 0 on this project and any participation grade related to working on the project.
 :::
@@ -38,15 +37,18 @@ Create an eCard ([see what an eCard is](https://en.wikipedia.org/wiki/E-card)) t
 (@) Includes one additional feature. You can choose either:
     - Includes sounds or music (using the `play` block and/or the "Sounds" tab) OR
     - Uses the `random` block
+
 :::
 
 ## Writeup Specifications
 
 ::: forYouToDo
-When you have finished your app, fill in the writeup on the **given template in Google Classroom**. This kind of write-up is part of what you will need to do for the AP Create Task.
+When you have finished your app, fill in the writeup on the **given template in Google Classroom**.
 
 <details>
 <summary>The template has the following questions for you to answer:</summary>
+
+1. Describe your program. In other words, summarize what your program will do to someone who does not know how to code in Snap! (nothing technical required, like a storyboard of your program and instruction to use your program).
 
 1. What message does your e-card contain?
 
@@ -60,9 +62,11 @@ When you have finished your app, fill in the writeup on the **given template in 
 
 1. How did you use a repeat or for loop in your code?
 
-1. 1. Explain how the user interacts with your e-card
+1. Explain how the user interacts with your e-card
 
-Did you use a random block or sounds? Whichever one you used, please explain below how you used it in your project.
+1. Did you use a random block or sounds? Whichever one you used, please explain below how you used it in your project.
+
+
 
 1. Is there anything else you’d like to include, explain or ask? Put it here. 
 
@@ -74,9 +78,8 @@ Did you use a random block or sounds? Whichever one you used, please explain bel
 
 The rubric for this project is included in the Google Classroom assignment.
 
-
 ## Examples
 
 {{< video https://youtu.be/kdkrhd4N4Ic >}}
 
-{{< video https://youtu.be/8rfDb0A7XsA >}} -->
+{{< video https://youtu.be/8rfDb0A7XsA >}}
