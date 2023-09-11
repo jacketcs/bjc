@@ -14,7 +14,7 @@ This is an **individual** project. This means that all of your work must be your
 ::: learn
 **In this project**, you will apply your current knowledge of computer science towards creating an *eCard* of your choice following the specifications listed on this page.
 
-In addition, you'll have a writeup where you will explain why, where, and how you used blocks in your project.
+In addition, you'll have a Google Form where you will explain why, where, and how you used blocks in your project.
 
 On the last day of this project, we will have a gallery walk to show everyone the progress that you've made!
 :::
@@ -40,13 +40,13 @@ Create an eCard ([see what an eCard is](https://en.wikipedia.org/wiki/E-card)) t
 
 :::
 
-## Writeup Specifications
+## Google Form Specifications
 
 ::: forYouToDo
-When you have finished your app, fill in the writeup on the **given template in Google Classroom**.
+When you have finished your app, fill in the **given Google Form on Google Classroom**.
 
 <details>
-<summary>The template has the following questions for you to answer:</summary>
+<summary>The Google Form has the following questions for you to answer:</summary>
 
 1. Describe your program. In other words, summarize what your program will do to someone who does not know how to code in Snap! (nothing technical required, like a storyboard of your program and instruction to use your program).
 
@@ -62,11 +62,9 @@ When you have finished your app, fill in the writeup on the **given template in 
 
 1. How did you use a repeat or for loop in your code?
 
-1. Explain how the user interacts with your e-card
+1. Explain how the user interacts with your e-card.
 
 1. Did you use a random block or sounds? Whichever one you used, please explain below how you used it in your project.
-
-
 
 1. Is there anything else you’d like to include, explain or ask? Put it here. 
 
