@@ -5,8 +5,6 @@ pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 order: 10
 ---
 
-You'll be able to see this when the time comes :)
-
 ::: takeNote
 This is an **individual** project. This means that all of your work must be your own, indisputable work. If you need help on something, you may ask other people for help, however, the scripts that you create *must* be your own work. If there's any convincing evidence that the work that you submit is not your own, you will recieve an automatic 0 on this project and any participation grade related to working on the project.
 :::

@@ -63,8 +63,6 @@ Two ways, with the first being better in most cases:
 
 2. Build the following script from the "Looks" palette. ![switch to costume ( stretch ( )  x: ( ) y: ( ) % )](/img/blocks/rescale-costume.png)
 
-
-
 3. Make sure to select the name of the picture that you want to select from the dropdown in the script and to also set how much (percentage-wise) you want to rescale the size of the costume.
 
 #### Make the stage fit the image
