@@ -1,6 +1,6 @@
 ---
 title: "Snap<em>!</em> Cheat Sheet"
-pagetitle: "{{< meta title>}} | {{< var title-fix>}}"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 order: 10
 ---
 

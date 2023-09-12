@@ -1,6 +1,6 @@
 ---
 title: "Snap<em>!</em> Common Fixes for Costumes / Customization"
-pagetitle: "{{< meta title>}} | {{< var title-fix>}}"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 order: 20
 ---
 
