@@ -1,0 +1,92 @@
+---
+title: "Snap<em>!</em> Common Fixes for Costumes / Customization"
+pagetitle: "{{< meta title>}} | {{< var title-fix>}}"
+order: 20
+---
+
+## Importing files
+
+For all computers, you can first download the image/file that you want to import into Snap<em>!</em> then go into the file system and drag the file into your Snap<em>!</em> window.
+
+### On Chromebooks
+
+You don't have to download images, you can directly drag in your image from Google into the Snap<em>!</em> window, but if you want transparency, you might have to follow the steps in the transparency section below.
+
+### Sounds
+
+You'll have to download the file to import it into Snap<em>!</em> You can use any website to get the sound file.
+
+If you find a sound that you want from YouTube, find a website that does "YouTube to Mp3." If you do this, be careful of pop-ups that tell you to download an extension or download something else.
+
+### It's not showing up in Snap<em>!</em>
+
+Snap<em>!</em>'s probably being weird. Click out of the "Sounds" or "Costumes" tab in Snap<em>!</em> (so click into the "Scripts" tab) and then click back. It should show up within 30 seconds (just keep clicking in and out if you know you dragged in the file correctly).
+
+## Costumes
+
+### Transparency
+
+On Google, you'll know if an image has a transparent background if there's a checkered pattern. But sometimes, you might download the image directly from Google images and find out that Snap is showing the checkered pattern as part of the image. In this case, don't download it from Google images, instead, follow the link to the image (click the title of the website below the image, or the "Visit" button) and follow the website's instruction to download the image.
+
+#### DIY Transparency in Snap<em>!</em>
+
+If you have a white background, you can first try this website: [remove-white-background.imageonline.co](https://remove-white-background.imageonline.co/)
+
+Or within Snap<em>!</em>, if you have a white background or other solid colour background in a costume, you can easily make a rough transparent background for the costume.
+
+1. Load in the costume and go to the costume that you want transparency for Snap<em>!</em>
+2. Right click the costume and choose "Edit"
+3. Choose the bucket (fill) tool
+4. Choose transparency as the "color" (click on the checkered pattern)
+5. Click on all the parts in the image that you want transparent
+
+### Image File Extensions
+
+`.png`
+: `.png` images can come with transparency, and you can edit the image within Snap<em>!</em>
+
+`.svg`
+: `.svg` images can come with transparency, however, you cannot edit the image within Snap<em>!</em>
+
+Other
+: Other images such as `.jpg`, `jpeg`, etc. do not come with transparency, and you can edit the image within Snap<em>!</em>
+
+### Fit a image to the entire stage
+
+"I want a background that covers everything, how do I do that????"
+
+Two ways, with the first being better in most cases:
+
+#### Make the image fit the stage
+
+1. Select the stage from the sprites on the bottom right window of Snap<em>!</em>
+
+2. Build the following script from the "Looks" palette. ![switch to costume ( stretch ( )  x: ( ) y: ( ) % )](/img/blocks/rescale-costume.png)
+
+
+
+3. Make sure to select the name of the picture that you want to select from the dropdown in the script and to also set how much (percentage-wise) you want to rescale the size of the costume.
+
+#### Make the stage fit the image
+
+1. Go to the Snap<em>!</em> settings by clicking on the gear icon on the top left ![the settings icon](/img/sys/settings.png)
+
+2. Select "Stage Size"
+
+3. Set the stage size parameters so that the stage fits the image
+
+## Etcetera 
+
+### Change which sprite is at the Front/Back
+
+Use the following block in the "Looks" palette ![go to ( ) layer](/img/blocks/go-to-layer.png)
+
+### How to put pen drawings in front of sprites
+
+You can't, but you can work around this by having a dedicated sprite for drawing.
+
+There's specific implications for this and you'll have to play around to make sure everything works properly.
+
+With that dedicated sprite(s), you can draw something with pen, then try the following script to have pen marks work as sprite costumes rather than pen marks: ![switch to costume (pen trails ()) ](/img/blocks/switch-to-pen-trails.png)
+
+Play around that that and layers (see above) to have your pen drawings in the right order.

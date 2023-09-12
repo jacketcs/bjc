@@ -54,6 +54,8 @@ website:
         menu:
           - text: "Snap<em>!</em> Cheat Sheet"
             file: snap-cheat-sheet.qmd
+          - text: "Common Costume / Sound File Issues"
+            file: costume-cheatsheet.qmd
       - text: "Snap<em>!</em>"
         href: https://snap.berkeley.edu/snap/snap.html
 
