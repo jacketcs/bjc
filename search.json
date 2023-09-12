@@ -1,5 +1,33 @@
 [
   {
+    "objectID": "costume-cheatsheet.html",
+    "href": "costume-cheatsheet.html",
+    "title": "Snap! Common Fixes for Costumes / Customization",
+    "section": "",
+    "text": "For all computers, you can first download the image/file that you want to import into Snap! then go into the file system and drag the file into your Snap! window.\n\n\nYou don’t have to download images, you can directly drag in your image from Google into the Snap! window, but if you want transparency, you might have to follow the steps in the transparency section below.\n\n\n\nYou’ll have to download the file to import it into Snap! You can use any website to get the sound file.\nIf you find a sound that you want from YouTube, find a website that does “YouTube to Mp3.” If you do this, be careful of pop-ups that tell you to download an extension or download something else.\n\n\n\nSnap!’s probably being weird. Click out of the “Sounds” or “Costumes” tab in Snap! (so click into the “Scripts” tab) and then click back. It should show up within 30 seconds (just keep clicking in and out if you know you dragged in the file correctly)."
+  },
+  {
+    "objectID": "costume-cheatsheet.html#importing-files",
+    "href": "costume-cheatsheet.html#importing-files",
+    "title": "Snap! Common Fixes for Costumes / Customization",
+    "section": "",
+    "text": "For all computers, you can first download the image/file that you want to import into Snap! then go into the file system and drag the file into your Snap! window.\n\n\nYou don’t have to download images, you can directly drag in your image from Google into the Snap! window, but if you want transparency, you might have to follow the steps in the transparency section below.\n\n\n\nYou’ll have to download the file to import it into Snap! You can use any website to get the sound file.\nIf you find a sound that you want from YouTube, find a website that does “YouTube to Mp3.” If you do this, be careful of pop-ups that tell you to download an extension or download something else.\n\n\n\nSnap!’s probably being weird. Click out of the “Sounds” or “Costumes” tab in Snap! (so click into the “Scripts” tab) and then click back. It should show up within 30 seconds (just keep clicking in and out if you know you dragged in the file correctly)."
+  },
+  {
+    "objectID": "costume-cheatsheet.html#costumes",
+    "href": "costume-cheatsheet.html#costumes",
+    "title": "Snap! Common Fixes for Costumes / Customization",
+    "section": "Costumes",
+    "text": "Costumes\n\nTransparency\nOn Google, you’ll know if an image has a transparent background if there’s a checkered pattern. But sometimes, you might download the image directly from Google images and find out that Snap is showing the checkered pattern as part of the image. In this case, don’t download it from Google images, instead, follow the link to the image (click the title of the website below the image, or the “Visit” button) and follow the website’s instruction to download the image.\n\nDIY Transparency in Snap!\nIf you have a white background, you can first try this website: remove-white-background.imageonline.co\nOr within Snap!, if you have a white background or other solid colour background in a costume, you can easily make a rough transparent background for the costume.\n\nLoad in the costume and go to the costume that you want transparency for Snap!\nRight click the costume and choose “Edit”\nChoose the bucket (fill) tool\nChoose transparency as the “color” (click on the checkered pattern)\nClick on all the parts in the image that you want transparent\n\n\n\n\nImage File Extensions\n\n.png\n\n.png images can come with transparency, and you can edit the image within Snap!\n\n.svg\n\n.svg images can come with transparency, however, you cannot edit the image within Snap!\n\nOther\n\nOther images such as .jpg, jpeg, etc. do not come with transparency, and you can edit the image within Snap!\n\n\n\n\nFit a image to the entire stage\n“I want a background that covers everything, how do I do that????”\nTwo ways, with the first being better in most cases:\n\nMake the image fit the stage\n\nSelect the stage from the sprites on the bottom right window of Snap!\nBuild the following script from the “Looks” palette. \nMake sure to select the name of the picture that you want to select from the dropdown in the script and to also set how much (percentage-wise) you want to rescale the size of the costume.\n\n\n\nMake the stage fit the image\n\nGo to the Snap! settings by clicking on the gear icon on the top left \nSelect “Stage Size”\nSet the stage size parameters so that the stage fits the image"
+  },
+  {
+    "objectID": "costume-cheatsheet.html#etcetera",
+    "href": "costume-cheatsheet.html#etcetera",
+    "title": "Snap! Common Fixes for Costumes / Customization",
+    "section": "Etcetera",
+    "text": "Etcetera\n\nChange which sprite is at the Front/Back\nUse the following block in the “Looks” palette \n\n\nHow to put pen drawings in front of sprites\nYou can’t, but you can work around this by having a dedicated sprite for drawing.\nThere’s specific implications for this and you’ll have to play around to make sure everything works properly.\nWith that dedicated sprite(s), you can draw something with pen, then try the following script to have pen marks work as sprite costumes rather than pen marks: \nPlay around that that and layers (see above) to have your pen drawings in the right order."
+  },
+  {
     "objectID": "create-task/index.html",
     "href": "create-task/index.html",
     "title": "Create Task",
