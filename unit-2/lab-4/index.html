@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Unit 1, Lab 2, Page 6 | JacketCS CSP</title>
+<title>Unit 2, Lab 4 | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../unit-2/lab-2/1-shopping-list-app.html" rel="next">
-<link href="../../unit-2/lab-1/5-choosing-avatar.html" rel="prev">
+<link href="../../unit-2/lab-4/1-mod-operator.html" rel="next">
+<link href="../../unit-2/lab-3/6-solving-word-puzzle.html" rel="prev">
 <link href="../..//img/jac.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -44,6 +44,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-contrib/gifffer/gifffer.min.js"></script>
+<link href="../../site_libs/quarto-contrib/gifffer/bjc-gifffer.css" rel="stylesheet">
+<script type="text/javascript">window.onload = function() {Gifffer();};</script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -124,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="">
+    <a class="nav-link" href="https://help.gigamonkeys.com/" rel="" target="_blank">
  <span class="menu-text">Help Queue</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -143,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
+    <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="_blank">
  <span class="menu-text">Snap<em>!</em></span></a>
   </li>  
 </ul>
@@ -163,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Unit 2: Abstraction</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-1/1-number-guessing-game.html">Lab 1</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-1/6-keeping-a-journal.html">Page 6: Keeping a Programming Journal</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Unit 2: Abstraction</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-4/index.html">Lab 4: Making Computers Do Math</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -186,13 +189,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
- <span class="menu-text">Lab 1</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <a href="../../unit-2/lab-1/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 1: Games</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-2/lab-1/1-number-guessing-game.html" class="sidebar-item-text sidebar-link">
@@ -223,18 +226,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Page 5: Choosing a Costume</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-2/lab-1/6-keeping-a-journal.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Page 6: Keeping a Programming Journal</span></a>
-  </div>
-</li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
- <span class="menu-text">Lab 2</span></a>
+            <a href="../../unit-2/lab-2/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 2: Making Lists</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -262,8 +259,8 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
- <span class="menu-text">Lab 3</span></a>
+            <a href="../../unit-2/lab-3/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 3: Making Decisions</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -309,13 +306,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
- <span class="menu-text">Lab 4</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
+            <a href="../../unit-2/lab-4/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Lab 4: Making Computers Do Math</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-2/lab-4/1-mod-operator.html" class="sidebar-item-text sidebar-link">
@@ -338,8 +335,8 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
- <span class="menu-text">Lab 5</span></a>
+            <a href="../../unit-2/lab-5/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 5: Copyrights</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -439,8 +436,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Page 6: Keeping a Programming Journal</h1>
-<p class="subtitle lead">Unit 1, Lab 2, Page 6</p>
+<h1 class="title">Lab 4: Making Computers Do Math</h1>
+<p class="subtitle lead">Unit 2, Lab 4</p>
 </div>
 
 
@@ -456,67 +453,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="learn">
-<p><strong>On this page,</strong> you will begin using a journal to keep track of your programming insights.</p>
-</div>
-<p>You can use a journal to <em>learn from your own programming</em>. The journal is just a notebook in which you write notes to yourself, like a diary. It’s <em>for you,</em> not for your teacher.</p>
-<p>Here are some ways to use your journal:</p>
-<ul>
-<li>
-<strong>When you learn a new idea</strong> (not just the name of a Snap<em>!</em> block), make a note of it.
-</li>
-<li>
-<strong>When you make or discover a beautiful program</strong>—a beautiful piece of code, or one that draws a beautiful picture—print it out, or take a photo, and add it to your journal.
-</li>
-<li>
-<p><strong>When you find a bug</strong> in your program, write down:</p>
-<ol style="list-style-type: decimal">
-<li>
-The symptom—How did you know there was a bug?
-</li>
-<li>
-How you found the underlying problem—What steps did you take to find figure out what was going on?
-</li>
-<li>
-The underlying problem—What <em>was</em> going on?
-</li>
-<li>
-How you fixed it—Record anything that might be helpful next time you encounter a bug like this, or to help you avoid having a bug like this in the future.
-</li>
-</ol>
-</li>
-<li>
-<strong>When something inspires you</strong> to create a related program on your own, write down your idea for later.
-</li>
-<li>
-<div class="sidenote">
-<p>This is just like recording bugs except that it’s a bug in your understanding rather than a bug in your code.</p>
-</div>
-<p><strong>When you’re asked to predict what some script will do, and</strong> your expectations turn out to be wrong, write down:</p>
-<ol style="list-style-type: decimal">
-<li>
-What you thought would happen
-</li>
-<li>
-What actually happened
-</li>
-<li>
-Why you thought what you thought
-</li>
-<li>
-How you think about it now
-</li>
-</ol>
-</li>
-<li>
-<strong>When the curriculum asks you to write</strong> your ideas about something, write in your journal.
-</li>
-</ul>
-<div class="forYouToDo">
-<ol>
-<li>
-<img src="../../img/icons/write-in-journal.png" title="Write In Your Journal" alt="Write In Your Journal" class="inline"> Are there any bugs you’ve run into so far? Any cool project ideas? Any projects you’ve been proud of?
-</li>
-</ol>
+<p><strong>In this lab,</strong> you will use local and global <em>variables</em> to store information.</p>
+<p>To learn how to do this, you will create a number guessing game where the user’s goal is to guess a number randomly generated by the computer.</p>
+<p>You will also extend your Click Alonzo work from Unit 1, Lab 1 to use variable to store the score.</p>
 </div>
 
 
@@ -868,17 +807,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../unit-2/lab-1/5-choosing-avatar.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Page 5: Choosing a Costume</span>
+      <a href="../../unit-2/lab-3/6-solving-word-puzzle.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Page 6: Solving a Word Puzzle</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../unit-2/lab-2/1-shopping-list-app.html" class="pagination-link">
-        <span class="nav-page-text">Page 1: Shopping List App</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../unit-2/lab-4/1-mod-operator.html" class="pagination-link">
+        <span class="nav-page-text">Page 1: The <code>Mod</code> Operator</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
