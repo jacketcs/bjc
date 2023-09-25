@@ -44,7 +44,7 @@ syntax. In Snap<em>!</em>, this is just like how `answer` accepts a value from t
 ::::::
 
 :::::: forYouToDo
-(@) After the player guesses the secret number, make the computer congratulate the player.
+(@) After the player guesses the secret number, make the computer congratulate the player. 
 (@) **Test and debug.** Take turns playing the game, and fix any problems with the code before moving on.
 ::::::
 
@@ -108,7 +108,16 @@ move (1) steps
 
 ::::: forYouToDo
 
-(@) <!-- Question 1 -->
+(@) When the computer congratulates the player for guessing correctly, have the computer say the number. For example, it might say, "You guessed it! My secret number was 7."
+
+::: endnote
+Use `join` to merge the text "You guessed it! My secret number was" with the value of the <var>secret number</var> variable.
+:::
+
+(@) {{< checkpoint id='1FAIpQLSfu8ySKivPis9XdyyKCszAPQF4loA6ZcdQ2sl_-v28Jhcpt1Q' >}}
+
+<!-- 
+(@) Question 1
     ::: {.assessment-data type="multiplechoice" identifier="Which inputs to mystery function will give the output finished?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="true"}
     ::: prompt
 
@@ -173,7 +182,7 @@ move (1) steps
     :::
     :::
 
-(@) <!-- Question 2 -->
+(@) Question 2
     ::: {.assessment-data type="multiplechoice" identifier="Which inputs to mystery function will give the output finished?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="true"}
     ::: prompt
     <img src="/img/2-complexity/mystery-function.png" title="mystery function (input):
@@ -239,9 +248,11 @@ move (1) steps
     ::: {.correctResponse identifier="c1"}
     :::
     :::
-    :::
+    ::: -->
 
-(@) <!-- Question 3 -->
+<!-- 
+
+(@) Question 3
     ::: {.assessment-data type="multiplechoice" identifier="Which inputs to mystery function will give the output finished?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri3" shuffle="true"}
     ::: prompt
     <img src="/img/2-complexity/mystery-function.png" title="mystery function (input):
@@ -307,16 +318,8 @@ move (1) steps
     ::: {.correctResponse identifier="c4"}
     :::
     :::
-    :::
-
-:::::
-
-::::: ifTime
-
-(@) When the computer congratulates the player for guessing correctly, have the computer say the number. For example, it might say, "You guessed it! My secret number was 7."
-
-::: endnote
-Use `join` to merge the text "You guessed it! My secret number was" with the value of the <var>secret number</var> variable.
-:::
+    ::: 
+    
+-->
 
 :::::

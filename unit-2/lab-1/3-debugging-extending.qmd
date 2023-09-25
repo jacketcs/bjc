@@ -44,6 +44,8 @@ Jerry Lawson (1940-2011) was an American electronic engineer and gaming pioneer 
     - say whether a wrong guess is too big or too small, and then ask again;
     - congratulate the player for a correct answer.
 
+(@) {{< checkpoint id='1FAIpQLSe7G8gdKsFvltVSaNhjOJbrpXpzVYkbR9c-qC-chUxM2RdYKQ' >}}
+
 ::::::
 
 The script variable <var>secret number</var> exists only until the script finishes running. When the game is played again, the program will create a new <var>secret number</var> variable and give it a new random number.

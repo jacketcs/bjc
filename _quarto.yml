@@ -50,6 +50,7 @@ website:
             file: unit-6/index.qmd
       - text: "Help Queue"
         href: https://help.gigamonkeys.com/
+        target: "_blank"
       - text: "Resources"
         menu:
           - text: "Snap<em>!</em> Cheat Sheet"
@@ -58,6 +59,7 @@ website:
             file: costume-cheatsheet.qmd
       - text: "Snap<em>!</em>"
         href: https://snap.berkeley.edu/snap/snap.html
+        target: "_blank"
 
 
   sidebar:
@@ -87,6 +89,7 @@ format:
   html:
     pagetitle: "{{< meta subtitle >}} | {{< var title-fix >}}"
     callout-appearance: minimal
+    link-external-newwindow: true
     toc: true
     theme:   
       light: bjc.scss

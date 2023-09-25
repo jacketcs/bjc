@@ -5,15 +5,14 @@ order: 1
 ---
 
 ::: learn
-**In this lab,** you will use local and global <em>variables</em> to store information. 
 
 **On this page,** you will begin to develop a number guessing game that uses a <em>local variable</em> to keep track of a secret number.
+
 :::
 
 ::: {#first .forYouToDo}
-(@) <div>
-["U2L1-NumberGuessing"]{.text}<img src="/img/icons/new-project-called.png" title="Create a new project called U2L1-NumberGuessing" alt="Create a new project called U2L1-NumberGuessing"/>
-</div>
+(@) 
+<div class="newProject"> ["U2L1-NumberGuessing"]{.text}<img src="/img/icons/new-project-called.png" title="Create a new project called U2L1-NumberGuessing" alt="Create a new project called U2L1-NumberGuessing"/> </div>
 
 (@) Start building a new command block called `number guessing game` that will contain the code for the game. Leave the Block Editor open.</li>
 :::

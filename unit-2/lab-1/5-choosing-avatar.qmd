@@ -93,7 +93,10 @@ or <img src="/img/2-complexity/accessing-blocktran.png" title="costumes[2]" alt=
 
 (@) Experiment in Snap<em>!</em> to verify your predictions.
 
-(@) <!-- Question 1-->
+(@) {{< checkpoint id='1FAIpQLSc7wKmpgm43G5WDlPq-7r5_7imWsiccTABXWljsT7fvE6hURw' >}}
+
+<!-- 
+(@) Question 1
     ::: {.assessment-data type="multiplechoice" identifier="length2" hasinlinefeedback="true" maxchoices="3" responseidentifier="ri1" shuffle="true"}
     ::: prompt
     Which of the following blocks will report **a list of length 3**?<br /><br /> Choose **all** that apply.
@@ -146,7 +149,7 @@ or <img src="/img/2-complexity/accessing-blocktran.png" title="costumes[2]" alt=
     ::: {.correctResponse identifier="c4"}
     :::
     :::
-    :::
+    ::: -->
 
 ::::::
 

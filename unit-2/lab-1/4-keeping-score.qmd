@@ -26,6 +26,8 @@ Most of the time, script variables are a better choice because they can't be cha
 :::::: {#first .forYouToDo}
 (@) Open your U1L1-ClickAlonzo project, play the game, and review the code so you remember how it works.
 
+    - If you never completed Click Alonzo or don't find your own version, please use [this version](https://snap.berkeley.edu/snap/snap.html#open:https://bjc.jacketcs.net/prog/2-complexity/U2L1-ClickAlonzo.xml)
+
 (@) <div class="saveAs">
 ["U2L1-ClickAlonzo"]{.text}<img src="/img/icons/save-this-as.png" title="Save your work as U2L1-ClickAlonzo" alt="Save your work as U2L1-ClickAlonzo"/> </div>Be sure to **rename your project** with "U2" in the filename.
 
