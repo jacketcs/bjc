@@ -73,6 +73,10 @@ You used `ask` and `answer` on <a href="/unit-2/lab-1/2-checking-player-guess.ht
     d. Change to the costume with the index number in the player's `answer`.
     e. Hide the costume list.
 
+After completing this step, your program should do behave exactly like this:
+
+{{< video https://youtu.be/AQKAgRJ3lys >}}
+
 ::::::
 
 :::::: examFullWidth
