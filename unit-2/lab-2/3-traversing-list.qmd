@@ -69,9 +69,7 @@ Gamal: We could even rename <var>item</var> something logical like <var>quiz ite
 ::: forYouToDo
 <ol>
 
-
-
-<li>Use `for each` to <em>traverse</em> your list, asking each quiz question, checking each answer, and letting the user know if they are right or wrong on each item.</li>
+<li>Use `for each` to <em>traverse</em> your list, asking each quiz question, checking each answer, and letting the user know if they are right or wrong on each item. </br> **Do not copy the code that Gamal did above**</li>
 
 <li>Take your quiz a few times as a user would, and work out any problems with the code. Then, give your quiz to a friend.</li>
 
@@ -88,14 +86,14 @@ Gamal: We could even rename <var>item</var> something logical like <var>quiz ite
 </ol>
 :::
 
+<!--
+
 ::: {#first .forYouToDo}
 <ol start="5">
 
-
-
 <li>
 
-<!-- Question 1-->
+Question 1
 
 ::: {.assessment-data type="multiplechoice" identifier="abe" hasinlinefeedback="true" maxchoices="2" responseidentifier="ri1" shuffle="true"}
 ::: prompt
@@ -155,8 +153,11 @@ Correct.
 
 </li>
 
+
 </ol>
 :::
+
+-->
 
 ::: {.examFullWidth .AP-only}
 
@@ -192,6 +193,8 @@ goto(point)
 :::
 :::
 
+<!--
+
 ::: forYouToDo
 These questions are similar to those you will see on the AP CSP exam.
 
@@ -199,7 +202,7 @@ These questions are similar to those you will see on the AP CSP exam.
 
 <li>
 
-<!-- Question 2 -->
+Question 2 
 
 ::: {.assessment-data type="multiplechoice" identifier="FOR EACH positive and square over 4" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="false"}
 ::: prompt
@@ -285,7 +288,7 @@ Correct!
 
 <li>
 
-<!-- Question 3 -->
+Question 3 
 
 ::: {.assessment-data type="multiplechoice" identifier="Mystery Procedure" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri3" shuffle="true"}
 ::: prompt
@@ -360,12 +363,17 @@ What is the procedure doing?
 </ol>
 :::
 
+-->
+
 ::: takeItFurther
+
 <ol type="A">
 
 <li>Before telling the user the right answer, give them three tries to get it right.</li>
 
 <li>Users might give answers that are close enough but not exactly the answer you expected. For example, someone might answer "What kind of variable is available only in the part of the program where it is defined?" with "a local variable," "local variable," or just "local," or the same possibilities for "script variable." So your `question answer` ADT could take a <em>list</em> of keywords in the second slot and accept any answer that includes any of the keywords (so in this case, the list would be {local, script} and would accept "a local one"). Use <img src="/img/blocks/contains-empty.png" title="&apos;list input slot&apos; contains ()" alt="&apos;list input slot&apos; contains ()" class="inline"/> to adapt your code.</li>
-
 </ol>
+
 :::
+
+{{< checkpoint id='1FAIpQLSdCqe7HPwW8S-z4GxkOe83_Yd7fhhE2G65fGLssjZY6xfkUCg' >}}

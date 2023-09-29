@@ -141,12 +141,6 @@ In the Block Editor while creating a selector, click on a plus sign to enter an 
 
 <li>Create a global variable to store your quiz items and initialize it as a list of items, using your constructor where appropriate.</li>
 
-```         
-                  <a id="two-views">
-```
-
-<a id="two-views"> </a>
-
 ::: narrower
 Snap<em>!</em> has two different views for lists within lists. You can switch which view you see by right-clicking (or control-clicking) on the <var>quiz</var> watcher (or whatever you called the variable) on the stage.
 
@@ -187,9 +181,11 @@ In Snap<em>!</em>, a table is implemented as a list of lists, in which each subl
 
 <li>Test both the selectors for different items in your list of quiz items, and debug any problems.</li>
 
+<!--
+
 <li>
 
-<!-- Question 1-->
+Question 1
 
 ::: {.assessment-data type="multiplechoice" identifier="capitals" hasinlinefeedback="true" maxchoices="8" responseidentifier="ri1" shuffle="true"}
 ::: prompt
@@ -292,6 +288,8 @@ Correct.
 :::
 
 </li>
+
+-->
 
 </ol>
 :::

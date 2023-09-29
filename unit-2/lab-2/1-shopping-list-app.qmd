@@ -6,9 +6,9 @@ gifffer: true
 ---
 
 ::: learn
-**In this lab,** you will create tools for storing and accessing data.
 
 **On this page,** you will create a shopping list app.
+
 :::
 
 ::: sidenoteBig
@@ -31,6 +31,7 @@ The list expression <img src="/img/1-introduction/list-from-who.png" title="list
 :::
 
 ::: {#first .forYouToDo}
+
 <ol>
 
 <img src="/img/icons/pair-programming-swap-reminder.png" title="Remember to Do Pair Programming Swaps" alt="Remember to Do Pair Programming Swaps" class="float-end"/>
@@ -294,3 +295,19 @@ makes a <em>copy</em> of the list. So modifying one of them <em>does not</em> mo
 
 The rules for how to use lists and how they behave differ depending on the programming language you are using.
 :::
+
+::: takeItFurther
+
+The shopping list can be improved so much more! Do the following to improve the user's experience.
+
+<ol type="A">
+<li>Add Item: Check for duplicates before adding</li>
+<li>Clear list: Ask if they are sure before clearing - use menu for response</li>
+<li>Delete item: Allow user to delete by number or name</li>
+<li>Delete item: Check to see if multiple list items contain requested item, display all matches and ask user to choose (can also choose none)</li>
+<li>Writing the list: add a new sprite that will write the list to the screen instead of using the native list display</li>
+</ol>
+
+:::
+
+{{< checkpoint id='1FAIpQLSdbctCRbTCKfu9pHU4SzH2m9iv6O-K3ejgKZ-KgUzNY3Up8kw' >}}
