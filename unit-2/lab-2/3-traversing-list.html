@@ -487,7 +487,7 @@ ask (question from (item (i) of (computer science quiz))) and wait
 <div class="forYouToDo">
 <ol>
 <li>
-Use <code>for each</code> to <em>traverse</em> your list, asking each quiz question, checking each answer, and letting the user know if they are right or wrong on each item.
+Use <code>for each</code> to <em>traverse</em> your list, asking each quiz question, checking each answer, and letting the user know if they are right or wrong on each item. <br> <strong>Do not copy the code that Gamal did above</strong>
 </li>
 <li>
 Take your quiz a few times as a user would, and work out any problems with the code. Then, give your quiz to a friend.
@@ -504,59 +504,78 @@ Use a script variable to keep track of the player’s score and report it at the
 </li>
 </ol>
 </div>
-<div id="first" class="forYouToDo">
+<!--
+
+::: {#first .forYouToDo}
 <ol start="5">
+
 <li>
-<!-- Question 1-->
-<div class="assessment-data" type="multiplechoice" data-identifier="abe" data-hasinlinefeedback="true" data-maxchoices="2" data-responseidentifier="ri1" data-shuffle="true">
-<div class="prompt">
-<p>Which of the scripts below will produce the following sprite behavior?<br> <img src="../../img/3-lists/abelincoln.gif" title="sprite saying Abraham then Lincoln" alt="sprite saying Abraham then Lincoln" class="ms-4 noshadow"><br> (When you run the script, though, it actually says Abraham Lincoln <em>only once</em>.)</p>
-<p>Choose <strong>all</strong> that apply.</p>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p><img src="../../img/3-lists/check1abec1.png" title="for each (item) of {Abraham, Lincoln} [say (item) for (1) secs]" alt="for each (item) of {Abraham, Lincoln} [say (item) for (1) secs]" border="0"></p>
-</div>
-<div class="feedback">
-<p>Correct.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c2">
-<div class="text">
-<p><img src="../../img/3-lists/check1abec2.png" title="say {Abraham, Lincoln} for (2) secs" alt="say {Abraham, Lincoln} for (2) secs" border="0"></p>
-</div>
-<div class="feedback">
-<p>No, when a sprite says a list, we see a visual representation of the list.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c3">
-<div class="text">
-<p><img src="../../img/3-lists/check1abec3.png" title="say (item (1) of {Abraham Lincoln, George Washington, Barack Obama}) for (2) secs" alt="say (item (1) of {Abraham Lincoln, George Washington, Barack Obama}) for (2) secs" border="0"></p>
-</div>
-<div class="feedback">
-<p>No, this says “Abraham Lincoln” all at once, not in two separate speech balloons.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c4">
-<div class="text">
-<p><img src="../../img/3-lists/check1abec4.png" title="say (item (1) of {Abraham, George, Barack} for (1) secs, then say (item (1) of {Lincoln, Washington, Obama} for (1) secs" alt="say (item (1) of {Abraham, George, Barack} for (1) secs, then say (item (1) of {Lincoln, Washington, Obama} for (1) secs" border="0"></p>
-</div>
-<div class="feedback">
-<p>Correct.</p>
-</div>
-</div>
-<div class="responseDeclaration" data-identifier="ri1">
-<div class="correctResponse" data-identifier="c1">
 
-</div>
-<div class="correctResponse" data-identifier="c4">
+Question 1
 
-</div>
-</div>
-</div>
+::: {.assessment-data type="multiplechoice" identifier="abe" hasinlinefeedback="true" maxchoices="2" responseidentifier="ri1" shuffle="true"}
+::: prompt
+Which of the scripts below will produce the following sprite behavior?<br /> <img src="/img/3-lists/abelincoln.gif" title="sprite saying Abraham then Lincoln" alt="sprite saying Abraham then Lincoln" class="ms-4 noshadow"/><br /> (When you run the script, though, it actually says Abraham Lincoln <em>only once</em>.)
+
+Choose **all** that apply.
+:::
+
+::: {.choice identifier="c1"}
+::: text
+<img src="/img/3-lists/check1abec1.png" title="for each (item) of {Abraham, Lincoln} [say (item) for (1) secs]" alt="for each (item) of {Abraham, Lincoln} [say (item) for (1) secs]" border="0"/>
+:::
+
+::: feedback
+Correct.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+<img src="/img/3-lists/check1abec2.png" title="say {Abraham, Lincoln} for (2) secs" alt="say {Abraham, Lincoln} for (2) secs" border="0"/>
+:::
+
+::: feedback
+No, when a sprite says a list, we see a visual representation of the list.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+<img src="/img/3-lists/check1abec3.png" title="say (item (1) of {Abraham Lincoln, George Washington, Barack Obama}) for (2) secs" alt="say (item (1) of {Abraham Lincoln, George Washington, Barack Obama}) for (2) secs" border="0"/>
+:::
+
+::: feedback
+No, this says "Abraham Lincoln" all at once, not in two separate speech balloons.
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+<img src="/img/3-lists/check1abec4.png" title="say (item (1) of {Abraham, George, Barack} for (1) secs, then say (item (1) of {Lincoln, Washington, Obama} for (1) secs" alt="say (item (1) of {Abraham, George, Barack} for (1) secs, then say (item (1) of {Lincoln, Washington, Obama} for (1) secs" border="0"/>
+:::
+
+::: feedback
+Correct.
+:::
+:::
+
+::: {.responseDeclaration identifier="ri1"}
+::: {.correctResponse identifier="c1"}
+:::
+
+::: {.correctResponse identifier="c4"}
+:::
+:::
+:::
+
 </li>
+
+
 </ol>
-</div>
+:::
+
+-->
 <div class="examFullWidth AP-only">
 <div class="pseudop">
 <div class="sidenote">
@@ -580,13 +599,24 @@ goto(point)
 }" class="inline">.</p>
 </div>
 </div>
-<div class="forYouToDo">
-<p>These questions are similar to those you will see on the AP CSP exam.</p>
+<!--
+
+::: forYouToDo
+These questions are similar to those you will see on the AP CSP exam.
+
 <ol start="6">
+
 <li>
-<!-- Question 2 -->
-<div class="assessment-data" type="multiplechoice" data-identifier="FOR EACH positive and square over 4" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri2" data-shuffle="false">
-<div class="prompt">
+
+Question 2 
+
+::: {.assessment-data type="multiplechoice" identifier="FOR EACH positive and square over 4" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="false"}
+::: prompt
+
+
+
+
+```{=html}
 <pre>inputList ← [3, -1, 2, 10, -5]
 
 FOR EACH item IN inputList
@@ -597,57 +627,96 @@ DISPLAY(item)
 }
 }
 </pre>
-<p><br> What will be displayed as a result of running the code segment given?</p>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p>9, 1, 4, 100, 25</p>
-</div>
-<div class="feedback">
-<p>What does the</p>
-<pre class="inline">IF</pre>
-<p>instruction test? What does the</p>
-<pre class="inline">DISPLAY</pre>
-<p>instruction in this code display?</p>
-</div>
-</div>
-<div class="choice" data-identifier="c2">
-<div class="text">
-<p>9, 100</p>
-</div>
-<div class="feedback">
-<p>What does the</p>
-<pre class="inline">DISPLAY</pre>
-<p>instruction in this code display?</p>
-</div>
-</div>
-<div class="choice" data-identifier="c3">
-<div class="text">
-<p>3, 2, 10</p>
-</div>
-<div class="feedback">
-<p>Is 2 * 2 &gt; 4 ?</p>
-</div>
-</div>
-<div class="choice" data-identifier="c4">
-<div class="text">
-<p>3, 10</p>
-</div>
-<div class="feedback">
-<p>Correct!</p>
-</div>
-</div>
-<div class="responseDeclaration" data-identifier="ri2">
-<div class="correctResponse" data-identifier="c4">
+```
 
-</div>
-</div>
-</div>
+
+<br /> What will be displayed as a result of running the code segment given?
+:::
+
+::: {.choice identifier="c1"}
+::: text
+9, 1, 4, 100, 25
+:::
+
+::: feedback
+What does the
+
+
+
+```{=html}
+<pre class="inline">IF</pre>
+```
+
+
+instruction test? What does the
+
+
+
+```{=html}
+<pre class="inline">DISPLAY</pre>
+```
+
+
+instruction in this code display?
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+9, 100
+:::
+
+::: feedback
+What does the
+
+
+
+```{=html}
+<pre class="inline">DISPLAY</pre>
+```
+
+
+instruction in this code display?
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+3, 2, 10
+:::
+
+::: feedback
+Is 2 \* 2 \> 4 ?
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+3, 10
+:::
+
+::: feedback
+Correct!
+:::
+:::
+
+::: {.responseDeclaration identifier="ri2"}
+::: {.correctResponse identifier="c4"}
+:::
+:::
+:::
+
 </li>
+
 <li>
-<!-- Question 3 -->
-<div class="assessment-data" type="multiplechoice" data-identifier="Mystery Procedure" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri3" data-shuffle="true">
-<div class="prompt">
+
+Question 3 
+
+::: {.assessment-data type="multiplechoice" identifier="Mystery Procedure" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri3" shuffle="true"}
+::: prompt
+
+
+```{=html}
 <pre>PROCEDURE Mystery(numberList, targetNumber)
 {
 counter ← 0
@@ -663,49 +732,64 @@ RETURN(counter)
 myMathGrades ← [100, 80, 90, 80, 60, 100, 50, 100]
 Mystery(myMathGrades, 60)
 </pre>
-<p><br> What will be returned if the code above is run?</p>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p>[100, 80, 90, 80, 100, 100]</p>
-</div>
-<div class="feedback">
-<p>What <em>type</em> of value does the procedure return?</p>
-</div>
-</div>
-<div class="choice" data-identifier="c2">
-<div class="text">
-<p>7</p>
-</div>
-<div class="feedback">
-<p>Is 60 &gt; 60 ?</p>
-</div>
-</div>
-<div class="choice" data-identifier="c3">
-<div class="text">
-<p>6</p>
-</div>
-<div class="feedback">
-<p>Correct!</p>
-</div>
-</div>
-<div class="choice" data-identifier="c4">
-<div class="text">
-<p>60</p>
-</div>
-<div class="feedback">
-<p>What is the procedure doing?</p>
-</div>
-</div>
-<div class="responseDeclaration" data-identifier="ri3">
-<div class="correctResponse" data-identifier="c3">
+```
 
-</div>
-</div>
-</div>
+
+<br /> What will be returned if the code above is run?
+:::
+
+::: {.choice identifier="c1"}
+::: text
+\[100, 80, 90, 80, 100, 100\]
+:::
+
+::: feedback
+What <em>type</em> of value does the procedure return?
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+7
+:::
+
+::: feedback
+Is 60 \> 60 ?
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+6
+:::
+
+::: feedback
+Correct!
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+60
+:::
+
+::: feedback
+What is the procedure doing?
+:::
+:::
+
+::: {.responseDeclaration identifier="ri3"}
+::: {.correctResponse identifier="c3"}
+:::
+:::
+:::
+
 </li>
+
 </ol>
-</div>
+:::
+
+-->
 <div class="takeItFurther">
 <ol type="A">
 <li>
@@ -716,6 +800,20 @@ Users might give answers that are close enough but not exactly the answer you ex
 </li>
 </ol>
 </div>
+<p><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkpoint-1FAIpQLSdCqe7HPwW8S-z4GxkOe83_Yd7fhhE2G65fGLssjZY6xfkUCg"> Checkpoint: Fill out this Google Form </button>
+      </p><div class="modal fade" id="checkpoint-1FAIpQLSdCqe7HPwW8S-z4GxkOe83_Yd7fhhE2G65fGLssjZY6xfkUCg" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdCqe7HPwW8S-z4GxkOe83_Yd7fhhE2G65fGLssjZY6xfkUCg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" height="613">Loading…</iframe>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+        </div>
+      </div><p></p>
 
 
 
