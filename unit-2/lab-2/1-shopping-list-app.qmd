@@ -298,15 +298,37 @@ The rules for how to use lists and how they behave differ depending on the progr
 
 ::: takeItFurther
 
-The shopping list can be improved so much more! Do the following to improve the user's experience.
+This shopping list app can be extended in many ways. Try to add the following features, and more if you think of them!
 
 <ol type="A">
-<li>Add Item: Check for duplicates before adding</li>
-<li>Clear list: Ask if they are sure before clearing - use menu for response</li>
-<li>Delete item: Allow user to delete by number or name</li>
-<li>Delete item: Check to see if multiple list items contain requested item, display all matches and ask user to choose (can also choose none)</li>
-<li>Writing the list: add a new sprite that will write the list to the screen instead of using the native list display</li>
+<li> **To the “add item’ button,** make it so that it checks to see if the item is already present on the list before adding it. You might find the ![() contains ()](/img/blocks/contains-empty.png) block to be useful here. 
+
+Figure out what it does (*hint: you can **right click the block** and **click "help"** to see examples*), and then use it in your code.
+</li>
+<li> **To the “clear list” button,** have it ask the user if they are sure they want to clear the list before proceeding. 
+
+For this one, see what happens if you put a list in the text field of the ask block. It’s very useful! Like this: ![](/img/2-complexity/ask-choice.png)
+
+</li>
+<li>**To the “delete item” button,** have it give the user the option of deleting the item using the number or the name. Then write code to have it handle either choice. 
+</li>
+<li>**To the “delete item” button,** have it check to see if multiple list items contain requested item as a substring, display all matches and ask user to choose (can also choose none). To work with searching for substrings, try importing the “Strings, Multi-line input” library and using ![](/img/blocks/text%20contains.png) </br>
+<details>
+<summary> To see how to import libraries, click here </summary>
+
+1. Click on the file icon on the top left ![file icon](/img/sys/button-file-menu.png).
+2. Click on "Libraries..."
+3. Choose the library that you want to load in.
+
+</details>
+
+</li>
+<li>**Add a new sprite** that will use ![write () size ()](/img/blocks/write.png) to write the list to the screen instead of using the native list display.</li>
 </ol>
+
+See the following video to see an example of each of these extensions
+
+{{< video https://youtu.be/_aRuO0mI4m0 >}}
 
 :::
 
