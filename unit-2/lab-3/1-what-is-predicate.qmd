@@ -6,12 +6,8 @@ gifffer: true
 ---
 
 ::: learn
-**In this lab,** you will develop tools to help solve word puzzles by searching for words that match specific characteristics.
-
 **On this page**, you will review predicates and build a few that you can use in other projects.
 :::
-
-
 
 As you know, predicates are reporter blocks (functions) that always report a <em>Boolean value</em> (they report only the values <img src="/img/blocks/true.png" title="true" alt="true" class="inline py-0"/> or <img src="/img/blocks/false.png" title="false" alt="false" class="inline py-0"/>). In Snap<em>!</em>, predicates are represented by hexagonal blocks. They compute the <em>condition</em> used by <em>conditionals</em> (such as `if`, `if else`, or `repeat until`) to decide when to do something.
 

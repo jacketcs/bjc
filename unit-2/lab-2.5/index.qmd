@@ -1,0 +1,52 @@
+---
+title: "Lab 2.5: Flashcards"
+subtitle: "Unit 2, Lab 2.5"
+gifffer: true
+order: 3
+---
+
+::: learn 
+In this assignment, you’ll be making a program that will help you study for other classes (or this class!). You’ll create a set of flashcards, and then write a program that will show you the vocabulary word, the definition, and an example or its use in a sentence. 
+![A screenshot of the flashcard program](/img/2-complexity/flashcards.png)
+
+:::
+
+::: forYouToDo
+
+(@) <a href="/prog/1-introduction/U2L2-5-Flashcards.xml" class="run"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a>
+
+    In the starter code, you can see that the three buttons as shown in the screenshot are included, plus two more blocks that are in sprite "Sprite":
+
+    - `write with returns`, which will write given text within a horizontal space given by the second parameter. It will do this as best it can while keeping words together. It will not draw the rectangle around the text as seen above.
+    - `Get Info from Web`, which you won’t use until your program is working well. This block will allow you to extend your program to download its flashcards directly from a google sheets document that you create. We will go over how to do this in class when the time is right.
+
+(@) Watch this demo on how your flashcards should function. 
+
+    {{< video https://youtu.be/zbSu3aFO0hk >}}
+
+(@) <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Your first step will be to plan out your code. 
+    - How will you create an ADT that can represent a single flashcard? 
+    - How many fields will it need? 
+    - What blocks will you make in order to implement the ADT?
+
+(@) Create your ADT for your flashcards.
+
+(@) Using your ADT, create a list of flashcard objects to hold the information of all the cards. You only need to create a few flashcards to test your program. It will be easy to add more once your program is working the way you like.
+    
+    Should your flashcards list be a local or global variable? Why?
+
+:::
+
+::: ifTime
+
+(@) Set your program to run in different modes. For example, give it a setting where you can see the definition and you try to guess the word, etc.
+
+(@) Add a “done” field to your ADT and a button that allows you to mark a card as done once you are confident you’ve learned the definition. The next time through the stack, this card would not be displayed. 
+
+(@)  Similar to above, but instead of marking it done, you can mark it right or wrong. The program could then display you a list of words you got right and/or a list of words you got wrong. It could also give you a score at the end. 
+
+:::
+
+
+
+

@@ -5,9 +5,6 @@ order: 1
 ---
 
 ::: learn
-**In this lab,** you will program procedures to carry
-out mathematical tasks.
-
 **On this page,** you create a predicate to check
 whether one number is divisible by another.
 :::
