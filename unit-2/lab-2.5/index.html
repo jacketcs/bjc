@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Unit 2, Lab 5 | JacketCS CSP</title>
+<title>Unit 2, Lab 2.5 | JacketCS CSP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../unit-2/lab-5/1-copyright.html" rel="next">
-<link href="../../unit-2/lab-4/3-other-math-reporters.html" rel="prev">
+<link href="../../unit-2/lab-3/index.html" rel="next">
+<link href="../../unit-2/lab-2/3-traversing-list.html" rel="prev">
 <link href="../..//img/jac.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -166,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Unit 2: Abstraction</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-5/index.html">Lab 5: Copyrights</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-2/index.html">Unit 2: Abstraction</a></li><li class="breadcrumb-item"><a href="../../unit-2/lab-2.5/index.html">Lab 2.5: Flashcards</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -259,7 +259,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../unit-2/lab-2.5/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../unit-2/lab-2.5/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Lab 2.5: Flashcards</span></a>
   </div>
 </li>
@@ -341,13 +341,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../unit-2/lab-5/index.html" class="sidebar-item-text sidebar-link active">
+            <a href="../../unit-2/lab-5/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab 5: Copyrights</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-2/lab-5/1-copyright.html" class="sidebar-item-text sidebar-link">
@@ -436,8 +436,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lab 5: Copyrights</h1>
-<p class="subtitle lead">Unit 2, Lab 5</p>
+<h1 class="title">Lab 2.5: Flashcards</h1>
+<p class="subtitle lead">Unit 2, Lab 2.5</p>
 </div>
 
 
@@ -453,7 +453,35 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="learn">
-<p><strong>In this lab,</strong> you will learn about copyright: its history, what kinds of copying are legal or illegal, how technology has changed copyright issues, and how copyright is enforced with software.</p>
+<p>In this assignment, you’ll be making a program that will help you study for other classes (or this class!). You’ll create a set of flashcards, and then write a program that will show you the vocabulary word, the definition, and an example or its use in a sentence. <img src="../../img/2-complexity/flashcards.png" class="img-fluid" alt="A screenshot of the flashcard program"></p>
+</div>
+<div class="forYouToDo">
+<ol class="example" type="1">
+<li><p><a href="../../prog/1-introduction/U2L2-5-Flashcards.xml" class="run"><img src="../../img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"></a></p>
+<p>In the starter code, you can see that the three buttons as shown in the screenshot are included, plus two more blocks that are in sprite “Sprite”:</p>
+<ul>
+<li><code>write with returns</code>, which will write given text within a horizontal space given by the second parameter. It will do this as best it can while keeping words together. It will not draw the rectangle around the text as seen above.</li>
+<li><code>Get Info from Web</code>, which you won’t use until your program is working well. This block will allow you to extend your program to download its flashcards directly from a google sheets document that you create. We will go over how to do this in class when the time is right.</li>
+</ul></li>
+<li><p>Watch this demo on how your flashcards should function.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/zbSu3aFO0hk" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div></li>
+<li><p><img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Your first step will be to plan out your code.</p>
+<ul>
+<li>How will you create an ADT that can represent a single flashcard?</li>
+<li>How many fields will it need?</li>
+<li>What blocks will you make in order to implement the ADT?</li>
+</ul></li>
+<li><p>Create your ADT for your flashcards.</p></li>
+<li><p>Using your ADT, create a list of flashcard objects to hold the information of all the cards. You only need to create a few flashcards to test your program. It will be easy to add more once your program is working the way you like.</p>
+<p>Should your flashcards list be a local or global variable? Why?</p></li>
+</ol>
+</div>
+<div class="ifTime">
+<ol start="6" class="example" type="1">
+<li><p>Set your program to run in different modes. For example, give it a setting where you can see the definition and you try to guess the word, etc.</p></li>
+<li><p>Add a “done” field to your ADT and a button that allows you to mark a card as done once you are confident you’ve learned the definition. The next time through the stack, this card would not be displayed.</p></li>
+<li><p>Similar to above, but instead of marking it done, you can mark it right or wrong. The program could then display you a list of words you got right and/or a list of words you got wrong. It could also give you a score at the end.</p></li>
+</ol>
 </div>
 
 
@@ -823,13 +851,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../unit-2/lab-4/3-other-math-reporters.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Page 3: More Mathematical Reporters</span>
+      <a href="../../unit-2/lab-2/3-traversing-list.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Page 3: Checking Each Quiz Answer</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../unit-2/lab-5/1-copyright.html" class="pagination-link">
-        <span class="nav-page-text">Page 1: Copyright</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../unit-2/lab-3/index.html" class="pagination-link">
+        <span class="nav-page-text">Lab 3: Making Decisions</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
