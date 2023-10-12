@@ -11,86 +11,62 @@ with the pictures they help create.
 :::
 
 ::: forYouToDo
-<ol>
 
-<li><img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner"/>
-Read this script carefully, discuss it with your partner, and make sure
-you understand why it produces this picture on the stage:<br />
-<img src="/img/2-complexity/dotscript.png" title="clear
-pen up
-forever {
-go to (random position)
-if (x position &lt; y position) {
-set pen color to purple
-} else {
-set pen color to orange
-}
-make a point
-}" alt="clear
-pen up
-forever {
-go to (random position)
-if (x position &lt; y position) {
-set pen color to purple
-} else {
-set pen color to orange
-}
-make a point
-}" class="ms-4"/>
-<img src="/img/2-complexity/y-gtr-x.png" title=" Imagine a 45-degree line sloping upward toward the right, through the center of the stage. The area up and to the left of this line is purple; the area below and to the right is orange." alt=" Imagine a 45-degree line sloping upward toward the right, through the center of the stage. The area up and to the left of this line is purple; the area below and to the right is orange." class="ms-4"/></li>
+(@) <img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner"/>
+    Read this script carefully, discuss it with your partner, and make sure
+    you understand why it produces this picture on the stage:<br />
+    <img src="/img/2-complexity/dotscript.png" title="clear
+    pen up
+    forever {
+    go to (random position)
+    if (x position &lt; y position) {
+    set pen color to purple
+    } else {
+    set pen color to orange
+    }
+    make a point
+    }" alt="clear
+    pen up
+    forever {
+    go to (random position)
+    if (x position &lt; y position) {
+    set pen color to purple
+    } else {
+    set pen color to orange
+    }
+    make a point
+    }" class="ms-4"/>
+    <img src="/img/2-complexity/y-gtr-x.png" title=" Imagine a 45-degree line sloping upward toward the right, through the center of the stage. The area up and to the left of this line is purple; the area below and to the right is orange." alt=" Imagine a 45-degree line sloping upward toward the right, through the center of the stage. The area up and to the left of this line is purple; the area below and to the right is orange." class="ms-4"/></li>
 
-<li>Changing the Boolean expression in the `if` block changes
-the picture. Discuss why the expression 0) and (distance to apple \>
-100)" title="(x position \> 0) and (distance to apple \> 100)" /\>
-generates this picture:<br />
-<img src="/img/2-complexity/apple.png" title="There&apos;s an apple in the center. The entire left half of the stage is orange; so is a circle around the apple. What&apos;s left is purple." alt="There&apos;s an apple in the center. The entire left half of the stage is orange; so is a circle around the apple. What&apos;s left is purple." class="ms-4"/></li>
+(@) Changing the Boolean expression in the `if` block changes
+the picture. Discuss why the expression <img src="/img/2-complexity/apple-script.png" alt="(x position > 0) and (distance to apple > 100)" title="(x position > 0) and (distance to apple > 100)">
+generates this picture:
 
+    <img src="/img/2-complexity/apple.png" title="There&apos;s an apple in the center. The entire left half of the stage is orange; so is a circle around the apple. What&apos;s left is purple." alt="There&apos;s an apple in the center. The entire left half of the stage is orange; so is a circle around the apple. What&apos;s left is purple." class="ms-4"/></li>
 
-
-<li>
-
-Match the Boolean expressions with the pictures. There are more
+(@) Match the Boolean expressions with the pictures. There are more
 expressions than pictures.<br />
 
-::: {style="display: grid; grid-template-columns: auto auto;"}
+:::: {style="display: grid; grid-template-columns: auto auto;"}
 <div>
 
 <ol type="A">
-
-<li><img src="/img/2-complexity/x-lt--100-script.png" title="x position &lt; -100" alt="x position &lt; -100"/></li>
-
-<li><img src="/img/2-complexity/x-lt-100-script.png" title="x position &lt; 100" alt="x position &lt; 100"/></li>
-
-<li><img src="/img/2-complexity/x+y-lt-100-script.png" title="x position + y position &lt; 100" alt="x position + y position &lt; 100"/></li>
-
-<li>-100" title="y position \> -100" /\></li>
-
-<li><img src="/img/2-complexity/x+y-lt--100-script.png" title="y position &lt; (-100 - x position)" alt="y position &lt; (-100 - x position)"/></li>
-
-<li><img src="/img/2-complexity/y-lt--100-script.png" title="y position &lt; -100" alt="y position &lt; -100"/></li>
-
-<li>100" title="distance to apple \> 100" /\></li>
-
-<li>-100" title="x position \> -100" /\></li>
-
-<li>(100 - x position)" title="y position \> (100 - x position)"
-/\></li>
-
-<li>0" title="(x position \* y position) \> 0" /\></li>
-
-<li>-100" title="(x position + y position) \> -100" /\></li>
-
-<li><img src="/img/2-complexity/xy-lt-0-script.png" title="(x position * y position) &lt; 0" alt="(x position * y position) &lt; 0"/></li>
-
-<li>((x position \^ 2) / 100)" title="y position \> ((x position \^ 2) /
-100)" /\></li>
-
-<li>135" title="direction to apple \> 135" /\></li>
-
-<li><img src="/img/2-complexity/y-lt-100-script.png" title="y position &lt; 100" alt="y position &lt; 100"/></li>
-
-<li>100" title="y position \> 100" /\></li>
-
+<li><img src="/img/2-complexity/x-lt--100-script.png" alt="x position < -100" title="x position < -100"></li>
+<li><img src="/img/2-complexity/x-lt-100-script.png" alt="x position < 100" title="x position < 100"></li>
+<li><img src="/img/2-complexity/x+y-lt-100-script.png" alt="x position + y position < 100" title="x position + y position < 100"></li>
+<li><img src="/img/2-complexity/y-gt--100-script.png" alt="y position > -100" title="y position > -100"></li>
+<li><img src="/img/2-complexity/x+y-lt--100-script.png" alt="y position < (-100 - x position)" title="y position < (-100 - x position)"></li>
+<li><img src="/img/2-complexity/y-lt--100-script.png" alt="y position < -100" title="y position < -100"></li>
+<li><img src="/img/2-complexity/dist-gt-100-script.png" alt="distance to apple > 100" title="distance to apple > 100"></li>
+<li><img src="/img/2-complexity/x-gt--100-script.png" alt="x position > -100" title="x position > -100"></li>
+<li><img src="/img/2-complexity/x+y-gt-100-script.png" alt="y position > (100 - x position)" title="y position > (100 - x position)"></li>
+<li><img src="/img/2-complexity/xy-gt-0-script.png" alt="(x position * y position) > 0" title="(x position * y position) > 0"></li>
+<li><img src="/img/2-complexity/x+y-gt--100-script.png" alt="(x position + y position) > -100" title="(x position + y position) > -100"></li>
+<li><img src="/img/2-complexity/xy-lt-0-script.png" alt="(x position * y position) < 0" title="(x position * y position) < 0"></li>
+<li><img src="/img/2-complexity/quadratic.png" alt="y position > ((x position ^ 2) / 100)" title="y position > ((x position ^ 2) / 100)"></li>
+<li><img src="/img/2-complexity/dir-to-apple-gt-135-script.png" alt="direction to apple > 135" title="direction to apple > 135"></li>
+<li><img src="/img/2-complexity/y-lt-100-script.png" alt="y position < 100" title="y position < 100"></li>
+<li><img src="/img/2-complexity/y-gt-100-script.png" alt="y position > 100" title="y position > 100"></li>
 </ol>
 
 </div>
@@ -124,41 +100,32 @@ expressions than pictures.<br />
 </ol>
 
 </div>
-:::
+::::
 
-</li>
+(@) Compare answers with another pair and resolve any
+disagreements.
 
-<li>Compare answers with another pair and resolve any
-disagreements.</li>
-
-<li>On paper, sketch the pictures for the expressions you didn't match
+(@) On paper, sketch the pictures for the expressions you didn't match
 with pictures in the previous problem (without using
-Snap<em>!</em>).</li>
+Snap<em>!</em>).
 
-<li><a href="/prog/2-complexity/U2L3-Dots.xml" class="run"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a></li>
-
-
-
-<li>
-
-Invent Boolean expressions you can plug into the dot-picture script to
-generate these pictures:<br />
-
-<ol class="horizontal">
-
-<li><img src="/img/2-complexity/x-lt-100-or-y-gt-100.png" title="The stage is mostly purple, except for a tall orange rectangle at the right edge, going not quite to the top (so there&apos;s purple above it)." alt="The stage is mostly purple, except for a tall orange rectangle at the right edge, going not quite to the top (so there&apos;s purple above it)."/></li>
-
-<li><img src="/img/2-complexity/x-lt-100-and-y-gt-100.png" title="The stage is mostly orange, except for a wide purple rectangle in the top left corner, extending about 2/3 of the way to the right." alt="The stage is mostly orange, except for a wide purple rectangle in the top left corner, extending about 2/3 of the way to the right."/></li>
-
-<li><img src="/img/2-complexity/x-y-lt--100.png" title="Imagine a 45-degree line sloping upward left to right. The line hits the left edge of the stage almost at the bottom and hits the top edge about 2/3 of the way from left to right. The area above and to the left of this line is purple; the area below and to the right is orange." alt="Imagine a 45-degree line sloping upward left to right. The line hits the left edge of the stage almost at the bottom and hits the top edge about 2/3 of the way from left to right. The area above and to the left of this line is purple; the area below and to the right is orange."/></li>
-
-</ol>
-
-<p style="clear: both; height: 0px;">
+(@) <a href="/prog/2-complexity/U2L3-Dots.xml" class="run"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a>
 
 
+(@) Invent Boolean expressions you can plug into the dot-picture script to
+generate these pictures:
 
-</li>
+    <ol class="horizontal">
+
+    <li><img src="/img/2-complexity/x-lt-100-or-y-gt-100.png" title="The stage is mostly purple, except for a tall orange rectangle at the right edge, going not quite to the top (so there&apos;s purple above it)." alt="The stage is mostly purple, except for a tall orange rectangle at the right edge, going not quite to the top (so there&apos;s purple above it)."/></li>
+
+    <li><img src="/img/2-complexity/x-lt-100-and-y-gt-100.png" title="The stage is mostly orange, except for a wide purple rectangle in the top left corner, extending about 2/3 of the way to the right." alt="The stage is mostly orange, except for a wide purple rectangle in the top left corner, extending about 2/3 of the way to the right."/></li>
+
+    <li><img src="/img/2-complexity/x-y-lt--100.png" title="Imagine a 45-degree line sloping upward left to right. The line hits the left edge of the stage almost at the bottom and hits the top edge about 2/3 of the way from left to right. The area above and to the left of this line is purple; the area below and to the right is orange." alt="Imagine a 45-degree line sloping upward left to right. The line hits the left edge of the stage almost at the bottom and hits the top edge about 2/3 of the way from left to right. The area above and to the left of this line is purple; the area below and to the right is orange."/></li>
+
+    </ol>
+
+(@) {{< checkpoint id='1FAIpQLSezI77LgH8NFEDldjnEO1KNp_M7a4W8CeCf1y_LbYpwMZD53A' >}}
 
 </ol>
 :::

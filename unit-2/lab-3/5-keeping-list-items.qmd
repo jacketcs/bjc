@@ -80,5 +80,7 @@ If you don't see a list of words on the stage, run `initialize list`. Then use `
 
 </li>
 
+<li> {{< checkpoint id='1FAIpQLSfY2m3K3jO37GGJ5lLh3mH3YFr3el_55A9NyhTZjDF2Qpvt-w' >}} </li>
+
 </ol>
 :::

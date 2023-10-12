@@ -92,5 +92,7 @@ say (You didn&apos;t answer yes or no.)
 
 <li>Look back at your code for writing on the stage in three colors. If it doesn't already use a nested conditional statement, copy the code, and create a new version that does.</li>
 
+<li> {{< checkpoint id='1FAIpQLSeFMc2NkpBCQNlBj9u0I_0yZ0qOTOjH8BDQ6yPXvGIzAoMIeg' >}}</li>
+
 </ol>
 :::
