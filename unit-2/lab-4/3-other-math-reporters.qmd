@@ -150,12 +150,7 @@ You saw the procedure definition for a command in
 
 ::: pseudop
 The definition for a reporter looks much like the definition for a
-command except that it includes a
-
-```{=html}
-<pre class="inline">RETURN</pre>
-```
-(like `report`). For example, this definition<br />
+command except that it includes an<pre class="inline">RETURN</pre> (like `report`). For example, this definition
 
 ::: sidenote
 In many languages (including Snap<em>!</em>) variables must be
@@ -181,34 +176,14 @@ RETURN([positiveRoot, -1 * positiveRoot])
 or
 <img src="/img/3-lists/square-roots-definition-blocktran.png" title="square roots of (number) {script variables (positive root), set (positive root) to ((sqrt) of (number))), report (list (positive root) (() - positive root))" alt="square roots of (number) {script variables (positive root), set (positive root) to ((sqrt) of (number))), report (list (positive root) (() - positive root))"/>
 
-::: ap-standard
-AAP-3.A.7
-:::
-
 ::: pseudop
-As with `report` in Snap<em>!</em>, when a
-
-```{=html}
-<pre class="inline">RETURN</pre>
-```
-statement is executed, the flow of control returns to the place in your
-code where the procedure was called, and the procedure returns the value
-of the expression inside the
-
-```{=html}
-<pre class="inline">RETURN</pre>
-```
-command or `report` block.
+As with `report` in Snap<em>!</em>, when a <pre class="inline">RETURN</pre> statement is executed, the flow of control returns to the place in your
+code where the procedure was called, and the procedure returns the value of the expression inside the <pre class="inline">RETURN</pre> command or `report` block.
 :::
 
 ::: endnote
 ::: pseudop
-Also, the procedure
-
-```{=html}
-<pre class="inline">sqrt</pre>
-```
-isn't built in to the AP's language so it is written in lower case like
+Also, the procedure <pre class="inline">sqrt</pre> isn't built in to the AP's language so it is written in lower case like
 other programmer-defined procedures.
 :::
 :::
@@ -264,22 +239,19 @@ RETURN(a = b)
 :::
 
 ::: pseudop
-As in Snap<em>!</em>, if the condition
-
-```{=html}
-<pre class="inline">a &gt; b</pre>
-```
-is true, the code in first block of statements runs; if it is false, the
+As in Snap<em>!</em>, if the condition <pre class="inline">a &gt; b</pre> is true, the code in first block of statements runs; if it is false, the
 code in second block of statements runs.
 :::
 :::
 
+<!--
 ::: forYouToDo
 <ol start="6">
 
+
 <li>
 
-<!-- Question 5 -->
+Question 5
 
 ::: {.assessment-data type="multiplechoice" identifier="What is the value of x?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri5" shuffle="true"}
 ::: prompt
@@ -400,11 +372,8 @@ Correct!
 
 </ol>
 :::
+-->
 
-::: todo
-I have a lot of edits to make in this TIF based on the paper I'm writing
-and the NCTM presentation I'm giving. --MF, 8/12/19
-:::
 
 ::: takeItFurther
 <ol type="A">
@@ -457,3 +426,5 @@ numbers</li>
 
 </ol>
 :::
+
+{{< checkpoint id='1FAIpQLSesvaqIopzLJVsh17q5eFLhWAt3DLEIncQywftiAOdH6gXX3w' >}}

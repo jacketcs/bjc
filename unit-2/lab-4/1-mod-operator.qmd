@@ -62,73 +62,21 @@ with mod on the exam.
 
 **The `mod` operator:** The expression
 <img src="/img/1-introduction/17-mod-5.png" title="(17) mod (5)" alt="(17) mod (5)" class="inline py-0"/>
-would be written as
+would be written as <pre class="inline">17 MOD 5</pre>
 
-```{=html}
-<pre class="inline">17 MOD 5</pre>
-```
 on the exam. If you see an expression with variables as input to
-`mod`, such as
-
-```{=html}
-<pre class="inline">a MOD b</pre>
-```
-, you can assume that <var>a</var> is zero or positive, and <var>b</var>
+`mod`, such as <pre class="inline">a MOD b</pre>, you can assume that <var>a</var> is zero or positive, and <var>b</var>
 is strictly positive (because you can't divide by 0).
 :::
 
-::: ap-standard
-AAP-2.B.5, AAP-2.C.1, AAP-2.C.2, AAP-2.C.3, AAP-2.C.4
-:::
-
 ::: pseudop
+
 On the exam, you may see these four arithmetic operators:
 
-```{=html}
-<pre class="inline">+</pre>
-```
-,
+<pre class="inline">+</pre>, <pre class="inline">-</pre>, <pre class="inline">*</pre>, <pre class="inline">/</pre> (plus, minus, times, divide) as well as <pre class="inline">MOD</pre>. 
 
-```{=html}
-<pre class="inline">-</pre>
-```
-,
+Arithmetic operators are part of most programming languages. (Most text languages use <pre class="inline">*</pre> rather than <pre class="inline">&times;</pre> for multiplication because <pre class="inline">&times</pre> isn't on most keyboards, and because it looks too much like the letter x.)
 
-```{=html}
-<pre class="inline">*</pre>
-```
-,
-
-```{=html}
-<pre class="inline">/</pre>
-```
-(plus, minus, times, divide) as well as
-
-```{=html}
-<pre class="inline">MOD</pre>
-```
-. Arithmetic operators are part of most programming languages. (Most
-text languages use
-
-```{=html}
-<pre class="inline">*</pre>
-```
-rather than
-
-```{=html}
-<pre class="inline">&times;</pre>
-```
-for multiplication because
-
-```{=html}
-<pre class="inline">&times</pre>
-```
-isn't on most keyboards, and because it looks too much like the letter
-x.)
-:::
-
-::: ap-standard
-AAP-2.L.2
 :::
 
 ::: pseudop
@@ -225,9 +173,7 @@ like other programmer-defined procedures.
 :::
 
 ::: pseudop
-The conditional expression 15) {repeat (4) {move (size) steps, turn
-clockwise (90) degrees}}" title="if (size \> 15) {repeat (4) {move
-(size) steps, turn clockwise (90) degrees}}" /\> would be written as
+The conditional expression <img class="inline" src="/img/2-complexity/if-example-preview-fractal-art.png" alt="if (size > 15) {repeat (4) {move (size) steps, turn clockwise (90) degrees}}" title="if (size > 15) {repeat (4) {move (size) steps, turn clockwise (90) degrees}}"> would be written as
 
 ::: pre-container
 ```{=html}
@@ -262,7 +208,7 @@ turn clockwise(90)
 :::
 
 As in Snap<em>!</em>, if the condition
-`(`<var>size</var>`) \> 15` is `true`,
+`(size) > 15` is `true`,
 the code inside the `if` statement runs; if the condition is
 `false`, the code does not run.
 :::
@@ -270,10 +216,9 @@ the code inside the `if` statement runs; if the condition is
 ::: forYouToDo
 <ol start="6">
 
+<!--
 <li>
-
-<!-- Question 5 -->
-
+ Question 5
 ::: {.assessment-data type="multiplechoice" identifier="What's the missing condition for an ODD? predicate?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="false"}
 ::: prompt
 ::: ap-standard
@@ -303,7 +248,7 @@ CONDITION?
 ```{=html}
 <pre class="inline">number MOD 1 = 0</pre>
 ```
-<!--<img class="inline" src="/img/2-complexity/quiz-mod-1.png" alt="((number) mod (1)) = (0)" title="((number) mod (1)) = (0)" />-->
+
 :::
 
 ::: feedback
@@ -318,7 +263,7 @@ CONDITION?
 ```{=html}
 <pre class="inline">number MOD 1 = 1</pre>
 ```
-<!--<img class="inline" src="/img/2-complexity/quiz-mod-2.png" alt="((number) mod (1)) = (1)" title="((number) mod (1)) = (1)" />-->
+
 :::
 
 ::: feedback
@@ -333,7 +278,7 @@ CONDITION?
 ```{=html}
 <pre class="inline">number MOD 2 = 0</pre>
 ```
-<!--<img class="inline" src="/img/2-complexity/quiz-mod-3.png" alt="((number) mod (2)) = (0)" title="((number) mod (2)) = (0)" />-->
+
 :::
 
 ::: feedback
@@ -348,7 +293,7 @@ CONDITION?
 ```{=html}
 <pre class="inline">number MOD 2 = 1</pre>
 ```
-<!--<img class="inline" src="/img/2-complexity/quiz-mod-4.png" alt="((number) mod (2)) = (1)" title="((number) mod (2)) = (1)" />-->
+
 :::
 
 ::: feedback
@@ -368,7 +313,7 @@ Correct! <pre class="inline">number MOD 2</pre> returns the remainder when <pre 
 
 <li>
 
-<!-- Question 7 -->
+Question 7
 
 ::: {.assessment-data type="multiplechoice" identifier="What's the value of 11 MOD (2 + 3)?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri3" shuffle="true"}
 ::: prompt
@@ -432,14 +377,16 @@ It's true that division and mod have some similarities, but mod gives you just t
 
 </li>
 
+-->
+
 <li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
-Is it true that (12 MOD 2) \> (11 MOD 2)? Explain your reasoning.</li>
+Is it true that `(12 MOD 2) > (11 MOD 2)`? Explain your reasoning.</li>
 
 </ol>
 :::
 
 ::: ifTime
-<ol start="9">
+<ol start="7">
 
 <li>Build a predicate that tests whether its input is an integer. You
 may find
@@ -501,4 +448,8 @@ in the empty input slot, and maybe different numbers in place of 20 and
 
 </ol>
 
+
 </div>
+
+
+{{< checkpoint id='1FAIpQLSfe8-WgqOSanLzb0fa9kTRs5WoLsGHSDFmp_RTi4j2RBf6ZKw' >}}
