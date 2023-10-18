@@ -483,36 +483,31 @@ ul.task-list li input[type="checkbox"] {
 <div class="sidenote">
 <p>Different programming languages have different ways of handling negative inputs to the mod function. So you won’t see any negative numbers used with mod on the exam.</p>
 </div>
-<p><strong>The <code>mod</code> operator:</strong> The expression <img src="../../img/1-introduction/17-mod-5.png" title="(17) mod (5)" alt="(17) mod (5)" class="inline py-0"> would be written as</p>
+<strong>The <code>mod</code> operator:</strong> The expression <img src="../../img/1-introduction/17-mod-5.png" title="(17) mod (5)" alt="(17) mod (5)" class="inline py-0"> would be written as
 <pre class="inline">17 MOD 5</pre>
-<p>on the exam. If you see an expression with variables as input to <code>mod</code>, such as</p>
+on the exam. If you see an expression with variables as input to <code>mod</code>, such as
 <pre class="inline">a MOD b</pre>
 <p>, you can assume that <var>a</var> is zero or positive, and <var>b</var> is strictly positive (because you can’t divide by 0).</p>
-</div>
-<div class="ap-standard">
-<p>AAP-2.B.5, AAP-2.C.1, AAP-2.C.2, AAP-2.C.3, AAP-2.C.4</p>
 </div>
 <div class="pseudop">
 <p>On the exam, you may see these four arithmetic operators:</p>
 <pre class="inline">+</pre>
-<p>,</p>
+,
 <pre class="inline">-</pre>
-<p>,</p>
+,
 <pre class="inline">*</pre>
-<p>,</p>
+,
 <pre class="inline">/</pre>
-<p>(plus, minus, times, divide) as well as</p>
+(plus, minus, times, divide) as well as
 <pre class="inline">MOD</pre>
-<p>. Arithmetic operators are part of most programming languages. (Most text languages use</p>
+<p>.</p>
+Arithmetic operators are part of most programming languages. (Most text languages use
 <pre class="inline">*</pre>
-<p>rather than</p>
+rather than
 <pre class="inline">×</pre>
-<p>for multiplication because</p>
+for multiplication because
 <pre class="inline">×</pre>
 <p>isn’t on most keyboards, and because it looks too much like the letter x.)</p>
-</div>
-<div class="ap-standard">
-<p>AAP-2.L.2</p>
 </div>
 <div class="pseudop">
 <p><strong>Order of operations:</strong> In a block language, the nesting of blocks determines the order of operations. For example, in <img src="../../img/6-computers/3-times(5+4).png" title="3 × (5 + 4)" alt="3 × (5 + 4)" class="inline py-0"> you can <em>see</em> that the <code>+</code> block is an input to the <code>×</code> block, so the expression means 3×(5+4). Similarly, <img src="../../img/6-computers/(3-times-5)+4.png" title="(3 × 5) + 4" alt="(3 × 5) + 4" class="inline py-0"> means (3×5)+4. In Snap<em>!</em>, it’s as if there are parentheses around <em>every</em> operation. But in text languages, you can write</p>
@@ -559,7 +554,7 @@ Use this <code>divisible by?</code> predicate to build a predicate that tests wh
 </div>
 </div>
 <div class="pseudop">
-<p>The conditional expression 15) {repeat (4) {move (size) steps, turn clockwise (90) degrees}}” title=“if (size &gt; 15) {repeat (4) {move (size) steps, turn clockwise (90) degrees}}” /&gt; would be written as</p>
+<p>The conditional expression <img class="inline" src="../../img/2-complexity/if-example-preview-fractal-art.png" alt="if (size > 15) {repeat (4) {move (size) steps, turn clockwise (90) degrees}}" title="if (size > 15) {repeat (4) {move (size) steps, turn clockwise (90) degrees}}"> would be written as</p>
 <div class="pre-container">
 <pre class="inline">IF(size &gt; 15)
 {
@@ -586,121 +581,203 @@ turn clockwise(90)
 }
 }" class="inline"></p>
 </div>
-<p>As in Snap<em>!</em>, if the condition <code>(</code><var>size</var><code>) \&gt; 15</code> is <code>true</code>, the code inside the <code>if</code> statement runs; if the condition is <code>false</code>, the code does not run.</p>
+<p>As in Snap<em>!</em>, if the condition <code>(size) &gt; 15</code> is <code>true</code>, the code inside the <code>if</code> statement runs; if the condition is <code>false</code>, the code does not run.</p>
 </div>
 <div class="forYouToDo">
 <ol start="6">
+<!--
 <li>
-<!-- Question 5 -->
-<div class="assessment-data" type="multiplechoice" data-identifier="What's the missing condition for an ODD? predicate?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri2" data-shuffle="false">
-<div class="prompt">
-<div class="ap-standard">
-<p>AAP-2.L.2</p>
-</div>
-<p>Algorithms that look the same may have different results. The following incomplete code fragment was designed to test if</p>
+ Question 5
+::: {.assessment-data type="multiplechoice" identifier="What's the missing condition for an ODD? predicate?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="false"}
+::: prompt
+::: ap-standard
+AAP-2.L.2
+:::
+
+Algorithms that look the same may have different results. The following
+incomplete code fragment was designed to test if
+
+
+
+```{=html}
 <pre class="inline">number</pre>
-<p>is odd:<br></p>
+```
+
+
+is odd:<br />
+
+
+
+```{=html}
 <pre>IF (MISSING CONDITION)
 {
 DISPLAY "It is odd."
 }</pre>
-<p><br> Which of the following can be used in place of the MISSING CONDITION?</p>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
+```
+
+
+<br /> Which of the following can be used in place of the MISSING
+CONDITION?
+:::
+
+::: {.choice identifier="c1"}
+::: text
+
+
+```{=html}
 <pre class="inline">number MOD 1 = 0</pre>
-<!--<img class="inline" src="/img/2-complexity/quiz-mod-1.png" alt="((number) mod (1)) = (0)" title="((number) mod (1)) = (0)" />-->
-</div>
-<div class="feedback">
-<pre><code>&lt;pre class="inline"&gt;MOD&lt;/pre&gt; returns the remainder when the first input is divided by the second. Whether a number is odd or even depends on divisibility by 2.</code></pre>
-</div>
-</div>
-<div class="choice" data-identifier="c2">
-<div class="text">
+```
+
+
+
+:::
+
+::: feedback
+```         
+<pre class="inline">MOD</pre> returns the remainder when the first input is divided by the second. Whether a number is odd or even depends on divisibility by 2.
+```
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+
+
+```{=html}
 <pre class="inline">number MOD 1 = 1</pre>
-<!--<img class="inline" src="/img/2-complexity/quiz-mod-2.png" alt="((number) mod (1)) = (1)" title="((number) mod (1)) = (1)" />-->
-</div>
-<div class="feedback">
-<pre><code>&lt;pre class="inline"&gt;MOD&lt;/pre&gt; returns the remainder when the first input is divided by the second. Whether a number is odd or even depends on divisibility by 2.</code></pre>
-</div>
-</div>
-<div class="choice" data-identifier="c3">
-<div class="text">
+```
+
+
+
+:::
+
+::: feedback
+```         
+<pre class="inline">MOD</pre> returns the remainder when the first input is divided by the second. Whether a number is odd or even depends on divisibility by 2.
+```
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+
+
+```{=html}
 <pre class="inline">number MOD 2 = 0</pre>
-<!--<img class="inline" src="/img/2-complexity/quiz-mod-3.png" alt="((number) mod (2)) = (0)" title="((number) mod (2)) = (0)" />-->
-</div>
-<div class="feedback">
-<pre><code>&lt;pre class="inline"&gt;number MOD 2&lt;/pre&gt; returns the remainder when &lt;pre class="inline"&gt;number&lt;/pre&gt; is divided by 2. If that remainder is zero, is the number odd or even?</code></pre>
-</div>
-</div>
-<div class="choice" data-identifier="c4">
-<div class="text">
+```
+
+
+
+:::
+
+::: feedback
+```         
+<pre class="inline">number MOD 2</pre> returns the remainder when <pre class="inline">number</pre> is divided by 2. If that remainder is zero, is the number odd or even?
+```
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+
+
+```{=html}
 <pre class="inline">number MOD 2 = 1</pre>
-<!--<img class="inline" src="/img/2-complexity/quiz-mod-4.png" alt="((number) mod (2)) = (1)" title="((number) mod (2)) = (1)" />-->
-</div>
-<div class="feedback">
-<pre><code>Correct! &lt;pre class="inline"&gt;number MOD 2&lt;/pre&gt; returns the remainder when &lt;pre class="inline"&gt;number&lt;/pre&gt; is divided by 2.  If &lt;pre class="inline"&gt;number MOD 2&lt;/pre&gt; is 1, then the number is odd.</code></pre>
-</div>
-</div>
-<div class="responseDeclaration" data-identifier="ri2">
-<div class="correctResponse" data-identifier="c4">
+```
 
-</div>
-</div>
-</div>
-</li>
-<li>
-<!-- Question 7 -->
-<div class="assessment-data" type="multiplechoice" data-identifier="What's the value of 11 MOD (2 + 3)?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri3" data-shuffle="true">
-<div class="prompt">
-<p>What’s the value of <img src="../../img/2-complexity/11mod2+3.png" title="11 mod (2 + 3)" alt="11 mod (2 + 3)" class="inline">?</p>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p>1</p>
-</div>
-<div class="feedback">
-<pre><code>Correct!</code></pre>
-</div>
-</div>
-<div class="choice" data-identifier="c2">
-<div class="text">
-<p>0.2</p>
-</div>
-<div class="feedback">
-<pre><code>Remainders are always whole numbers.</code></pre>
-</div>
-</div>
-<div class="choice" data-identifier="c3">
-<div class="text">
-<p>2</p>
-</div>
-<div class="feedback">
-<pre><code>`Mod` gives you the remainder, not the quotient.</code></pre>
-</div>
-</div>
-<div class="choice" data-identifier="c4">
-<div class="text">
-<p>2.2</p>
-</div>
-<div class="feedback">
-<pre><code>It's true that division and mod have some similarities, but mod gives you just the remainder.</code></pre>
-</div>
-</div>
-<div class="responseDeclaration" data-identifier="ri3">
-<div class="correctResponse" data-identifier="c1">
 
-</div>
-</div>
-</div>
+
+:::
+
+::: feedback
+```         
+Correct! <pre class="inline">number MOD 2</pre> returns the remainder when <pre class="inline">number</pre> is divided by 2.  If <pre class="inline">number MOD 2</pre> is 1, then the number is odd.
+```
+:::
+:::
+
+::: {.responseDeclaration identifier="ri2"}
+::: {.correctResponse identifier="c4"}
+:::
+:::
+:::
+
 </li>
+
 <li>
-<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Is it true that (12 MOD 2) &gt; (11 MOD 2)? Explain your reasoning.
+
+Question 7
+
+::: {.assessment-data type="multiplechoice" identifier="What's the value of 11 MOD (2 + 3)?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri3" shuffle="true"}
+::: prompt
+What's the value of
+<img src="/img/2-complexity/11mod2+3.png" title="11 mod (2 + 3)" alt="11 mod (2 + 3)" class="inline"/>?
+:::
+
+::: {.choice identifier="c1"}
+::: text
+1
+:::
+
+::: feedback
+```         
+Correct!
+```
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+0.2
+:::
+
+::: feedback
+```         
+Remainders are always whole numbers.
+```
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+2
+:::
+
+::: feedback
+```         
+`Mod` gives you the remainder, not the quotient.
+```
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+2.2
+:::
+
+::: feedback
+```         
+It's true that division and mod have some similarities, but mod gives you just the remainder.
+```
+:::
+:::
+
+::: {.responseDeclaration identifier="ri3"}
+::: {.correctResponse identifier="c1"}
+:::
+:::
+:::
+
+</li>
+
+-->
+<li>
+<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Is it true that <code>(12 MOD 2) &gt; (11 MOD 2)</code>? Explain your reasoning.
 </li>
 </ol>
 </div>
 <div class="ifTime">
-<ol start="9">
+<ol start="7">
 <li>
 Build a predicate that tests whether its input is an integer. You may find <img src="../../img/blocks/round-a-number.png" title="round ()" alt="round ()"> useful.<br> <img src="../../img/2-complexity/integer-4(with-result-true).png" title="integer? (4) reporting true" alt="integer? (4) reporting true" class="ms-4"> <img src="../../img/2-complexity/integer-4-point-1(with-result-false).png" title="integer? (4.1) reporting false" alt="integer? (4.1) reporting false" class="ms-4">
 </li>
@@ -741,6 +818,20 @@ Build a predicate that tests whether its input is an integer. You may find <img 
 </li>
 </ol>
 </div>
+<p><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkpoint-1FAIpQLSfe8-WgqOSanLzb0fa9kTRs5WoLsGHSDFmp_RTi4j2RBf6ZKw"> Checkpoint: Fill out this Google Form </button>
+      </p><div class="modal fade" id="checkpoint-1FAIpQLSfe8-WgqOSanLzb0fa9kTRs5WoLsGHSDFmp_RTi4j2RBf6ZKw" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfe8-WgqOSanLzb0fa9kTRs5WoLsGHSDFmp_RTi4j2RBf6ZKw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" height="613">Loading…</iframe>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+        </div>
+      </div><p></p>
 
 
 

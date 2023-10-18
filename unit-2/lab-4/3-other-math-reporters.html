@@ -509,9 +509,9 @@ Create a <code>sum of list</code> block that reports the sum of the items of a l
 <p>You saw the procedure definition for a command in <a href="../../unit-1/lab-3/4-modify-your-pinwheel.html" title="Unit 1 Lab 3 Page 4: Modify Your Pinwheel" target="_blank">Unit 1 Lab 3 Page 4: Modify Your Pinwheel</a>.</p>
 </div>
 <div class="pseudop">
-<p>The definition for a reporter looks much like the definition for a command except that it includes a</p>
+The definition for a reporter looks much like the definition for a command except that it includes an
 <pre class="inline">RETURN</pre>
-<p>(like <code>report</code>). For example, this definition<br></p>
+<p>(like <code>report</code>). For example, this definition</p>
 <div class="sidenote">
 <p>In many languages (including Snap<em>!</em>) variables must be <em>declared</em> in some way (in Snap<em>!</em>, you can click the “Make a variable” button or use the <code>script variables</code> block). But the AP’s language doesn’t include variable declarations, so you won’t see them on the exam.</p>
 </div>
@@ -525,19 +525,16 @@ RETURN([positiveRoot, -1 * positiveRoot])
 </pre>
 </div>
 <p>or <img src="../../img/3-lists/square-roots-definition-blocktran.png" title="square roots of (number) {script variables (positive root), set (positive root) to ((sqrt) of (number))), report (list (positive root) (() - positive root))" alt="square roots of (number) {script variables (positive root), set (positive root) to ((sqrt) of (number))), report (list (positive root) (() - positive root))"></p>
-<div class="ap-standard">
-<p>AAP-3.A.7</p>
-</div>
 <div class="pseudop">
-<p>As with <code>report</code> in Snap<em>!</em>, when a</p>
+As with <code>report</code> in Snap<em>!</em>, when a
 <pre class="inline">RETURN</pre>
-<p>statement is executed, the flow of control returns to the place in your code where the procedure was called, and the procedure returns the value of the expression inside the</p>
+statement is executed, the flow of control returns to the place in your code where the procedure was called, and the procedure returns the value of the expression inside the
 <pre class="inline">RETURN</pre>
 <p>command or <code>report</code> block.</p>
 </div>
 <div class="endnote">
 <div class="pseudop">
-<p>Also, the procedure</p>
+Also, the procedure
 <pre class="inline">sqrt</pre>
 <p>isn’t built in to the AP’s language so it is written in lower case like other programmer-defined procedures.</p>
 </div>
@@ -585,19 +582,28 @@ RETURN(a = b)
 }" class="inline"></p>
 </div>
 <div class="pseudop">
-<p>As in Snap<em>!</em>, if the condition</p>
+As in Snap<em>!</em>, if the condition
 <pre class="inline">a &gt; b</pre>
 <p>is true, the code in first block of statements runs; if it is false, the code in second block of statements runs.</p>
 </div>
 </div>
-<div class="forYouToDo">
+<!--
+::: forYouToDo
 <ol start="6">
+
+
 <li>
-<!-- Question 5 -->
-<div class="assessment-data" type="multiplechoice" data-identifier="What is the value of x?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri5" data-shuffle="true">
-<div class="prompt">
-<p>When will “Error. Invalid entry.” be displayed?</p>
-<div class="pre-container ms-4">
+
+Question 5
+
+::: {.assessment-data type="multiplechoice" identifier="What is the value of x?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri5" shuffle="true"}
+::: prompt
+When will "Error. Invalid entry." be displayed?
+
+::: {.pre-container .ms-4}
+
+
+```{=html}
 <pre class="inline">PROCEDURE greaterThanOrEqualTo(a, b)
 IF(a &gt; b)
 {
@@ -610,68 +616,142 @@ RETURN(a = b)
 DISPLAY("Error. Invalid entry.")
 }
 </pre>
-</div>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p>When</p>
-<pre class="inline">a &gt; b</pre>
-<p>is true.</p>
-</div>
-<div class="feedback">
-<p>Think about what</p>
-<pre class="inline">RETURN</pre>
-<p>does. Like <code>report</code> in Snap<em>!</em>,</p>
-<pre class="inline">RETURN</pre>
-<p>ends the procedure. Once it is run, no other code in that procedure is run, and the flow of control returns to the place where the procedure was called.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c2">
-<div class="text">
-<p>When</p>
-<pre class="inline">a &gt; b</pre>
-<p>is false.</p>
-</div>
-<div class="feedback">
-<p>Think about what</p>
-<pre class="inline">RETURN</pre>
-<p>does. Like <code>report</code> in Snap<em>!</em>,</p>
-<pre class="inline">RETURN</pre>
-<p>ends the procedure. Once it is run, no other code in that procedure is run, and the flow of control returns to the place where the procedure was called.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c3">
-<div class="text">
-<p>Always</p>
-</div>
-<div class="feedback">
-<p>It looks like that because that’s the last line of procedure code, but think about what</p>
-<pre class="inline">RETURN</pre>
-<p>does. Like <code>report</code> in Snap<em>!</em>,</p>
-<pre class="inline">RETURN</pre>
-<p>ends the procedure. Once it is run, no other code in that procedure is run, and the flow of control returns to the place where the procedure was called.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c4">
-<div class="text">
-<p>Never</p>
-</div>
-<div class="feedback">
-<p>Correct!</p>
-</div>
-</div>
-<div class="responseDeclaration" data-identifier="ri5">
-<div class="correctResponse" data-identifier="c4">
+```
 
-</div>
-</div>
-</div>
+
+:::
+:::
+
+::: {.choice identifier="c1"}
+::: text
+When
+
+
+
+```{=html}
+<pre class="inline">a &gt; b</pre>
+```
+
+
+is true.
+:::
+
+::: feedback
+Think about what
+
+
+
+```{=html}
+<pre class="inline">RETURN</pre>
+```
+
+
+does. Like `report` in Snap<em>!</em>,
+
+
+
+```{=html}
+<pre class="inline">RETURN</pre>
+```
+
+
+ends the procedure. Once it is run, no other code in that procedure is
+run, and the flow of control returns to the place where the procedure
+was called.
+:::
+:::
+
+::: {.choice identifier="c2"}
+::: text
+When
+
+
+
+```{=html}
+<pre class="inline">a &gt; b</pre>
+```
+
+
+is false.
+:::
+
+::: feedback
+Think about what
+
+
+
+```{=html}
+<pre class="inline">RETURN</pre>
+```
+
+
+does. Like `report` in Snap<em>!</em>,
+
+
+
+```{=html}
+<pre class="inline">RETURN</pre>
+```
+
+
+ends the procedure. Once it is run, no other code in that procedure is
+run, and the flow of control returns to the place where the procedure
+was called.
+:::
+:::
+
+::: {.choice identifier="c3"}
+::: text
+Always
+:::
+
+::: feedback
+It looks like that because that's the last line of procedure code, but
+think about what
+
+
+
+```{=html}
+<pre class="inline">RETURN</pre>
+```
+
+
+does. Like `report` in Snap<em>!</em>,
+
+
+
+```{=html}
+<pre class="inline">RETURN</pre>
+```
+
+
+ends the procedure. Once it is run, no other code in that procedure is
+run, and the flow of control returns to the place where the procedure
+was called.
+:::
+:::
+
+::: {.choice identifier="c4"}
+::: text
+Never
+:::
+
+::: feedback
+Correct!
+:::
+:::
+
+::: {.responseDeclaration identifier="ri5"}
+::: {.correctResponse identifier="c4"}
+:::
+:::
+:::
+
 </li>
+
 </ol>
-</div>
-<div class="todo">
-<p>I have a lot of edits to make in this TIF based on the paper I’m writing and the NCTM presentation I’m giving. –MF, 8/12/19</p>
-</div>
+:::
+-->
 <div class="takeItFurther">
 <ol type="A">
 <li>
@@ -702,6 +782,20 @@ The <em>greatest</em> number that is a divisor of both input numbers
 </li>
 </ol>
 </div>
+<p><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkpoint-1FAIpQLSesvaqIopzLJVsh17q5eFLhWAt3DLEIncQywftiAOdH6gXX3w"> Checkpoint: Fill out this Google Form </button>
+      </p><div class="modal fade" id="checkpoint-1FAIpQLSesvaqIopzLJVsh17q5eFLhWAt3DLEIncQywftiAOdH6gXX3w" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSesvaqIopzLJVsh17q5eFLhWAt3DLEIncQywftiAOdH6gXX3w/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" height="613">Loading…</iframe>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+        </div>
+      </div><p></p>
 
 
 
