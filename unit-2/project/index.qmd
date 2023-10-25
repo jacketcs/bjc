@@ -1,0 +1,110 @@
+---
+title: "Project: Survey"
+subtitle: "Unit 2 Project"
+gifffer: true
+order: 10
+---
+
+::: takeNote
+
+This is an **individual** project. This means that all of your work must be your own, indisputable work. If you need help on something, you may ask other people for help, however, the scripts that you create *must* be your own work. If there's any convincing evidence that the work that you submit is not your own, you will recieve an automatic 0 on this project and any participation grade related to working on the project.
+
+:::
+
+::: learn
+
+**In this project**, you will apply your understanding of data abstraction and higher order functions to create a survey and analyze the data by creating relevant summary statistics following the specificiations listed on this page.
+
+In addition, you'll have a Google Form where you will explain why, where, and how you used blocks in your project.
+
+On the last day of this project, we will have a gallery walk to show everyone the progress that you've made!
+
+Here is an example of what the final program can look like:
+
+{{< video https://youtu.be/v3k0IfI6VYU >}}
+
+:::
+
+## Survey requirements:
+
+::: forYouToDo
+
+Plan out your survey by following these requirements that your survey must have:
+
+1. Ask the user for their name, grade, and at least one other question.
+    - The other question(s) must only be **multiple choice or ask for a numerical answer**.
+        Please ask only school-appropriate questions.
+
+One aspect of your survey will be to analyze the data that you collect from them.
+
+2. **Come up with three simple questions** that you want to answer using the data that you collect
+
+    For example: If you asked “How many books have you read so far this month?” you could analyze the data to answer the following research questions:
+    - What is the average number of books people have read so far this month?
+    - What is the maximum number of books people have read so far this month?
+    - How many people have read at least two books this month?
+
+3. **Come up with two more complex questions** that you want to answer using the data that you collect.
+
+    Following up from the previous examples, you could analyze the data to answer research questions similar to:
+    - How does the average number of books people have read so far this month **differ between grades**?
+    - How does the number of people who have read at least two books this month **differ between grades**?
+
+    So *instead of investigating just one thing among everyone*, your two questions are expected to touch on how **something differs between different types of people**.
+
+:::
+
+## Program Specifications:
+
+::: forYouToDo
+
+Create a Snap<em>!</em> program that can act as a survey that meets all of the following specifications:
+
+<a href="/prog/2-complexity/U2-ProjectSurvey.xml" class="run"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a>
+
+1. Implements a "survey response" Abstract Data Type with a *constructor* and **all** relevant *selectors*.
+
+    For example: ![survey response constructor](/img/2-complexity/Survey/survey-response.png) ![survey response selector](/img/2-complexity/Survey/name-from-survey-response.png)
+
+2. Implements a data collection feature on "Answer Survey" sprite.
+    - When the sprite is clicked, it collects data from the user by asking the user questions and gathering their responses using the ask and answer blocks.
+
+        For example: ![An example of asking the user a specific question and gathering their response using the ask and answer blocks](/img/2-complexity/Survey/survey-example.png)
+    - Stores the collected data in a list that is stored as the variable <var>survey responses</var> **using your ADT that you created above**. 
+
+3. Implement the block ![insert example responses into survey responses](/img/2-complexity/Survey/insert-example%20responses-into%20survey-responses.png) that puts at least ten example responses into the list.
+
+4. Implements a data analysis feature on the "Analyze Survey" sprite.
+    - When the sprite is clicked, it allows the user to choose from one of the five research questions that you planned out prior to the program.
+    - The code must process the data to answer your five research questions by **using the two higher order functions** that you learned from this unit (some questions may only need one of them or both).
+        * ![](/img/blocks/keep.png)
+        * ![](/img/blocks/combine.png)
+    - When using ![](/img/blocks/keep.png), you must have at least one instance where you use a **self-developed predicate block** for the condition in the `keep`.
+
+        For example, you could make a predicate block like ![](/img/2-complexity/Survey/is%20grade%20from%20equal%20to.png) and use it in your `keep`
+
+5. Must use the ![](/img/2-complexity/Survey/get-item-of-each%20item-in.png) block in your code.
+    - All of the code is provided for you and works properly.
+    - You **cannot edit the script in the block at all**.
+    - We promise you will find a use for the block in your project.
+
+6. You **cannot change the scripts in the "Answer" and "Analyze" sprites** at all!
+    - You can make insignificant changes, such as changing where the sprites are or changing the costumes.
+
+:::
+
+## Google Form Specifications
+
+::: forYouToDo
+
+When you have finished your project, fill in the **given Google Form on Google Classroom**.
+
+<details><summary>The Google Form has the following questions for you to answer:</summary>
+
+Not finalized yet.
+
+</details>
+
+:::
+
+
