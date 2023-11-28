@@ -27,15 +27,15 @@ user Legolover8888</a> and
 user Oxyman</a></small>
 :::
 
-<img src="img/2-complexity/maze-above.png" title="drawing of maze seen from above" alt="drawing of maze seen from above" class="ms-4"/>
-<img src="img/2-complexity/maze-inside.jpg" title="photograph of maze of hedges with tall walls seen from the inside" alt="photograph of maze of hedges with tall walls seen from the inside" class="ms-4" width="240"/>
+<img src="/img/2-complexity/maze-above.png" title="drawing of maze seen from above" alt="drawing of maze seen from above" class="ms-4"/>
+<img src="/img/2-complexity/maze-inside.jpg" title="photograph of maze of hedges with tall walls seen from the inside" alt="photograph of maze of hedges with tall walls seen from the inside" class="ms-4" width="240"/>
 
 
 
 ::: forYouToDo
 <ol>
 
-<li><img src="img/icons/talk-with-another-pair.png" title="Talk with Another Pair" alt="Talk with Another Pair" class="inline"/>Come
+<li><img src="/img/icons/talk-with-another-pair.png" title="Talk with Another Pair" alt="Talk with Another Pair" class="inline"/>Come
 up with an algorithm to escape from any maze. Write it down on
 paper.</li>
 
@@ -146,8 +146,7 @@ of the maze.
 </ul>
 
 You can read more about these AP language procedures on the
-<a href="cur/snap-cheat-sheet.html?course=bjc4nyc.html&novideo&noassignment" title="Snap! Cheat Sheet" target="_blank">Snap<em>!</em>
-Cheat Sheet</a> in the Robot section at the bottom.
+[Snap<em>!</em> Cheat Sheet](/snap-cheat-sheet.qmd) in the Robot section at the bottom.
 
 
 :::
@@ -159,7 +158,7 @@ Cheat Sheet</a> in the Robot section at the bottom.
 facing upwards. On a paper copy of this grid, shade all the squares that
 the robot <em>can't possibly</em> get to, when the given code is
 executed.<br />
-<img src="img/3-lists/robot-question-1.png" title="set (turns) to (pick random (2) to (3))
+<img src="/img/3-lists/robot-question-1.png" title="set (turns) to (pick random (2) to (3))
 repeat (turns) {
 rotate right
 }
@@ -174,7 +173,7 @@ set (steps) to (pick random (1) to (2))
 repeat (steps) {
 move forward
 }" class="ms-4"/>
-<img src="img/3-lists/robot-question-1-grid.png" title="5×5 grid of squares with an upward-facing sprite in the center square" alt="5×5 grid of squares with an upward-facing sprite in the center square" class="ms-4 noshadow"/></li>
+<img src="/img/3-lists/robot-question-1-grid.png" title="5×5 grid of squares with an upward-facing sprite in the center square" alt="5×5 grid of squares with an upward-facing sprite in the center square" class="ms-4 noshadow"/></li>
 
 </ol>
 :::
@@ -187,3 +186,5 @@ doesn't work.</li>
 
 </ol>
 :::
+
+{{< checkpoint id='1FAIpQLScHdQJLiYwDsZIDCW3mpm1unsdWrDO70AlwD-V2RXVZnwek3g' >}}

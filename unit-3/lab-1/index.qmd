@@ -1,0 +1,16 @@
+---
+title: "Lab 1: Dealing with Complexity"
+subtitle: "Unit 3, Lab 1"
+order: 5
+---
+
+::: learn
+
+**In this lab,** you will learn about algorithms, nested loops, recursion, more abstractions, clones, and how to better debug.
+
+This is an essential lab for the rest of the course in knowing how to code in Snap<em>!</em>. So please pay attention, do your best, and persevere through problem solving!
+
+:::
+
+
+

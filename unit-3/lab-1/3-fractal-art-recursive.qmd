@@ -139,3 +139,5 @@ different turning angle arrangements (that is, 0° and 120°, then 1° and
 
 </ol>
 :::
+
+{{< checkpoint id='1FAIpQLSfFEsBLOud9rJ8rPLfBgfokjngS0zjGXGHkqe8g9csQujTgGg' >}}
