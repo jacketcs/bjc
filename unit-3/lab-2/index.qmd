@@ -1,0 +1,11 @@
+---
+title: "Lab 2: Contact List"
+subtitle: "Unit 3, Lab 2"
+order: 10
+---
+
+::: learn
+**In this lab,** you will develop a Contact List database application like the one on your phone.
+
+You will start coding on Page 3, the work for Page 1 and Page 2 has been done for you. Take a few minutes to acclimate yourself with what has been done for you already for you at the start of [Page 3](/unit-3/lab-2/3-modifying-adt.qmd) by reading through Page 1 and 2.
+:::

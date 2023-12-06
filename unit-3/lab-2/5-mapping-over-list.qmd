@@ -220,11 +220,12 @@ contacts.<br />
 
 </li>
 
+<!--
+
 <li>
 
-<!-- question 1 -->
-
-::: {.assessment-data type="multiplechoice" identifier="mapLetterVsItem" hasinlinefeedback="true" maxchoices="1" responseidentifier="resp1" shuffle="false"}
+question 1
+ ::: {.assessment-data type="multiplechoice" identifier="mapLetterVsItem" hasinlinefeedback="true" maxchoices="1" responseidentifier="resp1" shuffle="false"}
 ::: prompt
 Which of the following statements are true about this list?<br />
 <img src="/img/3-lists/words_numbers.png" title="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" alt="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" class="ms-4"/><br />
@@ -288,7 +289,7 @@ list.
 <li>
 
 <!-- question 2 -->
-
+<!--
 ::: {.assessment-data type="multiplechoice" identifier="mapLetterVsItem" hasinlinefeedback="true" maxchoices="5" responseidentifier="resp2" shuffle="false"}
 ::: prompt
 Which of the following statements are true about this list?<br />
@@ -405,10 +406,7 @@ report (names of contacts)" class="ms-4"/>
 
 <li>
 
-::: todo
-This new multiple-choice quizlet misbehaves if you only select some of
-the correct responses. Need to fix. --MF, 1/13/21
-:::
+<!--
 
 ::: {.assessment-data type="multiplechoice" identifier="squares_mapkeepcombine" hasinlinefeedback="true" maxchoices="8" responseidentifier="resp1" shuffle="true"}
 ::: prompt
@@ -485,7 +483,9 @@ Correct.
 :::
 :::
 
-</li>
+</li> -->
+
+<li>{{< checkpoint id='1FAIpQLSff1VCBBwqMBYBp5VtmNww-0GHRPpl3x_zrp3mRGWUNd1A0kA' >}} </li>
 
 </ol>
 :::
@@ -526,3 +526,5 @@ per year.</li>
 
 </ol>
 :::
+
+

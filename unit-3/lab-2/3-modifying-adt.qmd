@@ -48,6 +48,8 @@ list. You can combine elements of different types in a list.
 ::: {#first .forYouToDo}
 <ol>
 
+<li><a class="run" href="/prog/3-lists/U3L2-ContactListStarter.xml"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a></li>
+
 <li>
 
 Create an ADT to manage three data points for each date:
@@ -129,5 +131,9 @@ that reports a list of the user's answers to these prompts:
 <li>**Debug.** Clear your `contact list`, and
 add a new few contacts with birthdays. Fix any problems.</li>
 
+<li> {{< checkpoint id='1FAIpQLSdbw7AeLcNpM6GkPsIHbB0H7IQCsdlwo4uZSso1FQK3asfX3A' >}} </li>
+
 </ol>
 :::
+
+
