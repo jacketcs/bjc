@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../unit-3/lab-2/2-adding-contact.html" rel="next">
-<link href="../../unit-3/lab-1/6-debugging-recap.html" rel="prev">
+<link href="../../unit-3/lab-2/index.html" rel="prev">
 <link href="../..//img/jac.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -163,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-3/index.html">Unit 3: Data Structures</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-2/1-build-the-list.html">Lab 2</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-2/1-build-the-list.html">Page 1: Creating the Contact ADT</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-3/index.html">Unit 3: Data Structures</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-2/index.html">Lab 2: Contact List</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-2/1-build-the-list.html">Page 1: Creating the Contact ADT</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -233,8 +233,8 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
- <span class="menu-text">Lab 2</span></a>
+            <a href="../../unit-3/lab-2/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 2: Contact List</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -268,12 +268,6 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../../unit-3/lab-2/5-mapping-over-list.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Page 5: Transforming Every List Item</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-3/lab-2/assessment-data3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab 2 Practice Questions</span></a>
   </div>
 </li>
       </ul>
@@ -438,7 +432,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="learn">
-<p><strong>In this lab,</strong> you will develop a Contact List database application like the one on your phone.</p>
+<p><strong>This page is for reference.</strong></p>
+<p>Review the steps on this page and page two. This has already been completed for you at the start of <a href="../../unit-3/lab-2/3-modifying-adt.html">Page 3</a>.</p>
 <p><strong>On this page,</strong> you will develop an <strong>Abstract Data Type</strong> to store and access <em>contact data</em> (name, address, phone number, etc.).</p>
 </div>
 <div class="takeNote">
@@ -489,13 +484,16 @@ Creating the ADT
 <p>Gamal: Yeah. In this project, we’ll need a <code>contact</code> constructor and then selectors to access the <code>name</code>, <code>address</code>, and <code>phone number</code> for any given contact.</p>
 </div>
 </div>
-::: forYouToDo
+<div class="forYouToDo">
 <ol start="4">
 <li>
-<p>::: sidenoteBig <strong>Shortcut:</strong> You could paste the following text into the “Make a block” window to build the block more quickly.</p>
+<div class="sidenoteBig">
+<p><strong>Shortcut:</strong> You could paste the following text into the “Make a block” window to build the block more quickly.</p>
 <p style="margin-left:25px;">
-</p><p><code>contact with name: %name address: %address phone: %phone</code></p>
-<p>The percent (%) signs make those words become input variables. :::</p>
+<code>contact with name: %name address: %address phone: %phone</code>
+</p>
+<p>The percent (%) signs make those words become input variables.</p>
+</div>
 <p>Create a <code>contact</code> <em>constructor</em> that accepts three pieces of data as input: the contact’s <var>name</var>, <var>phone number</var>, and <var>address</var>. <br> <img src="../../img/3-lists/contact-constructor-untyped.png" title="contact with name: () address: () phone: ()" alt="contact with name: () address: () phone: ()" class="ms-4"><br> It should report one whole contact (a list of the three items):<br> <img src="../../img/3-lists/contact-constructor-reporting.png" title="contact with name: (Betsy Anderson) address: (123 Main St. #4, New York, NY 10001) phone: (212-555-1234) reporting {Betsy Anderson; 123 Main St. #4, New York, NY 10001; 212-555-1234}" alt="contact with name: (Betsy) address: (123 Main St. #4, New York, NY 10001) phone: (212-555-1234) reporting {Betsy Anderson; 123 Main St. #4, New York, NY 10001; 212-555-1234}" class="ms-4"><br></p>
 </li>
 <li>
@@ -527,7 +525,38 @@ First, put the constructor (with input values) inside each selector (as shown ab
 <li>
 <p>Then, use the <code>contact</code> constructor to <code>add</code> a few contacts to your contact list.</p>
 <div class="endnote">
-<p>You can use these examples or make up your own: 31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATgB3AEEANABBAEQASQBBAE8AQQBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBQAEEAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAEkAQQBCAGoAQQBHAHcAQQBZAFEAQgB6AEEASABNAEEAUABRAEEAaQBBAEcASQBBAGIAdwBCAHkAQQBHAFEAQQBaAFEAQgB5AEEARwBVAEEAWgBBAEEAaQBBAEMAQQBBAGMAdwBCADEAQQBHADAAQQBiAFEAQgBoAEEASABJAEEAZQBRAEEAOQBBAEMASQBBAGQAQQBCAG8AQQBIAEkAQQBaAFEAQgBsAEEAQwBBAEEAWgBRAEIANABBAEcARQBBAGIAUQBCAHcAQQBHAHcAQQBaAFEAQQBnAEEARwBNAEEAYgB3AEIAdQBBAEgAUQBBAFkAUQBCAGoAQQBIAFEAQQBjAHcAQQBpAEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBnAEEASQBBAEIAegBBAEcATQBBAGIAdwBCAHcAQQBHAFUAQQBQAFEAQQBpAEEARwBNAEEAYgB3AEIAcwBBAEMASQBBAFAAZwBCAHUAQQBHAEUAQQBiAFEAQgBsAEEARAB3AEEATAB3AEIAMABBAEcAZwBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBvAEEAQwBBAEEAYwB3AEIAagBBAEcAOABBAGMAQQBCAGwAQQBEADAAQQBJAGcAQgBqAEEARwA4AEEAYgBBAEEAaQBBAEQANABBAFkAUQBCAGsAQQBHAFEAQQBjAGcAQgBsAEEASABNAEEAYwB3AEEAOABBAEMAOABBAGQAQQBCAG8AQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYQBBAEEAZwBBAEgATQBBAFkAdwBCAHYAQQBIAEEAQQBaAFEAQQA5AEEAQwBJAEEAWQB3AEIAdgBBAEcAdwBBAEkAZwBBACsAQQBIAEEAQQBhAEEAQgB2AEEARwA0AEEAWgBRAEEAOABBAEMAOABBAGQAQQBCAG8AQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAEkAQQBCAHoAQQBIAFEAQQBlAFEAQgBzAEEARwBVAEEAUABRAEEAaQBBAEgAYwBBAGEAQQBCAHAAQQBIAFEAQQBaAFEAQQB0AEEASABNAEEAYwBBAEIAaABBAEcATQBBAFoAUQBBADYAQQBDAEEAQQBiAGcAQgB2AEEASABjAEEAYwBnAEIAaABBAEgAQQBBAE8AdwBBAGkAQQBEADQAQQBRAGcAQgBsAEEASABRAEEAYwB3AEIANQBBAEMAQQBBAFEAUQBCAHUAQQBHAFEAQQBaAFEAQgB5AEEASABNAEEAYgB3AEIAdQBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEMAQQBBAGMAdwBCADAAQQBIAGsAQQBiAEEAQgBsAEEARAAwAEEASQBnAEIAMwBBAEcAZwBBAGEAUQBCADAAQQBHAFUAQQBMAFEAQgB6AEEASABBAEEAWQBRAEIAagBBAEcAVQBBAE8AZwBBAGcAQQBHADQAQQBiAHcAQgAzAEEASABJAEEAWQBRAEIAdwBBAEQAcwBBAEkAZwBBACsAQQBEAEUAQQBNAGcAQQB6AEEAQwBBAEEAVABRAEIAaABBAEcAawBBAGIAZwBBAGcAQQBGAE0AQQBkAEEAQQB1AEEAQwBBAEEASQB3AEEAMABBAEMAdwBBAEkAQQBCAE8AQQBHAFUAQQBkAHcAQQBnAEEARgBrAEEAYgB3AEIAeQBBAEcAcwBBAEwAQQBBAGcAQQBFADQAQQBXAFEAQQBnAEEARABFAEEATQBBAEEAdwBBAEQAQQBBAE0AUQBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBAGcAQQBIAE0AQQBkAEEAQgA1AEEARwB3AEEAWgBRAEEAOQBBAEMASQBBAGQAdwBCAG8AQQBHAGsAQQBkAEEAQgBsAEEAQwAwAEEAYwB3AEIAdwBBAEcARQBBAFkAdwBCAGwAQQBEAG8AQQBJAEEAQgB1AEEARwA4AEEAZAB3AEIAeQBBAEcARQBBAGMAQQBBADcAQQBDAEkAQQBQAGcAQQB5AEEARABFAEEATQBnAEEAdABBAEQAVQBBAE4AUQBBADEAQQBDADAAQQBNAFEAQQB5AEEARABNAEEATgBBAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAEkAQQBCAHoAQQBIAFEAQQBlAFEAQgBzAEEARwBVAEEAUABRAEEAaQBBAEgAYwBBAGEAQQBCAHAAQQBIAFEAQQBaAFEAQQB0AEEASABNAEEAYwBBAEIAaABBAEcATQBBAFoAUQBBADYAQQBDAEEAQQBiAGcAQgB2AEEASABjAEEAYwBnAEIAaABBAEgAQQBBAE8AdwBBAGkAQQBEADQAQQBRAFEAQgBzAEEASABBAEEAYQBBAEIAcABBAEcAVQBBAEkAQQBCAFEAQQBIAEkAQQBaAFEAQgB6AEEASABRAEEAYgB3AEIAdQBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEMAQQBBAGMAdwBCADAAQQBIAGsAQQBiAEEAQgBsAEEARAAwAEEASQBnAEIAMwBBAEcAZwBBAGEAUQBCADAAQQBHAFUAQQBMAFEAQgB6AEEASABBAEEAWQBRAEIAagBBAEcAVQBBAE8AZwBBAGcAQQBHADQAQQBiAHcAQgAzAEEASABJAEEAWQBRAEIAdwBBAEQAcwBBAEkAZwBBACsAQQBEAEUAQQBOAEEAQQA1AEEAQwBBAEEAUgBRAEEAdQBBAEMAQQBBAE0AUQBBADIAQQBIAFEAQQBhAEEAQQBnAEEARQBFAEEAZABnAEIAbABBAEMANABBAEwAQQBBAGcAQQBGAE0AQQBkAFEAQgB1AEEARwA0AEEAZQBRAEIAMgBBAEcARQBBAGIAQQBCAGwAQQBDAHcAQQBJAEEAQgBEAEEARQBFAEEASQBBAEEANQBBAEQAUQBBAE0AQQBBADQAQQBEAGsAQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBJAEEAQgB6AEEASABRAEEAZQBRAEIAcwBBAEcAVQBBAFAAUQBBAGkAQQBIAGMAQQBhAEEAQgBwAEEASABRAEEAWgBRAEEAdABBAEgATQBBAGMAQQBCAGgAQQBHAE0AQQBaAFEAQQA2AEEAQwBBAEEAYgBnAEIAdgBBAEgAYwBBAGMAZwBCAGgAQQBIAEEAQQBPAHcAQQBpAEEARAA0AEEATgBBAEEAdwBBAEQAZwBBAEwAUQBBADEAQQBEAFUAQQBOAFEAQQB0AEEARABZAEEATgB3AEEANABBAEQAawBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEEAdgBBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBDAEEAQQBjAHcAQgAwAEEASABrAEEAYgBBAEIAbABBAEQAMABBAEkAZwBCADMAQQBHAGcAQQBhAFEAQgAwAEEARwBVAEEATABRAEIAegBBAEgAQQBBAFkAUQBCAGoAQQBHAFUAQQBPAGcAQQBnAEEARwA0AEEAYgB3AEIAMwBBAEgASQBBAFkAUQBCAHcAQQBEAHMAQQBJAGcAQQArAEEARQBjAEEAWQBRAEIAdABBAEcARQBBAGIAQQBBAGcAQQBFAEUAQQBZAGcAQgBrAEEARwBVAEEAYgBBAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAZwBBAEgATQBBAGQAQQBCADUAQQBHAHcAQQBaAFEAQQA5AEEAQwBJAEEAZAB3AEIAbwBBAEcAawBBAGQAQQBCAGwAQQBDADAAQQBjAHcAQgB3AEEARwBFAEEAWQB3AEIAbABBAEQAbwBBAEkAQQBCAHUAQQBHADgAQQBkAHcAQgB5AEEARwBFAEEAYwBBAEEANwBBAEMASQBBAFAAZwBBAHoAQQBEAFkAQQBPAFEAQQBnAEEARQBNAEEAWgBRAEIAdQBBAEgAUQBBAFoAUQBCAHkAQQBDAEEAQQBVAHcAQgAwAEEAQwA0AEEATABBAEEAZwBBAEUASQBBAGIAdwBCAHoAQQBIAFEAQQBiAHcAQgB1AEEAQwB3AEEASQBBAEIATgBBAEUARQBBAEkAQQBBAHcAQQBEAEkAQQBNAFEAQQB6AEEARABBAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEASQBBAEIAegBBAEgAUQBBAGUAUQBCAHMAQQBHAFUAQQBQAFEAQQBpAEEASABjAEEAYQBBAEIAcABBAEgAUQBBAFoAUQBBAHQAQQBIAE0AQQBjAEEAQgBoAEEARwBNAEEAWgBRAEEANgBBAEMAQQBBAGIAZwBCAHYAQQBIAGMAQQBjAGcAQgBoAEEASABBAEEATwB3AEEAaQBBAEQANABBAE4AZwBBAHgAQQBEAGMAQQBMAFEAQQAxAEEARABVAEEATgBRAEEAdABBAEQARQBBAE0AQQBBADUAQQBEAGcAQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBBAHYAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEEAdgBBAEgAUQBBAFkAUQBCAGkAQQBHAHcAQQBaAFEAQQArAEEAQQA9AD0ACgBzAHUAZgBmAGkAeAA6AA==:31b8e172-b470-440e-83d8-e6b185028602</p>
+<p>You can use these examples or make up your own:</p>
+<table class="table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 56%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>name</th>
+<th>address</th>
+<th>phone</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Betsy Anderson</td>
+<td>123 Main St.&nbsp;#4, New York, NY 10001</td>
+<td>212-555-1234</td>
+</tr>
+<tr class="even">
+<td>Alphie Preston</td>
+<td>149 E. 16th Ave., Sunnyvale, CA 94089</td>
+<td>408-555-6789</td>
+</tr>
+<tr class="odd">
+<td>Gamal Abdel</td>
+<td>369 Center St., Boston, MA 02130</td>
+<td>617-555-1098</td>
+</tr>
+</tbody>
+</table>
 </div>
 </li>
 <li>
@@ -552,7 +581,7 @@ Try selecting the <code>name</code>, <code>address</code>, or <code>phone</code>
 <img src="../../img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"> Write down how the use of an abstract data type helps manage complexity in your program.
 </li>
 </ol>
-<p>:::</p>
+</div>
 
 
 
@@ -921,8 +950,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../unit-3/lab-1/6-debugging-recap.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Page 6: Debugging Recap</span>
+      <a href="../../unit-3/lab-2/index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lab 2: Contact List</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

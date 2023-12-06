@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../unit-3/lab-3/1-find-ties.html" rel="next">
-<link href="../../unit-3/lab-2/5-mapping-over-list.html" rel="prev">
+<link href="../../unit-3/lab-2/1-build-the-list.html" rel="next">
+<link href="../../unit-3/lab-1/6-debugging-recap.html" rel="prev">
 <link href="../..//img/jac.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -163,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-3/index.html">Unit 3: Data Structures</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-2/1-build-the-list.html">Lab 2</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-2/assessment-data3.html">Lab 2 Practice Questions</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unit-3/index.html">Unit 3: Data Structures</a></li><li class="breadcrumb-item"><a href="../../unit-3/lab-2/index.html">Lab 2: Contact List</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -233,8 +233,8 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
- <span class="menu-text">Lab 2</span></a>
+            <a href="../../unit-3/lab-2/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Lab 2: Contact List</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -268,12 +268,6 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../../unit-3/lab-2/5-mapping-over-list.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Page 5: Transforming Every List Item</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-3/lab-2/assessment-data3.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Lab 2 Practice Questions</span></a>
   </div>
 </li>
       </ul>
@@ -421,7 +415,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lab 2 Practice Questions</h1>
+<h1 class="title">Lab 2: Contact List</h1>
 <p class="subtitle lead">Unit 3, Lab 2</p>
 </div>
 
@@ -437,509 +431,9 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="assessment-data" type="multiplechoice" data-identifier="mapLetterVsItem" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="resp1" data-shuffle="false">
-<p><a href="https://bjc.berkeley.edu/3-lists/2-contact-list/5-mapping-over-list.html">3.2.5</a></p>
-<div class="prompt">
-<p>Which of the following statements are true about this list?<br></p>
-<p><img src="../../img/3-lists/words_numbers.png" title="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" alt="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" class="ms-4"><br></p>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p><img src="../../img/3-lists/check2mapc1.png" title="map (letter (1) of ()) over (words and numbers)" alt="map (letter (1) of ()) over (words and numbers)" border="0"> reports the list {r, 5, b, i, 3, k, 2, 3, t, 6}.</p>
-</div>
-<div class="feedback">
-<p>Correct.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c2">
-<div class="text">
-<p><img src="../../img/3-lists/check2mapc2.png" title="map (item (1) of ()) over (words and numbers)" alt="map (item (1) of ()) over (words and numbers)" border="0"> reports the list {rabbit}.</p>
-</div>
-<div class="feedback">
-<p>The blank space in <code>item of</code> expects a list as its input, but <code>map</code> puts a single item from <var>words and numbers</var> into that slot.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c3">
-<div class="text">
-<p>Both of the above.</p>
-</div>
-<div class="feedback">
-<p>The input list (<var>words and numbers</var>) contains text strings (not lists) so the blank space in the input function should expect a text string (not a list).</p>
-</div>
-</div>
-<div class="choice" data-identifier="c4">
-<div class="text">
-<p>None of the above.</p>
-</div>
-<div class="feedback">
-<p><code>Map</code> performs the input function over each item in the input list.</p>
-</div>
-</div>
-<div class="responseDeclaration" data-identifier="resp1">
-<div class="correctResponse" data-identifier="c1">
-
-</div>
-</div>
-</div>
-<div class="assessment-data" type="multiplechoice" data-identifier="mapLetterVsItem" data-hasinlinefeedback="true" data-maxchoices="5" data-responseidentifier="resp2" data-shuffle="false">
-<p><a href="https://bjc.berkeley.edu/3-lists/2-contact-list/5-mapping-over-list.html">3.2.5</a></p>
-<div class="prompt">
-<p>Which of the following statements are true about this list?<br></p>
-<p><img src="../../img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="ms-4"><br></p>
-<p>Choose <strong>all</strong> that apply.</p>
-<div class="endnote">
-<p><a href="#hint-capital-adt" data-bs-toggle="collapse" title="Why not use an ADT?">Why not use an ADT?</a></p>
-<div id="hint-capital-adt" class="collapse">
-<p>The list inside a list shown above makes it clearest to you now as you answer this self-check item what the structure is, but you’re right, in an actual program it would be better to use an abstract data type:<br></p>
-<p><img src="../../img/3-lists/capitals-adt-reporting.png" title="state: (Augusta) capital: (Maine)" alt="state: (Augusta) capital: (Maine)" class="ms-4"></p>
-</div>
-</div>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p><img src="../../img/3-lists/check2mapc3.png" title="map (item (1) of ()) over (capitals)" alt="map (item (1) of ()) over (capitals)" border="0"> reports the list {Augusta, Boise, Columbia, Des Moines}.</p>
-</div>
-<div class="feedback">
-<p>Correct.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c2">
-<div class="text">
-<p><img src="../../img/3-lists/check2mapc3.png" title="map (item (1) of ()) over (capitals)" alt="map (item (1) of ()) over (capitals)" border="0"> reports the list {Augusta, Maine}.</p>
-</div>
-<div class="feedback">
-<p>No.&nbsp;<code>Map</code> performs the input function on <em>each item of the list</em>—not on the whole list. The expression <code>item (1) of (capitals)</code> (without using <code>map</code> at all) would report the list {Augusta, Maine}.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c3">
-<div class="text">
-<p><img src="../../img/3-lists/check2mapc4.png" title="map (letter (1) of ()) over (capitals)" alt="map (letter (1) of ()) over (capitals)" border="0"> reports the list {A, B, C, D}.</p>
-</div>
-<div class="feedback">
-<p>No.&nbsp;You can find the first letter of a word, but not the first letter of a list. The expression <code>map (letter (1) of (item (1) of ( ))) over (capitals)</code> would report the list {A, B, C, D}.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c4">
-<div class="text">
-<p><img src="../../img/3-lists/check2mapc5.png" title="map (all but first of ()) over (capitals)" alt="map (all but first of ()) over (capitals)" border="0"> reports the list {Maine, Idaho, South Carolina, Iowa}.</p>
-</div>
-<div class="feedback">
-<p>No.&nbsp;This is a tricky one. What gets reported is actually a list of one-item lists: {{Maine}, {Idaho}, {South Carolina}, {Iowa}}. You might want to try it in Snap<em>!</em>. The expression <code>map (item (2) of ()) over (capitals)</code> would report the list {Maine, Idaho, South Carolina, Iowa}.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c5">
-<div class="text">
-<p><img src="../../img/3-lists/check2mapc5.png" title="map (all but first of ()) over (capitals)" alt="map (all but first of ()) over (capitals)" border="0"> reports the list {{Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}.</p>
-</div>
-<div class="feedback">
-<p>No.&nbsp;<code>Map</code> performs the input function on <em>each item of the list</em>—not on the whole list. The expression <code>all but first of (capitals)</code> (without using <code>map</code> at all) would report the list of lists {{Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}.</p>
-</div>
-</div>
-<div class="responseDeclaration" data-identifier="resp2">
-<div class="correctResponse" data-identifier="c1">
-
-</div>
-</div>
-</div>
-<div class="assessment-data" type="multiplechoice" data-identifier="squares_mapkeepcombine" data-hasinlinefeedback="true" data-maxchoices="8" data-responseidentifier="resp1" data-shuffle="true">
-<p><a href="https://bjc.berkeley.edu/3-lists/2-contact-list/5-mapping-over-list.html">3.2.5</a></p>
-<div class="prompt">
-<p>Consider this list of squares: <br></p>
-<p><img src="../../img/3-lists/squares.png" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" class="ms-4"><br></p>
-<p>Which of the following expressions will report a list?</p>
-<p>Choose all that apply.</p>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p><img src="../../img/3-lists/check2squares1c1.png" title="map (sqrt of()) over (squares)" alt="map (sqrt of()) over (squares)" border="0"></p>
-</div>
-<div class="feedback">
-<p>Correct.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p><img src="../../img/3-lists/check2squares1c2.png" title="keep items (()mod(2)=0) from (squares)" alt="keep items (()mod(2)=0) from (squares)" border="0"></p>
-</div>
-<div class="feedback">
-<p>Correct.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c2">
-<div class="text">
-<p><img src="../../img/3-lists/check2squares1c3.png" title="combine (squares) using (()+())" alt="combine (squares) using (()+())" border="0"></p>
-</div>
-<div class="feedback">
-<p>No, + reports a number, so in this case <code>combine</code> will report a number.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p><img src="../../img/3-lists/check2squares1c4.png" title="keep items (letter (length of ()) of () = 1) from (squares)" alt="keep items (letter (length of ()) of () = 1) from (squares)" border="0"></p>
-</div>
-<div class="feedback">
-<p>Correct.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c3">
-<div class="text">
-<p><img src="../../img/3-lists/check2squares1c6.png" title="combine using (join ()()) items of (squares)" alt="combine (squares) using (join ()()) items of" border="0"></p>
-</div>
-<div class="feedback">
-<p>No.&nbsp;<code>join</code>(1,4) will report 14.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p><img src="../../img/3-lists/check2squares1c7.png" title="map ((0)-()) over (squares)" alt="map ((0)-()) over (squares)" border="0"></p>
-</div>
-<div class="feedback">
-<p>Correct.</p>
-</div>
-</div>
-<div class="responseDeclaration" data-identifier="resp1">
-<div class="correctResponse" data-identifier="c1">
-
-</div>
-</div>
-</div>
-<h3 class="anchored">
-Lab 2: Contact List
-</h3>
-<div class="assessment-data" type="multiplechoice" data-identifier="mapLetterVsItem" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="resp1" data-shuffle="false">
-<p><a href="https://bjc.berkeley.edu/3-lists/2-contact-list/5-mapping-over-list.html">3.2.5</a></p>
-<div class="prompt">
-<p>Which of the following statements are true about this list?<br></p>
-<p><img src="../../img/3-lists/words_numbers.png" title="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" alt="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" class="ms-4"><br></p>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p><img src="../../img/3-lists/check2mapc1.png" title="map (letter (1) of ()) over (words and numbers)" alt="map (letter (1) of ()) over (words and numbers)" border="0"> reports the list {r, 5, b, i, 3, k, 2, 3, t, 6}.</p>
-</div>
-<div class="feedback">
-<p>Correct.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c2">
-<div class="text">
-<p><img src="../../img/3-lists/check2mapc2.png" title="map (item (1) of ()) over (words and numbers)" alt="map (item (1) of ()) over (words and numbers)" border="0"> reports the list {rabbit}.</p>
-</div>
-<div class="feedback">
-<p>The blank space in <code>item of</code> expects a list as its input, but <code>map</code> puts a single item from <var>words and numbers</var> into that slot.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c3">
-<div class="text">
-<p>Both of the above.</p>
-</div>
-<div class="feedback">
-<p>The input list (<var>words and numbers</var>) contains text strings (not lists) so the blank space in the input function should expect a text string (not a list).</p>
-</div>
-</div>
-<div class="choice" data-identifier="c4">
-<div class="text">
-<p>None of the above.</p>
-</div>
-<div class="feedback">
-<p><code>Map</code> performs the input function over each item in the input list.</p>
-</div>
-</div>
-<div class="responseDeclaration" data-identifier="resp1">
-<div class="correctResponse" data-identifier="c1">
-
-</div>
-</div>
-</div>
-<div class="assessment-data" type="multiplechoice" data-identifier="mapLetterVsItem" data-hasinlinefeedback="true" data-maxchoices="5" data-responseidentifier="resp2" data-shuffle="false">
-<p><a href="https://bjc.berkeley.edu/3-lists/2-contact-list/5-mapping-over-list.html">3.2.5</a></p>
-<div class="prompt">
-<p>Which of the following statements are true about this list?<br></p>
-<p><img src="../../img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="ms-4"><br></p>
-<p>Choose <strong>all</strong> that apply.</p>
-<div class="endnote">
-<p><a href="#hint-capital-adt" data-bs-toggle="collapse" title="Why not use an ADT?">Why not use an ADT?</a></p>
-<div class="collapse">
-<p>The list inside a list shown above makes it clearest to you now as you answer this self-check item what the structure is, but you’re right, in an actual program it would be better to use an abstract data type:<br></p>
-<p><img src="../../img/3-lists/capitals-adt-reporting.png" title="state: (Augusta) capital: (Maine)" alt="state: (Augusta) capital: (Maine)" class="ms-4"></p>
-</div>
-</div>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p><img src="../../img/3-lists/check2mapc3.png" title="map (item (1) of ()) over (capitals)" alt="map (item (1) of ()) over (capitals)" border="0"> reports the list {Augusta, Boise, Columbia, Des Moines}.</p>
-</div>
-<div class="feedback">
-<p>Correct.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c2">
-<div class="text">
-<p><img src="../../img/3-lists/check2mapc3.png" title="map (item (1) of ()) over (capitals)" alt="map (item (1) of ()) over (capitals)" border="0"> reports the list {Augusta, Maine}.</p>
-</div>
-<div class="feedback">
-<p>No.&nbsp;<code>Map</code> performs the input function on <em>each item of the list</em>—not on the whole list. The expression <code>item (1) of (capitals)</code> (without using <code>map</code> at all) would report the list {Augusta, Maine}.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c3">
-<div class="text">
-<p><img src="../../img/3-lists/check2mapc4.png" title="map (letter (1) of ()) over (capitals)" alt="map (letter (1) of ()) over (capitals)" border="0"> reports the list {A, B, C, D}.</p>
-</div>
-<div class="feedback">
-<p>No.&nbsp;You can find the first letter of a word, but not the first letter of a list. The expression <code>map (letter (1) of (item (1) of ( ))) over (capitals)</code> would report the list {A, B, C, D}.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c4">
-<div class="text">
-<p><img src="../../img/3-lists/check2mapc5.png" title="map (all but first of ()) over (capitals)" alt="map (all but first of ()) over (capitals)" border="0"> reports the list {Maine, Idaho, South Carolina, Iowa}.</p>
-</div>
-<div class="feedback">
-<p>No.&nbsp;This is a tricky one. What gets reported is actually a list of one-item lists: {{Maine}, {Idaho}, {South Carolina}, {Iowa}}. You might want to try it in Snap<em>!</em>. The expression <code>map (item (2) of ()) over (capitals)</code> would report the list {Maine, Idaho, South Carolina, Iowa}.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c5">
-<div class="text">
-<p><img src="../../img/3-lists/check2mapc5.png" title="map (all but first of ()) over (capitals)" alt="map (all but first of ()) over (capitals)" border="0"> reports the list {{Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}.</p>
-</div>
-<div class="feedback">
-<p>No.&nbsp;<code>Map</code> performs the input function on <em>each item of the list</em>—not on the whole list. The expression <code>all but first of (capitals)</code> (without using <code>map</code> at all) would report the list of lists {{Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}.</p>
-</div>
-</div>
-<div class="responseDeclaration" data-identifier="resp2">
-<div class="correctResponse" data-identifier="c1">
-
-</div>
-</div>
-</div>
-<div class="assessment-data" type="multiplechoice" data-identifier="squares_mapkeepcombine" data-hasinlinefeedback="true" data-maxchoices="8" data-responseidentifier="resp1" data-shuffle="true">
-<p><a href="https://bjc.berkeley.edu/3-lists/2-contact-list/5-mapping-over-list.html">3.2.5</a></p>
-<div class="prompt">
-<p>Consider this list of squares: <br></p>
-<p><img src="../../img/3-lists/squares.png" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" class="ms-4"><br></p>
-<p>Which of the following expressions will report a list?</p>
-<p>Choose all that apply.</p>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p><img src="../../img/3-lists/check2squares1c1.png" title="map (sqrt of()) over (squares)" alt="map (sqrt of()) over (squares)" border="0"></p>
-</div>
-<div class="feedback">
-<p>Correct.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p><img src="../../img/3-lists/check2squares1c2.png" title="keep items (()mod(2)=0) from (squares)" alt="keep items (()mod(2)=0) from (squares)" border="0"></p>
-</div>
-<div class="feedback">
-<p>Correct.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c2">
-<div class="text">
-<p><img src="../../img/3-lists/check2squares1c3.png" title="combine (squares) using (()+())" alt="combine (squares) using (()+())" border="0"></p>
-</div>
-<div class="feedback">
-<p>No, + reports a number, so in this case <code>combine</code> will report a number.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p><img src="../../img/3-lists/check2squares1c4.png" title="keep items (letter (length of ()) of () = 1) from (squares)" alt="keep items (letter (length of ()) of () = 1) from (squares)" border="0"></p>
-</div>
-<div class="feedback">
-<p>Correct.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c3">
-<div class="text">
-<p><img src="../../img/3-lists/check2squares1c6.png" title="combine using (join ()()) items of (squares)" alt="combine (squares) using (join ()()) items of" border="0"></p>
-</div>
-<div class="feedback">
-<p>No.&nbsp;<code>join</code>(1,4) will report 14.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p><img src="../../img/3-lists/check2squares1c7.png" title="map ((0)-()) over (squares)" alt="map ((0)-()) over (squares)" border="0"></p>
-</div>
-<div class="feedback">
-<p>Correct.</p>
-</div>
-</div>
-<div class="responseDeclaration" data-identifier="resp1">
-<div class="correctResponse" data-identifier="c1">
-
-</div>
-</div>
-</div>
-<h3 class="anchored">
-Lab 2: Contact List
-</h3>
-<div class="assessment-data" type="multiplechoice" data-identifier="mapLetterVsItem" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="resp1" data-shuffle="false">
-<p><a href="https://bjc.berkeley.edu/3-lists/2-contact-list/5-mapping-over-list.html">3.2.5</a></p>
-<div class="prompt">
-<p>Which of the following statements are true about this list?<br></p>
-<p><img src="../../img/3-lists/words_numbers.png" title="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" alt="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" class="ms-4"><br></p>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p><img src="../../img/3-lists/check2mapc1.png" title="map (letter (1) of ()) over (words and numbers)" alt="map (letter (1) of ()) over (words and numbers)" border="0"> reports the list {r, 5, b, i, 3, k, 2, 3, t, 6}.</p>
-</div>
-<div class="feedback">
-<p>Correct.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c2">
-<div class="text">
-<p><img src="../../img/3-lists/check2mapc2.png" title="map (item (1) of ()) over (words and numbers)" alt="map (item (1) of ()) over (words and numbers)" border="0"> reports the list {rabbit}.</p>
-</div>
-<div class="feedback">
-<p>The blank space in <code>item of</code> expects a list as its input, but <code>map</code> puts a single item from <var>words and numbers</var> into that slot.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c3">
-<div class="text">
-<p>Both of the above.</p>
-</div>
-<div class="feedback">
-<p>The input list (<var>words and numbers</var>) contains text strings (not lists) so the blank space in the input function should expect a text string (not a list).</p>
-</div>
-</div>
-<div class="choice" data-identifier="c4">
-<div class="text">
-<p>None of the above.</p>
-</div>
-<div class="feedback">
-<p><code>Map</code> performs the input function over each item in the input list.</p>
-</div>
-</div>
-<div class="responseDeclaration" data-identifier="resp1">
-<div class="correctResponse" data-identifier="c1">
-
-</div>
-</div>
-</div>
-<div class="assessment-data" type="multiplechoice" data-identifier="mapLetterVsItem" data-hasinlinefeedback="true" data-maxchoices="5" data-responseidentifier="resp2" data-shuffle="false">
-<p><a href="https://bjc.berkeley.edu/3-lists/2-contact-list/5-mapping-over-list.html">3.2.5</a></p>
-<div class="prompt">
-<p>Which of the following statements are true about this list?<br></p>
-<p><img src="../../img/3-lists/check1capitals.png" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" class="ms-4"><br></p>
-<p>Choose <strong>all</strong> that apply.</p>
-<div class="endnote">
-<p><a href="#hint-capital-adt" data-bs-toggle="collapse" title="Why not use an ADT?">Why not use an ADT?</a></p>
-<div class="collapse">
-<p>The list inside a list shown above makes it clearest to you now as you answer this self-check item what the structure is, but you’re right, in an actual program it would be better to use an abstract data type:<br></p>
-<p><img src="../../img/3-lists/capitals-adt-reporting.png" title="state: (Augusta) capital: (Maine)" alt="state: (Augusta) capital: (Maine)" class="ms-4"></p>
-</div>
-</div>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p><img src="../../img/3-lists/check2mapc3.png" title="map (item (1) of ()) over (capitals)" alt="map (item (1) of ()) over (capitals)" border="0"> reports the list {Augusta, Boise, Columbia, Des Moines}.</p>
-</div>
-<div class="feedback">
-<p>Correct.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c2">
-<div class="text">
-<p><img src="../../img/3-lists/check2mapc3.png" title="map (item (1) of ()) over (capitals)" alt="map (item (1) of ()) over (capitals)" border="0"> reports the list {Augusta, Maine}.</p>
-</div>
-<div class="feedback">
-<p>No.&nbsp;<code>Map</code> performs the input function on <em>each item of the list</em>—not on the whole list. The expression <code>item (1) of (capitals)</code> (without using <code>map</code> at all) would report the list {Augusta, Maine}.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c3">
-<div class="text">
-<p><img src="../../img/3-lists/check2mapc4.png" title="map (letter (1) of ()) over (capitals)" alt="map (letter (1) of ()) over (capitals)" border="0"> reports the list {A, B, C, D}.</p>
-</div>
-<div class="feedback">
-<p>No.&nbsp;You can find the first letter of a word, but not the first letter of a list. The expression <code>map (letter (1) of (item (1) of ( ))) over (capitals)</code> would report the list {A, B, C, D}.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c4">
-<div class="text">
-<p><img src="../../img/3-lists/check2mapc5.png" title="map (all but first of ()) over (capitals)" alt="map (all but first of ()) over (capitals)" border="0"> reports the list {Maine, Idaho, South Carolina, Iowa}.</p>
-</div>
-<div class="feedback">
-<p>No.&nbsp;This is a tricky one. What gets reported is actually a list of one-item lists: {{Maine}, {Idaho}, {South Carolina}, {Iowa}}. You might want to try it in Snap<em>!</em>. The expression <code>map (item (2) of ()) over (capitals)</code> would report the list {Maine, Idaho, South Carolina, Iowa}.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c5">
-<div class="text">
-<p><img src="../../img/3-lists/check2mapc5.png" title="map (all but first of ()) over (capitals)" alt="map (all but first of ()) over (capitals)" border="0"> reports the list {{Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}.</p>
-</div>
-<div class="feedback">
-<p>No.&nbsp;<code>Map</code> performs the input function on <em>each item of the list</em>—not on the whole list. The expression <code>all but first of (capitals)</code> (without using <code>map</code> at all) would report the list of lists {{Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}.</p>
-</div>
-</div>
-<div class="responseDeclaration" data-identifier="resp2">
-<div class="correctResponse" data-identifier="c1">
-
-</div>
-</div>
-</div>
-<div class="assessment-data" type="multiplechoice" data-identifier="squares_mapkeepcombine" data-hasinlinefeedback="true" data-maxchoices="8" data-responseidentifier="resp1" data-shuffle="true">
-<p><a href="https://bjc.berkeley.edu/3-lists/2-contact-list/5-mapping-over-list.html">3.2.5</a></p>
-<div class="prompt">
-<p>Consider this list of squares: <br></p>
-<p><img src="../../img/3-lists/squares.png" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" class="ms-4"><br></p>
-<p>Which of the following expressions will report a list?</p>
-<p>Choose all that apply.</p>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p><img src="../../img/3-lists/check2squares1c1.png" title="map (sqrt of()) over (squares)" alt="map (sqrt of()) over (squares)" border="0"></p>
-</div>
-<div class="feedback">
-<p>Correct.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p><img src="../../img/3-lists/check2squares1c2.png" title="keep items (()mod(2)=0) from (squares)" alt="keep items (()mod(2)=0) from (squares)" border="0"></p>
-</div>
-<div class="feedback">
-<p>Correct.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c2">
-<div class="text">
-<p><img src="../../img/3-lists/check2squares1c3.png" title="combine (squares) using (()+())" alt="combine (squares) using (()+())" border="0"></p>
-</div>
-<div class="feedback">
-<p>No, + reports a number, so in this case <code>combine</code> will report a number.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p><img src="../../img/3-lists/check2squares1c4.png" title="keep items (letter (length of ()) of () = 1) from (squares)" alt="keep items (letter (length of ()) of () = 1) from (squares)" border="0"></p>
-</div>
-<div class="feedback">
-<p>Correct.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c3">
-<div class="text">
-<p><img src="../../img/3-lists/check2squares1c6.png" title="combine using (join ()()) items of (squares)" alt="combine (squares) using (join ()()) items of" border="0"></p>
-</div>
-<div class="feedback">
-<p>No.&nbsp;<code>join</code>(1,4) will report 14.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p><img src="../../img/3-lists/check2squares1c7.png" title="map ((0)-()) over (squares)" alt="map ((0)-()) over (squares)" border="0"></p>
-</div>
-<div class="feedback">
-<p>Correct.</p>
-</div>
-</div>
-<div class="responseDeclaration" data-identifier="resp1">
-<div class="correctResponse" data-identifier="c1">
-
-</div>
-</div>
+<div class="learn">
+<p><strong>In this lab,</strong> you will develop a Contact List database application like the one on your phone.</p>
+<p>You will start coding on Page 3, the work for Page 1 and Page 2 has been done for you. Take a few minutes to acclimate yourself with what has been done for you already for you at the start of <a href="../../unit-3/lab-2/3-modifying-adt.html">Page 3</a> by reading through Page 1 and 2.</p>
 </div>
 
 
@@ -1309,13 +803,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../unit-3/lab-2/5-mapping-over-list.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Page 5: Transforming Every List Item</span>
+      <a href="../../unit-3/lab-1/6-debugging-recap.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Page 6: Debugging Recap</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../unit-3/lab-3/1-find-ties.html" class="pagination-link">
-        <span class="nav-page-text">Page 1: Remembering the Moves and Possible Wins</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../unit-3/lab-2/1-build-the-list.html" class="pagination-link">
+        <span class="nav-page-text">Page 1: Creating the Contact ADT</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
