@@ -212,5 +212,7 @@ game.</li>
 <li>Play the game a few times to check that it's working, and fix any
 bugs. Be sure to let each player win at least once.</li>
 
+<li>{{< checkpoint id='1FAIpQLScn6xjgrEyeMyGzHys4ZEcHNQ0cYK9nD-tVMqhJTjuTyGJpNw' >}} </li>
+
 </ol>
 :::

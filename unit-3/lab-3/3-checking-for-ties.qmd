@@ -84,5 +84,7 @@ by the time you know there's a win, you no longer know which triple
 triggered it. Make sure your code stays readable to another
 programmer.</li>
 
+<li>{{< checkpoint id='1FAIpQLSd9KvKupqJa2gPnhaeiUiHnAQZtBKKGbotIjNt7aUmphSGUtg' >}} </li>
+
 </ol>
 :::
