@@ -53,6 +53,8 @@ You can work on this project more in
 
 <li><img src="/img/icons/save-use-later.png" title="Save. You will use this later." alt="Save. You will use this later." class="inline"/></li>
 
+<li>{{< checkpoint id='1FAIpQLSd9KvKupqJa2gPnhaeiUiHnAQZtBKKGbotIjNt7aUmphSGUtg' >}} </li>
+
 </ol>
 :::
 
@@ -84,7 +86,7 @@ by the time you know there's a win, you no longer know which triple
 triggered it. Make sure your code stays readable to another
 programmer.</li>
 
-<li>{{< checkpoint id='1FAIpQLSd9KvKupqJa2gPnhaeiUiHnAQZtBKKGbotIjNt7aUmphSGUtg' >}} </li>
+
 
 </ol>
 :::
