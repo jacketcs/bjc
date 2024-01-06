@@ -13,59 +13,49 @@ actual game that was played on the 1970's game show Let's Make a Deal, hosted by
 :::
 
 
+This game is played as follows: there are three doors, labeled Door 1, Door 2 and Door 3. Behind two of the doors (random), there are goats (or some non desireable prize) and the third door hides a car. The player will first click 
+on one door to select it. Before the door is opened to reveal what's behind it, the host will open a different door to reveal a goat (there is always at least one goat the player did not pick that can be revealed), and ask the player if they want to switch to the remaining unopened door, or stick with there original choice. 
 
-This design uses straight lines to make shapes that look curved and is
-sometimes sewn with thread or drawn on paper. Here are some examples of
-and variations on this design made with string, computers, pencils on
-paper, and even pencils glued together:
+Once the player makes this choice, the door they ultimately chose will be opened and they will see if they won a goat or a car. 
 
 <ul>
 
-<li><a href="https://en.wikipedia.org/wiki/Monty_Hall_problem#:~:text=An%20intuitive%20explanation%20is%20that,the%20contestant%20will%20not%20win" title="Wikipedia article on the Monty Hall Problem" target="_blank">"Wikipedia article on the Monty Hall Problem"</a></li>
-
+<li><a href="https://en.wikipedia.org/wiki/Monty_Hall_problem#:~:text=An%20intuitive%20explanation%20is%20that,the%20contestant%20will%20not%20win" title="Wikipedia article on The Monty Hall Problem and its history" target="_blank">Wikidpedia article on the Monty Hall Problem and its history</a></li>
 
 </ul>
-
-
 
 ::: forYouToDo
 <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/>
 
 <ol>
 
-<li>With your partner discuss how to make this design. Develop an
-<em>algorithm</em> that will generate the first quadrant of the design
-and then use <em>abstraction</em> to extend the design to the other
-quadrants.</li>
+<li>With your partner discuss the steps required to make this program work. Divide it into several stages of development and identify what techniques you could use for each part (i.e. lists, clones, broadcasts, specific blocks).</li>
 
 <li>
 
 Write a Snap<em>!</em> program to generate the design.
 
-::: todo
-Mary and Brian want to rewrite this page so that it's not using fixed
-coordinates but is "turtly." --MF, 9/7/18
-:::
 
-::: endnote
-<a href="#hint-coordinates" data-bs-toggle="collapse" title="Click for a hint about setting up the design.">Click
-for a hint about setting up the design.</a>
+<a href="#hint-coordinates" data-bs-toggle="collapse" title="Click for a hint about one way to organize the project.">Click
+for a suggestion of how to organize the different stages of the program.</a>
 
 ::: {#hint-coordinates .collapse}
-Below is a partial table of coordinates for the first quadrant of the
-design, showing which points on the y-axis are joined to which points on
-the x-axis.<br />
-<img src="/img/3-lists/Astrid_img/Q1.png" title="axes with first quadrant of design" alt="axes with first quadrant of design" class="ms-4" style="float:left; margin-right: 100px;" height="250"/>
+1. Doors appear (<i>Green flag</i> script creates clones)
+2. Use clicks on one door (<i>when I am clicked</i> script selects door, triggers host action)
+3. Different door is opened - one with a goat behind it (how to figure out which door to open? What script should determine which door is opened?)
+4. Host asks user if they want to swtich or not (ask block with options list)
+5. Host opens door the user chose (original or switched door) and announces what they won.
 
-31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATgBBAEEAeABBAEQAawBBAE8AQQBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBQAEEAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAEkAQQBCAGoAQQBHAHcAQQBZAFEAQgB6AEEASABNAEEAUABRAEEAaQBBAEcASQBBAGIAdwBCAHkAQQBHAFEAQQBaAFEAQgB5AEEARwBVAEEAWgBBAEEAaQBBAEMAQQBBAGMAdwBCADAAQQBIAGsAQQBiAEEAQgBsAEEARAAwAEEASQBnAEIAdABBAEcARQBBAGMAZwBCAG4AQQBHAGsAQQBiAGcAQQB0AEEARwB3AEEAWgBRAEIAbQBBAEgAUQBBAE8AZwBBAGcAQQBEAEUAQQBNAEEAQQBsAEEARABzAEEASQBnAEEAZwBBAEgATQBBAGQAUQBCAHQAQQBHADAAQQBZAFEAQgB5AEEASABrAEEAUABRAEEAaQBBAEgATQBBAGQAUQBCAG4AQQBHAGMAQQBaAFEAQgB6AEEASABRAEEAWgBRAEIAawBBAEMAQQBBAGMAQQBCAHYAQQBHAGsAQQBiAGcAQgAwAEEASABNAEEASQBBAEIAbQBBAEcAOABBAGMAZwBBAGcAQQBHAFEAQQBaAFEAQgB6AEEARwBrAEEAWgB3AEIAdQBBAEMASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAGEAQQBBAGcAQQBIAE0AQQBZAHcAQgB2AEEASABBAEEAWgBRAEEAOQBBAEMASQBBAFkAdwBCAHYAQQBHAHcAQQBJAGcAQQBnAEEASABNAEEAZABBAEIANQBBAEcAdwBBAFoAUQBBADkAQQBDAEkAQQBkAHcAQgBvAEEARwBrAEEAZABBAEIAbABBAEMAMABBAGMAdwBCAHcAQQBHAEUAQQBZAHcAQgBsAEEARABvAEEASQBBAEIAdQBBAEcAOABBAGQAdwBCAHkAQQBHAEUAQQBjAEEAQQA3AEEAQwBJAEEAUABnAEIARwBBAEgASQBBAGIAdwBCAHQAQQBDAEEAQQBLAEEAQgA1AEEAQwAwAEEAWQBRAEIANABBAEcAawBBAGMAdwBBAHAAQQBEAHcAQQBMAHcAQgAwAEEARwBnAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAG8AQQBDAEEAQQBjAHcAQgBqAEEARwA4AEEAYwBBAEIAbABBAEQAMABBAEkAZwBCAGoAQQBHADgAQQBiAEEAQQBpAEEAQwBBAEEAYwB3AEIAMABBAEgAawBBAGIAQQBCAGwAQQBEADAAQQBJAGcAQgAzAEEARwBnAEEAYQBRAEIAMABBAEcAVQBBAEwAUQBCAHoAQQBIAEEAQQBZAFEAQgBqAEEARwBVAEEATwBnAEEAZwBBAEcANABBAGIAdwBCADMAQQBIAEkAQQBZAFEAQgB3AEEARABzAEEASQBnAEEAKwBBAEYAUQBBAGIAdwBBAGcAQQBDAGcAQQBlAEEAQQB0AEEARwBFAEEAZQBBAEIAcABBAEgATQBBAEsAUQBBADgAQQBDADgAQQBkAEEAQgBvAEEARAA0AEEAQwBnAEEAOABBAEMAOABBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQQBvAEEARABBAEEATABBAEEAZwBBAEQARQBBAE4AUQBBAHcAQQBDAGsAQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQQBvAEEARABBAEEATABBAEEAZwBBAEQAQQBBAEsAUQBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEMAOABBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQQBvAEEARABBAEEATABBAEEAZwBBAEQARQBBAE4AQQBBAHcAQQBDAGsAQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQQBvAEEARABFAEEATQBBAEEAcwBBAEMAQQBBAE0AQQBBAHAAQQBEAHcAQQBMAHcAQgAwAEEARwBRAEEAUABnAEEASwBBAEQAdwBBAEwAdwBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBaAEEAQQArAEEAQwBnAEEATQBBAEEAcwBBAEMAQQBBAE0AUQBBAHoAQQBEAEEAQQBLAFEAQQA4AEEAQwA4AEEAZABBAEIAawBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBaAEEAQQArAEEAQwBnAEEATQBnAEEAdwBBAEMAdwBBAEkAQQBBAHcAQQBDAGsAQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBBAHYAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEATABnAEEAdQBBAEMANABBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBAHUAQQBDADQAQQBMAGcAQQA4AEEAQwA4AEEAZABBAEIAawBBAEQANABBAEMAZwBBADgAQQBDADgAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAbwBBAEQAQQBBAEwAQQBBAGcAQQBEAEkAQQBNAEEAQQBwAEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEASwBBAEEAeABBAEQATQBBAE0AQQBBAHMAQQBDAEEAQQBNAEEAQQBwAEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBMAHcAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEMAZwBBAE0AQQBBAHMAQQBDAEEAQQBNAFEAQQB3AEEAQwBrAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAbwBBAEQARQBBAE4AQQBBAHcAQQBDAHcAQQBJAEEAQQB3AEEAQwBrAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQQB2AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAEsAQQBBAHcAQQBDAHcAQQBJAEEAQQB3AEEAQwBrAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAbwBBAEQARQBBAE4AUQBBAHcAQQBDAHcAQQBJAEEAQQB3AEEAQwBrAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQQB2AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBBAHYAQQBIAFEAQQBZAFEAQgBpAEEARwB3AEEAWgBRAEEAKwBBAEEAPQA9AAoAcwB1AGYAZgBpAHgAOgA=:31b8e172-b470-440e-83d8-e6b185028602
 
-<a href="#hint-for-loop" data-bs-toggle="collapse" title="Click for a suggestion about how to start in Snap!">Click
-for a suggestion about how to start in Snap<em>!</em></a>
+<a href="#second-hint" data-bs-toggle="collapse" title="Click for more details about how to organize your program">Click for more details about how to organize your program<em>!</em></a>
 
-::: {#hint-for-loop .collapse}
-There are many possible approaches to this problem. One approach could
-use the `for` block:<br />
-<img src="/img/3-lists/Astrid_img/forBlock.png" title="for (i)=(0) to (15)" alt="for (i)=(0) to (15)" class="ms-4" height="80"/>
+::: {#second-hint .collapse}
+1. Make the doors as clones of the 'door' sprite. They should each know their door number - how can each clone keep track of its door number? (remember how the squares in tic tac toe were identified?)
+2. What happens to each door when it is clicked on? Use a graphic effect such as 'negative' to change the way it looks in order to give feedback to the user. What do you want to happen next? What script should be triggered and how do you want to trigger it?
+3. What if the use clicks another door? Should they be allowed to?
+4. How does the program know which door has the car behind it? Do the door clones need to keep track of this information or can it be kept track of centrally (with a global variable)?
+5. Once you've answered that question, how do you determine which door the host should open up for step (3) above? One idea, use a <i>keep</i> block in conjunction with an <i>item <b>random</b> of </i> block.
+6. Can you abstract the operation of opening a door? Hint - use a broadcast with data, where the data is the door number to be opened. Each clone has a <i>'when I receive'</i> script that starts with a conditional checking if the value of <b>data</b> matches the door's ID number.
 :::
 :::
 :::
@@ -79,73 +69,16 @@ use the `for` block:<br />
 <ol start="3">
 
 <li>
+Add global variables to keep track of how many times the player has won the car.
+</li>
+<li>Keep track of the percentage of wins when the player chooses to switch vs. when they choose to stay/
+<br />
 
-
-
-Using the same principles, create a surrounding frame for your
-design.<br />
-<img src="/img/3-lists/Astrid_img/AstridwithPerim.png" title="Curve stitching design with its perimeter frame" alt="Curve stitching design with its perimeter frame" class="ms-4" height="200"/>
 
 ::: endnote
-Both the original curve and the frame are made of four quarter-pictures.
+Eventually you will use the program with these extensions to run simulations that will help reveal the fascinating mathematics behgind this game.
 :::
 
 </li>
 
 </ol>
-:::
-
-::: takeItFurther
-<ol type="A">
-
-<li>
-
-
-
-Add another copy of the design slanted at 45° as shown below.<br />
-<img src="/img/3-lists/Astrid_img/Astrid2.png" title="8 spiked curve stitching design" alt="8 spiked curve stitching design" class="ms-4" height="200"/>
-
-::: endnote
-<a href="#hint-pythagorean" data-bs-toggle="collapse" title="Want a mathematical hint?">Want
-a mathematical hint?</a>
-
-::: {#hint-pythagorean .collapse}
-You could use the Pythagorean Theorem:<br />
-<img src="/img/3-lists/Astrid_img/Pythagoras1.png" title="First quadrant triangle with hypotenuse 1 in a unit circle" alt="First quadrant triangle with hypotenuse 1 in a unit circle" class="ms-4" height="200"/>
-<img src="/img/3-lists/Astrid_img/Pythagoras2.png" title="Application of Pythagorean Theorem to triangle with hypotenuse 1 using algebra to show that other sides are each square root(2)/2" alt="Application of Pythagorean Theorem to triangle with hypotenuse 1 using algebra to show that other sides are each square root(2)/2" class="ms-4" height="200"/>
-:::
-:::
-
-</li>
-
-<li>Here are some more variations that employ color and more complex
-geometric arrangements. Create these and your own variations in
-Snap<em>!</em>.<br />
-<img src="/img/3-lists/Astrid_img/30-60Astrid.png" title="Colored 12 spike curve stitching design" alt="Colored 12 spike curve stitching design" height="225"/>
-<img src="/img/3-lists/Astrid_img/ColoredAstrid.png" title="Multi-colored 8 spike curve stitching design in a perimeter frame" alt="Multi-colored 8 spike curve stitching design in a perimeter frame" height="225"/>
-<img src="/img/3-lists/Astrid_img/AstridVariation.png" title="Constellation of curve stitching design" alt="Constellation of curve stitching design" height="225"/></li>
-
-<li>
-
-Use what you know about creating animations in Snap<em>!</em> to produce
-an animation based on this design. To allow for dynamic movements such
-as rotations, you will need to devise a completely different way of
-creating your design than using fixed coordinates.\
-
-::: endnote
-<a href="#hint-example" data-bs-toggle="collapse" class="collapsed" title="Want to see an example?">Want
-to see an example?</a>
-
-::: {#hint-example .collapse}
-This animation explores the artistic concept of
-"<a href="https://en.wikipedia.org/wiki/Negative_space" target="_blank">negative
-space</a>" by using a grid of rotating copies of the design. How would
-you revise your program to generate animations like this?<br />
-<img src="/img/3-lists/Astrid_img/Negative-Space.gif" title="A 6 by 4 grid of curve stitching designs rotating to reveal the negative space of the underlying background" alt="A 6 by 4 grid of curve stitching designs rotating to reveal the negative space of the underlying background" class="noshadow ms-4" height="400"/>
-:::
-:::
-
-</li>
-
-</ol>
-:::
