@@ -1,0 +1,88 @@
+---
+title: "Monty Hall"
+subtitle: "Unit 3 Bonus Project"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
+order: 1
+---
+
+
+::: learn
+**In this project,** you will create a playable version of what is known as the 'Monty Hall' game. This was an 
+actual game that was played on the 1970's game show Let's Make a Deal, hosted by Monty Hall:<br />
+<img title="Monty Hall" alt="Monty Hall" class="ms-4" data-gifffer="monty.jpg" height="300"/>
+:::
+
+
+This game is played as follows: there are three doors, labeled Door 1, Door 2 and Door 3. Behind two of the doors (random), there are goats (or some non-desireable prize) and the third door hides a car. The player will first click 
+on one door to select it. Before the door is opened to reveal what's behind it, the host will open a different door to reveal a goat (there is always at least one goat the player did not pick that can be revealed), and ask the player if they want to switch to the remaining unopened door, or stick with there original choice. 
+
+Once the player makes this choice, the door they ultimately chose will be opened and they will see if they won a goat or a car. 
+
+<ul>
+
+<li><a href="https://en.wikipedia.org/wiki/Monty_Hall_problem" title="Wikipedia article on The Monty Hall Problem and its history" target="_blank">Wikidpedia article on the Monty Hall Problem and its history</a></li>
+<li>Demo Video:
+<video width="320" height="240" controls>
+  <source src="monty hall demo video.mov" type="video/mp4">
+</video></li>
+</ul>
+
+::: forYouToDo
+<img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/>
+
+<ol>
+
+<li>With your partner, discuss the steps required to make this program work. Divide it into several stages of development and identify what techniques you could use for each part (i.e. lists, clones, broadcasts, specific blocks).</li>
+
+<li>
+
+Write a Snap<em>!</em> program according to your design.
+
+
+<a href="#hint-coordinates" data-bs-toggle="collapse" title="Click for a hint about one way to organize the project.">Click
+for a suggestion of how to organize the different stages of the program.</a>
+
+::: {#hint-coordinates .collapse}
+1. Doors appear (<i>Green flag</i> script creates clones)
+2. Use clicks on one door (<i>when I am clicked</i> script selects door, triggers host action)
+3. Different door is opened - one with a goat behind it (how to figure out which door to open? What script should determine which door is opened?)
+4. Host asks user if they want to swtich or not (ask block with options list)
+5. Host opens door the user chose (original or switched door) and announces what they won.
+
+
+<a href="#second-hint" data-bs-toggle="collapse" title="Click for more details about how to organize your program">Click for more details about how to organize your program<em>!</em></a>
+
+::: {#second-hint .collapse}
+1. Make the doors as clones of the 'door' sprite. They should each know their door number - how can each clone keep track of its door number? (remember how the squares in tic tac toe were identified?)
+2. What happens to each door when it is clicked on? Use a graphic effect such as 'negative' to change the way it looks in order to give feedback to the user. What do you want to happen next? What script should be triggered and how do you want to trigger it?
+3. What if the use clicks another door? Should they be allowed to?
+4. How does the program know which door has the car behind it? Do the door clones need to keep track of this information or can it be kept track of centrally (with a global variable)?
+5. Once you've answered that question, how do you determine which door the host should open up for step (3) above? One idea, use a <i>keep</i> block in conjunction with an <i>item <b>random</b> of </i> block.
+6. Can you abstract the operation of opening a door? Hint - use a broadcast with data, where the data is the door number to be opened. Each clone has a <i>'when I receive'</i> script that starts with a conditional checking if the value of <b>data</b> matches the door's ID number.
+:::
+:::
+:::
+
+</li>
+
+</ol>
+:::
+
+::: ifTime
+<ol start="3">
+
+<li>
+Add global variables to keep track of how many times the player has won the car.
+</li>
+<li>Keep track of the percentage of wins when the player chooses to switch vs. when they choose to stay/
+<br />
+
+
+::: endnote
+Eventually you will use the program with these extensions to run simulations that will help reveal the fascinating mathematics behgind this game.
+:::
+
+</li>
+
+</ol>
+
