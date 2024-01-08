@@ -1,0 +1,29 @@
+---
+title: "Using a Development Process to Organize Your Coding"
+subtitle: "AP CSP Create Task, Page 1"
+order: 1
+---
+
+:::::: learn
+**In the Practice Create Task**, you will become familiar with the guidelines and vocabulary of the AP Create Task, and practice performing the Create Task with guidance and feedback from your teacher.
+
+**When you complete the actual Create Task**, you will not be able to get guidance and feedback from your teacher.
+
+**On this page**, you will reflect on your coding habits and plan the development process you will use for the Create Task.
+::::::
+
+The Create Task is a chance for you to submit something to the College Board for inclusion in your AP CSP score that is creative: a program you design (with or without a partner), a video of the program running (developed on your own), segments of your code on a Personal Project Reference sheet (developed on your own), and written responses about your program and your development process (written during the AP exam).
+
+The process you use to develop your program might be organized and strategic or it might be a process of exploration. There are different ways to program. Here are some common phases of development that a programmer goes through:
+
+- Investigating and reflecting—figuring out the requirements(what the user will want the program to do)
+- Designing—planning what the app will look like to the user and the general approach you will use to code it
+- Prototyping—building a draft of the program
+- Testing—trying out your prototype, sharing it with others for feedback, fixing any bugs, and making any needed improvements
+
+Your development process might be iterative (involving several cycles of development and then testing and feedback) and/or it may be incremental (meaning that you build and test smaller pieces of the project before combining them).
+
+::: forYouToDo
+(@) Think about how you code. Do you tend to code iteratively (coding and then testing and then coding again, etc.)? Do you tend to code incrementally (building and perfecting one piece at a time)? Are there any development problems you've run into over and over? Are there any ways you might change your development process to avoid those challenges?
+(@) Before you begin your Create Task, decide what kind of development process you'll use (iterative and/or incremental). Write down your plan. It's OK if you change the plan as you go, but keep track of any changes to your plan.
+:::
