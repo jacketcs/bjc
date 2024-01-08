@@ -21,6 +21,8 @@ Once the player makes this choice, the door they ultimately chose will be opened
 
 - [Wikipedia article on The Monty Hall Problem and its history](https://en.wikipedia.org/wiki/Monty_Hall_problem#:~:text=An%20intuitive%20explanation%20is%20that,the%20contestant%20will%20not%20win)
 
+{{< video https://youtu.be/RXBNKYwJ5X0 >}}
+
 :::::: forYouToDo
 <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/>
 
