@@ -64,7 +64,7 @@ Spots Objects for the Visually Impaired (MIT Technology Review)</a></li>
 Vision Algorithm Learns to Recognize Hidden Facial Expressions (MIT
 Technology Review)</a></li>
 
-<li><a href="http://fortune.com/2015/06/15/facebook-ai-moments/" target="_blank" title="How Facebook is teaching computers to see (Fortune)">How
+<li><a href="https://drive.google.com/file/d/1ync_z1oGt2jTbnibg7KN847EmzpTXBBF/view" target="_blank" title="How Facebook is teaching computers to see (Fortune)">How
 Facebook is teaching computers to see (Fortune)</a></li>
 
 <li><a href="http://www.popsci.com/byzantine-science-deceiving-artificial-intelligence" target="_blank" title="Fooling the Machine: The Byzantine Science of Deceiving Artificial Intelligence (Popular Science)">Fooling
