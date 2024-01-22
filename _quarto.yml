@@ -32,8 +32,8 @@ website:
     left:
       - text: "Posts"
         href: posts
-      # - text: "Create Task"
-      #   href: create-task
+      - text: "Create Task"
+        href: create-task
       - text: "Labs"
         menu:
           - text: "Unit 1: Introduction to Programming"

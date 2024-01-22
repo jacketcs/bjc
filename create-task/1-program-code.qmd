@@ -1,0 +1,30 @@
+---
+title: "Component A: Program Code"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
+author: "Ms. O'Keefe and Mr. Chang"
+order: 100
+---
+
+::: takeNote
+
+Any and all program code is to be created independently. You may help each other by providing feedback or helping debug.
+
+If there is any evidence that your code was not the result of individual or work that you did by recieving feedback, you are violating the academic policy of this project and class.
+
+:::
+
+Your program must contain the following:
+
+1. Prompt for the user to input/interact with the program.
+    - This can be "asking" the user, when anything is "clicked", or a key press, etc.
+
+2. Output (sound, "saying" something) **based on the input** from the user.
+
+3. A list to represent stored data that is used to **manage program complexity** and **useful** towards fulfilling the program's purpose
+
+4. At least one procedure (i.e. a custom block) that is **useful** in the program. This procedure must:
+    - Have a name
+    - Have one or more parameters (inputs)
+    - Have an algorithm 
+        * Sequencing, selection, and iteration
+    - Be used in your program.

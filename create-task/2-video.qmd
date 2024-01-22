@@ -1,0 +1,30 @@
+---
+title: "Component B: Video"
+pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
+author: "Ms. O'Keefe and Mr. Chang"
+order: 200
+---
+
+::: takeNote
+
+This video is to be created independently (NO collaboration). Classmates and/or your teacher can help you troubleshoot any technical problems or guide you in creating your video on your computer.
+
+:::
+
+Your video must demonstrate your program running, including:
+
+- Input to your program
+- At least one aspect of the functionality of your program
+- Output produced by your program
+
+Your video must be:
+
+- Either `.webm`, `.mp4`, `.wmv`, `.avi`, or `.mov` format
+- No more than 1 minute in length
+- No more than 30MB in file size
+
+You CANNOT include:
+
+- Any distinguishing information about yourself
+- Voice narration
+
