@@ -9,7 +9,7 @@ order: 100
 
 Any and all program code is to be created independently. You may help each other by providing feedback or helping debug.
 
-If there is any evidence that your code was not the result of individual or work that you did by recieving feedback, you are violating the academic policy of this project and class.
+If there is any evidence that your code was not the result of individual or work that you did by receiving feedback, you are violating the academic policy of this project and class.
 
 :::
 
@@ -25,6 +25,7 @@ Your program must contain the following:
 4. At least one procedure (i.e. a custom block) that is **useful** in the program. This procedure must:
     - Have a name
     - Have one or more parameters (inputs)
+        * The input needs to have an have an effect on the functionality of the procedure. So preferably, it has a direct/indirect relationship to the selection
     - Have an algorithm 
-        * Sequencing, selection, and iteration
+        * Which means that your program must have these three components: sequencing, selection, and iteration
     - Be used in your program.

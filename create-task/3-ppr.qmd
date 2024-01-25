@@ -13,7 +13,7 @@ To assist in responding to the written response prompts on exam day, submit requ
 
 ::: takeNote
 
-This reference is to be created independently (NO collaboration). Classmates and/or your teacher can help you troubleshoot any technical problems or guide you in taking screenshots.
+This reference is to be created independently (NO collaboration). Classmates and/or your teacher can help you troubleshoot any technical problems or guide you in the steps to take a screenshot.
 
 You will paste a total of 4 screenshots of your code.
 
