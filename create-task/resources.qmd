@@ -13,6 +13,31 @@ order: 1000
 - [Example Rubric pt. 1](https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-ced-q1-scoring-guidelines.pdf)
 - [Example Rubric pt. 2](https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-ced-q2-scoring-guidelines.pdf)
 
+## Run-time errors
+
+There are two main categories of run-time errors that we can observe: Snap<em>!</em> errors and Logic errors.
+
+### Snap<em>!</em> errors
+
+These are errors that Snap<em>!</em> knows about and will let the user know about. So in other words, when you have code that Snap<em>!</em> stops running because it knows that it has encountered something wrong (the code gets highlighted in red)
+
+Here are a few examples:
+
+![](/img/create-task/error-1.png)
+![](/img/create-task/error-2.png)
+
+### Logic errors
+
+These are errors that Snap<em>!</em> doesn't know about! Snap<em>!</em> will run code that it think runs right, but the program isn't behaving the way that you want.
+
+Examples:
+
+![](/img/create-task/lerror-1.png)
+![](/img/create-task/lerror-2.png)
+![](/img/create-task/lerror-3.png)
+![](/img/create-task/lerror-4.png)
+![](/img/create-task/lerror-5.png)
+
 ## Vocabulary
 
 Algorithm
