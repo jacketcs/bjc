@@ -84,6 +84,13 @@
     "text": "Requirements\n\nCollegeboard Create Task Directions\nExample Rubric pt. 1\nExample Rubric pt. 2"
   },
   {
+    "objectID": "create-task/resources.html#run-time-errors",
+    "href": "create-task/resources.html#run-time-errors",
+    "title": "Create Task Resources",
+    "section": "Run-time errors",
+    "text": "Run-time errors\nThere are two main categories of run-time errors that we can observe: Snap! errors and Logic errors.\n\nSnap! errors\nThese are errors that Snap! knows about and will let the user know about. So in other words, when you have code that Snap! stops running because it knows that it has encountered something wrong (the code gets highlighted in red)\nHere are a few examples:\n \n\n\nLogic errors\nThese are errors that Snap! doesn’t know about! Snap! will run code that it think runs right, but the program isn’t behaving the way that you want.\nExamples:"
+  },
+  {
     "objectID": "create-task/resources.html#vocabulary",
     "href": "create-task/resources.html#vocabulary",
     "title": "Create Task Resources",
