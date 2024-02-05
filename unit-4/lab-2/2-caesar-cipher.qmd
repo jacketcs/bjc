@@ -4,17 +4,10 @@ subtitle: "Unit 4, Lab 2, Page 2"
 order: 2
 ---
 
-::: todo
-Brian, I added "initials part deux" as an ITIT on this page. See below.
-Is it too much for an ITIT? Should it be a TIF? I can't decide. If you
-like it, please add it to the solutions file and <em>only then</em> cut
-this comment. If you don't, please revise it or cut it. --MF, 7/4/20
-:::
-
-::: learn
+:::::: learn
 **On this page,** you will program a shift cipher procedure
 to encrypt/decrypt text.
-:::
+::::::
 
 Computers store keyboard characters (capital and small letters,
 punctuation marks, space, digits, symbols, and so on) as numbers called
@@ -29,7 +22,8 @@ The `unicode as letter` block reports the character that a
 given Unicode number represents:<br />
 <img src="/img/4-internet/img_CaesarCipher/SnapUnicode2.png" title="unicode (65) as letter reporting &apos;A&apos;" alt="unicode (65) as letter reporting &apos;A&apos;" class="ms-4" height="52"/>
 
-::: {#second .forYouToDo}
+:::::: {#second .forYouToDo}
+
 <ol>
 
 <li>Experiment with the `unicode of` and `unicode as
@@ -43,12 +37,12 @@ to get a feel for how this cipher works.</li>
 <li>Write a Caesar cipher procedure that works for <em>any input
 text</em> and <em>any shift value</em>.</li>
 
-::: endnote
+::::: endnote
 <a href="#hint-characters" data-bs-toggle="collapse" title="Why do we see characters like = ? @ # ^ * { or ~ ?">Why
 do we see characters like **= ? \@ \# \^ \* { ** or
 **\~** ?</a>
 
-::: {#hint-characters .collapse}
+:::: {#hint-characters .collapse}
 You can safely assume that shifting any set of text characters a
 reasonable distance will result in a set of printable characters, which
 may include non-alphanumeric (not letter or digit) characters.
@@ -56,38 +50,29 @@ may include non-alphanumeric (not letter or digit) characters.
 For example, if we use a shift of 4 to encrypt:
 
 <p class="ms-4">
-
 <em>**Invasion of Normandy is on 6 June 1944**</em>
-
-
+</p>
 
 it becomes:
 
 <p class="ms-4">
-
 <em>**Mrzewmsr$sj$Rsvqerh}$mw$sr$:$Nyri\$5=88**</em>
-
-
-
-
+</p>
 
 <ul>
-
 <li>Which character in ciphertext (the coded version) represents a space
 in the plaintext?</li>
 
 <li>In this code, 1 becomes 5 and 4 becomes 8, clearly showing the shift
 of 4. What does 9 become?</li>
-
 </ul>
 
-
-:::
+::::
 
 <a href="#hint-missing" data-bs-toggle="collapse" title="What if your decrypted text is missing some letters?">What
 if your decrypted text is missing some letters?</a>
 
-::: {#hint-missing .collapse}
+:::: {#hint-missing .collapse}
 If you copy your encrypted message with a method other than by using
 copy and paste (for example, by writing it by hand or typing it into a
 phone), some characters may disappear from your message. This is because
@@ -96,8 +81,10 @@ symbolize things like "delete." These characters won't get displayed in
 Snap<em>!</em>, so you can't copy them by hand, but if you use copy and
 paste, Snap<em>!</em> knows they are there. In Take It Further exercise
 A, you can develop a method of encryption that avoids this problem.
-:::
-:::
+::::
+
+:::::
+::::::
 
 <li>Now test your work. Agree with your partner on a shift value for the
 encryption. Then use your program to encrypt a secret message and e-mail
@@ -105,17 +92,19 @@ it to your partner. Then let your partner decrypt your message by using
 the program to reverse the shift.</li>
 
 ::: endnote
+
 You can extract the encrypted messages from the Snap<em>!</em> interface
 by right-clicking on the variable that holds the encrypted message and
 selecting the "Export" option which will download a text file to your
 computer which then you can copy/paste.<br />
 <img src="/img/4-internet/img_CaesarCipher/Export.png" title="export option" alt="export option" class="ms-4" width="350"/>
+
 :::
 
 </ol>
 :::
 
-::: ifTime
+:::::: ifTime
 <ol start="5">
 
 <li>
@@ -181,7 +170,7 @@ separator. (You learned about `split` on
 </li>
 
 </ol>
-:::
+::::::
 
 ::: takeItFurther
 <ol type="A">
