@@ -448,20 +448,6 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="todo">
-<p>MF: lightly clean up to make the text more concise</p>
-</div>
-<div class="todo">
-<p>In case someone wants to do more with the project one day:</p>
-<ul>
-<li>
-The color version of the project (<a class="run" href="../../prog/6-computers/U6L1-TranslatingBinary_color.xml" target="_blank">U6L1-TranslatingBinary_color.xml</a>) breaks Snap<em>!</em> because of an unresolved bug (<a href="https://github.com/jmoenig/Snap--Build-Your-Own-Blocks/issues/1873" target="_blank">#1873</a>).
-</li>
-<li>
-The PHP script that I used to get the binary sequences for images is here: <a href="../../utilities/colorreader.php" target="_blank">/utilities/colorreader.php</a>. Edit the $im variable initialization (currently line 9) to change the path of the color file exported into a binary sequence, and edit the $imbw initialization (currently line 59) to change the B&amp;W file. It would be amazing to incorporate this into the project, but that would require being able to handle uploaded images or images with an existing URL, and I haven’t thought through that possibility yet. –MF, 11/30/17
-</li>
-</ul>
-</div>
 <div class="learn">
 <p><strong>On this page,</strong> you will learn more about how information is represented inside the computer as sequences of bits.</p>
 </div>
@@ -471,8 +457,8 @@ The PHP script that I used to get the binary sequences for images is here: <a hr
 <p>So far we’ve been working with small chunks of data, from Boolean values (one bit) to characters (eight bits). But of course some information in your computer or smartphone is much bigger than that. For starters, characters aren’t generally used one at a time; they’re used in <em>text strings</em> such as “<code>Welcome to the Beauty and Joy of Computing.</code>” These 43 characters occupy 43 bytes of computer memory. But the real champion users of space are media files: pictures, sounds (mostly music), and video.</p>
 <p>If we could see inside the memory’s bits, a section of the memory might look something like this:</p>
 <blockquote class="blockquote">
-<p><code>01000001001000000111001101101101011000010111001001110100001000000111000001101000011011110110111001100101001011000010000001101100011010010110101101100101001000000111100101101111011101010111001000100000011011000110000101110000011101000110111101110000001000000110111101110010001000000110010001100101011100110110101101110100011011110111000000100000011000110110111101101101011100000111010101110100011001010111001000101100001000000110001101100001011011100 `</code></p><code>
-</code></blockquote><code>
+<p><code>1000001001000000111001101101101011000010111001001110100001000000111000001101000011011110110111001100101001011000010000001101100011010010110101101100101001000000111100101101111011101010111001000100000011011000110000101110000011101000110111101110000001000000110111101110010001000000110010001100101011100110110101101110100011011110111000000100000011000110110111101101101011100000111010101110100011001010111001000101100001000000110001101100001011011100</code></p>
+</blockquote>
 <div class="vocab">
 <p>A <strong>binary sequence</strong> (also called a <em>bitstream</em>) is a string of ones and zeros.</p>
 </div>
@@ -481,36 +467,164 @@ The PHP script that I used to get the binary sequences for images is here: <a hr
 <p><a href="#hint-size-table" data-bs-toggle="collapse" title="How much information fits in a gigbyte?">How much information fits in a gigabyte?</a></p>
 <div id="hint-size-table" class="collapse">
 <p>Here are a few rough examples of what kind of data would fit in how much memory:</p>
-<p>31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATgBRAEEAMwBBAEQAQQBBAE0AQQBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBQAEEAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAEkAQQBCAGoAQQBHAHcAQQBZAFEAQgB6AEEASABNAEEAUABRAEEAaQBBAEcASQBBAGUAUQBCADAAQQBHAFUAQQBJAEEAQgBwAEEARwA0AEEAWgBBAEIAbABBAEcANABBAGQAQQBBAGkAQQBDAEEAQQBjAHcAQgAxAEEARwAwAEEAYgBRAEIAaABBAEgASQBBAGUAUQBBADkAQQBDAEkAQQBkAEEAQgBoAEEARwBJAEEAYgBBAEIAbABBAEMAQQBBAGIAdwBCAG0AQQBDAEEAQQBZAHcAQgB2AEEARwAwAEEAYgBRAEIAdgBBAEcANABBAEkAQQBCAGsAQQBHAEUAQQBkAEEAQgBoAEEAQwBBAEEAYwB3AEIAcABBAEgAbwBBAFoAUQBCAHoAQQBDAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBhAEEAQQBnAEEASABNAEEAWQB3AEIAdgBBAEgAQQBBAFoAUQBBADkAQQBDAEkAQQBZAHcAQgB2AEEARwB3AEEASQBnAEEAKwBBAEcANABBAFkAUQBCAHQAQQBHAFUAQQBQAEEAQQB2AEEASABRAEEAYQBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAGcAQQBJAEEAQgB6AEEARwBNAEEAYgB3AEIAdwBBAEcAVQBBAFAAUQBBAGkAQQBHAE0AQQBiAHcAQgBzAEEAQwBJAEEASQBBAEIAegBBAEgAUQBBAGUAUQBCAHMAQQBHAFUAQQBQAFEAQQBpAEEASABjAEEAYQBRAEIAawBBAEgAUQBBAGEAQQBBADYAQQBEAE0AQQBNAEEAQQB3AEEASABBAEEAZQBBAEEANwBBAEMASQBBAFAAZwBCAGgAQQBHADAAQQBiAHcAQgAxAEEARwA0AEEAZABBAEEAOABBAEMAOABBAGQAQQBCAG8AQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYQBBAEEAZwBBAEgATQBBAFkAdwBCAHYAQQBIAEEAQQBaAFEAQQA5AEEAQwBJAEEAWQB3AEIAdgBBAEcAdwBBAEkAZwBBAGcAQQBIAE0AQQBkAEEAQgA1AEEARwB3AEEAWgBRAEEAOQBBAEMASQBBAGQAdwBCAHAAQQBHAFEAQQBkAEEAQgBvAEEARABvAEEATQB3AEEAdwBBAEQAQQBBAGMAQQBCADQAQQBEAHMAQQBJAGcAQQArAEEARwBVAEEAZQBBAEIAaABBAEcAMABBAGMAQQBCAHMAQQBHAFUAQQBQAEEAQQB2AEEASABRAEEAYQBBAEEAKwBBAEEAbwBBAFAAQQBBAHYAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEAWQBnAEIAcABBAEgAUQBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBCAGwAQQBHAGsAQQBkAEEAQgBvAEEARwBVAEEAYwBnAEEAZwBBAEcARQBBAEkAQQBBAHgAQQBDAEEAQQBiAHcAQgB5AEEAQwBBAEEAWQBRAEEAZwBBAEQAQQBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBAHgAQQBEAHcAQQBMAHcAQgAwAEEARwBRAEEAUABnAEEASwBBAEQAdwBBAEwAdwBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBaAEEAQQArAEEARwBJAEEAZQBRAEIAMABBAEcAVQBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBADQAQQBDAEEAQQBZAGcAQgBwAEEASABRAEEAYwB3AEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQARQBBAE0AUQBBAHcAQQBEAEUAQQBNAFEAQQB3AEEARABBAEEATQBRAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBCAHIAQQBHAGsAQQBiAEEAQgB2AEEARwBJAEEAZQBRAEIAMABBAEcAVQBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBAHkAQQBEAHcAQQBjAHcAQgAxAEEASABBAEEAUABnAEEAeABBAEQAQQBBAFAAQQBBAHYAQQBIAE0AQQBkAFEAQgB3AEEARAA0AEEASQBBAEEAbwBBAEQARQBBAEwAQQBBAHcAQQBEAEkAQQBOAEEAQQBwAEEAQwBBAEEAWQBnAEIANQBBAEgAUQBBAFoAUQBCAHoAQQBEAHcAQQBMAHcAQgAwAEEARwBRAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBEADQAQQBZAFEAQQBnAEEARwBNAEEAYgB3AEIAMQBBAEgAQQBBAGIAQQBCAGwAQQBDAEEAQQBiAHcAQgBtAEEAQwBBAEEAYwBBAEIAaABBAEgASQBBAFkAUQBCAG4AQQBIAEkAQQBZAFEAQgB3AEEARwBnAEEAYwB3AEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBCAHQAQQBHAFUAQQBaAHcAQgBoAEEARwBJAEEAZQBRAEIAMABBAEcAVQBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBAHkAQQBEAHcAQQBjAHcAQgAxAEEASABBAEEAUABnAEEAeQBBAEQAQQBBAFAAQQBBAHYAQQBIAE0AQQBkAFEAQgB3AEEARAA0AEEASQBBAEEAbwBBAEQARQBBAEwAQQBBAHcAQQBEAFEAQQBPAEEAQQBzAEEARABVAEEATgB3AEEAMgBBAEMAawBBAEkAQQBCAGkAQQBIAGsAQQBkAEEAQgBsAEEASABNAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEIAaABBAEcASQBBAGIAdwBCADEAQQBIAFEAQQBJAEEAQQB4AEEAQwBBAEEAWQBnAEIAdgBBAEcAOABBAGEAdwBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEMAOABBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQgBuAEEARwBrAEEAWgB3AEIAaABBAEcASQBBAGUAUQBCADAAQQBHAFUAQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQQB5AEEARAB3AEEAYwB3AEIAMQBBAEgAQQBBAFAAZwBBAHoAQQBEAEEAQQBQAEEAQQB2AEEASABNAEEAZABRAEIAdwBBAEQANABBAEkAQQBBAG8AQQBEAEUAQQBMAEEAQQB3AEEARABjAEEATQB3AEEAcwBBAEQAYwBBAE4AQQBBAHgAQQBDAHcAQQBPAEEAQQB5AEEARABRAEEASwBRAEEAZwBBAEcASQBBAGUAUQBCADAAQQBHAFUAQQBjAHcAQQA4AEEAQwA4AEEAZABBAEIAawBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBaAEEAQQArAEEARwBFAEEASQBBAEIAcwBBAEcAawBBAGQAQQBCADAAQQBHAHcAQQBaAFEAQQBnAEEARwAwAEEAYgB3AEIAeQBBAEcAVQBBAEkAQQBCADAAQQBHAGcAQQBZAFEAQgB1AEEAQwBBAEEATQBRAEEAZwBBAEUATQBBAFIAQQBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEMAOABBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQgAwAEEARwBVAEEAYwBnAEIAaABBAEcASQBBAGUAUQBCADAAQQBHAFUAQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQQB5AEEARAB3AEEAYwB3AEIAMQBBAEgAQQBBAFAAZwBBADAAQQBEAEEAQQBQAEEAQQB2AEEASABNAEEAZABRAEIAdwBBAEQANABBAEkAQQBBAG8AQQBEAEUAQQBMAEEAQQB3AEEARABrAEEATwBRAEEAcwBBAEQAVQBBAE0AUQBBAHgAQQBDAHcAQQBOAGcAQQB5AEEARABjAEEATABBAEEAMwBBAEQAYwBBAE4AZwBBAHAAQQBDAEEAQQBZAGcAQgA1AEEASABRAEEAWgBRAEIAegBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAFkAUQBCAGkAQQBHADgAQQBkAFEAQgAwAEEAQwBBAEEATQBRAEEAcwBBAEQAVQBBAE0AQQBBAHcAQQBDAEEAQQBRAHcAQgBFAEEASABNAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQQB2AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAGMAQQBCAGwAQQBIAFEAQQBZAFEAQgBpAEEASABrAEEAZABBAEIAbABBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAE0AZwBBADgAQQBIAE0AQQBkAFEAQgB3AEEARAA0AEEATgBRAEEAdwBBAEQAdwBBAEwAdwBCAHoAQQBIAFUAQQBjAEEAQQArAEEAQwBBAEEASwBBAEEAeABBAEMAdwBBAE0AUQBBAHkAQQBEAFUAQQBMAEEAQQA0AEEARABrAEEATwBRAEEAcwBBAEQAawBBAE0AQQBBADIAQQBDAHcAQQBPAEEAQQAwAEEARABJAEEATABBAEEAMgBBAEQASQBBAE4AQQBBAHAAQQBDAEEAQQBZAGcAQgA1AEEASABRAEEAWgBRAEIAegBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAFkAUQBCAGkAQQBHADgAQQBkAFEAQgAwAEEAQwBBAEEATQBnAEEAdwBBAEMAQQBBAGIAUQBCAHAAQQBHAHcAQQBiAEEAQgBwAEEARwA4AEEAYgBnAEEAZwBBAEcAWQBBAGEAUQBCAHMAQQBHAGsAQQBiAGcAQgBuAEEAQwBBAEEAWQB3AEIAaABBAEcASQBBAGEAUQBCAHUAQQBHAFUAQQBkAEEAQgB6AEEAQwBBAEEAYgB3AEIAbQBBAEMAQQBBAGQAQQBCAGwAQQBIAGcAQQBkAEEAQQA4AEEAQwA4AEEAZABBAEIAawBBAEQANABBAEMAZwBBADgAQQBDADgAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEIAbABBAEgAZwBBAFkAUQBCAGkAQQBIAGsAQQBkAEEAQgBsAEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEATQBnAEEAOABBAEgATQBBAGQAUQBCAHcAQQBEADQAQQBOAGcAQQB3AEEARAB3AEEATAB3AEIAegBBAEgAVQBBAGMAQQBBACsAQQBDAEEAQQBLAEEAQQB4AEEAQwB3AEEATQBRAEEAMQBBAEQASQBBAEwAQQBBADUAQQBEAEkAQQBNAFEAQQBzAEEARABVAEEATQBBAEEAMABBAEMAdwBBAE4AZwBBAHcAQQBEAFkAQQBMAEEAQQA0AEEARABRAEEATgBnAEEAcwBBAEQAawBBAE4AdwBBADIAQQBDAGsAQQBJAEEAQgBpAEEASABrAEEAZABBAEIAbABBAEgATQBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBCAGgAQQBHAEkAQQBiAHcAQgAxAEEASABRAEEASQBBAEEAeQBBAEQAQQBBAEoAUQBBAGcAQQBHADgAQQBaAGcAQQBnAEEARwBFAEEAYgBBAEIAcwBBAEMAQQBBAGQAQQBCAG8AQQBHAFUAQQBJAEEAQgAzAEEARwA4AEEAYwBnAEIAawBBAEgATQBBAEkAQQBCAGwAQQBIAFkAQQBaAFEAQgB5AEEAQwBBAEEAYwB3AEIAdwBBAEcAOABBAGEAdwBCAGwAQQBHADQAQQBJAEEAQgBpAEEASABrAEEASQBBAEIAbwBBAEgAVQBBAGIAUQBCAGgAQQBHADQAQQBhAHcAQgBwAEEARwA0AEEAWgBBAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBDADgAQQBkAEEAQgBoAEEARwBJAEEAYgBBAEIAbABBAEQANABBAAoAcwB1AGYAZgBpAHgAOgA=:31b8e172-b470-440e-83d8-e6b185028602</p>
+<table class="table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 38%">
+<col style="width: 51%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>name</th>
+<th>amount</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>bit</td>
+<td>either a 1 or a 0</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>byte</td>
+<td>8 bits</td>
+<td>11011001</td>
+</tr>
+<tr class="odd">
+<td>kilobyte</td>
+<td>210 (1,024) bytes</td>
+<td>a couple of paragraphs</td>
+</tr>
+<tr class="even">
+<td>megabyte</td>
+<td>220 (1,048,576) bytes</td>
+<td>about 1 book</td>
+</tr>
+<tr class="odd">
+<td>gigabyte</td>
+<td>230 (1,073,741,824) bytes</td>
+<td>a little more than 1 CD</td>
+</tr>
+<tr class="even">
+<td>terabyte</td>
+<td>240 (1,099,511,627,776) bytes</td>
+<td>about 1,500 CDs</td>
+</tr>
+<tr class="odd">
+<td>petabyte</td>
+<td>250 (1,125,899,906,842,624) bytes</td>
+<td>about 20 million filing cabinets of text</td>
+</tr>
+<tr class="even">
+<td>exabyte</td>
+<td>260 (1,152,921,504,606,846,976) bytes</td>
+<td>about 20% of all the words ever spoken by humankind</td>
+</tr>
+</tbody>
+</table>
 <p>As we write this in 2017, it’s common to have a terabyte disk drive on your desk. Web services deal with petabytes or exabytes of data.</p>
 <p><a href="#hint-target" data-bs-toggle="collapse" title="Where do these prefixes like 'tera-' and 'peta-' come from?">Where do these prefixes like “tera-” and “peta-” come from?</a></p>
 <div id="hint-target" class="collapse">
 <p>When we write big numbers, we put commas every three digits (counting from the right). Each group of three has a name: thousand, million, billion, and so on. So, the number 1,234,567,890 is pronounced “one billion, 234 million, 567 thousand, 890.” Those group names (“thousand” and so on) also have prefix names used in metric measurements:</p>
-<p>31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATgB3AEEAMABBAEQATQBBAE0AUQBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBQAEEAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAEkAQQBCAGoAQQBHAHcAQQBZAFEAQgB6AEEASABNAEEAUABRAEEAaQBBAEcASQBBAGUAUQBCADAAQQBHAFUAQQBJAEEAQgBwAEEARwA0AEEAWgBBAEIAbABBAEcANABBAGQAQQBBAGkAQQBDAEEAQQBkAHcAQgBwAEEARwBRAEEAZABBAEIAbwBBAEQAMABBAEkAZwBBADIAQQBEAEEAQQBNAEEAQgB3AEEASABnAEEASQBnAEEAZwBBAEgATQBBAGQAUQBCAHQAQQBHADAAQQBZAFEAQgB5AEEASABrAEEAUABRAEEAaQBBAEgAUQBBAFkAUQBCAGkAQQBHAHcAQQBaAFEAQQBnAEEARwA4AEEAWgBnAEEAZwBBAEcANABBAGQAUQBCAHQAQQBHAEkAQQBaAFEAQgB5AEEAQwBBAEEAYwBBAEIAeQBBAEcAVQBBAFoAZwBCAHAAQQBIAGcAQQBaAFEAQgB6AEEAQwBJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYQBBAEEAZwBBAEgATQBBAFkAdwBCAHYAQQBIAEEAQQBaAFEAQQA5AEEAQwBJAEEAWQB3AEIAdgBBAEcAdwBBAEkAZwBBACsAQQBIAEEAQQBjAGcAQgBsAEEARwBZAEEAYQBRAEIANABBAEQAdwBBAEwAdwBCADAAQQBHAGcAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAbwBBAEMAQQBBAGMAdwBCAGoAQQBHADgAQQBjAEEAQgBsAEEARAAwAEEASQBnAEIAagBBAEcAOABBAGIAQQBBAGkAQQBEADQAQQBZAFEAQgB0AEEARwA4AEEAZABRAEIAdQBBAEgAUQBBAFAAQQBBAHYAQQBIAFEAQQBhAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAZwBBAEkAQQBCAHoAQQBHAE0AQQBiAHcAQgB3AEEARwBVAEEAUABRAEEAaQBBAEcATQBBAGIAdwBCAHMAQQBDAEkAQQBQAGcAQgBoAEEARwAwAEEAYgB3AEIAMQBBAEcANABBAGQAQQBBAGcAQQBHAEUAQQBjAHcAQQBnAEEARwA0AEEAZABRAEIAdABBAEcAVQBBAGMAZwBCAGgAQQBHAHcAQQBQAEEAQQB2AEEASABRAEEAYQBBAEEAKwBBAEEAbwBBAFAAQQBBAHYAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEAYQB3AEIAcABBAEcAdwBBAGIAdwBBAHQAQQBEAHcAQQBMAHcAQgAwAEEARwBRAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBEADQAQQBkAEEAQgBvAEEARwA4AEEAZABRAEIAegBBAEcARQBBAGIAZwBCAGsAQQBEAHcAQQBMAHcAQgAwAEEARwBRAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBEADQAQQBNAFEAQQBzAEEARABBAEEATQBBAEEAdwBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBHADAAQQBaAFEAQgBuAEEARwBFAEEATABRAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEcAMABBAGEAUQBCAHMAQQBHAHcAQQBhAFEAQgB2AEEARwA0AEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAeABBAEMAdwBBAE0AQQBBAHcAQQBEAEEAQQBMAEEAQQB3AEEARABBAEEATQBBAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBCAG4AQQBHAGsAQQBaAHcAQgBoAEEAQwAwAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEIAaQBBAEcAawBBAGIAQQBCAHMAQQBHAGsAQQBiAHcAQgB1AEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEATQBRAEEAcwBBAEQAQQBBAE0AQQBBAHcAQQBDAHcAQQBNAEEAQQB3AEEARABBAEEATABBAEEAdwBBAEQAQQBBAE0AQQBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEMAOABBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQgAwAEEARwBVAEEAYwBnAEIAaABBAEMAMABBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBCADAAQQBIAEkAQQBhAFEAQgBzAEEARwB3AEEAYQBRAEIAdgBBAEcANABBAFAAQQBCAGkAQQBIAEkAQQBJAEEAQQB2AEEARAA0AEEAUABBAEIAegBBAEcAMABBAFkAUQBCAHMAQQBHAHcAQQBQAGcAQQBvAEEARwBFAEEASQBBAEIAdABBAEcAawBBAGIAQQBCAHMAQQBHAGsAQQBiAHcAQgB1AEEAQwBBAEEAYgBRAEIAcABBAEcAdwBBAGIAQQBCAHAAQQBHADgAQQBiAGcAQQBwAEEARAB3AEEATAB3AEIAegBBAEcAMABBAFkAUQBCAHMAQQBHAHcAQQBQAGcAQQA4AEEAQwA4AEEAZABBAEIAawBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBaAEEAQQArAEEARABFAEEATABBAEEAdwBBAEQAQQBBAE0AQQBBAHMAQQBEAEEAQQBNAEEAQQB3AEEAQwB3AEEATQBBAEEAdwBBAEQAQQBBAEwAQQBBAHcAQQBEAEEAQQBNAEEAQQA4AEEAQwA4AEEAZABBAEIAawBBAEQANABBAEMAZwBBADgAQQBDADgAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEIAdwBBAEcAVQBBAGQAQQBCAGgAQQBDADAAQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQgB4AEEASABVAEEAWQBRAEIAawBBAEgASQBBAGEAUQBCAHMAQQBHAHcAQQBhAFEAQgB2AEEARwA0AEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAeABBAEMAdwBBAE0AQQBBAHcAQQBEAEEAQQBMAEEAQQB3AEEARABBAEEATQBBAEEAcwBBAEQAQQBBAE0AQQBBAHcAQQBDAHcAQQBNAEEAQQB3AEEARABBAEEATABBAEEAdwBBAEQAQQBBAE0AQQBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEMAOABBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQgBsAEEASABnAEEAWQBRAEEAdABBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAGMAUQBCADEAQQBHAGsAQQBiAGcAQgAwAEEARwBrAEEAYgBBAEIAcwBBAEcAawBBAGIAdwBCAHUAQQBEAHcAQQBZAGcAQgB5AEEAQwBBAEEATAB3AEEAKwBBAEQAdwBBAGMAdwBCAHQAQQBHAEUAQQBiAEEAQgBzAEEARAA0AEEASwBBAEIAaABBAEMAQQBBAFkAZwBCAHAAQQBHAHcAQQBiAEEAQgBwAEEARwA4AEEAYgBnAEEAZwBBAEcASQBBAGEAUQBCAHMAQQBHAHcAQQBhAFEAQgB2AEEARwA0AEEASwBRAEEAOABBAEMAOABBAGMAdwBCAHQAQQBHAEUAQQBiAEEAQgBzAEEARAA0AEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAeABBAEMAdwBBAE0AQQBBAHcAQQBEAEEAQQBMAEEAQQB3AEEARABBAEEATQBBAEEAcwBBAEQAQQBBAE0AQQBBAHcAQQBDAHcAQQBNAEEAQQB3AEEARABBAEEATABBAEEAdwBBAEQAQQBBAE0AQQBBAHMAQQBEAEEAQQBNAEEAQQB3AEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBMAHcAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAEwAdwBCADAAQQBHAEUAQQBZAGcAQgBzAEEARwBVAEEAUABnAEEAPQAKAHMAdQBmAGYAaQB4ADoA:31b8e172-b470-440e-83d8-e6b185028602</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>prefix</th>
+<th>amount</th>
+<th>amount as numeral</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>kilo-</td>
+<td>thousand</td>
+<td>1,000</td>
+</tr>
+<tr class="even">
+<td>mega-</td>
+<td>million</td>
+<td>1,000,000</td>
+</tr>
+<tr class="odd">
+<td>giga-</td>
+<td>billion</td>
+<td>1,000,000,000</td>
+</tr>
+<tr class="even">
+<td>tera-</td>
+<td>trillion (a million million)</td>
+<td>1,000,000,000,000</td>
+</tr>
+<tr class="odd">
+<td>peta-</td>
+<td>quadrillion</td>
+<td>1,000,000,000,000,000</td>
+</tr>
+<tr class="even">
+<td>exa-</td>
+<td>quintillion (a billion billion)</td>
+<td>1,000,000,000,000,000,000</td>
+</tr>
+</tbody>
+</table>
 <p>Digits for groupings smaller than one (fractions) have metric prefixes too:</p>
-<p>31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATwBBAEEAeQBBAEQAQQBBAE0AdwBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBQAEEAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAEkAQQBCAGoAQQBHAHcAQQBZAFEAQgB6AEEASABNAEEAUABRAEEAaQBBAEcASQBBAGUAUQBCADAAQQBHAFUAQQBJAEEAQgBwAEEARwA0AEEAWgBBAEIAbABBAEcANABBAGQAQQBBAGkAQQBDAEEAQQBkAHcAQgBwAEEARwBRAEEAZABBAEIAbwBBAEQAMABBAEkAZwBBADIAQQBEAEEAQQBNAEEAQgB3AEEASABnAEEASQBnAEEAZwBBAEgATQBBAGQAUQBCAHQAQQBHADAAQQBZAFEAQgB5AEEASABrAEEAUABRAEEAaQBBAEgAUQBBAFkAUQBCAGkAQQBHAHcAQQBaAFEAQQBnAEEARwA4AEEAWgBnAEEAZwBBAEcAWQBBAGMAZwBCAGgAQQBHAE0AQQBkAEEAQgBwAEEARwA4AEEAYgBnAEIAaABBAEcAdwBBAEkAQQBCAHUAQQBIAFUAQQBiAFEAQgBpAEEARwBVAEEAYwBnAEEAZwBBAEgAQQBBAGMAZwBCAGwAQQBHAFkAQQBhAFEAQgA0AEEARwBVAEEAYwB3AEEAaQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAZwBBAEkAQQBCAHoAQQBHAE0AQQBiAHcAQgB3AEEARwBVAEEAUABRAEEAaQBBAEcATQBBAGIAdwBCAHMAQQBDAEkAQQBQAGcAQgB3AEEASABJAEEAWgBRAEIAbQBBAEcAawBBAGUAQQBBADgAQQBDADgAQQBkAEEAQgBvAEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAGEAQQBBAGcAQQBIAE0AQQBZAHcAQgB2AEEASABBAEEAWgBRAEEAOQBBAEMASQBBAFkAdwBCAHYAQQBHAHcAQQBJAGcAQQArAEEARwBFAEEAYgBRAEIAdgBBAEgAVQBBAGIAZwBCADAAQQBEAHcAQQBMAHcAQgAwAEEARwBnAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAG8AQQBDAEEAQQBjAHcAQgBqAEEARwA4AEEAYwBBAEIAbABBAEQAMABBAEkAZwBCAGoAQQBHADgAQQBiAEEAQQBpAEEARAA0AEEAWQBRAEIAdABBAEcAOABBAGQAUQBCAHUAQQBIAFEAQQBJAEEAQgBoAEEASABNAEEASQBBAEIAbQBBAEgASQBBAFkAUQBCAGoAQQBIAFEAQQBhAFEAQgB2AEEARwA0AEEAUABBAEEAdgBBAEgAUQBBAGEAQQBBACsAQQBBAG8AQQBQAEEAQQB2AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAGIAUQBCAHAAQQBHAHcAQQBiAEEAQgBwAEEAQwAwAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEIAMABBAEcAZwBBAGIAdwBCADEAQQBIAE0AQQBZAFEAQgB1AEEARwBRAEEAZABBAEIAbwBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAE0AUQBBAHYAQQBEAEUAQQBMAEEAQQB3AEEARABBAEEATQBBAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBCAHQAQQBHAGsAQQBZAHcAQgB5AEEARwA4AEEATABRAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEcAMABBAGEAUQBCAHMAQQBHAHcAQQBhAFEAQgB2AEEARwA0AEEAZABBAEIAbwBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAE0AUQBBAHYAQQBEAEUAQQBMAEEAQQB3AEEARABBAEEATQBBAEEAcwBBAEQAQQBBAE0AQQBBAHcAQQBEAHcAQQBMAHcAQgAwAEEARwBRAEEAUABnAEEASwBBAEQAdwBBAEwAdwBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBaAEEAQQArAEEARwA0AEEAWQBRAEIAdQBBAEcAOABBAEwAUQBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBHAEkAQQBhAFEAQgBzAEEARwB3AEEAYQBRAEIAdgBBAEcANABBAGQAQQBCAG8AQQBEAHcAQQBMAHcAQgAwAEEARwBRAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBEADQAQQBNAFEAQQB2AEEARABFAEEATABBAEEAdwBBAEQAQQBBAE0AQQBBAHMAQQBEAEEAQQBNAEEAQQB3AEEAQwB3AEEATQBBAEEAdwBBAEQAQQBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEEAdgBBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBEADQAQQBjAEEAQgBwAEEARwBNAEEAYgB3AEEAdABBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAGQAQQBCAHkAQQBHAGsAQQBiAEEAQgBzAEEARwBrAEEAYgB3AEIAdQBBAEgAUQBBAGEAQQBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBEAEUAQQBMAHcAQQB4AEEAQwB3AEEATQBBAEEAdwBBAEQAQQBBAEwAQQBBAHcAQQBEAEEAQQBNAEEAQQBzAEEARABBAEEATQBBAEEAdwBBAEMAdwBBAE0AQQBBAHcAQQBEAEEAQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBBAHYAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEAWgBnAEIAbABBAEcAMABBAGQAQQBCAHYAQQBDADAAQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQgB4AEEASABVAEEAWQBRAEIAawBBAEgASQBBAGEAUQBCAHMAQQBHAHcAQQBhAFEAQgB2AEEARwA0AEEAZABBAEIAbwBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAE0AUQBBAHYAQQBEAEUAQQBMAEEAQQB3AEEARABBAEEATQBBAEEAcwBBAEQAQQBBAE0AQQBBAHcAQQBDAHcAQQBNAEEAQQB3AEEARABBAEEATABBAEEAdwBBAEQAQQBBAE0AQQBBAHMAQQBEAEEAQQBNAEEAQQB3AEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBMAHcAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEcARQBBAGQAQQBCADAAQQBHADgAQQBMAFEAQQA4AEEAQwA4AEEAZABBAEIAawBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBaAEEAQQArAEEASABFAEEAZABRAEIAcABBAEcANABBAGQAQQBCAHAAQQBHAHcAQQBiAEEAQgBwAEEARwA4AEEAYgBnAEIAMABBAEcAZwBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBAHgAQQBDADgAQQBNAFEAQQBzAEEARABBAEEATQBBAEEAdwBBAEMAdwBBAE0AQQBBAHcAQQBEAEEAQQBMAEEAQQB3AEEARABBAEEATQBBAEEAcwBBAEQAQQBBAE0AQQBBAHcAQQBDAHcAQQBNAEEAQQB3AEEARABBAEEATABBAEEAdwBBAEQAQQBBAE0AQQBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEMAOABBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAaABBAEcASQBBAGIAQQBCAGwAQQBEADQAQQAKAHMAdQBmAGYAaQB4ADoA:31b8e172-b470-440e-83d8-e6b185028602 The fractional names are used to measure times in the computer, such as a nanosecond memory access time, or distances between wires on a chip, which are measured in nanometers.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>prefix</th>
+<th>amount</th>
+<th>amount as fraction</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>milli-</td>
+<td>thousandth</td>
+<td>1/1,000</td>
+</tr>
+<tr class="even">
+<td>micro-</td>
+<td>millionth</td>
+<td>1/1,000,000</td>
+</tr>
+<tr class="odd">
+<td>nano-</td>
+<td>billionth</td>
+<td>1/1,000,000,000</td>
+</tr>
+<tr class="even">
+<td>pico-</td>
+<td>trillionth</td>
+<td>1/1,000,000,000,000</td>
+</tr>
+<tr class="odd">
+<td>femto-</td>
+<td>quadrillionth</td>
+<td>1/1,000,000,000,000,000</td>
+</tr>
+<tr class="even">
+<td>atto-</td>
+<td>quintillionth</td>
+<td>1/1,000,000,000,000,000,000</td>
+</tr>
+</tbody>
+</table>
+<p>The fractional names are used to measure times in the computer, such as a nanosecond memory access time, or distances between wires on a chip, which are measured in nanometers.</p>
 </div>
 </div>
-</div>
-<div class="ap-standard">
-<p>DAT-1.A.6</p>
 </div>
 <p>“Binary sequence” is a very broad category, and often, several layers of abstraction are built on it. For example, you can include a picture in an email or text message, in which case, the <em>message</em> includes a <em>picture</em>, which is a kind of <em>file</em>, which is a kind of <em>binary sequence</em>.</p>
-::: {#first .forYouToDo}
-<ol>
-<li>
-<div class="todo">
-<p>It’s unclear what to do here. It might be better to give them some strings to translate. –MF, 6/1/20</p>
-<p>Brian has more or less convinced Mary to change the block names from “convert decimal to binary” to “convert number to binary” and vice versa AND they both agreed to drop the recursion inside the <code>convert number to binary</code> block. The starter project, solutions, and references to it in the page will all need edits. We haven’t decided if changes are needed on the Binary Representation page. –MF, 6/5/20</p>
-</div>
-<p><a class="run" href="../../prog/4-internet/U4L4-TranslatingBinary.xml" target="_blank"><img src="../../img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"></a></p>
+<div id="first" class="forYouToDo">
+<ol class="example" type="1">
+<li><p><a class="run" href="../../prog/4-internet/U4L4-TranslatingBinary.xml" target="_blank"><img src="../../img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"></a></p>
 <p>Take a look at these 3 custom blocks that you will use to explore binary sequences:</p>
 <ul>
 <li>
-A reporter that accepts a string of text as input and translates that text into a binary sequence:<br> <img src="../../img/6-computers/translate-text-to-binary.png" title="translate text () to binary sequence" alt="translate text () to binary sequence" class="ms-4">
+<p>A reporter that accepts a string of text as input and translates that text into a binary sequence:<br> <img src="../../img/6-computers/translate-text-to-binary.png" title="translate text () to binary sequence" alt="translate text () to binary sequence" class="ms-4"></p>
 </li>
 <li>
-A reporter that accepts a binary sequence as input and translates it into text:<br> <img src="../../img/6-computers/translate-binary-to-text.png" title="translate binary sequence () to text" alt="translate binary sequence () to text" class="ms-4">
+<p>A reporter that accepts a binary sequence as input and translates it into text:<br> <img src="../../img/6-computers/translate-binary-to-text.png" title="translate binary sequence () to text" alt="translate binary sequence () to text" class="ms-4"></p>
 </li>
 <li>
 <div class="sidenoteBig">
@@ -518,67 +632,43 @@ A reporter that accepts a binary sequence as input and translates it into text:<
 </div>
 <p>A command block that accepts a binary sequence as input and draws a black and white image on the stage where each 0 in the sequence becomes a white “pixel” and each 1 becomes a black “pixel.” <br> <img src="../../img/6-computers/translate-binary-to-image.png" title="translate binary sequence () to B&amp;W image that is () pixels wide and scaled by factor of ()" alt="translate binary sequence () to B&amp;W image that is () pixels wide and scaled by factor of ()" class="ms-4"></p>
 </li>
-</ul>
-</li>
-<li>
-<p>Translate a short text string into a binary sequence.</p>
+</ul></li>
+<li><p>Translate a short text string into a binary sequence.</p>
 <ul>
 <div class="sidenote">
 <p>The quotes tell Snap<em>!</em> that the binary sequence should be saved “as is.” Without some text at the beginning, Snap<em>!</em> will think your binary sequence is a number, and it would remove any zeros at the front, which would change the interpretation of where each byte begins and ends.</p>
 </div>
 <li>
-Find the <code>set (</code><var>output</var><code>) to...</code> instruction and <strong>change the input text</strong> to a short text string of your choosing. The reported binary sequence will be stored in the <var>output</var> variable with quotes around it.<br> <img src="../../img/6-computers/set-output-to-translate-text.png" title="set (output) to (translate text (Beauty and Joy of Computing) to binary sequence)" alt="set (output) to (translate text (Beauty and Joy of Computing) to binary sequence)" class="ms-4">
+<p>Find the <code>set (</code><var>output</var><code>) to...</code> instruction and <strong>change the input text</strong> to a short text string of your choosing. The reported binary sequence will be stored in the <var>output</var> variable with quotes around it.<br> <img src="../../img/6-computers/set-output-to-translate-text.png" title="set (output) to (translate text (Beauty and Joy of Computing) to binary sequence)" alt="set (output) to (translate text (Beauty and Joy of Computing) to binary sequence)" class="ms-4"></p>
 </li>
 <li>
-Access the output by right-clicking (or control-clicking) on the OUTPUT watcher on the stage and choosing “export…” The binary sequence will download as a text file. Copy the binary sequence out of the file, but not the quotes.<br> <img src="../../img/6-computers/exporting-output-watcher.png" title="image of output watcher on stage storing a binary sequence with the drop-down menu open and  'export...' option selected" alt="image of output watcher on stage storing a binary sequence with the drop-down menu open and  'export...' option selected" class="ms-4">
+<p>Access the output by right-clicking (or control-clicking) on the OUTPUT watcher on the stage and choosing “export…” The binary sequence will download as a text file. Copy the binary sequence out of the file, but not the quotes.<br> <img src="../../img/6-computers/exporting-output-watcher.png" title="image of output watcher on stage storing a binary sequence with the drop-down menu open and  'export...' option selected" alt="image of output watcher on stage storing a binary sequence with the drop-down menu open and  'export...' option selected" class="ms-4"></p>
 </li>
-</ul>
-</li>
+</ul></li>
+</ol>
 <div class="endnote">
 <p>Even Snap<em>!</em> has bugs. When you paste this data into Snap<em>!</em>, it may extend beyond the edges of the box. Developers are working to fix this.<br> <img src="../../img/6-computers/binary-sequences-bug.png" title="image of output pasted into block and extending past the edges of the block" alt="image of output pasted into block and extending past the edges of the block" class="ms-4"></p>
 </div>
-<li>
-<p>Paste the outputted binary sequence into the <code>translate binary sequence to text</code> block and run it. (It may take a moment to report.)</p>
+<ol start="3" class="example" type="1">
+<li><p>Paste the outputted binary sequence into the <code>translate binary sequence to text</code> block and run it. (It may take a moment to report.)</p>
 <ul>
-<li>
-Is your original text reported back? (If not, you may have included the quotes or lost a bit or two while copying.)
-</li>
-<li>
-<p>Once you’ve gotten your original text to report back, try making some changes.</p>
+<li>Is your original text reported back? (If not, you may have included the quotes or lost a bit or two while copying.)</li>
+<li>Once you’ve gotten your original text to report back, try making some changes.
 <ul>
-<li>
-What happens if you change one bit?
-</li>
-<li>
-What happens if you add a bit somewhere in the middle of the sequence?
-</li>
-<li>
-What happens if you add a bit at the beginning?
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<div class="ap-standard">
-<p>DAT-1.A</p>
+<li>What happens if you change one bit?</li>
+<li>What happens if you add a bit somewhere in the middle of the sequence?</li>
+<li>What happens if you add a bit at the beginning?</li>
+</ul></li>
+</ul></li>
+<li><p>Go back to the exported output.txt file and copy your original binary sequence again (without the quotes). Paste it into the <code>translate binary sequence to B&amp;W image</code> block and run the block. You are not likely to see anything meaningful. Why not?</p></li>
+<li><p>Try this binary sequence in <code>translate binary sequence to B&amp;W image</code> with the second input set to <var>14</var> pixels wide:</p>
+<blockquote class="blockquote">
+<p><code>00000110000000000001000110000000010000000000001100100110000011111111000001100111100000010010110011000111001111100000100110110000000001000000000000110000000000111000000011000100011000010000000100000110000110000000111111000000 </code></p>
+</blockquote>
+<p>You see should something like the BJC logo:<br> <img src="../../img/web/bjc-logo.png" title="Beauty and Joy of Computing logo: a 'b,' a 'j,' and a 'c' looking like two eyes and a nose with a smile below" alt="Beauty and Joy of Computing logo: a 'b,' a 'j,' and a 'c' looking like two eyes and a nose with a smile below" class="ms-4"></p></li>
+<li><p>What do you get if you translate that same binary sequence into text? Why?</p></li>
+</ol>
 </div>
-<li>
-Go back to the exported output.txt file and copy your original binary sequence again (without the quotes). Paste it into the <code>translate binary sequence to B&amp;W image</code> block and run the block. You are not likely to see anything meaningful. Why not?
-</li>
-<li>
-<p>Try this binary sequence in <code>translate binary sequence to B&amp;W image</code> with the second input set to <var>14</var> pixels wide:<br></p>
-<p class="ms-4">
-</p><p><code class="break">00000110000000000001000110000000010000000000001100100110000011111111000001100111100000010010110011000111001111100000100110110000000001000000000000110000000000111000000011000100011000010000000100000110000110000000111111000000`<br></code></p><code class="break">
-<p>You see should something like the BJC logo:<br> <img src="../../img/web/bjc-logo.png" title="Beauty and Joy of Computing logo: a 'b,' a 'j,' and a 'c' looking like two eyes and a nose with a smile below" alt="Beauty and Joy of Computing logo: a 'b,' a 'j,' and a 'c' looking like two eyes and a nose with a smile below" class="ms-4"></p>
-</code></li><code class="break">
-<div class="ap-standard">
-<p>DAT-1.A</p>
-</div>
-<li>
-What do you get if you translate that same binary sequence into text? Why?
-</li>
-</code></ol><code class="break">
-<p>:::</p>
 <div class="ap-standard">
 <p>DAT-1.A.8, DAT-1.A.9, DAT-1.A.10</p>
 </div>
@@ -676,7 +766,7 @@ What do you get if you translate that same binary sequence into text? Why?
 
 
 
-</code></code></main><code><code class="break"> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -1051,7 +1141,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>
   </div>
 </nav>
-</code></code></div><code><code class="break"> <!-- /content -->
+</div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
@@ -1066,4 +1156,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</code></code></body></html>
+</body></html>
