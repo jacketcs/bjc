@@ -35,7 +35,9 @@ Here are a few things to help you get started on submitting your create task. If
 1. Open it in your browser and print it to `.pdf`.
     - Make sure you can see all the code by scaling the contents of the file (`More settings > Scale`)
 1. See the attached video on how to do this on Chrome. (Including removing your name)
-1. If your name is at the top and/or bottom of the page, just unclick the headers/footer setting (More settings)
+1. If your name is at the top and/or bottom of the page, just unclick the headers/footer setting (More settings) 
+
+
 
 ## Submit
 
@@ -44,9 +46,14 @@ Here are a few things to help you get started on submitting your create task. If
 1. Go to [myap.collegeboard.org](https://myap.collegeboard.org/)
 1. Under AP Computer Science Principles, go to the "Digital Portfolio"
 1. You can submit all your materials there. Only click on the "submit final" buttons if you are sure that you are done. Any other "submit" buttons are not final submissions
-    - For the program code, upload the pdf that you made before.
-    - For the write up, copy and paste all your responses to the web page
-    - For the video, upload the video
+    - For Component A: Program Code, upload the pdf that you follow the steps above to make. **MAKE SURE YOU NAME IS NOT PRESENT IN ANY FORM ON THE PDF**
+    - For Component B: Video, upload the video.
+    - For Component C: Personalized Project Reference, copy all your images to the submission.
 
 ### Google Classroom
-For everyone in Google Classroom, you need to upload the video to the Google Classroom submission, make sure you submit the right write-up as a Google Doc, and submit the link to your Snap Project.
+
+For everyone in Google Classroom, you need to 
+
+1. upload the video to the Google Classroom submission, 
+1. make sure you submit the right Component C: Personalized Project Reference as a Google Doc, and 
+1. submit the link to your Snap Project.

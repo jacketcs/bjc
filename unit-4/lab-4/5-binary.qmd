@@ -2,6 +2,9 @@
 title: "Page 5: Binary Representation"
 subtitle: "Unit 4, Lab 4, Page 5"
 order: 5
+format:
+  html:
+    html-table-processing: none
 ---
 
 We've looked at how the number of bits used to represent an integer
