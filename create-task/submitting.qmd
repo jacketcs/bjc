@@ -34,10 +34,10 @@ Here are a few things to help you get started on submitting your create task. If
 1. It will download a `.html` file
 1. Open it in your browser and print it to `.pdf`.
     - Make sure you can see all the code by scaling the contents of the file (`More settings > Scale`)
-1. See the attached video on how to do this on Chrome. (Including removing your name)
+1. See the video below on how to do this on Chrome. (Including removing your name)
 1. If your name is at the top and/or bottom of the page, just unclick the headers/footer setting (More settings) 
 
-
+{{< video https://youtu.be/Sp1Q7iXAmQ8 >}}
 
 ## Submit
 
