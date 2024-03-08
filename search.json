@@ -116,7 +116,7 @@
     "href": "create-task/submitting.html#export-your-program-code",
     "title": "Submitting Your Create Task",
     "section": "Export your Program Code",
-    "text": "Export your Program Code\n\nOpen your Snap! project\nGo to the file icon and click on export summary\nIt will download a .html file\nOpen it in your browser and print it to .pdf.\n\nMake sure you can see all the code by scaling the contents of the file (More settings &gt; Scale)\n\nSee the attached video on how to do this on Chrome. (Including removing your name)\nIf your name is at the top and/or bottom of the page, just unclick the headers/footer setting (More settings)"
+    "text": "Export your Program Code\n\nOpen your Snap! project\nGo to the file icon and click on export summary\nIt will download a .html file\nOpen it in your browser and print it to .pdf.\n\nMake sure you can see all the code by scaling the contents of the file (More settings &gt; Scale)\n\nSee the video below on how to do this on Chrome. (Including removing your name)\nIf your name is at the top and/or bottom of the page, just unclick the headers/footer setting (More settings)"
   },
   {
     "objectID": "create-task/submitting.html#submit",
