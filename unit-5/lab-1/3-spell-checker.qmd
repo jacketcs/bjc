@@ -4,13 +4,8 @@ subtitle: "Unit 5, Lab 1, Page 3"
 order: 3
 ---
 
-::: todo
-<h3>TG and solutions need to be checked. --MF, 12/19/18</h3>
-:::
-
 ::: learn
-**On this page**, you will use a <em>binary search</em>
-algorithm to search efficiently in a <em>sorted</em> list.
+**On this page**, you will use a <em>binary search</em> algorithm to search efficiently in a <em>sorted</em> list.
 :::
 
 Answering this question is simple in Snap<em>!</em> because you can
@@ -76,107 +71,99 @@ The word "binary" just means "two," whether it's two digits or two
 halves.
 :::
 
-<div class="forYouToDo" id="first">
+:::::: { .forYouToDo #first }
 
-<ol>
+(@) <img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/>
+    Compare this `binary search` block with your code from <a href="/unit-5/lab-1/1-sorted-lists.html" title="Page 1: Guess My Number"> Page 1: Guess My Number</a>. What parts are the same? What parts are different?
+    
+    ```{=html}
+    <img class="indent" src="/img/5-algorithms/binary-search-block-definition.png" alt="binary search for (value) in (data) {
+            script variables (low) (high) (current index) (current item)
+            set (low) to (1)
+            set (high) to (length of (data))
+            repeat until ((low) > (high)) {
+                        set (current index) to (average of (low) and (high)) #comment: find the middle word
+                        set (current item) to (item (current index) of (data))
+                        if ((current item) = (value)) { report (true) }
+                        else {
+                                    if ((current item) > (value)) #comment: eliminate half the list {
+                                                set (high) to ((current index) – (1))
+                                    } else { set (low) to ((current index) + (1)) }
+                        }
+            }
+            report (false)
+}" title="binary search for (value) in (data) {
+            script variables (low) (high) (current index) (current item)
+            set (low) to (1)
+            set (high) to (length of (data))
+            repeat until ((low) > (high)) {
+                        set (current index) to (average of (low) and (high)) #comment: find the middle word
+                        set (current item) to (item (current index) of (data))
+                        if ((current item) = (value)) { report (true) }
+                        else {
+                                    if ((current item) > (value)) #comment: eliminate half the list {
+                                                set (high) to ((current index) – (1))
+                                    } else { set (low) to ((current index) + (1)) }
+                        }
+            }
+            report (false)
+}">
+    ```
 
-<li>
+    ::: endnote
 
-<img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/>
-Compare this `binary search` block with your code from
-<a href="/unit-5/lab-1/1-sorted-lists.html" title="Page 1: Guess My Number">Page
-1: Guess My Number</a>. What parts are the same? What parts are
-different?<br /> (high)) { set (current index) to (average of (low) and
-(high)) #comment: find the middle word set (current item) to (item
-(current index) of (data)) if ((current item) = (value)) { report (true)
-} else { if ((current item) \> (value)) #comment: eliminate half the
-list { set (high) to ((current index) -- (1)) } else { set (low) to
-((current index) + (1)) } } } report (false) }" title="binary search for
-(value) in (data) { script variables (low) (high) (current index)
-(current item) set (low) to (1) set (high) to (length of (data)) repeat
-until ((low) \> (high)) { set (current index) to (average of (low) and
-(high)) #comment: find the middle word set (current item) to (item
-(current index) of (data)) if ((current item) = (value)) { report (true)
-} else { if ((current item) \> (value)) #comment: eliminate half the
-list { set (high) to ((current index) -- (1)) } else { set (low) to
-((current index) + (1)) } } } report (false) }" /\>
+    The `>` block (as well as the `<` and `=` blocks) compares words alphabetically:
 
-::: endnote
-```         
-The `&gt;` block (as well as the `&lt;` and `=` blocks) compares words alphabetically: <br />
-<img class="ms-4" src="/img/5-algorithms/carrot-gt-banana-reporting.png" alt="(carrot) > (banana) reporting true" title="(carrot) > (banana) reporting true" />
-<img class="ms-4" src="/img/5-algorithms/apple-gt-banana-reporting.png" alt="(apple) > (banana) reporting false" title="(apple) > (banana) reporting false" />
-</div>
-</li>
-<li>Check whether "seperate" is spelled correctly by using `binary search` to look for the word in the sorted list <img class="inline" src="/img/5-algorithms/100000-words-(sorted).png" alt="100,000 words (sorted)" title="100,000 words (sorted)" />.</li>
-```
+    <img class="indent" src="/img/5-algorithms/carrot-gt-banana-reporting.png" alt="(carrot) > (banana) reporting true" title="(carrot) > (banana) reporting true">
 
-<li>Try `binary search` with some words that you know are
-spelled correctly and some that you know are incorrect.</li>
+    <img class="indent" src="/img/5-algorithms/apple-gt-banana-reporting.png" alt="(apple) > (banana) reporting false" title="(apple) > (banana) reporting false">
 
-```         
-<div class="todo">Maybe change it to "Practice using `binary search`: Try it with some words that you know are spelled correctly and some that you know are incorrect." --MF, 7/13/20</div>
-```
+    ::: 
 
-<li>Now use `binary search` to search for the same words in
-the unsorted <var>100,000 words</var>.</li>
 
-```         
-<div class="ap-standard">AAP-2.P.2</div>
-```
+(@) Check whether "seperate" is spelled correctly by using `binary search` to look for the word in the sorted list <img class="inline" src="/img/5-algorithms/100000-words-(sorted).png" alt="100,000 words (sorted)" title="100,000 words (sorted)" />.
 
-<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
-Why does binary searching work on one list but not the other? Consider
-how the binary search algorithm works.</li>
+(@) Try `binary search` with some words that you know are spelled correctly and some that you know are incorrect.
 
-</ol>
-:::
+(@) Now use `binary search` to search for the same words in the unsorted <var>100,000 words</var>.
+
+(@) <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Why does binary searching work on one list but not the other? Consider how the binary search algorithm works.
+
+::::::
 
 The `contains` block can't make any assumptions about the
 ordering in list you are searching, but if you are looking for one thing
 in a <em>sorted</em>, list you can use binary search.
 
-<div class="takeNote">
-
-```         
-<div class="ap-standard">AAP-2.P.2</div>
+:::::: takeNote
 
 Two things affect whether you can use a binary search algorithm to make your program more efficient:
-<ul>
-<li>What question you are trying to answer? Are you searching for <em>one</em> thing in a list or are you finding <em>all</em> the things in the list with some characteristic?</li>
-<li>What is the condition of your data? Are they sorted or unsorted?</li>
-</ul>
-<table class="bordered center standard" summary="table showing that in order to use binary search, you have to be looking for one specific value and you have to be looking in sorted data">
-<tr>
-<th scope="col">&nbsp;</th>
-<th scope="col">find one value</th>
-<th scope="col">find many values</th>
-</tr>
-<tr>
-<th scope="col">sorted data</th>
-<td style="color: green">can use binary search</td>
-<td>must use linear search</td>
-</tr>
-<tr>
-<th scope="col">unsorted data</th>
-<td>must use linear search</td>
-<td>must use linear search</td>
-</tr>
-</table>
 
-</div>
-<div class="endnote">If you are working with short lists, it's not so important which algorithm you use. It's when you are dealing with a lot of data that you have to think carefully about the algorithm.</div>
-<div class="forYouToDo">
-```
+- What question you are trying to answer? Are you searching for <em>one</em> thing in a list or are you finding <em>all</em> the things in the list with some characteristic?
 
-<ol start="6">
+- What is the condition of your data? Are they sorted or unsorted?
 
-<li>
+
+|               | find one value         | find many values       |
+|---------------|------------------------|------------------------|
+| sorted data   | **can use binary search**  | must use linear search |
+| unsorted data | must use linear search | must use linear search |
+
+::::::
+
+:::::: endnote
+
+If you are working with short lists, it's not so important which algorithm you use. It's when you are dealing with a lot of data that you have to think carefully about the algorithm.
+
+::::::
+
+<!-- <ol start="6">
+
+<li> -->
 
 <!-- Question 1 -->
-
-::: {.assessment-data type="multiplechoice" identifier="In order to use a binary search, the data must be..." hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="true"}
-```         
+<!-- 
+::: {.assessment-data type="multiplechoice" identifier="In order to use a binary search, the data must be..." hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="true"}         
 <div class="prompt">
 <div class="ap-standard">AAP-2.P part b, AAP-2.P.2</div>
 In order to use a binary search, the data must be...
@@ -208,9 +195,9 @@ If the data are unsorted, you can't be sure that everything before or everything
 <div class="responseDeclaration" identifier="ri1">
 <div class="correctResponse" identifier="c2"></div>
 </div>
-</div>
+</div> -->
 <!-- Question 2 -->
-<div class="assessment-data" type="multiplechoice" identifier="Which of the following questions can be answered with a binary search, assuming the data are sorted?"
+<!-- <div class="assessment-data" type="multiplechoice" identifier="Which of the following questions can be answered with a binary search, assuming the data are sorted?"
 hasinlinefeedback="true" maxchoices="2" responseIdentifier="ri2" shuffle="true">
 <div class="prompt">
 Which of the following questions can be answered with a binary search, assuming the data are sorted? Check all that apply:
@@ -245,19 +232,16 @@ Your contact list is probably **sorted by name**, not by address. Also, there ma
 </div>
 </div>
 </li>
-</ol>
-```
-:::
+</ol> -->
 
-::: ifTime
-<ol start="7">
+:::::: ifTime
 
-<li>Build a spell-checker.</li>
+(@) Build a spell-checker.
+  
+    ::: endnote 
+    Use <img class="inline" src="/img/blocks/split-by-whitespace.png" width="190" alt="split () by (whitespace)" title="split () by (whitespace)" /> to convert the input text into a list.
+    :::
 
-```         
-<div class="endnote">Use <img class="inline" src="/img/blocks/split-by-whitespace.png" width="190" alt="split () by (whitespace)" title="split () by (whitespace)" /> to convert the input text into a list.</div>
-<li><img class="inline" src="/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Should your spell-checker look through the dictionary for each word of the text or look through the text for each word of the dictionary?</li>
-```
+(@) <img class="inline" src="/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Should your spell-checker look through the dictionary for each word of the text or look through the text for each word of the dictionary?
 
-</ol>
-:::
+::::::

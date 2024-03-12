@@ -3,4 +3,4 @@ title: "Unit 4: How the Internet Works"
 pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 ---
 
-In Unit 4, we learn how the internet works... we'll have less coding in this unit, but the content that you learn will be important for multiple choice questions in this course.
+In Unit 4, we learn how the internet works through multiple layers of abstraction and encryption. You will also learn about the evolving state of communication and the evolutionary phenonmenon of social networks and how data is represented in computers. We'll have less coding in this unit, but the content that you learn will be important for multiple choice questions in this course.

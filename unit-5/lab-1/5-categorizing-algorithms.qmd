@@ -4,128 +4,89 @@ subtitle: "Unit 5, Lab 1, Page 5"
 order: 5
 ---
 
-::: todo
-<h3>TG and solutions need to be checked. --MF, 12/19/18</h3>
-:::
-
 ::: learn
-**On this page**, you will compare four algorithms and
-learn how they each take a different category of time to run.
+**On this page**, you will compare four algorithms and learn how they each take a different category of time to run.
 :::
 
-::: {#first .forYouToDo}
-<ol>
+:::::: {#first .forYouToDo}
 
-<li>Locate the
-<img src="/img/5-algorithms/25000integers.png" title="25,000 integers starting from ()" alt="25,000 integers starting from ()"/>
-block included in your project, and time it for various starting
-numbers.<br />
-31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATgBnAEEAMABBAEQAUQBBAAoAcAByAGUAZgBpAHgAOgAKAHMAbwB1AHIAYwBlADoAUABBAEIAMABBAEcARQBBAFkAZwBCAHMAQQBHAFUAQQBJAEEAQgBqAEEARwB3AEEAWQBRAEIAegBBAEgATQBBAFAAUQBBAGkAQQBHAEkAQQBiAHcAQgB5AEEARwBRAEEAWgBRAEIAeQBBAEcAVQBBAFoAQQBBAGcAQQBHAE0AQQBaAFEAQgB1AEEASABRAEEAWgBRAEIAeQBBAEMAQQBBAGMAdwBCADAAQQBHAEUAQQBiAGcAQgBrAEEARwBFAEEAYwBnAEIAawBBAEMASQBBAEkAQQBCAHoAQQBIAFUAQQBiAFEAQgB0AEEARwBFAEEAYwBnAEIANQBBAEQAMABBAEkAZwBCADAAQQBHAEUAQQBZAGcAQgBzAEEARwBVAEEASQBBAEIAegBBAEcAZwBBAGIAdwBCADMAQQBHAGsAQQBiAGcAQgBuAEEAQwBBAEEAZABBAEIAbwBBAEcAVQBBAEkAQQBCAHUAQQBIAFUAQQBiAFEAQgBpAEEARwBVAEEAYwBnAEEAZwBBAEcAOABBAFoAZwBBAGcAQQBHAGMAQQBkAFEAQgBsAEEASABNAEEAYwB3AEIAbABBAEgATQBBAEkAQQBCAHUAQQBHAFUAQQBaAFEAQgBrAEEARwBVAEEAWgBBAEEAZwBBAEgAUQBBAGIAdwBBAGcAQQBHAFkAQQBhAFEAQgB1AEEARwBRAEEASQBBAEIAMABBAEcAZwBBAFoAUQBBAGcAQQBHAHcAQQBZAFEAQgB6AEEASABRAEEASQBBAEIAdQBBAEgAVQBBAGIAUQBCAGkAQQBHAFUAQQBjAGcAQQBnAEEARwBrAEEAYgBnAEEAZwBBAEcARQBBAEkAQQBCAHoAQQBHADgAQQBjAGcAQgAwAEEARwBVAEEAWgBBAEEAZwBBAEcAdwBBAGEAUQBCAHoAQQBIAFEAQQBJAEEAQgBtAEEARwA4AEEAYwBnAEEAZwBBAEcARQBBAEkAQQBCAHMAQQBHAGsAQQBjAHcAQgAwAEEAQwBBAEEAYgB3AEIAbQBBAEMAQQBBAFkAUQBBAGcAQQBHAGMAQQBhAFEAQgAyAEEARwBVAEEAYgBnAEEAZwBBAEcAdwBBAFoAUQBCAHUAQQBHAGMAQQBkAEEAQgBvAEEAQwBJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYQBBAEEAZwBBAEgATQBBAFkAdwBCAHYAQQBIAEEAQQBaAFEAQQA5AEEAQwBJAEEAWQB3AEIAdgBBAEcAdwBBAEkAZwBBACsAQQBGAE0AQQBkAEEAQgBoAEEASABJAEEAZABBAEIAcABBAEcANABBAFoAdwBBAGcAQQBFADQAQQBkAFEAQgB0AEEARwBJAEEAWgBRAEIAeQBBAEQAdwBBAEwAdwBCADAAQQBHAGcAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAbwBBAEMAQQBBAGMAdwBCAGoAQQBHADgAQQBjAEEAQgBsAEEARAAwAEEASQBnAEIAagBBAEcAOABBAGIAQQBBAGkAQQBEADQAQQBQAEEAQgBqAEEARwA4AEEAWgBBAEIAbABBAEQANABBAE0AZwBBADEAQQBDAHcAQQBNAEEAQQB3AEEARABBAEEASQBBAEIAcABBAEcANABBAGQAQQBCAGwAQQBHAGMAQQBaAFEAQgB5AEEASABNAEEAUABBAEEAdgBBAEcATQBBAGIAdwBCAGsAQQBHAFUAQQBQAGcAQQBnAEEARgBRAEEAYQBRAEIAdABBAEcAVQBBAFAAQQBBAHYAQQBIAFEAQQBhAEEAQQArAEEAQQBvAEEAUABBAEEAdgBBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBEADQAQQBNAFEAQQB3AEEARABBAEEATQBBAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBEAEUAQQBNAEEAQQBzAEEARABBAEEATQBBAEEAdwBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEEAdgBBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBEADQAQQBNAFEAQQB3AEEARABBAEEATABBAEEAdwBBAEQAQQBBAE0AQQBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBEAHcAQQBMAHcAQgAwAEEARwBRAEEAUABnAEEASwBBAEQAdwBBAEwAdwBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBaAEEAQQArAEEARABFAEEATABBAEEAdwBBAEQAQQBBAE0AQQBBAHMAQQBEAEEAQQBNAEEAQQB3AEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQQB2AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAE0AUQBBAHcAQQBDAHcAQQBNAEEAQQB3AEEARABBAEEATABBAEEAdwBBAEQAQQBBAE0AQQBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBEAHcAQQBMAHcAQgAwAEEARwBRAEEAUABnAEEASwBBAEQAdwBBAEwAdwBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEcARQBBAFkAZwBCAHMAQQBHAFUAQQBQAGcAQQA9AAoAcwB1AGYAZgBpAHgAOgA=:31b8e172-b470-440e-83d8-e6b185028602</li>
+(@) Locate the <img src="/img/5-algorithms/25000integers.png" title="25,000 integers starting from ()" alt="25,000 integers starting from ()"/> block included in your project, and time it for various starting numbers.
 
-<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/>
-Look at the table. How would you describe what happens to the time as
-the starting number gets bigger? Write a hypothesis about the
-pattern.</li>
+    | Starting Number | `25,000 integers` Time |
+    |-----------------|----------------------|
+    | 1000            |                      |
+    | 10,000          |                      |
+    | 100,000         |                      |
+    | 1,000,000       |                      |
+    | 10,000,000      |                      |
 
-<li>
+(@) <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/> Look at the table. How would you describe what happens to the time as
+the starting number gets bigger? Write a hypothesis about the pattern.
 
-::: sidenoteBig
-There are several different ways to sort a list, some of which you will
-learn about in Unit 8. This `sort` block uses an "insertion
-sort" algorithm.
-:::
+(@) 
+    ::: sidenoteBig
+    There are several different ways to sort a list, some of which you will
+    learn about in Unit 8. This `sort` block uses an "insertion
+    sort" algorithm.
+    :::
 
-Locate the
-<img src="/img/5-algorithms/sort.png" title="sort &apos;list input slot&apos;" alt="sort &apos;list input slot&apos;" class="inline py-0"/>
-block included in your project, and time it for each length list.<br />
-31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATQBRAEEANABBAEQARQBBAE0AdwBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBQAEEAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAEkAQQBCAGoAQQBHAHcAQQBZAFEAQgB6AEEASABNAEEAUABRAEEAaQBBAEcASQBBAGIAdwBCAHkAQQBHAFEAQQBaAFEAQgB5AEEARwBVAEEAWgBBAEEAZwBBAEcATQBBAFoAUQBCAHUAQQBIAFEAQQBaAFEAQgB5AEEAQwBBAEEAYwB3AEIAMABBAEcARQBBAGIAZwBCAGsAQQBHAEUAQQBjAGcAQgBrAEEAQwBJAEEASQBBAEIAegBBAEgAVQBBAGIAUQBCAHQAQQBHAEUAQQBjAGcAQgA1AEEARAAwAEEASQBnAEIAMABBAEcARQBBAFkAZwBCAHMAQQBHAFUAQQBJAEEAQgB6AEEARwBnAEEAYgB3AEIAMwBBAEcAawBBAGIAZwBCAG4AQQBDAEEAQQBkAEEAQgBvAEEARwBVAEEASQBBAEIAdQBBAEgAVQBBAGIAUQBCAGkAQQBHAFUAQQBjAGcAQQBnAEEARwA4AEEAWgBnAEEAZwBBAEcAYwBBAGQAUQBCAGwAQQBIAE0AQQBjAHcAQgBsAEEASABNAEEASQBBAEIAdQBBAEcAVQBBAFoAUQBCAGsAQQBHAFUAQQBaAEEAQQBnAEEASABRAEEAYgB3AEEAZwBBAEcAWQBBAGEAUQBCAHUAQQBHAFEAQQBJAEEAQgAwAEEARwBnAEEAWgBRAEEAZwBBAEcAdwBBAFkAUQBCAHoAQQBIAFEAQQBJAEEAQgB1AEEASABVAEEAYgBRAEIAaQBBAEcAVQBBAGMAZwBBAGcAQQBHAGsAQQBiAGcAQQBnAEEARwBFAEEASQBBAEIAegBBAEcAOABBAGMAZwBCADAAQQBHAFUAQQBaAEEAQQBnAEEARwB3AEEAYQBRAEIAegBBAEgAUQBBAEkAQQBCAG0AQQBHADgAQQBjAGcAQQBnAEEARwBFAEEASQBBAEIAcwBBAEcAawBBAGMAdwBCADAAQQBDAEEAQQBiAHcAQgBtAEEAQwBBAEEAWQBRAEEAZwBBAEcAYwBBAGEAUQBCADIAQQBHAFUAQQBiAGcAQQBnAEEARwB3AEEAWgBRAEIAdQBBAEcAYwBBAGQAQQBCAG8AQQBDAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBhAEEAQQBnAEEASABNAEEAWQB3AEIAdgBBAEgAQQBBAFoAUQBBADkAQQBDAEkAQQBZAHcAQgB2AEEARwB3AEEASQBnAEEAKwBBAEUAdwBBAFoAUQBCAHUAQQBHAGMAQQBkAEEAQgBvAEEAQwBBAEEAYgB3AEIAbQBBAEMAQQBBAFQAQQBCAHAAQQBIAE0AQQBkAEEAQQA4AEEAQwA4AEEAZABBAEIAbwBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBhAEEAQQBnAEEASABNAEEAWQB3AEIAdgBBAEgAQQBBAFoAUQBBADkAQQBDAEkAQQBZAHcAQgB2AEEARwB3AEEASQBnAEEAKwBBAEQAdwBBAFkAdwBCAHYAQQBHAFEAQQBaAFEAQQArAEEARgBNAEEAYgB3AEIAeQBBAEgAUQBBAFAAQQBBAHYAQQBHAE0AQQBiAHcAQgBrAEEARwBVAEEAUABnAEEAZwBBAEYAUQBBAGEAUQBCAHQAQQBHAFUAQQBQAEEAQQB2AEEASABRAEEAYQBBAEEAKwBBAEEAbwBBAFAAQQBBAHYAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEATQBRAEEAdwBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEEAdgBBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBEADQAQQBNAFEAQQB3AEEARABBAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBAHgAQQBEAEEAQQBNAEEAQQB3AEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQQB2AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBBAHYAQQBIAFEAQQBZAFEAQgBpAEEARwB3AEEAWgBRAEEAKwBBAEEAPQA9AAoAcwB1AGYAZgBpAHgAOgA=:31b8e172-b470-440e-83d8-e6b185028602
+    Locate the <img src="/img/5-algorithms/sort.png" title="sort &apos;list input slot&apos;" alt="sort &apos;list input slot&apos;" class="inline py-0"/> block included in your project, and time it for each length list.
 
-</li>
+    | Length of List | `Sort` Time |
+    |----------------|-----------|
+    | 10             |           |
+    | 100            |           |
+    | 1000           |           |
 
-<li><img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>How
-would you describe what happens to the time as the size of the input
-list gets bigger? Write a hypothesis.</li>
+(@) <img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>How would you describe what happens to the time as the size of the input list gets bigger? Write a hypothesis.
 
-</ol>
-:::
+::::::
 
 You can classify algorithms by the amount of time they take to run.
 <!--To classify an algorithm, you look at the number of steps it takes to complete the algorithm and compare it to the size of the input. For example, `25,000 integers` takes <em>constant time:</em> computing 25,000 integers starting at seven takes as long as computing 25,000 integers starting at seven million. As a second example, `linear search` takes <em>linear time:</em> if you have ten times as many words in the dictionary, then it takes ten times as long to search through them all. As a third example, consider the `sort` algorithm you timed. It takes <em>quadratic time:</em> multiplying the input size by ten multiplies the time required by 10<sup>2</sup>. As another example, consider the `binary search` algorithm you timed. In binary search, multiplying the input size by ten <em>adds</em> a constant amount to the time required instead of multiplying by a constant amount. This is an example of <em>sublinear time</em>.-->
 
-::: forYouToDo
+:::::: forYouToDo
 ::: vocabBig
-<ul>
 
-<li>An algorithm takes **linear time** the number of steps
+- An algorithm takes **linear time** the number of steps
 is proportional to the input size; doubling the input size doubles the
-time required.</li>
+time required.
 
-<li>An algorithm takes **sublinear time** if the number of
-steps grows more slowly than the size.</li>
+- An algorithm takes **sublinear time** if the number of
+steps grows more slowly than the size.
 
-<li>An algorithm takes **constant time** if it takes the
-same number of steps regardless of input size.</li>
+- An algorithm takes **constant time** if it takes the
+same number of steps regardless of input size.
 
-<li>An algorithm takes **quadratic time** if the number of
-steps is proportional to the <em>square</em> of the input size.</li>
+- An algorithm takes **quadratic time** if the number of
+steps is proportional to the <em>square</em> of the input size.
 
-</ul>
 :::
 
-<ol start="5">
+(@) Look back at your table for `linear search`. Confirm that multiplying the list length by ten roughly multiplies the time taken by ten (<em>linear time</em>).<!--the search time for the <var>100,000 word list</var> is (about) ten times as long as the time for the <var>10,000 word list</var>, which is (about) ten times as long as the time for the <var>1,000 word list</var>.-->
 
-<li>Look back at your table for `linear search`. Confirm that
-multiplying the list length by ten roughly multiplies the time taken by
-ten (<em>linear
-time</em>).<!--the search time for the <var>100,000 word list</var> is (about) ten times as long as the time for the <var>10,000 word list</var>, which is (about) ten times as long as the time for the <var>1,000 word list</var>.--></li>
+(@) Look back at your table for `binary search`. Confirm that the search time for each word list is less than for linear search (<em>sublinear time</em>).
 
-<li>Look back at your table for `binary search`. Confirm that
-the search time for each word list is less than for linear search
-(<em>sublinear time</em>).</li>
+(@) Look back at your table for `25,000 integers`. Confirm that it takes about the same amount of time regardless of the input (<em>constant time</em>).
 
-<li>Look back at your table for `25,000 integers`. Confirm
-that it takes about the same amount of time regardless of the input
-(<em>constant time</em>).</li>
+(@) Look back at your table for `sort`. Confirm that multiplying the list length by ten roughly multiplies the time taken by
+one hundred (<em>quadratic time</em>).<!--Confirm that the time to sort the <var>100,000 word list</var> is (about) one hundred times as long as the time for the <var>10,000 word list</var>, which is (about) one hundred times as long as the time for the <var>1,000 word list</var>.--></li>
 
-<li>Look back at your table for `sort`. Confirm that
-multiplying the list length by ten roughly multiplies the time taken by
-one hundred (<em>quadratic
-time</em>).<!--Confirm that the time to sort the <var>100,000 word list</var> is (about) one hundred times as long as the time for the <var>10,000 word list</var>, which is (about) one hundred times as long as the time for the <var>1,000 word list</var>.--></li>
+::::::
 
-</ol>
-:::
-
-The difference between linear search and binary search can be very
-important if you're searching in a list of ten million items, but the
-<em>most</em> important difference in algorithm efficiency is between
-polynomial time (proportional to any power of the input size) and
-exponential time.
+The difference between linear search and binary search can be very important if you're searching in a list of ten million items, but the <em>most</em> important difference in algorithm efficiency is between polynomial time (proportional to any power of the input size) and exponential time.
 
 ::: vocabFullWidth
 <ul>
 
-<li>An algorithm takes **polynomial time** if the number of
-steps is less than or equal to a power of the size of the input, such as
-constant (<em>n</em><sup>0</sup>), sublinear, linear
-(<em>n</em><sup>1</sup>), quadratic (<em>n</em><sup>2</sup>), or cubic
-(<em>n</em><sup>3</sup>).</li>
+<li>An algorithm takes **polynomial time** if the number of steps is less than or equal to a power of the size of the input, such as constant (<em>n</em><sup>0</sup>), sublinear, linear (<em>n</em><sup>1</sup>), quadratic (<em>n</em><sup>2</sup>), or cubic (<em>n</em><sup>3</sup>).</li>
 
-<li>An algorithm takes **exponential time** if the number
-of steps is proportional to an exponential function of the size of the
-input, such as 2<sup><em>n</em></sup>, 10<sup><em>n</em></sup>, etc.,
-which is much slower than any polynomial.</li>
+<li>An algorithm takes **exponential time** if the number of steps is proportional to an exponential function of the size of the input, such as 2<sup><em>n</em></sup>, 10<sup><em>n</em></sup>, etc., which is much slower than any polynomial.</li>
 
 </ul>
 :::
 
-In an exponential time algorithm, just <em>adding 1</em> to the input
-size (<em>n</em>) of a 2<sup><em>n</em></sup> time algorithm
-<em>doubles</em> the number of steps! So, for example, if the input size
-is 20, <em>any</em> polynomial time algorithm will be fast enough, but
-an exponential time algorithm might take many <em>years</em> to
-finish.
-
-
+In an exponential time algorithm, just <em>adding 1</em> to the input size (<em>n</em>) of a 2<sup><em>n</em></sup> time algorithm <em>doubles</em> the number of steps! So, for example, if the input size is 20, <em>any</em> polynomial time algorithm will be fast enough, but an exponential time algorithm might take many <em>years</em> to finish.
 
 <img src="/img/5-algorithms/algorithm-time-graphs.gif" class="ms-4 noshadow"/><br />
 
@@ -136,18 +97,14 @@ finish.
 AAP-4.A.7
 :::
 
-<li>The term "**reasonable time**" describes any algorithm
-that runs in polynomial time. Exponential time algorithms are
+<li>The term "**reasonable time**" describes any algorithm that runs in polynomial time. Exponential time algorithms are
 <em>not</em> considered reasonable.</li>
-
 </ul>
 :::
 
 ::: todo
 ::: endnote
-On the Internet, many people use the word exponential to mean "happening
-very fast", such as clickbait-headline-example-blah or example-bleh.
--some nicer version of, now you know better-
+On the Internet, many people use the word exponential to mean "happening very fast", such as clickbait-headline-example-blah or example-bleh. -some nicer version of, now you know better-
 :::
 :::
 
@@ -170,8 +127,7 @@ integers`; and `sort`) are reasonable time algorithms.
 The following optional activity is an example of an exponential time
 algorithm.
 
-::: ifTime
-<ol start="9">
+:::::: ifTime
 
 A problem that may be familiar that requires an exponential time
 algorithm is computing any given element of Pascal's Triangle. In
@@ -200,131 +156,126 @@ are 1. <br />
 1 8 28 56 70 56 28 8 1" class="ms-4 noshadow"/>
 <img src="/img/5-algorithms/pascals-triangle-6-3-reporting.png" title="pascals triangle, row: (6) position (3) reporting 10" alt="pascals triangle, row: (6) position (3) reporting 10" class="ms-4"/>
 
-<li>
+(@) Locate the <img src="/img/8-recursive-reporters/pascals-triangle.png" title="pascals triangle, row: () position: ()" alt="pascals triangle, row: () position: ()" class="inline"/> block included in your project, and time it for various inputs.<br />
 
-Locate the
-<img src="/img/8-recursive-reporters/pascals-triangle.png" title="pascals triangle, row: () position: ()" alt="pascals triangle, row: () position: ()" class="inline"/>
-block included in your project, and time it for various inputs.<br />
+    ::: endnote
+    If these take too long to run, you can stop your program; just fill in
+    the table as far as the speed of your computer will allow.
+    :::
 
-::: endnote
-If these take too long to run, you can stop your program; just fill in
-the table as far as the speed of your computer will allow.
-:::
+    | Inputs | Pascal's Triangle Time |
+    |--------|------------------------|
+    | 5, 2   |                        |
+    | 10, 5  |                        |
+    | 15, 7  |                        |
+    | 20, 10 |                        |
+    | 25, 12 |                        |
 
-31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATwBRAEEANQBBAEQASQBBAE0AdwBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBQAEEAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAEkAQQBCAGoAQQBHAHcAQQBZAFEAQgB6AEEASABNAEEAUABRAEEAaQBBAEcASQBBAGIAdwBCAHkAQQBHAFEAQQBaAFEAQgB5AEEARwBVAEEAWgBBAEEAZwBBAEcATQBBAFoAUQBCAHUAQQBIAFEAQQBaAFEAQgB5AEEAQwBJAEEASQBBAEIAegBBAEgAVQBBAGIAUQBCAHQAQQBHAEUAQQBjAGcAQgA1AEEARAAwAEEASQBnAEIAMABBAEcARQBBAFkAZwBCAHMAQQBHAFUAQQBJAEEAQgB6AEEARwBnAEEAYgB3AEIAMwBBAEcAawBBAGIAZwBCAG4AQQBDAEEAQQBkAEEAQgBvAEEARwBVAEEASQBBAEIAdQBBAEgAVQBBAGIAUQBCAGkAQQBHAFUAQQBjAGcAQQBnAEEARwA4AEEAWgBnAEEAZwBBAEcAYwBBAGQAUQBCAGwAQQBIAE0AQQBjAHcAQgBsAEEASABNAEEASQBBAEIAdQBBAEcAVQBBAFoAUQBCAGsAQQBHAFUAQQBaAEEAQQBnAEEASABRAEEAYgB3AEEAZwBBAEcAWQBBAGEAUQBCAHUAQQBHAFEAQQBJAEEAQgAwAEEARwBnAEEAWgBRAEEAZwBBAEcAdwBBAFkAUQBCAHoAQQBIAFEAQQBJAEEAQgB1AEEASABVAEEAYgBRAEIAaQBBAEcAVQBBAGMAZwBBAGcAQQBHAGsAQQBiAGcAQQBnAEEARwBFAEEASQBBAEIAegBBAEcAOABBAGMAZwBCADAAQQBHAFUAQQBaAEEAQQBnAEEARwB3AEEAYQBRAEIAegBBAEgAUQBBAEkAQQBCAG0AQQBHADgAQQBjAGcAQQBnAEEARwBFAEEASQBBAEIAcwBBAEcAawBBAGMAdwBCADAAQQBDAEEAQQBiAHcAQgBtAEEAQwBBAEEAWQBRAEEAZwBBAEcAYwBBAGEAUQBCADIAQQBHAFUAQQBiAGcAQQBnAEEARwB3AEEAWgBRAEIAdQBBAEcAYwBBAGQAQQBCAG8AQQBDAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBhAEEAQQBnAEEASABNAEEAWQB3AEIAdgBBAEgAQQBBAFoAUQBBADkAQQBDAEkAQQBZAHcAQgB2AEEARwB3AEEASQBnAEEAZwBBAEgATQBBAGQAQQBCADUAQQBHAHcAQQBaAFEAQQA5AEEAQwBJAEEAZAB3AEIAbwBBAEcAawBBAGQAQQBCAGwAQQBDADAAQQBjAHcAQgB3AEEARwBFAEEAWQB3AEIAbABBAEQAbwBBAEkAQQBCAHUAQQBHADgAQQBkAHcAQgB5AEEARwBFAEEAYwBBAEEANwBBAEMASQBBAFAAZwBCAEoAQQBHADQAQQBjAEEAQgAxAEEASABRAEEAYwB3AEEAOABBAEMAOABBAGQAQQBCAG8AQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYQBBAEEAZwBBAEgATQBBAFkAdwBCAHYAQQBIAEEAQQBaAFEAQQA5AEEAQwBJAEEAWQB3AEIAdgBBAEcAdwBBAEkAZwBBAGcAQQBIAE0AQQBkAEEAQgA1AEEARwB3AEEAWgBRAEEAOQBBAEMASQBBAGQAdwBCAG8AQQBHAGsAQQBkAEEAQgBsAEEAQwAwAEEAYwB3AEIAdwBBAEcARQBBAFkAdwBCAGwAQQBEAG8AQQBJAEEAQgB1AEEARwA4AEEAZAB3AEIAeQBBAEcARQBBAGMAQQBBADcAQQBDAEkAQQBQAGcAQgBRAEEARwBFAEEAYwB3AEIAagBBAEcARQBBAGIAQQBBAG4AQQBIAE0AQQBJAEEAQgBVAEEASABJAEEAYQBRAEIAaABBAEcANABBAFoAdwBCAHMAQQBHAFUAQQBJAEEAQgBVAEEARwBrAEEAYgBRAEIAbABBAEQAdwBBAEwAdwBCADAAQQBHAGcAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBEAFUAQQBMAEEAQQBnAEEARABJAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBAHgAQQBEAEEAQQBMAEEAQQBnAEEARABVAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBAHgAQQBEAFUAQQBMAEEAQQBnAEEARABjAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBAHkAQQBEAEEAQQBMAEEAQQBnAEEARABFAEEATQBBAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBEAEkAQQBOAFEAQQBzAEEAQwBBAEEATQBRAEEAeQBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEEAdgBBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQQB2AEEASABRAEEAWQBRAEIAaQBBAEcAdwBBAFoAUQBBACsAQQBBAD0APQAKAHMAdQBmAGYAaQB4ADoA:31b8e172-b470-440e-83d8-e6b185028602
+    ::: endnote
+    The <var>row</var> value is the input to `pascals triangle`
+    that matters. (The <var>position</var> input is only given so you get a
+    time for one of the positions near the middle of the row, which take
+    longer to compute.)
+    :::
 
-::: endnote
-The <var>row</var> value is the input to `pascals triangle`
-that matters. (The <var>position</var> input is only given so you get a
-time for one of the positions near the middle of the row, which take
-longer to compute.)
-:::
+    These <var>row</var> inputs are very small compared to the input size
+    for the `linear search`, `binary search`, and
+    `sort` algorithms, and yet the time required for
+    `pascals triangle` is much higher. Your computer probably
+    can't do much past <var>25</var>.
 
-These <var>row</var> inputs are very small compared to the input size
-for the `linear search`, `binary search`, and
-`sort` algorithms, and yet the time required for
-`pascals triangle` is much higher. Your computer probably
-can't do much past <var>25</var>.
+    ::: endnote
+    This algorithm works by adding the two numbers above using the algorithm
+    inside itself recursively, but there are better algorithms that compute
+    the value a number in Pascal's Triangle in linear time.
+    :::
 
-::: endnote
-This algorithm works by adding the two numbers above using the algorithm
-inside itself recursively, but there are better algorithms that compute
-the value a number in Pascal's Triangle in linear time.
-:::
+::::::
 
-</li>
+:::::: forYouToDo
 
-</ol>
-:::
+(@) Write a paragraph explaining the difference between algorithms that
+run in a reasonable time and those that do not.
 
-::: forYouToDo
-<ol start="10">
 
-::: ap-standard
-AAP-4.A part a
-:::
+(@) This question is similar to those you will see on the AP CSP exam.
+    <!-- Question 1 -->
 
-<li>Write a paragraph explaining the difference between algorithms that
-run in a reasonable time and those that do not.</li>
+    ::: {.assessment-data type="multiplechoice" identifier="Timing of database tasks" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="true"}
+    ::: prompt
+    The table below shows the computer time it takes to complete various
+    tasks on the data of different sized towns.
+    
+    |          **Task**          | **Small Town (population 1,000)** | **Mid-sized Town (population 10,000)** | **Large Town (population 100,000)** |
+    |:--------------------------:|:---------------------------------:|:--------------------------------------:|:-----------------------------------:|
+    |      **Entering Data**     |              2 hours              |                20 hours                |              200 hours              |
+    |     **Backing up Data**    |             0.5 hours             |                 5 hours                |               50 hours              |
+    | **Searching through Data** |              5 hours              |                15 hours                |               25 hours              |
+    |      **Sorting Data**      |             0.01 hour             |                 1 hour                 |              100 hours              |
 
-<li>
+    Based on the information in the table, which of the following tasks is
+    likely to take the <em>**longest**</em> amount of time when
+    scaled up for a city of population 1,000,000.
+    :::
 
-This question is similar to those you will see on the AP CSP exam.
-<!-- Question 1 -->
+    ::: {.choice identifier="c1"}
+    ::: text
+    Entering data
+    :::
 
-::: {.assessment-data type="multiplechoice" identifier="Timing of database tasks" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="true"}
-::: prompt
-The table below shows the computer time it takes to complete various
-tasks on the data of different sized towns.
+    ::: feedback
+    <!--Entering data seems to take <img class="inline noshadow p-0" src="/img/5-algorithms/quizlet-entering-data.jpg" alt="population/1000" title="population/1000" /> hours, so for a population of 1,000,000, it should take about 2,000 hours.-->
 
-31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATQBRAEEAeABBAEQAZwBBAE0AdwBBADIAQQBBAD0APQAKAHAAcgBlAGYAaQB4ADoACgBzAG8AdQByAGMAZQA6AFAAQQBCADAAQQBHAEUAQQBZAGcAQgBzAEEARwBVAEEASQBBAEIAagBBAEcAdwBBAFkAUQBCAHoAQQBIAE0AQQBQAFEAQQBpAEEARwBJAEEAYgB3AEIAeQBBAEcAUQBBAFoAUQBCAHkAQQBHAFUAQQBaAEEAQQBnAEEARwBNAEEAWgBRAEIAdQBBAEgAUQBBAFoAUQBCAHkAQQBDAEEAQQBjAHcAQgAwAEEARwBFAEEAYgBnAEIAawBBAEcARQBBAGMAZwBCAGsAQQBDAEkAQQBJAEEAQgB6AEEASABVAEEAYgBRAEIAdABBAEcARQBBAGMAZwBCADUAQQBEADAAQQBJAGcAQgBvAEEARwA4AEEAZABRAEIAeQBBAEgATQBBAEkAQQBCAHkAQQBHAFUAQQBjAFEAQgAxAEEARwBrAEEAYwBnAEIAbABBAEcAUQBBAEkAQQBCAG0AQQBHADgAQQBjAGcAQQBnAEEASABZAEEAWQBRAEIAeQBBAEcAawBBAGIAdwBCADEAQQBIAE0AQQBJAEEAQgBrAEEARwBFAEEAZABBAEIAaABBAEMAQQBBAGIAUQBCAGgAQQBHADQAQQBZAFEAQgBuAEEARwBVAEEAYgBRAEIAbABBAEcANABBAGQAQQBBAGcAQQBIAFEAQQBZAFEAQgB6AEEARwBzAEEAYwB3AEEAZwBBAEcAWQBBAGIAdwBCAHkAQQBDAEEAQQBkAEEAQgB2AEEASABjAEEAYgBnAEIAegBBAEMAQQBBAGIAdwBCAG0AQQBDAEEAQQBkAGcAQgBoAEEASABJAEEAYQBRAEIAdgBBAEgAVQBBAGMAdwBBAGcAQQBIAE0AQQBhAFEAQgA2AEEARwBVAEEAYwB3AEEAaQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAZwBBAEkAQQBCAHoAQQBHAE0AQQBiAHcAQgB3AEEARwBVAEEAUABRAEEAaQBBAEcATQBBAGIAdwBCAHMAQQBDAEkAQQBQAGcAQgBVAEEARwBFAEEAYwB3AEIAcgBBAEQAdwBBAEwAdwBCADAAQQBHAGcAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAbwBBAEMAQQBBAGMAdwBCAGoAQQBHADgAQQBjAEEAQgBsAEEARAAwAEEASQBnAEIAagBBAEcAOABBAGIAQQBBAGkAQQBEADQAQQBVAHcAQgB0AEEARwBFAEEAYgBBAEIAcwBBAEMAQQBBAFYAQQBCAHYAQQBIAGMAQQBiAGcAQQA4AEEARwBJAEEAYwBnAEEAZwBBAEMAOABBAFAAZwBBAG8AQQBIAEEAQQBiAHcAQgB3AEEASABVAEEAYgBBAEIAaABBAEgAUQBBAGEAUQBCAHYAQQBHADQAQQBJAEEAQQB4AEEAQwB3AEEATQBBAEEAdwBBAEQAQQBBAEsAUQBBADgAQQBDADgAQQBkAEEAQgBvAEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAGEAQQBBAGcAQQBIAE0AQQBZAHcAQgB2AEEASABBAEEAWgBRAEEAOQBBAEMASQBBAFkAdwBCAHYAQQBHAHcAQQBJAGcAQQArAEEARQAwAEEAYQBRAEIAawBBAEMAMABBAGMAdwBCAHAAQQBIAG8AQQBaAFEAQgBrAEEAQwBBAEEAVgBBAEIAdgBBAEgAYwBBAGIAZwBBADgAQQBHAEkAQQBjAGcAQQBnAEEAQwA4AEEAUABnAEEAbwBBAEgAQQBBAGIAdwBCAHcAQQBIAFUAQQBiAEEAQgBoAEEASABRAEEAYQBRAEIAdgBBAEcANABBAEkAQQBBAHgAQQBEAEEAQQBMAEEAQQB3AEEARABBAEEATQBBAEEAcABBAEQAdwBBAEwAdwBCADAAQQBHAGcAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAbwBBAEMAQQBBAGMAdwBCAGoAQQBHADgAQQBjAEEAQgBsAEEARAAwAEEASQBnAEIAagBBAEcAOABBAGIAQQBBAGkAQQBEADQAQQBUAEEAQgBoAEEASABJAEEAWgB3AEIAbABBAEMAQQBBAFYAQQBCAHYAQQBIAGMAQQBiAGcAQQA4AEEARwBJAEEAYwBnAEEAZwBBAEMAOABBAFAAZwBBAG8AQQBIAEEAQQBiAHcAQgB3AEEASABVAEEAYgBBAEIAaABBAEgAUQBBAGEAUQBCAHYAQQBHADQAQQBJAEEAQQB4AEEARABBAEEATQBBAEEAcwBBAEQAQQBBAE0AQQBBAHcAQQBDAGsAQQBQAEEAQQB2AEEASABRAEEAYQBBAEEAKwBBAEEAbwBBAFAAQQBBAHYAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBvAEEAQwBBAEEAYwB3AEIAagBBAEcAOABBAGMAQQBCAGwAQQBEADAAQQBJAGcAQgB5AEEARwA4AEEAZAB3AEEAaQBBAEQANABBAFIAUQBCAHUAQQBIAFEAQQBaAFEAQgB5AEEARwBrAEEAYgBnAEIAbgBBAEMAQQBBAFIAQQBCAGgAQQBIAFEAQQBZAFEAQQA4AEEAQwA4AEEAZABBAEIAbwBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBaAEEAQQArAEEARABJAEEASQBBAEIAbwBBAEcAOABBAGQAUQBCAHkAQQBIAE0AQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQQB5AEEARABBAEEASQBBAEIAbwBBAEcAOABBAGQAUQBCAHkAQQBIAE0AQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQQB5AEEARABBAEEATQBBAEEAZwBBAEcAZwBBAGIAdwBCADEAQQBIAEkAQQBjAHcAQQA4AEEAQwA4AEEAZABBAEIAawBBAEQANABBAEMAZwBBADgAQQBDADgAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBnAEEASQBBAEIAegBBAEcATQBBAGIAdwBCAHcAQQBHAFUAQQBQAFEAQQBpAEEASABJAEEAYgB3AEIAMwBBAEMASQBBAFAAZwBCAEMAQQBHAEUAQQBZAHcAQgByAEEARwBrAEEAYgBnAEIAbgBBAEMAQQBBAGQAUQBCAHcAQQBDAEEAQQBSAEEAQgBoAEEASABRAEEAWQBRAEEAOABBAEMAOABBAGQAQQBCAG8AQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQAQQBBAEwAZwBBADEAQQBDAEEAQQBhAEEAQgB2AEEASABVAEEAYwBnAEIAegBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAE4AUQBBAGcAQQBHAGcAQQBiAHcAQgAxAEEASABJAEEAYwB3AEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQAVQBBAE0AQQBBAGcAQQBHAGcAQQBiAHcAQgAxAEEASABJAEEAYwB3AEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAZwBBAEkAQQBCAHoAQQBHAE0AQQBiAHcAQgB3AEEARwBVAEEAUABRAEEAaQBBAEgASQBBAGIAdwBCADMAQQBDAEkAQQBQAGcAQgBUAEEARwBVAEEAWQBRAEIAeQBBAEcATQBBAGEAQQBCAHAAQQBHADQAQQBaAHcAQQBnAEEASABRAEEAYQBBAEIAeQBBAEcAOABBAGQAUQBCAG4AQQBHAGcAQQBJAEEAQgBFAEEARwBFAEEAZABBAEIAaABBAEQAdwBBAEwAdwBCADAAQQBHAGcAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAE4AUQBBAGcAQQBHAGcAQQBiAHcAQgAxAEEASABJAEEAYwB3AEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQARQBBAE4AUQBBAGcAQQBHAGcAQQBiAHcAQgAxAEEASABJAEEAYwB3AEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQASQBBAE4AUQBBAGcAQQBHAGcAQQBiAHcAQgAxAEEASABJAEEAYwB3AEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAZwBBAEkAQQBCAHoAQQBHAE0AQQBiAHcAQgB3AEEARwBVAEEAUABRAEEAaQBBAEgASQBBAGIAdwBCADMAQQBDAEkAQQBQAGcAQgBUAEEARwA4AEEAYwBnAEIAMABBAEcAawBBAGIAZwBCAG4AQQBDAEEAQQBSAEEAQgBoAEEASABRAEEAWQBRAEEAOABBAEMAOABBAGQAQQBCAG8AQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQAQQBBAEwAZwBBAHcAQQBEAEUAQQBJAEEAQgBvAEEARwA4AEEAZABRAEIAeQBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAE0AUQBBAGcAQQBHAGcAQQBiAHcAQgAxAEEASABJAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAeABBAEQAQQBBAE0AQQBBAGcAQQBHAGcAQQBiAHcAQgAxAEEASABJAEEAYwB3AEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBDADgAQQBkAEEAQgBoAEEARwBJAEEAYgBBAEIAbABBAEQANABBAAoAcwB1AGYAZgBpAHgAOgA=:31b8e172-b470-440e-83d8-e6b185028602
+    As the population size is multiplied by 10, the time needed for entering
+    data is also multiplied by 10, so for a population of 1,000,000, it
+    should take about 10×200=2000 hours.
+    :::
+    :::
 
-Based on the information in the table, which of the following tasks is
-likely to take the <em>**longest**</em> amount of time when
-scaled up for a city of population 1,000,000.
-:::
+    ::: {.choice identifier="c2"}
+    ::: text
+    Backing up data
+    :::
 
-::: {.choice identifier="c1"}
-::: text
-Entering data
-:::
+    ::: feedback
+    <!--Backing up data seems to take about <img class="inline noshadow p-0" src="/img/5-algorithms/quizlet-backing-up.jpg" alt="5^((population/1000)-1)" title="5^((population/1000)-1)" /> hours, so for a population of 1,000,000, it should take about 125 hours.-->
 
-::: feedback
-<!--Entering data seems to take <img class="inline noshadow p-0" src="/img/5-algorithms/quizlet-entering-data.jpg" alt="population/1000" title="population/1000" /> hours, so for a population of 1,000,000, it should take about 2,000 hours.-->
+    As the population size is multiplied by 10, time needed for backing up
+    data is multiplied by 10, so for a population of 1,000,000, it should
+    take about 10×50=500 hours.
+    :::
+    :::
 
-As the population size is multiplied by 10, the time needed for entering
-data is also multiplied by 10, so for a population of 1,000,000, it
-should take about 10×200=2000 hours.
-:::
-:::
+    ::: {.choice identifier="c3"}
+    ::: text
+    Searching through data
+    :::
 
-::: {.choice identifier="c2"}
-::: text
-Backing up data
-:::
+    ::: feedback
+    Searching through the data seems to go up by about 10 hours each time
+    the population is multiplied by 10, so for a population of 1,000,000, it
+    should take about 35 hours.
+    :::
+    :::
 
-::: feedback
-<!--Backing up data seems to take about <img class="inline noshadow p-0" src="/img/5-algorithms/quizlet-backing-up.jpg" alt="5^((population/1000)-1)" title="5^((population/1000)-1)" /> hours, so for a population of 1,000,000, it should take about 125 hours.-->
+    ::: {.choice identifier="c4"}
+    ::: text
+    Sorting data
+    :::
 
-As the population size is multiplied by 10, time needed for backing up
-data is multiplied by 10, so for a population of 1,000,000, it should
-take about 10×50=500 hours.
-:::
-:::
+    ::: feedback
+    Correct!
+    <!--Sorting the data seems to go up exponentially as the the population grows. For a population of 1,000,000, it should take about 10,000 hours.-->
+    As the population size is multiplied by 10, the time needed for the
+    sorting of data is multiplied by 100. So, for a population of 1,000,000,
+    it should take about 100×100=10,000 hours.
+    :::
+    :::
 
-::: {.choice identifier="c3"}
-::: text
-Searching through data
-:::
+    ::: {.responseDeclaration identifier="ri1"}
+    ::: {.correctResponse identifier="c4"}
+    :::
+    :::
+    :::
 
-::: feedback
-Searching through the data seems to go up by about 10 hours each time
-the population is multiplied by 10, so for a population of 1,000,000, it
-should take about 35 hours.
-:::
-:::
-
-::: {.choice identifier="c4"}
-::: text
-Sorting data
-:::
-
-::: feedback
-Correct!
-<!--Sorting the data seems to go up exponentially as the the population grows. For a population of 1,000,000, it should take about 10,000 hours.-->
-As the population size is multiplied by 10, the time needed for the
-sorting of data is multiplied by 100. So, for a population of 1,000,000,
-it should take about 100×100=10,000 hours.
-:::
-:::
-
-::: {.responseDeclaration identifier="ri1"}
-::: {.correctResponse identifier="c4"}
-:::
-:::
-:::
-
-</li>
-
-</ol>
-:::
+::::::

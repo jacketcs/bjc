@@ -1,9 +1,0 @@
----
-title: Unit 5 Exam Questions
-pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
-order: 10
----
-
-<h2>Unit 5 Lab 1: Search Algorithms and Efficiency, Page 5</h2>
-<h3>Lab 1: Search Algorithms and Efficiency</h3>
-<div class="examFullWidth"> <a href="/unit-5/lab-1/5-categorizing-algorithms.html">5.1.5</a><ul><div class="ap-standard">AAP-4.A.7</div><li>The term "**reasonable time**" describes any algorithm that runs in polynomial time. Exponential time algorithms are <em>not</em> considered reasonable. </li></ul></div>

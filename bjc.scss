@@ -348,6 +348,7 @@ table.remainders {float:left; margin-right:100px;}
 .borderless-table {border: 0px;}
 .bordered-table {border: solid 1px $table-border-color;}
 .bordered-table > div {padding: 10px; border: solid 1px $table-border-color;}
+.bordered, .bordered thead, .bordered tbody, .bordered tfoot, .bordered tr, .bordered td, .bordered th { border-color: black; border-width: 2px;}
 .two-col {grid-template-columns: auto auto;}
 .three-col {grid-template-columns: auto auto auto;}
 .four-col {grid-template-columns: auto auto auto auto;}

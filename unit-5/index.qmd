@@ -3,6 +3,6 @@ title: "Unit 5: Algorithms and Simulations"
 pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
 ---
 
-In Unit 5, we learn about ... algorithms and simulations.
+In Unit 5, we learn about how we can find solutions to problems using algorithms and heuristics, the necessity for simulations, data visualizations, and working to make the computer play with you.
 
 This is also the last unit that will be included on the AP Exam in May.
