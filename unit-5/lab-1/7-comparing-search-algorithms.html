@@ -188,24 +188,6 @@ ul.task-list li input[type="checkbox"] {
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-5/unit-5-exam-reference.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Unit 5 Exam Questions</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-5/unit-5-self-check.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Unit 5 Self-Check Questions</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-5/unit-5-vocab.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Unit 5 Vocabulary</span></a>
-  </div>
-</li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
@@ -465,12 +447,9 @@ ul.task-list li input[type="checkbox"] {
 <p>Suppose you have a list of items and want to know if the elements of the list are <em>distinct</em>. For example, you might want to make sure that you don’t have anything on your shopping list twice.</p>
 <p>As a first step, we’ll just answer the yes/no question: are there any duplicates on your list?<br> <img src="../../img/5-algorithms/distinct-predicate-reporting.png" title="are the items of (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) distinct? reporting false" alt="are the items of (list (apples) (carrots) (bananas) (oranges) (bananas) (bread) (carrots)) distinct? reporting false" class="ms-4"></p>
 <div id="first" class="forYouToDo">
-<ol>
-<li>
-Experiment with the <img src="../../img/blocks/all-but-first.png" title="all but first of 'list input slot'" alt="all but first of 'list input slot'" class="inline py-0"> block using a few different input lists. <img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> What does this block report?
-</li>
-<li>
-<p>Finish building the <code>are the items distinct?</code> predicate, which is started below. Since you’re writing a predicate, your procedure should always report <code>true</code> or <code>false</code>.<br></p>
+<ol class="example" type="1">
+<li><p>Experiment with the <img src="../../img/blocks/all-but-first.png" title="all but first of 'list input slot'" alt="all but first of 'list input slot'" class="inline py-0"> block using a few different input lists. <img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> What does this block report?</p></li>
+<li><p>Finish building the <code>are the items distinct?</code> predicate, which is started below. Since you’re writing a predicate, your procedure should always report <code>true</code> or <code>false</code>.</p>
 <div class="sidenote">
 <p><a href="#hint-predicate" data-bs-toggle="collapse" title="Try doing it without this hint about the 'are the items distinct?' predicate">Try doing it without this hint.</a></p>
 <div id="hint-predicate" class="collapse">
@@ -503,22 +482,17 @@ report (are the items of () distinct?)
 </p>
 <div class="endnote">
 <p>Notice that this procedure calls itself at the end. (It is <em>recursive.</em>) This won’t work if the input to that call is the same as the original input. So you can’t say <img src="../../img/5-algorithms/report-are-items-of-data-distinct.png" title="report (are the items of (data) distinct?)" alt="report (are the items of (data) distinct?)" class="inline">. Instead, you have to use a smaller input value.</p>
-</div>
-</li>
-<li>
-<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> If you doubled the length of the list, would this algorithm take the same amount of time? Twice as long? More than twice as long?
-</li>
+</div></li>
+<li><p><img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> If you doubled the length of the list, would this algorithm take the same amount of time? Twice as long? More than twice as long?</p></li>
 </ol>
 </div>
 <p>For your grocery list, you wouldn’t just want to know whether or not there are duplicates. You’d want a new list with the duplicates removed.</p>
-::: forYouToDo
-<ol start="4">
-<li>
-Experiment with the <img src="../../img/blocks/in-front-of-full-size.png" title="() in front of 'list input slot'" alt="() in front of 'list input slot'" class="inline py-0"> block using a few different inputs. <img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> What does this block report?
-</li>
-<li>
-<p>Build a <code>distinct items from</code> reporter using a structure similar to that of the <code>are the items distinct?</code> predicate.</p>
-<p>::: endnote <img src="../../img/5-algorithms/distinct-reporter-starter.png" title="distinct items form (data)
+<div class="forYouToDo">
+<ol start="4" class="example" type="1">
+<li><p>Experiment with the <img src="../../img/blocks/in-front-of-full-size.png" title="() in front of 'list input slot'" alt="() in front of 'list input slot'" class="inline py-0"> block using a few different inputs. <img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> What does this block report?</p></li>
+<li><p>Build a <code>distinct items from</code> reporter using a structure similar to that of the <code>are the items distinct?</code> predicate.</p>
+<div class="endnote">
+<p><img src="../../img/5-algorithms/distinct-reporter-starter.png" title="distinct items form (data)
 {
 if (is (data) empty?)
 {
@@ -545,35 +519,21 @@ report ()
 <p><a href="#hint-reporter" data-bs-toggle="collapse" title="Need another hint about the `distinct items from` reporter?">Need another hint?</a></p>
 <div id="hint-reporter" class="collapse">
 <ul>
-<li>
-If the list is empty, what should <code>distinct items from</code> report?
-</li>
-<li>
-<p>If the first item in the list appears in the rest of the list, it doesn’t matter which copy you leave out. Is there an easy way to get a version of the list without one of those copies?</p>
+<li><p>If the list is empty, what should <code>distinct items from</code> report?</p></li>
+<li><p>If the first item in the list appears in the rest of the list, it doesn’t matter which copy you leave out. Is there an easy way to get a version of the list without one of those copies?</p>
 <ul>
-<li>
-What if there are other duplicates in that list?
-</li>
-</ul>
-</li>
-<li>
-If computer makes it to the third <code>report</code> block, what does that tell you about the first item in the list? Do you want the first item as part of the list you report?
-</li>
+<li>What if there are other duplicates in that list?</li>
+</ul></li>
+<li><p>If computer makes it to the third <code>report</code> block, what does that tell you about the first item in the list? Do you want the first item as part of the list you report?</p></li>
 </ul>
 </div>
-<p style="clear: both; height: 0px;">
-</p><p>:::</p>
-</li>
-<li>
-Test it. Be sure to pick good test cases: More than one pair of duplicates, more than two items of the same value, duplicates right next to each other in the list, etc.
-</li>
-<li>
-<div class="saveAs">
+</div></li>
+<li><p>Test it. Be sure to pick good test cases: More than one pair of duplicates, more than two items of the same value, duplicates right next to each other in the list, etc.</p></li>
+<li><div class="saveAs">
 <p><span class="text">“U5L1-Removing-Duplicates”</span><img src="../../img/icons/save-this-as.png" title="Save your work as U5L1-Removing-Duplicates" alt="Save your work as U5L1-Removing-Duplicates"></p>
-</div>
-</li>
+</div></li>
 </ol>
-<p>:::</p>
+</div>
 
 
 

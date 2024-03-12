@@ -188,24 +188,6 @@ ul.task-list li input[type="checkbox"] {
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-5/unit-5-exam-reference.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Unit 5 Exam Questions</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-5/unit-5-self-check.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Unit 5 Self-Check Questions</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-5/unit-5-vocab.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Unit 5 Vocabulary</span></a>
-  </div>
-</li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
@@ -459,63 +441,87 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="todo">
-<h3 class="anchored">
-TG and solutions need to be checked. –MF, 12/19/18
-</h3>
-</div>
 <div class="learn">
 <p><strong>On this page</strong>, you will compare four algorithms and learn how they each take a different category of time to run.</p>
 </div>
 <div id="first" class="forYouToDo">
-<ol>
-<li>
-Locate the <img src="../../img/5-algorithms/25000integers.png" title="25,000 integers starting from ()" alt="25,000 integers starting from ()"> block included in your project, and time it for various starting numbers.<br> 31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATgBnAEEAMABBAEQAUQBBAAoAcAByAGUAZgBpAHgAOgAKAHMAbwB1AHIAYwBlADoAUABBAEIAMABBAEcARQBBAFkAZwBCAHMAQQBHAFUAQQBJAEEAQgBqAEEARwB3AEEAWQBRAEIAegBBAEgATQBBAFAAUQBBAGkAQQBHAEkAQQBiAHcAQgB5AEEARwBRAEEAWgBRAEIAeQBBAEcAVQBBAFoAQQBBAGcAQQBHAE0AQQBaAFEAQgB1AEEASABRAEEAWgBRAEIAeQBBAEMAQQBBAGMAdwBCADAAQQBHAEUAQQBiAGcAQgBrAEEARwBFAEEAYwBnAEIAawBBAEMASQBBAEkAQQBCAHoAQQBIAFUAQQBiAFEAQgB0AEEARwBFAEEAYwBnAEIANQBBAEQAMABBAEkAZwBCADAAQQBHAEUAQQBZAGcAQgBzAEEARwBVAEEASQBBAEIAegBBAEcAZwBBAGIAdwBCADMAQQBHAGsAQQBiAGcAQgBuAEEAQwBBAEEAZABBAEIAbwBBAEcAVQBBAEkAQQBCAHUAQQBIAFUAQQBiAFEAQgBpAEEARwBVAEEAYwBnAEEAZwBBAEcAOABBAFoAZwBBAGcAQQBHAGMAQQBkAFEAQgBsAEEASABNAEEAYwB3AEIAbABBAEgATQBBAEkAQQBCAHUAQQBHAFUAQQBaAFEAQgBrAEEARwBVAEEAWgBBAEEAZwBBAEgAUQBBAGIAdwBBAGcAQQBHAFkAQQBhAFEAQgB1AEEARwBRAEEASQBBAEIAMABBAEcAZwBBAFoAUQBBAGcAQQBHAHcAQQBZAFEAQgB6AEEASABRAEEASQBBAEIAdQBBAEgAVQBBAGIAUQBCAGkAQQBHAFUAQQBjAGcAQQBnAEEARwBrAEEAYgBnAEEAZwBBAEcARQBBAEkAQQBCAHoAQQBHADgAQQBjAGcAQgAwAEEARwBVAEEAWgBBAEEAZwBBAEcAdwBBAGEAUQBCAHoAQQBIAFEAQQBJAEEAQgBtAEEARwA4AEEAYwBnAEEAZwBBAEcARQBBAEkAQQBCAHMAQQBHAGsAQQBjAHcAQgAwAEEAQwBBAEEAYgB3AEIAbQBBAEMAQQBBAFkAUQBBAGcAQQBHAGMAQQBhAFEAQgAyAEEARwBVAEEAYgBnAEEAZwBBAEcAdwBBAFoAUQBCAHUAQQBHAGMAQQBkAEEAQgBvAEEAQwBJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYQBBAEEAZwBBAEgATQBBAFkAdwBCAHYAQQBIAEEAQQBaAFEAQQA5AEEAQwBJAEEAWQB3AEIAdgBBAEcAdwBBAEkAZwBBACsAQQBGAE0AQQBkAEEAQgBoAEEASABJAEEAZABBAEIAcABBAEcANABBAFoAdwBBAGcAQQBFADQAQQBkAFEAQgB0AEEARwBJAEEAWgBRAEIAeQBBAEQAdwBBAEwAdwBCADAAQQBHAGcAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAbwBBAEMAQQBBAGMAdwBCAGoAQQBHADgAQQBjAEEAQgBsAEEARAAwAEEASQBnAEIAagBBAEcAOABBAGIAQQBBAGkAQQBEADQAQQBQAEEAQgBqAEEARwA4AEEAWgBBAEIAbABBAEQANABBAE0AZwBBADEAQQBDAHcAQQBNAEEAQQB3AEEARABBAEEASQBBAEIAcABBAEcANABBAGQAQQBCAGwAQQBHAGMAQQBaAFEAQgB5AEEASABNAEEAUABBAEEAdgBBAEcATQBBAGIAdwBCAGsAQQBHAFUAQQBQAGcAQQBnAEEARgBRAEEAYQBRAEIAdABBAEcAVQBBAFAAQQBBAHYAQQBIAFEAQQBhAEEAQQArAEEAQQBvAEEAUABBAEEAdgBBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBEADQAQQBNAFEAQQB3AEEARABBAEEATQBBAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBEAEUAQQBNAEEAQQBzAEEARABBAEEATQBBAEEAdwBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEEAdgBBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBEADQAQQBNAFEAQQB3AEEARABBAEEATABBAEEAdwBBAEQAQQBBAE0AQQBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBEAHcAQQBMAHcAQgAwAEEARwBRAEEAUABnAEEASwBBAEQAdwBBAEwAdwBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBaAEEAQQArAEEARABFAEEATABBAEEAdwBBAEQAQQBBAE0AQQBBAHMAQQBEAEEAQQBNAEEAQQB3AEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQQB2AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAE0AUQBBAHcAQQBDAHcAQQBNAEEAQQB3AEEARABBAEEATABBAEEAdwBBAEQAQQBBAE0AQQBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBEAHcAQQBMAHcAQgAwAEEARwBRAEEAUABnAEEASwBBAEQAdwBBAEwAdwBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEcARQBBAFkAZwBCAHMAQQBHAFUAQQBQAGcAQQA9AAoAcwB1AGYAZgBpAHgAOgA=:31b8e172-b470-440e-83d8-e6b185028602
-</li>
-<li>
-<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"> Look at the table. How would you describe what happens to the time as the starting number gets bigger? Write a hypothesis about the pattern.
-</li>
-<li>
-<div class="sidenoteBig">
+<ol class="example" type="1">
+<li><p>Locate the <img src="../../img/5-algorithms/25000integers.png" title="25,000 integers starting from ()" alt="25,000 integers starting from ()"> block included in your project, and time it for various starting numbers.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Starting Number</th>
+<th><code>25,000 integers</code> Time</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1000</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>10,000</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>100,000</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1,000,000</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>10,000,000</td>
+<td></td>
+</tr>
+</tbody>
+</table></li>
+<li><p><img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"> Look at the table. How would you describe what happens to the time as the starting number gets bigger? Write a hypothesis about the pattern.</p></li>
+<li><div class="sidenoteBig">
 <p>There are several different ways to sort a list, some of which you will learn about in Unit 8. This <code>sort</code> block uses an “insertion sort” algorithm.</p>
 </div>
-<p>Locate the <img src="../../img/5-algorithms/sort.png" title="sort 'list input slot'" alt="sort 'list input slot'" class="inline py-0"> block included in your project, and time it for each length list.<br> 31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATQBRAEEANABBAEQARQBBAE0AdwBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBQAEEAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAEkAQQBCAGoAQQBHAHcAQQBZAFEAQgB6AEEASABNAEEAUABRAEEAaQBBAEcASQBBAGIAdwBCAHkAQQBHAFEAQQBaAFEAQgB5AEEARwBVAEEAWgBBAEEAZwBBAEcATQBBAFoAUQBCAHUAQQBIAFEAQQBaAFEAQgB5AEEAQwBBAEEAYwB3AEIAMABBAEcARQBBAGIAZwBCAGsAQQBHAEUAQQBjAGcAQgBrAEEAQwBJAEEASQBBAEIAegBBAEgAVQBBAGIAUQBCAHQAQQBHAEUAQQBjAGcAQgA1AEEARAAwAEEASQBnAEIAMABBAEcARQBBAFkAZwBCAHMAQQBHAFUAQQBJAEEAQgB6AEEARwBnAEEAYgB3AEIAMwBBAEcAawBBAGIAZwBCAG4AQQBDAEEAQQBkAEEAQgBvAEEARwBVAEEASQBBAEIAdQBBAEgAVQBBAGIAUQBCAGkAQQBHAFUAQQBjAGcAQQBnAEEARwA4AEEAWgBnAEEAZwBBAEcAYwBBAGQAUQBCAGwAQQBIAE0AQQBjAHcAQgBsAEEASABNAEEASQBBAEIAdQBBAEcAVQBBAFoAUQBCAGsAQQBHAFUAQQBaAEEAQQBnAEEASABRAEEAYgB3AEEAZwBBAEcAWQBBAGEAUQBCAHUAQQBHAFEAQQBJAEEAQgAwAEEARwBnAEEAWgBRAEEAZwBBAEcAdwBBAFkAUQBCAHoAQQBIAFEAQQBJAEEAQgB1AEEASABVAEEAYgBRAEIAaQBBAEcAVQBBAGMAZwBBAGcAQQBHAGsAQQBiAGcAQQBnAEEARwBFAEEASQBBAEIAegBBAEcAOABBAGMAZwBCADAAQQBHAFUAQQBaAEEAQQBnAEEARwB3AEEAYQBRAEIAegBBAEgAUQBBAEkAQQBCAG0AQQBHADgAQQBjAGcAQQBnAEEARwBFAEEASQBBAEIAcwBBAEcAawBBAGMAdwBCADAAQQBDAEEAQQBiAHcAQgBtAEEAQwBBAEEAWQBRAEEAZwBBAEcAYwBBAGEAUQBCADIAQQBHAFUAQQBiAGcAQQBnAEEARwB3AEEAWgBRAEIAdQBBAEcAYwBBAGQAQQBCAG8AQQBDAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBhAEEAQQBnAEEASABNAEEAWQB3AEIAdgBBAEgAQQBBAFoAUQBBADkAQQBDAEkAQQBZAHcAQgB2AEEARwB3AEEASQBnAEEAKwBBAEUAdwBBAFoAUQBCAHUAQQBHAGMAQQBkAEEAQgBvAEEAQwBBAEEAYgB3AEIAbQBBAEMAQQBBAFQAQQBCAHAAQQBIAE0AQQBkAEEAQQA4AEEAQwA4AEEAZABBAEIAbwBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBhAEEAQQBnAEEASABNAEEAWQB3AEIAdgBBAEgAQQBBAFoAUQBBADkAQQBDAEkAQQBZAHcAQgB2AEEARwB3AEEASQBnAEEAKwBBAEQAdwBBAFkAdwBCAHYAQQBHAFEAQQBaAFEAQQArAEEARgBNAEEAYgB3AEIAeQBBAEgAUQBBAFAAQQBBAHYAQQBHAE0AQQBiAHcAQgBrAEEARwBVAEEAUABnAEEAZwBBAEYAUQBBAGEAUQBCAHQAQQBHAFUAQQBQAEEAQQB2AEEASABRAEEAYQBBAEEAKwBBAEEAbwBBAFAAQQBBAHYAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEATQBRAEEAdwBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEEAdgBBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBEADQAQQBNAFEAQQB3AEEARABBAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBAHgAQQBEAEEAQQBNAEEAQQB3AEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQQB2AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBBAHYAQQBIAFEAQQBZAFEAQgBpAEEARwB3AEEAWgBRAEEAKwBBAEEAPQA9AAoAcwB1AGYAZgBpAHgAOgA=:31b8e172-b470-440e-83d8-e6b185028602</p>
-</li>
-<li>
-<img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline">How would you describe what happens to the time as the size of the input list gets bigger? Write a hypothesis.
-</li>
+<p>Locate the <img src="../../img/5-algorithms/sort.png" title="sort 'list input slot'" alt="sort 'list input slot'" class="inline py-0"> block included in your project, and time it for each length list.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Length of List</th>
+<th><code>Sort</code> Time</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>10</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>100</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>1000</td>
+<td></td>
+</tr>
+</tbody>
+</table></li>
+<li><p><img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline">How would you describe what happens to the time as the size of the input list gets bigger? Write a hypothesis.</p></li>
 </ol>
 </div>
 <p>You can classify algorithms by the amount of time they take to run. <!--To classify an algorithm, you look at the number of steps it takes to complete the algorithm and compare it to the size of the input. For example, `25,000 integers` takes <em>constant time:</em> computing 25,000 integers starting at seven takes as long as computing 25,000 integers starting at seven million. As a second example, `linear search` takes <em>linear time:</em> if you have ten times as many words in the dictionary, then it takes ten times as long to search through them all. As a third example, consider the `sort` algorithm you timed. It takes <em>quadratic time:</em> multiplying the input size by ten multiplies the time required by 10<sup>2</sup>. As another example, consider the `binary search` algorithm you timed. In binary search, multiplying the input size by ten <em>adds</em> a constant amount to the time required instead of multiplying by a constant amount. This is an example of <em>sublinear time</em>.--></p>
 <div class="forYouToDo">
 <div class="vocabBig">
 <ul>
-<li>
-An algorithm takes <strong>linear time</strong> the number of steps is proportional to the input size; doubling the input size doubles the time required.
-</li>
-<li>
-An algorithm takes <strong>sublinear time</strong> if the number of steps grows more slowly than the size.
-</li>
-<li>
-An algorithm takes <strong>constant time</strong> if it takes the same number of steps regardless of input size.
-</li>
-<li>
-An algorithm takes <strong>quadratic time</strong> if the number of steps is proportional to the <em>square</em> of the input size.
-</li>
+<li><p>An algorithm takes <strong>linear time</strong> the number of steps is proportional to the input size; doubling the input size doubles the time required.</p></li>
+<li><p>An algorithm takes <strong>sublinear time</strong> if the number of steps grows more slowly than the size.</p></li>
+<li><p>An algorithm takes <strong>constant time</strong> if it takes the same number of steps regardless of input size.</p></li>
+<li><p>An algorithm takes <strong>quadratic time</strong> if the number of steps is proportional to the <em>square</em> of the input size.</p></li>
 </ul>
 </div>
-<ol start="5">
-<li>
-Look back at your table for <code>linear search</code>. Confirm that multiplying the list length by ten roughly multiplies the time taken by ten (<em>linear time</em>).<!--the search time for the <var>100,000 word list</var> is (about) ten times as long as the time for the <var>10,000 word list</var>, which is (about) ten times as long as the time for the <var>1,000 word list</var>.-->
-</li>
-<li>
-Look back at your table for <code>binary search</code>. Confirm that the search time for each word list is less than for linear search (<em>sublinear time</em>).
-</li>
-<li>
-Look back at your table for <code>25,000 integers</code>. Confirm that it takes about the same amount of time regardless of the input (<em>constant time</em>).
-</li>
-<li>
-Look back at your table for <code>sort</code>. Confirm that multiplying the list length by ten roughly multiplies the time taken by one hundred (<em>quadratic time</em>).<!--Confirm that the time to sort the <var>100,000 word list</var> is (about) one hundred times as long as the time for the <var>10,000 word list</var>, which is (about) one hundred times as long as the time for the <var>1,000 word list</var>.-->
+<ol start="5" class="example" type="1">
+<li><p>Look back at your table for <code>linear search</code>. Confirm that multiplying the list length by ten roughly multiplies the time taken by ten (<em>linear time</em>).<!--the search time for the <var>100,000 word list</var> is (about) ten times as long as the time for the <var>10,000 word list</var>, which is (about) ten times as long as the time for the <var>1,000 word list</var>.--></p></li>
+<li><p>Look back at your table for <code>binary search</code>. Confirm that the search time for each word list is less than for linear search (<em>sublinear time</em>).</p></li>
+<li><p>Look back at your table for <code>25,000 integers</code>. Confirm that it takes about the same amount of time regardless of the input (<em>constant time</em>).</p></li>
+<li><p>Look back at your table for <code>sort</code>. Confirm that multiplying the list length by ten roughly multiplies the time taken by one hundred (<em>quadratic time</em>).<!--Confirm that the time to sort the <var>100,000 word list</var> is (about) one hundred times as long as the time for the <var>10,000 word list</var>, which is (about) one hundred times as long as the time for the <var>1,000 word list</var>.--></p>
 </li>
 </ol>
 </div>
@@ -554,7 +560,6 @@ The term “<strong>reasonable time</strong>” describes any algorithm that run
 <p>One reason it’s worth learning these categories is to avoid reinventing the wheel. For example, you’ve learned that if a list is sorted you can search it in sublinear time using binary search. So when you’re writing a program that needs to search through a list repeatedly, it’s worthwhile to sort the list before searching. Knowing about algorithms that already exist can help you construct new algorithms.</p>
 <p>All of the algorithms you’ve explored so far in this lab (<code>linear search</code>; <code>binary search</code>; <code>25,000 integers</code>; and <code>sort</code>) are reasonable time algorithms. The following optional activity is an example of an exponential time algorithm.</p>
 <div class="ifTime">
-<ol start="9">
 <p>A problem that may be familiar that requires an exponential time algorithm is computing any given element of Pascal’s Triangle. In Pascal’s Triangle, each number is found by adding the two numbers above it. For example, 4 + 6 = 10 and 15 + 6 = 21 as shown below. The first and last number of each row, which don’t have two numbers above them are 1. <br> <img src="../../img/5-algorithms/pascals-triangle-numbers.jpg" title="
   1
  1 1
@@ -574,36 +579,99 @@ The term “<strong>reasonable time</strong>” describes any algorithm that run
    1 6 15 20 15 6 1
  1 7 21 35 35 21 7 1
 1 8 28 56 70 56 28 8 1" class="ms-4 noshadow"> <img src="../../img/5-algorithms/pascals-triangle-6-3-reporting.png" title="pascals triangle, row: (6) position (3) reporting 10" alt="pascals triangle, row: (6) position (3) reporting 10" class="ms-4"></p>
-<li>
-<p>Locate the <img src="../../img/8-recursive-reporters/pascals-triangle.png" title="pascals triangle, row: () position: ()" alt="pascals triangle, row: () position: ()" class="inline"> block included in your project, and time it for various inputs.<br></p>
+<ol start="9" class="example" type="1">
+<li><p>Locate the <img src="../../img/8-recursive-reporters/pascals-triangle.png" title="pascals triangle, row: () position: ()" alt="pascals triangle, row: () position: ()" class="inline"> block included in your project, and time it for various inputs.<br></p>
 <div class="endnote">
 <p>If these take too long to run, you can stop your program; just fill in the table as far as the speed of your computer will allow.</p>
 </div>
-<p>31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATwBRAEEANQBBAEQASQBBAE0AdwBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBQAEEAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAEkAQQBCAGoAQQBHAHcAQQBZAFEAQgB6AEEASABNAEEAUABRAEEAaQBBAEcASQBBAGIAdwBCAHkAQQBHAFEAQQBaAFEAQgB5AEEARwBVAEEAWgBBAEEAZwBBAEcATQBBAFoAUQBCAHUAQQBIAFEAQQBaAFEAQgB5AEEAQwBJAEEASQBBAEIAegBBAEgAVQBBAGIAUQBCAHQAQQBHAEUAQQBjAGcAQgA1AEEARAAwAEEASQBnAEIAMABBAEcARQBBAFkAZwBCAHMAQQBHAFUAQQBJAEEAQgB6AEEARwBnAEEAYgB3AEIAMwBBAEcAawBBAGIAZwBCAG4AQQBDAEEAQQBkAEEAQgBvAEEARwBVAEEASQBBAEIAdQBBAEgAVQBBAGIAUQBCAGkAQQBHAFUAQQBjAGcAQQBnAEEARwA4AEEAWgBnAEEAZwBBAEcAYwBBAGQAUQBCAGwAQQBIAE0AQQBjAHcAQgBsAEEASABNAEEASQBBAEIAdQBBAEcAVQBBAFoAUQBCAGsAQQBHAFUAQQBaAEEAQQBnAEEASABRAEEAYgB3AEEAZwBBAEcAWQBBAGEAUQBCAHUAQQBHAFEAQQBJAEEAQgAwAEEARwBnAEEAWgBRAEEAZwBBAEcAdwBBAFkAUQBCAHoAQQBIAFEAQQBJAEEAQgB1AEEASABVAEEAYgBRAEIAaQBBAEcAVQBBAGMAZwBBAGcAQQBHAGsAQQBiAGcAQQBnAEEARwBFAEEASQBBAEIAegBBAEcAOABBAGMAZwBCADAAQQBHAFUAQQBaAEEAQQBnAEEARwB3AEEAYQBRAEIAegBBAEgAUQBBAEkAQQBCAG0AQQBHADgAQQBjAGcAQQBnAEEARwBFAEEASQBBAEIAcwBBAEcAawBBAGMAdwBCADAAQQBDAEEAQQBiAHcAQgBtAEEAQwBBAEEAWQBRAEEAZwBBAEcAYwBBAGEAUQBCADIAQQBHAFUAQQBiAGcAQQBnAEEARwB3AEEAWgBRAEIAdQBBAEcAYwBBAGQAQQBCAG8AQQBDAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBhAEEAQQBnAEEASABNAEEAWQB3AEIAdgBBAEgAQQBBAFoAUQBBADkAQQBDAEkAQQBZAHcAQgB2AEEARwB3AEEASQBnAEEAZwBBAEgATQBBAGQAQQBCADUAQQBHAHcAQQBaAFEAQQA5AEEAQwBJAEEAZAB3AEIAbwBBAEcAawBBAGQAQQBCAGwAQQBDADAAQQBjAHcAQgB3AEEARwBFAEEAWQB3AEIAbABBAEQAbwBBAEkAQQBCAHUAQQBHADgAQQBkAHcAQgB5AEEARwBFAEEAYwBBAEEANwBBAEMASQBBAFAAZwBCAEoAQQBHADQAQQBjAEEAQgAxAEEASABRAEEAYwB3AEEAOABBAEMAOABBAGQAQQBCAG8AQQBEADQAQQBDAGcAQQA4AEEASABRAEEAYQBBAEEAZwBBAEgATQBBAFkAdwBCAHYAQQBIAEEAQQBaAFEAQQA5AEEAQwBJAEEAWQB3AEIAdgBBAEcAdwBBAEkAZwBBAGcAQQBIAE0AQQBkAEEAQgA1AEEARwB3AEEAWgBRAEEAOQBBAEMASQBBAGQAdwBCAG8AQQBHAGsAQQBkAEEAQgBsAEEAQwAwAEEAYwB3AEIAdwBBAEcARQBBAFkAdwBCAGwAQQBEAG8AQQBJAEEAQgB1AEEARwA4AEEAZAB3AEIAeQBBAEcARQBBAGMAQQBBADcAQQBDAEkAQQBQAGcAQgBRAEEARwBFAEEAYwB3AEIAagBBAEcARQBBAGIAQQBBAG4AQQBIAE0AQQBJAEEAQgBVAEEASABJAEEAYQBRAEIAaABBAEcANABBAFoAdwBCAHMAQQBHAFUAQQBJAEEAQgBVAEEARwBrAEEAYgBRAEIAbABBAEQAdwBBAEwAdwBCADAAQQBHAGcAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBEAFUAQQBMAEEAQQBnAEEARABJAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBAHgAQQBEAEEAQQBMAEEAQQBnAEEARABVAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBAHgAQQBEAFUAQQBMAEEAQQBnAEEARABjAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBAHkAQQBEAEEAQQBMAEEAQQBnAEEARABFAEEATQBBAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBEAEkAQQBOAFEAQQBzAEEAQwBBAEEATQBRAEEAeQBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEEAdgBBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQQB2AEEASABRAEEAWQBRAEIAaQBBAEcAdwBBAFoAUQBBACsAQQBBAD0APQAKAHMAdQBmAGYAaQB4ADoA:31b8e172-b470-440e-83d8-e6b185028602</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Inputs</th>
+<th>Pascal’s Triangle Time</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>5, 2</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>10, 5</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>15, 7</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>20, 10</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>25, 12</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <div class="endnote">
 <p>The <var>row</var> value is the input to <code>pascals triangle</code> that matters. (The <var>position</var> input is only given so you get a time for one of the positions near the middle of the row, which take longer to compute.)</p>
 </div>
 <p>These <var>row</var> inputs are very small compared to the input size for the <code>linear search</code>, <code>binary search</code>, and <code>sort</code> algorithms, and yet the time required for <code>pascals triangle</code> is much higher. Your computer probably can’t do much past <var>25</var>.</p>
 <div class="endnote">
 <p>This algorithm works by adding the two numbers above using the algorithm inside itself recursively, but there are better algorithms that compute the value a number in Pascal’s Triangle in linear time.</p>
-</div>
-</li>
+</div></li>
 </ol>
 </div>
 <div class="forYouToDo">
-<ol start="10">
-<div class="ap-standard">
-<p>AAP-4.A part a</p>
-</div>
-<li>
-Write a paragraph explaining the difference between algorithms that run in a reasonable time and those that do not.
-</li>
-<li>
-<p>This question is similar to those you will see on the AP CSP exam. <!-- Question 1 --></p>
+<ol start="10" class="example" type="1">
+<li><p>Write a paragraph explaining the difference between algorithms that run in a reasonable time and those that do not.</p></li>
+<li><p>This question is similar to those you will see on the AP CSP exam. <!-- Question 1 --></p>
 <div class="assessment-data" type="multiplechoice" data-identifier="Timing of database tasks" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri1" data-shuffle="true">
 <div class="prompt">
 <p>The table below shows the computer time it takes to complete various tasks on the data of different sized towns.</p>
-<p>31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATQBRAEEAeABBAEQAZwBBAE0AdwBBADIAQQBBAD0APQAKAHAAcgBlAGYAaQB4ADoACgBzAG8AdQByAGMAZQA6AFAAQQBCADAAQQBHAEUAQQBZAGcAQgBzAEEARwBVAEEASQBBAEIAagBBAEcAdwBBAFkAUQBCAHoAQQBIAE0AQQBQAFEAQQBpAEEARwBJAEEAYgB3AEIAeQBBAEcAUQBBAFoAUQBCAHkAQQBHAFUAQQBaAEEAQQBnAEEARwBNAEEAWgBRAEIAdQBBAEgAUQBBAFoAUQBCAHkAQQBDAEEAQQBjAHcAQgAwAEEARwBFAEEAYgBnAEIAawBBAEcARQBBAGMAZwBCAGsAQQBDAEkAQQBJAEEAQgB6AEEASABVAEEAYgBRAEIAdABBAEcARQBBAGMAZwBCADUAQQBEADAAQQBJAGcAQgBvAEEARwA4AEEAZABRAEIAeQBBAEgATQBBAEkAQQBCAHkAQQBHAFUAQQBjAFEAQgAxAEEARwBrAEEAYwBnAEIAbABBAEcAUQBBAEkAQQBCAG0AQQBHADgAQQBjAGcAQQBnAEEASABZAEEAWQBRAEIAeQBBAEcAawBBAGIAdwBCADEAQQBIAE0AQQBJAEEAQgBrAEEARwBFAEEAZABBAEIAaABBAEMAQQBBAGIAUQBCAGgAQQBHADQAQQBZAFEAQgBuAEEARwBVAEEAYgBRAEIAbABBAEcANABBAGQAQQBBAGcAQQBIAFEAQQBZAFEAQgB6AEEARwBzAEEAYwB3AEEAZwBBAEcAWQBBAGIAdwBCAHkAQQBDAEEAQQBkAEEAQgB2AEEASABjAEEAYgBnAEIAegBBAEMAQQBBAGIAdwBCAG0AQQBDAEEAQQBkAGcAQgBoAEEASABJAEEAYQBRAEIAdgBBAEgAVQBBAGMAdwBBAGcAQQBIAE0AQQBhAFEAQgA2AEEARwBVAEEAYwB3AEEAaQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAZwBBAEkAQQBCAHoAQQBHAE0AQQBiAHcAQgB3AEEARwBVAEEAUABRAEEAaQBBAEcATQBBAGIAdwBCAHMAQQBDAEkAQQBQAGcAQgBVAEEARwBFAEEAYwB3AEIAcgBBAEQAdwBBAEwAdwBCADAAQQBHAGcAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAbwBBAEMAQQBBAGMAdwBCAGoAQQBHADgAQQBjAEEAQgBsAEEARAAwAEEASQBnAEIAagBBAEcAOABBAGIAQQBBAGkAQQBEADQAQQBVAHcAQgB0AEEARwBFAEEAYgBBAEIAcwBBAEMAQQBBAFYAQQBCAHYAQQBIAGMAQQBiAGcAQQA4AEEARwBJAEEAYwBnAEEAZwBBAEMAOABBAFAAZwBBAG8AQQBIAEEAQQBiAHcAQgB3AEEASABVAEEAYgBBAEIAaABBAEgAUQBBAGEAUQBCAHYAQQBHADQAQQBJAEEAQQB4AEEAQwB3AEEATQBBAEEAdwBBAEQAQQBBAEsAUQBBADgAQQBDADgAQQBkAEEAQgBvAEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAGEAQQBBAGcAQQBIAE0AQQBZAHcAQgB2AEEASABBAEEAWgBRAEEAOQBBAEMASQBBAFkAdwBCAHYAQQBHAHcAQQBJAGcAQQArAEEARQAwAEEAYQBRAEIAawBBAEMAMABBAGMAdwBCAHAAQQBIAG8AQQBaAFEAQgBrAEEAQwBBAEEAVgBBAEIAdgBBAEgAYwBBAGIAZwBBADgAQQBHAEkAQQBjAGcAQQBnAEEAQwA4AEEAUABnAEEAbwBBAEgAQQBBAGIAdwBCAHcAQQBIAFUAQQBiAEEAQgBoAEEASABRAEEAYQBRAEIAdgBBAEcANABBAEkAQQBBAHgAQQBEAEEAQQBMAEEAQQB3AEEARABBAEEATQBBAEEAcABBAEQAdwBBAEwAdwBCADAAQQBHAGcAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAbwBBAEMAQQBBAGMAdwBCAGoAQQBHADgAQQBjAEEAQgBsAEEARAAwAEEASQBnAEIAagBBAEcAOABBAGIAQQBBAGkAQQBEADQAQQBUAEEAQgBoAEEASABJAEEAWgB3AEIAbABBAEMAQQBBAFYAQQBCAHYAQQBIAGMAQQBiAGcAQQA4AEEARwBJAEEAYwBnAEEAZwBBAEMAOABBAFAAZwBBAG8AQQBIAEEAQQBiAHcAQgB3AEEASABVAEEAYgBBAEIAaABBAEgAUQBBAGEAUQBCAHYAQQBHADQAQQBJAEEAQQB4AEEARABBAEEATQBBAEEAcwBBAEQAQQBBAE0AQQBBAHcAQQBDAGsAQQBQAEEAQQB2AEEASABRAEEAYQBBAEEAKwBBAEEAbwBBAFAAQQBBAHYAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBvAEEAQwBBAEEAYwB3AEIAagBBAEcAOABBAGMAQQBCAGwAQQBEADAAQQBJAGcAQgB5AEEARwA4AEEAZAB3AEEAaQBBAEQANABBAFIAUQBCAHUAQQBIAFEAQQBaAFEAQgB5AEEARwBrAEEAYgBnAEIAbgBBAEMAQQBBAFIAQQBCAGgAQQBIAFEAQQBZAFEAQQA4AEEAQwA4AEEAZABBAEIAbwBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBaAEEAQQArAEEARABJAEEASQBBAEIAbwBBAEcAOABBAGQAUQBCAHkAQQBIAE0AQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQQB5AEEARABBAEEASQBBAEIAbwBBAEcAOABBAGQAUQBCAHkAQQBIAE0AQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQQB5AEEARABBAEEATQBBAEEAZwBBAEcAZwBBAGIAdwBCADEAQQBIAEkAQQBjAHcAQQA4AEEAQwA4AEEAZABBAEIAawBBAEQANABBAEMAZwBBADgAQQBDADgAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBnAEEASQBBAEIAegBBAEcATQBBAGIAdwBCAHcAQQBHAFUAQQBQAFEAQQBpAEEASABJAEEAYgB3AEIAMwBBAEMASQBBAFAAZwBCAEMAQQBHAEUAQQBZAHcAQgByAEEARwBrAEEAYgBnAEIAbgBBAEMAQQBBAGQAUQBCAHcAQQBDAEEAQQBSAEEAQgBoAEEASABRAEEAWQBRAEEAOABBAEMAOABBAGQAQQBCAG8AQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQAQQBBAEwAZwBBADEAQQBDAEEAQQBhAEEAQgB2AEEASABVAEEAYwBnAEIAegBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAE4AUQBBAGcAQQBHAGcAQQBiAHcAQgAxAEEASABJAEEAYwB3AEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQAVQBBAE0AQQBBAGcAQQBHAGcAQQBiAHcAQgAxAEEASABJAEEAYwB3AEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAZwBBAEkAQQBCAHoAQQBHAE0AQQBiAHcAQgB3AEEARwBVAEEAUABRAEEAaQBBAEgASQBBAGIAdwBCADMAQQBDAEkAQQBQAGcAQgBUAEEARwBVAEEAWQBRAEIAeQBBAEcATQBBAGEAQQBCAHAAQQBHADQAQQBaAHcAQQBnAEEASABRAEEAYQBBAEIAeQBBAEcAOABBAGQAUQBCAG4AQQBHAGcAQQBJAEEAQgBFAEEARwBFAEEAZABBAEIAaABBAEQAdwBBAEwAdwBCADAAQQBHAGcAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAE4AUQBBAGcAQQBHAGcAQQBiAHcAQgAxAEEASABJAEEAYwB3AEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQARQBBAE4AUQBBAGcAQQBHAGcAQQBiAHcAQgAxAEEASABJAEEAYwB3AEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQASQBBAE4AUQBBAGcAQQBHAGcAQQBiAHcAQgAxAEEASABJAEEAYwB3AEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAZwBBAEkAQQBCAHoAQQBHAE0AQQBiAHcAQgB3AEEARwBVAEEAUABRAEEAaQBBAEgASQBBAGIAdwBCADMAQQBDAEkAQQBQAGcAQgBUAEEARwA4AEEAYwBnAEIAMABBAEcAawBBAGIAZwBCAG4AQQBDAEEAQQBSAEEAQgBoAEEASABRAEEAWQBRAEEAOABBAEMAOABBAGQAQQBCAG8AQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQAQQBBAEwAZwBBAHcAQQBEAEUAQQBJAEEAQgBvAEEARwA4AEEAZABRAEIAeQBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAE0AUQBBAGcAQQBHAGcAQQBiAHcAQgAxAEEASABJAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAeABBAEQAQQBBAE0AQQBBAGcAQQBHAGcAQQBiAHcAQgAxAEEASABJAEEAYwB3AEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBDADgAQQBkAEEAQgBoAEEARwBJAEEAYgBBAEIAbABBAEQANABBAAoAcwB1AGYAZgBpAHgAOgA=:31b8e172-b470-440e-83d8-e6b185028602</p>
+<table class="table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 25%">
+<col style="width: 28%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>Task</strong></th>
+<th style="text-align: center;"><strong>Small Town (population 1,000)</strong></th>
+<th style="text-align: center;"><strong>Mid-sized Town (population 10,000)</strong></th>
+<th style="text-align: center;"><strong>Large Town (population 100,000)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>Entering Data</strong></td>
+<td style="text-align: center;">2 hours</td>
+<td style="text-align: center;">20 hours</td>
+<td style="text-align: center;">200 hours</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Backing up Data</strong></td>
+<td style="text-align: center;">0.5 hours</td>
+<td style="text-align: center;">5 hours</td>
+<td style="text-align: center;">50 hours</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Searching through Data</strong></td>
+<td style="text-align: center;">5 hours</td>
+<td style="text-align: center;">15 hours</td>
+<td style="text-align: center;">25 hours</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Sorting Data</strong></td>
+<td style="text-align: center;">0.01 hour</td>
+<td style="text-align: center;">1 hour</td>
+<td style="text-align: center;">100 hours</td>
+</tr>
+</tbody>
+</table>
 <p>Based on the information in the table, which of the following tasks is likely to take the <em><strong>longest</strong></em> amount of time when scaled up for a city of population 1,000,000.</p>
 </div>
 <div class="choice" data-identifier="c1">
@@ -645,8 +713,7 @@ Write a paragraph explaining the difference between algorithms that run in a rea
 
 </div>
 </div>
-</div>
-</li>
+</div></li>
 </ol>
 </div>
 

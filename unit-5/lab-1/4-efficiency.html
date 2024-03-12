@@ -188,24 +188,6 @@ ul.task-list li input[type="checkbox"] {
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-5/unit-5-exam-reference.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Unit 5 Exam Questions</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-5/unit-5-self-check.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Unit 5 Self-Check Questions</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-5/unit-5-vocab.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Unit 5 Vocabulary</span></a>
-  </div>
-</li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
@@ -459,100 +441,114 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="todo">
-<h3 class="anchored">
-TG and solutions need to be checked. –MF, 12/19/18
-</h3>
-</div>
 <div class="learn">
 <p><strong>On this page</strong>, you will compare the time required for binary search and for linear search.</p>
-<div class="todo">
-<p>TG: Students compare these two algorithms in two ways: empirically (with clock time) and by counting operations (steps).</p>
-</div>
 </div>
 <div id="first" class="forYouToDo">
-<ol>
-<li>
-<div class="ap-standard">
-<p>AAP-2.P.3</p>
-</div>
-<p>Locate the <img src="../../img/5-algorithms/linear-search.png" title="linear search for () in 'list input slot'" alt="linear search for () in 'list input slot'" class="inline"> block included in your project, and look inside it. Compare it to the algorithm you used to count the number of five- or seven-letter words. This block does the same computation as the <code>binary search</code> block, but it uses the linear algorithm.</p>
-</li>
-<li>
-Use <img src="../../img/5-algorithms/computation-time-of.png" title="computation time of 'grey ring input slot'" alt="computation time of 'grey ring input slot'" class="inline"> to test how much time <code>linear search</code> takes to find the word “zebra” in each length list. 31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATQBRAEEAegBBAEQATQBBAE0AdwBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBQAEEAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAEkAQQBCAGoAQQBHAHcAQQBZAFEAQgB6AEEASABNAEEAUABRAEEAaQBBAEcASQBBAGIAdwBCAHkAQQBHAFEAQQBaAFEAQgB5AEEARwBVAEEAWgBBAEEAZwBBAEcATQBBAFoAUQBCAHUAQQBIAFEAQQBaAFEAQgB5AEEAQwBBAEEAYwB3AEIAMABBAEcARQBBAGIAZwBCAGsAQQBHAEUAQQBjAGcAQgBrAEEAQwBJAEEASQBBAEIAegBBAEgAVQBBAGIAUQBCAHQAQQBHAEUAQQBjAGcAQgA1AEEARAAwAEEASQBnAEIAdwBBAEcARQBBAGMAZwBCADAAQQBHAGsAQQBZAFEAQgBzAEEARwB3AEEAZQBRAEEAZwBBAEcASQBBAGIAQQBCAGgAQQBHADQAQQBhAHcAQQBnAEEASABRAEEAWQBRAEIAaQBBAEcAdwBBAFoAUQBBAGcAQQBIAE0AQQBhAEEAQgB2AEEASABjAEEAYQBRAEIAdQBBAEcAYwBBAEkAQQBCADAAQQBHAGcAQQBaAFEAQQBnAEEASABRAEEAYQBRAEIAdABBAEcAVQBBAEkAQQBCADAAQQBHADgAQQBJAEEAQgB5AEEASABVAEEAYgBnAEEAZwBBAEUAdwBBAFMAUQBCAE8AQQBFAFUAQQBRAFEAQgBTAEEAQwBBAEEAVQB3AEIARgBBAEUARQBBAFUAZwBCAEQAQQBFAGcAQQBJAEEAQgBtAEEARwA4AEEAYwBnAEEAZwBBAEcAdwBBAGEAUQBCAHoAQQBIAFEAQQBjAHcAQQBnAEEARwA4AEEAWgBnAEEAZwBBAEcAUQBBAGEAUQBCAG0AQQBHAFkAQQBaAFEAQgB5AEEARwBVAEEAYgBnAEIAMABBAEMAQQBBAGIAQQBCAGwAQQBHADQAQQBaAHcAQgAwAEEARwBnAEEAYwB3AEEAaQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAZwBBAEkAQQBCAHoAQQBHAE0AQQBiAHcAQgB3AEEARwBVAEEAUABRAEEAaQBBAEcATQBBAGIAdwBCAHMAQQBDAEkAQQBQAGcAQgBNAEEARwBVAEEAYgBnAEIAbgBBAEgAUQBBAGEAQQBBAGcAQQBHADgAQQBaAGcAQQBnAEEARQB3AEEAYQBRAEIAegBBAEgAUQBBAFAAQQBBAHYAQQBIAFEAQQBhAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAZwBBAEkAQQBCAHoAQQBHAE0AQQBiAHcAQgB3AEEARwBVAEEAUABRAEEAaQBBAEcATQBBAGIAdwBCAHMAQQBDAEkAQQBQAGcAQQA4AEEARwBNAEEAYgB3AEIAawBBAEcAVQBBAFAAZwBCAE0AQQBHAGsAQQBiAGcAQgBsAEEARwBFAEEAYwBnAEEAZwBBAEYATQBBAFoAUQBCAGgAQQBIAEkAQQBZAHcAQgBvAEEARAB3AEEATAB3AEIAagBBAEcAOABBAFoAQQBCAGwAQQBEADQAQQBJAEEAQgBVAEEARwBrAEEAYgBRAEIAbABBAEQAdwBBAEwAdwBCADAAQQBHAGcAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBEAEUAQQBNAEEAQQB3AEEARABBAEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBjAGcAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBAHgAQQBEAEEAQQBMAEEAQQB3AEEARABBAEEATQBBAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEATAB3AEIAMABBAEgASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBEAEUAQQBNAEEAQQB3AEEAQwB3AEEATQBBAEEAdwBBAEQAQQBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEMAOABBAGQAQQBCAHkAQQBEADQAQQBDAGcAQQA4AEEAQwA4AEEAZABBAEIAaABBAEcASQBBAGIAQQBCAGwAQQBEADQAQQAKAHMAdQBmAGYAaQB4ADoA:31b8e172-b470-440e-83d8-e6b185028602
-</li>
-<li>
-<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Look at the table. How would you describe what happens to the time as the input gets bigger?
-</li>
+<ol class="example" type="1">
+<li><p>Locate the <img src="../../img/5-algorithms/linear-search.png" title="linear search for () in 'list input slot'" alt="linear search for () in 'list input slot'" class="inline"> block included in your project, and look inside it. Compare it to the algorithm you used to count the number of five- or seven-letter words. This block does the same computation as the <code>binary search</code> block, but it uses the linear algorithm.</p></li>
+<li><p>Use <img src="../../img/5-algorithms/computation-time-of.png" title="computation time of 'grey ring input slot'" alt="computation time of 'grey ring input slot'" class="inline"> to test how much time <code>linear search</code> takes to find the word “zebra” in each length list.</p>
+<table class="table">
+<tbody>
+<tr class="odd">
+<td>Length of List</td>
+<td><code>Linear Search</code> Time</td>
+</tr>
+<tr class="even">
+<td>1000</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>10,000</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>100,000</td>
+<td></td>
+</tr>
+</tbody>
+</table></li>
+<li><p><img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Look at the table. How would you describe what happens to the time as the input gets bigger?</p></li>
 </ol>
 </div>
 <p>The actual amount of physical time that it takes to solve a problem depends not only on your algorithm but also on how fast your computer is and what other programs you have running, etc. Therefore, computer scientists who want to measure the speed of an algorithm do it in terms of the number of <em>steps</em>. For example, what we really want to know about the efficiency of the <code>linear search</code> algorithm is how many times <var>current item</var> is compared to <var>value</var> (that is, how many times <img src="../../img/5-algorithms/current-item=value.png" title="(current item) = (value)" alt="(current item) = (value)" class="inline py-0"> is called).</p>
 <div class="forYouToDo">
-<ol start="4">
-<li>
-<div class="ap-standard">
-<p>AAP-2.P.3</p>
-</div>
-<p>Add another column to your table. Assuming “zebra” is the <em>last word</em> in each word list, how many comparisons are made by the <code>linear search</code> algorithm for each length list? 31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATQBnAEEANQBBAEQARQBBAE0AdwBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBQAEEAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAEkAQQBCAGoAQQBHAHcAQQBZAFEAQgB6AEEASABNAEEAUABRAEEAaQBBAEcASQBBAGIAdwBCAHkAQQBHAFEAQQBaAFEAQgB5AEEARwBVAEEAWgBBAEEAZwBBAEcATQBBAFoAUQBCAHUAQQBIAFEAQQBaAFEAQgB5AEEAQwBBAEEAYwB3AEIAMABBAEcARQBBAGIAZwBCAGsAQQBHAEUAQQBjAGcAQgBrAEEAQwBJAEEASQBBAEIAegBBAEgAVQBBAGIAUQBCAHQAQQBHAEUAQQBjAGcAQgA1AEEARAAwAEEASQBnAEIAdwBBAEcARQBBAGMAZwBCADAAQQBHAGsAQQBZAFEAQgBzAEEARwB3AEEAZQBRAEEAZwBBAEcASQBBAGIAQQBCAGgAQQBHADQAQQBhAHcAQQBnAEEASABRAEEAWQBRAEIAaQBBAEcAdwBBAFoAUQBBAGcAQQBIAE0AQQBhAEEAQgB2AEEASABjAEEAYQBRAEIAdQBBAEcAYwBBAEkAQQBCADAAQQBHAGcAQQBaAFEAQQBnAEEASABRAEEAYQBRAEIAdABBAEcAVQBBAEkAQQBCAGgAQQBHADQAQQBaAEEAQQBnAEEARwA0AEEAYgB3AEIAMwBBAEMAQQBBAFkAUQBCAHMAQQBIAE0AQQBiAHcAQQBnAEEASABNAEEAZABBAEIAbABBAEgAQQBBAGMAdwBBAGcAQQBIAFEAQQBiAHcAQQBnAEEASABJAEEAZABRAEIAdQBBAEMAQQBBAFQAQQBCAEoAQQBFADQAQQBSAFEAQgBCAEEARgBJAEEASQBBAEIAVABBAEUAVQBBAFEAUQBCAFMAQQBFAE0AQQBTAEEAQQBnAEEARwBZAEEAYgB3AEIAeQBBAEMAQQBBAGIAQQBCAHAAQQBIAE0AQQBkAEEAQgB6AEEAQwBBAEEAYgB3AEIAbQBBAEMAQQBBAFoAQQBCAHAAQQBHAFkAQQBaAGcAQgBsAEEASABJAEEAWgBRAEIAdQBBAEgAUQBBAEkAQQBCAHMAQQBHAFUAQQBiAGcAQgBuAEEASABRAEEAYQBBAEIAegBBAEMASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAGEAQQBBAGcAQQBIAE0AQQBZAHcAQgB2AEEASABBAEEAWgBRAEEAOQBBAEMASQBBAFkAdwBCAHYAQQBHAHcAQQBJAGcAQQBnAEEASABNAEEAZABBAEIANQBBAEcAdwBBAFoAUQBBADkAQQBDAEkAQQBkAHcAQgBvAEEARwBrAEEAZABBAEIAbABBAEMAMABBAGMAdwBCAHcAQQBHAEUAQQBZAHcAQgBsAEEARABvAEEASQBBAEIAdQBBAEcAOABBAGQAdwBCAHkAQQBHAEUAQQBjAEEAQQA3AEEAQwBJAEEAUABnAEIATQBBAEcAVQBBAGIAZwBCAG4AQQBIAFEAQQBhAEEAQQBnAEEARwA4AEEAWgBnAEEAZwBBAEUAdwBBAGEAUQBCAHoAQQBIAFEAQQBQAEEAQQB2AEEASABRAEEAYQBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAGcAQQBJAEEAQgB6AEEARwBNAEEAYgB3AEIAdwBBAEcAVQBBAFAAUQBBAGkAQQBHAE0AQQBiAHcAQgBzAEEAQwBJAEEAUABnAEEAOABBAEcATQBBAGIAdwBCAGsAQQBHAFUAQQBQAGcAQgBNAEEARwBrAEEAYgBnAEIAbABBAEcARQBBAGMAZwBBAGcAQQBGAE0AQQBaAFEAQgBoAEEASABJAEEAWQB3AEIAbwBBAEQAdwBBAEwAdwBCAGoAQQBHADgAQQBaAEEAQgBsAEEARAA0AEEASQBBAEIAVQBBAEcAawBBAGIAUQBCAGwAQQBEAHcAQQBMAHcAQgAwAEEARwBnAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAG8AQQBDAEEAQQBjAHcAQgBqAEEARwA4AEEAYwBBAEIAbABBAEQAMABBAEkAZwBCAGoAQQBHADgAQQBiAEEAQQBpAEEAQwBBAEEAYwB3AEIAMABBAEgAawBBAGIAQQBCAGwAQQBEADAAQQBJAGcAQgAzAEEARwBnAEEAYQBRAEIAMABBAEcAVQBBAEwAUQBCAHoAQQBIAEEAQQBZAFEAQgBqAEEARwBVAEEATwBnAEEAZwBBAEcANABBAGIAdwBCADMAQQBIAEkAQQBZAFEAQgB3AEEARABzAEEASQBnAEEAKwBBAEQAdwBBAFkAdwBCAHYAQQBHAFEAQQBaAFEAQQArAEEARQB3AEEAYQBRAEIAdQBBAEcAVQBBAFkAUQBCAHkAQQBDAEEAQQBVAHcAQgBsAEEARwBFAEEAYwBnAEIAagBBAEcAZwBBAFAAQQBBAHYAQQBHAE0AQQBiAHcAQgBrAEEARwBVAEEAUABnAEEAZwBBAEYATQBBAGQAQQBCAGwAQQBIAEEAQQBjAHcAQQA4AEEAQwA4AEEAZABBAEIAbwBBAEQANABBAEMAZwBBADgAQQBDADgAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAeABBAEQAQQBBAE0AQQBBAHcAQQBEAHcAQQBMAHcAQgAwAEEARwBRAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBEADQAQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQQA4AEEAQwA4AEEAZABBAEIAawBBAEQANABBAEMAZwBBADgAQQBDADgAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEARwBRAEEAUABnAEEAeABBAEQAQQBBAEwAQQBBAHcAQQBEAEEAQQBNAEEAQQA4AEEAQwA4AEEAZABBAEIAawBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBaAEEAQQArAEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgBrAEEARAA0AEEAUABBAEEAdgBBAEgAUQBBAFoAQQBBACsAQQBBAG8AQQBQAEEAQQB2AEEASABRAEEAYwBnAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAE0AUQBBAHcAQQBEAEEAQQBMAEEAQQB3AEEARABBAEEATQBBAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEEAdgBBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQQB2AEEASABRAEEAWQBRAEIAaQBBAEcAdwBBAFoAUQBBACsAQQBBAD0APQAKAHMAdQBmAGYAaQB4ADoA:31b8e172-b470-440e-83d8-e6b185028602</p>
-</li>
-<li>
-<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"> How would you describe what happens to the number of <em>steps</em> as the input list gets bigger? Write your hypothesis about the pattern.
-</li>
-<li>
-Does what happens with steps match what happens with time? That is, can you count steps as a measure of time?
-</li>
+<ol start="4" class="example" type="1">
+<li><p>Add another column to your table. Assuming “zebra” is the <em>last word</em> in each word list, how many comparisons are made by the <code>linear search</code> algorithm for each length list?</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Length of List</th>
+<th><code>Linear Search</code> Time</th>
+<th><code>Linear Search</code> Steps</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1000</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>10,000</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>100,000</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></li>
+<li><p><img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"> How would you describe what happens to the number of <em>steps</em> as the input list gets bigger? Write your hypothesis about the pattern.</p></li>
+<li><p>Does what happens with steps match what happens with time? That is, can you count steps as a measure of time?</p></li>
 </ol>
 </div>
 <div class="vocabFullWidth">
-<div class="ap-standard">
-<p>AAP-4.A.3</p>
-</div>
 <p>The relationship between the input size and the number of steps required to solve a problem is the <strong>efficiency</strong> of the algorithm used to solve the problem.</p>
-</div>
-<div class="ap-standard">
-<p>AAP-4.A.4, AAP-4.A.5</p>
 </div>
 <p>Counting the number of steps, as you just did, is an <em>informal</em>, but perfectly good way to determine the efficiency of an algorithm. The <em>formal</em> measurement of an algorithm requires a mathematical proof.</p>
 <div class="takeNote">
 <p>In this course, you are mostly working with small problems, so it doesn’t matter how efficient the algorithm is. But in the real world, programmers deal with lists of billions of items, so the efficiency of an algorithm can make a huge difference.</p>
 </div>
 <div class="forYouToDo">
-<ol start="7">
-<li>
-<div class="ap-standard">
-<p>AAP-2.P part a</p>
-</div>
-<div class="ap-standard">
-<p>AAP-2.P.3</p>
-</div>
-<p>Now, test how much time <code>binary search</code> takes to find the word “zebra” in the <em>sorted</em> lists, and determine how many comparisons are made by the algorithm if “zebra” is the last word in each length list. 31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AE8AQQBCAGwAQQBHAFkAQQBOAFEAQgBoAEEARABjAEEATgB3AEEAeQBBAEMAMABBAFoAQQBCAGsAQQBEAFkAQQBNAHcAQQB0AEEARABRAEEATgBnAEEAeQBBAEQASQBBAEwAUQBBADQAQQBEAFEAQQBZAGcAQgBtAEEAQwAwAEEAWQBRAEIAbQBBAEQARQBBAE8AUQBBADUAQQBEAFUAQQBZAFEAQQB4AEEARwBJAEEATQBnAEIAaQBBAEQAawBBAAoAcABvAHMAaQB0AGkAbwBuADoATgBRAEEAdwBBAEQASQBBAE4AZwBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBQAEEAQgAwAEEARwBFAEEAWQBnAEIAcwBBAEcAVQBBAEkAQQBCAGoAQQBHAHcAQQBZAFEAQgB6AEEASABNAEEAUABRAEEAaQBBAEcASQBBAGIAdwBCAHkAQQBHAFEAQQBaAFEAQgB5AEEARwBVAEEAWgBBAEEAZwBBAEcATQBBAFoAUQBCAHUAQQBIAFEAQQBaAFEAQgB5AEEAQwBBAEEAYwB3AEIAMABBAEcARQBBAGIAZwBCAGsAQQBHAEUAQQBjAGcAQgBrAEEAQwBJAEEASQBBAEIAegBBAEgAVQBBAGIAUQBCAHQAQQBHAEUAQQBjAGcAQgA1AEEARAAwAEEASQBnAEIAdwBBAEcARQBBAGMAZwBCADAAQQBHAGsAQQBZAFEAQgBzAEEARwB3AEEAZQBRAEEAZwBBAEcASQBBAGIAQQBCAGgAQQBHADQAQQBhAHcAQQBnAEEASABRAEEAWQBRAEIAaQBBAEcAdwBBAFoAUQBBAGcAQQBIAE0AQQBhAEEAQgB2AEEASABjAEEAYQBRAEIAdQBBAEcAYwBBAEkAQQBCADAAQQBHAGcAQQBaAFEAQQBnAEEASABRAEEAYQBRAEIAdABBAEcAVQBBAEkAQQBCAGgAQQBHADQAQQBaAEEAQQBnAEEARwA0AEEAYgB3AEIAMwBBAEMAQQBBAFkAUQBCAHMAQQBIAE0AQQBiAHcAQQBnAEEASABNAEEAZABBAEIAbABBAEgAQQBBAGMAdwBBAGcAQQBIAFEAQQBiAHcAQQBnAEEASABJAEEAZABRAEIAdQBBAEMAQQBBAFQAQQBCAEoAQQBFADQAQQBSAFEAQgBCAEEARgBJAEEASQBBAEIAVABBAEUAVQBBAFEAUQBCAFMAQQBFAE0AQQBTAEEAQQBnAEEARwBZAEEAYgB3AEIAeQBBAEMAQQBBAGIAQQBCAHAAQQBIAE0AQQBkAEEAQgB6AEEAQwBBAEEAYgB3AEIAbQBBAEMAQQBBAFoAQQBCAHAAQQBHAFkAQQBaAGcAQgBsAEEASABJAEEAWgBRAEIAdQBBAEgAUQBBAEkAQQBCAHMAQQBHAFUAQQBiAGcAQgBuAEEASABRAEEAYQBBAEIAegBBAEMASQBBAFAAZwBBAEsAQQBEAHcAQQBkAEEAQgB5AEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAGEAQQBBAGcAQQBIAE0AQQBZAHcAQgB2AEEASABBAEEAWgBRAEEAOQBBAEMASQBBAFkAdwBCAHYAQQBHAHcAQQBJAGcAQQArAEEARQB3AEEAWgBRAEIAdQBBAEcAYwBBAGQAQQBCAG8AQQBDAEEAQQBiAHcAQgBtAEEAQwBBAEEAVABBAEIAcABBAEgATQBBAGQAQQBBADgAQQBDADgAQQBkAEEAQgBvAEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAGEAQQBBAGcAQQBIAE0AQQBZAHcAQgB2AEEASABBAEEAWgBRAEEAOQBBAEMASQBBAFkAdwBCAHYAQQBHAHcAQQBJAGcAQQArAEEARAB3AEEAWQB3AEIAdgBBAEcAUQBBAFoAUQBBACsAQQBFAEkAQQBhAFEAQgB1AEEARwBFAEEAYwBnAEIANQBBAEMAQQBBAFUAdwBCAGwAQQBHAEUAQQBjAGcAQgBqAEEARwBnAEEAUABBAEEAdgBBAEcATQBBAGIAdwBCAGsAQQBHAFUAQQBQAGcAQQBnAEEARgBRAEEAYQBRAEIAdABBAEcAVQBBAFAAQQBBAHYAQQBIAFEAQQBhAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAZwBBAEkAQQBCAHoAQQBHAE0AQQBiAHcAQgB3AEEARwBVAEEAUABRAEEAaQBBAEcATQBBAGIAdwBCAHMAQQBDAEkAQQBQAGcAQQA4AEEARwBNAEEAYgB3AEIAawBBAEcAVQBBAFAAZwBCAEMAQQBHAGsAQQBiAGcAQgBoAEEASABJAEEAZQBRAEEAZwBBAEYATQBBAFoAUQBCAGgAQQBIAEkAQQBZAHcAQgBvAEEARAB3AEEATAB3AEIAagBBAEcAOABBAFoAQQBCAGwAQQBEADQAQQBJAEEAQgBUAEEASABRAEEAWgBRAEIAdwBBAEgATQBBAFAAQQBBAHYAQQBIAFEAQQBhAEEAQQArAEEAQQBvAEEAUABBAEEAdgBBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBEADQAQQBNAFEAQQB3AEEARABBAEEATQBBAEEAOABBAEMAOABBAGQAQQBCAGsAQQBEADQAQQBDAGcAQQA4AEEASABRAEEAWgBBAEEAKwBBAEQAdwBBAEwAdwBCADAAQQBHAFEAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAawBBAEQANABBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEEAdgBBAEgAUQBBAGMAZwBBACsAQQBBAG8AQQBQAEEAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAGQAQQBCAGsAQQBEADQAQQBNAFEAQQB3AEEAQwB3AEEATQBBAEEAdwBBAEQAQQBBAFAAQQBBAHYAQQBIAFEAQQBaAEEAQQArAEEAQQBvAEEAUABBAEIAMABBAEcAUQBBAFAAZwBBADgAQQBDADgAQQBkAEEAQgBrAEEARAA0AEEAQwBnAEEAOABBAEgAUQBBAFoAQQBBACsAQQBEAHcAQQBMAHcAQgAwAEEARwBRAEEAUABnAEEASwBBAEQAdwBBAEwAdwBCADAAQQBIAEkAQQBQAGcAQQBLAEEARAB3AEEAZABBAEIAeQBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBaAEEAQQArAEEARABFAEEATQBBAEEAdwBBAEMAdwBBAE0AQQBBAHcAQQBEAEEAQQBQAEEAQQB2AEEASABRAEEAWgBBAEEAKwBBAEEAbwBBAFAAQQBCADAAQQBHAFEAQQBQAGcAQQA4AEEAQwA4AEEAZABBAEIAawBBAEQANABBAEMAZwBBADgAQQBIAFEAQQBaAEEAQQArAEEARAB3AEEATAB3AEIAMABBAEcAUQBBAFAAZwBBAEsAQQBEAHcAQQBMAHcAQgAwAEEASABJAEEAUABnAEEASwBBAEQAdwBBAEwAdwBCADAAQQBHAEUAQQBZAGcAQgBzAEEARwBVAEEAUABnAEEAPQAKAHMAdQBmAGYAaQB4ADoA:31b8e172-b470-440e-83d8-e6b185028602</p>
-</li>
-<li>
-<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Describe what happens to the time and the number of steps as the input list gets bigger. Write down your hypothesis.
-</li>
-<li>
-<div class="ap-standard">
-<p>AAP-2.P.3, AAP-4.A.6</p>
-</div>
-<p>Look back at your tables for the <code>linear search</code> and the <code>binary search</code> algorithm, and compare the two search algorithms:</p>
-<ol>
-<li>
-Which has more blocks in its code?
-</li>
-<li>
-Which runs faster for large inputs?
-</li>
-<li>
-Which algorithm is more efficient?
-</li>
-</ol>
-</li>
-<li>
-<div class="ap-standard">
-<p>AAP-2.P part b</p>
-</div>
-<p><img src="../../img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"> What are the two requirements to use a binary search?</p>
-</li>
+<ol start="7" class="example" type="1">
+<li><p>Now, test how much time <code>binary search</code> takes to find the word “zebra” in the <em>sorted</em> lists, and determine how many comparisons are made by the algorithm if “zebra” is the last word in each length list.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Length of List</th>
+<th><code>Binary Search</code> Time</th>
+<th><code>Binary Search</code> Steps</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1000</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>10,000</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>100,000</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></li>
+<li><p><img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Describe what happens to the time and the number of steps as the input list gets bigger. Write down your hypothesis.</p></li>
+<li><p>Look back at your tables for the <code>linear search</code> and the <code>binary search</code> algorithm, and compare the two search algorithms:</p>
+<ol type="a">
+<li>Which has more blocks in its code?</li>
+<li>Which runs faster for large inputs?</li>
+<li>Which algorithm is more efficient?</li>
+</ol></li>
+<li><p><img src="../../img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"> What are the two requirements to use a binary search?</p></li>
 </ol>
 </div>
 

@@ -188,24 +188,6 @@ ul.task-list li input[type="checkbox"] {
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-5/unit-5-exam-reference.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Unit 5 Exam Questions</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-5/unit-5-self-check.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Unit 5 Self-Check Questions</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-5/unit-5-vocab.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Unit 5 Vocabulary</span></a>
-  </div>
-</li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
@@ -459,11 +441,6 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="todo">
-<h3 class="anchored">
-TG and solutions need to be checked. –MF, 12/19/18
-</h3>
-</div>
 <div class="learn">
 <p><strong>On this page</strong>, you will use a <em>binary search</em> algorithm to search efficiently in a <em>sorted</em> list.</p>
 </div>
@@ -489,149 +466,171 @@ TG and solutions need to be checked. –MF, 12/19/18
 <div class="endnote">
 <p>The one thing that almost everyone knows about computers is that they use binary: ones and zeros. Binary search has nothing to do with that. The word “binary” just means “two,” whether it’s two digits or two halves.</p>
 </div>
-<div class="forYouToDo" id="first">
-
-<ol>
-<li>
-<p><img src="../../img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"> Compare this <code>binary search</code> block with your code from <a href="../../unit-5/lab-1/1-sorted-lists.html" title="Page 1: Guess My Number">Page 1: Guess My Number</a>. What parts are the same? What parts are different?<br> (high)) { set (current index) to (average of (low) and (high)) #comment: find the middle word set (current item) to (item (current index) of (data)) if ((current item) = (value)) { report (true) } else { if ((current item) &gt; (value)) #comment: eliminate half the list { set (high) to ((current index) – (1)) } else { set (low) to ((current index) + (1)) } } } report (false) }” title=“binary search for (value) in (data) { script variables (low) (high) (current index) (current item) set (low) to (1) set (high) to (length of (data)) repeat until ((low) &gt; (high)) { set (current index) to (average of (low) and (high)) #comment: find the middle word set (current item) to (item (current index) of (data)) if ((current item) = (value)) { report (true) } else { if ((current item) &gt; (value)) #comment: eliminate half the list { set (high) to ((current index) – (1)) } else { set (low) to ((current index) + (1)) } } } report (false) }” /&gt;</p>
+<div id="first" class="forYouToDo">
+<ol class="example" type="1">
+<li><p><img src="../../img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"> Compare this <code>binary search</code> block with your code from <a href="../../unit-5/lab-1/1-sorted-lists.html" title="Page 1: Guess My Number"> Page 1: Guess My Number</a>. What parts are the same? What parts are different?</p>
+<img class="indent" src="../../img/5-algorithms/binary-search-block-definition.png" alt="binary search for (value) in (data) {
+        script variables (low) (high) (current index) (current item)
+        set (low) to (1)
+        set (high) to (length of (data))
+        repeat until ((low) > (high)) {
+                    set (current index) to (average of (low) and (high)) #comment: find the middle word
+                    set (current item) to (item (current index) of (data))
+                    if ((current item) = (value)) { report (true) }
+                    else {
+                                if ((current item) > (value)) #comment: eliminate half the list {
+                                            set (high) to ((current index) – (1))
+                                } else { set (low) to ((current index) + (1)) }
+                    }
+        }
+        report (false)
+}" title="binary search for (value) in (data) {
+        script variables (low) (high) (current index) (current item)
+        set (low) to (1)
+        set (high) to (length of (data))
+        repeat until ((low) > (high)) {
+                    set (current index) to (average of (low) and (high)) #comment: find the middle word
+                    set (current item) to (item (current index) of (data))
+                    if ((current item) = (value)) { report (true) }
+                    else {
+                                if ((current item) > (value)) #comment: eliminate half the list {
+                                            set (high) to ((current index) – (1))
+                                } else { set (low) to ((current index) + (1)) }
+                    }
+        }
+        report (false)
+}">
 <div class="endnote">
-<pre><code>The `&amp;gt;` block (as well as the `&amp;lt;` and `=` blocks) compares words alphabetically: &lt;br /&gt;
-&lt;img class="ms-4" src="/img/5-algorithms/carrot-gt-banana-reporting.png" alt="(carrot) &gt; (banana) reporting true" title="(carrot) &gt; (banana) reporting true" /&gt;
-&lt;img class="ms-4" src="/img/5-algorithms/apple-gt-banana-reporting.png" alt="(apple) &gt; (banana) reporting false" title="(apple) &gt; (banana) reporting false" /&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;Check whether "seperate" is spelled correctly by using `binary search` to look for the word in the sorted list &lt;img class="inline" src="/img/5-algorithms/100000-words-(sorted).png" alt="100,000 words (sorted)" title="100,000 words (sorted)" /&gt;.&lt;/li&gt;</code></pre>
-</div></li><li>
-Try <code>binary search</code> with some words that you know are spelled correctly and some that you know are incorrect.
-</li>
-<pre><code>&lt;div class="todo"&gt;Maybe change it to "Practice using `binary search`: Try it with some words that you know are spelled correctly and some that you know are incorrect." --MF, 7/13/20&lt;/div&gt;</code></pre>
-<li>
-Now use <code>binary search</code> to search for the same words in the unsorted <var>100,000 words</var>.
-</li>
-<pre><code>&lt;div class="ap-standard"&gt;AAP-2.P.2&lt;/div&gt;</code></pre>
-<li>
-<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Why does binary searching work on one list but not the other? Consider how the binary search algorithm works.
-</li>
+<p>The <code>&gt;</code> block (as well as the <code>&lt;</code> and <code>=</code> blocks) compares words alphabetically:</p>
+<p><img class="indent" src="../../img/5-algorithms/carrot-gt-banana-reporting.png" alt="(carrot) > (banana) reporting true" title="(carrot) > (banana) reporting true"></p>
+<p><img class="indent" src="../../img/5-algorithms/apple-gt-banana-reporting.png" alt="(apple) > (banana) reporting false" title="(apple) > (banana) reporting false"></p>
+</div></li>
+<li><p>Check whether “seperate” is spelled correctly by using <code>binary search</code> to look for the word in the sorted list <img class="inline" src="../../img/5-algorithms/100000-words-(sorted).png" alt="100,000 words (sorted)" title="100,000 words (sorted)">.</p></li>
+<li><p>Try <code>binary search</code> with some words that you know are spelled correctly and some that you know are incorrect.</p></li>
+<li><p>Now use <code>binary search</code> to search for the same words in the unsorted <var>100,000 words</var>.</p></li>
+<li><p><img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Why does binary searching work on one list but not the other? Consider how the binary search algorithm works.</p></li>
 </ol>
 </div>
 <p>The <code>contains</code> block can’t make any assumptions about the ordering in list you are searching, but if you are looking for one thing in a <em>sorted</em>, list you can use binary search.</p>
 <div class="takeNote">
-
-<pre><code>&lt;div class="ap-standard"&gt;AAP-2.P.2&lt;/div&gt;
-
-Two things affect whether you can use a binary search algorithm to make your program more efficient:
-&lt;ul&gt;
-&lt;li&gt;What question you are trying to answer? Are you searching for &lt;em&gt;one&lt;/em&gt; thing in a list or are you finding &lt;em&gt;all&lt;/em&gt; the things in the list with some characteristic?&lt;/li&gt;
-&lt;li&gt;What is the condition of your data? Are they sorted or unsorted?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;table class="bordered center standard" summary="table showing that in order to use binary search, you have to be looking for one specific value and you have to be looking in sorted data"&gt;
-&lt;tr&gt;
-&lt;th scope="col"&gt;&amp;nbsp;&lt;/th&gt;
-&lt;th scope="col"&gt;find one value&lt;/th&gt;
-&lt;th scope="col"&gt;find many values&lt;/th&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th scope="col"&gt;sorted data&lt;/th&gt;
-&lt;td style="color: green"&gt;can use binary search&lt;/td&gt;
-&lt;td&gt;must use linear search&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th scope="col"&gt;unsorted data&lt;/th&gt;
-&lt;td&gt;must use linear search&lt;/td&gt;
-&lt;td&gt;must use linear search&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;/div&gt;
-&lt;div class="endnote"&gt;If you are working with short lists, it's not so important which algorithm you use. It's when you are dealing with a lot of data that you have to think carefully about the algorithm.&lt;/div&gt;
-&lt;div class="forYouToDo"&gt;</code></pre>
-<ol start="6">
-<li>
-<!-- Question 1 -->
-<div class="assessment-data" type="multiplechoice" data-identifier="In order to use a binary search, the data must be..." data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri1" data-shuffle="true">
-<pre><code>&lt;div class="prompt"&gt;
-&lt;div class="ap-standard"&gt;AAP-2.P part b, AAP-2.P.2&lt;/div&gt;
-In order to use a binary search, the data must be...
-&lt;/div&gt;
-&lt;div class="choice" identifier="c1"&gt;
-&lt;div class="text"&gt;binary&lt;/div&gt;
-&lt;div class="feedback"&gt;
-All data in a computer are represented using binary (ones and zeros), but that has nothing to do with binary searches, which compare against the middle value to choose which of two halves to eliminate.
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="choice" identifier="c2"&gt;
-&lt;div class="text"&gt;sorted&lt;/div&gt;
-&lt;div class="feedback"&gt;
-Correct! If the data are sorted, then comparing to the middle value will give you good information about which half of the data to keep.
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="choice" identifier="c3"&gt;
-&lt;div class="text"&gt;unsorted&lt;/div&gt;
-&lt;div class="feedback"&gt;
-If the data are unsorted, you can't be sure that everything before or everything after the middle value can be eliminated.
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="choice" identifier="c4"&gt;
-&lt;div class="text"&gt;linear&lt;/div&gt;
-&lt;div class="feedback"&gt;
-"Linear" is the name of another search algorithm, not a property of the data.
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="responseDeclaration" identifier="ri1"&gt;
-&lt;div class="correctResponse" identifier="c2"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;!-- Question 2 --&gt;
-&lt;div class="assessment-data" type="multiplechoice" identifier="Which of the following questions can be answered with a binary search, assuming the data are sorted?"
-hasinlinefeedback="true" maxchoices="2" responseIdentifier="ri2" shuffle="true"&gt;
-&lt;div class="prompt"&gt;
-Which of the following questions can be answered with a binary search, assuming the data are sorted? Check all that apply:
-&lt;/div&gt;
-&lt;div class="choice" identifier="c1"&gt;
-&lt;div class="text"&gt;What is my friend Rasheed's phone number?&lt;/div&gt;
-&lt;div class="feedback"&gt;
-Correct! You are searching for **one** phone number in the list.
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="choice" identifier="c2"&gt;
-&lt;div class="text"&gt;Give me a list of all the Beyoncé songs.&lt;/div&gt;
-&lt;div class="feedback"&gt;
-We have to find **all** the Beyoncé songs, not just one.
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="choice" identifier="c3"&gt;
-&lt;div class="text"&gt;Tell me if bread is on my shopping list.&lt;/div&gt;
-&lt;div class="feedback"&gt;
-Correct! You are searching for **one** item in the list.
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="choice" identifier="c4"&gt;
-&lt;div class="text"&gt;Who in my contact list lives on Grand Avenue?&lt;/div&gt;
-&lt;div class="feedback"&gt;
-Your contact list is probably **sorted by name**, not by address. Also, there may be **more than one** person who lives on Grand Avenue.
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="responseDeclaration" identifier="ri2"&gt;
-&lt;div class="correctResponse" identifier="c1"&gt;&lt;/div&gt;
-&lt;div class="correctResponse" identifier="c3"&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
+<p>Two things affect whether you can use a binary search algorithm to make your program more efficient:</p>
+<ul>
+<li><p>What question you are trying to answer? Are you searching for <em>one</em> thing in a list or are you finding <em>all</em> the things in the list with some characteristic?</p></li>
+<li><p>What is the condition of your data? Are they sorted or unsorted?</p></li>
+</ul>
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th>find one value</th>
+<th>find many values</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>sorted data</td>
+<td><strong>can use binary search</strong></td>
+<td>must use linear search</td>
+</tr>
+<tr class="even">
+<td>unsorted data</td>
+<td>must use linear search</td>
+<td>must use linear search</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div class="ifTime">
-<ol start="7">
-<li>
-Build a spell-checker.
+<div class="endnote">
+<p>If you are working with short lists, it’s not so important which algorithm you use. It’s when you are dealing with a lot of data that you have to think carefully about the algorithm.</p>
+</div>
+<!-- <ol start="6">
+
+<li> -->
+<!-- Question 1 -->
+<!-- 
+::: {.assessment-data type="multiplechoice" identifier="In order to use a binary search, the data must be..." hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="true"}         
+<div class="prompt">
+<div class="ap-standard">AAP-2.P part b, AAP-2.P.2</div>
+In order to use a binary search, the data must be...
+</div>
+<div class="choice" identifier="c1">
+<div class="text">binary</div>
+<div class="feedback">
+All data in a computer are represented using binary (ones and zeros), but that has nothing to do with binary searches, which compare against the middle value to choose which of two halves to eliminate.
+</div>
+</div>
+<div class="choice" identifier="c2">
+<div class="text">sorted</div>
+<div class="feedback">
+Correct! If the data are sorted, then comparing to the middle value will give you good information about which half of the data to keep.
+</div>
+</div>
+<div class="choice" identifier="c3">
+<div class="text">unsorted</div>
+<div class="feedback">
+If the data are unsorted, you can't be sure that everything before or everything after the middle value can be eliminated.
+</div>
+</div>
+<div class="choice" identifier="c4">
+<div class="text">linear</div>
+<div class="feedback">
+"Linear" is the name of another search algorithm, not a property of the data.
+</div>
+</div>
+<div class="responseDeclaration" identifier="ri1">
+<div class="correctResponse" identifier="c2"></div>
+</div>
+</div> -->
+<!-- Question 2 -->
+<!-- <div class="assessment-data" type="multiplechoice" identifier="Which of the following questions can be answered with a binary search, assuming the data are sorted?"
+hasinlinefeedback="true" maxchoices="2" responseIdentifier="ri2" shuffle="true">
+<div class="prompt">
+Which of the following questions can be answered with a binary search, assuming the data are sorted? Check all that apply:
+</div>
+<div class="choice" identifier="c1">
+<div class="text">What is my friend Rasheed's phone number?</div>
+<div class="feedback">
+Correct! You are searching for **one** phone number in the list.
+</div>
+</div>
+<div class="choice" identifier="c2">
+<div class="text">Give me a list of all the Beyoncé songs.</div>
+<div class="feedback">
+We have to find **all** the Beyoncé songs, not just one.
+</div>
+</div>
+<div class="choice" identifier="c3">
+<div class="text">Tell me if bread is on my shopping list.</div>
+<div class="feedback">
+Correct! You are searching for **one** item in the list.
+</div>
+</div>
+<div class="choice" identifier="c4">
+<div class="text">Who in my contact list lives on Grand Avenue?</div>
+<div class="feedback">
+Your contact list is probably **sorted by name**, not by address. Also, there may be **more than one** person who lives on Grand Avenue.
+</div>
+</div>
+<div class="responseDeclaration" identifier="ri2">
+<div class="correctResponse" identifier="c1"></div>
+<div class="correctResponse" identifier="c3"></div>
+</div>
+</div>
 </li>
-<pre><code>&lt;div class="endnote"&gt;Use &lt;img class="inline" src="/img/blocks/split-by-whitespace.png" width="190" alt="split () by (whitespace)" title="split () by (whitespace)" /&gt; to convert the input text into a list.&lt;/div&gt;
-&lt;li&gt;&lt;img class="inline" src="/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /&gt;Should your spell-checker look through the dictionary for each word of the text or look through the text for each word of the dictionary?&lt;/li&gt;</code></pre>
+</ol> -->
+<div class="ifTime">
+<ol start="6" class="example" type="1">
+<li><p>Build a spell-checker.</p>
+<div class="endnote">
+<p>Use <img class="inline" src="../../img/blocks/split-by-whitespace.png" width="190" alt="split () by (whitespace)" title="split () by (whitespace)"> to convert the input text into a list.</p>
+</div></li>
+<li><p><img class="inline" src="../../img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner">Should your spell-checker look through the dictionary for each word of the text or look through the text for each word of the dictionary?</p></li>
 </ol>
 </div>
 
 
 
-</li></ol></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
