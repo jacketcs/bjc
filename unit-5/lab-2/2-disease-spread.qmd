@@ -2,6 +2,7 @@
 title: "Page 2: Disease Spread Project"
 subtitle: "Unit 5, Lab 2, Page 2"
 order: 2
+gifffer: true
 ---
 
 
