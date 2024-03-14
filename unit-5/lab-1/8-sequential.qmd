@@ -471,84 +471,9 @@ Identify some benefits and potential challenges of parallel and
 distributed computing.
 <img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/></li>
 
-</ol>
-:::
-
-::: ifTime
-<ol start="6">
-
-<li>
-
-<!-- Question 3 -->
-
-::: {.assessment-data type="multiplechoice" identifier="What is the speedup for this parallel solution when compared to the sequential solution?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri3" shuffle="true"}
-::: prompt
-What is the <em>speedup</em> for this parallel solution when compared to
-the sequential solution?<br />
-
-<ul>
-
-<li>Sequential solution:
-<img src="/img/5-algorithms/quizlet-sequential.png" title="wait (6), wait (4), wait (8)" alt="wait (6), wait (4), wait (8)" class="inline"/></li>
-
-<li>Parallel solution:
-<img src="/img/5-algorithms/quizlet-parallel-1.png" title="broadcast (go) and wait, wait (6) secs" alt="broadcast (go) and wait, wait (6) secs" class="inline"/>
-<img src="/img/5-algorithms/quizlet-parallel-2.png" title="when I receive (go): wait (4) secs" alt="when I receive (go): wait (4) secs" class="inline"/>
-<img src="/img/5-algorithms/quizlet-parallel-3.png" title="when I receive (go): wait (8) secs" alt="when I receive (go): wait (8) secs" class="inline"/></li>
-
-</ul>
-:::
-
-::: {.choice identifier="c1"}
-::: text
-$\frac{18}{14}$
-:::
-
-::: feedback
-Correct!
-:::
-:::
-
-::: {.choice identifier="c2"}
-::: text
-$\frac{14}{18}$
-:::
-
-::: feedback
-Speedup is calculated by dividing the sequential time by the parallel
-time.
-:::
-:::
-
-::: {.choice identifier="c3"}
-::: text
-$\frac{18}{6}$
-:::
-
-::: feedback
-`Broadcast and wait` waits until all the tasks that it
-started have finished.
-:::
-:::
-
-::: {.choice identifier="c4"}
-::: text
-$\frac{18}{8}$
-:::
-
-::: feedback
-The longest parallel time does matter, but it's not the only thing that
-contributes to the total parallel time.
-:::
-:::
-
-::: {.responseDeclaration identifier="ri3"}
-::: {.correctResponse identifier="c1"}
-:::
-:::
-:::
-
-</li>
+<li> {{< checkpoint id='1FAIpQLScS0qpfoAQGUyjHLdR2NGRllP3shVcbWukZmCC_ziFIovMLNw' >}} </li>
 
 </ol>
 :::
+
+

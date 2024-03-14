@@ -107,4 +107,6 @@ algorithms:
 
 (@) <img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/>
 What are the two requirements to use a binary search?
+
+(@) {{< checkpoint id='1FAIpQLSc13Shmb8kfVL4lWEnHFCwDszUfbvLaRyVJ3q7f9DHpZ-8yAw' >}}
 :::

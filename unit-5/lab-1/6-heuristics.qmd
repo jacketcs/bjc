@@ -51,12 +51,10 @@ requested classes as possible?").</li>
 :::
 
 ::: forYouToDo
-<ol>
 
-<li>For which kind of problems (optimization problems or decision
-problems) is a heuristic solution likely to be useful?</li>
+(@) For which kind of problems (optimization problems or decision
+problems) is a heuristic solution likely to be useful?
 
-</ol>
 :::
 
 
@@ -86,78 +84,6 @@ This heuristic is called "hill climbing" because you'll find the best
 hill (a better path) further away.
 :::
 
-
-
-::: forYouToDo
-<ol start="2">
-
-<li>
-
-::: ap-standard
-AAP-4.A part b
-:::
-
-<!-- Question 2 -->
-
-::: {.assessment-data type="multiplechoice" identifier="In which of the following problems is a heuristic solution appropriate?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="true"}
-::: prompt
-In which of the following problems is a heuristic solution appropriate?
-:::
-
-::: {.choice identifier="c1"}
-::: text
-Find the biggest item in a list.
-:::
-
-::: feedback
-We can find the solution to this problem in polynomial time.
-:::
-:::
-
-::: {.choice identifier="c2"}
-::: text
-Find the best combination of ingredients for spaghetti sauce.
-:::
-
-::: feedback
-There is no perfect (correct) solution to this problem because different
-people have different tastes.
-:::
-:::
-
-::: {.choice identifier="c3"}
-::: text
-Playing chess.
-:::
-
-::: feedback
-Correct! This is a good example because there is a solution (a way to
-determine the outcome of a perfectly played game), the solution can't be
-found in polynomial time, and an approximate solution would be helpful.
-:::
-:::
-
-::: {.choice identifier="c4"}
-::: text
-Find the combination to a lock with <em>n</em> numbers.
-:::
-
-::: feedback
-There is no possibility of a heuristic because it's not helpful to have
-an almost correct combination (an approximate solution).
-:::
-:::
-
-::: {.responseDeclaration identifier="ri2"}
-::: {.correctResponse identifier="c3"}
-:::
-:::
-:::
-
-</li>
-
-</ol>
-:::
 
 <h3>Can All Decision Problems Be Solved?</h3>
 
@@ -198,14 +124,10 @@ be written in
 :::
 
 ::: forYouToDo
-<ol start="3">
 
-::: ap-standard
-AAP-4.B
-:::
+(@) <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
+What does it mean for a problem to be undecidable?
 
-<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
-What does it mean for a problem to be undecidable?</li>
+(@) {{< checkpoint id='1FAIpQLSdeYszCcwbsQTZ2e1Q6ozUbE9qGb-T3QG5eCCSiD7_ecL92zw' >}}
 
-</ol>
 :::

@@ -47,10 +47,14 @@ Then compare your algorithm with another pair of students.</li>
 Now make <em>the computer</em> guess <em>your</em> number using this
 strategy.
 
-::: endnote
+::: endnotes
 There are three sprites with costumes ("too small,"just right," and "too
 big") that are hidden in your project file. Use the `show`
 block in the "Looks" menu to see them.
+
+See an example of what this looks like:
+
+{{< video https://youtu.be/Oa4n3AcNiMM >}}
 :::
 
 </li>
@@ -60,3 +64,5 @@ Save your work.</li>
 
 </ol>
 :::
+
+{{< checkpoint id='1FAIpQLSfwwTPuzYZjwe0fOdLu9oGonpjtzwmapAxQ93y5T_6X5Np47Q' >}}

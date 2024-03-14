@@ -234,6 +234,8 @@ Your contact list is probably **sorted by name**, not by address. Also, there ma
 </li>
 </ol> -->
 
+{{< checkpoint id='1FAIpQLSfuYeG4ZAGPgPQd2cy0yBq3crNpZAmaU7HIQjSGzKYTEb6kEQ' >}}
+
 :::::: ifTime
 
 (@) Build a spell-checker.
