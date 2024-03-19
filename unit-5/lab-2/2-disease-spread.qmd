@@ -123,11 +123,6 @@ complete** that moves the clones until they are all infected</li>
 `touching infected person?` predicate, and the `when I
 start as clone` script.</li>
 
-<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/>
-Discuss how your simulation is similar to and different from a real-life
-disease outbreak. Identify the <em>simplifying assumptions</em> you made
-in this simulation.</li>
-
 </ol>
 :::
 
@@ -137,7 +132,7 @@ some variation in the reported time. (This isn't a bug; in real life,
 random events affect the elapsed time.)
 
 ::: forYouToDo
-<ol start="6">
+<ol start="5">
 
 <li>
 
@@ -164,13 +159,9 @@ one processor, cloning doesn't give you any speedup.
 :::
 
 <li>Call this function four times with different populations (50, 100,
-150, and 200), and write down the results. Create a refined hypothesis
-about the relationship between population size and time for the entire
-population to be infected.</li>
+150, and 200), and write down the results</li>
 
-<li>In real disease scenarios, not everyone ends up getting sick. How
-would you decide if the simplifications you used in a simulation
-invalidate the conclusions you might draw?</li>
+<li>{{< checkpoint id='1FAIpQLSfeVrHSdstkwBZJvaSge-zQSEvAhn356m0kwrlBikXmWcx9Fw' >}}</li>
 
 </ol>
 :::
