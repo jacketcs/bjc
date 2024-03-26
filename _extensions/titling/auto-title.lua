@@ -1,7 +1,7 @@
 -- Not used because quarto doesn't have appropriate behavior
 -- with this for the navigation bar
 
-tt = require("titling")
+--[[ tt = require("titling")
 
 return {
     Meta = function(meta)
@@ -13,4 +13,4 @@ return {
       end
       return meta
     end
-}
+} ]]

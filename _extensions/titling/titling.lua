@@ -63,7 +63,6 @@ end
 function pagetitle(args, kwargs, meta) 
   local title = 'title'
   local subtitle= 'subtitle'
-  print(meta)
   if meta['title'] then
     title = meta['title']
   end

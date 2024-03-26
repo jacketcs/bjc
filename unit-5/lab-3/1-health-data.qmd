@@ -33,6 +33,7 @@ If the interactive graph doesn't work on this page, you can
 it on google.com</a>.
 :::
 
+
 **Explore** the following interactive data set.
 
 <ol>
@@ -236,6 +237,8 @@ no correlation
 <li>Make up a scenario in which high fertility rates cause low life
 expectancy. Then make up a scenario in which low life expectancy causes
 high fertility rates.</li>
+
+<li> {{< checkpoint id='1FAIpQLSd_L4mG_vV9iPAY_qpSNVvIIf--2MmmutXqO9RWtgYpBbyEiA' >}}
 
 </ol>
 :::
