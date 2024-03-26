@@ -257,9 +257,9 @@ causation." Additional research is needed to gain <em>insight</em> into
 the exact nature of the relationship, such as causation.
 
 ::: endnote
-<a href="http://tylervigen.com/view_correlation?id=79804" title="An example of two things that are obviously correlated, but obviously neither caused the other." target="_blank">An
+<a href="https://tylervigen.com/spurious/random" title="An example of two things that are obviously correlated, but obviously neither caused the other." target="_blank">An
 example of two things that are obviously correlated, but obviously
-neither caused the other.</a> You can click "Discover a new correlation"
+neither caused the other.</a> You can click "View Random"
 on that site to find other strange correlations.
 :::
 
