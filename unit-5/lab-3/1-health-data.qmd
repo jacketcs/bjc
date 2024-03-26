@@ -108,7 +108,7 @@ phrasing above should be adjusted. --MF, 5/31/20
 <ol>
 
 <li>Move the slider to 1960 (all the way to the left), and describe the
-meaning of the cluster of orange data points in the lower right. What
+meaning of the cluster of red data points in the lower right. What
 does this tell you about trends in about this region of the world at
 that time?</li>
 
@@ -169,14 +169,10 @@ fertility and life expectancy differ from one continent to another, but
 not questions about how life expectancy is affected by the jobs people
 do, because the data displayed doesn't show jobs.
 
-::: forYouToDo
+<div class ="forYouToDo">
 <ol start="4">
 
 <li>
-
-::: ap-standard
-DAT-2.E.5
-:::
 
 In any given year, the graph has a downward slope. That is, countries
 with a higher fertility rate have a lower life expectancy. This kind of
@@ -218,7 +214,6 @@ the same manner.
 negative correlation
 
 </div>
-
 <div>
 
 positive correlation
@@ -230,7 +225,6 @@ positive correlation
 no correlation
 
 </div>
-
 :::
 :::
 
@@ -241,7 +235,7 @@ high fertility rates.</li>
 <li> {{< checkpoint id='1FAIpQLSd_L4mG_vV9iPAY_qpSNVvIIf--2MmmutXqO9RWtgYpBbyEiA' >}}
 
 </ol>
-:::
+</div>
 
 ::: vocab
 ::: ap-standard
