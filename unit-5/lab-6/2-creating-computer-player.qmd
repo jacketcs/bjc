@@ -38,8 +38,8 @@ them in
 3 Lab 1 Page 5: Building a Tic-Tac-Toe Board</a>.
 :::
 
-<img src="/img/blocks/broadcast.png" title="broadcast" alt="broadcast" class="ms-4"/>
-<img src="/img/blocks/when-i-receive.png" title="when I receive" alt="when I receive" class="ms-4"/>
+<img src="/img/blocks/broadcast.png" title="broadcast" alt="broadcast" class="ms-4" width="220"/>
+<img src="/img/blocks/when-i-receive.png" title="when I receive" alt="when I receive" class="ms-4" width="220"/>
 
 ::: sidenote
 You first saw `broadcast` and `when I receive` on
@@ -49,12 +49,10 @@ You first saw `broadcast` and `when I receive` on
 
 `Broadcast` sends out a message to all the sprites in the
 project. Any scripts that start with `when I receive` and
-have a matching message in the input slot will run.
+have a matching message in the input slot will run and also be able to use any `data` broadcasted. If you expand the `broadcast` block by clicking the right-pointing triangle, you can broadcast over any `data` that you want the sprites to recieve other than the message.
 
-If you select "any message" from the `when I receive`
-dropdown menu and you click the right-pointing triangle, you can use the
-`data` variable to access the message.<br />
-<img src="/img/blocks/when-i-receive-any-message.png" title="when I receive (any message) (data)" alt="when I receive (any message) (data)" class="ms-4"/>
+If you expand the `when I receive` block, by clicking the right-pointing triangle, you can use the `data` variable to access the broadcasted `data`.<br />
+<img src="/img/blocks/when-i-receive-data.png" title="when I receive () (data)" alt="when I receive () (data)" class="ms-4" width="220"/>
 
 ::: {#first .forYouToDo}
 <ol>
@@ -64,7 +62,7 @@ dropdown menu and you click the right-pointing triangle, you can use the
 <li>Find the script that starts `when I am clicked`. That
 script handles a move by the human player. Now start a new script next
 to it:<br />
-<img src="/img/5-algorithms/when-receive.png" title="when I receive (any message) : if (message) = (square number) [nothing in script slot yet]" alt="when I receive (any message) : if (message) = (square number) [nothing in script slot yet]" class="ms-4"/></li>
+<img src="/img/5-algorithms/when-receive.png" title="when I receive (any message) : if (message) = (square number) [nothing in script slot yet]" alt="when I receive (any message) : if (message) = (square number) [nothing in script slot yet]" class="ms-4" width="220"/></li>
 
 <li>Create an abstraction to contain everything inside the
 `if` statement from the `when I am (clicked)`
@@ -86,7 +84,7 @@ move in this square
 if ((message) = (square number)) {
 move in this square
 }
-}" class="ms-4"/></li>
+}" class="ms-4" width="220"/></li>
 
 <li>
 
@@ -102,7 +100,7 @@ Look in <var>board</var>.
 In order to debug the `when I receive` script, edit the
 `move in this square` block. After your code for Player X's
 turn, <em>temporarily</em> pick a random vacant square and use
-`broadcast` with that square number as the message. (If your
+`broadcast` with "computer's turn!" as the message and use the random vacant square's number as the data. (If your
 `when I receive` script is working, the computer will move in
 the corresponding square.)
 
