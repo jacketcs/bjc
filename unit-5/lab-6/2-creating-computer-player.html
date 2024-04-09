@@ -459,19 +459,19 @@ Have the Computer Move Randomly
 <div class="endnote">
 <p>Recall that clones are temporary copies of a sprite. You learned about them in <a href="../../unit-3/lab-1/5-building-tic-tac-toe.html" title="Unit 3 Lab 1 Page 5: Building a Tic-Tac-Toe Board">Unit 3 Lab 1 Page 5: Building a Tic-Tac-Toe Board</a>.</p>
 </div>
-<p><img src="../../img/blocks/broadcast.png" title="broadcast" alt="broadcast" class="ms-4"> <img src="../../img/blocks/when-i-receive.png" title="when I receive" alt="when I receive" class="ms-4"></p>
+<p><img src="../../img/blocks/broadcast.png" title="broadcast" alt="broadcast" class="ms-4" width="220"> <img src="../../img/blocks/when-i-receive.png" title="when I receive" alt="when I receive" class="ms-4" width="220"></p>
 <div class="sidenote">
 <p>You first saw <code>broadcast</code> and <code>when I receive</code> on <a href="../../unit-1/lab-2/2-gossip.html" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unit 1 Lab 2 Page 2: Making Programs Talk</a>.</p>
 </div>
-<p><code>Broadcast</code> sends out a message to all the sprites in the project. Any scripts that start with <code>when I receive</code> and have a matching message in the input slot will run.</p>
-<p>If you select “any message” from the <code>when I receive</code> dropdown menu and you click the right-pointing triangle, you can use the <code>data</code> variable to access the message.<br> <img src="../../img/blocks/when-i-receive-any-message.png" title="when I receive (any message) (data)" alt="when I receive (any message) (data)" class="ms-4"></p>
+<p><code>Broadcast</code> sends out a message to all the sprites in the project. Any scripts that start with <code>when I receive</code> and have a matching message in the input slot will run and also be able to use any <code>data</code> broadcasted. If you expand the <code>broadcast</code> block by clicking the right-pointing triangle, you can broadcast over any <code>data</code> that you want the sprites to recieve other than the message.</p>
+<p>If you expand the <code>when I receive</code> block, by clicking the right-pointing triangle, you can use the <code>data</code> variable to access the broadcasted <code>data</code>.<br> <img src="../../img/blocks/when-i-receive-data.png" title="when I receive () (data)" alt="when I receive () (data)" class="ms-4" width="220"></p>
 <div id="first" class="forYouToDo">
 <ol>
 <li>
 If it isn’t open already, open your U5L6-TicTacToe project.
 </li>
 <li>
-Find the script that starts <code>when I am clicked</code>. That script handles a move by the human player. Now start a new script next to it:<br> <img src="../../img/5-algorithms/when-receive.png" title="when I receive (any message) : if (message) = (square number) [nothing in script slot yet]" alt="when I receive (any message) : if (message) = (square number) [nothing in script slot yet]" class="ms-4">
+Find the script that starts <code>when I am clicked</code>. That script handles a move by the human player. Now start a new script next to it:<br> <img src="../../img/5-algorithms/when-receive.png" title="when I receive (any message) : if (message) = (square number) [nothing in script slot yet]" alt="when I receive (any message) : if (message) = (square number) [nothing in script slot yet]" class="ms-4" width="220">
 </li>
 <li>
 Create an abstraction to contain everything inside the <code>if</code> statement from the <code>when I am (clicked)</code> script and use it in both scripts.<br> <img src="../../img/5-algorithms/when-clicked.png" title="when I am (clicked) {
@@ -490,7 +490,7 @@ move in this square
 if ((message) = (square number)) {
 move in this square
 }
-}" class="ms-4">
+}" class="ms-4" width="220">
 </li>
 <li>
 <div class="sidenoteBig">
@@ -499,7 +499,7 @@ move in this square
 <p>Look in <var>board</var>.</p>
 </div>
 </div>
-<p>In order to debug the <code>when I receive</code> script, edit the <code>move in this square</code> block. After your code for Player X’s turn, <em>temporarily</em> pick a random vacant square and use <code>broadcast</code> with that square number as the message. (If your <code>when I receive</code> script is working, the computer will move in the corresponding square.)</p>
+<p>In order to debug the <code>when I receive</code> script, edit the <code>move in this square</code> block. After your code for Player X’s turn, <em>temporarily</em> pick a random vacant square and use <code>broadcast</code> with “computer’s turn!” as the message and use the random vacant square’s number as the data. (If your <code>when I receive</code> script is working, the computer will move in the corresponding square.)</p>
 </li>
 <li>
 Take turns with your partner playing Tic-Tac-Toe against the computer. Fix any bugs you find.
