@@ -4,6 +4,8 @@ subtitle: "Unit 3, Lab 3"
 order: 15
 ---
 
-::: learn.  **In this lab, you will continue your Tic-Tac-Toe project to make the program analyze the game board to detect wins and ties.
+::: learn  
+**In this lab,** you will continue your Tic-Tac-Toe project to make the program analyze the game board to detect wins and ties.
 
-On this page, you'll prepare by allowing the program to record the moves that are made, and teach it the winning groups of three squares.:::
+Start by opening up your tic tac toe project from Unit 3 Lab 1 Page 5. If you don't have it or your project has issues, you may ask your teacher for a solution file to work with instead.
+:::
