@@ -315,8 +315,8 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
- <span class="menu-text">Index</span></a>
+            <a href="../../unit-3/lab-4/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 4: Artificial Intelligence</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -351,12 +351,29 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
- <span class="menu-text">Lab 5</span></a>
+ <span class="menu-text">Lab 3.5</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unit-3/lab-3.5/montyHall.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Monty Hall</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+ <span class="menu-text">Lab 5</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-3/lab-5/1-past-and-future.html" class="sidebar-item-text sidebar-link">
@@ -379,23 +396,17 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false">
  <span class="menu-text">Optional Projects</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unit-3/optional-projects/1-astrid.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Curve Stitching</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unit-3/optional-projects/montyHall.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Monty Hall</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -452,7 +463,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="learn">
-<p><strong>In this lab</strong>, you will continue your <a href="../../unit-3/lab-1/5-building-tic-tac-toe.html" title="Building a Tic-Tac-Toe Board">Tic-Tac-Toe project</a> to make the program <em>analyze</em> the game board to detect wins and ties.</p>
 <p><strong>On this page</strong>, you’ll prepare by allowing the program to record the moves that are made, and teach it the winning groups of three squares.</p>
 </div>
 <p>When you first wrote Tic Tac Toe, it was easy to detect illegal moves (moving to a square that’s already wearing an X or O costume) because each sprite could test for that without knowing about the rest of the game board. But to detect wins and ties, the program needs a way to test the state of the <em>whole game board</em>, not just one individual piece. So, you’ll use a <em>global variable</em>, <img src="../../img/5-algorithms/board.png" title="board" alt="board">, to keep track of whether the square in each position is empty or filled with an X or an O.<br></p>
