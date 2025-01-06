@@ -5,6 +5,7 @@ order: 3
 ---
 
 ::: learn
+**In this lab,** you will consider the impacts of technology on how we build community.
 
 
 :::
