@@ -1,8 +1,8 @@
 ---
 title: "Monty Hall"
-subtitle: "Unit 3 Bonus Project"
+subtitle: "Unit 3 Lab 3.5"
 pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
-order: 1
+order: 17
 ---
 
 

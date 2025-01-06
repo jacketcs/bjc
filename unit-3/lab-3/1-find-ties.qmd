@@ -5,11 +5,6 @@ order: 1
 ---
 
 ::: learn
-**In this lab**, you will continue your
-<a href="/unit-3/lab-1/5-building-tic-tac-toe.html" title="Building a Tic-Tac-Toe Board">Tic-Tac-Toe
-project</a> to make the program <em>analyze</em> the game board to
-detect wins and ties.
-
 **On this page**, you'll prepare by allowing the program
 to record the moves that are made, and teach it the winning groups of
 three squares.

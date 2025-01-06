@@ -1,0 +1,10 @@
+---
+title: "Lab 4: Artificial Intelligence"
+subtitle: "Unit 3, Lab 4"
+order: 20
+---
+
+::: learn
+**In this lab,** In this lab, you will learn about advances in artificial intelligence and the ethics of artificial intelligence and robotics technology.
+
+:::
