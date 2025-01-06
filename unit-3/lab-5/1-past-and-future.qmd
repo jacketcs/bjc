@@ -23,9 +23,6 @@ not in the virtual-stuff business.
 :::
 
 ::: learn
-**In this lab,** you will consider the implications of
-computing to the workplace.
-
 **On this page,** you will discuss how technology has
 changed jobs and how it may affect what jobs are available in the
 future.

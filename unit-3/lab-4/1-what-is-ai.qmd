@@ -11,10 +11,6 @@ Kahn's work</a> for TIF a. --MF, 10/16/18
 :::
 
 ::: learn
-**In this lab,** you will learn about advances in
-artificial intelligence and the ethics of artificial intelligence and
-robotics technology.
-
 **On this page,** you will do online research on image
 recognition.
 :::
