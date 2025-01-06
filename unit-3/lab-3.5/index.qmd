@@ -1,0 +1,12 @@
+---
+title: "Lab 3.5: Monty Hall Project"
+subtitle: "Unit 3, Lab 3.5"
+order: 16
+---
+
+:::::: learn
+**In this project,** you will create a playable version of what is known as the 'Monty Hall' game. This was an 
+actual game that was played on the 1970's game show Let's Make a Deal, hosted by Monty Hall:<br />
+
+![](monty.jpeg)
+::::::

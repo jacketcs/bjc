@@ -1,0 +1,14 @@
+---
+title: "Lab 5: Computers and Work"
+subtitle: "Unit 3, Lab 5"
+order: 25
+---
+
+::: learn
+**In this lab,** you will consider the implications of computing to the workplace.
+
+
+
+:::
+
+

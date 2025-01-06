@@ -5,6 +5,6 @@ order: 20
 ---
 
 ::: learn
-**In this lab,** In this lab, you will learn about advances in artificial intelligence and the ethics of artificial intelligence and robotics technology.
+**In this lab,** you will learn about advances in artificial intelligence and the ethics of artificial intelligence and robotics technology.
 
 :::
