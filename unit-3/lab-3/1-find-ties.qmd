@@ -119,7 +119,7 @@ being a number 1-9 so that it doesn't conflict with a clone.
 
 </li>
 
-<li>When a square is clicked, use <em>replace () of (list) with ()</em to update that square's entry in the
+<li>When a square is clicked, use the <var>replace () of (list) with ()</var> block (found towards the bottom of the red palette) to update that square's entry in the
 <var>board</var> list with X or O as appropriate. </li>
 
 <li>Watch the values stored in the <var>board</var> variable as you play
