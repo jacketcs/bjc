@@ -4,10 +4,6 @@ subtitle: "Unit 4, Lab 1, Page 1"
 order: 1
 ---
 
-::: learn 
-**In this lab,** you will learn
-::: 
-
 ::: todo
 Consider adding BTB content back:
 

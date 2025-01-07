@@ -47,7 +47,7 @@ beginning of the game, contains a list with the numbers from 1 to
 :::
 
 Each sprite needs to know its own position on the board so that you
-can use the `item of` block to replace that position with an
+can use the `replace item () of (list) with ()` block to replace that position with an
 X or an O. So, you'll create a <em>sprite variable</em>,
 <img src="/img/3-lists/position-number.png" title="position number" alt="position number" class="inline py-0"/>,
 and each clone will have its <em>own version</em> of this variable.
