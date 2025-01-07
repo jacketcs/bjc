@@ -119,8 +119,8 @@ being a number 1-9 so that it doesn't conflict with a clone.
 
 </li>
 
-<li>When a square is clicked, replace that square's entry in the
-<var>board</var> list with X or O as appropriate.</li>
+<li>When a square is clicked, use <em>replace () of (list) with ()</em to update that square's entry in the
+<var>board</var> list with X or O as appropriate. </li>
 
 <li>Watch the values stored in the <var>board</var> variable as you play
 a game of Tic Tac Toe. Make sure that it updates as you expect it to,
