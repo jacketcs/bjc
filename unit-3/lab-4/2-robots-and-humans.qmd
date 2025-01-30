@@ -73,6 +73,4 @@ and
 <a href="https://kinderlabrobotics.com/kibo/" title="Kobo Website" target="_blank">Kobo</a>.
 :::
 
-:::
-:::
-:::
+

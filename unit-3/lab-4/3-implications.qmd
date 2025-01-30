@@ -5,9 +5,11 @@ order: 3
 ---
 
 ::: learn
-**n this page,** you will consider some of the ethical
+**On this page,** you will consider some of the ethical
 issues of robots and AI.
 :::
+
+
 
 ::: {#first .forYouToDo}
 <ol>
@@ -21,7 +23,6 @@ that look and act like humans?
 ::: endnote
 The "uncanny valley" is a term that describes the eerie feeling when we
 realize that something we thought was human is not actually human.
-
 <ul>
 
 <li><a href="http://spectrum.ieee.org/automaton/robotics/humanoids/the-uncanny-valley" target="_blank" title="The Uncanny Valley (IEEE Spectrum)">The
@@ -97,8 +98,6 @@ the <a href="https://www.ajl.org" target="_blank" title="Algorithmic Justice Lea
 
 <li>What other articles or resources can you find about this issue?</li>
 </ul>
-:::
-
 </li>
 
 <li>
