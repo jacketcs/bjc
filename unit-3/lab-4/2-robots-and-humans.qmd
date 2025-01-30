@@ -54,7 +54,7 @@ automation.</li>
 </ol>
 :::
 
-::: atwork
+::: vocabFullWidth
 
 <img src="/img/atwork/Marina_Bers.JPG" title="photo of Marina Bers" alt="photo of Marina Bers" class="noshadow" height="200px"/>
 
@@ -73,9 +73,6 @@ and
 <a href="https://kinderlabrobotics.com/kibo/" title="Kobo Website" target="_blank">Kobo</a>.
 :::
 
-{.endnote style="width:500px;margin:6px;float:right;"}
-<small>Image provided for publication with permission from Marina
-Bers</small>
 :::
 :::
 :::
