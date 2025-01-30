@@ -102,9 +102,6 @@ the <a href="https://www.ajl.org" target="_blank" title="Algorithmic Justice Lea
 
 <li>
 
-::: ap-standard
-IOC-1.A
-:::
 
 Throughout this course you have seen that technology has both benefits
 and risks. Imagine yourself working in the field of AI or robotics. What
