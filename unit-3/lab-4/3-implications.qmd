@@ -90,18 +90,11 @@ researchers might overcome this problem.
 ::: endnote
 <ul>
 
-<li><a href="http://www.npr.org/sections/alltechconsidered/2016/03/15/470422089/can-computer-programs-be-racist-and-sexist" target="_blank" title="Can Computer Programs Be Racist And Sexist?">Can
-Computer Programs Be Racist And Sexist?</a></li>
+<li>One example of this can be found in the work of Joy Buolamwini, through an advocacy group she founded called
+the <a href="https://www.ajl.org" target="_blank" title="Algorithmic Justice League"> Algorithmic Justice League.</a>
+</li>
 
-<li><a href="https://techcrunch.com/2016/04/15/artificial-intelligence-and-racist/" target="_blank" title="Artificial intelligence and racism">Artificial
-intelligence and racism</a></li>
-
-<li><a href="https://www.theguardian.com/technology/2017/apr/13/ai-programs-exhibit-racist-and-sexist-biases-research-reveals" target="_blank" title="AI programs exhibit racial and gender biases, research reveals">AI
-programs exhibit racial and gender biases, research reveals</a></li>
-
-<li><a href="https://www.theatlantic.com/technology/archive/2016/04/the-underlying-bias-of-facial-recognition-systems/476991/" target="_blank" title="Facial-Recognition Software Might Have a Racial Bias Problem">Facial-Recognition
-Software Might Have a Racial Bias Problem</a></li>
-
+<li>What other articles or resources can you find about this issue?</li>
 </ul>
 :::
 
