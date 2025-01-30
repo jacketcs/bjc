@@ -5,119 +5,71 @@ order: 3
 ---
 
 ::: learn
-**On this page,** you will consider some of the ethical
-issues of robots and AI.
+**On this page,** you will consider some of the ethical issues of robots and AI.
 :::
-
-
 
 ::: {#first .forYouToDo}
 <ol>
 <li>
-Humanoid Robots: What are the social implications of building robots
-that look and act like humans?
+Humanoid Robots: What are the social implications of building robots that look and act like humans?
+</li>
+</ol>
+:::
 
 ::: endnote
-The "uncanny valley" is a term that describes the eerie feeling when we
-realize that something we thought was human is not actually human.
+The "uncanny valley" is a term that describes the eerie feeling when we realize that something we thought was human is not actually human.
 <ul>
-
-<li><a href="http://spectrum.ieee.org/automaton/robotics/humanoids/the-uncanny-valley" target="_blank" title="The Uncanny Valley (IEEE Spectrum)">The
-Uncanny Valley (IEEE Spectrum)</a></li>
-
-<li><a href="http://spectrum.ieee.org/automaton/robotics/humanoids/study-nobody-wants-social-robots-that-look-like-humans" target="_blank" title="Study: Nobody Wants Social Robots that Look Like Humans because They Threaten Our Identity (IEEE Spectrum)">Study:
-Nobody Wants Social Robots that Look Like Humans because They Threaten
-Our Identity (IEEE Spectrum)</a></li>
-
+<li><a href="http://spectrum.ieee.org/automaton/robotics/humanoids/the-uncanny-valley" target="_blank" title="The Uncanny Valley (IEEE Spectrum)">The Uncanny Valley (IEEE Spectrum)</a></li>
+<li><a href="http://spectrum.ieee.org/automaton/robotics/humanoids/study-nobody-wants-social-robots-that-look-like-humans" target="_blank" title="Study: Nobody Wants Social Robots that Look Like Humans because They Threaten Our Identity (IEEE Spectrum)">Study: Nobody Wants Social Robots that Look Like Humans because They Threaten Our Identity (IEEE Spectrum)</a></li>
 </ul>
 :::
 
-</li>
-
+::: {#first .forYouToDo}
+<ol>
 <li>
-
-Ethics and AI: Should there be limits to the development of AI? How can
-we be developing AI responsibly? Below are three possible questions in
-this area. They're not all equally good questions; start by asking, for
-each of them, whether there might be a more productive question to pose
-about the issue. (So, what's the best <em>question</em> to ask about the
-ethics of self-driving cars? About AI and jobs? About AI and laws?)
-
+Ethics and AI: Should there be limits to the development of AI? How can we be developing AI responsibly? Below are three possible questions in this area. They're not all equally good questions; start by asking, for each of them, whether there might be a more productive question to pose about the issue.
 <ul>
-
-```{=html}
-<!--<li><a href="/unit-5/lab-5/2-machines-and-lives.html">Unit 6, Lab 4</a> was about the implications of computing in war. How does your understanding of AI affect your views of technology and war?</li>
-<li>Teaching robots right from wrong isn't just about AI as weapons.-->
-```
-<li>What about a self-driving car that has to make a choice between the
-life of its passenger and the life of a pedestrian? How does that choice
-get made?</li>
-
-<li>There's also the issue of who gets the benefits of AI. The people
-whose jobs are being replaced by robots are disproportionately
-lower-income. How can we make sure that everyone benefits from
-developments in AI?</li>
-
-<li>
-What laws apply to AI? What happens when a robot commits a crime? Who
-gets punished?</li>
-<li>
-At what point does an AI have rights? What are the ethics of mistreating an AI? How can we know if they are capable of suffering?
-</li>
-
+<li>What about a self-driving car that has to make a choice between the life of its passenger and the life of a pedestrian? How does that choice get made?</li>
+<li>There's also the issue of who gets the benefits of AI. The people whose jobs are being replaced by robots are disproportionately lower-income. How can we make sure that everyone benefits from developments in AI?</li>
+<li>What laws apply to AI? What happens when a robot commits a crime? Who gets punished?</li>
+<li>At what point does an AI have rights? What are the ethics of mistreating an AI? How can we know if they are capable of suffering?</li>
 </ul>
-
 </li>
+</ol>
+:::
+
 ::: todo
 Bias and AI is a new problem. Please consider carefully during review.
 --MF, 6/14/17
 :::
 
 ::: ap-standard
-IOC-1.B.1 bullet 3, IOC-1.D, IOC-1.D.1, IOC-1.D.2, IOC-1.D.3, IOC-1.F.11
-bullet 2
+IOC-1.B.1 bullet 3, IOC-1.D, IOC-1.D.1, IOC-1.D.2, IOC-1.D.3, IOC-1.F.11 bullet 2
 :::
 
-<li>Bias and AI: Machine learning algorithms have enabled innovation in
-medicine, business, and science. However, because they use existing data
-to develop "understanding" of the world, they are influenced by existing
-biases in the data, and their results have been used to discriminate
-against groups of individuals. Research this issue and discuss how AI
-researchers might overcome this problem.
-
-
+::: {#first .forYouToDo}
+<ol>
+<li>
+Bias and AI: Machine learning algorithms have enabled innovation in medicine, business, and science. However, because they use existing data to develop "understanding" of the world, they are influenced by existing biases in the data, and their results have been used to discriminate against groups of individuals. Research this issue and discuss how AI researchers might overcome this problem.
 <ul>
-
-<li>One example of this can be found in the work of Joy Buolamwini, through an advocacy group she founded called
-the <a href="https://www.ajl.org" target="_blank" title="Algorithmic Justice League"> Algorithmic Justice League.</a>
-</li>
-
+<li>One example of this can be found in the work of Joy Buolamwini, through an advocacy group she founded called the <a href="https://www.ajl.org" target="_blank" title="Algorithmic Justice League">Algorithmic Justice League</a>.</li>
 <li>What other articles or resources can you find about this issue?</li>
 </ul>
 </li>
+</ol>
+:::
 
+::: {#first .forYouToDo}
+<ol>
 <li>
-
-
-Throughout this course you have seen that technology has both benefits
-and risks. Imagine yourself working in the field of AI or robotics. What
-are you interested in working on? What are the benefits? How will you
-minimize the risks?
+Throughout this course you have seen that technology has both benefits and risks. Imagine yourself working in the field of AI or robotics. What are you interested in working on? What are the benefits? How will you minimize the risks?
+</li>
+</ol>
+:::
 
 ::: endnote
 <ul>
-
-<li><a href="https://80000hours.org/2017/06/the-world-desperately-needs-ai-strategists-heres-how-to-become-one/" target="_blank" title="Podcast: The world desperately needs AI strategists. Here’s how to become one.">Podcast:
-The world desperately needs AI strategists. Here's how to become
-one.</a></li>
-
-<li><a href="https://80000hours.org/articles/ai-policy-guide/" target="_blank" title="Guide to working in AI policy and strategy">Guide
-to working in AI policy and strategy</a></li>
-
+<li><a href="https://80000hours.org/2017/06/the-world-desperately-needs-ai-strategists-heres-how-to-become-one/" target="_blank" title="Podcast: The world desperately needs AI strategists. Here’s how to become one.">Podcast: The world desperately needs AI strategists. Here's how to become one.</a></li>
+<li><a href="https://80000hours.org/articles/ai-policy-guide/" target="_blank" title="Guide to working in AI policy and strategy">Guide to working in AI policy and strategy</a></li>
 </ul>
-:::
-
-</li>
-
-</ol>
 :::
