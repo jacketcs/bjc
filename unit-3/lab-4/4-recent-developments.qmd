@@ -30,10 +30,11 @@ that still remain.</li>
 
 </li>
 
+
+
+</ol>
+:::
 ::: endnote
 Try to find stories about current developments and that focus on AI more
 generally---not just robots.
-:::
-
-</ol>
 :::
