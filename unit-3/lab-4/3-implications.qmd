@@ -87,7 +87,7 @@ biases in the data, and their results have been used to discriminate
 against groups of individuals. Research this issue and discuss how AI
 researchers might overcome this problem.
 
-::: endnote
+
 <ul>
 
 <li>One example of this can be found in the work of Joy Buolamwini, through an advocacy group she founded called
