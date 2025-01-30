@@ -72,7 +72,7 @@ young children can program with wooden blocks. Check out
 and
 <a href="https://kinderlabrobotics.com/kibo/" title="Kobo Website" target="_blank">Kobo</a>.
 
-::: {.endnote style="width:500px;margin:6px;float:right;"}
+{.endnote style="width:500px;margin:6px;float:right;"}
 <small>Image provided for publication with permission from Marina
 Bers</small>
 :::
