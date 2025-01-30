@@ -5,12 +5,13 @@ order: 3
 ---
 
 ::: learn
-**On this page,** you will consider some of the ethical
+**n this page,** you will consider some of the ethical
 issues of robots and AI.
 :::
 
 ::: {#first .forYouToDo}
 <ol>
+
 
 <li>
 
