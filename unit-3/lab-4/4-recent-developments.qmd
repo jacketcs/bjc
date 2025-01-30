@@ -1,18 +1,13 @@
 ---
-title: "Page 4: Recent Breakthroughs"
+title: "Page 4: Recent Developments"
 subtitle: "Unit 3, Lab 4, Page 4"
 order: 4
 ---
 
 ::: learn
-**On this page,** you will do some deeper research on
-AI.
+**On this page,** you will do some deeper research on current events in AI.
 :::
 
-::: todo
-MF: I question if this needs a whole page of its own. Maybe it's
-fine.
-:::
 
 ::: {#first .forYouToDo}
 <ol>
@@ -23,7 +18,7 @@ Artificial Intelligence is a very active field with many interesting
 developments announced daily. Choose a topic you're interested in (like
 medicine, finance, politics, education, communication, law, gaming,
 astronomy, psychology, transportation, literature, international policy,
-etc.) and find 2-3 recent news articles that relate to developments in
+etc.) and find 2-3 recent news articles that relate to recent developments in
 AI in that field. Be prepared to share what you find with the class.
 
 <ul>
