@@ -1,0 +1,10 @@
+---
+title: "Lab 2: Simulations"
+subtitle: "Unit 5, Lab 2"
+order: 2
+---
+
+::: learn 
+**In this lab,** you will explore how simulations can be used to gain insight into real-world phenomena.
+
+:::

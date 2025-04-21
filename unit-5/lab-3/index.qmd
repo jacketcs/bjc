@@ -1,0 +1,10 @@
+---
+title: "Lab 3: Turning Data into Information"
+subtitle: "Unit 5, Lab 3"
+order: 3
+---
+
+::: learn 
+**In this lab,** you will explore ways to use technology to visualize data.
+
+:::

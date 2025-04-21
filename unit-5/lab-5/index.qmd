@@ -1,0 +1,10 @@
+---
+title: "Lab 5: Computing in War"
+subtitle: "Unit 5, Lab 5"
+order: 5
+---
+
+::: learn 
+**In this lab,**  you will consider the implications of technology on warfare.
+
+:::

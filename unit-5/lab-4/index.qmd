@@ -1,0 +1,10 @@
+---
+title: "Lab 4: Unsolvable and Undecidable Problems"
+subtitle: "Unit 5, Lab 4"
+order: 4
+---
+
+::: learn 
+**In this lab,** you will learn that some problems can't be solved at all.
+
+:::

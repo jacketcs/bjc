@@ -1,0 +1,10 @@
+---
+title: "Lab 6: Tic-Tac-Toe with a Computer Player"
+subtitle: "Unit 5, Lab 6"
+order: 6
+---
+
+::: learn 
+**In this lab,** you'll extend your <a href="https://bjc.jacketcs.net/unit-3/lab-3" Tic-Tac-Toe program</a> to make the computer play against you.
+
+:::
