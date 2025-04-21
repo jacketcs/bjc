@@ -105,7 +105,7 @@ phrasing above should be adjusted. --MF, 5/31/20
 
 <ol>
 
-<li>Move the slider around between 1940 and 1950, and describe trends you see among certian countries. 
+<li>Move the slider around between 1940 and 1950, and describe trends you see among certain countries. 
 What is going on during this time?</li>
 
 <li>Move the slider to 2023 (all the way to the right), and describe the
