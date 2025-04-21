@@ -1,3 +1,4 @@
+---
 title: "Lab 1: Search Algorithms and Efficiency"
 subtitle: "Unit 5, Lab 1"
 order: 1

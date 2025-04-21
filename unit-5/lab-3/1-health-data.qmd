@@ -105,12 +105,12 @@ phrasing above should be adjusted. --MF, 5/31/20
 
 <ol>
 
-<li>Move the slider to 1960 (all the way to the left), and describe the
+<li>Move the slider to 1960, and describe the
 meaning of the cluster of red data points in the lower right. What
 does this tell you about trends in about this region of the world at
 that time?</li>
 
-<li>Move the slider to 2016 (all the way to the right), and describe the
+<li>Move the slider to 2023 (all the way to the right), and describe the
 meaning of the cluster of pink data points in the upper left. What does
 this tell you about trends in about this region of the world at that
 time?</li>
