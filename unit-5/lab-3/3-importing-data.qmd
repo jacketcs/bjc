@@ -37,7 +37,7 @@ You learned about selectors on
 </li>
 
 <li>Visit the
-<a href="https://think.cs.vt.edu/corgis/csv/index.html" title="CORGIS Datasets Project" target="_blank">CORGIS
+<a href="https://corgis-edu.github.io/corgis/csv" title="CORGIS Datasets Project" target="_blank">CORGIS
 Datasets Project</a> and select a dataset you'd like to explore.
 Download the CSV file for the data you want to explore.</li>
 
