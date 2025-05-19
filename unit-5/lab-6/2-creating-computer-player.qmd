@@ -157,4 +157,4 @@ center are already filled.</li>
 
 </ol>
 :::
-{{< checkpoint id='1FAIpQLSf1CVAg6ci7u0WkSp-gy91U0wjkqBHWJg3mpzH64BkLGdA' >}}
+{{< checkpoint id='1CVAg6ci7u0WkSp-gy91U0wjkqBHWJg3mpzH64BkLGdA' >}}
