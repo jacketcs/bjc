@@ -1,6 +1,6 @@
 title: "Lab 2: History of Computers"
 subtitle: "Unit 6, Lab 2"
-order: 1
+order: 2
 ---
 
 :::
