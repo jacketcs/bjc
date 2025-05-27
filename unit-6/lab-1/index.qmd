@@ -3,5 +3,6 @@ subtitle: "Unit 6, Lab 1"
 order: 1
 ---
 
-
+::: learn 
+**In this lab,** you will learn about how computers work by moving through different layers of abstraction from software applications to down to logic gates.
 :::

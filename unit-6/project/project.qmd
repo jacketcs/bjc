@@ -21,7 +21,7 @@ Create a game (the design is up to you!) where the user is either asked computer
     * From the various events or abstraction layers (pages) listed in the relevant unit, use at least 5.
     * In addition, find and research two other events or hardware components that are **not listed** in the relevant lab.
 
-- **Due halfway through the finals period (Monday 6/2 for Periods 1 and 2, 6/3 for Periods 3 and 4, and Wednesday 6/4 for Periods 5 and 6.** The second half of the finals period will be to showcase your projects and/or party time.
+- **Due halfway through the finals period (Monday 6/2 for Periods 1 and 2, 6/3 for Periods 3 and 4, and Wednesday 6/4 for Periods 5 and 6.)** The second half of the finals period will be to showcase your projects and/or party time.
 
 {{< checkpoint id='1FAIpQLSfCfl9mhqHaYWc4xES7i9rEBIkw8_k2JEzrQuJSDqyE230W2A' >}}
 :::
