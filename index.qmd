@@ -9,7 +9,7 @@ include-in-header:
 
 ## Introduction
 
-Welcome to AP Computer Science Principles at Berkeley High School, taught by Ms. O'Keefe and Mr. Chang. 
+Welcome to AP Computer Science Principles at Berkeley High School, taught by Ms. O'Keefe (and formerly co-developed with Ms. Chang). 
 
 In this course, we'll be studying the big ideas of computing using the [Snap<em>!</em> programming language](https://snap.berkeley.edu/). No matter what career you choose to pursue, an understanding of computer science is becoming increasingly essential in today’s world.
 

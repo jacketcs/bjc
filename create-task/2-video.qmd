@@ -1,7 +1,7 @@
 ---
 title: "Component B: Video"
 pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
-author: "Ms. O'Keefe and Mr. Chang"
+author: "Ms. O'Keefe and Ms. Chang"
 order: 200
 ---
 
