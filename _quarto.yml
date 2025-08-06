@@ -30,10 +30,6 @@ website:
     logo: "/img/jac.png"
     search: true
     left:
-      - text: "Posts"
-        href: posts
-      - text: "Create Task"
-        href: create-task
       - text: "Labs"
         menu:
           - text: "Unit 1: Introduction to Programming"
@@ -60,6 +56,8 @@ website:
       - text: "Snap<em>!</em>"
         href: https://snap.berkeley.edu/snap/snap.html
         target: "_blank"
+      - text: "Create Task"
+        href: create-task
 
 
   sidebar:
