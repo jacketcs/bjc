@@ -13,7 +13,7 @@ Welcome to AP Computer Science Principles at Berkeley High School, taught by Ms.
 
 In this course, we'll be studying the big ideas of computing using the [Snap<em>!</em> programming language](https://snap.berkeley.edu/). No matter what career you choose to pursue, an understanding of computer science is becoming increasingly essential in today’s world.
 
-We want you to have fun and learn. This course will be run as a **"lab centric" class** built on project-based learning. You will learn by writing lots of code, not by listening to me talk. There will sometimes be brief lectures near the beginning of class, but mostly your teacher will be helping you and you’ll be helping each other do the work. Working with other people is a key part of your educational experience.  *You will do most of your work paired with another person for support, and you should expect much of your learning will come from figuring out your mistakes/bugs, both on your own and together with your classmates.*
+We want you to have fun and learn. This course will be run as a **"lab centric" class** built on project-based learning. You will learn by writing lots of code, not by listening to the teacher talk. There will sometimes be brief lectures near the beginning of class, but mostly you will be doing the problem solving on your own or with a partner, with support available from the teacher if requested. Working with other people is a key part of your educational experience.  *You will do most of your work paired with another person for support, and you should expect much of your learning will come from figuring out your mistakes/bugs, both on your own and together with your classmates.*
 
 ## Outline of Course Objectives and Topics
 
@@ -56,14 +56,14 @@ The use of the Internet in class is a ***PRIVILEGE***, this privilege can be rev
 - All students should treat each other with respect.
 - Conversations in the lab should be primarily related to the study of computers.
 - Installation and downloading of programs is forbidden without express teacher approval.
-- When using the Internet, be sure that you are on appropriate sites. See INTERNET USAGE WARNING above.
-- Cell phones, music players, and video games are never to be used in the computer lab and should be turned off or put away and silenced. If I see your phone, I will take it for the rest of the period. If this happens repeatedly I will turn it into the OCI at the end of the period and you will have to retrieve it from there. 
+- When using the internet, be sure that you are on appropriate sites. See INTERNET USAGE WARNING above.
+- Cell phones are never to be used in the computer lab and should be placed in the storage area as you enter the classroom. If I see your phone, I will take it and deduct participation points. If this happens repeatedly I will turn it into the OCI at the end of the period and you will have to retrieve it from there. 
 - Handle computer equipment with care.
 
 ### Exiting the Lab
 
 - Leave the room as clean or cleaner than when you entered it.
-- Save all work and log off of the computer.
+- Save all work (Snap does not autosave!) and log off of the computer.
 - Push chairs under the tables.
 
 **Remember:** the use of the computer lab is for *educational purposes only*. If a student is using the computers during class time for something not related to the assigned work, disciplinary measures will be taken and your parents or guardians will be contacted.
@@ -72,17 +72,16 @@ The use of the Internet in class is a ***PRIVILEGE***, this privilege can be rev
 
 Your grade will be split into:
 
-60% Participation and Habit of Work
-: This will be measured by checkpoints/response forms, meeting behavior expectations (staying on task, not causing distractions, keeping phone out of sight), and attendance (see below).
+50% Participation and Habits of Work
+: This will be measured by sustained effort and focus during class, completing checkpoints/response forms on time, and meeting behavior expectations (staying on task, not causing distractions, putting your phone up).
 
-5% Computing in the News
-: This will be measured by contribution to the weekly "Computing in The News," which will require one presentation per semester, and responses to all presentations given by classmates.
+5% Final Assessment
 
 25% Projects
 : This will be measured by performance on projects. Students are expected to meet specific requirements listed on the project specficifications and associated rubric.
 : In the second semester, this will also include both the practice Create Task and the actual Create Task, which is required of all students regardless of whether or not they plan to take the AP exam.
 
-10% Assessments
+20% Assessments
 : This will be measured by performance on assessments (which are given mainly at the end of each unit) and other quiz/testing tasks (such as AP test related preparation)
 
 ### Letter Grade
