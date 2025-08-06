@@ -75,14 +75,15 @@ Your grade will be split into:
 50% Participation and Habits of Work
 : This will be measured by sustained effort and focus during class, completing checkpoints/response forms on time, and meeting behavior expectations (staying on task, not causing distractions, putting your phone up).
 
-5% Final Assessment
-
 25% Projects
 : This will be measured by performance on projects. Students are expected to meet specific requirements listed on the project specficifications and associated rubric.
 : In the second semester, this will also include both the practice Create Task and the actual Create Task, which is required of all students regardless of whether or not they plan to take the AP exam.
 
 20% Assessments
 : This will be measured by performance on assessments (which are given mainly at the end of each unit) and other quiz/testing tasks (such as AP test related preparation)
+
+5% Final Assessment
+: A final project and assessment given at the end of the semester. 
 
 ### Letter Grade
 
