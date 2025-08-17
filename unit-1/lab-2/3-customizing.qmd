@@ -13,7 +13,7 @@ gifffer: true
 
 ::: {#first .forYouToDo}
 
-(@) Open your U1L2-Gossip project. Edit these three reporter blocks to change the phrases that the program uses. (See the instructions in the box below.) Be creative and funny but thoughtful.<br /> <img src="/img/1-introduction/who.png" title="who block" alt="who block" class="ms-4"/> <img src="/img/1-introduction/does-what.png" title="does what block" alt="does what block" class="inline"/> <img src="/img/1-introduction/who2.png" title="who2 block" alt="who2 block" class="inline"/>
+(@) Edit these three reporter blocks to change the phrases that the program uses. (See the instructions in the box below.) Be creative and funny but thoughtful.<br /> <img src="/img/1-introduction/who.png" title="who block" alt="who block" class="ms-4"/> <img src="/img/1-introduction/does-what.png" title="does what block" alt="does what block" class="inline"/> <img src="/img/1-introduction/who2.png" title="who2 block" alt="who2 block" class="inline"/>
 
 ::: narrower
 ### **How to Edit a Block**
@@ -78,65 +78,6 @@ The process of testing, finding problems, and fixing them is called **debugging*
 
 <img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline"/>
 
-(@) <!-- Question 1 -->
-    ::: {.assessment-data type="multiplechoice" identifier="Which of the following sentences could be reported by gossip?" hasinlinefeedback="true" maxchoices="4" responseidentifier="ri1" shuffle="true"}
-    ::: prompt
-
-    Which <em>**two**</em> of the following sentences could be reported by `gossip`?<br /> <img src="/img/1-introduction/gossip-definition.png" title="gossip: (report (join (who) ( ) (does what) ( ) (who)))" alt="gossip: (report (join (who) ( ) (does what) ( ) (who)))" class="ms-4"/>
-
-    ::: endnote
-    For reference:<br > <img src="/img/1-introduction/who-block-definition.png" title="who reporter block definition: report (item (random) of (list (Señora) (Ms. C) (my cat) (Hannah) (Jake)))" alt="who reporter block definition: report (item (random) of (list (Señora) (Ms. C) (my cat) (Hannah) (Jake)))" class="ms-4" height="77px"/> <img src="/img/1-introduction/does-what-block-definition.png" title="does what reporter block definition: report (item (random) of (list (listened to) (loves) (ran away from) (helped) (is in a band with)))" alt="does what reporter block definition: report (item (random) of (list (listened to) (loves) (ran away from) (helped) (is in a band with)))" class="ms-4" height="89px"/>
-    :::
-    :::
-
-    ::: {.choice identifier="c1"}
-    ::: text
-    Señora and Ms. C helped.
-    :::
-
-    ::: feedback
-    It's true that there are two people (two "who"s) and one action (one "does what"), but they aren't in the right order. Also, the word "and" isn't anywhere in the program.
-    :::
-    :::
-
-    ::: {.choice identifier="c2"}
-    ::: text
-    Señora ran away from my cat.
-    :::
-
-    ::: feedback
-    Correct! This follows the pattern: "who," "does what," "who."
-    :::
-    :::
-
-    ::: {.choice identifier="c3"}
-    ::: text
-    Hannah listened to Hannah.
-    :::
-
-    ::: feedback
-    Correct! This follows the pattern: "who," "does what," "who."
-    :::
-    :::
-
-    ::: {.choice identifier="c4"}
-    ::: text
-    Jake helped.
-    :::
-
-    ::: feedback
-    This sentence is missing the second "who."
-    :::
-    :::
-
-    ::: {.responseDeclaration identifier="ri1"}
-    ::: {.correctResponse identifier="c2"}
-    :::
-
-    ::: {.correctResponse identifier="c3"}
-    :::
-    :::
-    :::
 
 (@) Change the costumes to anything you like.
 
