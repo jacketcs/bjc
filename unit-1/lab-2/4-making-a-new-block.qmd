@@ -52,7 +52,7 @@ Because you chose the reporter shape, the block editor opens with a <img src="/i
 
 <li>For this project, click the down-arrow in `item` to change "1" to "random".</li>
 
-<li>Then fill `list` with phrases like "Guess what," "I heard," or "Who cares!"</li>
+<li>Then fill `list` with phrases like <b>"Guess what," "I heard,"</b> or<b> "Who cares!"</b></li>
 
 </ul>
 
@@ -107,8 +107,6 @@ A **procedure** is a named sequence of instructions that may take inputs and may
 ## Debugging
 
 ::: forYouToDo
-
-<img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="float-end"/>
 
 (@) Test your custom `gossip response` block by clicking it several times. It should behave like the `who`, `does what`, and `who 2` blocks. Debug any problems before moving on.
 
