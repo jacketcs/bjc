@@ -491,116 +491,6 @@ report (who)
 <li>Find <img src="../../img/blocks/pick-random-1-to-10-full-size.png" title="pick random (1) to (10)" alt="pick random (1) to (10)" class="inline"> in the green Operators palette, and click it several times. What does the <code>random</code> block do?</li>
 <li><img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> In the <code>more complicated who</code> block, what happens if the <code>pick random</code> block picks 3? What if it picks 4?</li>
 </ol></li>
-<li><!-- Question 1 -->
-<div class="assessment-data" type="multiplechoice" data-identifier="About how often will more complicated who pick the more complicated choice?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri1" data-shuffle="false">
-<div class="prompt">
-<p><img src="../../img/1-introduction/more-complicated-who-script.png" title="more complicated who {
-if (pick random (1) to (4)) = (3) {
-report (join (who) (', who') (does what) ( ) (who) (,))                                                                                          
-} else {
-report (who)
-}
-}" alt="more complicated who {
-if (pick random (1) to (4)) = (3) {
-report (join (who) (', who') (does what) ( ) (who) (,))                                                                                          
-} else {
-report (who)
-}
-}" class="float-end"> About how often will <code>more complicated who</code> pick the more complicated choice?</p>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p>Half the time</p>
-</div>
-<div class="feedback">
-<p>If a number is chosen randomly from 1, 2, 3, and 4, about how often will that number be 3?</p>
-</div>
-</div>
-<div class="choice" data-identifier="c2">
-<div class="text">
-<p>A third of the time</p>
-</div>
-<div class="feedback">
-<p>If a number is chosen randomly from 1, 2, 3, and 4, about how often will that number be 3?</p>
-</div>
-</div>
-<div class="choice" data-identifier="c3">
-<div class="text">
-<p>A quarter of the time</p>
-</div>
-<div class="feedback">
-<p>Correct!</p>
-</div>
-</div>
-<div class="choice" data-identifier="c4">
-<div class="text">
-<p>Three quarters of the time</p>
-</div>
-<div class="feedback">
-<p>If a number is chosen randomly from 1, 2, 3, and 4, about how often will that number be 3?</p>
-</div>
-</div>
-<div class="responseDeclaration" data-identifier="ri1">
-<div class="correctResponse" data-identifier="c3">
-
-</div>
-</div>
-</div>
-<!-- Question 2 -->
-<div class="assessment-data" type="multiplechoice" data-identifier="About how often will more complicated who pick the more complicated choice?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri2" data-shuffle="false">
-<div class="prompt">
-<p><img src="../../img/1-introduction/more-complicated-who-script.png" title="more complicated who {
-if (pick random (1) to (4)) = (3) {
-report (join (who) (', who') (does what) ( ) (who) (,))                                                                                          
-} else {
-report (who)
-}
-}" alt="more complicated who {
-if (pick random (1) to (4)) = (3) {
-report (join (who) (', who') (does what) ( ) (who) (,))                                                                                          
-} else {
-report (who)
-}
-}" class="float-end"> Here is the script inside <code>more complicated who</code>. What change to this script will make the more complicated phrase appear more often?</p>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p>Change the 4 to 5.</p>
-</div>
-<div class="feedback">
-<p>Then three will be the randomly chosen number one out of five times instead of one out of four, and so we’ll have a complicated subject less often.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c2">
-<div class="text">
-<p>Change the 4 to 3.</p>
-</div>
-<div class="feedback">
-<p>Correct! Three will then be the chosen number one out of three times, and so we’ll have a complicated subject more often.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c3">
-<div class="text">
-<p>Change the 3 to 1.</p>
-</div>
-<div class="feedback">
-<p>1 is just as likely a random choice as 3, one out of four times, and we’ll have a complicated subject just as often as before.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c4">
-<div class="text">
-<p>Change the 3 to 5.</p>
-</div>
-<div class="feedback">
-<p>The chosen number can never be 5, so we’ll never get a complicated subject.</p>
-</div>
-</div>
-<div class="responseDeclaration" data-identifier="ri2">
-<div class="correctResponse" data-identifier="c2">
-
-</div>
-</div>
-</div></li>
 </ol>
 </div>
 <div class="vocabFullWidth">
@@ -618,118 +508,7 @@ report (who)
 <p>or <img src="../../img/1-introduction/random-blocktran.png" title="RANDOM(1, 10)" alt="RANDOM(1, 10)" class="inline">. Every time you run this code, you will get a different random number between 1 and 10.</p>
 </div>
 <div class="forYouToDo">
-<ol start="5" class="example" type="1">
-<li><!-- Question 3 -->
-<div class="assessment-data" type="multiplechoice" data-identifier="What expression would return a random even number between 1 and 10?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri3" data-shuffle="true">
-<div class="prompt">
-<div class="sidenoteBig">
-<p><a href="#hint-parity" data-bs-toggle="collapse" title="Click for a review about odd and even numbers.">Click for a review of odd and even numbers.</a></p>
-<div id="hint-parity" class="collapse">
-<p>An <strong>even</strong> number is an integer that is divisible by 2 (such as 2, 14, 0, -4, -6, -28, and -176).</p>
-<p>In contrast, <strong>odd</strong> numbers are integers <em>not</em> divisible by 2 (such as 1, 3, 9, 17, -5, -33, and -221).</p>
-</div>
-</div>
-<p>Which expression will return a random <em>even</em> number between 1 and 10?</p>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<pre class="inline">RANDOM(2, 10)</pre>
-</div>
-<div class="feedback">
-<pre class="inline">RANDOM(2, 10)</pre>
-<p>will return 2, 3, 4, 5, 6, 7, 8, 9, or 10.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c2">
-<div class="text">
-<pre class="inline">2 * RANDOM(1, 5)</pre>
-</div>
-<div class="feedback">
-<p>Correct!</p>
-<pre class="inline">RANDOM(1, 5)</pre>
-<p>will return 1, 2, 3, 4, or 5, and so</p>
-<pre class="inline">2 * RANDOM(1, 5)</pre>
-<p>will return 2, 4, 6, 8, or 10.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c3">
-<div class="text">
-<pre class="inline">RANDOM(1, 10) / 2</pre>
-</div>
-<div class="feedback">
-<pre class="inline">RANDOM(1, 10)</pre>
-<p>will return 1, 2, 3, 4, 5, 6, 7, 8, 9, or 10, and so</p>
-<pre class="inline">RANDOM(1, 10) / 2</pre>
-<p>will return ½, 1, 1&nbsp;½, 2, 2&nbsp;½, 3, 3&nbsp;½, 4, 4&nbsp;½, 5.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c4">
-<div class="text">
-<pre class="inline">RANDOM(1, 5)</pre>
-</div>
-<div class="feedback">
-<pre class="inline">RANDOM(1, 5)</pre>
-<p>will return 1, 2, 3, 4, or 5.</p>
-</div>
-</div>
-<div class="responseDeclaration" data-identifier="ri3">
-<div class="correctResponse" data-identifier="c2">
-
-</div>
-</div>
-</div>
-<!-- Question 4 -->
-<div class="assessment-data" type="multiplechoice" data-identifier="Which expression will simulate the rolling of two dice?" data-hasinlinefeedback="true" data-maxchoices="1" data-responseidentifier="ri4" data-shuffle="true">
-<div class="prompt">
-<p>Which expression will simulate the rolling of two dice?</p>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<pre class="inline">RANDOM(1, 6) + RANDOM(1, 6)</pre>
-</div>
-<div class="feedback">
-<p>Correct!</p>
-<pre class="inline">RANDOM(1, 6)</pre>
-<p>will return 1, 2, 3, 4, 5, or 6 with equal probability, simulating one die, and so</p>
-<pre class="inline">RANDOM(1, 6) + RANDOM(1, 6)</pre>
-<p>will return 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, or 12 with the same probability as two dice.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c2">
-<div class="text">
-<pre class="inline">2 * RANDOM(1, 6)</pre>
-</div>
-<div class="feedback">
-<p>You have the right idea, using</p>
-<pre class="inline">RANDOM(1, 6)</pre>
-<p>for the roll of a single die. But this expression doesn’t roll two dice; it rolls one die and doubles the result. So</p>
-<pre class="inline">2 * RANDOM(1, 6)</pre>
-<p>will only return 2, 4, 6, 8, 10, or 12.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c3">
-<div class="text">
-<pre class="inline">RANDOM(2, 12)</pre>
-</div>
-<div class="feedback">
-<pre class="inline">RANDOM(2, 12)</pre>
-<p>will return 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, or 12 equally often. Do you score 2 rolling two dice as often as you score 6?</p>
-</div>
-</div>
-<div class="choice" data-identifier="c4">
-<div class="text">
-<pre class="inline">RANDOM(1, 12)</pre>
-</div>
-<div class="feedback">
-<p>Can you score a total of 1 by rolling two dice?</p>
-</div>
-</div>
-<div class="responseDeclaration" data-identifier="ri4">
-<div class="correctResponse" data-identifier="c1">
-
-</div>
-</div>
-</div></li>
+<ol start="4" class="example" type="1">
 <li><p>Create a new block <img src="../../img/1-introduction/complicated-gossip.png" title="complicated gossip" alt="complicated gossip" class="inline py-0"> that is similar to <code>gossip</code> but that uses <code>more complicated who</code> instead of <code>who</code>. (You can choose which <code>who</code> to replace, or you could replace both.)</p></li>
 <li><p>Change the script for Sprite to use <code>complicated gossip</code> instead of <code>gossip</code>. Run your code, and fix any problems.</p></li>
 </ol>
@@ -738,7 +517,7 @@ report (who)
 <section id="making-a-block-call-itself" class="level2">
 <h2 class="anchored" data-anchor-id="making-a-block-call-itself">Making a Block Call Itself</h2>
 <div class="forYouToDo">
-<ol start="8" class="example" type="1">
+<ol start="6" class="example" type="1">
 <li><p>Edit <code>more complicated who</code>. Replace <em>one</em> of the <code>who</code> blocks with a fresh copy of <code>more complicated who</code> that you drag in from the palette. Click <code>more complicated who</code> enough times to see how it has changed.</p></li>
 <li><p>Discuss the the change in behavior with your partner, and explain what you think is causing it.</p></li>
 <li><p><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkpoint-1FAIpQLSf8n7ShuN7ZHNJFlDHXOlnU9PklKImbT6DA_SRFUb2dOyDNoA"> Checkpoint: Fill out this Google Form </button>
@@ -758,7 +537,7 @@ report (who)
 </ol>
 </div>
 <div class="ifTime">
-<ol start="11" class="example" type="1">
+<ol start="9" class="example" type="1">
 <li>Make Sprite(2) occasionally give a more complicated reply.</li>
 </ol>
 </div>
