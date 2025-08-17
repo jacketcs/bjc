@@ -20,10 +20,11 @@ You'll need to be logged in to save to your account. You know that you're logged
 You may wish to review how to log in at <a href="/unit-1/lab-1/1-creating-a-snap-account.html" title="Getting Started with Snap!">Unit 1 Lab 1 Page 1: Getting Started with Snap<em>!</em></a>
 :::
 
-(@) Perform each experiment (A-D) several times.
+(@) Perform each experiment (A-D) several times. The instructions are written on comments in the starter code.
 
-(@) <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
-    - What does each <em>reporter</em> block report?<br /> <img src="/img/1-introduction/who.png" title="who block" alt="who block" class="ms-4"/> <img src="/img/1-introduction/does-what.png" title="does what block" alt="does what block" class="inline"/> <img src="/img/1-introduction/gossip.png" title="gossip block" alt="gossip block" class="inline"/>
+(@) <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/><br />
+You will record your answers on the checkpoint at the bottom of this page.<br /> 
+    - What does each <em>reporter</em> block report?<br /><img src="/img/1-introduction/who.png" title="who block" alt="who block" class="ms-4"/> <img src="/img/1-introduction/does-what.png" title="does what block" alt="does what block" class="inline"/> <img src="/img/1-introduction/gossip.png" title="gossip block" alt="gossip block" class="inline"/>
     - What happens when you click this script (labeled D)?<br /> <img src="/img/1-introduction/say-broadcast.png" title="say (gossip) broadcast (your turn)" alt="say (gossip) broadcast (your turn)" class="ms-4"/>
 
 ::::::
@@ -59,13 +60,13 @@ If you find yourself wanting to copy and paste code from one place to another wi
 
 :::::: forYouToDo
 
-(@) <img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="float-end"/> In the sprite corral, click on the green sprite named "Sprite(2)" to control its scripts and costumes.<br /> <img src="/img/1-introduction/stage-and-sprite-corral.png" title="stage-and-sprite-corral" alt="stage-and-sprite-corral" class="ms-4"/>
+(@) In the sprite corral, click on the green sprite named "Sprite(2)" to control its scripts and costumes.<br /> <img src="/img/1-introduction/stage-and-sprite-corral.png" title="stage-and-sprite-corral" alt="stage-and-sprite-corral" class="ms-4"/>
 
 (@) Perform each experiment (A-C) several times.
 
-(@) <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Write down what `broadcast` does.
+(@) <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> What does `broadcast` do? You can record your answer on the checkpoint.
 
-(@) <img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Discuss how `who2` compares to `who` and how `gossip2` compares to `gossip`.
+(@) <img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Discuss how `who2` compares to `who` and how `gossip2` compares to `gossip`. Record your answer on the checkpoint.
 
 (@) <img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="float-end"/> Make Sprite(2) tell Sprite to respond. What happens?
 
