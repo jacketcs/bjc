@@ -70,6 +70,8 @@ If you find yourself wanting to copy and paste code from one place to another wi
 
 (@) <img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="float-end"/> Make Sprite(2) tell Sprite to respond. What happens?
 
+(@) {{< checkpoint id='1E2yHwodwuMe_Jq_9CTxiJxY0PW6pp14Qgqx9RtJ9KVY' >}}
+
     :::: endnote
     The `broadcast` block sends a message to all the sprites. To set the message, click the down arrow and select "new..."<br /> <img src="/img/1-introduction/broadcast-dropdown.png" title="broadcast block with menu open showing two options: your turn, new..." alt="broadcast block with menu open showing two options: your turn, new..." class="ms-4"/>
 
