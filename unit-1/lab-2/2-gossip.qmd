@@ -15,7 +15,7 @@ gifffer: true
 (@) <a href="/prog/1-introduction/U1L2-Gossip.xml" class="run"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a>
 
 ::: endnote
-You'll need to be logged in to save to your account. You know that you're logged in if you see a filled in cloud at the top right of the Snap<em>!</em> toolbar <img src="/img/1-introduction/cloud_button.png" title="Cloud menu button" alt="Cloud menu button"/>.
+You'll need to be logged in to save to your account. <b>You know that you're logged in if you see a filled in cloud at the top right of the Snap</b><em>!</em> toolbar <img src="/img/1-introduction/cloud_button.png" title="Cloud menu button" alt="Cloud menu button"/>.
 
 You may wish to review how to log in at <a href="/unit-1/lab-1/1-creating-a-snap-account.html" title="Getting Started with Snap!">Unit 1 Lab 1 Page 1: Getting Started with Snap<em>!</em></a>
 :::
@@ -70,7 +70,7 @@ If you find yourself wanting to copy and paste code from one place to another wi
 
 (@) <img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="float-end"/> Make Sprite(2) tell Sprite to respond. What happens?
 
-(@) {{< checkpoint id='1E2yHwodwuMe_Jq_9CTxiJxY0PW6pp14Qgqx9RtJ9KVY' >}}
+(@) {{< checkpoint id='1FAIpQLScqMfco8VdQCUSswvaoGB67zeGz8xbO2TgJB1cJWcxj7LNX4Q' >}}
 
     :::: endnote
     The `broadcast` block sends a message to all the sprites. To set the message, click the down arrow and select "new..."<br /> <img src="/img/1-introduction/broadcast-dropdown.png" title="broadcast block with menu open showing two options: your turn, new..." alt="broadcast block with menu open showing two options: your turn, new..." class="ms-4"/>
