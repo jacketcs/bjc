@@ -14,33 +14,30 @@ gifffer: true
 Recall how you first <em>generalized</em> your original pinwheel script: you added an input called <var>number of branches</var> that controlled the turning angle of the sprite. By adding <em>more</em> inputs, you can generalize other aspects of your program.
 
 ::: {#first .forYouToDo}
-<li> If it isn't already open, open your U1L3-Pinwheel project.
+(@) If it isn't already open, open your U1L3-Pinwheel project.
 
-<li> Experiment with the input for the <em>second</em> `move` block inside your `pinwheel` block as shown below.
+(@) Experiment with the input for the <em>second</em> `move` block inside your `pinwheel` block as shown below.
 
-<ol>
 
-<li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> First predict. What do you think will happen?</li>
+
+(@) <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> First predict. What do you think will happen?</li>
 
 <img src="/img/1-introduction/pinwheel-change-second-move-input.png" title="pinwheel block definition with comment asking students to experiment with the input for the second move block" alt="pinwheel block definition with comment asking students to experiment with the input for the second move block" class="ms-4"/>
 
-<li>Then try several inputs between -100 and 0.</li>
+(@) Then try several inputs between -100 and 0.</li>
 
-<li><img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> What happened? How does it compare to what you predicted? How does this input value impact the sprite's behavior? How does it impact the resulting image on the stage? What number input number gives an asterisk? What input number gives a polygon?<br /> <img title="Animation cycle from Asterisk to Polygon" alt="Animation cycle from Asterisk to Polygon" class="ms-4" data-gifffer="/img/1-introduction/Blockswith-Inputs_img/asteriskpolygonCycleBW.gif" height="200"/></li>
+(@) <img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> What happened? How does it compare to what you predicted? How does this input value impact the sprite's behavior? How does it impact the resulting image on the stage? What number input number gives an asterisk? What input number gives a polygon?<br /> <img title="Animation cycle from Asterisk to Polygon" alt="Animation cycle from Asterisk to Polygon" class="ms-4" data-gifffer="/img/1-introduction/Blockswith-Inputs_img/asteriskpolygonCycleBW.gif" height="200"/></li>
 
-</ol>
-
-</li>
 
 ::: sidenoteBig
 Review how to add an input at <a href="/unit-1/lab-3/3-blocks-with-inputs.html" title="Blocks with Inputs">Unit 1 Lab 3 Page 3: Blocks with Input</a>, if needed.
 :::
 
-<li> Add a <em>second input</em> to control the amount of "backing up" that the sprite does before each turn through the full 360°.
+(@) Add a <em>second input</em> to control the amount of "backing up" that the sprite does before each turn through the full 360°.
 
-<ol>
 
-<li>Edit your `pinwheel` block, then click the "+" sign at the end to add an input **label** (**choose "Title text"**). Type `backup:` as shown below, and click "OK".</li>
+
+(@) Edit your `pinwheel` block, then click the "+" sign at the end to add an input **label** (**choose "Title text"**). Type `backup:` as shown below, and click "OK".</li>
 
 ::: endnote
 <a href="#hint-target" data-bs-toggle="collapse" title="Watch a video of steps a and b for adding the second input to the pinwheel block.">Watch a video of steps a and b.</a>
@@ -50,18 +47,17 @@ Review how to add an input at <a href="/unit-1/lab-3/3-blocks-with-inputs.html" 
 :::
 :::
 
-<li>Then click the "+" sign at the end <em>again</em> to add an input (choose "Input name"), and call it <var>backup</var>.</li>
+(@) Then click the "+" sign at the end <em>again</em> to add an input (choose "Input name"), and call it <var>backup</var>.
 
-<li>Drag off the new <var>backup</var> input, place it where it belongs in the `pinwheel` code, and press "OK" or "Apply."</li>
+(@) Drag off the new <var>backup</var> input, place it where it belongs in the `pinwheel` code, and press "OK" or "Apply."
 
-<li>Check that changing the <var>backup</var> input value when running the `pinwheel` block gives the correct result. Debug any problems.</li>
+(@) Check that changing the <var>backup</var> input value when running the `pinwheel` block gives the correct result. Debug any problems.
 
-<li Change the <code>pinwheel</code> script so that it will accept a 
+(@) Change the <code>pinwheel</code> script so that it will accept a 
   <em>positive</em> value (between 0 and 100) for <var>backup</var>, 
   and test it with a variety of inputs. If you run it with a positive value for <var>backup</var>, it should make a pinwheel shape and not a polygon. If it makes a polygon, edit the code inside your block so it makes a pinwheel when you input a positive value for <var>backup</var>
-</li>
 
-</ol>
+
 
 ::: endnote
 <a href="#hint-positivebackup" data-bs-toggle="collapse" title="Click for example inputs to test accepting a positive value for backup.">Click for example inputs to test.</a>
