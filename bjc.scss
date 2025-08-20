@@ -248,7 +248,12 @@ $note:          #f3761d;
     font-style: italic;
     text-align: center;
 }
-
+.highlight-important {
+  background-color: #fff3cd; /* pale yellow */
+  border: 2px solid #f0ad4e; 
+  padding: 0.5em;
+  font-weight: bold;
+}
 // Quiz styling
 
 .card-header {
