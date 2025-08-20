@@ -59,7 +59,7 @@ Review how to add an input at <a href="/unit-1/lab-3/3-blocks-with-inputs.html" 
 <li class="highlight-important">
   Change the <code>pinwheel</code> script so that it will accept a 
   <em>positive</em> value (between 0 and 100) for <var>backup</var>, 
-  and test it with a variety of inputs.
+  and test it with a variety of inputs. If you run it with a positive value for <var>backup</var>, it should make a pinwheel shape and not a polygon. If it makes a polygon, edit the code inside your block so it makes a pinwheel when you input a positive value for <var>backup</var>
 </li>
 
 </ol>
