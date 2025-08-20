@@ -23,7 +23,7 @@ What's the purpose of "pseudocode"? Why write an algorithm vaguely in English wh
 
 ::: {#first .forYouToDo}
 
-(@) <img src="/img/icons/work-with-a-partner.png" title="Work with a Partner" alt="Work with a Partner" class="inline"/> <img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/> Describe what this algorithm will make the sprite do:<br /> <img src="/img/1-introduction/repeat-4(move-100-turn-right-90).png" title="repeat (4) (move (100), turn clockwise (90))" alt="repeat (4) (move (100), turn clockwise (90))" class="ms-4"/></li>
+(@) <img src="/img/icons/work-with-a-partner.png" title="Work with a Partner" alt="Work with a Partner" class="inline"/> Discuss what this algorithm will make the sprite do:<br /> <img src="/img/1-introduction/repeat-4(move-100-turn-right-90).png" title="repeat (4) (move (100), turn clockwise (90))" alt="repeat (4) (move (100), turn clockwise (90))" class="ms-4"/></li>
 
 (@) Log in to <a href="http://snap.berkeley.edu/run" title="Snap! Build Your Own Blocks" target="_blank">Snap<em>!</em></a> and build that script to test your hypothesis.<br />
     a. Click it, and watch what the sprite does.
@@ -33,7 +33,7 @@ What's the purpose of "pseudocode"? Why write an algorithm vaguely in English wh
 You can click `pen down` (or any block) in the palette on the left or in the scripting area to run it. If you click a block inside a script, the whole script runs.
 :::
 
-(@) <img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Analyze <em>why</em> that script does what it does.
+(@) With your partner, analyze <em>why</em> that script does what it does.
 
 (@)  <img src="/img/icons/talk-with-another-pair-mini.png" title="Talk with Another Pair" alt="Talk with Another Pair" class="inline"/>Compare your work with another pair. If your script behaves differently from theirs, check both.
 
