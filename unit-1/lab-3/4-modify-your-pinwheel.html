@@ -477,52 +477,39 @@ ul.task-list li input[type="checkbox"] {
 <section id="adding-multiple-inputs" class="level2">
 <h2 class="anchored" data-anchor-id="adding-multiple-inputs">Adding Multiple Inputs</h2>
 <p>Recall how you first <em>generalized</em> your original pinwheel script: you added an input called <var>number of branches</var> that controlled the turning angle of the sprite. By adding <em>more</em> inputs, you can generalize other aspects of your program.</p>
-::: {#first .forYouToDo}
-<li>
-<p>If it isn’t already open, open your U1L3-Pinwheel project.</p>
-</li><li>
-<p>Experiment with the input for the <em>second</em> <code>move</code> block inside your <code>pinwheel</code> block as shown below.</p>
-<ol>
-<li>
-<img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> First predict. What do you think will happen?
-</li>
-<p><img src="../../img/1-introduction/pinwheel-change-second-move-input.png" title="pinwheel block definition with comment asking students to experiment with the input for the second move block" alt="pinwheel block definition with comment asking students to experiment with the input for the second move block" class="ms-4"></p>
-<li>
-Then try several inputs between -100 and 0.
-</li>
-<li>
-<img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> What happened? How does it compare to what you predicted? How does this input value impact the sprite’s behavior? How does it impact the resulting image on the stage? What number input number gives an asterisk? What input number gives a polygon?<br> <img title="Animation cycle from Asterisk to Polygon" alt="Animation cycle from Asterisk to Polygon" class="ms-4" data-gifffer="/img/1-introduction/Blockswith-Inputs_img/asteriskpolygonCycleBW.gif" height="200">
+<div id="first" class="forYouToDo">
+<ol class="example" type="1">
+<li><p>If it isn’t already open, open your U1L3-Pinwheel project.</p></li>
+<li><p>Experiment with the input for the <em>second</em> <code>move</code> block inside your <code>pinwheel</code> block as shown below.</p></li>
+<li><p><img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> First predict. What do you think will happen?</p>
 </li>
 </ol>
+<p><img src="../../img/1-introduction/pinwheel-change-second-move-input.png" title="pinwheel block definition with comment asking students to experiment with the input for the second move block" alt="pinwheel block definition with comment asking students to experiment with the input for the second move block" class="ms-4"></p>
+<ol start="4" class="example" type="1">
+<li>Then try several inputs between -100 and 0.
 </li>
+<li><img src="../../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> What happened? How does it compare to what you predicted? How does this input value impact the sprite’s behavior? How does it impact the resulting image on the stage? What number input number gives an asterisk? What input number gives a polygon?<br> <img title="Animation cycle from Asterisk to Polygon" alt="Animation cycle from Asterisk to Polygon" class="ms-4" data-gifffer="/img/1-introduction/Blockswith-Inputs_img/asteriskpolygonCycleBW.gif" height="200">
+</li>
+</ol>
 <div class="sidenoteBig">
 <p>Review how to add an input at <a href="../../unit-1/lab-3/3-blocks-with-inputs.html" title="Blocks with Inputs">Unit 1 Lab 3 Page 3: Blocks with Input</a>, if needed.</p>
 </div>
-<li>
-<p>Add a <em>second input</em> to control the amount of “backing up” that the sprite does before each turn through the full 360°.</p>
-<ol>
-<li>
-Edit your <code>pinwheel</code> block, then click the “+” sign at the end to add an input <strong>label</strong> (<strong>choose “Title text”</strong>). Type <code>backup:</code> as shown below, and click “OK”.
+<ol start="6" class="example" type="1">
+<li><p>Add a <em>second input</em> to control the amount of “backing up” that the sprite does before each turn through the full 360°.</p></li>
+<li><p>Edit your <code>pinwheel</code> block, then click the “+” sign at the end to add an input <strong>label</strong> (<strong>choose “Title text”</strong>). Type <code>backup:</code> as shown below, and click “OK”.</p>
 </li>
+</ol>
 <div class="endnote">
 <p><a href="#hint-target" data-bs-toggle="collapse" title="Watch a video of steps a and b for adding the second input to the pinwheel block.">Watch a video of steps a and b.</a></p>
 <div id="hint-target" class="collapse">
 <p><img src="../../img/1-introduction/create-input-name.gif" title="a video of editting the 'pinwheel, branches: ()' block, clicking the plus sign on the right end of the hat block, typing 'backup:' as the Title text, clicking 'OK,' clicking the plus sign on the right end of the hat block again, typing 'backup' as the Input name, clicking 'OK,' clicking 'OK' again, and showing the block now appearing as 'pinwheel, branches: () backup: ()' " alt="a video of editing the 'pinwheel, branches: ()' block, clicking the plus sign on the right end of the hat block, typing 'backup:' as the Title text, clicking 'OK,' clicking the plus sign on the right end of the hat block again, typing 'backup' as the Input name, clicking 'OK,' clicking 'OK' again, and showing the block now appearing as 'pinwheel, branches: () backup: ()' " class="inline"></p>
 </div>
 </div>
-<li>
-Then click the “+” sign at the end <em>again</em> to add an input (choose “Input name”), and call it <var>backup</var>.
-</li>
-<li>
-Drag off the new <var>backup</var> input, place it where it belongs in the <code>pinwheel</code> code, and press “OK” or “Apply.”
-</li>
-<li>
-Check that changing the <var>backup</var> input value when running the <code>pinwheel</code> block gives the correct result. Debug any problems.
-</li>
-<li change="" the="" <code="">pinwheel script so that it will accept a 
-  <em>positive</em> value (between 0 and 100) for <var>backup</var>, 
-  and test it with a variety of inputs. If you run it with a positive value for <var>backup</var>, it should make a pinwheel shape and not a polygon. If it makes a polygon, edit the code inside your block so it makes a pinwheel when you input a positive value for <var>backup</var>
-</li>
+<ol start="8" class="example" type="1">
+<li><p>Then click the “+” sign at the end <em>again</em> to add an input (choose “Input name”), and call it <var>backup</var>.</p></li>
+<li><p>Drag off the new <var>backup</var> input, place it where it belongs in the <code>pinwheel</code> code, and press “OK” or “Apply.”</p></li>
+<li><p>Check that changing the <var>backup</var> input value when running the <code>pinwheel</code> block gives the correct result. Debug any problems.</p></li>
+<li><p>Change the <code>pinwheel</code> script so that it will accept a <em>positive</em> value (between 0 and 100) for <var>backup</var>, and test it with a variety of inputs. If you run it with a positive value for <var>backup</var>, it should make a pinwheel shape and not a polygon. If it makes a polygon, edit the code inside your block so it makes a pinwheel when you input a positive value for <var>backup</var></p></li>
 </ol>
 <div class="endnote">
 <p><a href="#hint-positivebackup" data-bs-toggle="collapse" title="Click for example inputs to test accepting a positive value for backup.">Click for example inputs to test.</a></p>
@@ -530,7 +517,7 @@ Check that changing the <var>backup</var> input value when running the <code>pin
 <p><img src="../../img/1-introduction/pinwheel-branches-6-backup-20.png" title="pinwheel, branches: (6) backup: (20)" alt="pinwheel, branches: (6) backup: (20)" class="ms-4"> <img src="../../img/1-introduction/pinwheel-branches-6-backup-20-result.png" title="A large hexagon with the clockwise end of each side extended 20 steps beyond the hexagon. The full length of each side is 100 steps." alt="A large hexagon with the clockwise end of each side extended 20 steps beyond the hexagon. The full length of each side is 100 steps." class="ms-4"><br> <img src="../../img/1-introduction/pinwheel-branches-6-backup-50.png" title="pinwheel, branches: (6) backup: (50)" alt="pinwheel, branches: (6) backup: (50)" class="ms-4"> <img src="../../img/1-introduction/pinwheel-branches-6-backup-50-result.png" title="A medium hexagon with the clockwise end of each side extended 50 steps beyond the hexagon. The full length of each side is 100 steps." alt="A medium hexagon with the clockwise end of each side extended 50 steps beyond the hexagon. The full length of each side is 100 steps." class="ms-4"><br> <img src="../../img/1-introduction/pinwheel-branches-6-backup-80.png" title="pinwheel, branches: (6) backup: (80)" alt="pinwheel, branches: (6) backup: (80)" class="ms-4"> <img src="../../img/1-introduction/pinwheel-branches-6-backup-80-result.png" title="A small hexagon with the clockwise end of each side extended 80 steps beyond the hexagon. The full length of each side is 100 steps." alt="A small hexagon with the clockwise end of each side extended 80 steps beyond the hexagon. The full length of each side is 100 steps." class="ms-4"></p>
 </div>
 </div>
-<p>:::</p>
+</div>
 <div class="examFullWidth">
 <div class="pseudop">
 <p>The procedure definition for the custom <code>pinwheel</code> command<br> <img src="../../img/1-introduction/pinwheel-definition.png" title="pinwheel, branches: (number of branches)
@@ -597,7 +584,7 @@ turn_clockwise (360 / numberOfBranches)
 </div>
 </div>
 <div class="forYouToDo">
-<ol class="example" type="1">
+<ol start="12" class="example" type="1">
 <li><p>Add another input called <var>size</var> to control the input to the <em>first</em> <code>move</code> block.<br> <img src="../../img/1-introduction/U1ImageVideoAddendum_img/U1L3-PinwheelwithInputs.png" title="pinwheel,  branches: (number of branches) size: (size) backup: (backup) hat block" alt="pinwheel, branches: (number of branches) size: (size) backup: (backup) hat block" class="ms-4" width="700"></p></li>
 <li><p>Try out a variety of inputs to your <code>pinwheel</code> program.</p></li>
 </ol>
@@ -607,7 +594,7 @@ turn_clockwise (360 / numberOfBranches)
 <p><img src="../../img/1-introduction/pinwheel-branches-3-size-100-backup-20.png" title="pinwheel, branches: (3) size: (100) backup: (20)" alt="pinwheel, branches: (3) size: (100) backup: (20)" class="ms-4"> <img src="../../img/1-introduction/pinwheel-branches-3-size-100-backup-20-result.png" title="A large triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 100 steps." alt="A large triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 100 steps." class="ms-4"><br> <img src="../../img/1-introduction/pinwheel-branches-3-size-65-backup-20.png" title="pinwheel, branches: (3) size: (100) backup: (20)" alt="pinwheel, branches: (3) size: (65) backup: (20)" class="ms-4"> <img src="../../img/1-introduction/pinwheel-branches-3-size-65-backup-20-result.png" title="A medium triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 65 steps." alt="A medium triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 65 steps." class="ms-4"><br> <img src="../../img/1-introduction/pinwheel-branches-3-size-30-backup-20.png" title="pinwheel, branches: (3) size: (30) backup: (20)" alt="pinwheel, branches: (3) size: (30) backup: (20)" class="ms-4"> <img src="../../img/1-introduction/pinwheel-branches-3-size-30-backup-20-result.png" title="A small triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 30 steps." alt="A small triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 30 steps." class="ms-4"><br></p>
 </div>
 </div>
-<ol start="3" class="example" type="1">
+<ol start="14" class="example" type="1">
 <li><img src="../../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Discuss what input values will give you a polygon or an asterisk. <img src="../../img/icons/save-mini.png" title="Save your work" alt="Save your work" class="inline"><br> <img src="../../img/1-introduction/polygon-result.png" title="polygon" alt="polygon" class="ms-4"> <img src="../../img/1-introduction/asterisk-result.png" title="asterisk" alt="asterisk" class="ms-4"></li>
 </ol>
 </div>
@@ -619,7 +606,7 @@ turn_clockwise (360 / numberOfBranches)
 </div>
 </section>
 <div class="forYouToDo">
-<ol start="4" class="example" type="1">
+<ol start="15" class="example" type="1">
 <li><p>Tidy up the code in your project, if necessary.</p></li>
 <li><p><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#checkpoint-1FAIpQLSfbHl5kvli8Xfmtwj5NE7L77wg3-bgLFxSsfmY8NDeIOPZD6g"> Checkpoint: Fill out this Google Form </button>
       </p><div class="modal fade" id="checkpoint-1FAIpQLSfbHl5kvli8Xfmtwj5NE7L77wg3-bgLFxSsfmY8NDeIOPZD6g" tabindex="-1" role="dialog">
@@ -646,7 +633,7 @@ turn_clockwise (360 / numberOfBranches)
 <p>You may hear people use the term “pseudocode” to refer to this pseudo-language used on the AP CS Principles exam, but it’s <em>not</em> pseudocode. Pseudocode isn’t a programming language at all, it’s the use of normal human language to describe an algorithm.</p>
 </div>
 <div class="ifTime">
-<ol start="6" class="example" type="1">
+<ol start="17" class="example" type="1">
 <li>Find inputs to <code>pinwheel</code> that make the result look like a circle.</li>
 </ol>
 </div>
@@ -673,7 +660,7 @@ turn_clockwise (360 / numberOfBranches)
 </div>
 
 
-</li></section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
