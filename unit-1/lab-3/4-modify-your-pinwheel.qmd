@@ -14,9 +14,9 @@ gifffer: true
 Recall how you first <em>generalized</em> your original pinwheel script: you added an input called <var>number of branches</var> that controlled the turning angle of the sprite. By adding <em>more</em> inputs, you can generalize other aspects of your program.
 
 ::: {#first .forYouToDo}
-(@) If it isn't already open, open your U1L3-Pinwheel project.
+<li> If it isn't already open, open your U1L3-Pinwheel project.
 
-(@) Experiment with the input for the <em>second</em> `move` block inside your `pinwheel` block as shown below.
+<li> Experiment with the input for the <em>second</em> `move` block inside your `pinwheel` block as shown below.
 
 <ol>
 
@@ -36,7 +36,7 @@ Recall how you first <em>generalized</em> your original pinwheel script: you add
 Review how to add an input at <a href="/unit-1/lab-3/3-blocks-with-inputs.html" title="Blocks with Inputs">Unit 1 Lab 3 Page 3: Blocks with Input</a>, if needed.
 :::
 
-(@) Add a <em>second input</em> to control the amount of "backing up" that the sprite does before each turn through the full 360°.
+<li> Add a <em>second input</em> to control the amount of "backing up" that the sprite does before each turn through the full 360°.
 
 <ol>
 
@@ -56,8 +56,7 @@ Review how to add an input at <a href="/unit-1/lab-3/3-blocks-with-inputs.html" 
 
 <li>Check that changing the <var>backup</var> input value when running the `pinwheel` block gives the correct result. Debug any problems.</li>
 
-<li class="highlight-important">
-  Change the <code>pinwheel</code> script so that it will accept a 
+<li Change the <code>pinwheel</code> script so that it will accept a 
   <em>positive</em> value (between 0 and 100) for <var>backup</var>, 
   and test it with a variety of inputs. If you run it with a positive value for <var>backup</var>, it should make a pinwheel shape and not a polygon. If it makes a polygon, edit the code inside your block so it makes a pinwheel when you input a positive value for <var>backup</var>
 </li>
