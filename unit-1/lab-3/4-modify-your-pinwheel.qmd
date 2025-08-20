@@ -56,10 +56,11 @@ Review how to add an input at <a href="/unit-1/lab-3/3-blocks-with-inputs.html" 
 
 <li>Check that changing the <var>backup</var> input value when running the `pinwheel` block gives the correct result. Debug any problems.</li>
 
-
-
-
-(@) Change the `pinwheel` script so that it will accept a <em>positive</em> value (between 0 and 100) for <var>backup</var>, and test it with a variety of inputs.
+<li class="highlight-important">
+  Change the <code>pinwheel</code> script so that it will accept a 
+  <em>positive</em> value (between 0 and 100) for <var>backup</var>, 
+  and test it with a variety of inputs.
+</li>
 
 </ol>
 
