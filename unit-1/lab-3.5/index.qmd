@@ -75,11 +75,6 @@ We learned about the `pick random` block on [Unit 1, Lab 2, Page 5: Adding Varie
 It is a reporter block that reports a random number within the range of numbers that you specify.
 :::
 
-(@) Use your `draw group of houses` block together with `repeat` and `pick random`  to create a `draw town of houses` block that draws a <var>groups</var> number of groups of houses all of a random amount of houses (each of the same <var>size</var>) in random places (try to make sure they don't overlap!)
-    <img src="/img/1-introduction/draw-town-of-houses.png" title="draw town of houses, size: () groups: ()" alt="draw town of houses, size: () groups: ()" class="ms-4 p-3"  height="65" /> 
-
-<!-- (@) <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>The <em>x</em> positions on the Snap<em>!</em> stage go from -240 to 240. How does the `repeat until` code keep the sprite from drawing too close to the edge of the screen? <img src="/img/icons/save-mini.png" title="Now Is a Good Time to Save" alt="Now Is a Good Time to Save" class="inline"/> -->
-
 :::
 
 ::: ifTime
