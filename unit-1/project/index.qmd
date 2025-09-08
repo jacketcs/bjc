@@ -39,7 +39,7 @@ Create an eCard ([see what an eCard is](https://en.wikipedia.org/wiki/E-card)) t
 ## Google Form Specifications
 
 ::: forYouToDo
-When you have finished your app, fill in the **given Google Form on Google Classroom**.
+When you have finished your project, {{< checkpoint text='turn it in on this form' id='1FAIpQLSfY8QW7JeM2os8C2MHVg8DjanNHPHdfP2j0_ngBZgHdo8VkfA' >}}
 
 <details>
 <summary>The Google Form has the following questions for you to answer:</summary>
