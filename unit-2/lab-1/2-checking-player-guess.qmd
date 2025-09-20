@@ -17,7 +17,6 @@ You've seen conditionals on <a href="/unit-1/lab-2/5-if-else.html" title="Unit 1
 :::::
 
 ::::: forYouToDo
-<img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="float-end"/>
 
 (@) Use `repeat until` to ask the player (<img src="/img/blocks/ask-empty-full-size.png" title="ask () and wait" alt="ask () and wait" class="inline py-0"/>) to guess the secret number until their <img src="/img/blocks/answer-full-size.png" title="answer" alt="answer" class="inline"/> equals the <var>secret number</var>.
 
