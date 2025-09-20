@@ -24,14 +24,7 @@ If you want to add more script variables, use the right-pointing triangle. (The 
 
 ::::::
 
-:::::: atwork
-<!--<img class="noshadow float-end" height="200px" src="/img/atwork/Jerry_Lawson.jpg" alt="photo of Jerry Lawson" title="photo of Jerry Lawson" />-->
 
-Jerry Lawson (1940-2011) was an American electronic engineer and gaming pioneer who is dubbed the "father of the video game cartridge." Born in New York City, Jerry took classes at both Queens College and City College of New York. While working as a Chief Hardware Engineer at Fairchild Semiconductor, he led the development of the Channel F console and pioneered the technology of the video game cartridge, which was popularized with the Atari 2600.
-
-<a href="https://www.cnbc.com/2021/10/30/jerry-lawson-black-silicon-valley-pioneer-changed-video-games-forever.html" title="Article: One of the most important Silicon Valley pioneers you've never heard of" target="_blank">Article: One of the most important Silicon Valley pioneers you've never heard of</a>
-
-::::::
 
 ## Extending the Program with More Specific Responses
 
@@ -44,6 +37,11 @@ Jerry Lawson (1940-2011) was an American electronic engineer and gaming pioneer 
     - say whether a wrong guess is too big or too small, and then ask again;
     - congratulate the player for a correct answer.
 
+(@) Right now, the script always picks a number between 1 and 10. At the start of the game, ask the player what the maximum number should be, and make your program choose a number between 1 and <var>maximum</var>.
+
+(@) Use another script variable to keep track of how many guesses the player makes before getting the right number. When the player guesses the secret number, say how many guesses it took.
+:::
+
 (@) {{< checkpoint id='1FAIpQLSe7G8gdKsFvltVSaNhjOJbrpXpzVYkbR9c-qC-chUxM2RdYKQ' >}}
 
 ::::::
@@ -53,14 +51,10 @@ The script variable <var>secret number</var> exists only until the script finish
 <img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="float-end"/>
 
 In a later unit, you will teach the computer how to guess a secret number that <em>you</em> have chosen.
-
-::: ifTime
-(@) Right now, the script always picks a number between 1 and 10. At the start of the game, ask the player what the maximum number should be, and make your program choose a number between 1 and <var>maximum</var>.
-
-(@) Use another script variable to keep track of how many guesses the player makes before getting the right number. When the player guesses the secret number, say how many guesses it took.
+When the player guesses the secret number, say how many guesses it took.
 :::
 
-::: takeItFurther
+::: ifTime
 <ol type="A">
 <li>Find a way to vary the language a bit so that your program does not always repeat exactly the same words in the same situation. For example, if a player guesses too high twice in a row, the program could say "That's still too big. Try another number."</li>
 </ol>
