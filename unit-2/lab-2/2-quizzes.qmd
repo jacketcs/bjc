@@ -14,7 +14,7 @@ gifffer: true
 
 <li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>Decide what type of quiz you would like to build, and write three to five questions and their correct answers.</li>
 
-<li><img src="/img/icons/take-turns-speaking-mini.gif" title="Take turns speaking" alt="Take turns speaking" class="inline"/>Read the following section. (Don't build these in Snap<em>!</em>. You'll build your own quiz later on the page.)</li>
+<li><img src="/img/icons/take-turns-speaking-mini.gif" title="Take turns speaking" alt="Take turns speaking" class="inline"/>Read the following section.<b> (Don't build these in Snap<em>!</em></b>. You'll build your own quiz later on the page.)</li>
 
 </ol>
 :::
