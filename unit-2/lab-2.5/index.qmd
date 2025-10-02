@@ -37,6 +37,8 @@ In this assignment, you’ll be making a program that will help you study for ot
 
 :::
 
+{{< checkpoint id='1FAIpQLSei3rDQhSE6I82wAp7o4va96tZtBY3hkGpbAhMu7kGnNqlAxA' >}}
+
 ::: ifTime
 
 (@) Set your program to run in different modes. For example, give it a setting where you can see the definition and you try to guess the word, etc.
