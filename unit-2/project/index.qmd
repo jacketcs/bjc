@@ -21,7 +21,7 @@ On the last day of this project, we will have a gallery walk to show everyone th
 
 Here is an example of what the final program can look like:
 
-{{< video https://youtu.be/v3k0IfI6VYU >}}
+{{< video https://youtu.be/txQ-YFLbg1o >}}
 
 :::
 
