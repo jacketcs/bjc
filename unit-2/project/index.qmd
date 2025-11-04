@@ -72,7 +72,7 @@ Create a Snap<em>!</em> program that can act as a survey that meets all of the f
         For example: ![An example of asking the user a specific question and gathering their response using the ask and answer blocks](/img/2-complexity/Survey/survey-example.png)
     - Stores the collected data in a list that is stored as the variable <var>survey responses</var> **using your ADT that you created above**. 
 
-3. Implement the block ![insert example responses into survey responses](/img/2-complexity/Survey/insert-example%20responses-into%20survey-responses.png) that puts at least ten example responses into the list.
+3. Implement the block ![insert example responses into survey responses](/img/2-complexity/Survey/insert-example%20responses-into%20survey-responses.png) that puts ten or so example responses into the list.
 
 4. Implements a data analysis feature on the "Analyze Survey" sprite.
     - When the sprite is clicked, it allows the user to choose from one of the five research questions that you planned out prior to the program.
