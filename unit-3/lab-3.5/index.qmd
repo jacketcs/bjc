@@ -1,5 +1,5 @@
 ---
-title: "Monty Hall Simulator"
+title: "Project: Monty Hall Simulator"
 subtitle: "Unit 3 Project"
 order: 16
 ---
