@@ -23,7 +23,7 @@ When the user presses the ‘calculate decimal value’ button, the Decimal Valu
 When the user presses the ‘reset’ button, all the bits will return to display 0, as will the Decimal Value sprite.
 
 
-{{< video https://drive.google.com/file/d/1jDS0FEdGWY8vXEFwadD_CiM4siPa_lTT/view?usp=sharing >}}
+{<iframe src="https://drive.google.com/file/d/1jDS0FEdGWY8vXEFwadD_CiM4siPa_lTT/preview" width="640" height="480"></iframe> }
 
 
 :::::  endnote
