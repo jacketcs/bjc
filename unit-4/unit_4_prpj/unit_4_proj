@@ -3,7 +3,7 @@
 title: "Binary Converter"
 subtitle: "Unit 4 Project"
 pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
-order: 2
+order: 1
 ---
 
 
