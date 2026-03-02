@@ -22,7 +22,7 @@ When the user presses the ‘calculate decimal value’ button, the Decimal Valu
 When the user presses the ‘reset’ button, all the bits will return to display 0, as will the Decimal Value sprite.
 
 
-{<iframe src="https://drive.google.com/file/d/1jDS0FEdGWY8vXEFwadD_CiM4siPa_lTT/preview" width="640" height="480"></iframe> }
+<iframe src="https://drive.google.com/file/d/1jDS0FEdGWY8vXEFwadD_CiM4siPa_lTT/preview" width="640" height="480"></iframe> 
 
 
 :::::  endnote
@@ -41,13 +41,13 @@ for a suggestion of how to organize the different stages of the program.</a>
 
 :::::
 
-(@) <a class="run" href="https://snap.berkeley.edu/snap/snap.html#present:Username=chief%20o'keefe&ProjectName=Unit%204%20Project%20Starter%20Code"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a>
+<a class="run" href="https://snap.berkeley.edu/snap/snap.html#present:Username=chief%20o'keefe&ProjectName=Unit%204%20Project%20Starter%20Code"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a>
 
 
 
 :::::: ifTime
-(@) Add a "+1" button that will add one to the digits when you press it.
-(@) Make a version of the program that will keep track of numbers in a base other than 2 (try base 16, called 'hexidecimal', also used in computer science)
+A. Add a "+1" button that will add one to the digits when you press it.
+B. Make a version of the program that will keep track of numbers in a base other than 2 (try base 16, called 'hexidecimal', also used in computer science)
 
 :::
 
