@@ -12,7 +12,6 @@ This is an **individual** project. This means that all of your work must be your
 :::::: learn
 **In this project,** you will create a program that converts binary numbers made up of 7 bits into decimal.<br />
 
-![](monty.jpeg)
 ::::::
 
 
@@ -44,7 +43,7 @@ for a suggestion of how to organize the different stages of the program.</a>
 
 (@) <a class="run" href="https://snap.berkeley.edu/snap/snap.html#present:Username=chief%20o'keefe&ProjectName=Unit%204%20Project%20Starter%20Code"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a>
 
-::::::
+
 
 :::::: ifTime
 (@) Add a "+1" button that will add one to the digits when you press it.
@@ -52,4 +51,4 @@ for a suggestion of how to organize the different stages of the program.</a>
 
 :::
 
-::::::
+
