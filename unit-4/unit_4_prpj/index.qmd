@@ -26,7 +26,7 @@ When the user presses the ‘reset’ button, all the bits will return to displa
 
 
 :::::  endnote
-<a href="#hint-coordinates" data-bs-toggle="collapse" title="Click for a hint about one way to organize the project.">Click
+<a href="#hint-coordinates" data-bs-toggle="collapse" title="Click for a hint about one way to organize your project.">Click
 for a suggestion of how to organize the different stages of the program.</a>
 
 :::: {#hint-coordinates .collapse}
@@ -46,8 +46,8 @@ for a suggestion of how to organize the different stages of the program.</a>
 
 
 :::::: ifTime
-A. Add a "+1" button that will add one to the digits when you press it.
-B. Make a version of the program that will keep track of numbers in a base other than 2 (try base 16, called 'hexidecimal', also used in computer science)
+(@). Add a "+1" button that will add one to the digits when you press it.
+(@). Make a version of the program that will keep track of numbers in a base other than 2 (try base 16, called 'hexidecimal', also used in computer science)
 
 :::
 
