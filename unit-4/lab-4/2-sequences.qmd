@@ -58,11 +58,11 @@ much memory:
 | bit      | either a 1 or a 0                     | 1                                                   |
 | byte     | 8 bits                                | 11011001                                            |
 | kilobyte | 2<sup>10</sup> (1,024) bytes                     | a couple of paragraphs                              |
-| megabyte | 220 (1,048,576) bytes                 | about 1 book                                        |
-| gigabyte | 230 (1,073,741,824) bytes             | a little more than 1 CD                             |
-| terabyte | 240 (1,099,511,627,776) bytes         | about 1,500 CDs                                     |
-| petabyte | 250 (1,125,899,906,842,624) bytes     | about 20 million filing cabinets of text            |
-| exabyte  | 260 (1,152,921,504,606,846,976) bytes | about 20% of all the words ever spoken by humankind |
+| megabyte | 2<sup>20</sup> (1,048,576) bytes                 | about 1 book                                        |
+| gigabyte | 2<sup>30</sup> (1,073,741,824) bytes             | a little more than 1 CD                             |
+| terabyte | 2<sup>40</sup> (1,099,511,627,776) bytes         | about 1,500 CDs                                     |
+| petabyte | 2<sup>50</sup> (1,125,899,906,842,624) bytes     | about 20 million filing cabinets of text            |
+| exabyte  | 2<sup>60</sup> (1,152,921,504,606,846,976) bytes | about 20% of all the words ever spoken by humankind |
 
 As we write this in 2017, it's common to have a terabyte disk drive
 on your desk. Web services deal with petabytes or exabytes of data.
