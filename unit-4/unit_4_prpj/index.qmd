@@ -45,7 +45,7 @@ for a suggestion of how to organize the different stages of the program.</a>
 
 :::::: ifTime
 (@) Add a "+1" button that will add one to the digits when you press it.
-(@) Make a version of the program that will keep track of numbers in a base other than 2 (try base 16, called 'hexidecimal', also used in computer science)
+(@) Make a version of the program that will keep track of numbers in a base other than 2 (try base 16, called 'hexadecimal', also used in computer science)
 
 :::
 
