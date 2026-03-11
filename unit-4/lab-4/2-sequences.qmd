@@ -57,7 +57,7 @@ much memory:
 |----------|---------------------------------------|-----------------------------------------------------|
 | bit      | either a 1 or a 0                     | 1                                                   |
 | byte     | 8 bits                                | 11011001                                            |
-| kilobyte | 210 (1,024) bytes                     | a couple of paragraphs                              |
+| kilobyte | 2<sup>10</sup> (1,024) bytes                     | a couple of paragraphs                              |
 | megabyte | 220 (1,048,576) bytes                 | about 1 book                                        |
 | gigabyte | 230 (1,073,741,824) bytes             | a little more than 1 CD                             |
 | terabyte | 240 (1,099,511,627,776) bytes         | about 1,500 CDs                                     |
