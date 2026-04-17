@@ -469,6 +469,7 @@ distributed computing.
 
 <li> {{< checkpoint id='1FAIpQLScS0qpfoAQGUyjHLdR2NGRllP3shVcbWukZmCC_ziFIovMLNw' >}} </li>
 
+<li> You're done with the lab! Fill out this exit ticket checkpoint to make sure you got all the big takeaways. {{< checkpoint id='1FAIpQLSerEM0_lwJC18Z4BRVbqJ34vE1OTyVclqUL9EWPflIrBK-NHA' >}} </li>
 </ol>
 :::
 
