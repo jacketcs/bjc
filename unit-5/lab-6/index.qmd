@@ -5,6 +5,6 @@ order: 6
 ---
 
 ::: learn 
-**In this lab,** you'll extend your <a <a href="/unit-3/lab-3/1-find-ties.html" title="Tic-Tac-Toe program">Tic-Tac-Toe
+**In this lab,** you'll extend your <a href="/unit-3/lab-3/1-find-ties.html" title="Tic-Tac-Toe program">Tic-Tac-Toe
 program</a> to make the computer play against you.
 :::
