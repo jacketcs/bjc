@@ -24,7 +24,8 @@ The requirements for this game will be to:
          * Clones with sprite variables that allow the clones to behave uniquely in some way
          * Multiple levels of procedural abstraction that exhibits good design, i.e. the way the various tasks are separated makes sense and is justifiable.
          * High order functions with custom blocks inside the grey ring
-        **note that to count, the use of each technique must be more than trivial, meaning the program would be impossible or must harder to code if the technique were not used. 
+         <p>
+         *<b>Note that</b> to count, the use of each technique must be more than trivial, meaning the program would be impossible or must harder to code if the technique were not used. 
 
 (@) Content requirements:
     - From the various events or abstraction layers (pages) listed in the relevant unit, use at least 5.
