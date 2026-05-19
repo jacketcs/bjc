@@ -1,23 +1,8 @@
 # Titling Extension For Quarto
 
-_TODO_: Add a short description of your extension.
-
-## Installing
-
-_TODO_: Replace the `<github-organization>` with your GitHub organization.
-
-```bash
-quarto add <github-organization>/titling
-```
-
-This will install the extension under the `_extensions` subdirectory.
-If you're using version control, you will want to check in this directory.
+This extension fixes the html `<title>` tag to display the `subtitle` of each qmd.file and "JacketCS CSP" as: subtitle | JacketCS CSP
 
 ## Using
 
-_TODO_: Describe how to use your extension.
-
-## Example
-
-Here is the source code for a minimal example: [example.qmd](example.qmd).
+Works automatically. Just make sure to enter a subtitle field in the header of the quarto file.
 

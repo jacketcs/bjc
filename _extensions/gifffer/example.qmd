@@ -3,4 +3,4 @@ title: "Hellow world"
 gifffer: true
 ---
 
-{{< unitlabpage >}}
+<img title="demostration of the final product of the Click Alonzo Game" alt="demostration of the final product of the Click Alonzo Game" class="ms-4" data-gifffer="/img/1-introduction/U1ImageVideoAddendum_img/U1L1P6_AlonzoFading.gif"/>
