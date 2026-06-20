@@ -53,6 +53,8 @@ website:
             file: snap-cheat-sheet.qmd
           - text: "Snap<em>!</em> Common Fixes for Costumes / Customization"
             file: costume-cheatsheet.qmd
+          - text: "AP CSP Standards Map"
+            file: standards-map.qmd
       - text: "Snap<em>!</em>"
         href: https://snap.berkeley.edu/snap/snap.html
         target: "_blank"
