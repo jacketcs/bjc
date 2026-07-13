@@ -56,3 +56,4 @@ unit-*/lab-*/*.html
 unit-*/*.html
 
 /*.html
+**/*.quarto_ipynb
