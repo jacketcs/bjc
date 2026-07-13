@@ -1276,6 +1276,362 @@
     ]
   },
   {
+    "objectID": "standards-map.html",
+    "href": "standards-map.html",
+    "title": "AP CSP Standards Map",
+    "section": "",
+    "text": "This page maps the College Board AP Computer Science Principles Course and Exam Description (CED) learning objectives and essential-knowledge statements to the place they are covered in this curriculum. It is adapted from the BJC Standards Map.\nCRD-1 · CRD-2 · DAT-1 · DAT-2 · AAP-1 · AAP-2 · AAP-3 · AAP-4 · CSN-1 · CSN-2 · IOC-1 · IOC-2"
+  },
+  {
+    "objectID": "standards-map.html#CRD-1",
+    "href": "standards-map.html#CRD-1",
+    "title": "AP CSP Standards Map",
+    "section": "CRD-1",
+    "text": "CRD-1\n\nCRD-1.A: Unit 4, Lab 3, Page 7, problem 2\n\nCRD-1.A.1: Unit 4, Lab 3, Page 6, vocab box about “computing innovation”\nCRD-1.A.2: Unit 4, Lab 3, Page 6, vocab box about “computing innovation”\nCRD-1.A.3: Unit 4, Lab 3, Page 7, paragraph starting with “Computers these days…”\nCRD-1.A.4: Unit 4, Lab 3, Page 7, paragraph starting with “Another reason a variety…”\nCRD-1.A.5: Unit 4, Lab 3, Page 7, paragraph starting with “Computers these days…”\nCRD-1.A.6: Unit 4, Lab 3, Page 7, paragraph starting with “Computers these days…”\n\nCRD-1.B: Unit 4, Lab 3, Page 7, problem 1\n\nCRD-1.B.1: Unit 4, Lab 3, Page 7, paragraph starting with “How do computers and the Internet…”\nCRD-1.B.2: Unit 1, Lab 2, Page 1, text just before “How not to do pair programming” section\n\nCRD-1.C: Unit 1, Lab 2, Page 1, problem 1\n\nCRD-1.C.1: Unit 1, Lab 2, Page 1, text under “How to collaborate in pair programming” heading"
+  },
+  {
+    "objectID": "standards-map.html#CRD-2",
+    "href": "standards-map.html#CRD-2",
+    "title": "AP CSP Standards Map",
+    "section": "CRD-2",
+    "text": "CRD-2\n\nCRD-2.A: Unit 4, Lab 3, Page 6, problem 3\n\nCRD-2.A.1: Unit 4, Lab 3, Page 6, paragraphs starting with “One purpose of the computing innovations…” and “People also create computing innovations…”\nCRD-2.A.2: Unit 4, Lab 3, Page 7, paragraph starting with “Nobody has enough experience…”\n\nCRD-2.B: Unit 1, Lab 2, Page 5, problem 9\n\nCRD-2.B.1: Unit 1 Lab 1 Page 1, text after problem 3\nCRD-2.B.2: Unit 1, Lab 5, Page 2, vocab box about “code segment”\nCRD-2.B.3: Unit 1, Lab 3, Page 3, text between problems 2 and 3\nCRD-2.B.4: Practice Create Task, Page 3, vocab box about “behavior”\nCRD-2.B.5: Practice Create Task, Page 5, problems 3 and 4\n\nCRD-2.C: Unit 3, Lab 2, Page 2, problem 2 part a\n\nCRD-2.C.1: Unit 3, Lab 2, Page 2, vocab box about “input” and “output”\nCRD-2.C.2: Unit 1, Lab 1, Page 3, text between problems 2 and 3\nCRD-2.C.3: Unit 1, Lab 1, Page 3, text between problems 2 and 3\nCRD-2.C.4: Unit 3, Lab 2, Page 2, vocab box about “input” and “output”\nCRD-2.C.5: Unit 1, Lab 1, Page 3, text between problems 2 and 3\nCRD-2.C.6: Unit 3, Lab 2, Page 2, vocab box about “input” and “output”\n\nCRD-2.D: Unit 3, Lab 2, Page 4, problem 5\n\nCRD-2.D.1: Unit 3, Lab 2, Page 2, vocab box about “input” and “output”\nCRD-2.D.2: Unit 3, Lab 2, Page 2, vocab box about “input” and “output”\n\nCRD-2.E: Practice Create Task, Page 1, problem 2\n\nCRD-2.E.1: Practice Create Task, Page 1, text before problem 1\nCRD-2.E.2: Practice Create Task, Page 1, text before problem 1\nCRD-2.E.3: Practice Create Task, Page 1, text before problem 1\nCRD-2.E.4: Practice Create Task, Page 1, text before problem 1\n\nCRD-2.F: Practice Create Task, Page 3, problem 2\n\nCRD-2.F.1: Practice Create Task, Page 1, text before problem 1\nCRD-2.F.2: Practice Create Task, Page 3, problem 1\nCRD-2.F.3: Practice Create Task, page 3, problem 1 part b\nCRD-2.F.4: Practice Create Task, Page 3, vocab box about “specification”\nCRD-2.F.5: Practice Create Task, Page 3, vocab box about “specification”\nCRD-2.F.6: Practice Create Task, Page 3, problem 2 part b\nCRD-2.F.7: Practice Create Task, Page 3, problem 2 part b\n\nCRD-2.G: Unit 1, Lab 3, Page 3, Problem 3\n\nCRD-2.G.1: Unit 1, Lab 3, Page 3, text under “More about program documentation” section\nCRD-2.G.2: Unit 1, Lab 3, Page 3, text under “Debugging Tip: Commenting Your Code” section\nCRD-2.G.3: Unit 1, Lab 3, Page 3, text under “More about program documentation” section\nCRD-2.G.4: Unit 1, Lab 3, Page 3, text under “More about program documentation” section\nCRD-2.G.5: Unit 1, Lab 3, Page 3, text under “More about program documentation” section\n\nCRD-2.H: Practice Create Task, Page 3, problem 3\n\nCRD-2.H.1: Practice Create Task, Page 3, text between problems 2 and 3\nCRD-2.H.2: Practice Create Task, Page 3, text between problems 2 and 3\n\nCRD-2.I: Practice Create Task, Page 4, problem 2\n\nCRD-2.I.1: Practice Create Task, Page 4, vocab box about “logic error”\nCRD-2.I.2: Practice Create Task, Page 4, vocab box about “syntax error”\nCRD-2.I.3: Practice Create Task, Page 4, vocab box about “run-time error”\nCRD-2.I.4: Practice Create Task, Page 4, vocab box about “overflow error”\nCRD-2.I.5: Practice Create Task, Page 4, text before problem 2\n\nCRD-2.J: Practice Create Task, Page 4, problem 1\n\nCRD-2.J.1: Practice Create Task, Page 4, text before problem 1\nCRD-2.J.2: Practice Create Task, Page 4, text before problem 1\nCRD-2.J.3: Practice Create Task, Page 4, text before problem 1"
+  },
+  {
+    "objectID": "standards-map.html#DAT-1",
+    "href": "standards-map.html#DAT-1",
+    "title": "AP CSP Standards Map",
+    "section": "DAT-1",
+    "text": "DAT-1\n\nDAT-1.A: Unit 4, Lab 4, Page 2, problems 4 and 6 (and whole page)\n\nDAT-1.A.1: Unit 1, Lab 3, Page 3, text after problem 3\nDAT-1.A.2: Unit 4, Lab 4, Page 1, text before the first table\nDAT-1.A.3: Unit 4, Lab 4, Page 1, vocab box about “bit” and Page 5, vocab box about “bit”\nDAT-1.A.4: Unit 4, Lab 4, Page 1, vocab box about “byte”\nDAT-1.A.5: Unit 1, Lab 2, Page 2, vocab box about “procedural abstraction”; Unit 1 Lab 3, Page 5, vocab box about “abstraction by generalization”; and Unit 2, Lab 2, Page 2, vocab box about “data abstraction”\nDAT-1.A.6: Unit 4, Lab 4, Page 2, text before problem 1\nDAT-1.A.7: Unit 4, Lab 4, Page 2, paragraph starting with “The meaning of a sequence” in orange box after problem 6\nDAT-1.A.8: Unit 4, Lab 4, Page 2, text after problem 6 and vocab box about “analog data”\nDAT-1.A.9: Unit 4, Lab 4, Page 2, text after problem 6\nDAT-1.A.10: Unit 4, Lab 4, Page 2, text after problem 6 and vocab box about “sampling”\n\nDAT-1.B: Unit 4, Lab 4, Page 4, problem 4\n\nDAT-1.B.1: Unit 4, Lab 4, Page 3, paragraph before problem 2 starting with “A 64-bit word represents…”\nDAT-1.B.2: Unit 4, Lab 4, Page 3, paragraph after problem 2 starting with “Why can’t programming languages…”\nDAT-1.B.3: Unit 4, Lab 4, Page 4, text before problem 1\n\nDAT-1.C: Unit 4, Lab 4, Page 5, problems 1–4\n\nDAT-1.C.1: Unit 4, Lab 4, Page 2, paragraph before problem 1 starting with “That shows just 449 bits.”\nDAT-1.C.2: Unit 4, Lab 4, Page 5, text before “Reading Binary” heading\nDAT-1.C.3: Unit 4, Lab 4, Page 5, text before “Reading Binary” heading\nDAT-1.C.4: Unit 4, Lab 4, Page 5, text under “Reading Binary” heading\nDAT-1.C.5: Unit 4, Lab 4, Page 5, text under “Reading Binary” heading\n\nDAT-1.D: Unit 4, Lab 4, Page 6, third self-check under problem 1\n\nDAT-1.D.1: Unit 4, Lab 4, Page 6, text before vocab box about “Lossless Compression”\nDAT-1.D.2: Unit 4, Lab 4, Page 6, text before vocab box about “Lossy Compression”\nDAT-1.D.3: Unit 4, Lab 4, Page 6, text before vocab box about “Lossless Compression”\nDAT-1.D.4: Unit 4, Lab 4, Page 6, text after vocab box about “Lossless Compression”\nDAT-1.D.5: Unit 4, Lab 4, Page 6, text after vocab box about “Lossy Compression”\nDAT-1.D.6: Unit 4, Lab 4, Page 6, text under the “Which is best?” heading\nDAT-1.D.7: Unit 4, Lab 4, Page 6, text under the “Which is best?” heading\nDAT-1.D.8: Unit 4, Lab 4, Page 6, text under the “Which is best?” heading"
+  },
+  {
+    "objectID": "standards-map.html#DAT-2",
+    "href": "standards-map.html#DAT-2",
+    "title": "AP CSP Standards Map",
+    "section": "DAT-2",
+    "text": "DAT-2\n\nDAT-2.A: Unit 5, Lab 3, Page 1, problem 6 and Unit 5, Lab 3, Page 2, problem 1\n\nDAT-2.A.1: Unit 5, Lab 3, Page 1, vocab box about “information”\nDAT-2.A.2: Unit 5, Lab 3, Page 1, vocab box about “data”\nDAT-2.A.3: Unit 5, Lab 3, Page 1, text between problems 5 and 6\nDAT-2.A.4: Unit 5, Lab 3, Page 1, text between problems 5 and 6\n\nDAT-2.B: Unit 5, Lab 3, Page 6, problem 1\n\nDAT-2.B.1: Unit 5, Lab 3, Page 6, vocab box about “metadata”\nDAT-2.B.2: Unit 5, Lab 3, Page 6, text before problem 1\nDAT-2.B.3: Unit 5, Lab 3, Page 6, text before problem 1\nDAT-2.B.4: Unit 5, Lab 3, Page 6, text before problem 1\nDAT-2.B.5: Unit 5, Lab 3, Page 6, text before problem 1\n\nDAT-2.C: Unit 5, Lab 3, Page 3, problem 11\n\nDAT-2.C.1: Unit 5, Lab 3, Page 3, text before problem 1\nDAT-2.C.2: Unit 5, Lab 3, Page 3, text between problems 9 and 10 and text after “Challenges in Collecting Data” heading\nDAT-2.C.3: Unit 5, Lab 3, Page 3, text between problems 10 and 11\nDAT-2.C.4: Unit 5, Lab 3, Page 3, vocab box about “cleaning data”\nDAT-2.C.5: Unit 5, Lab 3, Page 3, text before problem 11\nDAT-2.C.6: Unit 5, Lab 3, Page 2, text before problem 1\nDAT-2.C.7: Unit 5, Lab 3, Page 2, text before problem 1\nDAT-2.C.8: Unit 5, Lab 3, Page 2, text before problem 1\n\nDAT-2.D: Unit 5, Lab 3, Page 4, problems 3 and 4\n\nDAT-2.D.1: Unit 5, Lab 3, Page 3, text before problem 1\nDAT-2.D.2: Unit 5, Lab 3, Page 5, text before the “Grouping” heading\nDAT-2.D.3: Unit 3, Lab 2, Page 4, text before problem 1\nDAT-2.D.4: Unit 5, Lab 3, Page 4, text before the first image\nDAT-2.D.5: Unit 5, Lab 3, Page 3, text between problems 3 and 4\nDAT-2.D.6: Unit 5, Lab 3, Page 4, text between problems 3 and 4; and Unit 5, Lab 3, Page 5, text before the “Grouping” heading\n\nDAT-2.E: Unit 5, Lab 3, Page 1, problem 3\n\nDAT-2.E.1: Unit 5, Lab 3, Page 1, text between problems 5 and 6\nDAT-2.E.2: Unit 5, Lab 3, Page 3, vocab box about “cleaning data”\nDAT-2.E.3: Unit 5, Lab 3, Page 1, problem 3 and text between problems 5 and 6; and Unit 5, Lab 3, Page 5, text before problem 1 and vocab box about “classifying data”\nDAT-2.E.4: Unit 5, Lab 3, Page 1, text between problems 5 and 6, vocab box about “insight”\nDAT-2.E.5: Unit 5, Lab 3, Page 1, problem 4"
+  },
+  {
+    "objectID": "standards-map.html#AAP-1",
+    "href": "standards-map.html#AAP-1",
+    "title": "AP CSP Standards Map",
+    "section": "AAP-1",
+    "text": "AAP-1\n\nAAP-1.A: Unit 2, Lab 1, Page 1, problem 4\n\nAAP-1.A.1: Unit 2, Lab 1, Page 1, vocab box about “variable”\nAAP-1.A.2: Unit 3, Lab 1, Page 6, last bullet starting with “Snap! lets you use more than one word in the name of a block or variable.”\nAAP-1.A.3: Unit 4, Lab 4, Page 2, paragraph before problem 7 starting with “But different languages use…” and Unit 2 Lab 2, Page 2, vocab box about “primitive data types”\nAAP-1.A.4: Unit 4, Lab 4, Page 2, paragraph before problem 7 starting with “Snap! has strengths…” and Unit 4, Lab 4, Page 4, paragraph before problem 1 starting with “In Snap!, you can store any data type in a variable.”\n\nAAP-1.B: Unit 2, Lab 1, Page 1, problem 5\n\nAAP-1.B.1: Unit 2, Lab 1, Page 4, problem 4 part b\nAAP-1.B.2: Unit 2, Lab 1, Page 1, text after problem 4 in the “on the exam” box\nAAP-1.B.3: Unit 2, Lab 1, Page 1, problem 5\n\nAAP-1.C: Unit 2, Lab 2, Page 1, problem 2\n\nAAP-1.C.1: Unit 1, Lab 2, Page 3, vocab box about “list”; Unit 2, Lab 1, Page 5, vocab box about “index”; and Unit 2, Lab 2, Page 1 first “on the exam” box\nAAP-1.C.2: Unit 2, Lab 2, Page 1, vocab box about “element”\nAAP-1.C.3: Unit 2, Lab 1, Page 5, vocab box about “index”; and Unit 2, Lab 3, Page 5, vocab box about “index”\nAAP-1.C.4: Unit 2, Lab 3, Page 5, vocab box about “string”\n\nAAP-1.D: Unit 2, Lab 2, Page 2, problem 4 and Unit 3, Lab 2, Page 1, problem 8\n\nAAP-1.D.1: Unit 2, Lab 2, Page 2, vocab box about “abstract data type”\nAAP-1.D.2: Unit 2, Lab 2, Page 2, text before the vocab box about “data types”\nAAP-1.D.3: Unit 2, Lab 2, Page 2, text before the vocab box about “data types”\nAAP-1.D.4: Unit 2, Lab 2, Page 2, text before the vocab box about “data types”\nAAP-1.D.5: Unit 2 Lab 2, Page 2, vocab box about “Abstract Data Types”; and Unit 3, Lab 2, Page 3, text before problem 1\nAAP-1.D.6: Unit 2, Lab 2, Page 1, text beside vocab box about “element”\nAAP-1.D.7: Unit 2, Lab 2, Page 1, “on the exam” box before problem 1 and “on the exam” box after problem 2\nAAP-1.D.8: Unit 2, Lab 1, Page 5, vocab box about “index”"
+  },
+  {
+    "objectID": "standards-map.html#AAP-2",
+    "href": "standards-map.html#AAP-2",
+    "title": "AP CSP Standards Map",
+    "section": "AAP-2",
+    "text": "AAP-2\n\nAAP-2.A: Unit 3, Lab 1, Page 1, problem 2\n\nAAP-2.A.1: Unit 1, Lab 3, Page 1, vocab box about “algorithm” and “pseudocode”\nAAP-2.A.2: Unit 1, Lab 3, Page 1, vocab box about “algorithm” and “pseudocode”\nAAP-2.A.3: Unit 1, Lab 3, Page 1, vocab box about “algorithm” and “pseudocode”\nAAP-2.A.4: Unit 2, Lab 3, Page 1, last sentence in the vocab box after problem 3\n\nAAP-2.B: Unit 2, Lab 1, Page 2, problem 2\n\nAAP-2.B.1: Unit 2, Lab 3, Page 1, vocab box about “sequencing”\nAAP-2.B.2: Unit 1, Lab 5, Page 2, vocab box about “code segment”\nAAP-2.B.3: Unit 1, Lab 2, Page 5, vocab box about “expression”\nAAP-2.B.4: Unit 1, Lab 2, Page 5, vocab box about “expression”\nAAP-2.B.5: Unit 2, Lab 4, Page 1, “on the exam” box between problems 2 and 3\nAAP-2.B.6: Unit 1, Lab 5, Page 2, vocab box about “code segment”\nAAP-2.B.7: Unit 3, Lab 1, Page 6, text before problem 1 beginning with “Use abstraction”\n\nAAP-2.C: Unit 2, Lab 3, Page 4, problem 3\n\nAAP-2.C.1: Unit 2, Lab 4, Page 1, “on the exam” box between problems 2 and 3\nAAP-2.C.2: Unit 2, Lab 4, Page 1, “on the exam” box between problems 2 and 3\nAAP-2.C.3: Unit 2, Lab 4, Page 1, “on the exam” box between problems 2 and 3; and Unit 2, Lab 3, Page 2, “on the exam” box\nAAP-2.C.4: Unit 2, Lab 4, Page 1, “on the exam” box between problems 2 and 3\n\nAAP-2.D: Unit 1, Lab 2, Page 3, problem 3\n\nAAP-2.D.1: Unit 1, Lab 2, Page 3, vocab box about “Lists, Strings, and Concatenation”\nAAP-2.D.2: Unit 1, Lab 2, Page 3, vocab box about “Lists, Strings, and Concatenation”\n\nAAP-2.E: Unit 2, Lab 3, Page 1, problem 2; Unit 2, Lab 3, Page 2, problem 6; Unit 2, Lab 3, Page 3, problem 1; and Unit 2, Lab 3, Page 4, problem 3\n\nAAP-2.E.1: Unit 2, Lab 1, Page 2, vocab box about “Boolean value”\nAAP-2.E.2: Unit 2, Lab 3, Page 1, “on the exam” box between problems 2 and 3\n\nAAP-2.F: Unit 2, Lab 3, Page 2, problem 7; and Unit 2, Lab 3, Page 4, problem 7\n\nAAP-2.F.1: Unit 2, Lab 3, Page 2, text before problem 1 and “on the exam” box after problem 2\nAAP-2.F.2: Unit 2, Lab 3, Page 2, text between problems 1 and 2, and problem 2\nAAP-2.F.3: Unit 2, Lab 3, Page 2, text between problems 1 and 2, and problem 2\nAAP-2.F.4: Unit 2, Lab 3, Page 2, text between problems 1 and 2, and problem 2\nAAP-2.F.5: Unit 2, Lab 3, Page 2, text before problem 1\n\nAAP-2.G: Unit 3, Lab 1, Page 1, problem 2\n\nAAP-2.G.1: Unit 2, Lab 3, Page 1, vocab box about “selection”\n\nAAP-2.H: Unit 2, Lab 3, Page 1, problem 2; and Unit 2, Lab 3, Page 3, problem 3\n\nAAP-2.H.1: Unit 2, Lab 3, Page 1, text before problem 1\nAAP-2.H.2: Unit 2, Lab 4, Page 1, “on the exam” box between problems 5 and 6\nAAP-2.H.3: Unit 2, Lab 4, Page 3, “on the exam” box before problem 6\n\nAAP-2.I: Unit 2, Lab 3, Page 3, problems 2 and 3\n\nAAP-2.I.1: Unit 2, Lab 3, Page 3, vocab box about “nested conditional statement”\nAAP-2.I.2: Unit 2, Lab 3, Page 3, vocab box about “nested conditional statement”\n\nAAP-2.J: Unit 3, Lab 1, Page 1, problem 2\n\nAAP-2.J.1: Unit 1, Lab 3, Page 6, vocab box about “iteration”\n\nAAP-2.K: Unit 2, Lab 2, Page 3, problems 1 and 5\n\nAAP-2.K.1: Unit 1, Lab 3, Page 6, vocab box about “iteration”\nAAP-2.K.2: Unit 1, Lab 3, Page 4, “on the exam” box after problem 4\nAAP-2.K.3: Unit 1, Lab 5, Page 2, “on the exam” box\nAAP-2.K.4: Unit 1, Lab 5, Page 2, problem 4c\nAAP-2.K.5: Unit 1, Lab 5, Page 2, problem 4b\n\nAAP-2.L: Unit 2, Lab 3, Page 3, problem 1\n\nAAP-2.L.1: Unit 2, Lab 3, Page 3, problem 1\nAAP-2.L.2: Unit 2, Lab 4, Page 1, “on the exam” box about “order of operations” and in problem 6\nAAP-2.L.3: Unit 2, Lab 3, Page 3, problem 1\nAAP-2.L.4: Unit 2, Lab 3, Page 3, problem 1\nAAP-2.L.5: Unit 2, Lab 3, Page 3, problem 1\n\nAAP-2.M: Unit 2, Lab 4, Page 2, problems 3 and 4\n\nAAP-2.M.1: Unit 2, Lab 4, Page 2, text between problems 3 and 4\nAAP-2.M.2: Unit 2, Lab 4, Page 1, problem 3; Unit 2, Lab 4, Page 3, text after problem 5; and Unit 5, Lab 1, Page 5 text after problem 10\nAAP-2.M.3: Unit 2, Lab 4, Page 3, text after problem 5; and Unit 3, Lab 1, Page 1, problem 2\n\nAAP-2.N: Unit 2, Lab 1, Page 5, problems 4, 5, 6 part d, and 8; and Unit 2, Lab 2, Page 1, problem 3\n\nAAP-2.N.1: Unit 2, Lab 1, Page 5; and Unit 2, Lab 2, Page 1\nAAP-2.N.2: Unit 2, Lab 2, Page 1, second “on the exam” box after problem 8\n\nAAP-2.O: Unit 2, Lab 2, Page 3, problems 1 and 6\n\nAAP-2.O.1: Unit 5, Lab 1, Page 3, vocab box about “binary search”\nAAP-2.O.2: Unit 2, Lab 2, Page 3, vocab box about “traversing a list”\nAAP-2.O.3: Unit 2, Lab 2, Page 3, “on the exam” box between problems 5 and 6\nAAP-2.O.4: Unit 2, Lab 4, Page 3, text after problem 5\nAAP-2.O.5: Unit 5, Lab 1, Page 2, vocab box about “linear search”\n\nAAP-2.P: Unit 5, Lab 1, Page 3, problem 6; Unit 5, Lab 1, Page 4, problems 7 and 10\n\nAAP-2.P.1: Unit 5, Lab 1, Page 3, vocab box about “binary search”\nAAP-2.P.2: Unit 5, Lab 1, Page 3, vocab box about “binary search,” problem 5, the text between problems 5 and 6, and problem 6\nAAP-2.P.3: Unit 5, Lab 1, Page 4, problems 1, 4, 7, 9"
+  },
+  {
+    "objectID": "standards-map.html#AAP-3",
+    "href": "standards-map.html#AAP-3",
+    "title": "AP CSP Standards Map",
+    "section": "AAP-3",
+    "text": "AAP-3\n\nAAP-3.A: Unit 1, Lab 3, Page 3, problem 5; and Unit 1, Lab 3, Page 4, problem 2\n\nAAP-3.A.1: Unit 1, Lab 2, Page 4, vocab box about “Procedures, Reporters, and Commands”\nAAP-3.A.2: Unit 1, Lab 2, Page 4, vocab box about “Procedures, Reporters, and Commands”\nAAP-3.A.3: Unit 1, Lab 3, Page 3, vocab box about “parameter” and “argument”\nAAP-3.A.4: Unit 1, Lab 3, Page 3, text after problem 5\nAAP-3.A.5: Unit 1, Lab 3, Page 4, “on the exam” box after problem 8\nAAP-3.A.6: Unit 1, Lab 2, Page 2, “on the exam” box\nAAP-3.A.7: Unit 2, Lab 4, Page 3, “on the exam” box after problem 5\nAAP-3.A.8: Unit 2, Lab 1, Page 2, “on the exam” box between problems 1 and 2\nAAP-3.A.9: Unit 2, Lab 1, Page 2, “on the exam” box between problems 1 and 2\n\nAAP-3.B: Unit 3, Lab 1, Page 4, problem 5\n\nAAP-3.B.1: Unit 3, Lab 1, Page 4, vocab box about “procedural abstraction”\nAAP-3.B.2: Unit 3, Lab 2, Page 4, vocab box about “modularity”\nAAP-3.B.3: Unit 3, Lab 2, Page 4, vocab box about “modularity”\nAAP-3.B.4: Unit 1, Lab 3, Page 3, text before problem 4; and Unit 1, Lab 3, Page 5, text between problems 3 and 4\nAAP-3.B.5: Unit 3, Lab 1, Page 4, vocab box about “procedural abstraction”\nAAP-3.B.6: Unit 1, Lab 2, Page 2, text between “on the exam” box and problem 4\nAAP-3.B.7: Unit 1, Lab 2, Page 2, text between “on the exam” box and problem 4; and Unit 1 Lab 3, Page 5 text below problem 4\n\nAAP-3.C: Unit 3, Lab 1, Page 4, problem 2\n\nAAP-3.C.1: Unit 1, Lab 3, Page 4, “on the exam” box\nAAP-3.C.2: Unit 2, Lab 4, Page 3, “on the exam” box\n\nAAP-3.D: Unit 2, Lab 4, Page 2, problem 3\n\nAAP-3.D.1: Unit 2, Lab 4, Page 2, vocab box about “software library”\nAAP-3.D.2: Unit 2, Lab 4, Page 2, text between problems 3 and 4\nAAP-3.D.3: Unit 2, Lab 4, Page 2, text before problem 1\nAAP-3.D.4: Unit 2, Lab 4, Page 2, vocab box about “APIs”\nAAP-3.D.5: Unit 2, Lab 4, Page 2, vocab box about “APIs”\n\nAAP-3.E: Unit 2, Lab 1, Page 1, problem 4; and Unit 1, Lab 2, Page 5, problems 4 and 5, the four self-check questions\n\nAAP-3.E.1: Unit 1, Lab 2, Page 5, “on the exam” box after problem 4\nAAP-3.E.2: Unit 1, Lab 2, Page 5, “on the exam” box after problem 4\n\nAAP-3.F: Unit 5, Lab 2, Page 1, problem 2\n\nAAP-3.F.1: Unit 5, Lab 2, Page 1, vocab box about “simulations”\nAAP-3.F.2: Unit 5, Lab 2, Page 1, vocab box about “simulations”\nAAP-3.F.3: Unit 5, Lab 2, Page 1, text after vocab box about “simulations”\nAAP-3.F.4: Unit 5, Lab 2, Page 1, text after list after vocab box about “simulations”\nAAP-3.F.5: Unit 5, Lab 2, Page 1, text before problem 1\nAAP-3.F.6: Unit 5, Lab 2, Page 1, list after vocab box about “simulations”\nAAP-3.F.7: Unit 5, Lab 2, Page 2, problem 6\nAAP-3.F.8: Unit 5, Lab 2, Page 2, problem 5"
+  },
+  {
+    "objectID": "standards-map.html#AAP-4",
+    "href": "standards-map.html#AAP-4",
+    "title": "AP CSP Standards Map",
+    "section": "AAP-4",
+    "text": "AAP-4\n\nAAP-4.A: Unit 5, Lab 1, Page 5, problem 9; and Unit 5, Lab 1, Page 6, problem 2\n\nAAP-4.A.1: Unit 5, Lab 1, Page 2, vocab box about “problem” and “instance of a problem”\nAAP-4.A.2: Unit 5, Lab 1, Page 6, vocab box about “decision problem” and “optimization problem”\nAAP-4.A.3: Unit 5, Lab 1, Page 4, vocab box about “efficiency”\nAAP-4.A.4: Unit 5, Lab 1, Page 4, text between problems 6 and 7\nAAP-4.A.5: Unit 5, Lab 1, Page 4, text between problems 6 and 7\nAAP-4.A.6: Unit 5, Lab 1, Page 4, problem 9; and Unit 5, Lab 1, Page 6, text before vocab box about “optimization problem” and “decision problem”\nAAP-4.A.7: Unit 5, Lab 1, Page 5, vocab box about “reasonable time”\nAAP-4.A.8: Unit 5, Lab 1, Page 6, text before vocab box about “optimization problem” and “decision problem”\nAAP-4.A.9: Unit 5, Lab 1, Page 6, text before vocab box about “optimization problem” and “decision problem”\n\nAAP-4.B: Unit 5, Lab 1, Page 6, problem 3\n\nAAP-4.B.1: Unit 5, Lab 1, Page 6, vocab box about “decidable problem”\nAAP-4.B.2: Unit 5, Lab 1, Page 6, vocab box about “undecidable problem”\nAAP-4.B.3: Unit 5, Lab 1, Page 6, vocab box about “undecidable problem”"
+  },
+  {
+    "objectID": "standards-map.html#CSN-1",
+    "href": "standards-map.html#CSN-1",
+    "title": "AP CSP Standards Map",
+    "section": "CSN-1",
+    "text": "CSN-1\n\nCSN-1.A: Unit 4, Lab 1, Page 1, problem 4\n\nCSN-1.A.1: Unit 4, Lab 1, Page 1, vocab box about “computing device”\nCSN-1.A.2: Unit 4, Lab 1, Page 1, vocab box about “computing system”\nCSN-1.A.3: Unit 4, Lab 1, Page 1, vocab box about “computing network”\nCSN-1.A.4: Unit 4, Lab 1, Page 1, vocab box about “computing network”\nCSN-1.A.5: Unit 4, Lab 1, Page 2, vocab box about “path”\nCSN-1.A.6: Unit 4, Lab 1, Page 2, vocab box about “routing”\nCSN-1.A.7: Unit 4, Lab 1, Page 1, vocab box about “bandwidth”\nCSN-1.A.8: Unit 4, Lab 1, Page 1, vocab box about “bandwidth”\n\nCSN-1.B: Unit 4, Lab 1, Page 3, problem 3\n\nCSN-1.B.1: Unit 4, Lab 1, Page 1, vocab box about the “Internet” and text after “How Does the Internet Work?” heading\nCSN-1.B.2: Unit 4, Lab 1, Page 1, vocab box about “Internet”\nCSN-1.B.3: Unit 4, Lab 1, Page 3, vocab box about “protocol”\nCSN-1.B.4: Unit 4, Lab 1, Page 3, text before problem 2\nCSN-1.B.5: Unit 4, Lab 1, Page 2, text before problem 1\nCSN-1.B.6: Unit 4, Lab 1, Page 2, vocab box about “scalability”\nCSN-1.B.7: Unit 4, Lab 1, Page 2, text before problem 1\n\nCSN-1.C: Unit 4, Lab 1, Page 3, problem 1\n\nCSN-1.C.1: Unit 4, Lab 1, Page 3, vocab box about “packets”\nCSN-1.C.2: Unit 4, Lab 1, Page 3, vocab box about “packets” and text before problem 1\nCSN-1.C.3: Unit 4, Lab 1, Page 3, text before problem 1\nCSN-1.C-4: Unit 4, Lab 1, Page 3, example under “Internet Abstraction Hierarchy” heading\n\nCSN-1.D: Unit 4, Lab 1, Page 1, problem 1\n\nCSN-1.D.1: Unit 4, Lab 1, Page 1, text before problem 1 and vocab box about the “World Wide Web”\nCSN-1.D.2: Unit 4, Lab 1, Page 1, text before problem 1; and Unit 4, Lab 1, Page 3, bullet about “Application Layer Protocols” under “Internet Abstraction Hierarchy” heading\nCSN-1.D.3: Unit 4, Lab 1, Page 1, text before problem 1 and vocab box about the “World Wide Web”\n\nCSN-1.E: Unit 4, Lab 1, Page 2, problem 3\n\nCSN-1.E.1: Unit 4, Lab 1, Page 1, text after “How Does the Internet Work?” heading\nCSN-1.E.2: Unit 4, Lab 1, Page 2, vocab box about “redundancy”\nCSN-1.E.3: Unit 4, Lab 1, Page 2, text before problem 1\nCSN-1.E.4: Unit 4, Lab 1, Page 2, text before problem 1\nCSN-1.E.5: Unit 4, Lab 1, Page 2, text before problem 1; and Unit 4, Lab 1, Page 2, vocab box about “fault tolerance”\nCSN-1.E.6: Unit 4, Lab 1, Page 2, text before problem 1\nCSN-1.E.7: Unit 4, Lab 1, Page 2, text before problem 1"
+  },
+  {
+    "objectID": "standards-map.html#CSN-2",
+    "href": "standards-map.html#CSN-2",
+    "title": "AP CSP Standards Map",
+    "section": "CSN-2",
+    "text": "CSN-2\n\nCSN-2.A: Unit 5, Lab 1, Page 8, problems 1–3\n\nCSN-2.A.1: Unit 5, Lab 1, Page 8, vocab box about “sequential computing”\nCSN-2.A.2: Unit 5, Lab 1, Page 8, vocab box about “parallel computing”\nCSN-2.A.3: Unit 5, Lab 1, Page 8, vocab box about “distributed computing”\nCSN-2.A.4: Unit 5, Lab 1, Page 8, text before problem 1, and also problem 3\nCSN-2.A.5: Unit 5, Lab 1, Page 8, self-check quiz in problem 1 and text after problem 1\nCSN-2.A.6: Unit 5, Lab 1, Page 8, problem 2 and text between problems 2 and 3\nCSN-2.A.7: Unit 5, Lab 1, Page 8, vocab box about speedup\n\nCSN-2.B: Unit 5, Lab 1, Page 8, problem 5\n\nCSN-2.B.1: Unit 5, Lab 1, Page 8, text between problems 2 and 3\nCSN-2.B.2: Unit 5, Lab 1, Page 8, text between problems 2 and 3\nCSN-2.B.3: Unit 5, Lab 1, Page 8, text between problems 2 and 3\nCSN-2.B.4: Unit 5, Lab 1, Page 8, text between problems 2 and 3\nCSN-2.B.5: Unit 5, Lab 1, Page 8, problems 3 and 4"
+  },
+  {
+    "objectID": "standards-map.html#IOC-1",
+    "href": "standards-map.html#IOC-1",
+    "title": "AP CSP Standards Map",
+    "section": "IOC-1",
+    "text": "IOC-1\n\nIOC-1.A: Unit 3, Lab 5, Page 2, problem 1 and Unit 3, Lab 4, Page 3, problem 4\n\nIOC-1.A.1: Unit 4, Lab 3, Page 6, paragraph starting with “People also create computing innovations…”\nIOC-1.A.2: Unit 4, Lab 3, Page 6, paragraph starting with “One purpose of the computing innovations…”; and Unit 3, Lab 5, Page 1, problem 1\nIOC-1.A.3: Unit 4, Lab 3, Page 2, text before problem 1; and Unit 4, Lab 3, Page 6, text between problems 2 and 3\nIOC-1.A.4: Unit 4, Lab 3, Page 6, text before problem 3\nIOC-1.A.5: Unit 4, Lab 3, Page 6, paragraphs starting with “In this course…” “One purpose of the computing innovations…” “People also create computing innovations…” and “Advances in technology…”\n\nIOC-1.B: Unit 4, Lab 3, Page 6, problem 3\n\nIOC-1.B.1: Unit 4, Lab 1, Page 1, text after problem 1; Unit 4, Lab 3, Page 6, text between problems 2 and 3; and Unit 3, Lab 4, Page 3, problem 3\nIOC-1.B.2: Unit 4, Lab 3, Page 6, text between problems 2 and 3\nIOC-1.B.3: Unit 4, Lab 3, Page 2, text before problem 1\nIOC-1.B.4: Unit 4, Lab 3, Page 2, text before problem 1\nIOC-1.B.5: Unit 4, Lab 3, Page 6, text between problems 2 and 3\nIOC-1.B.6: Unit 4, Lab 3, Page 6, text between problems 2 and 3\n\nIOC-1.C: Unit 4, Lab 3, Page 5, problems 2 and 3\n\nIOC-1.C.1: Unit 4, Lab 3, Page 5, vocab box about the “digital divide”\nIOC-1.C.2: Unit 4, Lab 3, Page 5, vocab box about the “digital divide”\nIOC-1.C.3: Unit 4, Lab 3, Page 5, vocab box about the “digital divide”\nIOC-1.C.4: Unit 4, Lab 3, Page 5, problem 2\nIOC-1.C.5: Unit 4, Lab 3, Page 5, problems 2 and 3\n\nIOC-1.D: Unit 3, Lab 4, Page, 3, problem 3\n\nIOC-1.D.1: Unit 3, Lab 4, Page, 3, problem 3\nIOC-1.D.2: Unit 3, Lab 4, Page, 3, problem 3\nIOC-1.D.3: Unit 3, Lab 4, Page, 3, problem 3\n\nIOC-1.E: Unit 4, Lab 3, Page 6, problem 2\n\nIOC-1.E.1: Unit 4, Lab 3, Page 6, paragraph starting with “Advances in technology…”\nIOC-1.E.2: Unit 4, Lab 3, Page 6, paragraph starting with “Another important topic in biochemistry…”\nIOC-1.E.3: Unit 4, Lab 3, Page 6, vocab box about “citizen science”\nIOC-1.E.4: Unit 4, Lab 3, Page 6, vocab box about “crowdsourcing”\nIOC-1.E.5: Unit 4, Lab 3, Page 7, paragraph starting with “The worldwide nature of the Internet…”\nIOC-1.E.6: Unit 4, Lab 3, Page 6, paragraph starting with “Another kind of crowdsourced collaboration…”\n\nIOC-1.F: Unit 1, Lab 4, Page 4, problem 5\n\nIOC-1.F.1: Unit 2, Lab 5, Page 1, text between problem 4 and 5\nIOC-1.F.2: Unit 2, Lab 5, Page 4, text under “Easy Copies, Easy Distribution” heading\nIOC-1.F.3: Unit 2, Lab 5, Page 5, text under “Digital Rights Management (DRM)” heading\nIOC-1.F.4: Unit 2, Lab 5, Page 1, text after problem 5\nIOC-1.F.5: Unit 2, Lab 5, Page 2, vocab box about free software, open source, and open access\nIOC-1.F.6: Unit 2, Lab 5, Page 1, text after problem 5\nIOC-1.F.7: Unit 2, Lab 5, Page 2, text after vocab box about free software, open source, and open access\nIOC-1.F.8: Unit 4, Lab 3, Page 2, text before problem 1\nIOC-1.F.9: Unit 4, Lab 3, Page 3, problem 1\nIOC-1.F.10: Unit 4, Lab 3, Page 5, problem 2 part b\nIOC-1.F.11: Unit 1, Lab 4, Page 1, text before problem 1; Unit 1, Lab 4, Page 2, paragraph after problem 2 starting with “Your cell phone carrier…”; Unit 2, Lab 5, Page 4, text under “Information Wants to Be Free” and “Easy Copies, Easy Distribution” headings; and Unit 3, Lab 4, Page 3, problem 3"
+  },
+  {
+    "objectID": "standards-map.html#IOC-2",
+    "href": "standards-map.html#IOC-2",
+    "title": "AP CSP Standards Map",
+    "section": "IOC-2",
+    "text": "IOC-2\n\nIOC-2.A: Unit 1, Lab 4, Page 2, problem 3 part b\n\nIOC-2.A.1: Unit 1, Lab 4, Page 1, vocab box about “personally identifiable information”\nIOC-2.A.2: Unit 1, Lab 4, Page 2, paragraph before problem 1 starting with “The search engine you use…”\nIOC-2.A.3: Unit 1, Lab 4, Page 2, paragraph before problem 3 starting with “You may think if you don’t have a Facebook account…”\nIOC-2.A.4: Unit 1, Lab 4, Page 2, paragraph after problem 2 starting with “Your cell phone carrier…”\nIOC-2.A.5: Unit 1, Lab 4, Page 1, text before problem 1; and Unit 1, Lab 4, Page 2, problem 5\nIOC-2.A.6: Unit 1, Lab 4, Page 2, paragraph before problem 1 starting with “What does Google do…”\nIOC-2.A.7: Unit 1, Lab 4, Page 1, text after problem 3\nIOC-2.A.8: Unit 1, Lab 4, Page 2, paragraph after problem 1 starting with “Many people find it convenient…”\nIOC-2.A.9: Unit 1, Lab 4, Page 1, text before problem 1\nIOC-2.A.10: Unit 1, Lab 4, Page 2, paragraphs between problems 3 and 4\nIOC-2.A.11: Unit 1, Lab 4, Page 2, paragraph before problem 3 starting with “You may think if you don’t have a Facebook account…”\nIOC-2.A.12: Unit 1, Lab 4, Page 1, text before problem 1\nIOC-2.A.13: Unit 1, Lab 4, Page 2, paragraph before problem 3 starting with “You may think if you don’t have a Facebook account…”\nIOC-2.A.14: Unit 1, Lab 4, Page 2, paragraph after problem 2 starting with “Your cell phone carrier…”\nIOC-2.A.15: Unit 1, Lab 4, Page 2, paragraph before problem 3 starting with “You may think if you don’t have a Facebook account…”\n\nIOC-2.B: Unit 4, Lab 2, Page 3, problem 2; Unit 4, Lab 2, Page 4, problem 4; Unit 4, Lab 2, Page 5, problem 2; and Unit 4, Lab 2, Page 6, problem 1\n\nIOC-2.B.1: Unit 4, Lab 2, Page 6, bullet 2: “Use authentication”\nIOC-2.B.2: Unit 4, Lab 2, Page 6, vocab box about “strong passwords” and bullet 2a: “Use strong passwords”\nIOC-2.B.3: Unit 4, Lab 2, Page 6, bullet 2b: “Enable multifactor authentication”\nIOC-2.B.4: Unit 4, Lab 2, Page 6, bullet 2b: “Enable multifactor authentication”\nIOC-2.B.5: Unit 4, Lab 2, Page 1, vocab boxes about “encryption,” “decryption,” and “symmetric encryption”; and Unit 4, Lab 2, Page 3, vocab box about “public key encryption”\nIOC-2.B.6: Unit 4, Lab 2, Page 3, vocab box about “certificate authorities”\nIOC-2.B.7: Unit 4, Lab 2, Page 5, vocab box about “antivirus or anti-malware software”\nIOC-2.B.8: Unit 4, Lab 2, Page 5, vocab box about “computer virus” and paragraph under “Common Security Issues for Users” heading starting with “One kind of malware…”\nIOC-2.B.9: Unit 4, Lab 2, Page 5, vocab box about “malware” and paragraph under “Common Security Issues for Users” heading starting with “The general name for programs…”\nIOC-2.B.10: Unit 4, Lab 2, Page 5, text under “Common Security Issues for Users” heading; and Unit 4, Lab 2, Page 6, bullet 1: “Run up-to-date software”\nIOC-2.B.11: Unit 4, Lab 2, Page 6, bullet 5: “Regularly review your security settings”\n\nIOC-2.C: Unit 4, Lab 2, Page 5, problem 1\n\nIOC-2.C.1: Unit 4, Lab 2, Page 5, vocab box about “phishing” and paragraph under “Common Security Issues for Users” heading starting with “Another common attack strategy…”\nIOC-2.C.2: Unit 4, Lab 2, Page 5, vocab box about “keylogging” and text under “Common Security Issues for Users” heading\nIOC-2.C.3: Unit 4, Lab 2, Page 5, text just before vocab box about “rogue access point”\nIOC-2.C.4: Unit 4, Lab 2, Page 5, vocab box about “rogue access point” and nearby text\nIOC-2.C.5: Unit 4, Lab 2, Page 6, bullet 3: “Don’t click links”\nIOC-2.C.6: Unit 4, Lab 2, Page 6, bullet 3: “Don’t click links”\nIOC-2.C.7: Unit 4, Lab 2, Page 5, paragraph under “Common Security Issues for Users” heading starting with “The general name for programs…”; and Unit 4, Lab 2, Page 6, bullet 4: “Don’t use sketchy software”"
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "Posts",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nBomb Game Instructions\n\n\n\n\n\n\nAnnouncement\n\n\nBomb Game\n\n\n\nThese are the instructions to the bomb game that we’ll be playing today.\n\n\n\n\n\nAug 21, 2023\n\n\nMs. Chang\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 1 Announcements\n\n\n\n\n\n\nAnnouncement\n\n\n\nFirst week announcements, checking up on the class and what to expect.\n\n\n\n\n\nAug 16, 2023\n\n\nMs. Chang and Ms. O’Keefe\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/announcements/bomb-game.html",
+    "href": "posts/announcements/bomb-game.html",
+    "title": "Bomb Game Instructions",
+    "section": "",
+    "text": "You’re alone in a room with a bomb. Your friends, the “Experts”, have the manual needed to defuse it. But there’s a catch: the Experts can’t see the bomb, so everyone will need to talk it out – fast!\nPut your puzzle-solving and communication skills to the test as you and your friends race to defuse bombs quickly before time runs out!\n(Taken from their website)\n\n\n\n\nIn the game, you’ll have a bomb on the “table”, and you have to defuse it with a partner\n\nHere’s the catch: the person who can see the bomb doesn’t have the instructions to defuse it and the person who has the instructions cannot see the bomb\nYour goal is to communicate effectively so that the defuser (driver) knows what to do with the bomb and the manual reader (navigator) knows what instructions to provide to the defuser.\n\n\n\n\n\nAt all the Mac computers, the game will be under the Applications folder (look for the folder with a triangle shape on the bottom right of the desktop menu bar)\nOn the other computer/your phone, have the bomb manual open. LINK TO THE BOMB MANUAL\nPlay the tutorial together so that everyone knows how to work with the bomb.\nAfter the tutorial is done, jump right into the game. At this point, the defuser (person on the game) should not be looking at the manual in any form; likewise the manual reader should not be looking at the game at all. The only way for you to know what’s going on in the other person’s side is to keep talking to each other."
+  },
+  {
+    "objectID": "posts/announcements/bomb-game.html#about-the-game",
+    "href": "posts/announcements/bomb-game.html#about-the-game",
+    "title": "Bomb Game Instructions",
+    "section": "",
+    "text": "You’re alone in a room with a bomb. Your friends, the “Experts”, have the manual needed to defuse it. But there’s a catch: the Experts can’t see the bomb, so everyone will need to talk it out – fast!\nPut your puzzle-solving and communication skills to the test as you and your friends race to defuse bombs quickly before time runs out!\n(Taken from their website)\n\n\n\n\nIn the game, you’ll have a bomb on the “table”, and you have to defuse it with a partner\n\nHere’s the catch: the person who can see the bomb doesn’t have the instructions to defuse it and the person who has the instructions cannot see the bomb\nYour goal is to communicate effectively so that the defuser (driver) knows what to do with the bomb and the manual reader (navigator) knows what instructions to provide to the defuser.\n\n\n\n\n\nAt all the Mac computers, the game will be under the Applications folder (look for the folder with a triangle shape on the bottom right of the desktop menu bar)\nOn the other computer/your phone, have the bomb manual open. LINK TO THE BOMB MANUAL\nPlay the tutorial together so that everyone knows how to work with the bomb.\nAfter the tutorial is done, jump right into the game. At this point, the defuser (person on the game) should not be looking at the manual in any form; likewise the manual reader should not be looking at the game at all. The only way for you to know what’s going on in the other person’s side is to keep talking to each other."
+  },
+  {
+    "objectID": "posts/announcements/230816.html",
+    "href": "posts/announcements/230816.html",
+    "title": "Week 1 Announcements",
+    "section": "",
+    "text": "Welcome to the class! To get started, please first fill out the student information form in Google Classroom. We’re just asking you to fill this out so that we know more about you and so that you can know more about us!\nAs for other things to check, please look at at the general expectations on the home page. These will always be there for you to look at and you are expected to follow them. Please also check anything else that is already on Google Classroom."
+  },
+  {
+    "objectID": "create-task/submitting.html",
+    "href": "create-task/submitting.html",
+    "title": "Submitting Your Create Task",
+    "section": "",
+    "text": "Here are a few things to help you get started on submitting your create task. If you have any problems with these steps, ask your teacher, and we can help you through the entire technical process.",
+    "crumbs": [
+      "AP Performance Create Task",
+      "Submitting Your Create Task"
+    ]
+  },
+  {
+    "objectID": "create-task/submitting.html#record-your-video",
+    "href": "create-task/submitting.html#record-your-video",
+    "title": "Submitting Your Create Task",
+    "section": "Record your Video",
+    "text": "Record your Video\n\nFollow these steps based on what you are using to record:\n\nChromebook\nMacOS\nWindows 11\n\nMake sure that you can meet these requirements for the video:\n\nYour video must demonstrate your program running, including:\n\nInput to your program\nAt least one aspect of the functionality of your program\nOutput produced by your program\n\nYour video may NOT contain:\n\nAny distinguishing information about yourself\nVoice narration (though text captions are encouraged)\n\nYour video must be:\n\nEither .mp4, .wmv, .avi, .mov, or .webm format\nNo more than 1 minute in length\nNo more than 30MB in file size",
+    "crumbs": [
+      "AP Performance Create Task",
+      "Submitting Your Create Task"
+    ]
+  },
+  {
+    "objectID": "create-task/submitting.html#export-your-program-code",
+    "href": "create-task/submitting.html#export-your-program-code",
+    "title": "Submitting Your Create Task",
+    "section": "Export your Program Code",
+    "text": "Export your Program Code\n\nOpen your Snap! project\nGo to the file icon and click on export summary\nIt will download a .html file\nOpen it in your browser and print it to .pdf.\n\nMake sure you can see all the code by scaling the contents of the file (More settings &gt; Scale)\n\nSee the video below on how to do this on Chrome. (Including removing your name)\nIf your name is at the top and/or bottom of the page, just unclick the headers/footer setting (More settings)",
+    "crumbs": [
+      "AP Performance Create Task",
+      "Submitting Your Create Task"
+    ]
+  },
+  {
+    "objectID": "create-task/submitting.html#submit",
+    "href": "create-task/submitting.html#submit",
+    "title": "Submitting Your Create Task",
+    "section": "Submit",
+    "text": "Submit\n\nAP Exam\n\nGo to myap.collegeboard.org\nUnder AP Computer Science Principles, go to the “Digital Portfolio”\nYou can submit all your materials there. Only click on the “submit final” buttons if you are sure that you are done. Any other “submit” buttons are not final submissions\n\nFor Component A: Program Code, upload the pdf that you follow the steps above to make. MAKE SURE YOU NAME IS NOT PRESENT IN ANY FORM ON THE PDF\nFor Component B: Video, upload the video.\nFor Component C: Personalized Project Reference, copy all your images to the submission.\n\n\n\n\nGoogle Classroom\nFor everyone in Google Classroom, you need to\n\nupload the video to the Google Classroom submission,\nmake sure you submit the right Component C: Personalized Project Reference as a Google Doc, and\nsubmit the link to your Snap Project.",
+    "crumbs": [
+      "AP Performance Create Task",
+      "Submitting Your Create Task"
+    ]
+  },
+  {
+    "objectID": "create-task/index.html",
+    "href": "create-task/index.html",
+    "title": "AP Performance Create Task",
+    "section": "",
+    "text": "For this course, you will be working on a project that will be graded both by your teacher and the AP exam scorers.\nThe project is mainly graded based off your understanding of the main ideas of the course (ergo “Computer Science Principles”), not how amazing your project is.\nThis task consists of 30% of the total AP exam score.\n\n\nKeep in mind that on the actual Create Task, I (or any other teacher) are not allowed to answer anything specific about your project (“Do I have this in my project?”, “Can you help me code this?”, etc. are questions that we cannot answer).\n\nThe project consists of these main scored components:\n\nProgram\nVideo\nPersonalized Project Reference\n\nThe (1) Program, (2) Video, and (3) Personal Project Reference are things that you do outside of the exam time, i.e. in-class or at home and consists of a third of the project score (2 points out of 6 points).\n\nWritten Response\n\nThe Written Response is something that you do during the exam using the (2) Personal Project Reference and consists of two thirds of the project score (4 points out of 6 points).",
+    "crumbs": [
+      "AP Performance Create Task"
+    ]
+  },
+  {
+    "objectID": "create-task/2-video.html",
+    "href": "create-task/2-video.html",
+    "title": "Component B: Video",
+    "section": "",
+    "text": "This video is to be created independently (NO collaboration). Classmates and/or your teacher can help you troubleshoot any technical problems or guide you in creating your video on your computer.\n\nYour video must demonstrate your program running, including:\n\nInput to your program\nAt least one aspect of the functionality of your program\nOutput produced by your program\n\nYour video must be:\n\nEither .webm, .mp4, .wmv, .avi, or .mov format\nNo more than 1 minute in length\nNo more than 30MB in file size\n\nYou CANNOT include:\n\nAny distinguishing information about yourself\nVoice narration",
+    "crumbs": [
+      "AP Performance Create Task",
+      "Component B: Video"
+    ]
+  },
+  {
+    "objectID": "costume-cheatsheet.html",
+    "href": "costume-cheatsheet.html",
+    "title": "Snap! Common Fixes for Costumes / Customization",
+    "section": "",
+    "text": "For all computers, you can first download the image/file that you want to import into Snap! then go into the file system and drag the file into your Snap! window.\n\n\nYou don’t have to download images, you can directly drag in your image from Google into the Snap! window, but if you want transparency, you might have to follow the steps in the transparency section below.\n\n\n\nYou’ll have to download the file to import it into Snap! You can use any website to get the sound file.\nIf you find a sound that you want from YouTube, find a website that does “YouTube to Mp3.” If you do this, be careful of pop-ups that tell you to download an extension or download something else.\n\n\n\nSnap!’s probably being weird. Click out of the “Sounds” or “Costumes” tab in Snap! (so click into the “Scripts” tab) and then click back. It should show up within 30 seconds (just keep clicking in and out if you know you dragged in the file correctly)."
+  },
+  {
+    "objectID": "costume-cheatsheet.html#importing-files",
+    "href": "costume-cheatsheet.html#importing-files",
+    "title": "Snap! Common Fixes for Costumes / Customization",
+    "section": "",
+    "text": "For all computers, you can first download the image/file that you want to import into Snap! then go into the file system and drag the file into your Snap! window.\n\n\nYou don’t have to download images, you can directly drag in your image from Google into the Snap! window, but if you want transparency, you might have to follow the steps in the transparency section below.\n\n\n\nYou’ll have to download the file to import it into Snap! You can use any website to get the sound file.\nIf you find a sound that you want from YouTube, find a website that does “YouTube to Mp3.” If you do this, be careful of pop-ups that tell you to download an extension or download something else.\n\n\n\nSnap!’s probably being weird. Click out of the “Sounds” or “Costumes” tab in Snap! (so click into the “Scripts” tab) and then click back. It should show up within 30 seconds (just keep clicking in and out if you know you dragged in the file correctly)."
+  },
+  {
+    "objectID": "costume-cheatsheet.html#costumes",
+    "href": "costume-cheatsheet.html#costumes",
+    "title": "Snap! Common Fixes for Costumes / Customization",
+    "section": "Costumes",
+    "text": "Costumes\n\nTransparency\nOn Google, you’ll know if an image has a transparent background if there’s a checkered pattern. But sometimes, you might download the image directly from Google images and find out that Snap is showing the checkered pattern as part of the image. In this case, don’t download it from Google images, instead, follow the link to the image (click the title of the website below the image, or the “Visit” button) and follow the website’s instruction to download the image.\n\nDIY Transparency in Snap!\nIf you have a white background, you can first try this website: remove-white-background.imageonline.co\nOr within Snap!, if you have a white background or other solid colour background in a costume, you can easily make a rough transparent background for the costume.\n\nLoad in the costume and go to the costume that you want transparency for Snap!\nRight click the costume and choose “Edit”\nChoose the bucket (fill) tool\nChoose transparency as the “color” (click on the checkered pattern)\nClick on all the parts in the image that you want transparent\n\n\n\n\nImage File Extensions\n\n.png\n\n.png images can come with transparency, and you can edit the image within Snap!\n\n.svg\n\n.svg images can come with transparency, however, you cannot edit the image within Snap!\n\nOther\n\nOther images such as .jpg, jpeg, etc. do not come with transparency, and you can edit the image within Snap!\n\n\n\n\nFit a image to the entire stage\n“I want a background that covers everything, how do I do that????”\nTwo ways, with the first being better in most cases:\n\nMake the image fit the stage\n\nSelect the stage from the sprites on the bottom right window of Snap!\nBuild the following script from the “Looks” palette. \nMake sure to select the name of the picture that you want to select from the dropdown in the script and to also set how much (percentage-wise) you want to rescale the size of the costume.\n\n\n\nMake the stage fit the image\n\nGo to the Snap! settings by clicking on the gear icon on the top left \nSelect “Stage Size”\nSet the stage size parameters so that the stage fits the image"
+  },
+  {
+    "objectID": "costume-cheatsheet.html#etcetera",
+    "href": "costume-cheatsheet.html#etcetera",
+    "title": "Snap! Common Fixes for Costumes / Customization",
+    "section": "Etcetera",
+    "text": "Etcetera\n\nChange which sprite is at the Front/Back\nUse the following block in the “Looks” palette \n\n\nHow to put pen drawings in front of sprites\nYou can’t, but you can work around this by having a dedicated sprite for drawing.\nThere’s specific implications for this and you’ll have to play around to make sure everything works properly.\nWith that dedicated sprite(s), you can draw something with pen, then try the following script to have pen marks work as sprite costumes rather than pen marks: \nPlay around that that and layers (see above) to have your pen drawings in the right order."
+  },
+  {
+    "objectID": "create-task/1-program-code.html",
+    "href": "create-task/1-program-code.html",
+    "title": "Component A: Program Code",
+    "section": "",
+    "text": "Any and all program code is to be created independently. You may help each other by providing feedback or helping debug.\nIf there is any evidence that your code was not the result of individual or work that you did by receiving feedback, you are violating the academic policy of this project and class.\n\nYour program must contain the following:\n\nPrompt for the user to input/interact with the program.\n\nThis can be “asking” the user, when anything is “clicked”, or a key press, etc.\n\nOutput (sound, “saying” something) based on the input from the user.\nA list to represent stored data that is used to manage program complexity and useful towards fulfilling the program’s purpose\nAt least one procedure (i.e. a custom block) that is useful in the program. This procedure must:\n\nHave a name\nHave one or more parameters (inputs)\n\nThe input needs to have an have an effect on the functionality of the procedure. So preferably, it has a direct/indirect relationship to the selection\n\nHave an algorithm\n\nWhich means that your program must have these three components: sequencing, selection, and iteration\n\nBe used in your program.",
+    "crumbs": [
+      "AP Performance Create Task",
+      "Component A: Program Code"
+    ]
+  },
+  {
+    "objectID": "create-task/3-ppr.html",
+    "href": "create-task/3-ppr.html",
+    "title": "Component C: Personalized Project Reference",
+    "section": "",
+    "text": "To assist in responding to the written response prompts on exam day, submit required portions of your code by capturing and pasting program code segments you developed during the administration of this task. Screen captures should not be blurry, and text should be at least 10-point font size. Your code segments should not include any comments. These code segments will be made available to you on exam day only if this component is submitted as final in the AP Digital Portfolio by the deadline.",
+    "crumbs": [
+      "AP Performance Create Task",
+      "Component C: Personalized Project Reference"
+    ]
+  },
+  {
+    "objectID": "create-task/3-ppr.html#procedure",
+    "href": "create-task/3-ppr.html#procedure",
+    "title": "Component C: Personalized Project Reference",
+    "section": "Procedure",
+    "text": "Procedure\nCapture and paste two program code segments you developed during the administration of this task that contain a student-developed procedure that implements an algorithm used in your program and a call to that procedure.\n\nThe first program code segment must be a student-developed procedure that:\n\nDefines the procedure’s name and return type (if necessary)\nContains and uses one or more parameters that have an effect on the functionality of the procedure\nImplements an algorithm that includes sequencing, selection, and iteration\n\nThe second program code segment must show where your student-developed procedure is being called in your program.",
+    "crumbs": [
+      "AP Performance Create Task",
+      "Component C: Personalized Project Reference"
+    ]
+  },
+  {
+    "objectID": "create-task/3-ppr.html#list",
+    "href": "create-task/3-ppr.html#list",
+    "title": "Component C: Personalized Project Reference",
+    "section": "List",
+    "text": "List\nCapture and paste two program code segments you developed during the administration of this task that contain a list (or other collection type) being used to manage complexity in your program.\n\nThe first program code segment must show how data have been stored in the list.\nThe second program code segment must show the data in the same list being used, such as creating new data from the existing data or accessing multiple elements in the list, as part of fulfilling the program’s purpose",
+    "crumbs": [
+      "AP Performance Create Task",
+      "Component C: Personalized Project Reference"
+    ]
+  },
+  {
+    "objectID": "create-task/resources.html",
+    "href": "create-task/resources.html",
+    "title": "Create Task Resources",
+    "section": "",
+    "text": "Link to the Collegeboard website about the AP Exam",
+    "crumbs": [
+      "AP Performance Create Task",
+      "Create Task Resources"
+    ]
+  },
+  {
+    "objectID": "create-task/resources.html#requirements",
+    "href": "create-task/resources.html#requirements",
+    "title": "Create Task Resources",
+    "section": "Requirements",
+    "text": "Requirements\n\nCollegeboard Create Task Directions\nExample Rubric pt. 1\nExample Rubric pt. 2",
+    "crumbs": [
+      "AP Performance Create Task",
+      "Create Task Resources"
+    ]
+  },
+  {
+    "objectID": "create-task/resources.html#run-time-errors",
+    "href": "create-task/resources.html#run-time-errors",
+    "title": "Create Task Resources",
+    "section": "Run-time errors",
+    "text": "Run-time errors\nThere are two main categories of run-time errors that we can observe: Snap! errors and Logic errors.\n\nSnap! errors\nThese are errors that Snap! knows about and will let the user know about. So in other words, when you have code that Snap! stops running because it knows that it has encountered something wrong (the code gets highlighted in red)\nHere are a few examples:\n \n\n\nLogic errors\nThese are errors that Snap! doesn’t know about! Snap! will run code that it think runs right, but the program isn’t behaving the way that you want.\nExamples:",
+    "crumbs": [
+      "AP Performance Create Task",
+      "Create Task Resources"
+    ]
+  },
+  {
+    "objectID": "create-task/resources.html#vocabulary",
+    "href": "create-task/resources.html#vocabulary",
+    "title": "Create Task Resources",
+    "section": "Vocabulary",
+    "text": "Vocabulary\n\nAlgorithm\n\nAn algorithm is a finite set of instructions that accomplish a specific task. Every algorithm can be constructed using combinations of sequencing, selection, and iteration.\n\nArguments\n\nThe values of the parameters when a procedure is called. Collection type: Aggregates elements in a single structure. Some examples include: databases, hash tables, dictionaries, sets, or any other type that aggregates elements in a single structure.\n\nData stored in a list\n\nInput into the list can be through an initialization or through some computation on other variables or list elements.\n\nInput\n\nProgram input is data that are sent to a computer for processing by a program. Input can come in a variety of forms, such as tactile (through touch), audible, visual, or text. An event is associated with an action and supplies input data to a program.\n\nIteration\n\nIteration is a repetitive portion of an algorithm. Iteration repeats until a given condition is met or for a specified number of times. The use of recursion is a form of iteration.\n\nList\n\nA list is an ordered sequence of elements. The use of lists allows multiple related items to be represented using a single variable. Lists are referred to by different terms, such as arrays or arraylists, depending on the programming language.\n\nList being used\n\nUsing a list means the program is creating new data from existing data or accessing multiple elements in the list.\n\nOutput\n\nProgram output is any data that is sent from a program to a device. Program output can come in a variety of forms, such as tactile, audible, visual, movement, or text.\n\nParameter\n\nA parameter is an input variable of a procedure. Explicit parameters are defined in the procedure header. Implicit parameters are those that are assigned in anticipation of a call to the procedure. For example, an implicit parameter can be set through interaction with a graphical user interface.\n\nProcedure\n\nA procedure is a named group of programming instructions that may have parameters and return values. Procedures are referred to by different names, such as method, function, or constructor, depending on the programming language.\n\nProgram code segment\n\nA code segment refers to a collection of program statements that are part of a program. For text-based programming, the collection of program statements should be continuous and within the same procedure. For block-based programming, the collection of program statements should be contained in the same starter block or what is referred to as a “Hat” block.\n\nProgram functionality\n\nThe behavior of a program during execution, often described by how a user interacts with it.\n\nPurpose\n\nThe problem being solved or creative interest being pursued through the program.\n\nSelection\n\nSelection determines which parts of an algorithm are executed based on a condition being true or false. The use of try / exception statements is a form of selection statements.\n\nSequencing\n\nThe application of each step of an algorithm in the order in which the code statements are given.\n\nStudent-developed procedure / algorithm\n\nProgram code that is student-developed has been written (individually or collaboratively) by the student who submitted the response. Calls to existing program code or libraries can be included but are not considered student-developed. Event handlers are built-in abstractions in some languages and will, therefore, not be considered student-developed. In some block-based programming languages, event handlers begin with “when.”",
+    "crumbs": [
+      "AP Performance Create Task",
+      "Create Task Resources"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Welcome to AP Computer Science Principles at Berkeley High School, taught by Ms. O’Keefe (and formerly co-developed with Ms. Chang).\nIn this course, we’ll be studying the big ideas of computing using the Snap! programming language. No matter what career you choose to pursue, an understanding of computer science is becoming increasingly essential in today’s world.\nWe want you to have fun and learn. This course will be run as a “lab centric” class built on project-based learning. You will learn by writing lots of code, not by listening to the teacher talk. There will sometimes be brief lectures near the beginning of class, but mostly you will be doing the problem solving on your own or with a partner, with support available from the teacher if requested. Working with other people is a key part of your educational experience. You will do most of your work paired with another person for support, and you should expect much of your learning will come from figuring out your mistakes/bugs, both on your own and together with your classmates."
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Home",
+    "section": "",
+    "text": "Welcome to AP Computer Science Principles at Berkeley High School, taught by Ms. O’Keefe (and formerly co-developed with Ms. Chang).\nIn this course, we’ll be studying the big ideas of computing using the Snap! programming language. No matter what career you choose to pursue, an understanding of computer science is becoming increasingly essential in today’s world.\nWe want you to have fun and learn. This course will be run as a “lab centric” class built on project-based learning. You will learn by writing lots of code, not by listening to the teacher talk. There will sometimes be brief lectures near the beginning of class, but mostly you will be doing the problem solving on your own or with a partner, with support available from the teacher if requested. Working with other people is a key part of your educational experience. You will do most of your work paired with another person for support, and you should expect much of your learning will come from figuring out your mistakes/bugs, both on your own and together with your classmates."
+  },
+  {
+    "objectID": "index.html#outline-of-course-objectives-and-topics",
+    "href": "index.html#outline-of-course-objectives-and-topics",
+    "title": "Home",
+    "section": "Outline of Course Objectives and Topics",
+    "text": "Outline of Course Objectives and Topics\nThe AP Computer Science Principles class is a two-semester course which will prepare you for the AP Computer Science Principles Exam. This is the website that you will be mainly be using for classwork all semester long. We’ll be using a curriculum adapted from the Beauty and Joy of Computing (BJC) which was created from an existing course of the same name at Cal, CS 10.\nUnits 1-5 cover all of the AP CSP curriculum framework. You will be ready for the exam after completing these key units.\nUnits 6-8 focus on the abstraction hierarchy of how computers work as well as recursion, a beautiful and powerful CS idea that goes beyond the AP CSP Framework and exam. These units are perfect to enjoy after the exam.\nHere are some course objectives that we will cover over the first five units:\n\nExperience the beauty and the joy of programming\nUnderstand the nature of programming as problem solving and persevering\nUnderstand the basic principles of programming\nLearn to code fluently in Snap! in a well-structured fashion with effective documentation and code clarity\nImplement algorithms using conditional and iterative control structures as well as recursion\nRead and discuss the Blown to Bits book and current topics in computer science/technology\nPrepare for the AP CSP exam in the Spring (exam optional)"
+  },
+  {
+    "objectID": "index.html#course-resources",
+    "href": "index.html#course-resources",
+    "title": "Home",
+    "section": "Course Resources",
+    "text": "Course Resources\nThis website will be the main source of assignments and instructional material. Google Classroom will be used for any other communication, notes, and materials. Students will complete most of their work on a computer in the classroom and submit it electronically via Google Classroom."
+  },
+  {
+    "objectID": "index.html#internet-usage",
+    "href": "index.html#internet-usage",
+    "title": "Home",
+    "section": "Internet Usage",
+    "text": "Internet Usage\nThe use of the Internet in class is a PRIVILEGE, this privilege can be revoked or suspended at any time deemed necessary as described in the BUSD Acceptable Use Policy for Electronic Resources & the Internet which all students and parents/guardians have signed. All students have access to the Internet, unless otherwise specified by a parent/guardian. In addition, the Internet is to be used for educational purposes only as described in the policy."
+  },
+  {
+    "objectID": "index.html#computer-lab-expectations",
+    "href": "index.html#computer-lab-expectations",
+    "title": "Home",
+    "section": "Computer Lab Expectations",
+    "text": "Computer Lab Expectations\n\nEntering the Lab\n\nStudents may have no food or drink of any kind in the lab during class (including candy and gum, but excluding bottled water). Students working or studying DURING LUNCH may bring their lunch to eat at the tables in the middle.\nBe seated and working when the bell rings.\n\n\n\nWorking in the Lab\n\nThere will be no horseplay or offensive language in the lab.\nIf you and your partner have a question, ask your neighbors. If they don’t know, then put your name on the help doc and continue to try to figure it out while you wait. This class is primarily about problem solving and students are expected to be putting in effort to solve their own problems at all times.\nAll students have a responsibility to help each other\nAll students should treat each other with respect.\nConversations in the lab should be primarily related to the study of computers.\nInstallation and downloading of programs is forbidden without express teacher approval.\nWhen using the internet, be sure that you are on appropriate sites. See INTERNET USAGE WARNING above.\nCell phones are never to be used in the computer lab and should be placed in the storage area as you enter the classroom. If I see your phone, I will take it and deduct participation points. If this happens repeatedly I will turn it into the OCI at the end of the period and you will have to retrieve it from there.\nHandle computer equipment with care.\n\n\n\nExiting the Lab\n\nLeave the room as clean or cleaner than when you entered it.\nSave all work (Snap does not autosave!) and log off of the computer.\nPush chairs under the tables.\n\nRemember: the use of the computer lab is for educational purposes only. If a student is using the computers during class time for something not related to the assigned work, disciplinary measures will be taken and your parents or guardians will be contacted."
+  },
+  {
+    "objectID": "index.html#grading",
+    "href": "index.html#grading",
+    "title": "Home",
+    "section": "Grading",
+    "text": "Grading\nYour grade will be split into:\n\n50% Participation and Habits of Work\n\nThis will be measured by sustained effort and focus during class, completing checkpoints/response forms on time, and meeting behavior expectations (staying on task, not causing distractions, putting your phone up).\n\n25% Projects\n\nThis will be measured by performance on projects. Students are expected to meet specific requirements listed on the project specficifications and associated rubric.\n\n\nIn the second semester, this will also include both the practice Create Task and the actual Create Task, which is required of all students regardless of whether or not they plan to take the AP exam.\n\n20% Assessments\n\nThis will be measured by performance on assessments (which are given mainly at the end of each unit) and other quiz/testing tasks (such as AP test related preparation)\n\n5% Final Assessment\n\nA final project and assessment given at the end of the semester.\n\n\n\nLetter Grade\n\n90% and above is an A\n80% and above is a B\n70% and above is a C\n60% and above is a D\nunder 60% is an F"
+  },
+  {
+    "objectID": "index.html#attendance",
+    "href": "index.html#attendance",
+    "title": "Home",
+    "section": "Attendance",
+    "text": "Attendance\nBeing in class and on-time is essential to learning. Often, important instructions and material will be presented at the start of class and it is 100% the student’s responsibility to be present to receive this information. If absent, it is the student’s responsibility to make up any missed projects or curriculum. Students should check their Google Classroom for assignments each day. Most assignments are project oriented and as such continue across a span of a few to many days. Students are responsible for any assignments missed while absent, unless otherwise agreed upon."
+  },
+  {
     "objectID": "snap-cheat-sheet.html",
     "href": "snap-cheat-sheet.html",
     "title": "Snap! Cheat Sheet",
@@ -1337,271 +1693,6 @@
     "title": "Snap! Cheat Sheet",
     "section": "Robot",
     "text": "Robot\nThese blocks do not exist in Snap!, but Snap! has something similar: sprite motion. The big difference is that the robot blocks in the AP language work on a grid, so the robot can move only vertically or horizontally. In Snap!, sprites move much more flexibility, but you can use Snap! blocks to simulate robot motion.\n\n  On the AP Exam\n  Notes on Recreating in Snap!\n\n  \n    MOVE_FORWARD ()\n  \n  \n    In Snap!, you can use the  block to move the sprite forward any number of steps.\n    On the exam, you can't give\n      MOVE_FORWARD () an input, so if you want to move more than one grid square, you have\n      to call the procedure repeatedly.\n    \n    You can use the move block in Snap! to simulate the AP\n      MOVE_FORWARD () procedure: Just use an input that is exactly the same size as the\n      side length of the squares in your grid.\n    \n  \n\n  \n    ROTATE_LEFT ()\n    ROTATE_RIGHT ()\n  \n  \n    In Snap!, you can use the  and \n      blocks to turn the sprite any number of degrees.\n    On the exam, you can't give\n      ROTATE_LEFT () or\n      ROTATE_RIGHT () an input; these AP procedures always turn exactly 90 degrees since\n      they are used only to move a robot in a grid.\n    \n    You can use the turn ↺ or turn ↻ blocks in Snap! to\n      simulate the AP\n      ROTATE_LEFT () or\n      ROTATE_RIGHT () procedures: Just use 90 degrees as the input.\n    \n  \n\n  \n    CAN_MOVE (direction)\n  \n  \n    In Snap!, there are several ways to detect what is around the sprite, but since\n      there is no robot, there is nothing quite like\n      CAN_MOVE (direction), which returns true or false depending on whether or not the\n      robot can move in that direction without running into a wall or walking off of the maze.\n    \n    \n      In Snap!, you can use these blocks to help your sprites determine how to move:\n      ,\n      , and"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home",
-    "section": "",
-    "text": "Welcome to AP Computer Science Principles at Berkeley High School, taught by Ms. O’Keefe (and formerly co-developed with Ms. Chang).\nIn this course, we’ll be studying the big ideas of computing using the Snap! programming language. No matter what career you choose to pursue, an understanding of computer science is becoming increasingly essential in today’s world.\nWe want you to have fun and learn. This course will be run as a “lab centric” class built on project-based learning. You will learn by writing lots of code, not by listening to the teacher talk. There will sometimes be brief lectures near the beginning of class, but mostly you will be doing the problem solving on your own or with a partner, with support available from the teacher if requested. Working with other people is a key part of your educational experience. You will do most of your work paired with another person for support, and you should expect much of your learning will come from figuring out your mistakes/bugs, both on your own and together with your classmates."
-  },
-  {
-    "objectID": "index.html#introduction",
-    "href": "index.html#introduction",
-    "title": "Home",
-    "section": "",
-    "text": "Welcome to AP Computer Science Principles at Berkeley High School, taught by Ms. O’Keefe (and formerly co-developed with Ms. Chang).\nIn this course, we’ll be studying the big ideas of computing using the Snap! programming language. No matter what career you choose to pursue, an understanding of computer science is becoming increasingly essential in today’s world.\nWe want you to have fun and learn. This course will be run as a “lab centric” class built on project-based learning. You will learn by writing lots of code, not by listening to the teacher talk. There will sometimes be brief lectures near the beginning of class, but mostly you will be doing the problem solving on your own or with a partner, with support available from the teacher if requested. Working with other people is a key part of your educational experience. You will do most of your work paired with another person for support, and you should expect much of your learning will come from figuring out your mistakes/bugs, both on your own and together with your classmates."
-  },
-  {
-    "objectID": "index.html#outline-of-course-objectives-and-topics",
-    "href": "index.html#outline-of-course-objectives-and-topics",
-    "title": "Home",
-    "section": "Outline of Course Objectives and Topics",
-    "text": "Outline of Course Objectives and Topics\nThe AP Computer Science Principles class is a two-semester course which will prepare you for the AP Computer Science Principles Exam. This is the website that you will be mainly be using for classwork all semester long. We’ll be using a curriculum adapted from the Beauty and Joy of Computing (BJC) which was created from an existing course of the same name at Cal, CS 10.\nUnits 1-5 cover all of the AP CSP curriculum framework. You will be ready for the exam after completing these key units.\nUnits 6-8 focus on the abstraction hierarchy of how computers work as well as recursion, a beautiful and powerful CS idea that goes beyond the AP CSP Framework and exam. These units are perfect to enjoy after the exam.\nHere are some course objectives that we will cover over the first five units:\n\nExperience the beauty and the joy of programming\nUnderstand the nature of programming as problem solving and persevering\nUnderstand the basic principles of programming\nLearn to code fluently in Snap! in a well-structured fashion with effective documentation and code clarity\nImplement algorithms using conditional and iterative control structures as well as recursion\nRead and discuss the Blown to Bits book and current topics in computer science/technology\nPrepare for the AP CSP exam in the Spring (exam optional)"
-  },
-  {
-    "objectID": "index.html#course-resources",
-    "href": "index.html#course-resources",
-    "title": "Home",
-    "section": "Course Resources",
-    "text": "Course Resources\nThis website will be the main source of assignments and instructional material. Google Classroom will be used for any other communication, notes, and materials. Students will complete most of their work on a computer in the classroom and submit it electronically via Google Classroom."
-  },
-  {
-    "objectID": "index.html#internet-usage",
-    "href": "index.html#internet-usage",
-    "title": "Home",
-    "section": "Internet Usage",
-    "text": "Internet Usage\nThe use of the Internet in class is a PRIVILEGE, this privilege can be revoked or suspended at any time deemed necessary as described in the BUSD Acceptable Use Policy for Electronic Resources & the Internet which all students and parents/guardians have signed. All students have access to the Internet, unless otherwise specified by a parent/guardian. In addition, the Internet is to be used for educational purposes only as described in the policy."
-  },
-  {
-    "objectID": "index.html#computer-lab-expectations",
-    "href": "index.html#computer-lab-expectations",
-    "title": "Home",
-    "section": "Computer Lab Expectations",
-    "text": "Computer Lab Expectations\n\nEntering the Lab\n\nStudents may have no food or drink of any kind in the lab during class (including candy and gum, but excluding bottled water). Students working or studying DURING LUNCH may bring their lunch to eat at the tables in the middle.\nBe seated and working when the bell rings.\n\n\n\nWorking in the Lab\n\nThere will be no horseplay or offensive language in the lab.\nIf you and your partner have a question, ask your neighbors. If they don’t know, then put your name on the help doc and continue to try to figure it out while you wait. This class is primarily about problem solving and students are expected to be putting in effort to solve their own problems at all times.\nAll students have a responsibility to help each other\nAll students should treat each other with respect.\nConversations in the lab should be primarily related to the study of computers.\nInstallation and downloading of programs is forbidden without express teacher approval.\nWhen using the internet, be sure that you are on appropriate sites. See INTERNET USAGE WARNING above.\nCell phones are never to be used in the computer lab and should be placed in the storage area as you enter the classroom. If I see your phone, I will take it and deduct participation points. If this happens repeatedly I will turn it into the OCI at the end of the period and you will have to retrieve it from there.\nHandle computer equipment with care.\n\n\n\nExiting the Lab\n\nLeave the room as clean or cleaner than when you entered it.\nSave all work (Snap does not autosave!) and log off of the computer.\nPush chairs under the tables.\n\nRemember: the use of the computer lab is for educational purposes only. If a student is using the computers during class time for something not related to the assigned work, disciplinary measures will be taken and your parents or guardians will be contacted."
-  },
-  {
-    "objectID": "index.html#grading",
-    "href": "index.html#grading",
-    "title": "Home",
-    "section": "Grading",
-    "text": "Grading\nYour grade will be split into:\n\n50% Participation and Habits of Work\n\nThis will be measured by sustained effort and focus during class, completing checkpoints/response forms on time, and meeting behavior expectations (staying on task, not causing distractions, putting your phone up).\n\n25% Projects\n\nThis will be measured by performance on projects. Students are expected to meet specific requirements listed on the project specficifications and associated rubric.\n\n\nIn the second semester, this will also include both the practice Create Task and the actual Create Task, which is required of all students regardless of whether or not they plan to take the AP exam.\n\n20% Assessments\n\nThis will be measured by performance on assessments (which are given mainly at the end of each unit) and other quiz/testing tasks (such as AP test related preparation)\n\n5% Final Assessment\n\nA final project and assessment given at the end of the semester.\n\n\n\nLetter Grade\n\n90% and above is an A\n80% and above is a B\n70% and above is a C\n60% and above is a D\nunder 60% is an F"
-  },
-  {
-    "objectID": "index.html#attendance",
-    "href": "index.html#attendance",
-    "title": "Home",
-    "section": "Attendance",
-    "text": "Attendance\nBeing in class and on-time is essential to learning. Often, important instructions and material will be presented at the start of class and it is 100% the student’s responsibility to be present to receive this information. If absent, it is the student’s responsibility to make up any missed projects or curriculum. Students should check their Google Classroom for assignments each day. Most assignments are project oriented and as such continue across a span of a few to many days. Students are responsible for any assignments missed while absent, unless otherwise agreed upon."
-  },
-  {
-    "objectID": "create-task/resources.html",
-    "href": "create-task/resources.html",
-    "title": "Create Task Resources",
-    "section": "",
-    "text": "Link to the Collegeboard website about the AP Exam",
-    "crumbs": [
-      "AP Performance Create Task",
-      "Create Task Resources"
-    ]
-  },
-  {
-    "objectID": "create-task/resources.html#requirements",
-    "href": "create-task/resources.html#requirements",
-    "title": "Create Task Resources",
-    "section": "Requirements",
-    "text": "Requirements\n\nCollegeboard Create Task Directions\nExample Rubric pt. 1\nExample Rubric pt. 2",
-    "crumbs": [
-      "AP Performance Create Task",
-      "Create Task Resources"
-    ]
-  },
-  {
-    "objectID": "create-task/resources.html#run-time-errors",
-    "href": "create-task/resources.html#run-time-errors",
-    "title": "Create Task Resources",
-    "section": "Run-time errors",
-    "text": "Run-time errors\nThere are two main categories of run-time errors that we can observe: Snap! errors and Logic errors.\n\nSnap! errors\nThese are errors that Snap! knows about and will let the user know about. So in other words, when you have code that Snap! stops running because it knows that it has encountered something wrong (the code gets highlighted in red)\nHere are a few examples:\n \n\n\nLogic errors\nThese are errors that Snap! doesn’t know about! Snap! will run code that it think runs right, but the program isn’t behaving the way that you want.\nExamples:",
-    "crumbs": [
-      "AP Performance Create Task",
-      "Create Task Resources"
-    ]
-  },
-  {
-    "objectID": "create-task/resources.html#vocabulary",
-    "href": "create-task/resources.html#vocabulary",
-    "title": "Create Task Resources",
-    "section": "Vocabulary",
-    "text": "Vocabulary\n\nAlgorithm\n\nAn algorithm is a finite set of instructions that accomplish a specific task. Every algorithm can be constructed using combinations of sequencing, selection, and iteration.\n\nArguments\n\nThe values of the parameters when a procedure is called. Collection type: Aggregates elements in a single structure. Some examples include: databases, hash tables, dictionaries, sets, or any other type that aggregates elements in a single structure.\n\nData stored in a list\n\nInput into the list can be through an initialization or through some computation on other variables or list elements.\n\nInput\n\nProgram input is data that are sent to a computer for processing by a program. Input can come in a variety of forms, such as tactile (through touch), audible, visual, or text. An event is associated with an action and supplies input data to a program.\n\nIteration\n\nIteration is a repetitive portion of an algorithm. Iteration repeats until a given condition is met or for a specified number of times. The use of recursion is a form of iteration.\n\nList\n\nA list is an ordered sequence of elements. The use of lists allows multiple related items to be represented using a single variable. Lists are referred to by different terms, such as arrays or arraylists, depending on the programming language.\n\nList being used\n\nUsing a list means the program is creating new data from existing data or accessing multiple elements in the list.\n\nOutput\n\nProgram output is any data that is sent from a program to a device. Program output can come in a variety of forms, such as tactile, audible, visual, movement, or text.\n\nParameter\n\nA parameter is an input variable of a procedure. Explicit parameters are defined in the procedure header. Implicit parameters are those that are assigned in anticipation of a call to the procedure. For example, an implicit parameter can be set through interaction with a graphical user interface.\n\nProcedure\n\nA procedure is a named group of programming instructions that may have parameters and return values. Procedures are referred to by different names, such as method, function, or constructor, depending on the programming language.\n\nProgram code segment\n\nA code segment refers to a collection of program statements that are part of a program. For text-based programming, the collection of program statements should be continuous and within the same procedure. For block-based programming, the collection of program statements should be contained in the same starter block or what is referred to as a “Hat” block.\n\nProgram functionality\n\nThe behavior of a program during execution, often described by how a user interacts with it.\n\nPurpose\n\nThe problem being solved or creative interest being pursued through the program.\n\nSelection\n\nSelection determines which parts of an algorithm are executed based on a condition being true or false. The use of try / exception statements is a form of selection statements.\n\nSequencing\n\nThe application of each step of an algorithm in the order in which the code statements are given.\n\nStudent-developed procedure / algorithm\n\nProgram code that is student-developed has been written (individually or collaboratively) by the student who submitted the response. Calls to existing program code or libraries can be included but are not considered student-developed. Event handlers are built-in abstractions in some languages and will, therefore, not be considered student-developed. In some block-based programming languages, event handlers begin with “when.”",
-    "crumbs": [
-      "AP Performance Create Task",
-      "Create Task Resources"
-    ]
-  },
-  {
-    "objectID": "create-task/3-ppr.html",
-    "href": "create-task/3-ppr.html",
-    "title": "Component C: Personalized Project Reference",
-    "section": "",
-    "text": "To assist in responding to the written response prompts on exam day, submit required portions of your code by capturing and pasting program code segments you developed during the administration of this task. Screen captures should not be blurry, and text should be at least 10-point font size. Your code segments should not include any comments. These code segments will be made available to you on exam day only if this component is submitted as final in the AP Digital Portfolio by the deadline.",
-    "crumbs": [
-      "AP Performance Create Task",
-      "Component C: Personalized Project Reference"
-    ]
-  },
-  {
-    "objectID": "create-task/3-ppr.html#procedure",
-    "href": "create-task/3-ppr.html#procedure",
-    "title": "Component C: Personalized Project Reference",
-    "section": "Procedure",
-    "text": "Procedure\nCapture and paste two program code segments you developed during the administration of this task that contain a student-developed procedure that implements an algorithm used in your program and a call to that procedure.\n\nThe first program code segment must be a student-developed procedure that:\n\nDefines the procedure’s name and return type (if necessary)\nContains and uses one or more parameters that have an effect on the functionality of the procedure\nImplements an algorithm that includes sequencing, selection, and iteration\n\nThe second program code segment must show where your student-developed procedure is being called in your program.",
-    "crumbs": [
-      "AP Performance Create Task",
-      "Component C: Personalized Project Reference"
-    ]
-  },
-  {
-    "objectID": "create-task/3-ppr.html#list",
-    "href": "create-task/3-ppr.html#list",
-    "title": "Component C: Personalized Project Reference",
-    "section": "List",
-    "text": "List\nCapture and paste two program code segments you developed during the administration of this task that contain a list (or other collection type) being used to manage complexity in your program.\n\nThe first program code segment must show how data have been stored in the list.\nThe second program code segment must show the data in the same list being used, such as creating new data from the existing data or accessing multiple elements in the list, as part of fulfilling the program’s purpose",
-    "crumbs": [
-      "AP Performance Create Task",
-      "Component C: Personalized Project Reference"
-    ]
-  },
-  {
-    "objectID": "create-task/1-program-code.html",
-    "href": "create-task/1-program-code.html",
-    "title": "Component A: Program Code",
-    "section": "",
-    "text": "Any and all program code is to be created independently. You may help each other by providing feedback or helping debug.\nIf there is any evidence that your code was not the result of individual or work that you did by receiving feedback, you are violating the academic policy of this project and class.\n\nYour program must contain the following:\n\nPrompt for the user to input/interact with the program.\n\nThis can be “asking” the user, when anything is “clicked”, or a key press, etc.\n\nOutput (sound, “saying” something) based on the input from the user.\nA list to represent stored data that is used to manage program complexity and useful towards fulfilling the program’s purpose\nAt least one procedure (i.e. a custom block) that is useful in the program. This procedure must:\n\nHave a name\nHave one or more parameters (inputs)\n\nThe input needs to have an have an effect on the functionality of the procedure. So preferably, it has a direct/indirect relationship to the selection\n\nHave an algorithm\n\nWhich means that your program must have these three components: sequencing, selection, and iteration\n\nBe used in your program.",
-    "crumbs": [
-      "AP Performance Create Task",
-      "Component A: Program Code"
-    ]
-  },
-  {
-    "objectID": "costume-cheatsheet.html",
-    "href": "costume-cheatsheet.html",
-    "title": "Snap! Common Fixes for Costumes / Customization",
-    "section": "",
-    "text": "For all computers, you can first download the image/file that you want to import into Snap! then go into the file system and drag the file into your Snap! window.\n\n\nYou don’t have to download images, you can directly drag in your image from Google into the Snap! window, but if you want transparency, you might have to follow the steps in the transparency section below.\n\n\n\nYou’ll have to download the file to import it into Snap! You can use any website to get the sound file.\nIf you find a sound that you want from YouTube, find a website that does “YouTube to Mp3.” If you do this, be careful of pop-ups that tell you to download an extension or download something else.\n\n\n\nSnap!’s probably being weird. Click out of the “Sounds” or “Costumes” tab in Snap! (so click into the “Scripts” tab) and then click back. It should show up within 30 seconds (just keep clicking in and out if you know you dragged in the file correctly)."
-  },
-  {
-    "objectID": "costume-cheatsheet.html#importing-files",
-    "href": "costume-cheatsheet.html#importing-files",
-    "title": "Snap! Common Fixes for Costumes / Customization",
-    "section": "",
-    "text": "For all computers, you can first download the image/file that you want to import into Snap! then go into the file system and drag the file into your Snap! window.\n\n\nYou don’t have to download images, you can directly drag in your image from Google into the Snap! window, but if you want transparency, you might have to follow the steps in the transparency section below.\n\n\n\nYou’ll have to download the file to import it into Snap! You can use any website to get the sound file.\nIf you find a sound that you want from YouTube, find a website that does “YouTube to Mp3.” If you do this, be careful of pop-ups that tell you to download an extension or download something else.\n\n\n\nSnap!’s probably being weird. Click out of the “Sounds” or “Costumes” tab in Snap! (so click into the “Scripts” tab) and then click back. It should show up within 30 seconds (just keep clicking in and out if you know you dragged in the file correctly)."
-  },
-  {
-    "objectID": "costume-cheatsheet.html#costumes",
-    "href": "costume-cheatsheet.html#costumes",
-    "title": "Snap! Common Fixes for Costumes / Customization",
-    "section": "Costumes",
-    "text": "Costumes\n\nTransparency\nOn Google, you’ll know if an image has a transparent background if there’s a checkered pattern. But sometimes, you might download the image directly from Google images and find out that Snap is showing the checkered pattern as part of the image. In this case, don’t download it from Google images, instead, follow the link to the image (click the title of the website below the image, or the “Visit” button) and follow the website’s instruction to download the image.\n\nDIY Transparency in Snap!\nIf you have a white background, you can first try this website: remove-white-background.imageonline.co\nOr within Snap!, if you have a white background or other solid colour background in a costume, you can easily make a rough transparent background for the costume.\n\nLoad in the costume and go to the costume that you want transparency for Snap!\nRight click the costume and choose “Edit”\nChoose the bucket (fill) tool\nChoose transparency as the “color” (click on the checkered pattern)\nClick on all the parts in the image that you want transparent\n\n\n\n\nImage File Extensions\n\n.png\n\n.png images can come with transparency, and you can edit the image within Snap!\n\n.svg\n\n.svg images can come with transparency, however, you cannot edit the image within Snap!\n\nOther\n\nOther images such as .jpg, jpeg, etc. do not come with transparency, and you can edit the image within Snap!\n\n\n\n\nFit a image to the entire stage\n“I want a background that covers everything, how do I do that????”\nTwo ways, with the first being better in most cases:\n\nMake the image fit the stage\n\nSelect the stage from the sprites on the bottom right window of Snap!\nBuild the following script from the “Looks” palette. \nMake sure to select the name of the picture that you want to select from the dropdown in the script and to also set how much (percentage-wise) you want to rescale the size of the costume.\n\n\n\nMake the stage fit the image\n\nGo to the Snap! settings by clicking on the gear icon on the top left \nSelect “Stage Size”\nSet the stage size parameters so that the stage fits the image"
-  },
-  {
-    "objectID": "costume-cheatsheet.html#etcetera",
-    "href": "costume-cheatsheet.html#etcetera",
-    "title": "Snap! Common Fixes for Costumes / Customization",
-    "section": "Etcetera",
-    "text": "Etcetera\n\nChange which sprite is at the Front/Back\nUse the following block in the “Looks” palette \n\n\nHow to put pen drawings in front of sprites\nYou can’t, but you can work around this by having a dedicated sprite for drawing.\nThere’s specific implications for this and you’ll have to play around to make sure everything works properly.\nWith that dedicated sprite(s), you can draw something with pen, then try the following script to have pen marks work as sprite costumes rather than pen marks: \nPlay around that that and layers (see above) to have your pen drawings in the right order."
-  },
-  {
-    "objectID": "create-task/2-video.html",
-    "href": "create-task/2-video.html",
-    "title": "Component B: Video",
-    "section": "",
-    "text": "This video is to be created independently (NO collaboration). Classmates and/or your teacher can help you troubleshoot any technical problems or guide you in creating your video on your computer.\n\nYour video must demonstrate your program running, including:\n\nInput to your program\nAt least one aspect of the functionality of your program\nOutput produced by your program\n\nYour video must be:\n\nEither .webm, .mp4, .wmv, .avi, or .mov format\nNo more than 1 minute in length\nNo more than 30MB in file size\n\nYou CANNOT include:\n\nAny distinguishing information about yourself\nVoice narration",
-    "crumbs": [
-      "AP Performance Create Task",
-      "Component B: Video"
-    ]
-  },
-  {
-    "objectID": "create-task/index.html",
-    "href": "create-task/index.html",
-    "title": "AP Performance Create Task",
-    "section": "",
-    "text": "For this course, you will be working on a project that will be graded both by your teacher and the AP exam scorers.\nThe project is mainly graded based off your understanding of the main ideas of the course (ergo “Computer Science Principles”), not how amazing your project is.\nThis task consists of 30% of the total AP exam score.\n\n\nKeep in mind that on the actual Create Task, I (or any other teacher) are not allowed to answer anything specific about your project (“Do I have this in my project?”, “Can you help me code this?”, etc. are questions that we cannot answer).\n\nThe project consists of these main scored components:\n\nProgram\nVideo\nPersonalized Project Reference\n\nThe (1) Program, (2) Video, and (3) Personal Project Reference are things that you do outside of the exam time, i.e. in-class or at home and consists of a third of the project score (2 points out of 6 points).\n\nWritten Response\n\nThe Written Response is something that you do during the exam using the (2) Personal Project Reference and consists of two thirds of the project score (4 points out of 6 points).",
-    "crumbs": [
-      "AP Performance Create Task"
-    ]
-  },
-  {
-    "objectID": "create-task/submitting.html",
-    "href": "create-task/submitting.html",
-    "title": "Submitting Your Create Task",
-    "section": "",
-    "text": "Here are a few things to help you get started on submitting your create task. If you have any problems with these steps, ask your teacher, and we can help you through the entire technical process.",
-    "crumbs": [
-      "AP Performance Create Task",
-      "Submitting Your Create Task"
-    ]
-  },
-  {
-    "objectID": "create-task/submitting.html#record-your-video",
-    "href": "create-task/submitting.html#record-your-video",
-    "title": "Submitting Your Create Task",
-    "section": "Record your Video",
-    "text": "Record your Video\n\nFollow these steps based on what you are using to record:\n\nChromebook\nMacOS\nWindows 11\n\nMake sure that you can meet these requirements for the video:\n\nYour video must demonstrate your program running, including:\n\nInput to your program\nAt least one aspect of the functionality of your program\nOutput produced by your program\n\nYour video may NOT contain:\n\nAny distinguishing information about yourself\nVoice narration (though text captions are encouraged)\n\nYour video must be:\n\nEither .mp4, .wmv, .avi, .mov, or .webm format\nNo more than 1 minute in length\nNo more than 30MB in file size",
-    "crumbs": [
-      "AP Performance Create Task",
-      "Submitting Your Create Task"
-    ]
-  },
-  {
-    "objectID": "create-task/submitting.html#export-your-program-code",
-    "href": "create-task/submitting.html#export-your-program-code",
-    "title": "Submitting Your Create Task",
-    "section": "Export your Program Code",
-    "text": "Export your Program Code\n\nOpen your Snap! project\nGo to the file icon and click on export summary\nIt will download a .html file\nOpen it in your browser and print it to .pdf.\n\nMake sure you can see all the code by scaling the contents of the file (More settings &gt; Scale)\n\nSee the video below on how to do this on Chrome. (Including removing your name)\nIf your name is at the top and/or bottom of the page, just unclick the headers/footer setting (More settings)",
-    "crumbs": [
-      "AP Performance Create Task",
-      "Submitting Your Create Task"
-    ]
-  },
-  {
-    "objectID": "create-task/submitting.html#submit",
-    "href": "create-task/submitting.html#submit",
-    "title": "Submitting Your Create Task",
-    "section": "Submit",
-    "text": "Submit\n\nAP Exam\n\nGo to myap.collegeboard.org\nUnder AP Computer Science Principles, go to the “Digital Portfolio”\nYou can submit all your materials there. Only click on the “submit final” buttons if you are sure that you are done. Any other “submit” buttons are not final submissions\n\nFor Component A: Program Code, upload the pdf that you follow the steps above to make. MAKE SURE YOU NAME IS NOT PRESENT IN ANY FORM ON THE PDF\nFor Component B: Video, upload the video.\nFor Component C: Personalized Project Reference, copy all your images to the submission.\n\n\n\n\nGoogle Classroom\nFor everyone in Google Classroom, you need to\n\nupload the video to the Google Classroom submission,\nmake sure you submit the right Component C: Personalized Project Reference as a Google Doc, and\nsubmit the link to your Snap Project.",
-    "crumbs": [
-      "AP Performance Create Task",
-      "Submitting Your Create Task"
-    ]
-  },
-  {
-    "objectID": "posts/announcements/230816.html",
-    "href": "posts/announcements/230816.html",
-    "title": "Week 1 Announcements",
-    "section": "",
-    "text": "Welcome to the class! To get started, please first fill out the student information form in Google Classroom. We’re just asking you to fill this out so that we know more about you and so that you can know more about us!\nAs for other things to check, please look at at the general expectations on the home page. These will always be there for you to look at and you are expected to follow them. Please also check anything else that is already on Google Classroom."
-  },
-  {
-    "objectID": "posts/announcements/bomb-game.html",
-    "href": "posts/announcements/bomb-game.html",
-    "title": "Bomb Game Instructions",
-    "section": "",
-    "text": "You’re alone in a room with a bomb. Your friends, the “Experts”, have the manual needed to defuse it. But there’s a catch: the Experts can’t see the bomb, so everyone will need to talk it out – fast!\nPut your puzzle-solving and communication skills to the test as you and your friends race to defuse bombs quickly before time runs out!\n(Taken from their website)\n\n\n\n\nIn the game, you’ll have a bomb on the “table”, and you have to defuse it with a partner\n\nHere’s the catch: the person who can see the bomb doesn’t have the instructions to defuse it and the person who has the instructions cannot see the bomb\nYour goal is to communicate effectively so that the defuser (driver) knows what to do with the bomb and the manual reader (navigator) knows what instructions to provide to the defuser.\n\n\n\n\n\nAt all the Mac computers, the game will be under the Applications folder (look for the folder with a triangle shape on the bottom right of the desktop menu bar)\nOn the other computer/your phone, have the bomb manual open. LINK TO THE BOMB MANUAL\nPlay the tutorial together so that everyone knows how to work with the bomb.\nAfter the tutorial is done, jump right into the game. At this point, the defuser (person on the game) should not be looking at the manual in any form; likewise the manual reader should not be looking at the game at all. The only way for you to know what’s going on in the other person’s side is to keep talking to each other."
-  },
-  {
-    "objectID": "posts/announcements/bomb-game.html#about-the-game",
-    "href": "posts/announcements/bomb-game.html#about-the-game",
-    "title": "Bomb Game Instructions",
-    "section": "",
-    "text": "You’re alone in a room with a bomb. Your friends, the “Experts”, have the manual needed to defuse it. But there’s a catch: the Experts can’t see the bomb, so everyone will need to talk it out – fast!\nPut your puzzle-solving and communication skills to the test as you and your friends race to defuse bombs quickly before time runs out!\n(Taken from their website)\n\n\n\n\nIn the game, you’ll have a bomb on the “table”, and you have to defuse it with a partner\n\nHere’s the catch: the person who can see the bomb doesn’t have the instructions to defuse it and the person who has the instructions cannot see the bomb\nYour goal is to communicate effectively so that the defuser (driver) knows what to do with the bomb and the manual reader (navigator) knows what instructions to provide to the defuser.\n\n\n\n\n\nAt all the Mac computers, the game will be under the Applications folder (look for the folder with a triangle shape on the bottom right of the desktop menu bar)\nOn the other computer/your phone, have the bomb manual open. LINK TO THE BOMB MANUAL\nPlay the tutorial together so that everyone knows how to work with the bomb.\nAfter the tutorial is done, jump right into the game. At this point, the defuser (person on the game) should not be looking at the manual in any form; likewise the manual reader should not be looking at the game at all. The only way for you to know what’s going on in the other person’s side is to keep talking to each other."
-  },
-  {
-    "objectID": "posts/index.html",
-    "href": "posts/index.html",
-    "title": "Posts",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nBomb Game Instructions\n\n\n\n\n\n\nAnnouncement\n\n\nBomb Game\n\n\n\nThese are the instructions to the bomb game that we’ll be playing today.\n\n\n\n\n\nAug 21, 2023\n\n\nMs. Chang\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 1 Announcements\n\n\n\n\n\n\nAnnouncement\n\n\n\nFirst week announcements, checking up on the class and what to expect.\n\n\n\n\n\nAug 16, 2023\n\n\nMs. Chang and Ms. O’Keefe\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "unit-1/index.html",
