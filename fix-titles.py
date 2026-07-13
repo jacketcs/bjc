@@ -20,10 +20,17 @@ It also drops the `order:` field wherever it is redundant with the filename
 contents by filename when `order` is absent. `index.qmd` and files like
 create-task's `1-program-code.qmd` (order 100) keep their `order`.
 
+Because ordering falls back to the filename, filenames must sort
+numerically. Plain alphabetical sort breaks once a directory reaches double
+digits (`1, 10, 2, ...`), so the script zero-pads numbered filenames to a
+consistent width per directory (`1-foo.qmd` -> `01-foo.qmd` when a sibling
+`10-...` exists) and rewrites every internal link that pointed at a renamed
+file. Directories that stay single-digit are left untouched.
+
 Usage:
-    python3 fix-titles.py           # fix files in place
+    python3 fix-titles.py           # fix files (and filenames) in place
     python3 fix-titles.py --check   # report needed changes, write nothing,
-                                     # exit 1 if any file is out of date (CI)
+                                     # exit 1 if anything is out of date (CI)
 """
 
 import re
@@ -69,6 +76,45 @@ def order_is_redundant(relpath, order_value):
     m = re.match(r"^(\d+)-", base)
     ov = order_value.strip()
     return bool(m) and ov.isdigit() and int(ov) == int(m[1])
+
+
+def pad_renames(files):
+    """Map {old_path: new_path} for numbered files needing zero-padding.
+
+    Within each directory the numeric prefix is padded to the width of the
+    directory's largest page number, so lexical sort matches numeric sort.
+    """
+    by_dir = {}
+    for p in files:
+        m = re.match(r"^(\d+)-", p.name)
+        if m:
+            by_dir.setdefault(p.parent, []).append((p, m.group(1)))
+
+    renames = {}
+    for entries in by_dir.values():
+        width = len(str(max(int(num) for _, num in entries)))
+        for p, num in entries:
+            padded = str(int(num)).zfill(width)
+            if padded != num:
+                rest = p.name[len(num):]  # includes the leading "-"
+                renames[p] = p.with_name(padded + rest)
+    return renames
+
+
+def link_rewrites(renames):
+    """Map {old_link: new_link} for absolute site links to renamed files.
+
+    Links are absolute paths from the site root and use either extension,
+    e.g. `/unit-6/lab-1/3-foo.html` or `.qmd` (an optional `#anchor` follows
+    the extension, so replacing the path+extension leaves it intact).
+    """
+    repl = {}
+    for old, new in renames.items():
+        old_stem = "/" + old.relative_to(ROOT).with_suffix("").as_posix()
+        new_stem = "/" + new.relative_to(ROOT).with_suffix("").as_posix()
+        for ext in (".html", ".qmd"):
+            repl[old_stem + ext] = new_stem + ext
+    return repl
 
 
 def process(path):
@@ -129,22 +175,56 @@ def process(path):
     return new_text, changes
 
 
-def main():
-    check = "--check" in sys.argv[1:]
-    files = sorted(
+def curriculum_qmds():
+    return sorted(
         p for p in ROOT.glob("**/*.qmd")
         if not p.relative_to(ROOT).as_posix().startswith(
             ("_extensions/", "_site/", "_templates/")
         )
     )
+
+
+def main():
+    check = "--check" in sys.argv[1:]
+    files = curriculum_qmds()
     changed = 0
+
+    # Phase 1: zero-pad numbered filenames and fix links that point at them.
+    # Rewrite link *content* first (every file is still at its old path), then
+    # move the files -- so a renamed file that links to another renamed file
+    # gets its own link fixed before it moves.
+    renames = pad_renames(files)
+    if renames:
+        repl = link_rewrites(renames)
+        for path in files:
+            text = path.read_text(encoding="utf-8")
+            new_text = text
+            hits = 0
+            for a, b in repl.items():
+                hits += new_text.count(a)
+                new_text = new_text.replace(a, b)
+            if new_text != text:
+                changed += 1
+                print(f"{path.relative_to(ROOT).as_posix()}")
+                print(f"    update {hits} link(s)")
+                if not check:
+                    path.write_text(new_text, encoding="utf-8")
+        for old, new in sorted(renames.items()):
+            changed += 1
+            print(f"{old.relative_to(ROOT).as_posix()}")
+            print(f"    rename -> {new.name}")
+            if not check:
+                old.rename(new)
+        if not check:
+            files = curriculum_qmds()  # pick up the new filenames
+
+    # Phase 2: normalize title/subtitle and drop redundant order.
     for path in files:
         new_text, changes = process(path)
         if not changes:
             continue
         changed += 1
-        rel = path.relative_to(ROOT).as_posix()
-        print(f"{rel}")
+        print(f"{path.relative_to(ROOT).as_posix()}")
         for c in changes:
             print(f"    {c}")
         if not check:
@@ -154,9 +234,9 @@ def main():
         print("All titles up to date.")
         return 0
     if check:
-        print(f"\n{changed} file(s) need updating. Run without --check to fix.")
+        print(f"\n{changed} item(s) need updating. Run without --check to fix.")
         return 1
-    print(f"\nFixed {changed} file(s).")
+    print(f"\nFixed {changed} item(s).")
     return 0
 
 

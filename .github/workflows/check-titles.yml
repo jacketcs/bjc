@@ -1,0 +1,21 @@
+on:
+  push:
+    branches: main
+  pull_request:
+
+name: Check Titles
+
+jobs:
+  check-titles:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Verify titles, subtitles, order, and filenames
+        run: python3 fix-titles.py --check

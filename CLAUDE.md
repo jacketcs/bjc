@@ -18,10 +18,14 @@ quarto preview   # live-reload dev server (port 1000, per _quarto.yml)
 quarto render    # one-time full render
 ```
 
-There are no tests or linters. Deployment is automatic: pushing to `main`
-triggers `.github/workflows/main.yml`, which renders with a pinned Quarto
-version (check the workflow for the exact version) and publishes to the
-`gh-pages` branch. Use the same Quarto version locally to match the live site.
+The only automated check is `.github/workflows/check-titles.yml`, which runs
+`python3 fix-titles.py --check` on pull requests and pushes to `main` (see the
+frontmatter conventions below). There are no other tests or linters.
+
+Deployment is automatic: pushing to `main` triggers
+`.github/workflows/main.yml`, which renders with a pinned Quarto version (check
+the workflow for the exact version) and publishes to the `gh-pages` branch. Use
+the same Quarto version locally to match the live site.
 
 ## Structure and conventions
 
@@ -46,8 +50,12 @@ version (check the workflow for the exact version) and publishes to the
   frontmatter rather than computed at render time. **`fix-titles.py` is the
   generator**: it rewrites the derivable parts (preserving the human-authored
   part of each title), drops redundant `order` fields, and normalizes subtitles.
-  Run `python3 fix-titles.py` after adding or renaming lab pages; `python3
-  fix-titles.py --check` reports drift without writing (suitable for CI).
+  It also zero-pads numbered filenames to a consistent per-directory width when
+  a lab reaches double digits (`1-foo.qmd` → `01-foo.qmd`) and rewrites the
+  internal links that pointed at any renamed file, so filename-based ordering
+  stays numeric. Run `python3 fix-titles.py` after adding or renaming lab pages;
+  `python3 fix-titles.py --check` reports drift without writing and is what CI
+  runs.
 
 - Content is styled with fenced divs using BJC-specific classes defined in
   `bjc.scss`/`bjc-dark.scss`: `learn`, `forYouToDo`, `ifTime`, `dialogue`,
