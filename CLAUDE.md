@@ -39,6 +39,7 @@ The **glossary** extension is unused. Each extension has a README and `example.q
 
 ## Snap! integration
 
-- `llab/loader.js` is injected into every page's header. `llab/renderContent.js` rewrites any `<a class="run">` link so its href opens the linked project XML in the Snap! web IDE (hardcoded to resolve resources against `https://bjc.jacketcs.net`, so run links won't load local files during `quarto preview`).
+- `llab/loader.js` is injected into every page's header and dynamically loads `llab/script/library.js` and `llab/script/curriculum.js`. On page load, `llab.secondarySetUp()` (curriculum.js) rewrites any `<a class="run">` link via `llab.getSnapRunURL()` (library.js) so its href opens the linked project XML in the Snap! web IDE. Fragile detail: `getSnapRunURL` skips hrefs that don't contain the current hostname, and only works because Quarto's own `quarto-nav.js` happens to absolutize every anchor href first. `llab.hostDomain` is hardcoded to `https://bjc.jacketcs.net`, so run links point at production XML even during `quarto preview`.
+- `llab/renderContent.js` contains near-identical run-link logic but is dead code — nothing loads it.
 - Snap! starter project XML files go in `prog/`, organized by topic/unit folders. Reference them with absolute paths, e.g. `<a href="/prog/1-introduction/U1L1-ClickAlonzo.xml" class="run">`.
 - `img/`, `data/`, `llab/`, and `prog/` are copied verbatim as site resources; reference them with absolute paths (`/img/...`).
