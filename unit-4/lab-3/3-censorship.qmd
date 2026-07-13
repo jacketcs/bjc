@@ -1,7 +1,6 @@
 ---
 title: "Page 3: Censorship"
 subtitle: "Unit 4, Lab 3, Page 3"
-order: 3
 ---
 
 ::: todo

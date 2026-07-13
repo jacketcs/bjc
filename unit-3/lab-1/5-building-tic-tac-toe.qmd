@@ -1,7 +1,6 @@
 ---
 title: "Page 5: Building a Tic-Tac-Toe Board"
 subtitle: "Unit 3, Lab 1, Page 5"
-order: 5
 ---
 
 ::: learn

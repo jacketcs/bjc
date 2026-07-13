@@ -1,7 +1,6 @@
 ---
 title: "Page 2: Sprite Following a Sprite"
 subtitle: "Unit 1, Lab 5, Page 2"
-order: 2
 gifffer: true
 ---
 

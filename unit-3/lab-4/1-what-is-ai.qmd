@@ -1,7 +1,6 @@
 ---
 title: "Page 1: What is AI?"
 subtitle: "Unit 3, Lab 4, Page 1"
-order: 1
 ---
 
 ::: todo

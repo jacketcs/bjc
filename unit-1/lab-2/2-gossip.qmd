@@ -1,7 +1,6 @@
 ---
 title: "Page 2: Making Programs Talk"
 subtitle: "Unit 1, Lab 2, Page 2"
-order: 2
 gifffer: true
 ---
 

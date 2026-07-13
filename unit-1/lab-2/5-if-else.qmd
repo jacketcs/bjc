@@ -1,7 +1,6 @@
 ---
 title: "Page 5: Adding Variety to `Gossip`"
 subtitle: "Unit 1, Lab 2, Page 5"
-order: 5
 ---
 
 ::: learn

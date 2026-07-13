@@ -1,7 +1,6 @@
 ---
 title: "Page 6: Solving a Word Puzzle"
 subtitle: "Unit 2, Lab 3, Page 6"
-order: 6
 gifffer: true
 ---
 

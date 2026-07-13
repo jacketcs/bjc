@@ -1,7 +1,6 @@
 ---
 title: "Page 3: Military Technology in Everyday Life"
 subtitle: "Unit 5, Lab 5, Page 3"
-order: 3
 ---
 
 ::: todo

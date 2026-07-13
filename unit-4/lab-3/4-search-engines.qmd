@@ -1,7 +1,6 @@
 ---
 title: "Page 4: Search Engines"
 subtitle: "Unit 4, Lab 3, Page 4"
-order: 4
 ---
 
 ::: todo

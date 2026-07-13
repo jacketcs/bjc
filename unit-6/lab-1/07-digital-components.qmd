@@ -1,7 +1,6 @@
 ---
 title: "Page 7: The Digital Domain: Components"
 subtitle: "Unit 6, Lab 1, Page 7"
-order: 7
 ---
 
 ::: todo

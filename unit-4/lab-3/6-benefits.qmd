@@ -1,7 +1,6 @@
 ---
 title: "Page 6: Benefits of Computing"
 subtitle: "Unit 4, Lab 3, Page 6"
-order: 6
 ---
 
 ::: learn

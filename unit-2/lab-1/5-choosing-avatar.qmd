@@ -1,7 +1,6 @@
 ---
 title: "Page 5: Choosing a Costume"
 subtitle: "Unit 2, Lab 1, Page 5"
-order: 5
 ---
 
 :::::: learn

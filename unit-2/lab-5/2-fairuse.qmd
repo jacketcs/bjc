@@ -1,7 +1,6 @@
 ---
 title: "Page 2: Fair Use"
 subtitle: "Unit 2, Lab 5, Page 2"
-order: 2
 ---
 
 ::: todo

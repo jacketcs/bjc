@@ -1,7 +1,6 @@
 ---
 title: "Page 1: Communication and Community"
 subtitle: "Unit 4, Lab 3, Page 1"
-order: 1
 ---
 
 ::: todo

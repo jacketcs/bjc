@@ -1,7 +1,6 @@
 ---
 title: "Page 5: Software as Copyright Enforcement"
 subtitle: "Unit 2, Lab 5, Page 5"
-order: 5
 ---
 
 ::: learn

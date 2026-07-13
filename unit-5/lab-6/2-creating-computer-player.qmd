@@ -1,7 +1,6 @@
 ---
 title: "Page 2: Creating a Computer Player"
 subtitle: "Unit 5, Lab 6, Page 2"
-order: 2
 ---
 
 ::: todo

@@ -2,7 +2,6 @@
 title: "Op Art"
 subtitle: "Unit 3 Optional Project"
 pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
-order: 3
 ---
 
 ::: todo

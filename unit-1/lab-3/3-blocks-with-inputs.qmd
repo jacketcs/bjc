@@ -1,7 +1,6 @@
 ---
 title: "Page 3: Blocks with Inputs"
 subtitle: "Unit 1, Lab 3, Page 3"
-order: 3
 gifffer: true
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "Page 1: Robot in a Maze"
 subtitle: "Unit 3, Lab 1, Page 1"
-order: 1
 editor: 
   markdown: 
     wrap: 72

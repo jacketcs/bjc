@@ -1,7 +1,6 @@
 ---
 title: "Page 5: The Software Domain: Operating Systems"
 subtitle: "Unit 6, Lab 1, Page 5"
-order: 5
 ---
 
 ::: learn

@@ -1,7 +1,6 @@
 ---
 title: "Page 3: The Software Domain: Programming Languages"
 subtitle: "Unit 6, Lab 1, Page 3"
-order: 3
 ---
 
 ::: todo

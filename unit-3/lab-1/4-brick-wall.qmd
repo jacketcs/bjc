@@ -1,7 +1,6 @@
 ---
 title: "Page 4: Brick Wall"
 subtitle: "Unit 3, Lab 1, Page 4"
-order: 4
 ---
 
 ::: learn

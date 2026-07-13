@@ -1,7 +1,6 @@
 ---
 title: "Page 4: Making Your Own Block"
 subtitle: "Unit 1, Lab 2, Page 4"
-order: 4
 gifffer: true
 ---
 

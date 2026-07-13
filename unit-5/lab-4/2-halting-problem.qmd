@@ -1,7 +1,6 @@
 ---
 title: "Page 2: An Undecidable Problem"
 subtitle: "Unit 5, Lab 4, Page 2"
-order: 2
 ---
 
 ::: todo

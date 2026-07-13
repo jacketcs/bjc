@@ -1,7 +1,6 @@
 ---
 title: "Page 6: Heuristic Solutions"
 subtitle: "Unit 5, Lab 1, Page 6"
-order: 6
 ---
 
 ::: todo

@@ -1,7 +1,6 @@
 ---
 title: "Page 3: Using Abstraction to Nest Triangles"
 subtitle: "Unit 3, Lab 1, Page 3"
-order: 3
 gifffer: true
 ---
 

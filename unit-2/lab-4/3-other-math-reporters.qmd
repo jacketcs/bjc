@@ -1,7 +1,6 @@
 ---
 title: "Page 3: More Mathematical Reporters"
 subtitle: "Unit 2, Lab 4, Page 3"
-order: 3
 ---
 
 ::: learn

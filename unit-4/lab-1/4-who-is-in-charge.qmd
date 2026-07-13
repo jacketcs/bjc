@@ -1,7 +1,6 @@
 ---
 title: "Page 4: Who's In Charge of the Internet?"
 subtitle: "Unit 4, Lab 1, Page 4"
-order: 4
 ---
 
 ::: todo

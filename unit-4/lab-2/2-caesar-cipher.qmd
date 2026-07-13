@@ -1,7 +1,6 @@
 ---
 title: "Page 2: Caesar Cipher Project"
 subtitle: "Unit 4, Lab 2, Page 2"
-order: 2
 ---
 
 :::::: learn

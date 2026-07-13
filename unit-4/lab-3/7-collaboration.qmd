@@ -1,7 +1,6 @@
 ---
 title: "Page 7: Digital Collaboration"
 subtitle: "Unit 4, Lab 3, Page 7"
-order: 7
 ---
 
 ::: learn

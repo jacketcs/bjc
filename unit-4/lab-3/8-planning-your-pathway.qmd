@@ -1,7 +1,6 @@
 ---
 title: "Page 8: Planning Your Pathway"
 subtitle: "Unit 4, Lab 3, Page 8"
-order: 8
 ---
 
 ::: learn

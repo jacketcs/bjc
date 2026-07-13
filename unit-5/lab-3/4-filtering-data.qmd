@@ -1,7 +1,6 @@
 ---
 title: "Page 4: Analyzing Data"
 subtitle: "Unit 5, Lab 3, Page 4"
-order: 4
 ---
 
 ::: learn

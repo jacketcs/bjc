@@ -1,7 +1,6 @@
 ---
 title: "Page 1: What Is the Internet?"
 subtitle: "Unit 4, Lab 1, Page 1"
-order: 1
 ---
 
 ::: todo

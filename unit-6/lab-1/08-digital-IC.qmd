@@ -1,7 +1,6 @@
 ---
 title: "Page 8: The Digital Domain: Integrated Circuits"
 subtitle: "Unit 6, Lab 1, Page 8"
-order: 8
 ---
 
 ::: learn

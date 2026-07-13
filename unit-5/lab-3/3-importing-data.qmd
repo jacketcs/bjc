@@ -1,7 +1,6 @@
 ---
 title: "Page 3: Importing and Accessing Data"
 subtitle: "Unit 5, Lab 3, Page 3"
-order: 3
 gifffer: true
 ---
 

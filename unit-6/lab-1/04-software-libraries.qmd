@@ -1,7 +1,6 @@
 ---
 title: "Page 4: The Software Domain: Libraries"
 subtitle: "Unit 6, Lab 1, Page 4"
-order: 4
 ---
 
 

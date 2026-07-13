@@ -1,7 +1,6 @@
 ---
 title: "Page 1: Starting a Number Guessing Game"
 subtitle: "Unit 2, Lab 1, Page 1"
-order: 1
 ---
 
 ::: learn

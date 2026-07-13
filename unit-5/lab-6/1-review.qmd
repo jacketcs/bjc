@@ -1,7 +1,6 @@
 ---
 title: "Page 1: Review Your Tic-Tac-Toe Project"
 subtitle: "Unit 5, Lab 6, Page 1"
-order: 1
 ---
 
 ::: todo

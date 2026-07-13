@@ -1,7 +1,6 @@
 ---
 title: "Page 2: Combining Predicates"
 subtitle: "Unit 2, Lab 3, Page 2"
-order: 2
 gifffer: true
 ---
 

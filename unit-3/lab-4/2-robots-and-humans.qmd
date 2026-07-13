@@ -1,7 +1,6 @@
 ---
 title: "Page 2: Robots and Humans"
 subtitle: "Unit 3, Lab 4, Page 2"
-order: 2
 ---
 
 ::: learn

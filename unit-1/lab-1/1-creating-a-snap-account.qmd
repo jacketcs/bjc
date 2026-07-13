@@ -1,7 +1,6 @@
 ---
 title: "Page 1: Getting Started with Snap<em>!</em>"
 subtitle: "Unit 1, Lab 1, Page 1"
-order: 1
 ---
 
 ::: learn

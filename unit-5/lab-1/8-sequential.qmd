@@ -1,7 +1,6 @@
 ---
 title: "Page 8: Parallelism"
 subtitle: "Unit 5, Lab 1, Page 8"
-order: 8
 ---
 
 ::: learn

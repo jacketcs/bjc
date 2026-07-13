@@ -1,7 +1,6 @@
 ---
 title: "Page 1: A Brief History of Computers"
 subtitle: "Unit 6, Lab 2, Page 1"
-order: 1
 ---
 
 ::: learn

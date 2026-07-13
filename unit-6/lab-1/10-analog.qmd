@@ -1,7 +1,6 @@
 ---
 title: "Page 10: The Analog Domain: Transistors"
 subtitle: "Unit 6, Lab 1, Page 10"
-order: 10
 ---
 ::: todo
 MF: lightly clean up to cut down on the boxes

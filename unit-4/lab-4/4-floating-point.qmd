@@ -1,7 +1,6 @@
 ---
 title: "Page 4: Floating Point"
 subtitle: "Unit 4, Lab 4, Page 4"
-order: 4
 ---
 
 ::: todo

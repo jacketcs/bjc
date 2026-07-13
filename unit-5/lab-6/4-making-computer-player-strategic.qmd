@@ -1,7 +1,6 @@
 ---
 title: "Page 4: Making the Computer Play Strategically"
 subtitle: "Unit 5, Lab 6, Page 4"
-order: 4
 ---
 
 ::: todo

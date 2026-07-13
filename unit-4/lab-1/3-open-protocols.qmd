@@ -1,7 +1,6 @@
 ---
 title: "Page 3: Internet Abstractions and Open Protocols"
 subtitle: "Unit 4, Lab 1, Page 3"
-order: 3
 ---
 
 ::: learn

@@ -2,7 +2,6 @@
 title: "Automated Fortune Teller"
 subtitle: "Unit 2 Optional Project"
 pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
-order: 1
 ---
 
 ::: todo

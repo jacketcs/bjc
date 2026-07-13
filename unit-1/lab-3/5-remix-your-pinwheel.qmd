@@ -1,7 +1,6 @@
 ---
 title: "Page 5: Using `Pinwheel` to Make `Polygon`"
 subtitle: "Unit 1, Lab 3, Page 5"
-order: 5
 gifffer: true
 ---
 

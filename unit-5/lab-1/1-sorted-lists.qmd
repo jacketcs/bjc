@@ -1,7 +1,6 @@
 ---
 title: "Page 1: Guess My Number"
 subtitle: "Unit 5, Lab 1, Page 1"
-order: 1
 ---
 
 ::: learn

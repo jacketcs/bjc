@@ -1,7 +1,6 @@
 ---
 title: "Page 3: The Social Bargain"
 subtitle: "Unit 2, Lab 5, Page 3"
-order: 3
 ---
 
 ::: learn

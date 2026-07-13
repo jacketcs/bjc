@@ -1,7 +1,6 @@
 ---
 title: "Page 3: Tanya Rider's Story"
 subtitle: "Unit 1, Lab 4, Page 3"
-order: 3
 ---
 
 ::: learn

@@ -1,7 +1,6 @@
 ---
 title: "Page 6: The Digital Domain: Architecture"
 subtitle: "Unit 6, Lab 1, Page 6"
-order: 6
 ---
 
 ::: todo

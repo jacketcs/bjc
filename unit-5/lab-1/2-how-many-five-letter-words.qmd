@@ -1,7 +1,6 @@
 ---
 title: "Page 2: How Many Five-Letter Words Are There?"
 subtitle: "Unit 5, Lab 1, Page 2"
-order: 2
 ---
 
 ::: todo

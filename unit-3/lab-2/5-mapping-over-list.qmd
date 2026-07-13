@@ -1,7 +1,6 @@
 ---
 title: "Page 5: Transforming Every List Item"
 subtitle: "Unit 3, Lab 2, Page 5"
-order: 5
 ---
 
 ::: learn

@@ -1,7 +1,6 @@
 ---
 title: "Page 9: The Digital Domain: Logic Gates"
 subtitle: "Unit 6, Lab 1, Page 9"
-order: 9
 ---
 
 ::: todo

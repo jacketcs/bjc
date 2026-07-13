@@ -1,7 +1,6 @@
 ---
 title: "Page 2: Adding Contact Data"
 subtitle: "Unit 3, Lab 2, Page 2"
-order: 2
 ---
 
 ::: learn

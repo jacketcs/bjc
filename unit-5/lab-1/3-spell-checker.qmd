@@ -1,7 +1,6 @@
 ---
 title: "Page 3: Is 'Seperate' Spelled Correctly?"
 subtitle: "Unit 5, Lab 1, Page 3"
-order: 3
 ---
 
 ::: learn

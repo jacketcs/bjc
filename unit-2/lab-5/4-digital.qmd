@@ -1,7 +1,6 @@
 ---
 title: "Page 4: Copyrights and Computers"
 subtitle: "Unit 2, Lab 5, Page 4"
-order: 4
 ---
 
 ::: learn

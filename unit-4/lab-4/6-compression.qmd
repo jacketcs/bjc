@@ -1,7 +1,6 @@
 ---
 title: "Page 6: Data Compression"
 subtitle: "Unit 4, Lab 4, Page 6"
-order: 6
 ---
 
 ::: learn

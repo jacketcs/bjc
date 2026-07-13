@@ -1,7 +1,6 @@
 ---
 title: "Page 5: Security Risks"
 subtitle: "Unit 4, Lab 2, Page 5"
-order: 5
 ---
 
 ::: todo

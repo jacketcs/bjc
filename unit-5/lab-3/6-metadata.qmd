@@ -1,7 +1,6 @@
 ---
 title: "Page 6: Metadata"
 subtitle: "Unit 5, Lab 3, Page 6"
-order: 6
 ---
 
 ::: learn

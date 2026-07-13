@@ -1,7 +1,6 @@
 ---
 title: "Page 1: Creating the Contact ADT"
 subtitle: "Unit 3, Lab 2, Page 1"
-order: 1
 ---
 
 ::: learn

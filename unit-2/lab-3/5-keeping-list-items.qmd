@@ -1,7 +1,6 @@
 ---
 title: "Page 5: `Keep`ing Items from a List"
 subtitle: "Unit 2, Lab 3, Page 5"
-order: 5
 gifffer: true
 ---
 

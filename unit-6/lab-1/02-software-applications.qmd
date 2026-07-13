@@ -1,7 +1,6 @@
 ---
 title: "Page 2: The Software Domain: Applications"
 subtitle: "Unit 6, Lab 1, Page 2"
-order: 2
 ---
 
 ::: todo

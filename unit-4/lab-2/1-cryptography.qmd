@@ -1,7 +1,6 @@
 ---
 title: "Page 1: Cryptography"
 subtitle: "Unit 4, Lab 2, Page 1"
-order: 1
 ---
 
 ::: todo

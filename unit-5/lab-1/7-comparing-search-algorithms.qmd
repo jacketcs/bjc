@@ -1,7 +1,6 @@
 ---
 title: "Page 7: Removing Duplicates"
 subtitle: "Unit 5, Lab 1, Page 7"
-order: 7
 ---
 
 :::::: learn

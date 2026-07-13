@@ -2,7 +2,6 @@
 title: "Animation Studio"
 subtitle: "Unit 3 Optional Project"
 pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
-order: 2
 ---
 
 ::: todo

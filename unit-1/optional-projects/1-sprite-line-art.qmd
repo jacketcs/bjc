@@ -2,7 +2,6 @@
 title: "Line Art Toy"
 subtitle: "Unit 1 Optional Project"
 pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
-order: 1
 ---
 
 ::: learn

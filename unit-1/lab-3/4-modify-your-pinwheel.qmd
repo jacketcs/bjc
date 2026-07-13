@@ -1,7 +1,6 @@
 ---
 title: "Page 4: Modify Your Pinwheel"
 subtitle: "Unit 1, Lab 3, Page 4"
-order: 4
 gifffer: true
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "Page 3: Public Key Encryption"
 subtitle: "Unit 4, Lab 2, Page 3"
-order: 3
 ---
 
 ::: learn

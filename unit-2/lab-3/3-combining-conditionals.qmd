@@ -1,7 +1,6 @@
 ---
 title: "Page 3: Combining Conditionals"
-subtitle: "Unit 2 , Lab 3, Page 3"
-order: 3
+subtitle: "Unit 2, Lab 3, Page 3"
 gifffer: true
 ---
 

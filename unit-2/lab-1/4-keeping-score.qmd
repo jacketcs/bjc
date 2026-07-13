@@ -1,7 +1,6 @@
 ---
 title: "Page 4: Keeping Score with Global Variables"
 subtitle: "Unit 2, Lab 1, Page 4"
-order: 4
 gifffer: true
 ---
 

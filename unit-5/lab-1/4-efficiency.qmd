@@ -1,7 +1,6 @@
 ---
 title: "Page 4: Exactly How Much Faster Is Binary Search?"
 subtitle: "Unit 5, Lab 1, Page 4"
-order: 4
 ---
 
 :::::: learn

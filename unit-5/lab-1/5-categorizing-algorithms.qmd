@@ -1,7 +1,6 @@
 ---
 title: "Page 5: Categorizing Algorithms"
 subtitle: "Unit 5, Lab 1, Page 5"
-order: 5
 ---
 
 ::: learn

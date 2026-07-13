@@ -1,7 +1,6 @@
 ---
 title: "Page 1: Bits"
 subtitle: "Unit 4, Lab 4, Page 1"
-order: 1
 ---
 
 ::: learn
