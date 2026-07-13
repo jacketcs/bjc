@@ -1,3 +1,19 @@
+# Runs `fix-titles.py --check` to catch drift in page titles, subtitles,
+# `order`, and numbered filenames.
+#
+# This is INFORMATIONAL ONLY. It runs independently of the deploy workflow
+# (main.yml), so a failure here shows a red X but does NOT stop publishing --
+# main.yml still renders and pushes to gh-pages in parallel. This is
+# deliberate for now, to avoid disrupting the current contributor workflow.
+#
+# To make it actually gate publishing, either:
+#   1. move this check into main.yml as a step before "Render Website" (also
+#      add a Set up Python step there), so the deploy job fails before it
+#      publishes; and/or
+#   2. add a branch-protection rule on main requiring the "Check Titles"
+#      status to pass before a PR can merge (configured in GitHub settings,
+#      not in this file; does not cover direct pushes to main).
+
 on:
   push:
     branches: main
