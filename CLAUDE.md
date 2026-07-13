@@ -29,12 +29,25 @@ version (check the workflow for the exact version) and publishes to the
 
 - Curriculum content lives in `unit-1/` … `unit-6/` and `create-task/`, each
   wired into the navbar and sidebar in `_quarto.yml`. Units contain `lab-N/`
-  folders of numbered pages (`1-foo.qmd`, `2-bar.qmd`, …) plus an `index.qmd`;
-  sidebar order comes from the `order:` frontmatter field.
+  folders of numbered pages (`1-foo.qmd`, `2-bar.qmd`, …) plus an `index.qmd`.
+  Quarto orders the auto-generated sidebar by the `order:` frontmatter field, or,
+  when `order` is absent, by filename — so numbered pages carry no `order`
+  (their filename number already sorts them; the one lab that reaches double
+  digits, `unit-6/lab-1/`, is zero-padded `01-`…`10-` so filename sort stays
+  numeric). `index.qmd` files and any page whose `order` differs from its
+  filename number (e.g. `create-task/`) keep their explicit `order`.
 
 - Page frontmatter follows `_templates/lab_temp.qmd`: `title` (e.g. `"Page 2:
-  Programming a Game"`), `subtitle` (e.g. `"Unit 1, Lab 2, Page 3"` — used in
-  the browser page title via `pagetitle` in `_quarto.yml`), and `order`.
+  Programming a Game"`) and `subtitle` (e.g. `"Unit 1, Lab 2, Page 3"` — used in
+  the browser page title via `pagetitle` in `_quarto.yml`). On lab pages the
+  `Page N:` title prefix and the whole subtitle are derived from the file path
+  and must match it. Quarto reads the title for the sidebar/navbar from raw
+  frontmatter *before* any Lua filter runs, so these strings are baked into the
+  frontmatter rather than computed at render time. **`fix-titles.py` is the
+  generator**: it rewrites the derivable parts (preserving the human-authored
+  part of each title), drops redundant `order` fields, and normalizes subtitles.
+  Run `python3 fix-titles.py` after adding or renaming lab pages; `python3
+  fix-titles.py --check` reports drift without writing (suitable for CI).
 
 - Content is styled with fenced divs using BJC-specific classes defined in
   `bjc.scss`/`bjc-dark.scss`: `learn`, `forYouToDo`, `ifTime`, `dialogue`,
@@ -46,11 +59,7 @@ version (check the workflow for the exact version) and publishes to the
 
 ## Custom Lua extensions (`_extensions/`)
 
-Three filters run on every page (declared in `_quarto.yml`):
-
-- **titling** — Lua functions that derive "Unit X, Lab Y, Page Z" strings from
-  the file path (path parsing assumes the `unit-N/lab-N/N-name.qmd` layout, so
-  keep that naming).
+Two filters run on every page (declared in `_quarto.yml`):
 
 - **gifffer** — click-to-play GIFs; opt in per page with `gifffer: true` in
   frontmatter.
