@@ -69,6 +69,7 @@ Early Minimoog synthesizer image by
 user Magnus Manske</a>; protein folding image by
 <a href="https://commons.wikimedia.org/wiki/File:Protein_folding.png" title="Wikipedia user DrKjaergaard" target="_blank">Wikipedia
 user DrKjaergaard</a>
+</p>
 
 
 :::

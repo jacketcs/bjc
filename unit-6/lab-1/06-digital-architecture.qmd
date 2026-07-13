@@ -221,6 +221,7 @@ You can buy thermostats with computers in them, refrigerators with computers in 
 <p class="ms-4">
 
 <img src="/img/6-computers/freescale_scmimx6d-sm.jpg" title="Freescale SCM-i.MX6D chip, smaller than a dime" alt="Freescale SCM-i.MX6D chip, smaller than a dime"/><br /> <small><small>NXP Freescale SCM-i.MX6D chip</small></small>
+</p>
 
 
 

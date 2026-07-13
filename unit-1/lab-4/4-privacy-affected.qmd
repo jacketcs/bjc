@@ -71,6 +71,7 @@ IOC-1.A.4
 
 <img src="/img/icons/write-out-thoughts-mini.png" alt="write out your thoughts"/> Pick a computing innovation (a website, a payment method like Paypal, an online indirect login manager like "log in via Google," etc.) and explain privacy concerns that it raises.
 
+</li>
 </ol>
 
 </div>

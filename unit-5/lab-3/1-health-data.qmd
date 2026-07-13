@@ -228,7 +228,7 @@ expectancy. Then make up a scenario in which low life expectancy causes
 high fertility rates.</li>
 
 <li> {{< checkpoint id='1FAIpQLSd_L4mG_vV9iPAY_qpSNVvIIf--2MmmutXqO9RWtgYpBbyEiA' >}}
-
+</li>
 </ol>
 </div>
 
