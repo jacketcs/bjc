@@ -38,9 +38,9 @@ user Oxyman</a></small>
 up with an algorithm to escape from any maze. Write it down on
 paper.</li>
 
-::: ap-standard
+:::: ap-standard
 AAP-2.A, AAP-2.G, AAP-2.J
-:::
+::::
 
 <li>
 

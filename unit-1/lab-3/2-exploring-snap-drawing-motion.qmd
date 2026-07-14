@@ -28,13 +28,13 @@ When you were trying to draw an equilateral triangle on the previous page, you m
 
 (@) At the top of the page you were thinking about triangles. As a step in that direction, make a three-spoke asterisk.
 
-::: endnote
+:::: endnote
 <a href="#hint-three-spoke" data-bs-toggle="collapse" title="Click for a hint about drawing a three-spoke asterisk.">Click for a hint.</a>
 
-::: {#hint-three-spoke .collapse}
+::::: {#hint-three-spoke .collapse}
 <img title="image of three spoke asterisk being drawn slowly with the sprite tracing out a different color in each third" alt="image of three spoke asterisk being drawn slowly with the sprite tracing out a different color in each third" class="ms-4" data-gifffer="/img/1-introduction/3-point-asterisk.gif"/>
-:::
-:::
+:::::
+::::
 
 </li>
 
@@ -119,9 +119,9 @@ You can use <img src="/img/2-complexity/Debugging/say-for-secs-block.png" title=
 
 <a href="#hint-say-for" data-bs-toggle="collapse" title="This animation shows how to use say for to determine the bug in  code that is supposed to draw a rectangle.">This animation</a> shows how to use `say for` to determine the bug in code that is supposed to draw a rectangle. Notice how `say for` makes the program pause and gives you information to help you identify the source of error.
 
-::: {#hint-say-for .collapse}
+:::: {#hint-say-for .collapse}
 <img title="Animation on how to use say for blocks for debugging an erroneous rectangle construction." alt="Animation on how to use say for blocks for debugging an erroneous rectangle construction." class="ms-4" data-gifffer="/img/2-complexity/Debugging/say-for-in-rectangle.gif"/>
-:::
+::::
 
 
 :::
@@ -167,7 +167,7 @@ Script B in the same file shows how you can make a 60-branch script behave like 
 
 At the right is a painting by Alma Thomas. See what it inspires you to do.<br /> **It's your art. Take liberties.**
 
-::: dialogue
+:::: dialogue
 <div>
 
 Gamal: It looks like a map. Houses on the left, the town center on the right, with City Hall and the fire station and the mall.
@@ -275,7 +275,7 @@ Betsy: Alphie, you worry too much. But to make <em>you</em> happy, once we have 
 Gamal: Hey! Gang! Remember we imported that crayon library? Guess what! There's a "World Map" library, too! And it makes "watercolor" maps like this:<br /> <img src="/img/1-introduction/water.png" title="vague map of a town" alt="vague map of a town" class="ms-4"/><br /> And then I went over every dot on the stage using <img src="/img/1-introduction/my-brightness.png" title="(brightness) at (myself)" alt="(brightness) at (myself)"/> and <img src="/img/1-introduction/my-hue.png" title="(hue) at (myself)" alt="(hue) at (myself)"/> to decide whether to make each dot white or brown:<br /> <img src="/img/1-introduction/painted.png" title="same vague map of a town but now in brown and white" alt="same vague map of a town but now in brown and white" class="ms-4"/>
 
 </div>
-:::
+::::
 
 </li>
 

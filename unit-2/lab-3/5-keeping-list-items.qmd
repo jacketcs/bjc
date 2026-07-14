@@ -33,9 +33,9 @@ For example, the following expression will find words from the <var>words list</
 
 Note that the blank input slot in the predicate is <em>required</em>; this is where each item from the list goes as it is checked by the predicate.
 
-::: endnote
+:::: endnote
 The `letter` block in the palette looks like <img src="/img/blocks/letter-1-of-world.png" title="letter (1) of (world)" alt="letter (1) of (world)"/>. You have to delete the "world" so that there is a blank slot where you need it to be.
-:::
+::::
 :::
 
 ::: {#first .forYouToDo}
@@ -45,9 +45,9 @@ The `letter` block in the palette looks like <img src="/img/blocks/letter-1-of-w
 
 <a class="run" href="/prog/2-complexity/U2L3-KeepingData.xml" target="_blank"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a>
 
-::: endnote
+:::: endnote
 This project contains two example `keep` expressions and an `initialize list` procedure (you can look inside it to see what it does).
-:::
+::::
 
 </li>
 

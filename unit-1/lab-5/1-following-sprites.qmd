@@ -20,7 +20,7 @@ Diana Macias, an American born of Mexican parents, manages a team of 20 engineer
 
 ## Following the Mouse
 
-::::: {#first .forYouToDo}
+::: {#first .forYouToDo}
 
 (@) <div class="newProject">
 ["U1L5-SpriteChase"]{.text}<img src="/img/icons/new-project-called.png" title="Create a new project called U1L5-SpriteChase" alt="Create a new project called U1L5-SpriteChase"/>
@@ -35,7 +35,7 @@ Diana Macias, an American born of Mexican parents, manages a team of 20 engineer
 
     Open <a href="https://snap.berkeley.edu/run" title="Snap!" target="_blank">Snap<em>!</em></a>.
 
-    ::: endnote
+    ::::: endnote
     If you already have Snap<em>!</em> open and there is a project open, follow these steps first:
 
     <ol style="list-style-type:lower-roman">
@@ -48,7 +48,7 @@ Diana Macias, an American born of Mexican parents, manages a team of 20 engineer
 
     </ol>
 
-    :::
+    :::::
 
     </li>
 
@@ -66,45 +66,45 @@ Diana Macias, an American born of Mexican parents, manages a team of 20 engineer
 
 (@) Now build the script and run it. Move your mouse around the stage while the program is running. What does the `forever` block do?
 
-    ::: endnote
+    :::: endnote
     To <em>stop</em> your script, click the red stop sign: <img src="/img/1-introduction/stop_button.png" title="stop button" alt="stop button" class="button" style="height:1.9em;"/>
-    :::
+    ::::
 
 
 (@) <img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>Does the program work the way you expected?
 
-:::::
+:::
 
 ## Programming a Second Sprite
 
 ::: forYouToDo
 (@) Create a second sprite by clicking on the <img src="/img/1-introduction/add-a-new-turtle-sprite.png" title="add a new turtle sprite" alt="add a new turtle sprite"/> button just below the stage.
 
-    ::: endnote
+    :::: endnote
 
     The new sprite, automatically named **Sprite(2)**, appears on the stage. It's brand new, so it has no scripts. The pictures of the sprites beneath the stage let you select the sprite you want to program.
 
-    :::
+    ::::
 
 (@) To make your sprite names meaningful, change the name of **Sprite** to **Leader**, and change **Sprite(2)** to **Follower**.
 
-::: narrower
+:::: narrower
 
 ### **Changing the Name of a Sprite**
 
 Look for the name in a gray box above the scripting area. Click inside the name and you'll be able to edit it.<br /> <img src="/img/1-introduction/change-sprite-name.jpg" title="image of sprite name input field above the scripting area and below the project name" alt="image of sprite name input field above the scripting area and below the project name" class="ms-4 mt-2"/>
-:::
+::::
 
-::: sidenoteBig
+:::: sidenoteBig
 While a script is running, its border lights up. If the running time is short, you may not notice the brief flash.
-:::
+::::
 
 (@)  Make sure you have the **Follower** sprite selected. Write a script for **Follower** so that once the green flag is clicked, it will point toward **Leader** `forever`.<br /> <img src="/img/blocks/point-towards.png" title="point towards []" alt="point towards []" class="ms-4 mt-2"/>
 
 
-::: sidenoteBig
+:::: sidenoteBig
 Both sprites have scripts that use <img src="/img/blocks/when-green-flag-clicked-full-size.png" title="When &apos;Green Flag&apos; Clicked" alt="When &apos;Green Flag&apos; Clicked" class="inline"/>, so <em>both</em> of those scripts run when <img src="/img/1-introduction/green-flag_button.png" title="green-flag button" alt="green-flag button" style="height:1.9em;"/> is clicked.
-:::
+::::
 
 (@)  Click <img src="/img/1-introduction/green-flag_button.png" title="green-flag button" alt="green-flag button" style="height:1.9em;"/> and check that your scripts do what you intended:
     - **Leader** always follows your mouse when you move your mouse around.

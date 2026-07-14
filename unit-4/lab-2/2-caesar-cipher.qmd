@@ -3,10 +3,10 @@ title: "Page 2: Caesar Cipher Project"
 subtitle: "Unit 4, Lab 2, Page 2"
 ---
 
-:::::: learn
+::: learn
 **On this page,** you will program a shift cipher procedure
 to encrypt/decrypt text.
-::::::
+:::
 
 Computers store keyboard characters (capital and small letters,
 punctuation marks, space, digits, symbols, and so on) as numbers called
@@ -21,7 +21,7 @@ The `unicode as letter` block reports the character that a
 given Unicode number represents:<br />
 <img src="/img/4-internet/img_CaesarCipher/SnapUnicode2.png" title="unicode (65) as letter reporting &apos;A&apos;" alt="unicode (65) as letter reporting &apos;A&apos;" class="ms-4" height="52"/>
 
-:::::: {#second .forYouToDo}
+::: {#second .forYouToDo}
 
 <ol>
 
@@ -36,12 +36,12 @@ to get a feel for how this cipher works.</li>
 <li>Write a Caesar cipher procedure that works for <em>any input
 text</em> and <em>any shift value</em>.</li>
 
-::::: endnote
+:::: endnote
 <a href="#hint-characters" data-bs-toggle="collapse" title="Why do we see characters like = ? @ # ^ * { or ~ ?">Why
 do we see characters like **= ? \@ \# \^ \* { ** or
 **\~** ?</a>
 
-:::: {#hint-characters .collapse}
+::::: {#hint-characters .collapse}
 You can safely assume that shifting any set of text characters a
 reasonable distance will result in a set of printable characters, which
 may include non-alphanumeric (not letter or digit) characters.
@@ -66,12 +66,12 @@ in the plaintext?</li>
 of 4. What does 9 become?</li>
 </ul>
 
-::::
+:::::
 
 <a href="#hint-missing" data-bs-toggle="collapse" title="What if your decrypted text is missing some letters?">What
 if your decrypted text is missing some letters?</a>
 
-:::: {#hint-missing .collapse}
+::::: {#hint-missing .collapse}
 If you copy your encrypted message with a method other than by using
 copy and paste (for example, by writing it by hand or typing it into a
 phone), some characters may disappear from your message. This is because
@@ -80,17 +80,16 @@ symbolize things like "delete." These characters won't get displayed in
 Snap<em>!</em>, so you can't copy them by hand, but if you use copy and
 paste, Snap<em>!</em> knows they are there. In Take It Further exercise
 A, you can develop a method of encryption that avoids this problem.
-::::
-
 :::::
-::::::
+
+::::
 
 <li>Now test your work. Agree with your partner on a shift value for the
 encryption. Then use your program to encrypt a secret message and e-mail
 it to your partner. Then let your partner decrypt your message by using
 the program to reverse the shift.</li>
 
-::: endnote
+:::: endnote
 
 You can extract the encrypted messages from the Snap<em>!</em> interface
 by right-clicking on the variable that holds the encrypted message and
@@ -98,12 +97,12 @@ selecting the "Export" option which will download a text file to your
 computer which then you can copy/paste.<br />
 <img src="/img/4-internet/img_CaesarCipher/Export.png" title="export option" alt="export option" class="ms-4" width="350"/>
 
-:::
+::::
 
 </ol>
 :::
 
-:::::: ifTime
+::: ifTime
 <ol start="5">
 
 <li>
@@ -113,11 +112,11 @@ project so that it will find the initials for a person with a hyphenated
 name like Alexandria Ocasio-Cortez.<br />
 <img src="/img/4-internet/initials-reporting-aoc.png" title="initials of (Alexandria Ocasio-Cortez) reporting AOC" alt="initials of (Alexandria Ocasio-Cortez) reporting AOC" class="ms-4"/>
 
-::: endnote
+:::: endnote
 <a href="#hint-initials" data-bs-toggle="collapse" title="Click for some hints about improving your initials block.">Click
 for some hints.</a>
 
-::: {#hint-initials .collapse}
+::::: {#hint-initials .collapse}
 There are several ways you could solve this problem. Both of the
 following ways require higher order functions. (You can review the
 higher order functions `map`, `keep`, and
@@ -163,13 +162,13 @@ separator. (You learned about `split` on
 </li>
 
 </ul>
-:::
-:::
+:::::
+::::
 
 </li>
 
 </ol>
-::::::
+:::
 
 ::: takeItFurther
 <ol type="A">

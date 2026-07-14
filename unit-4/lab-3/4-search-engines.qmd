@@ -21,11 +21,11 @@ web.
 :::
 
 ::: todo
-::: sidenote
+:::: sidenote
 If your connection blocks YouTube,
 <a href="http://scratch.mit.edu/discuss/youtube/LVV_93mBfSU" target="_blank" title="The Internet: How Search Works">watch
 the video here</a>.
-:::
+::::
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LVV_93mBfSU?rel=0" frameborder="0" allowfullscreen class="ms-4">
 
@@ -82,9 +82,9 @@ searching on the Internet?</li>
 :::
 
 ::: atworkFullWidth
-::: float-end
+:::: float-end
 <img src="/img/atwork/Jerry_Yang.jpeg" title="photo of Jerry Yang" alt="photo of Jerry Yang" class="noshadow" height="200px"/>
-:::
+::::
 
 Jerry Yang (born 1968) is best known as the co-founder and former CEO
 of Yahoo Inc. Yang's family immigrated to America from Taiwan when he

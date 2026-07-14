@@ -91,9 +91,9 @@ family?</li>
 :::
 
 ::: dialogue
-::: stagedir
+:::: stagedir
 Betsy, Gamal, and Alphie are considering the problem above.
-:::
+::::
 
 <div>
 
@@ -102,7 +102,7 @@ prove it.
 
 </div>
 
-::: vocab
+:::: vocab
 
 
 A **proof by contradiction** is a two-step proof that a
@@ -118,7 +118,7 @@ is, showing the assumption creates a contradiction)</li>
 </ol>
 
 
-:::
+::::
 
 <div>
 
@@ -174,9 +174,9 @@ if he's from the Truth-teller family. What does he answer?</li>
 :::
 
 ::: dialogue
-::: stagedir
+:::: stagedir
 Betsy and Gamal are exploring logical statements of their own.
-:::
+::::
 
 <div>
 
@@ -213,13 +213,13 @@ False-teller could say that.
 ::: takeNote
 There are four kinds of true/false statements:
 
-::: vocabBig
+:::: vocabBig
 An **undecidable** statement might be true or might be
 false; we don't know which.
 
 A **self-contradictory** statement can be neither true
 nor false.
-:::
+::::
 
 <ul>
 
@@ -249,10 +249,10 @@ person is a Truth-teller or a False-Teller?
 Talking with others, find at least four questions that will work
 reliably.
 
-::: endnote
+:::: endnote
 If Diego were a Truth-teller, how would he answer your questions? Check
 to make sure that if he were a False-Teller, he'd answer differently.
-:::
+::::
 
 </li>
 

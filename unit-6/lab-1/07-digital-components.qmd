@@ -221,14 +221,14 @@ Wikipedia user HereToHelp</small><!--</a>-->
 <a href="#hint-target" data-bs-toggle="collapse" title="Why is it called motherboard?">Why
 is it called <em>motherboard</em>?</a>
 
-::: {#hint-target .collapse}
+:::: {#hint-target .collapse}
 In a desktop computer, there are other boards too---the Ethernet port,
 "serial" ports for the keyboard and mouse, and other expansion
 cards---and **all the other boards plug into the
 motherboard**. In laptops, there isn't room for many other
 boards, and there is <em>no</em> room for boards perpendicular to the
 motherboard, but we still use the same name.
-:::
+::::
 :::
 
 ::: ifTime
@@ -266,18 +266,18 @@ Least expensive? Did you choose a laptop or a desktop, and why?
 Create a quiz game to test a player's knowledge of computer
 hardware.<br />
 
-::: sidenote
+:::: sidenote
 Sprites are set to <em>not-draggable</em> so that the numbers don't
 move.
 <img src="/img/1-introduction/snap-center-tabs.png" title="Draggable box un-check" alt="Draggable box un-check"/>
-:::
+::::
 
 <a href="/prog/6-computers/U6L1-HardwareQuiz.xml" class="run"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a><br />
 This project file contains a stage background, sprite costumes for the
 numbered components, and a list of components so you don't have to type
 them.<br />
 
-::: endnote
+:::: endnote
 Things you might think about as you design your program:
 
 <ol type="a">
@@ -300,7 +300,7 @@ don't repeat and, if so, how to do it.</li>
 <li>Decide when to end the game and what to do then.</li>
 
 </ol>
-:::
+::::
 
 <img src="/img/6-computers/hardware-quiz.jpg" title="image of computer hardware component quiz with Alonzo saying, &apos;Click the number for the CPU.&apos;" alt="image of computer hardware component quiz with Alonzo saying, &apos;Click the number for the CPU.&apos;" class="ms-4"/>
 

@@ -15,7 +15,7 @@ As you know, predicates are reporter blocks (functions) that always report a <em
 
 So, the <em>input type</em> of a conditional is Booleans, and the <em>output type</em> of a predicate is also Booleans.
 
-::: vocabFullWidth
+:::: vocabFullWidth
 **: Domain and Range**
 
 <ul>
@@ -25,7 +25,7 @@ So, the <em>input type</em> of a conditional is Booleans, and the <em>output typ
 <li>The **output type** (often called **range**) of a function is the type of data that it reports as output.</li>
 
 </ul>
-:::
+::::
 
 Along with "abstraction," these two ideas are among the most important in computer science. If you get in the habit of using them in your thinking, you'll have many fewer bugs in your programs, because you'll automatically double-check that the output type of a reporter matches the input type of the block in which you're trying to use it.
 
@@ -59,9 +59,9 @@ repeat until (touching (Leader)?)
 
 <li>
 
-::: newProject
+:::: newProject
 ["U2L3-Predicates"]{.text}<img src="/img/icons/new-project-called.png" title="Create a new project called U2L3-Predicates" alt="Create a new project called U2L3-Predicates"/>
-:::
+::::
 
 </li>
 
@@ -75,13 +75,13 @@ In <a href="/unit-1/lab-5/1-following-sprites.qmd">Unit 1 Lab 5</a>, you made a 
 
 Now use one or more of the following <em>relational operators</em> to create a script that lets you use your mouse to write on the stage in two colors depending on the mouse's position on the stage.<br /> <img src="/img/2-complexity/relations.jpg" title="less than, equal to, and greater than predicate blocks" alt="less than, equal to, and greater than predicate blocks" class="ms-4"/>
 
-::: endnote
+:::: endnote
 <a href="#hint-two-colors" data-bs-toggle="collapse" title="Click for an example of writing on the stage in two colors.">Click for an example of writing on the stage in two colors.</a>
 
-::: {#hint-two-colors .collapse}
+::::: {#hint-two-colors .collapse}
 <img title="using the mouse to write &apos;mouse&apos; on the stage" alt="using the mouse to write &apos;mouse&apos; on the stage" class="ms-4" data-gifffer="/img/2-complexity/writing-mouse-on-stage.gif"/>
-:::
-:::
+:::::
+::::
 
 </li>
 
@@ -91,7 +91,7 @@ Now use one or more of the following <em>relational operators</em> to create a s
 ::: examFullWidth
 
 
-::: pseudop
+:::: pseudop
 You may see these five relational operators:
 
 ```{=html}
@@ -103,7 +103,7 @@ as well as a sixth:
 <pre class="inline">&ne;</pre>
 ```
 , which means "not-equal" and reports `false` if the two inputs are equal and otherwise reports `true` (if they are not equal). When you write the <img src="/img/2-complexity/not-equal.png" title="() not equal ()" alt="() not equal ()" class="inline"/> block, it will work like this:<br /> <img src="/img/2-complexity/not-equal-reporting-true.png" title="(3) not equal (4) reporting true" alt="(3) not equal (4) reporting true" class="ms-4"/> <img src="/img/2-complexity/not-equal-reporting-false.png" title="(3) not equal (3) reporting false" alt="(3) not equal (3) reporting false" class="ms-4"/>
-:::
+::::
 
 These six relational operators all report a Boolean value (`true` or `false`).
 :::
@@ -115,9 +115,9 @@ These six relational operators all report a Boolean value (`true` or `false`).
 
 <img src="/img/2-complexity/draggable-check-box.png" title="draggable box checked" alt="draggable box checked" class="float-end"/> Make the sprite draw only if the mouse button is down, so that you can draw disconnected shapes. You'll need to uncheck the "draggable" box above the scripting area (shown right) before you try this (so that Snap<em>!</em> doesn't think you are trying to drag the sprite when you click).<br />
 
-::: sidenote
+:::: sidenote
 You'll probably want to use the <img src="/img/blocks/mouse-down.png" title="mouse down? predicate block" alt="mouse down? predicate block" class="inline"/> block, which you can find in the Sensing palette.
-:::
+::::
 
 <img src="/img/2-complexity/bicolor-hello.png" title="bicolor printed hello" alt="bicolor printed hello" class="ms-4" style="height:200px;"/>
 

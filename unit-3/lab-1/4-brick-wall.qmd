@@ -42,7 +42,7 @@ determine what it will do.<br />
 <a class="run" href="/prog/3-lists/U3L1-brickwall.xml"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline" width="550"/></a>
 Run the code. Does it do what you expected?</li>
 
-::: endnote
+:::: endnote
 Ordinarily, Snap<em>!</em> draws rounded ends on thick lines:
 <img src="/img/2-complexity/U2ImageVideoAddendum_img/round-ends.png" title="line with round ends" alt="line with round ends" class="py-0"/>.
 That's often the best choice, and you can see why below. But for bricks,
@@ -52,18 +52,18 @@ and so we'll use
 <img src="/img/blocks/set-flat-line-ends.png" title="set (flat line ends) to &apos;predicate input slot&apos;" alt="set (flat line ends) to &apos;predicate input slot&apos;"/>
 to turn on flat line ends.
 
-:::: {.grid}
-::: g-col-6
+::::: {.grid}
+:::::: g-col-6
 <img src="/img/2-complexity/flat-line-ends-why.jpg" title="Square with flat line ends versus square with round line ends" alt="Square with flat line ends versus square with round line ends"/><br />**flat**
 vs. **rounded** line ends
-:::
+::::::
 
-::: g-col-6
+:::::: g-col-6
 <img src="/img/blocks/set-video-with-menu.png" title="set [video capture] to &apos;predicate input slot&apos; with menu open showing: turbo mode, flat line ends, video capture, mirror video" alt="set [video capture] to &apos;predicate input slot&apos; with menu open showing: turbo mode, flat line ends, video capture, mirror video" class="inline"/>
-:::
-::::
+::::::
+:::::
 
-:::
+::::
 
 </ol>
 :::
@@ -71,9 +71,9 @@ vs. **rounded** line ends
 ::: vocabFullWidth
 : **Abstraction**
 
-::: ap-standard
+:::: ap-standard
 AAP-3.B.1, AAP-3.B.5
-:::
+::::
 
 As you learned in
 <a href="/unit-1/lab-2/2-gossip.html" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unit
@@ -95,9 +95,9 @@ You'd like the "top level" block to be something like this:<br />
 Getting there involves <em>modularity</em>.
 
 ::: vocabFullWidth
-::: ap-standard
+:::: ap-standard
 AAP-3.B.2, AAP-3.B.3
-:::
+::::
 
 **Modularity** is the process of breaking a problem into
 smaller pieces. Modularity is a form of procedural abstraction.
@@ -123,21 +123,21 @@ each:
 ::: {#second .forYouToDo}
 <ol start="2">
 
-::: ap-standard
+:::: ap-standard
 AAP-3.C
-:::
+::::
 
 <li>Use `draw brick` to make blocks
 <img src="/img/2-complexity/U2ImageVideoAddendum_img/draw-row-A.png" title="draw row A" alt="draw row A"/>
 and
 <img src="/img/2-complexity/U2ImageVideoAddendum_img/draw-row-B.png" title="draw row B" alt="draw row B"/>.</li>
 
-::: endnote
+:::: endnote
 <img src="/img/icons/read-more-mini.png" title="Read More" alt="Read More" class="inline"/>
 <a href="#hint-too-much" data-bs-toggle="collapse" title="Too much abstraction?">Too
 much abstraction?</a>
 
-::: {#hint-too-much .collapse}
+::::: {#hint-too-much .collapse}
 It's possible to go overboard on abstraction and build so many blocks
 that your program is just as cluttered as it would be without the custom
 blocks. But it <em>can</em> be useful to make a custom block even when
@@ -154,8 +154,8 @@ change each one. To make matters worse, your complete project might have
 `move` blocks that <em>aren't</em> about mortar. But with a
 `draw mortar` block, you can change just its definition, and
 all the mortar in your picture will be changed.
-:::
-:::
+:::::
+::::
 
 <li>
 
@@ -163,13 +163,13 @@ The two kinds of rows should be exactly the same length. Your first try
 at drawing Row B is probably a little too long. **If so, debug
 it.**
 
-::: endnote
+:::: endnote
 Debug by thinking about what you are trying to accomplish, not about
 your code.
 <a href="#hint-debug" data-bs-toggle="collapse" title="Debug by thinking about what you are trying to accomplish, not about your code. For example...">For
 example...</a>
 
-::: {#hint-debug .collapse}
+::::: {#hint-debug .collapse}
 <ul>
 
 <li>Should Row B have different-size bricks, different-size gaps, or
@@ -182,8 +182,8 @@ right in the finished wall.</li>
 brick wall?"</li>
 
 </ul>
-:::
-:::
+:::::
+::::
 
 </li>
 
@@ -193,20 +193,20 @@ Write and test the
 <img src="/img/2-complexity/U2ImageVideoAddendum_img/draw-brick-wall-7.png" title="draw brick wall, rows: (7)" alt="draw brick wall, rows: (7)" class="py-0"/>
 block.
 
-::: endnote
+:::: endnote
 You might want to use the `odd?` predicate from your
 U2L4-MathLibrary. You learned about exporting and importing blocks on
 <a href="/unit-2/lab-3/1-what-is-predicate.html" title="What's a Predicate?">Unit
 2 Lab 3 Page 1: What's a Predicate?</a>
-:::
+::::
 
 </li>
 
 <img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="float-end"/>
 
-::: ap-standard
+:::: ap-standard
 AAP-3.B
-:::
+::::
 
 <li><img src="/img/icons/talk-with-another-pair.png" title="Talk with Another Pair" alt="Talk with Another Pair" class="inline"/>
 How do you think procedural abstraction manages the complexity of a
@@ -235,12 +235,12 @@ Add more inputs to `draw brick wall` (and as needed to
 
 <img src="/img/2-complexity/U2ImageVideoAddendum_img/draw-brick-wall-TIF.png" title="draw brick wall, rows: (21) bricks per row: (11) brick length: (30) width: (10) gap thickness: (5)" alt="draw brick wall, rows: (21) bricks per row: (11) brick length: (30) width: (10) gap thickness: (5)" class="ms-4"/><br />
 
-::: endnote
+:::: endnote
 Add these extra inputs one at a time, not all at once! When you modify
 the length of a brick, that should also change the length of an end
 brick for row B. When you modify the gap thickness, that should also
 change the distance between the rows.
-:::
+::::
 
 </li>
 

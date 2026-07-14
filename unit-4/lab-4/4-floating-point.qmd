@@ -34,14 +34,14 @@ two.
 <a href="#hint-float" data-bs-toggle="collapse" title="Where did that funny name come from?">Where
 did that funny name come from?</a>
 
-::: {#hint-float .collapse}
+:::: {#hint-float .collapse}
 This non-obvious name is used because there used to be a <em>fixed
 point</em> non-integer notation with a <em>fixed</em> number of digits
 after the decimal <em>point.</em> For example, a fixed point notation
 with two digits after the decimal point was used to represent an amount
 of money in dollars and cents: \$82.47. But today's computers always use
 floating point for non-integer values.
-:::
+::::
 :::
 
 
@@ -67,9 +67,9 @@ the value is displayed.
 
 
 ::: takeNote
-::: ap-standard
+:::: ap-standard
 DAT-1.B.3
-:::
+::::
 
 Floating point allows computers to store very large numbers and also
 decimals, but the format still has a specific number of bits, and that
@@ -116,7 +116,7 @@ result computed by the floating point hardware.
 <a href="#hint-roundoff" data-bs-toggle="collapse" title="How can such simple computations get wrong results?">How
 can such simple computations get wrong results?</a>
 
-::: {#hint-roundoff .collapse}
+:::: {#hint-roundoff .collapse}
 These results seem surprising because a fractional value such as 0.2 can
 be represented exactly <em>in decimal</em> (unlike the example of ⅓).
 But <em>in binary,</em> only fractions whose denominator is a power of 2
@@ -125,7 +125,7 @@ can't. The binary floating point representation of 0.2 is just slightly
 too big, and so is the binary representation of 0.4. Adding two
 slightly-too-big values produces an error big enough to get to the next
 higher representable value.
-:::
+::::
 :::
 
 No matter how good the hardware is, certain kinds of computations are
@@ -138,10 +138,10 @@ answer will be near zero, and if it's near enough, it will
 <a href="#hint-killer" data-bs-toggle="collapse" title="Floating point errors can be very expensive and can even kill people">Floating
 point errors can be very expensive and can even kill people.</a>
 
-::: {#hint-killer .collapse}
-::: todo
+:::: {#hint-killer .collapse}
+::::: todo
 Brian wants to add links to these references. --MF, 10/16/19
-:::
+:::::
 
 A notorious example is the fate of the Ariane rocket launched on June
 4, 1996 (European Space Agency 1996). In the 37th second of flight, the
@@ -169,7 +169,7 @@ on a barracks, killing 28 people.
 <small>From <em>Analog and Digital Conversion</em>, by Wikibooks
 contributors,
 <a href="https://en.wikibooks.org/wiki/Analog_and_Digital_Conversion/Fixed_Wordlength_Effects" title="Analog and Digital Conversion/Fixed Wordlength Effects" target="_blank">https://en.wikibooks.org/wiki/Analog_and_Digital_Conversion/Fixed_Wordlength_Effects</a></small>
-:::
+::::
 :::
 
 Computer arithmetic on <em>integers</em> is straightforward. Either
@@ -191,7 +191,7 @@ manufacturer and has been improved several times since it was created in
 <a href="#hint-alternatives" data-bs-toggle="collapse" title="There are alternatives to floating point">There
 are alternatives to floating point.</a>
 
-::: {#hint-alternatives .collapse}
+:::: {#hint-alternatives .collapse}
 If the subtle errors in floating point computation turn out to be
 unacceptable in a particular application, software can use alternative
 representations:
@@ -216,7 +216,7 @@ numbers in (base 10) scientific notation can be represented
 exactly.</li>
 
 </ul>
-:::
+::::
 :::
 
 With bignums turned off, when a result is too large to be an integer,
@@ -299,7 +299,7 @@ which is stored as a separate integer.</li>
 <a href="#hint-data-types" data-bs-toggle="collapse" title="But different languages use data types differently">But
 different languages use data types differently.</a>
 
-::: {#hint-data-types .collapse}
+:::: {#hint-data-types .collapse}
 In well-designed languages (those based on Scheme, for example), that
 data type code is attached to the value itself. In other languages, when
 you make a variable, you have to say what type of value it will contain,
@@ -318,7 +318,7 @@ all the same type (all integers or all character strings, etc.)
 Snap<em>!</em> has strengths that many programming languages do not,
 and it's very likely that your <em>next</em> computer science class will
 use one of those other languages.
-:::
+::::
 :::
 
 ::: forYouToDo
@@ -326,9 +326,9 @@ use one of those other languages.
 
 <li>
 
-::: ap-standard
+:::: ap-standard
 DAT-1.B
-:::
+::::
 
 <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>What
 are some consequences of using a fixed number of bits to represent

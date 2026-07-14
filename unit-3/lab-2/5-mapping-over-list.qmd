@@ -11,12 +11,12 @@ the initials of all of your contacts.
 :::
 
 ::: dialogue
-::: stagedir
+:::: stagedir
 Alphie, Betsy, and Gamal are building an `initials from name`
 block that accepts one contact as input and reports that person's
 initials.<br />
 <img src="/img/3-lists/initials-reporting.png" title="initials from name (name from contact( (item (1) of (contact list)) reporting &apos;BA&apos;" alt="initials from name (name from contact( (item (1) of (contact list)) reporting &apos;BA&apos;" class="ms-4"/>
-:::
+::::
 
 <div>
 
@@ -36,11 +36,11 @@ report (join (letter (1) of (item (1) of (list of names))) (letter (1) of (item 
 
 </div>
 
-::: endnote
+:::: endnote
 <a href="#hint-splitting" data-bs-toggle="collapse" title="What's the difference between splitting by spaces and spltting by words?">What's
 the difference between splitting by spaces and splitting by words?</a>
 
-::: {#hint-splitting .collapse}
+::::: {#hint-splitting .collapse}
 Try it! (Each brown dot represents a space.)<br />
 <img src="/img/3-lists/split-space.png" title="split &quot;hello␠␠␠␠␠␠␠world&quot; by (␠)" alt="split &quot;hello␠␠␠␠␠␠␠world&quot; by (␠)" class="ms-4"/>
 <img src="/img/3-lists/split-word.png" title="split &quot;hello␠␠␠␠␠␠␠world&quot; by word" alt="split &quot;hello␠␠␠␠␠␠␠world&quot; by word" class="ms-4"/>
@@ -52,8 +52,8 @@ made of characters and you look through each of the characters. But at a
 higher level of abstraction (such as when you are reading), text is made
 up of words. Snap<em>!</em> lets you think at this higher level of
 abstraction.
-:::
-:::
+:::::
+::::
 
 <div>
 
@@ -86,10 +86,10 @@ are good at doing things with individual items in a list.
 
 </div>
 
-::: vocabFullWidth
+:::: vocabFullWidth
 A **higher-order function** is a function that takes a
 function as input (or reports a function as output).
-:::
+::::
 :::
 
 ::: forYouToDo
@@ -130,7 +130,7 @@ job.<a name="HOFreview"> </a>
 list always has a blank input slot. This is where the list item goes
 each time the function is performed.
 
-::: endnote
+:::: endnote
 
 
 This picture shows how the three higher-order functions could be
@@ -140,11 +140,11 @@ used:<br />
 the higher-order function expressions with these (imaginary) shape
 procedures.</a>
 
-::: {#hint-shapes .collapse}
+::::: {#hint-shapes .collapse}
 <img src="/img/3-lists/map-list-figures.png" title="map (shade figure ()) over (list of figures)" alt="map (shade figure ()) over (list of figures)" class="ms-4"/>
 <img src="/img/3-lists/keep-list-figures.png" title="keep items (is () a polygon?) over (list of figures)" alt="keep items (is () a polygon?) over (list of figures)" class="ms-4"/>
 <img src="/img/3-lists/combine-list-figures.png" title="combine (list of figures) using (overlay ())" alt="combine (list of figures) using (overlay ())" class="ms-4"/>
-:::
+:::::
 
 
 
@@ -154,7 +154,7 @@ procedures.</a>
 is a quick review of the higher-order functions `map`,
 `keep`, `combine`.</a>
 
-::: {#hint-hofs-review .collapse}
+::::: {#hint-hofs-review .collapse}
 <ul>
 
 <li>`Map` performs a function on every item of a list and
@@ -176,10 +176,10 @@ that function. (You learned about `combine` on
 <img src="/img/3-lists/combine-simple-example.png" title="combine (list {0, 1, 2}) with (()+()) reporting 3" alt="combine (list {0, 1, 2}) with (()+()) reporting 3" class="ms-4"/></li>
 
 </ul>
-:::
+:::::
 
 
-:::
+::::
 :::
 
 ::: forYouToDo
@@ -200,18 +200,18 @@ reports that person's initials.<br />
 Create an expression to report a list of the initials of all your
 contacts.<br />
 
-::: endnote
+:::: endnote
 <a href="#hint-list-names" data-bs-toggle="collapse" title="Need a hint about reporting the initials of everyone in your contact list?">Need
 a hint?</a>
 
-::: {#hint-list-names .collapse}
+::::: {#hint-list-names .collapse}
 First, create an expression to report a list of the names of all your
 contacts.<br />
 <img src="/img/3-lists/contact-list-list-view.png" title="contact list watcher in list view" alt="contact list watcher in list view" class="ms-4"/>
 [→]{style="padding-right: 1em; padding-left: 1em; font-size: 36px;"}
 <img src="/img/3-lists/names.png" title="list in list view containing three items: Betsy Anderson, Alphie Preston, Gamal Abdel" alt="list in list view containing three items: Betsy Anderson, Alphie Preston, Gamal Abdel"/>
-:::
-:::
+:::::
+::::
 
 <img src="/img/3-lists/contact-list-list-view.png" title="contact list watcher in list view" alt="contact list watcher in list view" class="ms-4"/>
 [→]{style="padding-right: 1em; padding-left: 1em; font-size: 36px;"}
@@ -496,10 +496,10 @@ Correct.
 
 Click the picture to load this database project:<br />
 
-::: sidenote
+:::: sidenote
 Data from <em>Structure and Interpretation of Computer Programs</em> by
 Abelson and Sussman. Creative Commons licensed.
-:::
+::::
 
 <a class="run" href="/prog/3-lists/U3L2-Employee-Database.xml"><img src="/img/3-lists/microshaft-database.png" title="list block containing nine instances of the constructor &apos;employee, name: () job title: () salary: ()&apos; each with various inputs" alt="list block containing nine instances of the constructor &apos;employee, name: () job title: () salary: ()&apos; each with various inputs" class="ms-4"/></a><br />
 This is the list of employees of a small company. Each of the smaller

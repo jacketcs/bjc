@@ -5,9 +5,9 @@ gifffer: true
 ---
 
 ::: learn
-::: ap-standard
+:::: ap-standard
 DAT-2.D.1, DAT-2.C.1
-:::
+::::
 
 Computers can be useful in processing data to gain information, but
 your ability process data depends both on your capabilities and the
@@ -17,11 +17,11 @@ tools you have available.
 (specifically, selectors) to help you answer questions about data that
 interests you.
 
-::: endnote
+:::: endnote
 You learned about selectors on
 <a href="/unit-2/lab-2/2-quizzes.html" title="Unit 2 Lab 2 Page 2: Planning a Quiz App">Unit
 2 Lab 2 Page 2: Planning a Quiz App</a>.
-:::
+::::
 :::
 
 ::: {#first .forYouToDo}
@@ -29,9 +29,9 @@ You learned about selectors on
 
 <li>
 
-::: newProject
+:::: newProject
 ["U5L3-Data-Processing"]{.text}<img src="/img/icons/new-project-called.png" title="Start a New Project called U5L3-Data-Processing" alt="Start a New Project called U5L3-Crayon"/>
-:::
+::::
 
 </li>
 
@@ -66,12 +66,12 @@ that works in any of these applications and in Snap<em>!</em>.
 <a href="#hint-CSV" data-bs-toggle="collapse" title="What does CSV stand for">What
 does CSV stand for?</a>
 
-::: {#hint-CSV .collapse}
+:::: {#hint-CSV .collapse}
 CSV stands for "comma separated values." CSV files are tables of data
 stored with commas between each item in a row and line breaks between
 each row in the table. (You can see the commas and line breaks of a CSV
 by opening it in a text editor.)
-:::
+::::
 :::
 
 Although spreadsheets are a common kind of data, they aren't the only
@@ -125,8 +125,8 @@ view" and see how the data (and column headings) are stored.
 <a href="#hint-views" data-bs-toggle="collapse" title="See examples of table view and list view.">See
 examples of table view and list view.</a>
 
-::: {#hint-views .collapse style="text-align:center;"}
-::: {style="display: inline-grid; grid-template-columns: auto auto; text-align:center;"}
+:::: {#hint-views .collapse style="text-align:center;"}
+::::: {style="display: inline-grid; grid-template-columns: auto auto; text-align:center;"}
 <div>
 
 **Table View**
@@ -139,15 +139,15 @@ examples of table view and list view.</a>
 
 </div>
 
-::: {style="padding-right: 50px;"}
+:::::: {style="padding-right: 50px;"}
 <img src="/img/5-algorithms/cars-table-view.png" title="report of cars dataset displayed as a table with columns and rows; the first row is the label of each column; the remaining rows each contain the data for a single record" alt="report of cars dataset displayed as a table with columns and rows; the first row is the label of each column; the remaining rows each contain the data for a single record" class="ms-4"/>
-:::
+::::::
 
-::: {style="padding-left: 50px;"}
+:::::: {style="padding-left: 50px;"}
 <img src="/img/5-algorithms/cars-list-view.png" title="report of cars dataset displayed as a list of lists; the first list contains the labels for each of the columns shown in the table view; the remaining lists each contain the data for a single record" alt="report of cars dataset displayed as a list of lists; the first list contains the labels for each of the columns shown in the table view; the remaining lists each contain the data for a single record" class="ms-4"/>
-:::
-:::
-:::
+::::::
+:::::
+::::
 :::
 
 ::: vocabFullWidth
@@ -197,7 +197,7 @@ Build
 <img src="/img/5-algorithms/column-of-table.png" title="column () of table ()" alt="column () of table ()" class="inline py-0"/>
 to report just one column of your dataset.
 
-::: endnote
+:::: endnote
 `Record` and `column` are <em>selectors</em>
 for a `table` abstract data type. We don't need a
 <em>constructor</em> for this abstract data type because we are
@@ -214,7 +214,7 @@ that doesn't match the input you want to use.
 to figure out how to report just one column, but click if you really
 need a hint.</a>
 
-::: {#hint-map .collapse}
+::::: {#hint-map .collapse}
 
 
 <img src="/img/blocks/map.png" title="map () over ()" alt="map () over ()" class="inline"/>
@@ -222,18 +222,18 @@ performs the same function on every item in a list.
 <a href="#hint-more-map" data-bs-toggle="collapse" title="Have I seen map before?">Have
 I seen `map` before?</a>
 
-::: {#hint-more-map .collapse}
+:::::: {#hint-more-map .collapse}
 Since a table is a list of lists (where each inner list is one record),
 `map` will perform the same function on every record in your
 dataset. You will need to determine what function to map over the
 dataset. You learned about `map` on
 <a href="/unit-3/lab-2/5-mapping-over-list.html" title="Unit 3 Lab 2 Page 5: Transforming Every List Item">Unit
 3 Lab 2 Page 5: Transforming Every List Item</a>.
-:::
+::::::
 
 
-:::
-:::
+:::::
+::::
 
 </li>
 
@@ -245,7 +245,7 @@ column** of your data set, and then build code to answer your
 question. You may need to build additional blocks or import them from
 other projects.
 
-::: endnote
+:::: endnote
 You can see the column number by holding your mouse pointer over the
 letter at the top of the column in table view.<br />
 <img src="/img/5-algorithms/column-number.png" title="image of the top of the table view for the cars dataset with the mouse pointer over the top of the second column; the columns are now labeled A, 2 (where the pointer is), C, D, etc." alt="image of the top of the table view for the cars dataset with the mouse pointer over the top of the second column; the columns are now labeled A, 2 (where the pointer is), C, D, etc." class="ms-4" height="120"/>
@@ -255,7 +255,7 @@ You may need to use `map`, `keep`, or
 <a href="#hint-HOFs" data-bs-toggle="collapse" title="Click to see where you learned about these higher order functions.">Click
 to see where you learned about these higher order functions.</a>
 
-::: {#hint-HOFs .collapse}
+::::: {#hint-HOFs .collapse}
 <ul>
 
 <li>You learned about `map` on
@@ -271,12 +271,12 @@ to see where you learned about these higher order functions.</a>
 2 Lab 4 Page 3: Other Mathematical Reporters</a>.</li>
 
 </ul>
-:::
+:::::
 
 <a href="#hint-questions" data-bs-toggle="collapse" title="Click for example questions to ask about a single column.">Click
 for example questions to ask about a single column.</a>
 
-::: {#hint-questions .collapse}
+::::: {#hint-questions .collapse}
 <ul>
 
 <li>What's the average MPG that cars in this database get in the city?
@@ -293,8 +293,8 @@ Notice that all of these examples only require data from one column.
 If you want to ask a question that requires looking at another column
 (for example, "What's the model of the car with the highest MPG?"), you
 can do the Take It Further Activity below.
-:::
-:::
+:::::
+::::
 
 </li>
 
@@ -324,9 +324,9 @@ Data may also be incomplete (if some people didn't complete the survey)
 or invalid (if some people made mistakes).
 
 ::: vocabFullWidth
-::: ap-standard
+:::: ap-standard
 DAT-2.C.4, DAT-2.E.2
-:::
+::::
 
 **Cleaning data** is the process of making the data
 uniform <em>without changing its meaning</em> (such as replacing
@@ -356,9 +356,9 @@ the bias.
 ::: forYouToDo
 <ol start="11">
 
-::: ap-standard
+:::: ap-standard
 DAT-2.C
-:::
+::::
 
 <li><img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/>Describe
 possible challenges about the data you might face if you were going to
@@ -383,7 +383,7 @@ MPG?" by building a
 <img src="/img/5-algorithms/row-with-max-of-table.png" title="row with maximum in column () of table ()" alt="row with maximum in column () of table ()" class="inline py-0"/>
 block.
 
-::: endnote
+:::: endnote
 ```{=html}
 <!--This gives away the answer. <a href="#hint-rowwithmax" data-bs-toggle="collapse" title="See the row with maximum in column () of table () block in action.">See `row with maximum in column () of table ()` in action.</a>
 <div id="hint-rowwithmax" class="collapse"><img class="ms-4" src="/img/5-algorithms/row-with-max-of-table-reporting.png" alt="" title="" /></div>-->
@@ -392,7 +392,7 @@ block.
 for a hint about how to build `row with maximum in column () of
 table ()`.</a>
 
-::: {#hint-build .collapse}
+::::: {#hint-build .collapse}
 
 
 One way to build a
@@ -422,12 +422,12 @@ building a
 <img src="/img/5-algorithms/row-with-max-between.png" title="row with maximum in column () between row () and row ()" alt="row with maximum in column () between row () and row ()"/>
 that compares a specific field (column) for two rows and reports the row
 with the higher value in the specified column.
-:::
+:::::
 
-::: todo
+::::: todo
 Need to fix "specific field (column)" in the TIF. --MF, 6/27/19
-:::
-:::
+:::::
+::::
 
 </li>
 

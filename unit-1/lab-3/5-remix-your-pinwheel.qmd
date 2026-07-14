@@ -31,19 +31,19 @@ You can use your <em>general</em>-purpose pinwheel procedure to create other, si
 
 </ol>
 
-::: takeNote
+:::: takeNote
 ### **Debugging with <img src="/img/2-complexity/Debugging/pause-all-block.png" title="pause all" alt="pause all" height="42"/>**
 
 You can use `pause all` to place breaks in your code so you can see what's happening along the way. When you run code with `pause all` in it, you can click the yellow Run/Pause button next to the Green Flag (<img src="/img/sys/play-button.png" title="play button" alt="play button"/>/<img src="/img/1-introduction/pause_button.png" title="pause button" alt="pause button"/>) to move through the code up until a `pause all` block is reached again. The `pause all` block will pause <em>every</em> script that is running until the yellow Run/Pause button is clicked.
-:::
+::::
 :::
 
 ::: takeNote
-::: sidenoteBig
+:::: sidenoteBig
 
 On page <a href="/unit-1/lab-2/2-gossip.html" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unit 1 Lab 2 Page 2: Making Programs Talk</a>, you learned about <em>procedural abstraction:</em> giving a code segment a name (making it a block). That way you can call it more than once instead of copying and pasting.
 
-:::
+::::
 
 Here is another kind of <em>abstraction</em>: noticing that `asterisk` and `polygon` are both kinds of pinwheels, and writing one, more general, `pinwheel` block that uses an input so that the block can be used to make asterisks, polygons, or other interesting designs.
 
@@ -55,11 +55,11 @@ This is an example of **abstraction by generalization**: looking at chunks of co
 (@) If you look inside of `pinwheel` and see how you're using it in `polygon`, you'll see that there are steps that you don't really need for the case of a polygon. **Write another version of `polygon` built directly out of primitive blocks (`move`, `turn` and so on)**. How simple can you make it?
     - After you've completed this second version of the `polygon` block, **comment your code** so that we know which polygon block is which.
 
-::: takeNote
+:::: takeNote
 
 As long as your `polygon` block draws the right picture, it doesn't matter to the rest of the project what's inside it.
 
-:::
+::::
 
 <img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline"/>
 

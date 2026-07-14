@@ -56,11 +56,11 @@ to start a new game. Play one game, <em>deliberately letting
 Then build this expression, and see what it reports:<br />
 <img src="/img/3-lists/map-item-board.png" title="map (item ( ) of (board)) over (list{1, 2, 3})" alt="map (item ( ) of (board)) over (list{1, 2, 3})" class="ms-4"/><br />
 
-::: endnote
+:::: endnote
 <a href="#hint-map-item" data-bs-toggle="collapse" title="How does map work here?">How
 does `map` work here?</a>
 
-::: {#hint-map-item .collapse}
+::::: {#hint-map-item .collapse}
 This `map` expression works the same way as the
 `join` example above, but people sometimes find it a little
 more complex to think about, because it's natural to expect
@@ -81,8 +81,8 @@ its box is checked in the Variables palette and expand its watcher to
 see its list items as in the picture below.<br />
 <img src="/img/3-lists/ttt-board-var.png" title="picture of: watcher of board variable showing {O, O, X, 4, X, 6, X, 8, 9}; and Tic Tac Toe game with X, X, O in top row; empty, X, empty in middle row; and X, empty, empty in bottom row" alt="picture of: watcher of board variable showing {O, O, X, 4, X, 6, X, 8, 9}; and Tic Tac Toe game with X, X, O in top row; empty, X, empty in middle row; and X, empty, empty in bottom row" class="ms-4 noshadow"/>
 <img src="/img/3-lists/map-item-board-reporting.png" title="map (item ( ) of (board)) over (list{1, 2, 3}) reporting {O, O, X}" alt="map (item ( ) of (board)) over (list{1, 2, 3}) reporting {O, O, X}" class="ms-4"/><br />
-:::
-:::
+:::::
+::::
 
 </li>
 
@@ -108,13 +108,13 @@ triple
 <img src="/img/3-lists/{1,2,3}.png" title="list{1, 2, 3}" alt="list{1, 2, 3}"/>,</em>
 or `False` otherwise.
 
-::: endnote
+:::: endnote
 You learned how to specify the list input type
 (<img src="/img/3-lists/list_input_slot.png" title="list input type: rectangle with two smaller orange rectangles inside" alt="list input type: rectangle with two smaller orange rectangles inside" class="inline"/>)
 on
 <a href="/unit-2/lab-2/2-quizzes.html" title="Unit 2 Lab 2 Page 2: Planning a Quiz App">Unit
 2 Lab 2 Page 2: Planning a Quiz App</a>.
-:::
+::::
 
 </li>
 
@@ -150,11 +150,11 @@ made to build the `status of all winning triples` block. It
 should report the status of all of the possible winning triples as a
 list of lists, as shown above.</li>
 
-::: endnote
+:::: endnote
 <a href="#hint-status-all" data-bs-toggle="collapse" title="Click for a hint on how to use map.">Click
 for a hint on how to use `map`.</a>
 
-::: {#hint-status-all .collapse}
+::::: {#hint-status-all .collapse}
 
 
 When you use `map` think:
@@ -172,14 +172,14 @@ are mapping over.</li>
 Here, you want to know the status of each possible winning triple.
 
 
-:::
-:::
+:::::
+::::
 
-::: sidenoteBig
+:::: sidenoteBig
 <a href="#hint-won" data-bs-toggle="collapse" title="Click for a hint on building won?.">Click
 for a hint on building `won?`.</a>
 
-::: {#hint-won .collapse}
+::::: {#hint-won .collapse}
 Put it in words: What is it that you want to check?
 
 Are there any blocks that might be helpful for that?
@@ -189,13 +189,13 @@ Are there any blocks that might be helpful for that?
 <a href="#hint-won-contains" data-bs-toggle="collapse" title="Click for another hint.">Click
 for another hint.</a>
 
-::: {#hint-won-contains .collapse}
+:::::: {#hint-won-contains .collapse}
 <img src="/img/3-lists/contains.png" title="( ) contains ( )" alt="( ) contains ( )"/>
-:::
+::::::
 
 
-:::
-:::
+:::::
+::::
 
 <li>Now make a block
 <img src="/img/3-lists/wonQ.png" title="won? ( )" alt="won? ( )"/>

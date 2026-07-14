@@ -65,7 +65,7 @@ But `or` is a little different in computer science. In English, the word "or" ha
 ::: examFullWidth
 
 
-::: pseudop
+:::: pseudop
 The <img src="/img/blocks/and-full-size.png" title="() and ()" alt="() and ()"/>, <img src="/img/blocks/or.png" title="() or ()" alt="() or ()"/>, and <img src="/img/blocks/not.png" title="not ()" alt="not ()"/> blocks will appear as
 
 ```{=html}
@@ -82,7 +82,7 @@ The <img src="/img/blocks/and-full-size.png" title="() and ()" alt="() and ()"/>
 <pre class="inline">NOT</pre>
 ```
 and will work exactly the same way as they do in Snap<em>!</em>.
-:::
+::::
 :::
 
 ::: forYouToDo
@@ -114,19 +114,19 @@ Choose the hexagonal <em>predicate</em> shape.<br />
 <li>You must use the <img src="/img/blocks/report.png" title="report()" alt="report()" class="py-0"/> block to report the result of reporters (including predicates).</li>
 
 </ul>:
-:::
+::::
 
 <!--<img class="ms-4" data-gifffer="/img/2-complexity/defining-even-predicate.gif" alt="defining a predicate block" title="defining a predicate block" />-->
 
 (@) Use `between?` to create a script that lets you write on the stage in three colors (depending on the height on the stage), using your mouse.
 
-::: endnote
+:::: endnote
 <a href="#hint-three-colors" data-bs-toggle="collapse" title="Click for an example of writing on the stage in three colors.">Click for an example of writing on the stage in three colors.</a>
 
-::: {#hint-three-colors .collapse}
+::::: {#hint-three-colors .collapse}
 <img title="using the mouse to write in three colors on the stage" alt="using the mouse to write in three colors on the stage" class="ms-4" data-gifffer="/img/2-complexity/U2ImageVideoAddendum_img/tri-color-bjc.gif"/>
-:::
-:::
+:::::
+::::
 
 </li>
 
@@ -267,13 +267,13 @@ Because there are only two Boolean values (`true` and `false`), there are only f
 
 Make up another set of four letters (such as TFTF), and build a predicate function with that behavior. Describe how the function behaves.
 
-::: endnote
+:::: endnote
 <a href="#hint-TFTF" data-bs-toggle="collapse" title="Click to see an example showing and describing the behavior of TFTF.">Click to see an example showing and describing the behavior of TFTF.</a>
 
-::: {#hint-TFTF .collapse}
+::::: {#hint-TFTF .collapse}
 <img src="/img/2-complexity/TFTF-TT-reporting.png" title="(true) TFTF (true) reporting true" alt="(true) TFTF (true) reporting true" class="ms-4"/><br /> <img src="/img/2-complexity/TFTF-TF-reporting.png" title="(true) TFTF (false) reporting true" alt="(true) TFTF (false) reporting true" class="ms-4"/><br /> <img src="/img/2-complexity/TFTF-FT-reporting.png" title="(false) TFTF (true) reporting true" alt="(false) TFTF (true) reporting true" class="ms-4"/><br /> <img src="/img/2-complexity/TFTF-FF-reporting.png" title="(false) TFTF (false) reporting false" alt="(false) TFTF (false) reporting false" class="ms-4"/> The TFTF function reports true whenever the second input is true no matter what the first input is. It's not a useful function because you could just use the second input as the predicate instead of building this predicate function.
-:::
-:::
+:::::
+::::
 
 </li>
 

@@ -137,14 +137,14 @@ This feels like it should be a separate page. --MF, 12/24/17
 :::
 
 ::: takeNote
-::: atwork
-::: float-end
+:::: atwork
+::::: float-end
 <img src="/img/atwork/Mary_Golda_Ross.jpeg" title="photo of Mary Golda Ross" alt="photo of Mary Golda Ross" class="noshadow" height="200px"/>
 
-::: {.endnote style="width:141px;margin:6px;"}
+:::::: {.endnote style="width:141px;margin:6px;"}
 <small>Image from Museum of Women Pilots</small>
-:::
-:::
+::::::
+:::::
 
 Mary Golda Ross (1908--2008) was a ground-breaking Native American
 engineer and the first female employed by Lockheed, an American
@@ -158,7 +158,7 @@ Earth-orbiting flights, and orbiting satellites.
 
 <a href="https://airandspace.si.edu/stories/editorial/mary-g-ross-aerospace-engineer" title="Article: Aerospace Engineer, Educator, and Advocate" target="_blank">Article:
 Aerospace Engineer, Educator, and Advocate</a>
-:::
+::::
 
 <h4>The
 <a href="http://www.acm.org/about-acm/acm-code-of-ethics-and-professional-conduct" target="_blank" title="Association for Computing Machinery Code of Ethics and Professional Conduct">Code

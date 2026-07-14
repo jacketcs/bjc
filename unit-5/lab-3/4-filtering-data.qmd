@@ -41,7 +41,7 @@ build by using the `pipe` function.
 <a href="#hint-pipe" data-bs-toggle="collapse" title="What would this look like using pipe?">What
 would this look like using `pipe`?</a>
 
-::: {#hint-pipe .collapse}
+:::: {#hint-pipe .collapse}
 You can use the `pipe` function from the "Bar Charts"
 library to work through your data analysis one function at at
 time:<br />
@@ -62,7 +62,7 @@ the empty slot in `average` is filled by the output of
 `column (9) of table`. It's like a pipe of made of pieces
 connected together; the data goes in one end and works through each
 function, computing a new value at each step.
-:::
+::::
 
 
 :::
@@ -75,11 +75,11 @@ already.</li>
 
 <li>
 
-::: sidenote
+:::: sidenote
 You learned about loading libraries and exporting/importing blocks on
 <a href="/unit-2/lab-4/2-math-predicates.html" title="Unit 2 Lab 4 Page 2: Making a Mathematical Library">Unit
 2 Lab 4 Page 2: Making a Mathematical Library</a>.
-:::
+::::
 
 Add the tools you will need for this project:
 
@@ -97,9 +97,9 @@ blocks from your U2L4-MathTools project.</li>
 
 </li>
 
-::: ap-standard
+:::: ap-standard
 DAT-2.D
-:::
+::::
 
 <li><img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
 Determine one question you can answer by **looking at a single
@@ -107,11 +107,11 @@ column of a <em>portion</em> ** of your data set, and then build
 code to answer that question. You can nest your function or use
 `pipe`. (Or try both!)</li>
 
-::: endnote
+:::: endnote
 <a href="#hint-portion" data-bs-toggle="collapse" title="Click for example questions to ask about a portion of a single column.">Click
 for example questions to ask about a portion of a single column.</a>
 
-::: {#hint-portion .collapse}
+::::: {#hint-portion .collapse}
 <ul>
 
 <li>What's the average MPG that <em>Volvos</em> in this database get in
@@ -133,8 +133,8 @@ transmission).
 <!--NOT NEEDED IF WE KEEP IMPORTING IN #2 ABOVE
 You built `average` on <a href="/unit-2/lab-4/3-other-math-reporters.html" title="Unit 2 Lab 4 Page 3: Other Mathematical Reporters">Unit 2 Lab 4 Page 3: Other Mathematical Reporters</a>.-->
 ```
-:::
-:::
+:::::
+::::
 
 </ol>
 :::
@@ -155,19 +155,19 @@ item that's found, so it can be faster.
 `map`, and `combine` because it takes a function
 (a predicate) as input.
 
-::: todo
+:::: todo
 Images need alt/title text. --MF, 6/27/19 and new column numbers -bh
-:::
+::::
 
 
 
 <a href="#hint-findfirst" data-bs-toggle="collapse" title="Click for an example of keep vs. find first.">Click
 for an example of `keep` vs. `find first`.</a>
 
-::: {#hint-findfirst .collapse}
+:::: {#hint-findfirst .collapse}
 <img src="/img/5-algorithms/keep-cars-2010.png" class="inline"/>
 <img src="/img/5-algorithms/find-first-car-2010.png" class="inline"/>
-:::
+::::
 
 
 :::
@@ -205,9 +205,9 @@ which you will learn on the next page)</li>
 ::: forYouToDo
 <ol start="4">
 
-::: ap-standard
+:::: ap-standard
 DAT-2.D
-:::
+::::
 
 <li><img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
 Ask and answer a question that you can answer by looking at a single

@@ -41,23 +41,23 @@ Sometimes the script inside a loop needs to know which time through the loop it'
 
 ::: {.grid .justify-content-center .align-items-center}
 
-::: {.g-col-xxl-4 .g-col-sm-12}
+:::: {.g-col-xxl-4 .g-col-sm-12}
 
 <img src="/img/looping/for-loop-equivalent.png" title="say (1) for (2) secs, say (2) for (2) secs, say (3) for (2) secs... say (10) for (2) secs" alt="say (1) for (2) secs, say (2) for (2) secs, say (3) for (2) secs... say (10) for (2) secs"/>
 
-:::
+::::
 
-::: {.g-col-xxl-4 .g-col-sm-12}
+:::: {.g-col-xxl-4 .g-col-sm-12}
 
 to
 
-:::
+::::
 
-::: {.g-col-xxl-4 .g-col-sm-12}
+:::: {.g-col-xxl-4 .g-col-sm-12}
 
 <img src="/img/looping/for-loop-drag-i.gif" title="for (i)= (1) to (10) {say (i) for (2) secs}" alt="for (i)= (1) to (10) {say (i) for (2) secs}" class="noshadow"/>
 
-:::
+::::
 :::
 
 Each time the `for` block runs the script inside, it changes the value of the counter by 1, beginning with the first input number and ending after the second.
@@ -80,9 +80,9 @@ The `for` block's default counter name, <img src="/img/blocks/variable-i.png" ti
 
 Build this script and try it out:<br />
 
-::: sidenote
+:::: sidenote
 This design got the nickname "squiral" because it's a **squ**are sp**iral**.
-:::
+::::
 
 <img src="/img/looping/squirral-script.png" title="pen down; for(length)=(1) to (100){move(2Xlength) steps; turn clockwise (90) degrees}" alt="pen down; for(length)=(1) to (100){move(2Xlength) steps; turn clockwise (90) degrees}" class="ms-4"/><br />
 
@@ -125,13 +125,13 @@ This design got the nickname "squiral" because it's a **squ**are sp**iral**.
 
 (@) Below are two animations that use the `pinwheel` code with inputs. Find out how to create your own artistic animations.<br /> <img src="/img/1-introduction/Blockswith-Inputs_img/pinwheelArray.gif" title="Array of pinwheels animation" alt="Array of pinwheels animation" class="ms-4" height="200"/> <img src="/img/1-introduction/Blockswith-Inputs_img/PinwheelWreathAnimation.gif" title="Pinwheel wreath animation" alt="Pinwheel wreath animation" height="200"/><br />
 
-    ::: endnote
+    :::: endnote
 
     The following code may give you ideas about how to create animations. The `warp` block allows the drawing of the pinwheel all at once.
 
     <img src="/img/1-introduction/Blockswith-Inputs_img/animationCode.png" title="forever{for(i)=(0) to (50){clear;warp{pinwheel, branches:(12) size:(50) backup:(i)}}}" alt="forever{for(i)=(0) to (50){clear;warp{pinwheel, branches:(12) size:(50) backup:(i)}}}" class="ms-4" height="150"/>
 
-    :::
+    ::::
 
 <img src="/img/1-introduction/mini-Albers-picture.png" alt="mini-Albers-style picture" class="float-end" height="180"/>
 
@@ -166,9 +166,9 @@ On the right is a painting by Josef Albers. He was interested in experimenting w
 
 Okay, now dig in.
 
-::: narrowpurple
+:::: narrowpurple
 **Randomness:** The four examples above are different from the actual Albers picture in that they include occasional colors that aren't from the same family. This can make the pictures more interesting to someone who doesn't share Albers's interest in subtle differences in color. (Albers himself, in fact, had more color variation in other pictures of this type.) <em>Too much</em> randomness, though, can make the picture <em>less</em> interesting. Compare the last two examples above; the left one of those two is clearly based on the orange family, with rainbow-neighbors red and yellow, but the right one has violets, greens, oranges, a yellow---too much chaos, maybe. Look back at the Gossip project if you don't remember how to choose something special once out of six times, or once out of 14 times. Other random choices you can make are the number of squares, how much to shrink the size from one square to the next, and how much to move the corner of the next square horizontally and vertically (the picture is more interesting if those two numbers are different, so the smallest square isn't exactly in the center).
-:::
+::::
 
 </li>
 
@@ -184,9 +184,9 @@ Okay, now dig in.
 
 Then build it, and try each of these tests:<br />
 
-::: sidenoteBig
+:::: sidenoteBig
 You can stop each test with the stop button <img src="/img/1-introduction/stop_button.png" title="stop button" alt="stop button" class="button"/> when you're sure nothing new will happen, but don't decide that too quickly!
-:::
+::::
 
 <img src="/img/1-introduction/inspi-tests.png" title="inspi with (1000,10,80), (1000,5,1), (1000,5,7), (1000,5,13), (1000,10,77)" alt="inspi with (1000,10,80), (1000,5,1), (1000,5,7), (1000,5,13), (1000,10,77)" class="ms-4"/>
 
@@ -198,9 +198,9 @@ You can stop each test with the stop button <img src="/img/1-introduction/stop_b
 
 What's going on? Can you work out a theory to predict anything about the shape it draws for a particular angle input? <a href="#hint-1" data-bs-toggle="collapse" class="collapsed" title="Hint">(Don't click unless you need a big hint.)</a>
 
-::: {#hint-1 .collapse}
+:::: {#hint-1 .collapse}
 Hint: Think about divisibility.
-:::
+::::
 
 </li>
 

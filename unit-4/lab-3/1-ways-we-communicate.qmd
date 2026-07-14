@@ -43,9 +43,9 @@ the For You To Do and it a weak link when implementing?</li>
 <li>What are some different ways we use technology to communicate?
 Generate a list.</li>
 
-::: sidenote
+:::: sidenote
 Remember to cite your sources.
-:::
+::::
 
 <li>Choose one means of communication (such as cell phone call, SMS,
 Facebook, Skype, Twitter, etc.) and use the Internet to figure out what

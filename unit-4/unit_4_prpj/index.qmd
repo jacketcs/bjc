@@ -10,10 +10,10 @@ This is an **individual** project. This means that all of your work must be your
 
 :::
 
-:::::: learn
+::: learn
 **In this project,** you will create a program that converts binary numbers made up of 7 bits into decimal.<br />
 
-::::::
+:::
 
 
 The user will be given seven bits that begin by displaying 0. If the user clicks on one, it will change to 1. If it’s 1 and the user clicks on it, it should change back to 0. 
@@ -26,7 +26,7 @@ When the user presses the ‘reset’ button, all the bits will return to displa
 <iframe src="https://drive.google.com/file/d/1jDS0FEdGWY8vXEFwadD_CiM4siPa_lTT/preview" width="640" height="480"></iframe> 
 
 
-:::::  endnote
+:::  endnote
 <a href="#hint-coordinates" data-bs-toggle="collapse" title="Click for a hint about one way to organize your project.">Click
 for a suggestion of how to organize the different stages of the program.</a>
 
@@ -40,11 +40,11 @@ for a suggestion of how to organize the different stages of the program.</a>
 
 ::::
 
-:::::
+:::
 
 <a class="run" href="https://snap.berkeley.edu/snap/snap.html#present:Username=chief%20o'keefe&ProjectName=Unit%204%20Project%20Starter%20Code"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a>
 
-:::::: ifTime
+::: ifTime
 (@) Add a "+1" button that will add one to the digits when you press it.
 (@) Make a version of the program that will keep track of numbers in a base other than 2 (try base 16, called 'hexadecimal', also used in computer science)
 

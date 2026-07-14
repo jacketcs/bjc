@@ -26,19 +26,19 @@ pages, you'll look more closely at numbers inside the computer.
 
 <li>
 
-::: todo
+:::: todo
 They have now built factorial in 2.4.1, so this page should either give
 them a project with ONLY big nums and ask them to import `!`
 or it should ask them to open their U2 Math project and then download
 and import bignums. --MF, 6/13/19
-:::
+::::
 
-::: sidenote
+:::: sidenote
 If you look at the code, you'll see that it's a recursive reporter. How
 does it work? You first saw recursion on
 <a href="/unit-3/lab-1/2-fractal-art.html" title="Unit 3 Lab 1 Page 2: Fractal Art">Unit
 3 Lab 1 Page 2: Fractal Art</a>.
-:::
+::::
 
 **** The <em>factorial</em> of a positive integer $n$ (written "$n!$") is the product of all the integers from 1
 to $n$. For example:
@@ -48,9 +48,9 @@ $$5! = 1 \times 2 \times 3 \times 4 \times 5 = 120$$
 <a class="run" href="/prog/4-internet/U4L4-BigNumbers.xml" target="_blank"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a>
 Try out these inputs:<br />
 
-::: sidenote
+:::: sidenote
 You might see different results depending on your computer's processor.
-:::
+::::
 
 <ol>
 
@@ -62,16 +62,16 @@ You might see different results depending on your computer's processor.
 
 <li><img src="/img/4-internet/bang30.png" title="(30)! reporting 2.6525285981219103e+32" alt="(30)! reporting 2.6525285981219103e+32"/></li>
 
-::: todo
+:::: todo
 This yellowbox had been a stray single line of white text after the FYTD
 and before the next heading. I think this is better. --MF, 5/31/20
-:::
+::::
 
-::: endnote
+:::: endnote
 The `e+` means "times ten to the power of" so this notation means
 $2.6525285981219103 \times 10^{32}$ 
 $= 265,252,859,812,191,030,000,000,000,000,000$.
-:::
+::::
 
 </ol>
 
@@ -118,13 +118,13 @@ computes an approximation.
 <a href="#hint-power-2" data-bs-toggle="collapse" title="Are processor widths always powers of two?">Are
 processor widths always powers of two?</a>
 
-::: {#hint-power-2 .collapse}
+:::: {#hint-power-2 .collapse}
 Processor widths don't have to be a power of two. Some old
 computers---the kind you see in old movies that filled a large
 room---used 12-bit, 36-bit, and 60-bit words. But modern personal
 computers started at 8 bits and the widths have been doubling with each
 new generation.
-:::
+::::
 :::
 
 ::: forYouToDo
@@ -181,18 +181,18 @@ better programming language.
 ::: forYouToDo
 <ol start="3">
 
-::: sidenoteBig
+:::: sidenoteBig
 You can use bignums in any Snap<em>!</em> project by importing the
 "Bignums, exact rationals, complex #s" library.
 
-::: todo
+::::: todo
 You learned to import libraries on the
 <a href="/unit-6/lab-1/04-software-libraries.html" title="The Software Domain: Libraries">Libraries</a>
 page.
 
 They did not. --MF, 6/13/19
-:::
-:::
+:::::
+::::
 
 <li>Click on this block in the scripting area:<br />
 <img src="/img/4-internet/bignums-true.png" title="USE BIGNUMS (true)" alt="USE BIGNUMS (true)" class="ms-4"/></li>
@@ -202,11 +202,11 @@ They did not. --MF, 6/13/19
 Now try `30!` again.<br />
 <img src="/img/4-internet/bang30-bignum.png" title="30! reporting 265252859812191058636308480000000" alt="30! reporting 265252859812191058636308480000000" class="ms-4"/>
 
-::: endnote
+:::: endnote
 This (exactly correct) value is different from the (rounded off)
 **floating point** value above. (More about floating point
 in a moment.)
-:::
+::::
 
 </li>
 
@@ -228,14 +228,14 @@ should be able to zoom in on it to read the digits.</li>
 
 </ol>
 
-::: todo
+:::: todo
 Please remind me again why this is worth doing. It feels clunky after a
 whole page of super abstract and ungrounded (i.e., "I can forget this as
 soon as the test is over") stuff that I only need to learn "because the
 teacher said so." --MF, 5/31/20<br />It's much less clunky now. And the
 point is to demonstrate that there's no good excuse for any programming
 language to give approximate results to integer computations. -bh
-:::
+::::
 
 </li>
 

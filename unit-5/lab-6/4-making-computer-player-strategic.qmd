@@ -55,16 +55,16 @@ block that implements the strategy rules using these two new blocks, and
 use it as the input to `broadcast` instead of `best
 empty square`.</li>
 
-::: endnote
+:::: endnote
 <a href="#hint-rules" data-bs-toggle="collapse" title="Click for a hint about implementing the strategy rules.">Click
 for a hint about implementing the strategy rules.</a>
 
-::: {#hint-rules .collapse}
+::::: {#hint-rules .collapse}
 Use your
 <img src="/img/5-algorithms/best-empty-square.png" title="best empty square" alt="best empty square" class="inline"/>
 block too.
-:::
-:::
+:::::
+::::
 
 <li>Play several games against the program. Fix any bugs. Make sure
 computer is using three rules.</li>
@@ -109,7 +109,7 @@ which have a free square in common. This is much easier to see with a
 picture:<br />
 <img src="/img/hof/fork.png" title="board with fork" alt="board with fork" class="ms-4"/><br />
 
-::: endnote
+:::: endnote
 Player X opened the game with the standard opening move, in the center.
 Player O responded poorly, on the top edge, and is therefore about to
 lose the game. Player X played in the top left corner. Player O had to
@@ -120,7 +120,7 @@ combinations, the ones marked with the red lines, both of which have one
 X and two free squares, <em>with one of the free squares in common</em>.
 In the picture, the common square is 4, the left edge square, and so
 that's where Player X should move.
-:::
+::::
 
 </li>
 
@@ -132,19 +132,19 @@ them in a variable called <var>singles</var>.</li>
 triples:<br />
 <img src="/img/hof/ttt-flatten.png" title="script variable(atoms); set (atoms) to (combine with(append()()) items of (singles))" alt="script variable(atoms); set (atoms) to (combine with(append()()) items of (singles))" class="ms-4"/><br /></li>
 
-::: endnote
+:::: endnote
 "Atom" is a technical term for a value that isn't a list. A list
 contains a bunch of items, just as a molecule contains a bunch of atoms.
-:::
+::::
 
 <li>Now find a number that appears more than once in
 `atoms`.</li>
 
-::: endnote
+:::: endnote
 You solved a related problem in
 <a href="/unit-5/lab-1/7-comparing-search-algorithms.html" title="Unit 5 Lab 1 Page 7: List Processing Algorithms">Unit
 5 Lab 1 Page 7: Removing Duplicates</a>.
-:::
+::::
 
 </ol>
 

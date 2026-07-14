@@ -27,9 +27,9 @@ turn often raise legal and ethical concerns.
 
 <li>
 
-::: ap-standard
+:::: ap-standard
 IOC-1.F.9
-:::
+::::
 
 Four Corners (class activity). Do you "strongly agree," "agree,"
 "disagree," or "strongly disagree" with the following statements?
@@ -98,12 +98,12 @@ this just a problem elsewhere?</li>
 ::: takeItFurther
 <ol type="A">
 
-::: sidenoteBig
+:::: sidenoteBig
 For example, you can learn that in 2008,
 <a href="https://opennet.net/blog/2008/02/pakistan%E2%80%99s-internet-has-a-bad-weekend" target="_blank" title="Pakistan’s Internet has a bad weekend (OpenNet Initiative)">Pakistan
 accidentally blocked YouTube around the world for a couple of hours</a>
 in trying to block the site in its country.
-:::
+::::
 
 <li>You can find out more about Internet filtering around the world at
 <a href="https://opennet.net/" target="_blank" title="OpenNet Initiative">opennet.net</a>.

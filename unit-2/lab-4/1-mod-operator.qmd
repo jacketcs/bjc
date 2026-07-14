@@ -13,9 +13,9 @@ whether one number is divisible by another.
 
 <li>
 
-::: {.newProject .inline}
+:::: {.newProject .inline}
 ["U2L4-MathLibrary"]{.text}<img src="/img/icons/new-project-called.png" title="Start a New Project called U2L4-MathLibrary" alt="Start a New Project called U2L4-MathLibrary"/>
-:::
+::::
 
 </li>
 
@@ -52,12 +52,12 @@ reports 0.
 :::
 
 ::: examFullWidth
-::: pseudop
-::: sidenote
+:::: pseudop
+::::: sidenote
 Different programming languages have different ways of handling negative
 inputs to the mod function. So you won't see any negative numbers used
 with mod on the exam.
-:::
+:::::
 
 **The `mod` operator:** The expression
 <img src="/img/1-introduction/17-mod-5.png" title="(17) mod (5)" alt="(17) mod (5)" class="inline py-0"/>
@@ -66,9 +66,9 @@ would be written as <pre class="inline">17 MOD 5</pre>
 on the exam. If you see an expression with variables as input to
 `mod`, such as <pre class="inline">a MOD b</pre>, you can assume that <var>a</var> is zero or positive, and <var>b</var>
 is strictly positive (because you can't divide by 0).
-:::
+::::
 
-::: pseudop
+:::: pseudop
 
 On the exam, you may see these four arithmetic operators:
 
@@ -76,9 +76,9 @@ On the exam, you may see these four arithmetic operators:
 
 Arithmetic operators are part of most programming languages. (Most text languages use <pre class="inline">*</pre> rather than <pre class="inline">&times;</pre> for multiplication because <pre class="inline">&times</pre> isn't on most keyboards, and because it looks too much like the letter x.)
 
-:::
+::::
 
-::: pseudop
+:::: pseudop
 **Order of operations:** In a block language, the nesting
 of blocks determines the order of operations. For example, in
 <img src="/img/6-computers/3-times(5+4).png" title="3 × (5 + 4)" alt="3 × (5 + 4)" class="inline py-0"/>
@@ -105,18 +105,18 @@ means
 <pre class="inline">7 + 1 - 6</pre>
 ```
 , which is, of course, 2.
-:::
+::::
 :::
 
 ::: forYouToDo
 <ol start="3">
 
-::: sidenote
+:::: sidenote
 In a later lab, you can use your `even?` block to draw a
 <a href="/unit-3/lab-1/4-brick-wall.html" title="Brick Wall">brick
 wall</a> because the even and odd numbered rows are different. <br />
 <img src="/img/abstraction/new-brickwall/wall.png" title="Sample image of brick wall" alt="Sample image of brick wall" class="inline"/>
-:::
+::::
 
 <li>Use `mod` to build a
 <img src="/img/2-complexity/divisible-by.png" title="is () divisible by () ?" alt="is () divisible by () ?" class="py-0"/>
@@ -150,12 +150,12 @@ memorial video: "Katherine Johnson: An American Hero"</a>
 :::
 
 ::: examFullWidth
-::: ap-standard
+:::: ap-standard
 AAP-2.H.2
-:::
+::::
 
-::: sidenote
-::: pseudop
+:::: sidenote
+::::: pseudop
 The procedures
 
 ```{=html}
@@ -168,13 +168,13 @@ and
 ```
 aren't built in to the AP's language so they are written in lower case
 like other programmer-defined procedures.
-:::
-:::
+:::::
+::::
 
-::: pseudop
+:::: pseudop
 The conditional expression <img class="inline" src="/img/2-complexity/if-example-preview-fractal-art.png" alt="if (size > 15) {repeat (4) {move (size) steps, turn clockwise (90) degrees}}" title="if (size > 15) {repeat (4) {move (size) steps, turn clockwise (90) degrees}}"> would be written as
 
-::: pre-container
+::::: pre-container
 ```{=html}
 <pre class="inline">
 IF(size &gt; 15)
@@ -186,7 +186,7 @@ turn_clockwise(90)
 }
 }</pre>
 ```
-:::
+:::::
 
 or
 <img src="/img/2-complexity/if-blocktran.png" title="IF(size &gt; 15)
@@ -204,7 +204,7 @@ move(size)
 turn clockwise(90)
 }
 }" class="inline"/>
-:::
+::::
 
 As in Snap<em>!</em>, if the condition
 `(size) > 15` is `true`,
@@ -433,14 +433,14 @@ Invent Boolean expressions for these pictures:<br />
 <a href="#hint-tif" data-bs-toggle="collapse" title="Click for a hint.">Click
 for a hint.</a>
 
-::: {#hint-tif .collapse}
+:::: {#hint-tif .collapse}
 Some of these include expressions of the form
 <img src="/img/2-complexity/hint-script.png" title="((round (() / 20)) mod 2)" alt="((round (() / 20)) mod 2)"/>
 with something like
 <img src="/img/blocks/x-position.png" title="x position" alt="x position"/>
 in the empty input slot, and maybe different numbers in place of 20 and
 2.
-:::
+::::
 :::
 
 </li>

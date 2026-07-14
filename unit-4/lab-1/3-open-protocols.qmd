@@ -9,9 +9,9 @@ standards used on the Internet and how they work together.
 :::
 
 ::: vocabBig
-::: ap-standard
+:::: ap-standard
 CSN-1.B.3, CSN-1.C.1
-:::
+::::
 
 <ul>
 
@@ -32,9 +32,9 @@ short bursts of information, not long continuous strings.</li>
 :::
 
 ::: atwork
-::: float-end
+:::: float-end
 <img src="/img/atwork/Vint_Cert.jpeg" title="photo of Vint Cert" alt="photo of Vint Cert" class="noshadow" height="200px"/>
-:::
+::::
 
 Vint Cerf (born 1943) is an American Internet pioneer and is
 recognized as one of "the fathers of the Internet." Vint Cerf, along
@@ -114,9 +114,9 @@ successfully.</li>
 ::: forYouToDo
 <ol>
 
-::: ap-standard
+:::: ap-standard
 CSN-1.C
-:::
+::::
 
 <li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
 Describe how data are sent through the Internet via packets.
@@ -132,9 +132,9 @@ CSN-1.D.2 (under "Application Layer Protocols")
 :::
 
 ::: sidenoteBig
-::: ap-standard
+:::: ap-standard
 CSN-1.C-4
-:::
+::::
 
 <h4>Example protocols for each layer:</h4>
 
@@ -217,7 +217,7 @@ one of strong cooperative spirit.
 <a href="#hint-open" data-bs-toggle="collapse" title="Why care about open standards?">Why
 care about open standards?</a>
 
-::: {#hint-open .collapse}
+:::: {#hint-open .collapse}
 <ul>
 
 <li>Your T-Mobile cell phone can talk to your friend's Verizon
@@ -235,7 +235,7 @@ Before the Internet, there were several different network protocols
 that were secrets belonging to particular manufacturers. So if you had a
 particular brand of computer or router, it could talk only to other
 computers of the same brand.
-:::
+::::
 :::
 
 ::: forYouToDo
@@ -262,9 +262,9 @@ reliable transmission</em> of data</li>
 
 </li>
 
-::: ap-standard
+:::: ap-standard
 CSN-1.B
-:::
+::::
 
 <li>Locate your descriptions of how people connect to the Internet (from
 page 1), how devices within a network are connected (from page 2), how

@@ -4,9 +4,9 @@ subtitle: "Unit 5, Lab 3, Page 5"
 ---
 
 ::: learn
-::: ap-standard
+:::: ap-standard
 DAT-2.D.2, DAT-2.D.6 bullet 4
-:::
+::::
 
 Tables, diagrams, text, charts, graphs, and other visual tools help
 extract, modify, and communicate information from data.
@@ -20,9 +20,9 @@ help you analyze and communicate information from your dataset.
 
 
 ::: vocab
-::: ap-standard
+:::: ap-standard
 DAT-2.E.3 classifying only
-:::
+::::
 
 **Classifying data** means distributing data into groups
 based on common characteristics.
@@ -69,11 +69,11 @@ already.</li>
 Determine one question you can answer by **grouping** your
 data, and build code to answer it.
 
-::: endnote
+:::: endnote
 <a href="#hint-grouping" data-bs-toggle="collapse" title="Click for example questions for which grouping is helpful.">Click
 for example questions for which grouping is helpful.</a>
 
-::: {#hint-grouping .collapse}
+::::: {#hint-grouping .collapse}
 <ul>
 
 <li>How many Toyotas are in the database?</li>
@@ -88,8 +88,8 @@ functions.)</li>
 
 `Pipe` may be useful for questions that require looking
 inside the inner lists of the grouped data (in column C).
-:::
-:::
+:::::
+::::
 
 </li>
 
@@ -144,10 +144,10 @@ least one new observation about your data.</li>
 
 <li>
 
-::: vocab
+:::: vocab
 The **mode** of a data set is the value that appears
 most often in it.
-:::
+::::
 
 Here is a bar chart of field 11 from the <var>cars</var> data set
 (highway MPG) with MPG values from 5 to 50, using an interval of 3.

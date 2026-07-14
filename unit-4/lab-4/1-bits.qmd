@@ -42,12 +42,12 @@ means yellow, and 2 volts means green. Long ago, there were computers
 that worked that way, but there are good reasons to stick with two
 possible values per wire.
 
-:::::: endnote
+::: endnote
 <img src="/img/icons/read-more-mini.png" title="Read More" alt="Read More" class="inline"/>
 <a href="#hint-bistable" data-bs-toggle="collapse" title="What good reasons?">What
 good reasons?</a>
 
-::: {#hint-bistable .collapse}
+:::: {#hint-bistable .collapse}
 <img src="/img/6-computers/transistor-curve.png" title="graph showing &apos;Input voltage&apos; on the horizontal axis and &apos;Output voltage&apos; on the vertical axis; the graph begins near the origin and remains nearly flat for a while, then it curves upward and becomes nearly straight again at this new angle, then it curves back down to nearly flat until the end; the lower flat region is labeled &apos;cutoff&apos; and colored blue; the central, inclined region is labeled &apos;linear&apos; and colored pink; the upper flat region is labeled &apos;saturation&apos; and colored blue" alt="graph showing &apos;Input voltage&apos; on the horizontal axis and &apos;Output voltage&apos; on the vertical axis; the graph begins near the origin and remains nearly flat for a while, then it curves upward and becomes nearly straight again at this new angle, then it curves back down to nearly flat until the end; the lower flat region is labeled &apos;cutoff&apos; and colored blue; the central, inclined region is labeled &apos;linear&apos; and colored pink; the upper flat region is labeled &apos;saturation&apos; and colored blue" class="float-start"/>
 
 The fundamental building block of computer circuitry is the
@@ -73,8 +73,8 @@ Transistors are versatile devices. When used in the middle, linear
 in input voltage produces a <em>large</em> variation in output voltage.
 That's how they're used to play music in a stereo.
 
+::::
 :::
-::::::
 
 
 
@@ -132,9 +132,9 @@ to specify a digit 0-9)?</li>
 ::: vocabBig
 : **Byte** and **Word**
 
-::: ap-standard
+:::: ap-standard
 DAT-1.A.4
-:::
+::::
 
 A **byte** is eight bits.
 
@@ -177,10 +177,10 @@ or 64 bits wide, although most <em>new</em> computer models use 64 bits.
 
 
 ::: takeNote
-::: sidenote
+:::: sidenote
 The exact answer for 32 bits is 4,294,967,296 so this approximation is
 pretty close.
-:::
+::::
 
 How many distinct values can be represented in 32 bits? You don't
 have to memorize the answer, because you can quickly approximate it
@@ -260,7 +260,7 @@ character?</li>
 <a href="#hint-unicode" data-bs-toggle="collapse" title="The actual computer representation of Unicode is complicated">The
 <em>actual</em> computer representation of Unicode is complicated.</a>
 
-::: {#hint-unicode .collapse}
+:::: {#hint-unicode .collapse}
 The most straightforward representation of Unicode uses one 32-bit
 word per character, which is more than enough. But program developers
 consider that an inefficient use of computer memory, and also, a lot of
@@ -271,7 +271,7 @@ characters occupy one byte, while other characters may require up to
 four bytes. (It's also possible to use a multi-byte sequence to tell
 your word processing software that you want to use one-byte or two-byte
 codes to represent a particular non-Latin alphabet.)
-:::
+::::
 :::
 
 ::: {#first .forYouToDo}
@@ -282,57 +282,57 @@ codes to represent a particular non-Latin alphabet.)
 This question is similar to those you will see on the AP CSP exam.
 <!-- Question 1 -->
 
-::: {.assessment-data type="multiplechoice" identifier="Which cannot be represented by a bit?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="false"}
-::: prompt
+:::: {.assessment-data type="multiplechoice" identifier="Which cannot be represented by a bit?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="false"}
+::::: prompt
 Which of the following CANNOT be expressed using one bit?
-:::
+:::::
 
-::: {.choice identifier="c1"}
-::: text
+::::: {.choice identifier="c1"}
+:::::: text
 The state of an ON/OFF switch
-:::
+::::::
 
-::: feedback
+:::::: feedback
 This has two possible states so a single bit is enough.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c2"}
-::: text
+::::: {.choice identifier="c2"}
+:::::: text
 The value of a Boolean variable
-:::
+::::::
 
-::: feedback
+:::::: feedback
 This has two possible values TRUE/FALSE, so a single bit is enough.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c3"}
-::: text
+::::: {.choice identifier="c3"}
+:::::: text
 The remainder when dividing a positive integer by 2
-:::
+::::::
 
-::: feedback
+:::::: feedback
 There are two possible remainders 0 or 1, so a single bit is enough.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c4"}
-::: text
+::::: {.choice identifier="c4"}
+:::::: text
 The position of the hour hand of a clock
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Correct. The hour hand spans a range of values between 1 to 12 so one
 bit is not sufficient. It will actually require 4 bits.
-:::
-:::
+::::::
+:::::
 
-::: {.responseDeclaration identifier="ri1"}
-::: {.correctResponse identifier="c4"}
-:::
-:::
-:::
+::::: {.responseDeclaration identifier="ri1"}
+:::::: {.correctResponse identifier="c4"}
+::::::
+:::::
+::::
 
 </li>
 

@@ -67,8 +67,13 @@ installs exactly that version on top of the yolo base image (keep its
 - Content is styled with fenced divs using BJC-specific classes defined in
   `bjc.scss`/`bjc-dark.scss`: `learn`, `forYouToDo`, `ifTime`, `dialogue`,
   `takeItFurther`, `takeNote`, `endnote`, `narrower`, `narrowblue`,
-  `narrowpurple`, `time`. Nest divs by adding colons (`::::` outside, `:::`
-  inside).
+  `narrowpurple`, `time`. Nest divs by adding colons: top-level divs get three
+  colons (`:::`) and each level of nesting adds one more (`::::` one level in,
+  `:::::` two levels in, …). `format-divs.py` normalizes this automatically —
+  it rewrites only the colon counts (preserving indentation and attributes),
+  skips code blocks and HTML comments, and refuses to touch a file whose fences
+  don't balance. Run `python3 format-divs.py` after editing divs; `--check`
+  reports drift and `--diff` previews without writing.
 
 - Announcements and CITN posts go in `posts/`.
 

@@ -39,7 +39,7 @@ images, which is a big field of research in AI.
 
 Do your own research to learn more about the current state of AI
 
-::: endnote
+:::: endnote
 
 
 Here are some suggested areas where AI is being used to research. Pick one that's interesting to you and learn about it.
@@ -62,7 +62,7 @@ Here are some suggested areas where AI is being used to research. Pick one that'
 </ul>
 
 
-:::
+::::
 
 </li>
 

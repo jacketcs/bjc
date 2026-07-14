@@ -4,30 +4,30 @@ subtitle: "Unit 2, Lab 1, Page 3"
 gifffer: true
 ---
 
-:::::: learn
+::: learn
 **On this page,** you will practice debugging, and you will make the computer give players hints.
-::::::
+:::
 
-:::::: {#first .forYouToDo}
+::: {#first .forYouToDo}
 
 (@) <a class="run" href="/prog/2-complexity/U2L1-Buggy-Secret-Number.xml" target="_blank"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a> In the file is a definition of a `number guessing game` block. It has a **bug**---an error in the code that makes the program behave differently than expected. This code, if you keep playing over and over, will mostly work, but <em>sometimes</em> (not often) it will congratulate you <em>before you even guess</em>.
     <img src="/img/icons/talk-with-another-pair-mini.png" title="Talk with Another Pair" alt="Talk with Another Pair" class="inline"/> Analyze the code, explain how this can happen, fix the bug, and save the project.
 
-::: endnote
+:::: endnote
 Have it pick its random number just from 1 to 3 to make the bug occur more often.
 
 If you want to add more script variables, use the right-pointing triangle. (The left triangle will remove them.)<br /> <img title="clicking triangles to add and remove script variables" alt="clicking triangles to add and remove script variables" class="ms-4" data-gifffer="/img/2-complexity/script-variables-adding.gif" height="70"/>
-:::
+::::
 
 (@) Now reopen your U2L1-NumberGuessing project. Make sure your version doesn't have the same bug.
 
-::::::
+:::
 
 
 
 ## Extending the Program with More Specific Responses
 
-:::::: forYouToDo
+::: forYouToDo
 (@) Use more conditional blocks and predicates to make the computer tell the player whether a guess is too big or too small: "That's too big. Try again."
     <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Where in the code should these conditionals go?
 
@@ -42,7 +42,7 @@ If you want to add more script variables, use the right-pointing triangle. (The 
 
 (@) {{< checkpoint id='1FAIpQLSe7G8gdKsFvltVSaNhjOJbrpXpzVYkbR9c-qC-chUxM2RdYKQ' >}}
 
-::::::
+:::
 
 The script variable <var>secret number</var> exists only until the script finishes running. When the game is played again, the program will create a new <var>secret number</var> variable and give it a new random number.
 

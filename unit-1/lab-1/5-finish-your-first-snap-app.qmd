@@ -19,9 +19,9 @@ Clicking the green flag button in the top right corner of the window (<img src="
 
 3. Make that message disappear when the player clicks on Alonzo.
 
-::: endnote
+:::: endnote
 The `say` block with an empty text in the white <em>**input**</em> slot will make the sprite say nothing.
-:::
+::::
 
 4. Check that your app does everything you want:
     - When the green flag is clicked, Alonzo should welcome the player.

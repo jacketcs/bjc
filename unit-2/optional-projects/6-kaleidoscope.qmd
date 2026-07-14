@@ -18,9 +18,9 @@ the movement of that sprite in slightly different ways.
 
 <li>
 
-::: newProject
+:::: newProject
 ["U2-Kaleidoscope"]{.text}<img src="/img/icons/new-project-called.png" title="Create a new project called U2-Kaleidoscope" alt="Create a new project called U2-Kaleidoscope"/>
-:::
+::::
 
 </li>
 
@@ -42,11 +42,11 @@ trying to drag the sprite when you click.)</li>
 
 </ol>
 
-::: endnote
+:::: endnote
 <a href="#hint-mousedown" data-bs-toggle="collapse" title="Need a reminder about making the first sprite follow the mouse, detecting an event, or drawing only when the mouse is down?">Need
 a reminder?</a>
 
-::: {#hint-mousedown .collapse}
+::::: {#hint-mousedown .collapse}
 You learned how to make the sprite follow the mouse in
 <a href="/unit-1/lab-5/1-following-sprites.html" title="Unit 1 Lab 5 Page 1: Sprite Following the Mouse">Unit
 1 Lab 5 Page 1: Sprite Following the Mouse</a>. You learned how to
@@ -57,8 +57,8 @@ when the mouse is down by using `if else` with `mouse
 down?` in
 <a href="/unit-2/lab-3/1-what-is-predicate.html" title="Unit 2 Lab 3 Page 1: What's a Predicate?">Unit
 2 Lab 3 Page 1: What's a Predicate?</a>.
-:::
-:::
+:::::
+::::
 
 </li>
 
@@ -66,7 +66,7 @@ down?` in
 
 Create a second sprite that mirrors the movement of the first one.
 
-::: endnote
+:::: endnote
 One way to create the second sprite is to duplicate the first one and
 modify it. Right-click the sprite-button in the sprite corral (in the
 lower right of the Snap<em>!</em> window), and select "duplicate" from
@@ -77,7 +77,7 @@ sprites from scratch.
 <a href="#hint-second-sprite" data-bs-toggle="collapse" title="Need a hint about making the second sprite mirror the first one?">Need
 a hint about making the second sprite mirror the first one?</a>
 
-::: {#hint-second-sprite .collapse}
+::::: {#hint-second-sprite .collapse}
 You'll want the second sprite <em>either</em> to go to the same
 <em>x</em>-position and the inverse <em>y</em>-position <em>or</em> to
 go to the inverse <em>x</em>-position and the same
@@ -86,14 +86,14 @@ go to the inverse <em>x</em>-position and the same
 <a href="#hint-second-sprite-second-hint" data-bs-toggle="collapse" title="Need another hint aboout the second sprite that mirrors the first?">Need
 another hint?</a>
 
-::: {#hint-second-sprite-second-hint .collapse}
+:::::: {#hint-second-sprite-second-hint .collapse}
 Use
 <img src="/img/2-complexity/inverse-mouse-x.png" title="(-1) × (mouse x)" alt="(-1) × (mouse x)"/>
 inside
 <img src="/img/blocks/go-to-x-y.png" title="go to x: () y: ()" alt="go to x: () y: ()"/>.
-:::
-:::
-:::
+::::::
+:::::
+::::
 
 </li>
 
@@ -101,11 +101,11 @@ inside
 
 Test your code and debug any problems.
 
-::: endnote
+:::: endnote
 You may wish to use an event (such a pressing the "c" key) to tell the
 program to clear the stage and stop all scripts. This will make testing
 and debugging easier.
-:::
+::::
 
 </li>
 
@@ -113,10 +113,10 @@ and debugging easier.
 
 Create two more sprites that mirror the two you have.
 
-::: endnote
+:::: endnote
 If your second sprite mirrored the first horizontally, then the third
 and fourth sprites should mirror those vertically, and vice versa.
-:::
+::::
 
 </li>
 
@@ -139,12 +139,12 @@ Change the pens:
 
 <ul>
 
-::: sidenoteBig
+:::: sidenoteBig
 You learned about `set pen color` and `set pen
 size` on
 <a href="/unit-1/lab-3/1-exploring-motion.html" title="Unit 1 Lab 3 Page 1: Exploring Motion">Unit
 1 Lab 3 Page 1: Exploring Motion</a>.
-:::
+::::
 
 <li>Add some colors.</li>
 

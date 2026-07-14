@@ -7,11 +7,11 @@ subtitle: "Unit 1, Lab 1, Page 3"
 The game isn't nearly finished, but it's finished <em>enough</em>. **On this page,** you will be able to share your project, with your partner, friends, family, and teacher.
 :::
 
-:::::: forYouToDo
+::: forYouToDo
 
 1. Create a link to share your app.
 
-::::: narrower
+:::: narrower
 ### **Creating a Link**
 
 <img src="/img/1-introduction/U1ImageVideoAddendum_img/U1L1P7_OpenFile.png" title="Open Project dialog box" alt="Open Project dialog box" class="float-end" height="350"/>
@@ -35,18 +35,18 @@ To locate a file, you can type in the search bar at the top to see only a list o
 ::::: endnote
 <a href="#hint-URL" data-bs-toggle="collapse" title="Click for images that show where the URL is and how it changes.">Click for images that show where the URL is and how it changes.</a>
 
-:::: {#hint-URL .collapse}
+:::::: {#hint-URL .collapse}
 <img src="/img/1-introduction/url-before.png" title="Snap! window in browser with URL &apos;snap.berkeley.edu/snapsource/snap.html&apos; circled in the location bar. The circle is labeled &apos;URL before sharing&apos;" alt="Snap! window in browser with URL &apos;snap.berkeley.edu/snapsource/snap.html&apos; circled in the location bar. The circle is labeled &apos;URL before sharing&apos;" class="inline" width="800"/><br /> <img src="/img/1-introduction/url-after.png" title="Snap! window in browser with URL &apos;snap.berkeley.edu/snapsource/snap.html#present:Username=bh&amp;Proje...&apos; circled in the location bar. The circle is labeled &apos;URL after sharing&apos;" alt="Snap! window in browser with URL &apos;snap.berkeley.edu/snapsource/snap.html#present:Username=bh&amp;Proje...&apos; circled in the location bar. The circle is labeled &apos;URL after sharing&apos;" class="inline" width="800"/>
 
-::::
+::::::
 :::::
 
 If you change something in the project after sharing it, the changes are reflected in what other people see. You don't have to re-share it.
 
 </ol>
 
-:::::
-::::::
+::::
+:::
 
 <!-- ## Putting the Game on Your Phone
 

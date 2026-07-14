@@ -16,9 +16,9 @@ pictures.<br />
 
 <li>
 
-::: newProject
+:::: newProject
 ["U3L1-FractalArt"]{.text}<img src="/img/icons/new-project-called.png" title="Create a new project called U3L1-FractalArt" alt="Create a new project called U3L1-FractalArt"/>
-:::
+::::
 
 </li>
 
@@ -38,14 +38,14 @@ choose "duplicate".</li>
 
 </ul>
 
-::: endnote
+:::: endnote
 <a href="#hint-inputs" data-bs-toggle="collapse" title="Click for a video of changing the inputs.">Click
 for a video.</a>
 
-::: {#hint-inputs .collapse}
+::::: {#hint-inputs .collapse}
 <img src="/img/1-introduction/duplicating-a-script.gif" title="duplicating a script" alt="duplicating a script" class="ms-4"/>
-:::
-:::
+:::::
+::::
 
 </li>
 
@@ -70,14 +70,14 @@ why?</li>
 Visible Stepping to help you work out any bugs.<br />
 <img src="/img/2-complexity/U2ImageVideoAddendum_img/three-color-sierpinski.png" title="Red triangle with blue children and green grandchildren" alt="Red triangle with blue children and green grandchildren" class="ms-4 noshadow" height="300"/></li>
 
-::: endnote
+:::: endnote
 <a href="#hint-reminder" data-bs-toggle="collapse" title="Click for a reminder video about Visible Stepping.">Click
 for a reminder video about Visible Stepping.</a>
 
-::: {#hint-reminder .collapse}
+::::: {#hint-reminder .collapse}
 <img src="/img/2-complexity/VisualSteppinginFractal.gif" title="Animation that shows how to use Visible stepping in Snap!" alt="Animation that shows how to use Visible stepping in Snap!" class="ms-4"/>
-:::
-:::
+:::::
+::::
 
 <img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"/>
 

@@ -4,7 +4,7 @@ subtitle: "Unit 1, Lab 3"
 order: 3
 ---
 
-:::::: learn
+::: learn
 
 These are works by artists Josef Albers, Maya Hayuk, Vassily Kandinsky, Atta Kwami, Kazimir Malevich, Alma Thomas, and Theo van Doesburg. The styles are different, but all of them are based on polygons or circles.
 
@@ -12,7 +12,7 @@ These are works by artists Josef Albers, Maya Hayuk, Vassily Kandinsky, Atta Kwa
 
 <a href="#hint-credits" data-bs-toggle="collapse" title="Click for art credits.">Click for art credits.</a>
 
-::: {#hint-credits .collapse}
+:::: {#hint-credits .collapse}
 
 - Josef Albers, "Homage to the Square," 1965. More: <a href="https://albersfoundation.org/art/josef-albers/paintings/homages-to-the-square/index/" target="_blank" title="Albers Foundation">Albers Foundation</a>, <a href="https://smarthistory.org/albers-homage-to-the-square/" target="_blank" title="smarthistory.org">smarthistory.org</a>
 - Maya Hayuk, "Chemtrails Miami," 2013. More: <a href="http://mayahayuk.com/" target="_blank" title="mayahayuk.com">mayahayuk.com</a>, <a href="https://en.wikipedia.org/wiki/Maya_Hayuk" target="_blank" title="Wikipedia">Wikipedia</a>
@@ -22,11 +22,11 @@ These are works by artists Josef Albers, Maya Hayuk, Vassily Kandinsky, Atta Kwa
 - Alma Thomas, "Untitled (Music Series)," 1978. Copyright Smithsonian American Art Museum. More: <a href="https://www.wikiart.org/en/alma-woodsey-thomas" title="wikiart.org" target="_blank">wikiart.org</a>, <a href="https://www.georgiaencyclopedia.org/articles/arts-culture/alma-thomas-1891-1978" title="Wikipedia" target="_blank">Wikipedia</a>
 - Theo van Doesburg, "Composition VII (the three graces)," 1917. More: <a href="https://www.wikiart.org/en/theo-van-doesburg" title="wikiart.org" target="_blank">wikiart.org</a>, <a href="https://en.wikipedia.org/wiki/Theo_van_Doesburg" title="Wikipedia" target="_blank">Wikipedia</a>
 
-:::
+::::
 
 **In this lab,** you'll draw polygons so you can create your own art: <img src="/img/1-introduction/polygon-row.png" title="regular polygons" alt="regular polygons" class="noshadow" width="20%"/>
 
-::::::
+:::
 
 
 

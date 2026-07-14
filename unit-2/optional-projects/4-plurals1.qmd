@@ -31,13 +31,13 @@ is not simple: a computer needs an algorithm to do that task.
 :::
 
 ::: {#first .forYouToDo}
-::: sidenote
+:::: sidenote
 This project uses blocks already loaded for you from Snap<em>!</em>'s
 "Words, sentences" library. You can load a library from the
 Snap<em>!</em> File menu
 <img src="/img/1-introduction/file_button.png" title="Snap! File menu button" alt="Snap! File menu button" style="height:1.6em;"/>
 under "Libraries...".
-:::
+::::
 
 <ol>
 
@@ -59,20 +59,20 @@ it does with this particular input. (Example:
 reports "y", but you want to say what `last letter of` will
 report if, say, "2017" is its input.)</li>
 
-::: endnote
+:::: endnote
 You won't need
 <img src="/img/2-complexity/join-t-all-but-first-letter-of-when-343x33.png" title="join (t) (all but first letter of (when))" alt="join (t) (all but first letter of (when))" style="height:2.6em;"/>
 for the project, but you might find it interesting to try it not only
 with "when," as an input but with "where," "what," "wherefore."
 Linguists use evidence like this to understand the history of a
 language.
-:::
+::::
 
-::: sidenote
+:::: sidenote
 Choose the <em>reporter</em> button when you make
 `plural`.<br />
 <img src="/img/building-blocks/make-a-reporter.png" title="Image of &apos;Make a block&apos; dialog box with the &apos;Operators&apos; palette selected and the &apos;Reporter&apos; block shape selected. The palette has 10 menus (Motion, Looks, Sound, Pen, Lists, Control, Sensing, Operators, Variables, Other); a text box; three block shape options (puzzle-shaped/&apos;Command&apos;, oval/&apos;Reporter&apos;, and hexagonal/&apos;Predicate&apos;) labeled &apos;Select a shape.&apos;; two radio boxes (&apos;for all sprites&apos;, which is checked, and &apos;for this sprite only&apos;, which is not checked); and two buttons (OK and Cancel)." alt="Image of &apos;Make a block&apos; dialog box with the &apos;Operators&apos; palette selected and the &apos;Reporter&apos; block shape selected. The palette has 10 menus (Motion, Looks, Sound, Pen, Lists, Control, Sensing, Operators, Variables, Other); a text box; three block shape options (puzzle-shaped/&apos;Command&apos;, oval/&apos;Reporter&apos;, and hexagonal/&apos;Predicate&apos;) labeled &apos;Select a shape.&apos;; two radio boxes (&apos;for all sprites&apos;, which is checked, and &apos;for this sprite only&apos;, which is not checked); and two buttons (OK and Cancel)."/>
-:::
+::::
 
 <li>Here's one way to start building the `plural` block.
 Build this much and test it out on at least "day" and "boss" and
@@ -110,10 +110,10 @@ otherwise).</li>
 
 <li>
 
-::: saveAs
+:::: saveAs
 ["U2-Plural"]{.text}<img src="/img/icons/save-this-as.png" title="save your work as U2-Plural" alt="save your work as U2-Plural"/>
 <em>Save your file</em>. You will need this list.
-:::
+::::
 
 </li>
 

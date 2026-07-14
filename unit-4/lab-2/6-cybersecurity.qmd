@@ -20,22 +20,22 @@ you can do that will help:
 <ol>
 
 ::: sidenote
-::: todo
+:::: todo
 IOC-2.B.2
-:::
+::::
 
 A **strong password** is one that is hard to guess.
 :::
 
 ::: atwork
-::: float-end
+:::: float-end
 <img src="/img/atwork/Nicola_Whiting.jpg" title="photo of Nicola Whiting" alt="photo of Nicola Whiting" class="noshadow" height="200px"/>
 
-::: {.endnote style="width:244px;margin:6px;"}
+::::: {.endnote style="width:244px;margin:6px;"}
 <small>Image provided for publication with permission from Nicola
 Whiting</a></small>
-:::
-:::
+:::::
+::::
 
 Nicola Whiting MBE, is an award winning jewelry designer and author,
 turned cybersecurity expert. She is co-owner of Titania group, which she
@@ -129,9 +129,9 @@ WPA is better than no security at all.</li>
 ::: {#first .forYouToDo}
 <ol>
 
-::: ap-standard
+:::: ap-standard
 IOC-2.B
-:::
+::::
 
 <li><img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
 <img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/>

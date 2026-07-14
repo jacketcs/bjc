@@ -28,9 +28,9 @@ Recall how you first <em>generalized</em> your original pinwheel script: you add
 (@) <img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> What happened? How does it compare to what you predicted? How does this input value impact the sprite's behavior? How does it impact the resulting image on the stage? What number input number gives an asterisk? What input number gives a polygon?<br /> <img title="Animation cycle from Asterisk to Polygon" alt="Animation cycle from Asterisk to Polygon" class="ms-4" data-gifffer="/img/1-introduction/Blockswith-Inputs_img/asteriskpolygonCycleBW.gif" height="200"/></li>
 
 
-::: sidenoteBig
+:::: sidenoteBig
 Review how to add an input at <a href="/unit-1/lab-3/3-blocks-with-inputs.html" title="Blocks with Inputs">Unit 1 Lab 3 Page 3: Blocks with Input</a>, if needed.
-:::
+::::
 
 (@) Add a <em>second input</em> to control the amount of "backing up" that the sprite does before each turn through the full 360°.
 
@@ -38,13 +38,13 @@ Review how to add an input at <a href="/unit-1/lab-3/3-blocks-with-inputs.html" 
 
 (@) Edit your `pinwheel` block, then click the "+" sign at the end to add an input **label** (**choose "Title text"**). Type `backup:` as shown below, and click "OK".</li>
 
-::: endnote
+:::: endnote
 <a href="#hint-target" data-bs-toggle="collapse" title="Watch a video of steps a and b for adding the second input to the pinwheel block.">Watch a video of steps a and b.</a>
 
-::: {#hint-target .collapse}
+::::: {#hint-target .collapse}
 <img src="/img/1-introduction/create-input-name.gif" title="a video of editting the &apos;pinwheel, branches: ()&apos; block, clicking the plus sign on the right end of the hat block, typing &apos;backup:&apos; as the Title text, clicking &apos;OK,&apos; clicking the plus sign on the right end of the hat block again, typing &apos;backup&apos; as the Input name, clicking &apos;OK,&apos; clicking &apos;OK&apos; again, and showing the block now appearing as &apos;pinwheel, branches: () backup: ()&apos; " alt="a video of editing the &apos;pinwheel, branches: ()&apos; block, clicking the plus sign on the right end of the hat block, typing &apos;backup:&apos; as the Title text, clicking &apos;OK,&apos; clicking the plus sign on the right end of the hat block again, typing &apos;backup&apos; as the Input name, clicking &apos;OK,&apos; clicking &apos;OK&apos; again, and showing the block now appearing as &apos;pinwheel, branches: () backup: ()&apos; " class="inline"/>
-:::
-:::
+:::::
+::::
 
 (@) Then click the "+" sign at the end <em>again</em> to add an input (choose "Input name"), and call it <var>backup</var>.
 
@@ -58,19 +58,19 @@ Review how to add an input at <a href="/unit-1/lab-3/3-blocks-with-inputs.html" 
 
 
 
-::: endnote
+:::: endnote
 <a href="#hint-positivebackup" data-bs-toggle="collapse" title="Click for example inputs to test accepting a positive value for backup.">Click for example inputs to test.</a>
 
-::: {#hint-positivebackup .collapse}
+::::: {#hint-positivebackup .collapse}
 <img src="/img/1-introduction/pinwheel-branches-6-backup-20.png" title="pinwheel, branches: (6) backup: (20)" alt="pinwheel, branches: (6) backup: (20)" class="ms-4"/> <img src="/img/1-introduction/pinwheel-branches-6-backup-20-result.png" title="A large hexagon with the clockwise end of each side extended 20 steps beyond the hexagon. The full length of each side is 100 steps." alt="A large hexagon with the clockwise end of each side extended 20 steps beyond the hexagon. The full length of each side is 100 steps." class="ms-4"/><br /> <img src="/img/1-introduction/pinwheel-branches-6-backup-50.png" title="pinwheel, branches: (6) backup: (50)" alt="pinwheel, branches: (6) backup: (50)" class="ms-4"/> <img src="/img/1-introduction/pinwheel-branches-6-backup-50-result.png" title="A medium hexagon with the clockwise end of each side extended 50 steps beyond the hexagon. The full length of each side is 100 steps." alt="A medium hexagon with the clockwise end of each side extended 50 steps beyond the hexagon. The full length of each side is 100 steps." class="ms-4"/><br /> <img src="/img/1-introduction/pinwheel-branches-6-backup-80.png" title="pinwheel, branches: (6) backup: (80)" alt="pinwheel, branches: (6) backup: (80)" class="ms-4"/> <img src="/img/1-introduction/pinwheel-branches-6-backup-80-result.png" title="A small hexagon with the clockwise end of each side extended 80 steps beyond the hexagon. The full length of each side is 100 steps." alt="A small hexagon with the clockwise end of each side extended 80 steps beyond the hexagon. The full length of each side is 100 steps." class="ms-4"/>
-:::
-:::
+:::::
+::::
 
 :::
 
 ::: examFullWidth
 
-::: pseudop
+:::: pseudop
 The procedure definition for the custom `pinwheel` command<br /> <img src="/img/1-introduction/pinwheel-definition.png" title="pinwheel, branches: (number of branches)
 {
 repeat(number of branches)
@@ -89,7 +89,7 @@ turn clockwise (360 / number of branches) degrees
 }
 }" class="ms-4"/><br /> would be written as<br />
 
-::: {.pre-container .ms-4}
+::::: {.pre-container .ms-4}
 ```{=html}
 <pre>
 PROCEDURE pinwheel(numberOfBranches)
@@ -102,7 +102,7 @@ turn_clockwise(360 / numberOfBranches)
 }
 }</pre>
 ```
-:::
+:::::
 
 or <img src="/img/1-introduction/pinwheel-blocktran.png" title="PROCEDURE pinwheel(numberOfBranches)
 {
@@ -121,10 +121,10 @@ move (-37)
 turn_clockwise (360 / numberOfBranches)
 }
 }" class="inline"/>
-:::
+::::
 
-::: endnote
-::: pseudop
+:::: endnote
+::::: pseudop
 The procedures
 
 ```{=html}
@@ -136,9 +136,9 @@ and
 <pre class="inline">turn_clockwise()</pre>
 ```
 aren't built in to the AP's language so they are written in lower case like other programmer-defined procedures.
-:::
+:::::
 
-::: pseudop
+::::: pseudop
 Notice that the hat block, <img src="/img/1-introduction/pinwheel-hat-block.png" title="pinwheel, branches: (number of branches)" alt="pinwheel, branches: (number of branches)" class="inline py-0"/>, would be written as
 
 ```{=html}
@@ -150,8 +150,8 @@ Notice that the hat block, <img src="/img/1-introduction/pinwheel-hat-block.png"
 <pre class="inline">PROCEDURE</pre>
 ```
 tells you that that line of the code is like a hat block; the variable name in the parentheses on that line is the input that the procedure takes.
-:::
-:::
+:::::
+::::
 :::
 
 ::: forYouToDo
@@ -160,13 +160,13 @@ tells you that that line of the code is like a hat block; the variable name in t
 
 (@) Try out a variety of inputs to your `pinwheel` program.
 
-::: endnote
+:::: endnote
 <a href="#hint-size" data-bs-toggle="collapse" title="Click for example inputs to test accepting size value.">Click for example inputs to test.</a>
 
-::: {#hint-size .collapse}
+::::: {#hint-size .collapse}
 <img src="/img/1-introduction/pinwheel-branches-3-size-100-backup-20.png" title="pinwheel, branches: (3) size: (100) backup: (20)" alt="pinwheel, branches: (3) size: (100) backup: (20)" class="ms-4"/> <img src="/img/1-introduction/pinwheel-branches-3-size-100-backup-20-result.png" title="A large triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 100 steps." alt="A large triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 100 steps." class="ms-4"/><br /> <img src="/img/1-introduction/pinwheel-branches-3-size-65-backup-20.png" title="pinwheel, branches: (3) size: (100) backup: (20)" alt="pinwheel, branches: (3) size: (65) backup: (20)" class="ms-4"/> <img src="/img/1-introduction/pinwheel-branches-3-size-65-backup-20-result.png" title="A medium triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 65 steps." alt="A medium triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 65 steps." class="ms-4"/><br /> <img src="/img/1-introduction/pinwheel-branches-3-size-30-backup-20.png" title="pinwheel, branches: (3) size: (30) backup: (20)" alt="pinwheel, branches: (3) size: (30) backup: (20)" class="ms-4"/> <img src="/img/1-introduction/pinwheel-branches-3-size-30-backup-20-result.png" title="A small triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 30 steps." alt="A small triangle with the clockwise end of each side extended 20 steps beyond the triangle. The full length of each side is 30 steps." class="ms-4"/><br />
-:::
-:::
+:::::
+::::
 
 (@) <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Discuss what input values will give you a polygon or an asterisk. <img src="/img/icons/save-mini.png" title="Save your work" alt="Save your work" class="inline"/><br /> <img src="/img/1-introduction/polygon-result.png" title="polygon" alt="polygon" class="ms-4"/> <img src="/img/1-introduction/asterisk-result.png" title="asterisk" alt="asterisk" class="ms-4"/>
 :::
@@ -176,9 +176,9 @@ tells you that that line of the code is like a hat block; the variable name in t
 
 One way to avoid having bugs in your program in the first place is to keep your code organized by deleting any unused scripts. You can use the **clean up** option by right-clicking (or control-clicking on a Mac) in the scripting area to organize your blocks. You can **remove a block or script** either by dragging it out of the scripting area and back to the palettes on the left or by choosing the "delete" option from the drop-down menu. <a href="#hint-organizing" data-bs-toggle="collapse" title="Click here for a video of cleaning up the scripting area and removing blocks.">Click here for a video</a>. (Note that this is different from the "delete block definition" option which will permanently delete a custom block and all its instances from your entire project.)<br />
 
-::: {#hint-organizing .collapse}
+:::: {#hint-organizing .collapse}
 <img src="/img/2-complexity/Debugging/cleanup-deleting.gif" title="Animation about deleting blocks by dragging them off to the palette or by choosing the delete option by right-clicking." alt="Animation about deleting blocks by dragging them off to the palette or by choosing the delete option by right-clicking." class="ms-4" height="500"/>
-:::
+::::
 
 :::
 
@@ -192,14 +192,14 @@ One way to avoid having bugs in your program in the first place is to keep your 
 
 ::: examFullWidth
 
-::: pseudop
+:::: pseudop
 This instruction <img src="/img/1-introduction/U1ImageVideoAddendum_img/U1L3-PinwheelwithInputs1.png" title=" pinwheel, branches: (6) size: (80) backup: (20)" alt="setup; pinwheel, branches: (6) size: (80) backup: (20)" class="inline" height="50"/> would be written as
 
 ```{=html}
 <pre class="inline">Pinwheel(6, 80, 20)</pre>
 ```
 or <img src="/img/2-complexity/pinwheel-blocktran.png" title="a white rounded rectangle containing first the word &apos;PINWHEEL&apos; in all caps and then a smaller white rectangle containing the inputs &apos;6, 80, 20&apos;" alt="a white rounded rectangle containing first the word &apos;PINWHEEL&apos; in all caps and then a smaller white rectangle containing the inputs &apos;6, 80, 20&apos;" class="py-0"/>.
-:::
+::::
 
 You may hear people use the term "pseudocode" to refer to this pseudo-language used on the AP CS Principles exam, but it's <em>not</em> pseudocode. Pseudocode isn't a programming language at all, it's the use of normal human language to describe an algorithm.
 :::
@@ -223,9 +223,9 @@ You may hear people use the term "pseudocode" to refer to this pseudo-language u
 
 On the right is a painting by Vassily Kandinsky. The four pictures above were inspired by it, but the sizes and placement of the circles in the original were carefully chosen, whereas the ones above are random. Also, Kandinsky's solid circles aren't quite uniform in color. For example, the green circle near the top right of the picture has a light green outer border, a somewhat darker green inside, a blue-green inner border, and black inside that.
 
-::: narrowpurple
+:::: narrowpurple
 When two solid circles overlap, you can see both colors, or rather, a color in between the two. To achieve that effect in Snap<em>!</em>, before drawing the second circle, use the <img src="/img/1-introduction/set-transparency.png" title="set pen (transparency) to ()" alt="set pen (transparency) to ()" class="inline"/> block. A transparency of 0 means you see only the new color; a transparency of 100 means you see only the old color. In-between values determine which color is stronger in the overlapping area.
-:::
+::::
 
 Most of Kandinsky's circles are solid, but a few aren't. most notably the large white "halo" near the middle of the painting. His hollow circles don't have a constant width; if you want yours to look like his, change the pen size a little as you're drawing. But of course you don't have to make your art look exactly like his, nor exactly like the examples above. Use them for inspiration, but you're the artist.
 

@@ -11,7 +11,7 @@ pagetitle: "{{< metatext title >}}"
 ::: {#first .forYouToDo}
 <ol>
 
-::: sidenote
+:::: sidenote
 <ul>
 
 <li>**nouns** (things)</li>
@@ -27,7 +27,7 @@ pagetitle: "{{< metatext title >}}"
 <li>**prepositions** (relationship indicators)</li>
 
 </ul>
-:::
+::::
 
 <li>
 
@@ -51,9 +51,9 @@ More complicated sentences can be built up from multiple phrases. Create these p
 
 <li><img src="/img/3-lists/prep_phrase.png" title="green prepositional phrase reporter block" alt="green prepositional phrase reporter block" border="0"/> should combine a preposition with a `noun phrase` to create phrases like "near the little boy" or "over a wise pizza."</li>
 
-::: takeNote
+:::: takeNote
 Using `noun phrase` to define `prepositional phrase` is a good example of abstraction. If you later change `noun phrase` to include people's names, `prepositional phrase` will still work.
-:::
+::::
 
 <li><img src="/img/3-lists/verb_phrase.png" title="green verb phrase reporter block" alt="green verb phrase reporter block" border="0"/> should report either just a verb like "jumps" or join a verb and an adverb to create combinations like "jumps sadly," "naps quickly," or "thinks sleepily."</li>
 
@@ -61,9 +61,9 @@ Using `noun phrase` to define `prepositional phrase` is a good example of abstra
 
 </li>
 
-::: endnote
+:::: endnote
 These phrases will be grammatically correct, but they won't necessarily make sense. For example, `noun phrase` might generate "a tired pizza."
-:::
+::::
 
 <li>Then, make a reporter `complicated sentence` that combines a noun phrase, a verb phrase, and a prepositional phrase. <img src="/img/1-introduction/complicated-sentence-reporting.png" title="complicated sentence reporting &apos;my silly elephant in front of your tired elephant sits down quickly&apos;" alt="complicated sentence reporting &apos;my silly elephant in front of your tired elephant sits down quickly&apos;" class="ms-4"/></li>
 

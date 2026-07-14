@@ -54,20 +54,20 @@ by charts, such as "why?" and "how?"</li>
 Some people have access to computers and the Internet, and some people
 do not. This is called the <em>digital divide</em>.
 
-::: vocabFullWidth
-::: ap-standard
+:::: vocabFullWidth
+::::: ap-standard
 IOC-1.C.1, IOC-1.C.2, IOC-1.C.3
-:::
+:::::
 
 The **digital divide** refers to unequal access to
 computers and the Internet based on poverty, racism, sexism, isolation
 in the countryside, age, and other factors. The digital divide affects
 both individuals within a country and countries themselves.
-:::
+::::
 
 <ol>
 
-::: ap-standard
+:::: ap-standard
 <ol type="a">
 
 <li>IOC-1.C</li>
@@ -77,7 +77,7 @@ both individuals within a country and countries themselves.
 <li>IOC-1.C.5</li>
 
 </ol>
-:::
+::::
 
 <li>Why is there a digital divide?</li>
 
@@ -90,9 +90,9 @@ both in your community and around the world?</li>
 
 </li>
 
-::: ap-standard
+:::: ap-standard
 IOC-1.C, IOC-1.C.5
-:::
+::::
 
 <li>Do some
 research.<img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/>What

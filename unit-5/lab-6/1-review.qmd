@@ -34,10 +34,10 @@ Discuss what each expression does and how its code works.
 
 <li><img src="/img/5-algorithms/board.png" title="board" alt="board"/></li>
 
-::: sidenote
+:::: sidenote
 You can edit a block to remind yourself of how it works if you've
 forgotten.
-:::
+::::
 
 <li><img src="/img/5-algorithms/possible-winning-triples.png" title="possible winning triples" alt="possible winning triples"/></li>
 

@@ -16,9 +16,9 @@ If it's not already open, open your project U2L2-Quiz.
 
 ::: dialogue
 
-::: stagedir
+:::: stagedir
 The students are considering how to use their abstract data type as they develop the code for their project.
-:::
+::::
 
 <div>
 
@@ -36,9 +36,9 @@ ask (question from (item (i) of (computer science quiz))) and wait
 
 </div>
 
-::: vocabFullWidth
+:::: vocabFullWidth
 Using the result from `item` as the input to `address from contact` is called **composition** of functions.
-:::
+::::
 
 <div>
 
@@ -46,9 +46,9 @@ Betsy: Yeah, we could, but that's a little hard to read with that index variable
 
 </div>
 
-::: stagedir
+:::: stagedir
 Betsy drags `for each` into the scripting area.<br /> <img src="/img/2-complexity/for-each-(item)-of().png" title="for each (item) of &apos;list input slot&apos; {}" alt="for each (item) of &apos;list input slot&apos; {}" height="68"/>
-:::
+::::
 
 <div>
 
@@ -161,26 +161,26 @@ Correct.
 ::: {.examFullWidth .AP-only}
 
 
-::: pseudop
-::: sidenote
+:::: pseudop
+::::: sidenote
 The procedure
 
 ```{=html}
 <pre class="inline">goto()</pre>
 ```
 isn't built in to the AP's language so it is written in lower case like other programmer-defined procedures.
-:::
+:::::
 
 The script <img src="/img/2-complexity/example-for-each-point.png" title="for each (point) of (my drawing) (go to (point))" alt="for each (point) of (my drawing) (go to (point))" class="inline"/> would be written as
 
-::: pre-container
+::::: pre-container
 ```{=html}
 <pre class="inline">FOR EACH point IN myDrawing
 {
 goto(point)
 }</pre>
 ```
-:::
+:::::
 
 or <img src="/img/2-complexity/for-each-blocktran.png" title="FOR EACH point IN myDrawing
 {
@@ -189,7 +189,7 @@ goto(point)
 {
 goto(point)
 }" class="inline"/>.
-:::
+::::
 :::
 
 <!--

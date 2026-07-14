@@ -13,13 +13,13 @@ pagetitle: "{{< metatext title >}}"
 
 <li>Discuss how this design was created. What are the fundamental building blocks? How are these arranged?</li>
 
-::: endnote
+:::: endnote
 You can watch <a href="#hint-animation" data-bs-toggle="collapse" title="You can watch this animation to get some ideas.">this animation</a> to get some ideas.
 
-::: {#hint-animation .collapse}
+::::: {#hint-animation .collapse}
 <img src="/img/1-introduction/Daisy_img/DaisyAnimation.gif" title="Animation showing the creation of the Daisy design by rotation of a circle" alt="Animation showing the creation of the Daisy design by rotation of a circle" class="center ms-4" height="400"/>
-:::
-:::
+:::::
+::::
 
 <li>The entire design is made up of circles. So the first thing to do is to write code that will create a circle. To do this, create a custom block `Draw Circle` via the "Variables" menu "Make a block" option. Hint: A regular polygon with 30 or more sides is a good approximation for a circle.</li>
 

@@ -55,9 +55,9 @@ So far, even a bad player will <em>eventually</em> make Alonzo disappear. The ga
 5. Figure out where to add a `change (ghost) effect by (-5)` block to your script to make Alonzo get less transparent any time he moves <em>without</em> being clicked.
 6. Play your game a few times, and adjust your code to get a level of difficulty that you like.
 
-::: endnote
+:::: endnote
 You can change the `change effect` input number (for either instance of the block) and/or the `wait` time to make the game easier or harder.
-:::
+::::
 
 :::
 

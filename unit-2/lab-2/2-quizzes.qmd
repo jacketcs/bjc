@@ -61,9 +61,9 @@ say (That&apos;s correct!) for (2) secs
 
 Each programming language provides some **primitive data types** (data types that are built-in). For example, Snap<em>!</em> provides numbers, text (words and sentences), Booleans (true or false), lists, and some you haven't yet used as data (such as sprites and costumes). <a href="#hint-primitive" data-bs-toggle="collapse" title="This menu shows all of Snap!'s primitive types.">This menu shows all of Snap<em>!</em>'s primitive types.</a>
 
-::: {#hint-primitive .collapse}
+:::: {#hint-primitive .collapse}
 <img src="/img/2-complexity/isa-menu.png" title="primitive types: number, text, Boolean, list, sprite, command, reporter, predicate" alt="primitive types: number, text, Boolean, list, sprite, command, reporter, predicate" class="ms-4"/>
-:::
+::::
 
 </li>
 
@@ -77,9 +77,9 @@ Each programming language provides some **primitive data types** (data types tha
 
 
 
-::: sidenoteBig
+:::: sidenoteBig
 The word "abstract" is often used casually to mean something <em>harder</em> to understand or more complex, but in computer science, its meaning is almost the opposite. ADTs are things that you, the programmer, create to make your program <em>easier</em> for you and others to read, debug, and improve.
-:::
+::::
 
 <li>An **abstract data type (ADT)** is a custom data type that's meaningful to your program. It's not built into the language; you develop it as you code. This is an abstraction because it hides the details inside the constructor and selectors so that the programmer who uses a `quiz item` has to think only about questions and answers, not about list indices.</li>
 
@@ -106,9 +106,9 @@ The constructor and selector together implement the `quiz item` <em>abstract dat
 
 <li>
 
-::: newProject
+:::: newProject
 ["U2L2-Quiz"]{.text}<img src="/img/icons/new-project-called.png" title="Start a New Project called U2L2-Quiz" alt="Start a New Project called U2L2-Quiz"/><a  name="input-type"> </a>
-:::
+::::
 
 </li>
 
@@ -116,7 +116,7 @@ The constructor and selector together implement the `quiz item` <em>abstract dat
 
 <li>Build the custom `quiz item` abstract data type (both the constructor and the two selectors).</li>
 
-::: narrower
+:::: narrower
 ### **Specifying an Input Type**
 
 Your selectors expect a quiz item, i.e., a list, as input. You can make your blocks <em>show</em> what type of data they expect. It's not necessary in Snap<em>!</em> but, like assigning a color to a block, it can be a helpful reminder of what the block does and what type of input it expects. You've already seen input slots of several shapes, indicating different expected data types.
@@ -136,16 +136,16 @@ In the Block Editor while creating a selector, click on a plus sign to enter an 
 </ol>
 
 
-:::
+::::
 
 <li>Create a global variable to store your quiz items and initialize it as a list of items, using your constructor where appropriate.</li>
 
-::: narrower
+:::: narrower
 Snap<em>!</em> has two different views for lists within lists. You can switch which view you see by right-clicking (or control-clicking) on the <var>quiz</var> watcher (or whatever you called the variable) on the stage.
 
-::: endnote
+::::: endnote
 If you don't see the watcher on the stage, make sure the checkbox beside the <var>quiz</var> variable in the Variables palette is checked. <img src="/img/2-complexity/quiz-watcher.png" title="quiz watcher checked" alt="quiz watcher checked" class="inlinde"/>
-:::
+:::::
 
 <ul style="list-style-type: disc;">
 
@@ -153,28 +153,28 @@ If you don't see the watcher on the stage, make sure the checkbox beside the <va
 
 **Table View** for <var>computer science quiz</var> Watcher (your quiz will be different):<br /> <img src="/img/2-complexity/csquiz-big.png" title="cs quiz watcher with first column expanded" alt="cs quiz watcher with first column expanded" class="ms-4"/>
 
-::: endnote
+::::: endnote
 <a href="#table-hint" data-bs-toggle="collapse" title="">My watcher is too narrow.</a>
 
-::: {#table-hint .collapse}
+:::::: {#table-hint .collapse}
 At first the watcher will look like this:<br /> <img src="/img/2-complexity/csquiz-small.png" title="cs quiz watcher at initial size" alt="cs quiz watcher at initial size" class="ms-4"/><br /> Drag out the resize handle at the lower right to get this:<br /> <img src="/img/2-complexity/csquiz-med.png" title="cs quiz watcher resized" alt="cs quiz watcher resized" class="ms-4"/><br /> Then hover your mouse over the letter A near the top. It will turn into a digit 1. Grab it and drag it to the right:<br /> <img src="/img/2-complexity/csquiz-big.png" title="cs quiz watcher with first column expanded" alt="cs quiz watcher with first column expanded" class="ms-4"/>
-:::
-:::
+::::::
+:::::
 
 </li>
 
 <li>**List View** for <var>computer science quiz</var> Watcher:<br /> <img src="/img/2-complexity/csquiz-list.png" title="cs quiz watcher, list view" alt="cs quiz watcher, list view" class="ms-4"/></li>
 
 </ul>
-:::
+::::
 
-::: vocabFullWidth
+:::: vocabFullWidth
 : **Table**
 
 A **table** is a two-dimensional data structure with rows and columns. If you've used a <em>spreadsheet</em> program, what it displays is a table.
 
 In Snap<em>!</em>, a table is implemented as a list of lists, in which each sublist is one row of the table.
-:::
+::::
 
 <img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="float-end"/>
 

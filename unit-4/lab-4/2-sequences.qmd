@@ -48,7 +48,7 @@ sequence</em>.
 <a href="#hint-size-table" data-bs-toggle="collapse" title="How much information fits in a gigbyte?">How
 much information fits in a gigabyte?</a>
 
-::: {#hint-size-table .collapse}
+:::: {#hint-size-table .collapse}
 Here are a few rough examples of what kind of data would fit in how
 much memory:
 
@@ -69,7 +69,7 @@ on your desk. Web services deal with petabytes or exabytes of data.
 <a href="#hint-target" data-bs-toggle="collapse" title="Where do these prefixes like 'tera-' and 'peta-' come from?">Where
 do these prefixes like "tera-" and "peta-" come from?</a>
 
-::: {#hint-target .collapse}
+::::: {#hint-target .collapse}
 When we write big numbers, we put commas every three digits (counting
 from the right). Each group of three has a name: thousand, million,
 billion, and so on. So, the number 1,234,567,890 is pronounced "one
@@ -100,8 +100,8 @@ prefixes too:
 The fractional names are used to measure times in the computer, such as
 a nanosecond memory access time, or distances between wires on a chip,
 which are measured in nanometers.
-:::
-:::
+:::::
+::::
 :::
 
 "Binary sequence" is a very broad category, and often, several layers
@@ -110,7 +110,7 @@ in an email or text message, in which case, the <em>message</em>
 includes a <em>picture</em>, which is a kind of <em>file</em>, which is
 a kind of <em>binary sequence</em>.
 
-:::::: {#first .forYouToDo}
+::: {#first .forYouToDo}
 
 (@) <a class="run" href="/prog/4-internet/U4L4-TranslatingBinary.xml" target="_blank"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a>
     
@@ -127,9 +127,9 @@ a kind of <em>binary sequence</em>.
     <img src="/img/6-computers/translate-binary-to-text.png" title="translate binary sequence () to text" alt="translate binary sequence () to text" class="ms-4"/> </li> 
 
     <li> 
-    ::: sidenoteBig
+    :::: sidenoteBig
     You can use the second and third inputs to control where the block breaks the sequence to start a new line and also how large the image is drawn.
-    :::
+    ::::
     
     A command block that accepts a binary sequence as input and draws a black and white image on the stage where each 0 in the sequence becomes  a white "pixel" and each 1 becomes a black "pixel." <br /> <img src="/img/6-computers/translate-binary-to-image.png" title="translate binary sequence () to B&amp;W image that is () pixels wide and scaled by factor of ()" alt="translate binary sequence () to B&amp;W image that is () pixels wide and scaled by factor of ()" class="ms-4"/> </li> 
 
@@ -140,13 +140,13 @@ a kind of <em>binary sequence</em>.
 
     <ul>
 
-    ::: sidenote
+    :::: sidenote
     The quotes tell Snap<em>!</em> that the binary sequence should be saved
     "as is." Without some text at the beginning, Snap<em>!</em> will think
     your binary sequence is a number, and it would remove any zeros at the
     front, which would change the interpretation of where each byte begins
     and ends.
-    :::
+    ::::
 
     <li>Find the `set (`<var>output</var>`) to...`
     instruction and **change the input text** to a short text
@@ -162,12 +162,12 @@ a kind of <em>binary sequence</em>.
 
     </ul>
 
-::: endnote
+:::: endnote
 Even Snap<em>!</em> has bugs. When you paste this data into
 Snap<em>!</em>, it may extend beyond the edges of the box. Developers
 are working to fix this.<br />
 <img src="/img/6-computers/binary-sequences-bug.png" title="image of output pasted into block and extending past the edges of the block" alt="image of output pasted into block and extending past the edges of the block" class="ms-4"/>
-:::
+::::
 
 (@) Paste the outputted binary sequence into the `translate binary
 sequence to text` block and run it. (It may take a moment to
@@ -196,7 +196,7 @@ wide:
 
 (@) What do you get if you translate that same binary sequence into text? Why?
 
-::::::
+:::
 
 ::: ap-standard
 DAT-1.A.8, DAT-1.A.9, DAT-1.A.10
@@ -228,7 +228,7 @@ are stored as bits.
 <a href="#hint-analog" data-bs-toggle="collapse" title="More examples, please.">More
 examples, please.</a>
 
-::: {#hint-analog .collapse}
+:::: {#hint-analog .collapse}
 A text is a finite number of characters, each of which comes from a
 finite alphabet. So a book without pictures is naturally digital. When a
 piece of music is written down, there are a finite number of possible
@@ -239,7 +239,7 @@ sound of words being read or music being played includes much more
 information (such as they way someone says the words, their accent, or
 the way each instrument sounds). So speech and musical performance are
 <em>not</em> naturally digital.
-:::
+::::
 :::
 
 ::: {.takeNote style="clear: right;"}
@@ -249,9 +249,9 @@ actually is? For example, should the sequence 01000001 be interpreted as
 the number 65, the letter A, a rather dark shade of red, or something
 else?
 
-::: ap-standard
+:::: ap-standard
 DAT-1.A.7
-:::
+::::
 
 The meaning of a sequence of bits depends on the context in which it
 is used. What exactly do we mean by "context"? How does a programming
@@ -294,61 +294,61 @@ what you are going to put in it.
 This question is similar to those you will see on the AP CSP exam.
 <!-- Question 1 -->
 
-::: {.assessment-data type="multiplechoice" identifier="How many more items to identify with one extra bit?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="true"}
-::: prompt
+:::: {.assessment-data type="multiplechoice" identifier="How many more items to identify with one extra bit?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="true"}
+::::: prompt
 A particular online retail company uses 9-bit binary sequences to
 identify each unique product for sale. Expecting to increase the number
 of products it sells, the company is planning to switch to 10-bit binary
 sequences. Which of the statements below best describes the consequence
 of using 10-bit sequences instead of 9-bit sequences?
-:::
+:::::
 
-::: {.choice identifier="c1"}
-::: text
+::::: {.choice identifier="c1"}
+:::::: text
 Two more products can be identified uniquely.
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Compute how many products can be identified before and after the change.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c2"}
-::: text
+::::: {.choice identifier="c2"}
+:::::: text
 Ten more products can be identified uniquely.
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Compute how many products can be identified before and after the change.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c3"}
-::: text
+::::: {.choice identifier="c3"}
+:::::: text
 Twice as many products can be identified uniquely.
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Correct. Before 2<sup>9</sup>=512 products could identified and now
 2<sup>10</sup>=1024 products can be identified.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c4"}
-::: text
+::::: {.choice identifier="c4"}
+:::::: text
 Ten times as many products can be identified uniquely.
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Compute how many products can be identified before and after the change.
-:::
-:::
+::::::
+:::::
 
-::: {.responseDeclaration identifier="ri1"}
-::: {.correctResponse identifier="c3"}
-:::
-:::
-:::
+::::: {.responseDeclaration identifier="ri1"}
+:::::: {.correctResponse identifier="c3"}
+::::::
+:::::
+::::
 
 </li>
 

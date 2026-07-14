@@ -37,9 +37,9 @@ messages. Was anyone able to decode their message? How?</li>
 ::: vocabFullWidth
 : **Encryption and Decryption**
 
-::: ap-standard
+:::: ap-standard
 IOC-2.B.5
-:::
+::::
 
 <ul>
 
@@ -91,9 +91,9 @@ Cipher</em> (named for Julius Caesar) or a <em>shift cipher</em>.
 ::: vocabFullWidth
 : **Symmetric Encryption**
 
-::: ap-standard
+:::: ap-standard
 IOC-2.B.5
-:::
+::::
 
 Substitution ciphers are examples of **symmetric
 encryption** because they use the <em>same key</em> for both
@@ -106,14 +106,14 @@ always use the same key at both ends.
 <a href="#hint-symmetric" data-bs-toggle="collapse" title="How has symmetric encryption been used?">How
 has symmetric encryption been used?</a>
 
-::: {#hint-symmetric .collapse}
+:::: {#hint-symmetric .collapse}
 Up through the 1970s, symmetric encryption was all people had, but they
 used much more complicated algorithms than substitution ciphers. These
 days, simple substitution ciphers are used as puzzles in magazines, but
 breaking the German Enigma cipher in World War II, which you'll learn
 about in Unit 5, took a building full of mathematicians and computing
 equipment.
-:::
+::::
 :::
 
 ::: forYouToDo

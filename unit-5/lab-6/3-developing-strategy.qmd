@@ -73,15 +73,15 @@ that has three in a row of the desired X or O.</li>
 
 <li>
 
-::: sidenoteBig
+:::: sidenoteBig
 <a href="#hint-what-wins" data-bs-toggle="collapse" title="Click if you need a hint.">Click
 if you need a hint.</a>
 
-::: {#hint-what-wins .collapse}
+::::: {#hint-what-wins .collapse}
 A possible winning triple for O on the next move has \_\_\_\_ Os and
 \_\_\_\_ Xs.
-:::
-:::
+:::::
+::::
 
 Now write
 <img src="/img/5-algorithms/winning-triple-for-player.png" title="winning triple for player ()" alt="winning triple for player ()"/>.
@@ -102,15 +102,15 @@ triple?</li>
 <img src="/img/5-algorithms/winning-square-for-player.png" title="winning square for player ()" alt="winning square for player ()"/>
 block. Make sure it works even if there is no winning square.</li>
 
-::: endnote
+:::: endnote
 <a href="#hint-winning-square" data-bs-toggle="collapse" title="Click for a hint about building winning square for player.">Click
 for a hint about `winning square`.</a>
 
-::: {#hint-winning-square .collapse}
+::::: {#hint-winning-square .collapse}
 <img src="/img/blocks/is-a-number.png" title="is () a number?" alt="is () a number?" class="ms-4"/>
 <img src="/img/blocks/is-a-list.png" title="is () a list?" alt="is () a list?" class="ms-4"/>
-:::
-:::
+:::::
+::::
 
 <li>Play part of a game, test `winning square` for both
 players, and fix any bugs.</li>

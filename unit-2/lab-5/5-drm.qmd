@@ -46,7 +46,7 @@ violate a copyright, the burden is on them to prove it.
 <a href="#hint-exemptions" data-bs-toggle="collapse" title="Are there any exemptions to DMCA?">Are
 there any exemptions?</a>
 
-::: {#hint-exemptions .collapse}
+:::: {#hint-exemptions .collapse}
 Temporary exemptions to the anti-circumvention part of the DMCA can be
 made by the Librarian of Congress for a three-year period (a surprising
 choice, since the Library of Congress previously wasn't involved in
@@ -56,7 +56,7 @@ reasons (e.g., to allow one piece of equipment to work with another
 piece of equipment from a different manufacturer), but there was great
 excitement in 2010 when the Librarian of Congress allowed people to
 jailbreak their cell phones.
-:::
+::::
 :::
 
 
@@ -94,7 +94,7 @@ censorship rules.) This system is protected by the DMCA.</li>
 <a href="#hint-free-trade" data-bs-toggle="collapse" title="Doesn't DVD region coding violate free-trade?">Doesn't
 this violate free-trade?</a>
 
-::: {#hint-free-trade .collapse}
+:::: {#hint-free-trade .collapse}
 Arguments have been made that region coding violates free-trade treaties
 that forbid most restrictions on exporting goods from one country to
 another. It would definitely be a treaty violation if the US government
@@ -102,7 +102,7 @@ had invented region coding, but since it's a creation of private
 companies, the question has not been settled. But the DMCA law can be
 seen as though the government is enforcing the region coding, so some
 people argue that it is a treaty violation.
-:::
+::::
 :::
 
 </ul>

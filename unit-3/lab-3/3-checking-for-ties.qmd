@@ -16,7 +16,7 @@ whether there are no more empty squares but neither player has won.
 Develop a way to determine if the game has tied, and if so, make the
 program notify the players.
 
-::: endnote
+:::: endnote
 Snap<em>!</em> has a higher-order function
 <img src="/img/blocks/find-first.png" title="find first item () in &apos;list input slot&apos;" alt="find first item () in &apos;list input slot&apos;" class="inline py-0"/>
 that works similarly to `keep`, but it reports only the first
@@ -31,21 +31,21 @@ takes a function (a predicate) as input.
 for a hint about using `find first` to check for
 ties.</a>
 
-::: {#hint-tie-contains .collapse}
+::::: {#hint-tie-contains .collapse}
 <img src="/img/3-lists/any-numbers.png" title="find first item (is () a number?) in ()" alt="find first item (is () a number?) in ()" class="ms-4"/>
-:::
-:::
+:::::
+::::
 
 </li>
 
 <li>Play a couple of games to test the tie-checking feature, and fix any
 bugs.</li>
 
-::: sidenoteBig
+:::: sidenoteBig
 You can work on this project more in
 <a href="/unit-5/lab-6/1-review.html" title="Unit 5 Lab 6: Tic-Tac-Toe with a Computer Player">Unit
 5 Lab 6: Tic-Tac-Toe with a Computer Player</a>.
-:::
+::::
 
 <li>Why does the order of the tests (for wins vs. for ties) matter?
 <img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner"/></li>

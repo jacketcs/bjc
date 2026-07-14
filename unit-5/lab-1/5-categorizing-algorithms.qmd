@@ -7,7 +7,7 @@ subtitle: "Unit 5, Lab 1, Page 5"
 **On this page**, you will compare four algorithms and learn how they each take a different category of time to run.
 :::
 
-:::::: {#first .forYouToDo}
+::: {#first .forYouToDo}
 
 (@) Locate the <img src="/img/5-algorithms/25000integers.png" title="25,000 integers starting from ()" alt="25,000 integers starting from ()"/> block included in your project, and time it for various starting numbers.
 
@@ -23,11 +23,11 @@ subtitle: "Unit 5, Lab 1, Page 5"
 the starting number gets bigger? Write a hypothesis about the pattern.
 
 (@) 
-    ::: sidenoteBig
+    :::: sidenoteBig
     There are several different ways to sort a list, some of which you will
     learn about in Unit 8. This `sort` block uses an "insertion
     sort" algorithm.
-    :::
+    ::::
 
     Locate the <img src="/img/5-algorithms/sort.png" title="sort &apos;list input slot&apos;" alt="sort &apos;list input slot&apos;" class="inline py-0"/> block included in your project, and time it for each length list.
 
@@ -39,13 +39,13 @@ the starting number gets bigger? Write a hypothesis about the pattern.
 
 (@) <img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>How would you describe what happens to the time as the size of the input list gets bigger? Write a hypothesis.
 
-::::::
+:::
 
 You can classify algorithms by the amount of time they take to run.
 <!--To classify an algorithm, you look at the number of steps it takes to complete the algorithm and compare it to the size of the input. For example, `25,000 integers` takes <em>constant time:</em> computing 25,000 integers starting at seven takes as long as computing 25,000 integers starting at seven million. As a second example, `linear search` takes <em>linear time:</em> if you have ten times as many words in the dictionary, then it takes ten times as long to search through them all. As a third example, consider the `sort` algorithm you timed. It takes <em>quadratic time:</em> multiplying the input size by ten multiplies the time required by 10<sup>2</sup>. As another example, consider the `binary search` algorithm you timed. In binary search, multiplying the input size by ten <em>adds</em> a constant amount to the time required instead of multiplying by a constant amount. This is an example of <em>sublinear time</em>.-->
 
-:::::: forYouToDo
-::: vocabBig
+::: forYouToDo
+:::: vocabBig
 
 - An algorithm takes **linear time** the number of steps
 is proportional to the input size; doubling the input size doubles the
@@ -60,7 +60,7 @@ same number of steps regardless of input size.
 - An algorithm takes **quadratic time** if the number of
 steps is proportional to the <em>square</em> of the input size.
 
-:::
+::::
 
 (@) Look back at your table for `linear search`. Confirm that multiplying the list length by ten roughly multiplies the time taken by ten (<em>linear time</em>).<!--the search time for the <var>100,000 word list</var> is (about) ten times as long as the time for the <var>10,000 word list</var>, which is (about) ten times as long as the time for the <var>1,000 word list</var>.-->
 
@@ -71,7 +71,7 @@ steps is proportional to the <em>square</em> of the input size.
 (@) Look back at your table for `sort`. Confirm that multiplying the list length by ten roughly multiplies the time taken by
 one hundred (<em>quadratic time</em>).<!--Confirm that the time to sort the <var>100,000 word list</var> is (about) one hundred times as long as the time for the <var>10,000 word list</var>, which is (about) one hundred times as long as the time for the <var>1,000 word list</var>.--></li>
 
-::::::
+:::
 
 The difference between linear search and binary search can be very important if you're searching in a list of ten million items, but the <em>most</em> important difference in algorithm efficiency is between polynomial time (proportional to any power of the input size) and exponential time.
 
@@ -92,9 +92,9 @@ In an exponential time algorithm, just <em>adding 1</em> to the input size (<em>
 ::: examFullWidth
 <ul>
 
-::: ap-standard
+:::: ap-standard
 AAP-4.A.7
-:::
+::::
 
 <li>The term "**reasonable time**" describes any algorithm that runs in polynomial time. Exponential time algorithms are
 <em>not</em> considered reasonable.</li>
@@ -102,9 +102,9 @@ AAP-4.A.7
 :::
 
 ::: todo
-::: endnote
+:::: endnote
 On the Internet, many people use the word exponential to mean "happening very fast", such as clickbait-headline-example-blah or example-bleh. -some nicer version of, now you know better-
-:::
+::::
 :::
 
 <!--<img class="ms-4 noshadow" style="height:300px" src="/img/5-algorithms/size-vs-time.png" alt="graph of size vs. time showing a straight line through the origin and up to the right with the points for x=10,000 and x=100,000 marked" title="graph of size vs. time showing a straight line through the origin and up to the right with the points for x=10,000 and x=100,000 marked" />-->
@@ -126,7 +126,7 @@ integers`; and `sort`) are reasonable time algorithms.
 The following optional activity is an example of an exponential time
 algorithm.
 
-:::::: ifTime
+::: ifTime
 
 A problem that may be familiar that requires an exponential time
 algorithm is computing any given element of Pascal's Triangle. In
@@ -157,10 +157,10 @@ are 1. <br />
 
 (@) Locate the <img src="/img/8-recursive-reporters/pascals-triangle.png" title="pascals triangle, row: () position: ()" alt="pascals triangle, row: () position: ()" class="inline"/> block included in your project, and time it for various inputs.<br />
 
-    ::: endnote
+    :::: endnote
     If these take too long to run, you can stop your program; just fill in
     the table as far as the speed of your computer will allow.
-    :::
+    ::::
 
     | Inputs | Pascal's Triangle Time |
     |--------|------------------------|
@@ -170,12 +170,12 @@ are 1. <br />
     | 20, 10 |                        |
     | 25, 12 |                        |
 
-    ::: endnote
+    :::: endnote
     The <var>row</var> value is the input to `pascals triangle`
     that matters. (The <var>position</var> input is only given so you get a
     time for one of the positions near the middle of the row, which take
     longer to compute.)
-    :::
+    ::::
 
     These <var>row</var> inputs are very small compared to the input size
     for the `linear search`, `binary search`, and
@@ -183,19 +183,19 @@ are 1. <br />
     `pascals triangle` is much higher. Your computer probably
     can't do much past <var>25</var>.
 
-    ::: endnote
+    :::: endnote
     This algorithm works by adding the two numbers above using the algorithm
     inside itself recursively, but there are better algorithms that compute
     the value a number in Pascal's Triangle in linear time.
-    :::
+    ::::
 
-::::::
+:::
 
-:::::: forYouToDo
+::: forYouToDo
 
 (@) Write a paragraph explaining the difference between algorithms that
 run in a reasonable time and those that do not.
 
 (@) {{< checkpoint id='1FAIpQLSeB5rqc_H4c8xhLfGdMXDkCl3p7mOUEBT2XqbZ2XNLk60sK8w' >}}
 
-::::::
+:::

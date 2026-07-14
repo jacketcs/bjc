@@ -14,7 +14,7 @@ gifffer: true
 
 (@) Create the <img src="/img/1-introduction/gossip-response.png" title="gossip response" alt="gossip response" class="inline"/> block:
 
-::: narrower
+:::: narrower
 ### **Making a New Block**
 
 <ol type="a">
@@ -31,9 +31,9 @@ gifffer: true
 
 </ol>
 
-::: endnote
+::::: endnote
 Because you chose the reporter shape, the block editor opens with a <img src="/img/blocks/report.png" title="report" alt="report" class="inline py-0"/> block already attached to the hat block. Whatever input you give to `report` will become the value reported by your new block.
-:::
+:::::
 
 ### **Coding the Block's Script**
 
@@ -60,7 +60,7 @@ Because you chose the reporter shape, the block editor opens with a <img src="/i
 <li>**Click OK** when you're satisfied.</li>
 
 </ol>
-:::
+::::
 :::
 
 ::: vocabFullWidth
@@ -109,9 +109,9 @@ A **procedure** is a named sequence of instructions that may take inputs and may
 
 (@) Test your custom `gossip response` block by clicking it several times. It should behave like the `who`, `does what`, and `who 2` blocks. Debug any problems before moving on.
 
-::: sidenote
+:::: sidenote
 Review how to edit a block in <a href="/unit-1/lab-2/3-customizing.html" title="Customizing and Debugging">Unit 1 Lab 2 Page 2: Customizing and Debugging</a>, if needed.
-:::
+::::
 
 (@) Use your new block: Edit `gossip 2`, and insert `gossip response` in place of the text "Oh, but...."<br /> <img src="/img/1-introduction/gossip2-definition.png" title="gossip 2 {
 report (join (gossip response) ( ) (who 2) ( ) (does what) ( ) (who) )
@@ -119,13 +119,13 @@ report (join (gossip response) ( ) (who 2) ( ) (does what) ( ) (who) )
 report (join (gossip response) ( ) (who 2) ( ) (does what) ( ) (who) )
 }" class="ms-4"/>
 
-::: endnote
+:::: endnote
 <a href="#hint-plus-signs" data-bs-toggle="collapse" title="Why do I see plus signs around gossip2 in Snap! but they're not in this picture?">Why do I see plus signs around `gossip 2` in Snap<em>!</em> but they're not in this picture?</a>
 
-::: {#hint-plus-signs .collapse}
+::::: {#hint-plus-signs .collapse}
 Normally, when you are using the Block Editor, you see plus signs because you have to click on them to add inputs to your blocks. But to show you the finished code here, it looks cleaner without the plus signs.
-:::
-:::
+:::::
+::::
 
 (@) Test and debug `gossip 2` also.
 

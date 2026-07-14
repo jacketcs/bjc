@@ -91,10 +91,10 @@ like:<br />
 Before clicking anything else, read this demonstration script with your
 partner. Discuss what will happen when you click the sprite. <br />
 
-::: sidenote
+:::: sidenote
 This script will help you learn about clones, but it won't be part of
 your finished project.
-:::
+::::
 
 <img src="/img/3-lists/TTT1_img/WhenIamClicked.png" title="when I am (clicked){ create a clone of (myself); say(I&apos;m the parent.); glide (1) secs to x: (pick random(-200) to (200)) y: (pick random(-150) to (150)); say()}" alt="when I am (clicked){ create a clone of (myself); say(I&apos;m the parent.); glide (1) secs to x: (pick random(-200) to (200)) y: (pick random(-150) to (150)); say()}" class="ms-4" height="200"/><br />
 
@@ -105,7 +105,7 @@ your finished project.
 Then click the sprite on the stage, and compare what happens with what
 you expected.
 
-::: narrower
+:::: narrower
 <ul>
 
 <li>Notice that the parent sprite (not the clone) moves to the new
@@ -124,7 +124,7 @@ the beginning, so your choices are either <var>myself</var> or
 same thing.</li>
 
 </ul>
-:::
+::::
 
 </li>
 
@@ -146,7 +146,7 @@ the script just below it.<br />
 
 Read that script and notice...
 
-::: narrower
+:::: narrower
 <ul type="circle">
 
 <li>The `makeBoard` block is empty. You'll write it in the
@@ -157,7 +157,7 @@ next problem.</li>
 The variable <var>X's turn?</var> will be `true` when it's
 X's turn to play or `false` when it's O's turn.
 
-::: endnote
+::::: endnote
 When alternating between two values, it's convenient to use Booleans
 because you can use `not` to switch between them and you can
 use `if` to <em>test</em> the variable. (Recall that
@@ -165,12 +165,12 @@ use `if` to <em>test</em> the variable. (Recall that
 input.)<br />
 <img src="/img/3-lists/TTT1_img/setXsturn.png" title="set (X&apos;s turn?) to (not (X&apos;s turn?))" alt="set (X&apos;s turn?) to (not (X&apos;s turn?))" class="ms-4" height="50"/>
 <img src="/img/2-complexity/if-x-turn.png" title="if (X&apos;s turn?){}" alt="if (X&apos;s turn?){}" class="ms-4"/>
-:::
+:::::
 
 </li>
 
 </ul>
-:::
+::::
 
 </li>
 
@@ -186,7 +186,7 @@ rows of three.<br />
 <img src="/img/3-lists/TTT1_img/Row2.png" title="Two rows of squares" alt="Two rows of squares" height="100"/>
 <img src="/img/3-lists/TTT1_img/Row3.png" title="Three rows of squares" alt="Three rows of squares" height="100"/><br />
 
-::: narrower
+:::: narrower
 Tips:
 
 <ul>
@@ -205,14 +205,14 @@ interfere with the game as a tenth square.</li>
 <a href="#hint-for" data-bs-toggle="collapse" title="Click if you need an additional hint.">Click
 if you need an additional hint about `makeBoard`.</a>
 
-::: {#hint-for .collapse}
+::::: {#hint-for .collapse}
 <img src="/img/3-lists/TTT1_img/for-row-column.png" title="for (row) = 1 to 3 {for (column) = 1 to 3 {} }" alt="for (row) = 1 to 3 {for (column) = 1 to 3 {} }" class="ms-4"/>
-:::
+:::::
 
 </li>
 
 </ul>
-:::
+::::
 
 </li>
 
@@ -240,10 +240,10 @@ squares aren't accidentally moved around when the player clicks.<br />
 <li>Play one or two games of Tic-Tac-Toe with your partner, and fix any
 bugs. Then, discuss what else you might want to add to the project.</li>
 
-::: endnote
+:::: endnote
 You can leave comments in the project file to remind yourself of
 things you might want to do later.
-:::
+::::
 
 <img src="/img/icons/save-use-later.png" title="Save. You will use this later." alt="Save. You will use this later." class="inline"/>
 

@@ -17,9 +17,9 @@ running a little bit of the next one. Specifically, it switches at the bottom of
 ::: vocabFullWidth
 : **Sequential** and **Parallel Computing**
 
-::: ap-standard
+:::: ap-standard
 CSN-2.A.1, CSN-2.A.2
-:::
+::::
 
 
 
@@ -56,64 +56,64 @@ task.
 
 <!-- Question 1 -->
 
-::: {.assessment-data type="multiplechoice" identifier="How long will this sequential script take to run?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="true"}
-::: prompt
-::: ap-standard
+:::: {.assessment-data type="multiplechoice" identifier="How long will this sequential script take to run?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="true"}
+::::: prompt
+:::::: ap-standard
 CSN-2.A part b, CSN-2.A.5
-:::
+::::::
 
 How long will this <em>sequential</em> program take to run?<br />
 <img src="/img/5-algorithms/quizlet-sequential.png" title="wait (6), wait (4), wait (8)" alt="wait (6), wait (4), wait (8)" class="ms-4"/>
-:::
+:::::
 
-::: {.choice identifier="c1"}
-::: text
+::::: {.choice identifier="c1"}
+:::::: text
 18
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Correct!
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c2"}
-::: text
+::::: {.choice identifier="c2"}
+:::::: text
 8
-:::
+::::::
 
-::: feedback
+:::::: feedback
 A sequential solution takes as long as the sum of the run times of all
 of its steps.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c3"}
-::: text
+::::: {.choice identifier="c3"}
+:::::: text
 4
-:::
+::::::
 
-::: feedback
+:::::: feedback
 A sequential solution takes as long as the sum of the run times of all
 of its steps.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c4"}
-::: text
+::::: {.choice identifier="c4"}
+:::::: text
 6
-:::
+::::::
 
-::: feedback
+:::::: feedback
 A sequential solution takes as long as the sum of the run times of all
 of its steps.
-:::
-:::
+::::::
+:::::
 
-::: {.responseDeclaration identifier="ri1"}
-::: {.correctResponse identifier="c1"}
-:::
-:::
-:::
+::::: {.responseDeclaration identifier="ri1"}
+:::::: {.correctResponse identifier="c1"}
+::::::
+:::::
+::::
 
 </li>
 
@@ -134,66 +134,66 @@ all its steps.
 
 <!-- Question 2 -->
 
-::: {.assessment-data type="multiplechoice" identifier="How long will this parallel script take to run?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="true"}
-::: prompt
-::: ap-standard
+:::: {.assessment-data type="multiplechoice" identifier="How long will this parallel script take to run?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="true"}
+::::: prompt
+:::::: ap-standard
 CSN-2.A part b, CSN-2.A.6
-:::
+::::::
 
 How long will this <em>parallel</em> program take to run?<br />
 <img src="/img/5-algorithms/quizlet-parallel-1.png" title="broadcast (go) and wait, wait (6) secs" alt="broadcast (go) and wait, wait (6) secs" class="ms-4"/>
 <img src="/img/5-algorithms/quizlet-parallel-2.png" title="when I receive (go): wait (4) secs" alt="when I receive (go): wait (4) secs" class="ms-4"/>
 <img src="/img/5-algorithms/quizlet-parallel-3.png" title="when I receive (go): wait (8) secs" alt="when I receive (go): wait (8) secs" class="ms-4"/>
-:::
+:::::
 
-::: {.choice identifier="c1"}
-::: text
+::::: {.choice identifier="c1"}
+:::::: text
 18
-:::
+::::::
 
-::: feedback
+:::::: feedback
 The two `when I receive` tasks happen in parallel, not one
 after the other.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c2"}
-::: text
+::::: {.choice identifier="c2"}
+:::::: text
 8
-:::
+::::::
 
-::: feedback
+:::::: feedback
 The longest parallel time does matter, but it's not the only thing that
 contributes to the total time.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c3"}
-::: text
+::::: {.choice identifier="c3"}
+:::::: text
 6
-:::
+::::::
 
-::: feedback
+:::::: feedback
 `Broadcast and wait` waits until all the tasks that it
 started have finished.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c4"}
-::: text
+::::: {.choice identifier="c4"}
+:::::: text
 14
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Correct!
-:::
-:::
+::::::
+:::::
 
-::: {.responseDeclaration identifier="ri2"}
-::: {.correctResponse identifier="c4"}
-:::
-:::
-:::
+::::: {.responseDeclaration identifier="ri2"}
+:::::: {.correctResponse identifier="c4"}
+::::::
+:::::
+::::
 
 </li>
 
@@ -205,9 +205,9 @@ CSN-2.B.1, CSN-2.B.2, CSN-2.B.3, CSN-2.B.4
 :::
 
 ::: vocabBig
-::: ap-standard
+:::: ap-standard
 CSN-2.A.3
-:::
+::::
 
 **Distributed computing** is a form of parallel
 computing that uses multiple computers (perhaps even spread out around
@@ -247,7 +247,7 @@ Because every computation includes a sequential portion, there is a
 limit to how much you can speed up a task by adding
 <em>processors</em>.
 
-::: vocab
+:::: vocab
 A **processor** is a piece of circuitry inside a
 computer that processes the instructions from computer programs.
 
@@ -258,13 +258,13 @@ computer that processes the instructions from computer programs.
 
 
 <small>Image credit: Wikipedia user Solipsist</small>
-:::
+::::
 
 <ol start="3">
 
-::: ap-standard
+:::: ap-standard
 CSN-2.A parts a and b, CSN-2.A.4, CSN-2.B.5
-:::
+::::
 
 <li>Suppose a task includes one minute of sequential steps and a
 parallelizable portion that would take an hour if done sequentially.
@@ -326,9 +326,9 @@ Fill in this table:
 ```
 </li>
 
-::: ap-standard
+:::: ap-standard
 CSN-2.B.5
-:::
+::::
 
 <li>
 
@@ -349,11 +349,11 @@ How many processors do you think are worth having for this problem?</li>
 
 </li>
 
-::: endnote
+:::: endnote
 <a href="#hint-diminishing" data-bs-toggle="collapse" title="What is the law of diminishing returns?">What
 is the law of diminishing returns?</a>
 
-::: {#hint-diminishing .collapse}
+::::: {#hint-diminishing .collapse}
 The law of diminishing returns is an idea from economics that basically
 says that after a certain point, more is not better. For example, if you
 got five birthday presents, you might be happier than if you got only
@@ -361,16 +361,16 @@ one, but getting more presents isn't necessarily better. Imagine you
 received a hundred presents. You'd get bored opening them and probably
 feel overwhelmed. And getting a thousand or a million presents wouldn't
 make your birthday any happier. The same rule applies to birthday cake!
-:::
-:::
+:::::
+::::
 
 </ol>
 :::
 
 ::: vocabFullWidth
-::: ap-standard
+:::: ap-standard
 CSN-2.A.7
-:::
+::::
 
 Programmers refer to the **speedup** of parallel
 solution to describe how many times as fast the parallel solution is
@@ -398,7 +398,7 @@ interfere with each other.
 <a href="#hint-banking" data-bs-toggle="collapse" title="An example of interfering processes with banking...">An
 example of interfering processes with banking...</a>
 
-::: {#hint-banking .collapse}
+:::: {#hint-banking .collapse}
 If one person withdraws money from an ATM at the same time as someone at a different ATM withdraws money from the same account, you could run into a situation like this: 
 
 ```{=html}
@@ -446,7 +446,7 @@ Because ATM 2 changed the account balance after ATM 1 looked up the
 balance, ATM 1 didn't know that the balance had been changed. The bank
 account ended up a balance of \$80 even though it started at \$100 and a
 total of \$60 was withdrawn.
-:::
+::::
 :::
 
 
@@ -457,9 +457,9 @@ and debug than a sequential program.
 ::: forYouToDo
 <ol start="5">
 
-::: ap-standard
+:::: ap-standard
 CSN-2.B
-:::
+::::
 
 <li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
 Identify some benefits and potential challenges of parallel and

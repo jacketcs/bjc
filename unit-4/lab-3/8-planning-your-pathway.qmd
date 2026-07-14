@@ -41,7 +41,7 @@ Learn bit a about a few communities that interest you.
 
 </ul>
 
-::: endnote
+:::: endnote
 Some examples of communitites for groups underrepresented in computer
 science are listed below. There are many, many more groups out there!
 
@@ -207,7 +207,7 @@ Women Tech</a> for Women, BIPOC, and the Underrepresented</li>
 <li><a href="" title="" target="_blank"></a></li>
 
 </ul>
-:::
+::::
 
 </li>
 

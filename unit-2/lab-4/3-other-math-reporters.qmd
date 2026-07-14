@@ -57,7 +57,7 @@ with a few input functions.
 <a href="#hint-which-functions" data-bs-toggle="collapse" title="Which functions?">Which
 functions?</a>
 
-::: {#hint-which-functions .collapse}
+:::: {#hint-which-functions .collapse}
 `Combine` is mostly used with <em>only these
 functions</em>:<br />
 <img src="/img/3-lists/plus.png" title="+" alt="+" class="ms-4"/>
@@ -76,7 +76,7 @@ blocks you've just written yourself.
 
 <a data-bs-toggle="collapse" href="#hint-3">Why so few?</a>
 
-::: {#hint-3 .collapse}
+::::: {#hint-3 .collapse}
 The function has to be <em>associative</em>, meaning that it can't
 matter what order you group the items in. For example, addition is
 associative: (7 + 8) + 1 is the same as 7 + (8 + 1) (work it out
@@ -84,10 +84,10 @@ yourself), but subtraction is not: (7 − 8) − 1 is different from
 7 − (8 − 1). So expressions like
 <img src="/img/3-lists/combine-minus.png" alt="combine with (-) items of (list 7 8 1)"/>
 would be ambiguous.
-:::
+:::::
 
 
-:::
+::::
 
 
 :::
@@ -110,15 +110,15 @@ Create an `average of list` block that calculates the average
 of the items in a list:<br />
 <img src="/img/3-lists/average-of-list-reporting.png" title="average of list {1, 2, 3, 4} reporting 2.5" alt="average of list {1, 2, 3, 4} reporting 2.5" class="ms-4"/>
 
-::: endnote
+:::: endnote
 <a href="#hint-average" data-bs-toggle="collapse" title="Hint about average of list">Hint
 about `average of list`</a>
 
-::: {#hint-average .collapse}
+::::: {#hint-average .collapse}
 First think: how do you calculate an average? Then think: what blocks
 could help you do that in Snap<em>!</em>?
-:::
-:::
+:::::
+::::
 
 </li>
 
@@ -137,32 +137,32 @@ list and checking for divisibility are also commonly needed
 algorithms.
 
 ::: examFullWidth
-::: ap-standard
+:::: ap-standard
 AAP-3.C.2
-:::
+::::
 
-::: sidenote
+:::: sidenote
 You saw the procedure definition for a command in
 <a href="/unit-1/lab-3/4-modify-your-pinwheel.html" title="Unit 1 Lab 3 Page 4: Modify Your Pinwheel" target="_blank">Unit
 1 Lab 3 Page 4: Modify Your Pinwheel</a>.
-:::
+::::
 
-::: pseudop
+:::: pseudop
 The definition for a reporter looks much like the definition for a
 command except that it includes an<pre class="inline">RETURN</pre> (like `report`). For example, this definition
 
-::: sidenote
+::::: sidenote
 In many languages (including Snap<em>!</em>) variables must be
 <em>declared</em> in some way (in Snap<em>!</em>, you can click the
 "Make a variable" button or use the `script variables`
 block). But the AP's language doesn't include variable declarations, so
 you won't see them on the exam.
-:::
+:::::
 
 <img src="/img/3-lists/square-roots-definition.png" title="square roots of (number) {script variables (positive root), set (positive root) to ((sqrt) of (number))), report (list (positive root) ((-1) × positive root))" alt="square roots of (number) {script variables (positive root), set (positive root) to ((sqrt) of (number))), report (list (positive root) ((-1) × positive root))" class="ms-4"/><br />
 would be written as
 
-::: pre-container
+::::: pre-container
 <pre class="inline">
 PROCEDURE squareRoots(number)
 {
@@ -170,31 +170,31 @@ positiveRoot &leftarrow; sqrt(number)
 RETURN([positiveRoot, -1 * positiveRoot])
 }
 </pre>
-:::
+:::::
 
 or
 <img src="/img/3-lists/square-roots-definition-blocktran.png" title="square roots of (number) {script variables (positive root), set (positive root) to ((sqrt) of (number))), report (list (positive root) (() - positive root))" alt="square roots of (number) {script variables (positive root), set (positive root) to ((sqrt) of (number))), report (list (positive root) (() - positive root))"/>
 
-::: pseudop
+::::: pseudop
 As with `report` in Snap<em>!</em>, when a <pre class="inline">RETURN</pre> statement is executed, the flow of control returns to the place in your
 code where the procedure was called, and the procedure returns the value of the expression inside the <pre class="inline">RETURN</pre> command or `report` block.
-:::
+:::::
 
-::: endnote
-::: pseudop
+::::: endnote
+:::::: pseudop
 Also, the procedure <pre class="inline">sqrt</pre> isn't built in to the AP's language so it is written in lower case like
 other programmer-defined procedures.
-:::
-:::
-:::
+::::::
+:::::
+::::
 :::
 
 ::: examFullWidth
-::: ap-standard
+:::: ap-standard
 AAP-2.H.3
-:::
+::::
 
-::: pseudop
+:::: pseudop
 The conditional expression
 <img src="/img/2-complexity/ge-ifelse-no-hat.png" title="if (a &gt; b) {
 report true
@@ -206,7 +206,7 @@ report true
 report (a = b)
 }" class="inline"/> would be written as
 
-::: pre-container
+::::: pre-container
 ```{=html}
 <pre class="inline">IF(a &gt; b)
 {
@@ -217,7 +217,7 @@ ELSE
 RETURN(a = b)
 }</pre>
 ```
-:::
+:::::
 
 or
 <img src="/img/2-complexity/if-else-blocktran.png" title="IF(a &gt; b)
@@ -235,12 +235,12 @@ ELSE
 {
 RETURN(a = b)
 }" class="inline"/>
-:::
+::::
 
-::: pseudop
+:::: pseudop
 As in Snap<em>!</em>, if the condition <pre class="inline">a &gt; b</pre> is true, the code in first block of statements runs; if it is false, the
 code in second block of statements runs.
-:::
+::::
 :::
 
 <!--
@@ -379,10 +379,10 @@ Correct!
 
 <li>
 
-::: sidenote
+:::: sidenote
 The **greatest common divisor** of two integers is the
 largest positive integer that is a divisor (a factor) of both integers.
-:::
+::::
 
 Develop a `greatest common divisor` block. (Use your
 <img src="/img/2-complexity/divisors.png" title="divisors of ()" alt="divisors of ()" class="inline"/>
@@ -390,11 +390,11 @@ block.)<br />
 <img src="/img/3-lists/gcd-20-50-reporting.png" title="greatest common divisor of (20) and (50) reporting 10" alt="greatest common divisor of (20) and (50) reporting 10" class="ms-4"/>
 <img src="/img/3-lists/gcd-36-40-reporting.png" title="greatest common divisor of (36) and (40) reporting 4" alt="greatest common divisor of (36) and (40) reporting 4" class="ms-4"/>
 
-::: endnote
+:::: endnote
 <a href="#hint-GCD-hint" data-bs-toggle="collapse" title="Hints about building greatest common divisor">Hint
 about building `greatest common divisor`</a>
 
-::: {#hint-GCD-hint .collapse}
+::::: {#hint-GCD-hint .collapse}
 You may find it useful to use `maximum of list` as well as
 `divisors` and also to build an `intersection`
 block that takes two lists as input and reports all of the items that
@@ -403,7 +403,7 @@ are on both lists.<br />
 <a href="#hint-GCD-hints" data-bs-toggle="collapse" title="More detailed hints about greatest common divisor">More
 detailed hints about `greatest common divisor`</a>
 
-::: {#hint-GCD-hints .collapse}
+:::::: {#hint-GCD-hints .collapse}
 In order to find the greatest common divisor of two numbers you will
 need to find:
 
@@ -417,9 +417,9 @@ need to find:
 numbers</li>
 
 </ol>
-:::
-:::
-:::
+::::::
+:::::
+::::
 
 </li>
 

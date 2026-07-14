@@ -92,7 +92,7 @@ retrieve the contact birthdate from the inputted contact.<br />
 Adapt your "Add Contact" button to input this new type of contact into
 your list.
 
-::: narrower
+:::: narrower
 <h4>**Adding Contacts with Birthdays**</h4>
 
 You could use several ask and answer blocks together with script
@@ -117,7 +117,7 @@ that reports a list of the user's answers to these prompts:
 <img src="/img/3-lists/contact-constructor-with-date-with-helpers.png" title="contact with name: (ask name) address: (ask address) phone: (ask phone) birthdate: (ask birthdate)" alt="contact with name: (ask name) address: (ask address) phone: (ask phone) birthdate: (ask birthdate)" class="ms-4"/>
 
 
-:::
+::::
 
 </li>
 

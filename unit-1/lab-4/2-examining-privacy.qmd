@@ -16,9 +16,9 @@ Websites today also use behavioral biometrics — like how fast you type, how yo
 ::: endnote
 <a href="#hint-Google" data-bs-toggle="collapse" title="What other kinds of information does Google collect?">What other kinds of information does Google collect?</a>
 
-::: {#hint-Google .collapse}
+:::: {#hint-Google .collapse}
 Have you ever had to click inside a circle "to prove you're a human being"? The way it works is by recording how you move the mouse around the page, not just as you're reaching for that circle to click, but the entire time you're visiting the page. Each person has a different habitual mouse style. Google, which owns the company that offers the search-service to websites, keeps records for each person about how they move the mouse, as a sort of digital-era fingerprint. If you have a Gmail account, then Google reads your email, too. (They are quick to point out that no <em>people</em> at Google read your mail; just computer programs. Still, that information is part of your digital information, so Google knows whom you love, and what you say to each other.) If you use an Android phone, Google also provides cloud storage of your contacts and calendar. (If you use an iPhone, then it's Apple that collects your contacts and calendar).
-:::
+::::
 :::
 
 
@@ -67,10 +67,10 @@ Discuss:
 
 <li>**What are some reasons for giving up privacy in certain areas?** Identify one area in your life in which you purposely give up privacy.</li>
 
-::: endnote
+:::: endnote
 <a href="#hint-giveup" data-bs-toggle="collapse" title="Need examples of some reasons for giving up privacy in certain areas?">Need some examples?</a>
 
-::: {#hint-giveup .collapse}
+::::: {#hint-giveup .collapse}
 
 
 Here are a few reasons people give up privacy:
@@ -92,8 +92,8 @@ Here are a few reasons people give up privacy:
 </ul>
 
 
-:::
-:::
+:::::
+::::
     
 <li>**What are the risks?** Why have <em>you</em> decided that the benefits outweigh the risks?</li>
 
@@ -119,10 +119,10 @@ Another big change in our understanding of the government's interest in the Inte
 
 <img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Discuss: **What are some reasons for protecting your privacy? Why is privacy a good thing?**
 
-::: endnote
+:::: endnote
 <a href="#hint-protect" data-bs-toggle="collapse" title="Need examples of some reasons for protecting your privacy?">Need some examples?</a>
 
-::: {#hint-protect .collapse}
+::::: {#hint-protect .collapse}
 
 
 Here are a few of many reasons for protecting privacy:
@@ -144,8 +144,8 @@ Here are a few of many reasons for protecting privacy:
 </ul>
 
 
-:::
-:::
+:::::
+::::
 
 </li>
 

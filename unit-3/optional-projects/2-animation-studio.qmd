@@ -47,7 +47,7 @@ left arrow keys.</li>
 sure to explore what data needs to be tracked and how lists can be
 employed to keep track of this data.<br /></li>
 
-::: endnote
+:::: endnote
 Tips to guide your thinking:<br />
 
 <ul>
@@ -66,7 +66,7 @@ to accomplish these movements?</li>
 locations?</li>
 
 </ul>
-:::
+::::
 
 <li>Start coding! Many things will clear up when you actually get to
 work.</li>

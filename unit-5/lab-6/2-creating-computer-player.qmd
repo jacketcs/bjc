@@ -87,14 +87,14 @@ move in this square
 
 <li>
 
-::: sidenoteBig
+:::: sidenoteBig
 <a href="#hint-how-vacant" data-bs-toggle="collapse" title="How do I know which squares are vacant?">How
 do I know which squares are vacant?</a>
 
-::: {#hint-how-vacant .collapse}
+::::: {#hint-how-vacant .collapse}
 Look in <var>board</var>.
-:::
-:::
+:::::
+::::
 
 In order to debug the `when I receive` script, edit the
 `move in this square` block. After your code for Player X's
@@ -135,14 +135,14 @@ block that reports the best position on the board that is not yet
 filled. Use it as input to your `broadcast` instruction in
 place of `random`.
 
-::: endnote
+:::: endnote
 <a href="#hint-empty" data-bs-toggle="collapse" title="Click for a hint about best empty square.">Click
 for a hint about `best empty square`.</a>
 
-::: {#hint-empty .collapse}
+::::: {#hint-empty .collapse}
 <img src="/img/5-algorithms/empties.png" title="list (5, 1, 3, 7, 9, 2, 4, 6, 8)" alt="list (5, 1, 3, 7, 9, 2, 4, 6, 8)" class="ms-4"/>
-:::
-:::
+:::::
+::::
 
 </li>
 

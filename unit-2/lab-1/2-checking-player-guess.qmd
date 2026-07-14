@@ -3,29 +3,29 @@ title: "Page 2: Checking the Player's Guess"
 subtitle: "Unit 2, Lab 1, Page 2"
 ---
 
-::::: learn
+::: learn
 **On this page,** you'll continue to develop your number guessing game to accept player guesses until the player guesses correctly.
-:::::
+:::
 
 You'll want the computer to ask players to guess again and again until they guess correctly. To do that, you will use the <img src="/img/blocks/repeat-until.png" title="repeat until" alt="repeat until" class="inline py-0"/> block. `Repeat until` is a <em>loop</em> (just like `repeat`, `forever`, and `for`) but also a <em>conditional</em> (like `if` and `if else`). It repeats until a certain condition is met. For this program, the code should repeat until the player's answer equals the secret number.
 
-:::::: endnote
+::: endnote
 You learned about loops on <a href="/unit-1/lab-3/6-the-for-block.html" title="Unit 1 Lab 3 Page 6: Looping with a Counter">Unit 1 Lab 3 Page 6: Looping with a Counter</a>.
 
 You've seen conditionals on <a href="/unit-1/lab-2/5-if-else.html" title="Unit 1 Lab 2 Page 5: Adding Variety to Gossip">Unit 1 Lab 2 Page 5: Adding Variety to `Gossip`</a> and <a href="/unit-1/lab-5/2-sprite-interaction.qmd" title="Unit 1 Lab 5 Page 2: Sprite Following a Sprite">Unit 1 Lab 5 Page 2: Sprite Following a Sprite</a>.
-:::::
+:::
 
-::::: forYouToDo
+::: forYouToDo
 
 (@) Use `repeat until` to ask the player (<img src="/img/blocks/ask-empty-full-size.png" title="ask () and wait" alt="ask () and wait" class="inline py-0"/>) to guess the secret number until their <img src="/img/blocks/answer-full-size.png" title="answer" alt="answer" class="inline"/> equals the <var>secret number</var>.
 
-::: endnote
+:::: endnote
 - Drag the <var>secret number</var> variable out of the `script variables` block to use it.
 - The `ask` and `answer` blocks go together. If you use `ask` to ask a question, the user's answer will be reported by `answer`.
+::::
 :::
-::::::
 
-:::::: examFullWidth
+::: examFullWidth
 The code <img src="/img/2-complexity/chicken-script.png" title="ask (Why did the chicken cross the road?) and wait; set (user response) to (answer)" alt="ask (Why did the chicken cross the road?) and wait; set (user response) to (answer)" class="inline"/> would be written as
 
 ```{=html}
@@ -39,42 +39,42 @@ or <img src="/img/2-complexity/chicken-script-blocktran.png" title="a white roun
 
 Notice that the procedure `INPUT()` accepts the value from the user and returns that input value, which is then assigned to the variable `userResponse` with the `&leftarrow;`
 syntax. In Snap<em>!</em>, this is just like how `answer` accepts a value from the user and reports it, and that report is what the computer `set`s the variable `user response` to.
-::::::
+:::
 
-:::::: forYouToDo
+::: forYouToDo
 (@) After the player guesses the secret number, make the computer congratulate the player. 
 (@) **Test and debug.** Take turns playing the game, and fix any problems with the code before moving on.
-::::::
+:::
 
 `Repeat until` makes its decision based on the output of a hexagonal <em>predicate</em> block.
 
-:::::: vocabFullWidth
+::: vocabFullWidth
 **: Predicate** and **Boolean value**
 
-::::: sidenoteBig
+:::: sidenoteBig
 <a href="#hint-Boolean" data-bs-toggle="collapse" title="Why is Boolean capitalized?"> <img src="/img/icons/read-more-mini.png" title="Read More" alt="Read More" class="inline"/> Why is Boolean capitalized? </a>
 
-::: {#hint-Boolean .collapse}
+::::: {#hint-Boolean .collapse}
 The word Boolean is capitalized because it's named after a person, George Boole, who invented the branch of mathematics dealing with Boolean operations (such as `and`, `or`, and `not`).
-:::
 :::::
+::::
 
 A **predicate** is a hexagon-shaped reporter that asks a true/false question such as these examples:
 
 <img class="ms-4" src="/img/2-complexity/8-gt-7-reporting-true.png" alt="8 > 7 reporting true" title="8 > 7 reporting true"> <img class="ms-4" src="/img/2-complexity/6-gt-7-reporting-false.png" alt="6 > 7 reporting false" title="6 > 7 reporting false">
 
 Predicates report a **Boolean value** (either <img src="/img/blocks/true.png" title="true" alt="true" class="inline"/> or <img src="/img/blocks/false.png" title="false" alt="false" class="inline"/>).
-::::::
+:::
 
 Predicates fit into a hexagonal input slots of conditionals, such as in <img src="/img/blocks/if-full-size.png" title="if block" alt="if block" class="inline"/> and <img src="/img/blocks/repeat-until.png" title="repeat until" alt="repeat until" class="inline"/>. Predicates help conditionals <em>decide when to do something</em>.
 
-::::: vocabFullWidth
+::: vocabFullWidth
 The `if` and `if-else` blocks are called **conditionals** because they control the code based on a true-or-false **condition**.
 
 :::: endnote
 <a href="#hint-predicates-examples" data-bs-toggle="collapse" title="Click for examples of predicates being used inside conditionals.">Click for examples of predicates being used inside conditionals.</a>
 
-::: {#hint-predicates-examples .collapse}
+::::: {#hint-predicates-examples .collapse}
 
 <a href="/unit-1/lab-2/5-if-else.html"><img src="/img/1-introduction/more-complicated-who-script.png" title="more complicated who {
 if (pick random (1) to (4)) = (3) {
@@ -100,17 +100,17 @@ point towards (Leader)
 move (1) steps
 }" class="ms-4"/></a>
 
-:::
-::::
 :::::
+::::
+:::
 
-::::: forYouToDo
+::: forYouToDo
 
 (@) When the computer congratulates the player for guessing correctly, have the computer say the number. For example, it might say, "You guessed it! My secret number was 7."
 
-::: endnote
+:::: endnote
 Use `join` to merge the text "You guessed it! My secret number was" with the value of the <var>secret number</var> variable.
-:::
+::::
 
 (@) {{< checkpoint id='1FAIpQLSfu8ySKivPis9XdyyKCszAPQF4loA6ZcdQ2sl_-v28Jhcpt1Q' >}}
 
@@ -320,4 +320,4 @@ Use `join` to merge the text "You guessed it! My secret number was" with the val
     
 -->
 
-:::::
+:::

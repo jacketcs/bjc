@@ -48,9 +48,9 @@ information efficiently. Lists, adding and removing items from lists,
 and searching lists are common features in many programs.
 
 ::: atworkFullWidth
-::: float-end
+:::: float-end
 <img src="/img/atwork/Farida_Bedwei.jpeg" title="photo of Farida Bedwei" alt="photo of Farida Bedwei" class="noshadow" height="200px"/>
-:::
+::::
 
 Farida Bedwei (born in 1979) is a software engineer and the
 co-founder/Chief Technology Officer of Logiciel, a financial technology
@@ -89,7 +89,7 @@ block that takes a text string as input and reports either a list of the
 contacts whose name includes that string or an empty list if no such
 name is in <var>contact list</var>.
 
-::: narrower
+:::: narrower
 **Use these blocks:**
 
 <ol type="a">
@@ -110,7 +110,7 @@ which returns `true` if the list is empty and
 <img src="/img/3-lists/name-selector.png" title="name from contact: ()" alt="name from contact: ()" class="inline"/></li>
 
 </ol>
-:::
+::::
 
 </li>
 
@@ -133,9 +133,9 @@ found."</li>
 <li>**Debug.** Make sure everything works the way you want
 it to before going on.</li>
 
-::: ap-standard
+:::: ap-standard
 CRD-2.D
-:::
+::::
 
 <img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="float-end"/>
 
@@ -146,9 +146,9 @@ is the output of this program?</li>
 :::
 
 ::: vocabFullWidth
-::: ap-standard
+:::: ap-standard
 AAP-3.B.2, AAP-3.B.3
-:::
+::::
 
 **Modularity** is the process of breaking a programming
 project up into separate sub-problems. For example on page 2 of this
@@ -271,14 +271,14 @@ or 'family-first'. This first item is called a <em>type tag.</em> The
 second item will be the given name (or names), and the third will be the
 family name (or names).
 
-::: endnote
+:::: endnote
 You've been using type tags all along without knowing it. Many
 programming languages, including Snap<i>!</i>, attach type tags to every
 value, saying "I am a list" or "I am a number" and so on. The user
 (i.e., you) doesn't see the type tags, unless you provide a bad input to
 a primitive block, and you see a message like "Expecting list but
 getting text."
-:::
+::::
 
 </li>
 

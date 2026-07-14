@@ -3,9 +3,9 @@ title: "Page 4: Exactly How Much Faster Is Binary Search?"
 subtitle: "Unit 5, Lab 1, Page 4"
 ---
 
-:::::: learn
+::: learn
 **On this page**, you will compare the time required for binary search and for linear search.
-::::::
+:::
 
 ::: {#first .forYouToDo}
 
@@ -42,7 +42,7 @@ how many times <var>current item</var> is compared to <var>value</var>
 <img src="/img/5-algorithms/current-item=value.png" title="(current item) = (value)" alt="(current item) = (value)" class="inline py-0"/>
 is called).
 
-:::::: forYouToDo
+::: forYouToDo
 
 (@) Add another column to your table. Assuming "zebra" is the <em>last
 word</em> in each word list, how many comparisons are made by the
@@ -59,7 +59,7 @@ word</em> in each word list, how many comparisons are made by the
 
 (@) Does what happens with steps match what happens with time? That is, can you count steps as a measure of time?
 
-::::::
+:::
 
 ::: vocabFullWidth
 The relationship between the input size and the number of steps required to solve a problem is the **efficiency** of the algorithm used to solve the problem.
@@ -79,7 +79,7 @@ an algorithm can make a huge difference.
 
 :::
 
-:::::: forYouToDo
+::: forYouToDo
 
 (@) Now, test how much time `binary search` takes to find the
 word "zebra" in the <em>sorted</em> lists, and determine how many

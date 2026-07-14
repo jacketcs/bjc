@@ -18,21 +18,21 @@ subtitle: "Unit 2, Lab 1, Page 1"
 
 In a number-guessing game, the player tries to guess the computer's secret number. The computer needs a way to store the secret number in a <em>variable</em> so that it can compare it to the player's guesses.<br /> <img src="/img/2-complexity/script-variables-secret-number.png" title="script variables (secret number)" alt="script variables (secret number)" class="ms-4"/>
 
-:::: vocabFullWidth
+::: vocabFullWidth
 : **Variable**
 
 A **variable** is like a labeled box that can hold one value at a time, such as one word, one costume, or one list (which can contain many things). You can look at what's inside as many times as you want.
 
-::: endnote
+:::: endnote
 On <a href="/unit-1/lab-2/2-gossip.html" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unit 1 Lab 2 Page 2: Making Programs Talk</a>, you learned about <em>procedural abstraction:</em> giving scripts names by putting them in new blocks. Here, we are starting to look at <em>data abstraction</em>, giving names to numbers, text, lists, etc. When you give something a name, you can refer to it without knowing exactly what the value is.
-:::
-
 ::::
 
-::::: {.forYouToDo}
+:::
+
+::: {.forYouToDo}
 (@) Create a script variable called <var>secret number</var> to store the number that the player will try to guess (instructions below).
 
-    ::: narrower
+    :::: narrower
 
     ### Making a Script Variable
     <ol type="a">
@@ -41,19 +41,19 @@ On <a href="/unit-1/lab-2/2-gossip.html" title="Unit 1 Lab 2 Page 2: Making Prog
     </ol>
     **Later, you will use the script variable** by dragging it out of the `script variables` block (the way you drag an input) and placing it where you need it in your code.
 
-    :::
+    ::::
 
 (@) Use <img src="/img/blocks/set-empty.png" title="set () to ()" alt="set () to ()" class="inline py-0"/> to set the initial value of <var>secret number</var> to a random number from 1 to 10. The `set` menu lets you select which variable to set. 
 
-    ::: sidenoteBig
+    :::: sidenoteBig
 
     The variable <var>secret number</var> is available in the `set` block only when you snap it somewhere after the `script variables` block.
 
-    :::
+    ::::
 
     <img src="/img/2-complexity/set-secret-number-menu.jpg" title="set block menu selecting secret number" alt="set block menu selecting secret number" class="ms-4"/>
 
-:::::
+:::
 
 ::: examFullWidth
 
@@ -63,15 +63,15 @@ On <a href="/unit-1/lab-2/2-gossip.html" title="Unit 1 Lab 2 Page 2: Making Prog
 
 Script variables are a kind of <em>local variable</em>; they work only within the script where they're created. If you drag one into a different script, it won't work. You've seen two kinds of local variables before: inputs to blocks and `for` counters.
 
-:::: endnote
+::: endnote
 <a href="#hint-inputs" data-bs-toggle="collapse" title="Examples you've seen before.">Examples you've seen before.</a>
 
-::: {#hint-inputs .collapse}
+:::: {#hint-inputs .collapse}
 You have created variables as inputs to blocks that you made:<br /> <img src="/img/2-complexity/input-variable-for-pinwheelbranches-commented.png" title="block definition for pinwheel and setting &apos;number of branches&apos; input variable for pinwheel" alt="block definition for pinwheel and setting &apos;number of branches&apos; input variable for pinwheel" class="ms-4 noshadow"/>
 
 You have used the counter variable that the `for` block gave you:<br /> <img src="/img/2-complexity/local-variable-created-by-for-block-commented.png" title="local variable created by for block" alt="local variable created by for block" class="ms-4 noshadow"/>
-:::
 ::::
+:::
 
 ::: vocabFullWidth
 : **Local Variable**

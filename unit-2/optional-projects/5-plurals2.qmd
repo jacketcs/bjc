@@ -59,18 +59,18 @@ Test
 with a variety of words to make sure it works the way you want. Then use
 `map` to test it on the entire list you made earlier.
 
-::: endnote
+:::: endnote
 <a href="#hint-just-hwords" data-bs-toggle="collapse" title="Click for a hint about creating a test list of words that begin with 'h'.">Click
 for a hint about creating a test list of words that begin with "h".</a>
 
-::: {#hint-just-hwords .collapse}
+::::: {#hint-just-hwords .collapse}
 Because you know what
 <img src="/img/2-complexity/keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list.png" title="keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list" alt="keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list"/>
 does, you can use its output as input to a test of `plural`
 or `plural-h`:<br />
 <img src="/img/2-complexity/map-plural(with-input)-over-(keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list).png" title="map-plural(with-input)-over-(keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list)" alt="map-plural(with-input)-over-(keep-items-such-that-(last-letter-of-(input)-equals-h)-from-test-list)" class="ms-4"/>
-:::
-:::
+:::::
+::::
 
 </li>
 
@@ -78,7 +78,7 @@ or `plural-h`:<br />
 
 </li>
 
-::: takeNote
+:::: takeNote
 **Abstraction:** Language often has special cases. In
 English, the plurals of some nouns add "s"; some add "es"; nouns like
 "calf" and "fly" become "calves" and "flies", changing their final
@@ -96,7 +96,7 @@ Showing the <em>structure</em> of the method---just the overall strategy---in th
 of an important computer science idea called <em>abstraction</em>.
 Abstraction keeps your code clear, readable, and more easily debugged.
 It will also help your code be more flexible.
-:::
+::::
 
 <li>When you trust your new specialist block, edit ` plural`
 to use the specialist. Test (you can use `map`) to make sure
@@ -108,13 +108,13 @@ as well as the new ones.</li>
 and
 <img src="/img/2-complexity/plural_y-sky-with-result.png" title="plural-y (sky) reporting &apos;skies&apos;" alt="plural-y (sky) reporting &apos;skies&apos;"/></li>
 
-::: endnote
+:::: endnote
 Remember, any specialist can make mistakes if it's asked to do a job
 that isn't its specialty. For example:<br />
 <img src="/img/2-complexity/plural_y-mouse-with-(wrong)result.png" title="plural-y (mouse) reporting &apos;mousies&apos;" alt="plural-y (mouse) reporting &apos;mousies&apos;" class="ms-4"/><br />
 Make sure `plural` gives `plural-y` only words it
 knows how to handle correctly.
-:::
+::::
 
 <img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline"/>
 
@@ -122,16 +122,16 @@ knows how to handle correctly.
 :::
 
 ::: takeItFurther
-::: todo
+:::: todo
 I'm not thrilled with the way this pushes a particular implementation
 for a reason that's hidden until they get there, and doesn't make sense
 on its own. bh
 
 Any better now? BTW, I moved what was TIF A up into an endnote in 1.
 --MF, 1/11/21
-:::
+::::
 
-::: todo
+:::: todo
 I cleaned this up a bit and added a "tough stuff" icon on part B. I
 think part B is <em>very</em> hard. More could be done to make it
 clearer, but I don't have the time for that now. One concern that this
@@ -144,7 +144,7 @@ images, and I'll jaggy them?** <br />
 Also, **can you make sure that the TG and the solutions
 match** this version after you review it? Thanks! --MF,
 1/11/21
-:::
+::::
 
 <ol type="A">
 
@@ -153,7 +153,7 @@ match** this version after you review it? Thanks! --MF,
 Extend `plural` to correctly handle a input word that has a
 space at the end.
 
-::: endnote
+:::: endnote
 Right now, if `plural` is given a word with a space at the
 end, it leaves that space in the plural:<br />
 <img src="/img/2-complexity/plural-bulldog[space]-with-result(bulldog[space]s).png" title="plural (bulldog ) reporting &apos;bulldog s&apos;. There is a space after &apos;bulldog&apos; in the input and a space between &apos;bulldog&apos; and &apos;s&apos; in the reported value." alt="plural (bulldog ) reporting &apos;bulldog s&apos;. There is a space after &apos;bulldog&apos; in the input and a space between &apos;bulldog&apos; and &apos;s&apos; in the reported value." class="ms-4"/><br />
@@ -162,7 +162,7 @@ so that the result is<br />
 <img src="/img/2-complexity/plural-bulldog[space]-with-result(bulldogs).png" title="plural (bulldog ) reporting &apos;bulldogs&apos;. There is a space after &apos;bulldog&apos; in the input but no space in the reported value." alt="plural (bulldog ) reporting &apos;bulldogs&apos;. There is a space after &apos;bulldog&apos; in the input but no space in the reported value." class="ms-4"/><br />
 You already have a block that <em>specializes</em> in making plurals of
 words that <em>don't</em> have a space at the end. <em>Use</em> it.
-:::
+::::
 
 Surprise! Once `plural` works for a single space at the
 end of a word, try giving it
@@ -187,13 +187,13 @@ Start by making a list of <em>key-value pairs</em>, with last letters as
 the keys and specialist procedures as the values:<br />
 <img src="/img/2-complexity/plural-specialists-list.png" title="set (plural specialists) to (list (list (h) (ringed plural-h ( ) block)) (list (y) (ringed plural-y ( ) block)) (list (f) (ringed plural-f ( ) block)) (list (x) (ringed (join ( ) (es)) block)) (list (...) (...)))" alt="set (plural specialists) to (list (list (h) (ringed plural-h ( ) block)) (list (y) (ringed plural-y ( ) block)) (list (f) (ringed plural-f ( ) block)) (list (x) (ringed (join ( ) (es)) block)) (list (...) (...)))" class="ms-4"/><br />
 
-::: narrowpurple
+:::: narrowpurple
 To make the second item of each small list, find the block you want, put
 it in the second input to `list`, then right-click on the
 block and choose "ringify." As the "x" example shows, it doesn't have to
 be a block named `plural-`something. It just has to have an
 empty input slot where you want the word to go.
-:::
+::::
 
 </li>
 
@@ -213,8 +213,8 @@ if (is (pair) a (list)?) {
 report (call (item (2) of (pair)) with inputs (word))
 }" class="ms-4"/><br />
 
-::: narrowpurple
-::: todo
+:::: narrowpurple
+::::: todo
 We haven't taught FIND FIRST yet. So I looked at
 <a href="/unit-3/lab-3/3-checking-for-ties.html">3.3.3</a>
 where we first use it, and we don't teach it there either. :/ We
@@ -222,7 +222,7 @@ actually teach it in
 <a href="/unit-5/lab-3/4-filtering-data.html">5.3.4</a>.
 So I dragged some of that content back into U3 and also here. --MF,
 1/11/21
-:::
+:::::
 
 `Find first` is a higher-order function works similarly to
 `keep`, but it reports only the first item that's found. It
@@ -240,13 +240,13 @@ it. That's usually what we want when using `call`, but not
 this time. Right-click on the `item of` block and choose
 "unringify" from the menu.
 
-::: endnote
+::::: endnote
 You can experiment with `call` to see what else you can do
 with it. What happens if you don't unringify the `item`
 block? What happens if you leave out the "`with inputs`" and
 the second input?
-:::
-:::
+:::::
+::::
 
 </li>
 

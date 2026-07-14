@@ -64,16 +64,16 @@ belong to a particular <em>sprite.</em>
 
 <li>
 
-::: sidenote
+:::: sidenote
 You learned about **initializing variables** on
 <a href="/unit-2/lab-1/1-number-guessing-game.html" title="Unit 2 Lab 1 Page 1: Developing a Number Guessing Game with Script Variables">Unit
 2 Lab 1 Page 1: Developing a Number Guessing Game with Script
 Variables</a>.
-:::
+::::
 
 Create a sprite variable <var>position number</var>.
 
-::: narrower
+:::: narrower
 
 
 You make a sprite variable similarly to how you make global variables:
@@ -92,7 +92,7 @@ only" to make it a sprite variable.</li>
 
 
 <img src="/img/3-lists/square-number-var.png" title="variable name dialog box with &apos;for this sprite only&apos; selected" alt="variable name dialog box with &apos;for this sprite only&apos; selected" class="ms-4"/><br />
-:::
+::::
 
 </li>
 
@@ -101,20 +101,20 @@ only" to make it a sprite variable.</li>
 As you create the clones, set each one's <var>position number</var> to
 the appropriate value (1-9).<br />
 
-::: endnote
+:::: endnote
 <a href="#hint-1" data-bs-toggle="collapse" class="collapsed" title="Hint">Click
 for a hint on setting the <var>position number</var>.</a>
 
-::: {#hint-1 .collapse}
+::::: {#hint-1 .collapse}
 In the loop that makes the clones, increase the parent sprite's variable
 by one for each new clone so that each clone will have a unique value.
-:::
-:::
+:::::
+::::
 
-::: takeNote
+:::: takeNote
 Make sure that the parent's <var>position number</var> doesn't end up
 being a number 1-9 so that it doesn't conflict with a clone.
-:::
+::::
 
 </li>
 

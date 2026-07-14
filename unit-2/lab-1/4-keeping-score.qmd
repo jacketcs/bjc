@@ -4,17 +4,17 @@ subtitle: "Unit 2, Lab 1, Page 4"
 gifffer: true
 ---
 
-:::::: learn
+::: learn
 **On this page,** you will use a <em>global variable</em> to keep score in your Click Alonzo game.
-::::::
+:::
 
 In your Number Guessing Game, you used <em>script variables</em> to store information (the value of <var>secret number</var>) that was needed by only one script. To keep score in Click Alonzo, more than one script will need access to that information, so you'll use a <em>global variable</em>.
 
-:::::: vocabFullWidth
+::: vocabFullWidth
 : **Global Variable**
 
 A **global variable** is a variable that is usable by all scripts in the program.
-::::::
+:::
 
 ::: endnote
 ### When are global variables needed?
@@ -22,7 +22,7 @@ A **global variable** is a variable that is usable by all scripts in the program
 Most of the time, script variables are a better choice because they can't be changed by some other part of the program, and so they reduce the chance of bugs. But **if multiple scripts need access** to a variable or **if the information in that variable needs to be saved** with your project, then use a global variable.
 :::
 
-:::::: {#first .forYouToDo}
+::: {#first .forYouToDo}
 (@) Open your U1L1-ClickAlonzo project, play the game, and review the code so you remember how it works.
 
     - If you never completed Click Alonzo or don't find your own version, please use [this version](https://snap.berkeley.edu/snap/snap.html#open:https://bjc.jacketcs.net/prog/2-complexity/U2L1-ClickAlonzo.xml)
@@ -30,13 +30,13 @@ Most of the time, script variables are a better choice because they can't be cha
 (@) <div class="saveAs">
 ["U2L1-ClickAlonzo"]{.text}<img src="/img/icons/save-this-as.png" title="Save your work as U2L1-ClickAlonzo" alt="Save your work as U2L1-ClickAlonzo"/> </div>Be sure to **rename your project** with "U2" in the filename.
 
-::: takeNote
+:::: takeNote
 If you save new work under an old filename, Snap<em>!</em> will overwrite your original project. Use "Save as..." from the Snap<em>!</em> File menu to save with the new name. When you load an older project and are about to make a big change, get in the habit of <em>saving first, with the new name, before you change anything</em>.
-:::
+::::
 
 (@) Create a global variable named <var>score</var>. Here's how.
 
-::: narrower
+:::: narrower
 ### **Making a Global Variable**
 
 <ol type="a">
@@ -47,7 +47,7 @@ If you save new work under an old filename, Snap<em>!</em> will overwrite your o
 <li>Click "OK."</li>
 </ol>
 
-:::
+::::
 
 (@) Use the <var>score</var> variable to keep track of the player's score:
 
@@ -55,20 +55,20 @@ If you save new work under an old filename, Snap<em>!</em> will overwrite your o
 
 <li>Initialize <var>score</var> to 0 at the beginning of the game.</li>
 
-::: vocabFullWidth
+:::: vocabFullWidth
 Setting the starting value of a variable is known as **initializing** the variable.
-:::
+::::
 
 <li>Make the program `change` the score by 1 whenever the sprite is clicked.</li>
 
 :::: examFullWidth
-::: pseudop
+::::: pseudop
 <img src="/img/2-complexity/change-score-by-1.png" title="change (score) by (1)" alt="change (score) by (1)" class="inline py-0" height="26"/> (which means <img src="/img/2-complexity/set-score-to-score-plus-one.png" title="set(score) to (score+1)" alt="set(score) to (score+1)" height="40"/>) would be written as
 
 <pre class="inline">score &leftarrow; score + 1</pre>
 
 or <img src="/img/2-complexity/score-increment-blocktran.png" title="score ← score + 1" alt="score ← score + 1" class="inline"/>.
-:::
+:::::
 ::::
 
 </ol>
@@ -104,11 +104,11 @@ When you are debugging your code, it can help to see the value of a variable at 
 - If it's a <em>local</em> (script) variable, you can **use the `show variable` block** inside the script to display a watcher on the stage (and use `hide variable` to hide it again).
 ::::
 
-::::::
+:::
 
-:::::: ifTime
+::: ifTime
 (@) If the sprite moves without being clicked, make the score go down by 1.
 
 (@) Game too hard? Increase the score by 2 for a hit. Too big a change? Increase by 3 for a hit, decrease by 2 for a miss. You can make arbitrarily fine adjustments. This process is called <em>playtuning</em> a game.
 
-::::::
+:::

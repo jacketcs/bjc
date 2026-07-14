@@ -101,9 +101,9 @@ file transfers, and many other ways that computers communicate.
 ::: forYouToDo
 <ol>
 
-::: ap-standard
+:::: ap-standard
 CSN-1.D (in #1)
-:::
+::::
 
 <li><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/><img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/><br />What
 is the difference between the Internet and the World Wide Web?</li>
@@ -209,9 +209,9 @@ and/or explain it to someone else.</li>
 
 <li>
 
-::: ap-standard
+:::: ap-standard
 CSN-1.A
-:::
+::::
 
 <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
 <img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/>
@@ -274,60 +274,60 @@ cloud too.
 
 <!-- Question 1 -->
 
-::: {.assessment-data type="multiplechoice" identifier="cloud computing" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="true"}
-::: prompt
+:::: {.assessment-data type="multiplechoice" identifier="cloud computing" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="true"}
+::::: prompt
 Which of the following is <em>**not**</em> an advantage of
 storing data using <em>cloud computing</em>?
-:::
+:::::
 
-::: {.choice identifier="c1"}
-::: text
+::::: {.choice identifier="c1"}
+:::::: text
 Prevents loss of data due malfunction of user's personal computer.
-:::
+::::::
 
-::: feedback
+:::::: feedback
 This is a main advantage of cloud computing.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c2"}
-::: text
+::::: {.choice identifier="c2"}
+:::::: text
 Easy to scale up from individual use to implementation by large
 companies.
-:::
+::::::
 
-::: feedback
+:::::: feedback
 This is a main advantage of cloud computing.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c3"}
-::: text
+::::: {.choice identifier="c3"}
+:::::: text
 Has potential to be environmentally friendly due to many users
 efficiently sharing large systems and resources.
-:::
+::::::
 
-::: feedback
+:::::: feedback
 This is a main potential advantage of cloud computing.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c4"}
-::: text
+::::: {.choice identifier="c4"}
+:::::: text
 Improved security and privacy over storing data on a personal computer.
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Correct. With cloud computing, you are trusting someone else with your
 data.
-:::
-:::
+::::::
+:::::
 
-::: {.responseDeclaration identifier="ri1"}
-::: {.correctResponse identifier="c4"}
-:::
-:::
-:::
+::::: {.responseDeclaration identifier="ri1"}
+:::::: {.correctResponse identifier="c4"}
+::::::
+:::::
+::::
 
 </li>
 

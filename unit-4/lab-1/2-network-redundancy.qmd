@@ -15,9 +15,9 @@ CSN-1.E.7
 :::
 
 ::: vocabBig
-::: ap-standard
+:::: ap-standard
 CSN-1.A.5, CSN-1.A.6, CSN-1.B.6, CSN-1.E.2, CSN-1.E.5
-:::
+::::
 
 <ul>
 
@@ -77,10 +77,10 @@ devices and people.
 <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
 Describe what's going on in this animation.<br />
 
-::: todo
+:::: todo
 Someone should follow-up with Dan about where these images came from.
 --MF, 8/29/19
-:::
+::::
 
 <img src="/img/4-internet/redundancy.gif" title="A network of nodes joined with edges, with a sender node and a receiver node. The sender is able to send a message to the receiver even when an intermediate node is damaged in the network, as the message is able to traverse an alternate path highlighting network&apos;s redundancy." alt="A network of nodes joined with edges, with a sender node and a receiver node. The sender is able to send a message to the receiver even when an intermediate node is damaged in the network, as the message is able to traverse an alternate path highlighting network&apos;s redundancy." class="ms-4"/>
 
@@ -103,152 +103,152 @@ accidentally or on purpose).
 
 <!-- Question 1 -->
 
-::: {.assessment-data type="multiplechoice" identifier="What is the fewest number of nodes?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="false"}
-::: prompt
+:::: {.assessment-data type="multiplechoice" identifier="What is the fewest number of nodes?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="false"}
+::::: prompt
 <img src="/img/4-internet/redundant-2.jpg" title="graph of a network with a sender and a receiver at each end and multiple connections among multiple notes between them" alt="graph of a network with a sender and a receiver at each end and multiple connections among multiple notes between them" class="float-end" height="250px"/>
 In this model of a network, what is the <em>minimum</em> number of nodes
 (connection points) that can stop working before the sender and the
 receiver can't communicate? (Other than the sender or the receiver
 themselves, of course.)
-:::
+:::::
 
-::: {.choice identifier="c1"}
-::: text
+::::: {.choice identifier="c1"}
+:::::: text
 1
-:::
+::::::
 
-::: feedback
+:::::: feedback
 There are no nodes that are vital to the system. Pick any node to stop
 working, and you can still find another path.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c2"}
-::: text
+::::: {.choice identifier="c2"}
+:::::: text
 2
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Correct! If the node with six connections goes down and also either of
 the two to its left, the sender and receiver can't communicate.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c3"}
-::: text
+::::: {.choice identifier="c3"}
+:::::: text
 3
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Try to find a smaller number of nodes that can stop working and still
 break communication.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c4"}
-::: text
+::::: {.choice identifier="c4"}
+:::::: text
 4
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Try to find a smaller number of nodes that can stop working and still
 break communication.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c5"}
-::: text
+::::: {.choice identifier="c5"}
+:::::: text
 5
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Try to find a smaller number of nodes that can stop working and still
 break communication.
-:::
-:::
+::::::
+:::::
 
-::: {.responseDeclaration identifier="ri1"}
-::: {.correctResponse identifier="c2"}
-:::
-:::
-:::
+::::: {.responseDeclaration identifier="ri1"}
+:::::: {.correctResponse identifier="c2"}
+::::::
+:::::
+::::
 
 <!-- Question 2 -->
 
-::: {.assessment-data type="multiplechoice" identifier="What is the maximum that can fail?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="false"}
-::: prompt
+:::: {.assessment-data type="multiplechoice" identifier="What is the maximum that can fail?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="false"}
+::::: prompt
 <img src="/img/4-internet/redundant-2.jpg" title="graph of a network with a sender and a receiver at each end and multiple connections among multiple notes between them" alt="graph of a network with a sender and a receiver at each end and multiple connections among multiple notes between them" class="float-end" height="250px"/>
 In the same model network, what is the <em>maximum</em> number of nodes
 that can fail and still let Sender and Receiver communicate?
-:::
+:::::
 
-::: {.choice identifier="c1"}
-::: text
+::::: {.choice identifier="c1"}
+:::::: text
 10
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Draw a path from sender to receiver that still works.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c2"}
-::: text
+::::: {.choice identifier="c2"}
+:::::: text
 9
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Draw a path from sender to receiver that still works.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c3"}
-::: text
+::::: {.choice identifier="c3"}
+:::::: text
 8
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Correct! If the four nodes on the right and <em>also</em> the four nodes
 on the left all fail, the remaining two nodes in the middle will still
 allow the sender and receiver to communicate.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c4"}
-::: text
+::::: {.choice identifier="c4"}
+:::::: text
 7
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Try to find a higher number of nodes that can stop working and still
 permit communication.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c5"}
-::: text
+::::: {.choice identifier="c5"}
+:::::: text
 6
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Try to find a higher number of nodes that can stop working and still
 permit communication.
-:::
-:::
+::::::
+:::::
 
-::: {.responseDeclaration identifier="ri2"}
-::: {.correctResponse identifier="c3"}
-:::
-:::
-:::
+::::: {.responseDeclaration identifier="ri2"}
+:::::: {.correctResponse identifier="c3"}
+::::::
+:::::
+::::
 
 </li>
 
 <li>
 
-::: ap-standard
+:::: ap-standard
 CSN-1.E
-:::
+::::
 
 <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
 <img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/>

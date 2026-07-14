@@ -14,10 +14,10 @@ subtitle: "Unit 1, Lab 3, Page 1"
 
 An **algorithm** is a sequence of steps that are usually performed by a computer. The algorithm doesn't have to be written in any particular programming language or even in a programming language at all; you can write your algorithm in English or any other human language. Some people call an algorithm written in human language **pseudocode**. Once you know the steps that the computer will take, you can code your algorithm in the programming language of your choice.
 
-::: endnote
+:::: endnote
 What's the purpose of "pseudocode"? Why write an algorithm vaguely in English when you could write it precisely in Snap<em>!</em>? If you were programming in a punctuation-heavy language, designing your program in pseudocode would help you focus on the important ideas instead of on details like quotation marks and semicolons. But pseudocode isn't as necessary with a language like Snap<em>!</em>, and pseudocode can make it easy for you to fall into wishful thinking about what the computer is capable of (such as writing "Pick tomorrow's winning lottery numbers" or "Here's the melody; write the harmony").
 
-:::
+::::
 :::
 
 ::: {#first .forYouToDo}
@@ -28,49 +28,49 @@ What's the purpose of "pseudocode"? Why write an algorithm vaguely in English wh
     a. Click it, and watch what the sprite does.
     b. Click <img src="/img/blocks/pen-down-full-size.png" title="pen down" alt="pen down"/>, and then click your script to run it again.
 
-::: endnote
+:::: endnote
 You can click `pen down` (or any block) in the palette on the left or in the scripting area to run it. If you click a block inside a script, the whole script runs.
-:::
+::::
 
 (@) With your partner, analyze <em>why</em> that script does what it does.
 
 (@)  <img src="/img/icons/talk-with-another-pair-mini.png" title="Talk with Another Pair" alt="Talk with Another Pair" class="inline"/>Compare your work with another pair. If your script behaves differently from theirs, check both.
 
-::: takeNote
+:::: takeNote
 ### **Using Visible Stepping**
 
 Snap<em>!</em> has a tool called **Visible Stepping** that allows you to control how quickly Snap<em>!</em> steps through the blocks of your code.
 
 - Click the Visible Stepping button (<img src="/img/2-complexity/visible-stepping.png" title="Visible Stepping button with two footprints" alt="Visible Stepping button with two footprints" class="inline py-0"/>), and adjust the slider to control the stepping speed. When you run your code, the sprite will slowly execute each step of the code and highlight it in [cyan]{style="color: black; background-color:cyan"}.
 
-::: endnote
+::::: endnote
 <a href="#hint-slider" data-bs-toggle="collapse" title="Click for a video of adjusting the Visible Stepping slider.">Click for a video of adjusting the Visible Stepping slider.</a>
 
-::: {#hint-slider .collapse}
+:::::: {#hint-slider .collapse}
 <img src="/img/1-introduction/visible-stepping.gif" title="Animation that shows how to use Visible stepping in Snap!" alt="Animation that shows how to use Visible stepping in Snap!" class="inline"/>
-:::
-:::
+::::::
+:::::
 
 - You can slow the stepping to do only one step at a time and wait until you tell Snap<em>!</em> to go on to the next one. Move the slider all the way to the left, and then you can press the Run/Pause button (<img src="/img/sys/play-pause-button.png" title="pause button with play/pause icon" alt="pause button with play/pause icon" class="inline"/>) to see what happens at each step of your code.
 
-::: endnote
+::::: endnote
 <a href="#hint-slider-left" data-bs-toggle="collapse" title="Click for a video of single-stepping through code.">Click for a video of single-stepping through code.</a>
 
-::: {#hint-slider-left .collapse}
+:::::: {#hint-slider-left .collapse}
 <img src="/img/1-introduction/single-stepping.gif" title="Animation that shows how to use single-step Visible stepping in Snap!" alt="Animation that shows how to use single-step Visible stepping in Snap!" class="inline"/>
-:::
-:::
+::::::
+:::::
 
 Visible stepping can be useful as you read someone else's code because you can watch it at human speed instead of computer speed. It's also useful in debugging (fixing problems with) your own code when it's doing something wrong.
-:::
+::::
 
 (@) Experiment:<br />
 
 <ol type="a" class="ms-4">
 
-::: sidenote
+:::: sidenote
 You can put your sprite back in the center of the screen with <img src="/img/blocks/go-to-x-y-0-0.png" title="go to x: (0) y: (0)" alt="go to x: (0) y: (0)" class="inline"/> and you can reset the direction it's pointing with <img src="/img/blocks/point-in-direction-90.png" title="point in direction (90)" alt="point in direction (90)" class="inline"/>.
-:::
+::::
 
 <li>Change 100 to 50 in the `move` block <em>of your script</em> by clicking on the 100 and typing 50. Then click the script again to run it with the new input value.</li>
 
@@ -84,9 +84,9 @@ You can put your sprite back in the center of the screen with <img src="/img/blo
 
 <li>Use <img src="/img/blocks/set-pen-size-to-blank.png" title="set pen size to ()" alt="set pen size to ()" class="inline"/> to set the pen size to something like 4 or 10 or 50. Then click your `repeat`, `move`, `turn` script again.</li>
 
-::: endnote
+:::: endnote
 To change the pen size you must <em>click</em> the `set pen size` block to run it after you've entered the number you want.
-:::
+::::
 
 <li>Use <img src="/img/blocks/set-pen-color-full-size.png" title="set pen color to &apos;magenta colored square&apos;" alt="set pen color to &apos;magenta colored square&apos;" class="inline"/> to experiment with the pen color.</li>
 
@@ -128,7 +128,7 @@ To change the pen size you must <em>click</em> the `set pen size` block to run i
 
 At the right is a painting by Kazimir Malevich. Its elements are rectangles, either horizontal or at a 45-degree angle, plus or minus a few degrees. You can position rectangles randomly. Your picture doesn't have to look like his---you're the artist!
 
-::: dialogue
+:::: dialogue
 <div>
 
 Alphie: If we just put rectangles in randomly, the tiny square dots will often be covered by larger ones. Maybe we should do big ones first and smaller ones later.
@@ -148,7 +148,7 @@ Betsy: I bet we can use the idea of drawing really thick lines <em>without</em> 
 </div>
 
 <img src="/img/1-introduction/curl.png" title="curved horn shape made of overlapping circles in different colors" alt="curved horn shape made of overlapping circles in different colors" class="ms-4"/>
-:::
+::::
 
 </li>
 

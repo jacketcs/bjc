@@ -33,7 +33,7 @@ your code can have, and how much of your project you need to test.
 
 Export the mathematical blocks from your U2L3-Predicates project.
 
-::: narrower
+:::: narrower
 <h4>**Exporting Blocks**</h4>
 
 <ol type="a">
@@ -55,23 +55,23 @@ case, you want
 and
 <img src="/img/2-complexity/not-equal.png" title="() not equal ()" alt="() not equal ()" class="inline py-0"/>.)
 
-::: endnote
+::::: endnote
 You can either <em>deselect</em> the blocks you don't need exported, or
 you can right-click the background, choose "none," and then select only
 the ones you want.
-:::
+:::::
 
 </li>
 
-::: sidenoteBig
+::::: sidenoteBig
 Snap<em>!</em> libraries and Snap<em>!</em> projects are both exported
 as XML files.
-:::
+:::::
 
 <li>**Click "OK."** An XML file will download.</li>
 
 </ol>
-:::
+::::
 
 </li>
 
@@ -80,7 +80,7 @@ as XML files.
 Import these blocks into your U2L4-MathLibrary project, test them and
 resolve any issues, and save.
 
-::: narrower
+:::: narrower
 <h4>**Importing Blocks**</h4>
 
 <ol type="a">
@@ -93,11 +93,11 @@ to import blocks. (In this case, your U2L4-MathLibrary project.)</li>
 **Import the XML file** by dragging the XML file from your
 downloads folder into the Snap<em>!</em> window.
 
-::: endnote
+::::: endnote
 You can also import the XML file by choose "Import..." from the
 Snap<em>!</em> file menu, locating the XML file on your computer, and
 clicking "Open."
-:::
+:::::
 
 </li>
 
@@ -118,7 +118,7 @@ properly.**</li>
 </li>
 
 </ol>
-:::
+::::
 
 </li>
 
@@ -154,9 +154,9 @@ select all of the blocks needed by the blocks you want.
 
 <li>
 
-::: ap-standard
+:::: ap-standard
 AAP-2.M parts a and b, AAP-3.D
-:::
+::::
 
 Copy and modify the code from your `even?` predicate to
 develop an `odd?` predicate for your library.<br />
@@ -182,9 +182,9 @@ library.
 
 <li>
 
-::: ap-standard
+:::: ap-standard
 AAP-2.M parts a and b
-:::
+::::
 
 Develop a
 <img src="/img/2-complexity/number-of-divisors.png" title="number of divisors reporter with numeric input slot" alt="number of divisors reporter with numeric input slot"/>
@@ -204,7 +204,7 @@ divisors?**</li>
 <a href="#hint-steps" data-bs-toggle="collapse" title="the steps for building the 'number of divisors' block">these
 steps.</a>
 
-::: {#hint-steps .collapse}
+:::: {#hint-steps .collapse}
 <ol type="a">
 
 <li>
@@ -213,11 +213,11 @@ Build a `divisors` block using `keep`.<br />
 <img src="/img/2-complexity/divisors-9-reporting.png" title="divisors of (9) reporting {1, 3, 9}" alt="divisors of (9) reporting {1, 3, 9}" class="ms-4"/>
 <img src="/img/2-complexity/divisors-12-reporting.png" title="divisors of (12) reporting {1, 2, 3, 4, 6, 12}" alt="divisors of (12) reporting {1, 2, 3, 4, 6, 12}" class="ms-4"/>
 
-::: endnote
+::::: endnote
 <a href="#hint-divisors" data-bs-toggle="collapse" title="Hints about building the divisors block">Hints
 about building the `divisors` block</a>
 
-::: {#hint-divisors .collapse}
+:::::: {#hint-divisors .collapse}
 <ul>
 
 <li>You <em>could</em> build this with `for` or `for
@@ -238,8 +238,8 @@ to use.</li>
 block may be helpful.</li>
 
 </ul>
-:::
-:::
+::::::
+:::::
 
 </li>
 
@@ -265,7 +265,7 @@ divisors?**</li>
 </li>
 
 </ol>
-:::
+::::
 
 </li>
 
@@ -294,30 +294,30 @@ Program Interface</em> for the library.
 ::: vocabFullWidth
 : **APIs**
 
-::: ap-standard
+:::: ap-standard
 AAP-3.D.4, AAP-3.D.5
-:::
+::::
 
 An **application program interface (API)** documents
 what a programmer needs to know about using a library: it's a
 description of each procedure's purpose, inputs, and outputs (but not
 its algorithms).
 
-::: endnote
+:::: endnote
 <a href="#hint-webAPI" data-bs-toggle="collapse" title="What is a Web API?">What
 is a Web API?</a>
 
-::: {#hint-webAPI .collapse}
+::::: {#hint-webAPI .collapse}
 A common kind of API is a <em>web API</em> in which the library
 exists on someone else's computer. For example, the
 <a href="https://developers.google.com/maps/documentation/embed/start" title="Google Maps API" target="_blank">Google
 Maps API</a> describes how to embed a Google Map on your own
 website.
 
-::: todo
+:::::: todo
 I'm actually inclined to cut all the rest of this yellow box. --MF,
 1/15/20
-:::
+::::::
 
 
 
@@ -344,8 +344,8 @@ The only difference is that the URL shows where on the Internet to find
 the procedure.
 
 
-:::
-:::
+:::::
+::::
 :::
 
 {{< checkpoint id='1FAIpQLSfg4h2EWIr6xRf0gyl_J_oGYXN1gdIhSx51Q7VITYtXtbRZRQ' >}}

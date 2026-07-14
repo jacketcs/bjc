@@ -29,12 +29,12 @@ Question 1: Answer this on the Google Form
 <a href="#timeline-tally" data-bs-toggle="collapse" title="Tally Sticks">Tally Sticks</a> - First known computing aid.
 
 ::: {#timeline-tally .timeline .collapse}
-::: endnote
+:::: endnote
 #### **Tally Sticks** (c. 18,000 BCE)
 
 20,000 years ago people cut patterns of notches into animal bones. Some experts believe that <em>tally sticks</em> were used to perform arithmetic computations.
 
-:::
+::::
 :::
 
 </li>
@@ -44,19 +44,19 @@ Question 1: Answer this on the Google Form
 <a href="#timeline-abacus" data-bs-toggle="collapse" title="Abacus">Abacus</a> - Ancient calculator, still in use.
 
 ::: {#timeline-abacus .timeline .collapse}
-::: endnote
+:::: endnote
 #### **The Abacus** (c. 2,000 BCE)
 
 The <em>abacus</em> is a computing device invented about 4,000 years ago. People who are well-trained to use it can perform calculations remarkably quickly, including square roots and cube roots on multi-digit numbers. In some countries, the abacus is still widely used today.
 
-::: sidenote
+::::: sidenote
 <small>Image by Wikimedia user <!--<a href="https://fr.wikipedia.org/wiki/Utilisateur:HB" class="extiw" title="fr:Utilisateur:HB" target="_blank">-->HB<!--</a>-->, Public Domain.</small>
-:::
+:::::
 
 ![an abacus (a counting frame), a calculating tool used before written numerals](/img/6-computers/abacus.jpg)\
 
 The computation <em>algorithms</em> are executed by the user, not the device.
-:::
+::::
 :::
 
 </li>
@@ -66,16 +66,16 @@ The computation <em>algorithms</em> are executed by the user, not the device.
 <a href="#timeline-orrery" data-bs-toggle="collapse" title="Orrery">Orrery</a> - Mechanical device that computes planets' orbits.
 
 ::: {#timeline-orrery .timeline .collapse}
-::: endnote
+:::: endnote
 #### **The Orrery** (c. 100 BCE)
 
 
 
 Since antiquity, many <em>special-purpose</em> computing devices have been invented. For example this <em>orrery</em> displayed the positions of the planets in the Solar System. The first known device of this kind dated from about 2100 years ago. People at that time generally believed that the sun and other planets all revolved around the Earth, making the positions very complicated to work out, so the mechanism was much harder to design and build than it would be today.
 
-::: sidenote
+::::: sidenote
 <small>No machine-readable image author provided. <!--<a href="https://en.wikipedia.org/wiki/File:NAMA_Machine_d%27Anticyth%C3%A8re_1.jpg" target="_blank">-->Marsyas assumed<!--</a>--> (based on copyright claims). GFDL, CC-BY-SA-3.0, or CC BY 2.5, via Wikimedia Commons.</small>
-:::
+:::::
 
 ![Gears from an ancient orrery](/img/6-computers/orrery1.jpg)\
 
@@ -83,14 +83,14 @@ Since antiquity, many <em>special-purpose</em> computing devices have been inven
 
 Here is a modern example of an orrery.
 
-::: sidenote
+::::: sidenote
 <small>Image by flickr user<!--<a href="https://www.flickr.com/photos/kaptainkobold/127601212/sizes/m/" target="_blank">-->Kaptain Kobold<!--</a>-->, licensed under the Creative Commons Attribution 2.0</small>
-:::
+:::::
 
 ![A modern orrery: mechanical model of planets](/img/6-computers/orrery2.jpg)\
 
 
-:::
+::::
 :::
 
 </li>
@@ -100,11 +100,11 @@ Here is a modern example of an orrery.
 <a href="#timeline-difference-engine" data-bs-toggle="collapse" title="Difference Engine">Difference Engine</a> - Charles Babbage: Mechanical single-purpose computer.
 
 ::: {#timeline-difference-engine .timeline .collapse}
-::: endnote
+:::: endnote
 #### **The Difference Engine** (c. 1822)
 
 In 1822, Charles Babbage designed a device he called a "Difference Engine." Made of precisely milled metal gears, it would compute and print tables of numbers, like log or trig functions. See more on <a href="/unit-6/lab-1/06-digital-architecture.html" title="The Digital Domain: Architecture">the digital architecture page</a>.
-:::
+::::
 :::
 
 </li>
@@ -114,11 +114,11 @@ In 1822, Charles Babbage designed a device he called a "Difference Engine." Made
 <a href="#timeline-analytical-engine" data-bs-toggle="collapse" title="Analytical Engine">Analytical Engine</a> - Babbage: First <em>stored-program</em> computer.
 
 ::: {#timeline-analytical-engine .timeline .collapse}
-::: endnote
+:::: endnote
 #### **The Analytical Engine** (c. 1833)
 
 The Difference Engine could compute various functions by manually setting the starting position of its gears, but it had only one algorithm, built into the hardware design. In 1833, Babbage began a more ambitious project, the Analytical Engine. It was based on the general idea of the Difference Engine, but with a crucial difference: It could carry out instructions in a primitive programming language, prepared on punched cards. See more on <a href="/unit-6/lab-1/06-digital-architecture.html" title="The Digital Domain: Architecture">the digital architecture page</a>.
-:::
+::::
 :::
 
 </li>
@@ -128,17 +128,17 @@ The Difference Engine could compute various functions by manually setting the st
 <a href="#timeline-first-programmer" data-bs-toggle="collapse" title="First Programmer">First Programmer</a> - Ada Lovelace: First to understand the potential of programs for <em>non-numeric</em> data.
 
 ::: {#timeline-first-programmer .timeline .collapse}
-::: endnote
+:::: endnote
 #### **The First Programmer** (c. 1842)
 
 Babbage's design was very versatile, but his interest was still mainly in printing tables of numbers. It was his collaborator Ada, Countess Lovelace, who first recognized that the numbers in Babbage's computer could be used not only as quantities but also as representing musical notes, text characters, and so on. See more on <a href="/unit-6/lab-1/06-digital-architecture.html" title="The Digital Domain: Architecture">the digital architecture page</a>.
 
 ![Ada, Countess Lovelace](/img/6-computers/ada-lovelace.jpg)\
 
-::: sidenote
+::::: sidenote
 <small>Image by Alfred Edward Chalon, Science & Society Picture Library, Public Domain, via Wikimedia.</small>
-:::
-:::
+:::::
+::::
 :::
 
 </li>
@@ -148,7 +148,7 @@ Babbage's design was very versatile, but his interest was still mainly in printi
 <a href="#timeline-turing-wwii" data-bs-toggle="collapse" title="Alan Turing wins World War II">Alan Turing wins World War II</a> - Alan Turing leads a team that breaks the Enigma code using a very early electronic programmable computer.
 
 ::: {#timeline-turing-wwii .timeline .collapse}
-::: endnote
+:::: endnote
 #### **Alan Turing Wins World War II** (1940s)
 
 Well, we're exaggerating. Many people contributed to the Nazi defeat. But they weren't all soldiers; some were mathematicians. Turing, who went on to develop the beginning ideas of computer science and to prove the Halting Theorem, which you saw in <a href="/unit-5/lab-4/2-halting-problem.html" title="Unit 5, Lab 4: An Undecidable Problem" title="Unit 5, Lab 4: An Undecidable Problem">Unit 5, Lab 4: An Undecidable Problem</a>, was the leader of a British team of mathematicians who made a breakthrough in decrypting messages encrypted with the German <em>Enigma</em> machine.
@@ -157,7 +157,7 @@ Well, we're exaggerating. Many people contributed to the Nazi defeat. But they w
 
 > Alan Turing, a Cambridge University mathematician and logician, provided much of the original thinking and designed the device. Engineer Harold "Doc" Keen turned Turing's ideas into a working machine. (adapted from <a href="https://en.wikipedia.org/wiki/Cryptanalysis_of_the_Enigma" target="_blank"  title="Wikipedia: Cryptanalysis of the Enigma">Cryptanalysis of the Enigma</a>, Wikipedia CC-BY-SA)
 
-:::
+::::
 :::
 
 </li>
@@ -167,13 +167,13 @@ Well, we're exaggerating. Many people contributed to the Nazi defeat. But they w
 <a href="#timeline-nls" data-bs-toggle="collapse" title="First Mouse, Window System, etc.">First Mouse, Window System, etc.</a> - Douglas Engelbart: An amazing number of firsts, including first hypertext, first collaborative editing, first video calling, much more.
 
 ::: {#timeline-nls .timeline .collapse}
-::: endnote
+:::: endnote
 #### **"The mother of all demos" **(1960s)
 
 The first public demonstration in 1968 of a mouse, colleagues separated by miles working on the same screen, and many other technologies we now take for granted was so astonishing to the audience that it became known as "the mother of all demos." (Just search that name on Wikipedia or YouTube.)
 
 The inventor of this system, Douglas Engelbart, had a lifelong interest in using technology to augment human intelligence, in particular to support collaboration among people physically distant. He studied people doing intellectual work and noted that when they're not using a computer they don't sit rigidly in front of their desks; they wheel their chairs around the room as they grab books or just think. So he designed an office chair attachment of a lapboard containing a keyboard and a mouse---the first mouse. He also invented a way for people to collaborate on the same page at the same time, seeing each others' mouse cursors. Documents created in the system had hyperlinks to other documents, long before the Web was invented and used this idea. There were lots of smaller firsts, too, such as a picture-in-picture display of the other person's face camera, long before Skype. People remember Engelbart mostly because of the mouse, but he pioneered many features of the modern graphical user interface (GUI).
-:::
+::::
 :::
 
 </li>
@@ -183,13 +183,13 @@ The inventor of this system, Douglas Engelbart, had a lifelong interest in using
 <a href="#timeline-sketchpad" data-bs-toggle="collapse" title="Sketchpad">Sketchpad</a> - Ivan Sutherland: First object-oriented programming system, early interactive display graphics.
 
 ::: {#timeline-sketchpad .timeline .collapse}
-::: endnote
+:::: endnote
 #### **Sketchpad** (1963)
 
 Ivan Sutherland's 1963 Ph.D. thesis project, a program to help in drawing blueprints from points, line segments and arcs of circles, pioneered both object oriented programming and the ability to draw on a screen (using a light pen; the mouse hadn't been invented yet). It was one of the first programs with an interactive graphical user interface, so people who weren't computer programmers could use it easily.
 
 Search for "Sketchpad" on YouTube to see a demonstration of this software.
-:::
+::::
 :::
 
 </li>
@@ -199,7 +199,7 @@ Search for "Sketchpad" on YouTube to see a demonstration of this software.
 <a href="#timeline-arpanet" data-bs-toggle="collapse" title="ARPANET">ARPANET</a> - The first version of what became the Internet.
 
 ::: {#timeline-arpanet .timeline .collapse}
-::: endnote
+:::: endnote
 #### **ARPANET** (1969)
 
 The Advanced Research Projects Agency\
@@ -208,7 +208,7 @@ The Advanced Research Projects Agency\
 Only organizations with ARPA research grants could be on the net. This meant almost all the network sites were universities, along with a small number of technology companies doing work for ARPA. Everyone knew everyone, and so the network was built around trust. People were encouraged to use other sites' resources; there was a yearly published directory of all the network computers, including, for most of them, information on how to log in as a guest user. It was a much friendlier spirit than today's Internet, with millions of computers and millions of users who don't know or trust each other. But the friendly spirit was possible only because access to the ARPANET was strongly restricted.
 
 The architects of the ARPANET knew that a system requiring every computer to know the address of every other computer wasn't going to work for a network accessible to everyone. Their plan was to build a <em>network of networks</em>---the Internet. The TCP/IP protocol stack was designed and tested on the ARPANET.
-:::
+::::
 :::
 
 </li>
@@ -218,11 +218,11 @@ The architects of the ARPANET knew that a system requiring every computer to kno
 <a href="#timeline-internet" data-bs-toggle="collapse" title="The Internet">The Internet</a> - First <em>network of networks</em>, based on TCP/IP.
 
 ::: {#timeline-internet .timeline .collapse}
-::: endnote
+:::: endnote
 #### **Internet** (1986)
 
 Gradually the ARPANET was divided into pieces. The first big pieces were MILNET for military bases and NSFnet, established in 1986 by the National Science Foundation, for research sites. This split was the beginning of the Internet. Smaller regional networks were created. Communication companies such as AT&T created commercial networks that anyone could join. Network access spread worldwide through satellite radio and through undersea cables. In 1995 the NSFnet was abolished, and everyone connected to the net through commercial Internet Service Providers.
-:::
+::::
 :::
 
 </li>
@@ -232,7 +232,7 @@ Gradually the ARPANET was divided into pieces. The first big pieces were MILNET 
 <a href="#timeline-www" data-bs-toggle="collapse" title="The World Wide Web">The World Wide Web</a> - Tim Berners-Lee: First widely available hypertext (clickable links) system.
 
 ::: {#timeline-www .timeline .collapse}
-::: endnote
+:::: endnote
 #### **World Wide Web** (1989-90)
 
 In the early days of the net, the main application-level protocols were Telnet, which allowed a user to log in remotely to another computer, and FTP (File Transfer Protocol), for copying files from one computer to another. FTP is great if you already know what you're looking for, and exactly where it is in the other computer's file system.
@@ -242,7 +242,7 @@ Several people had the idea of a system that would allow users to embed links to
 In 1989, physicist Tim Berners-Lee implemented a hypertext system and named it the World Wide Web. At first it was used only by physicists, to share data and ideas. But by then the Internet was running, so his timing was right, and the name was much more appealing than the technical-sounding "hypertext" (although, as you saw in <a href="/unit-4/lab-1/1-what-is-internet.html" title="Unit 4, Lab 1: What Is the Internet?">Unit 4, Lab 1: What Is the Internet?</a>.
 
 Berners-Lee's vision was of a Web in which everyone would be both a creator and a consumer of information. But the Web quickly became a largely one-way communication, with a few commercial websites getting most of the traffic. Today, most Web traffic goes to Google, Facebook, CNN, Amazon, and a few others. But some degree of democracy came back to the Web with the invention of the <em>blog </em>(short for "web log") in which ordinary people can post their opinions and hope that other people will notice them.
-:::
+::::
 :::
 
 </li>
@@ -252,19 +252,19 @@ Berners-Lee's vision was of a Web in which everyone would be both a creator and 
 <a href="#timeline-smartphone" data-bs-toggle="collapse" title="First Smartphones">First Smartphones</a> - First portable devices combining cell phone with pocket computer.
 
 ::: {#timeline-smartphone .timeline .collapse}
-::: endnote
+:::: endnote
 #### **Smartphones** (1990s)
 
 The first device that could be thought of as a smartphone was demonstrated in 1992 and available for sale in 1994. But through the 1990s, people who wanted portable digital devices could get a cell phone without apps, and a "personal digital assistant" (PDA) that did run apps but couldn't make phone calls. Around 1999, a few companies developed devices with the phone and the PDA in one housing, sharing the screen but essentially two separate computers in one box. The Kyocera 6035, in the photo, was a telephone with the flap closed, but was a Palm Pilot PDA with the flap open.
 
-::: sidenote
+::::: sidenote
 <small><small>Kyocera 6035 <!--(2001)--> image by KeithTyler, Public Domain</small></small>
-:::
+:::::
 
 ![Kyocera 6035 smartphone with flap closed and open](/img/6-computers/Kyocera6035.jpg)\
 
 It was in the late 2000s that the two functions of a smartphone were combined in a single processor, with the telephone dialer as just one application-level program.
-:::
+::::
 :::
 
 </li>
@@ -274,7 +274,7 @@ It was in the late 2000s that the two functions of a smartphone were combined in
 <a href="#timeline-chess" data-bs-toggle="collapse" title="Chess program beats world champion">Chess program beats world champion</a> - Deep Fritz program beats Vladimir Kramnik.
 
 ::: {#timeline-chess .timeline .collapse}
-::: endnote
+:::: endnote
 #### **Chess program beats world champion** (2006)
 
 Programmers have been trying to design and build chess programs since at least 1941 (Konrad Zuse). Over the following decade, several of the leading computer science researchers (including Alan Turing, in 1951) published ideas for chess algorithms, but the first actual running programs came in 1957. In 1978, a chess program won a game against a human chess master, David Levy, but Levy won the six-game match 4½--1½. (The half points mean that one game was a tie.)
@@ -288,7 +288,7 @@ In 1997, Deep Blue, an IBM-built special-purpose computer just to play chess, wi
 In 2006, world chess champion Vladimir Kramnik was defeated 4-2 in a six-game match by Deep Fritz, a chess program running on an ordinary computer. Although the score looks overwhelming, one of the games Deep Fritz won was almost a win for Kramnik, who failed to see a winning move for himself and instead set up the computer for a one-move checkmate. Without this blunder, the match would have been tied 3--3.
 
 Chess programs continue to improve. In 2009, the program Pocket Fritz 4, running on a cell phone, won a tournament and reached grandmaster rating. The program, in contrast to Deep Blue, could evaluate only 20,000 positions per second, so this win shows an improvement in strategy, not just an improvement in brute force computer speed.
-:::
+::::
 :::
 
 </li>
@@ -298,7 +298,7 @@ Chess programs continue to improve. In 2009, the program Pocket Fritz 4, running
 <a href="#timeline-siri" data-bs-toggle="collapse" title="Siri">Siri</a> - Apple's personal assistant for the iPhone.
 
 ::: {#timeline-siri .timeline .collapse}
-::: endnote
+:::: endnote
 #### **Siri** (2011)
 
 Siri is Apple's <em>personal assistant</em> software. It was first released as a third-party app in the App Store in 2010; Apple then bought the company that made it, and included Siri as part of iOS in 2011.
@@ -312,7 +312,7 @@ The first cell phone app using speech recognition was Google's Voice Search in 2
 Reviews of Siri's performance in 2011 weren't all good. It had trouble understanding Southern US or Scottish accents. It had a lot of trouble with grammatically ambiguous sentences. Its knowledge of local landmarks was spotty. Nevertheless, it prompted a new surge of buyers of Apple telephones.
 
 More recently, Microsoft (Cortana), Amazon (Alexa), and Google (Assistant) have introduced competing speech-based personal assistant programs.
-:::
+::::
 :::
 
 </li>
@@ -322,7 +322,7 @@ More recently, Microsoft (Cortana), Amazon (Alexa), and Google (Assistant) have 
 <a href="#timeline-pokemon-go" data-bs-toggle="collapse" title="Pokémon Go">Pokémon Go</a> - First widely used augmented reality game.
 
 ::: {#timeline-pokemon-go .timeline .collapse}
-::: endnote
+:::: endnote
 #### **Pokémon Go** (2016)
 
 <em>Augmented reality</em> is a technique in which the user sees the real world, but with additional pictures or text superimposed on it. Although it had been used earlier, the first major public exposure to augmented reality was in the game Pokémon Go. Players walk around while looking at their phone screens, which show what the camera is seeing, but with the occasional addition of a cartoon character for the player to catch. Every player looking at the same place sees the same character, because the game uses the phone's GPS to locate the player.
@@ -330,7 +330,7 @@ More recently, Microsoft (Cortana), Amazon (Alexa), and Google (Assistant) have 
 The programming of the game was impressive, but even more impressive was the effort the developers put into placing the cartoon characters at locations around the world that are accessible, open to the public, and not offensive. (Niantic, the company that developed the game, had to remove some locations from their list because of complaints, including cemeteries and Holocaust museums.)
 
 The game was downloaded over 500 million times in 2016, and, unusually for a video game, was enthusiastically supported by many players' parents, because the game gets players out of the house, and getting exercise from walking around. Also, because players congregate at the locations of Pokémon, the game encouraged real-life friendships among players. On the other hand, there were safety concerns, partly because players would cross streets staring into their phones instead of watching for traffic, and partly because certain Pokémon were placed in front of fire stations, or in locations that encouraged players to cross railroad tracks.
-:::
+::::
 :::
 
 </li>
@@ -340,7 +340,7 @@ The game was downloaded over 500 million times in 2016, and, unusually for a vid
 <a href="#timeline-qx" data-bs-toggle="collapse" title="IBM Quantum Experience">IBM Quantum Experience</a> - A 16-qubit quantum computer available for free use on the Internet.
 
 ::: {#timeline-qx .timeline .collapse}
-::: endnote
+:::: endnote
 #### **IBM Quantum Experience (QX)** (2017)
 
 IBM first put a five-qubit (quantum bit) quantum computer on the Internet in 2016 (see <a href="https://www.research.ibm.com/ibm-q/" target="_blank" title="Quantum Computing - IBM Q - US">Quantum Computing - IBM Q - US</a>), but the following year they added a much more powerful 16-qubit computer. (The qubit is the equivalent for quantum computers of a bit in ordinary computers.) Anyone can use it, free of charge, although there is always a waiting list for appointments.
@@ -349,7 +349,7 @@ The usual oversimplified description of quantum computing is that a qubit (prono
 separate computers trying every possible combination of bit values in parallel. We know that <em>certain</em> exponential-time algorithms can be solved in polynomial time by quantum computers, and we know that certain others can't, but there is still a big middle ground of exponential-time algorithms for which we don't know how fast quantum computers can be.
 
 The IBM QX has been used for a wide variety of quantum computations, ranging from academic research to a multiplayer <a href="https://medium.com/@decodoku/quantum-battleships-the-first-multiplayer-game-for-a-quantum-computer-e4d600ccb3f3" target="_blank" title="Quantum Battleships: The first multiplayer game for a quantum computer">Quantum Battleship</a> game.
-:::
+::::
 :::
 
 </li>

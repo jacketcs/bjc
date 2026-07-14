@@ -26,11 +26,11 @@ and knowledge.
 
 <li>
 
-::: sidenoteBig
+:::: sidenoteBig
 If the interactive graph doesn't work on this page, you can
 <a href="https://www.gapminder.org/tools/#$ui$chart$showForecastOverlay:false&pauseBeforeForecast:false;;&model$markers$bubble$encoding$y$data$concept=children_per_woman_total_fertility&source=fasttrack&space@=geo&=time;;&scale$domain:null&zoomed:null&type:null;;&x$data$concept=lex&space@=geo&=time;;&scale$domain:null&zoomed:null&type:null;;&frame$speed:100;;;;;&chart-type=bubbles&url=v2" target="_blank" title="Fertility rate vs Life expectancy graph on Google">view
 it on google.com</a>.
-:::
+::::
 
 
 **Explore** the following interactive data set.
@@ -45,12 +45,12 @@ What does each axis represent?
 <a href="#hint-axes" data-bs-toggle="collapse" title="Reveal a hint about the axes.">Reveal
 a hint about the axes.</a>
 
-::: {#hint-axes .collapse}
+:::: {#hint-axes .collapse}
 <small>If you are viewing the data on this page, the label for the
 vertical axis is at the top of that axis. (If you are viewing it
 directly on google.com, it's along the left where it usually
 is.)</small>
-:::
+::::
 
 </li>
 
@@ -86,21 +86,21 @@ life expectancy over time (on average)?</li>
 
 <li>
 
-::: ap-standard
+:::: ap-standard
 DAT-2.E, DAT-2.E.3 clustering only
-:::
+::::
 
 Looking at clusters in the data can help you gain insight and knowledge.
 **Do some research** online to help you
 answer the following:
 
-::: todo
+:::: todo
 It's not clear to me that "doing some research" is needed to answer
 these questions. Did we say that because of the standards? If so, maybe
 the questions below could ask more pointed questions that can't be
 answered just from exploring the interactive data. If not, maybe the
 phrasing above should be adjusted. --MF, 5/31/20
-:::
+::::
 
 <ol>
 
@@ -131,9 +131,9 @@ meanings.
 ::: vocabFullWidth
 : **Data** vs. **Information**
 
-::: ap-standard
+:::: ap-standard
 DAT-2.A.1
-:::
+::::
 
 <ul>
 
@@ -147,9 +147,9 @@ extracted from data.</li>
 
 
 
-::: ap-standard
+:::: ap-standard
 DAT-2.A.2
-:::
+::::
 
 Data provide opportunities for identifying trends, making connections,
 and addressing problems. Information is the result of analyzing that
@@ -185,7 +185,7 @@ picture here, as one variable goes up the other goes down. It's also a
 correlation when as one variable goes up or down the other changes in
 the same manner.
 
-::: {style="display: inline-grid; grid-template-columns: auto auto auto; text-align: center;"}
+:::: {style="display: inline-grid; grid-template-columns: auto auto auto; text-align: center;"}
 <div>
 
 <img src="/img/5-algorithms/correlation-negative.png" title="a graph with a bunch of data points, in which they generally follow a straight line from top left to bottom right" alt="a graph with a bunch of data points, in which they generally follow a straight line from top left to bottom right" class="inline"/>
@@ -220,7 +220,7 @@ positive correlation
 no correlation
 
 </div>
-:::
+::::
 :::
 
 <li>Make up a scenario in which high fertility rates cause low life
@@ -233,9 +233,9 @@ high fertility rates.</li>
 </div>
 
 ::: vocab
-::: ap-standard
+:::: ap-standard
 DAT-2.E.4
-:::
+::::
 
 **Insight** is a meaningful conclusion drawn from
 analyzing information.
@@ -276,9 +276,9 @@ you have what seems like a reliable insight about causation.
 ::: forYouToDo
 <ol start="6">
 
-::: ap-standard
+:::: ap-standard
 DAT-2.A
-:::
+::::
 
 <li><img src="/img/icons/write-out-thoughts-mini.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/>**Summarize
 your findings.** Write a paragraph or two with your partner
@@ -304,7 +304,7 @@ increased?</li>
 <a href="#hint-jokes" data-bs-toggle="collapse" title="Two jokes about correlation and causation from XKCD...">Two
 jokes about correlation and causation from XKCD...</a>
 
-::: {#hint-jokes .collapse}
+:::: {#hint-jokes .collapse}
 <img src="https://imgs.xkcd.com/comics/correlation.png" title="Comic with two people talking across three panels. In panel one, one person says &apos;I used to think correlation implied causation.&apos; In panel two, the same person says, &apos;Then I took a statistics class. Now I don&apos;t.&apos; In panel three, the other person says, &apos;Sounds like the class helped,&apos; and the first person says, &apos;Well, maybe.&apos;" alt="Comic with two people talking across three panels. In panel one, one person says &apos;I used to think correlation implied causation.&apos; In panel two, the same person says, &apos;Then I took a statistics class. Now I don&apos;t.&apos; In panel three, the other person says, &apos;Sounds like the class helped,&apos; and the first person says, &apos;Well, maybe.&apos;" class="ms-4"/>
 
 <a href="https://www.explainxkcd.com/wiki/index.php/552:_Correlation" title="Don't get the correlation joke about statistics class?" target="_blank">Don't
@@ -314,5 +314,5 @@ get the correlation joke about statistics class?</a>
 
 <a href="https://www.explainxkcd.com/wiki/index.php/925:_Cell_Phones" title="Don't get the correlation joke about cell phones and cancer?" target="_blank">Don't
 get the correlation joke about cell phones and cancer?</a>
-:::
+::::
 :::

@@ -57,3 +57,5 @@ unit-*/*.html
 
 /*.html
 **/*.quarto_ipynb
+
+__pycache__/

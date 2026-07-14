@@ -27,12 +27,12 @@ take?**
 
 <a href="/prog/5-algorithms/U5L1-Spell-Checker.xml" class="run"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a>
 
-::: endnote
+:::: endnote
 This project provides the variables <var>1,000 words</var>, <var>10,000
 words</var>, and <var>100,000 words</var> (each containing a list of
 words) and a copy of the `does () have () letters?`
 predicate.
-:::
+::::
 
 </li>
 
@@ -87,9 +87,9 @@ of any particular length.
 ::: vocabFullWidth
 : **Problem** and **Instance of a Problem**
 
-::: ap-standard
+:::: ap-standard
 AAP-4.A.1
-:::
+::::
 
 <ul>
 
@@ -123,12 +123,12 @@ the size of the dictionary?</li>
 
 </ol>
 
-::: todo
+:::: todo
 I was thrown off by the format of this exercise and rephrased it as a
 question. --MF, 5/31/20
 
 Should this maybe be a quizlet? Not sure... --MF, 7/13/20
-:::
+::::
 
 </li>
 
@@ -151,9 +151,9 @@ long** to check them all.
 input size by ten multiplies the time required by ten.<br />
 <img src="/img/5-algorithms/size-vs-time.png" title="graph of size vs. time showing a straight line through the origin and up to the right with the points for x=10,000 and x=100,000 marked" alt="graph of size vs. time showing a straight line through the origin and up to the right with the points for x=10,000 and x=100,000 marked" class="ms-4 noshadow" style="height:300px"/></li>
 
-::: ap-standard
+:::: ap-standard
 AAP-2.O.5
-:::
+::::
 
 <li>A **linear search** (or **sequential
 search**) algorithm checks each element of a list in order, a

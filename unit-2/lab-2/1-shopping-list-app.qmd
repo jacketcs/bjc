@@ -19,14 +19,14 @@ Many computer applications---contact lists, playlists, calendars, reminders---in
 ::: examFullWidth
 
 
-::: pseudop
+:::: pseudop
 The list expression <img src="/img/1-introduction/list-from-who.png" title="list{Señora, Ms. C, my cat, Hannah, Jake}" alt="list{Señora, Ms. C, my cat, Hannah, Jake}" class="inline"/> would be written as
 
 ```{=html}
 <pre class="inline">[Señora, Ms. C, my cat, Hannah, Jake]</pre>
 ```
 . The items are positioned in the list in the order they appear in the text: "Señora" has index 1, "Ms. C" has index 2, and so on.
-:::
+::::
 :::
 
 ::: {#first .forYouToDo}
@@ -35,17 +35,17 @@ The list expression <img src="/img/1-introduction/list-from-who.png" title="list
 
 <li><a class="run" href="/prog/2-complexity/U2L2-ShoppingList.xml" target="_blank"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a> This project contains button costumes for the sprites that the user will click to control the items on their shopping list.</li>
 
-::: endnote
+:::: endnote
 <a href="#hint-shopping-list-example" data-bs-toggle="collapse" title="Click for a video showing how the shopping list app might look.">Click for a video showing how this might look.</a>
 
-::: {#hint-shopping-list-example .collapse}
+::::: {#hint-shopping-list-example .collapse}
 <img alt="animation of shopping list app" class="ms-4" data-gifffer="/img/3-lists/shopping-list-project-v3.gif"/>
-:::
-:::
+:::::
+::::
 
-::: sidenoteBig
+:::: sidenoteBig
 You learned how to initialize (create and set) a global variable on <a href="/unit-2/lab-1/4-keeping-score.html" title="Unit 2 Lab 1 Page 4: Keeping Score with Global Variables">Unit 2 Lab 1 Page 4: Keeping Score with Global Variables</a>.
-:::
+::::
 
 <li>
 
@@ -61,9 +61,9 @@ Initialize a <var>shopping list</var> variable to store the information.
 
 The <var>shopping list</var> variable has already been set to be a list. If it gets set to a value and not a list (the display will look different if this happens), you will need to reset it to be an <em>empty</em> list (a list with nothing in it). You will need a <img src="/img/blocks/list-full-size.png" title="list ()" alt="list ()" class="inline"/> block.
 
-::: narrower
+:::: narrower
 Use its left arrow to get rid of the input slot so that it looks like this: <img src="/img/blocks/empty-list-block.png" title="list" alt="list"/>. That way, you will have an empty list rather than a list with one empty item.
-:::
+::::
 
 </li>
 
@@ -77,25 +77,25 @@ Use its left arrow to get rid of the input slot so that it looks like this: <img
 ::: examFullWidth
 
 
-::: pseudop
+:::: pseudop
 The assignment instruction <img src="/img/2-complexity/example-blank-list-assignment.png" title="set (shopping list) to (list)" alt="set (shopping list) to (list)" class="inline"/> would be written as
 
 ```{=html}
 <pre class="inline">shoppingList &leftarrow; []</pre>
 ```
 or <img src="/img/2-complexity/shoppinglist-empty-list-assignment-blocktran.png" title="shoppingList ← []" alt="shoppingList ← []"/>.
-:::
+::::
 
 
 
-::: pseudop
+:::: pseudop
 The assignment instruction <img src="/img/2-complexity/example-list-assignment.png" title="set (shopping list) to {apples, bread, carrots, rice, pasta}" alt="set (shopping list) to {apples, bread, carrots, rice, pasta}" class="inline"/> would be written as
 
 ```{=html}
 <pre class="inline">shoppingList &leftarrow; [apples, bread, carrots, rice, pasta]</pre>
 ```
 or <img src="/img/2-complexity/shoppinglist-full-list-assignment-blocktran.png" title="shoppingList ← [apples, bread, carrots, rice, pasta]" alt="shoppingList ← [apples, bread, carrots, rice, pasta]"/>. (In this app, you'll want the `shopping list` to begin empty, and then the user will `add` or `insert` additional grocery items one at a time.)
-:::
+::::
 :::
 
 ## Adding Items to a List
@@ -127,25 +127,25 @@ Assigning a list to a variable lets you use one name to represent all the elemen
 ::: examFullWidth
 
 
-::: pseudop
+:::: pseudop
 <img src="/img/2-complexity/insert-tomatoes-at-2-of-shopping-list.png" title="insert (tomatoes) at (2) of (shopping list)" alt="insert (tomatoes) at (2) of (shopping list)" class="inline"/> would be written as
 
 ```{=html}
 <pre class="inline">INSERT(shoppingList, 2, "tomatoes")</pre>
 ```
 or <img src="/img/2-complexity/insert-blocktran.png" title="INSERT(shoppingList, 2, &apos;tomatoes&apos;)" alt="INSERT(shoppingList, 2, &apos;tomatoes&apos;)" class="inline"/>.
-:::
+::::
 
 
 
-::: pseudop
+:::: pseudop
 <img src="/img/2-complexity/add-tomatoes-to-shopping-list.png" title="add (tomatoes) to (shopping list)" alt="add (tomatoes) to (shopping list)" class="inline"/> would be written as
 
 ```{=html}
 <pre class="inline">APPEND(shoppingList, "tomatoes")</pre>
 ```
 or <img src="/img/2-complexity/add-blocktran.png" title="APPEND(shoppingList, &apos;tomatoes&apos;)" alt="APPEND(shoppingList, &apos;tomatoes&apos;)" class="inline"/>.
-:::
+::::
 :::
 
 ::: forYouToDo
@@ -153,11 +153,11 @@ or <img src="/img/2-complexity/add-blocktran.png" title="APPEND(shoppingList, &a
 
 
 
-::: sidenoteBig
+:::: sidenoteBig
 You've seen the `ask` and `answer` blocks on <a href="/unit-2/lab-1/2-checking-player-guess.html" title="Unit 2 Lab 1 Page 2: Checking the Player's Guess">Unit 2 Lab 1 Page 2: Checking the Player's Guess</a>.
 
 You've worked with multiple sprites on <a href="/unit-1/lab-2/2-gossip.html" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unit 1 Lab 2 Page 2: Making Programs Talk</a>.
-:::
+::::
 
 <li>Write a script for the "Add Item" button sprite so that when that sprite is clicked, it will `ask` the user for a new item, and then put the user's `answer` in the grocery list.</li>
 
@@ -181,7 +181,7 @@ You've worked with multiple sprites on <a href="/unit-1/lab-2/2-gossip.html" tit
 You can also remove items from a list using <img src="/img/blocks/delete.png" title="delete (1) of &apos;list input slot&apos;" alt="delete (1) of &apos;list input slot&apos;" class="inline"/>. The `delete` block takes an item number and a list as input and it removes the item at that position from the list.
 
 ::: examFullWidth
-::: pseudop
+:::: pseudop
 
 
 <img src="/img/2-complexity/delete-item-2-of-shopping-list.png" title="delete item (2) of (shopping list)" alt="delete item (2) of (shopping list)" class="inline"/> would be written as
@@ -190,7 +190,7 @@ You can also remove items from a list using <img src="/img/blocks/delete.png" ti
 <pre class="inline">REMOVE(shoppingList, 2)</pre>
 ```
 or <img src="/img/2-complexity/remove-blocktran.png" title="REMOVE(shoppingList, 2)" alt="REMOVE(shoppingList, 2)" class="inline"/>.
-:::
+::::
 :::
 
 ::: forYouToDo
@@ -204,7 +204,7 @@ or <img src="/img/2-complexity/remove-blocktran.png" title="REMOVE(shoppingList,
 :::
 
 ::: examFullWidth
-::: pseudop
+:::: pseudop
 The items in a list are <em>values</em>, so **you can use `item of` anywhere you can use any other expression**. For example:
 
 <ul>
@@ -215,7 +215,7 @@ The items in a list are <em>values</em>, so **you can use `item of` anywhere you
 
 You can assign a list item to a variable. <a href="#hint-assigning-element-to-variable" data-bs-toggle="collapse" title="You can assign a list item to a variable. On the exam...">On the exam...</a>
 
-::: {#hint-assigning-element-to-variable .collapse}
+::::: {#hint-assigning-element-to-variable .collapse}
 <ul>
 
 <li>
@@ -230,7 +230,7 @@ or <img src="/img/2-complexity/assigning-element-to-variable-blocktran.png" titl
 </li>
 
 </ul>
-:::
+:::::
 
 </li>
 
@@ -238,7 +238,7 @@ or <img src="/img/2-complexity/assigning-element-to-variable-blocktran.png" titl
 
 You can assign <em>any</em> value to a list item (a number, a string, a sprite, a costume, a script, another list, etc.). <a href="#hint-assigning-anything-to-element" data-bs-toggle="collapse" title="You can assign <em>any</em> value to a list item (a number, a string, a sprite, a costume, a script, another list, etc.). On the exam...">On the exam...</a>
 
-::: {#hint-assigning-anything-to-element .collapse}
+::::: {#hint-assigning-anything-to-element .collapse}
 <ul>
 
 <li>
@@ -264,12 +264,12 @@ or <img src="/img/2-complexity/assigning-element-to-element-blocktran.png" title
 </li>
 
 </ul>
-:::
+:::::
 
 </li>
 
 </ul>
-:::
+::::
 :::
 
 ::: examFullWidth
@@ -281,14 +281,14 @@ add (carrot) to (shopping list)" class="ms-4"/> <img src="/img/2-complexity/exam
 
 
 
-::: pseudop
+:::: pseudop
 However on the exam, the statement
 
 ```{=html}
 <pre class="inline">shoppingList2 &leftarrow; shoppingList</pre>
 ```
 makes a <em>copy</em> of the list. So modifying one of them <em>does not</em> modify the other.
-:::
+::::
 
 The rules for how to use lists and how they behave differ depending on the programming language you are using.
 :::

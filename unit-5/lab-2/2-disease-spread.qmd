@@ -84,7 +84,7 @@ that display the status of each clone</li>
 
 <li>
 
-::: sidenoteBig
+:::: sidenoteBig
 You learned how to clone a sprite in
 <a href="/unit-3/lab-1/5-building-tic-tac-toe.html" title="Unit 3 Lab 1 Page 5: Building a Tic-Tac-Toe Board">Unit
 3 Lab 1 Page 5: Building a Tic-Tac-Toe Board</a>.
@@ -92,7 +92,7 @@ You learned how to clone a sprite in
 The primitive block
 <img src="/img/blocks/my-neighbors.png" title="my (neighbors)" alt="my (neighbors)" class="inline"/>
 reports a list of sprites that are near the sprite that uses it.
-:::
+::::
 
 a `simulate disease` function **for you to
 complete** that takes three inputs: total population, percent
@@ -135,9 +135,9 @@ random events affect the elapsed time.)
 
 <li>
 
-::: ap-standard
+:::: ap-standard
 AAP-3.F.8
-:::
+::::
 
 Write a function that takes population size as input, runs the
 simulation ten times, keeps the percent initially infected at 10 and the
@@ -146,16 +146,16 @@ speed of infection at 2, and reports the average time elapsed.<br />
 
 </li>
 
-::: ap-standard
+:::: ap-standard
 AAP-3.F.7
-:::
+::::
 
-::: sidenoteBig
+:::: sidenoteBig
 Using clones is a form of parallelism. But as you learned on the
 <a href="/unit-5/lab-1/8-sequential.html" title="Unit 5 Lab 1 Page 8: Parallelism">Unit
 5 Lab 1 Page 8: Parallelism</a>, because the clones are all running on
 one processor, cloning doesn't give you any speedup.
-:::
+::::
 
 <li>Call this function four times with different populations (50, 100,
 150, and 200), and write down the results</li>

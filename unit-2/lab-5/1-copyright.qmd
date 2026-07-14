@@ -57,16 +57,16 @@ why not?</li>
 music, movies, etc., they want. How could the artists (musicians,
 writers, producers, actors, and so on) support themselves?</li>
 
-::: takeNote
-::: ap-standard
+:::: takeNote
+::::: ap-standard
 IOC-1.F.1
-:::
+:::::
 
 The <em>copyright</em> law makes it illegal for anyone to make copies of
 someone else's work (a book, a painting, a song, etc.) without the
 permission of the author. There are exceptions, as you'll learn later in
 this lab.
-:::
+::::
 
 <li>Write out your opinion on some of these copyright issues. How well
 does your own behavior match what you think society should do?</li>

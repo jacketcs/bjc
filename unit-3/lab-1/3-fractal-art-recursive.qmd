@@ -31,20 +31,20 @@ but only if <var>size</var> \> 9. (Leave out the code about changing
 colors.)
 <br /><img src="/img/2-complexity/nested-tri-no-color-proto.png" title="nested triangle, size: (size)" alt="nested triangle, size: (size)" class="ms-4"/>
 
-::: endnote
+:::: endnote
 <a href="#hint-purple" data-bs-toggle="collapse" title="Shouldn't it be blue?">Shouldn't
 it be blue?</a>
 
-::: {#hint-purple .collapse}
+::::: {#hint-purple .collapse}
 When you're building a new block, you can use any color you want.
 This block is purple so that it will stand out when you use it in a
 script later.
-:::
+:::::
 
 <a href="#hint-nested" data-bs-toggle="collapse" title="Click for hints about building a nested triangle block.">Click
 for hints about building a `nested triangle` block.</a>
 
-::: {#hint-nested .collapse}
+::::: {#hint-nested .collapse}
 <ol type="a">
 
 <li>Use your first triangle script from the previous page as a model.
@@ -55,8 +55,8 @@ But add one condition: draw the triangle only if it's big enough:<br />
 appears in the palette on the left.</li>
 
 </ol>
-:::
-:::
+:::::
+::::
 
 </li>
 
@@ -92,12 +92,12 @@ current value of <var>size</var>.<br />
 Again try out your block with at least the inputs 9, 18, 20 and 100 to
 make sure it works as you expect.\
 
-::: endnote
+:::: endnote
 You are using `nested triangle` in its own definition; this
 makes it a recursive procedure. Recursion is one of the most powerful
 techniques in computer science and you will learn more about it in later
 projects.
-:::
+::::
 
 </li>
 

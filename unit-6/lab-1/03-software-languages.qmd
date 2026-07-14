@@ -90,14 +90,14 @@ programmer to write shorter, cleaner code.
 
 <!-- Question 1 -->
 
-::: {.assessment-data type="multiplechoice" identifier="Identify this higher-order function." hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="false"}
-::: prompt
+:::: {.assessment-data type="multiplechoice" identifier="Identify this higher-order function." hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="false"}
+::::: prompt
 This code is similar to a higher-order procedure that you have learned.
 <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/>
 Identify the procedure that this code imitates:<br />
 <img src="/img/6-computers/hard-way.png" title="script variables (result) (index); set result to (list); set index to (0); repeat (length of (words)){ change index by (1); add (join (item (index) of (words)) s) to (result)}; report (result)" alt="script variables (result) (index); set result to (list); set index to (0); repeat (length of (words)){ change index by (1); add (join (item (index) of (words)) s) to (result)}; report (result)" class="ms-4"/>
 
-::: endnote
+:::::: endnote
 <ul>
 
 <li>You learned about `for each` in
@@ -117,47 +117,47 @@ Identify the procedure that this code imitates:<br />
 2 Lab 4: Other Mathematical Reporters</a>.</li>
 
 </ul>
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c1"}
-::: text
+::::: {.choice identifier="c1"}
+:::::: text
 <img src="/img/6-computers/for-each-s.png" title="for each (word) of (words) {report ((join (word) (s)))}" alt="for each (word) of (words) {report ((join (word) (s)))}"/>
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Does the original script report a list of words or does it report each
 word separately? Which would this do?
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c2"}
-::: text
+::::: {.choice identifier="c2"}
+:::::: text
 <img src="/img/6-computers/keep-s.png" title="report (keep items such that (join () (s)) from (words))" alt="report (keep items such that (join () (s)) from (words))"/>
-:::
+::::::
 
-::: feedback
+:::::: feedback
 `Keep` takes a predicate (a question) as input and reports a
 list of the items that make that predicate true.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c3"}
-::: text
+::::: {.choice identifier="c3"}
+:::::: text
 <img src="/img/6-computers/map-s.png" title="report (map (join () (s)) over (words))" alt="report (map (join () (s)) over (words))"/>
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Correct!
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c4"}
-::: text
+::::: {.choice identifier="c4"}
+:::::: text
 <img src="/img/6-computers/combine-s.png" title="report (combine with (join () (s)) items of (words))" alt="report (combine with (join () (s)) items of (words))"/>
-:::
+::::::
 
-::: feedback
+:::::: feedback
 `Combine` takes a predicate with two blanks (like
 <img src="/img/3-lists/plus.png" title="() + ()" alt="() + ()" class="inline"/>
 or
@@ -165,14 +165,14 @@ or
 as input and reports the result of combining all the list items using
 that function (for example, adding them all together or joining them all
 into one text string).
-:::
-:::
+::::::
+:::::
 
-::: {.responseDeclaration identifier="ri1"}
-::: {.correctResponse identifier="c4"}
-:::
-:::
-:::
+::::: {.responseDeclaration identifier="ri1"}
+:::::: {.correctResponse identifier="c4"}
+::::::
+:::::
+::::
 
 </li>
 
@@ -200,11 +200,11 @@ Software Domain: Operating Systems</a> page.
 <a href="#hint-low-level-lang" data-bs-toggle="collapse" title="Why else would a programmer use a low-level language?">Why
 else would a programmer use a low-level language?</a>
 
-::: {#hint-low-level-lang .collapse}
-::: todo
+:::: {#hint-low-level-lang .collapse}
+::::: todo
 I still think this is too long and needs wordsmithing the next time
 around. --MF, 11/16/17
-:::
+:::::
 
 Application programmers don't often decide "I'm going to write this
 program in a low level language." They may simply not realize that
@@ -240,7 +240,7 @@ computers at all. When you send an email or text message, the limiting
 factor is how fast you can type, not how fast your computer can run
 programs.
 
-::: todo
+::::: todo
 **From Michael:**<br /> Somewhere the was a comment about
 the speed of abstraction. IMO, we shouldn't have this in the curriculum
 -- but probably in the teachers guide. "Abstraction slows things down"
@@ -256,7 +256,7 @@ find that text problematic. Brian and Mary agreed to record and ignore
 this issue for now. --MF, 11/21/17</li>
 
 </ul>
-:::
+:::::
 
 <em>Legacy code.</em> Programmers in industry hardly ever get to
 write a program from the beginning. Much more often, they're maintaining
@@ -265,7 +265,7 @@ work for that company anymore. In the long run, it might be better to
 rewrite the program in a more modern language, but in the short run,
 there's no time to do that so they end up modifying the existing code in
 the existing programming language.
-:::
+::::
 :::
 
 #### **What is machine language?**
@@ -281,7 +281,7 @@ the computer.
 <a href="#hint-compilers" data-bs-toggle="collapse" title="Read more about compilers and interpreters">Read
 more about compilers and interpreters.</a>
 
-::: {#hint-compilers .collapse}
+:::: {#hint-compilers .collapse}
 A <em>compiler</em> is a program that takes a high- or low-level
 language program (the <em>source code</em>) as input and produces a
 machine language program (the <em>object code</em>) as its output. Once
@@ -299,7 +299,7 @@ time.
 <a href="#hint-compilers-better" data-bs-toggle="collapse" title="Does that mean compilers are better?">Does
 that mean compilers are better?</a>
 
-::: {#hint-compilers-better .collapse}
+::::: {#hint-compilers-better .collapse}
 It <em>would</em> mean that, except that the process of writing a
 program includes <em>debugging.</em> During the debugging, an
 interpreter can help by providing information about the progress of the
@@ -315,10 +315,10 @@ programmer writes and debugs the program using an interpreter, and once
 they're sure it works, they compile it. Then, the compiler can run
 slowly, putting a lot of effort into <em>optimizing</em> the machine
 language code, so they get the fastest possible compiled program.
-:::
+:::::
 
 
-:::
+::::
 :::
 
 ::: forYouToDo
@@ -329,8 +329,8 @@ language code, so they get the fastest possible compiled program.
 These questions are similar to those you will see on the AP CSP exam.
 <!-- Question 1 -->
 
-::: {.assessment-data type="multiplechoice" identifier="Which is TRUE about a low-level language?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="false"}
-::: prompt
+:::: {.assessment-data type="multiplechoice" identifier="Which is TRUE about a low-level language?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="false"}
+::::: prompt
 Which of the following statements are correct about a low-level
 programming language compared with a high-level programming language?
 
@@ -346,119 +346,119 @@ than a high-level language.</li>
 programs written in a high-level language.</li>
 
 </ol>
-:::
+:::::
 
-::: {.choice identifier="c1"}
-::: text
+::::: {.choice identifier="c1"}
+:::::: text
 I only.
-:::
+::::::
 
-::: feedback
+:::::: feedback
 I is true but is it the only true statement?
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c2"}
-::: text
+::::: {.choice identifier="c2"}
+:::::: text
 I and III only.
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Correct. Both statements are correct and opposite of II is true as
 high-level languages are more expressive and able in creating
 abstractions.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c3"}
-::: text
+::::: {.choice identifier="c3"}
+:::::: text
 II and III only.
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Opposite of II is true as high-level languages are more expressive and
 able in creating abstractions.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c4"}
-::: text
+::::: {.choice identifier="c4"}
+:::::: text
 I, II, and III.
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Opposite of II is true as high-level languages are more expressive and
 able in creating abstractions.
-:::
-:::
+::::::
+:::::
 
-::: {.responseDeclaration identifier="ri1"}
-::: {.correctResponse identifier="c2"}
-:::
-:::
-:::
+::::: {.responseDeclaration identifier="ri1"}
+:::::: {.correctResponse identifier="c2"}
+::::::
+:::::
+::::
 
 <!-- Question 2 -->
 
-::: {.assessment-data type="multiplechoice" identifier="Which is TRUE about a program written in a high-level programming language?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="false"}
-::: prompt
+:::: {.assessment-data type="multiplechoice" identifier="Which is TRUE about a program written in a high-level programming language?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="false"}
+::::: prompt
 A program is written in a high-level programming language. Identify the
 correct statement about the program?
-:::
+:::::
 
-::: {.choice identifier="c1"}
-::: text
+::::: {.choice identifier="c1"}
+:::::: text
 The program can also be written in machine language using binary code,
 but then it will be less easily understood by people.
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Correct. Binary code is very hard to read for humans.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c2"}
-::: text
+::::: {.choice identifier="c2"}
+:::::: text
 The program can also be written in machine language using binary code,
 which will decrease the possibility of mistakes.
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Mistakes will likely increase as it is harder for humans to make sense
 of binary code.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c3"}
-::: text
+::::: {.choice identifier="c3"}
+:::::: text
 The program cannot be written in binary code as only data can be
 represented by using binary notation.
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Entire program can be converted to binary code. Such a code is actually
 the only code a machine can understand.
-:::
-:::
+::::::
+:::::
 
-::: {.choice identifier="c4"}
-::: text
+::::: {.choice identifier="c4"}
+:::::: text
 Simple parts of the program can be written in binary code, but control
 elements such as conditionals, loops must be expressed in a high-level
 programming language.
-:::
+::::::
 
-::: feedback
+:::::: feedback
 Entire program can be converted to binary code. Such a code is actually
 the only code a machine can understand.
-:::
-:::
+::::::
+:::::
 
-::: {.responseDeclaration identifier="ri2"}
-::: {.correctResponse identifier="c1"}
-:::
-:::
-:::
+::::: {.responseDeclaration identifier="ri2"}
+:::::: {.correctResponse identifier="c1"}
+::::::
+:::::
+::::
 
 </li>
 
@@ -522,11 +522,11 @@ or
 <a href="#hint-ooo" data-bs-toggle="collapse" title="">How <em>do</em> you
 know?</a>
 
-::: {#hint-ooo .collapse}
+:::: {#hint-ooo .collapse}
 See for example,
 <a href="https://en.cppreference.com/w/c/language/operator_precedence" title="C Operator Precedence" target="_blank">C
 Operator Precedence</a>.
-:::
+::::
 :::
 
 ## Parallelism

@@ -52,9 +52,9 @@ data types and higher-order functions.
 
 <li>
 
-::: newProject
+:::: newProject
 ["U3-MusicProject"]{.text}<img src="/img/icons/new-project-called.png" title="Create a new project called U3L2-PlaySong" alt="Create a new project called U3L2-PlaySong"/>
-:::
+::::
 
 </li>
 
@@ -75,11 +75,11 @@ times.
 
 <ol>
 
-::: sidenote
+:::: sidenote
 The inputs values given to the `play note` block are musical
 pitches. Higher values create higher notes. You can input any integer
 from 0 and 127. The number 60 represents middle C.
-:::
+::::
 
 <li><img src="/img/3-lists/compare-play-note-1.png" title="play note (item (any) of (list (60) (64) (67) (72) (60))) for (1) beats" alt="play note (item (any) of (list (60) (64) (67) (72) (60))) for (1) beats" class="inline"/></li>
 
@@ -97,12 +97,12 @@ from 0 and 127. The number 60 represents middle C.
 
 </ol>
 
-::: endnote
+:::: endnote
 <h4>**Need to Review?**</h4>
 
-::: todo
+::::: todo
 These need updating!! --MF, 4/5/19
-:::
+:::::
 
 <ul>
 
@@ -119,7 +119,7 @@ These need updating!! --MF, 4/5/19
 3 Lab 2</a>.</li>
 
 </ul>
-:::
+::::
 :::
 
 <h3>Creating an Abstract Data Type to Organize Musical Data</h3>
@@ -129,7 +129,7 @@ These need updating!! --MF, 4/5/19
 
 <li>
 
-::: sidenoteBig
+:::: sidenoteBig
 <em>Pitch</em> is the amount of highness or lowness of a musical
 note; the pitch value goes in the first input slot of the `play
 note` block.
@@ -137,7 +137,7 @@ note` block.
 The <em>length</em> of a note is the amount of time that the note
 plays (the number of beats); the length value goes in the second slot of
 `play note`.
-:::
+::::
 
 Create a `note` ADT to manage the pitch and length of each
 note in a song.
@@ -162,7 +162,7 @@ note in a song.
 
 <h3>Creating Blocks to Play Music</h3>
 
-::::: forYouToDo
+::: forYouToDo
 <ol start="5">
 
 <li>Use `for each` together with your selectors to build a
@@ -173,11 +173,11 @@ note in a song.
 <a href="#hint-target" data-bs-toggle="collapse" title="Chart for note pitch numbers">Chart
 for note pitch numbers. </a>
 
-::: {#hint-target .collapse}
+::::: {#hint-target .collapse}
 
 <img src="/img/3-lists/keyboard.jpg" title="picture of keyboard with keys labeled with letters and numbers; 60 is middle C and the numbers change by 1 with each half step" alt="picture of keyboard with keys labeled with letters and numbers; 60 is middle C and the numbers change by 1 with each half step"/>
 
-:::
+:::::
 
 ::::
 
@@ -194,14 +194,14 @@ problems.<br />
 
 </ol>
 
-:::::
+:::
 
 ::: ifTime
 <ol start="8">
 
-::: sidenote
+:::: sidenote
 BPM stands for "beats per minute."
-:::
+::::
 
 <li>Use the
 <img src="/img/3-lists/set-tempo-to-empty.png" title="set tempo to () bpm" alt="set tempo to () bpm" class="inline"/>
@@ -231,14 +231,14 @@ and a number indicating how much to transpose (shift) the song as input,
 and it should report the adjusted song. For example:<br />
 <img src="/img/3-lists/play-song-transpose-row-row-row-by-19.png" title="play song (transpose (row row row your boat) by (19))" alt="play song (transpose (row row row your boat) by (19))" class="ms-4"/>
 
-::: endnote
+:::: endnote
 <a href="#hint-target-2" data-bs-toggle="collapse" title="Hint">Reveal a
 hint.</a>
 
-::: {#hint-target-2 .collapse}
+::::: {#hint-target-2 .collapse}
 <img src="/img/3-lists/transpose-definition.png" title="transpose block definition hint showing &apos;transpose (notes) by (shift): report (map (note, pitch: ((pitch from note ([empty list input slot])) + ([something unreadable])) length: ([something unreadable])) over ([something unreadable]))&apos;" alt="transpose block definition hint showing &apos;transpose (notes) by (shift): report (map (note, pitch: ((pitch from note ([empty list input slot])) + ([something unreadable])) length: ([something unreadable])) over ([something unreadable]))&apos;"/>
-:::
-:::
+:::::
+::::
 
 </li>
 
@@ -267,7 +267,7 @@ Boring? Maybe not for A/V kids...
 
 <h3>Using a Frequency Cutoff</h3>
 
-::: forYouToDo
+:::: forYouToDo
 <ol start="12">
 
 <li><img src="/img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/>
@@ -279,5 +279,5 @@ what `keep \< 65` does to the sounds you hear:<br />
 <li>...</li>
 
 </ol>
-:::
+::::
 :::

@@ -14,15 +14,15 @@ of encryption on society.
 :::
 
 ::: {#first .forYouToDo}
-::: atwork
-::: float-end
+:::: atwork
+::::: float-end
 <img src="/img/atwork/Luis_von_Ahn.jpg" title="photo of Luis von Ahn" alt="photo of Luis von Ahn" class="noshadow" height="200px"/>
 
-::: {.endnote style="width:141px;margin:6px;"}
+:::::: {.endnote style="width:141px;margin:6px;"}
 <small>Image from Wikimedia user
 <a href="https://commons.wikimedia.org/wiki/User:EneasMx" title="Wikimedia user EneasMx" target="_blank">EneasMx</a></small>
-:::
-:::
+::::::
+:::::
 
 Luis von Ahn (born in 1978), one of the pioneers of crowdsourcing, is
 a Guatemalan computer scientist and entrepreneur. If you've ever had to
@@ -35,7 +35,7 @@ which as of 2020 had over 500 million learners across 39 languages.
 
 <a href="https://www.americasquarterly.org/article/duolingos-luis-von-ahn-i-just-want-to-have-an-impact/" title="Article: 'I Just Want to Have an Impact'" target="_blank">Article:
 'I Just Want to Have an Impact'</a>
-:::
+::::
 
 <ol>
 
@@ -106,9 +106,9 @@ disagreements.)
 
 </li>
 
-::: ap-standard
+:::: ap-standard
 IOC-2.B
-:::
+::::
 
 <li>Explain two or three ways that cryptography improves Internet
 security.</li>

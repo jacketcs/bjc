@@ -54,7 +54,7 @@ These days, OS kernels are remarkably similar. Of the five systems listed earlie
 
 <a href="#hint-unix" data-bs-toggle="collapse" title="Read more about Unix">Read more about Unix.</a>
 
-::: {#hint-unix .collapse}
+:::: {#hint-unix .collapse}
 
 
 ("Unix" is a trademark, currently owned by The Open Group, and not all of the variants discussed here are authorized to use that name, but they all provide essentially the same program interface.) Unix was created around 1970 by Ken Thompson and Dennis Ritchie at AT&T Bell Laboratories.
@@ -64,7 +64,7 @@ Prior to Unix, almost everyone thought that an operating system had to be develo
 Because of its portability, Unix spread quickly to many computer architectures. Researchers at Berkeley developed a version, based on the AT&T version, with <em>virtual memory,</em> the ability to run a program that's only partly in the computer's main memory, with the rest kept on a disk. This Berkeley version is an ancestor of Apple's operating systems, macOS (since macOS 10.0) and iOS. (An Apple computer doesn't behave anything like a Unix computer, but the differences are almost all in application-level programs, not in the kernel.) Android, Google's operating system for cell phones and tablets, is based on Linux, a complete rewrite of Unix originally written by Linus Torvalds, who was, at the time, a computer science student in Finland.
 
 The application-level programs that were part of the original Unix package have, in most systems, been replaced with rewritten programs from the Free Software Foundation's GNU (an acronym for Gnu's Not Unix) package.
-:::
+::::
 :::
 
 ::: {.ifTime type="first"}

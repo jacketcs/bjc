@@ -67,10 +67,10 @@ certain letters in certain places.
 
 <li>Find all the words whose fourth letter is r.</li>
 
-::: sidenote
+:::: sidenote
 Your block's title can be different from the one shown here as long as
 it does the same job.
-:::
+::::
 
 <li>If you have not yet turned your expression into a predicate
 <em>block</em>, do that now. Your block should work like this: <br />
@@ -90,20 +90,20 @@ Unit 2 Lab 3 Word Puzzle</a>.
 
 **To show your work, please make individual scripts for each word that you find. Place your scripts from top to bottom in the order that you found the words in.** So, you are going to have multiple copies of similar scripts and change up what you are doing each time.
 
-::: endnote
+:::: endnote
 
 
 For example, this expression searches for 6 letter words that start with
 <var>r</var> and have <var>d</var> as the third letter:
 <img src="/img/2-complexity/radiux.png" title="keeping words with 6 letters with 1st letter r and 3rd letter d" alt="keeping words with 6 letters with 1st letter r and 3rd letter d" class="ms-4"/>
-:::
+::::
 
-::: AP-only
-::: vocab
+:::: AP-only
+::::: vocab
 All the words in the puzzle are related to the AP CS Principles
 course.
-:::
-:::
+:::::
+::::
 
 <a class="run" href="https://drive.google.com/open?id=1x8ShDe58qUQJDK8n97xoQGY4J4rw9aDsJCmkY-6SQc0" target="_blank"><img src="/img/2-complexity/crossword.jpg" title="Solving a Word Puzzle" alt="Solving a Word Puzzle" class="ms-4"/></a>
 

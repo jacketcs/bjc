@@ -143,7 +143,7 @@ function will report a value for <em>any</em> specific input.
 <a href="#hint-general" data-bs-toggle="collapse" title="What does it mean to answer the question for specific functions?">What
 does it mean to answer the question for <em>specific</em> functions?</a>
 
-::: {#hint-general .collapse}
+:::: {#hint-general .collapse}
 The "in general" part is important. Of course we can answer the
 question for certain particular programs. This one halts (reports a
 value) for <em>any</em> input:<br />
@@ -159,7 +159,7 @@ And this one halts <em>sometimes</em>---for any input except
 Recall: the question is whether we can devise a test that will tell
 us whether <em>any</em> particular function will report a value for
 <em>any</em> specific input.
-:::
+::::
 :::
 
 ::: {#first .forYouToDo}
@@ -377,9 +377,9 @@ that takes unreasonable time.</li>
 :::
 
 ::: atworkFullWidth
-::: float-end
+:::: float-end
 <img src="/img/atwork/Alan_Turing.jpeg" title="photo of Alan Turing" alt="photo of Alan Turing" class="noshadow" height="200px"/>
-:::
+::::
 
 Alan Turing (1912--1954) was a British computer scientist and
 mathematician. During World War II, he developed a number of critical

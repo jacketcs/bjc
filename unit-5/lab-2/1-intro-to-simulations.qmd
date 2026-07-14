@@ -12,9 +12,9 @@ used instead of real-world experiments.
 :::
 
 ::: vocabFullWidth
-::: ap-standard
+:::: ap-standard
 AAP-3.F.1, AAP-3.F.2
-:::
+::::
 
 **Simulations** are computer representations of real
 things or situations that vary over time. A simulation is an abstraction

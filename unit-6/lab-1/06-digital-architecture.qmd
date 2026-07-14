@@ -42,13 +42,13 @@ Babbage's first computer was the Difference Engine. He used gears to design a co
 
 <a href="#hint-difference" data-bs-toggle="collapse" title="Learn more about the history of the Difference Engine">Learn more about the history of the Difference Engine.</a>
 
-::: {#hint-difference .collapse}
+:::: {#hint-difference .collapse}
 In Babbage's time, such numerical tables were computed by hand by human mathematicians, and they were typeset by hand for printing. Both the computation and the copying into type were error-prone, and accurate tables were needed for purposes ranging from engineering to navigation.
 
 Babbage built a first, small Difference Engine in 1822. This first effort proved that a Difference Engine was possible, but it didn't have the precision (number of digits in each number) to be practical. In 1823, the British government funded Babbage to build a larger version. Unfortunately, metalsmiths in his day could not produce very precise gears in large quantities; each one had to be handmade. So he spent ten times his approved budget by the time the government canceled the project in 1842.
 
 In 1991, the London Science Museum completed a Difference Engine following Babbage's original design using gears made by modern processes but at the level of precision that was available to Babbage. This proved that, in principle, Babbage could have completed a working machine, given enough time and money.
-:::
+::::
 
 
 
@@ -58,9 +58,9 @@ In 1991, the London Science Museum completed a Difference Engine following Babba
 
 The Difference Engine could be used to compute many different functions by manually setting the starting position of various gears. But it had **only one algorithm**: the one built into the hardware design. In 1833, Babbage began working on the Analytical Engine, which was based on the general idea of the Difference Engine but **could carry out instructions** in a primitive programming language prepared on punched cards.<br />
 
-::: sidenote
+:::: sidenote
 <small>Punched cards used to program the Analytical Engine</small><br /> <small><small>Karoly Lorentey. Copyright 2004. License: CC-BY.</small></small>
-:::
+::::
 
 <img src="/img/6-computers/punched-cards-analytical-engine.jpg" title="punched cards used to program the Analytic Engine" alt="punched cards used to program the Analytic Engine" class="ms-4" height="300px"/>
 
@@ -74,13 +74,13 @@ So, 150 years ago, Babbage created plans for what is essentially a modern comput
 
 <a href="#hint-analytical" data-bs-toggle="collapse" title="Learn more about the Analytical Engine">Learn more about the Analytical Engine.</a>
 
-::: {#hint-analytical .collapse}
+:::: {#hint-analytical .collapse}
 The Analytical Engine, like modern computers, had an arithmetic processor (called the "mill") and a separate memory (the "store") that would hold 1,000 numbers, each with up to 40 digits. <!--(In modern terms, this is comparable to 20,000 bytes, since a byte can hold two digits, with four bits needed for each.)--> The mill did arithmetic in decimal (with digits 0-9 equally spaced around each gear); using just "ones and zeros" in computing came later.
 
 The programming language used in the Analytical Engine included conditionals and looping, which is all you need to represent any algorithm. (It could loop because it could move forward or backward through the punched cards containing the program.)
 
 Alas, Babbage could build only a small part of the Analytical Engine, which would have required even more metalworking than the Difference Engine. His notes about the design weren't complete, and so nobody has ever built a working model, although there are simulations available on the Web (see the Take It Further problem below). Sadly, in the early days of electronic computers, Babbage's work was not widely known, and people ended up reinventing many of his ideas.
-:::
+::::
 
 
 
@@ -88,19 +88,19 @@ Alas, Babbage could build only a small part of the Analytical Engine, which woul
 
 <a href="#hint-ada" data-bs-toggle="collapse" title="Learn about Ada, Countess Lovelace's invention of symbolic computing">Learn about Ada, Countess Lovelace's invention of symbolic computing.</a>
 
-::: {#hint-ada .collapse}
+:::: {#hint-ada .collapse}
 Although his design was very versatile, Babbage was mainly interested in printing tables of numbers. It was his collaborator Augusta Ada King-Noel, Countess of Lovelace, who first recognized that the numbers in Babbage's computer could be used not only as quantities but also as representing musical notes, text characters, and so on.
 
 <img src="/img/6-computers/ada-lovelace.jpg" title="Ada, Countess Lovelace" alt="Ada, Countess Lovelace" class="ms-4" height="300px"/>
 
-::: sidenote
+::::: sidenote
 <small>Image by Alfred Edward Chalon, Science & Society Picture Library, Public Domain, via Wikimedia.</small>
-:::
+:::::
 
 Much of what we know today about Babbage's design comes from Ada Lovelace's extensive notes on his design. Her notes included the first <em>published</em> program for the Analytical Engine, and so she is widely considered "the first programmer," although it's almost certain that Babbage himself wrote several example programs while designing the machine.
 
 Whether or not she was truly the first programmer, historians agree that she did something more important: she invented the idea of <em>symbolic</em> computation (including text, pictures, music, etc.) as opposed to numeric computation. This insight paved the way for all the ways that computers are used today, from movies on demand to voice-interactive programs such as Siri and Alexa.
-:::
+::::
 
 
 :::
@@ -126,7 +126,7 @@ One important part of an architecture is the number of wires that connect the pr
 ::: endnote
 <a href="#hint-machine-language" data-bs-toggle="collapse" title="What does machine language look like?">What does machine language look like?</a>
 
-::: {#hint-machine-language .collapse}
+:::: {#hint-machine-language .collapse}
 
 
 Consider the Snap<em>!</em> instruction <img src="/img/6-computers/set-c-to-a+b.png" title="set (c) to (a + b)" alt="set (c) to (a + b)" class="inline p-0"/>. In a lower-level language such as C or Java, the same idea would be written as:<br />
@@ -150,14 +150,14 @@ This notation, called <em>assembly language</em>, is a line-by-line equivalent t
 
 <a href="#hint-assembly" data-bs-toggle="collapse" title="What does that code mean?">What does that code mean?</a>
 
-::: {#hint-assembly .collapse}
+::::: {#hint-assembly .collapse}
 The first three instructions load the <em>addresses</em> of the three variables into registers inside the processor. The names with percent signs, such as `%rcx`, refer to specific processor registers. `Movq` is the name of a machine language instruction. (It abbreviates "move quote," which says to move a constant value into a register. Note that <var>a</var> is a variable, but <em>the address of</em> <var>a</var> is a constant value --- the variable doesn't move around in the computer's memory.)
 
 The next instruction, `movl` ("move long"), says to move a word from one place to another. Putting a register name in parentheses, like `(%rsi)`, means to use the memory location whose address is in the register. In this case, since the third `movq` put the address of <var>a</var> into register `%rsi`, the first `movl` says to move the variable <var>a</var> from memory into a processor register. Then the `addl` instruction says to add the variable <var>b</var> into that same register. Finally, the value in register `%edi` is moved into the memory location containing variable <var>c</var>.
-:::
+:::::
 
 You wouldn't want to have to program in this language! And you <em>don't</em> have to; modern architectures are designed for compilers, not for human machine language programmers.
-:::
+::::
 :::
 
 ::: endnote
@@ -169,17 +169,17 @@ Learn about:
 
 <a href="#hint-architecture" data-bs-toggle="collapse" title="PC/Mac architecture">PC/Mac architecture</a>
 
-::: {#hint-architecture .collapse}
-::: {.comment style="color:grey"}
+:::: {#hint-architecture .collapse}
+::::: {.comment style="color:grey"}
 This has a lot of numbers in it which make it harder to read, but more importantly it's so abstract and doesn't really talk about anything familiar, which given the hint title "PC/Mac" I was expecting. Needs some work. --MF, 11/8/17
-:::
+:::::
 
 Most computer processors (the part that carries out instructions) in desktop or laptop computers use an architecture called "x86" that was designed at Intel, a chip manufacturer. The first processor using that architecture was called the 8086, released in 1978. (The reason for the name x86 is that the first few improved versions were called 80286, 80486, and so on.) The original 8086 was a 16-bit architecture; since then 32-bit (since 1985) and 64-bit (since 2003) versions have been developed. Even with all the refinements of the architecture, the new x86 processors are almost always <em>backward compatible,</em> meaning that today's versions will still run programs that were written for the original 8086.
 
 Why did the x86 architecture come to rule the world? The short answer is that IBM used it in their original PC, and all the later PC manufacturers followed their lead because they could run IBM-compatible software unmodified. But why did IBM choose the x86? There were arguably better competing architectures available, such as the Motorola 68000 and IBM's own 801. The PC designers argued about which to use, but in the end, what made the difference was IBM's long history of working with Intel.
 
 The Apple Macintosh originally used the Motorola 68000 architecture, and in 1994 Apple designed its own PowerPC architecture in a joint project with IBM and Motorola, but in 2006 they, too, switched to the x86, because Intel keeps producing newer, faster versions of the x86 more often than other companies could keep up.
-:::
+::::
 
 </li>
 
@@ -187,7 +187,7 @@ The Apple Macintosh originally used the Motorola 68000 architecture, and in 1994
 
 <a href="#hint-architecture-phone" data-bs-toggle="collapse" title="smartphone architecture">smartphone architecture</a>
 
-::: {#hint-architecture-phone .collapse}
+:::: {#hint-architecture-phone .collapse}
 Everything about smartphone architecture is determined by the tiny size of the space inside the case. The height and width of the phone are constrained by the size of people's front pockets. <em>(Don't keep your phone in your back pants pocket. That's really bad both for the phone and for your back.)</em> The front-to-back depth of a phone could be much bigger than it is, but for some reason phone manufacturers compete on the thinness of their phones, which gives designers even less room inside.
 
 As a result, many components that would be separate from the processor chip in a computer are instead part of the same chip in a phone. These components may include some or all of a cellular modem, a WiFi modem, a graphics processor (another processor that specializes in parallel arithmetic on lists of numbers), memory, a GPS receiver to find your phone's physical location, circuitry to manage the power depletion and recharging of the battery, and more. These days, the chip is likely to include two, four, or even eight copies of the actual CPU, to make multicore systems. This collection of components is called a <em>system on a chip,</em> or SoC.
@@ -196,18 +196,18 @@ Intel made an x86-based (that is, the same architecture used in PCs) low-power S
 
 But the vast majority of phones use the ARM architecture, which (unlike the x86) was designed from the beginning to be a low-power architecture. The acronym stands for Advanced RISC Machine. It's available in 32-bit and 64-bit configurations.
 
-::: endnote
+::::: endnote
 <a href="#hint-risc" data-bs-toggle="collapse" title="What's a RISC?">What's a RISC?</a>
 
-::: {#hint-risc .collapse}
+:::::: {#hint-risc .collapse}
 The name stands for Reduced Instruction Set Computer, as opposed to the CISC (Complex Instruction Set Computer) architectures, including the x86. The <em>instruction set</em> of an architecture is, as you'd guess from the name, the set of instructions that the processor understands. A RISC has fewer instructions than a CISC, but it's simpler in other ways also. For example, a CISC typically has more <em>addressing modes</em> in its instructions. In the x86 architecture, the `add` instruction can add two processor registers, or a register and a value from the computer's memory, or a constant value built into the instruction itself. A RISC architecture's `add` instruction just knows how to add two registers (perhaps putting the result into a third register), and there are separate `load` and `store` instructions that copy values from memory to register or the other way around. Also, in a RISC architecture, all instructions are the same length (say, 32 bits) whereas in a CISC architecture, instruction lengths may vary. These differences matter because a RISC can be loading the next instruction before it's finished with the previous instruction, and a RISC never has more than one memory data reference per instruction.
 
 So why don't they use a RISC architecture in PCs? At one time Apple used a RISC processor called the PowerPC in its Macintosh computers, but the vast majority of computers sold are PCs, not Macs, and as a result Intel spends vast sums of money on building faster and faster circuits implementing the x86 architecture. The moral is about the interaction between different levels of abstraction: A better architecture can be overcome by a better circuit design or better technology to cram components into an integrated circuit.
-:::
-:::
+::::::
+:::::
 
 The company that designed the ARM, called ARM Holdings, doesn't actually build processors. They license either the architecture design or an actual circuit design to other companies that integrate ARM processors into SoCs. Major companies that build ARM-based processor chips include Apple, Broadcom, Qualcomm, and Samsung. Smartphone manufacturers buy chips from one of these companies.
-:::
+::::
 
 </li>
 
@@ -215,7 +215,7 @@ The company that designed the ARM, called ARM Holdings, doesn't actually build p
 
 <a href="#hint-architecture-iot" data-bs-toggle="collapse" title="embedded architecture and the Internet of Things">embedded architecture and the "Internet of Things"</a>
 
-::: {#hint-architecture-iot .collapse}
+:::: {#hint-architecture-iot .collapse}
 You can buy thermostats with computers in them, refrigerators with computers in them, fuzzy animal toys with computers in them---more and more things, as time goes on. Modern automobiles have <em>several</em> computers in them, largely for safety reasons; you wouldn't want the brakes to fail because the DVD player has a problem. The goal, as described by researchers in computing, is "smart dust," meaning that lots of computers could be floating around a building unnoticed. What good is an unnoticed computer? This is a classic dual use technology. The beneficial use everyone talks about is emergency response to disasters; it would be a great help to the fire department to know, from the outside, which rooms of a building have people in them. But another use for this technology would be spying.
 
 <p class="ms-4">
@@ -230,7 +230,7 @@ For embedded computing, the main design criteria are small size and low power co
 Someday, the spying will be even more effective (along with, we hope, treatment for diseases of the brain): <a href="https://www.engadget.com/2017/05/17/arm-targets-your-brain-with-new-implantable-chips/" target="_blank"title="ARM targets your brain with new implantable chips">ARM targets your brain with new implantable chips</a> (Engadget, 5/17/2017).
 
 Intel made a button-sized x86-compatible chip in 2015, but announced in 2017 that it would be discontinued, leaving only ARM and PowerPC-based processors competing in this market.
-:::
+::::
 
 </li>
 
@@ -238,7 +238,7 @@ Intel made a button-sized x86-compatible chip in 2015, but announced in 2017 tha
 
 <a href="#hint-architecture-hobby" data-bs-toggle="collapse" title="hobbyist computer architecture">hobbyist computer architecture</a>
 
-::: {#hint-architecture-hobby .collapse}
+:::: {#hint-architecture-hobby .collapse}
 In one sense, <em>any</em> architecture can be a hobbyist architecture. Even back in the days of million-dollar computers, there were software hobbyists who found ways to get into college computer labs, often by making themselves useful there. Today, there are much more powerful computers that are cheap enough that hobbyists are willing to take them apart. But there are a few computer architectures <em>specifically</em> intended for use by hobbyists.
 
 
@@ -253,10 +253,10 @@ The processor in most Arduino models is an eight-bit RISC system with memory inc
 
 Unlike most ("von Neumann architecture") computers, the AVR ("Harvard architecture") separates program memory from data memory. (It actually has <em>three</em> kinds of memory, one for the running program, one for short-term data, and one for long-term data.) Babbage's Analytical Engine was also designed with a program memory separate from its data memory.
 
-::: endnote
+::::: endnote
 <a href="#hint-Harvard" data-bs-toggle="collapse" title="Why would you want more than one kind of memory?">Why would you want more than one kind of memory?</a>
 
-::: {#hint-Harvard .collapse}
+:::::: {#hint-Harvard .collapse}
 
 
 There are actually two different design issues at work in this architecture. One is all the way down in the analog domain, having to do with the kind of physical circuitry used. There are <em>many</em> memory technologies, varying in cost, speed, and <em>volatility:</em> volatile memory loses the information stored in it when the device is powered off, while non-volatile memory retains the information. Here's how memory is used in the AVR chips:
@@ -308,16 +308,16 @@ So, that's why there are physically different kinds of memory in the AVR chips, 
 To understand the benefit of simultaneous instruction and data reading, you have to understand that processors are often designed using an idea called <em>pipelining.</em> The standard metaphor is about doing your laundry, when you have more than one load. You wash the first load, while your dryer does nothing; then you <em>wash the second load while drying the first load, </em>and so on until the last load. Similarly, the processor in a computer includes circuitry to decode an instruction, and circuitry to do arithmetic. If the processor does one thing at a time, then at any moment either the instruction decoding circuitry or the arithmetic circuitry is doing nothing. But if you can read the next instruction at the same time as carrying out the previous one, all of the processor is kept busy.
 
 This was a long explanation, but it's still vastly oversimplified. For one thing, it's possible to use pipelining in a von Neumann architecture also. And for another, a <em>pure</em> Harvard architecture wouldn't allow a computer to load programs for itself to execute. So various compromises are used in practice.
-:::
-:::
+::::::
+:::::
 
 Atmel has since introduced a line of ARM-compatible 32-bit processors, and Arduino has boards using that processor but compatible with the layout of the connectors on the edges.
 
 One thing that has contributed to the popularity of the Arduino with hobbyists is the availability of <em>shields,</em> which are auxiliary circuit boards that plug into the side edge connectors and have the same connectors on their top side. Shields add features to the system. Examples are motor control shields, Bluetooth shields for communicating with cell phones, RFID shields to read those product tags you find inside the packaging of many products, and so on. Both the Arduino company and others sell shields.
 
-::: sidenote
+::::: sidenote
 <small>Stack of Arduino shields</small><br /> <small><small>Image by Wikimedia user Marlon J. Manrique, CC-BY-SA 2.0.</small></small>
-:::
+:::::
 
 <img src="/img/6-computers/arduino-shields.jpg" title="stack of Arduino shields" alt="stack of Arduino shields" class="ms-4" width="250px"/>
 
@@ -329,12 +329,12 @@ Because the Pi is intended for educational use, it comes with software, some of 
 
 Like the Arduino, the Pi supports add-on circuit boards with things like sensors and wireless communication modules.
 
-::: sidenote
+::::: sidenote
 <small>Raspberry Pi board</small><br /> <small><small>Image by Evan Amos, via Wikimedia, public domain</small></small>
-:::
+:::::
 
 <img src="/img/6-computers/raspberry-pi.jpg" title="Raspberry Pi board" alt="Raspberry Pi board" class="ms-4" width="250px"/>
-:::
+::::
 
 </li>
 
@@ -344,10 +344,10 @@ Like the Arduino, the Pi supports add-on circuit boards with things like sensors
 ::: endnote
 <a href="#hint-architecture-general" data-bs-toggle="collapse" title="Learn more about computer architecture in general">Learn more about computer architecture in general.</a>
 
-::: {#hint-architecture-general .collapse}
-::: {.todo style="color:grey"}
+:::: {#hint-architecture-general .collapse}
+::::: {.todo style="color:grey"}
 This needs some heavy edits. For example, perhaps the whole third paragraph, "One recent 64-bit x86..." could be cut. --MF, 11/8/17
-:::
+:::::
 
 #### The memory hierarchy
 
@@ -360,7 +360,7 @@ One recent 64-bit x86 processor has a first level (L1) cache of 64KB (thousands 
 #### Second sourcing
 
 Intel licenses other chip manufacturers to build processors that use the same architecture as Intel's processors. Why do they do that? Wouldn't they make more money if people had to buy from Intel? The reason is that computer manufacturers, such as Dell, Apple, and Lenovo, won't build their systems around an architecture that is only available from one company. They're not worried that Intel will go out of business; the worry is that there may be a larger-than-expected demand for a particular processor, and Intel may not be able to fill orders on time. But if that processor is also available from other companies such as AMD and Cyrix, then a delay at Intel won't turn into a delay at Dell. Those other chip manufacturers may not use the same circuitry as the Intel version, as long as they behave the same at the architecture level.
-:::
+::::
 :::
 
 ::: takeItFurther

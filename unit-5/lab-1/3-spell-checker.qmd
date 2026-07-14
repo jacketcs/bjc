@@ -40,24 +40,24 @@ guess eliminates <em>half</em> the possibilities at once.
 ::: vocabFullWidth
 : **Binary Search**
 
-::: ap-standard
+:::: ap-standard
 AAP-2.P.1, AAP-2.P.2
-:::
+::::
 
 A **binary search** algorithm starts in the middle of a
 <em>sorted</em> list and repeatedly eliminates half the list until
 either the desired value is found or all elements have been
 eliminated.
 
-::: ap-standard
+:::: ap-standard
 AAP-2.O.1
-:::
+::::
 
-::: sidenoteBig
+:::: sidenoteBig
 You learned about traversing a list on
 <a href="/unit-2/lab-2/3-traversing-list.html" title="Unit 2 Lab 2 Page 3: Checking Each Quiz Answer">Unit
 2 Lab 2 Page 3: Checking Each Quiz Answer</a>.
-:::
+::::
 
 Linear search does a <em>complete</em> traversal of the list. Binary
 search saves time by doing a <em>partial</em> traversal of the list.
@@ -70,7 +70,7 @@ The word "binary" just means "two," whether it's two digits or two
 halves.
 :::
 
-:::::: { .forYouToDo #first }
+::: { .forYouToDo #first }
 
 (@) <img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/>
     Compare this `binary search` block with your code from <a href="/unit-5/lab-1/1-sorted-lists.html" title="Page 1: Guess My Number"> Page 1: Guess My Number</a>. What parts are the same? What parts are different?
@@ -109,7 +109,7 @@ halves.
 }">
     ```
 
-    ::: endnote
+    :::: endnote
 
     The `>` block (as well as the `<` and `=` blocks) compares words alphabetically:
 
@@ -117,7 +117,7 @@ halves.
 
     <img class="indent" src="/img/5-algorithms/apple-gt-banana-reporting.png" alt="(apple) > (banana) reporting false" title="(apple) > (banana) reporting false">
 
-    ::: 
+    ::::
 
 
 (@) Check whether "seperate" is spelled correctly by using `binary search` to look for the word in the sorted list <img class="inline" src="/img/5-algorithms/100000-words-(sorted).png" alt="100,000 words (sorted)" title="100,000 words (sorted)" />.
@@ -128,13 +128,13 @@ halves.
 
 (@) <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Why does binary searching work on one list but not the other? Consider how the binary search algorithm works.
 
-::::::
+:::
 
 The `contains` block can't make any assumptions about the
 ordering in list you are searching, but if you are looking for one thing
 in a <em>sorted</em>, list you can use binary search.
 
-:::::: takeNote
+::: takeNote
 
 Two things affect whether you can use a binary search algorithm to make your program more efficient:
 
@@ -148,13 +148,13 @@ Two things affect whether you can use a binary search algorithm to make your pro
 | sorted data   | **can use binary search**  | must use linear search |
 | unsorted data | must use linear search | must use linear search |
 
-::::::
+:::
 
-:::::: endnote
+::: endnote
 
 If you are working with short lists, it's not so important which algorithm you use. It's when you are dealing with a lot of data that you have to think carefully about the algorithm.
 
-::::::
+:::
 
 <!-- <ol start="6">
 
@@ -235,14 +235,14 @@ Your contact list is probably **sorted by name**, not by address. Also, there ma
 
 {{< checkpoint id='1FAIpQLSfuYeG4ZAGPgPQd2cy0yBq3crNpZAmaU7HIQjSGzKYTEb6kEQ' >}}
 
-:::::: ifTime
+::: ifTime
 
 (@) Build a spell-checker.
   
-    ::: endnote 
+    :::: endnote 
     Use <img class="inline" src="/img/blocks/split-by-whitespace.png" width="190" alt="split () by (whitespace)" title="split () by (whitespace)" /> to convert the input text into a list.
-    :::
+    ::::
 
 (@) <img class="inline" src="/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Should your spell-checker look through the dictionary for each word of the text or look through the text for each word of the dictionary?
 
-::::::
+:::

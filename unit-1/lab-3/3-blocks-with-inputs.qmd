@@ -26,7 +26,7 @@ The scripts are essentially all the same; only some of the <em>input values</em>
 
 (@) Create a `pinwheel` block with an input for the <var>number of branches</var>. Instructions are below and you can also watch the process in the video that follows the instructions.
 
-::: narrower
+:::: narrower
 ### **Making a Block with an Input**
 
 <ol type="a">
@@ -35,17 +35,17 @@ The scripts are essentially all the same; only some of the <em>input values</em>
 
 **Create a new block, type the block name and the label for your input, and click OK.** For this project, type `pinwheel, branches:`.
 
-::: endnote
+::::: endnote
 <a href="#hint-new-block" data-bs-toggle="collapse" title="Click for an image of naming the new block.">Click for an image of naming the new block.</a>
 
-::: {#hint-new-block .collapse}
+:::::: {#hint-new-block .collapse}
 <img src="/img/1-introduction/Blockswith-Inputs_img/category.png" title="Make a block" alt="Make a block" class="ms-4" height="300"/>
 
 This block is about <em>moving</em> your sprite, so you might choose the blue Motion palette.
 
 Using a comma and a colon are not requirements; they are here to help with clarity.
-:::
-:::
+::::::
+:::::
 
 </li>
 
@@ -53,17 +53,17 @@ Using a comma and a colon are not requirements; they are here to help with clari
 
 **Click the + (plus sign) after "`branches:`", type the name of the input, and click OK** to add the input slot. For this project, click the + after "`branches:`" and type <var>number of branches</var> as the name of your input.
 
-::: endnote
+::::: endnote
 <a href="#hint-input" data-bs-toggle="collapse" title="Click for images of naming the input.">Click for images of naming the input.</a>
 
-::: {#hint-input .collapse}
+:::::: {#hint-input .collapse}
 <img src="/img/1-introduction/Blockswith-Inputs_img/plusSign.png" title="Plus sign" alt="Plus sign" class="ms-4" height="75"/> <img src="/img/1-introduction/Blockswith-Inputs_img/inputName.png" title="Create input name" alt="Create input name" class="ms-4" height="175"/>
-:::
-:::
+::::::
+:::::
 
-::: endnote
+::::: endnote
 <img src="/img/1-introduction/prototype.png" title="Snap! hat block: pinwheel, branches: (number of branches)" alt="Snap! hat block: pinwheel, branches: (number of branches)" class="ms-4"/><br /> The picture of a blue `pinwheel` block inside the hat block is called the <em>prototype</em> of the block. As you add inputs and maybe title text to the prototype, it looks exactly like what the finished block will look like to the user, except that where the input slots go, there are orange ovals containing the <em>names</em> of the inputs.
-:::
+:::::
 
 </li>
 
@@ -79,26 +79,26 @@ Using a comma and a colon are not requirements; they are here to help with clari
 
 </ul>
 
-::: endnote
+::::: endnote
 <a href="#hint-setup-code" data-bs-toggle="collapse" title="Click for an image of setting up the code inside the Block Editor.">Click for an image of setting up the code inside the Block Editor.</a>
 
-::: {#hint-setup-code .collapse}
+:::::: {#hint-setup-code .collapse}
 <img src="/img/1-introduction/Blockswith-Inputs_img/blockwith21.png" title="pinwheel, branches:(number of branches) {repeat(21){move(100) steps; move(-70) steps; turn clockwise(360/21) degrees}}" alt="pinwheel, branches:(number of branches) {repeat(21){move(100) steps; move(-70) steps; turn clockwise(360/21) degrees}}" class="ms-4"/> <img src="/img/1-introduction/Blockswith-Inputs_img/numberofbranches.png" title="pinwheel, branches:(number of branches){repeat(number of branches){move(100) steps; wait(0.1) secs; move(-70) steps; wait(0.1) secs; turn clockwise(360/number of branches) degrees}}" alt="pinwheel, branches:(number of branches){repeat(number of branches){move(100) steps; wait(0.1) secs; move(-70) steps; wait(0.1) secs; turn clockwise(360/number of branches) degrees}}" class="ms-4"/>
-:::
-:::
+::::::
+:::::
 
 </li>
 
 </ol>
-:::
+::::
 
-::: endnote
+:::: endnote
 <a href="#hint-target" data-bs-toggle="collapse" title="Click for a video of of the whole process of building the pinwheel block.">Click for a video of of the whole process of building the `pinwheel` block.</a>
 
-::: {#hint-target .collapse}
+::::: {#hint-target .collapse}
 <img title="Animation summarizing how to create a block with input." alt="Animation summarizing how to create a block with input." class="ms-4" data-gifffer="/img/1-introduction/Blockswith-Inputs_img/blocks-with-inputs.gif"/>
-:::
-:::
+:::::
+::::
 
 :::
 
@@ -121,13 +121,13 @@ We use the word "input" both for parameters (input names) and for arguments (inp
 
 Originally, you made five copies of the pinwheel script to create five slightly different pinwheels. Now, you've made a single procedure that includes the shared features of these five scripts and uses a parameter to handle the differences.
 
-::::::: forYouToDo
+::: forYouToDo
 
 <img src="/img/icons/save-mini.png" title="Save Your Work" alt="Save Your Work" class="float-end"/>
 
 (@) Comment your code.
 
-:::::: takeNote
+:::: takeNote
 
 ### **Debugging Tip: Commenting Your Code**
 
@@ -141,15 +141,15 @@ You can attach a comment <em>to the hat block</em> in the Block Editor to create
 
 ::::: grid
 
-:::: {.g-col-12}
+:::::: {.g-col-12}
 
 **Bad commenting:**
 
 <img src="/img/1-introduction/bad-comments.png" title="an example of bad commenting: block definition for a square-drawing block called &apos;square&apos; with a comment attached to the repeat (4) block that says, &apos;a square has four sides&apos; a comment attached to the move (size) steps block that says, &apos;the move says how big to make it&apos;, and a comment attached to the turn right (90) degrees block that says, &apos;You have to turn (90) degrees&apos;" alt="an example of bad commenting: block definition for a square-drawing block called &apos;square&apos; with a comment attached to the repeat (4) block that says, &apos;a square has four sides&apos; a comment attached to the move (size) steps block that says, &apos;the move says how big to make it&apos;, and a comment attached to the turn right (90) degrees block that says, &apos;You have to turn (90) degrees&apos;" class="ms-4"/>
 
-::::
+::::::
 
-:::: {.g-col-12}
+:::::: {.g-col-12}
 
 **Good commenting:**
 
@@ -157,13 +157,13 @@ You can attach a comment <em>to the hat block</em> in the Block Editor to create
 
 <img src="/img/1-introduction/askhelp.png" title="the &apos;square&apos; block with the right-click menu open and the &apos;help...&apos; option selected" alt="the &apos;square&apos; block with the right-click menu open and the &apos;help...&apos; option selected" class="ms-4"/> <img src="/img/1-introduction/squarehelp.png" title="a Help window with a picture of the &apos;square&apos; block followed by the text &apos;This block draws a square. The input says how big to make the sides of the square.&apos; and then an &apos;OK&apos; button" alt="a Help window with a picture of the &apos;square&apos; block followed by the text &apos;This block draws a square. The input says how big to make the sides of the square.&apos; and then an &apos;OK&apos; button" class="ms-4"/>
 
-::::
+::::::
 :::::
 
 Part of the reason some people emphasize the importance of detailed comments is that they are programming in text languages, which discourage long variable and procedure names. (Typically, you can't include spaces in the names, and you have to type the entire name every time you use that variable or procedure.) So you see names like `substLcUc` instead of `substitute lower case letters for capital letters in string`. If a program is full of drastically abbreviated names for procedures and variables, it's no surprise if the code needs documentation. In Snap<em>!,</em> the names in the program can be self-documenting.
 
-::::::
-:::::::
+::::
+:::
 
 ## More About Program Documentation
 

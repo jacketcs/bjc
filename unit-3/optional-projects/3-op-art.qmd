@@ -47,9 +47,9 @@ Example 2:
 
 <li>
 
-::: newProject
+:::: newProject
 ["U3-OpArt"]{.text}<img src="/img/icons/new-project-called.png" title="Create a new project called U3-OpArt" alt="Create a new project called U3-OpArt"/>
-:::
+::::
 
 </li>
 
@@ -125,11 +125,11 @@ drawing. Create a global variable <var>drawing done?</var> that will
 store a Boolean value (either `true` or `false`)
 to keep track of the phase of the program (drawing or painting).</li>
 
-::: todo
+:::: todo
 I don't think we need this. --MF, 9/10/18<br />It is initially
 `false` but when the space bar is pressed---which concludes
 the drawing phase---it is set to `true`.
-:::
+::::
 
 <li>The program also needs a way to draw a rectangle given its two
 defining corners. Create a `draw rectangle` block, and test
@@ -169,11 +169,11 @@ phase 2 (painting) and then fills the clicked areas</li>
 
 </ul>
 
-::: endnote
+:::: endnote
 <a href="#hint-main" data-bs-toggle="collapse" title="Click for hints on creating this program.">Click
 for hints on creating this program.</a>
 
-::: {#hint-main .collapse}
+::::: {#hint-main .collapse}
 <img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="float-end"/>
 
 <ul style="list-style-type: square">
@@ -194,17 +194,17 @@ to improve the efficiency and appearance of your program. The
 `hide` hides the sprite.</li>
 
 </ul>
-:::
-:::
+:::::
+::::
 
-::: todo
+:::: todo
 I thought about keeping some version of this, but I think it is not
 needed given the above. --MF, 9/9/18
 
 It is recommended that you first write down the algorithm detailing
 the sequence of events in the program and what should happen at each
 case before you build the actual code.
-:::
+::::
 
 </li>
 

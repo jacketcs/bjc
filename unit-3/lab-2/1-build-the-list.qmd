@@ -46,9 +46,9 @@ like a local, script variable.
 <h3>Creating the ADT</h3>
 
 ::: dialogue
-::: stagedir
+:::: stagedir
 Betsy and Gamal are planning to build a Contact List in Snap<em>!</em>.
-:::
+::::
 
 <div>
 
@@ -116,12 +116,12 @@ contact`.
 <img src="/img/3-lists/contact-constructor-in-address-selector.png" title="contact address (contact block with inputs) reporting " alt="contact address (contact block with inputs) reporting " class="ms-4"/><br />
 <img src="/img/3-lists/contact-constructor-in-phone-selector.png" title="contact phone (contact block with inputs) reporting " alt="contact phone (contact block with inputs) reporting " class="ms-4"/>
 
-::: takeNote
-::: sidenote
+:::: takeNote
+::::: sidenote
 You learned about input types and output types (domain and range) on
 <a href="/unit-2/lab-3/1-what-is-predicate.html" title="Unit 2 Lab 3 Page 1: What's a Predicate?">Unit
 2 Lab 3 Page 1: What's a Predicate?</a>.
-:::
+:::::
 
 It's important to make sure that your inputs to a function match the
 expected input type. For example, the input type of `address from
@@ -140,16 +140,16 @@ or use one.
 That's also true about the inputs to the `contact`
 constructor; you can't put something that isn't a name in the name input
 for `contact`.
-:::
+::::
 
-::: endnote
+:::: endnote
 It's somewhat artificial to use the constructor as the input to a
 selector; these images are just examples to show what the selectors
 should be able to do when given a contact as input. In <em>your</em>
 program, the selectors will take an item from the contact list as input
 and output the correct piece of that contact, like this:<br />
 <img src="/img/3-lists/address-from-contact-item-1-of-contact-list-reporting.png" title="address from contact (item (1) of (contact list)) reporting &apos;123 Main St. #4, New York, NY 10001&apos;" alt="address from contact (item (1) of (contact list)) reporting &apos;123 Main St. #4, New York, NY 10001&apos;" class="ms-4"/>
-:::
+::::
 
 </li>
 
@@ -161,11 +161,11 @@ expect a list (one whole contact) as input.<br />
 <img src="/img/3-lists/address-selector.png" title="address from contact: ()" alt="address from contact: ()" class="ms-4"/>
 <img src="/img/3-lists/phone-selector.png" title="phone from contact: ()" alt="phone from contact: ()" class="ms-4"/>
 
-::: endnote
+:::: endnote
 You learned about Specifying an Input Type on
 <a href="/unit-2/lab-2/2-quizzes.html" title="Unit 2 Lab 2 Page 2: Planning a Quiz App">Unit
 2 Lab 2 Page 2: Planning a Quiz App</a>.
-:::
+::::
 
 </li>
 
@@ -184,7 +184,7 @@ data.</li>
 Then, use the `contact` constructor to `add` a few
 contacts to your contact list.
 
-::: endnote
+:::: endnote
 You can use these examples or make up your own:
 
 | name           | address                               | phone        |
@@ -193,17 +193,17 @@ You can use these examples or make up your own:
 | Alphie Preston | 149 E. 16th Ave., Sunnyvale, CA 94089 | 408-555-6789 |
 | Gamal Abdel    | 369 Center St., Boston, MA 02130      | 617-555-1098 |
 
-:::
+::::
 
 </li>
 
 <li>Notice how your contacts appear in the list.</li>
 
-::: endnote
+:::: endnote
 If you don't remember about table view and list view, revisit
 <a href="/unit-2/lab-2/2-quizzes.html#two-views">page
 2.2.2</a>.
-:::
+::::
 
 <li>Try selecting the `name`, `address`, or
 `phone` from a contact in your list<br />
@@ -217,9 +217,9 @@ If you don't remember about table view and list view, revisit
 
 </li>
 
-::: ap-standard
+:::: ap-standard
 AAP-1.D part b
-:::
+::::
 
 <li><img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/>
 Write down how the use of an abstract data type helps manage complexity
