@@ -1,0 +1,38 @@
+# Runs `format-divs.py --check` to catch fenced divs whose colon counts drift
+# from the nesting convention (top-level `:::`, +1 colon per nested level), and
+# to flag files whose fences don't balance.
+#
+# This is INFORMATIONAL ONLY. It runs independently of the deploy workflow
+# (main.yml), so a failure here shows a red X but does NOT stop publishing --
+# main.yml still renders and pushes to gh-pages in parallel. This is
+# deliberate for now, to avoid disrupting the current contributor workflow.
+#
+# To make it actually gate publishing, either:
+#   1. move this check into main.yml as a step before "Render Website" (also
+#      add a Set up Python step there), so the deploy job fails before it
+#      publishes; and/or
+#   2. add a branch-protection rule on main requiring the "Check Divs" status
+#      to pass before a PR can merge (configured in GitHub settings, not in
+#      this file; does not cover direct pushes to main).
+
+on:
+  push:
+    branches: main
+  pull_request:
+
+name: Check Divs
+
+jobs:
+  check-divs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+
+      - name: Verify fenced-div colon nesting
+        run: python3 format-divs.py --check

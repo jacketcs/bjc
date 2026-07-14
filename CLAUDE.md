@@ -18,9 +18,12 @@ quarto preview   # live-reload dev server (port 1000, per _quarto.yml)
 quarto render    # one-time full render
 ```
 
-The only automated check is `.github/workflows/check-titles.yml`, which runs
-`python3 fix-titles.py --check` on pull requests and pushes to `main` (see the
-frontmatter conventions below). There are no other tests or linters.
+Two informational CI checks run on pull requests and pushes to `main`:
+`.github/workflows/check-titles.yml` runs `python3 fix-titles.py --check` (see
+the frontmatter conventions below), and `.github/workflows/check-divs.yml` runs
+`python3 format-divs.py --check` (see the fenced-div convention below). Both are
+independent of the deploy workflow, so a failure shows a red X but does not stop
+publishing. There are no other tests or linters.
 
 Deployment is automatic: pushing to `main` triggers
 `.github/workflows/main.yml`, which renders with a pinned Quarto version (check
