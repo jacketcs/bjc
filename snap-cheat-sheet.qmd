@@ -1,12 +1,10 @@
 ---
-title: "Snap<em>!</em> Cheat Sheet TEST2"
+title: "Snap<em>!</em> Cheat Sheet"
 pagetitle: "{{< metatext title >}}"
 order: 10
 ---
 
 This guide will show you how to match up the procedures in the AP exam language with the blocks in Snap<em>!</em>.
-
-Another test.
 
 ## Assignment, Display, and Input
 
