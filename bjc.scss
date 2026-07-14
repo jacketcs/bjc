@@ -297,18 +297,18 @@ $note:          #f3761d;
 .hoverinfo p {
     display: none;
     color: #000000;
-    border:1px solid;
+    border: 1px solid;
     position:relative;
-    top:30px;
-    left:400px;
-    padding:20px;
+    top: 30px;
+    left: 400px;
+    padding: 20px;
 }
 
 .hoverinfo:hover p {
     background-color: rgba(255, 255, 255, 0.95);
     display:block;
-    max-width:400px;
-    z-index:1;
+    max-width: 400px;
+    z-index: 1;
 }
 
 // Table styling
@@ -348,7 +348,7 @@ table .pre {
     line-height: 1em;
 }
 
-table.remainders {float:left; margin-right:100px;}
+table.remainders {float:left; margin-right: 100px;}
 
 .borderless-table, .bordered-table {display: grid;}
 .borderless-table > .header, .bordered-table > .header {font-weight: bold;}
@@ -428,14 +428,14 @@ img.inline {
 
 div.saveAs img {
     position: relative;
-    z-index:1;
+    z-index: 1;
   }
 
 div.saveAs span.text {
     position: absolute;
     margin-left: 182px;
     padding-top: 1.05em;
-    z-index:2;
+    z-index: 2;
     color: #333;
 }
 
@@ -443,7 +443,7 @@ div.newProject span.text {
     position: absolute;
     margin-left: 323px;
     padding-top: .65em;
-    z-index:2;
+    z-index: 2;
     color: #333;
 }
 
