@@ -2,7 +2,7 @@
 
 This site is built with [Quarto](https://quarto.org/). Most page bodies are
 plain Markdown, but the project leans on a number of Quarto-specific features
-(and three custom extensions) to do things Markdown alone can't. This document
+(and four custom extensions) to do things Markdown alone can't. This document
 catalogs them so editors know what's available and what the non-Markdown syntax
 in the `.qmd` files means.
 
@@ -48,20 +48,23 @@ gives features you never get from standalone Markdown:
 - **`{{< meta … >}}`** pulls from a page's own front matter — the site-wide
   `pagetitle` in `_quarto.yml` (`"{{< meta subtitle >}} | {{< var title-fix >}}"`)
   composes the browser tab title from the page's subtitle plus the project
-  variable. This works because numbered lab pages have a distinctive subtitle
+  variable. (It uses the custom `{{< metatext … >}}` shortcode rather than
+  `{{< meta … >}}` so any inline HTML in the field — e.g. the `<em>` used to
+  italicize the `!` in "Snap!" — is stripped for the plain-text `<title>`; see
+  §3.) This works because numbered lab pages have a distinctive subtitle
   (`"Unit N, Lab M, Page K"`). Pages whose subtitle is absent or non-distinctive
   — index pages, `create-task/`, posts, standalone resource pages, and the
   `optional-projects`/`project` pages that share a generic subtitle like
   `"Unit N Optional Project"` — instead set an explicit per-page `pagetitle`
-  built from `{{< meta title >}}`, so the tab shows the unique page title rather
-  than an empty or duplicated subtitle (~41 pages; see §7).
+  built from `{{< metatext title >}}`, so the tab shows the unique page title
+  rather than an empty or duplicated subtitle (~41 pages; see §7).
 
 Neither `{{< var >}}` nor `{{< meta >}}` exists in plain Markdown; they are
 Quarto shortcodes resolved at render time.
 
 ## 3. Custom extensions (`_extensions/`)
 
-Three local extensions ship with the repo:
+Four local extensions ship with the repo:
 
 ### `checkpoint` — the `checkpoint` shortcode (most-used custom feature, ~49 uses)
 
@@ -70,6 +73,20 @@ Three local extensions ship with the repo:
 containing an embedded Google Form `<iframe>`, triggered by a red button. This
 is how the converted curriculum replaced many of BJC's inline multiple-choice
 self-checks. Plain Markdown cannot generate the button + modal + iframe markup.
+
+### `metatext` — plain-text metadata for `pagetitle`
+
+`{{< metatext KEY >}}` (via `_extensions/metatext/metatext.lua`) emits the
+plain-text value of a front-matter field, like `{{< meta KEY >}}` but with any
+inline HTML stripped. It exists because a few titles carry HTML — e.g.
+`"Snap<em>!</em> Cheat Sheet"`, where the `<em>` italicizes the `!` for the
+navbar/sidebar. The HTML `<title>` element can't render tags, so interpolating
+the raw title leaks a literal `Snap<em>!</em>` into the browser tab.
+`pandoc.utils.stringify` drops raw-HTML inlines while keeping their text, so
+`metatext` yields `Snap!`. Every `pagetitle` in the site is built with
+`metatext` (the site-wide one in `_quarto.yml` and the ~41 per-page overrides).
+It contributes a shortcode (not a filter), so it's auto-discovered and not in
+the `filters:` list.
 
 ### `gifffer` — play/pause for animated GIFs
 
@@ -177,7 +194,8 @@ Per-page YAML front matter drives several behaviors beyond a Markdown title:
   contents by filename when `order` is absent.
 - **`pagetitle`** — a per-page override of the site-wide HTML `<title>`, set on
   the ~41 pages whose subtitle would make a poor tab title (absent or shared);
-  it builds the title from `{{< meta title >}}` instead of `subtitle` (see §2).
+  it builds the title from `{{< metatext title >}}` instead of `subtitle`
+  (see §2 and the `metatext` extension in §3).
 - **`gifffer: true`** — opts a page into the GIF player (see §3).
 - **`format:`** — per-page format overrides where needed (e.g.
   `unit-4/lab-4/5-binary.qmd` sets `html-table-processing: none`).
@@ -210,8 +228,8 @@ creating a new lab page.
 
 1. Website project: navbar, sidebars, search, page-nav, footer, SCSS theming.
 2. Shortcodes: `{{< var >}}`, `{{< meta >}}`, `{{< video >}}`, and the custom
-   `{{< checkpoint >}}`.
-3. Three local extensions (`checkpoint`, `gifffer`, `glossary`) = Lua
+   `{{< checkpoint >}}` / `{{< metatext >}}`.
+3. Four local extensions (`checkpoint`, `metatext`, `gifffer`, `glossary`) = Lua
    filters/shortcodes + bundled JS/CSS (`titling` was removed in favor of
    `fix-titles.py`).
 4. Fenced divs with custom classes, including attributed divs for assessments.

@@ -1,6 +1,6 @@
 ---
 title: "Bomb Game Instructions"
-pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
+pagetitle: "{{< metatext title >}} | {{< var title-fix >}}"
 author: "Ms. Chang"
 description: "These are the instructions to the bomb game that we'll be playing today."
 date: "8/21/2023"

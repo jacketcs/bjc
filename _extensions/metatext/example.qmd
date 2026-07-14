@@ -1,0 +1,14 @@
+---
+title: "Snap<em>!</em> Example"
+pagetitle: "{{< metatext title >}} | Example Site"
+---
+
+The browser tab for this page reads **Snap! Example** — the `<em>` tags in the
+title are stripped by `metatext`, while the on-page title below still renders
+the `!` in italics.
+
+Inline: `{{< meta title >}}` yields the raw title (with HTML); `{{< metatext
+title >}}` yields the plain text.
+
+- With `meta`: {{< meta title >}}
+- With `metatext`: {{< metatext title >}}

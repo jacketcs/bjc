@@ -1,6 +1,6 @@
 ---
 title: "Unit 5: Algorithms and Simulations"
-pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
+pagetitle: "{{< metatext title >}} | {{< var title-fix >}}"
 ---
 
 In Unit 5, we learn about how we can find solutions to problems using algorithms and heuristics, the necessity for simulations, data visualizations, and working to make the computer play with you.

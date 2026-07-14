@@ -1,6 +1,6 @@
 ---
 title: "Week 1 Announcements"
-pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
+pagetitle: "{{< metatext title >}} | {{< var title-fix >}}"
 author: "Ms. Chang and Ms. O'Keefe"
 description: "First week announcements, checking up on the class and what to expect."
 date: "8/16/2023"

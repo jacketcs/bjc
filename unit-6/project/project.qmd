@@ -1,6 +1,6 @@
 ---
 title: "Unit 6 Project: Educational Game"
-pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
+pagetitle: "{{< metatext title >}} | {{< var title-fix >}}"
 author: "Ms. Chang and Ms. O'Keefe"
 ---
 

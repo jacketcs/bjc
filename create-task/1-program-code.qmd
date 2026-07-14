@@ -1,6 +1,6 @@
 ---
 title: "Component A: Program Code"
-pagetitle: "{{< meta title >}} | {{< var title-fix >}}"
+pagetitle: "{{< metatext title >}} | {{< var title-fix >}}"
 author: "Ms. O'Keefe and Ms. Chang"
 order: 100
 ---
