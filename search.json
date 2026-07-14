@@ -1634,63 +1634,63 @@
   {
     "objectID": "snap-cheat-sheet.html",
     "href": "snap-cheat-sheet.html",
-    "title": "Snap! Cheat Sheet",
+    "title": "Snap! Cheat Sheet TEST2",
     "section": "",
-    "text": "This guide will show you how to match up the procedures in the AP exam language with the blocks in Snap!."
+    "text": "This guide will show you how to match up the procedures in the AP exam language with the blocks in Snap!.\nAnother test."
   },
   {
     "objectID": "snap-cheat-sheet.html#assignment-display-and-input",
     "href": "snap-cheat-sheet.html#assignment-display-and-input",
-    "title": "Snap! Cheat Sheet",
+    "title": "Snap! Cheat Sheet TEST2",
     "section": "Assignment, Display, and Input",
     "text": "Assignment, Display, and Input\nThere are significant differences between the language used on the AP exam and Snap! in this section.\n\n  On the AP Exam\n  In Snap!\n  Notes\n\n  \n    a ← expression\n  \n  \n  \n    \n      In Snap!, you must first create a variable before you use assign it a value. You can use the  button in\n      the Variables palette to create a global variable or  to\n      create a local (script) variable.\n    \n  \n\n  \n    DISPLAY (expression)\n  \n  \n    \n    Variations on say:\n    \n    \n    \n    Another way to display:\n  \n  \n    \n      There are several ways to display data to the user in Snap!. One way is in the form of speech\n      balloons that are \"spoken\" by the sprites on the stage. Here is the behavior that results from running the\n      instruction say (expression):\n      \n    \n    \n      In Snap!, there are also variations on this block such as:\n    \n      say for ( ) secs, which will only display the message for a specified number of seconds, and\n      \n      think ( ) and think ( ) for ( ) secs, which both display the message as a\n        thought balloon rather than as a speech balloon, like this:\n        \n      \n    \n    \n    The write block is very different, but it's still a form of output to the user. It writes the\n      contents of the first input slot on the stage in the font size written in the second input slot.\n  \n\n  \n    INPUT ()\n  \n  \n    \n    \n  \n  \n    In Snap!, user input is always prompted by running an ask command. The user is asked\n      the question typed into the ask input slot, and their response can be accessed by using the\n      answer block, which can be placed in an input slot just like a variable."
   },
   {
     "objectID": "snap-cheat-sheet.html#arithmetic-operators-and-numeric-procedures",
     "href": "snap-cheat-sheet.html#arithmetic-operators-and-numeric-procedures",
-    "title": "Snap! Cheat Sheet",
+    "title": "Snap! Cheat Sheet TEST2",
     "section": "Arithmetic Operators and Numeric Procedures",
     "text": "Arithmetic Operators and Numeric Procedures\nThere are no major differences between the language used on the AP exam and Snap! in this section.\n\n  On the AP Exam\n  In Snap!\n  Notes\n\n  \n    a + b\n    a – b\n    a * b\n    a / b\n  \n  \n    \n    \n    \n    \n  \n  \n    These blocks are straightforward. You can put any numeric expressions in the input slots, including numbers\n      or variables. For example:  or \n  \n\n  \n    a MOD b\n  \n  \n  \n    Same as above: You can use any numeric expressions as input. For example: \n    \n  \n\n  \n    RANDOM (a, b)\n  \n  \n  \n    Same as above: You can use any numeric expressions as input."
   },
   {
     "objectID": "snap-cheat-sheet.html#relational-and-boolean-operators",
     "href": "snap-cheat-sheet.html#relational-and-boolean-operators",
-    "title": "Snap! Cheat Sheet",
+    "title": "Snap! Cheat Sheet TEST2",
     "section": "Relational and Boolean Operators",
     "text": "Relational and Boolean Operators\nThere is one difference between the language used on the AP exam and Snap! in this section: you will need to create some procedures yourself.\n\n  On the AP Exam\n  In Snap!\n  Notes\n\n  \n    a = b\n    a ≠ b\n    a &gt; b\n    a &lt; b\n    a ≥ b\n    a ≤ b\n  \n  \n    \n    There is no ≠ block.\n    \n    \n    There is no ≥ block.\n    There is no ≤ block.\n\n  \n  \n    The hexagonal block shape indicates that this is a predicate block; it only reports (returns)\n      true or false.\n    \n      There are no ≠ (not equal), ≥ (greater than or equal), or ≤\n      (less than or equal) blocks built into Snap!, but they are simple to build as needed:\n      ,\n      , and\n      .\n    \n  \n\n  \n    NOT condition\n  \n  \n  \n    Hexagonal input slots indicate that a predicate (true/false) expression (a\n      condition)is expected as input.\n  \n\n  \n    condition1 AND condition2\n  \n  \n  \n    Same as above: Hexagonal input slots require predicate inputs.\n  \n\n  \n    condition1 OR condition2\n  \n  \n  \n    Same as above: Hexagonal input slots require predicate inputs."
   },
   {
     "objectID": "snap-cheat-sheet.html#selection",
     "href": "snap-cheat-sheet.html#selection",
-    "title": "Snap! Cheat Sheet",
+    "title": "Snap! Cheat Sheet TEST2",
     "section": "Selection",
     "text": "Selection\nThere are no major differences between the language used on the AP exam and Snap! in this section.\n\n  On the AP Exam\n  In Snap!\n  Notes\n\n  \n    \n      IF (condition)\n{\n&lt;block of statements&gt;\n}\n    \n  \n  \n  \n    \n      Here is an example of how the if statement could look in Snap! when it has a condition\n      and a sequence of statements:\n      \n    \n  \n\n  \n    \n      IF (condition)\n{\n&lt;first block of statements&gt;\n} \nELSE \n{\n&lt;second block of statements&gt;\n}\n    \n  \n  \n  \n    \n      Here is an example of how the if else statement could look in Snap! when it has a\n      condition and two sequences of statements:"
   },
   {
     "objectID": "snap-cheat-sheet.html#iteration",
     "href": "snap-cheat-sheet.html#iteration",
-    "title": "Snap! Cheat Sheet",
+    "title": "Snap! Cheat Sheet TEST2",
     "section": "Iteration",
     "text": "Iteration\nThere are no major differences between the language used on the AP exam and Snap! in this section.\n\n  On the AP Exam\n  In Snap!\n  Notes\n\n  \n    \n      REPEAT n TIMES\n{\n&lt;block of statements&gt;\n}\n    \n  \n  \n  \n    \n      Here is an example of how the repeat statement could look in Snap! when it has an input\n      number and a sequence of statements:\n      \n      \n    \n  \n\n  \n    \n      REPEAT UNTIL (condition)\n{\n&lt;block of statements&gt;\n}\n    \n  \n  \n  \n    \n      Here is an example of how the repeat until statement could look in Snap! when it has an\n      input number and a sequence of statements:"
   },
   {
     "objectID": "snap-cheat-sheet.html#list-operations",
     "href": "snap-cheat-sheet.html#list-operations",
-    "title": "Snap! Cheat Sheet",
+    "title": "Snap! Cheat Sheet TEST2",
     "section": "List Operations",
     "text": "List Operations\nThere are only small differences in wording and structure between the language used on the AP exam and Snap! in this section.\n\n  On the AP Exam\n  In Snap!\n  Notes\n\n  \n    list[i]\n  \n  \n    \n    For example,\n    \n    \n  \n  \n    \n      You can tell what kind of input is expected in each input slot of a block in Snap! by its shape. For\n      example,  takes a number as its first input (indicated by the round input\n      slot) and a list as its second input (indicated by the small picture of a list): \n      \n      In addition, there is a drop-down menu for the first input slot allowing you to select the first, the last, or\n      a random item from the list instead of typing a number or dragging and dropping a variable in.\n    \n  \n\n  \n    list[i] ← list[j]\n  \n  \n  \n    At first glance, this looks a little different on the exam than in Snap!, but if you read the\n      Snap! out loud, it is clear what it does: It replaces the item at position number i in the\n      list with the item at position number j in the list.\n    \n      Here's an example:\n      \n    \n  \n\n  \n    list ← [value1, value2, value3]\n  \n  \n  \n    In Snap!, it's recommended not to name any variable list because there is a block called\n      list that creates new lists. Here are some examples of better list names (really, anything but\n      \"list\" is fine; that variable name is only shown at left to match the AP Exam reference sheet):\n      \n      \n    \n  \n\n  \n    \n      FOR EACH item IN list\n{\n&lt;block of statements&gt;\n}\n    \n  \n  \n  \n    You can change the name of the first variable by clicking it.\n    \n      Here is an example of how the for each  statement could look in Snap! when it has a real\n      list name and a statement inside:\n      \n    \n  \n\n  \n    INSERT (list, i, value)\n  \n  \n  \n    The insert command in Snap! works the same as the\n      INSERT procedure in the language on the AP exam; only the order of the inputs is\n      different.\n    \n  \n\n  \n    APPEND (list, value)\n  \n  \n  \n    The Snap! add command works like the\n      APPEND procedure; only the order of inputs is different.\n    \n  \n\n  \n    REMOVE (list, i)\n  \n  \n  \n    The Snap! delete command works like the\n      REMOVE procedure; only the order of inputs is different.\n    \n  \n\n  \n    LENGTH (list)\n  \n  \n  \n    \n      Note that Snap! has two length blocks:\n    \n      a \"List\" length block for measuring lists: \n        and\n      an \"Operators\" length block for measuring strings: \n    \n    You can tell them apart by the palette they are in (Variables or Operators), their color, and the shape of their\n    input slot (a tiny picture of a list or a white typing slot for words)."
   },
   {
     "objectID": "snap-cheat-sheet.html#procedures",
     "href": "snap-cheat-sheet.html#procedures",
-    "title": "Snap! Cheat Sheet",
+    "title": "Snap! Cheat Sheet TEST2",
     "section": "Procedures",
     "text": "Procedures\n\n  On the AP Exam\n  In Snap!\n  Notes\n\n  \n    \n      PROCEDURE name (parameter1, parameter2, ...)\n{\n&lt;instructions&gt;\n}\n    \n  \n  Empty command block definition\n  \n    In Snap!, procedures that do something are called commands. Command blocks have a\n      rectangular, puzzle-piece shape because they are instructions to the computer designed to be snapped together\n      one after another.\n    \n      When you make a block, you choose the name of the block, the input parameters, and the palette it should\n      appear in (the color). Then you design the instructions that will run when the block is clicked. Here is an\n      example of what a real command block definition might look like in Snap!:\n      \n    \n    You can learn more about making block and adding inputs on the Snap! Cheat Sheet.\n  \n\n  \n    \n      PROCEDURE name (parameter1, parameter2, ...)\n{\n&lt;instructions&gt;\nRETURN expression\n}\n    \n  \n  Empty reporter block definition\n  \n    In Snap!, procedures that report (return) a value are called reporters. Reporter\n      blocks have a rounded shape and they can either be clicked to report a value to the programmer or they can be\n      dropped into an empty input slot of another block to be used as input.\n    When you make a reporter block, the block definition automatically includes a report block. The\n      value of the expression in the input slot of this report block is the value that is returned when\n      the reporter is run.\n    \n      Here is an example of what a real reporter block definition might look like in Snap!:"
   },
   {
     "objectID": "snap-cheat-sheet.html#robot",
     "href": "snap-cheat-sheet.html#robot",
-    "title": "Snap! Cheat Sheet",
+    "title": "Snap! Cheat Sheet TEST2",
     "section": "Robot",
     "text": "Robot\nThese blocks do not exist in Snap!, but Snap! has something similar: sprite motion. The big difference is that the robot blocks in the AP language work on a grid, so the robot can move only vertically or horizontally. In Snap!, sprites move much more flexibility, but you can use Snap! blocks to simulate robot motion.\n\n  On the AP Exam\n  Notes on Recreating in Snap!\n\n  \n    MOVE_FORWARD ()\n  \n  \n    In Snap!, you can use the  block to move the sprite forward any number of steps.\n    On the exam, you can't give\n      MOVE_FORWARD () an input, so if you want to move more than one grid square, you have\n      to call the procedure repeatedly.\n    \n    You can use the move block in Snap! to simulate the AP\n      MOVE_FORWARD () procedure: Just use an input that is exactly the same size as the\n      side length of the squares in your grid.\n    \n  \n\n  \n    ROTATE_LEFT ()\n    ROTATE_RIGHT ()\n  \n  \n    In Snap!, you can use the  and \n      blocks to turn the sprite any number of degrees.\n    On the exam, you can't give\n      ROTATE_LEFT () or\n      ROTATE_RIGHT () an input; these AP procedures always turn exactly 90 degrees since\n      they are used only to move a robot in a grid.\n    \n    You can use the turn ↺ or turn ↻ blocks in Snap! to\n      simulate the AP\n      ROTATE_LEFT () or\n      ROTATE_RIGHT () procedures: Just use 90 degrees as the input.\n    \n  \n\n  \n    CAN_MOVE (direction)\n  \n  \n    In Snap!, there are several ways to detect what is around the sprite, but since\n      there is no robot, there is nothing quite like\n      CAN_MOVE (direction), which returns true or false depending on whether or not the\n      robot can move in that direction without running into a wall or walking off of the maze.\n    \n    \n      In Snap!, you can use these blocks to help your sprites determine how to move:\n      ,\n      , and"
   },
