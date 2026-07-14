@@ -2,7 +2,7 @@
 
 This site is built with [Quarto](https://quarto.org/). Most page bodies are
 plain Markdown, but the project leans on a number of Quarto-specific features
-(and four custom extensions) to do things Markdown alone can't. This document
+(and three custom extensions) to do things Markdown alone can't. This document
 catalogs them so editors know what's available and what the non-Markdown syntax
 in the `.qmd` files means.
 
@@ -31,36 +31,40 @@ gives features you never get from standalone Markdown:
   non-`.qmd` assets into the output.
 - **HTML format options** applied site-wide: `toc: true`, Bootstrap
   `grid` widths, `callout-appearance: minimal`,
-  `link-external-newwindow: true`, and a `revealjs` `slide-format` so any page
-  can become slides.
+  `link-external-newwindow: true`, a `revealjs` `slide-format` so any page
+  can become slides, and a site-wide `pagetitle`
+  (`"{{< meta subtitle >}} | {{< var title-fix >}}"`) for the browser tab
+  title (see §2).
 - **`include-in-header`** injects the BJC lab-runner script
   (`/llab/loader.js`) into every page — this is what renders the embedded
   Snap! block images.
-- **Pandoc filters** are registered globally: `titling`, `gifffer`, `useful`
+- **Pandoc filters** are registered globally: `gifffer` and `checkpoint`
   (see §3).
 
 ## 2. Variables and metadata shortcodes
 
 - **`_variables.yml`** defines project variables (currently `title-fix: "JacketCS CSP"`),
-  referenced in pages with the **`{{< var title-fix >}}`** shortcode (~41 uses).
-- **`{{< meta … >}}`** pulls from a page's own front matter — e.g. every page's
-  `pagetitle: "{{< meta title >}} | {{< var title-fix >}}"` composes the browser
-  tab title from the page title plus the project variable (~41 uses).
+  referenced with the **`{{< var title-fix >}}`** shortcode (~41 uses).
+- **`{{< meta … >}}`** pulls from a page's own front matter — the site-wide
+  `pagetitle` in `_quarto.yml` (`"{{< meta subtitle >}} | {{< var title-fix >}}"`)
+  composes the browser tab title from the page's subtitle plus the project
+  variable. (~41 posts/pages also carry a legacy per-page `pagetitle` override
+  built from `{{< meta title >}}` instead — see §7.)
 
 Neither `{{< var >}}` nor `{{< meta >}}` exists in plain Markdown; they are
 Quarto shortcodes resolved at render time.
 
 ## 3. Custom extensions (`_extensions/`)
 
-Four local extensions ship with the repo:
+Three local extensions ship with the repo:
 
-### `useful` — the `checkpoint` shortcode (most-used custom feature, ~51 uses)
+### `checkpoint` — the `checkpoint` shortcode (most-used custom feature, ~49 uses)
 
 `{{< checkpoint id="<google-form-id>" text="..." >}}` expands (via
-`checkpoint.lua`) into a Bootstrap **modal dialog** containing an embedded
-Google Form `<iframe>`, triggered by a red button. This is how the converted
-curriculum replaced many of BJC's inline multiple-choice self-checks. Plain
-Markdown cannot generate the button + modal + iframe markup.
+`_extensions/checkpoint/checkpoint.lua`) into a Bootstrap **modal dialog**
+containing an embedded Google Form `<iframe>`, triggered by a red button. This
+is how the converted curriculum replaced many of BJC's inline multiple-choice
+self-checks. Plain Markdown cannot generate the button + modal + iframe markup.
 
 ### `gifffer` — play/pause for animated GIFs
 
@@ -70,13 +74,15 @@ A page opts in with **`gifffer: true`** in its front matter (~37 pages). The
 get a click-to-play control instead of autoplaying. (Conditional, per-page asset
 injection driven by front matter is a Quarto/Lua-filter capability.)
 
-### `titling` — path-aware title helpers
+### `titling` — removed (replaced by `fix-titles.py`)
 
-`titling.lua` exposes Lua functions that derive "Unit N, Lab N, Page N" text
-from the file's path within the project (`unitlabpage`, `unitlab`, `pagenum`,
-`paged`, `pagetitle`). The **`{{< unitlabpage >}}`** shortcode form is used on at
-least one page. (`auto-title.lua` is present but disabled — it's commented out in
-`_extension.yml` — because the auto-prefixing misbehaved with the nav bar.)
+An earlier `titling` extension tried to derive "Unit N, Lab N, Page N" text from
+a page's path via Lua. But Quarto reads each page's sidebar/navbar title from
+raw frontmatter *before* any Lua filter runs, so the filter could never affect
+the sidebar — it was effectively a no-op. It was removed and replaced by
+**`fix-titles.py`**, a Python generator that bakes the derivable title/subtitle
+prefixes into each page's frontmatter on disk and drops redundant `order` fields
+(see §7 and `CLAUDE.md`).
 
 ### `glossary` — vocabulary scaffolding
 
@@ -84,13 +90,12 @@ least one page. (`auto-title.lua` is present but disabled — it's commented out
 divs. It's wired up as an extension but does little today; the visible vocab
 styling comes from the fenced-div classes in §5.
 
-> Note: `_quarto.yml`'s `filters:` list names `titling`, `gifffer`, and
-> `useful`. The `glossary` filter is not in the active filter list, so it's
-> effectively dormant.
+> Note: `_quarto.yml`'s `filters:` list names only `gifffer` and `checkpoint`.
+> The `glossary` filter is not in the active list, so it's effectively dormant.
 
 ## 4. Built-in shortcodes
 
-- **`{{< video … >}}`** (~9 uses) — embeds YouTube videos responsively, e.g.
+- **`{{< video … >}}`** (~8 uses) — embeds YouTube videos responsively, e.g.
   `{{< video https://youtu.be/8rfDb0A7XsA >}}`. A Quarto built-in.
 
 ## 5. Fenced divs with custom classes (Pandoc/Quarto extension)
@@ -120,7 +125,7 @@ SCSS theme. Editors compose them with `::: learn` … `:::` blocks.
 ### Structured assessment divs
 
 A QTI-flavored assessment structure is expressed as **nested attributed fenced
-divs** (~36 `assessment-data` blocks), e.g.:
+divs** (~38 `assessment-data` blocks), e.g.:
 
 ```markdown
 ::: {.assessment-data type="multiplechoice" identifier="…" maxchoices="1" responseidentifier="resp1" shuffle="false"}
@@ -159,9 +164,14 @@ Because the HTML format is Bootstrap-based, pages use Bootstrap directly:
 
 Per-page YAML front matter drives several behaviors beyond a Markdown title:
 
-- **`title`**, **`subtitle`** (e.g. `"Unit 4, Lab 4, Page 6"`), and **`order`**
-  — `order` controls sidebar/listing sequence (used on ~178 pages).
-- **`pagetitle`** — composes the HTML `<title>` from `{{< meta >}}`/`{{< var >}}`.
+- **`title`**, **`subtitle`** (e.g. `"Unit 4, Lab 4, Page 6"`), and **`order`**.
+  On lab pages the `Page N:` / `Lab N:` title prefix and the whole subtitle are
+  derived from the file path and generated by **`fix-titles.py`**. `order`
+  controls sidebar/listing sequence but is kept only where it isn't redundant
+  with the filename number (~42 files), since Quarto orders auto-sidebar
+  contents by filename when `order` is absent.
+- **`pagetitle`** — a per-page override of the site-wide HTML `<title>` (see §2);
+  ~41 pages still set it explicitly.
 - **`gifffer: true`** — opts a page into the GIF player (see §3).
 - **`format:`** — per-page format overrides where needed (e.g.
   `unit-4/lab-4/5-binary.qmd` sets `html-table-processing: none`).
@@ -194,9 +204,10 @@ creating a new lab page.
 
 1. Website project: navbar, sidebars, search, page-nav, footer, SCSS theming.
 2. Shortcodes: `{{< var >}}`, `{{< meta >}}`, `{{< video >}}`, and the custom
-   `{{< checkpoint >}}` / `{{< unitlabpage >}}`.
-3. Four local extensions (`useful`, `gifffer`, `titling`, `glossary`) = Lua
-   filters + shortcodes + bundled JS/CSS.
+   `{{< checkpoint >}}`.
+3. Three local extensions (`checkpoint`, `gifffer`, `glossary`) = Lua
+   filters/shortcodes + bundled JS/CSS (`titling` was removed in favor of
+   `fix-titles.py`).
 4. Fenced divs with custom classes, including attributed divs for assessments.
 5. Bootstrap grid, collapse, and modals.
 6. Behavior-driving front matter (`order`, `gifffer`, `pagetitle`, `format`,
