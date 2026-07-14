@@ -18,18 +18,33 @@ Add them to the `prog/` folder.
 
 ## Building the website
 
-The live website uses [Quarto Version 1.3.353](https://github.com/quarto-dev/quarto-cli/releases/tag/v1.3.353). So you may want to download this version to see the same visual content as the live version. (We can change the version in `.github/workflows/main.yml`)
+The site is built with [Quarto](https://quarto.org/). The live site is rendered with a **pinned** Quarto version so everyone sees the same output — currently **1.9.38**. The source of truth for the version is `version:` in `.github/workflows/main.yml`; use that same version locally so your preview matches the deployed site.
 
+### Installing Quarto on a Mac
 
-When authoring the website, you'll want to use the
+Pick one:
+
+- **Match the live version (recommended).** Download the macOS installer `quarto-1.9.38-macos.pkg` from the [v1.9.38 release page](https://github.com/quarto-dev/quarto-cli/releases/tag/v1.9.38) and open it. (If the workflow pins a different version, grab that one instead.)
+
+- **Homebrew (installs the latest).** Run `brew install --cask quarto`. This is quick, but Homebrew tracks the newest release, which may not match the pinned version above.
+
+Confirm it installed:
+
+```
+quarto --version
+```
+
+### Previewing while you edit
+
+For a live-reloading dev server — it rebuilds as you save and opens on port 1000 (set in `_quarto.yml`):
 
 ```
 quarto preview
 ```
 
-in the terminal
+### One-time render
 
-If you just want a single time render, you can use
+To build the whole site once (output goes to `_site/`):
 
 ```
 quarto render
