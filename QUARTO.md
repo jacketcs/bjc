@@ -48,8 +48,13 @@ gives features you never get from standalone Markdown:
 - **`{{< meta … >}}`** pulls from a page's own front matter — the site-wide
   `pagetitle` in `_quarto.yml` (`"{{< meta subtitle >}} | {{< var title-fix >}}"`)
   composes the browser tab title from the page's subtitle plus the project
-  variable. (~41 posts/pages also carry a legacy per-page `pagetitle` override
-  built from `{{< meta title >}}` instead — see §7.)
+  variable. This works because numbered lab pages have a distinctive subtitle
+  (`"Unit N, Lab M, Page K"`). Pages whose subtitle is absent or non-distinctive
+  — index pages, `create-task/`, posts, standalone resource pages, and the
+  `optional-projects`/`project` pages that share a generic subtitle like
+  `"Unit N Optional Project"` — instead set an explicit per-page `pagetitle`
+  built from `{{< meta title >}}`, so the tab shows the unique page title rather
+  than an empty or duplicated subtitle (~41 pages; see §7).
 
 Neither `{{< var >}}` nor `{{< meta >}}` exists in plain Markdown; they are
 Quarto shortcodes resolved at render time.
@@ -170,8 +175,9 @@ Per-page YAML front matter drives several behaviors beyond a Markdown title:
   controls sidebar/listing sequence but is kept only where it isn't redundant
   with the filename number (~42 files), since Quarto orders auto-sidebar
   contents by filename when `order` is absent.
-- **`pagetitle`** — a per-page override of the site-wide HTML `<title>` (see §2);
-  ~41 pages still set it explicitly.
+- **`pagetitle`** — a per-page override of the site-wide HTML `<title>`, set on
+  the ~41 pages whose subtitle would make a poor tab title (absent or shared);
+  it builds the title from `{{< meta title >}}` instead of `subtitle` (see §2).
 - **`gifffer: true`** — opts a page into the GIF player (see §3).
 - **`format:`** — per-page format overrides where needed (e.g.
   `unit-4/lab-4/5-binary.qmd` sets `html-table-processing: none`).
