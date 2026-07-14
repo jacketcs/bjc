@@ -8,7 +8,7 @@ gifffer: true
 **On this page,** you will change the script so that the sprites don't move forever, but only until they touch.
 :::
 
-::::::: {#first .forYouToDo}
+::: {#first .forYouToDo}
 
 (@)  Change **Follower**'s code to point towards **Leader** only until it is touching **Leader**. (The following instructions show how.)
 
@@ -22,7 +22,7 @@ gifffer: true
 
 Drag <img src="/img/blocks/touching.png" title="touching ()?" alt="touching ()?"/> into the hexagonal space in the `repeat until` block. Set it to repeat until it is `touching` **Leader**.<br />
 
-:::::: endnote
+:::: endnote
 <a href="#hint-touching" data-bs-toggle="collapse" title="Click for a video of this code being built.">Click for a video of this code being built.</a>
 
 ::::: {#hint-touching .collapse}
@@ -50,10 +50,9 @@ repeat until (touching (Leader)) {
 point towards (Leader)
 }
 }" />
-```
 
 :::::
-::::::
+::::
 
 </li>
 
@@ -73,9 +72,9 @@ point towards (Leader)
 
 Add a line of code to **Follower**'s script so that it chases **Leader**. Here's the idea:
 
-::: sidenote
+:::: sidenote
 Fill the input slot in the `move` block with a small number so **Follower** doesn't catch **Leader** too quickly.
-:::
+::::
 
 <img src="/img/1-introduction/move-tiny.png" title="when green flag clicked:
 repeat until (touching (Leader)?)
@@ -97,56 +96,56 @@ move () steps ← Comment: Type a small value in this empty input slot.
 
 </ol>
 
-::: vocabFullWidth
+:::: vocabFullWidth
 When a program keeps running forever, that's called an **infinite loop**.
-:::
+::::
 
 </li>
 
 </ol>
 
-:::::::
+:::
 
-::::::: examFullWidth
+::: examFullWidth
 
 
-::: sidenoteBig
+:::: sidenoteBig
 
 The language used on the AP Exam doesn't allow spaces in names of inputs (such as <var>number of fish</var>) or in programmer-defined procedures (such as `mouse y`, which isn't built into their language). So this example translates them to `numFish` and `MouseY()`. The reason for the `()` or box after `MouseY` is that `MouseY()` is a procedure call even though it doesn't take any inputs.
 
-:::
+::::
 
 The script<br /> <img src="/img/1-introduction/example-repeat-until.png" title="repeat until (mouse y &lt; 0) {say (number of fish)}" alt="repeat until (mouse y &lt; 0) {say (number of fish)}" class="ms-4"/><br /> would be written as
 
-::: ms-4
+:::: ms-4
 
     REPEAT UNTIL(mouseY() < 0)
     {
     DISPLAY(numFish)
     }
 
-:::
+::::
 
 or <img src="/img/1-introduction/repeat-until-blocktran.png" title="a gray rounded rectangle containing all of the following: on the first line, first the words &apos;REPEAT UNTIL&apos; in all caps and then a smaller gray rounded rectangle containing &apos;mouseY () &lt; 0&apos; and on the second line, a white rounded rectangle with a smaller white rounded rectangle inside that contains first the word &apos;DISPLAY&apos; in all caps and then a smaller white rectangle containing &apos;numFish&apos;" alt="a gray rounded rectangle containing all of the following: on the first line, first the words &apos;REPEAT UNTIL&apos; in all caps and then a smaller gray rounded rectangle containing &apos;mouseY () &lt; 0&apos; and on the second line, a white rounded rectangle with a smaller white rounded rectangle inside that contains first the word &apos;DISPLAY&apos; in all caps and then a smaller white rectangle containing &apos;numFish&apos;" class="inline"/>
 
 Remember, you don't need to learn to write the made-up language used on the AP exam. You just have to be able to read and answer questions about it.
 
-:::::::
+:::
 
-::::::: forYouToDo
+::: forYouToDo
 
 (@) Test your program a few times.
     <img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="inline"/>
 
 (@) Right now, when the sprites meet, they just stop. Make them have a conversation when they stop. You can do that by adding code like this to **Leader**'s script. Make up your own conversation. You can use any language you can type. Here's an example using several languages.
 
-    ::: sidenoteBig
+    :::: sidenoteBig
     **Leader** does things itself. It also tells **Follower** what to do and when to do it. This code puts **Leader** in charge of **Follower**.
-    :::
+    ::::
 
-    ::: vocab
+    :::: vocab
     A **code segment** is a sequence of connected instructions that carry out a purposeful action, such as the one pictured on the left, which animates a conversation. The instructions in the code segment are carried out in order, from top to bottom.
-    :::
+    ::::
 
     <img src="/img/1-introduction/simpledialogue-going-to-lunch.png" title="partial script of a conversation between two sprites:
     ‘partially cut off script’
@@ -166,27 +165,27 @@ Remember, you don't need to learn to write the made-up language used on the AP e
     glide (1) secs to x: (200) y: (30)
     tell (Follower) to (glide (1) secs to x: (200) y: (30))" class="inline"/>
 
-::: endnote
+:::: endnote
 To prevent the two sprites from being stuck to each other unable to move, the sprites will need some space between them and some time apart before the chase starts. Blocks such as these may help.<br /> <img src="/img/1-introduction/U1ImageVideoAddendum_img/U1L5p2-PuppySeparation.png" title="go to x:(-200) y:(-50); wait (1) secs &amp; go to x:(200) y:(-50); wait (1) secs" alt="go to x:(-200) y:(-50); wait (1) secs &amp; go to x:(200) y:(-50); wait (1) secs" class="ms-4" height="90"/>
-:::
+::::
 
 <img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline"/>
 
 (@) {{< checkpoint id='1FAIpQLScdfueUwP1TpRjEqEWqSO3M93WzvzC744Vh1VqcCkJ2DdK5jg' >}}
 
-:::::::
+:::
 
-::::::: ifTime
+::: ifTime
 
 (@) Give the sprites costumes.
 
-    ::: endnote
+    :::: endnote
     You can use a picture from the Internet by dragging the picture into the Snap<em>!</em> window.
-    :::
+    ::::
 
 (@) Change the background on the stage.
 
-    ::: endnote
+    :::: endnote
     There are instructions in the If There Is Time section on <a href="/unit-1/lab-2/3-customizing.html" title="Unit 1 Lab 2 Page 3: Customizing and Debugging">Unit 1 Lab 2 Page 3: Customizing and Debugging</a>.
-    :::
-:::::::
+    ::::
+:::
