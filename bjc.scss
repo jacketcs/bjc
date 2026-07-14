@@ -185,7 +185,7 @@ $note:          #f3761d;
 .learn {background-color: $learn-bg;}
 
 .atwork {background-color: $atwork-bg;}
-.vocab, .vocabBig, .exam, .examBig, .vocabFullWidth, .examFullWidth, .vocabSummary, .examSummary {background-color: $define-bg} 
+.vocab, .vocabBig, .exam, .examBig, .vocabFullWidth, .examFullWidth, .vocabSummary, .examSummary {background-color: $define-bg;} 
 .vocab, .vocabBig, .exam, .examBig, .atwork {
     font-size: .9em;
     float: right;
@@ -228,9 +228,9 @@ $note:          #f3761d;
     line-height: 1.5em;
 }
 
-.narrower {border: 3px solid $forYouToDo} 
-.narrowblue {border: 3px solid $ifTime} 
-.narrowpurple {border: 3px solid $takeIt} 
+.narrower {border: 3px solid $forYouToDo;} 
+.narrowblue {border: 3px solid $ifTime;} 
+.narrowpurple {border: 3px solid $takeIt;} 
 
 .takeNote{
     border: 10px solid $note;
