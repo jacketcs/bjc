@@ -1,0 +1,30 @@
+# Dockerfile.yolo — layers on top of yolo's built-in image so every session in
+# this repo has the pinned Quarto toolchain preinstalled (otherwise each fresh
+# container starts without `quarto` and has to reinstall it to render/preview).
+#
+# Use it with:
+#   yolo --dockerfile ./Dockerfile.yolo          # one run
+#   yolo config --dockerfile ./Dockerfile.yolo   # persist it for this project
+#
+# Because this file references YOLO_BASE, yolo builds its default image first and
+# passes the tag in as the YOLO_BASE build arg, so you inherit the `claude` user
+# (with passwordless sudo), the native Claude install, PATH, and the ENTRYPOINT.
+# Keep the two lines just below.
+ARG YOLO_BASE
+FROM ${YOLO_BASE}
+
+# Keep this in sync with the pinned Quarto in .github/workflows/main.yml so local
+# renders match the deployed site.
+ARG QUARTO_VERSION=1.9.38
+
+# The base leaves you as the `claude` user, which has passwordless sudo. Fetch
+# the Quarto .deb for the build's architecture (arm64 or amd64 — the release
+# asset names match `dpkg --print-architecture`) and let apt resolve its deps.
+RUN set -eux; \
+    arch="$(dpkg --print-architecture)"; \
+    url="https://github.com/quarto-dev/quarto-cli/releases/download/v${QUARTO_VERSION}/quarto-${QUARTO_VERSION}-linux-${arch}.deb"; \
+    curl -fsSL -o /tmp/quarto.deb "$url"; \
+    sudo apt-get update; \
+    sudo apt-get install -y /tmp/quarto.deb; \
+    sudo rm -rf /tmp/quarto.deb /var/lib/apt/lists/*; \
+    quarto --version

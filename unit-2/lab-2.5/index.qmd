@@ -1,5 +1,6 @@
 ---
 title: "Lab 2.5: Flashcards"
+pagetitle: "{{< metatext title >}}"
 subtitle: "Unit 2, Lab 2.5"
 gifffer: true
 order: 3

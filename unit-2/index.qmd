@@ -1,6 +1,6 @@
 ---
 title: "Unit 2: Abstraction"
-pagetitle: "{{< metatext title >}} | {{< var title-fix >}}"
+pagetitle: "{{< metatext title >}}"
 ---
 
 Unit 2 ... you learn about abstraction

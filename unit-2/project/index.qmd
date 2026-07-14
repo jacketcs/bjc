@@ -1,5 +1,6 @@
 ---
 title: "Project: Survey"
+pagetitle: "{{< metatext title >}}"
 subtitle: "Unit 2 Project"
 gifffer: true
 order: 10

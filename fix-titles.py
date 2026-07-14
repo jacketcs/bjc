@@ -20,6 +20,21 @@ It also drops the `order:` field wherever it is redundant with the filename
 contents by filename when `order` is absent. `index.qmd` and files like
 create-task's `1-program-code.qmd` (order 100) keep their `order`.
 
+It manages `pagetitle` too. The site-wide `pagetitle` in `_quarto.yml` builds
+the browser tab title from each page's `subtitle`, which is only distinctive on
+the lab pages this script derives subtitles for ("Unit N, Lab M, Page K"). Every
+other page — unit/lab-project indexes, create-task, posts, standalone resource
+pages — has an absent or generic, non-unique subtitle (e.g. "Unit 3 Project"),
+so it instead carries an explicit
+
+    pagetitle: "{{< metatext title >}}"
+
+override that titles the tab from the page's own title. (`metatext` is the local
+shortcode that strips inline HTML, e.g. the `<em>` in "Snap<em>!</em>", from the
+plain-text tab title.) So: in-scope lab pages must NOT set `pagetitle` (they use
+the global subtitle-based one); every other page must set exactly that override.
+The script adds it where missing and rewrites any stale form.
+
 Because ordering falls back to the filename, filenames must sort
 numerically. Plain alphabetical sort breaks once a directory reaches double
 digits (`1, 10, 2, ...`), so the script zero-pads numbered filenames to a
@@ -47,6 +62,10 @@ LAB_INDEX = re.compile(r"^unit-(\d+)/lab-(\d+)/index\.qmd$")
 # Leading generated prefixes to strip before recomputing, so the script is
 # idempotent and never double-prefixes ("Page 4: Page 4: ...").
 STRIP_PREFIX = re.compile(r"^\s*(?:Page|Lab)\s+[\d.]+:\s*")
+
+# The pagetitle override for pages without a distinctive (script-derived)
+# subtitle. Quarto appends the site title, so this holds only the page part.
+PER_PAGE_PAGETITLE = 'pagetitle: "{{< metatext title >}}"'
 
 
 def derive(relpath):
@@ -133,20 +152,26 @@ def process(path):
     changes = []
     out_lines = []
     saw_subtitle = False
+    saw_pagetitle = False
     title_idx = None
 
     for line in fm_lines:
         key = re.match(r"^(\w[\w-]*):\s*(.*)$", line)
         name = key.group(1) if key else None
 
-        # Title/subtitle are only rewritten on convention-following lab pages.
-        if spec and name == "title":
-            human = STRIP_PREFIX.sub("", unquote(key.group(2))).strip()
-            want = title_tmpl.format(human=human)
-            new_line = f'title: "{want}"'
-            if new_line != line:
-                changes.append(f"title -> {want!r}")
-            out_lines.append(new_line)
+        if name == "title":
+            # Title text is only rewritten on convention-following lab pages;
+            # elsewhere it is left alone. Either way, remember where it is so an
+            # inserted subtitle/pagetitle can go right after it.
+            if spec:
+                human = STRIP_PREFIX.sub("", unquote(key.group(2))).strip()
+                want = title_tmpl.format(human=human)
+                new_line = f'title: "{want}"'
+                if new_line != line:
+                    changes.append(f"title -> {want!r}")
+                out_lines.append(new_line)
+            else:
+                out_lines.append(line)
             title_idx = len(out_lines) - 1
 
         elif spec and name == "subtitle":
@@ -156,6 +181,18 @@ def process(path):
                 changes.append(f"subtitle -> {want_subtitle!r}")
             out_lines.append(new_line)
 
+        elif name == "pagetitle":
+            saw_pagetitle = True
+            if spec:
+                # Lab pages rely on the global subtitle-based pagetitle.
+                changes.append("drop pagetitle")
+                # skip line
+            elif line.strip() != PER_PAGE_PAGETITLE:
+                changes.append("pagetitle -> canonical")
+                out_lines.append(PER_PAGE_PAGETITLE)
+            else:
+                out_lines.append(line)
+
         # Redundant `order` is dropped everywhere, convention or not.
         elif name == "order" and order_is_redundant(relpath, key.group(2)):
             changes.append(f"drop order ({key.group(2).strip()})")
@@ -164,9 +201,16 @@ def process(path):
         else:
             out_lines.append(line)
 
+    # These insertions are mutually exclusive (subtitle only when spec,
+    # pagetitle only when not spec), so they never fight over indices.
     if spec and not saw_subtitle and title_idx is not None:
         out_lines.insert(title_idx + 1, f'subtitle: "{want_subtitle}"')
         changes.append(f"add subtitle {want_subtitle!r}")
+
+    if not spec and not saw_pagetitle:
+        pos = title_idx + 1 if title_idx is not None else len(out_lines)
+        out_lines.insert(pos, PER_PAGE_PAGETITLE)
+        changes.append("add pagetitle")
 
     if not changes:
         return None, []

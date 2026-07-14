@@ -1,6 +1,6 @@
 ---
 title: "Unit 6: How Computers Work"
-pagetitle: "{{< metatext title >}} | {{< var title-fix >}}"
+pagetitle: "{{< metatext title >}}"
 ---
 
 In this unit, we'll break down on the functionality of computers: what we know about them as we use them, the components of computers that let us use them, and what makes the components of computers work.

@@ -1,6 +1,6 @@
 ---
 title: "AP Performance Create Task"
-pagetitle: "{{< metatext title >}} | {{< var title-fix >}}"
+pagetitle: "{{< metatext title >}}"
 ---
 
 ::: learn

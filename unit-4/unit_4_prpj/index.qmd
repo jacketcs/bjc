@@ -1,5 +1,6 @@
 ---
 title: "Unit 4 Project: Binary Converter"
+pagetitle: "{{< metatext title >}}"
 subtitle: "Unit 4 Project"
 order: 5
 ---

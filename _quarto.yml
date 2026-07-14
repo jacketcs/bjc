@@ -86,7 +86,7 @@ website:
 
 format:
   html:
-    pagetitle: "{{< metatext subtitle >}} | {{< var title-fix >}}"
+    pagetitle: "{{< metatext subtitle >}}"
     callout-appearance: minimal
     link-external-newwindow: true
     toc: true

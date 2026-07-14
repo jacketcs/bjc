@@ -1,6 +1,6 @@
 ---
 title: "Posts"
-pagetitle: "{{< metatext title >}} | {{< var title-fix >}}"
+pagetitle: "{{< metatext title >}}"
 listing:
   contents:
     - "announcements/*.qmd"

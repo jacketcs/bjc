@@ -25,7 +25,10 @@ frontmatter conventions below). There are no other tests or linters.
 Deployment is automatic: pushing to `main` triggers
 `.github/workflows/main.yml`, which renders with a pinned Quarto version (check
 the workflow for the exact version) and publishes to the `gh-pages` branch. Use
-the same Quarto version locally to match the live site.
+the same Quarto version locally to match the live site. `Dockerfile.yolo`
+installs exactly that version on top of the yolo base image (keep its
+`QUARTO_VERSION` in sync with the workflow); apply it with `yolo config
+--dockerfile ./Dockerfile.yolo` so every container has `quarto` preinstalled.
 
 ## Structure and conventions
 
@@ -42,18 +45,22 @@ the same Quarto version locally to match the live site.
   filename number (e.g. `create-task/`) keep their explicit `order`.
 
 - Page frontmatter follows `_templates/lab_temp.qmd`: `title` (e.g. `"Page 2:
-  Programming a Game"`) and `subtitle` (e.g. `"Unit 1, Lab 2, Page 3"` — used in
-  the browser page title via `pagetitle` in `_quarto.yml`). On lab pages the
-  `Page N:` title prefix and the whole subtitle are derived from the file path
-  and must match it. Quarto reads the title for the sidebar/navbar from raw
-  frontmatter *before* any Lua filter runs, so these strings are baked into the
-  frontmatter rather than computed at render time. **`fix-titles.py` is the
-  generator**: it rewrites the derivable parts (preserving the human-authored
-  part of each title), drops redundant `order` fields, and normalizes subtitles.
-  It also zero-pads numbered filenames to a consistent per-directory width when
-  a lab reaches double digits (`1-foo.qmd` → `01-foo.qmd`) and rewrites the
-  internal links that pointed at any renamed file, so filename-based ordering
-  stays numeric. Run `python3 fix-titles.py` after adding or renaming lab pages;
+  Programming a Game"`) and `subtitle` (e.g. `"Unit 1, Lab 2, Page 3"` — the
+  site-wide `pagetitle` in `_quarto.yml` builds the browser tab title from it).
+  On lab pages the `Page N:` title prefix and the whole subtitle are derived
+  from the file path and must match it. Quarto reads the title for the
+  sidebar/navbar from raw frontmatter *before* any Lua filter runs, so these
+  strings are baked into the frontmatter rather than computed at render time.
+  **`fix-titles.py` is the generator**: it rewrites the derivable parts
+  (preserving the human-authored part of each title), drops redundant `order`
+  fields, and normalizes subtitles. It also **manages `pagetitle`**: lab pages
+  (distinctive subtitle) get none and rely on the global one, while every other
+  page gets an explicit `pagetitle: "{{< metatext title >}}"` so its tab is
+  titled from the page title rather than an absent or generic subtitle. It also
+  zero-pads numbered filenames to a consistent per-directory width when a lab
+  reaches double digits (`1-foo.qmd` → `01-foo.qmd`) and rewrites the internal
+  links that pointed at any renamed file, so filename-based ordering stays
+  numeric. Run `python3 fix-titles.py` after adding or renaming lab pages;
   `python3 fix-titles.py --check` reports drift without writing and is what CI
   runs.
 
@@ -67,12 +74,16 @@ the same Quarto version locally to match the live site.
 
 ## Custom Lua extensions (`_extensions/`)
 
-Two filters run on every page (declared in `_quarto.yml`):
+These run on every page (declared in `_quarto.yml`):
 
 - **gifffer** — click-to-play GIFs; opt in per page with `gifffer: true` in
   frontmatter.
 
 - **checkpoint** — embeds a Google Form via shortcode: `{{< checkpoint id="..." >}}`.
+
+- **metatext** — `{{< metatext KEY >}}` emits the plain-text (HTML-stripped)
+  value of a frontmatter field; used to build every `pagetitle` so inline HTML
+  in a title (e.g. `Snap<em>!</em>`) doesn't leak into the browser tab.
 
 The **glossary** extension is unused. Each extension has a README and `example.qmd`.
 

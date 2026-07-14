@@ -1,7 +1,7 @@
 ---
 title: "Modeling Language: Plurals, Part 2"
 subtitle: "Unit 2 Optional Project"
-pagetitle: "{{< metatext title >}} | {{< var title-fix >}}"
+pagetitle: "{{< metatext title >}}"
 ---
 
 ::: todo

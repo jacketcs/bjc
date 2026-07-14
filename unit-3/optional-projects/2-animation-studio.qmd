@@ -1,7 +1,7 @@
 ---
 title: "Animation Studio"
 subtitle: "Unit 3 Optional Project"
-pagetitle: "{{< metatext title >}} | {{< var title-fix >}}"
+pagetitle: "{{< metatext title >}}"
 ---
 
 ::: todo

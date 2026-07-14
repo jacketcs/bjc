@@ -1,6 +1,6 @@
 ---
 title: "Unit 3: Data Structures"
-pagetitle: "{{< metatext title >}} | {{< var title-fix >}}"
+pagetitle: "{{< metatext title >}}"
 ---
 
 In Unit 3, we learn about creating data structures in Snap, or practices for creating well structured code in Snap.

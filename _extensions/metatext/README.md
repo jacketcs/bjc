@@ -21,9 +21,10 @@ interpolating the raw title into `pagetitle` leaks a literal `Snap<em>!</em>`
 into the browser tab. `metatext` yields `Snap!` instead.
 
 That is exactly how this site uses it: every `pagetitle` is built with
-`metatext` rather than `meta` — the site-wide one in `_quarto.yml` and the
-per-page overrides in front matter:
+`metatext` rather than `meta` — the site-wide one in `_quarto.yml`
+(`"{{< metatext subtitle >}}"`) and the per-page overrides in front matter
+(Quarto appends the site title itself, so `pagetitle` holds only the page part):
 
 ```yaml
-pagetitle: "{{< metatext title >}} | {{< var title-fix >}}"
+pagetitle: "{{< metatext title >}}"
 ```

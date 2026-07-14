@@ -1,6 +1,6 @@
 ---
 title: "AP CSP Standards Map"
-pagetitle: "{{< metatext title >}} | {{< var title-fix >}}"
+pagetitle: "{{< metatext title >}}"
 subtitle: "Where each College Board CED standard is covered in BJC"
 order: 20
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Project: Monty Hall Simulator"
+pagetitle: "{{< metatext title >}}"
 subtitle: "Unit 3 Project"
 order: 16
 ---

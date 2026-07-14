@@ -1,6 +1,6 @@
 ---
 title: "Week 1 CITN"
-pagetitle: "{{< metatext title >}} | {{< var title-fix >}}"
+pagetitle: "{{< metatext title >}}"
 author: "Pete"
 description: ""
 date: "8/16/2023"

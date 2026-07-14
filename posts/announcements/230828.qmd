@@ -1,6 +1,6 @@
 ---
 title: "Week 3 Announcements"
-pagetitle: "{{< metatext title >}} | {{< var title-fix >}}"
+pagetitle: "{{< metatext title >}}"
 author: "Ms. Chang and Ms. O'Keefe"
 description: "A congratulations, about grading, and about computing in the news." # should add a helpful description
 date: "8/28/2023"

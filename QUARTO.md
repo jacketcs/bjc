@@ -32,35 +32,35 @@ gives features you never get from standalone Markdown:
 - **HTML format options** applied site-wide: `toc: true`, Bootstrap
   `grid` widths, `callout-appearance: minimal`,
   `link-external-newwindow: true`, a `revealjs` `slide-format` so any page
-  can become slides, and a site-wide `pagetitle`
-  (`"{{< meta subtitle >}} | {{< var title-fix >}}"`) for the browser tab
-  title (see §2).
+  can become slides, and a site-wide `pagetitle` (`"{{< metatext subtitle >}}"`)
+  for the browser tab title (see §2).
 - **`include-in-header`** injects the BJC lab-runner script
   (`/llab/loader.js`) into every page — this is what renders the embedded
   Snap! block images.
 - **Pandoc filters** are registered globally: `gifffer` and `checkpoint`
   (see §3).
 
-## 2. Variables and metadata shortcodes
+## 2. Metadata shortcodes and the browser tab title
 
-- **`_variables.yml`** defines project variables (currently `title-fix: "JacketCS CSP"`),
-  referenced with the **`{{< var title-fix >}}`** shortcode (~41 uses).
-- **`{{< meta … >}}`** pulls from a page's own front matter — the site-wide
-  `pagetitle` in `_quarto.yml` (`"{{< meta subtitle >}} | {{< var title-fix >}}"`)
-  composes the browser tab title from the page's subtitle plus the project
-  variable. (It uses the custom `{{< metatext … >}}` shortcode rather than
-  `{{< meta … >}}` so any inline HTML in the field — e.g. the `<em>` used to
-  italicize the `!` in "Snap!" — is stripped for the plain-text `<title>`; see
-  §3.) This works because numbered lab pages have a distinctive subtitle
-  (`"Unit N, Lab M, Page K"`). Pages whose subtitle is absent or non-distinctive
-  — index pages, `create-task/`, posts, standalone resource pages, and the
-  `optional-projects`/`project` pages that share a generic subtitle like
-  `"Unit N Optional Project"` — instead set an explicit per-page `pagetitle`
-  built from `{{< metatext title >}}`, so the tab shows the unique page title
-  rather than an empty or duplicated subtitle (~41 pages; see §7).
+- **`{{< meta … >}}`** pulls from a page's own front matter. The site-wide
+  `pagetitle` in `_quarto.yml` (`"{{< metatext subtitle >}}"`) sets the browser
+  tab title from the page's subtitle; Quarto then appends the website `title`
+  (`JacketCS CSP`) itself, so a tab reads `Unit 1, Lab 1, Page 2 – JacketCS CSP`
+  — the brand comes from `website.title`, *not* from the `pagetitle` string, so
+  it isn't doubled. (`metatext` is the custom shortcode that strips inline HTML,
+  e.g. the `<em>` italicizing the `!` in "Snap!", for the plain-text `<title>`;
+  see §3.)
+- The subtitle only makes a good tab title on numbered lab pages, which have a
+  distinctive subtitle (`"Unit N, Lab M, Page K"`). Every other page — index
+  pages, `create-task/`, posts, standalone resource pages, and the
+  `optional-projects`/`project` pages with a generic, non-unique subtitle like
+  `"Unit N Optional Project"` — instead sets an explicit
+  `pagetitle: "{{< metatext title >}}"` so the tab shows the unique page title.
+  Which pages carry this override is generated and enforced by `fix-titles.py`
+  (see §7), not maintained by hand.
 
-Neither `{{< var >}}` nor `{{< meta >}}` exists in plain Markdown; they are
-Quarto shortcodes resolved at render time.
+`{{< meta >}}` (and the custom `{{< metatext >}}`) don't exist in plain
+Markdown; they are Quarto shortcodes resolved at render time.
 
 ## 3. Custom extensions (`_extensions/`)
 
@@ -84,9 +84,9 @@ navbar/sidebar. The HTML `<title>` element can't render tags, so interpolating
 the raw title leaks a literal `Snap<em>!</em>` into the browser tab.
 `pandoc.utils.stringify` drops raw-HTML inlines while keeping their text, so
 `metatext` yields `Snap!`. Every `pagetitle` in the site is built with
-`metatext` (the site-wide one in `_quarto.yml` and the ~41 per-page overrides).
-It contributes a shortcode (not a filter), so it's auto-discovered and not in
-the `filters:` list.
+`metatext` (the site-wide one in `_quarto.yml` and the per-page overrides that
+`fix-titles.py` maintains). It contributes a shortcode (not a filter), so it's
+auto-discovered and not in the `filters:` list.
 
 ### `gifffer` — play/pause for animated GIFs
 
@@ -193,9 +193,12 @@ Per-page YAML front matter drives several behaviors beyond a Markdown title:
   with the filename number (~42 files), since Quarto orders auto-sidebar
   contents by filename when `order` is absent.
 - **`pagetitle`** — a per-page override of the site-wide HTML `<title>`, set on
-  the ~41 pages whose subtitle would make a poor tab title (absent or shared);
-  it builds the title from `{{< metatext title >}}` instead of `subtitle`
-  (see §2 and the `metatext` extension in §3).
+  the pages whose subtitle would make a poor tab title (absent or shared); it
+  builds the title from `{{< metatext title >}}` instead of `subtitle`.
+  `fix-titles.py` generates and enforces this: lab pages (distinctive subtitle)
+  must have *no* `pagetitle`; every other page must carry exactly
+  `pagetitle: "{{< metatext title >}}"` (see §2 and the `metatext` extension in
+  §3).
 - **`gifffer: true`** — opts a page into the GIF player (see §3).
 - **`format:`** — per-page format overrides where needed (e.g.
   `unit-4/lab-4/5-binary.qmd` sets `html-table-processing: none`).
@@ -227,7 +230,7 @@ creating a new lab page.
 ### Summary — what's "beyond Markdown" here
 
 1. Website project: navbar, sidebars, search, page-nav, footer, SCSS theming.
-2. Shortcodes: `{{< var >}}`, `{{< meta >}}`, `{{< video >}}`, and the custom
+2. Shortcodes: `{{< meta >}}`, `{{< video >}}`, and the custom
    `{{< checkpoint >}}` / `{{< metatext >}}`.
 3. Four local extensions (`checkpoint`, `metatext`, `gifffer`, `glossary`) = Lua
    filters/shortcodes + bundled JS/CSS (`titling` was removed in favor of
