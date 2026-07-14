@@ -39,7 +39,6 @@ If you want to add more script variables, use the right-pointing triangle. (The 
 (@) Right now, the script always picks a number between 1 and 10. At the start of the game, ask the player what the maximum number should be, and make your program choose a number between 1 and <var>maximum</var>.
 
 (@) Use another script variable to keep track of how many guesses the player makes before getting the right number. When the player guesses the secret number, say how many guesses it took.
-:::
 
 (@) {{< checkpoint id='1FAIpQLSe7G8gdKsFvltVSaNhjOJbrpXpzVYkbR9c-qC-chUxM2RdYKQ' >}}
 
@@ -51,7 +50,6 @@ The script variable <var>secret number</var> exists only until the script finish
 
 In a later unit, you will teach the computer how to guess a secret number that <em>you</em> have chosen.
 When the player guesses the secret number, say how many guesses it took.
-:::
 
 ::: ifTime
 <ol type="A">
