@@ -73,7 +73,7 @@ Two ways, with the first being better in most cases:
 
 3. Set the stage size parameters so that the stage fits the image
 
-## Etcetera 
+## Et cetera
 
 ### Change which sprite is at the Front/Back
 
