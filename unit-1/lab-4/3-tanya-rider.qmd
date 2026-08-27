@@ -12,7 +12,7 @@ subtitle: "Unit 1, Lab 4, Page 3"
 
 <li>
 
-Read <a href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=19" target="_blank" title="Blown to Bits, Chapter 1: Digital Explosion"><em>Blown to Bits</em> pages 1-4</a>. As you read, be prepared to discuss the following:
+Read <a href="https://bjc.edc.org/bjc-r/docs/blown-to-bits/blown-to-bits.pdf#page=19" target="_blank" title="Blown to Bits, Chapter 1: Digital Explosion"><em>Blown to Bits</em> pages 1-4</a>. As you read, be prepared to discuss the following:
 
 <ul>
 
