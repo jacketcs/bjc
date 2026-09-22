@@ -43,7 +43,7 @@ On <a href="/unit-1/lab-2/2-gossip.html" title="Unit 1 Lab 2 Page 2: Making Prog
 
     ::::
 
-(@) Use <img src="/img/blocks/set-empty.png" title="set () to ()" alt="set () to ()" class="inline py-0"/> to set the initial value of <var>secret number</var> to a random number from 1 to 10 using the <img src="/img/blocks/random.png." block. The `set` menu lets you select which variable to set. 
+(@) Use <img src="/img/blocks/set-empty.png" title="set () to ()" alt="set () to ()" class="inline py-0"/> to set the initial value of <var>secret number</var> to a random number from 1 to 10 using the <img src="img/blocks/pick-random-1-to-10.png" block. The `set` menu lets you select which variable to set. 
 
     :::: sidenoteBig
 
